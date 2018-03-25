@@ -1,0 +1,1991 @@
+{
+    "response": {
+        "numFound": 515923,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 918820,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Lecture littéraire et observation réfléchie de la langue : intrications et interactions."
+                ],
+                "authFullName_s": [
+                    "Claire Doquet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 918819,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.info",
+                    "1.info.info-ts"
+                ],
+                "title_s": [
+                    "Système de mesure embarqué pour l'évaluation de l'effort de propulsion d'une personne en fauteuil roulant dans son environnement quotidien"
+                ],
+                "authFullName_s": [
+                    "François Devillard",
+                    "Bernard Heit",
+                    "Christophe Bonnet",
+                    "Corinne Guingamp"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918817,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.relig"
+                ],
+                "title_s": [
+                    "L'Orient des soufis : parcours initiatiques et voyages terrestres."
+                ],
+                "authFullName_s": [
+                    "Jean-Jacques Thibon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 918816,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.geme",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.geme"
+                ],
+                "title_s": [
+                    "Commande numérique ouverte : interpolation optimisée pour l'usinage 5 axes grande vitesse des surfaces complexes",
+                    "Open CNC: optimized interpolation for 5-axis high speed machining of complex surfaces"
+                ],
+                "authFullName_s": [
+                    "Xavier Beudaert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 918814,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "La question du genre humain et du travail dans l'\" Ontologie de l'être social \" de Lukács"
+                ],
+                "authFullName_s": [
+                    "Vincent Charbonnier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 918811,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Le polar de Paris : une mise en scène des changements urbains de l'est parisien"
+                ],
+                "authFullName_s": [
+                    "Céline Barrère",
+                    "Yankel Fijalkow"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918791,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.opti"
+                ],
+                "title_s": [
+                    "Analyse quantitative des micromacles dans des nanocouches épitaxiales GaP/Si pour la photonique sur silicium"
+                ],
+                "authFullName_s": [
+                    "Yanping Wang",
+                    "Thanh Tra Nguyen",
+                    "Antoine Létoublon",
+                    "Charles Cornet",
+                    "Nicolas Bertru",
+                    "Nathalie Boudet",
+                    "Julien Stodolna",
+                    "Anne Ponchet",
+                    "Jacky Even",
+                    "Alain Le Corre",
+                    "Olivier Durand"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918790,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.opti"
+                ],
+                "title_s": [
+                    "Analyse quantitative de la perfection cristalline de nanocouches épitaxiales GaP/Si"
+                ],
+                "authFullName_s": [
+                    "Antoine Létoublon",
+                    "Thanh Tra Nguyen",
+                    "Yanping Wang",
+                    "Samy Almosni",
+                    "Charles Cornet",
+                    "Nicolas Bertru",
+                    "Nathalie Boudet",
+                    "Julien Stodolna",
+                    "Anne Ponchet",
+                    "Eric Tea",
+                    "Jacky Even",
+                    "Sana Laribi",
+                    "Alain Le Corre",
+                    "Olivier Durand"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918787,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.opti"
+                ],
+                "title_s": [
+                    "Boîtes quantiques semi-conductrices : relation entre morphologie, structure électronique et propriétés optiques"
+                ],
+                "authFullName_s": [
+                    "Charles Cornet",
+                    "Pascal Turban",
+                    "Cédric Robert",
+                    "Sylvain Tricot",
+                    "Mathieu Perrin",
+                    "Hervé Folliot",
+                    "Jacky Even",
+                    "Jean-Marc Jancu",
+                    "Nicolas Bertru",
+                    "Alain Le Corre",
+                    "Olivier Durand"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918776,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Des usages des catégories et instruments d'intervention aux ambivalences de la recomposition des référentiels de politiques sociales : l'exemple des politiques de la vieillesse"
+                ],
+                "authFullName_s": [
+                    "Hervé Hudebine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918775,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-geo-ph",
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.gp",
+                    "0.sde",
+                    "1.sde.mcg"
+                ],
+                "title_s": [
+                    "Synergie infrarouge et micro-onde pour la restitution atmosphérique",
+                    "Infrared and microwave synergy applied to atmospheric retrievals"
+                ],
+                "authFullName_s": [
+                    "Maxime Paul"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918771,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.class"
+                ],
+                "title_s": [
+                    "Le spectacle de l'intime."
+                ],
+                "authFullName_s": [
+                    "Marie-Hélène Garelli"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 918770,
+                "title_s": [
+                    "Les gens de lettres français face au naturel allemand à la fin du XVIIIe siècle"
+                ],
+                "authFullName_s": [
+                    "François Genton"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 918769,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "L'écrivain Klaus Stiller et l'Italie vue d'Allemagne"
+                ],
+                "authFullName_s": [
+                    "François Genton"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 918765,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Les mésaventures de l'interprétation : le cas des déchiffrements \"ratés\" d'écritures inconnues."
+                ],
+                "authFullName_s": [
+                    "Isabelle Klock-Fontanille"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918764,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "L'écriture de l'espace : la perception de l'espace dans l'écriture hiéroglyphique anatolienne."
+                ],
+                "authFullName_s": [
+                    "Isabelle Klock-Fontanille"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918763,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-oc",
+                    "0.math",
+                    "1.math.math-ap"
+                ],
+                "title_s": [
+                    "Sur la contrôlabilité et son coût pour quelques équations aux dérivées partielles",
+                    "On the controllability and its cost for some partial differential equations"
+                ],
+                "authFullName_s": [
+                    "Pierre Lissy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918760,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Expériences sensibles de la mobilité urbaine"
+                ],
+                "authFullName_s": [
+                    "Damien Masson"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918758,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.opti"
+                ],
+                "title_s": [
+                    "Optimisation des propriétés structurale de l'interface GaP/Si et des propriétés électroniques de cellules solaires GaAsPN/GaP pour la fabrication de cellule tandem"
+                ],
+                "authFullName_s": [
+                    "Samy Almosni",
+                    "Cédric Robert",
+                    "Charles Cornet",
+                    "Thanh Tra Nguyen",
+                    "Yanping Wang",
+                    "Pierre Râle",
+                    "Laurent Lombez",
+                    "J.-F. Guillemoles",
+                    "Antoine Létoublon",
+                    "Christophe Levallois",
+                    "Nicolas Bertru",
+                    "Olivier Durand",
+                    "Alain Le Corre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918757,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "L'Allemagne et sa capitale : réflexions sur les enjeux intellectuels et politiques d'un débat parlementaire"
+                ],
+                "authFullName_s": [
+                    "François Genton"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 918756,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Processus d'apprentissage organisationnel et partages de compétences à l'occasion d'une fusion"
+                ],
+                "authFullName_s": [
+                    "Frédéric Leroy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 918753,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Produits dérivés météorologiques et environnement."
+                ],
+                "authFullName_s": [
+                    "Pauline Barrieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 918749,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.opti"
+                ],
+                "title_s": [
+                    "Développement d'un cluster de croissance UHVCVD-MBE pour l'intégration pseudomorphique III-V/Si"
+                ],
+                "authFullName_s": [
+                    "Charles Cornet",
+                    "Tony Rohel",
+                    "Olivier Dehaese",
+                    "Nicolas Chevalier",
+                    "Antoine Létoublon",
+                    "Nicolas Bertru",
+                    "Olivier Durand",
+                    "Alain Le Corre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918748,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.opti"
+                ],
+                "title_s": [
+                    "Etude par TEM et DRX des défauts cristallins dans des couches épitaxiées par MBE de GaP sur Silicium (001)"
+                ],
+                "authFullName_s": [
+                    "Julien Stodolna",
+                    "F. Demangeot",
+                    "Anne Ponchet",
+                    "Nicolas Bertru",
+                    "Olivier Durand",
+                    "Charles Cornet",
+                    "Jithesh Kuyyalil",
+                    "Alain Le Corre",
+                    "Antoine Létoublon",
+                    "Thanh Tra Nguyen",
+                    "Yanping Wang",
+                    "Nathalie Boudet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918746,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Ni prescrire, ni laisser faire : une analyse exploratoire des logiques de production de l'innovation dans les organisations."
+                ],
+                "authFullName_s": [
+                    "Fabienne Autier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 918745,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.opti"
+                ],
+                "title_s": [
+                    "Intégration optique par croissance directe de nanostructures III-V sur silicium"
+                ],
+                "authFullName_s": [
+                    "Charles Cornet",
+                    "Cédric Robert",
+                    "Thanh Tra Nguyen",
+                    "Yanping Wang",
+                    "Samy Almosni",
+                    "Mathieu Perrin",
+                    "Antoine Létoublon",
+                    "Jacky Even",
+                    "Pascal Turban",
+                    "Andrea Balocchi",
+                    "Xavier Marie",
+                    "Nicolas Bertru",
+                    "Olivier Durand",
+                    "Alain Le Corre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918740,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "L'autonomie des individus dans l'entreprise : essai de conceptualisation et regard sur les pratiques."
+                ],
+                "authFullName_s": [
+                    "Frédérique Alexandre-Bailly"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918737,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.qphy"
+                ],
+                "title_s": [
+                    "Séparation et contraction de variables en spectroscopie moléculaire- La méthode d'interaction de configurations dans un champ effectif"
+                ],
+                "authFullName_s": [
+                    "Patrick Cassam-Chenaï"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918722,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-scm"
+                ],
+                "title_s": [
+                    "Décoration de réseaux linéaires de défauts smectiques par des nanoparticules d'or",
+                    "Decoration of linear networks of smectic defects with gold nanoparticles"
+                ],
+                "authFullName_s": [
+                    "Coursault Delphine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918718,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Christian Felix Weiße et Arnaud Berquin ou l'influence de la littérature d'enfance et de jeunesse allemande en France au XVIIIe siècle et au-delà"
+                ],
+                "authFullName_s": [
+                    "François Genton"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 918714,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Goethe à Valmy et Christoph Friedrich Cotta"
+                ],
+                "authFullName_s": [
+                    "François Genton"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 918709,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Place des résections pelviennes élargies associées à une chimiothérapie hyperthermique intra-péritonéale dans le traitement de la carcinose péritonéale"
+                ],
+                "authFullName_s": [
+                    "Julien Coget"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 918706,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Les collectivités locales à l'ère du numérique, la construction d'une communication adaptée pour la mutualisation d'infrastructures digitales"
+                ],
+                "authFullName_s": [
+                    "Yannick Bouchet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 918702,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "L'action communale à l'ère du numérique, analyse du processus à engager"
+                ],
+                "authFullName_s": [
+                    "Yannick Bouchet",
+                    "Pierre Alain Millet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 918701,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "La comédie Die Juden (1749) de Lessing et le rôle de la littérature allemande dans le mouvement d'émancipation des juifs en France au XVIIIe siècle"
+                ],
+                "authFullName_s": [
+                    "François Genton"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 918697,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Une polémique franco-allemande sur le théâtre allemand en 1781"
+                ],
+                "authFullName_s": [
+                    "François Genton"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 918696,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "San Pedro Arbués, l'inquisiteur assassiné"
+                ],
+                "authFullName_s": [
+                    "Monique Combescure"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918693,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Théophile Gautier, Théâtre de poche"
+                ],
+                "authFullName_s": [
+                    "Olivier Bara"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918692,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Lectures sociocritiques du théâtre"
+                ],
+                "authFullName_s": [
+                    "Olivier Bara"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918690,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "L'autre théâtre romantique"
+                ],
+                "authFullName_s": [
+                    "Olivier Bara"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918689,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "George Sand et les arts du XVIIIe siècle"
+                ],
+                "authFullName_s": [
+                    "Olivier Bara"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918688,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Orages, littérature et culture, 1760-1830, \" Rousseau en musique"
+                ],
+                "authFullName_s": [
+                    "Olivier Bara",
+                    "Pierre Saby",
+                    "Michael O'Dea"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918687,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Généalogies du romantisme musical français"
+                ],
+                "authFullName_s": [
+                    "Olivier Bara",
+                    "Alban Ramaut"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918686,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Lettre et sens en organisation des connaissances"
+                ],
+                "authFullName_s": [
+                    "Bruno Menon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 918685,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Presse et scène au XIXe siècle"
+                ],
+                "authFullName_s": [
+                    "Olivier Bara"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918684,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "George Sand critique. Une autorité paradoxale"
+                ],
+                "authFullName_s": [
+                    "Olivier Bara",
+                    "Christine Planté"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918683,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Actes de la Journée d'agrégation consacrée à \"Hernani\" et \"Ruy Blas\" des Universités Lyon 2, Lyon 3 et Montpellier 3, co-dirigés avec Marie-Ève Thérenty"
+                ],
+                "authFullName_s": [
+                    "Olivier Bara"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918682,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "On ne badine pas avec l'amour\", \"Il ne faut jurer de rien\" et \"Il faut qu'une porte soit ouverte ou fermée\" de Musset"
+                ],
+                "authFullName_s": [
+                    "Olivier Bara"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918681,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Le Sanctuaire des illusions. George Sand et le théâtre"
+                ],
+                "authFullName_s": [
+                    "Olivier Bara"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918680,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "La parole trahie : mythe fondateur et fondement éthique de la poétique mussétienne"
+                ],
+                "authFullName_s": [
+                    "Olivier Bara"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918676,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.relig",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.museo"
+                ],
+                "title_s": [
+                    "Autour de l'odeur de sainteté, les parfums dans le monde chrétien"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Benoit"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 918656,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Trois essais sur les introductions en bourse"
+                ],
+                "authFullName_s": [
+                    "François Derrien"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918655,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "La stratégie discursive d'un lobby lors de la formation d'une politique publique : le cas de la réforme du droit français de la concurrence"
+                ],
+                "authFullName_s": [
+                    "Jean-François Dubot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 918654,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Le client, fossoyeur ou secours de la bureaucratie ? Une étude du rôle du client dans l'évolution des bureaucraties contemporaines."
+                ],
+                "authFullName_s": [
+                    "Denis Bourgeois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 918652,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Le contrôle des projets d'innovation de haute technologie une contribution à la théorie élaborée à partir des cas observés de façon longitudinale à France Telecom"
+                ],
+                "authFullName_s": [
+                    "François Persiaux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 918651,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-optics",
+                    "0.spi",
+                    "1.spi.opti",
+                    "0.spi",
+                    "1.spi.elec",
+                    "0.spi",
+                    "1.spi.nano",
+                    "0.info",
+                    "1.info.info-mo"
+                ],
+                "title_s": [
+                    "Étude de résonateurs électromagnétiques ouverts par approche modale. Application au filtrage multispectral dans l'infrarouge.",
+                    "Study of open electromagnetic resonators by modal approach. Application to infrared multispectral filtering."
+                ],
+                "authFullName_s": [
+                    "Benjamin Vial"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918649,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Cohérence et cohésion de l'équipe de direction dans la petite et moyenne entreprise : Le cas des hôtels familiaux au Yucatan"
+                ],
+                "authFullName_s": [
+                    "Luis Pech Varguez José"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 918644,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Prostitution"
+                ],
+                "authFullName_s": [
+                    "Caroline Guibet Lafaye"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918640,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Heimat : la petite patrie dans les pays de langue allemande."
+                ],
+                "authFullName_s": [
+                    "François Genton",
+                    "Sophie Lorrain",
+                    "Gaelle Vassogne",
+                    "Christian Eggers",
+                    "Herta-Luise Ott",
+                    "Marc Beghin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 918639,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Le temps en contrôle de gestion : Evolution des conceptions temporelles dans une discipline"
+                ],
+                "authFullName_s": [
+                    "Jérôme Meric"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 918636,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "De l'opposition \" politiques / administratifs \" au clivage \" centre / périphérie \" : les divergences de perception des outils de mesure dans les universités"
+                ],
+                "authFullName_s": [
+                    "Stéphanie Chatelain-Ponroy",
+                    "Stéphanie Mignot-Gérard",
+                    "Christine Musselin",
+                    "Samuel Sponem"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918632,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "La guerre en chansons"
+                ],
+                "authFullName_s": [
+                    "François Genton"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 918631,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "L'Auteur : Théories et pratiques"
+                ],
+                "authFullName_s": [
+                    "François Genton",
+                    "François Gramusset",
+                    "Laurence Garino-Abel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 918606,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-cl",
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "Techniques futures pour le traducteur professionnel"
+                ],
+                "authFullName_s": [
+                    "Emmanuel Planas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918605,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Essais sur l'essai"
+                ],
+                "authFullName_s": [
+                    "François Genton",
+                    "Michel Lafon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 918601,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "1900-2000. Cent ans de regards français sur l'Allemagne"
+                ],
+                "authFullName_s": [
+                    "François Genton"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 918589,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-os",
+                    "0.info",
+                    "1.info.info-sy"
+                ],
+                "title_s": [
+                    "Expérimentation d'une plate-forme de portage logiciel à l'INRIA"
+                ],
+                "authFullName_s": [
+                    "Yann Genevois",
+                    "Maurice Brémond",
+                    "Nicolas Turro",
+                    "Roger Pissard-Gibollet",
+                    "Eric Ragusi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 918588,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Des beautés plus hardies. Le Théâtre allemand dans la France de l'Ancien Régime (1750-1789)."
+                ],
+                "authFullName_s": [
+                    "François Genton"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 918571,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Misère allemande - Deutsche Misere"
+                ],
+                "authFullName_s": [
+                    "François Genton",
+                    "Lucien Calvié"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 918570,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.psy"
+                ],
+                "title_s": [
+                    "L'impensé de la maltraitance : du désaveu à la répétition institutionnelle en gériatrie",
+                    "The impensé of the ill-treatment : from the denial to the institutional repetition in geriatrics"
+                ],
+                "authFullName_s": [
+                    "Emile Guibert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918559,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Femmes, travail, santé : une histoire des ouvrières de Zodiac à Rochefort, 1960-1986"
+                ],
+                "authFullName_s": [
+                    "Geneviève Combeau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918556,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-mo"
+                ],
+                "title_s": [
+                    "Rapport technique final d'exécution du projet Médiaterre"
+                ],
+                "authFullName_s": [
+                    "Vincent Jay",
+                    "Denis Cocconcelli",
+                    "Vincent Gilfaut",
+                    "Florent Breuil"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 918552,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Injections locales de dérivés cortisoniques : évaluation des pratiques/méthodes au cabinet du médecin généraliste"
+                ],
+                "authFullName_s": [
+                    "Julien Brizi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918547,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Ugolino"
+                ],
+                "authFullName_s": [
+                    "François Genton"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 918544,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "L'application des principes du travail du Pacte mondial des Nations Unies par les entreprises françaises"
+                ],
+                "authFullName_s": [
+                    "Pascale Deumier",
+                    "Sylvaine Laulom",
+                    "Emmanuelle Mazuyer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918540,
+                "domain_s": [
+                    "0.scco",
+                    "1.scco.comp"
+                ],
+                "title_s": [
+                    "Raisonner sur des connaissances provenant d'une e-communauté"
+                ],
+                "authFullName_s": [
+                    "Emmanuelle Gaillard",
+                    "Jean Lieber",
+                    "Yannick Naudet",
+                    "Emmanuel Nauer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918537,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "De Faust à l'Université de Masse. Universités de France et d'Allemagne"
+                ],
+                "authFullName_s": [
+                    "François Genton"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 918536,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "La RSE"
+                ],
+                "authFullName_s": [
+                    "Emmanuelle Mazuyer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918530,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Ressenti des entraves à la prescription des médicaments génériques : étude qualitative auprès des médecins généralistes de la région PACA"
+                ],
+                "authFullName_s": [
+                    "Alexandre Broll"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918527,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Les normes internationales et européennes de protection de l'environnement de travail"
+                ],
+                "authFullName_s": [
+                    "Emmanuelle Mazuyer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918511,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.class"
+                ],
+                "title_s": [
+                    "Danser le mythe"
+                ],
+                "authFullName_s": [
+                    "Marie-Hélène Garelli"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 918510,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "La responsabilité sociale des entreprises et la lutte contre les changements climatiques"
+                ],
+                "authFullName_s": [
+                    "Emmanuelle Mazuyer",
+                    "Isabelle Michallet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918506,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-mo"
+                ],
+                "title_s": [
+                    "Agora 21 \" Verdissement de l'économie, quels nouveaux emplois et quelle gestion prévisionnelle des compétences dans les activités de \" l'écoconstruction \" dans la Loire ?"
+                ],
+                "authFullName_s": [
+                    "Florent Breuil",
+                    "Nadine Dubruc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 918487,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Contribution à l'amélioration de la gestion de l'énergie dans les applications audio embarquées",
+                    "Contribution to the improvement of power management in embedded circuits"
+                ],
+                "authFullName_s": [
+                    "Patrice Russo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918486,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Etude du régime d'écoulement du fluide dans le jeu d'un ensemble piston-cylindre en vue de l'optimisation du calcul du coefficient de déformation.",
+                    "The study of the fluid flow in the piston-cylinder assembly gap for optimizing the deformation coefficient calculation."
+                ],
+                "authFullName_s": [
+                    "Padipat Wongthep"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918472,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hisphilso",
+                    "0.shs",
+                    "1.shs.phil",
+                    "0.info",
+                    "1.info.info-lo",
+                    "0.math",
+                    "1.math.math-lo"
+                ],
+                "title_s": [
+                    "Sur le temps logique"
+                ],
+                "authFullName_s": [
+                    "Jean-Baptiste Joinet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 918458,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.class"
+                ],
+                "title_s": [
+                    "Les Métamorphoses d'Ovide: un texte à danser dans l'Antiquité?"
+                ],
+                "authFullName_s": [
+                    "Marie-Hélène Garelli"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 918457,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sp"
+                ],
+                "title_s": [
+                    "Développement d'un outil d'analyse de biomarqueurs pour le diagnostic, le pronostic et le suivi de la réponse au traitement médicamenteux du cancer de la vessie"
+                ],
+                "authFullName_s": [
+                    "Marine De Paoli"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 918456,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Soft law"
+                ],
+                "authFullName_s": [
+                    "Emmanuelle Mazuyer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918454,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hisphilso",
+                    "0.info",
+                    "1.info.info-lo",
+                    "0.math",
+                    "1.math.math-lo"
+                ],
+                "title_s": [
+                    "Ouvrir la logique au monde"
+                ],
+                "authFullName_s": [
+                    "Jean-Baptiste Joinet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 918452,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-gr",
+                    "0.info",
+                    "1.info.info-mo"
+                ],
+                "title_s": [
+                    "Modèles pour la Création Interactive et Intuitive d'Objets Tridimensionnels",
+                    "Models for the interactive and intuitive creation of tri-dimensional objects"
+                ],
+                "authFullName_s": [
+                    "Loïc Barthe"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "HDR",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918451,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Pacte mondial des Nations Unies"
+                ],
+                "authFullName_s": [
+                    "Emmanuelle Mazuyer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918448,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "CSR et RSE"
+                ],
+                "authFullName_s": [
+                    "Emmanuelle Mazuyer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918443,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "La RSE, champ de densification ou de désertification normative ?"
+                ],
+                "authFullName_s": [
+                    "Dominique Bessire",
+                    "Emmanuelle Mazuyer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918442,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Influence de la cognition sociale (Théorie de l'Esprit) sur la rémission fonctionnelle de la dépression et l'aptitude professionnelle"
+                ],
+                "authFullName_s": [
+                    "Magali Barre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918432,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-dc"
+                ],
+                "title_s": [
+                    "Agrégation de traces pour la visualisation de grands systèmes distribués"
+                ],
+                "authFullName_s": [
+                    "Robin Lamarche-Perrin",
+                    "Lucas Mello Schnorr",
+                    "Jean-Marc Vincent",
+                    "Yves Demazeau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918426,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gest-risq"
+                ],
+                "title_s": [
+                    "Le rôle de l'assurance dans la gestion des risques psychosociaux en entreprise"
+                ],
+                "authFullName_s": [
+                    "Wim Van Wassenhove",
+                    "Mathilde Bellanger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 918425,
+                "title_s": [
+                    "Optimisation par essaims particulaires de stratégies de dialogue"
+                ],
+                "authFullName_s": [
+                    "Lucie Daubigney",
+                    "Matthieu Geist",
+                    "Olivier Pietquin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918418,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.info",
+                    "1.info.info-ts"
+                ],
+                "title_s": [
+                    "Algorithmes de poursuite pour l'estimation de canal radio-mobile et performances asymptotiques: applications pour les systèmes OFDM",
+                    "Tracking algorithms for radio-mobile channel estimation and asymptotic performances: applications to OFDM systems"
+                ],
+                "authFullName_s": [
+                    "Huaqiang Shu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 918412,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil",
+                    "0.shs",
+                    "1.shs.hisphilso",
+                    "0.info",
+                    "1.info.info-lo"
+                ],
+                "title_s": [
+                    "Logique et métaphysique"
+                ],
+                "authFullName_s": [
+                    "Jean-Baptiste Joinet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            }
+        ]
+    },
+    "nextCursorMark": "AoFcuMAD"
+}

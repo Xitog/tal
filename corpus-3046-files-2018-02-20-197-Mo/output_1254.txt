@@ -1,0 +1,1802 @@
+{
+    "response": {
+        "numFound": 515922,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1322264,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "DiET : Diagnostic et Évaluation des Systèmes de Traitement de la Langue Naturelle"
+                ],
+                "authFullName_s": [
+                    "Ludovic Tanguy",
+                    "Susan Armstrong",
+                    "Pierrette Bouillon",
+                    "Sabine Lehmann"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322262,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.class"
+                ],
+                "title_s": [
+                    "Notes sur la médecine étrusque"
+                ],
+                "authFullName_s": [
+                    "Yves Liébert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1322260,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.geme"
+                ],
+                "title_s": [
+                    "Une modélisation du contact par l'approche mortier : application à la mise en forme",
+                    "Mortar approach contact modeling : application formatting"
+                ],
+                "authFullName_s": [
+                    "Achraf Kallel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1322258,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Parcours interprétatifs (inter) textuels dans le cadre d'une assistance informatique"
+                ],
+                "authFullName_s": [
+                    "Ludovic Tanguy",
+                    "Théodore Thlivitis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1322257,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.class"
+                ],
+                "title_s": [
+                    "Vers une approche génético-linguistique de l’origine des Étrusques"
+                ],
+                "authFullName_s": [
+                    "Yves Liébert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1322256,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Repérage automatique de structures linguistiques en corpus : le cas des énoncés définitoires"
+                ],
+                "authFullName_s": [
+                    "Josette Rebeyrolle",
+                    "Ludovic Tanguy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1322254,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "La conjecture de Pichon"
+                ],
+                "authFullName_s": [
+                    "Marc Plénat",
+                    "Stéphanie Lignon",
+                    "Nicole Serna",
+                    "Ludovic Tanguy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1322250,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Frontières imaginaires dans la cinématographie américaine: Un cuento chino de Sebastian Borensztein et The Visitor de Thomas McCarty."
+                ],
+                "authFullName_s": [
+                    "Paola Garcia"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322248,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Déplacements forcés dans le cinéma colombien."
+                ],
+                "authFullName_s": [
+                    "Paola Garcia"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322245,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Etude du rôle des cytokinines végétales et fongiques dans l'interaction riz-Magnaporthe oryzae",
+                    "Study of the role of plant and fungal cytokinins in the pathosystem rice-Magnaporthe oryzae"
+                ],
+                "authFullName_s": [
+                    "Emilie Chanclud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322241,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.stru",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.vibr",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.geme",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.solid"
+                ],
+                "title_s": [
+                    "Effet de la raideur périodique d'engrènement sur le comportement vibratoire d'une chaîne cinématique soumise à des fluctuations de couple"
+                ],
+                "authFullName_s": [
+                    "P Garambois",
+                    "E Rigaud",
+                    "J Perret-Liaudet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1322239,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Réalisme et violences latentes."
+                ],
+                "authFullName_s": [
+                    "Paola Garcia"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322237,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Institutions religieuses et immigration : le cas de l’Espagne"
+                ],
+                "authFullName_s": [
+                    "Paola Garcia"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322236,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Exil et migration dans l’histoire récente argentine."
+                ],
+                "authFullName_s": [
+                    "Paola Garcia"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322234,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Évaluation sur mesure de modèles distributionnels sur un corpus spécialisé : comparaison des approches par contextes syntaxiques et par fenêtres graphiques."
+                ],
+                "authFullName_s": [
+                    "Ludovic Tanguy",
+                    "Franck Sajous",
+                    "Nabil Hathout"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1322233,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Migrations latino-américaines et Cinéma."
+                ],
+                "authFullName_s": [
+                    "Paola Garcia"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322229,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info",
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "Usages de l'internet pour l'accès à l'information de santé. Apports réciproques des approches anthropologique et communicationnelle"
+                ],
+                "authFullName_s": [
+                    "Emmanuelle Simon",
+                    "Brigitte Simonnot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1322197,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Balance de la inmigración latinoamericana 2000-2010."
+                ],
+                "authFullName_s": [
+                    "Paola Garcia"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322196,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "La perception des accents du français hors de France."
+                ],
+                "authFullName_s": [
+                    "Anika Falkert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322192,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Une autre histoire de R. Remarques sur la variation du phonème /r/ dans le parler de Havre-Saint-Pierre (Côte-Nord)."
+                ],
+                "authFullName_s": [
+                    "Anika Falkert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322188,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Pour une interprétation sociocognitive de l’évolution sémantique des emprunts lexicaux."
+                ],
+                "authFullName_s": [
+                    "Anika Falkert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322185,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Les îles Gotô, voyage aux confins de la Japonésie"
+                ],
+                "authFullName_s": [
+                    "Philippe Pelletier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1322184,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Les niveaux de langue et les marques d’usage dans quelques dictionnaires de français."
+                ],
+                "authFullName_s": [
+                    "Anika Falkert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322181,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Kôtoku Shûsui, socialiste et anarchiste japonais"
+                ],
+                "authFullName_s": [
+                    "Philippe Pelletier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1322180,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "Construire et gérer les ethnicités en Asie du Sud-Est : cultures, politiques et développement"
+                ],
+                "authFullName_s": [
+                    "Christian Culas",
+                    "Grégoire Schlemmer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1322179,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "La perception de la variation linguistique chez les Acadiens de la Côte-Nord (Québec)."
+                ],
+                "authFullName_s": [
+                    "Anika Falkert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322178,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Représentations du métier d'assistant d'éducation : étude croisée sur deux groupes de la communauté éducative"
+                ],
+                "authFullName_s": [
+                    "Roselyne Benigno"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322177,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "La diaspora acadienne du Québec : entre reconquête identitaire et affirmation de la différence."
+                ],
+                "authFullName_s": [
+                    "Anika Falkert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322174,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Un si discret pouvoir"
+                ],
+                "authFullName_s": [
+                    "Claire Lemercier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1322173,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Le progrès chez Elisée Reclus : histoire et actualité d'une approche"
+                ],
+                "authFullName_s": [
+                    "Philippe Pelletier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1322170,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "« Une réforme constitutionnelle pour quelle « autonomie collective » ?"
+                ],
+                "authFullName_s": [
+                    "Martine Le Friant",
+                    "Antoine Jeammaud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1322169,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "La dialectologie perceptuelle : problèmes et perspectives."
+                ],
+                "authFullName_s": [
+                    "Anika Falkert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322159,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "À propos de l’existence d’une compétence phraséologique chez l’apprenant de FLE. Une étude expérimentale."
+                ],
+                "authFullName_s": [
+                    "Anika Falkert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322158,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "« La gouvernance de l’hôpital d’Aix en Provence »"
+                ],
+                "authFullName_s": [
+                    "Jérôme Joubert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322155,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Peut-on parler de mythe social chez Pirandello ?"
+                ],
+                "authFullName_s": [
+                    "Edoardo Esposito"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322152,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "« Vers un printemps arabe en Algérie »"
+                ],
+                "authFullName_s": [
+                    "Jérôme Joubert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322151,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "La temporalité dans « Le Navire fantôme »."
+                ],
+                "authFullName_s": [
+                    "Edoardo Esposito"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322142,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "La Fleur à la bouche »(1923) ou le mal absolu chez Pirandello."
+                ],
+                "authFullName_s": [
+                    "Edoardo Esposito"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322141,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "« La communauté hospitalière de territoire. Un équilibre en stratégie mixte »"
+                ],
+                "authFullName_s": [
+                    "Jérôme Joubert",
+                    "J.P. Lala"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322137,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "« Assistant Gestionnaire de pôles hospitaliers : un métier en orbite »"
+                ],
+                "authFullName_s": [
+                    "Jérôme Joubert",
+                    "J.P. Lala"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322134,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "1978-2014 : démographie et suivi d'installation des chirurgiens dentistes diplômés de l'UFR d'odontologie de Brest depuis sa création"
+                ],
+                "authFullName_s": [
+                    "Florent Le Gall"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322132,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Dario Fo ou la passion de l’histoire"
+                ],
+                "authFullName_s": [
+                    "Edoardo Esposito"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322128,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "« Vulnérabilité et Performances économiques des petits états insulaires »"
+                ],
+                "authFullName_s": [
+                    "Jérôme Joubert",
+                    "François Fulconis",
+                    "Pierre-Michel Bousquet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1322123,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Représentations de Madrid dans les œuvres du Todo Vale."
+                ],
+                "authFullName_s": [
+                    "Magalie Dumousseau-Lesquier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322122,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Quel avenir pour le commerce dans les petites communautés de communes ? L'exemple de la Communauté de Communes Eure Madrie Seine (27)"
+                ],
+                "authFullName_s": [
+                    "Guillaume Simon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322119,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Regards sur \"la faune\" de la Movida. Pablo Pérez Mínguez, du \"Safari-photo\" au \"désétiquetage\"."
+                ],
+                "authFullName_s": [
+                    "Magalie Dumousseau-Lesquier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322115,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Actualité du droit de la propriété intellectuelle"
+                ],
+                "authFullName_s": [
+                    "Bérengère Gleize"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322112,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Espace, territoire, milieu : problématiques géographies et libertaires"
+                ],
+                "authFullName_s": [
+                    "Philippe Pelletier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1322110,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Trouble anormal et concurrence déloyale"
+                ],
+                "authFullName_s": [
+                    "Bérengère Gleize"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322107,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Quand Agatha Ruiz de la Prada et Pablo Pérez Mínguez rhabillent leurs contemporains ou comment (se) jouer des apparences."
+                ],
+                "authFullName_s": [
+                    "Magalie Dumousseau-Lesquier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322104,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Le contrat d'adaptation audiovisuelle"
+                ],
+                "authFullName_s": [
+                    "Bérengère Gleize",
+                    "A. Fusco-Vigne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322090,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "La gestion collective relative aux arts graphiques, plastiques et photographiques"
+                ],
+                "authFullName_s": [
+                    "Bérengère Gleize",
+                    "A. Fusco-Vigne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322088,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Les politiques cyclables dans les villes moyennes : l’exemple de Foix"
+                ],
+                "authFullName_s": [
+                    "Robin Puchaczewski"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322086,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "L’agénésie des incisives latérales maxillaires : fermeture d’espace ou ouverture d’espace. Quelle thérapeutique choisir ?"
+                ],
+                "authFullName_s": [
+                    "Gaïdig Vigneron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322085,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "L’injonction à la participation des salariés dans les entreprises de l’économie sociale : une typologie des motifs, des formes et des logiques d’instrumentalisation"
+                ],
+                "authFullName_s": [
+                    "Patrick Gianfaldoni",
+                    "Jean-Robert Alcaras",
+                    "Frédéric Rostaing"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322084,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Actualité de mésologie réclusienne"
+                ],
+                "authFullName_s": [
+                    "Philippe Pelletier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1322083,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Ouka Leele: La mirada de Ouka Leele."
+                ],
+                "authFullName_s": [
+                    "Magalie Dumousseau-Lesquier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322081,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Quel devenir pour les services de transports départementaux de la grande région Languedoc-Roussillon-Midi-Pyrénées ? État des lieux de l’organisation des services de transports interurbains et scolaires dans la perspective du transfert de compétence à la région"
+                ],
+                "authFullName_s": [
+                    "Guillaume Espiasse"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322080,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Mario de la Iglesia: un représentant de l'art urbain madrilène."
+                ],
+                "authFullName_s": [
+                    "Magalie Dumousseau-Lesquier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322074,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Mario de la Iglesia: Street art et postmovida"
+                ],
+                "authFullName_s": [
+                    "Magalie Dumousseau-Lesquier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322073,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Isomorphisme institutionnel et « performance sociale » dans l’insertion par l’activité économique. Une étude territoriale sur les chantiers d’insertion"
+                ],
+                "authFullName_s": [
+                    "Patrick Gianfaldoni",
+                    "S. Tamiozzo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322072,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Madrid \"Escuela de calor\": l'amour pop-rock dans le Madrid de la Movida."
+                ],
+                "authFullName_s": [
+                    "Magalie Dumousseau-Lesquier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322070,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Le retour de la mémoire dans les créations contemporaines espagnoles."
+                ],
+                "authFullName_s": [
+                    "Magalie Dumousseau-Lesquier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322069,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "L'invention de l'Extrême-Orient"
+                ],
+                "authFullName_s": [
+                    "Philippe Pelletier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1322067,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "La marqueterie, un art de guerre des Établissements Gallé"
+                ],
+                "authFullName_s": [
+                    "Samuel Provost"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1322064,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Gouvernance territorialisée et transformations managériales dans l’insertion par l’activité économique"
+                ],
+                "authFullName_s": [
+                    "Patrick Gianfaldoni"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322056,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Quelle inscription des banques coopératives dans les territoires. Une illustration à travers leurs relations avec les associations"
+                ],
+                "authFullName_s": [
+                    "Patrick Gianfaldoni",
+                    "Nadine Richez-Battesti",
+                    "Jean-Robert Alcaras"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322055,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Présidence du panel \"Transcultural perspectives 2"
+                ],
+                "authFullName_s": [
+                    "Philippe Pelletier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1322047,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "La contractualisation de l’accompagnement dans l’insertion par l’activité économique"
+                ],
+                "authFullName_s": [
+                    "Patrick Gianfaldoni",
+                    "Franck Petit"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322043,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Les impensés de la « performance sociale » dans l’insertion par l’activité économique"
+                ],
+                "authFullName_s": [
+                    "Patrick Gianfaldoni",
+                    "S. Tamiozzo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322041,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "La Movida, Au nom du Père, des Fils et du Todo Vale."
+                ],
+                "authFullName_s": [
+                    "Magalie Dumousseau-Lesquier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322039,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "La Movida, Au nom du père, des fils et du Todo Vale."
+                ],
+                "authFullName_s": [
+                    "Magalie Dumousseau-Lesquier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322038,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "La spécificité démocratique des coopératives bancaires françaises"
+                ],
+                "authFullName_s": [
+                    "Patrick Gianfaldoni",
+                    "Rémi Jardat",
+                    "David Hiez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322035,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "La Movida madrilène."
+                ],
+                "authFullName_s": [
+                    "Magalie Dumousseau-Lesquier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322030,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Une approche socioéconomique de l’accompagnement dans l’insertion par l’activité économique"
+                ],
+                "authFullName_s": [
+                    "Patrick Gianfaldoni"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322029,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les sources des décors égyptisants sur les verreries et les marqueteries des Établissements Gallé"
+                ],
+                "authFullName_s": [
+                    "Samuel Provost"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1322028,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.sde",
+                    "1.sde.es"
+                ],
+                "title_s": [
+                    "Évolution de l'intercommunalité et enjeux de gestion de l'eau notamment en Tarn-et-Garonne"
+                ],
+                "authFullName_s": [
+                    "Morgane Blain"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322026,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "La culture madrilène de l'après-franquisme: la Movida."
+                ],
+                "authFullName_s": [
+                    "Magalie Dumousseau-Lesquier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322022,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Les attributs de l’innovation sociale dans l’insertion par l’activité économique"
+                ],
+                "authFullName_s": [
+                    "Patrick Gianfaldoni"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322018,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Travail, organisations et politiques publiques : quelle « soutenabilité » à l’heure de la mondialisation ?"
+                ],
+                "authFullName_s": [
+                    "Patrick Gianfaldoni",
+                    "Nadine Richez-Battesti",
+                    "Francesca Petrella"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1322015,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Iconographie et historique de la Movida"
+                ],
+                "authFullName_s": [
+                    "Magalie Dumousseau-Lesquier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322011,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "L’impératif de croissance des entreprises sociales d’insertion par le travail"
+                ],
+                "authFullName_s": [
+                    "Patrick Gianfaldoni",
+                    "P. Lerouvillois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322009,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Le point-relais, outil logistique au coeur de la fabrique urbaine : constats, évolutions et perspectives. Le cas de la métropole toulousaine"
+                ],
+                "authFullName_s": [
+                    "Laureline Angot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1322008,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Exil, mémoire et identité: la Ley de Nietos, l'exil en héritage."
+                ],
+                "authFullName_s": [
+                    "Magalie Dumousseau-Lesquier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322007,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "L'évolution des études japonaises"
+                ],
+                "authFullName_s": [
+                    "Philippe Pelletier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1322004,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Du \"Sólo se vive una vez\" au \"Todo Vale\": images de Madrid"
+                ],
+                "authFullName_s": [
+                    "Magalie Dumousseau-Lesquier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1322001,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "L'extrême-Orient ou le Japon dans l'Asie, invention de concepts métagéographiques"
+                ],
+                "authFullName_s": [
+                    "Philippe Pelletier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1322000,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info",
+                    "2.shs.info.docu"
+                ],
+                "title_s": [
+                    "Conduite de projet web pour la Fédération CFDT Construction et Bois :élaborer une stratégie de contenus pour un public non-expert"
+                ],
+                "authFullName_s": [
+                    "Diane Robert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1321999,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Costus ou les peintres héritiers d'un patrimoine culturel \"nettoyé\" à consommer sans modération."
+                ],
+                "authFullName_s": [
+                    "Magalie Dumousseau-Lesquier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1321996,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "A la recherche d’une alternative. Confronter économie solidaire et économie populaire"
+                ],
+                "authFullName_s": [
+                    "Patrick Gianfaldoni",
+                    "C Llena"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1321995,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Collection \"Visible\", Madrid: Quelle visibilité pour l'art gay?"
+                ],
+                "authFullName_s": [
+                    "Magalie Dumousseau-Lesquier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1321990,
+                "domain_s": [
+                    "0.scco",
+                    "1.scco.psyc",
+                    "0.scco",
+                    "1.scco.ling",
+                    "0.scco",
+                    "1.scco.comp"
+                ],
+                "title_s": [
+                    "Mesurer la similarité structurelle entre réseaux lexicaux"
+                ],
+                "authFullName_s": [
+                    "Bruno Gaume",
+                    "Emmanuel Navarro",
+                    "Yann Desalle",
+                    "Benoît Gaillard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1321987,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Les enjeux identitaires des entreprises sociales françaises"
+                ],
+                "authFullName_s": [
+                    "Patrick Gianfaldoni"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1321983,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "De Hiroshima à Fukushima, le Japon et le destin du monde"
+                ],
+                "authFullName_s": [
+                    "Philippe Pelletier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1321982,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "De l’association au groupe d’entreprises sociales : l’émergence d’une économie de la RSE ?"
+                ],
+                "authFullName_s": [
+                    "Patrick Gianfaldoni"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1321980,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "La configuration en pôle territorial de coopération économique. Quatre études de cas pour initier une démarche comparative"
+                ],
+                "authFullName_s": [
+                    "Patrick Gianfaldoni",
+                    "P. Lerouvillois",
+                    "Clément Lecat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1321976,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Agatha Ruiz de la Prada, Paris 1999-2014."
+                ],
+                "authFullName_s": [
+                    "Magalie Dumousseau-Lesquier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1321971,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "La figure émergente de pôle territorial de coopération économique"
+                ],
+                "authFullName_s": [
+                    "Patrick Gianfaldoni",
+                    "P. Lerouvillois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1321970,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Atelier 6, territoires et frontières"
+                ],
+                "authFullName_s": [
+                    "Philippe Pelletier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1321969,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Parlez-moi d'art\": la Movida madrilène"
+                ],
+                "authFullName_s": [
+                    "Magalie Dumousseau-Lesquier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            }
+        ]
+    },
+    "nextCursorMark": "AoFRv4UF"
+}

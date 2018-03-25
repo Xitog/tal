@@ -1,0 +1,1966 @@
+{
+    "response": {
+        "numFound": 515921,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1568927,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.sdu",
+                    "1.sdu.envi"
+                ],
+                "title_s": [
+                    "Les sanctuaires de Villards-d’Héria : approches archéologiques et paléoenvironnementales."
+                ],
+                "authFullName_s": [
+                    "Damien Vurpillot",
+                    "Vincent Bichet",
+                    "Elise Doyen",
+                    "Pierre Nouvel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568925,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.envi"
+                ],
+                "title_s": [
+                    "Les sédiments lacustres, mémoire du climat et des activités humaines"
+                ],
+                "authFullName_s": [
+                    "Vincent Bichet",
+                    "Charly Massa",
+                    "Laurent Millet",
+                    "Bianca B. Perren"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568923,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-tt"
+                ],
+                "title_s": [
+                    "ASDA : Analyseur Syntaxique du Dialecte Algérien dans un but d'analyse sémantique"
+                ],
+                "authFullName_s": [
+                    "Imène Guellil",
+                    "Faiçal Azouaou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568921,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.stat",
+                    "0.stat",
+                    "1.stat.ap"
+                ],
+                "title_s": [
+                    "Les dictionnaires électroniques"
+                ],
+                "authFullName_s": [
+                    "Étienne Brunet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568919,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "La participation électorale des Français d’Algérie avant 1962"
+                ],
+                "authFullName_s": [
+                    "Emmanuelle Comtat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568915,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Les études sur les mémoires coloniales en France : un objet de science politique"
+                ],
+                "authFullName_s": [
+                    "Emmanuelle Comtat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568913,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.envi",
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Au Niger, un paysage sahélien façonné par l'homme"
+                ],
+                "authFullName_s": [
+                    "Rodrigue Guillon",
+                    "Petit Christophe",
+                    "Amadou Abdourhamane Touré",
+                    "Vincent Bichet",
+                    "David Sebag",
+                    "Jean Louis Rajot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568907,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Des mémoires traumatiques au vote. Les Français d’Algérie et leurs descendants face à leur passé"
+                ],
+                "authFullName_s": [
+                    "Emmanuelle Comtat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568906,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Le défi urbain",
+                    "The urban challenge"
+                ],
+                "authFullName_s": [
+                    "Michaël Pouzenc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568905,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les disparus civils européens de la guerre d'Algérie",
+                    "The European civilians reported missing during the Algerian war"
+                ],
+                "authFullName_s": [
+                    "Emmanuelle Comtat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568904,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Lost in translation : la consommation de luxe comme révélateur de l’ajustement culturel du consommateur temporairement expatrié aux Émirats Arabes Unis",
+                    "Lost in translation: When luxury consumption reveals temporarly expatriated consumer's cultural adjustment to the United Arab Emirates"
+                ],
+                "authFullName_s": [
+                    "Cécile Chamaret",
+                    "Béatrice Parguel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568903,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Qu'est-ce qui fait ressource en espace rural ? : Réflexions à partir des activités touristiques de Rocamadour (département du Lot, France)",
+                    "What does make resource in rural areas? Reflections from touristy activities in Rocamadour (Lot ‘département’, France)"
+                ],
+                "authFullName_s": [
+                    "Michaël Pouzenc",
+                    "Valérie Olivier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568902,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Formes d’affiliations dans les pratiques informationnelles des lycéens avec le numérique"
+                ],
+                "authFullName_s": [
+                    "Karel Soumagnac",
+                    "Camille Capelle"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568900,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "AMAP et Points de Vente Collectifs de Producteurs : questions sur leur essor en Midi-Pyrénées",
+                    "CSA and producers' collective shops: questions on their development in Midi-Pyrénées"
+                ],
+                "authFullName_s": [
+                    "Valérie Olivier",
+                    "Michaël Pouzenc",
+                    "Jean Pilleboue"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568898,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Entre choix et contraintes : figures de la déconnexion à l’école"
+                ],
+                "authFullName_s": [
+                    "Anne Lehmans",
+                    "Camille Capelle",
+                    "Vincent Liquete"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568897,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Pas de développement durable sans développement territorial ? Quelques réflexions à partir des commerces du Pays de Pamiers (département de l’Ariège)",
+                    "No sustainable development without territorial development? Some reflections from retailing in the territory of Pamiers (Ariège 'département', France)"
+                ],
+                "authFullName_s": [
+                    "Michaël Pouzenc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568896,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Du vote des pieds-noirs aux politiques mémorielles à l’égard des rapatriés."
+                ],
+                "authFullName_s": [
+                    "Emmanuelle Comtat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568894,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.relig"
+                ],
+                "title_s": [
+                    "Le Maroc, État fondamentaliste ?",
+                    "Morocco, Fundamentalist State?"
+                ],
+                "authFullName_s": [
+                    "Ali Mostfa"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568893,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Culture numérique partagée et modalités de co-conception des apprentissages en régime numérique"
+                ],
+                "authFullName_s": [
+                    "Camille Capelle",
+                    "Anne Lehmans",
+                    "Vincent Liquete"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568892,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "La valorisation du patrimoine gastronomique : trois exemples dans le Sud-Ouest français",
+                    "Valuation of the gastronomic heritage: three examples in the French Southwest"
+                ],
+                "authFullName_s": [
+                    "Jean Pilleboue",
+                    "Michaël Pouzenc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568891,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Ce que la linguistique historique sur les langues de l'Asie du Sud-Est doit à André-Georges Haudricourt"
+                ],
+                "authFullName_s": [
+                    "Michel Ferlus"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568890,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Dictionnaire du commerce et de l'aménagement (notices) : Commerce rural, Désertification commerciale, Multiple rural, Marque de distributeur",
+                    "Dictionary of retailing and regional planning (notes): Rural retailing, Commercial desertification, Rural multi-shop, Store brand."
+                ],
+                "authFullName_s": [
+                    "Michaël Pouzenc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568888,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Nous essayons de mieux prédire l’effet d’hétérosis"
+                ],
+                "authFullName_s": [
+                    "Julie Fievet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568887,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Modélisation et simulation numérique de la fragmentation des matériaux ligno-cellulosiques"
+                ],
+                "authFullName_s": [
+                    "Xavier Frank",
+                    "Jean-Yves Delenne",
+                    "Abdellatif Barakat",
+                    "Abdelkrim Sadoudi",
+                    "Frederic Mabille",
+                    "Cecile Barron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568880,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Le terroir dans les rayons des hypermarchés. Le fromage de chèvre",
+                    "The terroir in the shelves of hypermarkets. The goat cheese"
+                ],
+                "authFullName_s": [
+                    "Michaël Pouzenc",
+                    "Jean Pilleboue"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568866,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Commerce et développement durable",
+                    "Retailing and sustainable development"
+                ],
+                "authFullName_s": [
+                    "Jean Soumagne",
+                    "Arnaud Gasnier",
+                    "Michaël Pouzenc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568865,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Le PISA : quelques paradoxes d'une évaluation des compétences en littéracie"
+                ],
+                "authFullName_s": [
+                    "Bertrand Daunay",
+                    "Daniel Bart"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568863,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Le fonctionnement du discours sur l'école d'une évaluation internationale : retour sur Les Blagues à PISA"
+                ],
+                "authFullName_s": [
+                    "Daniel Bart",
+                    "Bertrand Daunay"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568862,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info",
+                    "2.shs.info.econ",
+                    "0.shs",
+                    "1.shs.info",
+                    "2.shs.info.droi",
+                    "0.shs",
+                    "1.shs.info",
+                    "2.shs.info.soci",
+                    "0.shs",
+                    "1.shs.info",
+                    "2.shs.info.orga"
+                ],
+                "title_s": [
+                    "Données ouvertes et redéfinition de la culture de l’information dans les organisations"
+                ],
+                "authFullName_s": [
+                    "Anne Lehmans"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568861,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info",
+                    "2.shs.info.soci",
+                    "0.shs",
+                    "1.shs.info",
+                    "2.shs.info.educ"
+                ],
+                "title_s": [
+                    "La formation face aux risques numériques : bricolages, improvisations et résilience institutionnelle liés aux usages des données ouvertes La formation face aux risques numériques : bricolages, improvisations et résilience institutionnelle liés aux usages des données ouvertes"
+                ],
+                "authFullName_s": [
+                    "Camille Capelle",
+                    "Anne Lehmans",
+                    "Karel Soumagnac",
+                    "Franc Morandi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568859,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Lohengrin à Rouen (1891)"
+                ],
+                "authFullName_s": [
+                    "Yannick Simon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568857,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Le tour de France par Lohengrin (1891)"
+                ],
+                "authFullName_s": [
+                    "Yannick Simon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568856,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info",
+                    "2.shs.info.soci",
+                    "0.shs",
+                    "1.shs.info",
+                    "2.shs.info.educ"
+                ],
+                "title_s": [
+                    "Affiliations numériques et postures enseignantes : vers une redéfinition de la communauté d’apprentissage ?"
+                ],
+                "authFullName_s": [
+                    "Anne Lehmans",
+                    "Anne Cordier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568855,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Concerts de la Pléiade (1943-1947)"
+                ],
+                "authFullName_s": [
+                    "Yannick Simon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568854,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Concerts de musique de chambre à Angers (1864-1877)"
+                ],
+                "authFullName_s": [
+                    "Yannick Simon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568852,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Pelléas et Mélisande à l’Opéra-Comique sous l’Occupation"
+                ],
+                "authFullName_s": [
+                    "Yannick Simon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568849,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Société de l’Harmonie sacrée (1873-1875)"
+                ],
+                "authFullName_s": [
+                    "Yannick Simon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568839,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "« Enquêteur, enquêté : quelle quête et pour qui ? »"
+                ],
+                "authFullName_s": [
+                    "Laurent Douzou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568836,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "« \"Mais vous êtes un véritable Bottin, mon cher.\" Un inaccessible objet de convoitise : la mémoire selon Modiano »"
+                ],
+                "authFullName_s": [
+                    "Laurent Douzou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568833,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "« De l’histoire orale à une \"idéologie du témoignage\" : autopsie d’une régression »"
+                ],
+                "authFullName_s": [
+                    "Laurent Douzou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568832,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "« Ce que nous disent des écrits épars, rescapés du temps de la lutte clandestine… »"
+                ],
+                "authFullName_s": [
+                    "Laurent Douzou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568831,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "« La Résistance à Lyon (1940-1944) »"
+                ],
+                "authFullName_s": [
+                    "Laurent Douzou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568829,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "« Le rôle des historiens dans la transmission de la mémoire des comportements collectifs »"
+                ],
+                "authFullName_s": [
+                    "Laurent Douzou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568828,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "« Le mythe du mythe de la Résistance »"
+                ],
+                "authFullName_s": [
+                    "Laurent Douzou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568827,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "« \"Tout commença par un mystère de légende\". Une relecture de l’oraison funèbre du 19 décembre 1964 »"
+                ],
+                "authFullName_s": [
+                    "Laurent Douzou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568826,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "« Le statut du témoin au prisme de la collecte de la Commission d’histoire de l’Occupation et de la Libération de la France »"
+                ],
+                "authFullName_s": [
+                    "Laurent Douzou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568823,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Enseigner la Résistance, Laurent Douzou, Tristan Lecoq (dir.), Canopé éditions, 2016, 159 p."
+                ],
+                "authFullName_s": [
+                    "Laurent Douzou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568822,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "« Les mémoires emboitées de la Résistance »"
+                ],
+                "authFullName_s": [
+                    "Laurent Douzou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568821,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Les concerts populaires au Havre (1892-1913)"
+                ],
+                "authFullName_s": [
+                    "Yannick Simon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568820,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "« Les questions posées par les historiens d’aujourd’hui aux résistants d’hier »"
+                ],
+                "authFullName_s": [
+                    "Laurent Douzou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568819,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Concerts Lamoureux (1881-1899)"
+                ],
+                "authFullName_s": [
+                    "Yannick Simon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568817,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Les Centres Educatifs Fermés : de la clôture institutionnelle à l’espace éducatif"
+                ],
+                "authFullName_s": [
+                    "Catherine Lenzi",
+                    "Philip Milburn"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568814,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Grand Festival Mozart (Paris, 30 novembre au 7 décembre 1941)"
+                ],
+                "authFullName_s": [
+                    "Yannick Simon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568812,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Ordre ou désordre"
+                ],
+                "authFullName_s": [
+                    "D Lejeune"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568811,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.stat",
+                    "0.stat",
+                    "1.stat.ap"
+                ],
+                "title_s": [
+                    "Les bases de données en texte intégral. Réalisation et diffusion."
+                ],
+                "authFullName_s": [
+                    "Étienne Brunet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568809,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Le développement urbain de Bosra de l'époque nabatéenne à l'époque byzantine : bilan des recherches françaises 1981-2002"
+                ],
+                "authFullName_s": [
+                    "Thibaud Fournet",
+                    "Pierre-Marie Blanc",
+                    "Jean-Marie Dentzer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568808,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Les premiers concerts populaires à Angers (1864-1865)"
+                ],
+                "authFullName_s": [
+                    "Yannick Simon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568803,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Tell el-Herr, Taposiris Magna et les bains de l'Egypte gréco-romaine"
+                ],
+                "authFullName_s": [
+                    "Thibaud Fournet",
+                    "Bérangère Redon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568800,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Le service civique combiné comme dispositif de remédiation sur l'insertion sociale et professionnelle de jeunes « décrocheurs » : notion de reconnaissance"
+                ],
+                "authFullName_s": [
+                    "Isabelle Mahé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568798,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Un site mésolithique à Kalhausen"
+                ],
+                "authFullName_s": [
+                    "Bernard Geyer",
+                    "Jean-Paul Petit",
+                    "Jean Sainty"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568797,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Editorial du numéro spécial sur la détection de ruptures"
+                ],
+                "authFullName_s": [
+                    "E. Lebarbier",
+                    "C. Lévy-Leduc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568792,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sp"
+                ],
+                "title_s": [
+                    "L’innovation dans les Lois de Financement de la Sécurité Sociale (LFSS 1997-2016)",
+                    "Innovation in the french Social Security Financing Laws (1997-2016)"
+                ],
+                "authFullName_s": [
+                    "Pierre Chancogne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568788,
+                "domain_s": [
+                    "0.chim",
+                    "1.chim.theo",
+                    "0.chim",
+                    "1.chim.ther"
+                ],
+                "title_s": [
+                    "Modélisation de molécules organiques hétérocycliques biologiquement actives par des méthodes QSAR/QSPR. Recherche de nouveaux médicaments",
+                    "Modeling of biologically active heterocyclic organic molecules by QSAR / QSPR methods. Research for new drugs"
+                ],
+                "authFullName_s": [
+                    "Samir Chtita"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568786,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Opportunités et antisémitisme. Le logement à Paris, 1943-1944"
+                ],
+                "authFullName_s": [
+                    "Isabelle Backouche",
+                    "Sarah Gensburger",
+                    "Eric Le Bourhis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568785,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Quelques précisions concernant la notion de communauté"
+                ],
+                "authFullName_s": [
+                    "Cherry Schrecker"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568784,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "P306: Un régime hyperprotéique pendant la gestation est un facteur de sensibilité de la progéniture femelle à la composition du régime après le sevrage chez le rat"
+                ],
+                "authFullName_s": [
+                    "C. Desclée Demaredsous",
+                    "C. Delteil",
+                    "Blachier F.",
+                    "P. Barbillon",
+                    "T. Mary-Huard",
+                    "D. Tomé",
+                    "R. Oozer",
+                    "A.-M. Davila"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568782,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "«Ferdinand Denis - Journal de mon voyage au Jequitinhonha» Présentation, transcription, notes et annexes"
+                ],
+                "authFullName_s": [
+                    "Georges Orsoni"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568778,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Alvaro Florez Estrada 1766-1853 ou le libéralisme espagnol à l'épreuve de l'Histoire"
+                ],
+                "authFullName_s": [
+                    "Charles Lancha"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568775,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-wb",
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.stat",
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "En quête d’enquêtes pour mise à disposition"
+                ],
+                "authFullName_s": [
+                    "Anne Both",
+                    "Sarah Cadorel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568771,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Des sociologues chez les médecins : représentations croisées des disciplines et des pratiques"
+                ],
+                "authFullName_s": [
+                    "Cherry Schrecker",
+                    "Ingrid Voléry"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568765,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Charles de Villers et son Essai sur l’esprit et l’influence de la Réformation de Luther (1803) : une vision kantienne de l’histoire ?"
+                ],
+                "authFullName_s": [
+                    "Catherine Julliard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568763,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Validation et Explication dans les systèmes à base de connaissances"
+                ],
+                "authFullName_s": [
+                    "L. Charnay",
+                    "Juliette Dibie",
+                    "S. Loiseau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568761,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Le registre trivial dans les Moralische Schildereyen (1749-1752) de Johann Michael von Loen : entre Molière et La Bruyère ?"
+                ],
+                "authFullName_s": [
+                    "Catherine Julliard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568759,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "J.C. Gottsched et son rejet de la trivialité dans la comédie : le prisme de Fénelon et de Boileau"
+                ],
+                "authFullName_s": [
+                    "Catherine Julliard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568758,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "C. Thomasius et son Discours de l’imitation des Français (1687) : un plaidoyer gallophile dans un contexte gallophobe"
+                ],
+                "authFullName_s": [
+                    "Catherine Julliard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568755,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.spee",
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "La complexité : concept et enjeux pour les interventions de santé publique",
+                    "Complexity: concept and challenges for public health interventions"
+                ],
+                "authFullName_s": [
+                    "Victoria Pagani",
+                    "Joëlle Kivits",
+                    "Minary Laetitia",
+                    "Linda Cambon",
+                    "Frédérique Claudot",
+                    "Alla Francois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568754,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "J.M. von Loen et ses Moralische Schildereyen : à l’école des moralistes français ?"
+                ],
+                "authFullName_s": [
+                    "Catherine Julliard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568753,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Traiter une dyspnée réfractaire : discussion éthique"
+                ],
+                "authFullName_s": [
+                    "Béhara Josyane",
+                    "Courtault Catherine",
+                    "Dionisio Marlène",
+                    "Kemp Mireille",
+                    "Krakowski Ivan",
+                    "Leonhard Julie",
+                    "Marrion Bertrand",
+                    "Montangea Fabienne",
+                    "Nué Angeline",
+                    "Bruno Py",
+                    "Rousselot Hubert",
+                    "Cherry Schrecker",
+                    "Stinès Joseph"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568751,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.es"
+                ],
+                "title_s": [
+                    "L'inondation de la Touloubre (Bouches-du-Rhône) de septembre 1993 dans son contexte historique"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Ballais",
+                    "Thierry Torres",
+                    "Mirabelle Fiandino"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568750,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Emblèmes et jeux d’enfants dans la littérature emblématique nord-néerlandaise, de Jacob Cats à Jan Luyken"
+                ],
+                "authFullName_s": [
+                    "Patrick Duval"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568746,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Corps du péché et \"scène du monde\" - Jan Steen ou les paradoxes apparents de la morale calviniste hollandaise"
+                ],
+                "authFullName_s": [
+                    "Patrick Duval"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568744,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Les analyses de Georg Brandes de la ‘patrioterie’ en France et en Allemagne à la veille de la Première Guerre mondiale"
+                ],
+                "authFullName_s": [
+                    "Annie Bourguignon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568740,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Un paradoxe maistrien de plus ? Joseph de Maistre égérie des Libéraux, (pp. 67-104)"
+                ],
+                "authFullName_s": [
+                    "Bruno Berthier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568738,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Marcel Réja et les artistes scandinaves"
+                ],
+                "authFullName_s": [
+                    "Annie Bourguignon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568737,
+                "domain_s": [
+                    "0.sde",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "La catastrophe de Vaison- la-Romaine (22 septembre 1992) : une inondation dans un géosystème anthropisé"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Ballais",
+                    "Paul Ségura"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568733,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Le roman de journaliste"
+                ],
+                "authFullName_s": [
+                    "Annie Bourguignon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568730,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Stockholm dans Götiska rummen et Svarta fanor"
+                ],
+                "authFullName_s": [
+                    "Annie Bourguignon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568728,
+                "domain_s": [
+                    "0.sde",
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.gm"
+                ],
+                "title_s": [
+                    "Apparition et évolution de roubines à Draix",
+                    "Formation and evolution of the Draix badlands"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Ballais"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568724,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Un grand nom du journalisme norvégien des années 1940 : Willy Brandt"
+                ],
+                "authFullName_s": [
+                    "Annie Bourguignon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568723,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "La communauté : histoire critique d’un concept sociologique"
+                ],
+                "authFullName_s": [
+                    "Cherry Schrecker"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568722,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "La coopération entre entreprises de tailles différentes : avantages et limites"
+                ],
+                "authFullName_s": [
+                    "Sonia Adam-Ledunois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568720,
+                "domain_s": [
+                    "0.sde",
+                    "0.sdv",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Les résistances aux insecticides, antiparasitaires, antibiotiques..."
+                ],
+                "authFullName_s": [
+                    "Nathalie Ruaux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568719,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Contribution à la sociologie de l’action : Alfred Schütz"
+                ],
+                "authFullName_s": [
+                    "Cherry Schrecker"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568718,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Traduction et édition critique (bilingue) de : August Strindberg : Le Chemin de Damas I"
+                ],
+                "authFullName_s": [
+                    "Annie Bourguignon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568717,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Moyennes entreprises : l’indépendance en question"
+                ],
+                "authFullName_s": [
+                    "Sonia Adam-Ledunois",
+                    "Fabrice Le Vigoureux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568716,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Ulla Lena LUNDBERG"
+                ],
+                "authFullName_s": [
+                    "Annie Bourguignon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568715,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Le Sápmi et les débuts du reportage moderne : Ester Blenda Nordström et le peuple des kåtor"
+                ],
+                "authFullName_s": [
+                    "Annie Bourguignon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568712,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "La coopération grandes entreprises/PME : une option délibérée pour la moyenne entreprise ?"
+                ],
+                "authFullName_s": [
+                    "Sonia Adam-Ledunois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1568711,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Ester Blenda Nordström"
+                ],
+                "authFullName_s": [
+                    "Annie Bourguignon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1568710,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Méthode interactive d’enseignement des Études et Recherches Commerciales"
+                ],
+                "authFullName_s": [
+                    "Sonia Adam-Ledunois",
+                    "Laure Jacquemier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFW/P0F"
+}

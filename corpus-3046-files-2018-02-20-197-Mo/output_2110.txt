@@ -1,0 +1,1862 @@
+{
+    "response": {
+        "numFound": 515923,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1005815,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Ingestion de particules solides dans un roulement hybride"
+                ],
+                "authFullName_s": [
+                    "Vincent Strubel",
+                    "Nicolas Fillot",
+                    "Fabrice Ville",
+                    "Philippe Vergne",
+                    "Alexandre Mondelin",
+                    "Yves Mahéo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005811,
+                "title_s": [
+                    "La tyrannie de la transparence"
+                ],
+                "authFullName_s": [
+                    "Gérard Wacjman"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005808,
+                "title_s": [
+                    "Les séances courtes"
+                ],
+                "authFullName_s": [
+                    "Gérard Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005805,
+                "title_s": [
+                    "La forclusion du Nom-du-Père"
+                ],
+                "authFullName_s": [
+                    "Gérard Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005804,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-cr"
+                ],
+                "title_s": [
+                    "Une plateforme de dématérialisation de prépaiement innovante"
+                ],
+                "authFullName_s": [
+                    "Pascal Urien",
+                    "Marc Pasquet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005794,
+                "title_s": [
+                    "Malaise dans la civilisation"
+                ],
+                "authFullName_s": [
+                    "Gérard Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005789,
+                "title_s": [
+                    "Psychanalyse des enfants"
+                ],
+                "authFullName_s": [
+                    "Gérard Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005783,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hisphilso",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Le crâne de la Parisienne. Jenny d'Héricourt contre les premiers sociologues"
+                ],
+                "authFullName_s": [
+                    "Arlette Gautier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1005780,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-lg"
+                ],
+                "title_s": [
+                    "Apprentissage des réseaux possibilistes à partir de données: un survol"
+                ],
+                "authFullName_s": [
+                    "Maroua Haddad",
+                    "Nahla Ben Amor",
+                    "Philippe Leray"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005777,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-lg"
+                ],
+                "title_s": [
+                    "Apprentissage de modèles relationnels probabilistes par factorisation non-négative de matrices"
+                ],
+                "authFullName_s": [
+                    "Anthony Coutant",
+                    "Philippe Leray",
+                    "Hoel Le Capitaine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005776,
+                "domain_s": [
+                    "0.stat",
+                    "1.stat.ml"
+                ],
+                "title_s": [
+                    "Adaptation de domaine de vote de majorité par auto-étiquetage non itératif"
+                ],
+                "authFullName_s": [
+                    "Emilie Morvant"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005775,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-lg"
+                ],
+                "title_s": [
+                    "Évaluation des algorithmes d'apprentissage de structure pour les réseaux bayésiens dynamiques."
+                ],
+                "authFullName_s": [
+                    "Ghada Trabelsi",
+                    "Philippe Leray",
+                    "Mounir Ben Ayed",
+                    "Adel Alimi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005774,
+                "title_s": [
+                    "L'avenir d'une illusion"
+                ],
+                "authFullName_s": [
+                    "Gérard Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005772,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-lg"
+                ],
+                "title_s": [
+                    "La génération aléatoire de réseaux bayésiens relationnels"
+                ],
+                "authFullName_s": [
+                    "Mouna Ben Ishak",
+                    "Philippe Leray",
+                    "Nahla Ben Amor"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005771,
+                "title_s": [
+                    "Les actes manqués"
+                ],
+                "authFullName_s": [
+                    "Gérard Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005770,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.astr",
+                    "2.phys.astr.im",
+                    "0.sdu",
+                    "1.sdu.astr",
+                    "2.sdu.astr.im"
+                ],
+                "title_s": [
+                    "Amélioration de la qualité des images obtenues par optique adaptative et application à l'étude des noyaux actifs de galaxie",
+                    "Improvement on the quality of the images obtained with adaptive optics and application to the study of the active galactic nuclei"
+                ],
+                "authFullName_s": [
+                    "Jonathan Exposito"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005768,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.ther",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.ther"
+                ],
+                "title_s": [
+                    "Modélisation d'une façade active comportant un Matériau à Changement de Phase"
+                ],
+                "authFullName_s": [
+                    "Marcella Veggi",
+                    "Joseph Virgone",
+                    "Stéphanie Giroux-Julien"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005766,
+                "title_s": [
+                    "Moments cruciaux"
+                ],
+                "authFullName_s": [
+                    "Gérard Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005764,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.ther",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.ther"
+                ],
+                "title_s": [
+                    "Prédictibilité des performances énergétiques de double-peaux photovoltaïques-thermiques à grande échelle et en conditions réelles"
+                ],
+                "authFullName_s": [
+                    "Léon Gaillard",
+                    "Christophe Ménézo",
+                    "Stéphanie Giroux-Julien",
+                    "Hervé Pabiou",
+                    "Rémi Le Berre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005763,
+                "title_s": [
+                    "Psychanalyse et politique"
+                ],
+                "authFullName_s": [
+                    "Gérard Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005761,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-cr"
+                ],
+                "title_s": [
+                    "Procédé de génération et d'utilisation d'un titre dématérialisé dans un dispositif portable et système de gestion de titres correspondant"
+                ],
+                "authFullName_s": [
+                    "Marc Pasquet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "PATENT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005759,
+                "title_s": [
+                    "Que peut la psychanalyse ?"
+                ],
+                "authFullName_s": [
+                    "Gérard Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005758,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Raisons de non consultation et/ou de non satisfaction de la consultation chez les migraineux : étude qualitative sur le discours de migraineux hors d'une filières de soins"
+                ],
+                "authFullName_s": [
+                    "Émilie Piquet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005757,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.ther",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.ther"
+                ],
+                "title_s": [
+                    "Modélisation et simulation thermique d'un bâtiment équipé d'une façade photovoltaïque ventilée"
+                ],
+                "authFullName_s": [
+                    "Syamimi Saadon",
+                    "Léon Gaillard",
+                    "Christophe Ménézo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005753,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.ther",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.ther"
+                ],
+                "title_s": [
+                    "Modélisation du productible d'un module photovoltaique en silicium cristallin en fonction des contraintes climatiques"
+                ],
+                "authFullName_s": [
+                    "Lucas Weiss",
+                    "Mohamed Amara",
+                    "Fabien Lubineau",
+                    "Christophe Ménézo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005752,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Transformation de l'identité maya et planification familiale au Yucatan"
+                ],
+                "authFullName_s": [
+                    "Arlette Gautier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1005747,
+                "title_s": [
+                    "Caractérisation diélectrique des matériaux de construction dans le domaine des hyperfréquences"
+                ],
+                "authFullName_s": [
+                    "M.D. Belrhiti",
+                    "S. Bri",
+                    "A. Nakheli",
+                    "Ahmed Mamouni"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005743,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-cr"
+                ],
+                "title_s": [
+                    "Procédé et système pour exécuter une transaction sans contact autorisant de multiples applications et de multiples instances d'une même application"
+                ],
+                "authFullName_s": [
+                    "Vincent Alimi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "PATENT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005731,
+                "title_s": [
+                    "Mesure de la permittivité complexe du polydimethylsiloxane (PDMS) jusqu'à 220 GHz pour la mise en oeuvre d'une électronique souple"
+                ],
+                "authFullName_s": [
+                    "Pierre-Yves Cresson",
+                    "Yovan Orlic",
+                    "Jean-François Legier",
+                    "Erick Paleczny",
+                    "Luc Dubois",
+                    "Philippe Coquet",
+                    "Nicolas Tiercelin",
+                    "Sami Hage-Ali",
+                    "Philippe Pernod",
+                    "Vladimir Preobrazhensky",
+                    "Tuami Lasri"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005725,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Contribution à la caractérisation des stades tardifs de la maturation des graines de Medicago truncatula : une étude physiologique et biochimique pour comprendre la longévité",
+                    "Characterisation of the later stages of seed maturation in Medicago truncatula: a physiological and biochemical study to understand longevity"
+                ],
+                "authFullName_s": [
+                    "Emilie Chatelain"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005722,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.ag",
+                    "0.info",
+                    "1.info.info-cg"
+                ],
+                "title_s": [
+                    "Prise en compte de la complexité géométrique des modèles structuraux dans des méthodes de maillage fondées sur le diagramme de Voronoï",
+                    "Accounting for the geometrical complexity of geological structural modelsin Voronoi-based meshing methods"
+                ],
+                "authFullName_s": [
+                    "Jeanne Pellerin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005713,
+                "title_s": [
+                    "Correlative light atomic force electron microscopy (CLAFEM) : imagerie d'organites et de micro-organismes intracellulaires"
+                ],
+                "authFullName_s": [
+                    "Michka Popoff",
+                    "Sébastien Janel",
+                    "Nicolas Barois",
+                    "Antonino Bongiovanni",
+                    "Elisabeth Werkmeister",
+                    "Frank Lafont"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005703,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Sensibilité, sensualité, sexualité, sentiment, et situation de handicap : Quelques réflexions philosophiques"
+                ],
+                "authFullName_s": [
+                    "Jérôme Goffette"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005697,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.nano"
+                ],
+                "title_s": [
+                    "Conception de transistors MOS haute tension (1200 Volts) à tranchées profondes"
+                ],
+                "authFullName_s": [
+                    "Loïc Théolier",
+                    "Karine Isoird",
+                    "Frédéric Morancho",
+                    "Jaume Roig Guitart"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005696,
+                "title_s": [
+                    "Intégration hétérogène de systèmes communicants CMOS-SOI en gamme millimétrique"
+                ],
+                "authFullName_s": [
+                    "Justine Philippe",
+                    "Emmanuel Dubois",
+                    "François Danneville",
+                    "Daniel Gloria"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005693,
+                "title_s": [
+                    "Quand un sujet moderne préfère la finalité à la causalité"
+                ],
+                "authFullName_s": [
+                    "Dominique Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005687,
+                "title_s": [
+                    "Le désordre familial et les symptômes de l'enfant"
+                ],
+                "authFullName_s": [
+                    "Dominique Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005675,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Les professionnels de santé au Yucatan (Mexique) : des acteurs de la lutte contre les violences faites aux femmes ou des auteurs de violences ?"
+                ],
+                "authFullName_s": [
+                    "Arlette Gautier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1005672,
+                "title_s": [
+                    "Métasurfaces absorbantes flexibles en ondes millimétriques"
+                ],
+                "authFullName_s": [
+                    "Ludovic Burgnies",
+                    "Jianping Hao",
+                    "Colin Mismer",
+                    "Guillaume Ducournau",
+                    "Eric Lheurette",
+                    "Didier Lippens"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005664,
+                "title_s": [
+                    "Métasurface absorbante parfaite à base de cubes ferroélectriques distribués aléatoirement"
+                ],
+                "authFullName_s": [
+                    "Véronique Sadaune",
+                    "Ludovic Burgnies",
+                    "Eric Lheurette",
+                    "Jianping Hao",
+                    "Didier Lippens"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005658,
+                "title_s": [
+                    "Les remaniements de l'adolescence"
+                ],
+                "authFullName_s": [
+                    "Dominique Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005656,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.msmeca",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.msmeca"
+                ],
+                "title_s": [
+                    "Caractérisation in situ de l'endommagement volumique par spectroscopie Raman et rayon X de différents polypropylènes déformés en traction uniaxiale",
+                    "In situ volume damage characterization by Raman spectroscopy and X-ray of various deformed polypropylene in uniaxial tension"
+                ],
+                "authFullName_s": [
+                    "S. Chaudemanche"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005653,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Quelle citoyenneté pour les femmes ?"
+                ],
+                "authFullName_s": [
+                    "Alisa Del Re",
+                    "Arlette Gautier",
+                    "Jane Jenson",
+                    "Jacqueline Heinen",
+                    "Bérengère Marques-Pereira",
+                    "Martine Spensky"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005652,
+                "title_s": [
+                    "Limite de phallicisme. Attrait de l'abîme"
+                ],
+                "authFullName_s": [
+                    "Dominique Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005649,
+                "title_s": [
+                    "Ce que la psychose enseigne à la psychanalyste"
+                ],
+                "authFullName_s": [
+                    "Dominique Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005641,
+                "title_s": [
+                    "L'addiction : preuve clinique de l'exigence de la jouissance"
+                ],
+                "authFullName_s": [
+                    "Dominique Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005639,
+                "title_s": [
+                    "Dégénérescence de l'ordre symbolique"
+                ],
+                "authFullName_s": [
+                    "Dominique Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005638,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gciv"
+                ],
+                "title_s": [
+                    "Pouzzolanicité de la cendre volcanique de Béni Saf"
+                ],
+                "authFullName_s": [
+                    "M.S. Mansour",
+                    "M.T. Abadlia",
+                    "Raoul Jauberthie",
+                    "Laurent Molez",
+                    "Ibrahim Messaoudene",
+                    "Damien Rangeard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005637,
+                "title_s": [
+                    "Mise en avant de la passe à l'entrée"
+                ],
+                "authFullName_s": [
+                    "Dominique Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005635,
+                "title_s": [
+                    "La valeur du sinthome"
+                ],
+                "authFullName_s": [
+                    "Dominique Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005634,
+                "title_s": [
+                    "Quand le langage ne fait pas semblant : paranoïa, schizophrénie"
+                ],
+                "authFullName_s": [
+                    "Dominique Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005631,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Les droits reproductifs, de la Conférence du Caire aux villages yucatèques"
+                ],
+                "authFullName_s": [
+                    "Arlette Gautier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1005630,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gciv"
+                ],
+                "title_s": [
+                    "Comportement à températures élevées des mortiers avec fibres polypropylène"
+                ],
+                "authFullName_s": [
+                    "Mohammed Ezziane",
+                    "Tahar Kadri",
+                    "Raoul Jauberthie",
+                    "Laurent Molez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005629,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Héloïse au Paraclet, \"sage\" et inconsolée"
+                ],
+                "authFullName_s": [
+                    "Laurence Moulinier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005626,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil",
+                    "0.shs",
+                    "1.shs.relig"
+                ],
+                "title_s": [
+                    "Philosophie, médecine et rhétorique dans l'Invective contre un médecin et le De sui ipsius et multorum ignorantia"
+                ],
+                "authFullName_s": [
+                    "Christian Trottmann"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005611,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gciv"
+                ],
+                "title_s": [
+                    "Formulation, caractérisation des mortiers à base de sable de dune et de ciments aux ajouts minéraux locaux"
+                ],
+                "authFullName_s": [
+                    "Ibrahim Messaoudene",
+                    "Raoul Jauberthie",
+                    "Laurent Molez",
+                    "Abdelghani Naceri"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005610,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gciv"
+                ],
+                "title_s": [
+                    "Essais à la flamme de mortiers renforcés par des fibres de natures différentes"
+                ],
+                "authFullName_s": [
+                    "Mohammed Ezziane",
+                    "Laurent Molez",
+                    "Raoul Jauberthie",
+                    "Damien Rangeard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005609,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gciv"
+                ],
+                "title_s": [
+                    "Estimation du retrait d'un sédiment fluvial - Influence d'un traitement à la chaux"
+                ],
+                "authFullName_s": [
+                    "Magatte Fall",
+                    "Damien Rangeard",
+                    "Laurent Molez",
+                    "Raoul Jauberthie",
+                    "Dulce Izaskun Garay"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005608,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.nrj",
+                    "0.spi",
+                    "1.spi.elec",
+                    "0.spi",
+                    "1.spi.other",
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-s"
+                ],
+                "title_s": [
+                    "Méthodes et outils de caractérisation électrique et magnétique des supraconducteurs",
+                    "Methods and tools for electric and magnetic characterization of superconductors"
+                ],
+                "authFullName_s": [
+                    "Julien Leclerc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005606,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gciv"
+                ],
+                "title_s": [
+                    "Durabilité des bétons fibrés conservés en réseau d'assainissement"
+                ],
+                "authFullName_s": [
+                    "Ourdia Fedaoui-Akmoussi",
+                    "Raoul Jauberthie",
+                    "Laurent Molez",
+                    "Salah Kaci",
+                    "Ourdia Haddad"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005603,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gciv"
+                ],
+                "title_s": [
+                    "Résistance au gel / dégel des BFUHP : compétition entre endommagement et cicatrisation"
+                ],
+                "authFullName_s": [
+                    "Laurent Molez",
+                    "Hui Bian",
+                    "William Prince-Agbodjan"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005602,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gciv"
+                ],
+                "title_s": [
+                    "Effet des fillers de laitier et marbre sur la durabilité des ciments Portland dans des environnements de sulfate"
+                ],
+                "authFullName_s": [
+                    "Ibrahim Messaoudene",
+                    "Raoul Jauberthie",
+                    "Laurent Molez",
+                    "Damien Rangeard",
+                    "Abdelghani Naceri"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005566,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Pratiquer la twittérature à travers la twittécriture : position théorique, mise en pratique et retours d'expérience"
+                ],
+                "authFullName_s": [
+                    "Julien Longhi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005565,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gciv",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Effet des granulats sulfurés sur les résistances mécanique et la durabilité des BHPF"
+                ],
+                "authFullName_s": [
+                    "Aldjia Boutiba",
+                    "Rabah Chaid",
+                    "Raoul Jauberthie",
+                    "Laurent Molez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005564,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gciv",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Effet de la ré-humidification sur les matériaux cimentaires soumis à un incendie"
+                ],
+                "authFullName_s": [
+                    "Ibrahim Messaoudene",
+                    "Laurent Molez",
+                    "Raoul Jauberthie",
+                    "Oussama Kessal",
+                    "Slama Lahcene"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005554,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gciv"
+                ],
+                "title_s": [
+                    "Durabilité des bétons fibrés conservés en réseau d'assainissement"
+                ],
+                "authFullName_s": [
+                    "Ourdia Fedaoui-Akmoussi",
+                    "Raoul Jauberthie",
+                    "Laurent Molez",
+                    "O. Haddad",
+                    "Salah Kaci"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005547,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.relig",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Jean de Berry à l'heure de l'Union. Les Très Riches Heures et la réforme du calendrier à la fin du Grand Schisme"
+                ],
+                "authFullName_s": [
+                    "Jean-Baptiste Lebigue"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005544,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Le combat pour les droits des femmes dans le monde arabe"
+                ],
+                "authFullName_s": [
+                    "Hafidha Chékir"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1005543,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Quelle sécurité alimentaire en Inde ? Dilemmes économiques, socio-politiques et environnementaux."
+                ],
+                "authFullName_s": [
+                    "Frédéric Landy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005541,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gciv",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Murissement des BHPF avec ajout de laitier dans les milieux sulfatés"
+                ],
+                "authFullName_s": [
+                    "Aldjia Boutiba",
+                    "Rabah Chaid",
+                    "Raoul Jauberthie",
+                    "Laurent Molez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005528,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-se"
+                ],
+                "title_s": [
+                    "Contributions à l'automatisation raisonnée de différents processus du test logiciel",
+                    "Contributions to reasoned automation of various processes of software testing"
+                ],
+                "authFullName_s": [
+                    "Lydie Du Bousquet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "HDR",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005527,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-cl",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "La phrase verbale noyau en français"
+                ],
+                "authFullName_s": [
+                    "Gabriel G. Bès"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1005524,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-cl",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Un dictionnaire et une grammaire de composés français"
+                ],
+                "authFullName_s": [
+                    "François Trouilleux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1005517,
+                "title_s": [
+                    "Quelles réponses la psychanalyse apporte ?"
+                ],
+                "authFullName_s": [
+                    "Dominique Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005513,
+                "title_s": [
+                    "L'errance ou quand l'aliénation fait défaut"
+                ],
+                "authFullName_s": [
+                    "Dominique Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005511,
+                "title_s": [
+                    "Grand entretien public avec Alain Prost et Jacques-Alain Miller"
+                ],
+                "authFullName_s": [
+                    "Dominique Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005509,
+                "title_s": [
+                    "Commentaire croisé des textes de la Cause Freudienne : Freud et la jeunesse"
+                ],
+                "authFullName_s": [
+                    "Dominique Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005507,
+                "title_s": [
+                    "Deux modalités cliniques du rapport à l'insupportable"
+                ],
+                "authFullName_s": [
+                    "Dominique Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005506,
+                "title_s": [
+                    "Le corps moderne, le corps appareillé"
+                ],
+                "authFullName_s": [
+                    "Dominique Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005505,
+                "title_s": [
+                    "Adolescents en crise"
+                ],
+                "authFullName_s": [
+                    "Dominique Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005501,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Dépistage de la dénutrition des personnes âgées de plus de 70 ans en ambulatoire. Étude auprès des médecins généralistes en Rhône-Alpes"
+                ],
+                "authFullName_s": [
+                    "Hélène Dalat Rossignol",
+                    "Cécile Chambrier",
+                    "Yves Zerbib"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005495,
+                "title_s": [
+                    "Trouver la logique d'une psychose"
+                ],
+                "authFullName_s": [
+                    "Dominique Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005494,
+                "title_s": [
+                    "Femme, hétérosexuelle et moderne"
+                ],
+                "authFullName_s": [
+                    "Dominique Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005493,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "L'espace au Nouveau Monde"
+                ],
+                "authFullName_s": [
+                    "G.-H. Laffont",
+                    "Arlette Gautier",
+                    "D. Martouzet",
+                    "G. Chamerois",
+                    "N. Bernard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1005492,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.genre",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Sociologie de l'abstention dans huit bureaux de vote parisiens"
+                ],
+                "authFullName_s": [
+                    "Mariette Sineau",
+                    "Janine Mossuz-Lavau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005491,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Coopération entre médecins généralistes et pharmaciens : une revue systématique de la littérature"
+                ],
+                "authFullName_s": [
+                    "Pauline Michot",
+                    "Olivier Catala",
+                    "Irène Supper",
+                    "Roselyne Boulieu",
+                    "Yves Zerbib",
+                    "Cyrille Colin",
+                    "Laurent Letrilliart"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005490,
+                "title_s": [
+                    "La prise analytique"
+                ],
+                "authFullName_s": [
+                    "Dominique Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005486,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-mc",
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Contributions citoyennes qualitatives sur le vécu urbain : l'application Récitoire"
+                ],
+                "authFullName_s": [
+                    "David Noël",
+                    "Marlène Villanova-Oliver",
+                    "Jérôme Gensel",
+                    "Aziz Kali"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005482,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "L'abstentionnisme parisien aux élections municipales, 1965-1977"
+                ],
+                "authFullName_s": [
+                    "Mariette Sineau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005481,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Les sœurs de Solitude. Les femmes esclaves aux Antilles françaises"
+                ],
+                "authFullName_s": [
+                    "Arlette Gautier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1005480,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Origine sociale et comportement politique"
+                ],
+                "authFullName_s": [
+                    "Daniel Boy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005479,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Prématurité de moins de 33 semaines d'aménorrhées et rupture prématurée des membranes : conséquences périnatales et prise en charge. Étude bicentrique Nice-Marseille"
+                ],
+                "authFullName_s": [
+                    "Gwenn-Marie Verzat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005477,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-cl"
+                ],
+                "title_s": [
+                    "Jouer avec des analyseurs syntaxiques"
+                ],
+                "authFullName_s": [
+                    "Éric Villemonte de La Clergerie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1005476,
+                "title_s": [
+                    "L'analyste, un Autre délocalisé"
+                ],
+                "authFullName_s": [
+                    "Dominique Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005473,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.genre"
+                ],
+                "title_s": [
+                    "Les femmes et la politique : les attitudes de gauche des 16-34 ans en milieu urbain"
+                ],
+                "authFullName_s": [
+                    "Mariette Sineau",
+                    "Janine Mossuz-Lavau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005472,
+                "title_s": [
+                    "Des relations familiales à la perte de l'objet"
+                ],
+                "authFullName_s": [
+                    "Dominique Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005471,
+                "title_s": [
+                    "Une expérience psychanalytique dans un centre pour adolescents"
+                ],
+                "authFullName_s": [
+                    "Dominique Miller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1005470,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Sur la notion de culture en anthropologie"
+                ],
+                "authFullName_s": [
+                    "Pascal Perrineau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1005468,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Réflexivité et autoévaluation au sein des équipes pédagogiques d'écoles élémentaires"
+                ],
+                "authFullName_s": [
+                    "Corinne Magdeleine Letin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1005467,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Statut socio-économique, classe d'âge, milieu d'origine et attitudes oppositionnelles"
+                ],
+                "authFullName_s": [
+                    "Janine Mossuz-Lavau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFb+eoD"
+}

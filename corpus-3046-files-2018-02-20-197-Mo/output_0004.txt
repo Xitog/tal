@@ -1,0 +1,1851 @@
+{
+    "response": {
+        "numFound": 515921,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1711893,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Analyse de l'influence d'une protection thermique sur des antennes microruban en bandes L, S et C et leurs lignes d'alimentation"
+                ],
+                "authFullName_s": [
+                    "S. Barraud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711892,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Etude théorique des modes de brouillage envisageables contre des systèmes de radiocommunication militaires et civils"
+                ],
+                "authFullName_s": [
+                    "G. Codebo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711891,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Etude de la transmission du champ électrique dans l'eau de mer : dépouillements expérimentaux"
+                ],
+                "authFullName_s": [
+                    "C. A. Andreani"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711890,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Modélisation et analyse de la fausse alarme due au clutter de mer sur les radars de veille"
+                ],
+                "authFullName_s": [
+                    "B. Basini"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711889,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Etude de l'influence des imperfections instrumentales sur les performances du codage en phase dans les radars ST/MST"
+                ],
+                "authFullName_s": [
+                    "J.-P. Candusso"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711888,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Amélioration du pistage à site bas par association d'un radar et d'un senseur infrarouge"
+                ],
+                "authFullName_s": [
+                    "C. Lombard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711887,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Etude de faisabilité d'un dispositif à fibre optique pour la mesure de propriétés physiques associées à des caractéristiques d'un environnement liquide ou gazeux"
+                ],
+                "authFullName_s": [
+                    "Y. Zaatar"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711886,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Trajectographie passive en acoustique aérienne basée sur l'utilisation du doppler différentiel"
+                ],
+                "authFullName_s": [
+                    "L. Zaid"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711885,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Etude et implantation d'un filtre numérique sur un processeur de traitement du signal pour radar profileur de vent"
+                ],
+                "authFullName_s": [
+                    "O. Couette"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711884,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Influence des parois absorbantes sur les lieux d'impédance des antennes imprimées en simulation TLM"
+                ],
+                "authFullName_s": [
+                    "C. Massa"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711883,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Formation de voies pour antennes acoustiques"
+                ],
+                "authFullName_s": [
+                    "D. Helal"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711882,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Etude et réalisation d'une antenne imprimée"
+                ],
+                "authFullName_s": [
+                    "S. Morand"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711881,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Télédétection de la stabilité atmosphérique par radar VHF"
+                ],
+                "authFullName_s": [
+                    "N. Schneider"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711880,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Application des techniques de formation de faisceaux par le calcul au cas d'un radar de veille moyenne portée. Intérêt opérationnel et type d'architecture"
+                ],
+                "authFullName_s": [
+                    "J. J. Nicolas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711879,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Implantation d'un logiciel de modélisation pour améliorer la précision de mesures de diagramme de rayonnement par translation de l'antenne sous test"
+                ],
+                "authFullName_s": [
+                    "W. Robion"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711878,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Réalisation d'un simulateur de satellite. Etude de la faisabilité de tests hyperfréquences en base compacte"
+                ],
+                "authFullName_s": [
+                    "A. Sangiovanni"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711877,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Antennes à ondes de fuite. Etude théorique et réalisations"
+                ],
+                "authFullName_s": [
+                    "C. Luxey"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711876,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Etude de faisabilité d’un détecteur électromagnétique de mines"
+                ],
+                "authFullName_s": [
+                    "F.-X. Nau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711875,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Antenne combinée pour GSM et GPS"
+                ],
+                "authFullName_s": [
+                    "O. Vivares"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711874,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Modélisation d’antennes imprimées sur des structures coniques : détermination rapide des caractéristiques radioélectriques"
+                ],
+                "authFullName_s": [
+                    "P. Nicotra"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711873,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Alimentation par ligne coplanaire d’antennes microruban : étude par la méthode TLM"
+                ],
+                "authFullName_s": [
+                    "T. Guigo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711872,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Calibration et exploitation d’une base de mesures de S.E.R."
+                ],
+                "authFullName_s": [
+                    "O. Veyrunes"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711871,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Méthode des éléments finis volumiques temporels : étude et validation d’un code de calcul"
+                ],
+                "authFullName_s": [
+                    "P.-Y. Garel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711870,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Réseau d’antennes imprimées disposées sur un cône"
+                ],
+                "authFullName_s": [
+                    "P. Delaigue"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711869,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Apports de l’imagerie radar à ouverture synthétique à l’étude du milieu urbain"
+                ],
+                "authFullName_s": [
+                    "L. Basly"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711868,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Conception Asic"
+                ],
+                "authFullName_s": [
+                    "O. Bosio"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711867,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Réalisation d’un module du logiciel SR3D destiné à synthétiser les dimensions optimales de différents types d’alimentation des antennes"
+                ],
+                "authFullName_s": [
+                    "J. Feneau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711866,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Conception d’un circuit à interfaces diverses pour la téléphonie mobile"
+                ],
+                "authFullName_s": [
+                    "A. Gallegos"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711865,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Echantillonnage des équations de Maxwell"
+                ],
+                "authFullName_s": [
+                    "F. Frontero"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711864,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Titre inconnu"
+                ],
+                "authFullName_s": [
+                    "G L’henaff"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711863,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Capteur d’ondes électromagnétiques à lecture optique"
+                ],
+                "authFullName_s": [
+                    "I. Linardou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711862,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Conception et réalisation d’un module d’émission-réception en technologie coplanaire"
+                ],
+                "authFullName_s": [
+                    "Y. Turki"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711861,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Etude de la possibilité de modéliser une antenne microruban de forme rectangulaire ou circulaire"
+                ],
+                "authFullName_s": [
+                    "K. Srhir"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711860,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Etude des différents problèmes liés à la conformation de réseaux sur des surfaces cylindriques de petit diamètre"
+                ],
+                "authFullName_s": [
+                    "C. Zamponi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711859,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Titre inconnu"
+                ],
+                "authFullName_s": [
+                    "S. Letard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711858,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Interférométrie radar"
+                ],
+                "authFullName_s": [
+                    "J. R. Tozza"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711857,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Etude prospective d’alimentation, sous forme de lignes coplanaires, d’antennes imprimées en utilisant la méthode TLM"
+                ],
+                "authFullName_s": [
+                    "M. Malhas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711856,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Etude du milieu urbain : apports de l’imagerie radar satellitaire"
+                ],
+                "authFullName_s": [
+                    "C. Couvercelle"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711855,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Intégration d’une antenne expérimentale dans un ensemble de réception d’images satellitaires"
+                ],
+                "authFullName_s": [
+                    "O. Constant"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711854,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Modélisation rapide d’antennes imprimées sur des structures conformées de type sphère"
+                ],
+                "authFullName_s": [
+                    "P. Comes"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711853,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Conception et réalisation d’une antenne pour l’imagerie microonde"
+                ],
+                "authFullName_s": [
+                    "E. Guillanton"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711852,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Influence du nombre d’éléments rayonnants sur la polarisation circulaire"
+                ],
+                "authFullName_s": [
+                    "A. Cira"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711851,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Etude des fluctuations de transmissions dans une fibre optique"
+                ],
+                "authFullName_s": [
+                    "V. Doya"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711850,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Simulation électromagnétique de propagation dans le cas des frontières complexes"
+                ],
+                "authFullName_s": [
+                    "A. Gordeev"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711849,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Implantation et gestion de trames sur l’interface ISDN"
+                ],
+                "authFullName_s": [
+                    "L. Gaziello"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711848,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Réalisation d’un logiciel de simulation d’un élément rayonnant placé dans une cavité"
+                ],
+                "authFullName_s": [
+                    "L. Dussopt"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711847,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Mise en place du protocole d'étalonnage d'images visibles AVHRR pour cartographier les teneurs en matière en suspension dans le milieu côtier"
+                ],
+                "authFullName_s": [
+                    "S. Albert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711846,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Titre inconnu"
+                ],
+                "authFullName_s": [
+                    "K. Saimi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711845,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Détection d'ondes atmosphériques par traitement de données obtenues par un radar VHF"
+                ],
+                "authFullName_s": [
+                    "O. Giorgi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711844,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Titre inconnu"
+                ],
+                "authFullName_s": [
+                    "L. Moracchini"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711843,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Simulation (à l'aide du logiciel HFSS) et réalisation d'antennes pour communications avec les mobiles et les liaisons de proximité"
+                ],
+                "authFullName_s": [
+                    "K. Ntanaka"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711842,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Etude et réalisation d'un système à synthèse de fréquence pour récepteur radar S.T. multivoies"
+                ],
+                "authFullName_s": [
+                    "L. Smaini"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711841,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Reconnaissance d'écriture (utilisation des différentes méthodes de filtrage)"
+                ],
+                "authFullName_s": [
+                    "J.-M. Carrere"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711840,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Titre inconnu"
+                ],
+                "authFullName_s": [
+                    "Y. Bole-Feysot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711839,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Titre inconnu"
+                ],
+                "authFullName_s": [
+                    "N. Bo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711838,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Titre inconnu"
+                ],
+                "authFullName_s": [
+                    "J.-M. Glasser"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711837,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Imagerie microonde : reconstruction quantitative du profil de permittivité d'hétérogénéités enterrées. Application à la caractérisation d'objets en génie civil et à la détection de mines antipersonnel"
+                ],
+                "authFullName_s": [
+                    "I. Aliferis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711836,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Titre inconnu"
+                ],
+                "authFullName_s": [
+                    "D. Cardi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711835,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "CEM - Etude de la susceptibilité d'un circuit électronique aux perturbations électromagnétiques rayonnées"
+                ],
+                "authFullName_s": [
+                    "D. Cursoux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711834,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Etude d'une ou plusieurs antennes imprimées souples conformables associée en réseau pour la transmission de données GSM"
+                ],
+                "authFullName_s": [
+                    "C. Castello"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711832,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Improving scanning characteristics of microstrip arrays"
+                ],
+                "authFullName_s": [
+                    "C. Chanlo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711831,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Analyse de modulation de signaux radar : mise en service de méthodes de détection et caractérisation de modulation de phase"
+                ],
+                "authFullName_s": [
+                    "F. Ghio"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711830,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Paramétrage radio et planification de fréquence d'un réseau GSM-DCS"
+                ],
+                "authFullName_s": [
+                    "L. Ammazini"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711829,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Modélisation d'une antenne à réflecteurs bi-grilles"
+                ],
+                "authFullName_s": [
+                    "Ph. Le Thuc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711828,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Conception et réalisation de capteurs pour systèmes d'imagerie microonde"
+                ],
+                "authFullName_s": [
+                    "E. Le Brusq"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711827,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Antennes DVB miniatures pour solutions combinées multistandards"
+                ],
+                "authFullName_s": [
+                    "J. C. Sammut"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711826,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Etude de réseaux périodiques actifs d'antennes imprimées utilisés en réflecteurs (reflectarray) et/ou surfaces sélectives en fréquences"
+                ],
+                "authFullName_s": [
+                    "F. Vivet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711825,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Introduction d'une condition d'impédance dans la formulation et la résolution de problèmes aux limites modélisant des structures rayonnantes"
+                ],
+                "authFullName_s": [
+                    "L. Pisaniello"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711824,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Dimensionnement de charge utile d'observation micro-ondes analyse électromagnétique du phénomène de lumière parasite pour une antenne radiomètre 30 GHz-1000 GHz dans le cadre du projet Planck"
+                ],
+                "authFullName_s": [
+                    "K. Bartolo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711823,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Etude paramétrique de la double antenne Vivaldi avec HFFS"
+                ],
+                "authFullName_s": [
+                    "M. D. Barry"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711822,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Modélisation d'antennes miniatures par la méthode TLM"
+                ],
+                "authFullName_s": [
+                    "H.S. Chu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711821,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Antenne miniature GSM900-DCS1800"
+                ],
+                "authFullName_s": [
+                    "A. Benshain"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711820,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Systèmes d'antennes pour applications automobile"
+                ],
+                "authFullName_s": [
+                    "Y. Cavallin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711819,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Réalisation d'antennes commutables bi-polarisation ou bi-fréquence pour réception/ émission TV satellitaires"
+                ],
+                "authFullName_s": [
+                    "M. Boti"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711813,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Sir Dégaré au château de la damoiselle silencieuse : motifs traditionnels et invention narrative"
+                ],
+                "authFullName_s": [
+                    "Anne Mathieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711810,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.hexp",
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-optics"
+                ],
+                "title_s": [
+                    "Imagerie nanométrique ultra-rapide par diffraction cohérente de rayonnement XUV produit par génération d'harmoniques d'ordre élevés",
+                    "Ultrafast Nanoscale Imaging Using Coherent Diffraction of XUV Produced HHG"
+                ],
+                "authFullName_s": [
+                    "Rémy Cassin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711806,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Une nouvelle méthode de cartographie de l’herbier sous-marin (Hyères, France)",
+                    "A new method of mapping of the submarine herbarium (Hyères, France)Use of an acoustic system of measurement stream prospinner"
+                ],
+                "authFullName_s": [
+                    "Anne-Eleonore Paquier",
+                    "Samuel Meulé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711792,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.museo"
+                ],
+                "title_s": [
+                    "Construire une communauté au service du patrimoine manuscrit: les enjeux du crowdsourcing"
+                ],
+                "authFullName_s": [
+                    "Emmanuelle De Champs"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711765,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Inspecter le littoral français à l’époque moderne"
+                ],
+                "authFullName_s": [
+                    "Sylviane Llinares"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711764,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "L’entretien des « ports de France » à l’époque moderne : techniques, mise en œuvre et innovations (XVIIe-XVIIIe siècles)"
+                ],
+                "authFullName_s": [
+                    "Sylviane Llinares"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711763,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "De l’estran à la digue. Histoire des aménagements portuaires et littoraux XVIe-XXe siècle"
+                ],
+                "authFullName_s": [
+                    "Sylviane Llinares"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711762,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Marine, science et technique : la navalisation de l’Europe et Le vaisseau de guerre : Nicolas Charles Romme, L’Art de la Marine, Paris 1787"
+                ],
+                "authFullName_s": [
+                    "Sylviane Llinares"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711761,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "L'art de naviguer en s'amusant, le nouveau jeu de la Marine au XVIIIe siècle"
+                ],
+                "authFullName_s": [
+                    "Sylviane Llinares"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711760,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Comité, commission et conférence, la praxéologie de la réforme au sein du ministère de la Marine sous Louis XVI"
+                ],
+                "authFullName_s": [
+                    "Sylviane Llinares"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711758,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Bountîles, dix années d’observatoire de la fréquentation : contributions et limites de la recherche",
+                    "Bountîles, ten years of visitor observatory: research contributions and limits"
+                ],
+                "authFullName_s": [
+                    "Ingrid Peuziat",
+                    "Louis Brigand",
+                    "Nicolas Le Corre",
+                    "Solenn Le Berre",
+                    "Cécile Guégan"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711744,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Doing business with the BoP: What to learn from microfinance?"
+                ],
+                "authFullName_s": [
+                    "Asmae Diani"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711743,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Et si l’Entrepreneuriat Social était une affaire de Business Model ? Réflexions à partir de trois études de cas d’entreprises sociales marocaines"
+                ],
+                "authFullName_s": [
+                    "Asmae Diani",
+                    "Julie Tixier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711741,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Insertion et rapports au temps Diversité-VEI, 158, 73-79"
+                ],
+                "authFullName_s": [
+                    "Thérèse Levené"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711739,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Évaluer une expérience de recherche-action de type stratégique à laune du projet institutionnel : quels enseignements pour la transformation sociale ? Recherche-action et transformations sociales, Françoise CRÉZÉ (coord, ), Paris, LHarmattan, pp87-106"
+                ],
+                "authFullName_s": [
+                    "Marie-Renée Verspieren",
+                    "Thérèse Levené"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711738,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Travail social et contrôle social, la fonction de l'éducation spécialisée, Bruxelles : Contradictions, 132 pages."
+                ],
+                "authFullName_s": [
+                    "Thérèse Levené"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711737,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Comportement hydro-mécanique du bois : lien entre la structure du bois et ses déformations hydriques"
+                ],
+                "authFullName_s": [
+                    "Sabine Caré"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711733,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Les stratégies BoP : quelle(s) application(s) en France ?"
+                ],
+                "authFullName_s": [
+                    "Julie Tixier",
+                    "Amélie Notais",
+                    "Asmae Diani"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711732,
+                "domain_s": [
+                    "0.sde"
+                ],
+                "title_s": [
+                    "Utilité du séquençage à haut débit pour évaluer la variabilité de la qualité microbiologique des eaux usées brutes."
+                ],
+                "authFullName_s": [
+                    "Françoise Lucas",
+                    "Adélaïde Roguet",
+                    "Claire Thérial",
+                    "Gonçalves Alexandre",
+                    "Vincent Rocher"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711731,
+                "domain_s": [
+                    "0.sde",
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.be"
+                ],
+                "title_s": [
+                    "Détection par séquençage à haut débit de pathogènes bactériens potentiels dans les lacs urbains en Ile-de-France."
+                ],
+                "authFullName_s": [
+                    "Adélaïde Roguet",
+                    "Claire Thérial",
+                    "Selma Maloufi",
+                    "Adèle Bressy",
+                    "Arnaud Catherine",
+                    "Vinçon-Leite Brigitte",
+                    "Ludwig Jardillier",
+                    "Laurent Moulin",
+                    "Françoise Lucas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711728,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Évaluation et optimisation des propriétés mécaniques et thermiques des bétons de bois : effet des variations hydriques"
+                ],
+                "authFullName_s": [
+                    "Abdessamad Akkaoui",
+                    "Sabine Caré",
+                    "Matthieu Vandamme"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711727,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Diplomaties culturelles et fabrique des identités. Argentine, Brésil, Chili (1919-1946), Rennes, Presses universitaires de Rennes/Institut des Amériques, coll. \"Des Amériques\", 2018"
+                ],
+                "authFullName_s": [
+                    "Juliette Dumont"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711721,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.es"
+                ],
+                "title_s": [
+                    "Dynamique de la contamination virale dans un enivronnement hydrique urbain"
+                ],
+                "authFullName_s": [
+                    "Françoise Lucas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711720,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.es"
+                ],
+                "title_s": [
+                    "Virus entériques : contamination environnementale et devenir"
+                ],
+                "authFullName_s": [
+                    "Prunelle Waldman",
+                    "Sébastien Wurtzer",
+                    "Benoit Prevost",
+                    "Françoise Lucas",
+                    "Laurent Moulin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711719,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Des signes encore et toujours"
+                ],
+                "authFullName_s": [
+                    "Ivani Fusellier-Souza"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1711718,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.es"
+                ],
+                "title_s": [
+                    "Utilité du séquençage à haut débit pour évaluer la variabilité de la qualité microbiologique des eaux usées brutes"
+                ],
+                "authFullName_s": [
+                    "Françoise Lucas",
+                    "Adélaïde Roguet",
+                    "Claire Thérial"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFW5sMG"
+}

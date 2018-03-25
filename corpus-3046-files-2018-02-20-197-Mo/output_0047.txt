@@ -1,0 +1,1916 @@
+{
+    "response": {
+        "numFound": 515921,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1697678,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gciv",
+                    "0.spi",
+                    "1.spi.gciv",
+                    "2.spi.gciv.struct",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation par éléments finis multifibres pour le calcul sismique des structures en béton armé : prise en compte du gauchissement"
+                ],
+                "authFullName_s": [
+                    "Sophie Capdevielle",
+                    "Stéphane Grange",
+                    "Frédéric Dufour",
+                    "Cédric Desprez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697677,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.envir",
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Habiter la nature : ce qu'indiquent les controverses autour de l'écologisme"
+                ],
+                "authFullName_s": [
+                    "Fabrice Flipo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697676,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "La confiance personnelle et le projet. Une lecture luhmannienne"
+                ],
+                "authFullName_s": [
+                    "Frederic Bornarel",
+                    "Sandrine Virgili"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697673,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Charles Oberthür"
+                ],
+                "authFullName_s": [
+                    "Yann Lagadec",
+                    "Bernard Corbé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697670,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.envir"
+                ],
+                "title_s": [
+                    "Peut-on croire aux TIC \"vertes\" ?",
+                    "Can we believe in a \"green\" information and communications technology?"
+                ],
+                "authFullName_s": [
+                    "Fabrice Flipo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697669,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "La cathédrale de Reims et les cathédrales archiépiscopales à l’époque gothique"
+                ],
+                "authFullName_s": [
+                    "Yves Gallet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697664,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "De la recherche à l’action dans le projet HY-Sup : Impact des résultats du projet Hy-sup sur un réseau d’enseignants du supérieur français"
+                ],
+                "authFullName_s": [
+                    "Emmanuelle Villiot Leclercq",
+                    "Geneviève Lameul",
+                    "Nathalie Deschryver"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697660,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Bordeaux, primatiale d’Aquitaine"
+                ],
+                "authFullName_s": [
+                    "Yves Gallet",
+                    "Pierre Ricard",
+                    "Marc Agostino",
+                    "Renée Leulier",
+                    "Pierre Meunier",
+                    "Markus Schlicht",
+                    "Christian Taillard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697659,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "L’usage du web social en enseignement et en recherche : une opportunité pour ré-inventer l’université ?"
+                ],
+                "authFullName_s": [
+                    "Geneviève Lameul"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697658,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Le libre parcours : présences du pittoresque dans les paysages aujourd'hui",
+                    "Le libre parcours : presences of the picturesque in the landscape today"
+                ],
+                "authFullName_s": [
+                    "Philippe Hilaire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697656,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Introduction\" et \"Deux Vietnam: Graham Greene, Mary McCarthy\", p. 7-13, 209-231"
+                ],
+                "authFullName_s": [
+                    "Vincent Giroud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697655,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Évaluation du ressenti des proches de patients admis aux Urgences Adultes du CHU de Pointe-à-Pitre",
+                    "Evaluation of patients’ families experience at the Adult Emergency Room of the Pointe-à-Pitre University Hospital Center"
+                ],
+                "authFullName_s": [
+                    "Florian Duport"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697654,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Analyse énactive de l'activité en trail et ultra-trail : une approche multi-sourcing",
+                    "Enactive analysis of activity in trail and ultra-trail running : a multi-sourcing approach"
+                ],
+                "authFullName_s": [
+                    "Nadège Rochat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697653,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.info",
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.museo"
+                ],
+                "title_s": [
+                    "L'\"orgie\" documentaire ou les débuts chaotiques de la bibliothèque du Bureau international du travail (1920-1937)"
+                ],
+                "authFullName_s": [
+                    "Marine Dhermy-Mairal"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697652,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Héros militaire, culture et société (XIXe-XXe siècles) : Introduction"
+                ],
+                "authFullName_s": [
+                    "Jean De Préneuf",
+                    "Claude D’abzac-Epezy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697651,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Congrès archéologique de France (session 2015 : Côtes-d’Armor)"
+                ],
+                "authFullName_s": [
+                    "Yves Gallet",
+                    "François Heber-Suffrin",
+                    "Éliane Vergnolle"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697649,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Danser sur un volcan\" ?"
+                ],
+                "authFullName_s": [
+                    "Pierre Karila-Cohen"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697648,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gciv",
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-space-ph"
+                ],
+                "title_s": [
+                    "Techniques de calcul de gradient aéro-structure haute-fidélité pour l'optimisation de voilures flexibles",
+                    "High-fidelity aerostructural gradient computation techniques for flexible wing optimization"
+                ],
+                "authFullName_s": [
+                    "Timothée Achard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697646,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Le développement professionnel des enseignants du supérieur à l’usage pédagogique du numérique"
+                ],
+                "authFullName_s": [
+                    "Geneviève Lameul",
+                    "Bernadette Charlier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697645,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Caractérisation des systèmes hydro-climatiques à l'échelle locale dans l'Himalaya népalais",
+                    "Characterization hydro-climatic systems at the local scale in the Nepalese Himalayas"
+                ],
+                "authFullName_s": [
+                    "Judith Eeckman"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697642,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Les accords de Paris : un goût d’inachevée pour les petits espaces insulaires"
+                ],
+                "authFullName_s": [
+                    "Jean-François Hoarau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697641,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "La vraie innovation ne serait-elle pas institutionnelle ?"
+                ],
+                "authFullName_s": [
+                    "Jean-François Hoarau",
+                    "F. Melin-Soucramanien"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697639,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "D’un indice de détection d’anomalies à l’usage des investisseurs, An index of detection of anomalies for investors"
+                ],
+                "authFullName_s": [
+                    "Philippe Bernard",
+                    "Najat El Mekkaoui de Freitas",
+                    "Bertrand Maillet",
+                    "Alejandro Modesto"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697636,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Une évaluation du développement humain pour Mayotte : l’application de l’indicateur de développement humain hybride"
+                ],
+                "authFullName_s": [
+                    "Jean-François Hoarau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697635,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Quand l’union fait la force : un indice de risque systémique, When unity makes strenght: a systemic risk index"
+                ],
+                "authFullName_s": [
+                    "Patrick Kouontchou",
+                    "Bertrand Maillet",
+                    "Alejandro Modesto",
+                    "Sessi Tokpavi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697634,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "La comédie musicale américaine\", p. 139-162"
+                ],
+                "authFullName_s": [
+                    "Vincent Giroud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697633,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Vulnérabilité et adaptation"
+                ],
+                "authFullName_s": [
+                    "Jean-François Hoarau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697632,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Le tourisme en outre-mer. Un moteur pour un développement économique soutenable ?"
+                ],
+                "authFullName_s": [
+                    "Jean-François Hoarau",
+                    "François Hermet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697631,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "L’importance des investissements européens dans la Zone Océan Indien"
+                ],
+                "authFullName_s": [
+                    "Jean-François Hoarau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697630,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Une évaluation de la capacité de résilience en milieu insulaire créolophone : le cas des outremers français"
+                ],
+                "authFullName_s": [
+                    "Jean-François Hoarau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697629,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "La ruralité réunionnaise : les perspectives d’avenir"
+                ],
+                "authFullName_s": [
+                    "Jean-François Hoarau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697628,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Accord commerciaux préférentiels : quels enseignements pour les relations commerciales entre l’UE et les économies de l’Océan Indien"
+                ],
+                "authFullName_s": [
+                    "Jean-François Hoarau",
+                    "L. Didier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697625,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Technologies flexibles et collusion tacite"
+                ],
+                "authFullName_s": [
+                    "Armel Jacques"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697624,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Entre pittoresque et couleur locale"
+                ],
+                "authFullName_s": [
+                    "Pierre Karila-Cohen"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697623,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hisphilso"
+                ],
+                "title_s": [
+                    "Interdisciplinarité et transdisciplinarité à l'épreuve des revues anglophones",
+                    "Interdisciplinarity and Transdisciplinarity Viewed by English-language Journals"
+                ],
+                "authFullName_s": [
+                    "Fabrice Flipo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697622,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Hahn critique musical\", p. 108-128"
+                ],
+                "authFullName_s": [
+                    "Vincent Giroud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697619,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.psy"
+                ],
+                "title_s": [
+                    "Un nouveau départ pour l’enfant en échec scolaire : l' accompagnement à l’école avec l’Épreuve des Trois Arbres et le Cahier de l'Arbre",
+                    "A new start for the child in academic failure : academic support with « L’Épreuve des Trois Arbres » and « Le Cahier de l’Arbre »"
+                ],
+                "authFullName_s": [
+                    "Annie Vigneron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697618,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Les firmes multinationales : un survol de la littérature micro-économique"
+                ],
+                "authFullName_s": [
+                    "Armel Jacques"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697617,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-acc-ph"
+                ],
+                "title_s": [
+                    "Étude de l'injection axiale d'un faisceau d'ions lourds dans un cyclotron compact",
+                    "Heavy ions beam axial injection tudy in a compact cyclotron"
+                ],
+                "authFullName_s": [
+                    "Stéphane Chel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697614,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Former avec le numérique : une catégorisation de dispositifs"
+                ],
+                "authFullName_s": [
+                    "Geneviève Lameul",
+                    "Emmanuelle Villiot Leclercq"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697613,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Observation, Flexibilité et Structures Technologiques des Industries"
+                ],
+                "authFullName_s": [
+                    "Armel Jacques",
+                    "Marcel Boyer",
+                    "Michel Moreaux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697612,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "2.sdv.mhep.geo"
+                ],
+                "title_s": [
+                    "Quel est le positionnement des professionnels de santé face aux violences faites aux femmes durant la grossesse ? Étude prospective, multicentrique descriptive et quantitative menée dans différentes maternités et réseau libéral de la métropole lilloise"
+                ],
+                "authFullName_s": [
+                    "Camille Vincent"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697610,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-gen"
+                ],
+                "title_s": [
+                    "Conception de systèmes cobotiques industriels : approche cognitique : application à la production pyrotechnique au sein d'Ariane Group",
+                    "Industrial cobotic system design : Cognitive engineering approach : Practical application to pyrotechnic manufacturing within Ariane Group"
+                ],
+                "authFullName_s": [
+                    "Theo Moulieres-Seban"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697608,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "La flexibilité technologique : un survol de la littérature"
+                ],
+                "authFullName_s": [
+                    "Armel Jacques"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697607,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Vitalités linguistique et religieuse chez les Néwar bouddhistes de la vallée de Kathmandu",
+                    "Vitality of Language and Religion Among the Buddhist Newars of Kathmandu Valley"
+                ],
+                "authFullName_s": [
+                    "Frédéric Moronval"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697606,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Table ronde : Formation initiale et continue en évaluation des apprentissages, quelle articulation ?"
+                ],
+                "authFullName_s": [
+                    "Josiane Basque",
+                    "Mélanie Ciussi",
+                    "Philippe Dessus",
+                    "Geneviève Lameul"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697604,
+                "domain_s": [
+                    "0.chim",
+                    "0.chim",
+                    "1.chim.radio"
+                ],
+                "title_s": [
+                    "Influence de la température sur la rétention du sélénite par une pâte de ciment altérée et par ses phases pures constitutives",
+                    "Temperature effect onto selenite retention by an altered cement paste and pure cement phases"
+                ],
+                "authFullName_s": [
+                    "Nathalie Mace"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697603,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Lucien Fugère, interprète de Massenet\", p. 131-149"
+                ],
+                "authFullName_s": [
+                    "Vincent Giroud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697602,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.ocean"
+                ],
+                "title_s": [
+                    "Modélisation inverse des flux de CO2 en Amazonie",
+                    "Inverse modeling of CO2 fluxes in Amazonia"
+                ],
+                "authFullName_s": [
+                    "Luis Molina Carpio"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697601,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "L’opinion"
+                ],
+                "authFullName_s": [
+                    "Pierre Karila-Cohen"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697599,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Dispositifs de formation hybrides : nouvelle perspective pour une pédagogie de l'enseignement supérieur"
+                ],
+                "authFullName_s": [
+                    "Geneviève Lameul"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697598,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-acc-ph"
+                ],
+                "title_s": [
+                    "Étude théorique et numérique d'un cyclotron à secteurs sépares en régime de charge d'espace",
+                    "Theoretical and numerical study of cyclotron in space charge conditions"
+                ],
+                "authFullName_s": [
+                    "Viviana Cazoll"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697597,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Le « je », l’enquête et l’historien"
+                ],
+                "authFullName_s": [
+                    "Pierre Karila-Cohen"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697595,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Maupas, ou le métier de préfet"
+                ],
+                "authFullName_s": [
+                    "Pierre Karila-Cohen"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697594,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Le TIDM face aux mesures prises par l’Etat côtier pour sécuriser ses installations en ZEE : L’affaire de l’Arctic Sunrise"
+                ],
+                "authFullName_s": [
+                    "Jean-Christophe Martin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697593,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Une histoire sans les chefs est-elle possible ?"
+                ],
+                "authFullName_s": [
+                    "Pierre Karila-Cohen"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697587,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Éloge de la désobéissance"
+                ],
+                "authFullName_s": [
+                    "Pierre Karila-Cohen",
+                    "Patrick Fridenson"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697586,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.museo",
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Le décor héraldique dans quelques manuscrits hainuyers de la fin du XVe siècle"
+                ],
+                "authFullName_s": [
+                    "Anne-Marie Legaré"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697585,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "L'opéra français au XXe siècle: une tentative de parcours\", p. 35-49."
+                ],
+                "authFullName_s": [
+                    "Vincent Giroud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697576,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "« Laure Junot, ambassadrice de France à la cour du roi pétaud », in : Penjon, Jacqueline (dir.), Les Fêtes de la cour dans le royaume lusophone et dans l’empire portugais, Cahiers du CREPAL n° 17, Paris, Presses de la Sorbonne Nouvelle, 2013, p. 59-73."
+                ],
+                "authFullName_s": [
+                    "Maria Cristina Pais Simon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697575,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Cornélie Falcon: une interprète d'exception"
+                ],
+                "authFullName_s": [
+                    "Vincent Giroud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697574,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "“ Le paysage à l’épreuve de l’intrigue dans Novelas do Minho de Camilo Castelo Branco ”. Communication présentée à la journée d’études du CREPAL, juin 2008"
+                ],
+                "authFullName_s": [
+                    "Maria Cristina Pais Simon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697573,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.spee",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Interroger la littératie en santé dans une perspective de transformations individuelles et sociales"
+                ],
+                "authFullName_s": [
+                    "Maryvette Balcou-Debussche"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697572,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "« Paysages, paysage : Viagens na Minha Terra d’Almeida Garrett ». Communication présentée au CREPAL, novembre 2007"
+                ],
+                "authFullName_s": [
+                    "Maria Cristina Pais Simon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697570,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "The Home and the World : cosmopolitisme et insularité dans le roman anglais d’avant-guerre\", p. 167-179"
+                ],
+                "authFullName_s": [
+                    "Vincent Giroud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697569,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "“ La satire dans Eusébio Macário de Camilo Castelo Branco ”. Communication présentée à la journée d’études du CREPAL, juin 2005."
+                ],
+                "authFullName_s": [
+                    "Maria Cristina Pais Simon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697568,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Des périphéries sous influence : l’attraction économique de l’agglomération parisienne, accélérateur du changement social ?",
+                    "Suburbs under influence: the economic attractiveness of the Paris agglomeration, accelerator of social change?"
+                ],
+                "authFullName_s": [
+                    "Didier Desponds",
+                    "Laurent Gatineau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697567,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Poulenc au Met\", p. 167-178"
+                ],
+                "authFullName_s": [
+                    "Vincent Giroud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697566,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "La Reliure au Moyen âge"
+                ],
+                "authFullName_s": [
+                    "Anne-Marie Legaré"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697564,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.stat"
+                ],
+                "title_s": [
+                    "Violence et non-violence à Madagascar : réflexion sur les formes de régulation sociale"
+                ],
+                "authFullName_s": [
+                    "Mireille Razafindrakoto",
+                    "François Roubaud",
+                    "Jean-Michel Wachsberger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697562,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "« Les lettres du couvent de la marquise d’Alorna: un exemple de correspondance familière et familiale à l’époque classique ». Communication présentée à la Journée d’études du CREPAL, juin 2003."
+                ],
+                "authFullName_s": [
+                    "Maria Cristina Pais Simon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697560,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "N. Badoud, Le temps de Rhodes. Une chronologie des inscriptions de la cité fondée sur l’étude de ses institutions"
+                ],
+                "authFullName_s": [
+                    "Pierre Fröhlich"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697558,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "« Itinéraire d'un nom, de L’Estoire de Merlin (Suite Vulgate) et de la Chanson du chevalier au cygne ou Godefroid de Bouillon jusqu’au Roman d’Ysaÿe le Triste : Troncelon, Marc de Saint-Trond, Tronc»"
+                ],
+                "authFullName_s": [
+                    "Anne-Cécile Le Ribeuz - Koenig"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697557,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.genre",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.museo",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Les bibliothèques de deux princesses : Marguerite d'York et Marguerite d'Autriche"
+                ],
+                "authFullName_s": [
+                    "Anne-Marie Legaré"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697556,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Labiche et l'opéra-comique"
+                ],
+                "authFullName_s": [
+                    "Vincent Giroud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697555,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "« Pour bien écrire des lettres d’amour- Analyse de manuels de savoir-vivre » in : Penjon, Jacqueline (dir.), Je vous écris – Escrevo-lhe, Cahiers du CREPAL, n° 9, Paris, Presses de la Sorbonne Nouvelle, 2002, p. 79-98."
+                ],
+                "authFullName_s": [
+                    "Maria Cristina"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697552,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "« A Queda dum anjo ou un portugais du XIXe siècle face à ses modèles », in : Quint, Anne-Marie (dir.), Modèles en littérature et en linguistique – études de cas, Cahiers du CREPAL n° 1, Paris, Presses de la Sorbonne Nouvelle, 1994, p. 25-36."
+                ],
+                "authFullName_s": [
+                    "Maria Cristina Pais Simon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697549,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "La gestion des frontières extérieures de l’Union européenne : défis et perspectives en matière de sécurité et de sûreté"
+                ],
+                "authFullName_s": [
+                    "Jean-Christophe Martin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697548,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Îles de l’Égée"
+                ],
+                "authFullName_s": [
+                    "Pierre Fröhlich"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697545,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Péloponnèse"
+                ],
+                "authFullName_s": [
+                    "Pierre Fröhlich"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697544,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Les zones d’exclusion aérienne"
+                ],
+                "authFullName_s": [
+                    "Jean-Christophe Martin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697543,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "(P)rendre la parole",
+                    "Speaking and giving back Speech"
+                ],
+                "authFullName_s": [
+                    "Philippe Sabot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697542,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Le consommateur ethnocentrique achète-t-il réellement local ?"
+                ],
+                "authFullName_s": [
+                    "Hélène Yildiz",
+                    "Sandrine Heitz-Spahn"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697538,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Traduction et édition dans l’œuvre de Vernon Lee"
+                ],
+                "authFullName_s": [
+                    "Sophie Geoffroy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697537,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Free to Play ou Free to Pay? Farmville ou le social gaming fermier"
+                ],
+                "authFullName_s": [
+                    "Lydie Belaud",
+                    "Sandrine Heitz-Spahn"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697536,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Institutions"
+                ],
+                "authFullName_s": [
+                    "Pierre Fröhlich"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697532,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Comment et avec quels outils faciliter l’apprentissage en autonomie des étudiants pour suivre un MOOC ?"
+                ],
+                "authFullName_s": [
+                    "Agnès Montaufier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697528,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Expériences et représentations de la maternité : comprendre pour prévenir les violences intra familiales"
+                ],
+                "authFullName_s": [
+                    "Sophie Geoffroy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697527,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Le rôle de la normalité dans les échanges numériques entre particuliers"
+                ],
+                "authFullName_s": [
+                    "Adrien Bailly"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697526,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Economie et éducation"
+                ],
+                "authFullName_s": [
+                    "Eric Verdier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697524,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Insertion professionnelle"
+                ],
+                "authFullName_s": [
+                    "José Rose"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697523,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Compétences, connaissances et croyances collectives : comment les représenter grâce à la carte cognitive négociée"
+                ],
+                "authFullName_s": [
+                    "Camille Guirou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697522,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "L’apprentissage individuel et collectif dans les PME de hautes technologies : une approche cognitive centrée sur l’expert"
+                ],
+                "authFullName_s": [
+                    "Thibaut Metailler"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697521,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Gouvernance des communs du savoir : le cas de Wikipédia"
+                ],
+                "authFullName_s": [
+                    "Léo Joubert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697520,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Alternance et éducation"
+                ],
+                "authFullName_s": [
+                    "Eric Verdier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697519,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Economie de l’égalitarisme libéral : réflexions pour mieux concilier libéralismes politique et économique"
+                ],
+                "authFullName_s": [
+                    "Claude Gamel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697518,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Plus de secteur public et moins d’État-providence : la mutation de l’intervention sociale de l'État-providence et la crise de ses institutions"
+                ],
+                "authFullName_s": [
+                    "Mustapha El Miri"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697516,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Social"
+                ],
+                "authFullName_s": [
+                    "Nadine Richez-Battesti"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697515,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Justice sociale, choix scolaire et accès à l’enseignement supérieur : une comparaison des systèmes éducatifs français et suisse"
+                ],
+                "authFullName_s": [
+                    "Noémie Olympio"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697514,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Les effets multiniveaux d’une méthode de transfert de savoirs d’experts"
+                ],
+                "authFullName_s": [
+                    "Martine Gadille",
+                    "Julien Machado"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFa7rwG"
+}

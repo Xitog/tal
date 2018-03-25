@@ -1,0 +1,2073 @@
+{
+    "response": {
+        "numFound": 515921,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1500561,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Étude expérimentale des échanges thermiques paroi/poudre dans des fours tournants munis de releveurs"
+                ],
+                "authFullName_s": [
+                    "Phahath Thammavong",
+                    "Marie Debacq",
+                    "Stéphane Vitu",
+                    "Marc Dupoizat",
+                    "Alain Delacroix"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500559,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Oxydation par voie humide catalytique dans un réacteur à lit fixe gaz/liquide/solide d’effluents aqueux pollués au méthyltertiobutyléther (MTBE)"
+                ],
+                "authFullName_s": [
+                    "Alexis El Khoury",
+                    "Yue Ying Xu",
+                    "Bouchra Bejjany",
+                    "Marie Debacq",
+                    "Alain Delacroix"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500558,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Quand E. Musk rencontrera R. Badinter, ou le pilotage automatique des véhicules automobiles à l’épreuve de l’indemnisation hexagonale des victimes d’accidents de la circulation"
+                ],
+                "authFullName_s": [
+                    "Philippe Pierre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500552,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Le clair-obscur du statut de l’éclairage public"
+                ],
+                "authFullName_s": [
+                    "Elisabeth Mella"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500549,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-bio"
+                ],
+                "title_s": [
+                    "Asymptomatic osseous variations in the postcranial skeleton: Their contribution to identification in forensic anthropology"
+                ],
+                "authFullName_s": [
+                    "E. Verna"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500535,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-mo",
+                    "0.spi",
+                    "1.spi.nrj",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.ther"
+                ],
+                "title_s": [
+                    "Modélisation thermique d'une batterie Li-ion prismatique de grande capacité et validation expérimentale"
+                ],
+                "authFullName_s": [
+                    "Nicolas Damay"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500532,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Diversité des espaces vécus et temporalités mosaïques des « jeunes de quartiers », pp 121-132"
+                ],
+                "authFullName_s": [
+                    "Michaël Bailleul"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500524,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-at",
+                    "0.info",
+                    "1.info.info-rb"
+                ],
+                "title_s": [
+                    "Algorithme de planification de mouvement contrôlé par automate"
+                ],
+                "authFullName_s": [
+                    "Younes Derfou…"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500517,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "L’intervention sociale territoriale auprès de jeunes d’un quartier stigmatisé. Entre intervention globale et adaptation aux particularités locales, pp 129-138."
+                ],
+                "authFullName_s": [
+                    "Michaël Bailleul"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500510,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-se",
+                    "0.info",
+                    "1.info.info-es",
+                    "0.info",
+                    "1.info.info-cr",
+                    "0.info",
+                    "1.info.info-hc",
+                    "0.info",
+                    "1.info.info-ar",
+                    "0.info",
+                    "1.info.info-mo"
+                ],
+                "title_s": [
+                    "Un processus de développement Event-B pour des applications distribuées"
+                ],
+                "authFullName_s": [
+                    "Badr Siala",
+                    "Mohamed Tahar Bhiri",
+                    "Jean-Paul Bodeveix",
+                    "Mamoun Filali"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500505,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Les diasporas moyen-orientales face aux conflits. Les enjeux d'un exil prolongé"
+                ],
+                "authFullName_s": [
+                    "Kamel Doraï"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500504,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Réfugiés, « guest » ou migrants illégaux ? Réflexion sur les formes de catégorisation des réfugiés syriens et des Palestiniens de Syrie au Liban et en Jordanie"
+                ],
+                "authFullName_s": [
+                    "Kamel Doraï"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500499,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Les \"hagiographes de la main gauche\" . Variations de la vie de saints au XXe siècle"
+                ],
+                "authFullName_s": [
+                    "Aude Bonord"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500496,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.museo"
+                ],
+                "title_s": [
+                    "The Wicker Man (1973-2006) : une fille... pour le diable"
+                ],
+                "authFullName_s": [
+                    "Jonathan Fruoco"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500495,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hisphilso"
+                ],
+                "title_s": [
+                    "L'idée de dimension chez al-Sijzi"
+                ],
+                "authFullName_s": [
+                    "Pascal Crozet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500493,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Les rêveries du promeneur local"
+                ],
+                "authFullName_s": [
+                    "Elisabeth Mella"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500485,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Impacts des mesures de préservation des sites naturels exceptionnels : rapport final de recherche",
+                    "Impact of conservation measures in exceptional natural sites: Final Research Report"
+                ],
+                "authFullName_s": [
+                    "Vincent Vlès",
+                    "Sylvie Clarimont"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500483,
+                "domain_s": [
+                    "0.phys",
+                    "0.spi"
+                ],
+                "title_s": [
+                    "BIOCARBURANT ET DEMARRAGE A FROID : APPLICATION AU MOTEUR DIESEL D'AUTOMOBILE"
+                ],
+                "authFullName_s": [
+                    "Adrian Clenci",
+                    "Niculescu Rodica",
+                    "Ion Iosub",
+                    "Victor Iorga-Siman",
+                    "Georges Descombes",
+                    "Pierre Podevin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500473,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "L'arrêt de la CJUE du 5 juillet 2012 menace les mécanismes de lutte contre l'évasion fiscale articulés autour de l'article 238 A du CGI"
+                ],
+                "authFullName_s": [
+                    "Thibaut Massart"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500469,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Les jeunes des quartiers, entre vulnérabilité au stigmate et attachement au territoire, pp 55-71."
+                ],
+                "authFullName_s": [
+                    "Michaël Bailleul"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500453,
+                "domain_s": [
+                    "0.phys",
+                    "0.spi"
+                ],
+                "title_s": [
+                    "SELECTION DU FLUIDE DE TRAVAIL D'UN CYCLE DE RANKINE-HIRN EN FONCTION DU PROFIL DE TEMPERATURE DE LA SOURCE CHAUDE"
+                ],
+                "authFullName_s": [
+                    "Quentin Danel",
+                    "Christelle Périlhon",
+                    "Pierre Podevin",
+                    "Stéphanie Lacour",
+                    "Plamen Punov",
+                    "Georges Descombes"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500452,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Apprendre du stigmate par l’expérimentation. Des « jeunes des quartiers » qui s’affranchissent, Agora débats/jeunesses, N°71, p 35-48"
+                ],
+                "authFullName_s": [
+                    "Michaël Bailleul"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500448,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ni"
+                ],
+                "title_s": [
+                    "Procédé de routage dans un réseau à connectivité intermittente",
+                    "Routing Method Intended for Intermittently Connected Networks"
+                ],
+                "authFullName_s": [
+                    "Vania Conan",
+                    "Jérémie Leguay",
+                    "Timur Friedman"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "PATENT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500446,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Un cadre conceptuel pour modéliser les relations spatiales"
+                ],
+                "authFullName_s": [
+                    "Eliseo Clementini",
+                    "Robert Laurini"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500445,
+                "domain_s": [
+                    "0.phys",
+                    "0.spi"
+                ],
+                "title_s": [
+                    "ETUDE ANALYTIQUE DE L’EFFICACITE ENERGETIQUE DES MINI TURBOMACHINES THERMIQUES EN FONCTIONNEMENT NON ADIABATIQUE"
+                ],
+                "authFullName_s": [
+                    "Alphonse Diango",
+                    "Christelle Périlhon",
+                    "Georges Descombes",
+                    "Émile Danho"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500440,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Quand l'alimentation pose problème, que faire ? État des lieux et mise en place d'un outil de sensibilisation aux troubles de l'oralité alimentaire chez l'enfant tout-venant"
+                ],
+                "authFullName_s": [
+                    "Apolline Deluchey"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500432,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Relations entre l’état dentaire, la qualité de vie et le niveau social, chez les personnes âgées dans une population des Yvelines"
+                ],
+                "authFullName_s": [
+                    "Mohamed Boukrit"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500429,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.pg"
+                ],
+                "title_s": [
+                    "Sur les Homalogyra fossiles spécialement dans le tertiaire de Bretagne"
+                ],
+                "authFullName_s": [
+                    "Dr Allix"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500424,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Contigüités linguistiques et scolarisation des Gitans de Perpignan : spécificité ou difficultés « ordinaires » de quartiers deshérités ?"
+                ],
+                "authFullName_s": [
+                    "Martine Marquilló Larruy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500422,
+                "domain_s": [
+                    "0.chim",
+                    "1.chim.mate",
+                    "0.chim",
+                    "1.chim.theo",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Contribution à l'étude thermodynamique et comportement à l'oxydation de céramiques ultra-réfractaires à base de diborure d'hafnium et de carbure de silicium"
+                ],
+                "authFullName_s": [
+                    "Cassandre Piriou",
+                    "Sylvie Foucaud",
+                    "Olivier Rapaud",
+                    "Ludovic Charpentier",
+                    "Marianne Balat-Pichelin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500420,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "2.sdv.mhep.geo"
+                ],
+                "title_s": [
+                    "Mise en place d'un protocole de recherche clinique au sujet des sorties standards au sein du CHU Amiens-Picardie : l'étude « COMPLISTAN »"
+                ],
+                "authFullName_s": [
+                    "Simon Bouloy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500415,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Aspects procéduraux : qui, quand, comment ?"
+                ],
+                "authFullName_s": [
+                    "Cristina Corgas-Bernard",
+                    "Marie-Christine Leprince",
+                    "Bertrand Couderc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500395,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Les prestations versées par les assureurs de personnes : nature et conséquences"
+                ],
+                "authFullName_s": [
+                    "Philippe Pierre",
+                    "Olivier Merlin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500377,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Le sacré dans la littérature contemporaine : expériences et références"
+                ],
+                "authFullName_s": [
+                    "Aude Bonord",
+                    "Myriam Watthee-Delmotte"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500372,
+                "domain_s": [
+                    "0.scco",
+                    "1.scco.neur",
+                    "0.scco",
+                    "1.scco.ling"
+                ],
+                "title_s": [
+                    "Tes mots me touchent : étude des apports de la modalité tactile dans la perception de la parole"
+                ],
+                "authFullName_s": [
+                    "Avril Treille",
+                    "Coriandre Vilain",
+                    "Marc Sato"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500369,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Panorama des potentialités SIG en 3 dimensions : vers des modèles virtuels 3D de villes"
+                ],
+                "authFullName_s": [
+                    "Robert Laurini",
+                    "Sylvie Servigne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500367,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Le droit de préférence de la victime : entre état des lieux et état des vœux"
+                ],
+                "authFullName_s": [
+                    "Julien Bourdoiseau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500361,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "Rapport final ANR Colostrum - traitement archivistique"
+                ],
+                "authFullName_s": [
+                    "Joël Candau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500358,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Projet de développement, projet de territoire et démarche participative"
+                ],
+                "authFullName_s": [
+                    "Philippe Signoret"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500339,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sp"
+                ],
+                "title_s": [
+                    "Validation d'une méthode de déreplication de substances naturelles marines",
+                    "Validation of a marine natural products dereplication strategy"
+                ],
+                "authFullName_s": [
+                    "Léonie Pellissier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500338,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.genre",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "L’implication des entreprises dans l’articulation emploi-famille : les enseignements d’une enquête de terrain"
+                ],
+                "authFullName_s": [
+                    "Delphine Brochard",
+                    "Marie-Thérèse Letablier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500337,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Découverte automatisée de hiérarchies de rôles pour les politiques de contrôle d'accès"
+                ],
+                "authFullName_s": [
+                    "Romuald Thion",
+                    "Stéphane Coulondre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500322,
+                "domain_s": [
+                    "0.scco",
+                    "1.scco.psyc",
+                    "0.scco",
+                    "1.scco.comp",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Le liage audiovisuel en perception de la parole, données et questions pour la modélisation neuronale"
+                ],
+                "authFullName_s": [
+                    "Jean-Luc Schwartz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500300,
+                "domain_s": [
+                    "0.math",
+                    "0.math",
+                    "1.math.math-pr",
+                    "0.math",
+                    "1.math.math-st",
+                    "0.phys",
+                    "1.phys.qphy",
+                    "0.sdv",
+                    "1.sdv.neu"
+                ],
+                "title_s": [
+                    "Balades aléatoires",
+                    "Random strolls"
+                ],
+                "authFullName_s": [
+                    "Jonas Kahn"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "HDR",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500299,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.be",
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.mcg",
+                    "0.sdv",
+                    "1.sdv.ee",
+                    "2.sdv.ee.eco",
+                    "0.sdv",
+                    "1.sdv.ee",
+                    "2.sdv.ee.ieo",
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.stat"
+                ],
+                "title_s": [
+                    "Le voisinage entre hommes, forêt et les chimpanzés: point de vue depuis le territoire des villageois, à l’extérieur du Parc National de Kibale"
+                ],
+                "authFullName_s": [
+                    "Sarah Bortolamiol",
+                    "Marianne Cohen",
+                    "Andrew Seguya",
+                    "Richard Dumez",
+                    "Sabrina Krief"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500296,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.be",
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.mcg",
+                    "0.sdv",
+                    "1.sdv.ee",
+                    "2.sdv.ee.eco",
+                    "0.sdv",
+                    "1.sdv.ee",
+                    "2.sdv.ee.ieo",
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.stat"
+                ],
+                "title_s": [
+                    "Définir le statut d'une espèce animale : de la norme institutionnelle à l'appréciation individuelle"
+                ],
+                "authFullName_s": [
+                    "Sarah Bortolamiol",
+                    "Marianne Cohen",
+                    "Laurent Simon",
+                    "Richard Raymond",
+                    "Vincent Godard",
+                    "Sabrina Krief"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500295,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.be",
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.mcg",
+                    "0.sdv",
+                    "1.sdv.ee",
+                    "2.sdv.ee.eco",
+                    "0.sdv",
+                    "1.sdv.ee",
+                    "2.sdv.ee.ieo",
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.stat"
+                ],
+                "title_s": [
+                    "La forêt : refuge pour les hommes, les chimpanzés ou les esprits ?"
+                ],
+                "authFullName_s": [
+                    "Sarah Bortolamiol",
+                    "Marianne Cohen",
+                    "Sabrina Krief"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500293,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Influence des étapes de production du parfum issu des écorces d’orange amère (Citrus aurantium L. ssp amara) sur la qualité aromatique",
+                    "Impact of the parfum production steps from bitter orange peelings (Citrus aurantium L. ssp amara) on the aroma quality"
+                ],
+                "authFullName_s": [
+                    "Sophie Deterre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500290,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.class"
+                ],
+                "title_s": [
+                    "Notice \"Horace\", notice \"Mémoire"
+                ],
+                "authFullName_s": [
+                    "Nathalie Dauvois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500289,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.class"
+                ],
+                "title_s": [
+                    "Jean Bouchet\" \"Etienne Forcadel"
+                ],
+                "authFullName_s": [
+                    "Nathalie Dauvois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500288,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.class"
+                ],
+                "title_s": [
+                    "Prudence et politique chez les grands rhétoriqueurs, Janus bifrons"
+                ],
+                "authFullName_s": [
+                    "Nathalie Dauvois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500287,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.class"
+                ],
+                "title_s": [
+                    "Des contreblasons de La Hueterie au Contrepoison d’Artus Désiré, enjeux et formes d’une poétique du contre à la Renaissance"
+                ],
+                "authFullName_s": [
+                    "Nathalie Dauvois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500285,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.class"
+                ],
+                "title_s": [
+                    "Toulouse-Cahors-Bourges. Circulation des idées et des hommes"
+                ],
+                "authFullName_s": [
+                    "Nathalie Dauvois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500283,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gproc",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Quatre expériences de formation à distance dans le pôle Science et Techniques Industrielles du Cnam Paris"
+                ],
+                "authFullName_s": [
+                    "Marie Debacq",
+                    "Marc Clausse",
+                    "Vincent Dalmeyda",
+                    "Jean-Pierre Domblides",
+                    "Clotilde Ferroud",
+                    "Gilbert Villoutreix"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500281,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.class"
+                ],
+                "title_s": [
+                    "Parler de poésie par métaphores, le modèle horatien"
+                ],
+                "authFullName_s": [
+                    "Nathalie Dauvois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500279,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Mise en place d'un profil de vitesse d'agitation pour améliorer la distribution granulométrique des cristaux de glycine"
+                ],
+                "authFullName_s": [
+                    "Damien Despinoy",
+                    "Marie Debacq",
+                    "Mihasina Rabesiaka",
+                    "Béatrice Somarriba",
+                    "Catherine Porte"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500276,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Inégalité d'accès au savoir, ou inégalité d'accès au questionnement: de l'étude du dialogisme du discours scolaire à l'étude de l'activité dialogique des élèves et des étudiants"
+                ],
+                "authFullName_s": [
+                    "Catherine Delarue-Breton"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "HDR",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500274,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Fraternité latine, Etats-Unis d’Europe et République Universelle : la guerre de 70 et la renaissance des utopies républicaines en Espagne"
+                ],
+                "authFullName_s": [
+                    "Marie-Angèle Orobon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500273,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Profil de chargement dans des fours tournants munis de releveurs"
+                ],
+                "authFullName_s": [
+                    "Marie Debacq",
+                    "Phahath Thammavong",
+                    "Stéphane Vitu",
+                    "Marc Dupoizat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500271,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Emprunt sacré et modernité politique dans l’Espagne du XIX siècle"
+                ],
+                "authFullName_s": [
+                    "Marie-Angèle Orobon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500263,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.class"
+                ],
+                "title_s": [
+                    "Jean Bouchet et les modèles du prosimètre"
+                ],
+                "authFullName_s": [
+                    "Nathalie Dauvois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500252,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.math",
+                    "1.math.math-gm"
+                ],
+                "title_s": [
+                    "Émergence et évolution des objets mathématiques en Situation Didactique de Recherche de Problème : le cas des pavages archimédiens du plan.",
+                    "Emergence and evolution of mathematical objects, during a “ Didactical Situation of a Problem Solving ” : The Case of Archimedean tilings of the plane."
+                ],
+                "authFullName_s": [
+                    "Mathias Front"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500248,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gproc",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Pédagogie 2.0 : outils efficaces ou gadgets pour une formation en génie des procédés au Cnam ?"
+                ],
+                "authFullName_s": [
+                    "Marie Debacq"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500244,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gproc",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Vers la mise en place d'une offre complète de formation à distance en génie des procédés au Cnam : pragmatisme, efficacité et conséquences sur le présentiel"
+                ],
+                "authFullName_s": [
+                    "Marie Debacq"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500243,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Évaluation d’un Contacteur Gaz / Liquide pour le Traitement des Margines par Ozonation : l’éjecteur"
+                ],
+                "authFullName_s": [
+                    "Olivier Chedeville",
+                    "Aurélien Philippe",
+                    "Marie Debacq",
+                    "Hakim Dehouli",
+                    "Catherine Porte"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500242,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Utilisation d'un contacteur gaz/liquide type éjecteur tubulaire pour l'ozonation de dérivés de l'acide cinnamique"
+                ],
+                "authFullName_s": [
+                    "Olivier Chedeville",
+                    "Marie Debacq",
+                    "Catherine Porte"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500241,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gproc",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Une expérience d'enseignement à distance en génie des procédés"
+                ],
+                "authFullName_s": [
+                    "Marie Debacq",
+                    "Radia Schmitt-Soukehal",
+                    "Vincent Dalmeyda",
+                    "François Delastre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500232,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Sciences du langage et didactique des langues : une relation privilégiée"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chiss"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500231,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les oulémas du Maghreb al-Aqṣā et les milieux savants d’al-Andalus (IIIe/IXe-Ve/XIe siècle) : connexions, circulations, échanges"
+                ],
+                "authFullName_s": [
+                    "Aurélien Montel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500230,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "La linguistique et la didactique sont-elles responsables de la crise de l’enseignement du français ?"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chiss"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500229,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Enseignement de la langue : crise, tension ?"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chiss"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500228,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Didactique des langues et histoire(s) de formation(s)"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chiss"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500226,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "La didactique du français entre conceptualisation et contextualisation"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chiss"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500225,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "La théorie du langage face aux idéologies linguistiques"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chiss"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500222,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "L’enseignement du français face aux hétérogénéités linguistiques et culturelles"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chiss"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500221,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "La maitrise de la langue : formulation commode d’une nécessité"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chiss"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500219,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Les linguistiques de la langue et du discours face à la littérature : Saussure et l’alternative de la théorie du langage"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chiss"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500218,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Linguistique et poétique des discours. A partir de Saussure"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chiss",
+                    "Gérard Dessons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500217,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Didactique du français. Fondements d’une discipline."
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chiss",
+                    "Yves Reuter",
+                    "David Jacques"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500215,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-ho",
+                    "0.math",
+                    "1.math.math-sp"
+                ],
+                "title_s": [
+                    "Chercher la géométrie: Le cas d'une suite spectrale."
+                ],
+                "authFullName_s": [
+                    "Jean-Jacques Szczeciniarz",
+                    "Dominique Flament",
+                    "Elisabeth De Pablo",
+                    "Hélène Challulau,"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "VIDEO",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500214,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Plurilinguisme et apprentissages. Mélanges Daniel Coste"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chiss",
+                    "Marie-Anne Mochet",
+                    "Marie-José Barbot",
+                    "Véronique Castellotti"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500213,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Réflexions à partir de la notion de tâche : langage, action et didactique des langues"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chiss"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500212,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Les cultures éducatives et linguistiques dans l’enseignement des langues"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chiss",
+                    "Jean-Claude Beacco",
+                    "Francine Cicurel",
+                    "Daniel Veronique"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500211,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-ho"
+                ],
+                "title_s": [
+                    "Le théorème de Bézout dans la Geometria Organica de MacLauren."
+                ],
+                "authFullName_s": [
+                    "Erwan Penchevre",
+                    "Dominique Flament",
+                    "Elisabeth De Pablo",
+                    "Hélène Challulau,"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "VIDEO",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500209,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-dg",
+                    "0.math",
+                    "1.math.math-ho"
+                ],
+                "title_s": [
+                    "La géométrie Der Lage de von Staudt."
+                ],
+                "authFullName_s": [
+                    "Philippe Nabonnand",
+                    "Dominique Flament",
+                    "Elisabeth De Pablo",
+                    "Hélène Challulau,"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "VIDEO",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500208,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-ho"
+                ],
+                "title_s": [
+                    "Fondements de la géométrie en Italie avant Hilbert."
+                ],
+                "authFullName_s": [
+                    "Aldo Brigaglia",
+                    "Dominique Flament",
+                    "Elisabeth De Pablo",
+                    "Hélène Challulau,"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "VIDEO",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500207,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-ag",
+                    "0.math",
+                    "1.math.math-ho"
+                ],
+                "title_s": [
+                    "Introduction à l'histoire de la géométrie algébrique."
+                ],
+                "authFullName_s": [
+                    "Christian Houzel",
+                    "Dominique Flament",
+                    "Elisabeth De Pablo",
+                    "Hélène Challulau,"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "VIDEO",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500205,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Enseigner et apprendre en français. Des ‘langues’ de l’école aux discours didactiques"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chiss"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500203,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "L’anthropologie du langage : point aveugle de la philosophie linguistique de tradition française"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chiss"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500202,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Langue maternelle, langue naturelle, langue apprise"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chiss"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500201,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Juristes en coopération. Magistrats et professeurs de droit en Algérie (1962-début des années 1980)"
+                ],
+                "authFullName_s": [
+                    "Florence Renucci",
+                    "Toussaint Rethore"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1500200,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Progression des apprentissages » et « Lecture- écriture » dans TFL"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chiss"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500198,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Articles « Littératie » et « Langue maternelle » dans le Dictionnaire de didactique du français langue étrangère et seconde"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chiss"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500196,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Littérature de témoignage et devoir de mémoire"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chiss"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500195,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Les nouveaux programmes pour l’école primaire française : questions pour la didactique du français"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chiss"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500192,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Le couple oral/écrit et la tension entre communicatif et cognitif"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chiss"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500187,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "L’enseignement/apprentissage de la grammaire dans la didactique intégrée des langues"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chiss"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500186,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "A l’école primaire : structurer la langue pour découvrir les discours"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chiss"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500185,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Relations entre l’étude de l’oral et l’étude de l’écrit à l’école primaire et au collège en France"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chiss"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1500182,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Le français langue seconde"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chiss"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            }
+        ]
+    },
+    "nextCursorMark": "AoFWwdwF"
+}

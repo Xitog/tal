@@ -1,0 +1,2063 @@
+{
+    "response": {
+        "numFound": 515923,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 844293,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Un enseignement scientifique co-disciplinaire pour traiter la question de la modélisation."
+                ],
+                "authFullName_s": [
+                    "Michèle Prieur",
+                    "Gilles Aldon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844289,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Phénomènes granulaires dans l'environnement"
+                ],
+                "authFullName_s": [
+                    "Jean-Yves Delenne",
+                    "Fabien Soulié",
+                    "Farhang Radjai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844288,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Simulations numériques discrètes : modéliser les mouvements collectifs des grains"
+                ],
+                "authFullName_s": [
+                    "Farhang Radjai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844287,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Les invariants et variantes de la transmission des efforts dans les milieux granulaires"
+                ],
+                "authFullName_s": [
+                    "Farhang Radjai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844286,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Origines géométriques du frottement granulaire"
+                ],
+                "authFullName_s": [
+                    "Farhang Radjai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844285,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Origines microscopiques de la rhéologie quasi-statique des matériaux granulaires"
+                ],
+                "authFullName_s": [
+                    "Farhang Radjai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844284,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Une équation pour l'évolution de la texture dans les milieux granulaires"
+                ],
+                "authFullName_s": [
+                    "Farhang Radjai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844283,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Analyse micromécanique du frottement granulaire"
+                ],
+                "authFullName_s": [
+                    "Farhang Radjai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844277,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Modélisation mécanique de la fissuration des matériaux granulaires cimentés"
+                ],
+                "authFullName_s": [
+                    "Vincent Topin",
+                    "Jean-Yves Delenne",
+                    "Farhang Radjai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844276,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Modélisation numérique de mélanges grains-gaz. Application aux écoulements"
+                ],
+                "authFullName_s": [
+                    "Alexandre Martin",
+                    "Frédéric Dubois",
+                    "Farhang Radjai",
+                    "Yann Monerie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844275,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Comportement mécanique des matériaux granulaires à grande polydispersité"
+                ],
+                "authFullName_s": [
+                    "Charles Voivret",
+                    "Farhang Radjai",
+                    "Jean-Yves Delenne",
+                    "Moulay Saïd El Youssoufi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844274,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Effet de la non-convexité des particules sur le comportement des milieux granulaires"
+                ],
+                "authFullName_s": [
+                    "Baptiste Saint-Cyr",
+                    "Charles Voivret",
+                    "Jean-Yves Delenne",
+                    "Farhang Radjai",
+                    "Philippe Sornay"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844273,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Dynamique stochastique dans les milieux granulaires"
+                ],
+                "authFullName_s": [
+                    "Farhang Radjai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844270,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Modélisation numérique discrète des matériaux granulaires"
+                ],
+                "authFullName_s": [
+                    "Farhang Radjai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844269,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Eléments de modélisation réaliste des milieux granulaires"
+                ],
+                "authFullName_s": [
+                    "Farhang Radjai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844268,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Caractère multi-échelle des contraintes à l'approche d'une instabilité"
+                ],
+                "authFullName_s": [
+                    "Farhang Radjai",
+                    "Lydie Staron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844267,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Régimes de rupture en 3D influence des interfaces et de la matrice"
+                ],
+                "authFullName_s": [
+                    "Rafik Affes",
+                    "Vincent Topin",
+                    "Jean-Yves Delenne",
+                    "Yann Monerie",
+                    "Farhang Radjai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844265,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Influence de la morphologie des grains sur la texture et le comportement des milieux granulaires"
+                ],
+                "authFullName_s": [
+                    "Farhang Radjai",
+                    "Emilien Azéma"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844264,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Modélisation avancée des matériaux granulaires"
+                ],
+                "authFullName_s": [
+                    "Farhang Radjai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844263,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Simulation des avalanches sous-marines"
+                ],
+                "authFullName_s": [
+                    "Patrick Mutabaruka",
+                    "Jean-Yves Delenne",
+                    "Farhang Radjai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844262,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Condensation capillaire dans les miieux granulaires"
+                ],
+                "authFullName_s": [
+                    "Jean-Yves Delenne",
+                    "Vincent Richefeu",
+                    "Farhang Radjai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844261,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Identification du frottement de roulement comme un paramètre de forme dans les milieux granulaires"
+                ],
+                "authFullName_s": [
+                    "Nicolas Estrada",
+                    "Emilien Azéma",
+                    "Alfredo Taboada",
+                    "Farhang Radjai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844260,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Etats géométriques accessibles dans les milieux granulaires"
+                ],
+                "authFullName_s": [
+                    "Farhang Radjai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844259,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Rhéologie des milieux granulaires composés de particules polydriques - effet de l'angularité"
+                ],
+                "authFullName_s": [
+                    "Emilien Azéma",
+                    "Farhang Radjai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844255,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Comportement des mélanges grains-fluid par simulations numériques"
+                ],
+                "authFullName_s": [
+                    "Farhang Radjai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844254,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Un modèle statistique pour l'évolution de la texture"
+                ],
+                "authFullName_s": [
+                    "Farhang Radjai",
+                    "Jean-Yves Delenne",
+                    "Emilien Azéma",
+                    "Stéphane Roux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844253,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Modélisation à surface libre par la méthode LBM : application à la rupture de barrage"
+                ],
+                "authFullName_s": [
+                    "Carole Delenne",
+                    "Lhasan Amarsid",
+                    "Jean-Yves Delenne",
+                    "Vincent Guinot",
+                    "Farhang Radjai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844252,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Un benchmark pour l'étude des milieux granulaires immergées"
+                ],
+                "authFullName_s": [
+                    "Vincent Topin",
+                    "Frédéric Perales",
+                    "Yann Monerie",
+                    "Frédéric Dubois",
+                    "Farhang Radjai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844251,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Forces capillaires, coalescence du liquide et régimes de cohésion dans les milieux granulaires non saturés"
+                ],
+                "authFullName_s": [
+                    "Vincent Richefeu",
+                    "Jean-Yves Delenne",
+                    "Farhang Radjai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844249,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Compaction d'un milieu granulaire à particules sécables"
+                ],
+                "authFullName_s": [
+                    "Duc-Hanh Nguyen",
+                    "Farhang Radjai",
+                    "Emilien Azéma",
+                    "Philippe Sornay"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844248,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Déclenchement des avalanches de grains immergés"
+                ],
+                "authFullName_s": [
+                    "Patrick Mutabaruka",
+                    "Farhang Radjai",
+                    "Jean-Yves Delenne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844247,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Influence de la polydispersité de forme et de taille sur un milieu granulaire"
+                ],
+                "authFullName_s": [
+                    "Duc-Hanh Nguyen",
+                    "Farhang Radjai",
+                    "Emilien Azéma",
+                    "Philippe Sornay"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844246,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Micro-rhéologie des écoulements granulaires denses"
+                ],
+                "authFullName_s": [
+                    "Emilien Azéma",
+                    "Farhang Radjai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844243,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-gen"
+                ],
+                "title_s": [
+                    "Caractérisation des tumeurs et de leur évolution en TEP/TDM au ¹⁸F-FDG pour le suivi thérapeutique",
+                    "Characterization of the tumors and their evolutions using PET/CT for treatment following"
+                ],
+                "authFullName_s": [
+                    "Jacques-Antoine Maisonobe"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844242,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Les misconceptions dans la microgenèse de l’objet technique",
+                    "Microgenesis of a technical object, at pupils of first year of the engineering school of Cesi"
+                ],
+                "authFullName_s": [
+                    "Bouazza Ouarrak"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844238,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Archi-texture d'un empilement de grains"
+                ],
+                "authFullName_s": [
+                    "Farhang Radjai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844237,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Texture granulaire et rhéologie des milieux granulaires"
+                ],
+                "authFullName_s": [
+                    "Farhang Radjai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844234,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Transmission des contraintes dans les milieux granulaires solides"
+                ],
+                "authFullName_s": [
+                    "Vincent Topin",
+                    "Farhang Radjai",
+                    "Jean-Yves Delenne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844233,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Statistique de blocage dans un écoulement de silo"
+                ],
+                "authFullName_s": [
+                    "Alexandre Martin",
+                    "Frédéric Dubois",
+                    "Farhang Radjai",
+                    "Yann Monerie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844232,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Texture et comportement des matériaux polydisperses"
+                ],
+                "authFullName_s": [
+                    "Charles Voivret",
+                    "Jean-Yves Delenne",
+                    "Moulay Saïd El Youssoufi",
+                    "Farhang Radjai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844231,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Le comportement quasi-statique des milieux granulaires à particules non-convexes"
+                ],
+                "authFullName_s": [
+                    "Baptiste Saint-Cyr",
+                    "Charles Voivret",
+                    "Jean-Yves Delenne",
+                    "Farhang Radjai",
+                    "Philippe Sornay"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844221,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Liquid clustering and capillary cohesion in a granular materials : Lattice Boltzmann modeling"
+                ],
+                "authFullName_s": [
+                    "Vincent Richefeu",
+                    "Jean-Yves Delenne",
+                    "Farhang Radjai",
+                    "Fabien Soulié"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844220,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Micro-mechanical experiments and modeling of wheat fractionation"
+                ],
+                "authFullName_s": [
+                    "Emna Chichti",
+                    "Matthieu George",
+                    "Jean-Yves Delenne",
+                    "Farhang Radjai",
+                    "Valérie Lullien-Pellerin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844219,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Etude du comportement d'un mélange fluide-grains"
+                ],
+                "authFullName_s": [
+                    "Patrick Mutabaruka",
+                    "Jean-Yves Delenne",
+                    "Farhang Radjai",
+                    "Kenichi Soga"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844213,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "L'Europe centrale au Moyen Âge"
+                ],
+                "authFullName_s": [
+                    "Marie-Madeleine De Cevins"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844212,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Le testament d'Élisabeth Łokietek, reine de Hongrie et de Pologne (1380) : remarques introductives"
+                ],
+                "authFullName_s": [
+                    "Marie-Madeleine De Cevins"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844209,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Langage de l'enfant et étayage de l'adulte: éclosion, replication et écart"
+                ],
+                "authFullName_s": [
+                    "Aliyah Morgenstern"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 844207,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Prémices du récit chez l'enfant de 2 à 3 ans"
+                ],
+                "authFullName_s": [
+                    "Aliyah Morgenstern"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 844206,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "On pourrait mettre des ailes à moi\". Premiers usages du conditionnel chez l'enfant : des constructions empruntées à la créativité."
+                ],
+                "authFullName_s": [
+                    "Aliyah Morgenstern",
+                    "Christophe Parisse"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844203,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Symposium \" Genres et pratiques des écrits universitaires \" des 29 et 30 juin 2009, Université Stendhal, Grenoble"
+                ],
+                "authFullName_s": [
+                    "Lucile Cadet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844202,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Dispositif universitaire de formation et développement professionnel d'enseignants débutants, Université d'Artois, laboratoires LML & Grammatica."
+                ],
+                "authFullName_s": [
+                    "Lucile Cadet",
+                    "Véronique Laurens"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844201,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "l'instant et l'histoire, 50eme Rencontre de l'ASDIFLE, Français langue étrangère, l'instant et l'histoire, 19 octobre 2012, CLA, Besançon"
+                ],
+                "authFullName_s": [
+                    "Lucile Cadet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844200,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Le travail de figuration : analyse des séquences explicatives de journaux d'apprentissage"
+                ],
+                "authFullName_s": [
+                    "Lucile Cadet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844199,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Actes de la 5ième journée Jeunes Chercheurs de l'Ecole Doctorale 268 Langage et langue, description, théorisation, transmission"
+                ],
+                "authFullName_s": [
+                    "Angelique Amelot",
+                    "Lucile Cadet",
+                    "Olivier Corbin",
+                    "Vincent Guigue",
+                    "Charlotte Jacquemot",
+                    "Hana Gruet-Skrabalova",
+                    "Julie Lefebvre",
+                    "Maria Zimina"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844198,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Approche de parcours d'apprentissage à travers l'analyse de journaux d'apprentissage : le rôle des séquences explicatives"
+                ],
+                "authFullName_s": [
+                    "Lucile Cadet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844196,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Les enjeux de la parole en contexte de formation initiale à l'enseignement"
+                ],
+                "authFullName_s": [
+                    "Lucile Cadet",
+                    "Mariella Causa"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844195,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Compétences plurilingues, représentations sociales et stratégies d'apprentissage, variantes et invariants dans l'apprentissage de l'italien, du grec moderne et du tchèque chez les étudiants de Mention FLE"
+                ],
+                "authFullName_s": [
+                    "Mariella Causa",
+                    "Lucile Cadet",
+                    "Sofia Stratilaki-Klein"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844191,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Le développement du répertoire didactique des enseignants natifs de FLE en formation professionnelle : description et analyse d'un processus"
+                ],
+                "authFullName_s": [
+                    "Lucile Cadet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844189,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Le journal d'apprentissage : un objet textuel hétérogène"
+                ],
+                "authFullName_s": [
+                    "Lucile Cadet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844188,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Culture(s) éducative(s) et construction d'un répertoire didactique en formation initiale (le cas des enseignants-stagiaires de Maîtrise de français langue étrangère)"
+                ],
+                "authFullName_s": [
+                    "Lucile Cadet",
+                    "Mariella Causa"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844187,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Contexte d'enseignement/contexte de formation : des savoirs théoriques aux pratiques de classe"
+                ],
+                "authFullName_s": [
+                    "Lucile Cadet",
+                    "Mariella Causa"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844186,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Aises et malaises des enseignants natifs en contexte homoglotte : constats et perspectives de formation"
+                ],
+                "authFullName_s": [
+                    "Lucile Cadet",
+                    "Mariella Causa"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844184,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Comment la prise en compte des discours d'enseignants sur leurs pratiques renouvelle-t-elle l'analyse des interactions didactiques en classe de langue ?"
+                ],
+                "authFullName_s": [
+                    "Violaine Bigot",
+                    "Lucile Cadet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844183,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "La formation professionnelle des enseignants : réflexivité et évaluation sont-elles compatibles"
+                ],
+                "authFullName_s": [
+                    "Emmanuelle Huver",
+                    "Lucile Cadet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844180,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-ds"
+                ],
+                "title_s": [
+                    "Etude de quelques modèles épidémiologiques de métapopulation: application à la tuberculose et au paludisme",
+                    "Analysis of Some epidemiological metapopulation models: application to tuberculosis ans malaria."
+                ],
+                "authFullName_s": [
+                    "Berge Tsanou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844168,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Mesurer la performance des chercheurs, au risque de la bureaucratie"
+                ],
+                "authFullName_s": [
+                    "Nicolas Berland",
+                    "Benjamin Dreveton"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844166,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info",
+                    "2.shs.info.orga"
+                ],
+                "title_s": [
+                    "Innovation : Observer le braconnage dans les méandres de la communication"
+                ],
+                "authFullName_s": [
+                    "Pierre Barbagelata"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844141,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-ac",
+                    "0.math",
+                    "1.math.math-ra",
+                    "0.math",
+                    "1.math.math-gm",
+                    "0.math",
+                    "1.math.math-sp"
+                ],
+                "title_s": [
+                    "Autour de la décomposition de Dunford réelle ou complexe. Théorie spectrale et méthodes effectives"
+                ],
+                "authFullName_s": [
+                    "Alaeddine Ben Rhouma"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 844140,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info",
+                    "2.shs.info.docu"
+                ],
+                "title_s": [
+                    "Optimisation de l'accès à l'information pour les usagers du centre de documentation de l'Unité Régionale de Soins auprès des Auteurs de Violences Sexuelles"
+                ],
+                "authFullName_s": [
+                    "Ruben Appourchaux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 844135,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Etude et développement de capteurs / effecteurs filamentaires de faibles diamètres intégrables dans des structures textiles",
+                    "Study and development of low diameter filament sensors / effectors for textile instrumentation"
+                ],
+                "authFullName_s": [
+                    "Mohamed Bouraoui Kechiche"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 844133,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Systèmes multi-agent pour le diagnostic pluri-disciplinaire",
+                    "Multi-agent system for multi-disciplinary diagnostic"
+                ],
+                "authFullName_s": [
+                    "Julien Dumont"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 844131,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Estimation de paramètres et planification d’expériences adaptée aux problèmes de cinétique - Application à la dépollution des fumées en sortie des moteurs",
+                    "Parameter estimation and design of experiments adapted to kinetics problems - Application for depollution of exhaust smoke from the output of engines"
+                ],
+                "authFullName_s": [
+                    "Matthieu Canaud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 844130,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Stratégies de modélisation des conséquences d’une dispersion atmosphérique de gaz toxique ou inflammable en situation d’urgence au regard de l’incertitude sur les données d’entrée.",
+                    "Modeling strategies of toxic or flammable gas spreading consequences according to input data uncertainties in crisis situations."
+                ],
+                "authFullName_s": [
+                    "Stéphane Pagnon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844129,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Evaluation du potentiel textile des fibres d'Alfa (Stipa Tenacissima L.) : caractérisation physico-chimique de la fibre au fil",
+                    "Evaluation of textile potential of Alfa (Stipa Tenacissima L.) fibers : Physico-chemical characterization from fiber to yarn"
+                ],
+                "authFullName_s": [
+                    "Mohamed Dallel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 844127,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Tolérance et rationalité"
+                ],
+                "authFullName_s": [
+                    "Pierre Wagner"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844126,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Sur le livre de François Schmitz: Le Cercle de Vienne"
+                ],
+                "authFullName_s": [
+                    "Pierre Wagner"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844124,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Les physicalismes de Carnap"
+                ],
+                "authFullName_s": [
+                    "Pierre Wagner",
+                    "Pierre Wagner"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844116,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.hy",
+                    "0.sde",
+                    "1.sde.mcg"
+                ],
+                "title_s": [
+                    "Modélisation des échanges nappe-rivière à l'échelle du basin de la Seine"
+                ],
+                "authFullName_s": [
+                    "Saleh Firas",
+                    "Nicolas Flipo",
+                    "Alexandre Pryet",
+                    "Baptiste Labarthe",
+                    "Patrick Goblet",
+                    "Pascal Viennot",
+                    "Léna Abasq",
+                    "Lauriane Vilmin",
+                    "Michel Poulin",
+                    "Maïa Akopian"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844112,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-mm"
+                ],
+                "title_s": [
+                    "Un modèle segmental probabiliste combinant cohésion lexicale et rupture lexicale pour la segmentation thématique"
+                ],
+                "authFullName_s": [
+                    "Anca-Roxana Simon",
+                    "Guillaume Gravier",
+                    "Pascale Sébillot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844107,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Holographie électronique en champ sombre : une technique fiable pour mesurer des déformations dans les dispositifs de la microélectronique",
+                    "Dark-field electron holography : a reliable technique for measuring strain in microelectronic devices"
+                ],
+                "authFullName_s": [
+                    "Thibaud Denneulin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844106,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.psy"
+                ],
+                "title_s": [
+                    "Représentations motrices et perception de l'espace péripersonnel",
+                    "Motor representations and the perception of peripersonal space"
+                ],
+                "authFullName_s": [
+                    "Jérémy Bourgeois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 844104,
+                "title_s": [
+                    "Synthèse de feedback dans les dioïdes"
+                ],
+                "authFullName_s": [
+                    "Bertrand Cottenceau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844102,
+                "title_s": [
+                    "L'atelier Petri Maker"
+                ],
+                "authFullName_s": [
+                    "Alain Godon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844101,
+                "title_s": [
+                    "La résonance stochastique"
+                ],
+                "authFullName_s": [
+                    "François Chapeau-Blondeau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844100,
+                "title_s": [
+                    "Initiation à la modélisation et à la commande de graphes d'événements temporisés avec ajout/retrait dynamique de jetons"
+                ],
+                "authFullName_s": [
+                    "Sébastien Lahaye",
+                    "Jean-Louis Boimond"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844098,
+                "title_s": [
+                    "Synthèse de feedback pour les systèmes de production modélisés par des graphes d'événements temporisés"
+                ],
+                "authFullName_s": [
+                    "Bertrand Cottenceau",
+                    "Laurent Hardouin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844097,
+                "title_s": [
+                    "Évaluation de la qualité d'un codage en IRM cardiaque"
+                ],
+                "authFullName_s": [
+                    "Christine Cavaro-Menard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844095,
+                "title_s": [
+                    "La résonance stochastique ou la transmission non linéaire du signal favorisée par le bruit"
+                ],
+                "authFullName_s": [
+                    "François Chapeau-Blondeau",
+                    "Xavier Godivier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844093,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Mise en scène du pouvoir au Proche-Orient au IIIe millénaire : étude iconographique du matériel d'incrustation en coquille de Mari",
+                    "The Staging of Power in the IIIrd Millennium Ancient Near East: Iconographical Study of the Shell Inlays of Mari"
+                ],
+                "authFullName_s": [
+                    "Barbara Couturaud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844092,
+                "title_s": [
+                    "Considerations concerning asynchronous motors H∞ control on vehicle and mobile robots"
+                ],
+                "authFullName_s": [
+                    "Gh. Livint",
+                    "M. Poboroniuc",
+                    "Jean-Louis Ferrier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844091,
+                "title_s": [
+                    "Réduction des retours clients 0 Kilomètre"
+                ],
+                "authFullName_s": [
+                    "R. Rideau",
+                    "Jacques Berrué"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844090,
+                "title_s": [
+                    "Détection des contours endocardiques et épicardiques du ventricule gauche en IRM cardiaque petit axe sans initialisation manuelle"
+                ],
+                "authFullName_s": [
+                    "Christine Cavaro-Menard",
+                    "A. Le Duff",
+                    "P. Balzer",
+                    "B. Denizot",
+                    "O. Morel",
+                    "P. Jallet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844088,
+                "title_s": [
+                    "Détection des contours endocardiques et épicardiques du ventricule gauche en IRM cardiaque petit axe sans initialisation manuelle"
+                ],
+                "authFullName_s": [
+                    "P. Balzer",
+                    "Christine Cavaro-Menard",
+                    "A. Furber",
+                    "F. Lethimonnier",
+                    "A. Le Duff",
+                    "A. Tadei",
+                    "P. Jallet",
+                    "J.-J. Le Jeune"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844083,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Élaboration d'aluminates d'éléments alcalino-terreux. Étude de la formation de composés secondaires",
+                    "Elaboration of aluminates of alkali earth elements. Study of the formation of secondary compounds"
+                ],
+                "authFullName_s": [
+                    "Laurent Périer-Camby"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 844076,
+                "title_s": [
+                    "Imagerie 3D, applications médicales, diagnostiques et chirurgicales"
+                ],
+                "authFullName_s": [
+                    "C. Caron-Poitreau",
+                    "Christine Cavaro-Menard",
+                    "B. Denizot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844075,
+                "title_s": [
+                    "La résonance stochastique ou le signal utile favorisé par le bruit. Application au neurone"
+                ],
+                "authFullName_s": [
+                    "François Chapeau-Blondeau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844074,
+                "title_s": [
+                    "Analyse de transitoire et de subtransitoire sur le réseau électrique du char Leclerc"
+                ],
+                "authFullName_s": [
+                    "X. Perthue",
+                    "M. Rocamora"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844073,
+                "title_s": [
+                    "Atelier logiciel Petri Maker : de la modélisation à la commande"
+                ],
+                "authFullName_s": [
+                    "Alain Godon",
+                    "P. Chiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844072,
+                "title_s": [
+                    "La commande des graphes d'événements temporisés"
+                ],
+                "authFullName_s": [
+                    "Eric Menguy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 844069,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Instabilités interfaciales morphologiques. Étude de l'évolution morphologique d'une électrode de cuivre soumise à une réaction électrochimique.",
+                    "Morphological interfacial instabilities. Study of the morphological evolution of a copper electrode subjected to an electrochemical reaction"
+                ],
+                "authFullName_s": [
+                    "Jérôme Jutard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            }
+        ]
+    },
+    "nextCursorMark": "AoFVkpwD"
+}

@@ -1,0 +1,1993 @@
+{
+    "response": {
+        "numFound": 515923,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 851650,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-st",
+                    "0.stat",
+                    "1.stat.th"
+                ],
+                "title_s": [
+                    "Validation et personnalisation de la fiabilité prévisionnelle : aports conjoints des essais et du retour d'expérience"
+                ],
+                "authFullName_s": [
+                    "Lambert Pierrat",
+                    "Franck Bayle"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851649,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-st",
+                    "0.stat",
+                    "1.stat.th"
+                ],
+                "title_s": [
+                    "Limites du facteur de forme caractérisant le potentiel énergétique d'un site éolien"
+                ],
+                "authFullName_s": [
+                    "Lambert Pierrat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851648,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-st",
+                    "0.stat",
+                    "1.stat.th"
+                ],
+                "title_s": [
+                    "Estimation de la variabilité des caractéristiques mécaniques : distribution du coefficient de variation à partir d'un faible nombre d'essais"
+                ],
+                "authFullName_s": [
+                    "Lambert Pierrat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851647,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Les mines polymétalliques des Préalpes de Digne-Sisteron. Les mines de plomb argentifère de la haute vallée de la Durance (Alpes-de-Haute-Provence)."
+                ],
+                "authFullName_s": [
+                    "Denis Morin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851646,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.relig"
+                ],
+                "title_s": [
+                    "J'ai vu la grand-mère avec Jésus"
+                ],
+                "authFullName_s": [
+                    "Yannick Fer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851645,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "La bande dessinée de fantasy : un genre français ?"
+                ],
+                "authFullName_s": [
+                    "Benoit Berthou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 851644,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Pré-inventaire des anciennes mines du Jura (Département du Jura). Etude diachronique des vestiges d'exploitation minière (Archives Nationales et Départementales)."
+                ],
+                "authFullName_s": [
+                    "Denis Morin",
+                    "Michel Philippe",
+                    "Patrick Rosenthal"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851643,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Les anciennes mines des Préalpes de Digne-Sisteron. La mine de Barles et les mines de plomb argentifère de la haute vallée de la Durance ( Alpes de Haute-Provence)."
+                ],
+                "authFullName_s": [
+                    "Denis Morin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851642,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "L'autobiographie : pour une nouvelle bande dessinée ?"
+                ],
+                "authFullName_s": [
+                    "Benoit Berthou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 851641,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Fiction et forme encyclopédique : Wookieepedia, Dragon Ball Wiki et Cie"
+                ],
+                "authFullName_s": [
+                    "Benoit Berthou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 851640,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Les métamorphoses de la lecture de bande dessinée : un défi pour la bibliothèque"
+                ],
+                "authFullName_s": [
+                    "Benoit Berthou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 851638,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "L'édition en Midi-Pyrénées"
+                ],
+                "authFullName_s": [
+                    "Benoit Berthou",
+                    "Vacher Yanik"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 851636,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Étude de faisabilité et de préfiguration d'un Système productif Local du livre dans le Nord-Est francilien"
+                ],
+                "authFullName_s": [
+                    "Benoit Berthou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 851635,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Les librairies en ligne : quelle interface pour le livre ?"
+                ],
+                "authFullName_s": [
+                    "Benoit Berthou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 851634,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "La créativité : une organisation territoriale"
+                ],
+                "authFullName_s": [
+                    "Benoit Berthou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 851633,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Les mines polymétalliques de Barles-Verdaches et Saint-Geniez. Réserve Géologique de Digne (Alpes-de-Haute-Provence) Prospections thématiques programmées du Conseil Supérieur de la Recherche Archéologique (CSRA) et du CNRS. : \" Mines et Minières polymétalliques des Alpes de Haute Provence de l'Antiquité à l'Epoque Moderne - Programme H.03 Mines \"."
+                ],
+                "authFullName_s": [
+                    "Denis Morin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851629,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Genèse et logiques des politiques de prostitution en France"
+                ],
+                "authFullName_s": [
+                    "Lilian Mathieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851628,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Comment lutter?"
+                ],
+                "authFullName_s": [
+                    "Lilian Mathieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851627,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "La politisation par la grève ?"
+                ],
+                "authFullName_s": [
+                    "Lilian Mathieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851626,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Des années 1970 aux années 2000"
+                ],
+                "authFullName_s": [
+                    "Lilian Mathieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851621,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Répression ou éducation ?"
+                ],
+                "authFullName_s": [
+                    "Lilian Mathieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851620,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Minorité sexuelle \", in , Paris, La Découverte, 2012, p. 744-750"
+                ],
+                "authFullName_s": [
+                    "Lilian Mathieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851619,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Apports et limites de l'analyse féministe pour une sociologie de la prostitution"
+                ],
+                "authFullName_s": [
+                    "Lilian Mathieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851618,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "De l'objectivation à l'émotion"
+                ],
+                "authFullName_s": [
+                    "Lilian Mathieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851617,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.ocean"
+                ],
+                "title_s": [
+                    "GNSS: géodésie, météorologie et climat",
+                    "GNSS: geodesy, meteorology and climate"
+                ],
+                "authFullName_s": [
+                    "Olivier Bock"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "HDR",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 851612,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "L'autre côté de la barricade"
+                ],
+                "authFullName_s": [
+                    "Lilian Mathieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851610,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Mines et métallurgie du fer de Provence et des Alpes du Sud. Étude diachronique des vestiges d'exploitation minière et de métallurgie du fer dans les Alpes et en région Provence-Alpes-Côte-d'Azur."
+                ],
+                "authFullName_s": [
+                    "Denis Morin",
+                    "Patrick Rosenthal"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851609,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Un militantisme qui n'a de nouveau que le nom"
+                ],
+                "authFullName_s": [
+                    "Lilian Mathieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851608,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Comment lutter ?"
+                ],
+                "authFullName_s": [
+                    "Lilian Mathieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851600,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-st",
+                    "0.stat",
+                    "1.stat.th"
+                ],
+                "title_s": [
+                    "Plans d'expérience pour l'estimation de la courbe de concentration et de l'AUC"
+                ],
+                "authFullName_s": [
+                    "Mohamad Belouni",
+                    "Karim Benhenni"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851572,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Quatre orientations pour l'évolution du système français de recherche et d'innovation"
+                ],
+                "authFullName_s": [
+                    "P. Laredo",
+                    "F. Sachwald"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851571,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Société de la connaissance et \" fabrique \" de l'intervention publique : le rôle du débat public (Postface)"
+                ],
+                "authFullName_s": [
+                    "P. Laredo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851569,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "[Big Data in biology]."
+                ],
+                "authFullName_s": [
+                    "Alain Viari"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851568,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "A quoi sert la distinction des causes et des raisons ?"
+                ],
+                "authFullName_s": [
+                    "Philippe De Lara"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851566,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Articles \" Lévy-Bruhl \", \" Règles et institutions \", \" Taylor \", \" Wittgenstein"
+                ],
+                "authFullName_s": [
+                    "Philippe De Lara"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851564,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Le \"pluralisme raisonnable\" est-il raisonnable ?"
+                ],
+                "authFullName_s": [
+                    "Philippe De Lara"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851555,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Ticket chic, ticket choc"
+                ],
+                "authFullName_s": [
+                    "Gilles Jeannot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851554,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Services et biens partagés"
+                ],
+                "authFullName_s": [
+                    "Gilles Jeannot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851553,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Des technologies d'enquête participative dans le développement rural"
+                ],
+                "authFullName_s": [
+                    "Gilles Jeannot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851534,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Biofilms en réseau d’assainissement"
+                ],
+                "authFullName_s": [
+                    "Frédérique Larrarte",
+                    "Marie-Noëlle Pons",
+                    "Bertrand Riochet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851526,
+                "title_s": [
+                    "Représentations des groupes réductifs $p$-adiques."
+                ],
+                "authFullName_s": [
+                    "David Renard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851525,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gciv",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Relations entre la composition, la structure et les propriétés thermo-mécaniques des matériaux bitumineux"
+                ],
+                "authFullName_s": [
+                    "François Olard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "HDR",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 851503,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "L’appareil DFT (Dynamic Friction Tester) : première expérimentation française"
+                ],
+                "authFullName_s": [
+                    "Véronique Cerezo",
+                    "Minh Tan Do",
+                    "Patrick Maisonneuve",
+                    "Mathias Liegeois",
+                    "Pierre Pellegrino"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 851498,
+                "title_s": [
+                    "Comparaison de différentes armatures utilisées pour le renforcement du béton"
+                ],
+                "authFullName_s": [
+                    "Virginie Perier",
+                    "Sylvain Chataigner",
+                    "Anthony Pruvost"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 851496,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Structuration des démarches de progrès"
+                ],
+                "authFullName_s": [
+                    "Maurice Pillet",
+                    "Jean Luc Maire",
+                    "Magali Pralus",
+                    "Julien Boissiere"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 851494,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Etude du fluage des interfaces collées béton/composite couplé à un vieillissement hygrothermique"
+                ],
+                "authFullName_s": [
+                    "Nourredine Houhou",
+                    "Karim Benzarti",
+                    "Marc Quiertant",
+                    "Sylvain Chataigner",
+                    "Georges Youssef",
+                    "Christophe Aubagnac",
+                    "Marjorie Rabasse",
+                    "André Flety"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 851493,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-bio"
+                ],
+                "title_s": [
+                    "Sciences, savants et colonies"
+                ],
+                "authFullName_s": [
+                    "Gilles Boëtsch"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851492,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Influence des charges minérales sur les propriétés viscoélastiques et le comportement en fluage d’adhésifs utilisés en construction"
+                ],
+                "authFullName_s": [
+                    "Nourredine Houhou",
+                    "Karim Benzarti",
+                    "Marc Quiertant",
+                    "Céline Marty",
+                    "Sylvain Chataigner"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 851489,
+                "domain_s": [
+                    "0.chim",
+                    "1.chim.theo",
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-chem-ph",
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-comp-ph"
+                ],
+                "title_s": [
+                    "Développements méthodologiques en chimie quantique : méthodes de Monte Carlo quantique et théorie de la fonctionnelle de la densité",
+                    "Methodological developments in quantum chemistry: Quantum Monte Carlo methods and density-functional theory"
+                ],
+                "authFullName_s": [
+                    "Julien Toulouse"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "HDR",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851482,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-bio"
+                ],
+                "title_s": [
+                    "La fin des villes, la durée des quartiers."
+                ],
+                "authFullName_s": [
+                    "Jean-Marie Marconot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851481,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-bio"
+                ],
+                "title_s": [
+                    "Evaluation de deux appareils de mesure automatisée de la masse grasse par impédancemétrie bioélectrique en comparaison avec l'absorptiométrie biphotonique."
+                ],
+                "authFullName_s": [
+                    "Hanène Samouda",
+                    "Anne Dutour-Meyer",
+                    "Jean-Pierre Bisset",
+                    "Hervé Chaudet",
+                    "Gilles Boëtsch",
+                    "Olivier Dutour",
+                    "Frédéric Dadoun"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851475,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.spee"
+                ],
+                "title_s": [
+                    "Institut Gustave-Roussy (IGR) : l'espace de rencontres et d'informations (ERI)"
+                ],
+                "authFullName_s": [
+                    "Anne Festa",
+                    "A. Duperray",
+                    "Philippe Amiel",
+                    "Gérard Nitenberg"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 851474,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.mat",
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Caractérisation mécanique de l'interface collée béton/renfort composite par essai de cisaillement"
+                ],
+                "authFullName_s": [
+                    "Sylvain Chataigner",
+                    "A Flety",
+                    "Christophe Aubagnac",
+                    "Marc Quiertant",
+                    "Karim Benzarti"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 851472,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.spee"
+                ],
+                "title_s": [
+                    "Des accompagnateurs de santé non soignants au cœur de l'hôpital"
+                ],
+                "authFullName_s": [
+                    "Anne Festa",
+                    "Philippe Amiel",
+                    "Gérard Nitenberg"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 851469,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.hisphilso"
+                ],
+                "title_s": [
+                    "Quand les \" objets muets \" prennent la parole. L'archéologie au service de l'histoire des sociétés des piémonts orientaux des monts Mandara (Cameroun)."
+                ],
+                "authFullName_s": [
+                    "Olivier Langlois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851466,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil",
+                    "0.shs",
+                    "1.shs.droit",
+                    "0.sdv",
+                    "1.sdv.spee"
+                ],
+                "title_s": [
+                    "Bongrand P-C., De l'expérimentation sur l'homme, sa valeur scientifique et sa légitimité, présenté par A. Fagot-Largeault. et P. Amiel"
+                ],
+                "authFullName_s": [
+                    "Anne Fagot-Largeault",
+                    "Philippe Amiel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 851465,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Le patrimoine dans les politiques de réhabilitation du centre ancien de Barcelone. Discours et réalité (1980-2008)"
+                ],
+                "authFullName_s": [
+                    "Hovig Ter Minassian"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851451,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-st",
+                    "0.stat",
+                    "1.stat.th",
+                    "0.math",
+                    "1.math.math-pr"
+                ],
+                "title_s": [
+                    "Sur quelques résultats d'inférence pour les processus fractionnaires et les processus ponctuels spatiaux de Gibbs",
+                    "Inference results for fractional processes and spatial Gibbs point processes"
+                ],
+                "authFullName_s": [
+                    "Jean-François Coeurjolly"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "HDR",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851446,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.phil",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Au-delà du virtuel : interactions sociales et spatiales dans et autour d'un univers vidéoludique"
+                ],
+                "authFullName_s": [
+                    "Manuel Boutet",
+                    "Isabel Colón de Carvajal",
+                    "Hovig Ter Minassian",
+                    "Mathieu Triclot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851444,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.mat",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.stru",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.stru"
+                ],
+                "title_s": [
+                    "Approche performantielle de la durabilité des ouvrages d'art en béton : présentation et exemples d'application sur le réseau de la DIR Centre Est"
+                ],
+                "authFullName_s": [
+                    "Bruno Godart",
+                    "Brigitte Mahut",
+                    "Didier Brazillier",
+                    "Christophe Aubagnac",
+                    "Bruno Boulet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 851441,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-st",
+                    "0.stat",
+                    "1.stat.th"
+                ],
+                "title_s": [
+                    "Projets tuteurés autour de la simulation aléatoire de jeux pour enfants"
+                ],
+                "authFullName_s": [
+                    "Frédérique Letué",
+                    "Alain Birebent",
+                    "Nathalie Catinot",
+                    "Philippe Garat",
+                    "Florent Girod",
+                    "Damien Jacquemoud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851437,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-st",
+                    "0.stat",
+                    "1.stat.th"
+                ],
+                "title_s": [
+                    "Des activités de statistique autour de l'IMC et de la météorologie du collège au lycée"
+                ],
+                "authFullName_s": [
+                    "Philippe Garat",
+                    "Florent Girod",
+                    "Damien Jacquemoud",
+                    "Frédérique Letué"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851433,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-st",
+                    "0.stat",
+                    "1.stat.th"
+                ],
+                "title_s": [
+                    "Des statistiques autour de l'IMC de la 6e à la terminale"
+                ],
+                "authFullName_s": [
+                    "Philippe Garat",
+                    "Florent Girod",
+                    "Damien Jacquemoud",
+                    "Frédérique Letué"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851430,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-st",
+                    "0.stat",
+                    "1.stat.th"
+                ],
+                "title_s": [
+                    "Des statistiques autour de l'IMC et de la météo de la 6ème à la terminale"
+                ],
+                "authFullName_s": [
+                    "Philippe Garat",
+                    "Florent Girod",
+                    "Damien Jacquemoud",
+                    "Frédérique Letué"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851428,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-bio"
+                ],
+                "title_s": [
+                    "De l'anthropologie des décharges à l'évaluation interdisciplinaire des risques sanitaires"
+                ],
+                "authFullName_s": [
+                    "Cyrille Harpet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851426,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-st",
+                    "0.stat",
+                    "1.stat.th"
+                ],
+                "title_s": [
+                    "Des activités de statistique déclinées de la sixième à la terminale : deux exemples autour de la santé publique et de la climatologie"
+                ],
+                "authFullName_s": [
+                    "Philippe Garat",
+                    "Florent Girod",
+                    "Damien Jacquemoud",
+                    "Frédérique Letué"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851419,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-bio"
+                ],
+                "title_s": [
+                    "Age à la ménarche : évolution séculaire et relation avec la taille, le poids et l'indice de masse corporelle chez des adolescentes scolarisées de la ville de Marrakech (Maroc)"
+                ],
+                "authFullName_s": [
+                    "Abdellatif Baali",
+                    "A. Lahmam",
+                    "Mohamed Cherkaoui",
+                    "S. Lamtali",
+                    "H. Amor",
+                    "Françoise Rovillé-Sausse",
+                    "Gilles Boëtsch"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851415,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-bio"
+                ],
+                "title_s": [
+                    "Quantification de l'état de conservation des collections ostéoarchéologique et ses champs d'application en anthropologie"
+                ],
+                "authFullName_s": [
+                    "Silvia Bello",
+                    "Aminte Thomann",
+                    "Emma Rabino-Massa",
+                    "Olivier Dutour"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851406,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.ie",
+                    "0.info",
+                    "1.info.info-mo"
+                ],
+                "title_s": [
+                    "Vers un cadre intégré de la conceptualisation de l'analyse de cycle de vie appliquée à la biomasse produite à des fins énergétiques. Partie I : Cadre méthodologique de l'ACV de la biomasse produite à des fins énergétiques : état de l'art et synthèse bibliographique"
+                ],
+                "authFullName_s": [
+                    "Mahamadou Belem",
+                    "H. M. Saley",
+                    "Philippe Girard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 851395,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.info",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Les usages dune carte dynamique en situation de catastrophe naturelle. Une étude des annotations dun mashup proposé après le passage de louragan Katrina sur la Nouvelle-Orléans"
+                ],
+                "authFullName_s": [
+                    "M. Relieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851392,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Étude en laboratoire de l'adhérence béton de resurfaçage - dalle de chaussée"
+                ],
+                "authFullName_s": [
+                    "Minh Tan Do",
+                    "Gilles Chanvillard",
+                    "Claude Lupien",
+                    "Pierre-Claude Aitcin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 851391,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.can"
+                ],
+                "title_s": [
+                    "[Ki67, nucleolus and cancer]."
+                ],
+                "authFullName_s": [
+                    "Hichem C Mertani",
+                    "Stéphane Belin",
+                    "Jean-Jacques Diaz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851388,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.can"
+                ],
+                "title_s": [
+                    "[Transarterial chemoembolization and conformal radiotherapy for hepatocellular carcinoma]."
+                ],
+                "authFullName_s": [
+                    "P. Merle",
+                    "F. Mornex"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851387,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.can"
+                ],
+                "title_s": [
+                    "[Medical therapies for hepatocellular carcinoma]."
+                ],
+                "authFullName_s": [
+                    "P. Merle",
+                    "F. Mornex"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851384,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.mcg"
+                ],
+                "title_s": [
+                    "Changement climatique et risque hydrologique : évaluation de la méthode SCHADEX en contexte non-stationnaire",
+                    "Climate change and flood hazard: Evaluation of the SCHADEX methodology in a non-stationnary context."
+                ],
+                "authFullName_s": [
+                    "Pierre Brigode"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851382,
+                "domain_s": [
+                    "0.chim",
+                    "1.chim.mate"
+                ],
+                "title_s": [
+                    "Impact de la matrice cimentaire sur le développement de biofilms dans les réseaux d’assainissement"
+                ],
+                "authFullName_s": [
+                    "Marielle Gueguen Minerbe",
+                    "Jean Herisson",
+                    "Pascal Taquet",
+                    "Thierry Chaussadent"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 851376,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "La pause méridienne : un facteur clé de l’évolution de la mobilité en France depuis 35 ans"
+                ],
+                "authFullName_s": [
+                    "Jean Paul Hubert",
+                    "Joël Meissonnier",
+                    "Jean Loup Madre",
+                    "Sophie Roux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 851351,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Lewis Carroll et la persistance de l'image"
+                ],
+                "authFullName_s": [
+                    "Lawrence Gasquet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851349,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco",
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Critère du concurrent aussi efficace et approche par les effets en matière d'éviction par les prix"
+                ],
+                "authFullName_s": [
+                    "Frédéric Marty"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851348,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco",
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Vers un cadre unifié en matière de contrôle des stratégies d'éviction par les prix mises en œuvre par les opérateurs dominants ?"
+                ],
+                "authFullName_s": [
+                    "Frédéric Marty"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851347,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "L'Art de Plaire"
+                ],
+                "authFullName_s": [
+                    "Lawrence Gasquet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851346,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Lewis Carroll et les mythologies de l'enfance"
+                ],
+                "authFullName_s": [
+                    "Lawrence Gasquet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851344,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "L'Eblouissement de la Peinture: Ruskin sur Turner"
+                ],
+                "authFullName_s": [
+                    "Lawrence Gasquet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851341,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-st",
+                    "0.stat",
+                    "1.stat.th"
+                ],
+                "title_s": [
+                    "Activités de statistique déclinées de la sixième à la terminale : un exemple autour de la climatologie"
+                ],
+                "authFullName_s": [
+                    "Philippe Garat",
+                    "Florent Girod",
+                    "Damien Jacquemoud",
+                    "Frédérique Letué"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851332,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation numérique de l’interface acier-béton : Application au comportement des structures en béton renforcées par des aciers plats crantés"
+                ],
+                "authFullName_s": [
+                    "Thanh Song Phan"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 851330,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Influence des films d’eau très minces sur le frottement pneu/chaussée"
+                ],
+                "authFullName_s": [
+                    "Yannick Beautru"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 851328,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-s"
+                ],
+                "title_s": [
+                    "Machines à supraconducteurs"
+                ],
+                "authFullName_s": [
+                    "Bruno Douine",
+                    "Jean Leveque",
+                    "Smail Mezani",
+                    "Abderrezak Rezzoug"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851327,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Premières étapes de construction d'une mesure du sentiment de \" chez soi \" : génération des items et structure factorielle"
+                ],
+                "authFullName_s": [
+                    "Jean-Luc Giannelloni",
+                    "Véronique Cova"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851311,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Le paludisme urbain à Brazzaville : hétérogénéité locale, enjeu global"
+                ],
+                "authFullName_s": [
+                    "Marion Borderon",
+                    "Camille Perchoux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851304,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Modèle de frottement pour l'analyse du freinage en ligne droite d'un véhicule léger"
+                ],
+                "authFullName_s": [
+                    "Minh Tan Do"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 851303,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Frottement Pneumatique / Chaussée – Influence de la microtexture des surfaces de chaussée"
+                ],
+                "authFullName_s": [
+                    "Minh Tan Do",
+                    "Hassan Zahouani"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851302,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-bio"
+                ],
+                "title_s": [
+                    "Le stéréotype en images : construction et déconstruction de la trilogie familiale dans la société assiégée par la peste. Pour une étude anthropologique des représentations iconographiques."
+                ],
+                "authFullName_s": [
+                    "Dominique Chevé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851300,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Etude de la valorisation des déblais de chantiers de tunnels riches en sulfates en granulats à béton"
+                ],
+                "authFullName_s": [
+                    "Jérémy Colas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 851299,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-bio"
+                ],
+                "title_s": [
+                    "Du Maure à la mauresque : les métamorphoses d'un stéréotype dans les représentations savantes et vulgaires"
+                ],
+                "authFullName_s": [
+                    "Gilles Boëtsch",
+                    "Jean-Noël Ferrié"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851296,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Qu’est-ce que l’écomobilité ?"
+                ],
+                "authFullName_s": [
+                    "Francis Papon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 851292,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.envir"
+                ],
+                "title_s": [
+                    "Réflexions sur le transfert méthodologique de l'analyse qualitative d'accidents de la circulation routière issue de l'étude détaillée des accidents (EDA) française aux procédures d'accidents colombiennes"
+                ],
+                "authFullName_s": [
+                    "Adriana Jimenez-Florez",
+                    "Joël Yerpez",
+                    "Juan Pablo Bocarejo",
+                    "Céline Parraud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 851290,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-bio"
+                ],
+                "title_s": [
+                    "Introduction. Populations, sociétés et patrimoines dans les milieux alpins"
+                ],
+                "authFullName_s": [
+                    "Gilles Boëtsch"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851289,
+                "domain_s": [
+                    "0.stat",
+                    "1.stat.ap"
+                ],
+                "title_s": [
+                    "Qualitative judgements of resemblance between road accident cases: What degree of agreement among experts?"
+                ],
+                "authFullName_s": [
+                    "Thierry Brenac",
+                    "Nicolas Clabaux",
+                    "Christophe Perrin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 851283,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-bio"
+                ],
+                "title_s": [
+                    "Composition corporelle d'un échantillon d'élèves d'El Yopal, Casanare - Colombie"
+                ],
+                "authFullName_s": [
+                    "R. Hauspie",
+                    "J.-C. Carrillo",
+                    "M.-J. Ireton",
+                    "L.-E. Caro",
+                    "J.-C. Morales",
+                    "A. Prada"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 851270,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-bio"
+                ],
+                "title_s": [
+                    "Calcul du \"profil théorique de survie osseuse la plus problabe\" et son utilisation dans l'interprétation des processus taphonomiques pouvant déterminer la formation d'un échantillon ostéologique humain"
+                ],
+                "authFullName_s": [
+                    "Silvia Bello",
+                    "Aminte Thomann",
+                    "Loïc Lalys",
+                    "Michel Signoli",
+                    "Emma Rabino-Massa",
+                    "Olivier Dutour"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFW1J8D"
+}

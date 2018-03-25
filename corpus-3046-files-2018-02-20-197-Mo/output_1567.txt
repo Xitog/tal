@@ -1,0 +1,2364 @@
+{
+    "response": {
+        "numFound": 515922,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1210087,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.be",
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.shs",
+                    "1.shs.envir"
+                ],
+                "title_s": [
+                    "Projet FarmLand : Quel est le rôle de l'hétérogénéité spatiale de la mosaïque des cultures sur la biodiversité et les services écosystémiques?"
+                ],
+                "authFullName_s": [
+                    "Colette Bertrand",
+                    "Romain Georges",
+                    "Stéphanie Aviron",
+                    "Jacques Baudry",
+                    "Françoise Burel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1210086,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.be",
+                    "0.shs",
+                    "1.shs.envir"
+                ],
+                "title_s": [
+                    "ModeliSAD modélisation des systèmes techniques au département du SAD"
+                ],
+                "authFullName_s": [
+                    "Gilles Martel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210085,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.be",
+                    "0.shs",
+                    "1.shs.envir"
+                ],
+                "title_s": [
+                    "Changement d’échelles et acteurs : enquêtes et modélisation"
+                ],
+                "authFullName_s": [
+                    "Gilles Martel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210084,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.be",
+                    "0.shs",
+                    "1.shs.envir"
+                ],
+                "title_s": [
+                    "PAYOTE : PAYsage Ou TErritoire : réseau pluri-disciplinaire d'échange sur des questions méthodologiques et conceptuelles relatives à la modélisation des paysages et des territoires agricoles"
+                ],
+                "authFullName_s": [
+                    "Hugues Boussard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210083,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.be",
+                    "0.shs",
+                    "1.shs.envir"
+                ],
+                "title_s": [
+                    "Comment relier activités agricoles, dynamique des paysages, biodiversité et qualité de l’eau ?"
+                ],
+                "authFullName_s": [
+                    "Jacques Baudry"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210080,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.be",
+                    "0.shs",
+                    "1.shs.envir"
+                ],
+                "title_s": [
+                    "Analyse de l’effet de l’hétérogénéité des paysages produite par les pratiques agricoles sur les insectes ravageurs et auxiliaires des cultures."
+                ],
+                "authFullName_s": [
+                    "Alexandre Joannon",
+                    "Stéphanie Aviron",
+                    "Jacques Baudry",
+                    "Camille Puech",
+                    "Chloé Vasseur"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210079,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.shs",
+                    "1.shs.envir"
+                ],
+                "title_s": [
+                    "Résolution du problème d’allocation de culture par satisfaction de contraintes pondérées"
+                ],
+                "authFullName_s": [
+                    "Mahuna Akplogan",
+                    "Jérôme Dury",
+                    "Simon De Givry",
+                    "Gauthier Quesnel",
+                    "Alexandre Joannon",
+                    "Frederick Garcia"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210078,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.be",
+                    "0.shs",
+                    "1.shs.envir"
+                ],
+                "title_s": [
+                    "Développement d’une méthodologie pour évaluer, par la modélisation, l’impact des changements climatiques sur les Jours Agronomiquement Disponibles"
+                ],
+                "authFullName_s": [
+                    "Sylvain Pousset"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210077,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.be",
+                    "0.shs",
+                    "1.shs.envir"
+                ],
+                "title_s": [
+                    "Concilier agricultures et gestion de la biodiversité"
+                ],
+                "authFullName_s": [
+                    "Lisa Durand",
+                    "Marie Cipière",
+                    "Anne-Sophie Carpentier",
+                    "Jacques Baudry"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210076,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.be",
+                    "0.shs",
+                    "1.shs.envir"
+                ],
+                "title_s": [
+                    "Développement d’un réseau régional de sélection participative pour expérimenter et promouvoir le maïs « population » en Bretagne"
+                ],
+                "authFullName_s": [
+                    "Emma Forst"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210075,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.be",
+                    "0.shs",
+                    "1.shs.envir"
+                ],
+                "title_s": [
+                    "Identification des critères de sélection des blés chez les paysans-boulangers"
+                ],
+                "authFullName_s": [
+                    "Vincent Rouellat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210074,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.be",
+                    "0.shs",
+                    "1.shs.envir"
+                ],
+                "title_s": [
+                    "Étude de la diversité génétique de blés paysans sur la hauteur et la biomasse"
+                ],
+                "authFullName_s": [
+                    "Marie Pichon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210073,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.be"
+                ],
+                "title_s": [
+                    "Sélection statistique de variables pour une recherche participative à la ferme : cas du blé tendre (Triticum aestivum L)"
+                ],
+                "authFullName_s": [
+                    "Benjamin Negre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210069,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.be",
+                    "0.shs",
+                    "1.shs.envir"
+                ],
+                "title_s": [
+                    "Hétérogénéité de la colonisation des cultures maraîchères sous abri par les auxiliaires indigènes : rôle de la conduite des cultures et de leur environnement paysager"
+                ],
+                "authFullName_s": [
+                    "Stéphanie Aviron",
+                    "Matthieu Perraudin",
+                    "Simon Redondo",
+                    "Yann-David Varennes",
+                    "Amélie Lefevre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210068,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.be",
+                    "0.shs",
+                    "1.shs.envir"
+                ],
+                "title_s": [
+                    "Effet des pratiques biologiques et conventionnelles sur les communautés d’insectes auxiliaires dans les paysages agricoles"
+                ],
+                "authFullName_s": [
+                    "Camille Puech",
+                    "Jacques Baudry",
+                    "Stéphanie Aviron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210066,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.be",
+                    "0.shs",
+                    "1.shs.envir",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Un paysage rural façonné"
+                ],
+                "authFullName_s": [
+                    "Françoise Burel",
+                    "Jacques Baudry"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1210065,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.es"
+                ],
+                "title_s": [
+                    "Comprendre et maîtriser l'érosion en Pays de Caux"
+                ],
+                "authFullName_s": [
+                    "Alexandre Joannon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210064,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Déterminants du choix de l'assolement par les éleveurs de porcs en Bretagne"
+                ],
+                "authFullName_s": [
+                    "Elodie Tersiguel",
+                    "Yannick Ramonet",
+                    "Jean-Luc Giteau",
+                    "Gilles Martel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210062,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.be",
+                    "0.shs",
+                    "1.shs.envir",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Effet des pratiques agricoles sur une communauté d’insectes utiles (les coccinelles), à l’échelle de la parcelle et du paysage."
+                ],
+                "authFullName_s": [
+                    "Zoé Mallet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210059,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.be",
+                    "0.shs",
+                    "1.shs.envir",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "PAC ET INFRASTRUCTURES AGRO ÉCOLOGIQUES"
+                ],
+                "authFullName_s": [
+                    "Claudine Thenail"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210044,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.be",
+                    "0.shs",
+                    "1.shs.envir"
+                ],
+                "title_s": [
+                    "Conduite du Blé d’hiver en Bretagne : diversité des pratiques agricoles"
+                ],
+                "authFullName_s": [
+                    "Camille Puech"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210043,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.be",
+                    "0.shs",
+                    "1.shs.envir",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Rapport final d’animation du programme DIVA2"
+                ],
+                "authFullName_s": [
+                    "Jacques Baudry"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210037,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.mcg",
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.be"
+                ],
+                "title_s": [
+                    "Effet du mode de gestion des cultures (biologique versus conventionnel) de blé d’hiver et de leur environnement paysager en sur les communautés de coccinelles [Coléoptères: Coccinellidae] et de puerons [Héminoptera : Aphididae]."
+                ],
+                "authFullName_s": [
+                    "Maxime Poupelin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210036,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.be",
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.mcg"
+                ],
+                "title_s": [
+                    "Place de la gestion territoriale dans l’évolution des exploitations agricoles"
+                ],
+                "authFullName_s": [
+                    "Margot Moulin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210035,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.mcg",
+                    "0.sde",
+                    "1.sde.be"
+                ],
+                "title_s": [
+                    "Le travail des éleveurs avicoles et porcins : une grande diversité de stratégies, d’attentes, de durée et de productivité"
+                ],
+                "authFullName_s": [
+                    "Gilles Martel",
+                    "Caroline Depoudent",
+                    "Christine Roguet",
+                    "Sylvain Gallot",
+                    "Christèle Pineau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210034,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.mcg",
+                    "0.sde",
+                    "1.sde.be"
+                ],
+                "title_s": [
+                    "Le rôle des pratiques agricoles sur le contrôle biologique du blé d'hiver dans les paysages du sud de Ille et Vilaine"
+                ],
+                "authFullName_s": [
+                    "Maëva Le Danvic"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210033,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.be",
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.mcg"
+                ],
+                "title_s": [
+                    "Analyses de données PaysBlé 2011-2012 : Description des agrosystèmes"
+                ],
+                "authFullName_s": [
+                    "Remi Gleau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210032,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.be",
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.mcg"
+                ],
+                "title_s": [
+                    "Effets de la composition et de l’organisation spatiale des paysages agricoles bretons sur la distribution des communautés de coléoptères carabiques (Coleoptera, Carabidae)."
+                ],
+                "authFullName_s": [
+                    "Ambre Deliencourt"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210030,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.be",
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.mcg",
+                    "0.sdv",
+                    "1.sdv.ba",
+                    "2.sdv.ba.zi"
+                ],
+                "title_s": [
+                    "EFFET DES PRATIQUES AGRICOLES ET DE L'ENVIRONNEMENT PAYSAGER DES CULTURES DE BLÉ EN AGRICULTURE BIOLOGIQUE SUR LES COMMUNAUTÉS DE CARABES AUXILIAIRES (COLEOPTERES: CARABIDAE)"
+                ],
+                "authFullName_s": [
+                    "Elisabeth Cabon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210029,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.be",
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.mcg"
+                ],
+                "title_s": [
+                    "Écologie du Paysage& Écologie végétale"
+                ],
+                "authFullName_s": [
+                    "Françoise Burel",
+                    "Aude Ernoult",
+                    "Assu Gil-Tena",
+                    "Lisa Favre",
+                    "Cendrine Mony",
+                    "Remi Duflot",
+                    "Romain Georges",
+                    "Jacques Baudry"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1210028,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sde",
+                    "1.sde.be",
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.mcg"
+                ],
+                "title_s": [
+                    "Colonisation des cultures maraîchères sous abri par les auxiliaires indigènes"
+                ],
+                "authFullName_s": [
+                    "Amélie Lefevre",
+                    "Stéphanie Aviron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210024,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Relation entre la carie du blé (Tilletia spp.) et son environnement, et propositions de recherches futures pour des agriculteurs en mode de production biologique"
+                ],
+                "authFullName_s": [
+                    "Alix Vidal"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1210022,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Système de vision et d'analyse d'images pour le suivi automatisé du développement des semences et plantules"
+                ],
+                "authFullName_s": [
+                    "Landry Benoit",
+                    "Etienne Belin",
+                    "François Chapeau-Blondeau",
+                    "David Rousseau",
+                    "Didier Demilly",
+                    "Sylvie Ducournau",
+                    "Carolyne Durr"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1210012,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "La résilience urbaine : un nouveau concept opérationnel vecteur de durabilité urbaine ?"
+                ],
+                "authFullName_s": [
+                    "Serge Lhomme",
+                    "Richard Laganier",
+                    "Youssef Diab",
+                    "Damien Serre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1209991,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Evolution des propriétés mécaniques de la paroi au cours de la maturation de la pomme"
+                ],
+                "authFullName_s": [
+                    "Emmanuelle Dheilly",
+                    "Adelin Barbacci",
+                    "Estelle Bonnin",
+                    "Mathilde Orsel Baldwin",
+                    "Jean-Pierre Renou",
+                    "Marc Lahaye"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209984,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ot"
+                ],
+                "title_s": [
+                    "Du diagnostic au champ à la surveillance du territoire européen : présentation de plusieurs outils innovants pour l’identification des bioagresseurs des plantes cultivées"
+                ],
+                "authFullName_s": [
+                    "Jean Yves Rasplus",
+                    "Dominique Blancard",
+                    "Thierry Candresse",
+                    "Ariane Chabert",
+                    "Astrid Cruaud",
+                    "Charles Manceau",
+                    "Jean-Claude Streito"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1209977,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Fortes températures : conséquences sur le rendement, la composition et la germination des graines"
+                ],
+                "authFullName_s": [
+                    "Annabelle Larmure",
+                    "Judith Burstin",
+                    "Nathalie Munier-Jolain",
+                    "Carolyne Durr",
+                    "Maria-Helena Wagner",
+                    "Sylvie Ducournau",
+                    "Veronique Biarnès",
+                    "Isabelle Chaillet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1209976,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Évolution temporelle de la diversité génétique de Chaerophyllum bulbosum : conséquences sur la gestion des ressources génétiques"
+                ],
+                "authFullName_s": [
+                    "Valérie Le Clerc",
+                    "Anita Suel",
+                    "Emmanuel Geoffriau",
+                    "Sébastien Huet",
+                    "Mathilde Briard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1209961,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Vers des agricultures à hautes performances"
+                ],
+                "authFullName_s": [
+                    "Herve Guyomard",
+                    "Christian Huyghe",
+                    "Jean-Louis Peyraud",
+                    "Jean Boiffin",
+                    "Bernard Coudurier",
+                    "François Jeuland",
+                    "Nicolas Urruty"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209953,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Vers des agricultures à hautes performances"
+                ],
+                "authFullName_s": [
+                    "Herve Guyomard",
+                    "Christian Huyghe",
+                    "Jean-Louis Peyraud",
+                    "Jean Boiffin",
+                    "Bernard Coudurier",
+                    "François Jeuland",
+                    "Nicolas Urruty"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209945,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Fraxinus angustifolia : sosie méditerranéen du frêne commun"
+                ],
+                "authFullName_s": [
+                    "Christophe Chambolle",
+                    "Valéry Malécot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1209923,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Sensibilité à l'oïdium et à la tavelure d'une gamme variétale de pommier"
+                ],
+                "authFullName_s": [
+                    "Laurent Brun",
+                    "Freddy Combe",
+                    "Eva Laget",
+                    "Christophe Gros",
+                    "Luciana Parisi",
+                    "Frederique Didelot",
+                    "Mehdi Al Rifai",
+                    "Marie-Noëlle Bellanger",
+                    "Caroline Denance",
+                    "Charles Eric Durel",
+                    "Pascale Expert",
+                    "Elisa Ravon",
+                    "Valerie Caffier",
+                    "Gilles Orain",
+                    "Philippe Billy",
+                    "Christophe Brouard",
+                    "Arnaud Lemarquand"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209905,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Sensibilité variétale aux maladies et ravageurs. Fiche n° 10 : la tavelure"
+                ],
+                "authFullName_s": [
+                    "Laurent Brun",
+                    "Freddy Combe",
+                    "Eva Laget",
+                    "Christophe Gros",
+                    "Luciana Parisi",
+                    "Frederique Didelot",
+                    "Mehdi Al Rifai",
+                    "Marie-Noëlle Bellanger",
+                    "Caroline Denance",
+                    "Charles Eric Durel",
+                    "Pascale Expert",
+                    "Elisa Ravon",
+                    "Valerie Caffier",
+                    "Gilles Orain",
+                    "Philippe Billy",
+                    "Christophe Brouard",
+                    "Arnaud Lemarquand"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209904,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Sensibilité variétale aux maladies et ravageurs - Fiche n° 8 Oïdium"
+                ],
+                "authFullName_s": [
+                    "Christelle Gomez",
+                    "Claude Eric Parveaud",
+                    "G. Libourel",
+                    "L. Romet",
+                    "François Warlop",
+                    "Laurent Brun",
+                    "Sylvaine Simon",
+                    "D. Pouzoulet",
+                    "A. Delebecq",
+                    "S. Oste",
+                    "L. Tournant",
+                    "Francois Laurens"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209903,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Sensibilité variétale aux maladies et ravageurs. Fiche n° 7 Puceron cendré"
+                ],
+                "authFullName_s": [
+                    "Claude Eric Parveaud",
+                    "G. Libourel",
+                    "L. Romet",
+                    "François Warlop",
+                    "Laurent Brun",
+                    "Sylvaine Simon",
+                    "D. Pouzoulet",
+                    "A. Delebecq",
+                    "S. Oste",
+                    "L. Tournant",
+                    "Francois Laurens"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209900,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Outils de diagnostic, épidémiologie d’[i]Alternaria dauci[/i] sur carotte porte-graine et méthodes de lutte"
+                ],
+                "authFullName_s": [
+                    "E. Laurent",
+                    "Philippe Simoneau",
+                    "Soumaya Benichou",
+                    "Dominique Blancard",
+                    "I. Serandat",
+                    "V. Grimault",
+                    "B. Mériaux",
+                    "B. Bosc",
+                    "E. Lesprit"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209895,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv",
+                    "0.sde",
+                    "1.sde.be",
+                    "0.sde",
+                    "1.sde.es"
+                ],
+                "title_s": [
+                    "Approche historique et questions actuelles relatives aux plantes invasives : définitions, origines des introductions, notions de risques, nuisances et impacts."
+                ],
+                "authFullName_s": [
+                    "Valéry Malécot",
+                    "Hervé Daniel",
+                    "Jacques Haury"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1209894,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Euphorbia amygdaloides : vivace utile aux 4 coins du jardin"
+                ],
+                "authFullName_s": [
+                    "Christophe Chambolle",
+                    "Valéry Malécot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1209892,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Clerodendrum trichotomum : des fleurs et des fruits spectaculaires"
+                ],
+                "authFullName_s": [
+                    "Christophe Chambolle",
+                    "Valéry Malécot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1209889,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Viburnum suspensum : persistant, décoratif et urbain"
+                ],
+                "authFullName_s": [
+                    "Christophe Chambolle",
+                    "Valéry Malécot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1209886,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Sensibilité variétale aux maladies et ravageurs. Fiche n° 6 La tavelure"
+                ],
+                "authFullName_s": [
+                    "Christelle Gomez",
+                    "Claude-Eric Parveaud",
+                    "G Libourel",
+                    "L Romet",
+                    "François Warlop",
+                    "Laurent Brun",
+                    "Sylvaine Simon",
+                    "D Pouzoulet",
+                    "A Delebecq",
+                    "S Oste",
+                    "L Tournant",
+                    "Francois Laurens"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209872,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Structure d’un colloïde naturel: la micelle de caséine du lait"
+                ],
+                "authFullName_s": [
+                    "Mustapha Ouanezar",
+                    "Fanny Guyomarc'H",
+                    "Antoine Bouchoux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1209870,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ot"
+                ],
+                "title_s": [
+                    "Equation d’état et structure de solutions de protéines globulaires hautement concentrés"
+                ],
+                "authFullName_s": [
+                    "Coralie Pasquier",
+                    "Sophie Rigault",
+                    "Antoine Bouchoux",
+                    "Sylvie Beaufils",
+                    "Stéphane Pezennec",
+                    "Bernard Cabane"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1209869,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ot"
+                ],
+                "title_s": [
+                    "Structure interne de la micelle de caséine par SANS et variation de contraste"
+                ],
+                "authFullName_s": [
+                    "Antoine Bouchoux",
+                    "Jorge Luis Ventureira",
+                    "Fabienne Lambrouin",
+                    "Geneviève Gesan-Guiziou",
+                    "Peng Qu",
+                    "Coralie Pasquier",
+                    "Stéphane Pezennec",
+                    "Ralf Schweins",
+                    "Bernard Cabane"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1209866,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.info",
+                    "1.info.info-ia",
+                    "0.info",
+                    "1.info.info-pl"
+                ],
+                "title_s": [
+                    "Etendre la GMAO 0à l'ensemble du laboratoire de l'UMR STLO"
+                ],
+                "authFullName_s": [
+                    "Mame Bamba Mbacke Tine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209865,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Caractérisation de la lipolyse et de la protéolyse d’une formule infantile au cours de la digestion in vitro dynamique : comparaison avec le lait maternel"
+                ],
+                "authFullName_s": [
+                    "Célia Moustiés"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209859,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Les produits laitiers secs, d’une stratégie de report à un marché à forte valeur ajoutée : le point de vue de la Recherche."
+                ],
+                "authFullName_s": [
+                    "Romain Jeantet",
+                    "Cécile Le Floch-Fouéré",
+                    "Pierre Schuck"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1209858,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Vésicules de sphingomyéline de lait : Rôle de la température et du cholestérol caractérisés par cryo-tomographie"
+                ],
+                "authFullName_s": [
+                    "Christelle Lopez",
+                    "Chantal Cauty",
+                    "Franck Bazile",
+                    "Denis Chrétien"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1209857,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Poudres fonctionnelles: Des protéines laitières vectrices"
+                ],
+                "authFullName_s": [
+                    "Joelle Léonil",
+                    "Laurence Haxaire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209850,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Le défi du lait en poudre"
+                ],
+                "authFullName_s": [
+                    "Pierre Schuck"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209849,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Microfiltration tangentielle 0.1µM de lait : Acquisition de données en vue de l'intégration des connaissances."
+                ],
+                "authFullName_s": [
+                    "Mathieu Lessard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209844,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Les fermentations pour conserver de manière durable les aliments."
+                ],
+                "authFullName_s": [
+                    "Sylvie Lortal"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209843,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mp",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Etudes de mécanismes de la réponse du système immunitaire à l’infection par [i]Staphylococcus aureus[/i] et [i]Escherichia coli[/i]"
+                ],
+                "authFullName_s": [
+                    "Ksenia Semenovskaya"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209841,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Ferments et aliments : une longue histoire riche d’enseignements"
+                ],
+                "authFullName_s": [
+                    "Sylvie Lortal"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209840,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Défenses antimicrobiennes de l’œuf : de la caractérisation à l’application"
+                ],
+                "authFullName_s": [
+                    "Nicolas Guyot",
+                    "Sophie Rehault-Godbert",
+                    "Joël Gautron",
+                    "Florence Baron",
+                    "Yves Nys"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1209839,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Défenses antimicrobiennes de l’œuf : de la caractérisation à l’application"
+                ],
+                "authFullName_s": [
+                    "Nicolas Guyot",
+                    "Sophie Rehault-Godbert",
+                    "Joël Gautron",
+                    "Florence Baron",
+                    "Yves Nys"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1209838,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mp",
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Les protéines Slps de [i]Propionibacterium freudenreichii[/i] : une caractérisation protéomique de l’in vitro à la matrice fromagère"
+                ],
+                "authFullName_s": [
+                    "Houem Rabah"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209837,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mp",
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Altération du cycle cellulaire des cellules infectées par des souches cliniques de [i]Staphylococcus aureus[/i]"
+                ],
+                "authFullName_s": [
+                    "Nassim Mouhali"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209831,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Modifications des propriétés fonctionnelles des poudres laitières : Impact de la concentration et du séchage"
+                ],
+                "authFullName_s": [
+                    "Pierre Schuck"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209827,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Le séchage par atomisation : une méthode qui protège [i]Propionibacterium[/i] [i]freudenreichii[/i] des stress digestifs. Effet protecteur de l’encapsulation par des protéines sériques."
+                ],
+                "authFullName_s": [
+                    "Amar Saibi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209823,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Formation, structures and properties of whey protein aggregates"
+                ],
+                "authFullName_s": [
+                    "Marie-Hélène Famelart",
+                    "Thomas Croguennec",
+                    "Fanny Guyomarc'H",
+                    "Said Bouhallab"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1209821,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Co-assemblage de protéines alimentaires en coacervats: mécanismes et applications potentielles"
+                ],
+                "authFullName_s": [
+                    "Said Bouhallab",
+                    "Guilherme Miranda-Tavares",
+                    "Pascaline Hamon",
+                    "Thomas Croguennec"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1209818,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "La déminéralisation des caséines micellaires modifie leur structure et leur pouvoir moussant"
+                ],
+                "authFullName_s": [
+                    "Naaman Francisco Nogueira Silva",
+                    "Michel Piot",
+                    "Antonio De Carvalho Fernandes",
+                    "Frederic Violleau",
+                    "Anne-Laure Fameau",
+                    "Frederic Gaucheron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209817,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Les Ressources microbiennes au service de nos aliments : une richesse préservée et explorée dans le réseau CIRM. La diversité fonctionnelle explorée grâce au criblage à haut débit"
+                ],
+                "authFullName_s": [
+                    "Anne Thierry",
+                    "Florence Valence-Bertel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209815,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "L’importance de la redondance comme facteur de résilience des réseaux techniques. Contribution à l’élaboration d’un indicateur spatial de redondance"
+                ],
+                "authFullName_s": [
+                    "Serge Lhomme",
+                    "Richard Laganier",
+                    "Youssef Diab",
+                    "Damien Serre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1209807,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Marqueurs structuraux de l’évolution des poudres de WPI au stockage et impact sur les propriétés moussantes et l’indice de brunissement"
+                ],
+                "authFullName_s": [
+                    "Eve-Anne Norwood",
+                    "Cécile Le Floch-Fouéré",
+                    "Pierre Schuck",
+                    "Thomas Croguennec",
+                    "Romain Jeantet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1209805,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Apport de la plateforme Mric TEM dans le domaine Agroalimentaire du Lait et de L’Oeuf"
+                ],
+                "authFullName_s": [
+                    "Chantal Cauty"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209802,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Valeur nutritionnelle des protéines végétales"
+                ],
+                "authFullName_s": [
+                    "Stéphane Walrand",
+                    "Didier Remond",
+                    "Sandra Denery-Papini",
+                    "Marc Anton",
+                    "Didier Dupont"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209771,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Comment mimer la déstructuration et les cinétiques de digestion du lait maternel dans le tube digestif du nouveau-né?"
+                ],
+                "authFullName_s": [
+                    "Samira De Oliveira",
+                    "Didier Dupont",
+                    "Claire Bourlieu-Lacanal",
+                    "Amélie Deglaire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1209769,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Fromages et laitages, amis ou ennemis?"
+                ],
+                "authFullName_s": [
+                    "Sylvie Lortal",
+                    "Florence Valence-Bertel",
+                    "Anne Thierry",
+                    "Gilles Garric"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209767,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Structure et propriétés interfaciales et moussantes des protéines au cours du stockage de poudres de WPI"
+                ],
+                "authFullName_s": [
+                    "Eve-Anne Norwood",
+                    "Cécile Le Floch-Fouéré",
+                    "Pierre Schuck",
+                    "Thomas Croguennec",
+                    "Romain Jeantet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1209766,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Propriétés moussantes et expression à l’interface eau–air de potentialités d’assemblage de protéines"
+                ],
+                "authFullName_s": [
+                    "Stephane Pezennec",
+                    "Valérie Lechevalier-Datin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1209765,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Deux acteurs de la digestion néonatale et leurs interactions : la lipase gastrique et le globule gras"
+                ],
+                "authFullName_s": [
+                    "Claire Bourlieu-Lacanal",
+                    "Gilles Paboeuf",
+                    "Stephane Pezennec",
+                    "J.F. Cavalier",
+                    "Fanny Guyomarc'H",
+                    "Amélie Deglaire",
+                    "Said Bouhallab",
+                    "Didier Dupont",
+                    "F. Carrière",
+                    "Véronique Vié"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1209763,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Transformer les denrées agricoles en aliments: pourquoi et comment?"
+                ],
+                "authFullName_s": [
+                    "Romain Jeantet",
+                    "Valérie Lechevalier-Datin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1209762,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Les pieds dans le plat : Les aliments, des produits vivants"
+                ],
+                "authFullName_s": [
+                    "Gwenael Jan"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209761,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "L’OEuf dans tous ses états, modèle d’ingrédient culinaire"
+                ],
+                "authFullName_s": [
+                    "Francoise Nau",
+                    "Valérie Lechevalier-Datin",
+                    "Stephane Pezennec",
+                    "Catherine Guérin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1209760,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Aliments et nutrition"
+                ],
+                "authFullName_s": [
+                    "Amélie Deglaire",
+                    "Claire Bourlieu-Lacanal"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1209759,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Domaines de sphingomyéline dans la membrane entourant les globules gras du lait - Apport de la microscopie AFM"
+                ],
+                "authFullName_s": [
+                    "Fanny Guyomarc'H",
+                    "Venkata Ramana Murthy Appala",
+                    "Gilles Paboeuf",
+                    "Véronique Vie",
+                    "Christelle Lopez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1209758,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Découverte de la transformation fromagère (pourquoi / comment)"
+                ],
+                "authFullName_s": [
+                    "Gilles Garric"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209754,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Impact de différents lipides polaires alimentaires sur la lipolyse digestive in vitro et l’absorption lipidique intestinale chez la souris"
+                ],
+                "authFullName_s": [
+                    "Manon Lecomte",
+                    "Claire Bourlieu-Lacanal",
+                    "Gaëlle Pineau",
+                    "Mathilde Claude",
+                    "Alain Geloen",
+                    "Fabienne Laugerette",
+                    "Marie-Caroline Michalski"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1209753,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Vers des formules infantiles mimant la structure et la digestion gastrique du lait maternel ?"
+                ],
+                "authFullName_s": [
+                    "Amélie Deglaire",
+                    "Claire Bourlieu-Lacanal",
+                    "Samira De Oliveira",
+                    "Olivia Ménard",
+                    "Amandine Bellanger",
+                    "E Dirson",
+                    "F. Carrière",
+                    "Didier Dupont"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1209752,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Impact de différents lipides polaires alimentaires sur la lipolyse digestive in vitro et l’absorption lipidique intestinale chez la souris"
+                ],
+                "authFullName_s": [
+                    "Manon Lecomte",
+                    "Claire Bourlieu-Lacanal",
+                    "Gaëlle Pineau",
+                    "Mathilde Claude",
+                    "Alain Geloen",
+                    "Fabienne Laugerette",
+                    "Marie-Caroline Michalski"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1209751,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Le processus de publication: les points de vigilance"
+                ],
+                "authFullName_s": [
+                    "Magalie Weber"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209749,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Impact des traitements technologiques du lait maternel sur son hydrolyse digestive en phase gastrique chez le nouveau-né prématuré"
+                ],
+                "authFullName_s": [
+                    "Amandine Bellanger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209742,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Les peptides bioactifs du lait et leur intérêt dans la prévention des maladies cardiovasculaires et du syndrome métabolique"
+                ],
+                "authFullName_s": [
+                    "Joelle Léonil"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209741,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Rôle du gène sigma S de Staphylococcus aureus dans la sévérité des mammites"
+                ],
+                "authFullName_s": [
+                    "Vincent Péton",
+                    "Lucie Rault",
+                    "Koen Breynes",
+                    "Evelyne Meyer",
+                    "Sergine Even",
+                    "Yves Le Loir"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209738,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "[i]Lactobacillus casei[/i] inhibe l’invasion de cellules épithéliales mammaires bovines par [i]Staphylococcus aureus[/i]"
+                ],
+                "authFullName_s": [
+                    "Damien Bouchard",
+                    "Lucie Rault",
+                    "Nadejda Berkova",
+                    "Yves Le Loir",
+                    "Sergine Even"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1209737,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Contribution des propriétés réductrices de [i]Lactococcus lactis[/i] à l’atténuation du système agr chez [i]Staphylococcus aureus[/i]"
+                ],
+                "authFullName_s": [
+                    "Sebastien Nouaille",
+                    "Lucie Rault",
+                    "Sophie Jeanson",
+                    "Pascal Loubière",
+                    "Yves Le Loir",
+                    "Sergine Even"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1209722,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Intérêt de l'instrumentation dans une démarche d'éco-conception : Cas d’un atelier de concentration-séchage idéal ou comment améliorer la performance des sites industriels ?"
+                ],
+                "authFullName_s": [
+                    "Pierre Schuck",
+                    "Gaelle Tanguy-Sai",
+                    "Anne Dolivet",
+                    "Serge Mejean",
+                    "Laurent Fromont",
+                    "Romain Jeantet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1209721,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Caractérisation du procédé de concentration par évaporation sous vide. Bilan énergétique, massique et temps de séjour"
+                ],
+                "authFullName_s": [
+                    "Arlan Caldas Pereira Silveira",
+                    "Antonio Fernandes De Carvalho",
+                    "Gaelle Tanguy-Sai",
+                    "Italo Tuler-Peronne",
+                    "Laurent Fromont",
+                    "Pierre Schuck",
+                    "Romain Jeantet",
+                    "Serge Mejean"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            }
+        ]
+    },
+    "nextCursorMark": "AoFZ184E"
+}

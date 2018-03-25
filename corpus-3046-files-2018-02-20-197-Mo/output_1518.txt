@@ -1,0 +1,1896 @@
+{
+    "response": {
+        "numFound": 515922,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1224261,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-au"
+                ],
+                "title_s": [
+                    "La commande par contraintes logiques de sécurité : principe, applications et mise en oeuvre"
+                ],
+                "authFullName_s": [
+                    "Bernard Riera",
+                    "Alexandre Philippot",
+                    "David Annebicque",
+                    "François Gellot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1224260,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Endettement, Reichsbank et course à la guerre 1933-1939"
+                ],
+                "authFullName_s": [
+                    "Frédéric Clavert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1224254,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Le parc de Balzac à Angers : donner formes au développement durable"
+                ],
+                "authFullName_s": [
+                    "Hervé Davodeau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224251,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Participation et renouvellement des pratiques paysagistes"
+                ],
+                "authFullName_s": [
+                    "David Montembault",
+                    "Monique Toublanc",
+                    "Hervé Davodeau",
+                    "Elise Geisler",
+                    "Louise Leconte",
+                    "Fanny Romain",
+                    "Antoine Luginbuhl",
+                    "Philippe. Guttinger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224245,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "L'agriculture en frange périurbaine, élément de valorisation du territoire périurbain ?"
+                ],
+                "authFullName_s": [
+                    "Youcef Bousdira"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1224243,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "L’auto-analyse d’un dirigeant communiste et d’un couple communiste : Albert Vassart et Cilly Geisenberg-Vassard"
+                ],
+                "authFullName_s": [
+                    "Bernard Pudal",
+                    "Claude Pennetier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224242,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Le lycée : de l'école des notables à l'école pour tous ?"
+                ],
+                "authFullName_s": [
+                    "T. Poullaouec"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224239,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "« Le haut du panier de la France d'en bas » ?"
+                ],
+                "authFullName_s": [
+                    "Agnès Pélage",
+                    "T. Poullaouec"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224237,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.stat",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.info",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Ecouter de la musique ensemble. Ethnographies des écoutes musicales collectives (introduction)"
+                ],
+                "authFullName_s": [
+                    "Anthony Pecqueux",
+                    "Olivier Roueff"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224225,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ni",
+                    "0.info",
+                    "1.info.info-pf"
+                ],
+                "title_s": [
+                    "Modélisation et étude de performance de l'équilibrage de charge LTE par ajustement dynamique des paramètres du handover"
+                ],
+                "authFullName_s": [
+                    "Mohamed Escheikh",
+                    "Bilel Abbes",
+                    "Ahmed Ameur",
+                    "Kamel Barkaoui",
+                    "Hana Jouini"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1224222,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-au",
+                    "0.info",
+                    "1.info.info-cc"
+                ],
+                "title_s": [
+                    "Modélisation et Analyse de chroniques pour le diagnostic"
+                ],
+                "authFullName_s": [
+                    "Ghyslain Maitre",
+                    "Yannick Pencolé",
+                    "Audine Subias",
+                    "Houssam Eddine Gougam"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224219,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-au",
+                    "0.info",
+                    "1.info.info-fl"
+                ],
+                "title_s": [
+                    "Amélioration de la procédure de déterminisation des automates (max,+)"
+                ],
+                "authFullName_s": [
+                    "Sébastien Lahaye",
+                    "Jan Komenda",
+                    "Jean-Louis Boimond"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224209,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Approche philologique des langages de programmation"
+                ],
+                "authFullName_s": [
+                    "Baptiste Mélès"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224207,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Le concept d’objet en programmation informatique"
+                ],
+                "authFullName_s": [
+                    "Baptiste Mélès"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224204,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Réseaux informatiques et logique dialogique"
+                ],
+                "authFullName_s": [
+                    "Baptiste Mélès"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224202,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Esclavage et nationalisme noir: l'Universal Negro Improvement Association et la Nation of Islam"
+                ],
+                "authFullName_s": [
+                    "Giulia Bonacci",
+                    "Pauline Guedj"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224199,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Philosophie de l’informatique concrète. I : Langages théoriques et langages concrets en programmation. II : Ontologies des langages de programmation. III : Le Temps selon Unix"
+                ],
+                "authFullName_s": [
+                    "Baptiste Mélès"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224197,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Le rêve de Gueroult : Spinoza en Coq"
+                ],
+                "authFullName_s": [
+                    "Baptiste Mélès"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224195,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Spinoza en Coq : démonstration complète des premières propositions de l’Éthique"
+                ],
+                "authFullName_s": [
+                    "Baptiste Mélès"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224183,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "L'Hymne éthiopien universel (1918). Un héritage national et musical, de l'Atlantique noir à l'Ethiopie contemporaine",
+                    "The Universal Ethiopian Anthem (1918). A National and Musical Heritage, from the Black Atlantic to Contemporary Ethiopia."
+                ],
+                "authFullName_s": [
+                    "Giulia Bonacci"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224179,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Fénelon, François de Sales et Arnauld et la question de l’amour naturel de Dieu"
+                ],
+                "authFullName_s": [
+                    "Hélène Michon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224176,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.neu",
+                    "2.sdv.neu.sc"
+                ],
+                "title_s": [
+                    "L’oralité en service de néonatologie : création d’une plaquette d’informations pour l’équipe soignante"
+                ],
+                "authFullName_s": [
+                    "Carole Brecheteau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1224171,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "PRODUCTION ET CIRCULATION DU FER EN LORRAINE (VIe s. av. J.-C. - XVe s. ap. J.-C.)",
+                    "IRON PRODUCTION AND CIRCULATION IN LORRAINE (6th c. B.C. - 15th c. A.D.)"
+                ],
+                "authFullName_s": [
+                    "Alexandre Disser"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224168,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Pascal, lecteur de Joseph Joubert"
+                ],
+                "authFullName_s": [
+                    "Hélène Michon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224167,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu"
+                ],
+                "title_s": [
+                    "Développement d'un système de caractérisation des agrégats et des flocs en suspension",
+                    "Development of a suspended aggregates and flocs carracterisation system"
+                ],
+                "authFullName_s": [
+                    "Valentin Wendling"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224166,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.auto"
+                ],
+                "title_s": [
+                    "Contribution à l'évaluation des risques liés au TMD (transport de matières dangereuses) en prenant en compte les incertitudes",
+                    "Contribution to the risk assessment related to DGT (dangerous goods transportation) by taking into account uncertainties"
+                ],
+                "authFullName_s": [
+                    "El Abed El Safadi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224164,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "2.sdv.mhep.geo"
+                ],
+                "title_s": [
+                    "Prévention et prise en charge de l'hémorragie du post-partum au CHU Sylvanus Olympio de Lomé au Togo"
+                ],
+                "authFullName_s": [
+                    "Nadège Sitti"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1224158,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "2.sdv.mhep.geo"
+                ],
+                "title_s": [
+                    "Grossesses non prévues : significations et fonctions : un autre regard sur l’interruption volontaire de grossesse"
+                ],
+                "authFullName_s": [
+                    "Laura Montay"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1224154,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Evolution des salaires dans la crise : quels sont les liens avec l'externalisation de la production et la financiarisation du capital ?"
+                ],
+                "authFullName_s": [
+                    "Mireille Bruyère",
+                    "Laurence Lize"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224148,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Modéliser et mesurer les valeurs apportées au pays hôte pour l'aide à la décision dans l'élaboration de stratégies d'In-Country Value",
+                    "Modeling and measuring values brought to host country for assisting decisions in In-Country Value strategies elaboration."
+                ],
+                "authFullName_s": [
+                    "Mathieu Dernis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224136,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Les outils d'auto-organisation au sein d'une communauté d'apprentissage virtuelle"
+                ],
+                "authFullName_s": [
+                    "Hao Wu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1224130,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Le passé révolutionnaire à l’écran : enjeux de la question"
+                ],
+                "authFullName_s": [
+                    "Stéphane Haffemayer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224123,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.mat",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Étude de bioverres sol-gel à base de SiO2, CaO, Na2O, P2O5 et dopés à l'argent",
+                    "Study of sol-gel bioglasses based on SiO2, CaO, Na2O, P2O5 and doped with silver"
+                ],
+                "authFullName_s": [
+                    "Rémy Catteaux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1224122,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Kinéphones : un outil pour la prononciation en langue étrangère et le sentiment d'efficacité personnelle des enseignants du primaire"
+                ],
+                "authFullName_s": [
+                    "Noreen Le Page"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1224109,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Pastore ou l'élégance, fille de la paresse"
+                ],
+                "authFullName_s": [
+                    "Baptiste Mélès"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224107,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Les ressources en classe de FLE/FLS : du support à la document authentique"
+                ],
+                "authFullName_s": [
+                    "Margaret Bento"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1224106,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Laurent Derobert, Fragments de mathématiques existentielles"
+                ],
+                "authFullName_s": [
+                    "Baptiste Mélès"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224103,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-cr"
+                ],
+                "title_s": [
+                    "Multimedia infrastructure optimisation backup : migration de l'outil de sauvegarde, refonte des mécanismes de sauvegarde et virtualisation"
+                ],
+                "authFullName_s": [
+                    "Florent Matzinger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1224102,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-gr",
+                    "0.info",
+                    "1.info.info-ti",
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-ms"
+                ],
+                "title_s": [
+                    "Représentation d'objets d'intérêt cristallographique ou biologique par zones colorées",
+                    "Space filling representation of objects of crystallographic or biologic interest"
+                ],
+                "authFullName_s": [
+                    "Yves Epelboin",
+                    "Christian Guidi-Morosini",
+                    "François Morris",
+                    "Alexandre Rimsky",
+                    "Alain Soyer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224101,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Unix selon l’ordre des raisons : la philosophie de la pratique informatique"
+                ],
+                "authFullName_s": [
+                    "Baptiste Mélès"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224100,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Pratique mathématique et lectures de Hegel, de Jean Cavaillès à William Lawvere",
+                    "Mathematical Practice and Hegel's Readings, from Jean Cavaillès to William Lawvere"
+                ],
+                "authFullName_s": [
+                    "Baptiste Mélès"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224094,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Politiques et dispositifs publics d’assistance"
+                ],
+                "authFullName_s": [
+                    "Jérémie Halais",
+                    "Philippe Nivet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224092,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Une vocation à aimer l’invalide : la mobilisation ratée de Jean Adnet."
+                ],
+                "authFullName_s": [
+                    "Pierre Brasseur"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224090,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Ornithorynques ou mulets ? L’éclectisme et le conflit des systèmes philosophiques",
+                    "Platypus or mule? Eclecticism and the conflict of philosophical systems"
+                ],
+                "authFullName_s": [
+                    "Baptiste Mélès"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1224089,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "L’assistance sexuelle: qu’est-ce-à-dire? Quels enjeux?"
+                ],
+                "authFullName_s": [
+                    "Pierre Brasseur",
+                    "Pauline Detuncq"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224088,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.relig"
+                ],
+                "title_s": [
+                    "Autorité pontificale et hiérarchies ecclésiastiques des chrétiens au Maghreb"
+                ],
+                "authFullName_s": [
+                    "Clara Maillard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224082,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Thématisation et philosophie de l'informatique"
+                ],
+                "authFullName_s": [
+                    "Baptiste Mélès"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1224080,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "La classification cubique des systèmes philosophiques par Jules Vuillemin"
+                ],
+                "authFullName_s": [
+                    "Baptiste Mélès"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224079,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Un Français peut-il encore comprendre les philosophes d’outre-Manche ? Présentation"
+                ],
+                "authFullName_s": [
+                    "Baptiste Mélès"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224078,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Présentation"
+                ],
+                "authFullName_s": [
+                    "Thomas Bénatouïl",
+                    "Baptiste Mélès"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224075,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Présentation"
+                ],
+                "authFullName_s": [
+                    "Baptiste Mélès"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224074,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Les « règles de formation » comme catégories foucaldiennes"
+                ],
+                "authFullName_s": [
+                    "Baptiste Mélès"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224073,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "La comptine des neuf divisions"
+                ],
+                "authFullName_s": [
+                    "Baptiste Mélès"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224067,
+                "domain_s": [
+                    "0.chim",
+                    "1.chim.anal"
+                ],
+                "title_s": [
+                    "Développements méthodologiques en spectrométrie de masse et en analyse protéomique pour la recherche de biomarqueurs de différents types de cancers",
+                    "Methodological developments in mass spectrometry and proteomics for the search of biomarkers of different types of cancers"
+                ],
+                "authFullName_s": [
+                    "Sarah Lennon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224066,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Humour noir pour « les enfants maigres et jaunes »"
+                ],
+                "authFullName_s": [
+                    "Joël July"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1224064,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Utilisation de MkAlign pour la traduction philologique"
+                ],
+                "authFullName_s": [
+                    "Serge Fleury",
+                    "Maria Zimina"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1224063,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info",
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Formes de l'architecture : langages, images et pratiques partagés"
+                ],
+                "authFullName_s": [
+                    "Patrizia Laudati"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1224061,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Repérages lexicométriques des équivalences à basse fréquence dans les corpus bilingues"
+                ],
+                "authFullName_s": [
+                    "Maria Zimina"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1224060,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.cond"
+                ],
+                "title_s": [
+                    "Rhéologie des suspensions de bulles dans un fluide à seuil"
+                ],
+                "authFullName_s": [
+                    "Xavier Chateau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224059,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-gen"
+                ],
+                "title_s": [
+                    "La Rhéohologie"
+                ],
+                "authFullName_s": [
+                    "Xavier Chateau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224057,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Equivalences traductionnelles. Bi-texte juridique"
+                ],
+                "authFullName_s": [
+                    "Maria Zimina"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1224053,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.cond"
+                ],
+                "title_s": [
+                    "Rhéologie de suspensions de bulles"
+                ],
+                "authFullName_s": [
+                    "Romain Morini",
+                    "Laurent Tocquer",
+                    "Xavier Chateau",
+                    "Guillaume Ovarlez",
+                    "Olivier Pitois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224052,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.cond"
+                ],
+                "title_s": [
+                    "Propriétés rhéologiques de suspensions floculées modèles"
+                ],
+                "authFullName_s": [
+                    "Jennifer Fusier",
+                    "Julie Goyon",
+                    "Fabrice Toussaint",
+                    "Xavier Chateau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224048,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Corpus multilingues : exploration textométrique de l’espace intertextuel"
+                ],
+                "authFullName_s": [
+                    "Maria Zimina"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1224047,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "MkAlign. Manuel d’utilisation"
+                ],
+                "authFullName_s": [
+                    "Serge Fleury",
+                    "Maria Zimina"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1224045,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Démonstration de MkAlign pour M2 Recherche : Explorations sur corpus TRAD_JUR"
+                ],
+                "authFullName_s": [
+                    "Maria Zimina"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1224044,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Approches quantitatives de l'analyse de corpus multilingues"
+                ],
+                "authFullName_s": [
+                    "Maria Zimina"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1224042,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Déséquilibre significatif (article L. 442-6-I-2° du Code de commerce)"
+                ],
+                "authFullName_s": [
+                    "Eva Mouial-Bassilana"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224041,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Responsabilité pour insuffisance d’actif : le dirigeant de fait doit être celui d’une personne morale de droit privé"
+                ],
+                "authFullName_s": [
+                    "Eva Mouial-Bassilana"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224038,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Extension de procédure pour confusion de patrimoines : les relations financières anormales précisées"
+                ],
+                "authFullName_s": [
+                    "Eva Mouial-Bassilana"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224037,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Les Géo-graphismes de Peter Sis. Découvrir, explorer, rêver des espaces"
+                ],
+                "authFullName_s": [
+                    "Christophe Meunier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224036,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Le liquidateur agissant en rupture abusive de crédit pendant la liquidation judiciaire agit au nom du débiteur dessaisi"
+                ],
+                "authFullName_s": [
+                    "Eva Mouial-Bassilana"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224035,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "L’unicité de la date de cessation des paiements confirmée"
+                ],
+                "authFullName_s": [
+                    "Eva Mouial-Bassilana"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224034,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Analyse textométrique des traductions dans des langues éloignées"
+                ],
+                "authFullName_s": [
+                    "Maria Zimina"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1224033,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Chronique de jurisprudence de droit du surendettement (chronique)"
+                ],
+                "authFullName_s": [
+                    "Eva Mouial-Bassilana"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224032,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Reprise des poursuites individuelles en dehors de toute décision de résolution du plan"
+                ],
+                "authFullName_s": [
+                    "Eva Mouial-Bassilana"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224031,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Corpus multilingues et ressources textométriques incrémentales"
+                ],
+                "authFullName_s": [
+                    "Maria Zimina"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1224030,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "La différence de traitement entre la caution simple et la caution solidaire dans le redressement est conforme à la Constitution"
+                ],
+                "authFullName_s": [
+                    "Eva Mouial-Bassilana"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224029,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Approche systémique de la résonance textuelle multilingue"
+                ],
+                "authFullName_s": [
+                    "Maria Zimina",
+                    "Serge Fleury"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1224028,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Les cotisations sociales n'échappent pas à l'interdiction des poursuites"
+                ],
+                "authFullName_s": [
+                    "Eva Mouial-Bassilana"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224026,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Procédure unique à l’égard des sociétés d’un groupe : la nécessité d’une confusion des patrimoines réaffirmée"
+                ],
+                "authFullName_s": [
+                    "Eva Mouial-Bassilana"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224016,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Modéliser les objets textuels pour l'analyse quantitative en linguistique contrastive"
+                ],
+                "authFullName_s": [
+                    "Maria Zimina"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1224015,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Ressources textuelles incrémentales pour la modélisation des interactions linguistiques multiples"
+                ],
+                "authFullName_s": [
+                    "Maria Zimina",
+                    "Serge Fleury"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1224013,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Interactions dans l'espace textuel multilingue"
+                ],
+                "authFullName_s": [
+                    "Maria Zimina"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1224006,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.nrj"
+                ],
+                "title_s": [
+                    "Placement optimal de dispositif FACTs dans un réseau de puissance"
+                ],
+                "authFullName_s": [
+                    "Youness Magnoun"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1224003,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Xénophobie"
+                ],
+                "authFullName_s": [
+                    "Guillaume Roux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224002,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Tolérance et respect des autres"
+                ],
+                "authFullName_s": [
+                    "Guillaume Roux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1224001,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Tolérance"
+                ],
+                "authFullName_s": [
+                    "Guillaume Roux",
+                    "Valentine Zuber"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1223997,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Extrême droite européenne"
+                ],
+                "authFullName_s": [
+                    "Guillaume Roux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1223996,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Système innovant de neutralisation de nid de frelon asiatique par illumination électromagnétique microonde"
+                ],
+                "authFullName_s": [
+                    "Nicolas Picard",
+                    "Bruno Beillard",
+                    "Serge Mazen",
+                    "S. Piveteau",
+                    "Joël Andrieu",
+                    "Edson Martinod"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1223995,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Evolution de la xénophobie"
+                ],
+                "authFullName_s": [
+                    "Guillaume Roux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1223994,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Etudes comparatives"
+                ],
+                "authFullName_s": [
+                    "Guillaume Roux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1223987,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "L'insertion des écoquartiers dans le tissu urbain. La course à la labellisation ou le défi de concevoir un ÉcoQuartier viable et pérenne n'importe où. Cas d'étude dans l'agglomération chambérienne"
+                ],
+                "authFullName_s": [
+                    "Anaïs Becker"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1223986,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Expliquer la xénophobie : valeurs culturelles, attitudes politiques et perception d’une menace"
+                ],
+                "authFullName_s": [
+                    "Guillaume Roux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1223982,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.geme"
+                ],
+                "title_s": [
+                    "Contrôle de santé vibro-acoustique de l'endommagement des matériaux composites à base polymère pour l'aéronautique",
+                    "Mechanical behavior and evaluation by vibro-acoustic method of composites materiels in aeronautical"
+                ],
+                "authFullName_s": [
+                    "Imen Ben Ammar"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1223978,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Les caractéristiques de la solidarité envers les personnes dépendantes"
+                ],
+                "authFullName_s": [
+                    "Sylvie Moisdon-Chataigner"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1223974,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Annotation d’éléments dialogiques de l’IHR"
+                ],
+                "authFullName_s": [
+                    "Cécile Cottier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1223972,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hisphilso"
+                ],
+                "title_s": [
+                    "Biographie et prosopographie en histoire des sciences : autour d'un livre"
+                ],
+                "authFullName_s": [
+                    "Laurent Rollet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1223965,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "La question prioritaire de constitutionnalité devant le juge administratif des référés d'urgence"
+                ],
+                "authFullName_s": [
+                    "Julien Vachey"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1223963,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hisphilso"
+                ],
+                "title_s": [
+                    "Le roman secret d'Henri Poincaré"
+                ],
+                "authFullName_s": [
+                    "Laurent Rollet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFb0dUE"
+}

@@ -1,0 +1,2493 @@
+{
+    "response": {
+        "numFound": 515923,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1107149,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Signature sonore des vehicules silencieux - Acceptabilite et Apprentissage"
+                ],
+                "authFullName_s": [
+                    "Nicolas Misdariis",
+                    "Anais Gruson",
+                    "Patrick Susini"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107148,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Designing Sound Identity: Providing new communication tools for building brands &quot;corporate sounds&quot;"
+                ],
+                "authFullName_s": [
+                    "Maxime Carron",
+                    "Françoise Dubois",
+                    "Nicolas Misdariis",
+                    "Corinne Talotte",
+                    "Patrick Susini"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107147,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.acou",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.vibr",
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.vibr",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.solid",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.stru",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info"
+                ],
+                "title_s": [
+                    "Perception du Controle actif sur instruments a vent"
+                ],
+                "authFullName_s": [
+                    "Marguerite Jossic",
+                    "Thibaut Meurisse",
+                    "Nicolas Misdariis",
+                    "Adrien Mamou-Mani"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107146,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.info"
+                ],
+                "title_s": [
+                    "Analysis of performances and computational modelling of maqam improvisations"
+                ],
+                "authFullName_s": [
+                    "Mondher Ayari",
+                    "Olivier Lartillot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107145,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.info"
+                ],
+                "title_s": [
+                    "Aural Analysis of Arabic Improvised Instrumental Music (Taqsîm)"
+                ],
+                "authFullName_s": [
+                    "Mondher Ayari",
+                    "Stephen Mcadams"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107144,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.info"
+                ],
+                "title_s": [
+                    "Can one speak of meaning in music?"
+                ],
+                "authFullName_s": [
+                    "Mondher Ayari"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107143,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "On the use of a spatial cue as prior information for stereo sound source separation based on spatially weighted non-negative tensor factorization"
+                ],
+                "authFullName_s": [
+                    "Yuki Mitsufuji",
+                    "Axel Roebel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107142,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.info"
+                ],
+                "title_s": [
+                    "L’acte créateur entre culture de l’oralité et cognition musicale"
+                ],
+                "authFullName_s": [
+                    "Mondher Ayari"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107141,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.info"
+                ],
+                "title_s": [
+                    "L’art de l’improvisation dans les musiques du maqâm"
+                ],
+                "authFullName_s": [
+                    "Mondher Ayari"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107140,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.info"
+                ],
+                "title_s": [
+                    "Modélisation cognitive des musiques de tradition orale"
+                ],
+                "authFullName_s": [
+                    "Mondher Ayari"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107139,
+                "domain_s": [
+                    "0.info",
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Les corpus de l’oralité"
+                ],
+                "authFullName_s": [
+                    "Mondher Ayari",
+                    "Lai Antonio"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107138,
+                "domain_s": [
+                    "0.info",
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Penser l’improvisation"
+                ],
+                "authFullName_s": [
+                    "Mondher Ayari"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107137,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.info"
+                ],
+                "title_s": [
+                    "L’analyse musical aujourd’hui"
+                ],
+                "authFullName_s": [
+                    "Mondher Ayari",
+                    "Hascher Xavier",
+                    "Bardez Jean-Michel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107136,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Spatially Oriented Format for Acoustics (SOFA) for Exchange Data of Head-related Transfer Functions"
+                ],
+                "authFullName_s": [
+                    "Yukio Iwaya",
+                    "Kanji Watanabe",
+                    "Piotr Majdak",
+                    "Markus Noisternig",
+                    "Yoiti Suzuki",
+                    "Shuichi Sakamoto",
+                    "Shouichi Takane"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107135,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Neuronal population correlate of asymmetric auditory perception in mice"
+                ],
+                "authFullName_s": [
+                    "Brice Bathellier",
+                    "Thomas Deneux",
+                    "Louise François",
+                    "Suncana Sikiric",
+                    "Emmanuel Ponsot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107134,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Effet de la durée sur l'asymétrie en sonie entre sons crescendo et decrescendo : implication de la mémoire"
+                ],
+                "authFullName_s": [
+                    "Patrick Susini",
+                    "Emmanuel Ponsot",
+                    "Anne-Laure Verneil",
+                    "Sabine Meunier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107133,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Modèle de sonie: Objectifs des recherches actuelles"
+                ],
+                "authFullName_s": [
+                    "Emmanuel Ponsot",
+                    "Patrick Susini",
+                    "Sabine Meunier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107132,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "The role of duration in global loudness evaluation of rising and falling-intensity sounds"
+                ],
+                "authFullName_s": [
+                    "Emmanuel Ponsot",
+                    "Patrick Susini",
+                    "Sabine Meunier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107129,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.scco",
+                    "1.scco.neur",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.acou",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.vibr",
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.vibr",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.solid",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.stru",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Directivity synthesis with 3D array of loudspeakers : application for stage performance"
+                ],
+                "authFullName_s": [
+                    "Olivier Warusfel",
+                    "Nicolas Misdariis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107128,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Perceptual evaluation of weighted multichannel binaural format"
+                ],
+                "authFullName_s": [
+                    "Emmanuel Rio",
+                    "Guillaume Vandernoot",
+                    "Olivier Warusfel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107127,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Wave field Synthesis interaction with the listening environment, improvements in the reproduction of virtual sources situated inside the listening room"
+                ],
+                "authFullName_s": [
+                    "Terence Caulkins",
+                    "Étienne Corteel",
+                    "Olivier Warusfel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107126,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur",
+                    "0.info"
+                ],
+                "title_s": [
+                    "Analysis and reproduction of the frequency spectrum and directivity of a violin"
+                ],
+                "authFullName_s": [
+                    "Hans J. Vos",
+                    "Olivier Warusfel",
+                    "Nicolas Misdariis",
+                    "Diemer De Vries"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107125,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Eliciting adaptation to non-individual HRTF spectral cues with multi-modal training presence"
+                ],
+                "authFullName_s": [
+                    "Alan Blum",
+                    "Brian F. G. Katz",
+                    "Olivier Warusfel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107124,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Influence of the ears canals location on spherical head model for the individualized interaural time difference"
+                ],
+                "authFullName_s": [
+                    "Sylvain Busson",
+                    "Rozenn Nicol",
+                    "Olivier Warusfel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107123,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "3-D Sound and Virtual Reality: Applications in Clinical Psychopathology"
+                ],
+                "authFullName_s": [
+                    "Isabelle Viaud-Delmon",
+                    "Angeline Seguelas",
+                    "Emmanuel Rio",
+                    "Roland Jouvent",
+                    "Olivier Warusfel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107122,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Reproduction of sound source directivity for future audio applications"
+                ],
+                "authFullName_s": [
+                    "Olivier Warusfel",
+                    "Étienne Corteel",
+                    "Nicolas Misdariis",
+                    "Terence Caulkins"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107121,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Perceptual Spatial Exploration of WFS Soundscapes presence"
+                ],
+                "authFullName_s": [
+                    "Olivier Warusfel",
+                    "Terence Caulkins",
+                    "Étienne Corteel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107120,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Binaural rendering assessment in the context of augmented reality"
+                ],
+                "authFullName_s": [
+                    "Olivier Warusfel",
+                    "Isabelle Viaud-Delmon",
+                    "Olivier Delerue"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107119,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur",
+                    "0.info"
+                ],
+                "title_s": [
+                    "Real-Time rendering of dynamic scenes using wave fields synthesis"
+                ],
+                "authFullName_s": [
+                    "Ulrich Horbach",
+                    "Étienne Corteel",
+                    "Renato Pellegrini",
+                    "Edo Hulsebos"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107118,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Multi-Actuator Panel (MAP) loudspeakers: how to compensate for their mutual reflections?"
+                ],
+                "authFullName_s": [
+                    "Rik Von Zon",
+                    "Étienne Corteel",
+                    "Diemer De Vries",
+                    "Olivier Warusfel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107117,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Analysis of certain challenges for the use of Wave Field Synthesis in concert-based applications"
+                ],
+                "authFullName_s": [
+                    "Terence Caulkins",
+                    "Étienne Corteel",
+                    "Olivier Warusfel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107116,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "User Interaction and Authoring of 3D Sound Scenes in the Carrouso EU project"
+                ],
+                "authFullName_s": [
+                    "Riitta Väänänen"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107115,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Characterization of the Reverberant Sound Field Emitted by a Wave Field Synthesis Driven Loudspeaker Array"
+                ],
+                "authFullName_s": [
+                    "Terence Caulkins",
+                    "Olivier Warusfel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107114,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Synthesis of directional sources using Wave Field Synthesis, possibilities and limitations"
+                ],
+                "authFullName_s": [
+                    "Étienne Corteel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107113,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "On the use of irregularly spaced loudspeaker arrays for Wave Field Synthesis, potential impact on spatial aliasing frequency"
+                ],
+                "authFullName_s": [
+                    "Étienne Corteel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107112,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur",
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Eartoy : interactions ludiques par l'audition"
+                ],
+                "authFullName_s": [
+                    "Isabelle Viaud-Delmon",
+                    "Jean Bresson",
+                    "Francois Pachet",
+                    "Frédéric Bevilacqua",
+                    "Pierre Roy",
+                    "Olivier Warusfel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107111,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Multisensory memory span"
+                ],
+                "authFullName_s": [
+                    "Isabelle Viaud-Delmon",
+                    "Frédéric Bevilacqua",
+                    "Olivier Warusfel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107110,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Creating Interactive Poly-Artistic Works: The ConceptMove Project"
+                ],
+                "authFullName_s": [
+                    "Olivier Delerue",
+                    "Stéphane Donikian",
+                    "Gildas Clénet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107109,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Toward a complete open source software environment for the creation of interactive poly-artistic works"
+                ],
+                "authFullName_s": [
+                    "Stéphane Donikian",
+                    "Olivier Delerue",
+                    "Gildas Clénet",
+                    "Tommaso Bianco"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107108,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Integration of auditory and visual information in fast recognition of realistic objects"
+                ],
+                "authFullName_s": [
+                    "Clara Suied",
+                    "Nicolas Bonneel",
+                    "Isabelle Viaud-Delmon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107107,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Investigating the effects of spatially disparate visual stimuli on auditory localization in VR environments"
+                ],
+                "authFullName_s": [
+                    "Khoa-Van Nguyen",
+                    "Clara Suied",
+                    "Isabelle Viaud-Delmon",
+                    "Olivier Warusfel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107106,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Cross cultural study of auditory warnings"
+                ],
+                "authFullName_s": [
+                    "Sabine Langlois",
+                    "Clara Suied",
+                    "Thierry Lageat",
+                    "Aude Charbonneau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107105,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "The role of object categories in auditory-visual object recognition"
+                ],
+                "authFullName_s": [
+                    "Clara Suied",
+                    "Isabelle Viaud-Delmon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107104,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Wave Field Synthesis: Implications for live music performances"
+                ],
+                "authFullName_s": [
+                    "Terence Caulkins",
+                    "Étienne Corteel",
+                    "Joseph Sanson",
+                    "Olivier Warusfel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107103,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Objective and subjective evaluation of localisation accuracy in wave field sysnthesis"
+                ],
+                "authFullName_s": [
+                    "Joseph Sanson",
+                    "Étienne Corteel",
+                    "Olivier Warusfel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107102,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Subjective and objective evaluation of localisation accuracy in wave field sysnthesis"
+                ],
+                "authFullName_s": [
+                    "Joseph Sanson",
+                    "Étienne Corteel",
+                    "Olivier Warusfel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107101,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Corps, action et cognition : la réalité virtuelle au défi des sciences cognitives"
+                ],
+                "authFullName_s": [
+                    "Isabelle Viaud-Delmon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107100,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Auditory-visual object recognition time suggests specific processing for animal sounds"
+                ],
+                "authFullName_s": [
+                    "Clara Suied",
+                    "Isabelle Viaud-Delmon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107099,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur",
+                    "0.info"
+                ],
+                "title_s": [
+                    "Real-time auralization system based on beam-tracing and mixed-order Ambisonics"
+                ],
+                "authFullName_s": [
+                    "Markus Noisternig",
+                    "Lauri Savioja",
+                    "Brian F. G. Katz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107098,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur",
+                    "0.info"
+                ],
+                "title_s": [
+                    "Spatial rendering of audio-visual synthetic speech use for immersive environments"
+                ],
+                "authFullName_s": [
+                    "Markus Noisternig",
+                    "Brian F. G. Katz",
+                    "Christophe D'Alessandro"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107097,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "La spatialisation des sons"
+                ],
+                "authFullName_s": [
+                    "Olivier Warusfel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107096,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Combination of Sensori-motor Rendering for the Immersive Analysis of Results"
+                ],
+                "authFullName_s": [
+                    "Brian F. G. Katz",
+                    "Olivier Warusfel",
+                    "Patrick Bourdot",
+                    "Jean-Marie Vezien"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107095,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.info",
+                    "1.info.info-cv",
+                    "0.info",
+                    "1.info.info-oh",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.scco",
+                    "1.scco.neur",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-hc",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.info",
+                    "1.info.info-lg",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-ia",
+                    "0.info",
+                    "1.info.info-mm"
+                ],
+                "title_s": [
+                    "Wavefield synthesis for interactive sound installations"
+                ],
+                "authFullName_s": [
+                    "Grace Leslie",
+                    "Diemo Schwarz",
+                    "Olivier Warusfel",
+                    "Frédéric Bevilacqua",
+                    "Pierre Jodlowski"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107094,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Towards a cognitive and sensorial model of presence: A study in different virtual sensory conditions"
+                ],
+                "authFullName_s": [
+                    "Feryel Znaïdi",
+                    "Olivier Warusfel",
+                    "Roland Jouvent",
+                    "Isabelle Viaud-Delmon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107093,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur",
+                    "0.info"
+                ],
+                "title_s": [
+                    "Reconstructing sound source directivity in virtual acoustic environments"
+                ],
+                "authFullName_s": [
+                    "Markus Noisternig",
+                    "Brian F. G. Katz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107092,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.info",
+                    "1.info.info-cv",
+                    "0.info",
+                    "1.info.info-oh",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.scco",
+                    "1.scco.neur",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-hc",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.info",
+                    "1.info.info-lg",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-ia",
+                    "0.info",
+                    "1.info.info-mm"
+                ],
+                "title_s": [
+                    "Grainstick: A Collaborative, Interactive Sound Installation"
+                ],
+                "authFullName_s": [
+                    "Grace Leslie",
+                    "Diemo Schwarz",
+                    "Olivier Warusfel",
+                    "Frédéric Bevilacqua",
+                    "Bruno Zamborlin",
+                    "Pierre Jodlowski",
+                    "Norbert Schnell"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107091,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Ambisonic Decoding with and without Mode-Matching: A Case Study Using the Hemisphere"
+                ],
+                "authFullName_s": [
+                    "Franz Zotter",
+                    "Hannes Pomberger",
+                    "Markus Noisternig"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107089,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Improving sound field reproduction based on higher-order ambisonics in a small room with a 157-loudspeaker array"
+                ],
+                "authFullName_s": [
+                    "Takuma Okamoto",
+                    "Densil Cabrera",
+                    "Markus Noisternig",
+                    "Brian F. G. Katz",
+                    "Yukio Iwaya",
+                    "Yoiti Suzuki"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107088,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur",
+                    "0.info"
+                ],
+                "title_s": [
+                    "Streaming directional instruments over the Internet"
+                ],
+                "authFullName_s": [
+                    "Markus Noisternig",
+                    "Franz Zotter",
+                    "Rémi Desmonet",
+                    "Winfried Ritsch"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107087,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Considerations in characterising an almost anechoic room for interactive spatial audio reproduction"
+                ],
+                "authFullName_s": [
+                    "Densil Cabrera",
+                    "Takuma Okamoto",
+                    "Brian F. G. Katz",
+                    "Markus Noisternig",
+                    "Yukio Iwaya",
+                    "Yoiti Suzuki"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107086,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Reconstructing sound source directivity in virtual acoustic environments"
+                ],
+                "authFullName_s": [
+                    "Markus Noisternig",
+                    "Franz Zotter",
+                    "Brian F. G. Katz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107085,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Implementation of Real-Time Room Auralization Using a Surrounding 157 Loudspeaker Array"
+                ],
+                "authFullName_s": [
+                    "Takuma Okamoto",
+                    "Brian F. G. Katz",
+                    "Markus Noisternig",
+                    "Yukio Iwaya",
+                    "Yoiti Suzuki"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107084,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Immersive 2D/3D audio for live sound and studio productions"
+                ],
+                "authFullName_s": [
+                    "Markus Noisternig",
+                    "Thibaut Carpentier",
+                    "Olivier Warusfel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107083,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "ESPRO 2.0 – Implementation of a surrounding 350-loudspeaker array for sound field reproduction"
+                ],
+                "authFullName_s": [
+                    "Markus Noisternig",
+                    "Thibaut Carpentier",
+                    "Olivier Warusfel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107082,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Emotion, multisensory integration and space perception: when space is felt too small or too big"
+                ],
+                "authFullName_s": [
+                    "Isabelle Viaud-Delmon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107081,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Le son et l’espace pour la réhabilitation des troubles perceptifs et des troubles psychopathologiques"
+                ],
+                "authFullName_s": [
+                    "Isabelle Viaud-Delmon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107080,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Virtual Reality exposure therapy for unilateral tinnitus"
+                ],
+                "authFullName_s": [
+                    "Isabelle Viaud-Delmon",
+                    "Alain Londero",
+                    "Pierre Bonfils",
+                    "Olivier Warusfel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107079,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "A comparative study of interaural time delay estimation methods"
+                ],
+                "authFullName_s": [
+                    "Brian F. G. Katz",
+                    "Markus Noisternig"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107078,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Scale Model Auralization for Art, Science, and Music: The Stupaphonic Experiment"
+                ],
+                "authFullName_s": [
+                    "Brian F. G. Katz",
+                    "Markus Noisternig",
+                    "Olivier Delarozière"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107077,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "A Roadmap for Assessing the Quality of Experience of 3D Audio Binaural Rendering"
+                ],
+                "authFullName_s": [
+                    "Rozenn Nicol",
+                    "Laetitia Gros",
+                    "Cathy Colomes",
+                    "Markus Noisternig",
+                    "Olivier Warusfel",
+                    "Hélène Bahu",
+                    "Brian F. G. Katz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107076,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Efficient representation of head-related transfer functions using spatially oriented format for acoustics"
+                ],
+                "authFullName_s": [
+                    "Piotr Majdak",
+                    "Harald Ziegelwanger",
+                    "Hagen Wierstorf",
+                    "Markus Noisternig"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107074,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "All class communication, public: Using Twitter in lieu of LMS"
+                ],
+                "authFullName_s": [
+                    "Jean-Julien Aucouturier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107073,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Simulation of fractional-order low-pass filters"
+                ],
+                "authFullName_s": [
+                    "Thomas Hélie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107072,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-hc",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.info",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.info",
+                    "1.info.info-lg",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-ia",
+                    "0.info",
+                    "1.info.info-mm",
+                    "0.info",
+                    "1.info.info-cv",
+                    "0.info",
+                    "1.info.info-oh",
+                    "0.spi",
+                    "1.spi.signal"
+                ],
+                "title_s": [
+                    "Guiding Motion using a Sound Target"
+                ],
+                "authFullName_s": [
+                    "Eric O Boyer",
+                    "Quentin Pyanet",
+                    "Sylvain Hanneton",
+                    "Frédéric Bevilacqua"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107071,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-hc",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.info",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.info",
+                    "1.info.info-lg",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-ia",
+                    "0.info",
+                    "1.info.info-mm",
+                    "0.info",
+                    "1.info.info-cv",
+                    "0.info",
+                    "1.info.info-oh",
+                    "0.spi",
+                    "1.spi.signal"
+                ],
+                "title_s": [
+                    "A Gesture follower for performing arts"
+                ],
+                "authFullName_s": [
+                    "Frédéric Bevilacqua",
+                    "Remy Müller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107069,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Copies d’hier et d’aujourd’hui : variations sur les usages de la copie en musique"
+                ],
+                "authFullName_s": [
+                    "Vincent Tiffon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107068,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Revue de musicologie, numéro thématique TCPM2011"
+                ],
+                "authFullName_s": [
+                    "Anne-Sylvie Barthel-Calvet",
+                    "Vincent Tiffon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107066,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Le Cours d'action : méthode réfléchie"
+                ],
+                "authFullName_s": [
+                    "Jacques Theureau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107065,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Le cours d'action: Méthode développée"
+                ],
+                "authFullName_s": [
+                    "Jacques Theureau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107064,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Stretcher-bearer's autonomy, coordination with units, and hospital work quality"
+                ],
+                "authFullName_s": [
+                    "Martine Da Silva-Vion",
+                    "Jacques Theureau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107063,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Aide à l'explication et retour réflexif"
+                ],
+                "authFullName_s": [
+                    "Pierre Vermersch"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107062,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Le cours d'action : méthode élémentaire"
+                ],
+                "authFullName_s": [
+                    "Jacques Theureau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107061,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Special issue: Music Information Retrieval"
+                ],
+                "authFullName_s": [
+                    "Michel Fingerhut"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107060,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Les leçons apprises à travers le programme de recherche &quot;cours d'action&quot; de 1988 à 2003 et la question de l'articulation entre activité individuelle et activité collective"
+                ],
+                "authFullName_s": [
+                    "Jacques Theureau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107059,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Introduction à la session 1: une question de recherche en analyse du travail essentielle pour l'avenir de l'ergonomie, celle de l'articulation entre activité individuelle et activité collective"
+                ],
+                "authFullName_s": [
+                    "Jacques Theureau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107056,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Simulation of an analog circuit of a wah pedal: a port-Hamiltonian approach"
+                ],
+                "authFullName_s": [
+                    "Antoine Falaize",
+                    "Thomas Hélie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107055,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Perceptual effects of radiation control with a multi-louspeaker device"
+                ],
+                "authFullName_s": [
+                    "Nicolas Misdariis",
+                    "Alexandre Lang",
+                    "Brian F. G. Katz",
+                    "Patrick Susini"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107054,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Validation of a Multidimensional Distance Model for Perceptual Dissimilarities among Musical Timbres"
+                ],
+                "authFullName_s": [
+                    "Nicolas Misdariis",
+                    "Bennett K. Smith",
+                    "Daniel Pressnitzer",
+                    "Patrick Susini",
+                    "Stephen Mcadams"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107051,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Préservation de la musique avec dispositif électronique : l'intérêt des processus de production sonore"
+                ],
+                "authFullName_s": [
+                    "Antoine Vincent",
+                    "Alain Bonardi",
+                    "Bruno Bachimont"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107040,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Computable convergence bounds of series expansions for infinite dimensional linear-analytic systems and application"
+                ],
+                "authFullName_s": [
+                    "Thomas Hélie",
+                    "Béatrice Laroche"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107034,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "La géométrie d'un Prélude"
+                ],
+                "authFullName_s": [
+                    "Moreno Andreatta"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107030,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Methods for an objective and subjective description of starting transients of some flue organ pipes – integrating the view of an organ-builder"
+                ],
+                "authFullName_s": [
+                    "Vincent Rioux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107029,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Aspects dynamiques du phrasé de la trompette"
+                ],
+                "authFullName_s": [
+                    "Dexter Morrill"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107028,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Chest Vibrations In Singers"
+                ],
+                "authFullName_s": [
+                    "Johan Sundberg"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107027,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "On Coupling Between Vocal Tract and Voice Source"
+                ],
+                "authFullName_s": [
+                    "Johan Sundberg"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107025,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Ecrins: an audio-content description environment for sound samples"
+                ],
+                "authFullName_s": [
+                    "Pascal Mullon",
+                    "Yann Geslin",
+                    "Max Jacob"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107019,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "A computer-aided exploration of the transformational process Xenakis’Nomos Alpha"
+                ],
+                "authFullName_s": [
+                    "Moreno Andreatta"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107015,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Recensione del libro 'Organizzazione delle altezze nello spazio sonoro temperato' di Luigi Verdi (Ensemble 900, Treviso, 1998)"
+                ],
+                "authFullName_s": [
+                    "Moreno Andreatta"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107007,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "RECOLLECTION: A DISPOSAL/FORMAL REQUIREMENT-BASED TOOL TO SUPPORT SUSTAINABLE COLLECTION MAKING IN MUSICAL CREATION"
+                ],
+                "authFullName_s": [
+                    "Benjamin Roadley",
+                    "Francis Rousseaux",
+                    "Alain Bonardi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1107005,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Quand émergent des pratiques musicales a-musicologiques"
+                ],
+                "authFullName_s": [
+                    "Alain Bonardi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFdw5wE"
+}

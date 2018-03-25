@@ -1,0 +1,2308 @@
+{
+    "response": {
+        "numFound": 515923,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1105831,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Deriving Musical Structures from Signal Analysis for Audio Summary Generation: &quot;Sequence&quot; and &quot;State&quot; approach"
+                ],
+                "authFullName_s": [
+                    "Geoffroy Peeters",
+                    "Xavier Rodet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105830,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Hierarchical Gaussian Tree with Inertia Ratio Maximization for the Classification of Large Musical Instrument Databases"
+                ],
+                "authFullName_s": [
+                    "Geoffroy Peeters",
+                    "Xavier Rodet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105828,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Perception-Based Musical Pattern Discovery."
+                ],
+                "authFullName_s": [
+                    "Olivier Lartillot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105820,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Automatic Classification of Large Musical Instrument Databases Using Hierachical Classifiers with Inertia Ratio Maximization"
+                ],
+                "authFullName_s": [
+                    "Geoffroy Peeters"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105819,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Elementi di teoria matematica della musica e problema della classificazione di canoni regolari complementari di categoria massimale"
+                ],
+                "authFullName_s": [
+                    "Moreno Andreatta",
+                    "Carlos Agon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105818,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-hc",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.info",
+                    "1.info.info-lg",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-ia",
+                    "0.info",
+                    "1.info.info-mm",
+                    "0.info",
+                    "1.info.info-cv",
+                    "0.info",
+                    "1.info.info-oh",
+                    "0.spi",
+                    "1.spi.signal"
+                ],
+                "title_s": [
+                    "jMax: An Environment for Real-Time Musical Applications"
+                ],
+                "authFullName_s": [
+                    "François Déchelle",
+                    "Riccardo Borghesi",
+                    "Maurizio De Cecco",
+                    "Enzo Maggi",
+                    "Joseph Butch Rovan",
+                    "Norbert Schnell"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105817,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "The Architecture of the IRCAM Musical Workstation"
+                ],
+                "authFullName_s": [
+                    "Eric Lindemann",
+                    "François Déchelle",
+                    "Michel Starkier",
+                    "Bennet Smith"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105816,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-hc",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.info",
+                    "1.info.info-lg",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-ia",
+                    "0.info",
+                    "1.info.info-mm",
+                    "0.info",
+                    "1.info.info-cv",
+                    "0.info",
+                    "1.info.info-oh",
+                    "0.spi",
+                    "1.spi.signal"
+                ],
+                "title_s": [
+                    "The jMax environment: an overview of new features"
+                ],
+                "authFullName_s": [
+                    "François Déchelle",
+                    "Riccardo Borghesi",
+                    "Nicola Orio",
+                    "Norbert Schnell"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105812,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.acou",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.vibr",
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.vibr",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.solid",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.stru",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info"
+                ],
+                "title_s": [
+                    "Aerodynamic excitation and sound production of blown closed free reeds without acoustic coupling: the example of the accordion reed."
+                ],
+                "authFullName_s": [
+                    "Denis Ricot",
+                    "René Causse",
+                    "Nicolas Misdariis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105811,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.acou",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.vibr",
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.vibr",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.solid",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.stru",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.info",
+                    "1.info.info-sd"
+                ],
+                "title_s": [
+                    "Some considerations on sound synthesis of piano hammer/string collision"
+                ],
+                "authFullName_s": [
+                    "Christophe Vergez",
+                    "René Causse",
+                    "Eric Humbert",
+                    "Olivier De Lajudie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105810,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "The existence region for melodic pitch and computational models"
+                ],
+                "authFullName_s": [
+                    "R. D. Patterson",
+                    "Katrin Krumbholz",
+                    "Daniel Pressnitzer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105809,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Pitch perception and the encoding of click trains in the mammalian ventral cochlear nucleus"
+                ],
+                "authFullName_s": [
+                    "Daniel Pressnitzer",
+                    "Martin Mckinney",
+                    "Alain De Cheveigné",
+                    "Winter I.M."
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105808,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "The perception of frequency peaks and troughs"
+                ],
+                "authFullName_s": [
+                    "Daniel Pressnitzer",
+                    "Laurent Demany",
+                    "André Rupp"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105807,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "A confirmatory analysis of four acoustic correlates of timbre space"
+                ],
+                "authFullName_s": [
+                    "Stephen Mcadams",
+                    "A. Caclin",
+                    "Bennett K. Smith"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105806,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Two voice fundamental frequency estimation"
+                ],
+                "authFullName_s": [
+                    "Alain De Cheveigné"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105805,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Fundamental frequency estimation of musical sounds"
+                ],
+                "authFullName_s": [
+                    "Alain De Cheveigné",
+                    "Nathalie Henrich"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105803,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Electrophysiological correlates of musical timbre perception"
+                ],
+                "authFullName_s": [
+                    "A. Caclin",
+                    "Elvira Brattico",
+                    "Bennett K. Smith",
+                    "Mari Ternaviemi",
+                    "Marie-Hélène Giard",
+                    "Stephen Mcadams"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105802,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Control Parameter Estimation for a Physical Model of a Trumpet Using Pattern Recognition"
+                ],
+                "authFullName_s": [
+                    "Wim D'Haes",
+                    "Dirk Van Dyck",
+                    "Xavier Rodet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105801,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Physical Constraints for the Control of a Physical Model of a Trumpet"
+                ],
+                "authFullName_s": [
+                    "Wim D'Haes",
+                    "Dirk Van Dyck",
+                    "Xavier Rodet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105800,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "An efficient branch and bound seach algorithm for computing K nearest neighbors in a multidimensional vector space"
+                ],
+                "authFullName_s": [
+                    "Wim D'Haes",
+                    "Dirk Van Dyck",
+                    "Xavier Rodet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105799,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "An efficient branch and bound seach algorithm for computing K nearest neighbors in a multidimensional vector space"
+                ],
+                "authFullName_s": [
+                    "Wim D'Haes",
+                    "Dirk Van Dyck",
+                    "Xavier Rodet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105798,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Form and Method: Composing Music"
+                ],
+                "authFullName_s": [
+                    "Roger Reynolds"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105797,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Musical timbre perception"
+                ],
+                "authFullName_s": [
+                    "A. Caclin",
+                    "Elvira Brattico",
+                    "Bennett K. Smith",
+                    "Mari Ternaviemi",
+                    "Petri Toiviainen",
+                    "Risto Näätänen",
+                    "Marie-Hélène Giard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105796,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Neural correlates of timbre change in harmonic sounds"
+                ],
+                "authFullName_s": [
+                    "Vinod Menon",
+                    "D. J. Levitin",
+                    "Bennett K. Smith",
+                    "Anna Lembke",
+                    "Ben Kraznow",
+                    "Gary ? Glazer",
+                    "Gary H. Glover"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105795,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Time-domain auditory processing of speech"
+                ],
+                "authFullName_s": [
+                    "Alain De Cheveigné"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105794,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "F0-adaptive Spectral Estimation based on the Correlation Network Model"
+                ],
+                "authFullName_s": [
+                    "Alain De Cheveigné",
+                    "Hideki Kawahara"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105793,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "A correlation network model of auditory signal processing"
+                ],
+                "authFullName_s": [
+                    "Alain De Cheveigné",
+                    "Daniel Pressnitzer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105792,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "The neuroanatomical substrate of sound duration discrimination"
+                ],
+                "authFullName_s": [
+                    "Pascal Belin",
+                    "Stephen Mcadams",
+                    "Lionel Thivard",
+                    "Bennett K. Smith",
+                    "Sophie Savel",
+                    "Monica Zilbovicius",
+                    "S. Samson"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105791,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "A bootstrap procedure for mixture models"
+                ],
+                "authFullName_s": [
+                    "Suzanne Winsberg",
+                    "G. Desoete"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105790,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Symbolic class description"
+                ],
+                "authFullName_s": [
+                    "Mathieu Vrac",
+                    "Edwin Diday",
+                    "Suzanne Winsberg",
+                    "M. Limam"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105789,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Can listening to excerpts of original versions of contemporary musical materials facilitate recognition of their transformed versions?"
+                ],
+                "authFullName_s": [
+                    "Sandrine Vieillard",
+                    "Emmanuel Bigand",
+                    "François Madurell",
+                    "Stephen Mcadams",
+                    "Roger Reynolds"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105788,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Perceptual and cognitive criteria used in the categorization of thematic excerpts from a contemporary musical piece"
+                ],
+                "authFullName_s": [
+                    "Sandrine Vieillard",
+                    "Stephen Mcadams",
+                    "Olivier Houix",
+                    "Roger Reynolds"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105787,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Interactions son/image"
+                ],
+                "authFullName_s": [
+                    "Patrick Susini"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105786,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Etude des hyperliens sonores II"
+                ],
+                "authFullName_s": [
+                    "Patrick Susini",
+                    "Sandrine Vieillard",
+                    "E. Deruty",
+                    "L. Dandrel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105785,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "The tolerance window for sequences of musical, environmental and artificial sounds"
+                ],
+                "authFullName_s": [
+                    "Marie Rivenez",
+                    "Andrei Gorea",
+                    "Daniel Pressnitzer",
+                    "Carolyn Drake"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105784,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Compositional strategies in The Angel of Death for piano, chamber orchestra and computer processed sound"
+                ],
+                "authFullName_s": [
+                    "Roger Reynolds"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105783,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Modèles fonctionnels du système auditif périphérique"
+                ],
+                "authFullName_s": [
+                    "Daniel Pressnitzer",
+                    "Ray Meddis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105782,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "A model of signal processing in the cochlear nucleus"
+                ],
+                "authFullName_s": [
+                    "Ray Meddis",
+                    "Roel Delahaye",
+                    "Lowel O'Mard",
+                    "Chris Sumner",
+                    "Deborah A. Fantini",
+                    "Ian M. Winter",
+                    "Daniel Pressnitzer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105781,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Musical similarity and dynamic processing in musical contexts"
+                ],
+                "authFullName_s": [
+                    "Stephen Mcadams"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105780,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Real-time perception of a contemporary musical work in a live concert setting"
+                ],
+                "authFullName_s": [
+                    "Stephen Mcadams",
+                    "Bennett K. Smith",
+                    "Sandrine Vieillard",
+                    "Emmanuel Bigand",
+                    "Roger Reynolds"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105779,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Problem-solving strategies in the composition of The Angel of Death"
+                ],
+                "authFullName_s": [
+                    "Stephen Mcadams",
+                    "Roger Reynolds"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105778,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "The roots of musical variation in perceptual similarity and invariance"
+                ],
+                "authFullName_s": [
+                    "Stephen Mcadams",
+                    "D. Matzkin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105777,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Auditory perception and cognition"
+                ],
+                "authFullName_s": [
+                    "Stephen Mcadams",
+                    "Carolyn Drake"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105776,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "A top-down binary tree method for symbolic class descriptions"
+                ],
+                "authFullName_s": [
+                    "M. Limam",
+                    "Mathieu Vrac",
+                    "Edwin Diday",
+                    "Suzanne Winsberg"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105775,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Control parameters for musical instruments"
+                ],
+                "authFullName_s": [
+                    "Daniel J. Levitin",
+                    "Stephen Mcadams",
+                    "Robert L. Adams"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105774,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "On F0 trajectory optimization for very high-quality speech manipulation"
+                ],
+                "authFullName_s": [
+                    "Hideki Kawahara",
+                    "Parham Zolfaghari",
+                    "Alain De Cheveigné"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105773,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Groupements hiérarchiques et partition optimale"
+                ],
+                "authFullName_s": [
+                    "Olivier Houix"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105772,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Catégorisation auditive des sources sonores"
+                ],
+                "authFullName_s": [
+                    "Olivier Houix"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105771,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Scalable metadata for search, sonification and display"
+                ],
+                "authFullName_s": [
+                    "Alain De Cheveigné"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105770,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Pitch perception models"
+                ],
+                "authFullName_s": [
+                    "Alain De Cheveigné"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105769,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "L'analyse de scènes auditives computationnelle"
+                ],
+                "authFullName_s": [
+                    "Alain De Cheveigné"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105768,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "A preliminary investigation of the perceptual structure of musical materials in The Angel of Death"
+                ],
+                "authFullName_s": [
+                    "Emmanuel Bigand",
+                    "D. D'Adamo",
+                    "François Madurell",
+                    "Bénédicte Poulin-Charronnat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105767,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Schema-based processing in auditory scene analysis"
+                ],
+                "authFullName_s": [
+                    "Caroline Bey",
+                    "Stephen Mcadams"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105766,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Ambiguous Musical Figures"
+                ],
+                "authFullName_s": [
+                    "Martine Turgeon",
+                    "A.S. Bregman"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105765,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Elaboration d'un modèle de détection automatique et d'un estimateur de désagrément de bruits parasites."
+                ],
+                "authFullName_s": [
+                    "Patrick Susini",
+                    "Sandrine Vieillard",
+                    "Stephen Mcadams",
+                    "Bennett K. Smith"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105764,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Acoustics, psychoacoustics and spectral music"
+                ],
+                "authFullName_s": [
+                    "Daniel Pressnitzer",
+                    "Stephen Mcadams"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105763,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "The response of single units in the inferior colliculus of the guinea pig to damped and ramped sinusoids"
+                ],
+                "authFullName_s": [
+                    "Veronika Neuert",
+                    "Daniel Pressnitzer",
+                    "R. D. Patterson",
+                    "Ian M. Winter"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105762,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Analysing musical sounds (à paraître)"
+                ],
+                "authFullName_s": [
+                    "Stephen Mcadams",
+                    "Philippe Depalle",
+                    "E. Clarke"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105761,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Music and the Cognitive Sciences"
+                ],
+                "authFullName_s": [
+                    "Stephen Mcadams",
+                    "Irène Deliège"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105760,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Pitch perception models"
+                ],
+                "authFullName_s": [
+                    "Alain De Cheveigné"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105759,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Correlation Network model of auditory processing"
+                ],
+                "authFullName_s": [
+                    "Alain De Cheveigné"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105758,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Synthesis and Processing of the Singing Voice"
+                ],
+                "authFullName_s": [
+                    "Xavier Rodet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105757,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Review du livre 'Organizzazione delle altezze nello spazio sonoro temperato' (Ensemble 900, Treviso, 1998)"
+                ],
+                "authFullName_s": [
+                    "Moreno Andreatta"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105755,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Mixing Visual Programs and Music Notation"
+                ],
+                "authFullName_s": [
+                    "Carlos Agon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105754,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Object-Oriented Programming in OpenMusic"
+                ],
+                "authFullName_s": [
+                    "Carlos Agon",
+                    "Gérard Assayag"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105753,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "OmChroma ; vers une formalisation compositionnelle des processus de synthèse sonore"
+                ],
+                "authFullName_s": [
+                    "Marco Stroppa",
+                    "Serge Lemouton",
+                    "Carlos Agon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105752,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Contrôle de la spatialisation comme paramètre musical"
+                ],
+                "authFullName_s": [
+                    "Gilbert Nouno",
+                    "Carlos Agon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105751,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Programmation Visuelle et Editeurs Musicaux pour la Composition Assistée par Ordinateur."
+                ],
+                "authFullName_s": [
+                    "Carlos Agon",
+                    "Gérard Assayag"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105750,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Group-Theoretical Methods in Composition and Theory"
+                ],
+                "authFullName_s": [
+                    "Moreno Andreatta"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105749,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Formal aspects of Iannis Xenakis' Symbolic Music: a computer-aided exploration of some compositional processes"
+                ],
+                "authFullName_s": [
+                    "Carlos Agon",
+                    "Moreno Andreatta",
+                    "Gérard Assayag",
+                    "Stephan Schaub"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105746,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Synthesizing Natural Sounds Using Dynamic Models of Sound Attractors"
+                ],
+                "authFullName_s": [
+                    "Axel Roebel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105742,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Can Digital Audio Processing Help the Voicing Process of Organ Pipes?"
+                ],
+                "authFullName_s": [
+                    "Vincent Rioux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105741,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Noise Quality of Transient Sounds: Perception of &quot;hiss&quot; in a Flue Organ Pipe"
+                ],
+                "authFullName_s": [
+                    "Vincent Rioux",
+                    "Daniel Västfjäll",
+                    "Munetaka Yokota",
+                    "Mendel Kleiner"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105740,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Analyses Of Verbal Descriptions Of the Sound Quality Of A Flue Organ Pipe"
+                ],
+                "authFullName_s": [
+                    "Vincent Rioux",
+                    "Daniel Västfjäll"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105733,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Pourquoi Gerard Depardieu parle anglais sans accent"
+                ],
+                "authFullName_s": [
+                    "Geoffroy Peeters"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105728,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Analyse musicale et contraintes"
+                ],
+                "authFullName_s": [
+                    "Marc Chemillier",
+                    "Charlotte Truchet",
+                    "Louis-Martin Rousseau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105726,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "A Constraint Programming System for Music Composition, Preliminary Results"
+                ],
+                "authFullName_s": [
+                    "Charlotte Truchet",
+                    "Carlos Agon",
+                    "Philippe Codognet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105725,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "CAO et contraintes"
+                ],
+                "authFullName_s": [
+                    "Charlotte Truchet",
+                    "Carlos Agon",
+                    "Gérard Assayag",
+                    "Philippe Codognet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105724,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Recherche adaptative et contraintes musicales"
+                ],
+                "authFullName_s": [
+                    "Charlotte Truchet",
+                    "Carlos Agon",
+                    "Gérard Assayag"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105723,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Visual and Adaptive Constraint Programming in Music"
+                ],
+                "authFullName_s": [
+                    "Charlotte Truchet",
+                    "Gérard Assayag",
+                    "Philippe Codognet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105714,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Information Retrieval for Contemporary Music"
+                ],
+                "authFullName_s": [
+                    "Alain Bonardi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105713,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "A proposal for the description of audio in the context of MPEG-7"
+                ],
+                "authFullName_s": [
+                    "Perfecto Herrera",
+                    "Xavier Serra",
+                    "Geoffroy Peeters"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105712,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "m6325 Third Party Validation Procedure and Status of the CE on Timbre Similarity"
+                ],
+                "authFullName_s": [
+                    "Perfecto Herrera",
+                    "Xavier Amatrian",
+                    "Geoffroy Peeters",
+                    "Tobias Plamann"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105711,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "m6046 Core experiment on timbre similarity for non-sustained sounds"
+                ],
+                "authFullName_s": [
+                    "Perfecto Herrera",
+                    "Xavier Amatrian",
+                    "Geoffroy Peeters",
+                    "Tobias Plamann"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105710,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Audio Descriptors and Descriptors Schemes in the Context of MPEG-7"
+                ],
+                "authFullName_s": [
+                    "Perfecto Herrera",
+                    "Xavier Serra",
+                    "Geoffroy Peeters"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105709,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "m5809 Result of Audio CE on Timbre Similarity"
+                ],
+                "authFullName_s": [
+                    "Perfecto Herrera",
+                    "Xavier Amatrian",
+                    "Geoffroy Peeters"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105708,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.acou",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.vibr",
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.vibr",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.solid",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.stru",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.info",
+                    "1.info.info-sd"
+                ],
+                "title_s": [
+                    "Modèle physique simple d'instrument de musique à anche double"
+                ],
+                "authFullName_s": [
+                    "Christophe Vergez",
+                    "André Almeida"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105707,
+                "domain_s": [
+                    "0.info",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.acou",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.vibr",
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.vibr",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.solid",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.stru",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.info",
+                    "1.info.info-sd"
+                ],
+                "title_s": [
+                    "Modalys, un outil pour le design sonore."
+                ],
+                "authFullName_s": [
+                    "Nicolas Misdariis",
+                    "René Causse",
+                    "Louis Dandrel",
+                    "Joël Bensoam",
+                    "Christophe Vergez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105705,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Music and Psychology"
+                ],
+                "authFullName_s": [
+                    "Stephen Mcadams"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105704,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Speech f0 extraction based on Licklider's pitch perception model"
+                ],
+                "authFullName_s": [
+                    "Alain De Cheveigné"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105703,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "L'éditeur de signal 'à distance' MapSignal"
+                ],
+                "authFullName_s": [
+                    "Alain De Cheveigné"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105702,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-pl",
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.stat",
+                    "1.stat.ml",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-fl",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Du calcul secret au calcul visuel"
+                ],
+                "authFullName_s": [
+                    "Gérard Assayag"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105701,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Principal differential analysis"
+                ],
+                "authFullName_s": [
+                    "Suzanne Winsberg",
+                    "Philippe Depalle"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105700,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "A bootstrap for latent class model models for determining the appropriate number of latent classes"
+                ],
+                "authFullName_s": [
+                    "Suzanne Winsberg",
+                    "Geert De Soete"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105699,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "A bootstrap procedure for mixture models"
+                ],
+                "authFullName_s": [
+                    "Suzanne Winsberg",
+                    "Geert De Soete"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105698,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Form and Method"
+                ],
+                "authFullName_s": [
+                    "Steve Mcadams",
+                    "Roger Reynolds"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105697,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-sd",
+                    "0.info",
+                    "1.info.info-hc",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.info",
+                    "1.info.info-lg",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-ia",
+                    "0.info",
+                    "1.info.info-mm",
+                    "0.info",
+                    "1.info.info-cv",
+                    "0.info",
+                    "1.info.info-oh",
+                    "0.spi",
+                    "1.spi.signal"
+                ],
+                "title_s": [
+                    "Coney Island"
+                ],
+                "authFullName_s": [
+                    "Robin Bargar",
+                    "François Déchelle",
+                    "Insook Choi",
+                    "Alex Betts",
+                    "Camille Goudeseune",
+                    "Norbert Schnell",
+                    "Olivier Warusfel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105696,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Sound Analysis, processing and synthesis tools for music research and production"
+                ],
+                "authFullName_s": [
+                    "Xavier Rodet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105695,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Le concert des sens reste sous le joug du biologique"
+                ],
+                "authFullName_s": [
+                    "Steve Mcadams"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1105694,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "The auditory system as a separation machine"
+                ],
+                "authFullName_s": [
+                    "Alain De Cheveigné"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFe8ZsE"
+}

@@ -1,0 +1,2075 @@
+{
+    "response": {
+        "numFound": 515923,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1009098,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Validation des modèles numériques et expérimentations de fondations superficielles"
+                ],
+                "authFullName_s": [
+                    "P. Mestat",
+                    "Yvon Riou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1009096,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Usinabilité des aciers durs"
+                ],
+                "authFullName_s": [
+                    "M. Habak",
+                    "J.L. Lebrun",
+                    "C. Fischer",
+                    "Bertrand Huneau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1009091,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Une nouvelle stratégie de modélisation des voiles faiblement élancés soumis à une sollicitation dynamique"
+                ],
+                "authFullName_s": [
+                    "Panagiotis Kotronis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1009090,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Une méthode de calcul du temps d'incubation en RTM basée sur les techniques sans maillage d'éléments naturels"
+                ],
+                "authFullName_s": [
+                    "I. Ordeig",
+                    "L. I. Gascon",
+                    "J. A. Garcia",
+                    "Francisco Chinesta",
+                    "Elías Cueto"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1009087,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Une approximation Lagrangienne des modèles d'interaction fluide-structure basée sur la méthode des éléments naturels et les formes alpha"
+                ],
+                "authFullName_s": [
+                    "Andrés Galavis",
+                    "David Gonzalez",
+                    "Elías Cueto",
+                    "Francisco Chinesta"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1009086,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Une Approche des Phénomènes de Recirculation lors de la Mise en Oeuvre de Suspensions de Fibres Courtes par un Ecoulement de Cavité"
+                ],
+                "authFullName_s": [
+                    "Etienne Prulière",
+                    "Amine Ammar",
+                    "N. El Kissi",
+                    "Francisco Chinesta"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1009082,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Un nouveau modèle élasto-plastique avec prise en compte de la rupture des grains"
+                ],
+                "authFullName_s": [
+                    "Wei Hu",
+                    "Christophe Dano",
+                    "Pierre Yves Hicher"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1009081,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Un élément fini pour des membranes pressurisées axisymétriques ou en déformations planes"
+                ],
+                "authFullName_s": [
+                    "Y. Ravaut",
+                    "Rabah Bouzidi",
+                    "Christian Wielgosz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1009064,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Transfert de chaleur par conduction dans les milieux fibreux"
+                ],
+                "authFullName_s": [
+                    "J.-P. Vassal",
+                    "L. Orgeas",
+                    "Steven Le Corre",
+                    "D. Favier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1009054,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Tournage cBN du 100Cr6 durci à 55HRc."
+                ],
+                "authFullName_s": [
+                    "M. Habak",
+                    "J.L. Lebrun",
+                    "A. Braud",
+                    "Bertrand Huneau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1009028,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Les rapports mobilités/immobilités dans le cas de situations résidentielles spécifiques. Retours sur recherche et perspectives"
+                ],
+                "authFullName_s": [
+                    "Céline Bergeon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1009026,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Innovation et intelligence collective"
+                ],
+                "authFullName_s": [
+                    "Philippe Bertheau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1008999,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Techniques Avancées pour la Simulation des Procédés de Fabrication de Composites"
+                ],
+                "authFullName_s": [
+                    "Francisco Chinesta"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008997,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Système expérimental d'étude de la sédimentation-consolidation des vases"
+                ],
+                "authFullName_s": [
+                    "Alain Alexis",
+                    "Gilbert Lebras"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008996,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Système d'aide à la décision basé sur l'analyse de risques pour la gestion durable des infrastructures de génie civil"
+                ],
+                "authFullName_s": [
+                    "Emilio Bastidas-Arteaga",
+                    "Franck Schoefs",
+                    "A. Chateauneuf",
+                    "Denys Breysse",
+                    "E. Sheils",
+                    "A. J. O'Connor"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008995,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Système de planification de la maintenance pour la gestion et la maîtris des risques associés aux infrastructures de génie civil"
+                ],
+                "authFullName_s": [
+                    "Jérôme Boero",
+                    "H. Yanez-Godoy",
+                    "Y. Billard",
+                    "Franck Schoefs"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008961,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Strategies de Calcul Avancées pour le Dimensionnement des Moules Composites et Métalliques pour des Structures Composites à Application Aéronautique"
+                ],
+                "authFullName_s": [
+                    "Brice Bognet",
+                    "Adrien Leygue",
+                    "Francisco Chinesta",
+                    "Arnaud Poitou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008960,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Stratégie de modélisation de type poutre pour une large variété de problèmes sismiques"
+                ],
+                "authFullName_s": [
+                    "J. Mazars",
+                    "Panagiotis Kotronis",
+                    "S. Ghavamian"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008959,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Stratégie de calcul multiéchelle avec homogénéisation en espace et en temps"
+                ],
+                "authFullName_s": [
+                    "Anthony Nouy",
+                    "Pierre Ladevèze"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008958,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Stratégie d'instrumentation pour la gestion optimisée des ouvrages portuaires"
+                ],
+                "authFullName_s": [
+                    "Franck Schoefs",
+                    "B. Gérard",
+                    "Pascal Casari",
+                    "L. Verdure"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008932,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Sein, île de"
+                ],
+                "authFullName_s": [
+                    "Christian Bougeard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1008931,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Gens du voyage et opinions publiques : le poids des représentations sociales"
+                ],
+                "authFullName_s": [
+                    "Céline Bergeon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008930,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.hisphilso",
+                    "0.shs",
+                    "1.shs.phil",
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Montaigne, son livre et son roi"
+                ],
+                "authFullName_s": [
+                    "Alain Legros"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008929,
+                "domain_s": [
+                    "0.info",
+                    "1.info.eiah",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Construction avec des enseignants d'une ontologie des compétences en géométrie, Geoskills"
+                ],
+                "authFullName_s": [
+                    "Cyrille Desmoulins"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008906,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Simulation multi-échelle des voiliers multi-coques constitués d'âmes en nid d'abeille"
+                ],
+                "authFullName_s": [
+                    "Laurent Gornet",
+                    "Gilles Marckmann"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008905,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Simulation en temps réel des tissues biologiques par réduction de modèles et méthodes asymptotiques numériques"
+                ],
+                "authFullName_s": [
+                    "S. Niroomandi",
+                    "I. Alfaro",
+                    "Elías Cueto",
+                    "Francisco Chinesta"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008904,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Simulation des procédés d'extrusion de profils creux par la méthode des éléments naturels"
+                ],
+                "authFullName_s": [
+                    "I. Alfaro",
+                    "Elías Cueto",
+                    "J. Olivera",
+                    "L. Filice",
+                    "F. Gagliardi",
+                    "Francisco Chinesta"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008903,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Simulation de l'effet de la plastification des polymères sur l'absorption d'humidité"
+                ],
+                "authFullName_s": [
+                    "Bun Eang Sar",
+                    "Sylvain Fréour",
+                    "Peter Davies",
+                    "Frédéric Jacquemin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008902,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Simulation de l'endommagement de structures composites soumises à des impacts hydrodynamiques"
+                ],
+                "authFullName_s": [
+                    "Laurent Gornet",
+                    "Steven Marguet",
+                    "Patrick Rozycki",
+                    "Gilles Marckmann"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008901,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Simulation Avancée des Couplages Multi-Physiques Lors de la Mise en Forme de Stratifiés"
+                ],
+                "authFullName_s": [
+                    "Francisco Chinesta"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008900,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Simulation d'un catamaran de course soumis à la houle et à l'impact hydrodynamique"
+                ],
+                "authFullName_s": [
+                    "Laurent Gornet",
+                    "Gilles Marckmann",
+                    "Bernard Peseux",
+                    "G. Ollier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008868,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Cycle de conférences \" Géopolitique de l'Europe moderne- L'Europe du sud \", Université du Temps libre- UTM"
+                ],
+                "authFullName_s": [
+                    "Didier Foucault"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008867,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "René Pleven (1901-1993)"
+                ],
+                "authFullName_s": [
+                    "Christian Bougeard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1008863,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Sédimentation-consolidation des sols fins"
+                ],
+                "authFullName_s": [
+                    "Alain Alexis",
+                    "Gilbert Lebras"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008860,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Schéma probabiliste pour l'intégration des résultats d'inspection dans l'évaluation de l'intégrité mécanique d'une structure"
+                ],
+                "authFullName_s": [
+                    "Franck Schoefs",
+                    "M. Rguig",
+                    "A. Rouhan"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008841,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Cycle de conférences \" Géopolitique de l''Europe centrale et orientale à l'Epoque moderne \", Université du Temps libre-UTM, Toulouse"
+                ],
+                "authFullName_s": [
+                    "Didier Foucault"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008839,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Retour d'expérience et performances des modèles de remblai"
+                ],
+                "authFullName_s": [
+                    "P. Mestat",
+                    "E. Bourgeois",
+                    "Yvon Riou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008836,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Les Roms roumains en France, entre politique migratoire et politique de non-accueil"
+                ],
+                "authFullName_s": [
+                    "Céline Bergeon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008835,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Paysannerie"
+                ],
+                "authFullName_s": [
+                    "Christian Bougeard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1008834,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les sciences au Moyen Age"
+                ],
+                "authFullName_s": [
+                    "Didier Foucault"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008833,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Médecine et médecins à Toulouse au XVIIIe siècle"
+                ],
+                "authFullName_s": [
+                    "Didier Foucault"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008832,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Résultats d'auscultation d'un ouvrage maritime en béton armé"
+                ],
+                "authFullName_s": [
+                    "F. Rosquoet",
+                    "Stéphanie Bonnet",
+                    "Abdelhafid Khelidj",
+                    "X. Lefort"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008830,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Résolution numérique des modèles de théorie cinétique des polymères fondus"
+                ],
+                "authFullName_s": [
+                    "M. Normandin",
+                    "Francisco Chinesta",
+                    "Amine Ammar"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008828,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Nantes"
+                ],
+                "authFullName_s": [
+                    "Christian Bougeard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1008811,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "REFLEXIONS SUR L'IDENTIFICATION DES PARAMETRES EN GEOTECHNIQUE"
+                ],
+                "authFullName_s": [
+                    "Aurélie Papon",
+                    "Yvon Riou",
+                    "Christophe Dano",
+                    "Pierre Yves Hicher"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008810,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Réflexion sur le calcul d'ouvrages"
+                ],
+                "authFullName_s": [
+                    "Yvon Riou",
+                    "Aurélie Papon",
+                    "Christophe Dano",
+                    "Pierre Yves Hicher"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008809,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Réduction de Modèles par la PGD pour le Calcul de Contraintes et Déformations Résiduelles Issues du Refroidissement de Pièces Composites"
+                ],
+                "authFullName_s": [
+                    "Brice Bognet",
+                    "Adrien Leygue",
+                    "Francisco Chinesta",
+                    "Arnaud Poitou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008808,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Réduction de modèles et séparation de variables : Deux alternatives pour élargir le domaine de la simulation numérique en physique et ingénierie"
+                ],
+                "authFullName_s": [
+                    "Francisco Chinesta"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008807,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Réduction de Modèles à l'Issue de la Théorie Cinétique"
+                ],
+                "authFullName_s": [
+                    "Francisco Chinesta"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008806,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Réduction de modèle pour la résolution de problèmes aux limites avec incertitudes localisées"
+                ],
+                "authFullName_s": [
+                    "Mathilde Chevreuil",
+                    "Elias Emile Safatly",
+                    "Anthony Nouy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008805,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Réduction de modèle a priori pour la résolution de problèmes éléments finis stochastiques"
+                ],
+                "authFullName_s": [
+                    "Anthony Nouy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008803,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Recherche de forme des structures membranaires tendues par minimisation de fonctionnelles"
+                ],
+                "authFullName_s": [
+                    "Rabah Bouzidi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008801,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Violence et intolérance : peut-on tirer des leçons de l'histoire ?"
+                ],
+                "authFullName_s": [
+                    "Didier Foucault"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008800,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "La mobilité des familles tsiganes françaises à l'épreuve de la gestion politique de l'espace. Stratégies et résistances"
+                ],
+                "authFullName_s": [
+                    "Céline Bergeon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008797,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.psy"
+                ],
+                "title_s": [
+                    "Actualités de la Psychologie du Développement et de l'Éducation : introduction"
+                ],
+                "authFullName_s": [
+                    "Véronique Rouyer",
+                    "Myriam De Léonardis",
+                    "Claire Safont-Mottay",
+                    "Marie Huet-Gueye"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1008795,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Bretons dans la France Libre"
+                ],
+                "authFullName_s": [
+                    "Christian Bougeard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1008792,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Art et environnement : prolonger la question de l'habiter"
+                ],
+                "authFullName_s": [
+                    "Nathalie Blanc",
+                    "Emeline Eudes"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008791,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Brest"
+                ],
+                "authFullName_s": [
+                    "Christian Bougeard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1008789,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Bretagne"
+                ],
+                "authFullName_s": [
+                    "Christian Bougeard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1008787,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "La bataille de Poltava"
+                ],
+                "authFullName_s": [
+                    "Didier Foucault"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008786,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Cycle de conférences : \" Géopolitique de l'Europe de l'ouest et du nord \", Université du Temps libre-UTM, Toulouse"
+                ],
+                "authFullName_s": [
+                    "Didier Foucault"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008784,
+                "title_s": [
+                    "Introduction à la cryptographie"
+                ],
+                "authFullName_s": [
+                    "Pierre Loidreau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1008783,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "L'irréligion populaire dans les visites pastorales (XVIe-XVIIIe siècles)"
+                ],
+                "authFullName_s": [
+                    "Didier Foucault"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008782,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "La perception de la fin de la guerre d'Algérie en Bretagne"
+                ],
+                "authFullName_s": [
+                    "Christian Bougeard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1008781,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Le blasphème à l'Epoque moderne"
+                ],
+                "authFullName_s": [
+                    "Didier Foucault"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008779,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Erasme, un symbole de l'Europe"
+                ],
+                "authFullName_s": [
+                    "Didier Foucault"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008778,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.relig"
+                ],
+                "title_s": [
+                    "Comme une autre histoire...\" Montaigne et Jésus-Christ"
+                ],
+                "authFullName_s": [
+                    "Alain Legros"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008776,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Vanini dans les manuscrits de Guy Patin"
+                ],
+                "authFullName_s": [
+                    "Didier Foucault"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008771,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Un liturgiste de petite ville : Lazare Bocquillot"
+                ],
+                "authFullName_s": [
+                    "Alain Rauwel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008751,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Moines et chanoines en conflit pour le contrôle d'une ville non épiscopale : le cas de Dijon"
+                ],
+                "authFullName_s": [
+                    "Alain Rauwel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008750,
+                "title_s": [
+                    "Musicologie et colonialisme"
+                ],
+                "authFullName_s": [
+                    "Christian Corre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1008749,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Don Giovanni 'grand seigneur méchant homme' et 'libertin sans retour"
+                ],
+                "authFullName_s": [
+                    "Didier Foucault"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008748,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Les mouvements sociaux ouvriers en Bretagne dans les années 1950-1980. Approche historiographique et état des lieux"
+                ],
+                "authFullName_s": [
+                    "Christian Bougeard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1008745,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Sources italiennes du libertinisme français dénoncées par les religieux Garasse et Mersenne autour de 1625"
+                ],
+                "authFullName_s": [
+                    "Didier Foucault"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008744,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Grosses pierres et vieux manuscrits : le roi Arthur à La Crête"
+                ],
+                "authFullName_s": [
+                    "Alain Rauwel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008721,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Plasticité du vivant et matérialisme biologique de Vanini"
+                ],
+                "authFullName_s": [
+                    "Didier Foucault"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008719,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Propriétés de transfert thermique de pâtes de ciment durcissantes et de mortiers durcis - prise en compte du séchage"
+                ],
+                "authFullName_s": [
+                    "Philippe Poullain",
+                    "Pierre Mounanga",
+                    "Guy Bastian",
+                    "Abdelhafid Khelidj"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008712,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Proper Generalized Decomposition pour la résolution de problèmes stochastiques ou paramétriques de grande dimension"
+                ],
+                "authFullName_s": [
+                    "Anthony Nouy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008711,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Justiciable ou expert ? La responsabilité du médecin d'Ancien Régime devant la justice"
+                ],
+                "authFullName_s": [
+                    "Didier Foucault"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008710,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "L'olivier dans les jardins périurbains du pays d'Aubagne : une nouvelle forme d'oléiculture ?"
+                ],
+                "authFullName_s": [
+                    "Stéphane Angles",
+                    "Jean-Noël Consalès",
+                    "Paul Minvielle"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008709,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "0.sdv",
+                    "1.sdv.spee",
+                    "0.shs",
+                    "1.shs.hisphilso"
+                ],
+                "title_s": [
+                    "La vie et l'œuvre d'un médecin contemporain de Montaigne, Pierre Pichot"
+                ],
+                "authFullName_s": [
+                    "Alain Legros"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008699,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Propagation de vibrations dues au tramway de Nantes"
+                ],
+                "authFullName_s": [
+                    "Marc Maldonado",
+                    "Donatien Le Houedec"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008698,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Projets FUI et européens de gestion des infrastructures portuaires: MAREO et MEDACHS"
+                ],
+                "authFullName_s": [
+                    "Emilio Bastidas-Arteaga",
+                    "L. Barbot",
+                    "Franck Schoefs"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008697,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Projet MAREO : Evaluation probabiliste des stratégies de maintenance durables de structures en béton armé en environnement maritime"
+                ],
+                "authFullName_s": [
+                    "Emilio Bastidas-Arteaga",
+                    "Franck Schoefs",
+                    "A. Chateauneuf",
+                    "M. Sanchez-Da-Silva",
+                    "Bruno Capra"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008696,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Projet GEROM : gestion des risques associés au vieillissement des ouvrages portuaires et optimisation de la maintenance"
+                ],
+                "authFullName_s": [
+                    "Jérôme Boero",
+                    "H. Yanez-Godoy",
+                    "Bruno Capra",
+                    "Franck Schoefs"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008695,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Projet GEROM : Analyse en fiabilité d'ouvrages portuaires corrodés pour l'optimisation de la maintenance"
+                ],
+                "authFullName_s": [
+                    "H. Yanez-Godoy",
+                    "Jérôme Boero",
+                    "Franck Schoefs",
+                    "Bruno Capra"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008693,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Processus d'endommagement par fatigue d'un acier HLE dans l'air et dans un milieu salin avec polarisation cathodique"
+                ],
+                "authFullName_s": [
+                    "Bertrand Huneau",
+                    "J. Mendez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008692,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Problèmes vibratoires lié à la construction du tramway d'Athènes"
+                ],
+                "authFullName_s": [
+                    "Marc Maldonado",
+                    "Donatien Le Houedec"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008691,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Problématiques Multiphysiques - Multiéchelles - Multimodèles rencontrées dans la Simulation des Procédés (Polymères et Métaux)"
+                ],
+                "authFullName_s": [
+                    "Francisco Chinesta",
+                    "Elías Cueto",
+                    "Amine Ammar",
+                    "D. Ryckelynck",
+                    "Julien Yvonnet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008674,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Prise en compte de l'erreur de mesure dans l'optimisation de l'auscultation de structures vieillissantes"
+                ],
+                "authFullName_s": [
+                    "Emilio Bastidas-Arteaga",
+                    "Franck Schoefs",
+                    "Stéphanie Bonnet",
+                    "M. Salta"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008672,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Prévision des effets de la marée sur la stabilité des pentes intertidales et perpectives de préventions"
+                ],
+                "authFullName_s": [
+                    "A. Rezzoug",
+                    "Alain Alexis",
+                    "Pierre Thomas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008671,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Premiers résultats expérimentaux sur la diffusion aux ions chlorure et la perméabilité au gaz de bétons endommagés mécaniquement"
+                ],
+                "authFullName_s": [
+                    "A Djerbi",
+                    "Stéphanie Bonnet",
+                    "Abdelhafid Khelidj"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008667,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Poutre 3D multifibre Timoshenko pour la modélisation des structures en béton armé soumises à des chargements sévères"
+                ],
+                "authFullName_s": [
+                    "Panagiotis Kotronis",
+                    "Luc Davenne",
+                    "J. Mazars"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008666,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Possibilité de liquéfaction d'un sol immergé sous l'action de la marée"
+                ],
+                "authFullName_s": [
+                    "Alain Alexis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008665,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Portance des fondations superficielles filantes posées sur un sol bicouche Sable/Argile par une approche cinématique"
+                ],
+                "authFullName_s": [
+                    "D. S. Youssef Abdel Massih",
+                    "E. El Hachem",
+                    "Abdul-Hamid Soubra"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008664,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Portance des fondations superficielles établies à proximité d'une pente : Etude théorique et expérimentale"
+                ],
+                "authFullName_s": [
+                    "Abdul-Hamid Soubra",
+                    "Josselin Garnier",
+                    "L. Thorel",
+                    "P. Chambon",
+                    "E. El Hachem",
+                    "J. Cortas",
+                    "H. Oueidat",
+                    "R. Chehade"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008660,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "PGD dans Méthode des Eléments Frontière"
+                ],
+                "authFullName_s": [
+                    "N. Verdon",
+                    "P. Joyot",
+                    "Francisco Chinesta",
+                    "P. Villon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008652,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Performances des modèles numériques utilisés pour l'étude du renforcement des massifs par colonnes de sol amélioré"
+                ],
+                "authFullName_s": [
+                    "P. Mestat",
+                    "Yvon Riou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008625,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Optimisation et Simulation de Procédés"
+                ],
+                "authFullName_s": [
+                    "Francisco Chinesta"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008624,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Optimisation de la maintenance d'ouvrages en béton armé corrodés dans le cadre du développement durable"
+                ],
+                "authFullName_s": [
+                    "Emilio Bastidas-Arteaga",
+                    "Franck Schoefs"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFQv+wD"
+}

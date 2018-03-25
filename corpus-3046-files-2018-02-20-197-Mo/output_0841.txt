@@ -1,0 +1,2322 @@
+{
+    "response": {
+        "numFound": 515922,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1454651,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "L'Homme et ses microbes"
+                ],
+                "authFullName_s": [
+                    "Eric Guedon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454650,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Données de (Meta)-génomiques et de (Meta)-transcriptomiques"
+                ],
+                "authFullName_s": [
+                    "Eric Guedon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454646,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "La sphingomyéline : un élément fonctionnel de la membrane des globules gras du lait"
+                ],
+                "authFullName_s": [
+                    "Christelle Lopez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454645,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "La température et le cholestérol façonnent la membrane des globules gras du lait"
+                ],
+                "authFullName_s": [
+                    "Christelle Lopez",
+                    "Fanny Guyomarc'H"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1454644,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mp",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Rapport scientifique : Intitulé : Premières rencontres internationales sur « Le Lait, vecteur de développement »"
+                ],
+                "authFullName_s": [
+                    "Sylvie Lortal"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454639,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Exosomes et MicroRNAs du lait"
+                ],
+                "authFullName_s": [
+                    "Rachel Boutrou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454638,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Nutrigénomique et Lait"
+                ],
+                "authFullName_s": [
+                    "Rachel Boutrou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454634,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mp",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "La filière laitière dans le Finistère : un développement aux forts enjeux. Exemple du Projet PROFIL"
+                ],
+                "authFullName_s": [
+                    "Yves Le Loir"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454631,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Mécanismes de l’interleukine-32 lors de l’infection par Staphylococcus aureus"
+                ],
+                "authFullName_s": [
+                    "Ksenia Semenovskaya"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454630,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Etude de l’impact de la structure de gels de blanc d’oeuf sur la digestion des protéines in vivo sur le modèle porc"
+                ],
+                "authFullName_s": [
+                    "Thiébaud Boucher"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454628,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "La stabilité thermique d’émulsion d’agrégats de protéines sériques est modulée par la présence d’une faible proportion de caséines."
+                ],
+                "authFullName_s": [
+                    "Marie Chevallier",
+                    "Alain Riaublanc",
+                    "Christelle Lopez",
+                    "Pascaline Hamon",
+                    "Florence Rousseau",
+                    "Thomas Croguennec"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454627,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Topographie et propriétés mécaniques de membranes de lipides polaires laitiers mesurées par AFM"
+                ],
+                "authFullName_s": [
+                    "Fanny Guyomarc'H",
+                    "Appala Venkata Ramana Appala",
+                    "Christelle Lopez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1454626,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Propriétés mécaniques de membranes lipidiques en phase gel ou fluide investiguées par microscopie à force atomique et nano-indentation de liposomes"
+                ],
+                "authFullName_s": [
+                    "Oumaima Et Thakafy",
+                    "N. Delorme",
+                    "Cedric Gaillard",
+                    "Christelle Lopez",
+                    "Fanny Guyomarc'H"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1454624,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mp",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Développement de consortia de souches de bactéries lactiques pour optimiser la fermentation d’aliments végétaux"
+                ],
+                "authFullName_s": [
+                    "Alexia Chan"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454621,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mp",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Etude des Vésicules Membranaires produites par les bactéries à Gram positif"
+                ],
+                "authFullName_s": [
+                    "Mélina Cutimbo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454620,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Etude de la vectorisation du DHA chez le porc après ingestion de différentes matrices alimentaires"
+                ],
+                "authFullName_s": [
+                    "Guillaume Delaval"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454619,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Etude de l’activité lipasique en phase gastrique chez les nouveau-nés prématurés"
+                ],
+                "authFullName_s": [
+                    "Damien Faure-Bidegaray"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454618,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Etude de l'activité en phase gastrique chez le nouveau-né prématuré"
+                ],
+                "authFullName_s": [
+                    "Damien Faure-Bidegaray"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454617,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Elaboration et caractérisation de matrices protéiques mixtes lait-lupin avec des propriétés fonctionnelles modifiées"
+                ],
+                "authFullName_s": [
+                    "Jessica Laot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454616,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Optimisation d'une méthode de séparation des protéines du lait d'ânesse"
+                ],
+                "authFullName_s": [
+                    "Justine Petit"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454615,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Mise au point d'une méthode de dosage quantitatif du peptide β-CN (94-123)"
+                ],
+                "authFullName_s": [
+                    "Ophélie Caron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454614,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mp",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Collaboration entre probiotiques lactiques et propioniques : nouveau procédé de production durable"
+                ],
+                "authFullName_s": [
+                    "Floriane Gaucher"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454612,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Free fatty acid profiles and cholesterol and lipid indexes of raw ewe's milk from two Algerian breeds (Ouled-Djellal and Rumbi), collected in the steppe area"
+                ],
+                "authFullName_s": [
+                    "Benalia Yabrir",
+                    "Moussa Labiad",
+                    "Abdellah Mostefaoui",
+                    "Ahcene Hakem",
+                    "Yacine Titouche",
+                    "Frederic Gaucheron",
+                    "Abderrahmane Mati"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454606,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Propriétés anti-inflammatoires d'une protéine de surface de propionibacterium freudenreichii"
+                ],
+                "authFullName_s": [
+                    "Gwénaël Jan",
+                    "Benoît Foligné",
+                    "Hélène Falentin",
+                    "Stéphanie-Marie Deutsch"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "PATENT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454605,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Milk Powder"
+                ],
+                "authFullName_s": [
+                    "Pierre Schuck",
+                    "Daniel Garreau",
+                    "Anne Dolivet",
+                    "Gaelle Tanguy-Sai",
+                    "Serge Mejean",
+                    "Romain Jeantet",
+                    "Massimo Vezzani"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "PATENT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454604,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Le babeurre une source de lipides polaires"
+                ],
+                "authFullName_s": [
+                    "Marie-Caroline Michalski",
+                    "Frédéric Gaucheron",
+                    "Jean-Yves Gassi",
+                    "Christelle Lopez",
+                    "Geneviève Gesan-Guiziou",
+                    "Véronique Bargain"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1454596,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Concertation entre biopolymères: spécificité des systèmes hétéro protéiques"
+                ],
+                "authFullName_s": [
+                    "Said Bouhallab"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454583,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Etude expérimentale de l’encrassement d’un évaporateur pilote lors de la concentration de produits laitiers"
+                ],
+                "authFullName_s": [
+                    "Laure Polliand"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454562,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Recherche & Innovation: Poudre de lactosérum & dérivés Impact sur la qualité des poudres"
+                ],
+                "authFullName_s": [
+                    "Pierre Schuck"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454561,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Quelques Problématiques de Recherche sur les Constituants des Lactosérums"
+                ],
+                "authFullName_s": [
+                    "Frédéric Gaucheron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454559,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mp",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Diversité intra-spécifique des microorganismes du lait : prise en compte et conservation"
+                ],
+                "authFullName_s": [
+                    "Florence Valence-Bertel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454550,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Mécanisme de formation des grains et propriétés des poudres laitières associées :Une approche multi-échelles"
+                ],
+                "authFullName_s": [
+                    "Cécile Le Floch-Fouéré",
+                    "Céline Sadek",
+                    "Pierre Schuck",
+                    "Romain Jeantet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454544,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Expression à l'interface eau-air de potentialités d'assemblage des protéines, et interactions aux concentrations élevées"
+                ],
+                "authFullName_s": [
+                    "Stéphane Pezennec"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454543,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Interactions dans des films d'adsorption de protéines globulaires à l'interface eau-air: comportements différenciés et effets d'ions"
+                ],
+                "authFullName_s": [
+                    "Stéphane Pezennec",
+                    "Coralie Pasquier",
+                    "Sylvie Beaufils",
+                    "Lay-Theng Lee",
+                    "Antoine Bouchoux",
+                    "Valérie Lechevalier-Datin",
+                    "Bernard Cabane"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1454525,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Comment améliorer les formules infantiles pour mimer les cinétiques de digestion du lait maternel ?"
+                ],
+                "authFullName_s": [
+                    "Amélie Deglaire",
+                    "Samira De Oliveira",
+                    "Claire Bourlieu-Lacanal",
+                    "Olivia Ménard",
+                    "Amandine Bellanger",
+                    "E Dirson",
+                    "Yann Le Gouar",
+                    "P. Pladys",
+                    "Didier Dupont"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454516,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Un grand pas dans la lutte contre les mammites."
+                ],
+                "authFullName_s": [
+                    "Yves Le Loir",
+                    "Sergine Even"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454515,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Des recherches permanentes pour améliorer la qualité du lait."
+                ],
+                "authFullName_s": [
+                    "Didier Dupont",
+                    "Anne Jeanblanc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454514,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Maîtriser la qualité des poudres laitières enrichies en matière grasse: Une approche scientifique pour une problématique industrielle."
+                ],
+                "authFullName_s": [
+                    "Marie-Laure Vignolles"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454509,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Microfiltration tangentielle (0,1 μm) de lait écrémé: Rôle des interactions électrostatiques dans le transfert des protéines solubles"
+                ],
+                "authFullName_s": [
+                    "Anne Jimenez-Lopez",
+                    "Fabienne Lambrouin",
+                    "Florence Rousseau",
+                    "Geneviève Gesan-Guiziou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454499,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Interactions moléculaires au cours de l'élaboration de la mésostructure de la micelle de caséine : exploration in vivo et in vitro"
+                ],
+                "authFullName_s": [
+                    "Annabelle Le Parc",
+                    "Eric Chanat",
+                    "Joëlle Léonil"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454490,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Globule gras du lait : nouveau modèle d'organisation de la membrane biologique"
+                ],
+                "authFullName_s": [
+                    "Christelle Lopez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454489,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Les biocapteurs en milieu alimentaire"
+                ],
+                "authFullName_s": [
+                    "Didier Dupont"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454485,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Le réseau français des CRB micro-organismes"
+                ],
+                "authFullName_s": [
+                    "Sylvie Lortal"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454483,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Collections microbiennes en Europe : Un atout pour la science et les applications"
+                ],
+                "authFullName_s": [
+                    "Sylvie Lortal"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454482,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Les perspectives pour la recherche laitière comme moteur d’innovation"
+                ],
+                "authFullName_s": [
+                    "Sylvie Lortal"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454479,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Interactions et organisations avec les lipides du sous-domaine R11-15 de la dystrophine humaine"
+                ],
+                "authFullName_s": [
+                    "Didier Dupont"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454473,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Les produits laitiers"
+                ],
+                "authFullName_s": [
+                    "Romain Jeantet",
+                    "Thomas Croguennec",
+                    "Michel Mahaut",
+                    "Pierre Schuck",
+                    "Gérard Brule"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454472,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Sciences des Aliments 2- Technologie des Produits Alimentaires"
+                ],
+                "authFullName_s": [
+                    "Romain Jeantet",
+                    "Thomas Croguennec",
+                    "Pierre Schuck",
+                    "Gérard Brule"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454471,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Sciences des Aliments 1- Stabilisation biologique et physico-chimique"
+                ],
+                "authFullName_s": [
+                    "Romain Jeantet",
+                    "Thomas Croguennec",
+                    "Pierre Schuck",
+                    "Gérard Brulé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454469,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Les produits industriels laitiers"
+                ],
+                "authFullName_s": [
+                    "Pierre Schuck",
+                    "Michel Mahaut",
+                    "Romain Jeantet",
+                    "Gérard Brulé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454466,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Séchage par atomisation des émulsions"
+                ],
+                "authFullName_s": [
+                    "Pierre Schuck"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454465,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Equilibres minéraux et conditions physico chimiques"
+                ],
+                "authFullName_s": [
+                    "Frédéric Gaucheron",
+                    "Y Le Graët",
+                    "Pierre Schuck"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454464,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Industrie des poudres à base laitière"
+                ],
+                "authFullName_s": [
+                    "Pierre Schuck",
+                    "Gérard Brulé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454463,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Principes de transformation fromagère (Laits recombinés)"
+                ],
+                "authFullName_s": [
+                    "Henri Goudédranche",
+                    "Benedicte Camier",
+                    "Jean-Yves Gassi",
+                    "Pierre Schuck"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454459,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Propriétés interfaciales de l'ovalbumine déphosphoryléefr"
+                ],
+                "authFullName_s": [
+                    "Federico Casanova"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454458,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Extraction de la lactoferrine par technologies à membranes"
+                ],
+                "authFullName_s": [
+                    "Na Li"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454456,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Détection des protéines de surface de Propionibacterium freudenreichii"
+                ],
+                "authFullName_s": [
+                    "Christophe Vroland"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454455,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Etude des interactions lactoferrine-micelles de caséines dans le but de les séparer par les technologie à membrane"
+                ],
+                "authFullName_s": [
+                    "Laure Phelebon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454454,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Etablissement de l’équation d’état de dispersions de micelles de caséine"
+                ],
+                "authFullName_s": [
+                    "Qingqing Wang"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454453,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "La traçabilité des échantillons de recherche"
+                ],
+                "authFullName_s": [
+                    "Glenn Mills"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454452,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Analyse physique de la pulvérisation : Méthodologies de caractérisation et influence des propriétés physiques des concentrés"
+                ],
+                "authFullName_s": [
+                    "Regina Garcia Castro"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454451,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Caractérisation de l’action d’une préparation enzymatique de Mucor Miehei sur des émulsions laitières modèles et réelles"
+                ],
+                "authFullName_s": [
+                    "Xixi Fang"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454450,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Mise au point de la méthode de dosage du calcium ionique dans les produits laitiers liquides par une électrode spécifique"
+                ],
+                "authFullName_s": [
+                    "Pauline Bourmault"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454449,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Qualité microbiologique de l'oeuf coquille"
+                ],
+                "authFullName_s": [
+                    "Florence Baron",
+                    "Sophie Jan"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454448,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Elevage de poules pondeuses"
+                ],
+                "authFullName_s": [
+                    "Marilyne Kouba",
+                    "Philippe Joly",
+                    "Florence Baron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454447,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Science et technologie de l'oeuf : Production et Qualité, volume 1"
+                ],
+                "authFullName_s": [
+                    "Francoise Nau",
+                    "Catherine Guérin",
+                    "Florence Baron",
+                    "Jean-Louis Thapon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454446,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Science et technologie de l'oeuf : De l'oeuf aux ovoproduits, volume 2"
+                ],
+                "authFullName_s": [
+                    "Francoise Nau",
+                    "Catherine Guérin",
+                    "Florence Baron",
+                    "Jean-Louis Thapon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454445,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Les ovoproduits impropres à la consommation humaine (ICH)"
+                ],
+                "authFullName_s": [
+                    "Francoise Nau",
+                    "Michel Pousset"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454444,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Qualité microbiologique des ovoproduits"
+                ],
+                "authFullName_s": [
+                    "Florence Baron",
+                    "Sophie Jan",
+                    "Romain Jeantet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454443,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Les ovoproduits en Chine et en Amérique du Nord"
+                ],
+                "authFullName_s": [
+                    "Francoise Nau",
+                    "Ying Ma",
+                    "Yoshinori Mine",
+                    "Marie Yang"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454442,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "valeur nutritionnelle et allergénicité"
+                ],
+                "authFullName_s": [
+                    "Yoshiko Yamakawa",
+                    "Francoise Nau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454441,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Taxonomie et habitat"
+                ],
+                "authFullName_s": [
+                    "Yves Le Loir",
+                    "Michel Gautier",
+                    "Jean-Louis Pellerin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454440,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Staphylococcus Aureus"
+                ],
+                "authFullName_s": [
+                    "Yves Le Loir",
+                    "Michel Gautier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454437,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Vecteur recombinant pour la production et la sécrétion de séquences d'acides aminés d'intérêt par les bactéries propioniques et ses applications."
+                ],
+                "authFullName_s": [
+                    "Gwénaël Jan",
+                    "Marie Thérèse Dimanche-Boitrel",
+                    "Hélène Falentin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "PATENT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1454436,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Procédé pour réduire la teneur bactérienne d'un milieu alimentaire et/ou biologique d'intérêt, contenant des gouttelettes lipides."
+                ],
+                "authFullName_s": [
+                    "Jacques Fauquant",
+                    "Benoit Robert",
+                    "Christelle Lopez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "PATENT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454434,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Cinétiques de réhydratation et capacités de rétention d'eau de poudres mesurées par relaxométrie RMN"
+                ],
+                "authFullName_s": [
+                    "A. Davenel",
+                    "Pierre Schuck",
+                    "P. Marshal"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454431,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Réhumidification en continu de poudres laitières"
+                ],
+                "authFullName_s": [
+                    "Pierre Schuck",
+                    "Serge Mejean",
+                    "Anne Dolivet",
+                    "Romain Jeantet",
+                    "P. Pirus",
+                    "F. Belan"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454426,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Etude du comportement aux interfaces du lysozyme natif de blanc d'oeuf de poule en vue d'une étude comparée avec du lysozyme traité thermiquement"
+                ],
+                "authFullName_s": [
+                    "Valérie Lechevalier-Datin",
+                    "Coralie Pasquier",
+                    "Morgane Havard",
+                    "Catherine Guérin",
+                    "Francoise Nau",
+                    "Véronique Vié"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1454425,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "L'Analyse de cycle de vie et l' éco-conception au service de l'amélioration des performances environnementales des procédés"
+                ],
+                "authFullName_s": [
+                    "S. Omont",
+                    "D. Froelich",
+                    "Geneviève Gesan-Guiziou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454424,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Analyse de cycle de vie d’une cascade de procédés membranaires pour la préparation de fractions de protéines laitières : première étape d’éco-conception"
+                ],
+                "authFullName_s": [
+                    "Sophie Omont",
+                    "Daniel Froelich",
+                    "Geneviève Gesan-Guiziou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454423,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Fractionnement des protéines laitières: Potentialités de la microfiltration 0,1 μm de lait"
+                ],
+                "authFullName_s": [
+                    "Geneviève Gesan-Guiziou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454422,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Exemples d'applications des rayons X pour l'étude des constituants du lait"
+                ],
+                "authFullName_s": [
+                    "Geneviève Gesan-Guiziou",
+                    "Antoine Bouchoux",
+                    "Frédéric Pignon",
+                    "Christopher David",
+                    "Javier Perez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1454419,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Formation spontanée de microsphères dans des mélanges de protéines globulaires"
+                ],
+                "authFullName_s": [
+                    "Valérie Lechevalier-Datin",
+                    "Yann Desfougeres",
+                    "Thomas Croguennec",
+                    "Said Bouhallab",
+                    "Francoise Nau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454418,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "L'oeuf ingrédient alimentaire"
+                ],
+                "authFullName_s": [
+                    "Valérie Lechevalier-Datin",
+                    "Thomas Croguennec",
+                    "Marc Anton",
+                    "Yann Desfougeres"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454416,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Les produits laitiers et leur microflore Comment maîtriser la conception de produits laitiers fermentés ?"
+                ],
+                "authFullName_s": [
+                    "Xavier Lecomte",
+                    "Valérie Gagnaire Soumet",
+                    "Magali Genay",
+                    "Annie Dary"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454414,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Les peptides bioactifs dans les produits laitiers"
+                ],
+                "authFullName_s": [
+                    "Valérie Gagnaire Soumet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454411,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.auto"
+                ],
+                "title_s": [
+                    "Dynamique et contrôle des systèmes - exercices"
+                ],
+                "authFullName_s": [
+                    "Nicolas Petit",
+                    "Pierre Rouchon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "LECTURE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454390,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Quantification par spectrométrie de masse des enzymes libérées au cours de la transformation d'une matrice alimentaire complexe"
+                ],
+                "authFullName_s": [
+                    "Julien Jardin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454389,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Impact of skim milk powder processing on casein digestion by an in vitro infant model"
+                ],
+                "authFullName_s": [
+                    "Blandine Hoarau",
+                    "Rachel Boutrou",
+                    "Julien Jardin",
+                    "Daniel Mollé",
+                    "Gaelle Tanguy-Sai",
+                    "Frédéric Gaucheron",
+                    "Pierre Schuck",
+                    "Joëlle Léonil",
+                    "B. Haab",
+                    "Didier Dupont"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454385,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Comportement interfacial du lysosyme apres traitement thermique a sec"
+                ],
+                "authFullName_s": [
+                    "Yann Desfougeres",
+                    "Julien Jardin",
+                    "V. Vié",
+                    "Valérie Lechevalier-Datin",
+                    "Stéphane Pezennec",
+                    "Sylvie Beaufils",
+                    "Francoise Nau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1454380,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Identification des bactéries par spectrométrie de masse"
+                ],
+                "authFullName_s": [
+                    "Julien Jardin",
+                    "Sylvie Lortal",
+                    "Florence Valence-Bertel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454362,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Etude des interactions entre staphylococcus aureus et lactococcus lactis en matrice fromagère."
+                ],
+                "authFullName_s": [
+                    "Marina Cretenet",
+                    "Jennifer Rivière",
+                    "Lucie Rault",
+                    "Sebastien Nouaille",
+                    "Pascal Loubière",
+                    "Yves Le Loir",
+                    "Sergine Even"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1454361,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Atténuation de la virulence de staphylococcus aureus en matrice fromagère"
+                ],
+                "authFullName_s": [
+                    "Marina Cretenet",
+                    "Jennifer Rivière",
+                    "Lucie Rault",
+                    "Sebastien Nouaille",
+                    "Pascal Loubière",
+                    "Yves Le Loir",
+                    "Sergine Even"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1454360,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Approche séroprotéomique de souches de staphylococcus aureus isolées de mammites subcliniques et gangréneuses chez la brebis : détermination du séroprotéome central et accessoire"
+                ],
+                "authFullName_s": [
+                    "Caroline Le Maréchal",
+                    "Gwénaël Jan",
+                    "Julien Jardin",
+                    "Sergine Even",
+                    "Nadejda Berkova",
+                    "J.M. Guibert",
+                    "C. Pulido",
+                    "E. Dubois",
+                    "R. Thiéry",
+                    "Yves Le Loir",
+                    "E. Vautor"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454358,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Comparaison exhaustives de souches de staphylococcus aureus isolées de mammites gangréneuses et subcliniques en élevage ovin"
+                ],
+                "authFullName_s": [
+                    "Caroline Le Maréchal",
+                    "Julien Jardin",
+                    "D. Hernandez",
+                    "Gwénaël Jan",
+                    "P. François",
+                    "J. Schrenzel",
+                    "Sergine Even",
+                    "Nadejda Berkova",
+                    "R. Thiéry",
+                    "J.R. Fitzgérald",
+                    "E. Vautor",
+                    "Yves Le Loir"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454356,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Atténuation de la virulence de staphylococcus aureus en matrice fromagère et en interaction avec lactococcus lactis"
+                ],
+                "authFullName_s": [
+                    "Marina Cretenet",
+                    "Jennifer Rivière",
+                    "Lucie Rault",
+                    "Sebastien Nouaille",
+                    "Pascal Loubière",
+                    "Yves Le Loir",
+                    "Sergine Even"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1454354,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Approche séroprotéomique de souches de staphylococcus aureus isolées de mammites subcliniques et gangréneuses chez la brebis : détermination du séroprotéome central et accessoire"
+                ],
+                "authFullName_s": [
+                    "Caroline Le Maréchal",
+                    "Gwénaël Jan",
+                    "Julien Jardin",
+                    "Sergine Even",
+                    "Nadejda Berkova",
+                    "J.M. Guibert",
+                    "C. Pulido",
+                    "E. Dubois",
+                    "R. Thiéry",
+                    "Yves Le Loir",
+                    "E. Vautor"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454353,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Atténuation de la virulence de staphylococcus aureus en matrice fromagère et en interaction avec lactococcus lactis"
+                ],
+                "authFullName_s": [
+                    "Marina Cretenet",
+                    "Jennifer Rivière",
+                    "Lucie Rault",
+                    "Sebastien Nouaille",
+                    "Pascal Loubière",
+                    "Yves Le Loir",
+                    "Sergine Even"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1454352,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Comparaison exhaustives de souches de staphylococcus aureus isolées de mammites gangéneuses et subcliniques en élevage ovin"
+                ],
+                "authFullName_s": [
+                    "Caroline Le Maréchal",
+                    "Julien Jardin",
+                    "D. Hernandez",
+                    "Gwénaël Jan",
+                    "P. François",
+                    "J. Schrenzel",
+                    "Sergine Even",
+                    "Nadejda Berkova",
+                    "R. Thiéry",
+                    "J.R. Fitzgérald",
+                    "E. Vautor",
+                    "Yves Le Loir"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1454348,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "Etude des interactions entre staphylococcus aureus et lactococcus lactis en matrice fromagère"
+                ],
+                "authFullName_s": [
+                    "Marina Cretenet",
+                    "Jennifer Rivière",
+                    "Lucie Rault",
+                    "Sebastien Nouaille",
+                    "Pascal Loubière",
+                    "Yves Le Loir",
+                    "Sergine Even"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFckMYF"
+}

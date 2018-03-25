@@ -1,0 +1,2226 @@
+{
+    "response": {
+        "numFound": 515923,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1008525,
+                "title_s": [
+                    "Pelléas et Mélisande"
+                ],
+                "authFullName_s": [
+                    "Christian Accaoui"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1008509,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Multidimensionnalité : A Pari Gagnant en Mécanique Numérique"
+                ],
+                "authFullName_s": [
+                    "Francisco Chinesta"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008490,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation Thermique Avancée dans des Structures Composites"
+                ],
+                "authFullName_s": [
+                    "Chady Ghnatios",
+                    "Francisco Chinesta",
+                    "Adrien Leygue",
+                    "Arnaud Poitou",
+                    "Amine Ammar"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008489,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation stochastique de la corrosion à partir d'inspections pour le calcul en fiabilité d'ouvrages portuaires métalliques"
+                ],
+                "authFullName_s": [
+                    "Jérôme Boero",
+                    "Franck Schoefs",
+                    "Bruno Capra"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008487,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation simplifiée pour l'endommagement des structures en béton arme sous sollicitations sévères"
+                ],
+                "authFullName_s": [
+                    "Panagiotis Kotronis",
+                    "J. Mazars",
+                    "L. Davenne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008486,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation simplifiée des portiques avec remplissage en maçonnerie soumis à l'action sismique"
+                ],
+                "authFullName_s": [
+                    "Hamza Mohamed Samouh",
+                    "Panagiotis Kotronis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008485,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation simplifiée 3D du comportement dynamique de structures en béton armé"
+                ],
+                "authFullName_s": [
+                    "J. Mazars",
+                    "A. Colombo",
+                    "Panagiotis Kotronis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008484,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation probabiliste des efforts de houle sur une structure offshore en présence de bio-salissures"
+                ],
+                "authFullName_s": [
+                    "M. Boukinda",
+                    "Franck Schoefs",
+                    "M. Belorgey"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008483,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation physique de la suffusion dans les ouvrages hydrauliques"
+                ],
+                "authFullName_s": [
+                    "I. Bagga",
+                    "Didier Marot",
+                    "L. Thorel",
+                    "P. Gaudicheau",
+                    "P. Audrain"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008482,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation numérique tridimensionnelle de l'impact hydrodynamique"
+                ],
+                "authFullName_s": [
+                    "Bundy Donguy",
+                    "Bernard Peseux",
+                    "E. Fontaine",
+                    "Yves-Marie Scolan",
+                    "Laurent Gornet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008481,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation Numérique en Magnétostatique par la Méthode des Eléments Naturels Contraints (C-NEM) : Application au Mouvement et à l'Estimation de l'Erreur Numérique"
+                ],
+                "authFullName_s": [
+                    "A. Bruyère",
+                    "L. A. Illoul",
+                    "Francisco Chinesta",
+                    "S. Clenet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008480,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation numérique des nano-composites : de la rhéologie aux procédés de mise en forme"
+                ],
+                "authFullName_s": [
+                    "Francisco Chinesta",
+                    "Amine Ammar",
+                    "M. R. Mackley",
+                    "A. Ma",
+                    "Elías Cueto"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008479,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "ModélIsation numérique des fondations superficielles : un outil pédagogique et un thème de recherche très actuel"
+                ],
+                "authFullName_s": [
+                    "P. Mestat",
+                    "Yvon Riou",
+                    "P. Humbert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008478,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation numérique de la butée des terres en présence d'écoulement"
+                ],
+                "authFullName_s": [
+                    "N. Benmebarek",
+                    "S. Benmebarek",
+                    "Richard Kastner",
+                    "Abdul-Hamid Soubra"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008477,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation multiéchelle du comportement mécanique de composites renforcés par des fibres courtes"
+                ],
+                "authFullName_s": [
+                    "Sylvain Fréour",
+                    "Amandine Celino",
+                    "Pascal Casari",
+                    "Frédéric Jacquemin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008476,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation multi-échelles de l'endommagement des bétons à haute température : évaluation de la déformation thermique sous charge"
+                ],
+                "authFullName_s": [
+                    "A. Menou",
+                    "Frédéric Grondin",
+                    "H. Boussa",
+                    "G. Mounajed"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008475,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation élastoplastique des matériaux cubiques - prise en compte de la microstructure de dislocations"
+                ],
+                "authFullName_s": [
+                    "Jamal Fajoui",
+                    "David Gloaguen",
+                    "Bruno Courant",
+                    "Ronald Guillen"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008474,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation du procédé de soudage par ultrason des matériaux composites a matrice thermoplastique"
+                ],
+                "authFullName_s": [
+                    "Arthur Levy",
+                    "Steven Le Corre",
+                    "Arnaud Poitou",
+                    "E. Soccard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008473,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation du contact rotor-stator en dynamique"
+                ],
+                "authFullName_s": [
+                    "Isabelle Guilloteau",
+                    "Bernard Peseux",
+                    "Jérome Bonini"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008472,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation du comportement de câbles synthétiques"
+                ],
+                "authFullName_s": [
+                    "S. R. Ghoreishi",
+                    "Patrice Cartraud",
+                    "Tanguy Messager",
+                    "Peter Davies"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008471,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation du Compactage par Ultrasons des Preimpregnés"
+                ],
+                "authFullName_s": [
+                    "J. Justo",
+                    "Francisco Chinesta",
+                    "F. Paris"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008469,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation des mécanismes de dégradation des structures en environnement aléatoire : application aux structures en béton armé face au changement climatique"
+                ],
+                "authFullName_s": [
+                    "Emilio Bastidas-Arteaga"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008468,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation de structures voiles en béton armé soumises à du cisaillement"
+                ],
+                "authFullName_s": [
+                    "Marc Soufflet",
+                    "Panagiotis Kotronis",
+                    "Frédéric Collin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008467,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation de structures en béton armé avec l'élément poutre multifibre du code Aster"
+                ],
+                "authFullName_s": [
+                    "X. H. Nguyen",
+                    "Panagiotis Kotronis",
+                    "J. Mazars"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008466,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation de Proprétés Rhéologiques des Suspensions de Nanotubes de Carbone"
+                ],
+                "authFullName_s": [
+                    "C. Cruz",
+                    "I. Lounes",
+                    "Francisco Chinesta",
+                    "G. Regnier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008465,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation de l'incertitude par CP et MCMC lors de l'identification de variables à partir d'instrumentation"
+                ],
+                "authFullName_s": [
+                    "Francesca Lanata",
+                    "Franck Schoefs",
+                    "K. T. Le"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008463,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation de l'incertitude par chaos polynomial et par chaîne markov-monte-carlo de la fiabilité de structures portuaires"
+                ],
+                "authFullName_s": [
+                    "Francesca Lanata",
+                    "Franck Schoefs",
+                    "K. T. Le"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008462,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation de la contribution élastique des nanotubes de carbone au comportement rhéologique de leurs suspensions"
+                ],
+                "authFullName_s": [
+                    "C. Cruz",
+                    "Francisco Chinesta",
+                    "G. Regnier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008461,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation d'un transitoire de vitesse d'un groupe turbo-alternateur avec contact rotor-stator"
+                ],
+                "authFullName_s": [
+                    "Sébastien Roques",
+                    "Patrice Cartraud",
+                    "Carlo Stoisser",
+                    "Mathias Legrand",
+                    "Bernard Peseux",
+                    "Christophe Pierre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008460,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation Avancée de la Mise en Forme de Composites"
+                ],
+                "authFullName_s": [
+                    "Francisco Chinesta",
+                    "Arnaud Poitou",
+                    "Adrien Leygue",
+                    "Brice Bognet",
+                    "Chady Ghnatios"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008459,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation 3D de structures à murs contreventés: programme européen ECOLEADER"
+                ],
+                "authFullName_s": [
+                    "X. H. Nguyen",
+                    "N. Ile",
+                    "Panagiotis Kotronis",
+                    "J. Mazars",
+                    "Jean Marie Reynouard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008451,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modèles réduits et interfaces : Vers une simulation efficace des modèles d'interaction fluide-structure"
+                ],
+                "authFullName_s": [
+                    "Amine Ammar",
+                    "Etienne Prulière",
+                    "Julien Ferec",
+                    "Francisco Chinesta"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008450,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modèle simplifié 3D de l'interaction sol-structure : application au génie parasismique"
+                ],
+                "authFullName_s": [
+                    "Stéphane Grange",
+                    "Panagiotis Kotronis",
+                    "J. Mazars"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008449,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modèle simplifié 3D de l'interaction sol structure: application au génie parasismique"
+                ],
+                "authFullName_s": [
+                    "Stéphane Grange",
+                    "Panagiotis Kotronis",
+                    "J. Mazars"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008448,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modèle de béton armé équivalent pour l'analyse du comportement des voiles de très faible élancement. Programme SAFE"
+                ],
+                "authFullName_s": [
+                    "Panagiotis Kotronis",
+                    "J. Mazars",
+                    "D. Chauvel",
+                    "J. Dalbera",
+                    "P. Pegon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008447,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modèle cyclique de béton renforcé par TFC : Modélisation numérique de poteaux confinés, approche par éléments finis multifibres"
+                ],
+                "authFullName_s": [
+                    "C. Desprez",
+                    "Panagiotis Kotronis",
+                    "J. Mazars"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008438,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Migration des ions chlorure dans des bétons fissurés"
+                ],
+                "authFullName_s": [
+                    "A Djerbi",
+                    "Stéphanie Bonnet",
+                    "Abdelhafid Khelidj",
+                    "V. Baroghel-Bouny",
+                    "J. Rogel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008431,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Métrologie du retrait endogène au très jeune âge : analyse critique et nouveaux développements"
+                ],
+                "authFullName_s": [
+                    "M. Bouasker",
+                    "Pierre Mounanga",
+                    "Abdelhafid Khelidj"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008430,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Méthodologie opérationnelle pour la modélisation en centrifugeuse d'un mécanisme d'érosion interne"
+                ],
+                "authFullName_s": [
+                    "I. Bagga",
+                    "Van Duong Le",
+                    "Didier Marot",
+                    "L. Thorel",
+                    "P. Gaudicheau",
+                    "P. Audrain"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008429,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Méthodes spectrales stochastiques et réduction de modèle pour la propagation d'incertitudes paramétriques dans les modèles physiques"
+                ],
+                "authFullName_s": [
+                    "Anthony Nouy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008428,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Méthodes spectrales stochastiques de type Galerkin et décomposition spectrale généralisée"
+                ],
+                "authFullName_s": [
+                    "Anthony Nouy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008427,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Méthodes éléments finis stochastiques"
+                ],
+                "authFullName_s": [
+                    "Anthony Nouy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008426,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Méthode éléments finis stochastiques étendus pour la prise en compte des incertitudes géométriques dans le calcul de structures"
+                ],
+                "authFullName_s": [
+                    "Alexandre Clément",
+                    "Anthony Nouy",
+                    "Franck Schoefs"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008425,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Méthode éléments finis stochastiques étendus pour la prise en compte d'aleas sur la géométrie dans le calcul de structure"
+                ],
+                "authFullName_s": [
+                    "Anthony Nouy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008424,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Méthode de réduction de modèles a priori basée sur des formulations idéales en minimum de résidu"
+                ],
+                "authFullName_s": [
+                    "Marie Billaud-Friess",
+                    "Anthony Nouy",
+                    "Olivier Zahm"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008423,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Méthode d'approximation creuse de rang faible pour la propagation des incertitudes"
+                ],
+                "authFullName_s": [
+                    "Mathilde Chevreuil"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008417,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Mesure du module de cisaillement de différents matériaux par la technique des bender elements"
+                ],
+                "authFullName_s": [
+                    "Christophe Dano",
+                    "Pierre Yves Hicher"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008416,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Mesure du fluage propre de pâtes de ciment en traction au jeune âge - Etude préliminaire"
+                ],
+                "authFullName_s": [
+                    "Arnaud Pertue",
+                    "Pierre Mounanga",
+                    "Abdelhafid Khelidj",
+                    "Denis Fournol"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008398,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Mécanisme de propagation de fissure de fatigue du caoutchouc naturel au noir de carbone (CB-NR) : étude in-situ au MEB"
+                ],
+                "authFullName_s": [
+                    "Stéphanie Beurrot",
+                    "Bertrand Huneau",
+                    "Erwan Verron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008380,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Le traité MIM \" Fiabilité des ouvrages \", Sécurité, sûreté, variabilité, maintenance"
+                ],
+                "authFullName_s": [
+                    "J. Baroth",
+                    "Franck Schoefs",
+                    "Denys Breysse",
+                    "M. Berveiller",
+                    "Bruno Capra",
+                    "G. Celeux",
+                    "A. Chateauneuf",
+                    "F. Duprat",
+                    "A. Marache",
+                    "F. Perrin",
+                    "L. Peyras",
+                    "B. Sudret"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008377,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "La Simulation des Procédés de Fabrication des Structures Composites pour les Non-Spécialistes"
+                ],
+                "authFullName_s": [
+                    "Francisco Chinesta"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008376,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "La microfissuration dans les bétons atteints de DEF : conséquence des expansions ou effets de la préparation des échantillons?"
+                ],
+                "authFullName_s": [
+                    "Ali-Nordine Leklou",
+                    "Jean-Emmanuel Aubert",
+                    "Gilles Escadeillas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008374,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "La mesure α−δ pour l'optimisation par analyse de risque de la performance des techniques de contrôle CND"
+                ],
+                "authFullName_s": [
+                    "Jérôme Boero",
+                    "Franck Schoefs",
+                    "Bruno Capra"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008373,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "La gestion patrimoniale des réseaux d'assainissement : des objectifs des services à la modélisation"
+                ],
+                "authFullName_s": [
+                    "C. Werey",
+                    "M. Lample",
+                    "Denys Breysse",
+                    "Franck Schoefs",
+                    "E. Vasconcelos",
+                    "P. Le Gaufre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008372,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "L'assemblage Al/Fe par FSW - vers une maîtrise des composés intermétalliques"
+                ],
+                "authFullName_s": [
+                    "Marion Girard",
+                    "Bertrand Huneau",
+                    "Guillaume Racineux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008360,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Interprétation des essais au pressiomètre miniature en centrifugeuse"
+                ],
+                "authFullName_s": [
+                    "Christophe Dano",
+                    "L. Thorel",
+                    "G. Rault"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008353,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Intérêt de la caractérisation multiaxiale des élastomères pour la modélisation du comportement de pièces de suspension moteur en grandes déformations et basses fréquences"
+                ],
+                "authFullName_s": [
+                    "Anne-Sophie Lectez",
+                    "Bertrand Huneau",
+                    "Erwan Verron",
+                    "A.S. Beranger",
+                    "F. Le Brazidec"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008349,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Intégration de Capteurs à Fibres Optiques dans les composites: application à la mesure de déformation, quelles précautions prendre?"
+                ],
+                "authFullName_s": [
+                    "Pierre-Antoine Morvan",
+                    "Yann Lecieux",
+                    "Dominique Leduc",
+                    "Romain Guyard",
+                    "Cyril Lupi",
+                    "Xavier Chapeleau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008343,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Faire l'histoire des sciences de la Renaissance au milieu des années 1960 : '' La prose du monde'' en perspective"
+                ],
+                "authFullName_s": [
+                    "Didier Foucault"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008341,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Initiation et propagation de fissures de fatigue dans un caoutchouc naturel chargé"
+                ],
+                "authFullName_s": [
+                    "Jean-Benoit Le Cam",
+                    "Erwan Verron",
+                    "Bertrand Huneau",
+                    "Laurent Gornet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008340,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Initiation d'une fissure dans un caoutchouc naturel chargé : procédure d'essai et analyse macroscopique des fissures"
+                ],
+                "authFullName_s": [
+                    "Elisabeth Ostoja-Kuczynski",
+                    "Pierre Charrier",
+                    "Erwan Verron",
+                    "Laurent Gornet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008339,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Influencia del bifasaje sobre las constantes elasticas radiocristalograficas"
+                ],
+                "authFullName_s": [
+                    "Sylvain Fréour",
+                    "David Gloaguen",
+                    "Marc François",
+                    "Ronald Guillen"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008322,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Influence du volume de pâte et des additions sur le retrait et la fissuration des bétons autoplaçants"
+                ],
+                "authFullName_s": [
+                    "Emmanuel Rozière",
+                    "Philippe Turcry",
+                    "Ahmed Loukili"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008321,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Influence du confinement et du gradient hydraulique sur l'érosion interne des sols ablo-argileux"
+                ],
+                "authFullName_s": [
+                    "Fateh Bendahmane"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008320,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Influence des inclusions granulaires et du rapport eau ciment sur le retrait chimique des mortiers au très jeune âge"
+                ],
+                "authFullName_s": [
+                    "M. Bouasker",
+                    "Frédéric Grondin",
+                    "Pierre Mounanga",
+                    "Abdelhafid Khelidj"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008318,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "influence des hétérogénéités intragranulaires sur le comportement des matériaux métalliques sous sollicitations mécaniques"
+                ],
+                "authFullName_s": [
+                    "David Gloaguen",
+                    "Jamal Fajoui",
+                    "Bruno Courant",
+                    "Ronald Guillen"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008317,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Influence des forces d'écoulement sur les pressions passives des terres"
+                ],
+                "authFullName_s": [
+                    "Abdul-Hamid Soubra",
+                    "Richard Kastner",
+                    "A. Benmansour"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008316,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Influence des cycles d'humidification-séchage sur des échantillons de mortier atteint de DEF"
+                ],
+                "authFullName_s": [
+                    "Ali-Nordine Leklou",
+                    "Jean-Emmanuel Aubert",
+                    "Gilles Escadeillas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008315,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Influence de la substitution du ciment par une addition sur le risque de fissuration des BAP - Discussion sur l'interprétation des mesures du retrait de séchage"
+                ],
+                "authFullName_s": [
+                    "Philippe Turcry",
+                    "Ahmed Loukili",
+                    "Emmanuel Rozière"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008314,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Influence de la marée sur la stabilité des pentes"
+                ],
+                "authFullName_s": [
+                    "A. Rezzoug",
+                    "Alain Alexis",
+                    "Mohamed Kismi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008313,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Influence de la fréquence de sollicitation sur le faciès de rupture de pièces élastomères en fatigue"
+                ],
+                "authFullName_s": [
+                    "Jean-Benoit Le Cam",
+                    "Elisabeth Ostoja-Kuczynski",
+                    "C. Briançon",
+                    "Pierre Charrier",
+                    "Erwan Verron",
+                    "F. Perocheau",
+                    "Laurent Gornet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008312,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.relig",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Les \"ombrages\" de Montaigne et d'Augustin"
+                ],
+                "authFullName_s": [
+                    "Alain Legros"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008311,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Influence de l'environnement sur le comportement en fatigue d'un acier à haute limite d'élasticité utilisé dans les structures offshore sous protection cathodique"
+                ],
+                "authFullName_s": [
+                    "Bertrand Huneau",
+                    "J. Mendez",
+                    "D. Choqueuse"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008310,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Influence de l'environnement sur le comportement en fatigue d'un acier à haute limite d'élasticité"
+                ],
+                "authFullName_s": [
+                    "Bertrand Huneau",
+                    "J. Mendez",
+                    "D. Choqueuse"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008309,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Influence de l'environnement : air, milieu NaCl, eau de mer naturelle sur le comportement en fatigue d'un acier à haute limite d'élasticité"
+                ],
+                "authFullName_s": [
+                    "Bertrand Huneau",
+                    "J. Mendez",
+                    "D. Choqueuse"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008305,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Indicateurs de performance de bétons exposés à la lixiviation et aux attaques sulfatiques externes"
+                ],
+                "authFullName_s": [
+                    "Emmanuel Rozière",
+                    "Ahmed Loukili",
+                    "R. El Hachem Ibrahim"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008291,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Impact d'un écoulement cyclique sur un ouvrage semi-immergé"
+                ],
+                "authFullName_s": [
+                    "A. Rezzoug",
+                    "Alain Alexis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008285,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Pires que des hérétiques ? Les Églises chrétiennes face aux libertins aux XVIe et XVIIe siècles"
+                ],
+                "authFullName_s": [
+                    "Didier Foucault"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008280,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Vibrations du clavecin de Diderot : des Lumières vers le marxisme et le surréalisme"
+                ],
+                "authFullName_s": [
+                    "Didier Foucault"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008278,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "A demi-mot : de l'écoute à la connivence"
+                ],
+                "authFullName_s": [
+                    "Pierre Vidal-Naquet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008271,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Identification et simulations éléments finis des phénomènes de délaminage"
+                ],
+                "authFullName_s": [
+                    "Laurent Gornet",
+                    "D. Lévêque",
+                    "L. Perret"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008270,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Identification des paramètres du modèle élastique plastique parfait à partir d'essais pressiométriques dans les sols injectés"
+                ],
+                "authFullName_s": [
+                    "Christophe Dano",
+                    "Pierre Yves Hicher"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008269,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Identification de la variabilité spatiale des caractéristiques thermiques des bétons par mesure du champ de températures"
+                ],
+                "authFullName_s": [
+                    "Rabah Bouzidi",
+                    "Guy Bastian",
+                    "Abdelhafid Khelidj"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008266,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Identification à l'aide de capteurs optiques à réseaux de Bragg des coefficients de dilatation hygroscopiques d'un composite à matrice organique"
+                ],
+                "authFullName_s": [
+                    "Hossein Ramezani Dana",
+                    "Annick Perronnet",
+                    "Sylvain Fréour",
+                    "Pascal Casari",
+                    "Frédéric Jacquemin",
+                    "Cyril Lupi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008232,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Formulation de bétons à faible impact environnemental - Résultats préliminaires du projet ANR ECOBETON"
+                ],
+                "authFullName_s": [
+                    "Muhammad Khokhar",
+                    "Emmanuel Rozière",
+                    "Frédéric Grondin",
+                    "Philippe Turcry",
+                    "Ahmed Loukili",
+                    "Pierre Mounanga"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008230,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Fissures de fatigue dans un caoutchouc naturel : étude expérimentale in-situ sous rayonnement synchrotron"
+                ],
+                "authFullName_s": [
+                    "Pierre Rublon",
+                    "Bertrand Huneau",
+                    "Erwan Verron",
+                    "Stéphanie Beurrot",
+                    "Adrien Leygue",
+                    "Nicolas Saintier",
+                    "Daniel Berghezan"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008223,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Fiabilité des joints soudés de structures marines soumis à une géométrie stochastique: de la mesure au calcul"
+                ],
+                "authFullName_s": [
+                    "Franck Schoefs",
+                    "Mathilde Chevreuil",
+                    "Alexandre Clément",
+                    "M. Cazuguel",
+                    "Olivier Pasqualini"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008215,
+                "title_s": [
+                    "L'Europe des nations et l'essor des nationalismes"
+                ],
+                "authFullName_s": [
+                    "Christian Accaoui"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 1008188,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Evolution physico-chimique et retrait endogène des matrices cimentaires au très jeune âge : Apports de l'expérimentation"
+                ],
+                "authFullName_s": [
+                    "Pierre Mounanga",
+                    "Abdelhafid Khelidj",
+                    "V. Baroghel-Bouny",
+                    "Ahmed Loukili"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008186,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Evolution des performances et stratégie optimale de renouvellement des conduites d'assainissement non visitables"
+                ],
+                "authFullName_s": [
+                    "E. Vasconcelos",
+                    "Denys Breysse",
+                    "Franck Schoefs"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008185,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Evolution des matériaux de digues sous chargement hydraulique"
+                ],
+                "authFullName_s": [
+                    "Fateh Bendahmane",
+                    "Didier Marot",
+                    "Alain Alexis",
+                    "Pierre Thomas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008184,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Evolution des matériaux de digues sous chargement hydraulique"
+                ],
+                "authFullName_s": [
+                    "Fateh Bendahmane",
+                    "Didier Marot",
+                    "Alain Alexis",
+                    "Pierre Thomas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008182,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les pratiques clandestines de l'abbé Galiani : prudence ou divertissement"
+                ],
+                "authFullName_s": [
+                    "Azzurra Mauro"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008181,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Evolution des déformations internes au cours d'un chargement complexe de type Bauschinger d'un acier austénitique"
+                ],
+                "authFullName_s": [
+                    "Guy Oum",
+                    "David Gloaguen",
+                    "Jamal Fajoui",
+                    "Vincent Legrand"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008180,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Evaluation probabiliste de l'influence du climat et du changement climatique sur la durabilité des ouvrages en béton armé en ambiance marine"
+                ],
+                "authFullName_s": [
+                    "Emilio Bastidas-Arteaga"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008175,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Evaluation des contraintes internes résiduelles dans le Ti40 - Diffraction des RX et modèles autocohérents"
+                ],
+                "authFullName_s": [
+                    "David Gloaguen",
+                    "Marc François",
+                    "Ronald Guillen",
+                    "R. Royer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008173,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Etude expérimentale des propriétés thermophysiques de matrices cimentaires au très jeune âge"
+                ],
+                "authFullName_s": [
+                    "Pierre Mounanga",
+                    "Philippe Poullain",
+                    "Guy Bastian",
+                    "Abdelhafid Khelidj"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008172,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Etude expérimentale de l'évolution par érosion interne des matériaux d'ouvrage hydraulique en terre"
+                ],
+                "authFullName_s": [
+                    "Fateh Bendahmane",
+                    "Didier Marot",
+                    "Alain Alexis",
+                    "Pierre Thomas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008171,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Etude expérimentale de l'usinabilité d'aciers par analyse thermographique lors d'un essai de rabotage en coupe orthogonale"
+                ],
+                "authFullName_s": [
+                    "Pierrick Guégan",
+                    "Arnaud Poitou",
+                    "P. Bremond"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1008170,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Etude expérimentale de l'interaction perméabilité-endommagement-température dans le béton"
+                ],
+                "authFullName_s": [
+                    "Marta Choinska",
+                    "Abdelhafid Khelidj",
+                    "Gilles Pijaudier-Cabot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFaouwD"
+}

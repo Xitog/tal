@@ -1,0 +1,1893 @@
+{
+    "response": {
+        "numFound": 515921,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1551782,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.mat",
+                    "0.chim",
+                    "1.chim.poly"
+                ],
+                "title_s": [
+                    "Suivi multi-échelle in situ des réactions de polymérisation en macroémulsion par spectrométrie Raman",
+                    "Multi-scale in situ monitoring of macroemulsion polymerization reactions using Raman spectrometry"
+                ],
+                "authFullName_s": [
+                    "Elise Dropsit"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1551779,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-es"
+                ],
+                "title_s": [
+                    "Une méthode pour le développement collaboratif de systèmes embarqués",
+                    "A method for collaborative embedded system development"
+                ],
+                "authFullName_s": [
+                    "Nicolas Hili"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551778,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.relig"
+                ],
+                "title_s": [
+                    "Dieu « jaloux » ou « zélé » ?"
+                ],
+                "authFullName_s": [
+                    "Jean-Pierre Castel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1551777,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-mo"
+                ],
+                "title_s": [
+                    "Contributions à la détection de concepts et d'événements dans les documents vidéos",
+                    "Contributions for the concepts and events detection in videos documents"
+                ],
+                "authFullName_s": [
+                    "Nadia Derbas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551775,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Éducation thérapeutique et agencement des pratiques : Le cas des infirmières stomathérapeutes"
+                ],
+                "authFullName_s": [
+                    "Marine Royer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1551773,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu"
+                ],
+                "title_s": [
+                    "Imagerie 2-D/3-D de la teneur en eau en milieu hétérogène par méthode RMP : biais et incertitudes",
+                    "SNMR 2-D/3-D water content imagery in heterogeneous media : bias and uncertainties"
+                ],
+                "authFullName_s": [
+                    "Antoine Chevalier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551772,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Évêques et manifestations de masse catholiques dans la France du XXe siècle. Refus et tentations du nombre"
+                ],
+                "authFullName_s": [
+                    "Frédéric Le Moigne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1551769,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.oc"
+                ],
+                "title_s": [
+                    "Réponse des masses d'eau intermédiaires et modales de l'océan Austral au mode annulaire austral : les processus en jeu et rôle de la glace de mer",
+                    "Antarctic Intermediate and Subantarctic Mode waters response to the Southern Annular Mode : processes involved and the sea-ice role"
+                ],
+                "authFullName_s": [
+                    "Gildas Mainsant"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551767,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-mo"
+                ],
+                "title_s": [
+                    "Modèles pour la création interactive intuitive",
+                    "Models for intuitive interactive creation"
+                ],
+                "authFullName_s": [
+                    "Adrien Bernhardt"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551766,
+                "domain_s": [
+                    "0.sde"
+                ],
+                "title_s": [
+                    "Étude de dangers des digues de protection contre les crues torrentielles : présentation du cas de l'EDD des digues du torrent de La Salle, recommandations et perspectives",
+                    "Risk study on torrent dikes: case of the &amp;#8220;La Salle&amp;#8221; torrent in French South Alps, recommendations and perspectives"
+                ],
+                "authFullName_s": [
+                    "P. Meriaux",
+                    "D. Richard",
+                    "H. Félix",
+                    "D. Laigle",
+                    "M. Bon",
+                    "A. Astier",
+                    "I. Boncompain",
+                    "Y. Quefféléan"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1551762,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.sde",
+                    "1.sde.mcg"
+                ],
+                "title_s": [
+                    "Évolution récente de la couverture détritique des glaciers de la Région Autonome du Val d'Aoste"
+                ],
+                "authFullName_s": [
+                    "Camille Meyer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1551760,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ds",
+                    "0.info",
+                    "1.info.info-lg",
+                    "0.info",
+                    "1.info.info-dm",
+                    "0.info",
+                    "1.info.info-ai"
+                ],
+                "title_s": [
+                    "Échantillonnage de signaux sur graphes via des processus déterminantaux"
+                ],
+                "authFullName_s": [
+                    "Nicolas Tremblay",
+                    "Simon Barthelme",
+                    "Pierre-Olivier Amblard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551755,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Les incivilités à la Poste"
+                ],
+                "authFullName_s": [
+                    "Anne Wyvekens",
+                    "Jacques Donzelot",
+                    "C. Mével",
+                    "T. Oblet",
+                    "A. Villechaise-Dupont"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551752,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Une approche ethnographique de la conception des bureaux de poste"
+                ],
+                "authFullName_s": [
+                    "Anne Wyvekens"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551751,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "Le design participatif, perspective critique"
+                ],
+                "authFullName_s": [
+                    "Marine Royer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1551750,
+                "domain_s": [
+                    "0.sde"
+                ],
+                "title_s": [
+                    "Première injection de lixiviat dans un digesteur anaérobique suivi par méthode géophysique."
+                ],
+                "authFullName_s": [
+                    "R. Clément",
+                    "A. Degueurce",
+                    "S. Moreau",
+                    "P. Peu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1551748,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Réformes territoriales et cohérence des systèmes régionaux d'enseignement supérieur : une approche par les mobilités de formation et d'insertion"
+                ],
+                "authFullName_s": [
+                    "Bastien Bernela",
+                    "Liliane Bonnal"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1551747,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.genre",
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Le corps pornographique"
+                ],
+                "authFullName_s": [
+                    "Tanguy Dufournet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551703,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "La coproduction de civilité et de sécurité dans les espaces de la SNCF"
+                ],
+                "authFullName_s": [
+                    "Anne Wyvekens"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551702,
+                "domain_s": [
+                    "0.sde"
+                ],
+                "title_s": [
+                    "Qualifier le manque d'eau et gouverner les conflits d'usage : le cas des débits d'objectif d'étiage (DOE) en Adour-Garonne",
+                    "Objectifying the lack of water and governing contested water rights: the case of low flow target indicators in the Adour-Garonne district (South-Western France)"
+                ],
+                "authFullName_s": [
+                    "S. Fernandez",
+                    "T. Debril"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1551700,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Introduction"
+                ],
+                "authFullName_s": [
+                    "Florent Gougou",
+                    "Vincent Tiberj"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551699,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Gestion de l'insécurité et de l'incivilité - Analyse des pratiques mises en œuvre par des entreprises ferroviaires européennes"
+                ],
+                "authFullName_s": [
+                    "Anne Wyvekens"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551698,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-optics"
+                ],
+                "title_s": [
+                    "Imagerie tomographique optique pour le diagnostic in situ des cancers de la peau"
+                ],
+                "authFullName_s": [
+                    "Arnaud Dubois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551696,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Les Nouvelles inégalités du travail"
+                ],
+                "authFullName_s": [
+                    "Gregory Verdugo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1551689,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-optics"
+                ],
+                "title_s": [
+                    "Microscopie par cohérence optique plein champ à éclairage LED pour l'imagerie biomédicale"
+                ],
+                "authFullName_s": [
+                    "Jonas Ogien",
+                    "Arnaud Dubois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551687,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Cergy \"Grand Centre\". Requalification du mail des Cerclades"
+                ],
+                "authFullName_s": [
+                    "Anne Wyvekens",
+                    "M. Talagrand",
+                    "C. Hagège"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551684,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "IntuiScript : suivi et aide à l'apprentissage de l'écriture"
+                ],
+                "authFullName_s": [
+                    "Eric Anquetil",
+                    "Nathalie Girard",
+                    "Damien Simonnet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551651,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "L'atelier de la Butte à Lyon : un fournisseur en luminaires du limes rhénan."
+                ],
+                "authFullName_s": [
+                    "Alice Hanotte"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551645,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.stat",
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "« Placing the history of advertising » : une histoire spatiale de la publicité à Shanghai (1905-1949)",
+                    "« Placing the history of advertising »: a spatial history of advertising in modern Shanghai (1905-1949)"
+                ],
+                "authFullName_s": [
+                    "Cécile Armand"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551644,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Imagerie populaire, petits métiers et tournant industriel : La porteuse de pain"
+                ],
+                "authFullName_s": [
+                    "Sylvie Thouard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551635,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.shs",
+                    "1.shs.genre"
+                ],
+                "title_s": [
+                    "Histoire et esthétique de la danse de ballet au XIXe siècle - Quelques aspects au prisme du genre, féminisation du ballet et stigmatisation des danseurs"
+                ],
+                "authFullName_s": [
+                    "Hélène Marquié"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "HDR",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1551634,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Jean-Christophe Cassard, les Vikings et la Bretagne"
+                ],
+                "authFullName_s": [
+                    "Magali Coumert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1551629,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Entre Antiquité et Moyen-Âge, les \"Grandes Migrations barbares\" en question"
+                ],
+                "authFullName_s": [
+                    "Magali Coumert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1551619,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.vibr"
+                ],
+                "title_s": [
+                    "Estimation de la vitesse instantanée par le cepstre"
+                ],
+                "authFullName_s": [
+                    "Frédéric Bonnardot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1551618,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sp",
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Les nouveaux outils de surveillance au quotidien de la glycémie et du glucose interstitiel : quel avenir et quels bénéfices chez le diabétique de type 1 ?"
+                ],
+                "authFullName_s": [
+                    "Pauline Ottomani"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1551617,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Enquête sur la disparition de l'improvisation au XVIIIe siècle"
+                ],
+                "authFullName_s": [
+                    "Gaël Liardon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551616,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Introduction. Les \"marges celtiques\" : histoire et littérature"
+                ],
+                "authFullName_s": [
+                    "Hélène Bouget",
+                    "Magali Coumert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1551613,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.shs",
+                    "1.shs.genre"
+                ],
+                "title_s": [
+                    "Danse et genre : Épistémologie d'un espace de recherche"
+                ],
+                "authFullName_s": [
+                    "Hélène Marquié"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "HDR",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1551610,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "La mise en réseau dans les politiques publiques : un « outil de changement » pour la lutte contre les discriminations"
+                ],
+                "authFullName_s": [
+                    "Caroline Tarquini"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1551609,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Mélodrame et imaginaires. Les tribulations d'une héroïne populaire : La porteuse de pain"
+                ],
+                "authFullName_s": [
+                    "Sylvie Thouard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551602,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "L'acteur, le masque et le danseur : la métaphore du théâtre dans le système stoïcien"
+                ],
+                "authFullName_s": [
+                    "Christelle Veillard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551601,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "L’empreinte du stoïcisme sur la politique romaine"
+                ],
+                "authFullName_s": [
+                    "Christelle Veillard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551600,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Les vies de philosophes de Diogène Laërce : une réflexion sur l'histoire de la philosophie"
+                ],
+                "authFullName_s": [
+                    "Christelle Veillard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551599,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "La liberté selon l'intelligence de l'espérance : l'approfondissement du concept de mal radical par Paul Ricoeur"
+                ],
+                "authFullName_s": [
+                    "Eriko Suenaga"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551598,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Un miroir spéculatif : Le frontispice de la Science nouvelle"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551597,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Les stoïciens"
+                ],
+                "authFullName_s": [
+                    "Christelle Veillard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551595,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Des ruines qui enseignent, inspirent, séduisent"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551594,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Levinas autrement"
+                ],
+                "authFullName_s": [
+                    "Roger Burggraeve",
+                    "Joëlle Hansel",
+                    "Marie-Anne Lescourret",
+                    "Jean-François Rey",
+                    "Jean-Michel Salanskis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551593,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Des écrits comme « paroles réelles » chez Lacan et chez Vico"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551592,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Sur Le Sacrifice d'Iphigénie : dormir sous un tableau"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551591,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Gérard Traquandi: oeuvres, 01.2009, 04.2012"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551590,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Côté jardin et côté paysage"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551589,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "La Nativité du Caravage : une triple énigme"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551588,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Zaric Abbracio"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons",
+                    "Stéphane Fretz",
+                    "Nicolas Raboud",
+                    "Claude Reichler",
+                    "Michel Thévoz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551587,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Le ha-ha ou la limite invisible"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551586,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Recherches levinassiennes"
+                ],
+                "authFullName_s": [
+                    "Roger Burggraeve",
+                    "Joëlle Hansel",
+                    "Marie-Anne Lescourret",
+                    "Jean-François Rey",
+                    "Jean-Michel Salanskis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551585,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Une réflexion sur le kantisme : le cas Paul Ricoeur (2)"
+                ],
+                "authFullName_s": [
+                    "Eriko Suenaga"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551584,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Honneth, Lyotard, Levinas"
+                ],
+                "authFullName_s": [
+                    "Jean-Michel Salanskis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551583,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Appliquer les mathématiques"
+                ],
+                "authFullName_s": [
+                    "Jean-Michel Salanskis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551581,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Les kathêkonta chez Panétius : vers une évolution de la doctrine ?"
+                ],
+                "authFullName_s": [
+                    "Christelle Veillard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551580,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Métaphysique et épistémologie de la catastrophe"
+                ],
+                "authFullName_s": [
+                    "Jean-Michel Salanskis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551579,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Levinas et Heidegger : le grand écart"
+                ],
+                "authFullName_s": [
+                    "Jean-Michel Salanskis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551578,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Le pour soi et le langage"
+                ],
+                "authFullName_s": [
+                    "Jean-Michel Salanskis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551577,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Les pouvoirs esthétiques du maître"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551576,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "L'herméneutique formelle : l'infini, le contenu, l'espace"
+                ],
+                "authFullName_s": [
+                    "Jean-Michel Salanskis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551575,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Pour une habilitation de l'amateur : autour de Caylus"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551574,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "L'arbre ou le corail : comment imaginer la vie ?"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551573,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Expérience, phénoménologie, ethanalyse"
+                ],
+                "authFullName_s": [
+                    "Jean-Michel Salanskis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551572,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Les champs de bataille d'Andoche Praudel : de la photographie comme art des trophées"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551571,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Flaubert, Aristote et Vico : de Madame Bovary comme universel d'imagination"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551570,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Levinas (le magistère de)"
+                ],
+                "authFullName_s": [
+                    "Jean-Michel Salanskis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551569,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Du rococo au néoclassisme : le rôle de Laugier"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551568,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "La problématique de la “phénoménologie de l’idée de l’Infini” du point de vue de la “méthode” lévinassienne"
+                ],
+                "authFullName_s": [
+                    "Eriko Suenaga"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551567,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "L'inspir, l'expir, le choix d'un rythme"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551566,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Partages du sens: une présentation de l'ethanalyse"
+                ],
+                "authFullName_s": [
+                    "Jean-Michel Salanskis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551564,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Postface"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551563,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "La littérature entre axiomatique et formalisme"
+                ],
+                "authFullName_s": [
+                    "Jean-Michel Salanskis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551562,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Du Grotesque comme risque du sublime : combat, alliance, fusion intime"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551561,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Intime / Extime : une relation bouleversée"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551559,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Culture, morale et politique"
+                ],
+                "authFullName_s": [
+                    "Jean-Michel Salanskis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551558,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Recension de : Jankélévitch. Une philosophie du charme (par J. Hansel)"
+                ],
+                "authFullName_s": [
+                    "Jean-Michel Salanskis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551557,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Le rêve d'autrui"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551556,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Du plaisir négatif au plaisir marginalisé"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551555,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Voltaire, Autoportrait en agonisant"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551554,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Lac en Ecosse après l'orage (1875-1878)"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551552,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Watteau, la grâce et le sublime"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551551,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Comment définir son devoir ? Les enseignements du plan suivi par Panétius dans son Peri kathêkontos"
+                ],
+                "authFullName_s": [
+                    "Christelle Veillard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551550,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Recension de : Jonas, d'E. Pommier, Les Belles-lettres, coll. Figures du savoir"
+                ],
+                "authFullName_s": [
+                    "Claire Schwartz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551549,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Descartes"
+                ],
+                "authFullName_s": [
+                    "Claire Schwartz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551548,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Malebranche"
+                ],
+                "authFullName_s": [
+                    "Claire Schwartz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551547,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "La question de l'infinité du monde et ses réponses cartésiennes"
+                ],
+                "authFullName_s": [
+                    "Claire Schwartz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551546,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Le silence d'Ajax II"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551545,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "La science selon Deleuze et Lyotard"
+                ],
+                "authFullName_s": [
+                    "Jean-Michel Salanskis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551544,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Regards encore français sur la logique et les mathématiques"
+                ],
+                "authFullName_s": [
+                    "Jean-Michel Salanskis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551543,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "L'acte esthétique et la démangeaison de témoigner"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551542,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Acte esthétique, sublime et figures sans visage chez Friedrich"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551541,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "L'instant nuital, l'acte esthétique et la méthode du sublime [en ligne]"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551540,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Le concret et l'idéal : Levinas vivant III"
+                ],
+                "authFullName_s": [
+                    "Jean-Michel Salanskis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551539,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Les stoïciens. II, Le stoïcisme intermédiaire: Diogène de Babylonie, Panétius de Rhodes, Posidonius d'Apamée"
+                ],
+                "authFullName_s": [
+                    "Christelle Veillard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1551538,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Dans la gueule de l'espace"
+                ],
+                "authFullName_s": [
+                    "Baldine Saint Girons",
+                    "Eric Bourret"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFSy/UF"
+}

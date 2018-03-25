@@ -1,0 +1,1994 @@
+{
+    "response": {
+        "numFound": 515922,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1222673,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gproc",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.ther"
+                ],
+                "title_s": [
+                    "Optimisation des performances électriques et modélisation des piles a combustible de type PEMFC"
+                ],
+                "authFullName_s": [
+                    "Amangoua J.-J. Kadjo",
+                    "J.-P. Garnier",
+                    "L. Madier",
+                    "Sergueï Martemianov",
+                    "J.-P. Maye"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222672,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gproc",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.ther"
+                ],
+                "title_s": [
+                    "Optimisation des performances de PEMFC – Influence des composants et modes d’assemblages"
+                ],
+                "authFullName_s": [
+                    "Amangoua J.-J. Kadjo",
+                    "A. Caillard",
+                    "P. Brault",
+                    "C. Coutanceau",
+                    "J.-P. Garnier",
+                    "Sergueï Martemianov",
+                    "J.-P. Maye"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222671,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gproc",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.ther"
+                ],
+                "title_s": [
+                    "Perturbations des performances des PAC et modélisation thermomécanique"
+                ],
+                "authFullName_s": [
+                    "L. Madier",
+                    "C. Coutanceau",
+                    "J.-P. Garnier",
+                    "Jean-Claude Grandidier",
+                    "E. Favry",
+                    "Amangoua J.-J. Kadjo",
+                    "J.-P. Maye",
+                    "Sergueï Martemianov"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222669,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gproc",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.ther"
+                ],
+                "title_s": [
+                    "Mesures quasi-simultanées de la conductivité et de la diffusivité thermiques de liquides énergétiques par la technique du fil chaud en régime transitoire"
+                ],
+                "authFullName_s": [
+                    "Amangoua J.-J. Kadjo",
+                    "J.-P. Maye",
+                    "J. Saillard",
+                    "G. Thévenod",
+                    "J.-P. Garnier",
+                    "Sergueï Martemianov"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222668,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gproc",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.ther"
+                ],
+                "title_s": [
+                    "Détermination des propriétés thermiques de liquides électroconducteurs et corrosifs – Appareillage de mesure et méthodes spécifiques"
+                ],
+                "authFullName_s": [
+                    "J.-P. Garnier",
+                    "J.-P. Maye",
+                    "Amangoua J.-J. Kadjo",
+                    "S. Martemianov"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222666,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gproc",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.ther"
+                ],
+                "title_s": [
+                    "Systèmes couples PV-électrolyseurs PEMPEMFC : Optimisation des flux de matière et d’énergie par des algorithmes prédictifs"
+                ],
+                "authFullName_s": [
+                    "Amangoua J.-J. Kadjo",
+                    "Michel Benne",
+                    "Brigitte Grondin-Perez",
+                    "Jean-Pierre Chabriat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1222662,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Binaire et liminaire : la forme en traduction technique"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1222661,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ro",
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Problèmes d'ordonnancement sur des machines parallèles avec des périodes de maintenance et un effet de détérioration : Minimisation de la charge totale des machines"
+                ],
+                "authFullName_s": [
+                    "Ahmed Gara-Ali",
+                    "Marie-Laure Espinouse",
+                    "Gerd Finke"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222658,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Les marionnettes invisibles : y a-t-il des personnages dans la traduction des textes pragmatiques"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222657,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Les mécanismes de la confiance en traduction – aspects relationnels"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1222653,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Parcours et accompagnement de mères victimes de violences conjugales : une étude exploratoire dans le champ de la Protection de l'Enfance"
+                ],
+                "authFullName_s": [
+                    "Daniel Derivois",
+                    "Lisbeth Brolles",
+                    "Amira Karray",
+                    "Nathalie Guillier-Pasut",
+                    "Jude-Mary Cenat",
+                    "Rita El Kardoudi",
+                    "Lila Mitsopoulo",
+                    "Min-Sung Kim",
+                    "Helen Marchal",
+                    "Frédéric Weber"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1222648,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Gestion énergétique d’une infrastructure de charge intelligente de véhicules électriques dans un réseau de distribution intégrant des énergies renouvelables.",
+                    "Energy management of smart metering infrastructure for electric vehicles charging in a distribution network integrating renewable energy."
+                ],
+                "authFullName_s": [
+                    "Anouar Bouallaga"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1222646,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Dompter le malentendu : les tâches de la traduction professionnelle"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1222641,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Felix culpa : congruence et neutralité dans la traduction des textes de réalité"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222639,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Travailler pour une banque qui appartient à ses clients sociétaires : ça change quoi ? Analyse de l'identité de marque employeur des banques coopératives"
+                ],
+                "authFullName_s": [
+                    "Chloé Guillot-Soulez",
+                    "Sébastien Soulez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1222638,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Analyse d'expressions temporelles dans les dossiers électroniques patients"
+                ],
+                "authFullName_s": [
+                    "Mike Donald Tapi Nzali",
+                    "Aurélie Névéol",
+                    "Xavier Tannier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222637,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Placer le traducteur au cœur de la traductologie"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222634,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Les points aveugles de la confiance dans la rédaction et la traduction des textes pragmatiques"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1222633,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.es",
+                    "0.shs",
+                    "1.shs.envir"
+                ],
+                "title_s": [
+                    "De la conservation à la concertation : quelles AMP pour quelle gouvernance territoriale au Sénégal ?"
+                ],
+                "authFullName_s": [
+                    "Marie-Christine Cormier Salem"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1222630,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.es"
+                ],
+                "title_s": [
+                    "Journée mondiale des sols"
+                ],
+                "authFullName_s": [
+                    "Jean-Luc Pujol"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1222628,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Entrer dans l’album L’intrus de C. Boujon en Grande Section de maternelle : une situation potentielle de problématisation",
+                    "Introducing the illustrated book L’intrus (The intruder) by C. Boujon in pre-school: a potential problematization situation"
+                ],
+                "authFullName_s": [
+                    "Annette Schmehl-Postaï",
+                    "François Simon",
+                    "Catherine Huchet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1222627,
+                "domain_s": [
+                    "0.qfin",
+                    "0.shs",
+                    "1.shs.hisphilso",
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "L'Homme et le Système",
+                    "Man and System"
+                ],
+                "authFullName_s": [
+                    "Dimitri Lasserre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222625,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.es"
+                ],
+                "title_s": [
+                    "L'empire des droits intellectuels sur le monde vivant"
+                ],
+                "authFullName_s": [
+                    "Catherine Albertini"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1222619,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Dynamiques des territoires ruraux et points de vue des professionnels de l'animation socioculturelle"
+                ],
+                "authFullName_s": [
+                    "Cécile Vachée",
+                    "Christophe Dansac",
+                    "Alexandre Pagès"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1222618,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Faut-il toujours être clair ? Le traducteur et le jeu avec les subjectivités"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1222617,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.es"
+                ],
+                "title_s": [
+                    "Un, deux, trois tours et hop ? Débattre autrement ? Leçons du débat public CIGÉO"
+                ],
+                "authFullName_s": [
+                    "Barbara Redlingshöfer",
+                    "Ariane Métais",
+                    "Jean-Claude André"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222616,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "CCL18 et réponse régulatrice, de la situation physiologique à l'atopie",
+                    "CCL18 and regulatory responses from steady state to atopy"
+                ],
+                "authFullName_s": [
+                    "Imane Azzaoui"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222615,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Morbidité des résections recto-sigmoïdiennes dans la chirurgie de cytoréduction des cancers de l’ovaire",
+                    "Morbidity of rectosigmoid resection in patients undergoing cytoreductive surgery for epithelial ovarian cancer. Risk factors for complication"
+                ],
+                "authFullName_s": [
+                    "Marie Fournier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1222607,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.es"
+                ],
+                "title_s": [
+                    "Le Vautour fauve Gyps fulvus et les dommages au bétail : analyse, objectifs, stratégie"
+                ],
+                "authFullName_s": [
+                    "Jean-Pierre Choisy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1222606,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Création des pôles de compétitivité et salaire des ingénieurs"
+                ],
+                "authFullName_s": [
+                    "Claire Bonnard",
+                    "Jean-François Giret",
+                    "Philippe Lemistre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222601,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.es"
+                ],
+                "title_s": [
+                    "La préservation des prairies dans la PAC : les raisons d'une illusion"
+                ],
+                "authFullName_s": [
+                    "Aline Cattan"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1222595,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.es"
+                ],
+                "title_s": [
+                    "La Bergerie de Villarceaux. Un laboratoire pour une transition agricole"
+                ],
+                "authFullName_s": [
+                    "Matthieu Calame",
+                    "Baptiste Sanson"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1222590,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Pourquoi avoir peur de l’informatisation en traduction ?"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1222589,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Petite histoire d'une expérience innovante dans l'académie de Dijon"
+                ],
+                "authFullName_s": [
+                    "Guy Lapostolle",
+                    "Sophie Genelot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1222588,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.es"
+                ],
+                "title_s": [
+                    "Concevoir des systèmes de production agro-écologiques dans les stations expérimentales de l'INRA : d'importants changements de référentiel professionnel pour les agents et les collectifs de recherche"
+                ],
+                "authFullName_s": [
+                    "Cécile Fiorelli",
+                    "Caroline Auricoste",
+                    "Jean-Marc Meynard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222585,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Pour une traductologie de plein champ"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1222584,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.es"
+                ],
+                "title_s": [
+                    "L'agroécologie peut-elle se passer des normes ?"
+                ],
+                "authFullName_s": [
+                    "Philippe Le Goffe"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1222581,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Les enjeux de la divergence en traduction juridique"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1222576,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Derniers feux des maîtrises d'Ancien Régime en Haute-Loire (1790)"
+                ],
+                "authFullName_s": [
+                    "Françoise Talvard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1222574,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.psy"
+                ],
+                "title_s": [
+                    "Inversion du sens, nouveau référentiel ou confusion des objectifs et des moyens dans le champ de l'animation ?"
+                ],
+                "authFullName_s": [
+                    "Magalie Bacou",
+                    "Christophe Dansac",
+                    "Patricia Gontier",
+                    "Cécile Vachee"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222569,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "« Christophe Pérales, Conduire le changement en bibliothèque : vers des organisations apprenantes »"
+                ],
+                "authFullName_s": [
+                    "Rachel Joly"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222560,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "La parole aux traducteurs/Translators’ Question Time : pour une passerelle entre recherche et pratique"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger",
+                    "Christine Durban"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1222556,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Quand la langue d’origine rencontre la forme scolaire : le cas du tahitien en Polynésie française"
+                ],
+                "authFullName_s": [
+                    "Marie Salaun"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1222550,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Le problème de la nuance en traduction pragmatique"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222549,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Peut-on accompagner le renouvellement de la gouvernance dans les associations d’éducation populaire ?"
+                ],
+                "authFullName_s": [
+                    "Véronique Bordes",
+                    "Christophe Dansac"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1222548,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Les traducteurs sont-ils des normopathes ?"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1222545,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "L'ethnographie à l'heure des « bonnes pratiques ». Retour sur une expérience tahitienne",
+                    "Ethnography in the age of « Best practice ». Reflections on an experience in Tahiti",
+                    "La etnografía en la era de las « mejores prácticas ». Reflexiónes sobre una experiencia en Tahiti"
+                ],
+                "authFullName_s": [
+                    "Marie Salaun"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1222544,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "De l’aval vers l’amont : la rétroaction en traduction"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1222541,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Didactique de l’étude de cas en histoire"
+                ],
+                "authFullName_s": [
+                    "Élise El Meknassi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1222538,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Pourquoi diable écrire dans Traduire"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222534,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "De l’intérêt des métiers de la traduction aujourd’hui"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1222530,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "La narration numérique outil de médiation des équipes projets ?"
+                ],
+                "authFullName_s": [
+                    "Isabelle Comtet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1222526,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Transfert et apprentissage du modèle LEADER en Europe centrale"
+                ],
+                "authFullName_s": [
+                    "Marie-Claude Maurel",
+                    "Pascal Chevalier",
+                    "Guillaume Lacquement"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222525,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Pour une traductologie de compromis"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1222520,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "À quoi bon enseigner la traduction technique ?"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1222516,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Compétences et orientation"
+                ],
+                "authFullName_s": [
+                    "Sébastien Gros"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222514,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "La mixité sociale à l’épreuve de l’ethnicité territoriale dans trois quartiers en rénovation urbaine de Perpignan"
+                ],
+                "authFullName_s": [
+                    "David Giband"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222508,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Mettre en cycle les savoirs, l’enseignement de la traduction à l’Université Paris Diderot"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1222507,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Choix et mise en œuvre de problèmes ouverts pour introduire une notion"
+                ],
+                "authFullName_s": [
+                    "Léa Beligné"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222505,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Au delà de la crise en France, la vulnérabilité des jeunes d'origine maghrébine"
+                ],
+                "authFullName_s": [
+                    "Christine Guégnard",
+                    "Olivier Joseph",
+                    "Jake Murdoch"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1222504,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Qu’est-ce qu’un différentiel de savoirs en traduction ?"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1222503,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Devenir enseignant, entre idéalisation et principe de réalité"
+                ],
+                "authFullName_s": [
+                    "Alain Rioux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1222499,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Les « nouveaux maîtres du Sud » ? Déclin des systèmes géopolitiques et recompositions du paysage électoral à Béziers et Perpignan",
+                    "New masters of the South? Decline of geopolitical systems and recomposing of electoral landscape in Beziers and Perpignan"
+                ],
+                "authFullName_s": [
+                    "David Giband",
+                    "Marie-Anne Lefèvre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222497,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Formation, recherche, vie professionnelle : la fabrique de la convergence"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1222496,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Le canal lombaire étroit chez la personne âgée de plus de 75 ans. Facteurs déterminants du résultat fonctionnel",
+                    "Lumbar spinal stenosis after 75 years old. \"Determinants"
+                ],
+                "authFullName_s": [
+                    "Mathilde Fouet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1222493,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "De la localisation à la délocalisation : enjeux professionnels"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger",
+                    "Carmelo Cancio Pastor"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222492,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.mat",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.msmeca"
+                ],
+                "title_s": [
+                    "Approche performantielle de la durabilité des ouvrages d'art en béton"
+                ],
+                "authFullName_s": [
+                    "Bruno Godart",
+                    "Christophe Aubagnac"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1222491,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Imagos parentales et idéaux des enseignants"
+                ],
+                "authFullName_s": [
+                    "Alain Rioux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1222488,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "TIFAIFAI: Interactive New Spaces Design to Learn"
+                ],
+                "authFullName_s": [
+                    "Valérie Renault",
+                    "Florent Carlier",
+                    "Patrice Bourdon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1222485,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu"
+                ],
+                "title_s": [
+                    "Quantification des sources de méthane en Sibérie par inversion atmosphérque à la méso-échelle",
+                    "Quantification of methane sources in Siberia using meso-scale atmospheric inversions"
+                ],
+                "authFullName_s": [
+                    "Antoine Berchet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222484,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.ther",
+                    "0.spi",
+                    "1.spi.energ"
+                ],
+                "title_s": [
+                    "Diagrammes thermodynamiques - Fluides purs, azéotropes et gaz idéaux"
+                ],
+                "authFullName_s": [
+                    "Renaud Gicquel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1222482,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-dc",
+                    "0.info",
+                    "1.info.info-cr",
+                    "0.info",
+                    "1.info.info-mo",
+                    "0.info",
+                    "1.info.info-cl"
+                ],
+                "title_s": [
+                    "Approche DFA et conception fonctionnelle de produits modulaires : le modèle FARD"
+                ],
+                "authFullName_s": [
+                    "Aurélie Robert",
+                    "Karine Deschinkel",
+                    "Sébastien Roth",
+                    "Xiu Yan",
+                    "Samuel Gomes"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222480,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Le morcellement informel du foncier en Algérie"
+                ],
+                "authFullName_s": [
+                    "Faouzi Bouchaib",
+                    "Anne-Marie Jouve"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1222471,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.be"
+                ],
+                "title_s": [
+                    "Structure et fonctionnement des écosystèmes benthiques dans les lagons soumis aux perturbations anthropiques — Le lagon de Tahiti, Polynésie française —",
+                    "Structure and Functioning of Benthic Ecosystems in Lagoons Under Anthropogenic disturbances - Tahiti lagoon, French Polynesia"
+                ],
+                "authFullName_s": [
+                    "Frouin Patrick"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222462,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.phys"
+                ],
+                "title_s": [
+                    "Développement d’une imagerie de résistance électrique locale par AFM à pointe conductrice en mode contact intermittent",
+                    "Development of a local electrical resistance imaging by conductive tip AFM in intermittent contact mode"
+                ],
+                "authFullName_s": [
+                    "Aymeric Vecchiola"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222461,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Un Macbeth choral"
+                ],
+                "authFullName_s": [
+                    "Beatrice Picon-Vallin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222442,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "2.sdv.mhep.geg"
+                ],
+                "title_s": [
+                    "Facteurs modulant le vieillissement et la longévité : des relations linéaires ou plus complexes ?"
+                ],
+                "authFullName_s": [
+                    "Eric Le Bourg"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222440,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Application du système GenFam à la réponse au stress des plantes : intégration de l'identification d'éléments cis spécifiques"
+                ],
+                "authFullName_s": [
+                    "Jonathan Lorenzo",
+                    "Delphine Larivière",
+                    "Jean-François Dufayard",
+                    "Dominique This",
+                    "Stéphanie Bocs"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1222422,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Le metabolome, un moyen pour trouver de nouveaux biomarqueurs ?"
+                ],
+                "authFullName_s": [
+                    "Magali San Cristobal",
+                    "Marie Pierre Sanchez",
+                    "Marie‐josé Mercat",
+                    "Florian Rohart",
+                    "Laurence Liaubet",
+                    "Thierry Tribout",
+                    "Cecile Canlet",
+                    "Nelly Muller",
+                    "Jerome Molina",
+                    "Nathalie Iannuccelli",
+                    "Béatrice Laurent",
+                    "Nathalie Villa-Vialaneix",
+                    "Alain Paris",
+                    "Denis Milan"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222419,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "La recherche en partenariat : entre fiction et friction"
+                ],
+                "authFullName_s": [
+                    "Christophe-Toussaint Soulard",
+                    "Claude Compagnone",
+                    "Bruno Lemery"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222400,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.math"
+                ],
+                "title_s": [
+                    "L'enseignement de l'analyse à la charnière lycée / université Savoirs, connaissances et conditions relatives à la validation",
+                    "Teaching calculus / analysis at the turning point between Secondary School and University. Knowledge, knowing and conditions for validation."
+                ],
+                "authFullName_s": [
+                    "Isabelle Bloch"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1222387,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Effet du stress perçu périnatal sur la dépression, l’anxiété et de sentiment d’auto-efficacité parentale, des mères primipares, rôle des stratégies de coping et du soutien social"
+                ],
+                "authFullName_s": [
+                    "Chantal Razurel",
+                    "B. Kaiser,",
+                    "J.-P. Antonietti",
+                    "M Epiney,",
+                    "Catherine Sellenet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1222382,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-iu"
+                ],
+                "title_s": [
+                    "Gestion des préférences utilisateurs pour les Systèmes d'Information ubiquitaires."
+                ],
+                "authFullName_s": [
+                    "Angela Cristina Carrillo Ramos",
+                    "Marlène Villanova-Oliver",
+                    "Jérôme Gensel",
+                    "Hervé Martin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222377,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "De la localisation à la délocalisation : le facteur local en traduction"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger",
+                    "Jean-René Ladmiral"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222374,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "J'ai connu ce qu'ignorent les Grecs : Tralogy, conclusions et perspectives"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1222373,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "De la traductologie des états d’âme et vice versa : vers une étude des aspects psychologiques en traduction"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1222372,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Journées d'études et colloques « Traductologie de plein champ »"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger",
+                    "Christian Balliu",
+                    "Lance Hewson"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1222371,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "2.sdv.mhep.chi"
+                ],
+                "title_s": [
+                    "Le PRF : une alternative pour le traitement chirurgical des récessions gingivales ?",
+                    "The PRF: an alternative for surgical treatment of gingival recessions?"
+                ],
+                "authFullName_s": [
+                    "Lorane Mongin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1222369,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-dc"
+                ],
+                "title_s": [
+                    "Le couplage visualisation/simulation avec ParaView"
+                ],
+                "authFullName_s": [
+                    "Alexandre Ancel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222367,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Le théâtre à l’école : une source de réduction des disparités"
+                ],
+                "authFullName_s": [
+                    "Gwendoline Clément"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222364,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Droit, traduction et société : quels emboîtements ?"
+                ],
+                "authFullName_s": [
+                    "Nicolas Froeliger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1222360,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "L’influence du contexte de progression sur l’efficacité de l’évaluation formative"
+                ],
+                "authFullName_s": [
+                    "Marine Caldara"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222358,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "Récit héroïque et pratique religieuse. Le passé poétique des cités grecques classiques"
+                ],
+                "authFullName_s": [
+                    "Claude Calame"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222357,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.nrj",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Le patrimoine industriel de l'électricité et de l'hydroélectricité : actes du colloque international de Divonne-les-Bains et de Genève"
+                ],
+                "authFullName_s": [
+                    "Denis Varaschin",
+                    "Yves Bouvier",
+                    "Bernard André",
+                    "Christophe Bouneau",
+                    "Bénédict Frommel",
+                    "Sabine Nemec-Piguet",
+                    "Marcela Efmertová",
+                    "Adriaan Linters",
+                    "Florence Hachez-Leroy",
+                    "Claude Welty",
+                    "Joan Carles Alayo",
+                    "Elisabeth BjØrsvik",
+                    "Neydo Hidalgo",
+                    "Ian Mcgillivray",
+                    "Mary Glendinning",
+                    "Pierre Lanthier",
+                    "Georges Leskens",
+                    "Alain Kespy",
+                    "Marie-Noëlle Polino"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222356,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Framework Multidimensionnel d'Analyse de Niveaux de Jeux Sérieux"
+                ],
+                "authFullName_s": [
+                    "Noémie Bernard",
+                    "Amel Yessad"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222353,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.eth"
+                ],
+                "title_s": [
+                    "Contrainte"
+                ],
+                "authFullName_s": [
+                    "N. Cano"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222352,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Trans-spatialités urbaines"
+                ],
+                "authFullName_s": [
+                    "Michel Lussault"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222350,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.eth"
+                ],
+                "title_s": [
+                    "Refus de soin"
+                ],
+                "authFullName_s": [
+                    "M.-A. Einaudi",
+                    "N. Cano"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222349,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.eth"
+                ],
+                "title_s": [
+                    "Qualité de vie"
+                ],
+                "authFullName_s": [
+                    "M.-A. Einaudi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1222348,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.eth"
+                ],
+                "title_s": [
+                    "Interruption médicale de grossesse"
+                ],
+                "authFullName_s": [
+                    "M.-A. Einaudi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFc7NQE"
+}

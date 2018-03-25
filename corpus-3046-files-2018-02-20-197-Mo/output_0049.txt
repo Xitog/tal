@@ -1,0 +1,1881 @@
+{
+    "response": {
+        "numFound": 515921,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1697321,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Peter Drucker"
+                ],
+                "authFullName_s": [
+                    "Sébastien Liarte"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697320,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Mintzberg, l’iconoclaste"
+                ],
+                "authFullName_s": [
+                    "Hélène Delacour"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697319,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Mary McCarthy. Comment j'ai grandi [traduction française de How I Grew]. Paris, Fayard."
+                ],
+                "authFullName_s": [
+                    "Vincent Giroud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697317,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "2.sdv.mhep.geo"
+                ],
+                "title_s": [
+                    "Un fil un nœud VS autres sutures : choix des professionnels"
+                ],
+                "authFullName_s": [
+                    "Pauline Cailliet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697316,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.sport",
+                    "0.shs",
+                    "1.shs.sport",
+                    "2.shs.sport.eca"
+                ],
+                "title_s": [
+                    "Alexis Coquet, « former les générations futures »"
+                ],
+                "authFullName_s": [
+                    "Stéphane Couckuyt"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697315,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Les spécificités de l'adoption internationale dans la zone Océan Indien"
+                ],
+                "authFullName_s": [
+                    "Éléonore Cadou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697314,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Obs. sous TGI Saint Denis de la Réunion, 12 avril 2013"
+                ],
+                "authFullName_s": [
+                    "Eléonore Cadou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697313,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Chronique de jurisprudence en droit de la famille - Cour d'appel de Saint Denis de la Réunion, 15 janvier 2014 (Résidence de l'enfant, preuve, nouvelles technologies, réseaux sociaux)"
+                ],
+                "authFullName_s": [
+                    "Eléonore Cadou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697312,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Chronique de jurisprudence en droit de la famille - Cour d'appel de Saint Denis de la Réunion, 5 aout 2014 (Divorce, prestation compensatoire, nouvelles technologies, réseaux sociaux)"
+                ],
+                "authFullName_s": [
+                    "Eléonore Cadou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697311,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Chronique de jurisprudence en droit de la famille - Cour d'appel de Saint Denis de la Réunion, 2 juillet 2014 (Divorce, preuve, nouvelles technologies, SMS)"
+                ],
+                "authFullName_s": [
+                    "Eléonore Cadou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697310,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "La liberté contractuelle au secours des agents de la distribution de la presse (à propos de la QPC n° 2015-511 du 7 janvier 2016)"
+                ],
+                "authFullName_s": [
+                    "Eléonore Cadou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697309,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Vie familiale et droits fondamentaux"
+                ],
+                "authFullName_s": [
+                    "Éléonore Cadou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697308,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Les droits de l'enfant"
+                ],
+                "authFullName_s": [
+                    "Éléonore Cadou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697307,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "La liberté d'expression"
+                ],
+                "authFullName_s": [
+                    "Éléonore Cadou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697306,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Chronique Technique contractuelle \"Clause créant un déséquilibre significatif\", obs. sous Cass. Com., 25 janvier 2017, n°10"
+                ],
+                "authFullName_s": [
+                    "Romain Loir"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697305,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Chronique Technique contractuelle \"Pratiques restrictives et compétence\", obs. sous Cass. Com., 29 mars 2017, n°23"
+                ],
+                "authFullName_s": [
+                    "Romain Loir"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697304,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Chronique Technique contractuelle \"Cause et clause de réclamation\", obs. sous Cass. Civ 2ème, 2 février 2017, n°8"
+                ],
+                "authFullName_s": [
+                    "Romain Loir"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697303,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Chronique Technique contractuelle \"Les parties : en quelle qualité ? \", obs. sous Cass. Civ. 1ère, 29 mars 2017, n°5"
+                ],
+                "authFullName_s": [
+                    "Romain Loir"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697302,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Les cours d’appel et l’article L 442-6 du Code de commerce"
+                ],
+                "authFullName_s": [
+                    "Romain Loir"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697301,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Transparence et confraternité"
+                ],
+                "authFullName_s": [
+                    "Romain Loir"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697300,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Droit de la distribution"
+                ],
+                "authFullName_s": [
+                    "Nicolas Dissaux",
+                    "Romain Loir"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697299,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Les circulations entre l’Accord de Paris et les contentieux climatiques nationaux : quel contrôle de l’action climatique des pouvoirs publics d’un point de vue global ?"
+                ],
+                "authFullName_s": [
+                    "Anne-Sophie Tabau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697298,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Actualités des contrats d’affaires"
+                ],
+                "authFullName_s": [
+                    "Romain Loir"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697297,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Le Code de déontologie de l’UINL"
+                ],
+                "authFullName_s": [
+                    "Romain Loir"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697296,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "L’inexécution du contrat dans les contes de fées"
+                ],
+                "authFullName_s": [
+                    "Romain Loir"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697295,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Chronique Technique contractuelle \"Clause de non-garantie des vices cachés\", obs. sous Cass. Civ. 1ère, 29 juin 2017, n°7"
+                ],
+                "authFullName_s": [
+                    "Romain Loir"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697294,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Le système de régulation de la distribution de la presse"
+                ],
+                "authFullName_s": [
+                    "Éléonore Cadou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697293,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Chronique Technique contractuelle \"Clause résolutoire de plein droit\", obs. sous Cass. Com., 22 septembre 2017, n°10"
+                ],
+                "authFullName_s": [
+                    "Romain Loir"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697292,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Chronique Technique contractuelle \"Clause de déchéance du terme\", obs. sous Cass. Civ. 1ère, 22 juin 2017, n°9"
+                ],
+                "authFullName_s": [
+                    "Romain Loir"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697290,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Michael Walzer. La Révolution des Saints. [traduction française] Paris, Belin."
+                ],
+                "authFullName_s": [
+                    "Vincent Giroud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697285,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Le livre du chapitre de Saint-Émilion"
+                ],
+                "authFullName_s": [
+                    "Françoise Lainé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697283,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion",
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "La logistique des projets"
+                ],
+                "authFullName_s": [
+                    "Smaïl Benzidia",
+                    "Omar Bentahar"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697259,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Comment les pressions institutionnelles sur les intercommunalités influencent-elles leur périmètre de compétences et leur performance interne ?"
+                ],
+                "authFullName_s": [
+                    "Jérémy Aldrin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697235,
+                "domain_s": [
+                    "0.phys",
+                    "0.phys",
+                    "1.phys.astr",
+                    "0.phys",
+                    "1.phys.astr",
+                    "2.phys.astr.sr"
+                ],
+                "title_s": [
+                    "Méthodes aux différences finies pour la résolution numérique des équations aux dérivées partielles de la dynamique des fluides et de la magnétohydrodynamique dans le cadre de problèmes à conditions aux limites et conditions initiales"
+                ],
+                "authFullName_s": [
+                    "Jean-Marie Malherbe"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "LECTURE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697232,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "La cathédrale dans la ville (XIIIe et XIVe siècles)"
+                ],
+                "authFullName_s": [
+                    "Emmanuel Grélois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697230,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "2.sdv.sa.spa"
+                ],
+                "title_s": [
+                    "Sensibilité et utilisation de signaux vocaux et visuels dans la relation homme-animal : étude chez le porc domestique",
+                    "Sensitivity and use of vocal and visual signals in the human-animal relationship : a study in the domestic pig"
+                ],
+                "authFullName_s": [
+                    "Sandy Bensoussan"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697229,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Art et politique en Autriche : l'impact des oeuvres d'Alfred Hrdlicka, de Friedenreich Hundertwasser, de Günter Brus et de Valie Export sur l'Autriche de la Seconde République",
+                    "Art and politics in Austria : the impact of art works by Alfred Hrdlicka, Friedensreich Hundertwasser, Günter Brus and Valie Export on the Second Republic of Austria"
+                ],
+                "authFullName_s": [
+                    "Sylvie Freytag"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697228,
+                "domain_s": [
+                    "0.phys",
+                    "0.phys",
+                    "1.phys.astr",
+                    "0.phys",
+                    "1.phys.astr",
+                    "2.phys.astr.sr"
+                ],
+                "title_s": [
+                    "Equilibre MHD et instabilités dans les protubérances ou filaments solaires"
+                ],
+                "authFullName_s": [
+                    "Jean-Marie Malherbe"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "LECTURE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697226,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Accompagner l’orientation entrepreneuriale dans les collectivités territoriales: le cas Orne THD"
+                ],
+                "authFullName_s": [
+                    "Didier Nobile",
+                    "Julien Husson"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697224,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "La justice dans la cité de Clermont du XIe au XIVe siècle"
+                ],
+                "authFullName_s": [
+                    "Emmanuel Grélois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697222,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Paul Morand. Les extravagants, scènes de la vie de bohème cosmopolite. [Établissement du texte, introduction et notes]. Paris, Gallimard."
+                ],
+                "authFullName_s": [
+                    "Vincent Giroud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697221,
+                "domain_s": [
+                    "0.phys"
+                ],
+                "title_s": [
+                    "Electromagnétisme"
+                ],
+                "authFullName_s": [
+                    "Jean-Marie Malherbe"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "LECTURE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697220,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Les stratégies individuelles d’adaptation aux technologies"
+                ],
+                "authFullName_s": [
+                    "Christophe Elie-Dit-Cosaque",
+                    "Jessie Pallud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697218,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Gradignan, Route de Canéjan, Rapport d’opération d’archéologie préventive (diagnostic)"
+                ],
+                "authFullName_s": [
+                    "Juliette Masson"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697216,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Réflexions sur les zones d’ensilage des sites d’habitat rural"
+                ],
+                "authFullName_s": [
+                    "Emmanuel Grélois",
+                    "Julie Charmoillaux",
+                    "Mathieu Carlier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697215,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Illustration d’une relation praxéologique entre recherche et action dans le projet Hy-Sup"
+                ],
+                "authFullName_s": [
+                    "Emmanuelle Villiot Leclercq",
+                    "Nathalie Deschryver",
+                    "Geneviève Lameul",
+                    "Annick Rossier-Morel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697214,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "La rame à l’épaule."
+                ],
+                "authFullName_s": [
+                    "Baptiste Rappin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697213,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Les chapiteaux romans du cloître"
+                ],
+                "authFullName_s": [
+                    "Juliette Masson"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697207,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Heidegger et la question du Management"
+                ],
+                "authFullName_s": [
+                    "Baptiste Rappin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697204,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "La pédagogie universitaire numérique : émergence d’une problématique"
+                ],
+                "authFullName_s": [
+                    "Catherine Loisy",
+                    "Geneviève Lameul"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697201,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "«L'en i chante et lit». Le discours musical dans les textes littéraires médiévaux"
+                ],
+                "authFullName_s": [
+                    "Ibos-Augé Anne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697200,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Autre sexe outre-Rhin? « Plaisante justice qu’une rivière borde... » ?"
+                ],
+                "authFullName_s": [
+                    "Benjamin Moron-Puech"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697196,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Vestiges bâtis du Moyen Âge à l’époque actuelle. Metz, Moselle, 3 rue de la Hache : rapport de diagnostic archéologique"
+                ],
+                "authFullName_s": [
+                    "Nathalie Nicolas",
+                    "Patrice Pernot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697194,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Médiation posturale"
+                ],
+                "authFullName_s": [
+                    "Geneviève Lameul"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697193,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Le peintre Bernabé de Ayala et autres petits maîtres entre Séville et Cadix"
+                ],
+                "authFullName_s": [
+                    "Eduardo Lamas-Delgado"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697192,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Matériaux pour l’étude des microtoponymes Marmand (La Roche-Blanche), Puy de Marmant (Orcet), Puy de Marmant (Veyre-Monton)"
+                ],
+                "authFullName_s": [
+                    "Emmanuel Grélois",
+                    "Jean-Pierre Chambon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697190,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Maurice Barrès, Les Déracinés."
+                ],
+                "authFullName_s": [
+                    "Jean-Michel Wittmann",
+                    "Emmanuel Godo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697188,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Vestiges bâtis de l’époque moderne à contemporaine. Dieuze, Moselle, 20, rue Gustave Charpentier : rapport de diagnostic"
+                ],
+                "authFullName_s": [
+                    "Nathalie Nicolas",
+                    "Forelle Laurent"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697186,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Usage du numérique en enseignement supérieur : une question d’aménagement des locaux plus que d’architecture ?"
+                ],
+                "authFullName_s": [
+                    "Geneviève Lameul"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697185,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "D’Augustonemetum à Clermont-Ferrand"
+                ],
+                "authFullName_s": [
+                    "Emmanuel Grélois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697184,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Les réformes ferroviaires européennes : à la recherche des \"bonnes pratiques"
+                ],
+                "authFullName_s": [
+                    "Yves Crozet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697183,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Accompagner l’innovation pédagogique"
+                ],
+                "authFullName_s": [
+                    "Geneviève Lameul",
+                    "Amaury Daele",
+                    "Bernadette Charlier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697182,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Lunéville, Meurthe-et-Moselle, 37-39-41 rue de la République et du Rempart. Vestiges d’habitat moderne et du couvent de la Congrégation Notre-Dame (XVIIIe siècle) : rapport de diagnostic"
+                ],
+                "authFullName_s": [
+                    "Nathalie Nicolas",
+                    "Philippe Vidal",
+                    "Rachel Prouteau",
+                    "Sébastien Jeandemange"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697180,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Transferts d’églises et recomposition seigneuriale dans le diocèse de Clermont (Basse-Auvergne, IXe-début du XIIIe siècle)"
+                ],
+                "authFullName_s": [
+                    "Emmanuel Grélois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697179,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.psy"
+                ],
+                "title_s": [
+                    "Suivi des trajectoires de développement cognitif et social d'enfants TSA scolarisés en unités d'enseignement maternelle : données sur 2 ans"
+                ],
+                "authFullName_s": [
+                    "Marie-Hélène Plumeta",
+                    "Gaëtan Brieta",
+                    "Sandrine Le Sourn-Bissaouia",
+                    "Gaïd Le Maner-Idrissia",
+                    "Méguy Marie",
+                    "Andréa Kocha",
+                    "Virginie Dardiera",
+                    "Tanguy Sevenoa",
+                    "Jean Pierre-Malena",
+                    "Jean-Louis Adriena"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697178,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Gide politique"
+                ],
+                "authFullName_s": [
+                    "Jean-Michel Wittmann"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697177,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les usages concurrents de la rivière"
+                ],
+                "authFullName_s": [
+                    "Emmanuel Grélois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697175,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Usage pédagogique du numérique : quelles transformations de l’activité de l’enseignant-chercheur ?"
+                ],
+                "authFullName_s": [
+                    "Geneviève Lameul"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697173,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Vestiges bâtis médiévaux et modernes. Metz, Moselle, 12, rue Chèvremont : rapport de diagnostic"
+                ],
+                "authFullName_s": [
+                    "Nathalie Nicolas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697172,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Du nouveau sur la toponymie de Clermont-Ferrand et de ses environs (III)"
+                ],
+                "authFullName_s": [
+                    "Emmanuel Grélois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697170,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Vestiges toponymiques de l'aqueduc romain d'Augustonemetum/Clermont-Ferrand"
+                ],
+                "authFullName_s": [
+                    "Emmanuel Grélois",
+                    "Jean-Pierre Chambon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697168,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Vestiges d’aménagements intérieurs contemporains. Metz, Moselle, 34, rue Vigne Saint-Avold : rapport de diagnostic"
+                ],
+                "authFullName_s": [
+                    "Nathalie Nicolas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697167,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Entre mutations industrielles et « conduite apaisée »"
+                ],
+                "authFullName_s": [
+                    "Yves Crozet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697166,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Mons Arvernicus"
+                ],
+                "authFullName_s": [
+                    "Emmanuel Grélois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697164,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info",
+                    "2.shs.info.comm",
+                    "0.shs",
+                    "1.shs.info",
+                    "2.shs.info.educ"
+                ],
+                "title_s": [
+                    "Utiliser les archives ouvertes pour valoriser ses travaux l'exemple de HAL-SHS"
+                ],
+                "authFullName_s": [
+                    "Agnès Magron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697163,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Symboliste et déserteur"
+                ],
+                "authFullName_s": [
+                    "Jean-Michel Wittmann"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697158,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Dictionnaire Gide"
+                ],
+                "authFullName_s": [
+                    "Pierre Masson",
+                    "Jean-Michel Wittmann"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697154,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Vestiges bâtis du Moyen Âge au XXe siècle. Metz, Moselle, 51, rue Serpenoise : rapport de diagnostic"
+                ],
+                "authFullName_s": [
+                    "Nathalie Nicolas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697152,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "La francophonie littéraire, les ambiguïtés d’une notion politique"
+                ],
+                "authFullName_s": [
+                    "Valérie Magdelaine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697151,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Beyrouth, états de fêtes. Géographie des loisirs nocturnes dans une ville post-conflit",
+                    "Partying in Beirut. Nightlife geography in a post-conflict city"
+                ],
+                "authFullName_s": [
+                    "Marie Bonte"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697149,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Barrès romancier."
+                ],
+                "authFullName_s": [
+                    "Jean-Michel Wittmann"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697148,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Le dessous des terres. Ecrire l’espace malgache pour redonner place aux histoires et aux hommes : le cas de Michèle Rakotoson et Johary Ravaloson"
+                ],
+                "authFullName_s": [
+                    "Valérie Magdelaine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697146,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Civilité et citoyenneté. Esquisse d'une généalogie politique du cas mahorais"
+                ],
+                "authFullName_s": [
+                    "Damien Deschamps"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697145,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Les paradoxes de la représentation et de l’« interférence » dans la francophonie littéraire"
+                ],
+                "authFullName_s": [
+                    "Valérie Magdelaine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697144,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Le droit de la nationalité et des étrangers en schémas"
+                ],
+                "authFullName_s": [
+                    "Élise Ralser"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697143,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Textes courts des îles du sud-ouest de l’océan Indien : une « matière romanesque » ductile"
+                ],
+                "authFullName_s": [
+                    "Valérie Magdelaine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697141,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Du scepticisme en phonologie : Sextus Empiricus et les voyelles grecques"
+                ],
+                "authFullName_s": [
+                    "Jean-Philippe Watbled"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697138,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Nostalgie coloniale et exil paradoxal"
+                ],
+                "authFullName_s": [
+                    "Valérie Magdelaine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697128,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Journalistes et chercheurs en journalisme : écart de temps"
+                ],
+                "authFullName_s": [
+                    "Bernard Idelson"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697127,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Invention architecturale et programmation interactive"
+                ],
+                "authFullName_s": [
+                    "Corinne Demarque",
+                    "Daniel Pinson"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697121,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-na"
+                ],
+                "title_s": [
+                    "Existence et unicité pour le frottement élastodynamique avec perturbation par « inertie de surface »",
+                    "Existence and uniqueness result for elastodynamic friction with a “surface inertia”"
+                ],
+                "authFullName_s": [
+                    "Jean-Claude Paumier",
+                    "Yves Renard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697116,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.hisphilso"
+                ],
+                "title_s": [
+                    "Les classements à l'international des revues en SHS"
+                ],
+                "authFullName_s": [
+                    "David Pontille",
+                    "Didier Torny"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697115,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Le terrorisme"
+                ],
+                "authFullName_s": [
+                    "Jean-Christophe Martin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697114,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "La répression des actes de piraterie maritime : développements récents en matière de poursuites et détention des pirates somaliens"
+                ],
+                "authFullName_s": [
+                    "Jean-Christophe Martin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697100,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-gr",
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "Spline et Idéal, ou la création d’oeuvres numériques animées et élastiques"
+                ],
+                "authFullName_s": [
+                    "Eric Bittar",
+                    "Olivier Nocent"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697094,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "L’étranger dans le Code civil"
+                ],
+                "authFullName_s": [
+                    "Danièle Lochak"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697087,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Le couple franco-allemand en musique"
+                ],
+                "authFullName_s": [
+                    "Damien Ehrhardt"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697078,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.spee"
+                ],
+                "title_s": [
+                    "La classification NOVA : degré de transformation des aliments et santé"
+                ],
+                "authFullName_s": [
+                    "Anthony Fardet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697076,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Du dysfonctionnement métabolique à la pathologie : la recherche de biomarqueurs d’état, prédictifs et d’exposition nutritionnelle"
+                ],
+                "authFullName_s": [
+                    "Dominique Dardevet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1697075,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "L'identité mahoraise au miroir de sa littérature"
+                ],
+                "authFullName_s": [
+                    "Mohamed Aït-Aarab"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFT07wG"
+}

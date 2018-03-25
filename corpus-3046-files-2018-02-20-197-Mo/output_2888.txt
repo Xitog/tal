@@ -1,0 +1,1973 @@
+{
+    "response": {
+        "numFound": 515923,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 788814,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ma"
+                ],
+                "title_s": [
+                    "Macroscopic Observation of Multiagent Systems"
+                ],
+                "authFullName_s": [
+                    "Robin Lamarche-Perrin",
+                    "Yves Demazeau",
+                    "Jean-Marc Vincent"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788811,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-dc"
+                ],
+                "title_s": [
+                    "Generation de mandataire pour l'interoperabilite des services"
+                ],
+                "authFullName_s": [
+                    "Charbel El Kaed",
+                    "François-Gaël Ottogalli",
+                    "Yves Denneulin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788809,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ma"
+                ],
+                "title_s": [
+                    "Conceptualisation de l'émergence : dynamiques microscopiques et analyse macroscopique des SMA"
+                ],
+                "authFullName_s": [
+                    "Robin Lamarche-Perrin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788808,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-mo"
+                ],
+                "title_s": [
+                    "Organisation, agrégation et visualisation dínformations médiatiques"
+                ],
+                "authFullName_s": [
+                    "Robin Lamarche-Perrin",
+                    "Yves Demazeau",
+                    "Jean-Marc Vincent"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788807,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ma"
+                ],
+                "title_s": [
+                    "Observation macroscopique et émergence dans les SMA de très grande taille"
+                ],
+                "authFullName_s": [
+                    "Robin Lamarche-Perrin",
+                    "Yves Demazeau",
+                    "Jean-Marc Vincent"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788806,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-dc"
+                ],
+                "title_s": [
+                    "Gestion des ressources de calcul : 4 points de vue"
+                ],
+                "authFullName_s": [
+                    "Romaric David",
+                    "Yiannis Georgiou",
+                    "Suzanne Poulat",
+                    "Olivier Richard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788805,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-dc"
+                ],
+                "title_s": [
+                    "Reconstruction des environnements logiciels des expériences avec Kameleon"
+                ],
+                "authFullName_s": [
+                    "Joseph Emeras",
+                    "Bruno Bzeznik",
+                    "Yiannis Georgiou",
+                    "Philippe Le Brouster",
+                    "Olivier Richard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788777,
+                "title_s": [
+                    "Apports de la géomorphologie dans l'aménagement et la construction sociale de sites préhistoriques. Exemples de la grotte Chauvet-Pont-d'Arc (France) et de Nawarla Gabarnmang (Australie)"
+                ],
+                "authFullName_s": [
+                    "Jean-Jacques Delannoy",
+                    "Jean-Michel Geneste",
+                    "Bruno David",
+                    "Margaret Katherine",
+                    "R. J. Gunn",
+                    "Ray L. Whear"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788776,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Premières étapes de construction d'une mesure du sentiment de \" chez soi \" : génération des items et structure factorielle"
+                ],
+                "authFullName_s": [
+                    "Jean-Luc Giannelloni",
+                    "Véronique Cova"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788757,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-med-ph"
+                ],
+                "title_s": [
+                    "Evaluation de la dose déposée par des faisceaux d'électrons en radiothérapie dans des fantômes voxelisés en utilisant la plateforme de simulation Monte Carlo GATE fondée sur GEANT4 dans un environnement de grille"
+                ],
+                "authFullName_s": [
+                    "Yann Perrot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788755,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-mo"
+                ],
+                "title_s": [
+                    "Ontologie de la physiologie du corps humain pour la modélisation et la simulation du système musculosquelettique"
+                ],
+                "authFullName_s": [
+                    "Ali Hamadi Dicko",
+                    "Valentin Favier",
+                    "Boris Farny",
+                    "Benjamin Gilles",
+                    "François Faure",
+                    "Olivier Palombi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788754,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "La sensibilité paysagère à l'épreuve de la gestion territoriale"
+                ],
+                "authFullName_s": [
+                    "Hervé Davodeau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788752,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu"
+                ],
+                "title_s": [
+                    "Nature et propriétés des espèces en solution dans le système K2O-Na2O-SiO2-Al2O3-H2O-HCI : contribution expérimentale"
+                ],
+                "authFullName_s": [
+                    "Marie-Lola Pascal"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788751,
+                "domain_s": [
+                    "0.stat",
+                    "1.stat.th"
+                ],
+                "title_s": [
+                    "Illustration par quelques exemples des lois strictement stables dans un cône convexe"
+                ],
+                "authFullName_s": [
+                    "Shuyan Liu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 788746,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.demo",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "VERTIGE DÉMOGRAPHIQUE ? UN RETOUR JUSTIFIÉ DES GRANDES PEURS ? - DIZZINESS DEMOGRAPHIC ? RETURN OF MAJOR FEARS JUSTIFIED ?"
+                ],
+                "authFullName_s": [
+                    "Gérard-François Dumont"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788727,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Hypothèse"
+                ],
+                "authFullName_s": [
+                    "Claude Martin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788725,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Famille"
+                ],
+                "authFullName_s": [
+                    "Claude Martin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788722,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Marchés des Changes"
+                ],
+                "authFullName_s": [
+                    "Patrice Fontaine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788713,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Une petite histoire de gestion des connaissances : Les modalités d'appropriation d'un dispositif de gestion des connaissances"
+                ],
+                "authFullName_s": [
+                    "I. Corbett-Etchevers",
+                    "Eléonore Mounoud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788712,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu"
+                ],
+                "title_s": [
+                    "Cristallochimie des biotites ferro-alumineuses dans le système Na2O-K2O-FeO-Fe2O3-Al2O3-SiO3-SiO2-H2O-HF. Analyse par spectrométries vibrationnelles et Mössbauer."
+                ],
+                "authFullName_s": [
+                    "Boubker Boukili"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788693,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Philosophie, mythe et imagination dans l'œuvre dramatique et poétique d'Alexandre Soumet",
+                    "Philosophy, myth and fantasy in Alexandre Soumet's dramatic and poetic texts"
+                ],
+                "authFullName_s": [
+                    "Karine Laffont"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 788691,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.psy"
+                ],
+                "title_s": [
+                    "Conduites d'appropriation individuelle et collective du soutien social : une recherche-action dans le cadre d'un dispositif d'aide aux personnes en situation de souffrance au travail",
+                    "Individual and collective social support appropriation : an action-research within suffering at work counseling center"
+                ],
+                "authFullName_s": [
+                    "Nicolas Michaëlis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788690,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Entre nature et cultures : constructions culturelles et représentations du territoire : des faits historiques aux dynamiques rurales actuelles en Rouergue",
+                    "Between nature ans cultures : cultural constructions and territory representations : indicators of cultural construction over time and current social dynamics in Rouergue"
+                ],
+                "authFullName_s": [
+                    "Bertrand Guibert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 788682,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Développement d’un banc de thermographie infrarouge pour l’analyse in-situ de la fiabilité des microsystèmes",
+                    "Development of a High Resolution Infrared Thermography bench for the diagnostic of MEMS Reliability"
+                ],
+                "authFullName_s": [
+                    "Chrystelle Fillit"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 788676,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Montrer au linguiste ce qu'il fait\". Une analyse épistémologique du structuralisme européen (Hjelmslev, Jakobson, Martinet, Benveniste) dans sa filiation saussurienne",
+                    "To show the linguist what he is doing\". An epistemological analysis of european structuralism (Hjelmslev, Jakobson, Martinet, Benveniste) in his saussurean filiation"
+                ],
+                "authFullName_s": [
+                    "Anne-Gaëlle Toutain"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788671,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Frédéric II, Roi-philosophe et législateur"
+                ],
+                "authFullName_s": [
+                    "Anne Baillot",
+                    "Brunhilde Wehinger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 788664,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion",
+                    "2.shs.gestion.mark"
+                ],
+                "title_s": [
+                    "Les Français, la Science et les Médias : l'impact de la vulgarisation scientifique sur le public"
+                ],
+                "authFullName_s": [
+                    "Jean-Noël Kapferer",
+                    "J.F. Boss"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 788662,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion",
+                    "2.shs.gestion.mark"
+                ],
+                "title_s": [
+                    "Les Chemins de la persuasion : le mode d'influence des médias et de la publicité"
+                ],
+                "authFullName_s": [
+                    "Jean-Noël Kapferer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 788661,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.auto",
+                    "0.spi",
+                    "1.spi.other",
+                    "0.math",
+                    "1.math.math-ds",
+                    "0.math",
+                    "1.math.math-pr"
+                ],
+                "title_s": [
+                    "Quantification de l'apport de l'information de surveillance dans la prise de décision en maintenance",
+                    "Value of condition monitoring information for maintenance decision-making"
+                ],
+                "authFullName_s": [
+                    "Khac Tuan Huynh"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788660,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion",
+                    "2.shs.gestion.mark"
+                ],
+                "title_s": [
+                    "Echec à la Science : l'image de l'espace dans le public"
+                ],
+                "authFullName_s": [
+                    "Jean-Noël Kapferer",
+                    "B. Dubois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 788659,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion",
+                    "2.shs.gestion.mark"
+                ],
+                "title_s": [
+                    "Comment mesurer l'implication des consommateurs"
+                ],
+                "authFullName_s": [
+                    "Jean-Noël Kapferer",
+                    "Gilles Laurent"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 788658,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion",
+                    "2.shs.gestion.mark"
+                ],
+                "title_s": [
+                    "La sensibilité aux marques : nouveau concept pour la gestion des marques"
+                ],
+                "authFullName_s": [
+                    "Jean-Noël Kapferer",
+                    "Gilles Laurent"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 788657,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion",
+                    "2.shs.gestion.mark"
+                ],
+                "title_s": [
+                    "L'enfant et la publicité : les chemins de la séduction"
+                ],
+                "authFullName_s": [
+                    "Jean-Noël Kapferer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 788656,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion",
+                    "2.shs.gestion.mark"
+                ],
+                "title_s": [
+                    "Rumeurs - le plus vieux média du monde"
+                ],
+                "authFullName_s": [
+                    "Jean-Noël Kapferer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 788655,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion",
+                    "2.shs.gestion.mark"
+                ],
+                "title_s": [
+                    "Les rumeurs : vraies ou fausses"
+                ],
+                "authFullName_s": [
+                    "Jean-Noël Kapferer",
+                    "H. Morgan",
+                    "K. Tucker",
+                    "M. Voline"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 788654,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion",
+                    "2.shs.gestion.mark"
+                ],
+                "title_s": [
+                    "La marque"
+                ],
+                "authFullName_s": [
+                    "Jean-Noël Kapferer",
+                    "J.C. Thoenig"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 788650,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion",
+                    "2.shs.gestion.mark"
+                ],
+                "title_s": [
+                    "Les marques, capital de l'entreprise"
+                ],
+                "authFullName_s": [
+                    "Jean-Noël Kapferer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 788644,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion",
+                    "2.shs.gestion.mark"
+                ],
+                "title_s": [
+                    "La sensibilité aux marques : marchés sans marques, marchés à marques"
+                ],
+                "authFullName_s": [
+                    "Jean-Noël Kapferer",
+                    "Gilles Laurent"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 788640,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion",
+                    "2.shs.gestion.mark"
+                ],
+                "title_s": [
+                    "Les marques : les chemins de la reconquête"
+                ],
+                "authFullName_s": [
+                    "Jean-Noël Kapferer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 788639,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mefl",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mefl"
+                ],
+                "title_s": [
+                    "Mécanique des Milieux Discrets"
+                ],
+                "authFullName_s": [
+                    "Jean-Paul Caltagirone"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788638,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion",
+                    "2.shs.gestion.mark"
+                ],
+                "title_s": [
+                    "Re-marques - les marques à l'épreuve de la pratique - remarques 1"
+                ],
+                "authFullName_s": [
+                    "Jean-Noël Kapferer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 788630,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-lg",
+                    "0.info",
+                    "1.info.info-cl",
+                    "0.scco",
+                    "1.scco.comp",
+                    "0.scco",
+                    "1.scco.ling",
+                    "0.info",
+                    "1.info.info-ir",
+                    "0.info",
+                    "1.info.info-tt",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Reconnaissance des entités nommées par exploration de règles d'annotation - Interpréter les marqueurs d'annotation comme instructions de structuration locale",
+                    "Named Entity Recognition by Mining Association Rules"
+                ],
+                "authFullName_s": [
+                    "Damien Nouvel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 788626,
+                "title_s": [
+                    "Fouille d'images multi-instance et multi-résolution appliquée au dépistage de la rétinopathie diabétique"
+                ],
+                "authFullName_s": [
+                    "Gwénolé Quellec",
+                    "Michael D. Abràmoff",
+                    "Guy Cazuguel",
+                    "Mathieu Lamard",
+                    "Béatrice Cochener",
+                    "Christian Roux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788610,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-cr"
+                ],
+                "title_s": [
+                    "À l'attaque des codes secrets"
+                ],
+                "authFullName_s": [
+                    "Mathieu Cunche"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788605,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "La \"fabrique\" locale de rôles professionnels et profanes dans le domaine de la santé. Apprendre à \"savoir y faire\" avec le diabète au Mali."
+                ],
+                "authFullName_s": [
+                    "Isabelle Gobatto",
+                    "Annick Tijou Traoré",
+                    "Rachel Besson",
+                    "Mireille Bernard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788602,
+                "title_s": [
+                    "Fouille d'images multi-instance et multi-échelle appliquée au dépistage de la rétinopathie diabétique"
+                ],
+                "authFullName_s": [
+                    "Gwénolé Quellec",
+                    "Guy Cazuguel",
+                    "Mathieu Lamard",
+                    "Béatrice Cochener",
+                    "Christian Roux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788599,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.phys"
+                ],
+                "title_s": [
+                    "Vérification de la reconstruction du signal d'onde gravitationnelle de Virgo à l'aide d'un dispositif d'étalonnage utilisant la pression de radiation laser",
+                    "Check of the Virgo gravitational wave signal reconstruction with a calibration system based on laser radiation pressure"
+                ],
+                "authFullName_s": [
+                    "Timothée Accadia"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788591,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Bérose, de l'emprunt au faux"
+                ],
+                "authFullName_s": [
+                    "Christine Dumas-Reungoat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788583,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.mat",
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-chem-ph",
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-ms"
+                ],
+                "title_s": [
+                    "SIMULATION PAR LA MÉTHODE DES ÉLÉMENTS FINIS DU COMPORTEMENT MÉCANIQUE LOCAL DES POLYCRISTAUX. COUPLAGES PHYSIQUES"
+                ],
+                "authFullName_s": [
+                    "Colette Rey",
+                    "Olivier Fandeur"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788576,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "Politiques de santé et prise en compte du patient chronique dans les pays du Sud. Le cas du diabète et du VIH/Sida au Mali"
+                ],
+                "authFullName_s": [
+                    "J. Martini",
+                    "Tijou Traoré A.",
+                    "I. Gobatto",
+                    "B. Dujardin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788567,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "La place de l'anthropologie en éducation thérapeutique : un regard sur deux mondes"
+                ],
+                "authFullName_s": [
+                    "A. Desseix",
+                    "Lionel Couzi",
+                    "Pierre Merville",
+                    "K. Moreau",
+                    "D. Morel",
+                    "Isabelle Gobatto"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788560,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Les prestations financières en ligne",
+                    "Online financial services"
+                ],
+                "authFullName_s": [
+                    "Fatima Zahra Boulaich Bayssa"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 788551,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-mo",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mefl",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mefl"
+                ],
+                "title_s": [
+                    "SIMULATIONS DES GRANDES ÉCHELLES DE HAUTE PRÉCISION D'ÉCOULEMENTS AUTOUR DE GEOMETRIES COMPLEXES : APPLICATION A UN MODELE DE VEHICULE AUTOMOBILE",
+                    "High Order Large Eddy Simulations of the flow over Complex Geometries: Application of the flow over an automotive vehicle"
+                ],
+                "authFullName_s": [
+                    "Matthieu Minguez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788545,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "Apprendre à \"savoir y faire\" avec le diabète au Mali. La \"fabrique\" locale de rôles professionnels et profanes"
+                ],
+                "authFullName_s": [
+                    "Isabelle Gobatto",
+                    "Annick Tijou Traoré"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788543,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu"
+                ],
+                "title_s": [
+                    "Contexte géologique des gisements primaires d'U de la ceinture orogénique de Damara, Namibie : de la source migmatitique au gisement plutonique. Apports géochimiques à la compréhension de transferts d'éléments liés aux processus de fusion partielle"
+                ],
+                "authFullName_s": [
+                    "Wilfried Toé",
+                    "Anne-Sylvie André-Mayer",
+                    "Olivier Vanderhaeghe",
+                    "Jean-Louis Feybesse",
+                    "Jean-Louis Paquette",
+                    "Marc Poujol",
+                    "Jean-Pierre Milesi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788536,
+                "domain_s": [
+                    "0.chim",
+                    "1.chim.othe"
+                ],
+                "title_s": [
+                    "Etude de la cristallisation contrôlée de la calcite par voie électrochimique. Effet des ions étrangers au système calcocarbonique sur la nucléation-croissance de la calcite.",
+                    "Study of controlled crystallization of calcite by electrochemical method. Effect of ions on nucleationgrowth of calcite"
+                ],
+                "authFullName_s": [
+                    "Hassiba Teghidet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788530,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Aux sources de l'économie sociale et solidaire : la pensée et l'action de la Société d'économie sociale dans la France du XIXe siècle"
+                ],
+                "authFullName_s": [
+                    "Alain Clément"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788527,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Patrimonialisations en Afrique"
+                ],
+                "authFullName_s": [
+                    "Bernard Calas",
+                    "Olivier Marcel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788504,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Travail versus oisiveté : contribution à une étude des fondements de la modernité économique"
+                ],
+                "authFullName_s": [
+                    "Alain Clément"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788479,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bbm"
+                ],
+                "title_s": [
+                    "Rôle des lipides-phosphate phosphatases dans la modulation des voies de signalisation impliquées dans les léiomyomes utérins",
+                    "Role of lipid phosphate phosphatases in the modulation of signaling pathways in uterine leiomyoma"
+                ],
+                "authFullName_s": [
+                    "Pierre-Christian Violet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788472,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "0.sdv",
+                    "1.sdv.ot"
+                ],
+                "title_s": [
+                    "Études du transport de la neige par le vent en conditions alpines : observations et simulations à l'aide d'un modèle couplé atmosphère/manteau neigeux",
+                    "Blowing and drifting snow in alpine terrain : observations and modeling using a snowpack-atmosphere coupled system"
+                ],
+                "authFullName_s": [
+                    "Vincent Vionnet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788471,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "De l'ouvrier-masse au travail cognitif"
+                ],
+                "authFullName_s": [
+                    "Carlo Vercellone"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788467,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-bi",
+                    "0.sdv",
+                    "1.sdv.bibs"
+                ],
+                "title_s": [
+                    "Modèles combinatoires des structures d'ARN avec ou sans pseudonoeuds, application à la comparaison de structures.",
+                    "Combinatorial models for RNA structures, with or without pseudoknots and application to structures comparison"
+                ],
+                "authFullName_s": [
+                    "Cédric Saule"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788464,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.tron",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Couches minces magnétiques élaborées par pulvérisation cathodique RF"
+                ],
+                "authFullName_s": [
+                    "Jean-Pierre Chatelon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "HDR",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 788457,
+                "title_s": [
+                    "Composants passifs intégrés en technologie CMOS pour la miniaturisation des circuits RF"
+                ],
+                "authFullName_s": [
+                    "Siamak Salimy",
+                    "Fatiha Challali",
+                    "Antoine Goullet",
+                    "A. Rhallabi",
+                    "Serge Toutain",
+                    "Marie-Paule Besland",
+                    "Dominique Averty",
+                    "Jean-Pierre Landesman"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788456,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.gl"
+                ],
+                "title_s": [
+                    "Les inclusions gazeuses dans la glace de glacier: leur utilisation comme indicateur du site de formation de la glace polaire : applications climatiques et rhéologiques"
+                ],
+                "authFullName_s": [
+                    "Dominique Raynaud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788454,
+                "domain_s": [
+                    "0.sde"
+                ],
+                "title_s": [
+                    "Modélisation numérique du doublet de Rosny-sous-Bois. Impact thermique et hydraulique sur les exploitations voisines."
+                ],
+                "authFullName_s": [
+                    "Elisabeth Cordier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 788445,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.gp",
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-geo-ph",
+                    "0.sde",
+                    "1.sde.mcg"
+                ],
+                "title_s": [
+                    "Simulation numérique des mouvements forts en champ proche"
+                ],
+                "authFullName_s": [
+                    "Jean Christophe Gariel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 788439,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Modélisation micromécanique et simulation numérique du fluage des bétons avec prise en compte de l'endommagement et des effets thermo-hydriques",
+                    "Micromechanical modeling and numerical simulation of creep in concrete taking into account the effects of micro-cracking and hygro-thermal"
+                ],
+                "authFullName_s": [
+                    "Minh Quan Thai"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788435,
+                "domain_s": [
+                    "0.sde",
+                    "0.sde",
+                    "1.sde.ie"
+                ],
+                "title_s": [
+                    "Modélisation numérique d'un doublet géothermique exploitant le Dogger dans le secteur de Bagneux dans le cadre de l'étude de faisabilité d'un doublet géothermal mise en œuvre par le SIPPEREC. Synthèse des calculs"
+                ],
+                "authFullName_s": [
+                    "Elisabeth Cordier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 788434,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.opti"
+                ],
+                "title_s": [
+                    "Développement d'un laser sur silicium dans l'approche pseudomorphique"
+                ],
+                "authFullName_s": [
+                    "Cédric Robert",
+                    "Charles Cornet",
+                    "Thanh Tra Nguyen",
+                    "Mathieu Perrin",
+                    "Antoine Létoublon",
+                    "Jean-Marc Jancu",
+                    "Jacky Even",
+                    "Pascal Turban",
+                    "Sylvain Tricot",
+                    "Andrea Balocchi",
+                    "Xavier Marie",
+                    "Slimane Loualiche",
+                    "Nicolas Bertru",
+                    "Olivier Durand",
+                    "Alain Le Corre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788430,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "La faune du site résidentiel de Roz-Avel"
+                ],
+                "authFullName_s": [
+                    "Julie Le Fur"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788421,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Étude des mécanismes de blocage d'un écoulement par un produit de colmatage"
+                ],
+                "authFullName_s": [
+                    "Quoc Quan Truong"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788415,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Vox Populy : radiographie du vote lyonnais à la Présidentielle de 2012"
+                ],
+                "authFullName_s": [
+                    "Anouk Flamant",
+                    "Renaud Payre",
+                    "Olivier Quéré",
+                    "Mili Spahic",
+                    "Julie Vaslin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788414,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ir"
+                ],
+                "title_s": [
+                    "Méthodologie pour une représentation multi-dimensionnelle des documents"
+                ],
+                "authFullName_s": [
+                    "Benjamin Piwowarski"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788410,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.spi",
+                    "1.spi.signal"
+                ],
+                "title_s": [
+                    "Reconstruction de profils protéiques pour la recherche de biomarqueurs",
+                    "Reconstruction of proteomic profiles for biomarker discovery"
+                ],
+                "authFullName_s": [
+                    "Pascal Szacherski"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788407,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Salle et chambre dans les inventaires de meubles (XVe-XVIe siècle)"
+                ],
+                "authFullName_s": [
+                    "Michel Nassiet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788392,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu"
+                ],
+                "title_s": [
+                    "Interactions lithosphère – asthénosphère et mouvements verticaux : le cas du massif du Hoggar",
+                    "Lithosphere - asthenosphere interactions and vertical movements : the Hoggar mountains case"
+                ],
+                "authFullName_s": [
+                    "Sylvain Rougier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788391,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Genre et géographie"
+                ],
+                "authFullName_s": [
+                    "Guy Di Méo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788390,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Prisons et communication"
+                ],
+                "authFullName_s": [
+                    "Guy Di Méo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788389,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Genre et géographie sociale"
+                ],
+                "authFullName_s": [
+                    "Guy Di Méo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788388,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Les territoires : une rationalité incertaine"
+                ],
+                "authFullName_s": [
+                    "Guy Di Méo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788385,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Identités, genre et territorialités"
+                ],
+                "authFullName_s": [
+                    "Guy Di Méo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788384,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Méthodes de recherche en géographie sociale"
+                ],
+                "authFullName_s": [
+                    "Guy Di Méo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788383,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Géographiques tranquilles du quotidien et FSS"
+                ],
+                "authFullName_s": [
+                    "Guy Di Méo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788381,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Les outils de la géographie sociale"
+                ],
+                "authFullName_s": [
+                    "Guy Di Méo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788380,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Identités et territoires"
+                ],
+                "authFullName_s": [
+                    "Guy Di Méo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788378,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Le symbolisme du feu dans le sonnet amoureux baroque et maniériste"
+                ],
+                "authFullName_s": [
+                    "Pascale Mounier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788377,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Le roman humaniste : un genre indéfini ou composite ?"
+                ],
+                "authFullName_s": [
+                    "Pascale Mounier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788375,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Le récit et ses formes : les tâtonnements de la terminologie narrative du XVIe siècle"
+                ],
+                "authFullName_s": [
+                    "Pascale Mounier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788374,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "L'investigation herméneutique. Le cas de romans de la Renaissance"
+                ],
+                "authFullName_s": [
+                    "Pascale Mounier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788373,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.ie"
+                ],
+                "title_s": [
+                    "L'analyse systémique du métabolisme territorial, un outil pour favoriser le recours aux ressources secondaires dans le domaine du BTP"
+                ],
+                "authFullName_s": [
+                    "Laurent Rouvreau",
+                    "Pascale Michel",
+                    "Daniel Monfort",
+                    "Emmanuel Jayr",
+                    "Jonathan Morice"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 788372,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Les 'Propos rompu[s]' d'Alector de B. Aneau : poétique et esthétique de la fragmentation"
+                ],
+                "authFullName_s": [
+                    "Pascale Mounier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788370,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Libre circulation des travailleurs dans l'Union Européenne et tutelle des droits individuels de retraite complémentaire: un chantier inachevé"
+                ],
+                "authFullName_s": [
+                    "Henri Mekongo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 788368,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "L'héroïsme guerrier dans les cinq Livres : la fiction rabelaisienne au défi des genres"
+                ],
+                "authFullName_s": [
+                    "Pascale Mounier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788365,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "La chronologie des événements et son organisation syntaxique dans quelques romans de la Renaissance"
+                ],
+                "authFullName_s": [
+                    "Pascale Mounier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788364,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Baldus et consorts : brouillage des frontières de la norme et de la marginalité chez Folengo"
+                ],
+                "authFullName_s": [
+                    "Pascale Mounier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788363,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Les clichés du discours anti-matrimonial vers 1540. Reprise et détournement de syntagmes figés"
+                ],
+                "authFullName_s": [
+                    "Pascale Mounier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 788362,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Régulation de la métalloprotéase ADAM10/Kuzbanian par les tétraspanines à 8 cystéines et conséquences sur l’activation de la voie Notch chez les mammifères et la Drosophile",
+                    "TspanC8 tetraspanins regulate ADAM10/Kuzbanian trafficking and promote Notch activation in flies and mammals"
+                ],
+                "authFullName_s": [
+                    "Emmanuel Dornier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 788361,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Périphrase et référence mythologique dans le récit amoureux de la Renaissance"
+                ],
+                "authFullName_s": [
+                    "Pascale Mounier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFZ+IAD"
+}

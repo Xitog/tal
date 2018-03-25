@@ -1,0 +1,1988 @@
+{
+    "response": {
+        "numFound": 515921,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1502940,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Identifiabilité des signaux parcimonieux structurés et solutions algorithmiques associées : application à la reconstruction tomographique à faible nombre de vues",
+                    "Identifability of s-sparse structured signals and associated algorithms : application at limited view angle tomography"
+                ],
+                "authFullName_s": [
+                    "Marc Nicodeme"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502939,
+                "domain_s": [
+                    "0.sde",
+                    "0.spi",
+                    "0.info"
+                ],
+                "title_s": [
+                    "Sylvaccess: Un modèle pour cartographier automatiquement l’accessibilité des forêts",
+                    "Sylvaccess – A model for automatically mapping accessibility to forests"
+                ],
+                "authFullName_s": [
+                    "S. Dupire",
+                    "Franck Bourrier",
+                    "Jean-Matthieu Monnet",
+                    "Frédéric Berger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502937,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.genre",
+                    "0.shs",
+                    "1.shs.stat"
+                ],
+                "title_s": [
+                    "Nue comme une vere",
+                    "Naked as a Sheworm"
+                ],
+                "authFullName_s": [
+                    "Nathalie Blanc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502936,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "J'ai rencontré un animal chez l'orthophoniste : enquête sur les apports de l'animal dans la prise en charge orthophonique"
+                ],
+                "authFullName_s": [
+                    "Laëtitia Marzo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502930,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "La protection des affaires par l'introduction de la violence économique en droit des contrats"
+                ],
+                "authFullName_s": [
+                    "Roustom Hlaleh"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502928,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Intercompréhension in praesentia : la reformulation dans une troisième langue comme repair au cours d'une rencontre en langues romanes"
+                ],
+                "authFullName_s": [
+                    "Vanessa Piccoli"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502927,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Heureux qui comme les « dys » ont fait un beau voyage... La poésie comme outil thérapeutique avec des adolescents présentant une pathologie du langage écrit"
+                ],
+                "authFullName_s": [
+                    "Virginie Guidal"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502925,
+                "domain_s": [
+                    "0.scco",
+                    "1.scco.psyc"
+                ],
+                "title_s": [
+                    "Entre les langues: l’être traduit du langage et la portée intraduite des mots"
+                ],
+                "authFullName_s": [
+                    "Catherine Cyssau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502921,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "“Puedes hablar italiano” : négocier la conversation plurilingue dans un salon commercial international"
+                ],
+                "authFullName_s": [
+                    "Vanessa Piccoli"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502919,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.demo",
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "0.sdv",
+                    "0.sde",
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "2.sdv.mhep.mi"
+                ],
+                "title_s": [
+                    "Déterminants socioéconomiques et perceptions du risque de paludisme au sein de ménages résidant dans une agroforesterie du sud Cameroun"
+                ],
+                "authFullName_s": [
+                    "Daniel Bley",
+                    "Léon Mudubu",
+                    "Félicien Fomekong",
+                    "N. Kouam Dzutseu",
+                    "Nicole Vernazza-Licht",
+                    "Severin Cecile Abega"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502916,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hisphilso"
+                ],
+                "title_s": [
+                    "Une approche rationnelle de la chimiothérapie : histoire des antimétabolites (1935-1955)",
+                    "A rational approach to chemotherapy : the history of antimetabolites (1935-1955)"
+                ],
+                "authFullName_s": [
+                    "Thibaut Serviant-Fine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502910,
+                "domain_s": [
+                    "0.scco",
+                    "1.scco.psyc"
+                ],
+                "title_s": [
+                    "Conceptualiser une recherche en psychanalyse"
+                ],
+                "authFullName_s": [
+                    "Catherine Cyssau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502909,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sp",
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Évaluation médico-économique des produits de santé : état des lieux et pistes de réflexion pour préciser sa place dans les négociations de prix",
+                    "Use of health economic evaluation for price negociations: current state and lines of thought reasoning"
+                ],
+                "authFullName_s": [
+                    "Alexandre Drezet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502907,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Les enjeux sociaux et territoriaux des projets d’environnements"
+                ],
+                "authFullName_s": [
+                    "Pierre-Olivier Garcia",
+                    "Gaëlle Deletraz",
+                    "Xavier Arnauld de Sartre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502906,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "L’esprit du dialogue social : de la loi du 20 août 2008 aux accords collectifs relatifs au droit syndical et à la représentation des salariés"
+                ],
+                "authFullName_s": [
+                    "Josépha Dirringer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502901,
+                "domain_s": [
+                    "0.math"
+                ],
+                "title_s": [
+                    "Curvica - activités mathématiques ludiques"
+                ],
+                "authFullName_s": [
+                    "Yves Martin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502897,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Prise en compte des problématiques liées à la qualité de l'air extérieur dans les processus de conception urbaine : quels indicateurs de forme urbaine et comment les intégrer dans le processus opérationnel ?"
+                ],
+                "authFullName_s": [
+                    "Deniz Özsoy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502896,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Postures franciscaines de l'écrivain contemporain non confessionnel"
+                ],
+                "authFullName_s": [
+                    "Aude Bonord"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502895,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Bienvenue dans l’ère du dialogue social : de nouvelles règles pour de nouvelles logiques"
+                ],
+                "authFullName_s": [
+                    "Josépha Dirringer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502894,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "0.sdv",
+                    "0.sdv",
+                    "1.sdv.spee",
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "2.sdv.mhep.mi"
+                ],
+                "title_s": [
+                    "Grossesse et paludisme : prise en charge des femmes enceintes lors des consultations prénatales (CPN) dans une plantation du Sud Cameroun",
+                    "Malaria and pregnancy: evaluation of the strategies in malaria control during the antenatal clinics in the South of Cameroon"
+                ],
+                "authFullName_s": [
+                    "Nicole Vernazza-Licht",
+                    "Arielle Calmejane",
+                    "Daniel Bley",
+                    "Pascal Millet",
+                    "Denis Malvy",
+                    "Severin Cecile Abega"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502892,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Cession à vil prix d’un terrain communal en vue de la construction d’une mosquée : le refus contestable d’appliquer la jurisprudence Commune de Fougerolles"
+                ],
+                "authFullName_s": [
+                    "Untermaier-Kerléo Elise"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502891,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Les implications philosophiques de la théorie de l'action collective"
+                ],
+                "authFullName_s": [
+                    "Armand Hatchuel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502888,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.neu"
+                ],
+                "title_s": [
+                    "Contrôle de l'activité des récepteurs NMDA par la D-sérine : rôle des récepteurs astrocytaires EphB3 et CB1",
+                    "Control of NMDA receptor activity via D-serine : role of the astrocytic EphB3 and CB1 receptors"
+                ],
+                "authFullName_s": [
+                    "Valentin Langlais"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502887,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Évolution de la nullité d'une perquisition accomplie en violation du secret de l'instruction"
+                ],
+                "authFullName_s": [
+                    "Philippe Collet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502884,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Le juge judiciaire : quel gardien de la liberté individuelle ?"
+                ],
+                "authFullName_s": [
+                    "Untermaier-Kerléo Elise"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502882,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Modélisation du transfert thermique couplé conductif et radiatif au sein de milieux fibreux portés à haute température",
+                    "Modeling of the coupled radiative and conductive heat transfer within fibrous media at high temperature"
+                ],
+                "authFullName_s": [
+                    "Yann Dauvois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502879,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Dans l'orbite d'Orbes"
+                ],
+                "authFullName_s": [
+                    "Aude Bonord"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502878,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.genre"
+                ],
+                "title_s": [
+                    "ALAGA, Humuani Amoke"
+                ],
+                "authFullName_s": [
+                    "Sara Panata"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502873,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Décrochage scolaire et espace urbain. Entre désinvestissement scolaire et investissement territorial."
+                ],
+                "authFullName_s": [
+                    "Michaël Bailleul"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502872,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.genre"
+                ],
+                "title_s": [
+                    "ADEKOGBE, Elizabeth [née Elizabeth Adeyemi]",
+                    "ADEKOGBE, Elizabeth [born Elizabeth Adeyemi]"
+                ],
+                "authFullName_s": [
+                    "Sara Panata"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502870,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Tablette numérique tactile et rééducation orthophonique de l'adulte"
+                ],
+                "authFullName_s": [
+                    "Magali Mazuyer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502868,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "0.sdv",
+                    "0.sde",
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "2.sdv.mhep.mi"
+                ],
+                "title_s": [
+                    "L’insertion de la moustiquaire dans le système des objets au sein de l’habitation : approche anthropologique"
+                ],
+                "authFullName_s": [
+                    "Marceline Mbetoumou",
+                    "Nicole Vernazza-Licht",
+                    "Séverin Abega",
+                    "Daniel Bley"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502865,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Pour une approche clinique de la construction du soi professionnel chez des musiciens enseignants"
+                ],
+                "authFullName_s": [
+                    "Sophie Lerner-Seï"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502864,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Les préjudices réparables"
+                ],
+                "authFullName_s": [
+                    "Gwenaëlle Durand-Pasquier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502862,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.genre"
+                ],
+                "title_s": [
+                    "OGUNLESI Gladys Tanimowo Titilola (Née Okunsanya)"
+                ],
+                "authFullName_s": [
+                    "Sara Panata"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502861,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Les jeunes du quartier de Lille Sud : entre stigmate et sentiments d’appartenance."
+                ],
+                "authFullName_s": [
+                    "Michaël Bailleul"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502860,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Le temps du soin ou le soin à temps : enquête auprès de patients adultes et d'orthophonistes sur la prise en charge tardive des troubles du langage écrit"
+                ],
+                "authFullName_s": [
+                    "Élodie Geoffroy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502858,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "La nature de la responsabilité"
+                ],
+                "authFullName_s": [
+                    "Cristina Corgas-Bernard",
+                    "Cédric Coulon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502855,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Droit administratif"
+                ],
+                "authFullName_s": [
+                    "Untermaier-Kerléo Elise"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502854,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "L'hagiographie et le reportage, un couple improbable ?"
+                ],
+                "authFullName_s": [
+                    "Aude Bonord"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502850,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Vers un logiciel de rééducation des troubles de l'empan visuo-attentionnel dans les dyslexies développementales"
+                ],
+                "authFullName_s": [
+                    "Nadine Lions"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502848,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Les députés protecteurs de la déontologie. A propos de la loi Sapin II."
+                ],
+                "authFullName_s": [
+                    "Untermaier-Kerléo Elise"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502845,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bc"
+                ],
+                "title_s": [
+                    "Influence des ratios de co-expression précis Cx43 : Cx45 sur la formation des canaux de jonction et leurs propriétés électriques",
+                    "Influence of Cx43 : Cx45 accurate co-expressed ratios on gap junction channels formation and their electricals properties"
+                ],
+                "authFullName_s": [
+                    "Sebastien Dupuis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502839,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Parlez-moi d'humour : les adolescents paralysés cérébraux et l'humour : sensibilité et compréhension"
+                ],
+                "authFullName_s": [
+                    "Marine Fantino"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502836,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "2.sdv.mhep.chi"
+                ],
+                "title_s": [
+                    "Intégration muco-gingivale de la coiffe implanto-portée : intérêt du profil d'émergence",
+                    "Muco-gingival integration of the implant-supported crown ‎: interest of the emergence profile"
+                ],
+                "authFullName_s": [
+                    "Nathaniel Levy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502834,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.envir",
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.hy"
+                ],
+                "title_s": [
+                    "MODELISATION DE LA MONTEE VERS UN ETAT CRITIQUE DE LA SITUATION DE BASSES EAUX SOUS FORÇAGES NATUREL ET ANTHROPIQUE EN REGION MEDITERRANEENNE",
+                    "MODELING THE RISE TO A CRITICAL STATE OF THE LOW WATER SITUATION UNDER NATURAL AND ANTHROPOGENIC PRESSURES IN THE MEDITERRANEAN BASIN"
+                ],
+                "authFullName_s": [
+                    "Ingrid Canovas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502830,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ro"
+                ],
+                "title_s": [
+                    "MODÉLISATION DYNAMIQUE DE LA DENSITÉ DE POPULATION VIA LES RÉSEAUX CELLULAIRES ET OPTIMISATION MULTIOBJECTIF DE L'AUTO-PARTAGE",
+                    "DYNAMIC MODELING OF POPULATION DENSITY VIA CELLULAR NETWORKS AND CAR-SHARING MULTIOBJECTIVE OPTIMIZATION"
+                ],
+                "authFullName_s": [
+                    "Laurent Moalic"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502829,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.genre"
+                ],
+                "title_s": [
+                    "“When Sex Threatened the State: Illicit Sexuality, Nationalism, and Politics in Colonial Nigeria, 1900-1958\", 2014 by ADERINTO Saheed"
+                ],
+                "authFullName_s": [
+                    "Sara Panata"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502826,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-rb"
+                ],
+                "title_s": [
+                    "Système de reconstruction d'environnement pour une aide au pilotage en environnement naturel",
+                    "Unstructured environment reconstruction for driver assistance applications"
+                ],
+                "authFullName_s": [
+                    "Bruno Ricaud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502825,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "La mobilité résidentielle dans les campagnes nantaises",
+                    "Residential trajectories around Nantes city"
+                ],
+                "authFullName_s": [
+                    "Valérie Jousseaume",
+                    "Nicole Croix"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502824,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.mi",
+                    "0.sdu",
+                    "1.sdu.stu"
+                ],
+                "title_s": [
+                    "Nouvelles découvertes minéralogiques à Versilhac, Haute-Loire"
+                ],
+                "authFullName_s": [
+                    "Yann Bureau",
+                    "Vincent Trincal",
+                    "Vincent Sallé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502820,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.mi"
+                ],
+                "title_s": [
+                    "Du plomb au pays des sucs : les anciennes mines de Versilhac et du Chambonnet, Haute-Loire"
+                ],
+                "authFullName_s": [
+                    "Yann Bureau",
+                    "Vincent Trincal",
+                    "Vincent Sallé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502819,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hisphilso",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "L’art libertin de la facétie dans les premiers dialogues de La Mothe Le Vayer"
+                ],
+                "authFullName_s": [
+                    "Bruno Roche"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502817,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Agricultures et villes : des articulations renouvelées",
+                    "Town and agriculture: new linkages"
+                ],
+                "authFullName_s": [
+                    "Yvon Le Caro",
+                    "Valérie Jousseaume",
+                    "Monique Poulot",
+                    "Nicolas Rouget"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502808,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-na",
+                    "0.info",
+                    "1.info.info-mo",
+                    "0.info",
+                    "1.info.info-gr"
+                ],
+                "title_s": [
+                    "Quelques contributions à la modélisation numérique de structures élancées pour l'informatique graphique",
+                    "Some contributions to the numerical modeling of slender structures for computer graphics"
+                ],
+                "authFullName_s": [
+                    "Romain Casati"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502806,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Roberto Rossellini : De l'histoire à la télévision"
+                ],
+                "authFullName_s": [
+                    "Aurore Renaut"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502805,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-ao-ph",
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.oc",
+                    "0.sde",
+                    "1.sde.mcg",
+                    "0.info",
+                    "1.info.info-mo"
+                ],
+                "title_s": [
+                    "Sensibilité d'un modèle hydro-sédimentaire aux incertitudes liées à la caractérisation des sédiments de fond",
+                    "SENSITIVITY OF HYDRODYNAMIC AND SEDIMENT TRANSPORT MODELS TO UNCERTAINTIES IN BOTTOM SEDIMENTS CHARACTERIZATION"
+                ],
+                "authFullName_s": [
+                    "Nicolas Guillou",
+                    "Georges Chapalain",
+                    "Alain Leprêtre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502802,
+                "domain_s": [
+                    "0.scco",
+                    "0.scco",
+                    "1.scco.comp"
+                ],
+                "title_s": [
+                    "Modélisation du cervelet",
+                    "Cerebellum modeling"
+                ],
+                "authFullName_s": [
+                    "Émilie Colin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502801,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.genre"
+                ],
+                "title_s": [
+                    "Revendiquer des droits politiques au Nigéria. Le Women Movement dans les années 1950",
+                    "Campaigning for political rights in Nigeria: the Women Movement in the 1950s"
+                ],
+                "authFullName_s": [
+                    "Sara Panata"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502798,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "La « douce science » des coups. La boxe comme paradigme d’une sociologie de la domination",
+                    "Die sanfte Wissenschaft der Faustschläge. Der Boxkampf als Paradigma einer Soziologie der Beherrschung",
+                    "The “sweet science” of bruising. Boxing as a paradigm of a sociology of domination",
+                    "La “dulce ciencia” de los golpes. El boxeo como paradigma de una sociología de la dominación"
+                ],
+                "authFullName_s": [
+                    "Jérôme Beauchez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502797,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Le prince Babur et le pouvoir des mots"
+                ],
+                "authFullName_s": [
+                    "Danièle Auffray"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502796,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sp",
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Exploration biologique des thrombopathies constitutionnelles - déficit en CalDAG-GEFI : un exemple de recherche translationnelle"
+                ],
+                "authFullName_s": [
+                    "Florence Golesi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502794,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.genre"
+                ],
+                "title_s": [
+                    "Trajectoires de femmes militantes d’Ibadan : le succès d’un apolitisme de façade et l’échec du militantisme politique (1947-1957)",
+                    "Ibadan women’s activist paths: the success of a non-political facade and the failure of political engagement (1947-1957)",
+                    "Recorridos de activistas de Ibadán : el éxito de un apoliticismo de aparencia y el fracaso del activismo político (1947-1957)"
+                ],
+                "authFullName_s": [
+                    "Sara Panata"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502792,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-oc",
+                    "0.math",
+                    "1.math.math-na"
+                ],
+                "title_s": [
+                    "Optimisation de formes et problèmes spectraux",
+                    "Shape optimization and spectral problems"
+                ],
+                "authFullName_s": [
+                    "Beniamin Bogosel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502791,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Les Pays de la Loire"
+                ],
+                "authFullName_s": [
+                    "Valérie Jousseaume"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502788,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Les socialistes, l'histoire et la mémoire"
+                ],
+                "authFullName_s": [
+                    "Noëlline Castagnez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502785,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.envir",
+                    "0.shs",
+                    "1.shs.hisphilso"
+                ],
+                "title_s": [
+                    "L’Afrique solaire ou le récit oublié. Représentations sociales et expérimentations en matière d’énergie solaire en Afrique 19ème - 20ème siècles"
+                ],
+                "authFullName_s": [
+                    "Frédéric Caille"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502783,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "L'apport de l'indiçage dans les troubles de la mémoire du syndrome de Korsakoff"
+                ],
+                "authFullName_s": [
+                    "Aurore Dupont"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502779,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "La famille, une entité à reconnaître juridiquement"
+                ],
+                "authFullName_s": [
+                    "Bénédicte Bévière-Boyer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502778,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Rugby et responsabilité civile. Petit abécédaire jurisprudentiel"
+                ],
+                "authFullName_s": [
+                    "Philippe Pierre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502774,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "La responsabilité du bricoleur cédant son bien"
+                ],
+                "authFullName_s": [
+                    "Gwenaëlle Durand-Pasquier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502769,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Le chant du droit contemporain de la responsabilité civile"
+                ],
+                "authFullName_s": [
+                    "Cristina Corgas-Bernard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502768,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Traumatologie du VTT de descente : étude épidémiologique prospective traitant de la traumatologie du VTT de descente, à propos de 138 cas totalisant 178 lésions",
+                    "Traumatology of downhill mountain biking: prospective epidemiological study dealing with the trauma of downhill mountain biking, about 138 cases totaling 178 lesions"
+                ],
+                "authFullName_s": [
+                    "Guillaume Favarel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502766,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bbm",
+                    "2.sdv.bbm.bc"
+                ],
+                "title_s": [
+                    "Adaptations métaboliques de Trypanosoma brucei en réponse à des variations des conditions intra- et extracellulaires",
+                    "Metabolic adaptations of Trypanosoma brucei in response to changing intra- and extracellular conditions"
+                ],
+                "authFullName_s": [
+                    "Marion Wargnies"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502763,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "L'humour graphique, une source pour l'historien ?",
+                    "The Graphic Humor, a source used by historians ?",
+                    "O humor gráfico, uma fonte para o historiador ?"
+                ],
+                "authFullName_s": [
+                    "Mélanie Toulhoat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502760,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "La presse humoristique et satirique en Argentine et au Brésil au temps des dictatures",
+                    "The humoristic and satirical Press in Argentina and Brazil during the Militar Dictatorships",
+                    "A imprensa humorística e satírica na Argentina e no Brasil na época das ditaduras"
+                ],
+                "authFullName_s": [
+                    "Mélanie Toulhoat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502758,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Le récepteur 5-HT2c : lien entre activité locomotrice et prise alimentaire",
+                    "5-HT2c receptor : link between locomotor activity and food intake."
+                ],
+                "authFullName_s": [
+                    "Sina Faton"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502754,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Só doi quando eu desenho\" Humour graphique et censure sous les régimes militaires brésilien et argentin (années 1960-1980)",
+                    "Ça fait mal seulement quand je dessine\" Graphic Humor and Censorship under the Military Regimes in Brazil and Argentina (1960's - 1980's)"
+                ],
+                "authFullName_s": [
+                    "Mélanie Toulhoat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502752,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Rôle de la TEP TDM et de l’IRM avec séquence de diffusion dans l’évaluation de la réponse au traitement des cancers avancés (stades IB2–IVA) du col de l’utérus"
+                ],
+                "authFullName_s": [
+                    "Simon Dandoy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502742,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "L'inquiétante étrangeté à l'œuvre"
+                ],
+                "authFullName_s": [
+                    "Susanne Müller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502741,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "“Prenez-les chez vous !\". Migrants, presse locale et commentaires d’internautes"
+                ],
+                "authFullName_s": [
+                    "Gilles Frigoli"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502736,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Analyse morphologique de maillages 3D : algorithme rapide pour le calcul de la somme de Minkowski de polyèdres convexes"
+                ],
+                "authFullName_s": [
+                    "Hichem Barki",
+                    "Florence Denis",
+                    "Florent Dupont"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502731,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Annotation Multi-Documents de Points de Vue Exprimés"
+                ],
+                "authFullName_s": [
+                    "Samuel Gesche",
+                    "Guy Caplat",
+                    "Sylvie Calabretto"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502722,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Commandement de payer à fin de saisie-vente non suivi d’exécution : absence de caducité"
+                ],
+                "authFullName_s": [
+                    "Guillaume Payan"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502716,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Faiblesses et voies de réformes de la protection de l’emploi en France"
+                ],
+                "authFullName_s": [
+                    "Alexis Parmentier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502709,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "Geneviève Calame-Griaule (1924-2013)"
+                ],
+                "authFullName_s": [
+                    "Eric Jolly"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502708,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "L'ethnographe, l'écrivain et la poésie secrète des Dogon"
+                ],
+                "authFullName_s": [
+                    "Eric Jolly"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502707,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.be",
+                    "0.sdv",
+                    "1.sdv.ee"
+                ],
+                "title_s": [
+                    "Évaluation des liens entre phylogénie et traits écologiques chez les diatomées : pistes d’utilisation pour la bioindication des milieux aquatiques.",
+                    "Assessing the links between phylogeny and ecological traits in diatoms : new perspectives for aquatic ecosystems bioassessment."
+                ],
+                "authFullName_s": [
+                    "François Keck"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502706,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Modélisation, caractérisation et optimisation des procédés de traitements thermiques pour la formation d’absorbeurs CIGS",
+                    "Modelling, characterization and optimization of annealing processes in CIGS absorber manufacturing"
+                ],
+                "authFullName_s": [
+                    "Florian Oliva"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502704,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "Amma ; Andoumoulou ; Gyinou ; Lèbè ; Yèbèn ; Yourougou"
+                ],
+                "authFullName_s": [
+                    "Eric Jolly"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502703,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "Griaule Marcel (1898-1956)"
+                ],
+                "authFullName_s": [
+                    "Eric Jolly"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502702,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "Archives des ethnologues"
+                ],
+                "authFullName_s": [
+                    "Eric Jolly"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502701,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "Dieu d'eau (M. Griaule)"
+                ],
+                "authFullName_s": [
+                    "Eric Jolly"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502700,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "Introduction"
+                ],
+                "authFullName_s": [
+                    "Gaetano Ciarcia",
+                    "Eric Jolly"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502699,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hisphilso",
+                    "0.shs",
+                    "1.shs.phil",
+                    "0.shs",
+                    "1.shs.class"
+                ],
+                "title_s": [
+                    "La logique stoïcienne: rencontre avec le troisième type"
+                ],
+                "authFullName_s": [
+                    "Pascal Bertin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1502698,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "« Victor Henry (1850-1907) ou l’itinéraire d’un linguiste autodidacte, d’après les fragments de sa correspondance (comportant une bibliographie des ouvrages et articles) »"
+                ],
+                "authFullName_s": [
+                    "Marc Decimo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502697,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "À propos d’un tableau de Camille Renault"
+                ],
+                "authFullName_s": [
+                    "Marc Decimo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502696,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "« Petit catalogue illustré de moulins, puits, boîtes aux lettres, sonnettes, interrupteurs, maquettes, divers reliefs, statues, façades peintes et autres bricoles »"
+                ],
+                "authFullName_s": [
+                    "Marc Decimo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502695,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "« Sémiologie et Sémiologie »"
+                ],
+                "authFullName_s": [
+                    "Marc Decimo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1502694,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hisphilso",
+                    "0.shs",
+                    "1.shs.phil",
+                    "0.shs",
+                    "1.shs.class"
+                ],
+                "title_s": [
+                    "Desperately Seeking Formal"
+                ],
+                "authFullName_s": [
+                    "Pascal Bertin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFW3t0F"
+}

@@ -1,0 +1,2082 @@
+{
+    "response": {
+        "numFound": 515922,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1449787,
+                "domain_s": [
+                    "0.scco",
+                    "1.scco.comp",
+                    "0.scco",
+                    "1.scco.psyc",
+                    "0.info",
+                    "1.info.info-hc",
+                    "0.info",
+                    "1.info.eiah"
+                ],
+                "title_s": [
+                    "La dissonance cognitive: Quand les actes changent les idées"
+                ],
+                "authFullName_s": [
+                    "Valérie Fointiat",
+                    "Fabien Girandola",
+                    "Patrick Gosling"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449785,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-tt"
+                ],
+                "title_s": [
+                    "Sous-graphes de cooccurrences pour la détection de thématiques dans un corpus de taille moyenne"
+                ],
+                "authFullName_s": [
+                    "Aurélien Lauf"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1449783,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Des mots du désir aux mots de la haine : analyse sociolinguistique des termes pour dire les minorités sexuelles en arabe littéraire et en dialecte tunisien"
+                ],
+                "authFullName_s": [
+                    "Mariem Guellouz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449782,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "Le cheval : monture, nourriture et figure."
+                ],
+                "authFullName_s": [
+                    "Carole Ferret"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449781,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Regards croisés sur les enfants venus d’ailleurs et scolarisés en France"
+                ],
+                "authFullName_s": [
+                    "Stéphanie Galligani"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449742,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "« Cette histoire dont je ne connais pas le secret »"
+                ],
+                "authFullName_s": [
+                    "Alain Romestaing"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449734,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Esquisse sur la topographie religieuse de Volubilis à l’époque maurétanienne"
+                ],
+                "authFullName_s": [
+                    "Véronique Brouquier-Reddé",
+                    "Abdelfattah Ichkhakh",
+                    "Poupon Frédéric",
+                    "Abdelaziz El Khayari"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449725,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.info",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Fabriques plurilingues d’une citoyenneté numérique sur Twitter"
+                ],
+                "authFullName_s": [
+                    "Mariem Guellouz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449697,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "« Demeurer en l’indécidable »"
+                ],
+                "authFullName_s": [
+                    "Alain Romestaing"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449691,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "Des chevaux qui accompagnent les morts en Asie intérieure"
+                ],
+                "authFullName_s": [
+                    "Carole Ferret"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449688,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "« L’ombre portée de l’écrivain »"
+                ],
+                "authFullName_s": [
+                    "Alain Romestaing",
+                    "Christophe Reig",
+                    "Alain Schaffner"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449686,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.relig",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Magistère ecclésial et magistère de l’écrivain. L’anti-ecclésiologie de Joseph de Maistre et de Baudelaire"
+                ],
+                "authFullName_s": [
+                    "Alexandre De Vitry"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449682,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.psy",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "SANTÉ AU TRAVAIL DES ENSEIGNANTS : NOUVELLES ORIENTATIONS DANS L'ÉTUDE DES MODES DE COPING"
+                ],
+                "authFullName_s": [
+                    "Aurélie Pasquier",
+                    "Vincent Bréjard",
+                    "Grégory Lo Monaco",
+                    "Lionel Dany",
+                    "Rimé Bernard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449680,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Les formes poétiques selon Baudelaire"
+                ],
+                "authFullName_s": [
+                    "Dominique Billy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449679,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Participation politique des Égyptiens résidant en France : vers la construction d’une citoyenneté en migration ?"
+                ],
+                "authFullName_s": [
+                    "Celia Lamblin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449678,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.relig"
+                ],
+                "title_s": [
+                    "La voix et la présence. Les lettres historiées d’un missel du XIIIe siècle à l’usage de Notre-Dame de Belval (Charleville-Mézière, BM, ms. 243)"
+                ],
+                "authFullName_s": [
+                    "Cécile Voyer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449677,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Peut-on penser une danse contemporaine au Maghreb ?"
+                ],
+                "authFullName_s": [
+                    "Mariem Guellouz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1449675,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.genre",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Accords et désaccords"
+                ],
+                "authFullName_s": [
+                    "Vinciane Trancart"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1449674,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "« Cette magie sympathique »"
+                ],
+                "authFullName_s": [
+                    "Alain Romestaing"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449673,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Un outil de reconnaissance géophysique en milieu urbain : la prospection électrostatique"
+                ],
+                "authFullName_s": [
+                    "Alain Tabbagh",
+                    "Cédric Panissod",
+                    "Christophe Benech",
+                    "Alain Jolivet",
+                    "Roger Guérin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449667,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.genre",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Les muses andalouses de Julio Romero de Torres : renouvellement d’un type ou archétype ?"
+                ],
+                "authFullName_s": [
+                    "Vinciane Trancart"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1449664,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Un témoin picard de la vogue du répertoire des troubadours dans la première moitié du XIIIe siècle"
+                ],
+                "authFullName_s": [
+                    "Dominique Billy",
+                    "Lug Robert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449656,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.relig",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Compte rendu de l'article de Lisa Barber, «Les plates tombes de Narbonne gravées avec effigie du défunt», Mémoires de la Société archéologique du Midi de la France 70 (2010), p. 161-177"
+                ],
+                "authFullName_s": [
+                    "Vincent Debiais"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449653,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "La rétention administrative des étrangers"
+                ],
+                "authFullName_s": [
+                    "Olivier Lecucq"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449652,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.genre",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "L’Art du folklore"
+                ],
+                "authFullName_s": [
+                    "Vinciane Trancart",
+                    "Salomé Roth",
+                    "Alice Delmotte-Halter",
+                    "Mélina Cariz",
+                    "Jean-Marie Privat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1449649,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.relig",
+                    "0.shs",
+                    "1.shs.phil",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "L’épistémologie politique de Charles Péguy : de quoi parle la “voix de mémoire” ?"
+                ],
+                "authFullName_s": [
+                    "Alexandre De Vitry"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449642,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.psy",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Psychopathologie des émotions"
+                ],
+                "authFullName_s": [
+                    "Aurélie Pasquier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449641,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.genre",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "L’“Idéal Andalou” de Blas Infante : une utopie devenue réalité"
+                ],
+                "authFullName_s": [
+                    "Vinciane Trancart"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1449638,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.relig"
+                ],
+                "title_s": [
+                    "La littérature contre elle-même : les deux écritures du XIXe siècle selon Philippe Muray"
+                ],
+                "authFullName_s": [
+                    "Alexandre De Vitry"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449636,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Une sépulture chasséenne et un dépôt symbolique annexe (?) à Montélimar (Drôme), Portes de Provence (zone 5)"
+                ],
+                "authFullName_s": [
+                    "Yaramila Tchérémissinoff",
+                    "Philippe Alix",
+                    "Verane Brisotto",
+                    "Frédérique Ferber",
+                    "Sylvie Saintot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449635,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.genre",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "L’évolution des relations entre chant, danse et guitare dans le flamenco des années 1850 aux années 1920"
+                ],
+                "authFullName_s": [
+                    "Vinciane Trancart"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1449633,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "De l’influence du décasyllabe lyrique des troubadours sur l’'endecasillabo' italien"
+                ],
+                "authFullName_s": [
+                    "Dominique Billy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449631,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Identification de marqueurs sociaux et émotionnels associés à l’hallucination acoustico-verbale chez l’enfant et l’adolescent non psychotique « L’enfant physalis »"
+                ],
+                "authFullName_s": [
+                    "Louise-Émilie Dumas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449630,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.genre",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "La guitare, art et folklore en Espagne à l’aube du XXe siècle"
+                ],
+                "authFullName_s": [
+                    "Vinciane Trancart"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1449629,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "De la notion d’interlangue à celle de compétence partielle et plurilingue : des exemples en FLE"
+                ],
+                "authFullName_s": [
+                    "Stéphanie Galligani",
+                    "Cécile Bruley"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449623,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Pratiques et valeurs spatiales, pèlerines et touristiques : grands et petits lieux de pélérinage aujourd'hui",
+                    "Pilgrimage and tourism, spatial practices and spatial values : great and small places of pilgrimage today"
+                ],
+                "authFullName_s": [
+                    "Marie-Hélène Chevrier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449621,
+                "domain_s": [
+                    "0.scco",
+                    "1.scco.psyc",
+                    "0.stat",
+                    "0.scco"
+                ],
+                "title_s": [
+                    "La correspondance de Hermann Rorschach 1902 à 1922",
+                    "Briefe von Hermann Rorschach von 1902 bis 1922",
+                    "Letters from Hermann Rorschach 1902 to 1922"
+                ],
+                "authFullName_s": [
+                    "Mareike Wolf-Fédida"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1449618,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.psy",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Anxiété, dépression et partage social des émotions : stratégies de régulation émotionnelle spécifiques."
+                ],
+                "authFullName_s": [
+                    "Aurélie Pasquier",
+                    "Agnes Bonnet",
+                    "Jean-Louis Pedinielli"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1449614,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Comment faire dialoguer le français et l’arabe, langue à/de l’école ? Exemple d’une section d’enseignement internationale à l’école élémentaire"
+                ],
+                "authFullName_s": [
+                    "Stéphanie Galligani"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449613,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.genre",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Crime et nuit flamenca : les répercussions sociales et artistiques du meurtre du cantaor El Canario (Séville, 1885)"
+                ],
+                "authFullName_s": [
+                    "Vinciane Trancart"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1449610,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Lire et écrire avec des outils informatiques : le tissage d'un projet de compensation pour des adolescents dyslexiques",
+                    "Using computer tools for reading and writing : how to design a compensatory project for dyslexic teenagers"
+                ],
+                "authFullName_s": [
+                    "Vanessa Daspet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1449609,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Des rimes normandes usurpées"
+                ],
+                "authFullName_s": [
+                    "Dominique Billy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449608,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "2.sdv.mhep.geo"
+                ],
+                "title_s": [
+                    "Intérêt de l'élastographie cervicale chez les patientes en menace d'accouchement prématuré‎ : une étude prospective"
+                ],
+                "authFullName_s": [
+                    "Anna Jagusiak"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1449604,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Évaluation de l'efficacité des infiltrations des articulations sacro-iliaques par un corticoïde retard sous contrôle scannographique et du caractère prédictif ou non de bonne réponse au traitement des lésions infllammatoires et structurales des sacro-iliaques objectivées à l'IRM chez des patients ayant une spondylarthrite",
+                    "Evaluation of the efficiency of sacroiliac joints corticoid injections under scan control and its relationship with the presence or absence of sacroiliitis lesions seen on MRI of patients with spondylarthritis"
+                ],
+                "authFullName_s": [
+                    "Agathe Devauchelle"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1449603,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Le renouvellement de l'encadrement dans le secteur social et médico-social. Un effet de la nouvelle gestion publique"
+                ],
+                "authFullName_s": [
+                    "Simon Heichette"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449600,
+                "domain_s": [
+                    "0.scco",
+                    "1.scco.ling"
+                ],
+                "title_s": [
+                    "Le projet ORFEO: Un corpus d'études pour le français contemporain"
+                ],
+                "authFullName_s": [
+                    "Jeanne-Marie Debaisieux",
+                    "Christophe Benzitoun",
+                    "Henri-José Deulofeu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449599,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "La fréquentation à la journée, une forme de dilatation de la ville moyenne touristique"
+                ],
+                "authFullName_s": [
+                    "Luc Vacher",
+                    "Didier Vye"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449597,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hisphilso",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Que nous apprennent les écritures des plus anciens témoins du Liber Glossarum sur l’archétype ?"
+                ],
+                "authFullName_s": [
+                    "Franck Cinato"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449596,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Le maire au XXe siècle, ou l’ascension d’une figure \"sympathique\" et \"intouchable\" de la République"
+                ],
+                "authFullName_s": [
+                    "Emmanuel Bellanger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449592,
+                "domain_s": [
+                    "0.scco",
+                    "1.scco.psyc",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "De la nymphe au complexe de la nymphette",
+                    "From Nymp to Nymphette"
+                ],
+                "authFullName_s": [
+                    "Mareike Wolf-Fédida"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1449590,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Quand un sociologue rencontre un philosophe"
+                ],
+                "authFullName_s": [
+                    "Ahmed Boubeker"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449583,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Les neurofilaments pénètrent dans les oligodendrocytes par endocytose pour promouvoir leur croissance"
+                ],
+                "authFullName_s": [
+                    "Catherine Fressinaud",
+                    "Joël Eyer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449582,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Musique et texte filmique : enjeux et pratiques du doublage et du sous-titrage"
+                ],
+                "authFullName_s": [
+                    "Jean Szlamowicz",
+                    "Bertran Vanessa"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1449578,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.sde",
+                    "1.sde.es",
+                    "0.shs",
+                    "1.shs.envir",
+                    "0.sde",
+                    "1.sde.be"
+                ],
+                "title_s": [
+                    "De la friche urbaine à la biodiversité : Ethnologie d’une reconquête : (La petite ceinture de Paris)",
+                    "From urban wasteland to biodiversity : Ethnology of a recapture : (The petite ceinture of Paris)"
+                ],
+                "authFullName_s": [
+                    "Julie Scapino"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449577,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.genre",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "ACCORDS ET DÉSACCORDS. Pratiques et représentations de la guitare à Madrid et en Andalousie de 1883 à 1922",
+                    "Harmony and Disharmony. Guitar Practices and Representations in Madrid and Andalusia from 1883 to 1922",
+                    "Visiones desafinadas. Prácticas y representaciones de la guitarra en Madrid y Andalucía de 1883 a 1922"
+                ],
+                "authFullName_s": [
+                    "Vinciane Trancart"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1449576,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Validation et limites d’un dispositif de mesure du coefficient de diffusion acoustique des parois à relief dans les bâtiments"
+                ],
+                "authFullName_s": [
+                    "Joël Ducourneau",
+                    "Adil Faiz",
+                    "Kévin Rabisse",
+                    "Nicolas Trompette"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449572,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "École et langues. Questions de difficulté en contextes"
+                ],
+                "authFullName_s": [
+                    "Stéphanie Galligani",
+                    "Sandrine Wachs",
+                    "Corinne Weber"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449571,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Méthode de simulation de propagation du son dans un milieu confiné en présence de parois à relief géométrique"
+                ],
+                "authFullName_s": [
+                    "Kévin Rabisse",
+                    "Joël Ducourneau",
+                    "Adil Faiz",
+                    "Nicolas Trompette"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449569,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Chapitre XIV : Du Néolithique final au Bronze ancien : les sépultures individuelles campaniformes dans le sud de la France"
+                ],
+                "authFullName_s": [
+                    "Olivier Lemercier",
+                    "Yaramila Tchérémissinoff"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449568,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.psy"
+                ],
+                "title_s": [
+                    "Conscience, métacognition, inconscient : neurosciences et psychanalyse : une mise en tention dialectique",
+                    "Consciousness, metacognition, unconscious : neurosciences and psychoanalysis : a dialectic exchange"
+                ],
+                "authFullName_s": [
+                    "Yann Hermitte"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449566,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Confluences méthodologiques autour du jazz : sociolinguistique et musique"
+                ],
+                "authFullName_s": [
+                    "Jean Szlamowicz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1449565,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Ganglionopathies : Revue de la littérature‎ : Application des nouveaux critères diagnostiques sur la cohorte de patients du CHU de Rouen"
+                ],
+                "authFullName_s": [
+                    "Adèle Héranval"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1449564,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "En passant par la Lorraine. Les ritournelles de l'immigration kabyle"
+                ],
+                "authFullName_s": [
+                    "Ahmed Boubeker"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449560,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "École et langues"
+                ],
+                "authFullName_s": [
+                    "Stéphanie Galligani",
+                    "Sandrine Wachs",
+                    "Corinne Weber"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449559,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Comprendre la métropole de Lima : objectifs d’une approche depuis les aires « encore rurales"
+                ],
+                "authFullName_s": [
+                    "Evelyne Mesclier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449557,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Le discours de la dégustation : des métaphores entre lexicalisation et séduction"
+                ],
+                "authFullName_s": [
+                    "Jean Szlamowicz",
+                    "Obis Eléonore"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1449554,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Danos, Félix. \"Langue(s) et territoire(s) rapports socio-discursifs de pouvoir dans la mise en frontière.\" Communication présentée lors du colloque international jeunes chercheurs Sciences humaines et sociales, sciences du langage : Méthodologies transversales. 10-11 décembre 2015, Université Sorbonne Paris-Cité (Paris-Descartes)"
+                ],
+                "authFullName_s": [
+                    "Félix Danos"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449539,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Danos Félix. \"Intellectuels et savoirs situés: experts ou chercheurs en sociolinguistique rurale?\" Communication présentée lors de la journée d'étude de l'Atelier des doctorants de l'ED 180 : Le doctorat fait-il de nous des intellectuels? 15 avril 2016, Université Sorbonne Paris-Cité (Paris-Descartes)."
+                ],
+                "authFullName_s": [
+                    "Félix Danos"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449538,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Foucault et les études postcoloniales"
+                ],
+                "authFullName_s": [
+                    "Ahmed Boubeker"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449536,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Travail biographique et compétence plurilingue : quels apports en formation des enseignants de langues ?"
+                ],
+                "authFullName_s": [
+                    "Stéphanie Galligani"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449535,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Analyse des tensions au sein des pratiques participatives entre significations démocratiques et conditions de mise en œuvre"
+                ],
+                "authFullName_s": [
+                    "Simon Heichette"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449532,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "La séduction : aspects sémantiques et rhétoriques"
+                ],
+                "authFullName_s": [
+                    "Jean Szlamowicz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1449528,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Nouveaux besoins, nouveaux contextes : vers une évolution des pratiques enseignantes ?"
+                ],
+                "authFullName_s": [
+                    "Stéphanie Galligani",
+                    "Mariella Causa",
+                    "Monica Vlad"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449526,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Echangeurs de chaleur à faisceaux de tubes. Étude des performances énergétiques et exergétiques des écoulements internes en tubes de différentes formes"
+                ],
+                "authFullName_s": [
+                    "Abdelhamid Kheiri",
+                    "Mohammed El Ganaoui",
+                    "Najla Gharbi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449525,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Le coffre lithique campaniforme ou épicampanifome du site de Georges Besse II-5, Nîmes (Gard)"
+                ],
+                "authFullName_s": [
+                    "Yaramila Tchérémissinoff",
+                    "Gilles Escalon",
+                    "Richard Donat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449524,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Formation et pratiques enseignantes en contextes pluriels"
+                ],
+                "authFullName_s": [
+                    "Stéphanie Galligani",
+                    "Mariella Causa",
+                    "Monica Vlad"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449523,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mefl"
+                ],
+                "title_s": [
+                    "Écoulements liquide-gaz, évaporation, cristallisation dans les milieux micro et nanoporeux. Études à partir de systèmes modèles micro et nanofluidiques",
+                    "Liquid-gas flows, evaporation, crystallization in micro and nanoporous media. Studies from micro and nanofluidic model systems"
+                ],
+                "authFullName_s": [
+                    "Antoine Naillon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449519,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Conversion de la chaleur fatale de bas niveau en énergie électrique par effet magnétocalorique"
+                ],
+                "authFullName_s": [
+                    "Georges El Achkar",
+                    "Alexy Dianoux",
+                    "Abdelhamid Kheiri",
+                    "Denis Maillet",
+                    "Thomas Mazet",
+                    "Stéphane Colasson",
+                    "Michel Feidt",
+                    "Cyril Rado",
+                    "Florence Servant",
+                    "Valérie Paul-Boncour"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449518,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Langue, texte, culture: quelques enjeux disciplinaires de l'objet traductif"
+                ],
+                "authFullName_s": [
+                    "Jean Szlamowicz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1449513,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Du corail de Méditerranée pour l’Asie. Les ventes du marchand marseillais François Garnier à Smyrne vers 1680"
+                ],
+                "authFullName_s": [
+                    "Olivier Raveux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449508,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.relig"
+                ],
+                "title_s": [
+                    "S’absenter de son siècle : le Baudelaire de Philippe Muray"
+                ],
+                "authFullName_s": [
+                    "Alexandre De Vitry"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449503,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Mines et Carrières de silex au Néolithique dans le Vaucluse"
+                ],
+                "authFullName_s": [
+                    "Pierre-Arnaud De Labriffe",
+                    "Adrien Reggio",
+                    "André Pierre",
+                    "Boris Helard",
+                    "Jean-Louis Guendon",
+                    "Venot Romain"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449490,
+                "domain_s": [
+                    "0.qfin"
+                ],
+                "title_s": [
+                    "Effets sectoriels de la politique monétaire et activité économique: cas du Maroc"
+                ],
+                "authFullName_s": [
+                    "Charaf-Eddine Moussir"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449489,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Modernités de Meschonnic : entre poétique et philosophie"
+                ],
+                "authFullName_s": [
+                    "Tanguy Grannis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1449487,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Modélisation multi-échelle des couches minces"
+                ],
+                "authFullName_s": [
+                    "Issam Bencheikh",
+                    "François Bilteryst",
+                    "Mohammed Nouari"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449484,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Le sanctuaire anonyme 2 ou temple dit « de Mercure »"
+                ],
+                "authFullName_s": [
+                    "Véronique Brouquier-Reddé",
+                    "Mounir Ferchichi",
+                    "Smari Riadh",
+                    "Nizar Ben Slimène"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449482,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Modélisation des efforts de coupe en taillage d'engrenages à la fraise-mère"
+                ],
+                "authFullName_s": [
+                    "Naoual Sabkhi",
+                    "Mohammed Nouari",
+                    "Abdelhadi Moufki",
+                    "Cyril Pelaingre",
+                    "Claude Barlier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449479,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Nationalité et citoyenneté"
+                ],
+                "authFullName_s": [
+                    "Marie-Pierre Lanfranchi",
+                    "Olivier Lecucq",
+                    "Dominique Nazet-Allouche"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449477,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Modélisation des structures de solidification en soudage MIG - Développement d’une approche couplée Automates Cellulaires – Eléments Finis (CM-13-794)"
+                ],
+                "authFullName_s": [
+                    "Shijia Chen",
+                    "Olivier Desmaison",
+                    "Gildas Guillemot",
+                    "Charles-André Gandin",
+                    "Michel Bellet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449471,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Instabilité thermo-convective de Rayleigh-Bénard pour des fluides rhéofluidifiants thermodépendants"
+                ],
+                "authFullName_s": [
+                    "Mondher Bouteraa",
+                    "Chérif Nouar"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449470,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "La sépulture campaniforme de la Folie, Poitiers (Vienne)"
+                ],
+                "authFullName_s": [
+                    "Yaramila Tchérémissinoff",
+                    "Fabien Convertini",
+                    "Pierrick Fouéré",
+                    "Laure Salanova"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449469,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Modélisation microstructurale de la précipitation en soudage par friction malaxage Application à l’alliage d’aluminium 2024 (CM-13-639)"
+                ],
+                "authFullName_s": [
+                    "Valentine Legrand",
+                    "Sabrina Gastebois",
+                    "Gildas Guillemot",
+                    "Charles-André Gandin",
+                    "Lionel Fourment"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449465,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "La beauté des villes, la ville de l’étranger"
+                ],
+                "authFullName_s": [
+                    "Ahmed Boubeker",
+                    "Benoît Goetz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449462,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Le site de La Boudine à Saumane-de-Vaucluse"
+                ],
+                "authFullName_s": [
+                    "Adrien Reggio",
+                    "Boris Helard",
+                    "Audrey Roussel",
+                    "Jean-Louis Guendon",
+                    "André D'Anna",
+                    "Samuel Van Willigen",
+                    "Guy Andre",
+                    "Yoann Quesnel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449460,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Étude expérimentale du développement d'instabilités thermoconvectives dans un fluide rhéofluidifiant par une méthodologie IRM"
+                ],
+                "authFullName_s": [
+                    "Mohamed Darbouli",
+                    "Christel Métivier",
+                    "Sébastien Leclerc",
+                    "Chérif Nouar",
+                    "Didier Stemmelen",
+                    "Mondher Bouteraa"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449455,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Ruptures Postcoloniales. Les nouveaux visages de la société française"
+                ],
+                "authFullName_s": [
+                    "Ahmed Boubeker",
+                    "Nicolas Bancel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449437,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Occupation funéraire des cavités du bassin de Marseille et ses environs durant le Néolithique final : La grotte Saint-Antoine à Ensuès-la-Redonne (bouches-du-rhône)"
+                ],
+                "authFullName_s": [
+                    "Ingrid Sénépart",
+                    "Aurore Lambert",
+                    "Thomas Castin",
+                    "Adrien Reggio",
+                    "Gérard ChauvÉ"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449435,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Effet de la structure nids d’abeilles sur l’usinage des composites NOMEX"
+                ],
+                "authFullName_s": [
+                    "Mohamed Jaafar",
+                    "Hamid Makich",
+                    "Mohammed Nouari",
+                    "Benjamin Julliere"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449423,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "L’immigration en héritage. L’histoire, la mémoire, l’oubli aux frontières du grand nord est"
+                ],
+                "authFullName_s": [
+                    "Ahmed Boubeker",
+                    "Piero D. Galloro"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1449420,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bbm",
+                    "0.sdv",
+                    "1.sdv.bbm",
+                    "2.sdv.bbm.gtp"
+                ],
+                "title_s": [
+                    "Etude du surenroulement diffusible de l'ADN chromosomique chez la bactérie Escherichia Coli",
+                    "Study of the free supercoiling of chromosomal DNA of the bacteria Escherichia coli"
+                ],
+                "authFullName_s": [
+                    "Camille Cibot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFc3MMF"
+}

@@ -1,0 +1,2030 @@
+{
+    "response": {
+        "numFound": 515922,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1361701,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Modélisation et intégration de convertisseurs DC-DC à capacité commutée et à résonance"
+                ],
+                "authFullName_s": [
+                    "Florian Chevalier",
+                    "Gaël Pillonnet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361700,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Influence du spectre de l'induction magnétique sur les pertes fer dans les stators de machines électriques"
+                ],
+                "authFullName_s": [
+                    "Alexandre Giraud",
+                    "Alix Bernot",
+                    "Jean-François Llibre",
+                    "Lefèvre Yvan"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361699,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Stockage d'énergie par supraconducteurs et lanceur électromagnétique S3EL"
+                ],
+                "authFullName_s": [
+                    "Jérémie Cicéron",
+                    "Arnaud Badel",
+                    "Pascal Tixador"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361698,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Contribution à la conception de structures de packaging pour les modules de puissance très haute tension : contraintes sur les isolants"
+                ],
+                "authFullName_s": [
+                    "Helene Hourdequin",
+                    "Lionel Laudebat",
+                    "Marie-Laure Locatelli",
+                    "Pierre Bidan"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361697,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Characterization and modeling of 1200V – 100A N – channel 4H-SiC MOSFET"
+                ],
+                "authFullName_s": [
+                    "Dinh-Lam Dang",
+                    "Sophie Guichard",
+                    "Matthieu Urbain",
+                    "Stéphane Raël"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361695,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Effet de l'angle de charge sur les harmoniques d'efforts magnétiques dans les machines synchrones à aimants permanents surfaciques"
+                ],
+                "authFullName_s": [
+                    "Jean Le Besnerais",
+                    "Emile Devillers",
+                    "Michel Hecquet",
+                    "Jean-Philippe Lecointe"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361694,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Commande en Mode Dégradé d'un Drive avec Deux Machines 6 phases en Série"
+                ],
+                "authFullName_s": [
+                    "Tiago José Dos Santos Moraes",
+                    "Ngac Ky Nguyen",
+                    "Fabien Meinguet",
+                    "Mael Guerin",
+                    "Eric Semail"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1361692,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Etude thermomécanique de la dégradation des assemblages de puissance soumis à des vieillissements à haute température"
+                ],
+                "authFullName_s": [
+                    "Faical Arabi",
+                    "Loïc Théolier",
+                    "Martineau D.",
+                    "Jean-Yves Deletage",
+                    "Eric Woirgard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361691,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Modélisation électrique d'une pile microbienne sédimentaire et extraction de son énergie par un flyback en mode discontinue"
+                ],
+                "authFullName_s": [
+                    "Armande Capitaine",
+                    "Gaël Pillonnet",
+                    "Thibaut Chailloux",
+                    "Firas Khaled",
+                    "Olivier Ondel",
+                    "Bruno Allard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361689,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Caractérisation des intéractions électromagnétiques pour l'intégration de capteurs en électronique de puissance"
+                ],
+                "authFullName_s": [
+                    "Guillaume Viné",
+                    "Paul-Etienne Vidal",
+                    "Jean-Marc Dienot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361688,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Intégration de circuit magnétique dans le PCB dédié à un convertisseur PFC"
+                ],
+                "authFullName_s": [
+                    "Guillaume Hérault",
+                    "Denis Labrousse",
+                    "Adrien Mercier",
+                    "Stéphane Lefebvre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361687,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Conception et Mise en Œuvre d'un Emulateur de Chaînes de Conversion avec Lissage : Applications aux Houlogénérateurs Directs"
+                ],
+                "authFullName_s": [
+                    "Abdallah Darkawi",
+                    "Thibaut Kovaltchouk",
+                    "Hamid Ben Ahmed",
+                    "Bernard Multon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361686,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Effet du dégazage sur la tension de claquage de l'huile de palmistes conditionnée"
+                ],
+                "authFullName_s": [
+                    "Ghislain Mengata Mengounou",
+                    "Adolphe Moukengue Imano"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361685,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "La Duchesse du Maine (1676-1753)"
+                ],
+                "authFullName_s": [
+                    "Catherine Cessac"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361684,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Modélisation thermo-mécanique de matériaux encapsulants en électronique de puissance"
+                ],
+                "authFullName_s": [
+                    "Simon Cailhol",
+                    "Baptiste Trajin",
+                    "Paul-Etienne Vidal",
+                    "Francisco Carrillo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361683,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Optimisation d'un superviseur flou par la méthode des couloirs : application à la supervision d'un système PV/Diesel"
+                ],
+                "authFullName_s": [
+                    "Steve Perabi Ngoffe",
+                    "Adolphe Moukengue Imano",
+                    "Salomé Ndjakomo Essiane"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361682,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Capacité énergétique, diagnostic, durée de vie de batterie Lithium Application à l'estimation de l'autonomie d'un véhicule électrique"
+                ],
+                "authFullName_s": [
+                    "Arnaud Sivert",
+                    "Bruno Vacossin",
+                    "Thierry Lequeu",
+                    "Franck Betin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361681,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Validation d'un modèle de bobinage par analyse fréquentielle et temporelle"
+                ],
+                "authFullName_s": [
+                    "Loucif Benmamas",
+                    "Philippe Teste",
+                    "Franck Vangraefschepe",
+                    "Guillaume Krebs",
+                    "Emmanuel Odic",
+                    "Tahar Hamiti",
+                    "Eric Berthelot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361680,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Modélisation électromagnétique et Optimisation d'un actionneur linéaire par la méthode des réseaux de réluctances"
+                ],
+                "authFullName_s": [
+                    "Andre Nasr",
+                    "Sami Hlioui",
+                    "Jean-Laurent Duchaud",
+                    "Mohamed Gabsi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361679,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Evolutions des propriétés magnétiques en fonction du vieillissement d'un nanocristallin haute perméabilité"
+                ],
+                "authFullName_s": [
+                    "Atef Lekdim",
+                    "Laurent Morel",
+                    "Marie-Ange Raulet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361678,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Stratégies de planification de recharge de véhicules électriques pour réduire le coût financier"
+                ],
+                "authFullName_s": [
+                    "Fallilou Diop",
+                    "Martin Hennebel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361677,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Etude expérimentale du délai de réamorçage de la génératrice asynchrone auto-excitée"
+                ],
+                "authFullName_s": [
+                    "Jean Paul Yembi",
+                    "Adolphe Moukengue Imano"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361676,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Modélisation générique pour les stratégies de modulation des onduleurs multiniveaux : application aux onduleurs à capacités flottantes"
+                ],
+                "authFullName_s": [
+                    "Karima Berkoune"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361675,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Transformateur planaire intégré à couches magnétiques : Conception et réalisation"
+                ],
+                "authFullName_s": [
+                    "Jean Jacques Rousseau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361674,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Real-time HEV energy management strategies"
+                ],
+                "authFullName_s": [
+                    "Qi Jiang",
+                    "Florence Ossart",
+                    "Claude Marchand"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361673,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Gestion d'énergie par λ-control d'un véhicule multi-sources"
+                ],
+                "authFullName_s": [
+                    "Ali Castaings",
+                    "Walter Lhomme",
+                    "Rochdi Trigui",
+                    "Alain Bouscayrol"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361672,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Estimation des contraintes électrothermiques sur les composants semi-conducteurs dans les onduleurs photovoltaïques"
+                ],
+                "authFullName_s": [
+                    "Mouhannad Dbeiss",
+                    "Yvan Avenas",
+                    "Henri Zara"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361670,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Réalisation expérimentale et modélisation de la formation de chaînes de particules sous l'action d'un champ électrique"
+                ],
+                "authFullName_s": [
+                    "Guillaume Belijar",
+                    "Sombel Diaham",
+                    "Zarel Valdez-Nava",
+                    "Lionel Laudebat",
+                    "Thierry Lebey",
+                    "Thomas Jones"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361669,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Mesure de résistance dynamique de HEMT en GaN à l'échelle de la centaine de nanosecondes"
+                ],
+                "authFullName_s": [
+                    "Emmanuel Marcault",
+                    "David Trémouilles",
+                    "Karine Isoird",
+                    "Gaëtan Toulon",
+                    "Frédéric Morancho",
+                    "Mathieu Gavelle"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361668,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Étude en simulation et conception d'un transistor bipolaire (BJT) 10 kV en 4H-SiC"
+                ],
+                "authFullName_s": [
+                    "Beverley Choucoutou",
+                    "Luong Viet Phung",
+                    "Pierre Brosselard",
+                    "Michel Mermet-Guyennet",
+                    "Dominique Planson"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361667,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Modèle analytique d'estimation des pertes dans une cellule de commutation MOSFET-diode Schottky SiC en vue de la conception et de l'optimisation d'un dissipateur thermique"
+                ],
+                "authFullName_s": [
+                    "Gnimdu Dadanema",
+                    "François Costa",
+                    "Jean-Luc Schanen",
+                    "Christian Vollaire",
+                    "Yvan Avenas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361666,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Contrôle des circuits d'équilibrage des systèmes de stockage d'énergie (supercondensateurs) en vue d'estimer et d'améliorer leur durée de vie"
+                ],
+                "authFullName_s": [
+                    "Seima Shili",
+                    "Pascal Venet",
+                    "Alaa Hijazi",
+                    "Ali Sari",
+                    "Xuefang Lin-Shi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361665,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Modélisation par réluctances du flux dans l'entrefer d'une machine à rotor à aimants en surface"
+                ],
+                "authFullName_s": [
+                    "Alix Bernot",
+                    "François Bernot",
+                    "Jean-Claude Vannier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361664,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Etude CEM d'un module de puissance à HEMT GaN"
+                ],
+                "authFullName_s": [
+                    "Xiaoshan Liu",
+                    "François Costa"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361663,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Comparison between Analytic Calculation and Finite Element Modeling in the Study of Winding Geometry Effect on Copper Losses"
+                ],
+                "authFullName_s": [
+                    "Moustafa Al Eit",
+                    "Frédéric Bouillault",
+                    "Claude Marchand",
+                    "Guillaume Krebs"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361662,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Couplage électromagnétique vibroacoustique pour l' étude des émissions sonores d'une Machine Synchrone à Rotor Bobiné (MSRB)"
+                ],
+                "authFullName_s": [
+                    "Hamza Ennassiri",
+                    "Farid Zidat",
+                    "Ferhat Chabour",
+                    "Yacine Amara",
+                    "Georges Barakat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1361661,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Analyse par électroluminescence des dégradations de transistors SiC-MOSFET"
+                ],
+                "authFullName_s": [
+                    "Pascal Dherbécourt"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361660,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Comparaison de modifications géométriques d'une MRV pour la traction électrique"
+                ],
+                "authFullName_s": [
+                    "M'Hamed Belhadi",
+                    "Guillaume Krebs",
+                    "Claude Marchand",
+                    "Hala Hannoun",
+                    "Xavier Mininger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361659,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Influence de la précontrainte et de la température sur les propriétés électrique du VHB4910"
+                ],
+                "authFullName_s": [
+                    "Saber Hammami",
+                    "Claire Jean-Mistral",
+                    "Fathi Jomni",
+                    "Alain Sylvestre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361658,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Fiabilité de MESFET SiC face aux décharges électrostatiques"
+                ],
+                "authFullName_s": [
+                    "Tanguy Phulpin",
+                    "Karine Isoird",
+                    "David Trémouilles",
+                    "Patrick Austin",
+                    "Javier Leon",
+                    "Miquel Vellvehi",
+                    "Xavier Perpinya",
+                    "Xavier Jorda"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361657,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Etude des Echanges Thermiques par Convection Autour des Têtes des Bobines d'un Alterno-Démarreur Intégré par des Méthodes Numériques de type CFD"
+                ],
+                "authFullName_s": [
+                    "Ayoub Ben Nachouane",
+                    "Abdenour Abdelli",
+                    "Guy Friedrich",
+                    "Stephane Vivier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361656,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Model dynamique et signature du défaut inter-spires intermittent dans les têtes de bobines d'une MSAP"
+                ],
+                "authFullName_s": [
+                    "Najla Haje Obeid",
+                    "Thierry Boileau",
+                    "Babak Nahid Mobarakeh"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361655,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "«You can dance, you can jive...»: Inscription de l’auditeur et pratiques d’écoute dans l’exposition «Abbaworld»"
+                ],
+                "authFullName_s": [
+                    "Gaëlle Crenn"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361654,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Module onduleur de puissance : Modélisation 3D, Estimation des éléments parasites, établissement d'un modèle électrique"
+                ],
+                "authFullName_s": [
+                    "Hocine Daou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361653,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Comparaison d'une modélisation des pertes par commutation d'IGBT basée sur la datasheet à une étude expérimentale"
+                ],
+                "authFullName_s": [
+                    "Dounia Oustad",
+                    "Mickaël Petit",
+                    "Stéphane Lefebvre",
+                    "Dominique Lhotellier",
+                    "Menouar Ameziani"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361652,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Amélioration de la fiabilité d'un convertisseur DC/DC boost entrelacé flottant pour des systèmes pile à combustible et photovoltaïques"
+                ],
+                "authFullName_s": [
+                    "Damien Guilbert",
+                    "Abdoul N'Diaye",
+                    "Patrice Luberda",
+                    "Arnaud Gaillard",
+                    "Abdesslem Djerdir"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361651,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Effet Maxwell-Wagner dans des multicouches: mesure et modèle de la charge d'interface"
+                ],
+                "authFullName_s": [
+                    "Nga Vu",
+                    "Gilbert Teyssedre",
+                    "Severine Le Roy",
+                    "Christian Laurent"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361650,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Convertisseur DC-DC isolé fort courant à fort rapport d'élévation pour l'avion plus électrique"
+                ],
+                "authFullName_s": [
+                    "Julien Brunello",
+                    "François Forest",
+                    "Jean-Jacques Huselstein",
+                    "Pascal Asfaux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361649,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Modélisation des pertes dans les aimants d'un multiplicateur magnétique pour l'éolien"
+                ],
+                "authFullName_s": [
+                    "Melaine Desvaux",
+                    "Roman Le Goff Latimier",
+                    "Hamid Ben Ahmed",
+                    "Bernard Multon",
+                    "Stéphane Sire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361648,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Conception d'un prototype de machine Ultra-Haute Température (500°C)"
+                ],
+                "authFullName_s": [
+                    "Vadim Iosif",
+                    "Noureddine Takorabet",
+                    "Daniel Roger",
+                    "Stéphane Duchesne",
+                    "Farid Meibody-Tabar"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1361647,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Comparaison entre quatre solutions pour échanger de l'énergie entre systèmes de forte capacité de stockage"
+                ],
+                "authFullName_s": [
+                    "Laurent Garnier",
+                    "Daniel Chatroux",
+                    "Sébastien Carcouet",
+                    "Julien Dauchy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361646,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Modélisations orientées CEM d'un convertisseur de puissance pour une optimisation multi-physique"
+                ],
+                "authFullName_s": [
+                    "Jad Taki",
+                    "Florent Robert",
+                    "Mohamed Bensetti",
+                    "Philippe Dessante",
+                    "Daniel Sadarnac"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361645,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Design and optimization of IGBT gate drivers for high insulation voltage up to 30kV"
+                ],
+                "authFullName_s": [
+                    "Sokchea Am",
+                    "Pierre Lefranc",
+                    "David Frey",
+                    "Rachelle Hanna"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361644,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Commande « sans modèle » pour l'asservissement numérique d'un banc de caractérisation magnétique"
+                ],
+                "authFullName_s": [
+                    "Loïc Michel",
+                    "Olivier Ghibaudo",
+                    "Messal Oualid",
+                    "Afef Lebouc",
+                    "Cédric Boudinet",
+                    "François Blache",
+                    "Antoine Labonne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361643,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Dimensionement optimal des systèmes énergétiques intégrant la stratégie de gestion pour une maison raccordée au réseau"
+                ],
+                "authFullName_s": [
+                    "Van Binh Dinh",
+                    "Benoit Delinchant",
+                    "Frédéric Wurtz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361642,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Formulation analytique de la matrice impédance de matériaux composites stratiﬁés anisotropes en ﬁbres de carbone"
+                ],
+                "authFullName_s": [
+                    "Fiacre Djonkone Senghor",
+                    "Guillaume Wasselynck",
+                    "Didier Trichet",
+                    "Gerard Berthiau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361641,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Développement d'une puce instrumentée adaptée à la mesure de température dans les modules de puissance"
+                ],
+                "authFullName_s": [
+                    "Ibrahima Ka",
+                    "Yvan Avenas",
+                    "Laurent Dupont",
+                    "Mickaël Petit"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361640,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Modélisation moyenne fréquence (0-5 kHz) d'une alimentation ferroviaire 25 kV-50 Hz"
+                ],
+                "authFullName_s": [
+                    "Caroline Stackler",
+                    "Florent Morel",
+                    "Philippe Ladoux",
+                    "Piotr Dworakowski"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361638,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Développement d'une batterie Li-Ion pour des applications d'impulsion de forte puissance"
+                ],
+                "authFullName_s": [
+                    "Volker Brommer",
+                    "Oliver Liebfried",
+                    "Sigo Scharnholz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361637,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Méthode de spécification d'un actionneur de positionnement linéaire sur la base d'une machine BLDC et d'une transmission de puissance"
+                ],
+                "authFullName_s": [
+                    "Christophe Gutfrind"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361636,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Actionneur électromagnétique bistable à double sortie alternée pour la désactivation de cylindres d'un moteur à combustion"
+                ],
+                "authFullName_s": [
+                    "Javier Rios Quesada"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361635,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Puces multipôles compactes à RC-IGBT pour l'intégration fractionnée et optimale de cellules de commutation. Evaluation des performances électriques sur PCB."
+                ],
+                "authFullName_s": [
+                    "Adem Lale",
+                    "Nicolas Videau",
+                    "Abdelhakim Bourennane",
+                    "Frédéric Richardeau",
+                    "Emmanuel Sarraute",
+                    "Samuel Charlot",
+                    "Didier Flumian",
+                    "Gilles Brillat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361634,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Comparaison des méthodes de réduction d'ordre POD et Krylov, application à la méthode PEEC"
+                ],
+                "authFullName_s": [
+                    "Mateus Antunes Oliveira Leite",
+                    "Benoit Delinchant",
+                    "Jean Michel Guichon",
+                    "Joao Vasconcellos"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361633,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Isolants organiques hautes températures à base de polyesterimides insaturés - propriétés thermomécaniques et diélectriques"
+                ],
+                "authFullName_s": [
+                    "Louiza Fetouhi",
+                    "Eric Dantras",
+                    "Benoit Petitgas",
+                    "Juan Martinez-Vega"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361632,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Conception préliminaire optimale des systèmes électriques. Une approche par synthèse"
+                ],
+                "authFullName_s": [
+                    "Arnaud Hubert",
+                    "Pierre-Alain Yvars",
+                    "Yann Meyer",
+                    "Laurent Zimmer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361631,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Mécanismes de claquage de diodes bipolaires en SiC - Impact du milieu isolant en surface"
+                ],
+                "authFullName_s": [
+                    "Lumei Wei",
+                    "Marie-Laure Locatelli",
+                    "Bertrand Vergne",
+                    "Pierre Bidan",
+                    "Sorin Dinculescu",
+                    "Sombel Diaham",
+                    "Grégory Grosset",
+                    "Lionel Dupuy",
+                    "Dominique Tournier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361630,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Modélisation thermique en vue du dimensionnement d'un pack batterie, avec prise en compte du couplage électro-thermique pour la caractérisation des pertes électriques"
+                ],
+                "authFullName_s": [
+                    "Nicolas Damay",
+                    "Guy Friedrich",
+                    "Christophe Forgez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361629,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Simulation de solutions alternatives au renforcement du réseau pour le raccordement de producteurs HTA"
+                ],
+                "authFullName_s": [
+                    "Josselin Fournel",
+                    "Alberto Pagnetti",
+                    "Gilles Malarange"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361628,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Comparaison Électromagnétique de deux Machines Polyphasées à Aimants : Application à la chaîne de traction de type Mild Hybrid."
+                ],
+                "authFullName_s": [
+                    "Daoud Ouamara",
+                    "Frédéric Dubas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361627,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Sur l'amélioration des propriétés diélectriques de films polyimides par la nanostructuration"
+                ],
+                "authFullName_s": [
+                    "Sombel Diaham",
+                    "François Saysouk",
+                    "Marie-Laure Locatelli",
+                    "Thierry Lebey"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361626,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "2.sdv.sa.agro",
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "2.sdv.sa.aep"
+                ],
+                "title_s": [
+                    "Note de lecture sur « Afterres 2050 - Scénario d’utilisation des terres agricoles et forestières pour satisfaire les besoins en alimentation, en énergie, en matériaux, et réduire les gaz,à effet de serre"
+                ],
+                "authFullName_s": [
+                    "Thierry Doré"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1361625,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Analyse du vieillissement de la métallisation d'un MOSFET par la distribution du potentiel de source"
+                ],
+                "authFullName_s": [
+                    "Roberta Ruffilli",
+                    "Mounira Berkani",
+                    "Gilles Rostaing",
+                    "Marc Legros",
+                    "Stéphane Lefebvre",
+                    "Philippe Dupuy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361624,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Etude magnétothermique d'un alliage à bas point de Curie en cuisson par induction"
+                ],
+                "authFullName_s": [
+                    "Thierry Waeckerle"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361622,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Dimensionnement optimal de machines synchro-réluctantes performantes: rotor assisté ou \"Dual Phase materials\"?"
+                ],
+                "authFullName_s": [
+                    "Leila Nguimpi Langue",
+                    "Guy Friedrich",
+                    "Stephane Vivier",
+                    "Khadija El Kadri Benkara"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361620,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Optimisation et contrôle de la transition dynamique de percolation au sein de matériaux nanostructurés"
+                ],
+                "authFullName_s": [
+                    "Mathieu Badard",
+                    "Anthony Combessis",
+                    "Arnaud Allais",
+                    "Lionel Flandin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361619,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Enroulement amortisseur pour la réduction des bruits et vibrations d'une machine asynchrone alimentée par MLI"
+                ],
+                "authFullName_s": [
+                    "Grégory Bauw",
+                    "François Balavoine",
+                    "Bertrand Cassoret",
+                    "Olivier Ninet",
+                    "Raphael Romary"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361618,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Modélisation en ﬂux d'énergie d'une batterie Li-Ion en vue d'une optimisation technico économique d'un micro-réseau intelligent"
+                ],
+                "authFullName_s": [
+                    "David Hernandez-Torres",
+                    "Christophe Turpin",
+                    "Xavier Roboam",
+                    "Bruno Sareni"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361617,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Convertisseur DC-DC à transistors GaN entrelacé couplé par TICs monolithiques frittés par SPS"
+                ],
+                "authFullName_s": [
+                    "Adrien Mercier",
+                    "Fabien Adam",
+                    "Denis Labrousse",
+                    "Bertrand Revol",
+                    "Oleksandr Pasko",
+                    "Frederic Mazaleyrat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361616,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Analyse et modélisation du vieillissement d'un stack de Pile à Combustible PEM H2/O2"
+                ],
+                "authFullName_s": [
+                    "Malik Tognan",
+                    "Christophe Turpin",
+                    "Olivier Rallières",
+                    "Olivier Verdu",
+                    "Karine Lombard",
+                    "André Rakotondrainibe"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361615,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Limites des modèles analytiques usuels pour le calcul des fréquences propres des machines électriques"
+                ],
+                "authFullName_s": [
+                    "Guillaume Verez",
+                    "Christophe Espanet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361614,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Commande par platitude d'une MSAP hautes vitesses saturable"
+                ],
+                "authFullName_s": [
+                    "Jérémy Cuenot",
+                    "Sami Zaim",
+                    "Serge Pierfederici",
+                    "Eric Monmasson",
+                    "Babak Nahid Mobarakeh",
+                    "Régis Meuret",
+                    "Farid Meibody-Tabar"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361613,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Effet d'un multiplicateur planétaire sur les signaux électriques de la machine à induction à rotor bobiné dans la production d'énergie éolienne"
+                ],
+                "authFullName_s": [
+                    "Mohammad Hoseintabar Marzebali",
+                    "Shahin Hedayati Kia",
+                    "Humberto Henao",
+                    "Gérard-André Capolino",
+                    "Jawad Faiz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361612,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Augmentation de la distance de transport de l'énergie offshore par câble sous-marin en basse fréquence"
+                ],
+                "authFullName_s": [
+                    "Antony Dasco",
+                    "Seddik Bacha",
+                    "Bertrand Raison"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361611,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Caractérisation électrique haute fréquence d'un fil de cuivre possédant un revêtement de Nickel"
+                ],
+                "authFullName_s": [
+                    "Stéphane Duchesne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361609,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Comparaison de Performances de Différentes Structures de Machines Synchrones à Aimants Permanents (MSAP) Polyphasées en Mode Normal et en Modes Dégradés en Vitesse Variable avec Défluxage pour des Applications Hydroliennes"
+                ],
+                "authFullName_s": [
+                    "Ousmane Fall",
+                    "Jean-Frédéric Charpentier",
+                    "Ngac-Ky Nguyen",
+                    "Paul Letellier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361608,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Prototypage rapide de commande à base de DSP : Application à un soft starter"
+                ],
+                "authFullName_s": [
+                    "Grace Gandanegara",
+                    "Lionel Dorbais",
+                    "Delcho Penkov"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361607,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Critère de stabilité analytique pour les régulations locales de tension des producteurs décentralisés"
+                ],
+                "authFullName_s": [
+                    "Marjorie Cosson",
+                    "Herve Gueguen",
+                    "Pierre Haessig",
+                    "Didier Dumur",
+                    "Cristina Stoica Maniu",
+                    "Vincent Gabrion",
+                    "Gilles Malarange"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361606,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Dimensionnement des éléments passifs d'un convertisseur cascadé en vue de l'intégration d'organes de stockage au réseau"
+                ],
+                "authFullName_s": [
+                    "Alexis Mahe",
+                    "Jean-Christophe Olivier",
+                    "Azeddine Houari",
+                    "Mohamed Machmoum",
+                    "Jérôme Deniaud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361604,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Génératrice Synchrone à Aimants multi-étoile pour améliorer le facteur de charge d'une hydrolienne"
+                ],
+                "authFullName_s": [
+                    "Franck Scuiller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361603,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Mise en place d'un packaging 3D collectif de composants de puissance à structure verticale"
+                ],
+                "authFullName_s": [
+                    "Bastien Letowski",
+                    "Julie Widiez",
+                    "Nicolas Rouger",
+                    "Marc Rabarot",
+                    "William Vandendaele",
+                    "Bruno Imbert",
+                    "Jean-Christophe Crebier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361602,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Contributions aux circuits de « gate-driver » dédiés aux transistors de puissance à forte vitesse de commutation dans un environnement haute temperature"
+                ],
+                "authFullName_s": [
+                    "Van-Sang Nguyen",
+                    "Thanh-Long Le",
+                    "Farshid Sarrafin-Ardebili",
+                    "Davy Colin",
+                    "Ngoc-Duc To",
+                    "Nicolas Rouger",
+                    "Pierre Lefranc",
+                    "Yves Lembeye",
+                    "Jean-Daniel Arnould",
+                    "Nicolas Carrao",
+                    "Bruno Allard",
+                    "Jean-Christophe Crebier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361601,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Impact de la forme des spires de PCB sur les pertes HF des composants planar"
+                ],
+                "authFullName_s": [
+                    "Jean Sylvio Ngoua Teu Magambo",
+                    "Reda Bakri",
+                    "Xavier Margueron",
+                    "Philippe Le Moigne",
+                    "Arnaud Mahe",
+                    "Taoufik Bensalah"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361600,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Méthode globale de pré-dimensionnement de convertisseurs"
+                ],
+                "authFullName_s": [
+                    "Corentin Rizet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361599,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Pertes magnétiques des systèmes électromagnétiques : Circuit Magnétique Equivalent & Modèle LS"
+                ],
+                "authFullName_s": [
+                    "Oualid Messal",
+                    "Frédéric Dubas",
+                    "Afef Kedous-Lebouc",
+                    "Christian Chillet",
+                    "Christophe Espanet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361598,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "FilSiC – De l'épitaxie au module de puissance"
+                ],
+                "authFullName_s": [
+                    "Philippe Cussac",
+                    "Cyrille Duchesne",
+                    "Jean-Baptiste Fonder",
+                    "Dominique Tournier",
+                    "Pierre Brosselard",
+                    "Grégory Grosset",
+                    "Lionel Dupuy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361597,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Modèle à base de réseau de réluctances pour machine synchrone : prise en compte du déplacement"
+                ],
+                "authFullName_s": [
+                    "Christian Chillet",
+                    "Marylin Fassenet",
+                    "Guilherme Bueno Mariani",
+                    "Lauric Garbuio",
+                    "Nicolas Voyer",
+                    "Abdelhadi Besri"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361596,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Simulation numérique et caractérisation de composants de puissance en diamant"
+                ],
+                "authFullName_s": [
+                    "Nicolas Rouger",
+                    "Aurélien Maréchal",
+                    "Gauthier Chicot",
+                    "Gaetan Perez",
+                    "Thanh-Toan Pham",
+                    "Pierre Lefranc",
+                    "Pierre-Olivier Jeannin",
+                    "Yvan Avenas",
+                    "David Eon",
+                    "Julien Pernot",
+                    "Etienne Gheeraert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361595,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Optimisation d'une structure de conversion DC-DC réversible pour application aéronautique"
+                ],
+                "authFullName_s": [
+                    "Maximin Blanc",
+                    "Yves Lembeye",
+                    "Jean-Paul Ferrieux",
+                    "Corentin Rizet",
+                    "Arnaud Mahe",
+                    "Stephane Guguen",
+                    "Taoufik Bensalah"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1361594,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Générateur photovolatique avec une commande directe de puissance connecté et avec adjonction de services au réseau de distribution"
+                ],
+                "authFullName_s": [
+                    "Jean-Paul Gaubert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1361592,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Des mots pour le dire : faire l’expérience de la violence au quotidien. Propositions pour une réflexivité critique des stratégies, pratiques et analyses du terrain à partir d’enquêtes menées auprès des femmes kurdes résistantes, en Turquie et en Irak (2015-2016)"
+                ],
+                "authFullName_s": [
+                    "Sarah Guillemet",
+                    "Leïla Porcher"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFY65gF"
+}

@@ -1,0 +1,1991 @@
+{
+    "response": {
+        "numFound": 515923,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 778714,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "L'Historia silensis et sa méthode historique"
+                ],
+                "authFullName_s": [
+                    "Hélène Sirantoine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778711,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Place des systèmes à base de riz pluvial dans les exploitations agricoles au Vakinankaratra, hauts plateaux et moyen ouest."
+                ],
+                "authFullName_s": [
+                    "E. Penot",
+                    "Y. Tokarski",
+                    "A. Rakotofiringa",
+                    "A. Bodoy",
+                    "A. Ahmim-Richard",
+                    "M.-H. Dabat",
+                    "T. Rahahison",
+                    "A. Rakoto Harivony",
+                    "S. Razafimandimby"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 778710,
+                "title_s": [
+                    "Vers le développement d'un simulateur matériel pour les canaux de propagation MIMO"
+                ],
+                "authFullName_s": [
+                    "Sylvie Picol",
+                    "Hanna Farhat",
+                    "Gheorghe Zaharia",
+                    "Ghais El Zein"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778707,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Place des systèmes à base de riz pluvial dans les exploitations agricoles au lac Alaotra."
+                ],
+                "authFullName_s": [
+                    "E. Penot",
+                    "R. Domas",
+                    "H. Andriamalala",
+                    "B. Dupin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 778706,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Des savoirs aux savoirs faire : l'innovation alimente un front pionner : le lac Alaotra de 1897 à nos jours."
+                ],
+                "authFullName_s": [
+                    "E. Penot",
+                    "P. Garin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778705,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-gen"
+                ],
+                "title_s": [
+                    "Résolution de l’équation de transport de Boltzmann pour les phonons et applications",
+                    "Solving Boltzmann transport equation for phonons and applications"
+                ],
+                "authFullName_s": [
+                    "Hani Hamzeh"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778703,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Charal"
+                ],
+                "authFullName_s": [
+                    "Mohamed Merdji"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 778702,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "L'accident du travail dans le monde de l'intérim"
+                ],
+                "authFullName_s": [
+                    "Sandrine Frémeaux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 778701,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Monsieur D"
+                ],
+                "authFullName_s": [
+                    "Jean-Luc Castro"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 778700,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "L'éthique d'entreprise : réalité ou oxymore ?"
+                ],
+                "authFullName_s": [
+                    "Jean-Luc Castro"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 778698,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Evaluation de la Performance des Réglages de Fréquence des Eoliennes à l’Echelle du Système Electrique : Application à un Cas Insulaire",
+                    "Performance Evaluation of Frequency Response from Wind Turbines on a System-Wide Scale : Application onto an Isolated Power System Case"
+                ],
+                "authFullName_s": [
+                    "Ye Wang"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 778697,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "La biomasse dans les systèmes de culture de riz pluvial en SCV."
+                ],
+                "authFullName_s": [
+                    "K. Naudin",
+                    "J.-M. Douzet",
+                    "M. Rakotosolofo",
+                    "N. R. S. Andriamarosoa Ratsimbazafy",
+                    "H. Andriamalala",
+                    "R. Domas",
+                    "B. Dupin",
+                    "P. Hyac"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 778690,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Place des systèmes à base de riz pluvial dans les exploitations agricoles dns la région du Sud-Est."
+                ],
+                "authFullName_s": [
+                    "J. Guegan",
+                    "A. Pepin",
+                    "E. Penot",
+                    "S. Razafimandimby"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 778688,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Usages et fonctions des formes transémiotiques dans les discours sur la création artistique"
+                ],
+                "authFullName_s": [
+                    "Françoise Dufour",
+                    "Melissa Barkat-Defradas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778687,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Caractérisation des itinéraires techniques de riz pluvial encadrés par le projet AVSF/ANAE dans la commune d'Amparafaravola de la rive ouest du Lac Alaotra."
+                ],
+                "authFullName_s": [
+                    "B. Dupin",
+                    "T. H. Rabenandro",
+                    "P. Hyac",
+                    "E. Penot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 778686,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Salaire d'embauche, négociation du contrat de travail et intermédiaires du recrutement"
+                ],
+                "authFullName_s": [
+                    "Christian Bessy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778684,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Systèmes de riziculture pluviale innovants. Le cas de la Rive Est du Lac Alaotra."
+                ],
+                "authFullName_s": [
+                    "R. Domas",
+                    "E. Penot",
+                    "H. Andriamalala"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 778679,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.info",
+                    "0.info",
+                    "1.info.info-ir",
+                    "0.scco",
+                    "1.scco.comp"
+                ],
+                "title_s": [
+                    "{{Citation needed}}: The dynamics of referencing in Wikipedia"
+                ],
+                "authFullName_s": [
+                    "Chih-Chun Chen",
+                    "Camille Roth"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778675,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Temps de réaction et identification perceptuelle des langues: étude préparatoire en vue de l'optimisation d'un protocole expérimental en IRMf"
+                ],
+                "authFullName_s": [
+                    "Melissa Barkat-Defradas",
+                    "Jorge Guterrez-Celaya",
+                    "Samia Belaid"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778671,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Eric Chevillard : l'animal satirique"
+                ],
+                "authFullName_s": [
+                    "Emmanuel Samé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 778670,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Thèse en Médecine Générale : entre rite de passage et blocages : revue de littérature"
+                ],
+                "authFullName_s": [
+                    "Marie-Noëlle Gassiot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 778669,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Peintures romaines antiques et faussaires. Sources et techniques.",
+                    "Ancient Roman Paintings and Forgers. Origins and technology of the fake."
+                ],
+                "authFullName_s": [
+                    "Delphine Burlot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778668,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Diversité et gestion des vers blancs (Coleoptera, Scarabeoidea) en riziculture pluviale sur les Hautes Terres malgaches."
+                ],
+                "authFullName_s": [
+                    "R. Randriamanantsoa",
+                    "B. Quaranta",
+                    "H.-P. Aberlenc",
+                    "E. Rafamatanantsoa",
+                    "K. Naudin",
+                    "A. Ratnadass",
+                    "B. Vercambre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 778665,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Henry Bauchau et l'animal apocalyptique"
+                ],
+                "authFullName_s": [
+                    "Isabelle Vanquaethem"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 778662,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Rôle et place du riz pluvial dans les exploitations agricoles à Madagascar. Le cas du lac Alaotra et du Vakinankaratra."
+                ],
+                "authFullName_s": [
+                    "S. Razafimandimby",
+                    "E. Penot",
+                    "H. Andriamalala",
+                    "R. Domas",
+                    "T. Heriniaina Rabenandro",
+                    "J. Rasolomanjaka",
+                    "T. Rahahison",
+                    "A. Rakoto Harivony",
+                    "Y. Tokarski",
+                    "A. Rakotofiringa"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 778661,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "D'un étiquetage à l'autre. Le mouvement anti-sweatshop entre dénonciation des entreprises et équipement des consommateurs"
+                ],
+                "authFullName_s": [
+                    "Pauline Barraud de Lagerie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778660,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Générations et frustration : deux pistes d'interprétation du racisme policier"
+                ],
+                "authFullName_s": [
+                    "Jérémie Gauthier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778658,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Des corps étrange(r)s dans la police ?"
+                ],
+                "authFullName_s": [
+                    "Jérémie Gauthier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778656,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Animaux: les autres moi de Claude Simon"
+                ],
+                "authFullName_s": [
+                    "Marie Miguet-Ollagnier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778655,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Les discours de René Lévesque au regard de la statistique lexicale"
+                ],
+                "authFullName_s": [
+                    "Denis Monière",
+                    "Dominique Labbé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778654,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Contrôle agro écologique des foreurs des tiges."
+                ],
+                "authFullName_s": [
+                    "L.H. Raveloson Ravaomanarivo",
+                    "A. Ranaivoson"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 778652,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.es",
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Héritages glaciaires, périglaciaires et évolution récente : le cas du Nevado Coropuna (Andes centrales, sud du Pérou)"
+                ],
+                "authFullName_s": [
+                    "Marie Emilie Forget"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778651,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-mc",
+                    "0.info",
+                    "1.info.info-ir",
+                    "0.info",
+                    "1.info.info-iu"
+                ],
+                "title_s": [
+                    "Recommandation de parcours de formation dans un contexte mobile"
+                ],
+                "authFullName_s": [
+                    "Fayrouz Soualah-Alila",
+                    "Christophe Nicolle",
+                    "Florence Mendes"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778650,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "L'affaire Spectrum. La \" responsabilité sociale des entreprises \" à l'épreuve d'un drame"
+                ],
+                "authFullName_s": [
+                    "Pauline Barraud de Lagerie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778649,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Origines contrôlées. La police à l'épreuve de la question minoritaire à Paris et à Berlin. Geprüfte Herkunft. Polizeiliches Handeln gegenüber Minderheiten in Paris und Berlin.",
+                    "Background check. Police and minorities in Paris and Berlin."
+                ],
+                "authFullName_s": [
+                    "Gauthier Jérémie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778647,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Gestion intégrée de la pyriculariose du riz pluvial."
+                ],
+                "authFullName_s": [
+                    "H. Raveloson",
+                    "M. Sester"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 778646,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Oniris. Raconter un monde"
+                ],
+                "authFullName_s": [
+                    "Vinciane Zabban"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778645,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Les variétés et la production de riz pluvial : les variétés en milieu réel et les efforts de sélection."
+                ],
+                "authFullName_s": [
+                    "A. Ramanantsoanirina",
+                    "T. Radanielina"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 778644,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.es",
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Les grands projets hydroélectriques du Paraná, potentiels et devenir"
+                ],
+                "authFullName_s": [
+                    "Marie Emilie Forget"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778642,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Jusqu'ou s'interesser aux papiers. Approche pragmatique du travail administratif"
+                ],
+                "authFullName_s": [
+                    "Jean-Marc Weller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778641,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Dynamique de l'azote en riz pluvial."
+                ],
+                "authFullName_s": [
+                    "J. Rakotoarisoa",
+                    "J. Dusserre",
+                    "J.-M. Douzet",
+                    "E. Scopel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 778640,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Poétiques de la répétition",
+                    "Poetic of the repetition"
+                ],
+                "authFullName_s": [
+                    "Iracema Barbosa de Almeida Lecourt"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778639,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Les souffrances des fonctionnaires"
+                ],
+                "authFullName_s": [
+                    "Jean-Marc Weller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778637,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Fonctionnement biologique des sols en riz pluvial."
+                ],
+                "authFullName_s": [
+                    "B. Rabary",
+                    "E. Scopel",
+                    "K. Naudin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 778636,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Comment décrire ce qu'on ne voit pas. La délibération des juges de proximité au travail"
+                ],
+                "authFullName_s": [
+                    "Jean-Marc Weller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778634,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Problèmes et gestion de la fertilité en riz pluvial."
+                ],
+                "authFullName_s": [
+                    "T. Razafimbelo",
+                    "E. Scopel",
+                    "J.-M. Douzet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 778633,
+                "title_s": [
+                    "Transmission d'images par voie ionosphérique : une application de l'algorithme C.M.A."
+                ],
+                "authFullName_s": [
+                    "Clency Perrine",
+                    "Yvon Erhel",
+                    "Dominique Lemur",
+                    "Alain Bourdillon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778631,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "La modélisation mathématique des réseaux logistiques : procédés divergents et positionnement par anticipation. Application à l'industrie du bois d'œuvre"
+                ],
+                "authFullName_s": [
+                    "Didier Vila"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 778630,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Comment \"mettre au travail\" l'usager?"
+                ],
+                "authFullName_s": [
+                    "Jean-Marc Weller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778629,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Problématique de la production de riz pluvial à Madagascar."
+                ],
+                "authFullName_s": [
+                    "J. Rakotoarisoa",
+                    "L.H. Raveloson Ravaomanarivo",
+                    "E. Scopel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 778628,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.astr",
+                    "2.phys.astr.he",
+                    "0.sdu",
+                    "1.sdu.astr",
+                    "2.sdu.astr.he"
+                ],
+                "title_s": [
+                    "Variabilité des blazars détectés par le télescope spatial Fermi-LAT Etude de 3C 454.3 et développement d'une méthode de génération de courbes de lumière optimisées."
+                ],
+                "authFullName_s": [
+                    "L. Escande"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778626,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Le Striga, maîtrise par les systèmes de culture."
+                ],
+                "authFullName_s": [
+                    "A. P. Andrianaivo",
+                    "R. Michellon",
+                    "K. Naudin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 778625,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Le travail à l'ère des procédures dans le capitalisme contemporain : la qualité de service contractualisée dans le logement social, entre \"machines\" et place laissée au travail"
+                ],
+                "authFullName_s": [
+                    "Pascal Ughetto"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778623,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.info",
+                    "1.info.info-ts"
+                ],
+                "title_s": [
+                    "Des communications filaires fiables. Application du précodage linéaire"
+                ],
+                "authFullName_s": [
+                    "Jean-Yves Baudais"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778621,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Etude expérimentale de la perméabilité du béton sous conditions thermiques et hydriques variables",
+                    "Experimental study of the permeability of concrete under variable thermal and hydric conditions"
+                ],
+                "authFullName_s": [
+                    "Wei Chen"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778618,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Valeur du service, valeurs des agents"
+                ],
+                "authFullName_s": [
+                    "Pascal Ughetto"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778616,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gest-risq"
+                ],
+                "title_s": [
+                    "SARGOS : Système d'Alerte et Réponse Graduée Off Shore"
+                ],
+                "authFullName_s": [
+                    "Marie-Annick Giraud",
+                    "Benjamin Alhadef",
+                    "Franck Guarnieri",
+                    "Aldo Napoli",
+                    "Michel Bottala-Gambetta",
+                    "Denis Chaumartin",
+                    "Michel Philips",
+                    "Michel Morel",
+                    "Christophe Imbert",
+                    "Eric Itcia",
+                    "David Bonacci",
+                    "Patrice Michel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778614,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Le gardien est dans les étages. Les lieux, la tâche et les conditions de la présence au travail"
+                ],
+                "authFullName_s": [
+                    "Pascal Ughetto"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778611,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Le Grand Paris à Paris Est. Intervention à l'occasion de l'exposition itinérante du Grand Pari(s)"
+                ],
+                "authFullName_s": [
+                    "Georges Ribeill"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778604,
+                "domain_s": [
+                    "0.sde"
+                ],
+                "title_s": [
+                    "Impact du changement climatique sur la sècheresse et l’eau du sol en France : les résultats du projet CLIMSEC"
+                ],
+                "authFullName_s": [
+                    "Jean-Michel Soubeyroux",
+                    "N. Kitova",
+                    "M. Blanchard",
+                    "J.P. Vidal"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778599,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gest-risq"
+                ],
+                "title_s": [
+                    "TAMARIS : Traitement et Authentification des MenAces et RISques en mer"
+                ],
+                "authFullName_s": [
+                    "Michel Morel",
+                    "Vincent Flori",
+                    "Claire Saurel",
+                    "Olivier Poirel",
+                    "Aldo Napoli",
+                    "Pierre Salom",
+                    "Gwenaele Proutiere-Maulion"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 778598,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Le jeu de mots comme procédé de détournement du pathos dans Windows on the World de Frédéric Beigbeder"
+                ],
+                "authFullName_s": [
+                    "Aurélie Lagadec"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 778595,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "La mobilité des évêques de Coutances et le gouvernement épiscopal dans la province ecclésiastique de Rouen (IXe-milieu XIe siècle)"
+                ],
+                "authFullName_s": [
+                    "Eric Van Torhoudt"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778592,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Jeu de mots et ironie. Aspects constructifs et déconstructifs de la connotation dans le calembour de Francisco Gómez de Quevedo : \"Entre el clavel blanco y la rosa roja, su Majestad escoja"
+                ],
+                "authFullName_s": [
+                    "Sandra Hochard-Bihannic"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 778589,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "D'une railway-mania à l'autre. Permanence ou récurrence d'un \"modèle ferroviaire français\"?"
+                ],
+                "authFullName_s": [
+                    "Georges Ribeill"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778584,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Les contributions de Vauthier aux débats et enjeux de la politique ferroviaire française"
+                ],
+                "authFullName_s": [
+                    "Georges Ribeill"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778581,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "La simulation croisée pour accéder aux connaissances professionnelles didactiques locales (LPCK) acquises par l'expérience"
+                ],
+                "authFullName_s": [
+                    "Ludovic Morge"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 778580,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Sociologies de l'expertise et mise en visibilité de l'action."
+                ],
+                "authFullName_s": [
+                    "Yann Bérard",
+                    "Renaud Crespin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778579,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Proudhon, critique des chemins de fer"
+                ],
+                "authFullName_s": [
+                    "Georges Ribeill"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778578,
+                "domain_s": [
+                    "0.chim",
+                    "1.chim.theo"
+                ],
+                "title_s": [
+                    "Complexation des métaux par les substances humiques. Etude de modèles par spectroscopie et chimie quantique"
+                ],
+                "authFullName_s": [
+                    "S. Say-Liang-Fat",
+                    "J.P. Cornard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778577,
+                "title_s": [
+                    "Polarization Switching, nonlinear dynamics and chaos in Quantum Dot VCSEL"
+                ],
+                "authFullName_s": [
+                    "Marc Sciamanna",
+                    "Martin Virte",
+                    "Hugo Thienpont",
+                    "Krassimir Panajotov"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 778575,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Répressions dans les chemins de fer français : une mise en perspective, des compagnies à la SNCF (1938)"
+                ],
+                "authFullName_s": [
+                    "Georges Ribeill"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778571,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Les actions de propagande des grands réseaux : de grands moyens pour une efficacité limitée?"
+                ],
+                "authFullName_s": [
+                    "Georges Ribeill"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778569,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Remarques sur les premiers usages du français dans les chartes normandes du XIIIe siècle \", Mélanges offerts à Catherine Bougy"
+                ],
+                "authFullName_s": [
+                    "Christophe Maneuvrier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778568,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.sdv",
+                    "1.sdv.spee"
+                ],
+                "title_s": [
+                    "France: Implementing homogeneous patient groups in a mixed market"
+                ],
+                "authFullName_s": [
+                    "Martine Bellanger",
+                    "Zeynep Or"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778567,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Handicap à la nouveauté et seniors"
+                ],
+                "authFullName_s": [
+                    "Cécile Fonrouge",
+                    "Fabienne Bornard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 778565,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Utilisation de la DG-FDTD pour un calcul de dosimétrie dans un problème fortement multiéchelle : détermination du DAS oeil pour une personne située à proximité d'une source HF/VHF embarquée sur un véhicule"
+                ],
+                "authFullName_s": [
+                    "Zakaria Guelilia",
+                    "Renaud Loison",
+                    "Raphaël Gillard",
+                    "Alexandre Laisné"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778564,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Le \"mai 68\" des cheminots. D'une gare parisienne à l'autre, une lecture politique"
+                ],
+                "authFullName_s": [
+                    "Georges Ribeill"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778561,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Santé, Grandes tendances"
+                ],
+                "authFullName_s": [
+                    "Martine-Marie Bellanger",
+                    "Philippe Mossé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778559,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Les exploitants de chemins de fer dans leur environnement industriel et étatique. Les trois âges du système ferroviaire français"
+                ],
+                "authFullName_s": [
+                    "Georges Ribeill"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778555,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.mi"
+                ],
+                "title_s": [
+                    "Mise en évidence des mécanismes de transformation des interstratifiés illite/smectite au cours de la diagenèse"
+                ],
+                "authFullName_s": [
+                    "Bruno Lanson"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778554,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "De la culture au capital social. Le tiers-secteur et la reconversion économique des liens culturels"
+                ],
+                "authFullName_s": [
+                    "Lionel Arnaud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778553,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "La violence à l'oeuvre : Marina Abramovic"
+                ],
+                "authFullName_s": [
+                    "Alain Quemin",
+                    "C. Levy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778552,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "D'un palmarès international de l'art contemporain à celui des pays. Classement des oeuvres, des artistes, des manifestations culturelles et des places de marché"
+                ],
+                "authFullName_s": [
+                    "Alain Quemin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778550,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "L'utilisation des palmarés indigènes en sociologie aux fins d'objectivation : l'exemple de la dimension internationale"
+                ],
+                "authFullName_s": [
+                    "Alain Quemin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778544,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ir"
+                ],
+                "title_s": [
+                    "MeTSI : Une Méthode de Transformation des Services Intentionnels",
+                    "A Transformation Method For Intentional Services"
+                ],
+                "authFullName_s": [
+                    "Yves-Roger Nehan"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 778532,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Mythe pour mythe... Dans le sillage du surréalisme"
+                ],
+                "authFullName_s": [
+                    "Françoise Levaillant"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778525,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Mères avant tout ? L'image des femmes dans la Seconde Guerre mondiale à travers la presse de la Libération"
+                ],
+                "authFullName_s": [
+                    "Charlène Voreppe"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 778522,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mefl",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mefl"
+                ],
+                "title_s": [
+                    "Amélioration de la portance aérodynamique d'un profil"
+                ],
+                "authFullName_s": [
+                    "Azeddine Kourta",
+                    "Nicolas Mazellier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 778519,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.acou"
+                ],
+                "title_s": [
+                    "Calcul du rayonnement acoustique de structures à partir de données vibratoires par une méthode de sphère équivalente"
+                ],
+                "authFullName_s": [
+                    "Laurent Bouchet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778516,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.acou"
+                ],
+                "title_s": [
+                    "Méthode d'identification des efforts appliqués sur une structure vibrante, par résolution et régularisation du problème inverse",
+                    "Method of identification of forces applied on a vibrating structure, by resolution and regularization of the inverse problem"
+                ],
+                "authFullName_s": [
+                    "Charles Pezerat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778515,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.acou"
+                ],
+                "title_s": [
+                    "Description par mobilités énergétiques des échanges vibratoires dans les systèmes couplés",
+                    "Description of the vibrational exchanges un coupled systems using the energetic mobilities"
+                ],
+                "authFullName_s": [
+                    "Giovanni Orefice"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778509,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info",
+                    "2.shs.info.autr"
+                ],
+                "title_s": [
+                    "Humanisme numérique et littératies"
+                ],
+                "authFullName_s": [
+                    "Olivier Le Deuff"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778508,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.envir",
+                    "0.shs",
+                    "1.shs.gestion",
+                    "0.sde",
+                    "1.sde.es"
+                ],
+                "title_s": [
+                    "Problématiques et méthodes pour un observatoire partagé des paysages de Gironde"
+                ],
+                "authFullName_s": [
+                    "Eva Bigando",
+                    "Serge Briffaud",
+                    "Bernard Davasse",
+                    "Alexandre Moisset"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778507,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Quels territoires pour l'action ? Mobilisations locales et régimes de territorialité"
+                ],
+                "authFullName_s": [
+                    "Patrice Melé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778505,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Chapitre 3: Les joints de grains dans la déformation à froid"
+                ],
+                "authFullName_s": [
+                    "Colette Rey",
+                    "Denis Solas",
+                    "Olivier Fandeur"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778504,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.envir",
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Transactions territoriales, Patrimoine, environnement et actions collectives au Mexique"
+                ],
+                "authFullName_s": [
+                    "Patrice Melé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778500,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ai"
+                ],
+                "title_s": [
+                    "Détection de communautés d'intérêt et recommandation sociale par leaders"
+                ],
+                "authFullName_s": [
+                    "Armelle Brun",
+                    "Anne Boyer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778498,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ai"
+                ],
+                "title_s": [
+                    "Exploitation du skipping pour la modélisation prédictive des usages du web. Vers une meilleure prise en compte du bruit"
+                ],
+                "authFullName_s": [
+                    "Geoffray Bonnin",
+                    "Armelle Brun",
+                    "Anne Boyer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 778493,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ai"
+                ],
+                "title_s": [
+                    "Utilisation d'invariants pour une médiation inter-domaines de modèles utilisateurs : ressources invariantes et invariants sémantiques"
+                ],
+                "authFullName_s": [
+                    "Emilien Perrin",
+                    "Armelle Brun",
+                    "Boyer Anne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFdj/wC"
+}

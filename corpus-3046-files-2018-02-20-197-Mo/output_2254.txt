@@ -1,0 +1,1983 @@
+{
+    "response": {
+        "numFound": 515923,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 964711,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Étude de la tolérance au froid chez Hevea Brasiliensis"
+                ],
+                "authFullName_s": [
+                    "Jing Mai",
+                    "Stéphane Herbette",
+                    "Eric Cavaloc",
+                    "Jean-Louis Julien",
+                    "Thierry Ameglio",
+                    "Patricia Roeckel-Drevet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964710,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "L'évolution au fil des générations des droits à retraite acquis en début de carrière. Avant 30 ans, de moins en moins de droits acquis et de différences entre catégories socioprofessionnelles"
+                ],
+                "authFullName_s": [
+                    "Benoit Rapoport"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964709,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Modélisation physique de la durée d'humectation de feuilles de pommier"
+                ],
+                "authFullName_s": [
+                    "Alexandre Leca"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964704,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Modélisation de la dynamique de résistance au gel du noyer et relation avec la phénologie"
+                ],
+                "authFullName_s": [
+                    "Guillaume Charrier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964699,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Archéologie pastorale en vallée d'Ossau, rapport final d'opération, campagne 2006, sondages et prospections"
+                ],
+                "authFullName_s": [
+                    "Christine Rendu",
+                    "Carine Calastrenc",
+                    "Mélanie Le Couédic"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964697,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Etude des étapes précoces de la mécanoperception chez le peuplier : approches biomécanique et moléculaire"
+                ],
+                "authFullName_s": [
+                    "Ludovic Martin",
+                    "Catherine Coutand",
+                    "Nathalie Fournier-Leblanc",
+                    "Catherine Lenne",
+                    "Jean-Louis Julien"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964696,
+                "title_s": [
+                    "Les géosites endokarstiques : la construction d'un inventaire spécifique pour un patrimoine singulier... et pluriel !"
+                ],
+                "authFullName_s": [
+                    "Didier Cailhol",
+                    "Fabien Hoblea",
+                    "Vincent Bichet",
+                    "Jean-Yves Bigot",
+                    "Laurent Bruxelles",
+                    "Benoît Losson",
+                    "Joël Rodet",
+                    "Nathalie Vanara"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964695,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Biomécanique de la croissance primaire des cellules et organes végétaux : Dynamique et Régulations mécanoperceptives"
+                ],
+                "authFullName_s": [
+                    "Bruno Moulia"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964694,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Etude de la résilience à la sécheresse chez le hêtre (Fagus sylvatica L.): plasticité phénotypique et variabilité génétique de la vulnérabilité à la cavitation"
+                ],
+                "authFullName_s": [
+                    "Rémi Wortemann",
+                    "Stéphane Herbette",
+                    "Alexis Ducousso",
+                    "Ricardo Alia",
+                    "Dusan Gomory",
+                    "Patricia Roeckel-Drevet",
+                    "Hervé Cochard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964691,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv",
+                    "2.sdv.bv.bot"
+                ],
+                "title_s": [
+                    "Comment les arbres tiennent ils debout longtemps ? Gestion biologique de la sécurité au vent"
+                ],
+                "authFullName_s": [
+                    "Bruno Moulia"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964687,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.neu",
+                    "0.shs",
+                    "1.shs.psy"
+                ],
+                "title_s": [
+                    "Evaluation of a visual biofeedback on the postural control in Parkinson's disease"
+                ],
+                "authFullName_s": [
+                    "Sébastien Caudron",
+                    "Michel Guerraz",
+                    "Alexandre Eusebio",
+                    "J.-P. Gros,",
+                    "Jean-Philippe Azulay",
+                    "Marianne Vaugoyeau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964685,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Les végétaux aussi ont le sens de la rectitude."
+                ],
+                "authFullName_s": [
+                    "Bruno Moulia"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964680,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Changements climatiques globaux et levée d'endodormance : optimisation des modèles de levée d'endodormance en utilisant une longue série de données de dates de sortie d'endodormance issues du test bouture de noeud isolé."
+                ],
+                "authFullName_s": [
+                    "Marc Bonhomme",
+                    "Rémy Rageau",
+                    "André Lacointe"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964679,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Plasticité phénotypique des caractéristiques hydrauliques du hêtre"
+                ],
+                "authFullName_s": [
+                    "Tete Severien Barigah",
+                    "Hervé Cochard",
+                    "Roland Huc",
+                    "Michel Ducrey",
+                    "Stéphane Herbette"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964678,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Quelques conséquences des changements climatiques sur la biologie des arbres"
+                ],
+                "authFullName_s": [
+                    "Thierry Ameglio"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964675,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Leadership et diversité démographique dans les organisations : l'influence de l'âge sur les relations LMX, le leadership transformationnel, la satisfaction au travail et l'engagement affectif.",
+                    "Leadership and Demographic Diversity in Organizations : The Influence of Age on LMX Relationships, Transformational Leadership, Job Satisfaction, and Affective Commitment"
+                ],
+                "authFullName_s": [
+                    "Danut Casoinic"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964672,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "PépiPIAF : une nouvelle génération de biocapteurs pour le pilotage d'une arboriculture de precision"
+                ],
+                "authFullName_s": [
+                    "Thierry Ameglio",
+                    "Anaïs Dusotoit-Coucaud",
+                    "Vincent Guillot",
+                    "Didier Coste",
+                    "Boris Adam"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964670,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.es",
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "De la quantification des impacts anthropiques à la discrimination des sources de perturbation de la qualité des eaux captées en milieu karstique : études alpines"
+                ],
+                "authFullName_s": [
+                    "Fabien Hoblea",
+                    "Marc Dzikowski",
+                    "Grégory Tissier",
+                    "Didier Cailhol"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964669,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "L'impact de l'ouverture économique sur les institutions internes : le cas de la Russie",
+                    "The impact of the economic openness on the internal institutions : the case of Russia"
+                ],
+                "authFullName_s": [
+                    "Irina Egorova-Legon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964666,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Régulation transcriptionnelle des aquaporines dans la zone de croissance de la racine du peuplier"
+                ],
+                "authFullName_s": [
+                    "Rémy Merret",
+                    "Bruno Moulia",
+                    "Iréne Hummel",
+                    "Erwin Dreyer",
+                    "Marie-Béatrice Bogeat-Triboulot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964665,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Etude des conditions de régénération naturelle du pin sylvestre en forêt mélangée chêne-pin de l'Orléanais"
+                ],
+                "authFullName_s": [
+                    "Philippe Balandier",
+                    "Gwenael Philippe",
+                    "Yann Dumas",
+                    "Noémi Gaudio",
+                    "Christian Ginisty"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964663,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Apprentissage en centre de ressources en langues et autonomie à l'heure de l'éducation 2.0 : la médiation formative du conseil est-elle encore valide ?"
+                ],
+                "authFullName_s": [
+                    "Maud Ciekanski"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964661,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Quelques pistes pour modéliser l'évolution de la résistance au gel des arbres dans des climats futurs"
+                ],
+                "authFullName_s": [
+                    "Thierry Ameglio"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964657,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "La croissance en hauteur des plantes : une lente instabilité contournée par des mouvements actifs de contrôle postural"
+                ],
+                "authFullName_s": [
+                    "Bruno Moulia",
+                    "Renaud Bastien"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964653,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Est-on capable de prédire la phénologie des arbres des prochaines décennies ?"
+                ],
+                "authFullName_s": [
+                    "Isabelle Chuine",
+                    "Ignacio Garcia de Cortazar Atauri",
+                    "Jean-Michel Legave",
+                    "Marc Bonhomme",
+                    "André Lacointe",
+                    "Xavier Morin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964652,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Etat mécanique de l'arbre, acclimatation des arbres à leur environnement mécanique et sécurité de l'arbre au vent : quelques éléments"
+                ],
+                "authFullName_s": [
+                    "Catherine Coutand",
+                    "Bruno Moulia"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964645,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "La macre nageante (Trapa natans L.) : une plante rare qui peut se révéler envahissante"
+                ],
+                "authFullName_s": [
+                    "Stéphane Herbette"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964643,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Étude de la résilience à la sécheresse chez le Hêtre : plasticité phénotypique et variabilité génétique de la vulnérabilité à la cavitation"
+                ],
+                "authFullName_s": [
+                    "Rémi Wortemann"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964642,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Exemple de modélisation des relations sources-puits lors d'une transition hétérotrophie-autotrophie: la germination du noyer ([i]Juglans regia[/i] L.)"
+                ],
+                "authFullName_s": [
+                    "Abraham Escobar-Gutiérrez",
+                    "François-Alain Daudet",
+                    "Jean-Pierre Gaudillere",
+                    "Pascale Maillard",
+                    "E. Deleens",
+                    "Jean-Sylvain Frossard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964640,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Changements climatiques et physiologie de l'arbre"
+                ],
+                "authFullName_s": [
+                    "Thierry Ameglio"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964637,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "La construction progressive d'une protection intégrée des eaux souterraines par le droit de l'Union européenne : 1976-2006"
+                ],
+                "authFullName_s": [
+                    "Adrien Bodart"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964636,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Modélisation physique de la durée d'humectation à l'échelle de la feuille tenant compte de la mouillabilité de la feuille"
+                ],
+                "authFullName_s": [
+                    "Alexandre Leca"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964635,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "L'arbre est un adepte du taï chi chuan"
+                ],
+                "authFullName_s": [
+                    "Catherine Coutand",
+                    "Sophie Lechanché"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964632,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Caractérisation physiologique et moléculairede la réponse de croissance radiale à une flexion contrôlée de la tige chez le peuplier"
+                ],
+                "authFullName_s": [
+                    "Ludovic Martin",
+                    "Nathalie Fournier-Leblanc",
+                    "Catherine Coutand",
+                    "Catherine Lenne",
+                    "Jean-Louis Julien"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964631,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Morphogénèse du bourgeon végétatif, conséquences pour l'étude de la dormance et du débourrement (déterminisme endogène et exogène de l'endo et de l'éco dormance)"
+                ],
+                "authFullName_s": [
+                    "Marc Bonhomme"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964630,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "La nirs peut-elle détecter la levée de dormance des bourgeons ?"
+                ],
+                "authFullName_s": [
+                    "Marc Bonhomme"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964629,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Etude écophysiologique de l'endurcissement au gel des arbres : impacts des conditions estivales de croissance sur la résistance au gel des arbres"
+                ],
+                "authFullName_s": [
+                    "Magalie Poirier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964628,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Interactions multi-strates en forêt : conséquences pour la conception de sylvicultures adaptées aux changements climatiques"
+                ],
+                "authFullName_s": [
+                    "Philippe Balandier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964626,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Le stress hydrique : l'arbre et l'eau"
+                ],
+                "authFullName_s": [
+                    "Tete Severien Barigah",
+                    "Marc Bonhomme",
+                    "Thierry Ameglio",
+                    "Hervé Cochard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964624,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "La science menacée par une bulle spéculative de l'édition ?"
+                ],
+                "authFullName_s": [
+                    "Yves Chilliard",
+                    "Hervé Cochard",
+                    "Bruno Moulia"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964623,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "L'arbre est un adepte du taï chi chuan"
+                ],
+                "authFullName_s": [
+                    "Catherine Coutand"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964618,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Les arbres disposent d'une faible marge de manoeuvre face à la sécheresse"
+                ],
+                "authFullName_s": [
+                    "Hervé Cochard",
+                    "Sylvain Delzon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964617,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Comment les arbres peuvent-ils résister au gel ?"
+                ],
+                "authFullName_s": [
+                    "Guillaume Charrier",
+                    "Thierry Ameglio"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964614,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Comment estimer la lumière dans le sous-bois forestier à partir des caractéristiques dendrométriques des peuplements"
+                ],
+                "authFullName_s": [
+                    "Philippe Balandier",
+                    "André Marquier",
+                    "Sandrine Perret",
+                    "Catherine Collet",
+                    "Benoit Courbaud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964613,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Les plantes sont sensibles aussi bien aux informations extérieures qu'à celles, intérieures, qui les renseignent sur leur état"
+                ],
+                "authFullName_s": [
+                    "Bruno Moulia",
+                    "Loïc Mangin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 964610,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Pas facile de se tenir droit comme un i"
+                ],
+                "authFullName_s": [
+                    "Bruno Moulia",
+                    "Catherine Lenne",
+                    "Pierre Peyret"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964608,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "La force normative de la jurisprudence de la Cour de justice de l'Union européenne dans le domaine de l'eau"
+                ],
+                "authFullName_s": [
+                    "Nathalie Hervé-Fournereau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964607,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Les deux tiers des arbres dans le monde sont menacés de dépérissement"
+                ],
+                "authFullName_s": [
+                    "Hervé Cochard",
+                    "David Larousserie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964605,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Les arbres aussi risque l'embolie !"
+                ],
+                "authFullName_s": [
+                    "Hervé Cochard",
+                    "Sophie Leclanché"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964603,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "A l'écoute des frondaisons qui frissonnent"
+                ],
+                "authFullName_s": [
+                    "Guillaume Charrier",
+                    "Sophie Leclanché"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964596,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Gestion biologique de la sécurité mécanique au vent des arbres urbains"
+                ],
+                "authFullName_s": [
+                    "Bruno Moulia"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964591,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Les mécanismes de résistance à la sécheresse chez les arbres"
+                ],
+                "authFullName_s": [
+                    "Thierry Ameglio",
+                    "Hervé Cochard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964590,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Méthodes de mesure de la structure 3D des arbres"
+                ],
+                "authFullName_s": [
+                    "Hervé Sinoquet",
+                    "Boris Adam",
+                    "Nicolas Dones"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964589,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Bases moléculaires de la vulnérabilité à la cavitation du xylème"
+                ],
+                "authFullName_s": [
+                    "Stéphane Herbette",
+                    "Hosam Mohammed Awad",
+                    "Tete Severien Barigah",
+                    "Hervé Cochard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964587,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Qu'est-ce qui fait éclore les bourgeons au printemps ? Mécanismes de circulation de la sève"
+                ],
+                "authFullName_s": [
+                    "Thierry Ameglio"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964579,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Intégrer la résistance au froid dans des modèles de prédiction des aires de répartition des arbres"
+                ],
+                "authFullName_s": [
+                    "Guillaume Charrier",
+                    "Thierry Ameglio"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964574,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Les végétaux ont le sens de la rectitude !"
+                ],
+                "authFullName_s": [
+                    "Bruno Moulia",
+                    "Stéphane Douady"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964571,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Modéliser la résistance au gel des arbres en vue d'évaluer leur comportement dans un contexte de changement climatique"
+                ],
+                "authFullName_s": [
+                    "Guillaume Charrier",
+                    "Thierry Ameglio"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964565,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Modélisation physique de la durée d'humectation à l'échelle de la feuille tenant compte de la mouillabilité de la feuille"
+                ],
+                "authFullName_s": [
+                    "Alexandre Leca",
+                    "Marc Saudreau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964562,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Les arbres disposent d'une faible marge de manoeuvre face à la sécheresse"
+                ],
+                "authFullName_s": [
+                    "Hervé Cochard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964559,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Changements climatiques, conséquences prévisibles pour la biologie de l'arbre"
+                ],
+                "authFullName_s": [
+                    "Thierry Ameglio"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964558,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Qu'est ce qui fait éclore les bourgeons au printemps ?"
+                ],
+                "authFullName_s": [
+                    "Thierry Ameglio"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964557,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Etude de la résistance à la sécheresse des populations de hêtres ([i]Fagus sylvatica[/i] L.) du Massif central"
+                ],
+                "authFullName_s": [
+                    "Catherine Lenne",
+                    "Stéphane Herbette",
+                    "Boris Fumanal",
+                    "Rémi Wortemann",
+                    "Tete Severien Barigah",
+                    "Hervé Cochard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964556,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv",
+                    "2.sdv.bv.bot"
+                ],
+                "title_s": [
+                    "La limite altitudinale des conifères sous le contrôle de l'embolie gazeuse liée au gel"
+                ],
+                "authFullName_s": [
+                    "Thierry Ameglio"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964553,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.mcg",
+                    "0.sde",
+                    "1.sde.be"
+                ],
+                "title_s": [
+                    "Changement climatique : les écorces parlent"
+                ],
+                "authFullName_s": [
+                    "Catherine Ducatillion",
+                    "Thierry Ameglio"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964546,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Un arbre, comment ça marche ?"
+                ],
+                "authFullName_s": [
+                    "Thierry Ameglio"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964545,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Optimization of endodormancy release models, using series of endodormancy release data collected in France."
+                ],
+                "authFullName_s": [
+                    "Marc Bonhomme",
+                    "Rémy Rageau",
+                    "André Lacointe"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964539,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "S'endurcir pour revoir le printemps"
+                ],
+                "authFullName_s": [
+                    "Thierry Ameglio",
+                    "Pierre Peyret"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964537,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Évolution hivernale des résistances hydraulique et cellulaire des arbres vis-à-vis du gel"
+                ],
+                "authFullName_s": [
+                    "Guillaume Charrier",
+                    "Thierry Ameglio"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964535,
+                "title_s": [
+                    "The Concept of \"Hybrid Research\" applied to the Geoheritage of the Bauges Massif (French Alps): When the Promotion of the Geoheritage helps Geosciences and vice versa."
+                ],
+                "authFullName_s": [
+                    "Fabien Hoblea",
+                    "Nathalie Cayla",
+                    "Pierre Renau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964534,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Le \" socialisme de marché \" dans la Biélorussie de Loukachenko : égalitarisme, néopatrimonialisme et dépendance extérieure"
+                ],
+                "authFullName_s": [
+                    "Ronan Hervouet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964529,
+                "title_s": [
+                    "Karst et Geoparks : un mariage heureux"
+                ],
+                "authFullName_s": [
+                    "Fabien Hoblea"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964523,
+                "title_s": [
+                    "Des paysages époustouflants, uniques au monde"
+                ],
+                "authFullName_s": [
+                    "Fabien Hoblea"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964521,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Développer la compétence (inter)culturelle des enseignants de FLE en ligne par le biais de l'apprentissage biographique"
+                ],
+                "authFullName_s": [
+                    "Maud Ciekanski"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964520,
+                "title_s": [
+                    "Géomorphologie et patrimoine"
+                ],
+                "authFullName_s": [
+                    "Marie-Françoise André",
+                    "M. Ambert",
+                    "Jean-Jacques Delannoy",
+                    "Fabien Hoblea",
+                    "Emmanuel Reynard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964517,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Des difficultés scolaires et familiales à la prise en charge totale : le cas des jeunes orientés en Institut thérapeutique, éducatif et pédagogique"
+                ],
+                "authFullName_s": [
+                    "Hugo Dupont"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964512,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Bases d'une gestion durable des forêts mélangées: écophysiologie, croissance et démogénétique des espèces constitutives"
+                ],
+                "authFullName_s": [
+                    "Erwin Dreyer",
+                    "Catherine Collet",
+                    "Philippe Balandier",
+                    "Francois Lefevre",
+                    "Thomas Cordonnier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964511,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.mcg",
+                    "0.sde",
+                    "1.sde.be"
+                ],
+                "title_s": [
+                    "Impacts du changement climatique et de la diversité végétale souterraine sur la démographie racinaire et la respiration du sol d'une prairie permanente"
+                ],
+                "authFullName_s": [
+                    "Remi Pilon",
+                    "Philippe Balandier",
+                    "Catherine Picon-Cochard",
+                    "Sandrine Revaillot",
+                    "Robert Falcimagne",
+                    "Jean-François Soussana"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964510,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Quelques pistes pour modéliser l'évolution de la résistance au gel des arbres dans des climats futurs"
+                ],
+                "authFullName_s": [
+                    "Thierry Ameglio"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964508,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Les deux tiers des arbres sont vulnérables à la sécheresse"
+                ],
+                "authFullName_s": [
+                    "Jacques Ripoche",
+                    "Sylvain Delzon",
+                    "Hervé Cochard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964506,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Un salariat au-delà du salariat ?"
+                ],
+                "authFullName_s": [
+                    "Marie-Christine Bureau",
+                    "Antonella Corsani"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964503,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "La conservation de la possession solo animo"
+                ],
+                "authFullName_s": [
+                    "Marie-Renée Kervella"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964500,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Vulnérabilité à la cavitation chez [i]Fagus sylvatica L[/i]. Variabilité génétique et plasticité phénotypique"
+                ],
+                "authFullName_s": [
+                    "Rémi Wortemann"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964499,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Étude de la dormance et de la résistance au froid chez des Noyers aux date de débourrement contrastées"
+                ],
+                "authFullName_s": [
+                    "Guillaume Charrier",
+                    "Thierry Ameglio",
+                    "André Lacointe",
+                    "Marc Bonhomme"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964497,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "La limite altitudinale des conifères sous le contrôle de l'embolie gazeuse liée au gel"
+                ],
+                "authFullName_s": [
+                    "Thierry Ameglio"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964496,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Du rapport entre politique, économie et société civile dans la philosophie classique anglaise de Hobbes à Mandeville",
+                    "Of the report between politics, economy and civil society in the English classic philosophy of Hobbes to Mandeville"
+                ],
+                "authFullName_s": [
+                    "Olfa Hafidhi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964494,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Etat mécanique de l'arbre, acclimatation des arbres à leur environnement mécanique et sécurité de l'arbre au vent"
+                ],
+                "authFullName_s": [
+                    "Catherine Coutand",
+                    "Bruno Moulia"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964492,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "The functioning of the whole plants: the water continuum and coupling with other components"
+                ],
+                "authFullName_s": [
+                    "Alain Perrier",
+                    "Bernard Saugier",
+                    "Andree Tuzet",
+                    "Hervé Cochard",
+                    "Nathalie Breda"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964488,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Opposabilité du rapport d'expertise-construction : un peu de souplesse dans la rigueur"
+                ],
+                "authFullName_s": [
+                    "Marc-Olivier Huchet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964485,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv",
+                    "0.sdv",
+                    "1.sdv.bio",
+                    "0.info",
+                    "1.info.info-bt"
+                ],
+                "title_s": [
+                    "L'embryogenèse somatique : une méthode de multiplication végétative du pin maritime pour demain ?"
+                ],
+                "authFullName_s": [
+                    "Jean-François Trontin",
+                    "Francis Canlet",
+                    "Isabelle Reymond",
+                    "Sandrine Debille",
+                    "Karine Durandeau",
+                    "Luc Harvengt",
+                    "Jean-Pierre Rousseau",
+                    "Jean-Mathieu De Boisseson",
+                    "Jean-Yves Fraysse",
+                    "Pierre Alazard",
+                    "Alain Bailly",
+                    "Caroline Teyssier",
+                    "Claire Le Mette",
+                    "Alexandre Morel",
+                    "Philippe Label",
+                    "Marie-Anne Lelu-Walter"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964484,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Variabilité de la vulnérabilité à la cavitation chez le hêtre (Fagus sylvatica L.)"
+                ],
+                "authFullName_s": [
+                    "Rémi Wortemann"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964483,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Autonomie et hétéronomie dans les marges du salariat. Les journalistes pigistes et les intermittents du spectacle porteurs de projets"
+                ],
+                "authFullName_s": [
+                    "Antonella Corsani"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964481,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Adaptation au gel des ligneux"
+                ],
+                "authFullName_s": [
+                    "Guillaume Charrier",
+                    "Magalie Poirier",
+                    "Thierry Ameglio"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964480,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Architecture et microclimat des arbres"
+                ],
+                "authFullName_s": [
+                    "Hervé Sinoquet",
+                    "Marc Saudreau",
+                    "Nicolas Dones",
+                    "Boris Adam"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964475,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.es"
+                ],
+                "title_s": [
+                    "Gestion de la végétation accompagnatrice pour la production de bois-énergie : nécessité et perspectives"
+                ],
+                "authFullName_s": [
+                    "Marine Dodet",
+                    "Catherine Collet",
+                    "Francois Ningre",
+                    "Léon Wehrlen",
+                    "Philippe Balandier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964471,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Influence et impacts de la loi HPST sur la RS des hôpitaux publics"
+                ],
+                "authFullName_s": [
+                    "Morad Mousli",
+                    "Morad Mousli",
+                    "Catherine Dos Santos",
+                    "Joëlle Randriamiarana"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964459,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Nouveaux outils pour une analyse fine de la composition des grains"
+                ],
+                "authFullName_s": [
+                    "Gerard Branlard",
+                    "Estelle Pujos-Guillot",
+                    "Isabelle Nadaud",
+                    "Emmanuelle Bancel",
+                    "Agnés Piquet-Pissaloux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964458,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Variabilité génétique et environnementale de la teneur des blés en nutriments"
+                ],
+                "authFullName_s": [
+                    "Gilles Charmet",
+                    "Marie-Reine Perretant",
+                    "Catherine Grand Ravel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 964443,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Progrès génétique et maintien de la variabilité génétique : sont-ils incompatibles ? Le cas du ray-grass anglais au travers de 40 ans d'amélioration de variétés fourragères et à gazon"
+                ],
+                "authFullName_s": [
+                    "Marc Ghesquière",
+                    "Philippe Barre",
+                    "Gilles Boutet",
+                    "Isabelle Cameleyre",
+                    "Chrystel Gibelin",
+                    "Jean-Baptiste Pierre",
+                    "Jean Paul Sampoux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 964440,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Variations de la composition en éléments majeurs de variétés de blé conduites en modes biologique et conventionnel : premiers résultats"
+                ],
+                "authFullName_s": [
+                    "Agnés Piquet",
+                    "S. Sauvat",
+                    "Gerard Branlard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            }
+        ]
+    },
+    "nextCursorMark": "AoFY9dYD"
+}

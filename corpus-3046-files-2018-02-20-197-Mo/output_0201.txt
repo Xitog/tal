@@ -1,0 +1,2004 @@
+{
+    "response": {
+        "numFound": 515921,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1649920,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.ther"
+                ],
+                "title_s": [
+                    "Etude expérimentale d'un prototype ETM à La Réunion"
+                ],
+                "authFullName_s": [
+                    "Frantz Sinama",
+                    "Audrey Journoud",
+                    "Alexandre Dijoux",
+                    "Franck Lucas",
+                    "Bertrand Clauzade",
+                    "Jean Castaing-Lasvignottes",
+                    "Olivier Marc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649918,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "CONTEXTUALISATION DIDACTIQUE ET ENSEIGNEMENT DE L’EPS EN HAITI ET EN MARTINIQUE AUX DEUX PREMIERS CYCLES DE L’ÉCOLE FONDAMENTALE ET A L’ÉCOLE ÉLÉMENTAIRE : ANALYSE COMPARÉE DES SYSTEMES D’ENSEIGNEMENT ET DES INTERACTIONS DIDACTIQUES DANS LE CADRE D’UNE APPROCHE SOCIO-DIDACTIQUE"
+                ],
+                "authFullName_s": [
+                    "Preslet Megie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649912,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ds",
+                    "0.sde",
+                    "0.spi"
+                ],
+                "title_s": [
+                    "3D Geomodelling Contribution to the Mapping of Gravitational Hazards on the Hill of Croix-RousseE"
+                ],
+                "authFullName_s": [
+                    "Elodie Scholastique",
+                    "Catherine Pothier",
+                    "Louis Vinet",
+                    "Christophe Rigotti",
+                    "Nicole Bouillod"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649911,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-ca",
+                    "0.math",
+                    "1.math.math-mg",
+                    "0.math",
+                    "1.math.math-fa"
+                ],
+                "title_s": [
+                    "Analyse dans les espaces métriques"
+                ],
+                "authFullName_s": [
+                    "Hervé Pajot",
+                    "Emmanuel Russ"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649909,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.shs",
+                    "1.shs.anthro-bio"
+                ],
+                "title_s": [
+                    "Des pots dans la tombe dans le centre de la France : un état de la question"
+                ],
+                "authFullName_s": [
+                    "Mathieu Gaultier",
+                    "Philippe Husi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649900,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Problématiques foncières en Polynésie française"
+                ],
+                "authFullName_s": [
+                    "Jean-Paul Pastorel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649899,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Water leaves no trail\": Eau, trace et mémoire dans The Last of the Mohicans"
+                ],
+                "authFullName_s": [
+                    "Emilia Le Seven"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649896,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hisphilso",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.relig"
+                ],
+                "title_s": [
+                    "Médecine grecque et médecine arabe: transmission du savoir entre Orient et Occident"
+                ],
+                "authFullName_s": [
+                    "Dina Bacalexi",
+                    "Mehrnaz Katouzian-Safadi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649893,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Les zones économiques exclusives (ZEE) en Océanie"
+                ],
+                "authFullName_s": [
+                    "Jean-Paul Pastorel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649891,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Les finances publiques au Vietnam face aux défis de la modernisation"
+                ],
+                "authFullName_s": [
+                    "Jean-Paul Pastorel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649884,
+                "domain_s": [
+                    "0.sdv",
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Analyse multifactorielle des consultations en médecine générale à Paris : étude portant sur 2140 consultations pour 1200 patients",
+                    "Multifactorial analysis of consultations in general medicine in Paris. Study on 2140 consultations for 1200 patients"
+                ],
+                "authFullName_s": [
+                    "Latifa Petitjean"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649879,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "L’habitat léger : émergence de modes d’habiter innovants ?"
+                ],
+                "authFullName_s": [
+                    "Basile Michel",
+                    "Laurent Cailly",
+                    "Françoise Dureau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649877,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "La supplémentation périnatale en fibres prébiotiques (fructo-oligosaccharides à courte chaîne, scFOS) modifie le microbiote intestinal et programme le phénotype métabolique et immunitaire du porc, pris comme modèle de l’Homme",
+                    "Perinatal supplementation with prebiotic fibres (short-chain fructooligosaccharides, scFOS) modifies intestinal microbiota and programs the metabolic and immunologic phenotype in the pig, used as human model"
+                ],
+                "authFullName_s": [
+                    "Cindy Le Bourgot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649876,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-au"
+                ],
+                "title_s": [
+                    "Modélisation fonctionnelle de l'activité neuronale hippocampique : Applications pharmacologiques",
+                    "Functional modeling of hippocampal neuronal activity : Pharmacological applications"
+                ],
+                "authFullName_s": [
+                    "Arnaud Legendre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649874,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-gr"
+                ],
+                "title_s": [
+                    "Segmentation et mesures géométriques : application aux objets tubulaires métalliques",
+                    "Segmentation and geometric measurements : application to metal tubular objects"
+                ],
+                "authFullName_s": [
+                    "Nicolas Aubry"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649873,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bbm",
+                    "2.sdv.bbm.bm",
+                    "0.sdv",
+                    "1.sdv.bv",
+                    "0.sdv",
+                    "1.sdv.gen",
+                    "2.sdv.gen.gpl"
+                ],
+                "title_s": [
+                    "Caractérisation d'un complexe chromatinien impliqué dans l'inactivation post-transcriptionnelle des ARNs",
+                    "Characterization of a chromatin complex involved in the post-transcriptional gene silencing"
+                ],
+                "authFullName_s": [
+                    "Nicolas Butel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649871,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Compétition pour la transcription et évolution de l'expression génétique chez les diploïdes",
+                    "Competition for transcription and gene expression evolution in diploids"
+                ],
+                "authFullName_s": [
+                    "Frédéric Fyon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649870,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-optics"
+                ],
+                "title_s": [
+                    "Lasers à fibre Brillouin multi-stokes : cohérence et caractérisation en bruit",
+                    "Multi-Stokes Brillouin fiber lasers : coherence and noise characterization"
+                ],
+                "authFullName_s": [
+                    "Schadrac Fresnel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649869,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Impact de la pasteurisation et de l’homogénéisation sur la digestion du lait maternel chez le nouveau-né : Etudes in vitro et in vivo",
+                    "Impact of pasteurization and homogenization on the digestion of human milk in the newborn infant : in vitro and in vivo studies"
+                ],
+                "authFullName_s": [
+                    "Samira Cássia De Oliveira"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649867,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-sy",
+                    "0.info",
+                    "1.info.info-cr"
+                ],
+                "title_s": [
+                    "Sécurité de la gestion dynamique des ressources basée sur la prise en compte des profils de consommation en ressources des machines virtuelles, dans un cloud IaaS",
+                    "Resource consumption profile-based attack detection in IaaS clouds"
+                ],
+                "authFullName_s": [
+                    "Kahina Lazri"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649863,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Lieuité et socialisation organisationnelle : les raisons du lieu pour les travailleurs de très petites entreprises créatives et culturelles"
+                ],
+                "authFullName_s": [
+                    "Anne-Laure Saives",
+                    "Brigitte Charles-Pauvers",
+                    "Nathalie Schieb-Bienfait",
+                    "Basile Michel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649857,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Régulation de la flore adventice par l’insertion de prairies temporaires"
+                ],
+                "authFullName_s": [
+                    "Safia Médiène",
+                    "Nathalie Colbach",
+                    "Xavier Charrier",
+                    "Diana Doisy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649856,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Mesure et analyse de la répartition de la conductance hydraulique dans le système racinaire du maïs"
+                ],
+                "authFullName_s": [
+                    "Safia Médiène"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649854,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Régulation de l'absorption azotée en relation avec la gestion des réserves carbonées et azotées chez le jeune pêcher"
+                ],
+                "authFullName_s": [
+                    "Marie Odile Jordan",
+                    "L. Gomez",
+                    "Safia Médiène"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649853,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Influence de la disponibilité en nitrate sur les composantes du développement de jeunes pêchers"
+                ],
+                "authFullName_s": [
+                    "Safia Médiène",
+                    "Loic Pagès",
+                    "Marie Odile Jordan",
+                    "Jacques Le Bot",
+                    "Stéphane Adamowicz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649848,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Chômage des jeunes et inégalités d'insertion sur le marché du travail algérien : analyses multidimensionnelles et expérimentation",
+                    "Youth unemployment and insertion inequalities on the Algerian labour market : multivariate analysis and experimentation"
+                ],
+                "authFullName_s": [
+                    "Lamia Benhabib"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649845,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Investissement des exploitations agricoles: Comprendre les décisions, les déterminants"
+                ],
+                "authFullName_s": [
+                    "Laure Latruffe"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649842,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ba"
+                ],
+                "title_s": [
+                    "Réponses de l'avifaune commune au changement climatique : naviguer entre les échelles pour mieux identifier leurs déterminants et leurs conséquences",
+                    "Birds' responses to climate change : towards a multi-scale approach to reveal their drivers and consequences"
+                ],
+                "authFullName_s": [
+                    "Pierre Gaüzère"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649841,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-na",
+                    "0.math",
+                    "1.math.math-ap"
+                ],
+                "title_s": [
+                    "Analyse numérique de systèmes hyperboliques-dispersifs",
+                    "Numerical analysis of hyperbolic-dispersive systems"
+                ],
+                "authFullName_s": [
+                    "Clémentine Courtès"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649837,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Travailler dans un village urbain : pratiques et représentations spatiales des travailleurs créatifs"
+                ],
+                "authFullName_s": [
+                    "Basile Michel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649833,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Les arts performatifs et spectaculaires des Premières Nations de l’est du Canada"
+                ],
+                "authFullName_s": [
+                    "Jérôme Dubois",
+                    "Dalie Giroux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649830,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Les compagnies de théâtre autochtone dans l’est du Canada"
+                ],
+                "authFullName_s": [
+                    "Jérôme Dubois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649827,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Contribution des femmes au théâtre autochtone"
+                ],
+                "authFullName_s": [
+                    "Jérôme Dubois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649824,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "L’être-ensemble de la compagnie Debajehmujig et le sens de la communauté"
+                ],
+                "authFullName_s": [
+                    "Jérôme Dubois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649823,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Caractéristiques du Purpura Thrombopénique Immunologique selon l’âge",
+                    "Caracteristics of ITP according to age"
+                ],
+                "authFullName_s": [
+                    "Tarik Chaara"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649822,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Histoire positive et histoire sacrée autour de la pensée de Louis Massignon",
+                    "Positivist history and sacred history. About the mind of Louis Massignon"
+                ],
+                "authFullName_s": [
+                    "Dominique Avon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649821,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Théâtre et citoyenneté en prison"
+                ],
+                "authFullName_s": [
+                    "Jérôme Dubois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649820,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Corporéité des croyances des communautés et des compagnies de théâtre des Premières Nations de l’est du Canada"
+                ],
+                "authFullName_s": [
+                    "Jérôme Dubois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649819,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les Ahbaches. Un mouvement libanais sunnite contesté dans un monde globalisé"
+                ],
+                "authFullName_s": [
+                    "Dominique Avon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649817,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Théâtre"
+                ],
+                "authFullName_s": [
+                    "Jérôme Dubois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649816,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Place du traitement préventif en cas d’antécédent de pathologie vasculaire avec lésions d’infarctus placentaire et d’accouchement après 34 semaines d’aménorrhée lors de la grossesse précédente : étude rétrospective comparative portant sur 52 patientes à la Maternité du centre Aliénor d’Aquitaine - CHU de Bordeaux",
+                    "Place of preventive treatment in case of vascular diseases with placental infarcts and delivery after 34 weeks’ gestation during previous pregnancy: retrospective comparative study involving 52 patients at the Maternity Center Alienor d'Aquitaine, University Hospital of Bordeaux"
+                ],
+                "authFullName_s": [
+                    "Frédéric Lanse"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649813,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "« Métiers de l’architecture et de l’urbanisme. Portrait de famille »"
+                ],
+                "authFullName_s": [
+                    "Élise Macaire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649812,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "« Démocratie culturelle et transformations du cadre de vie »"
+                ],
+                "authFullName_s": [
+                    "Élise Macaire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649810,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Fermeture chirurgicale du canal artériel du prématuré : comparaison de deux techniques Clip ou Ligature",
+                    "Surgical closure of patent ductus arteriosus in preterm infants: comparison of two techniques Clip application and Suture ligation"
+                ],
+                "authFullName_s": [
+                    "Audrey Paygambar"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649809,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "« Démocratie culturelle et architecture comme expression de la culture »"
+                ],
+                "authFullName_s": [
+                    "Élise Macaire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649807,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "« Collectifs d’architectes et programmation »"
+                ],
+                "authFullName_s": [
+                    "Élise Macaire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649805,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "« Quelles modalités, quels statuts professionnels d’intervention pour les architectes ? »"
+                ],
+                "authFullName_s": [
+                    "Élise Macaire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649803,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "« Entre ville, art et politique. Comment les figures professionnelles de l'architecte construisent-elles une légitimité d'action?»"
+                ],
+                "authFullName_s": [
+                    "Élise Macaire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649801,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Le clergé itinérant : la mobilité rituelle des prêtres au cours des fêtes"
+                ],
+                "authFullName_s": [
+                    "Vincent Chollier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649800,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "« Collectifs d’architectes. Expérimentations de la coproduction avec les habitants »"
+                ],
+                "authFullName_s": [
+                    "Élise Macaire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649799,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.stat"
+                ],
+                "title_s": [
+                    "Analyse des réseaux d’élites en Égypte ancienne : réflexions sur des solutions méthodologiques"
+                ],
+                "authFullName_s": [
+                    "Vincent Chollier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649797,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "« Participation et architecture. Pratiques en collectifs »"
+                ],
+                "authFullName_s": [
+                    "Élise Macaire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649796,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Parole aux doctorants"
+                ],
+                "authFullName_s": [
+                    "Vincent Chollier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649794,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "« Une thèse sur les architectes et la démocratisation culturelle. Description du modèle théorique mobilisé »"
+                ],
+                "authFullName_s": [
+                    "Élise Macaire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649784,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Peter van Dommelen, Carlos Gómez Bellard, Rural Landscapes of the Punic World. Monographs in Mediterranean Archaeology; v. 11. London"
+                ],
+                "authFullName_s": [
+                    "Élodie Guillon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649780,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "« Collectifs d’architectes : expérimenter la coproduction de l’architecture »"
+                ],
+                "authFullName_s": [
+                    "Élise Macaire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649775,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.museo",
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Pierre-Louis Gatier, Julien Aliquot, Lévon Nordiguian (ed.), Sources de l'histoire de Tyr: textes de l'Antiquité et du Moyen Âge. Beyrouth"
+                ],
+                "authFullName_s": [
+                    "Élodie Guillon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649772,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Approche historique et spatiale de la Phénicie hellénistique : cités, territoires, modélisation"
+                ],
+                "authFullName_s": [
+                    "Élodie Guillon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649770,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Comprendre le consommateur âgé‎. Nouveaux enjeux et perspectives"
+                ],
+                "authFullName_s": [
+                    "Denis Guiot",
+                    "Bertrand Urien"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649769,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-gr",
+                    "0.info",
+                    "1.info.info-na"
+                ],
+                "title_s": [
+                    "Annotation automatique des configurations manuelles de la Langue des Signes Française à partir de données capturées"
+                ],
+                "authFullName_s": [
+                    "Lucie Naert",
+                    "Caroline Larboulette",
+                    "Sylvie Gibet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649768,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Segmenter le marché des 50-65 ans par la richesse économique"
+                ],
+                "authFullName_s": [
+                    "Denis Guiot",
+                    "Ziad Malas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649766,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Le Bien-Vieillir Désiré : Vers une nouvelle segmentation des 50-65 ans"
+                ],
+                "authFullName_s": [
+                    "Eloïse Sengès",
+                    "Denis Guiot",
+                    "Ziad Malas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649760,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Daniel Barbu, Nicolas Meylan, Youri Volokhine (éd.), Mondes Clos. Les îles, Gollion, Infolio éditions 2015"
+                ],
+                "authFullName_s": [
+                    "Élodie Guillon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649758,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Le ciblage des consommateurs âgés"
+                ],
+                "authFullName_s": [
+                    "Denis Guiot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649755,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Un cadre d'analyse intégrateur du consommateur âgé"
+                ],
+                "authFullName_s": [
+                    "Denis Guiot",
+                    "Bertrand Urien"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649753,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Le crédit domestique en période de supervision: une étude empirique de pays de l'UE"
+                ],
+                "authFullName_s": [
+                    "Anna Tykhonenko",
+                    "Thomas Jobert",
+                    "Alexandru Monahov"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649750,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Recours au CIDOC-CRM pour évaluer l'interopérabilité de données archéologiques de terrain très variées : présentation des premiers résultats des tests effectués par l'Inrap"
+                ],
+                "authFullName_s": [
+                    "Christophe Tuffery",
+                    "Emeline Le Goff",
+                    "Julie Boudry",
+                    "Federico Nurra"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649749,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ti",
+                    "0.info",
+                    "1.info.info-mm",
+                    "0.stat",
+                    "1.stat.ap"
+                ],
+                "title_s": [
+                    "Différence entre distributions couleur",
+                    "Difference between distributions"
+                ],
+                "authFullName_s": [
+                    "Hermine Chatoux",
+                    "Noël Richard",
+                    "François Lecellier",
+                    "Christine Fernandez-Maloigne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649748,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Les configurations spatiales agri-urbaines - Pour intégrer l'agriculture dans l'aménagement des territoires urbains"
+                ],
+                "authFullName_s": [
+                    "Elisa Marraccini",
+                    "Sylvie Lardon",
+                    "Tiziana Sabbatini"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649747,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Estimation et spatialisation de la demande en eau agricole en France : intégration du facteur eau à un modèle bioéconomique"
+                ],
+                "authFullName_s": [
+                    "Delphine Barberis",
+                    "Pierre-Alain Jayet",
+                    "Pierre Humblot",
+                    "Anna Lungarska"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649746,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Publicité intrusive sur Internet : une étude exploratoire des profils de résistance"
+                ],
+                "authFullName_s": [
+                    "Inès Chouk",
+                    "Denis Guiot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649745,
+                "domain_s": [
+                    "0.shs",
+                    "0.sde",
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Coopérations et solidarités renouvelées dans les campagnes au service de la territorialisation de l’enjeu énergie-climat ; Illustrations dans l’Ouest français"
+                ],
+                "authFullName_s": [
+                    "Geneviève Pierre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649742,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Le satisficing dans les enquêtes par questionnaire : mesures et effets sur la qualité des réponses"
+                ],
+                "authFullName_s": [
+                    "Denis Guiot",
+                    "Alexandre Lapeyre",
+                    "Ziad Malas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649738,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Prise en compte de l’hétérogénéité inobservée des exploitations agricoles dans la modélisation du changement structurel : illustration dans le cas de la France.",
+                    "Agricultural policy; Expectation-Maximisation (EM) algorithm; farms; Markovian process; mixture models; spatial interdependence; structural change; unobserved heterogeneity"
+                ],
+                "authFullName_s": [
+                    "Legrand Dunold Fils Saint-Cyr"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649737,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Coopérer pour construire des circuits locaux agro-énergétiques : de la relocalisation énergétique à l’accomplissement d’objectifs socio-territoriaux"
+                ],
+                "authFullName_s": [
+                    "Geneviève Pierre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649729,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "L'inégalité entre associés en droit des sociétés",
+                    "Inequality between partners in company law"
+                ],
+                "authFullName_s": [
+                    "Momath Ndiaye"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649726,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Projets agro-énergétiques de territoire dans l’Ouest français: le rôle des agriculteurs-moteurs",
+                    "Territorial and agro-energy projects in the WesternFrance: the role of farmers-leaders"
+                ],
+                "authFullName_s": [
+                    "Geneviève Pierre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649723,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "La transformation des parcours sociaux et la question de la porosité des sphères de la vie"
+                ],
+                "authFullName_s": [
+                    "Fabienne Berton"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649720,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.gestion",
+                    "0.shs",
+                    "1.shs.hisphilso"
+                ],
+                "title_s": [
+                    "Le Retour d’Expérience dans les organisations à risques Entre action managériale et dynamique de métier"
+                ],
+                "authFullName_s": [
+                    "Stéphanie Tillement",
+                    "Violaine Bringaud",
+                    "Mbaye Safiétou",
+                    "Geneviève Saliou",
+                    "Benoît Journé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649718,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Organiser [Manager l'entreprise aux XXe et XXIe siècles]"
+                ],
+                "authFullName_s": [
+                    "Pierre Labardin",
+                    "Eve Lamendour"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649717,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Les histoires de la profession comptable en France"
+                ],
+                "authFullName_s": [
+                    "Pierre Labardin",
+                    "Carlos Ramirez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649716,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.biom"
+                ],
+                "title_s": [
+                    "Imagerie quantitative ultrasonore: application au rachis"
+                ],
+                "authFullName_s": [
+                    "Guillaume Haiat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649715,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Les croyances des agents dans les théories économiques: probabilité ou norme ?"
+                ],
+                "authFullName_s": [
+                    "Fabienne Berton"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649714,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Une histoire des bureaux comptables (XVIIIe siècle à nos jours)"
+                ],
+                "authFullName_s": [
+                    "Pierre Labardin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649711,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "« Histoire des collectifs d’architectes et des passerelles entre architecture et autoédition »"
+                ],
+                "authFullName_s": [
+                    "Élise Macaire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649706,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "« L’architecte, l’artiste et la démocratie »"
+                ],
+                "authFullName_s": [
+                    "Élise Macaire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649702,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.gestion",
+                    "0.shs",
+                    "1.shs.hisphilso"
+                ],
+                "title_s": [
+                    "La résilience à l'épreuve des frontières"
+                ],
+                "authFullName_s": [
+                    "Stéphanie Tillement",
+                    "Benoît Journé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649693,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "« L’architecture à l’épreuve de pratiques socioculturelles. Un imaginaire créateur renouvelé ?"
+                ],
+                "authFullName_s": [
+                    "Élise Macaire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649685,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Aux origines des logiques de carrière. Nature et fonctions des carrières internes à Saint-Gobain (fin XIXè - début XXè)"
+                ],
+                "authFullName_s": [
+                    "Mathieu Floquet",
+                    "Pierre Labardin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649684,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Altération osseuse dans le syndrome de Cushing : apport de la mesure du TBS",
+                    "Bone degradation in Cushing syndrome: contribution of TBS"
+                ],
+                "authFullName_s": [
+                    "Hélène Viñolas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649681,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Évaluation des connaissances des patientes de consultation de gynécologie au CHRU de Brest concernant le frottis cervico-utérin et le papillomavirus par auto-questionnaire"
+                ],
+                "authFullName_s": [
+                    "Maelc'Henn Le Guennec"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649678,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Note sous CAA Paris, plénière, 13 octobre 2011 n° 09PAO1620"
+                ],
+                "authFullName_s": [
+                    "Thierry Lambert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649676,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "« L’architecture et l’urbanisme à l’épreuve de nouvelles pratiques »"
+                ],
+                "authFullName_s": [
+                    "Élise Macaire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649673,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Note sous CE 20 octobre 2011, req. 346998"
+                ],
+                "authFullName_s": [
+                    "Thierry Lambert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649672,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.biom"
+                ],
+                "title_s": [
+                    "Influence d'un gradient de propriétés matérielles sur la propagation d'ondes ultrasonores dans l'os cortical: application à la transmission axiale"
+                ],
+                "authFullName_s": [
+                    "Guillaume Haiat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649670,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "« Pratiques artistiques dans l’espace public »"
+                ],
+                "authFullName_s": [
+                    "Élise Macaire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649669,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Note sous – CE 9 novembre 2011, req. 319717"
+                ],
+                "authFullName_s": [
+                    "Thierry Lambert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649664,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Organiser [Manager l'entreprise au XIXe siècle]"
+                ],
+                "authFullName_s": [
+                    "Pierre Labardin",
+                    "Eve Lamendour"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1649661,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Note sous CE 12 octobre 2011, req. 325273"
+                ],
+                "authFullName_s": [
+                    "Thierry Lambert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1649658,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Note sous CE 12 octobre 2011, req. 344491"
+                ],
+                "authFullName_s": [
+                    "Thierry Lambert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            }
+        ]
+    },
+    "nextCursorMark": "AoFav6UG"
+}

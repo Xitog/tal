@@ -1,0 +1,2044 @@
+{
+    "response": {
+        "numFound": 515922,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1455829,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Brouvelieures (88), « Ruines des Templiers »"
+                ],
+                "authFullName_s": [
+                    "Julien Trapp",
+                    "Anne Wilmouth",
+                    "Et Alii"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455827,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Les risques du génie civil (1ère partie) : Mieux intégrer les risques dans les projets, des exigences croissantes"
+                ],
+                "authFullName_s": [
+                    "Denys Breysse",
+                    "Laurent Dehouck",
+                    "Patrick Perret",
+                    "Denis Morand",
+                    "Louis Demilecamps",
+                    "Pierre Bontoux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455826,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Metz, « Allée de la Tour des Esprits », Tranche 1"
+                ],
+                "authFullName_s": [
+                    "Julien Trapp",
+                    "Anne Wilmouth",
+                    "Et Alii"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455824,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Espagnol et français : la terminologie grammaticale en mouvements (XVI°-XX° siècles)"
+                ],
+                "authFullName_s": [
+                    "Jean-Claude Beacco"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455822,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "La géographie imaginaire d'Albert Cohen"
+                ],
+                "authFullName_s": [
+                    "Alain Schaffner"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455819,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "La grammaire : un long fleuve tranquille ?"
+                ],
+                "authFullName_s": [
+                    "Jean-Claude Beacco"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455817,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Metz, « Allée de la Tour des Esprits », Tranche 2"
+                ],
+                "authFullName_s": [
+                    "Julien Trapp",
+                    "Anne Wilmouth",
+                    "Et Alii"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455815,
+                "domain_s": [
+                    "0.scco",
+                    "1.scco.comp",
+                    "0.scco",
+                    "1.scco.psyc",
+                    "0.info",
+                    "1.info.info-hc",
+                    "0.info",
+                    "1.info.eiah"
+                ],
+                "title_s": [
+                    "Analyser les scanpaths : quelles méthodes pour quels résultats ?"
+                ],
+                "authFullName_s": [
+                    "Gautier Drusch",
+                    "J. M. Christian Bastien"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455814,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Metz, « Porte des Allemands »"
+                ],
+                "authFullName_s": [
+                    "Julien Trapp",
+                    "Anne Wilmouth",
+                    "Et Alii"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455811,
+                "domain_s": [
+                    "0.scco",
+                    "1.scco.comp",
+                    "0.scco",
+                    "1.scco.psyc",
+                    "0.info",
+                    "1.info.info-hc",
+                    "0.info",
+                    "1.info.eiah"
+                ],
+                "title_s": [
+                    "La norme \" d'aptitude à l'utilisation \" IEC 62366:2007 : difficultés de mise en œuvre par des non spécialistes"
+                ],
+                "authFullName_s": [
+                    "Sabrina Bras da Costa",
+                    "Sylvia Pelayo",
+                    "J. M. Christian Bastien",
+                    "Marie-Catherine Beuscart-Zéphir"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455810,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Regards sur les migrations tunisiennes"
+                ],
+                "authFullName_s": [
+                    "Abderrazek Oueslati",
+                    "Gilles Dubus",
+                    "Mohammed Charef"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455809,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Metz, « Allée de la Tour des Esprits », Tranche 4"
+                ],
+                "authFullName_s": [
+                    "Julien Trapp",
+                    "Anne Wilmouth",
+                    "Et Alii"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455765,
+                "domain_s": [
+                    "0.scco",
+                    "1.scco.comp",
+                    "0.scco",
+                    "1.scco.psyc",
+                    "0.info",
+                    "1.info.info-hc",
+                    "0.info",
+                    "1.info.eiah"
+                ],
+                "title_s": [
+                    "Persuasion technologique et activité"
+                ],
+                "authFullName_s": [
+                    "Eric Brangier",
+                    "Yves Clot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455763,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-tt"
+                ],
+                "title_s": [
+                    "Erreurs OCR et biais d'indexation : impact sur les usages"
+                ],
+                "authFullName_s": [
+                    "Guillaume Chiron",
+                    "Jean-Philippe Moreux",
+                    "Antoine Doucet",
+                    "Mickaël Coustaty",
+                    "Muriel Visani"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455762,
+                "domain_s": [
+                    "0.scco",
+                    "1.scco.comp",
+                    "0.scco",
+                    "1.scco.psyc",
+                    "0.info",
+                    "1.info.info-hc",
+                    "0.info",
+                    "1.info.eiah"
+                ],
+                "title_s": [
+                    "La technique du tri de cartes : effets du type de tri, du nombre de participants et du nombre de cartes sur la fiabilité des résultats"
+                ],
+                "authFullName_s": [
+                    "J. M. Christian Bastien",
+                    "Michaël Masseroni"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455758,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Catalogue d'une bibliothèque historique au Maroc : de la Résidence au Centre Jacques Berque"
+                ],
+                "authFullName_s": [
+                    "Catherine Filippone",
+                    "Gilles Dubus"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455751,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Les mots du secret Le vocabulaire de la dissimulation et du contrôle de l’information dans l’Europe du Sud, entre Moyen Âge et époque moderne",
+                    "Words of secrecy. Vocabulary of concealment and control of information in Southern Europe, between the Middle Ages and modern times"
+                ],
+                "authFullName_s": [
+                    "Agnès Delage"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455750,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Défendre Metz au Moyen Âge (XIIIe-XVIe siècles). Étude archéologique et historique de l’enceinte médiévale (1ère partie)"
+                ],
+                "authFullName_s": [
+                    "Julien Trapp",
+                    "Anne Wilmouth",
+                    "Et Alii"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455749,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Bibliographie francophone sur les migrations internationales"
+                ],
+                "authFullName_s": [
+                    "Gilles Dubus"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455748,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Bibliothèques"
+                ],
+                "authFullName_s": [
+                    "Emmanuelle Chapron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455745,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou",
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-med-ph",
+                    "0.spi",
+                    "1.spi.nano"
+                ],
+                "title_s": [
+                    "Conception et évaluation d’une sonde CMUT mixte dédiée à la thérapie ciblée à guidage ultrasonore",
+                    "Design and evaluation of an Ultrasound-guided Focused Ultrasound CMUT probe for targeted therapy"
+                ],
+                "authFullName_s": [
+                    "Dominique Gross"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455744,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Archéologie du château de Maulnes (Yonne)"
+                ],
+                "authFullName_s": [
+                    "Stéphane Büttner",
+                    "Fabrice Henrion"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455742,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Évaluation des grands groupes"
+                ],
+                "authFullName_s": [
+                    "Cristelle Cavalla"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455740,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Défendre Metz au Moyen Âge (XIIIe-XVIe siècles). Étude archéologique et historique de l’enceinte médiévale (2e partie)"
+                ],
+                "authFullName_s": [
+                    "Julien Trapp",
+                    "Anne Wilmouth",
+                    "Et Alii"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455737,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Lavisse : le roman national comme patrimoine scolaire ?"
+                ],
+                "authFullName_s": [
+                    "Etienne Bourdon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455725,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "L'étude pétrographique des mortiers de gros œuvre de l'abbaye Saint-Germain d'Auxerre (Yonne). Apports à la compréhension stratigraphique des structures bâties"
+                ],
+                "authFullName_s": [
+                    "Stéphane Büttner"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455724,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Défendre Metz au Moyen Âge (XIIIe-XVIe siècles). Étude archéologique et historique de l’enceinte médiévale (3e partie)"
+                ],
+                "authFullName_s": [
+                    "Julien Trapp",
+                    "Anne Wilmouth",
+                    "Et Alii"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455718,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.relig"
+                ],
+                "title_s": [
+                    "Education et religion, XVIIIe-XXe siècles"
+                ],
+                "authFullName_s": [
+                    "Christian Sorrel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455717,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Défendre Metz au Moyen Âge (XIIIe-XVIe siècles). Étude archéologique et historique de l’enceinte médiévale (4e partie)"
+                ],
+                "authFullName_s": [
+                    "Julien Trapp",
+                    "Anne Wilmouth",
+                    ". Et Alii"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455716,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "L'insertion socio-spatiale des Haïtiens à Miami"
+                ],
+                "authFullName_s": [
+                    "Cedric Audebert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455712,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les historiens de garde"
+                ],
+                "authFullName_s": [
+                    "Aurore Chery"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455711,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema"
+                ],
+                "title_s": [
+                    "Contribution à la qualification du procédé industriel de soudo-brasage laser acier-aluminium à grande vitesse",
+                    "Contribution to the qualification of the industrial steel-aluminium laser brazing process at high brazing speed"
+                ],
+                "authFullName_s": [
+                    "Guillaume Filliard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455709,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Le pont des Grilles de la Basse-Seille (fin XIVe siècle), ancienne porte d’eau de l’enceinte urbaine de Metz"
+                ],
+                "authFullName_s": [
+                    "Julien Trapp",
+                    "Mylène Didiot",
+                    "Anthony Dumontet",
+                    "Nicolas Gasseau",
+                    "Pierre-Marie Mercier",
+                    "Anne Wilmouth"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455707,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Enseignement des terminologies culinaires auprès des apprenants étrangers de niveau A2"
+                ],
+                "authFullName_s": [
+                    "Tong Yang",
+                    "Cristelle Cavalla"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455700,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Stockage de la chaleur perdue en aquifère profond : quantification des besoins de chaleur en surface"
+                ],
+                "authFullName_s": [
+                    "Katia Laffréchine",
+                    "Denis Morand",
+                    "Morgane Colombert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455698,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Enseignement des terminologies culinaires auprès des apprenants étrangers de niveau A2"
+                ],
+                "authFullName_s": [
+                    "Tong Yang",
+                    "Cristelle Cavalla"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455693,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Des conditions de félicité pour l’éducation plurilingue et interculturelle. A propos de l’intégration linguistique"
+                ],
+                "authFullName_s": [
+                    "Jean-Claude Beacco"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455687,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Facteurs influençant la prise en charge du prurit sine materia chez la personne âgée en médecine de ville‎ : enquête auprès de 12 médecins généralistes hauts-normands"
+                ],
+                "authFullName_s": [
+                    "Mélanie Delafosse"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455686,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Linguistique du français et dimensions métalinguistiques de l’enseignement du français en tant que langue étrangère (1975-2000 env.) : nœuds de savoirs"
+                ],
+                "authFullName_s": [
+                    "Jean-Claude Beacco"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455685,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Pour une gestion de la complexité en didactique du français et des langues"
+                ],
+                "authFullName_s": [
+                    "Jean-Claude Beacco"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455684,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Le lexique des émotions : réflexions pour l’enseigner en FLE"
+                ],
+                "authFullName_s": [
+                    "Cristelle Cavalla"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455681,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "La Cour de justice de l'Union Européenne, en grande chambre, donne à la Commission les moyens de mieux lutter au titre des aides d'Etat contre la concurrence fiscale dommageable (CJUE, 15 novembre 2011, Government of Gibralter et Royaume-Uni, C-106/09 et C-107/09)"
+                ],
+                "authFullName_s": [
+                    "Jean-Yves Cherot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455676,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "L’approche par genres de discours dans l’enseignement du français langue étrangère et langue de scolarisation"
+                ],
+                "authFullName_s": [
+                    "Jean-Claude Beacco"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455674,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "À propos du livre « Management de l’innovation et globalisation » de Sihem Ben Mahmoud-Jouini, Florence Charue-Duboc et Christophe Midler"
+                ],
+                "authFullName_s": [
+                    "Bénédicte Aldebert",
+                    "Aurélie Hemonnet-Goujot",
+                    "Antonin Ricard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455669,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Les circulations des savoirs grammaticaux dans l’enseignement/apprentissage du français comme langue étrangère"
+                ],
+                "authFullName_s": [
+                    "Jean-Claude Beacco"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455666,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "l’enseignement du lexique en langue étrangère. L’exemple du français"
+                ],
+                "authFullName_s": [
+                    "Cristelle Cavalla"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455663,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Risques et société : les principaux enjeux et concepts scientifiques mobilisés pour la gestion des inondations en France"
+                ],
+                "authFullName_s": [
+                    "Gilles Hubert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455662,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "L’enseignement du français aux étudiants universitaires d’autres disciplines (que le français/les langues) », dans Beacco J.-C. (dir.) : Guide de l’expertise des formations de français"
+                ],
+                "authFullName_s": [
+                    "Jean-Claude Beacco"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455658,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Les écoquartiers en France : nouveaux laboratoires pour la ville durable"
+                ],
+                "authFullName_s": [
+                    "Gilles Hubert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455657,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Les contextualisations de la description du français dans les grammaires étrangères: présentation"
+                ],
+                "authFullName_s": [
+                    "Jean-Claude Beacco",
+                    "Kalmbach Jean-Michel",
+                    "Suso Lopez Javier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455656,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Séminaire doctoral autour de la méthodologie de la recherche"
+                ],
+                "authFullName_s": [
+                    "Cristelle Cavalla"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455655,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Les territoires de l’eau et la gestion métropolitaine des risques d’inondation. Du bassin amont de la Seine au Grand Paris"
+                ],
+                "authFullName_s": [
+                    "Gilles Hubert",
+                    "José-Frédéric Deroubaix"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455649,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "CLIO. Femmes, Genre, Histoire, n° 43/2016. Citoyennetés"
+                ],
+                "authFullName_s": [
+                    "Pascale Barthélémy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455648,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "3e Congrès mondial de linguistique française : Lyon, 4-7 juillet 2012 : recueil des résumés"
+                ],
+                "authFullName_s": [
+                    "Franck Neveu",
+                    "Valelia Muni Toke",
+                    "Peter Blumenthal",
+                    "Thomas Klingler",
+                    "Pierluigi Ligas",
+                    "Sophie Prevost",
+                    "Sandra Teston-Bonnard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455647,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Quelle variation lexicale en FLS ? Cadre de pays d’Afrique"
+                ],
+                "authFullName_s": [
+                    "Cristelle Cavalla",
+                    "Sascha Diwersy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455645,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Les langues : guerre et paix"
+                ],
+                "authFullName_s": [
+                    "Jean-Claude Beacco"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455639,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Représentations de la grammaire et enseignements des langues étrangères : quelles marges de manœuvre ?"
+                ],
+                "authFullName_s": [
+                    "Jean-Claude Beacco"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455638,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les religions à Lyon et la Première Guerre mondiale"
+                ],
+                "authFullName_s": [
+                    "Jean-Dominique Durand"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455635,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Le Conseil de l’Europe et les langues de scolarisation"
+                ],
+                "authFullName_s": [
+                    "Jean-Claude Beacco"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455633,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Auxerre (Yonne), la cathédrale Saint-Étienne"
+                ],
+                "authFullName_s": [
+                    "Christian Sapin",
+                    "Sylvain Aumard",
+                    "Stéphane Büttner",
+                    "Heike Hansen"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455612,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "L’innovation dans les métropoles dépend-elle de leur capacité à nouer des relations spécifiques avec leur environnement scientifique ? Formes, échelles des réseaux et trajectoires d’innovation dans la gestion des eaux pluviales en France"
+                ],
+                "authFullName_s": [
+                    "Mathilde Soyer",
+                    "José-Frédéric Deroubaix",
+                    "Bernard De Gouvello",
+                    "Gilles Hubert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455585,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "La mission archéologique de Jebel Oust, site antique de Tunisie"
+                ],
+                "authFullName_s": [
+                    "Raphaël Durost",
+                    "John Scheid",
+                    "A. Ben Abed"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455584,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Matériaux et constructions : sciences et techniques des matériaux. De la carrière à la mise en œuvre"
+                ],
+                "authFullName_s": [
+                    "Stéphane Büttner"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455581,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Amérique latine : 1er janvier 2015-31 décembre 2015"
+                ],
+                "authFullName_s": [
+                    "Juliette Dumont"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455578,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Les mesures de Constantin en faveur de la cité des éduens (Panégyriques latins, VIII (5)) : réponse à une crise locale ou mesure politique ?"
+                ],
+                "authFullName_s": [
+                    "Michel Kasprzyk"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455575,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Amérique latine : 1er janvier 2014-21 décembre 2014"
+                ],
+                "authFullName_s": [
+                    "Juliette Dumont"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455571,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-cl"
+                ],
+                "title_s": [
+                    "Estimer la notoriété d’un nom propre via Wikipedia",
+                    "Estimate the notoriety of a Proper name using Wikipedia"
+                ],
+                "authFullName_s": [
+                    "Mouna Elashter",
+                    "Denis Maurel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455568,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Enseignement du français et enseignement de l'anglais : une \"entente cordiale\" pour l'éducation plurilingue."
+                ],
+                "authFullName_s": [
+                    "Jean-Claude Beacco"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455565,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Contributions à l'introduction de flexibilité dans la reconstruction et l'édition de modèles 3D",
+                    "Contributions to the introduction of flexibility in 3D model reconstruction and editing"
+                ],
+                "authFullName_s": [
+                    "Rémi Allègre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455564,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Population indigène, colonisation castrale et encadrement municipal dans le Midi portugais 1147-ca 1279 : une exploitation sociale de l’espace ?"
+                ],
+                "authFullName_s": [
+                    "Stéphane Boissellier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455562,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Le français dans les écrits universitaires : méthodologie et phraséologie transdisciplinaire"
+                ],
+                "authFullName_s": [
+                    "Cristelle Cavalla"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455561,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Jean Peytard et le discours grammatical. Altérations des savoirs linguistiques en français langue de scolarisation et en français langue étrangère"
+                ],
+                "authFullName_s": [
+                    "Jean-Claude Beacco"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455559,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Attitudes et comportements de santé du sportif assidu‎ : enquête auprès de sportifs assidus de Seine-Maritime"
+                ],
+                "authFullName_s": [
+                    "Juliette Colle"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455556,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-ap"
+                ],
+                "title_s": [
+                    "Le rôle de la fonction de Green dans une équation elliptique non-linéaire avec l'exposant critique de Sobolev"
+                ],
+                "authFullName_s": [
+                    "Olivier Rey"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455553,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "L’outillage agricole en fer de La Tène à l’époque mérovingienne en Lorraine"
+                ],
+                "authFullName_s": [
+                    "Anne Wilmouth"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455551,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Préparer et présenter une communication"
+                ],
+                "authFullName_s": [
+                    "Cristelle Cavalla"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455546,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "L’outillage agricole en fer chez les Leuques, les Médiomatriques et le sud de la région des Trévires de La Tène à l’époque mérovingienne"
+                ],
+                "authFullName_s": [
+                    "Anne Wilmouth"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455544,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Rédiger un article scientifique : la phraséologie spécifique"
+                ],
+                "authFullName_s": [
+                    "Cristelle Cavalla"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455543,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "La fabrique d'une invention : parcours d'inventrices/inventeurs autonomes en France et au Québec",
+                    "The making of an invention : the pathways of autonomous inventors in France and Quebec"
+                ],
+                "authFullName_s": [
+                    "Laurence Cloutier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455541,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Les obstacles à la gestion éducative de la pluralité linguistique sont-ils politiques ?"
+                ],
+                "authFullName_s": [
+                    "Jean-Claude Beacco"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455539,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "La Savoie, la France, l'Italie. Lettres d'Albert Blanc à François Buloz (1858-1861)"
+                ],
+                "authFullName_s": [
+                    "Christian Sorrel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455537,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Un Cadre générique pour la co-classification sous contraintes",
+                    "A generic framework for contrainst-based co-clustering"
+                ],
+                "authFullName_s": [
+                    "Ruggero Gaetano Pensa"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455536,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Le travail de la terre à l’époque gallo-romaine en Lorraine : diversité et technicité des outils en fer"
+                ],
+                "authFullName_s": [
+                    "Anne Wilmouth"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455534,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Formulaires du haut Moyen Âge. Éléments d’un bilan"
+                ],
+                "authFullName_s": [
+                    "Josiane Barbier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455533,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    ". L’influence des réseaux sociaux dans le monde de la gastronomie"
+                ],
+                "authFullName_s": [
+                    "Kilien Stengel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455532,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "2.sdv.mhep.chi"
+                ],
+                "title_s": [
+                    "Évaluation à plus de 5 ans du traitement chirurgical percutané des fractures du rachis thoraco lombaire au CHU d'Amiens"
+                ],
+                "authFullName_s": [
+                    "Louis Chenin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455530,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "La Francophonie, catalyseur du questionnement sociétal (Préface)"
+                ],
+                "authFullName_s": [
+                    "Jean-Claude Beacco"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455528,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Il était une fois la cuisine moléculaire"
+                ],
+                "authFullName_s": [
+                    "Kilien Stengel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455527,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-lo"
+                ],
+                "title_s": [
+                    "Justifications dans les approches ASP basées sur les règles : application au backjumping dans le solveur ASPeRiX",
+                    "Justifications in rule-based ASP computations : application to backjumping in the ASPeRiX solver"
+                ],
+                "authFullName_s": [
+                    "Christopher Beatrix"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455525,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Pourquoi médiatiser la gastronomie ?"
+                ],
+                "authFullName_s": [
+                    "Kilien Stengel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455524,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Modélisation et simulation des scènes naturelles complexes",
+                    "Modelling and simulating complexe natural scenes"
+                ],
+                "authFullName_s": [
+                    "Brett Desbenoit"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455518,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Le Gastronomisme, le sixième sens des gastronomes du futur"
+                ],
+                "authFullName_s": [
+                    "Kilien Stengel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455516,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Sur quelques manuscrits concernant la fiscalité pontificale au Portugal"
+                ],
+                "authFullName_s": [
+                    "Stéphane Boissellier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455513,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "La place du culinaire dans le monde de l’écrit : entre excellence et humanisme"
+                ],
+                "authFullName_s": [
+                    "Kilien Stengel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455508,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "« Dites pas c’que j’dis, dites c’que j’écris… » Représentations et pratiques d’enseignants vis-à-visde la variation en contexte scolaire"
+                ],
+                "authFullName_s": [
+                    "Violaine Bigot",
+                    "Nadja Maillard-De La Corte Gomez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455507,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.mcg",
+                    "0.sdu",
+                    "1.sdu.envi",
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.gc",
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.oc",
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.mi"
+                ],
+                "title_s": [
+                    "Grande Vasière ou Grande Sablière ?"
+                ],
+                "authFullName_s": [
+                    "C. Dubrulle",
+                    "J.M. Jouanneau",
+                    "J.F. Bourillet",
+                    "O. Weber"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455504,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "L'optique du livre contre l'optique de la scène : chapitrage et bifurcation générique dans Jean Barois"
+                ],
+                "authFullName_s": [
+                    "Aude Leblond"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455500,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.mcg",
+                    "0.sdu",
+                    "1.sdu.envi",
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.gc",
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.oc",
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.mi"
+                ],
+                "title_s": [
+                    "Etude sédimentologique de la Grande Vasière."
+                ],
+                "authFullName_s": [
+                    "C. Dubrulle",
+                    "J.M. Jouanneau",
+                    "J.F. Bourillet",
+                    "O. Weber"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1455499,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "La représentation du bon produit et sa transmission"
+                ],
+                "authFullName_s": [
+                    "Kilien Stengel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1455497,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.nano"
+                ],
+                "title_s": [
+                    "Réseaux de Capteurs Intelligents RECAIN2"
+                ],
+                "authFullName_s": [
+                    "S. Meillère",
+                    "E. Benevent",
+                    "P. Pannier",
+                    "G. Jacquemod"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFZ2MYF"
+}

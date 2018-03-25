@@ -1,0 +1,2035 @@
+{
+    "response": {
+        "numFound": 515922,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1342512,
+                "domain_s": [
+                    "0.sde"
+                ],
+                "title_s": [
+                    "Gestion sémantique des bulletins de santé du végétal dans le projet Vespa",
+                    "Semantic annotation of agricultural alert bulletins in VESPA project"
+                ],
+                "authFullName_s": [
+                    "C. Roussey",
+                    "S. Bernard",
+                    "P. Pinet",
+                    "X. Reboud",
+                    "V. Cellier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342507,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Les limites juridiques s’imposant au médecin du travail en matière d’inaptitude"
+                ],
+                "authFullName_s": [
+                    "Véronique Wester-Ouisse"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342506,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.envir",
+                    "0.shs",
+                    "1.shs.hisphilso"
+                ],
+                "title_s": [
+                    "Le paysage et l'artifice en géographie. De la physionomie terrestre au paysage humain chez Max Sorre, 1913-1958",
+                    "The Landscape and the Device in Geography. From the Terrestrial Physiognomy to the Human Landscape with Max Sorre, 1913-1958"
+                ],
+                "authFullName_s": [
+                    "Dylan Simon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342501,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Valorisation d'acides gras volatils issus de fermentation anaérobie par la production de lipides microbiens, précurseurs de biodiesel",
+                    "Valorization of volatile fatty acids to microbial lipids by oleaginous yeasts for biodiesel production"
+                ],
+                "authFullName_s": [
+                    "Vanessa Beligon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342495,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-gr"
+                ],
+                "title_s": [
+                    "Une structure de découpe efficace pour l'affichage de grands modèles B-Rep"
+                ],
+                "authFullName_s": [
+                    "Frédéric Claux",
+                    "David Vanderhaeghe",
+                    "Loïc Barthe",
+                    "Mathias Paulin",
+                    "Jean-Pierre Jessel",
+                    "David Croenne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342494,
+                "domain_s": [
+                    "0.chim",
+                    "0.sde"
+                ],
+                "title_s": [
+                    "Apports des échantillonneurs passifs de type POCIS pour le suivi de polluants organiques dans les captages AEP"
+                ],
+                "authFullName_s": [
+                    "Anne Togola",
+                    "Claudine Lamotte"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1342493,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "2.sdv.mhep.chi"
+                ],
+                "title_s": [
+                    "La glossodynie primaire est-elle une douleur neuropathique ?",
+                    "Is primary burning mouth syndrome a neuropathic pain?"
+                ],
+                "authFullName_s": [
+                    "Anne-Solène Tanguy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1342492,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.acou"
+                ],
+                "title_s": [
+                    "Simulation temporelle d'un modèle d'impédance de liner en utilisant la représentation diffusive d'opérateurs",
+                    "Time-domain simulation of a liner impedance model using the diffusive representation"
+                ],
+                "authFullName_s": [
+                    "Florian Monteghetti",
+                    "Denis Matignon",
+                    "Estelle Piot",
+                    "Pascal Lucas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342491,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.spee"
+                ],
+                "title_s": [
+                    "Arrêt de la conduite automobile dans la pré-démence et dans la démence"
+                ],
+                "authFullName_s": [
+                    "Sylviane Lafont",
+                    "Laetitia Marie-Dit-Asse",
+                    "Catherine Helmer",
+                    "Bernard Laumon",
+                    "Claudine Berr",
+                    "Jean Marc Rouaud",
+                    "Sophie Auriacombe",
+                    "Colette Fabrigoule"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342490,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "L’analyse critique de la prise en considération du retentissement professionnel"
+                ],
+                "authFullName_s": [
+                    "Marion Del Sol",
+                    "Cristina Corgas-Bernard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342478,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "L’analyse croisée des cadres juridiques de l’inaptitude, de l’invalidité et de l’incapacité permanente"
+                ],
+                "authFullName_s": [
+                    "Marion Del Sol"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342477,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "L’Afrique entre « malédiction des ressources » et « émergence » : une bifurcation ?"
+                ],
+                "authFullName_s": [
+                    "Géraud Magrin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342473,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "L’analyse comparée du traitement de l’inaptitude par les droits du travail et de la fonction publique"
+                ],
+                "authFullName_s": [
+                    "Gilles Dedessus Le Moustier",
+                    "Nathalie Dedessus-Le Moustier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342469,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.stat",
+                    "1.stat.ot"
+                ],
+                "title_s": [
+                    "Data Science : une formation internationale de niveau Master en science des données",
+                    "Data Science: an international training program at master level"
+                ],
+                "authFullName_s": [
+                    "Massih-Reza Amini",
+                    "Jean-Baptiste Durand",
+                    "Olivier Gaudoin",
+                    "Eric Gaussier",
+                    "Anatoli Iouditski"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342463,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Métropolisation et recompositions des espaces à dominante rurale à la périphérie des métropoles des Suds (Périsud)"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Chaléard",
+                    "Martine Berger",
+                    "Olivier Ninot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342462,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Un exemple de pluralisme juridique : l'accord Grands Routiers du 13 novembre 1994"
+                ],
+                "authFullName_s": [
+                    "Stéphane Carre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342459,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hisphilso"
+                ],
+                "title_s": [
+                    "Nouvelle théorie des taches du Soleil\", Esprit Pezenas (1692-1776) s.j. - Archives Départementales de l'Hérault, Ms. D.128 S.D., fol. 261-267",
+                    "New theory of sunspots\", Esprit Pezenas (1692-1776) s.j. ; Manuscript from Archives Départementales de l'Hérault, Ms. D.128 S.D., fol. 261-267, annoted and presented by Guy Boistel."
+                ],
+                "authFullName_s": [
+                    "Guy Boistel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1342458,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Maternal behaviour, locomotor activity and reproduction cycle of females spider Pardosa saltans (Lycosidae) with a foreign or dead egg-sac"
+                ],
+                "authFullName_s": [
+                    "Fanny Ruhland",
+                    "Violette Chiara",
+                    "Marie Trabalon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342456,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Caractérisation morphologique et homogénéisation élastique et visco-élastique de polymères renforcés de nano-plaquettes d'argile",
+                    "Morphological characterization and homogenization in elasticity and visco-elasticity of nano-clay reinforced polymers"
+                ],
+                "authFullName_s": [
+                    "Pierre Gelineau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342455,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Le cadre juridique général de la pénibilité"
+                ],
+                "authFullName_s": [
+                    "Franck Héas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342454,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Négociation collective, pénibilité et prévention"
+                ],
+                "authFullName_s": [
+                    "Franck Héas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342447,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Pour une reconfiguration des principes en santé au travail"
+                ],
+                "authFullName_s": [
+                    "Franck Héas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342445,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ma"
+                ],
+                "title_s": [
+                    "Modélisation et simulation multi-agent de la formation et de la dynamique d’attitudes basées sur les croyances",
+                    "Modelling and simulating attitudes formation and dynamics using beliefs"
+                ],
+                "authFullName_s": [
+                    "Kei-Léo Brousmiche"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342441,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.ocean"
+                ],
+                "title_s": [
+                    "Etude et paramétrisation de la distribution verticale de la biomasse phytoplanctonique dans l'ocean global",
+                    "Study and parameterization of the vertical distribution of phytoplankton biomass in the global ocean"
+                ],
+                "authFullName_s": [
+                    "Raphaëlle Sauzède"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342437,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "L’incertitude comme ressource pour la décision. Le cas de la prévention des risques industriels"
+                ],
+                "authFullName_s": [
+                    "Emmanuel Martinais"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342397,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "BRICs et émergents : les nouveaux investisseurs internationaux"
+                ],
+                "authFullName_s": [
+                    "Wladimir Andreff"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342389,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Questionner les discours experts d’enseignants universitaires sur la catégorisation natifs/non natifs d’écrits académiques d’étudiants",
+                    "Problematizing the discourse of expert university instructors on the native/non-native categorization of students’ academic writing."
+                ],
+                "authFullName_s": [
+                    "Danielle Omer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342387,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Les étudiants étrangers: entre difficultés de la mesure et mesures discriminantes. Une application au cas de la Bretagne",
+                    "Foreign students: between difficulties of the measure and restrictive measures. Application to Brittany"
+                ],
+                "authFullName_s": [
+                    "Eugénie Terrier",
+                    "Raymonde Séchet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342376,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Une lutte biologique réussie par lâchers inondatifs de [i]Trichogramma chilonis[/i]"
+                ],
+                "authFullName_s": [
+                    "Hong Do Thi Khanh",
+                    "Estelle Roux",
+                    "Régis Goebel",
+                    "Etty Colombel",
+                    "Clarisse Clain",
+                    "Marlène Marquier",
+                    "Jacques Frandon",
+                    "Nicolas Ris",
+                    "Nathalie Sorbier",
+                    "Sylvie Warot",
+                    "Moumouni Ismail",
+                    "Johanna Bodendörfer",
+                    "Adrien Bonnet",
+                    "Elisabeth Tabone"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1342371,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Initiatives émanant du monde de l'élevage"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Peyraud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1342368,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.be"
+                ],
+                "title_s": [
+                    "Les effets du passage d’un feu dans un peuplement arboré : synthèse des connaissances et applications pour le gestionnaire forestier méditerranéen"
+                ],
+                "authFullName_s": [
+                    "François Pimont",
+                    "Jean-Luc Dupuy",
+                    "Eric Rigolot",
+                    "Yvon Duché"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1342363,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "Au coeur du soleil ardent : la catastrophe selon les Aborigènes"
+                ],
+                "authFullName_s": [
+                    "Barbara Glowczewski"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342362,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.opti",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Couplage ablation laser et imagerie spectrale rapide pour identification et analyses de plastiques : concept, développement et validation",
+                    "Coupling between laser ablation and fast spectral imaging for the identification and the analysis of plastics: concept, development and validation"
+                ],
+                "authFullName_s": [
+                    "Erwan Negre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342361,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "La durée d’existence des coentreprises internationales : une revue de la littérature",
+                    "The duration of existence of international joint ventures : a literature review"
+                ],
+                "authFullName_s": [
+                    "Ulrike Mayrhofer",
+                    "Frédéric Prévot",
+                    "Dora Triki"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1342360,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-cy",
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "E-chronic / E-Nephro : un démonstrateur de la prise en charge par télémédecine de l'insuffisance rénale chronique"
+                ],
+                "authFullName_s": [
+                    "Michèle Kessler",
+                    "Nathalie Thilly",
+                    "Christian Noel",
+                    "Christian Combe",
+                    "Pierre Merville",
+                    "Jacques Chanliau",
+                    "Carole Ayav",
+                    "Myriam Le Goff - Pronost"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342346,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-cy",
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Quoi de neuf docteur ? Une étude économétrique sur la recherche en ligne d'informations médicales par les patients"
+                ],
+                "authFullName_s": [
+                    "Mehdi Farajallah",
+                    "Myriam Le Goff - Pronost",
+                    "Thierry Pénard",
+                    "Raphaël Suire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342340,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.opti"
+                ],
+                "title_s": [
+                    "Endoscopes multiphotoniques sans marquage"
+                ],
+                "authFullName_s": [
+                    "Hervé Rigneault"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342332,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Gestion dynamique des connaissances de maintenance pour des environnements de production de haute technologie à fort mix produit",
+                    "Dynamic management of maintenance knowledge for high technology production environments with high product mix"
+                ],
+                "authFullName_s": [
+                    "Anis Ben Said"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342330,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Variations sur et autour de l'inaptitude en santé-travail"
+                ],
+                "authFullName_s": [
+                    "Marion Del Sol",
+                    "Franck Héas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342329,
+                "domain_s": [
+                    "0.chim",
+                    "1.chim.mate"
+                ],
+                "title_s": [
+                    "Caractérisation de pigments sur des peintures de chevalet par méthodes optiques non-invasives",
+                    "Pigments characterization on easel paintings using non-invasive optical methods"
+                ],
+                "authFullName_s": [
+                    "Anita Hayem"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342326,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "La subordonnée participiale au participe passé en Français : de la phrase au discours",
+                    "Participial subordinate clause : from sentence to discourse"
+                ],
+                "authFullName_s": [
+                    "Ali Abdoulhamid"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342325,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Un projet du Centre International Blaise Pascal : l’édition électronique des Pensées"
+                ],
+                "authFullName_s": [
+                    "Dominique Descotes",
+                    "Gilles Proust"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342321,
+                "domain_s": [
+                    "0.scco",
+                    "1.scco.comp",
+                    "0.scco"
+                ],
+                "title_s": [
+                    "InGredible : Une plateforme dédiée à l'interaction corporelle entre humain(s) et/ou agent(s) virtuel(s) basée sur la notion de couplage"
+                ],
+                "authFullName_s": [
+                    "Elisabetta Bevacqua",
+                    "Romain Richard",
+                    "Julien Soler",
+                    "Pierre De Loor"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342313,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.solid"
+                ],
+                "title_s": [
+                    "Caractérisation expérimentale des composites: méthodes extensométriques, grandeurs caractéristiques et essais"
+                ],
+                "authFullName_s": [
+                    "Vincent Manet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342309,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Semestre d'harmonisation et d'adaptation, vers une médiation multilatérale"
+                ],
+                "authFullName_s": [
+                    "André Le Saout",
+                    "Alison Gourvès-Hayward",
+                    "Christophe Sintes"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342304,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "L'interculturalité et le roman contemporain en Europe (José Saramago, Christa Wolf, Vassilis Alexakis)",
+                    "Interculturality in the contemporary novel in Europe (José Saramago, Christa Wolf, Vassilis Alexakis)"
+                ],
+                "authFullName_s": [
+                    "Silvia Pastor Rocha"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1342291,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.opti"
+                ],
+                "title_s": [
+                    "Polarized super-resolution imaging"
+                ],
+                "authFullName_s": [
+                    "Sophie Brasselet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342288,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.opti"
+                ],
+                "title_s": [
+                    "Imaging molecular order using polarized microscopy"
+                ],
+                "authFullName_s": [
+                    "Sophie Brasselet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342286,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.opti"
+                ],
+                "title_s": [
+                    "Nouveaux contrastes en microscopie optique et méthodes quantitatives : microscopie polarisée"
+                ],
+                "authFullName_s": [
+                    "Sophie Brasselet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342284,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Rapport d'étude : Les conflits d'intérêts au sein des comités d'expertise des agences fédérales américaines",
+                    "Study Report: Conflicts of interests in the American federal advisory committees"
+                ],
+                "authFullName_s": [
+                    "Rodica Plugaru"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342277,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "L'acte de notoriété acquisitive contredisant des titres publiés : défaut de publicité foncière et responsabilité notariale"
+                ],
+                "authFullName_s": [
+                    "Jean-Marie Delperier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342275,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.solid"
+                ],
+                "title_s": [
+                    "La fatigue des composites: synthèse typologique"
+                ],
+                "authFullName_s": [
+                    "Vincent Manet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342269,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.solid"
+                ],
+                "title_s": [
+                    "La fatigue des composites: synthèse thématique"
+                ],
+                "authFullName_s": [
+                    "Vincent Manet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1342266,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ba",
+                    "0.sdv",
+                    "1.sdv.neu",
+                    "2.sdv.neu.sc",
+                    "0.sdv",
+                    "1.sdv.neu",
+                    "2.sdv.neu.nb"
+                ],
+                "title_s": [
+                    "Marqueurs comportementaux et neurochimiques individuels de la prise de décision chez la souris et effets d'une dette de sommeil",
+                    "Individual Behavioral and Neurochemical Markers of Decision-Making in Mice and Effects of a Sleep Debt"
+                ],
+                "authFullName_s": [
+                    "Elsa Pittaras"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342265,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.solid"
+                ],
+                "title_s": [
+                    "La fatigue des composites - résumés de lectures"
+                ],
+                "authFullName_s": [
+                    "Vincent Manet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1342257,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Médiateurs et dispositifs de médiation culturelle : contribution à l'établissement d'une grammaire d'action de la démocratisation de la culture",
+                    "Educators and cultural mediation devices : Contribution to the establishment of an « action grammar » of the cultural democratization project"
+                ],
+                "authFullName_s": [
+                    "Nathalie Montoya"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342253,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Discussion sur la reconnaissance de conseil donné que la pratique nomme à tort décharge"
+                ],
+                "authFullName_s": [
+                    "Jean-Marie Delperier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342252,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Les ḫābīyat -s (jarres) d’Albalat (1ère m. XIIe siècle, Estrémadure).Vers une approche pluridisciplinaire"
+                ],
+                "authFullName_s": [
+                    "Yasmina Cáceres Gutiérrez",
+                    "Claudio Capelli",
+                    "Nicolas Garnier",
+                    "Sophie Gilotte",
+                    "Jorge De Juan Ares",
+                    "Catherine Richarté"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342250,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Quand la VEFA est l'occasion d'une leçon de causalité"
+                ],
+                "authFullName_s": [
+                    "Cristina Corgas-Bernard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342248,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Le pouvoir des acteurs internationaux au sein des transferts",
+                    "The Power of International Actors in Transfers"
+                ],
+                "authFullName_s": [
+                    "Rodica Plugaru"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342243,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-cr"
+                ],
+                "title_s": [
+                    "Apport du suivi de flux d'information pour la sécurité des systèmes"
+                ],
+                "authFullName_s": [
+                    "Valérie Viet Triem Tong"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "HDR",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342228,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.opti",
+                    "0.info",
+                    "1.info.info-mo",
+                    "0.spi",
+                    "1.spi.signal"
+                ],
+                "title_s": [
+                    "Sur la robustesse de pré-distorseurs numériques statiques pour la compensation de non-linéarités au sein de transmetteurs optiques multi-porteuses"
+                ],
+                "authFullName_s": [
+                    "Mohamad Younes",
+                    "Stéphane Azou",
+                    "Noël Tanguy",
+                    "Mihai Telescu",
+                    "Pascal Morel",
+                    "Chérif El Valid Diouf"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342225,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.opti",
+                    "0.info",
+                    "1.info.info-mo",
+                    "0.spi",
+                    "1.spi.signal"
+                ],
+                "title_s": [
+                    "Utilisation conjointe d’une réduction de PAPR via une loi µ et d’un modèle comportemental pour la linéarisation d’un transmetteur optique"
+                ],
+                "authFullName_s": [
+                    "Mohamad Younes",
+                    "Stéphane Azou",
+                    "Noël Tanguy",
+                    "Mihai Telescu",
+                    "Pascal Morel",
+                    "Chérif El Valid Diouf"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342224,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Construction et acquisition par des époux séparés de biens"
+                ],
+                "authFullName_s": [
+                    "Véronique Barabé-Bouchard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342221,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.opti",
+                    "0.info",
+                    "1.info.info-mo",
+                    "0.spi",
+                    "1.spi.signal"
+                ],
+                "title_s": [
+                    "Pré-distorsion numérique à très faible complexité pour la compensation d'effets non-linéaires au sein d'un transmetteur optique CO-OFDM"
+                ],
+                "authFullName_s": [
+                    "Mohamad Younes",
+                    "Stéphane Azou",
+                    "Noël Tanguy",
+                    "Pascal Morel",
+                    "Mihai Telescu",
+                    "Chérif El Valid Diouf"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342220,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.eco",
+                    "0.shs",
+                    "1.shs.envir"
+                ],
+                "title_s": [
+                    "Jusqu’où l’économie écologique pense-t-elle l’inégalité environnementale ? Autour de l’oeuvre de Joan Martinez-Alier"
+                ],
+                "authFullName_s": [
+                    "Laura Centemeri",
+                    "Gildas Renou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342219,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.opti"
+                ],
+                "title_s": [
+                    "Microscopie optique résolue en polarisation pour la biologie : sonde de la structure des assemblages moléculaires"
+                ],
+                "authFullName_s": [
+                    "Sophie Brasselet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342216,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ee",
+                    "0.sdv",
+                    "0.sdv",
+                    "1.sdv.bid",
+                    "0.sdv",
+                    "1.sdv.bid",
+                    "2.sdv.bid.evo",
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "2.sdv.sa.sds"
+                ],
+                "title_s": [
+                    "Biodiversité et syndrome de dispersion dans les communautés de macrofaune du sol"
+                ],
+                "authFullName_s": [
+                    "Jérôme Mathieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "HDR",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342207,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Commentaire de l'article de Guillaume Allègre"
+                ],
+                "authFullName_s": [
+                    "François Legendre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342202,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Une introduction à la micro-économétrie de l'évaluation"
+                ],
+                "authFullName_s": [
+                    "François Legendre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342199,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.opti",
+                    "0.info",
+                    "1.info.info-mo",
+                    "0.spi",
+                    "1.spi.signal"
+                ],
+                "title_s": [
+                    "Compensation d’effets non-linéaires au sein d’un transmetteur optique CO-OFDM par pré-distorsion numérique en bande de base"
+                ],
+                "authFullName_s": [
+                    "Stéphane Azou",
+                    "Serban Bejan",
+                    "Pascal Morel",
+                    "Chérif El Valid Diouf",
+                    "Mihai Telescu",
+                    "Noël Tanguy",
+                    "Ammar Sharaiha"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342197,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bid",
+                    "0.sdv",
+                    "1.sdv.ee",
+                    "2.sdv.ee.eco",
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "2.sdv.sa.sds",
+                    "0.sde",
+                    "1.sde.be"
+                ],
+                "title_s": [
+                    "ÉTUDE DE LA MACROFAUNE DU SOL DANS UNE ZONE DE DÉFORESTATION EN AMAZONIE DU SUD-EST, AU BRÉSIL, DANS LE CONTEXTE DE L'AGRICULTURE FAMILIALE",
+                    "Response of soil macrofauna communities to deforestation in south-east Amazon, Brazil, in the framework of family farming"
+                ],
+                "authFullName_s": [
+                    "Jérôme Mathieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342189,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Admission de la preuve par photocopie du testament perdu par l'expert"
+                ],
+                "authFullName_s": [
+                    "Jean-René Binet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342188,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Effets de l'entraînement en résistance, de la performance à l'unité contractile",
+                    "Effets of resistance training, from performance to contractile unit"
+                ],
+                "authFullName_s": [
+                    "Antony Philippe"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1342186,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Le transfert de normes techniques par les acteurs économiques : le cas de la construction des hôpitaux dans les anciens pays soviétiques"
+                ],
+                "authFullName_s": [
+                    "Rodica Plugaru"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342180,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.psy"
+                ],
+                "title_s": [
+                    "ATELIER : TRICYCLE CONTRE LA MONTRE"
+                ],
+                "authFullName_s": [
+                    "Xavier Bollen",
+                    "Delphine Ducarme",
+                    "Etienne Galmiche",
+                    "Benoit Raucent",
+                    "Mélanie Souhait"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1342178,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.auto"
+                ],
+                "title_s": [
+                    "Microrobotique et Micromécatronique pour la Réalisation de Tâches de Micro-Assemblage Complexes et Précises.",
+                    "Microrobotics and micromechatronics to suceed complex micro-assembly tasks with high accuracy."
+                ],
+                "authFullName_s": [
+                    "Cédric Clévy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "HDR",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342175,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Prévention, diagnostic précoce et traitement du cancer broncho-pulmonaire chez les personnes vivant avec le VIH : apport de la tomodensitométrie thoracique sans injection de produit de contraste",
+                    "Prevention, early diagnosis and treatement of lung cancer in people living with HIV : contribution of chest computed tomography without contrast injection"
+                ],
+                "authFullName_s": [
+                    "Alain Makinson"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1342174,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Les relations texte / image dans l'édition numérique enrichie d'une œuvre littéraire",
+                    "Relationships between Text and Image in the Enhanced eBook of a Literary Work"
+                ],
+                "authFullName_s": [
+                    "Arnaud Laborderie",
+                    "Françoise Juhel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1342161,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.psy"
+                ],
+                "title_s": [
+                    "APPRENDRE LES COMPETENCES TRANSVERSALES"
+                ],
+                "authFullName_s": [
+                    "Mélanie Souhait",
+                    "Xavier Bollen",
+                    "Delphine Ducarme",
+                    "Etienne Galmiche",
+                    "Benoit Raucent"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1342152,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "2.sdv.mhep.chi"
+                ],
+                "title_s": [
+                    "La restauration esthétique des lésions cervicales non carieuses : nouvelle approche de dentisterie adhésive",
+                    "Aesthetic restoration of non-carious cervical lesions: a new approach of adhesive dentistry"
+                ],
+                "authFullName_s": [
+                    "Natalia Kouleshova"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1342143,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Une évaluation ex ante des conséquences du Crédit d’impôt pour la compétitivité et l’emploi (CICE)"
+                ],
+                "authFullName_s": [
+                    "Cyrille Hagneré",
+                    "François Legendre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342142,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Perte de commission et dommages-intérêts : double peine pour l'agent immobilier !"
+                ],
+                "authFullName_s": [
+                    "Cédric Coulon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342124,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "La prise en soin d'enfants déficients visuels en psychomotricité, de l'intérêt du médiateur cheval"
+                ],
+                "authFullName_s": [
+                    "Julie Maunoury"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1342121,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "L’enseignement de l’analyse sensorielle des vins à la lumière du « déjà-là » sensoriel de l’enseignant",
+                    "The teaching of the sensory analysis of wine in the light of the \"already-there\" sensory of the teacher"
+                ],
+                "authFullName_s": [
+                    "Dominique Alvarez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1342120,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Biomarqueurs de la réceptivité endométriale humaine : du fondamental aux applications cliniques",
+                    "Biomarkers of human endometrial receptivity : from fundamental to clinical applications"
+                ],
+                "authFullName_s": [
+                    "Laurence Bissonnette"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342114,
+                "domain_s": [
+                    "0.math",
+                    "0.math",
+                    "1.math.math-oc",
+                    "0.math",
+                    "1.math.math-na",
+                    "0.math",
+                    "1.math.math-ca"
+                ],
+                "title_s": [
+                    "Minimisations sous contraintes et flots du périmètre et de l'énergie de Willmore",
+                    "Minimisations with constraints and flows of the perimeter and the Willmore energy"
+                ],
+                "authFullName_s": [
+                    "François Dayrens"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342113,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.tron"
+                ],
+                "title_s": [
+                    "Procédé de gestion de prise de parole sur un canal de communication dans le cadre de communications en alternat"
+                ],
+                "authFullName_s": [
+                    "Joan Ventura Jaume",
+                    "Laurent Franck"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "PATENT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342105,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Évaluation des politiques publiques, ex post et ex ante : l’apport de la microsimulation"
+                ],
+                "authFullName_s": [
+                    "Didier Blanchet",
+                    "Cyrille Hagneré",
+                    "François Legendre",
+                    "Florence Thibault"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342103,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Un dépôt de monnaies gauloises sur le site des Terrasses-de-Montfo à Magalas (Hérault)."
+                ],
+                "authFullName_s": [
+                    "Michel Feugère",
+                    "Olivier Ginouvez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342100,
+                "domain_s": [
+                    "0.math"
+                ],
+                "title_s": [
+                    "Schéma en groupes fondamental et extension de torseurs"
+                ],
+                "authFullName_s": [
+                    "Marco Antei"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "HDR",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342056,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "De l'usage du concept de contradiction en phase amont de la conception architecturale : incidences de la théorie TRIZ sur le programme architectural : une étude empirique",
+                    "On the use of the concept of contradiction in early phases of architectural design : contributions of TRIZ theory to architectural problem statement : an empirical study"
+                ],
+                "authFullName_s": [
+                    "Amirabbas Najari"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1342053,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.genre"
+                ],
+                "title_s": [
+                    "Des difficultés des géographes français à prendre au sérieux les femmes. Expériences vécues à l'Ouest dans les années 1970-1980"
+                ],
+                "authFullName_s": [
+                    "Raymonde Séchet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342052,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Analyse et exploration de graphes pour la recommandation et la prévision"
+                ],
+                "authFullName_s": [
+                    "Maria Malek"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342049,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Un nouvel algorithme de propagation de labels avec barrages,"
+                ],
+                "authFullName_s": [
+                    "Jean-Philippe Attal",
+                    "Maria Malek"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342047,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Propagation de labels avec barrages sur de grands graphes en utilisant Apache Hadoop et Apache Spark"
+                ],
+                "authFullName_s": [
+                    "Jean-Philippe Attal",
+                    "Maria Malek"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342046,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Aider les enseignants à cerner les besoins grammaticaux des élèves. Le projet SCOLAGRAM"
+                ],
+                "authFullName_s": [
+                    "Jean-Pierre Sautot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342042,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Vaisselle de terre à Byzance"
+                ],
+                "authFullName_s": [
+                    "Véronique François"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342038,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Un nouvel algorithme de propagation de labels avec barrages,"
+                ],
+                "authFullName_s": [
+                    "Jean-Philippe Attal",
+                    "Maria Malek"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1342036,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.genre",
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Devenir 'expat' Pratiques de l'espace du quotidien de femmes en situation de mobilité internationale à Luxembourg",
+                    "To be(come) an ‘expat’: women’s practices of everyday space during international mobility in Luxembourg"
+                ],
+                "authFullName_s": [
+                    "Karine Duplan"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2016
+            }
+        ]
+    },
+    "nextCursorMark": "AoFUpY8F"
+}

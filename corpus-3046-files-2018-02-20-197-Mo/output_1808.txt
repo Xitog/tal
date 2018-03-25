@@ -1,0 +1,2058 @@
+{
+    "response": {
+        "numFound": 515923,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1131797,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-optics"
+                ],
+                "title_s": [
+                    "Arrays of microtraps for quantum information processing using the Rydberg blockade"
+                ],
+                "authFullName_s": [
+                    "Thierry Lahaye",
+                    "Florence Nogrette",
+                    "Henning Labuhn",
+                    "Sylvain Ravets",
+                    "Daniel Barredo",
+                    "Antoine Browaeys"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131795,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "L'expression du bon sens populaire dans la revue berlinoise Kladderadatsch durant la seconde moitié du XIXe siècle"
+                ],
+                "authFullName_s": [
+                    "Jean-Claude Gardes"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1131792,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Der Wahre Jacob (1884-1933) : le succès d’un organe de parti à l’écart des circuits traditionnels."
+                ],
+                "authFullName_s": [
+                    "Jean-Claude Gardes"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1131790,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Otto Dix et George Grosz face aux mouvements d'avant-garde du début du vingtième siècle : caricature et/ou peinture ?"
+                ],
+                "authFullName_s": [
+                    "Jean-Claude Gardes"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1131789,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Caricatura : réflexions sur l'apparition tardive d'un concept en histoire de l'art"
+                ],
+                "authFullName_s": [
+                    "Jean-Claude Gardes"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1131777,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Rapport préliminaire sur les ensembles de consommation potière du chantier B"
+                ],
+                "authFullName_s": [
+                    "Guergana Guionova",
+                    "Gaëlle Dieulefet",
+                    "Claudio Filippo Mangiaracina"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131775,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "La céramique des grottes de transformation laitière, premier aperçu"
+                ],
+                "authFullName_s": [
+                    "Guergana Guionova"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131773,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-hc",
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Conception rapide d'aides techniques pour personnes tétraplégiques"
+                ],
+                "authFullName_s": [
+                    "Philippe Truillet",
+                    "Mathieu Raynal"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131772,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Stylistique et séries télévisées : vers une sémiostylistique de l'écran"
+                ],
+                "authFullName_s": [
+                    "Séverine Barthes"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1131771,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Le Retour du primetime."
+                ],
+                "authFullName_s": [
+                    "Séverine Barthes"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1131770,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Exploitation de séries temporelles d'images satellites à haute résolution spatiale pour le suivi des prairies en milieu agricole",
+                    "Use of time–series of high spatial resolution satellite images for grassland monitoring in agricultural areas"
+                ],
+                "authFullName_s": [
+                    "Pauline Dusseux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131769,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bc"
+                ],
+                "title_s": [
+                    "Rôle de Spen dans la survie cellulaire - Apoptose Développementale et processus neurodégénératifs",
+                    "Role of Spen in cell survival - Developmental apoptosis and neurodegenerative process"
+                ],
+                "authFullName_s": [
+                    "Matthieu Querenet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131768,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Conduire un changement au sein de l’hôpital : l’influence du style du leader"
+                ],
+                "authFullName_s": [
+                    "Isabelle Vandangeon-Derumez",
+                    "Johanna Habib",
+                    "Zacharie Clémence"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1131764,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Les réseaux apprenants comme facilitateurs du changement"
+                ],
+                "authFullName_s": [
+                    "Isabelle Vandangeon-Derumez",
+                    "David Autissier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131762,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Le changement organisationnel : 10 études de cas commentées"
+                ],
+                "authFullName_s": [
+                    "Isabelle Vandangeon-Derumez",
+                    "David Autissier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131760,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Une prise en charge centrée sur le patient et affranchie des spécialités médicales"
+                ],
+                "authFullName_s": [
+                    "Isabelle Vandangeon-Derumez",
+                    "Marty Marie-Claire",
+                    "Yves Auroy",
+                    "Dumond Jean-Paul",
+                    "Gérard Koenig"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131759,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "S’arracher à l’attraction archétypale : le cas d’un hôpital d’instruction des armées"
+                ],
+                "authFullName_s": [
+                    "Isabelle Vandangeon-Derumez",
+                    "Gérard Koenig",
+                    "Jean-Paul Dumond",
+                    "Yves Auroy",
+                    "Marie-Claire Martyré"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1131758,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Le changement organisationnel : 10 études de cas commentées"
+                ],
+                "authFullName_s": [
+                    "Isabelle Vandangeon-Derumez",
+                    "David Autissier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1131757,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Chapitre 3 L'os : morphologie, structure et composition chimique",
+                    "Chapter 3 Bone: morphology, structure and chemical composition"
+                ],
+                "authFullName_s": [
+                    "Aurélien Gourrier",
+                    "Ina Reiche"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131753,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Méthode de dimensionnement à l'usure de systèmes de transmission",
+                    "Design method for wear in transmission systems"
+                ],
+                "authFullName_s": [
+                    "Damien Herisson"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131751,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-bio-ph",
+                    "0.sdv",
+                    "1.sdv.imm",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.biom",
+                    "0.chim",
+                    "1.chim.poly"
+                ],
+                "title_s": [
+                    "Rôle de l’Inflammation sur la Rhéologie des Cellules Présentatrices d’Antigène : Perspectives pour l’Activation du Lymphocyte T",
+                    "The Role of Inflammation on Antigen Presenting Cells Rheology : Perspectives for T Lymphocyte Activation"
+                ],
+                "authFullName_s": [
+                    "Nathalie Bufi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131749,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Manager les paradoxes de la RSE : Le déploiement de la norme ISO 26000 dans une ETI"
+                ],
+                "authFullName_s": [
+                    "Isabelle Vandangeon-Derumez",
+                    "Amaury Grimand Philippe Schäfer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131730,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.museo"
+                ],
+                "title_s": [
+                    "La survivance du savoir : Narration et histoire de l’art dans Terrasse à Rome de Pascal Quignard"
+                ],
+                "authFullName_s": [
+                    "Mathilde Savard-Corbeil"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131729,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ti",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.info",
+                    "1.info.info-cv",
+                    "0.info",
+                    "1.info.info-im",
+                    "0.info",
+                    "1.info.info-ne"
+                ],
+                "title_s": [
+                    "Segmentation supervisée d'images texturées par régularisation de graphes",
+                    "Supervised segmentation of textured images by regularization on graphs."
+                ],
+                "authFullName_s": [
+                    "Cyrille Faucheux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1131728,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-dl"
+                ],
+                "title_s": [
+                    "Les conditions d'un espace ouvert de la recherche"
+                ],
+                "authFullName_s": [
+                    "Laurent Romary"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "PRESCONF",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1131727,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Place actuelle et perspectives du médecin traitant après chirurgie bariatrique : quel parcours de soin idéal ?"
+                ],
+                "authFullName_s": [
+                    "Léa Dehghani Kelishadi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1131724,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Le test rapide de la CRP en médecine libérale : état des lieux et perspectives"
+                ],
+                "authFullName_s": [
+                    "Aurélie Rondeau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1131723,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Pour une caméléopoétique: Keats et Hazlitt"
+                ],
+                "authFullName_s": [
+                    "Thomas Dutoit"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1131721,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Entre injonction de l’hygiène et morale des apparences : enjeux et pratiques du corps parfumé au XIXe siècle."
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHERREPORT",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131720,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.shs",
+                    "1.shs.envir"
+                ],
+                "title_s": [
+                    "Les recherches paléo-ethno-botaniques dans les Antilles et les premières données paléobotaniques concernant l’occupation précolombienne de la Martinique",
+                    "Paleo-ethno-botanic researches in the West Indies and the first data about Martinique pre-Columbian occupation"
+                ],
+                "authFullName_s": [
+                    "Lee Newsom",
+                    "Benoît Bérard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131719,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Paris arbitre du bon goût et des élégances olfactives : affirmation et sacre d’une capitale de la parfumerie au XIXe siècle"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHERREPORT",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131718,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.gestion",
+                    "0.shs",
+                    "1.shs.hisphilso"
+                ],
+                "title_s": [
+                    "Santé et travail : le cas de l’industrie de la parfumerie au XIXe siècle, problématiques et enjeux"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHERREPORT",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131717,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Images des parfumeurs et de la parfumerie dans la presse féminine du XIXe siècle"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHERREPORT",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131716,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.hisphilso"
+                ],
+                "title_s": [
+                    "La chimie de l'odorat aux XVIIe et XVIIIe siècles, entre art de la composition, divertissement mondain, et thérapeutique aromatique"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHERREPORT",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131715,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Histoire sociale de l’industrie de la parfumerie au XIXe siècle"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHERREPORT",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131714,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "La parfumerie parisienne au XIXe siècle, entre luxe et industrie"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHERREPORT",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131713,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "La parfumerie parisienne au XIXe siècle, entre luxe et industrie"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHERREPORT",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131712,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.hisphilso",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Inspiration vs oxydoréductions : Le métier de parfumeur au XIXe siècle, entre chimie et alchimie"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131711,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Stratégies et pratiques managériales des parfumeurs parisiens au XIXe siècle"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHERREPORT",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131709,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Alchimies du corps odorant : Pratiques, normes et enjeux du paraître olfactif au XIXe siècle"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHERREPORT",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131708,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "L’histoire, outil de compréhension des problématiques de gestion : l’exemple du secteur de la parfumerie"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHERREPORT",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131707,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "De lys, de stupre et d'absinthe : les parfums de la littérature de la fin du XIXe siècle"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131706,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "César Birotteau et ses pairs : Poétiques et mercatique des parfumeurs dans le Paris du XIXe siècle"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131705,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "De l’Eau Impériale aux Violettes du Czar : Consommation ostentatoire et distinction olfactive dans le Paris du XIXe siècle."
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131704,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Normes et pratiques du corps parfumé à la cour de France (XVIIe-XVIIIe siècles)"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131703,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.gestion",
+                    "0.shs",
+                    "1.shs.hisphilso"
+                ],
+                "title_s": [
+                    "Couleurs de peau, odeurs de peau : Le parfum de la femme au XIXe siècle, entre physiologie et représentations"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131701,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Le parfum au XIXe siècle, entre luxe et industrie"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131699,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "« Un disqualifiant soupçon de musc » : Pour une histoire des modes de la parfumerie"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131698,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Le marché français des parfums artificiels au XIXe siècle, entre défiance et démocratisation"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131697,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Pour une histoire des pratiques et stratégies mercatiques des parfumeurs dans le Paris du XIXe siècle"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131696,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "L’internationalisation de la parfumerie parisienne au XIXe siècle, entre domination des marchés et promotion du goût français"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131695,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Fragments d’une poétique du commerce : les pratiques mercatiques des parfumeurs parisiens du XIXe siècle."
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131694,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.hisphilso",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Les Fabriques de Laire, pionnières de la chimie des corps odorants à Calais (1876-1914)"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131693,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.hisphilso",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "La parfumerie française aux expositions universelles de 1889 et 1900 : Fabrique d’une industrie de luxe"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131692,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Les maîtres E au seuil de la classe ?"
+                ],
+                "authFullName_s": [
+                    "Corinne Mérini",
+                    "Pascale Ponté",
+                    "Serge Thomazet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131690,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.hisphilso"
+                ],
+                "title_s": [
+                    "Fargeon, fournisseur de la cour de France au XVIIIe siècle : art et techniques d’un parfumeur"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131687,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Fleurs et rhétorique : l'inspiration littéraire dans les publicités pour la parfumerie (XIXe-XXe siècles)"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131686,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "La contrefaçon chez les artisans du luxe : Dispositifs de protection et rôle du réseau"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot",
+                    "Cécile Fonrouge",
+                    "Loup Stéphanie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131683,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "La question de la valeur dans les biens de luxe : la contrefaçon, l'imitation ou l'inspiration sont-ils des modes de consolidation ou de remise en cause de la valeur du produit ?"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131681,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "L'attention aux différences"
+                ],
+                "authFullName_s": [
+                    "Bénédicte Etienne",
+                    "Serge Thomazet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131672,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.spee"
+                ],
+                "title_s": [
+                    "Modélisation du processus d'application des connaissances entre recherche et santé publique",
+                    "Modeling the knowledge translation process between Research and Public Health"
+                ],
+                "authFullName_s": [
+                    "Sophie Goyet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131671,
+                "domain_s": [
+                    "0.chim",
+                    "1.chim.othe"
+                ],
+                "title_s": [
+                    "Synthèse et réactivité des disilanes : applications vers la synthèse de la 10-silatestostérone",
+                    "Synthesis and study of the reactivity of disilanes : application to the 10-silatestosterone synthesis"
+                ],
+                "authFullName_s": [
+                    "Audrey Giros"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131670,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Une ombre sur le rêve asiatique : la contrefaçon des marques horlogères de luxe sur le marché chinois."
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131669,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "La beauté en 2062"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131668,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Imiter les matières premières naturelles : Les corps odorants de synthèse, voie du luxe et de la démocratisation pour la parfumerie du XIXe siècle"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131663,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Histoire et identité de marque : le cas de la parfumerie de niche française"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131662,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "La parfumerie parisienne au XIXe siècle, fabrique d'une industrie de luxe"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131656,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ro"
+                ],
+                "title_s": [
+                    "Planification de la maintenance d’équipements de production d’électricité"
+                ],
+                "authFullName_s": [
+                    "Aurélien Froger",
+                    "Michel Gendreau",
+                    "Jorge E. Mendoza",
+                    "Eric Pinson",
+                    "Rousseau Louis-Martin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131654,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Le flacon, vecteur d'image de la parfumerie de luxe parisienne au tournant du XXe siècle"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131653,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.psy",
+                    "0.info",
+                    "1.info.info-oh",
+                    "0.scco",
+                    "1.scco.ling",
+                    "0.scco",
+                    "1.scco.psyc",
+                    "0.scco",
+                    "1.scco.comp",
+                    "0.stat",
+                    "1.stat.ap",
+                    "0.stat",
+                    "1.stat.ot",
+                    "0.shs",
+                    "1.shs.info",
+                    "0.shs",
+                    "1.shs.stat",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.info",
+                    "1.info.info-cl",
+                    "0.info",
+                    "1.info.info-mo"
+                ],
+                "title_s": [
+                    "Tableau des atomes sémantiques concrets et abstraits entrant en jeu dans l'Analyse des Logiques Subjectives© (A.L.S.©)"
+                ],
+                "authFullName_s": [
+                    "Jean-Jacques Pinto"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131644,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Les mesures incitatives au développement des installations solaires"
+                ],
+                "authFullName_s": [
+                    "Alexandre Guigue"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131642,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-mo",
+                    "0.spi",
+                    "0.stat",
+                    "0.math"
+                ],
+                "title_s": [
+                    "Contribution à la conception d'un système d'aide à la décision pour la gestion de situations de tension au sein des systèmes hospitaliers. Application à un service d’urgence.",
+                    "Contribution to the design of a decision support system for the management of strain situations in hospital systems. Application to an emergency department."
+                ],
+                "authFullName_s": [
+                    "Farid Kadri"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1131641,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Du besoin à l'obligation de sincérité"
+                ],
+                "authFullName_s": [
+                    "Alexandre Guigue"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1131640,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "La part de science dans le régime politique de la Vème République"
+                ],
+                "authFullName_s": [
+                    "Alexandre Guigue"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131639,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Les origines de la contractualisation des rapports entre entreprises et enseignement supérieur dans le système soviétique"
+                ],
+                "authFullName_s": [
+                    "Carole Sigman"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131638,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "La montée de l' \"Etat-entrepreneur de l'enseignement supérieur\" et l'hybridation public-privé. L'exemple de la Russie"
+                ],
+                "authFullName_s": [
+                    "Carole Sigman"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131637,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "La jurisprudence de John Austin"
+                ],
+                "authFullName_s": [
+                    "Alexandre Guigue"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131633,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Les origines et l'évolution du vote du budget de l'Etat en France et en Angleterre",
+                    "The Origins and the Development of the National Budget's Voting Process in France and in England"
+                ],
+                "authFullName_s": [
+                    "Alexandre Guigue"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131630,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "La rédemption est dans la pause. Émotion et prosodie dans l’interview de DSK au vingt heures du 18 septembre 2011"
+                ],
+                "authFullName_s": [
+                    "Hirsch Fabrice",
+                    "François Perea",
+                    "Agnès Steuckardt",
+                    "Bertrand Verine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131629,
+                "domain_s": [
+                    "0.phys",
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Imagerie polarimétrique d’échantillons dichroïques par brisure d’orthogonalité d’états de polarisation circulaires"
+                ],
+                "authFullName_s": [
+                    "Noe Ortega-Quijano",
+                    "Julien Fade",
+                    "Emmanuel Schaub",
+                    "François Parnet",
+                    "Mehdi Alouini"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131626,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Une vision renouvelée des paradigmes de l'entrepreneuriat : Vers une reconfiguration de la recherche en entrepreneuriat"
+                ],
+                "authFullName_s": [
+                    "Raouf Jaziri"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131620,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.gm"
+                ],
+                "title_s": [
+                    "Premiers résultats issus de l'analyse des données LiDAR du Puy de Corent : Archéologie et Géomorphologie"
+                ],
+                "authFullName_s": [
+                    "Alfredo Mayoral Pascual",
+                    "Franck Vautier",
+                    "Bertrand Dousteyssier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131614,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Quand tout va mal ... De l'erreur médicale dans la presse médicale spécialisée française et allemande."
+                ],
+                "authFullName_s": [
+                    "Anne-Marie Nahon-Raimondez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131612,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-na"
+                ],
+                "title_s": [
+                    "Transport numérique de quantités géométriques",
+                    "Numerical transport of geometrics quantities"
+                ],
+                "authFullName_s": [
+                    "Guilhem Lepoultier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131605,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Hypotheses fingo. Récits, scenarii et résistance au phénoménisme dans les sciences du langage"
+                ],
+                "authFullName_s": [
+                    "Didier Samain"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131604,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Une répercussion de la consubstantialité « corps-pensée-monde » : le lien entre saillance musculaire et saillance conceptuelle",
+                    "A repercussion of the consubstantiality \"body-mind-world\": the link between muscle and conceptual salience",
+                    "Una repercusión de la consustancialidad \"cuerpo-mente-mundo\": el vínculo entre la saliente muscular y la focalización concetpual"
+                ],
+                "authFullName_s": [
+                    "Michaël Grégoire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1131603,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Fondements et perspectives d’une méthode d’analyse (sub-)lexicale incarnée : la “Théorie de la Saillance Submorphologique” (TSS)",
+                    "Founding principles and perspectives of a method of embodied submorphemic analysis of lexicon : the \"Theory of Submorphemic Salience\" (TSS)",
+                    "Fundamentos y perspectivas de un método de análisis sublexical encarnado : la \"Teoría de la Focalización Submorfológica\" (TFS)"
+                ],
+                "authFullName_s": [
+                    "Michaël Grégoire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1131599,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Étude de la remobilisation des métaux au cours de la sénescence foliaire : évaluation de l’implication des NRAMP dans ce processus dans le cadre de la stratégie de phytoremédiation",
+                    "Metal remobilization during leaf senescence : evaluation of the NRAMP involvement in this process in the context of the phytoremediation strategy"
+                ],
+                "authFullName_s": [
+                    "Mathieu Pottier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131598,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Utilisation d'une population multi-parentale et hautement recombinante de blé tendre pour l'étude de l'architecture génétique de la précocité de floraison",
+                    "Studying flowering time genetics in wheat through the use of a multiparent advanced generation inter-cross population"
+                ],
+                "authFullName_s": [
+                    "Stéphanie Thépot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131597,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.es",
+                    "0.info",
+                    "1.info.info-mo",
+                    "0.shs",
+                    "1.shs.envir",
+                    "0.sde",
+                    "1.sde.ie",
+                    "0.sde",
+                    "1.sde.mcg",
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.cl",
+                    "0.sdv",
+                    "1.sdv.aen",
+                    "0.sdv",
+                    "1.sdv.ee",
+                    "2.sdv.ee.bio",
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "2.sdv.sa.aep",
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "2.sdv.sa.spa",
+                    "0.sdv",
+                    "1.sdv.sa",
+                    "2.sdv.sa.sta"
+                ],
+                "title_s": [
+                    "Modélisation de l'évolution des surfaces agricoles à l'échelle de grandes régions du monde",
+                    "Modelling change in agricultural lands at the scale of large regions of the world"
+                ],
+                "authFullName_s": [
+                    "François Souty"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131593,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.ag",
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.gc",
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.mi",
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.pg",
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.st"
+                ],
+                "title_s": [
+                    "Evolutions sédimentologique et diagenétique des carbonates du Dévonien de la Meseta marocaine occidentale (Oulad Abbou, Mechra Ben Abbou et Doukkala).",
+                    "Evolutions sedimentological and diagenetic carbonates of the Devonian of western Moroccan Meseta (Oulad Abbou, Mechra Ben Abbou and Doukkala)."
+                ],
+                "authFullName_s": [
+                    "Abdelmajid Ben Bouziane"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 1131575,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.genre"
+                ],
+                "title_s": [
+                    "Mixité, égalité et genre dans les espaces du loisir des jeunes : pertinence d'un paradigme féministe",
+                    "Coeducation (Mixing), equality and gender in the spaces of the leisure of the young people : relevance of one feminist paradigm"
+                ],
+                "authFullName_s": [
+                    "Édith Maruéjouls-Benoit"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131569,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Pistes sur le conditionnement de la gradation consonantique en same Kildin"
+                ],
+                "authFullName_s": [
+                    "Guillaume Enguehard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131567,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "La monophtongaison de aw en normand"
+                ],
+                "authFullName_s": [
+                    "Guillaume Enguehard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131565,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.hisphilso"
+                ],
+                "title_s": [
+                    "Présentation : Linguistiques d'intervention. Des usages socio-politiques des savoirs sur le langage et les langues"
+                ],
+                "authFullName_s": [
+                    "Christian Puech"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131563,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-chem-ph"
+                ],
+                "title_s": [
+                    "Etude des interactions latex-ciment modèle : conséquences sur les propriétés rhéologiques",
+                    "Modelling the cement-latex interactions : experimental and simulation approach : Consequences on the rheological propertiec"
+                ],
+                "authFullName_s": [
+                    "Fouzia Dhaini"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131562,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Pistes sur le conditionnement de la gradation consonantique en Same Kildin"
+                ],
+                "authFullName_s": [
+                    "Guillaume Enguehard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131560,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Annuaire intégral des conseillers généraux de Savoie et Haute-Savoie 1860-2014"
+                ],
+                "authFullName_s": [
+                    "Frédéric Caille",
+                    "Esther Deloche"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131559,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Partager les enquêtes en sciences sociales"
+                ],
+                "authFullName_s": [
+                    "Sophie Duchesne",
+                    "Guillaume Garcia"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1131557,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "2.sdv.mhep.chi"
+                ],
+                "title_s": [
+                    "Les épithèses de pavillon auriculaire implanto-portées : à propos d'un cas clinique",
+                    "Auricle epithesis implant-supported: about a clinical case"
+                ],
+                "authFullName_s": [
+                    "Gaby Hureau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            }
+        ]
+    },
+    "nextCursorMark": "AoFVwqgE"
+}

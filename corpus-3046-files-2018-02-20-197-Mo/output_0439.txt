@@ -1,0 +1,1953 @@
+{
+    "response": {
+        "numFound": 515921,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1572558,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Méthodologie de développement d'un outil d'évaluation de la sureté du logiciel, en langage OCaml"
+                ],
+                "authFullName_s": [
+                    "Philippe Ayrault",
+                    "Maxence Guesdon",
+                    "Thérèse Hardin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572557,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Opérateurs de raffinement sur les structures algébriques"
+                ],
+                "authFullName_s": [
+                    "Sylvain Boulmé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572526,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Un Algorithme Résistant au Facteur d'Échelle pour le Routage avec Trois Métriques de QoS"
+                ],
+                "authFullName_s": [
+                    "Luis Henrique Maciel Kosmalski Costa",
+                    "Serge Fdida",
+                    "Otto Carlos Muniz Bandeira Duarte"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572524,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Un mécanisme de contrôle de congestion adapté aux flots unicast et multicast non-fiables"
+                ],
+                "authFullName_s": [
+                    "Anca Dracinschi",
+                    "Serge Fdida"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572522,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Réservation de ressources dans un environnement mobile avec MIR"
+                ],
+                "authFullName_s": [
+                    "Gwendal Le Grand",
+                    "Jalel Ben Othman",
+                    "Eric Horlait"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572521,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Les Composants Logiciels : Evolution Technologique ou Nouveau Paradigme ?"
+                ],
+                "authFullName_s": [
+                    "Frédéric Peschanski",
+                    "Thomas Meurisse",
+                    "Jean-Pierre Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572520,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Solution exacte aux problèmes de multiflots avec fonctions de coût en escalier"
+                ],
+                "authFullName_s": [
+                    "Virginie Gabrel",
+                    "Arnaud Knippel",
+                    "Michel Minoux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572516,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Génération automatique de structures de documents XML à partir de méta-modèles MOF"
+                ],
+                "authFullName_s": [
+                    "Xavier Blanc",
+                    "A. Rano",
+                    "Raymonde Le Delliou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572505,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Angélica Liddell, une pluie battante... Souci de moi, manque de toi\" (Intervention lors des JOURNÉES DOCTORALES DE L’ED 267 – ARTS & MÉDIAS \"Le souci de soi\")"
+                ],
+                "authFullName_s": [
+                    "Milène Tournier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1572501,
+                "domain_s": [
+                    "0.sde",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Quatre lits pour un cours d'eau. Conséquences pour le risque d'inondation et l'aménagement"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Ballais",
+                    "Sylvain Chave",
+                    "Virginie Delorme",
+                    "Christophe Esposito"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572494,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Le processus d'aide dans un dispositif numérique",
+                    "Digital assistance tools, process, and methods"
+                ],
+                "authFullName_s": [
+                    "Chrysta Pélissier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572489,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Les connaissances liées à l’apprentissage de la lecture dans un dictionnaire électronique"
+                ],
+                "authFullName_s": [
+                    "Chrysta Pelissier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572488,
+                "domain_s": [
+                    "0.sde",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "COMMENT LES PAYSAGES DU MIDI FRANÇAIS SONT-ILS DEVENUS MÉDITERRANÉENS ?"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Ballais"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1572487,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Hermione Granger dans les fanfictions, la chute d’une tête de classe (Intervention lors de la journée d'études organisée par l'ESPE d’Aquitaine \"Mauvaises filles en littérature de jeunesse. Education et rééducation en question(s)\")"
+                ],
+                "authFullName_s": [
+                    "Milène Tournier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1572486,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Spécification à objets des systèmes répartis guidée par les gabarits"
+                ],
+                "authFullName_s": [
+                    "T. Thouraya",
+                    "Jean-Michel Ilié"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572485,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Modalités d’actualisation d’un scénario de MOOC au fur et à mesure de sa conception"
+                ],
+                "authFullName_s": [
+                    "Chrysta Pélissier",
+                    "Eugénie Duthoit"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572483,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Le dispositif-monologue chez Angélica Liddell : l’adresse excédée et la sollicitation. (Intervention lors du colloque « Entre monologue et dialogue » organisé à l’université Paris 7 et Paris 3 par l’équipe de Sorbonne Paris Cité)"
+                ],
+                "authFullName_s": [
+                    "Milène Tournier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1572480,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Concevoir un Environnement Personnel d'Apprentissage (EPA), est-ce utile pour les étudiants?"
+                ],
+                "authFullName_s": [
+                    "Stéphanie Mailles-Viard",
+                    "Emilie Vayre",
+                    "Chrysta Pelissier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572475,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "« Le corps, é-toilé » (Intervention lors de la journée d'études « Corps virtuel/corps réel » de l'Université du Maine)"
+                ],
+                "authFullName_s": [
+                    "Milène Tournier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1572474,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Le C2i en IUT",
+                    "C2i in IUT"
+                ],
+                "authFullName_s": [
+                    "Chrysta Pelissier",
+                    "Stéphanie Mailles-Viard Metz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572468,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Le « ou » d'Hervé Guibert\" (Intervention lors du colloque international \"Les chambres à soi de Hérvé Guibert : photobiographies de l'intime\")"
+                ],
+                "authFullName_s": [
+                    "Milène Tournier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1572466,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "L’habitat participatif : d’une greffe à un noyau des écoquartiers"
+                ],
+                "authFullName_s": [
+                    "Camille Devaux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572465,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "«Une agora passionnée: SolangeTeParle. Ils parlent à Solange, de la vidéo youtube aux commentaires. » Intervention lors du 2ème Colloque international de l’UFR Arts & Médias / Université Sorbonne Nouvelle - Paris 3 consacré aux \"Expériences intimes du politique\" (12 et 13 décembre 2016)"
+                ],
+                "authFullName_s": [
+                    "Milène Tournier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1572462,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.psy"
+                ],
+                "title_s": [
+                    "Une méthode d’évaluation de la compréhension orale par choix d’image : application à de la parole dégradée par simulation de la presbyacousie",
+                    "A method for assessing listening comprehension using image selection : application to speech degraded by presbycusis simulation"
+                ],
+                "authFullName_s": [
+                    "Cynthia Magnen",
+                    "Julien Tardieu",
+                    "Lionel Fontan",
+                    "Pascal Gaillard",
+                    "Nathalie Spanghero-Gaillard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572461,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.hexp",
+                    "0.info"
+                ],
+                "title_s": [
+                    "Le CERN et les Big Data"
+                ],
+                "authFullName_s": [
+                    "Fairouz Malek"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572458,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Synthèse de la journée d’étude sur la notion d’aide, le 1er juillet 2011, à Montpellier. « Notion d’aide dans un dispositif de formation en ligne : approches théoriques et méthodologiques »"
+                ],
+                "authFullName_s": [
+                    "Chrysta Pelissier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572457,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-ho",
+                    "0.shs",
+                    "1.shs.hisphilso"
+                ],
+                "title_s": [
+                    "Une autre Géométrie de Descartes : le problème des trois bâtons ou \"comment bien démêler les équations"
+                ],
+                "authFullName_s": [
+                    "Sébastien Maronne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572456,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Des aides pour une consigne ouverte : assistants cognitifs dans Pairform@nce"
+                ],
+                "authFullName_s": [
+                    "Catherine Loisy",
+                    "Chrysta Pelissier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572448,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ni",
+                    "0.info",
+                    "1.info.info-et"
+                ],
+                "title_s": [
+                    "Vers l’Internet interplanétaire : mise en œuvre d’un réseau DTN dans un contexte de simulation d’une liaison spatiale"
+                ],
+                "authFullName_s": [
+                    "Florian Greff"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1572435,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mefl"
+                ],
+                "title_s": [
+                    "Perspectives pour une aviation légère autonome"
+                ],
+                "authFullName_s": [
+                    "Patrick Gilliéron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1572433,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-msqhe",
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-s",
+                    "0.spi",
+                    "1.spi.nano"
+                ],
+                "title_s": [
+                    "Effet d'une Irradiation Micro-onde sur la Réponse Électronique de Tri-Jonctions Josephson : Mise en Évidence de Modes de Quartets Cohérents",
+                    "Effect of a Microwave Irradiation on the Electronic Response of Josephson Tri-junctions : Evidence for Coherent Quartet Modes"
+                ],
+                "authFullName_s": [
+                    "Jean Eudes Duvauchelle"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572432,
+                "domain_s": [
+                    "0.sde",
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "UTILISATION DES GROUPES MORPHO-FONCTIONNELS DU PHYTOPLANCTON POUR LE DIAGNOSTIC ECOLOGIQUE DES PLANS D'EAU DU BASSIN LOIRE BRETAGNE",
+                    "USE OF THE PHYTOPLANKTON MORPHO-FUNCTIONAL GROUPS FOR THE ECOLOGICAL DIAGNOSIS OF LAKE"
+                ],
+                "authFullName_s": [
+                    "Sonia Baillot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1572431,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Corpus Agrimensorum Romanorum en ligne"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572430,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Nouvelle histoire de la Franche-Comté. 1. Antiquité et Moyen Âge"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales",
+                    "Pierre Gresser"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572429,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "LE SYNDROME P.F.A.P.A."
+                ],
+                "authFullName_s": [
+                    "Lucio Maci"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1572427,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "A propos de Kurt A. Raaflaub (ed.), Thinking, Recording, and Writing History in the Ancient World. The ancient world: comparative histories"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572426,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Modèles et anti-modèles dans la construction intellectuelle des systèmes institutionnels"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales",
+                    "Maria Teresa Schettino"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572424,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Une main d’œuvre servile infantile entre exploitation et domestication"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572423,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "La villa plinienne expression de l’humanitas ? Conditions de vie, statuts, santé et obsequium"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572421,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Le marquage actanciel des verbes actifs/statifs parmi les langues arawak"
+                ],
+                "authFullName_s": [
+                    "Tom Durand"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572419,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les mots de la rébellion"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572418,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "La scission nominale dans les langues arawak"
+                ],
+                "authFullName_s": [
+                    "Tom Durand"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572416,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Entre rébellion et filiation, l’histoire aujourd’hui en France : une école ou des courants"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572411,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les rébellions coloniales"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572410,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "L'intransitivité scindée grammaticale dans les langues arawak du groupe campa"
+                ],
+                "authFullName_s": [
+                    "Tom Durand"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572408,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mefl"
+                ],
+                "title_s": [
+                    "Incidence du milieu poreux sur le rotationnel des structures tourbillonnaires émises dans le sillage"
+                ],
+                "authFullName_s": [
+                    "Patrick Gilliéron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1572407,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les rebelles de l’Antiquité"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572406,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "L'impact des marques de nominalisation/subordination sur l'alignement des langues arawak"
+                ],
+                "authFullName_s": [
+                    "Tom Durand"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572405,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Existe-t-il une herméneutique de l’esclavage dans la pensée stoïcienne?"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572403,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Le marquage différentiel de l'unique actant dans les langues arawak"
+                ],
+                "authFullName_s": [
+                    "Tom Durand"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572380,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "L'impact des marques de genre/nombre sur l'alignement dans les langues arawak"
+                ],
+                "authFullName_s": [
+                    "Tom Durand"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572378,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "L'influence de l'aspect sur l'alignement dans les langues Arawak"
+                ],
+                "authFullName_s": [
+                    "Tom Durand"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572377,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Le pronom personnel en position finale dans les langues arawak"
+                ],
+                "authFullName_s": [
+                    "Tom Durand"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572376,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-mo"
+                ],
+                "title_s": [
+                    "Utilisation des services écosystémiques pour la définition de seuils de rejets des eaux usées industrielles. Vers un outil d’aide à la décision pour les entreprises"
+                ],
+                "authFullName_s": [
+                    "Valérie Laforest",
+                    "Sophie Grazilhon",
+                    "Eric Piatyszek"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572372,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-ho",
+                    "0.shs",
+                    "1.shs.hisphilso"
+                ],
+                "title_s": [
+                    "(Traduction) Georgio Bolondi, « La France du vingtième siècle : le phénomène Bourbaki »"
+                ],
+                "authFullName_s": [
+                    "Sébastien Maronne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572371,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.hisphilso"
+                ],
+                "title_s": [
+                    "Réseaux de confraternité et histoire des bibliothèques",
+                    "Confraternity networks and history of libraries"
+                ],
+                "authFullName_s": [
+                    "Stéphane Lecouteux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572367,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.info",
+                    "0.info",
+                    "1.info.info-au",
+                    "0.info",
+                    "1.info.info-mo",
+                    "0.info",
+                    "1.info.info-ds",
+                    "0.info",
+                    "1.info.info-tt"
+                ],
+                "title_s": [
+                    "De cahIEr à cahieR _ Pour des études littéraires assistées par ordinateur"
+                ],
+                "authFullName_s": [
+                    "Ioana Galleron",
+                    "Fatiha Idmhand",
+                    "Cécile Meynard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572360,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil",
+                    "0.shs",
+                    "1.shs.hisphilso",
+                    "0.math",
+                    "1.math.math-ho"
+                ],
+                "title_s": [
+                    "(Recension) « De l’histoire à la philosophie des mathématiques : un programme d’inspiration pragmatiste ? ». Henk J. M. Bos, Redefining Geometrical Exactness : Descartes’ Transformation of the Early Modern Concept of Construction, New York, Springer, 2001."
+                ],
+                "authFullName_s": [
+                    "Sébastien Maronne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572339,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.stat",
+                    "0.stat",
+                    "1.stat.ap"
+                ],
+                "title_s": [
+                    "Les affinités lexicales. Hommage à Etienne Evrard"
+                ],
+                "authFullName_s": [
+                    "Étienne Brunet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572334,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "La voix des \"acteurs faibles\" dans les processus de production de connaissances. In : MONCEAU G. Enquêter ou intervenir. Effets de la recherche socio-clinique” Paris : Champ social."
+                ],
+                "authFullName_s": [
+                    "Anna Rurka"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572332,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "La répétition dans la phrase. Étude statistique"
+                ],
+                "authFullName_s": [
+                    "Etienne Brunet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572326,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-oh",
+                    "0.info",
+                    "1.info.info-ro",
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Formalisation et géovisualisation d’événements historiques issus de risques naturels pour la compréhension des dynamiques spatiales",
+                    "Formalization and geovisualization of historical natural risk events to understand spatial dynamics"
+                ],
+                "authFullName_s": [
+                    "Cécile Saint-Marc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572319,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Cluster touristiques sur le thème du cheval à Saumur. Un objectif possible mais lointain."
+                ],
+                "authFullName_s": [
+                    "Sylvine Pickel-Chevalier",
+                    "Philippe Violier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572318,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Cheval, Tourisme et Sociétés",
+                    "Horse, Tourism and Societies"
+                ],
+                "authFullName_s": [
+                    "Sylvine Pickel-Chevalier",
+                    "Rhys Evans"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572315,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Tous des \"copiateurs"
+                ],
+                "authFullName_s": [
+                    "Étienne Brunet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572314,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Une histoire touristique des côtes atlantiques françaises : Saint-Trojan-les-Bains, modèle de station oléronaise dans un monde en évolution."
+                ],
+                "authFullName_s": [
+                    "Sylvine Pickel-Chevalier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572312,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "L’Occident face à la nature, à la confluence des sciences, de la philosophie et des arts"
+                ],
+                "authFullName_s": [
+                    "Sylvine Pickel-Chevalier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572311,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.astr",
+                    "2.phys.astr.sr",
+                    "0.sdu",
+                    "1.sdu.astr",
+                    "2.sdu.astr.he",
+                    "0.sdu",
+                    "1.sdu.astr",
+                    "2.sdu.astr.ga"
+                ],
+                "title_s": [
+                    "Formation, évolution et environnement des binaires X de grande masse",
+                    "Formation, evolution and environment of high-mass X-ray binaries"
+                ],
+                "authFullName_s": [
+                    "Alexis Coleiro"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572308,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Fiabilité dynamique et disponibilité de production: un cas illustratif"
+                ],
+                "authFullName_s": [
+                    "Pierre-Etienne Labeau",
+                    "Yves Dutuit"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572307,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "También / tampoco : émergence d’un microsystème par le signifiant. Submorphémie, diachronie et chronosignifiance"
+                ],
+                "authFullName_s": [
+                    "Marine Poirier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572306,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Esquisse des principes d'une chronosignifiance"
+                ],
+                "authFullName_s": [
+                    "Marine Poirier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572303,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "La « grammaticalisation » par le signifiant : le cas de cualquier. Submorphémie, réseaux et émergence du sens"
+                ],
+                "authFullName_s": [
+                    "Marine Poirier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572281,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Freelance & Community Management"
+                ],
+                "authFullName_s": [
+                    "Justine Gabet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1572280,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Identifier, organiser et cartographier des acteurs : cas appliqué au patrimoine minier en France"
+                ],
+                "authFullName_s": [
+                    "Flore De Backer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1572279,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "La politique d’austérité et les finances locales au Royaume-Uni"
+                ],
+                "authFullName_s": [
+                    "Alexandre Guigue"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572278,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "L’instrumentalisation du référendum en matière fiscale au Royaume-Uni"
+                ],
+                "authFullName_s": [
+                    "Alexandre Guigue"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1572276,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.psy",
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "Variation stylistique, mobilité sociale et positionnements épilinguistiques en contexte migratoire : le cas de migrants camerounais à Paris"
+                ],
+                "authFullName_s": [
+                    "Suzie Telep"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572273,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Naissance d’un cluster touristique équin ? L’exemple de Saumur (France)",
+                    "Is this the birth of an equine tourism cluster? The example of Saumur (France)"
+                ],
+                "authFullName_s": [
+                    "Cécile Clergeau",
+                    "Sylvine Pickel-Chevalier",
+                    "Philippe Violier",
+                    "Gwenaëlle Grefe"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572272,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "L’émergence de l’équitation de loisir en Chine : entre redécouverte et réinvention d’une culture équestre Exemple à partir de la province du Zhejiang",
+                    "The emergence of recreational riding in China: from rediscovery to reinvention of an equestrian culture. An example from Zhejiang Province"
+                ],
+                "authFullName_s": [
+                    "Shiwei Shen",
+                    "Sylvine Pickel-Chevalier",
+                    "Philippe Violier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572271,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "De la transformation des établissements équestres en France lorsqu’ils intègrent la société des loisirs et de consommation",
+                    "Transforming equestrian facilities in France to bring them in line with a leisure and consumer society"
+                ],
+                "authFullName_s": [
+                    "Gwenaëlle Grefe",
+                    "Sylvine Pickel-Chevalier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572270,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Le cheval réinventé par la société des loisirs en Occident : une mythologie révolutionnée ? (XVIIIe-XXIe siècle)",
+                    "The horse reinvented by Western leisure society: is it a revolutionized mythology? (18th-21ST centuries)"
+                ],
+                "authFullName_s": [
+                    "Sylvine Pickel-Chevalier",
+                    "Gwenaëlle Grefe"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572268,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil",
+                    "0.shs",
+                    "1.shs.hisphilso",
+                    "0.math",
+                    "1.math.math-ho"
+                ],
+                "title_s": [
+                    "(Traduction) Paolo Mancosu, \"Philosophie de la pratique mathématique"
+                ],
+                "authFullName_s": [
+                    "Sébastien Maronne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572267,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil",
+                    "0.shs",
+                    "1.shs.hisphilso"
+                ],
+                "title_s": [
+                    "(Traduction) Paul Benacerraf, \"Ce que les nombres ne peuvent pas être"
+                ],
+                "authFullName_s": [
+                    "Sébastien Maronne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572266,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-ho",
+                    "0.shs",
+                    "1.shs.hisphilso",
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Pascal, Torricelli et les Données : sur le premier écrit du concours de la roulette"
+                ],
+                "authFullName_s": [
+                    "Sébastien Maronne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572265,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-ho",
+                    "0.shs",
+                    "1.shs.hisphilso"
+                ],
+                "title_s": [
+                    "Les Commentaires sur la Géométrie de M. Descartes (1730) de Claude Rabuel"
+                ],
+                "authFullName_s": [
+                    "Sébastien Maronne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572255,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Comprendre les valeurs et les pratiques écologistes des jeunes en France"
+                ],
+                "authFullName_s": [
+                    "Jean-Paul Bozonnet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572250,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Compte-rendu de : Anthony King, Coins and Samian Ware. A Study of the Dating of Coin-Loss and the Deposition of Samian Ware (Terra Sigillata), With a Discussion of the Decline of Samian Ware Manufacture in the NW Provinces of the Roman Empire, Late 2nd to Mid 3rd Centuries AD. BAR-IS 2573, Oxford, 2013",
+                    "Review of: Anthony King, Coins and Samian Ware. A Study of the Dating of Coin-Loss and the Deposition of Samian Ware (Terra Sigillata), With a Discussion of the Decline of Samian Ware Manufacture in the NW Provinces of the Roman Empire, Late 2nd to Mid 3rd Centuries AD. BAR-IS 2573, Oxford, 2013"
+                ],
+                "authFullName_s": [
+                    "Stéphane Martin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1572244,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "A propos d'Alexander Baumann: Freiheitsbeschränkungen der Dekurionen in der Spätantike. Sklaverei, Knechtschaft, Zwangsarbeit"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572243,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Esclavage, universalisme et cosmopolitisme stoïciens entre cité idéale et histoire"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572240,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Veneficia matronarum, uenificia seruarum. La cité face aux femmes empoisonneuses"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572238,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Du praedium au fundus. Proscriptions, expropriations et confiscations chez les Agrimensores romains : problèmes techniques et juridiques"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572235,
+                "domain_s": [
+                    "0.math"
+                ],
+                "title_s": [
+                    "Formulation variationnelle espace-temps pour le calcul par potentiel retardé de la diffraction d'une onde acoustique (I)"
+                ],
+                "authFullName_s": [
+                    "Alain Bamberger",
+                    "Tuong Ha Duong"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572231,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "L’interculturalité : du contexte transfrontalier à la globalisation"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572229,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.psy",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Accompagner les parents dans leur travail éducatif et de soin."
+                ],
+                "authFullName_s": [
+                    "Claude Martin",
+                    "Abdelhafid Hammouche",
+                    "Marianne Modak",
+                    "Gérard Neyrand",
+                    "Catherine Sellenet",
+                    "Michel Vandenbroeck",
+                    "Chantal Zaouche Gaudron",
+                    "Sandrine Dauphin",
+                    "Jeanne Moeneclaey"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572227,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Ancienne, Médiévale, Moderne, Contemporaine ; les quatre périodes en question"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572226,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Que nous apprend l’Antiquité ? Leçons et usages des empires antiques à travers l’histoire"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572225,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Du risque filicide au care : la transmission de la violence et son interruption dans l’œuvre de Doris Lessing"
+                ],
+                "authFullName_s": [
+                    "Françoise Hatchuel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572224,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Pourquoi enseigner (aussi) l’histoire mondiale ?"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572223,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "La mobilité sociale : une approche comparée entre Antiquité et Modernité"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572222,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Le choc des civilisations après les attentats de janvier 2015. L’Antiquité peut-elle être un élément de compréhension et d’expertise ?"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFe1/8F"
+}

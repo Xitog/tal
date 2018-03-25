@@ -1,0 +1,1905 @@
+{
+    "response": {
+        "numFound": 515922,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1408483,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Publier après la Commune. Cladel et Arnould en correspondance"
+                ],
+                "authFullName_s": [
+                    "Jean-Didier Wagneur"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1408481,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-ds"
+                ],
+                "title_s": [
+                    "Systèmes multi-échelles impulsionnels au voisinage de leur courbe critique"
+                ],
+                "authFullName_s": [
+                    "Jean-Pierre Francoise",
+                    "Marion Lahutte-Auboin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408475,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.be",
+                    "0.sdv",
+                    "1.sdv.ee",
+                    "0.info"
+                ],
+                "title_s": [
+                    "Couplage de SMA avec des EDO pour simuler les phénomènes écologiques à grande échelle"
+                ],
+                "authFullName_s": [
+                    "Christophe Lang",
+                    "Nicolas Marilleau",
+                    "Patrick Giraudoux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408473,
+                "domain_s": [
+                    "0.spi",
+                    "0.info",
+                    "0.math"
+                ],
+                "title_s": [
+                    "Polarisation des codes Note technique (Polar Codes, extrait des travaux de l'EPFL)"
+                ],
+                "authFullName_s": [
+                    "Jean-Pierre Cances"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408470,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Méthodes de dynamique singulière pour l'élastodynamique avec contact"
+                ],
+                "authFullName_s": [
+                    "Yves Renard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408469,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Simulation numérique de l'essai de rayure"
+                ],
+                "authFullName_s": [
+                    "Nicolas Aleksy",
+                    "Guillaume Kermouche",
+                    "Jean-Michel Bergheau",
+                    "Alain Vautrin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408468,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Simulation d'impact sur un écran tactile contenant des interfaces incertaines avec prise en compte du contenu fréquentiel moyenne fréquence"
+                ],
+                "authFullName_s": [
+                    "Philippe Rouch",
+                    "Claude Blanzé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408467,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.math",
+                    "1.math.math-pr",
+                    "0.math",
+                    "1.math.math-st"
+                ],
+                "title_s": [
+                    "Modèles probabilistes de matrices d’impédances. Application à l’interaction dynamique sol-structure"
+                ],
+                "authFullName_s": [
+                    "Régis Cottereau",
+                    "Didier Clouteau",
+                    "Christian Soize"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408466,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Calculs ab initio : estimation d'erreur en modèle a posteriori"
+                ],
+                "authFullName_s": [
+                    "Denis Aubry",
+                    "Amélie Fau",
+                    "Ann-Lenaïg Hamon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408465,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Résolution d'un problème multiphysique couplé par décomposition en fonctions à variables séparées"
+                ],
+                "authFullName_s": [
+                    "Marianne Béringhier",
+                    "Mikaël Gueguen",
+                    "Jean-Claude Grandidier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408464,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Utilisation de la décomposition $LDL^\\top$ en simulation stochastique"
+                ],
+                "authFullName_s": [
+                    "Alban Notin",
+                    "Jean-Luc Dulong",
+                    "Nicolas Gayton",
+                    "Pierre Villon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408463,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "L'Asie monte en puissance"
+                ],
+                "authFullName_s": [
+                    "Nicolas Baumert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408462,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Un principe mixte pour le problème de contact avec frottement de Coulomb"
+                ],
+                "authFullName_s": [
+                    "Anh Le Van",
+                    "Tai Nguyen"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408461,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Actionnement multiparamétrique de plaques bistables"
+                ],
+                "authFullName_s": [
+                    "Amancio Fernandes",
+                    "Corrado Maurini",
+                    "Stefano Vidoli"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408460,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "L’uniformisation des productions agricoles à l’époque d’Edo : des savoirs géographiques biaisés à l’origine de crises"
+                ],
+                "authFullName_s": [
+                    "Nicolas Baumert",
+                    "Nobuhiro Itô",
+                    "Yuki Hata"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408459,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Résolution de problèmes de structures multi-défauts dans le cadre Arlequin. Préconisations pratiques et adaptation du solveur FETI"
+                ],
+                "authFullName_s": [
+                    "Nadia Elkhodja",
+                    "Hachmi Ben Dhia",
+                    "François-Xavier Roux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408458,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Fissuration 3D X-FEM avec contact interfacial: stratégie à deux échelles structure/interface"
+                ],
+                "authFullName_s": [
+                    "Emilien Pierrès",
+                    "Marie-Christine Baietto",
+                    "Anthony Gravouil"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408457,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Géographie Historique du Japon d’Edo et de ses héritages"
+                ],
+                "authFullName_s": [
+                    "Nicolas Baumert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408455,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-tt",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Une approche textométrique pour étudier la transmission des savoirs biologiques au XIXe siècle",
+                    "A Textometrical Approach to Study the Transmission of Biological Knowledge in the XIXth Century"
+                ],
+                "authFullName_s": [
+                    "Nadège Lechevrel",
+                    "Philippe Gambette"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408454,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu"
+                ],
+                "title_s": [
+                    "Evolution thermo-cinématique et géodynamique du Brooks Range et du North Slope (Alaska-Canada)",
+                    "Thermo-kinematic and geodynamical evolution of the Brooks Range and North Slope (Alaska-Canada)"
+                ],
+                "authFullName_s": [
+                    "Maelianna Bigot-Buschendorf"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408453,
+                "domain_s": [
+                    "0.chim",
+                    "1.chim.orga"
+                ],
+                "title_s": [
+                    "Molécules entrelacées : conception, photocapture et commutation photoinduite",
+                    "Interlocked molecules : conception, photocapture and photoinduced commutation"
+                ],
+                "authFullName_s": [
+                    "Arnaud Tron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408452,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Le droit à l'accompagnement",
+                    "The right to support"
+                ],
+                "authFullName_s": [
+                    "Charlotte Bres"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1408451,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bbm",
+                    "2.sdv.bbm.bp",
+                    "0.chim",
+                    "1.chim.ther"
+                ],
+                "title_s": [
+                    "Conception et synthèse de sondes fluorescentes et d'agonistes des récepteurs de la vasopressine et de l'ocytocine : application mécanistique et thérapeutique",
+                    "Design, synthesis and pharmacological evaluation of fluorescent probes and non-peptide agonists for oxytocin and vasopressin receptors : therapeutic and mechanistic applications"
+                ],
+                "authFullName_s": [
+                    "Elsa Pflimlin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408445,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-nt"
+                ],
+                "title_s": [
+                    "Uniformisation des variétés de Laumon-Rapoport-Stuhler et application à la correspondance de Langlands locale",
+                    "Uniformisation of Laumon-Rapoport-Stuhler varieties and application to the local Langlands correspondence"
+                ],
+                "authFullName_s": [
+                    "Thomas Hausberger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408442,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "CR de \"La grammaire Pâninéenne par ses exemples"
+                ],
+                "authFullName_s": [
+                    "Emilie Aussant"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408441,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "CR de \"Le nom des langues en Afrique sub-saharienne, pratiques, dénominations, catégorisations"
+                ],
+                "authFullName_s": [
+                    "Emilie Aussant"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408440,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "CR de \"The Language of the Gods in the World of Men - Sanskrit, Culture, and Power in Premodern India"
+                ],
+                "authFullName_s": [
+                    "Emilie Aussant"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408439,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "CR de \"Le nom des langues II - Le patrimoine plurilingue de la Grèce"
+                ],
+                "authFullName_s": [
+                    "Emilie Aussant"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408438,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Fragments of the Ark de Louise Meriwether : roman historique, écriture commémorative et travail de mémoire"
+                ],
+                "authFullName_s": [
+                    "Corinne Duboin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1408436,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "CR de \"Le nom des langues I - Les enjeux de la nomination des langues"
+                ],
+                "authFullName_s": [
+                    "Emilie Aussant"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408435,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Répétitions dans The Wedding de Dorothy West : échos et résonances du texte"
+                ],
+                "authFullName_s": [
+                    "Corinne Duboin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1408434,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu"
+                ],
+                "title_s": [
+                    "Fracturation des grès de Fontainebleau : les faits et les contraintes"
+                ],
+                "authFullName_s": [
+                    "Médard Thiry"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1408432,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Marchands des deux mers"
+                ],
+                "authFullName_s": [
+                    "Eric Vallet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408430,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu"
+                ],
+                "title_s": [
+                    "Nouveaux traceurs de l’extension des pergélisols : calcites spécifiques et symptomatiques des paléo-hydrologies."
+                ],
+                "authFullName_s": [
+                    "Médard Thiry",
+                    "Christine Franke",
+                    "Christophe Innocent"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1408426,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu"
+                ],
+                "title_s": [
+                    "Les Calcites de Fontainebleau : occurrence et genèse."
+                ],
+                "authFullName_s": [
+                    "Médard Thiry"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1408423,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.psy",
+                    "0.spi",
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "Construction de l’intervention ergonomique. D’une préoccupation de montée en cadence à la décision d’investir pour transformer le travail : embûches et stratégies",
+                    "Convincing Companies to Invest in Ergonomic Changes: Pitfalls and Strategies in the Aerospace Sector",
+                    "La construcción de la intervención ergonómica. De la preocupación sobre el aumento del ritmo de producción a la decisión de invertir para transformar el trabajo : dificultades y estrategias"
+                ],
+                "authFullName_s": [
+                    "Fabien Coutarel",
+                    "Sophie Aubert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1408417,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Désertification, instrumentalisation en Afrique de l’Ouest d’un concept controversé"
+                ],
+                "authFullName_s": [
+                    "Aude Nuscia Taïbi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408415,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Résolution de l'équation des plaques minces de Kirchhoff par une approche sans maillage construite à l'aide d'une approximation moindres carrés mobiles"
+                ],
+                "authFullName_s": [
+                    "Pierre Joyot",
+                    "Francisco Chinesta",
+                    "Pierre Villon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408414,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Analyse de sensibilité du serrage de goujons sur l'étanchéité d'un robinet à soupape à l'aide d'une méthode non intrusive"
+                ],
+                "authFullName_s": [
+                    "Marc Berveiller",
+                    "Jean-Philippe Mathieu",
+                    "Fabien Termens"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408413,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "«Migrants et policiers sur la frontière franco-italienne après 1945»"
+                ],
+                "authFullName_s": [
+                    "Philippe Hanus"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408411,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Modélisation de la propagation de délaminage dans les matériaux composites en présence d'endommagement intralaminaire par des éléments d'interface"
+                ],
+                "authFullName_s": [
+                    "Cédric Huchette",
+                    "Thomas Vandellos",
+                    "Nicolas Carrère"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1408409,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Modélisation biomécanique du corps humain pour une ergonomie de conception centrée sur l'homme"
+                ],
+                "authFullName_s": [
+                    "Dominique Chamoret",
+                    "François Peyraut",
+                    "Samuel Gomes",
+                    "Sébastien Chevriau",
+                    "Zhi-Qiang Feng"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1408408,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Optimisation aéro-structurale de la voilure d'un avion d'affaires par un jeu de Nash et un partage adapté des variables"
+                ],
+                "authFullName_s": [
+                    "Badr Abou El Majd",
+                    "Jean-Antoine Désidéri",
+                    "Abderrahmane Habbal"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408407,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Modélisation de la maquette SMART sous séisme : utilisation d'un modèle d'endommagement anisotrope tridimensionnel"
+                ],
+                "authFullName_s": [
+                    "Grégory Lebon",
+                    "Frédérique Ragueneau",
+                    "Rodrigue Desmorat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408406,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Modélisation d'un phénomène d'oxydation interne par la méthode X-FEM"
+                ],
+                "authFullName_s": [
+                    "Éric Feulvarch",
+                    "Jean-Christophe Roux",
+                    "Jean-Michel Bergheau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408405,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Réduction de modèles par CPOD et Krigeage Application à l'optimisation de forme d'un conduit d'admission"
+                ],
+                "authFullName_s": [
+                    "Manyu Xiao",
+                    "Rajan Filomeno Coelho",
+                    "Piotr Breitkopf",
+                    "Catherine Knopf-Lenoir",
+                    "Pierre Villon",
+                    "Maryan Sidorkiewicz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408404,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Remaillage surfacique 3D couplé à une nouvelle technique de projection"
+                ],
+                "authFullName_s": [
+                    "Laurence Giraud-Moreau",
+                    "Houman Borouchaki",
+                    "Abdelhakim Cherouat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408403,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Prédiction par essais virtuels de l'amortissement dans les structures spatiales"
+                ],
+                "authFullName_s": [
+                    "David Néron",
+                    "Pierre Ladevèze",
+                    "Alain Caignot",
+                    "Naima Moustaghfir",
+                    "Jean-François Durand"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408401,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Une méthode de couplage de schémas numériques en temps hétérogènes et multi-échelle en temps"
+                ],
+                "authFullName_s": [
+                    "Najib Mahjoubi",
+                    "Anthony Gravouil",
+                    "Alain Combescure",
+                    "Nicolas Greffet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408400,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Approximation de la fonction de densité de probabilité d'un processus d'optimisation"
+                ],
+                "authFullName_s": [
+                    "Rafael Lopez",
+                    "Didier Lemosse",
+                    "Eduardo Souza De Cursi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1408398,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Simulation numérique d'essais normalisés au feu"
+                ],
+                "authFullName_s": [
+                    "Jean-Charles Craveur",
+                    "Philippe Jetteur"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1408396,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-ho",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Un problème classique revisité: La Quadrature du YIN-YANG"
+                ],
+                "authFullName_s": [
+                    "Jean-Paul Truc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1408395,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Prolongement harmonique discret unique. Application à la complétion de données"
+                ],
+                "authFullName_s": [
+                    "Alain Cimetière",
+                    "Franck Delvare",
+                    "Frédéric Pons"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408394,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "art. Ysaye, Eugène"
+                ],
+                "authFullName_s": [
+                    "Malou Haine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408392,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "art. Willaert, Adrian"
+                ],
+                "authFullName_s": [
+                    "Malou Haine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408391,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Montherlant et Camus face au théâtre espagnol du Siècle d'Or : deux sens de l'honneur et de la grandeur"
+                ],
+                "authFullName_s": [
+                    "Marie Sorel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408390,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "art. Vieuxtemps"
+                ],
+                "authFullName_s": [
+                    "Malou Haine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408389,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "art. Van Dyck, Ernest"
+                ],
+                "authFullName_s": [
+                    "Malou Haine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408388,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "art. Vanden Ghein"
+                ],
+                "authFullName_s": [
+                    "Malou Haine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408387,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Jean-Jacques juge de Gautier : le romancier et critique dramatique du Figaro font-ils bon ménage?, Jeanyves Guérin (dir.)"
+                ],
+                "authFullName_s": [
+                    "Marie Sorel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408386,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "art. Van den Borren, Charles"
+                ],
+                "authFullName_s": [
+                    "Malou Haine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408385,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Le vieil anarchiste espagnol : un mythe ringard ? Variations autour d'un type littéraire dans quelques romans français des années 90 à nos jours"
+                ],
+                "authFullName_s": [
+                    "Marie Sorel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408384,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Garçonnerie en fleurs dans Miracle de la rose de Genet et Les Garçons de Montherlant"
+                ],
+                "authFullName_s": [
+                    "Marie Sorel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408381,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.museo"
+                ],
+                "title_s": [
+                    "Nouveaux cabinets de curiosités."
+                ],
+                "authFullName_s": [
+                    "Bénédicte Percheron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1408378,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Famille je vous hais ... et vous réinvente : Le Rendez-vous de Senlis de Jean Anouilh et Fils de personne d'Henry de Montherlant"
+                ],
+                "authFullName_s": [
+                    "Marie Sorel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408377,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Des joujoux partout"
+                ],
+                "authFullName_s": [
+                    "Marie Sorel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408374,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "La revanche de l'hamour : mise à mort du romance dans l'oeuvre de Montherlant?"
+                ],
+                "authFullName_s": [
+                    "Marie Sorel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408371,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Une approche socio-historique pour l’étude spatiale des sciences"
+                ],
+                "authFullName_s": [
+                    "Michel Grossetti",
+                    "Béatrice Milard",
+                    "Marion Maisonobe"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408370,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Note sur la notion d'encastrement"
+                ],
+                "authFullName_s": [
+                    "Michel Grossetti"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408368,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.relig"
+                ],
+                "title_s": [
+                    "Compte-rendu de « Zhou Zuyan, Daoist Philosophy and Literati Writings in Late Imperial China: A Case Study of The Story of the Stone, 2013»"
+                ],
+                "authFullName_s": [
+                    "Vincent Durand-Dastès"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1408366,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "art. Van Campenhout, François"
+                ],
+                "authFullName_s": [
+                    "Malou Haine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408365,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "art. Tinel, Edgar"
+                ],
+                "authFullName_s": [
+                    "Malou Haine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408364,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "art. Tinctoris, Johannes"
+                ],
+                "authFullName_s": [
+                    "Malou Haine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408363,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "art. Taskin, Pascal Joseph"
+                ],
+                "authFullName_s": [
+                    "Malou Haine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408362,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "art. Susati, Tylman"
+                ],
+                "authFullName_s": [
+                    "Malou Haine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408361,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "art. Stehman, Jacques"
+                ],
+                "authFullName_s": [
+                    "Malou Haine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408360,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "art. Souris, André"
+                ],
+                "authFullName_s": [
+                    "Malou Haine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408359,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "art. Sax (Adolphe)"
+                ],
+                "authFullName_s": [
+                    "Malou Haine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408356,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Saussure et l'Antiquité aujourd'hui"
+                ],
+                "authFullName_s": [
+                    "Pierre-Yves Testenoire",
+                    "Elodie Paillard",
+                    "Claire Forel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408353,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.shs",
+                    "1.shs.envir"
+                ],
+                "title_s": [
+                    "Anthracologie et paysages forestiers médiévaux : à propos de quatre sites languedociens",
+                    "Charcoal analysis from four Languedoc sites and history of medieval landscape"
+                ],
+                "authFullName_s": [
+                    "Aline Durand",
+                    "Jean-Louis Vernet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408352,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Régimes d'activité dans la création d'entreprises"
+                ],
+                "authFullName_s": [
+                    "Jean-François Barthe",
+                    "Nathalie Chauvac",
+                    "Michel Grossetti"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408351,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "L’école de Genève vue de la Société de linguistique de Paris"
+                ],
+                "authFullName_s": [
+                    "Pierre-Yves Testenoire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408350,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info",
+                    "2.shs.info.econ",
+                    "0.shs",
+                    "1.shs.info",
+                    "2.shs.info.coll"
+                ],
+                "title_s": [
+                    "L’offre de livres numériques à destination des bibliothèques de lecture publique : un regard international (séminaire Enssib mai 2014-mars 2015)"
+                ],
+                "authFullName_s": [
+                    "Hans Dillaerts",
+                    "Benoît Epron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408349,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Que font les réseaux sociaux aux réseaux sociaux ? Réseaux personnels et nouveaux moyens de communication"
+                ],
+                "authFullName_s": [
+                    "Michel Grossetti"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408348,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Plus largement, les sciences sociales…"
+                ],
+                "authFullName_s": [
+                    "Michel Grossetti"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408346,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Le linguistique et le littéraire. Qu’apportent les manuscrits de linguistes ?"
+                ],
+                "authFullName_s": [
+                    "Pierre-Yves Testenoire",
+                    "Jean-Claude Coquet",
+                    "Irène Fenoglio"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408345,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.envir",
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Etude anthracologique pour une histoire du paysage",
+                    "Charcoal analyse to write the landscape history,"
+                ],
+                "authFullName_s": [
+                    "Lucie Chabal",
+                    "Aline Durand"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408343,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "art. Samuel, Adolphe"
+                ],
+                "authFullName_s": [
+                    "Malou Haine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408342,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "art. Ruckers, Hans"
+                ],
+                "authFullName_s": [
+                    "Malou Haine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408341,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Saussure et les Oltramare"
+                ],
+                "authFullName_s": [
+                    "Pierre-Yves Testenoire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408340,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "art. Rottenburgh, Jean Hyacinthe"
+                ],
+                "authFullName_s": [
+                    "Malou Haine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408339,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Ferdinand de Saussure à la recherche des anagrammes : les cahiers homériques"
+                ],
+                "authFullName_s": [
+                    "Pierre-Yves Testenoire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408338,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "art. Rore, Cyprien"
+                ],
+                "authFullName_s": [
+                    "Malou Haine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408337,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "art. Quinet, Fernand"
+                ],
+                "authFullName_s": [
+                    "Malou Haine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408336,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Une étape inédite de la réflexion anagrammatique : le brouillon d’une lettre de Ferdinand de Saussure à Charles Bally daté du 30 juillet 1906"
+                ],
+                "authFullName_s": [
+                    "Pierre-Yves Testenoire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408335,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "art. Pietkin, Lambert"
+                ],
+                "authFullName_s": [
+                    "Malou Haine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408334,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "art. Phalèse, Pierre"
+                ],
+                "authFullName_s": [
+                    "Malou Haine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408333,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "art. Peeters, Flor"
+                ],
+                "authFullName_s": [
+                    "Malou Haine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408332,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "art. Paque, Désiré"
+                ],
+                "authFullName_s": [
+                    "Malou Haine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1408331,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "art. Ockeghem, Johannes"
+                ],
+                "authFullName_s": [
+                    "Malou Haine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFb1K8F"
+}

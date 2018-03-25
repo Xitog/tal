@@ -1,0 +1,1978 @@
+{
+    "response": {
+        "numFound": 515922,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1417551,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gciv"
+                ],
+                "title_s": [
+                    "Mécanismes et modélisations de dégradation et décollement des interfaces de couches de chaussées",
+                    "Damage interface and debonding modeling in multilayered asphalt pavements"
+                ],
+                "authFullName_s": [
+                    "Rahma Ktari"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417550,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "Neurosciences et société"
+                ],
+                "authFullName_s": [
+                    "Brigitte Chamak",
+                    "Baptiste Moutaud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417549,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Quelques réflexions sur le cercle des poètes disparus"
+                ],
+                "authFullName_s": [
+                    "Claude Perrus"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417546,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hisphilso",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "La linguistique cognitive : histoire et épistémologie. Introduction"
+                ],
+                "authFullName_s": [
+                    "Jean-Michel Fortis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417545,
+                "domain_s": [
+                    "0.chim",
+                    "1.chim.othe"
+                ],
+                "title_s": [
+                    "Vers une meilleure compréhension de la cristallisation en solution de polymorphes : étude expérimentale et modélisation par bilan de population et par équations cinétiques",
+                    "Toward a better understanding of polymorph crystallization in solution : experimental study and modeling using population balance equation and kinetic equations"
+                ],
+                "authFullName_s": [
+                    "Yousra Tahri"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417542,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "« Jane Austen victorienne ? »"
+                ],
+                "authFullName_s": [
+                    "Isabelle Bour"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417541,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.museo",
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "Valorisation numérique du patrimoine culturel immatériel"
+                ],
+                "authFullName_s": [
+                    "Camille Graouilhet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417536,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Traduire Ruzante"
+                ],
+                "authFullName_s": [
+                    "Claude Perrus"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417532,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Partitionnement multi-critères de graphes pour l'équilibrage de charge de simulations multi-physiques",
+                    "Multi-constraints graph partitioning for load balancing of multi-physics simulations"
+                ],
+                "authFullName_s": [
+                    "Rémi Barat",
+                    "Cédric Chevalier",
+                    "François Pellegrini"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417527,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.museo"
+                ],
+                "title_s": [
+                    "La valorisation patrimoniale de Saint-Sever dans le cadre de l'inventaire du patrimoine culturel immatériel et bâti : la tradition des Catherinettes et recherches de fonds iconographiques sur Saint-Sever"
+                ],
+                "authFullName_s": [
+                    "Pauline Loubère"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417518,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.ocean"
+                ],
+                "title_s": [
+                    "Traitement automatique de données océanographiques pour l'interpolation de la ∫CO₂ de surface dans l'océan Atlantique tropical, en utilisant les données satellitaires",
+                    "Automatic processing of oceanographic data in order to interpolate sea surface fCO2 in the tropical Atlantic ocean, using satellite data"
+                ],
+                "authFullName_s": [
+                    "Hadjer Moussa"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417506,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sp"
+                ],
+                "title_s": [
+                    "Formation continue du personnel de stérilisation : et si on jouait ?",
+                    "Let's play to improve sterilization knowledge!"
+                ],
+                "authFullName_s": [
+                    "Ingrid Jullian-Desayes"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417504,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.museo"
+                ],
+                "title_s": [
+                    "Section <i>Conservation du Patrimoine, Mémoire et Traditions</i> de la brigade de sapeurs-pompiers de Paris"
+                ],
+                "authFullName_s": [
+                    "Blandine Escoubet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417493,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Spectacles au music-hall. Le cas de quatre salles parisiennes, 1917-1940"
+                ],
+                "authFullName_s": [
+                    "Marine Costille"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417480,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Genèse d’une villa carolingienne de l’arrière-pays biterrois (VIe-Xe s.) : la villa plaxano du cartulaire d’Aniane et la fouille des termes à Plaissan (Hérault)",
+                    "Genesis of a Carolingian villa in the hinterland of Beziers (6th-10th Centuries). The Plaxano villa of the cartulary of Aniane and the excavation of Les Termes in Plaissan (Hérault)."
+                ],
+                "authFullName_s": [
+                    "Laurent Schneider",
+                    "Pierre Rascalou",
+                    "Guilhem Colomer",
+                    "Agnès Bergeret"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417479,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Rôle du cervelet dans les troubles cognitifs de la sclérose en plaques"
+                ],
+                "authFullName_s": [
+                    "Amandine Moroso"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417474,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.museo"
+                ],
+                "title_s": [
+                    "<i>Fébus 2.0</i> : la valorisation d'une figure historique en Béarn par le transmédia"
+                ],
+                "authFullName_s": [
+                    "Laurie Bernard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417468,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Territoires de l’écriture : Contini entre Mallarmé et Sainte-Beuve"
+                ],
+                "authFullName_s": [
+                    "Claude Perrus"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417466,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Comment les instruments de gestion interviennent-ils dans la constitution de rôles organisationnels ? Le cas des contrats de pôle et instruments de suivi financiers dans un hôpital public français",
+                    "How do management tools take part in the building of organizational roles? The case of clinical divisions’ contracts and financial monitoring tools in a French public hospital"
+                ],
+                "authFullName_s": [
+                    "Isabelle Flachère"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417450,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Présence d'André du Bouchet"
+                ],
+                "authFullName_s": [
+                    "Michel Collot",
+                    "Jean-Pascal Léger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417449,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "« La représentation de la sociabilité franco-anglaise dans les récits de voyage au XVIIIe siècle »"
+                ],
+                "authFullName_s": [
+                    "Isabelle Bour"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417443,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.scco",
+                    "1.scco.ling"
+                ],
+                "title_s": [
+                    "Trifouilly-les-Oies, Glupov, Pinsk and other sarcastic toponyms: Stereotypic place names between denotation and evocation"
+                ],
+                "authFullName_s": [
+                    "Xavier Galmiche"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417440,
+                "domain_s": [
+                    "0.info",
+                    "0.info",
+                    "1.info.info-tt",
+                    "0.scco"
+                ],
+                "title_s": [
+                    "Sémantique et discours - de la modélisation à l'interprétation",
+                    "Semantics and Discourse: from modelling to interpretation"
+                ],
+                "authFullName_s": [
+                    "Maxime Amblard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "HDR",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417432,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Les études dantesques en France, de Claude Fauriel à nos jours"
+                ],
+                "authFullName_s": [
+                    "Claude Perrus"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417427,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Introduction : de la parémiographie à la parémiologie"
+                ],
+                "authFullName_s": [
+                    "Stéphane Viellard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417422,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Existe-t-il un syndrome canalaire sous-acromiocoracoïdien ? Étude anatomique du canal sous-acromiocoracoïdien [Anatomical and morphological study of the subcoracoacromial canal]"
+                ],
+                "authFullName_s": [
+                    "O. Le Reun",
+                    "J. Lebhar",
+                    "F. Mateos",
+                    "J.-L. Voisin",
+                    "H. Thomazeau",
+                    "Mickael Ropars"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417418,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "La fabrique des discriminations"
+                ],
+                "authFullName_s": [
+                    "Vincent-Arnaud Chappe",
+                    "Mireille Eberhard",
+                    "Cécile Guillaume,"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417415,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-gr"
+                ],
+                "title_s": [
+                    "Collaboration Interactive en Réalité Virtuelle pour l'industrie Aérospatiale"
+                ],
+                "authFullName_s": [
+                    "Damien Clergeaud",
+                    "Pascal Guitton"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417413,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "La Noblesse au XIIIe siècle : paraître, pouvoir et savoir"
+                ],
+                "authFullName_s": [
+                    "Martin Aurell"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417412,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Un « nouvel art de vivre ensemble » : quelles expérimentations sociales dans les quartiers dits durables ?",
+                    "Ein « neues Modell des Zusammenlebens » : welche sozialen Erprobungen in sogenannten nachhaltigen Stadtvierteln ?",
+                    "A \"new art of living together\" : which social experiments in sustainable neighborhoods ?"
+                ],
+                "authFullName_s": [
+                    "Francois Valegeas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417409,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.gm",
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.hy",
+                    "0.sde",
+                    "1.sde.es"
+                ],
+                "title_s": [
+                    "Karsts du Zagros (Iran)",
+                    "Zagros karsts (Iran)"
+                ],
+                "authFullName_s": [
+                    "Dominique Dumas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417406,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-dc"
+                ],
+                "title_s": [
+                    "Remaillage parallèle pour le calcul haute performance"
+                ],
+                "authFullName_s": [
+                    "Arnaud Bardoux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417405,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "« La maladie de l’enfance », revue Europe"
+                ],
+                "authFullName_s": [
+                    "Bruno Blanckeman"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417401,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Pour une géographie littéraire"
+                ],
+                "authFullName_s": [
+                    "Michel Collot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417389,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.hisphilso",
+                    "0.shs",
+                    "1.shs.genre"
+                ],
+                "title_s": [
+                    "Mary Wollstonecraft : Œuvres—Défense des droits des femmes, Maria ou le Malheur d’être femme, Marie et Caroline"
+                ],
+                "authFullName_s": [
+                    "Isabelle Bour"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417387,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Gratianopolis #13 Maison de la culture — Renaud Contra"
+                ],
+                "authFullName_s": [
+                    "Rémy Vigneron",
+                    "Ivan Mazel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "SON",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417379,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Gratianopolis #12 - Regard sur le ville - invité P. Thépot"
+                ],
+                "authFullName_s": [
+                    "Rémy Vigneron",
+                    "Ivan Mazel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "SON",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417377,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "L’art comme propagande royale ? Henri II d’Angleterre, Aliénor d’Aquitaine et leurs enfants (1154-1204)"
+                ],
+                "authFullName_s": [
+                    "Martin Aurell"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417376,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.genre",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Affects"
+                ],
+                "authFullName_s": [
+                    "Sébastien Roux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417371,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Gratianopolis #11 - Agriculture urbaine - invité S. Bonnefoy"
+                ],
+                "authFullName_s": [
+                    "Rémy Vigneron",
+                    "Ivan Mazel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "SON",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417369,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Grenoble, métropole des Alpes"
+                ],
+                "authFullName_s": [
+                    "Rémy Vigneron",
+                    "Ivan Mazel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "SON",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417367,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "[revue Bibliothèque d’Humanisme et de Renaissance, travaux et documents, LXXVIII] L’histoire naturelle au XVIe siècle, introduction, étude et édition critique de La nature et diversité des poissons de Pierre Belon (1555), Droz, 2011, XII-716 p."
+                ],
+                "authFullName_s": [
+                    "Brigitte Gauvin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417366,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Reconnaissance au travail et comportements discrétionnaires : comportement d'entraide et comportement d'innovation auprès du personnel infirmier tunisien",
+                    "Recognition at work and discretionary behaviors : helping behavior and innovative behavior of Tunisia"
+                ],
+                "authFullName_s": [
+                    "Amina Amri"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417364,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Gratianopolis #9 - Espace public - invité H. Torgue"
+                ],
+                "authFullName_s": [
+                    "Rémy Vigneron",
+                    "Ivan Mazel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "SON",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417361,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Gratianopolis #8 - Habitat participatif - invité C. Chaix"
+                ],
+                "authFullName_s": [
+                    "Rémy Vigneron",
+                    "Ivan Mazel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "SON",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417359,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Dante du côté de chez Proust"
+                ],
+                "authFullName_s": [
+                    "Claude Perrus"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417357,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-cl",
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Reconnaissance thématique à partir de textes dictés et Adaptation dynamique de modèles de langages thématiques"
+                ],
+                "authFullName_s": [
+                    "Brigitte Bigi",
+                    "Renato De Mori",
+                    "Spriet Thierry"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417356,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.spi",
+                    "1.spi.gciv",
+                    "2.spi.gciv.it"
+                ],
+                "title_s": [
+                    "LA TRANSFORMATION NUMÉRIQUE NOUVEL ELDORADO POUR LES ACTEURS DES TRANSPORTS ?"
+                ],
+                "authFullName_s": [
+                    "Bertrand Mouly-Aigrot",
+                    "Laurent Fouco",
+                    "Fabien Leurent",
+                    "Gaele Lesteven"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417355,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Gratianopolis #7 - Ciment et béton - invité C. Avenier"
+                ],
+                "authFullName_s": [
+                    "Rémy Vigneron",
+                    "Ivan Mazel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "SON",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417354,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.museo",
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "<i>(Extra)ordinaire quotidien</i> : une exposition sur le patrimoine culturel immatériel au sein du service Ville d'Art et d'Histoire de Pau"
+                ],
+                "authFullName_s": [
+                    "Laura Lalanne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417351,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "[revue Latomus 73] J. Vons, La syphilis ou le mal français (J. Fracastor), 2011"
+                ],
+                "authFullName_s": [
+                    "Brigitte Gauvin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417350,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Gratianopolis #6 - Berriat-Saint-Bruno - invité P. Belli-Riz"
+                ],
+                "authFullName_s": [
+                    "Rémy Vigneron",
+                    "Ivan Mazel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "SON",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417349,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ti",
+                    "0.sdv",
+                    "1.sdv.bc"
+                ],
+                "title_s": [
+                    "Modélisation et estimation de la diffusion de protéines à l’exocytose dans des séquences d’images de microscopie TIRF"
+                ],
+                "authFullName_s": [
+                    "Antoine Basset",
+                    "Patrick Bouthemy",
+                    "Jérôme Boulanger",
+                    "François Waharte",
+                    "Jean Salamero",
+                    "Charles Kervrann"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417348,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Gratianopolis #5 - Métropole - invité F. Jacquart"
+                ],
+                "authFullName_s": [
+                    "Rémy Vigneron",
+                    "Ivan Mazel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "SON",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417347,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Gratianopolis #4 - Economie - invité M. Talandier"
+                ],
+                "authFullName_s": [
+                    "Rémy Vigneron",
+                    "Ivan Mazel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "SON",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417328,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Valparaiso, 1914-1918 : un port chilien dans la grande guerre. Pratiques et représentations d'une expérience locale de la « conflagration européenne »"
+                ],
+                "authFullName_s": [
+                    "Claire-Emmanuelle Block"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417324,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Gratianopolis #3 - Habitat - invité S. Gros"
+                ],
+                "authFullName_s": [
+                    "Rémy Vigneron",
+                    "Ivan Mazel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "SON",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417322,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ib"
+                ],
+                "title_s": [
+                    "Localisation préférentielles des reconnections veineuses pulmonaires au cours d'une deuxième procédure d'ablation de fibrillation atriale en fonction de l'utilisation de la radiofréquence ou de la cryothérapie lors de la première procédure [Localization of gaps during redo ablations of paroxysmal atrial fibrillation: Preferential patterns depending on the choice of cryoballoon ablation or radiofrequency ablation for the initial procedure]"
+                ],
+                "authFullName_s": [
+                    "V. Galand",
+                    "D. Pavin",
+                    "N. Behar",
+                    "V. Auffret",
+                    "D. Fénéon",
+                    "A. Behaghel",
+                    "J.-C. Daubert",
+                    "P. Mabo",
+                    "R.P. Martins"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417321,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ib"
+                ],
+                "title_s": [
+                    "Anticoagulants oraux directs et insuffisance cardiaque [Non-vitamin K antagonist oral anticoagulants and heart failure]"
+                ],
+                "authFullName_s": [
+                    "R. Isnard",
+                    "F. Bauer",
+                    "A. Cohen-Solal",
+                    "T. Damy",
+                    "E. Donal",
+                    "M. Galinier",
+                    "A. Hagège",
+                    "P. Jourdain",
+                    "C. Leclercq",
+                    "R. Sabatier",
+                    "J.-N. Trochu",
+                    "A. Cohen"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417316,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.nano"
+                ],
+                "title_s": [
+                    "Conception et réalisation d'une nouvelle génération de nano-capteurs de gaz à base de nanofils semiconducteurs",
+                    "Design and realization of a new generation of nano-gas sensors based on semiconductor nanowires"
+                ],
+                "authFullName_s": [
+                    "Brieux Durand"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417315,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "[revue Latomus 74] Traduire de vernaculaire en latin au Moyen Âge et à la Renaissance, études réunies par Françoise Fery-Hue, Paris, École des Chartes, 2013"
+                ],
+                "authFullName_s": [
+                    "Brigitte Gauvin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417314,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Recherches sur le peintre et dessinateur bordelais Robert Charazac (1905-1982)"
+                ],
+                "authFullName_s": [
+                    "Manoli Miremont-Saves"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417311,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Gratianopolis #2 - Mobilité et transport - invité G. Jourdan"
+                ],
+                "authFullName_s": [
+                    "Rémy Vigneron",
+                    "Ivan Mazel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "SON",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417307,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.geme"
+                ],
+                "title_s": [
+                    "CoSelect : réglage statistique et sélectif des procédés"
+                ],
+                "authFullName_s": [
+                    "Eric Pairel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1417302,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Gratianopolis #1 - Histoire de l'urbanisation - invité G. Novarina"
+                ],
+                "authFullName_s": [
+                    "Rémy Vigneron",
+                    "Ivan Mazel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "SON",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417298,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.astr"
+                ],
+                "title_s": [
+                    "Premières lumières du télescope EUSO-Ballon",
+                    "First light of the EUSO-Balloon telescope : toward the detection of ultra-high energy cosmic rays from space"
+                ],
+                "authFullName_s": [
+                    "Camille Catalano"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417294,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.auto",
+                    "0.sde",
+                    "1.sde.ie"
+                ],
+                "title_s": [
+                    "INFLEX, pour un pilotage optimisé d'un bassin biologique de type boue activée - retours d'expérience"
+                ],
+                "authFullName_s": [
+                    "X. Lefebvre",
+                    "M. Mauret",
+                    "M. Pocquet",
+                    "M. Sperandio",
+                    "J.P. Canler"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417292,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-cl",
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Combinaison de modèles de langage pour l'identification de thèmes"
+                ],
+                "authFullName_s": [
+                    "Brigitte Bigi",
+                    "Renato De Mori",
+                    "Marc El Bèze",
+                    "Thierry Spriet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417291,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Vivre au bord du golfe de Gascogne au Paléolithique supérieur récent : vers un nouveau paradigme",
+                    "Life on the shore of the Bay of Biscay in the Late Upper Paleolithic: towards a new paradigm"
+                ],
+                "authFullName_s": [
+                    "Jean-Marc Pétillon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417288,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.auto"
+                ],
+                "title_s": [
+                    "Ordonnancement sous contraintes d’énergie",
+                    "Scheduling under energy constraints"
+                ],
+                "authFullName_s": [
+                    "Margaux Nattaf"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417284,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.astr",
+                    "2.sdu.astr.im"
+                ],
+                "title_s": [
+                    "Application de la réflectométrie GNSS à l'étude des redistributions des masses d'eau à la surface de la terre",
+                    "Application of GNSS reflectometry to the study of water storage redistribution over the Earth's surface"
+                ],
+                "authFullName_s": [
+                    "Nicolas Roussel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417282,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Risque VIH et réflexivité. Logiques de prévention chez des gais séropositifs"
+                ],
+                "authFullName_s": [
+                    "Gabriel Girard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417280,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "2.sdv.mhep.geo"
+                ],
+                "title_s": [
+                    "Le toucher vaginal en salle de naissance : évaluation des pratiques professionnelles et freins à l’arrêt de son recours horaire systématique"
+                ],
+                "authFullName_s": [
+                    "Marine Guidez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417279,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Les attentes des lecteurs du <i>Weekly Shonen Jump</i> et ses concurrents"
+                ],
+                "authFullName_s": [
+                    "Franck Dubosc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417275,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Lectures de Marguerite Yourcenar. \"Mémoires d’Hadrien"
+                ],
+                "authFullName_s": [
+                    "Bruno Blanckeman"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417274,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Formes et enjeux sociotechniques du périurbain durable : comparaison de Bimby et du New Urbanism",
+                    "Sustainable suburban forms and sociotechnical stakes: comparison between New Urbanism and Bimby"
+                ],
+                "authFullName_s": [
+                    "Rémy Vigneron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417272,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "La Majesté en images."
+                ],
+                "authFullName_s": [
+                    "Joana Barreto"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417270,
+                "domain_s": [
+                    "0.scco",
+                    "1.scco.psyc"
+                ],
+                "title_s": [
+                    "Apprendre : conceptualiser et généraliser de nouvelles notions"
+                ],
+                "authFullName_s": [
+                    "Jean-Pierre Thibaut"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417269,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Étude d'une fouille inédite : le secteur des « Thermes » à Apollonia d'Illyrie en 1938 par l'archéologue Léon Rey"
+                ],
+                "authFullName_s": [
+                    "Nina Lespy-Labaylette"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417264,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.geme"
+                ],
+                "title_s": [
+                    "Réglage ultra-précis des usinages"
+                ],
+                "authFullName_s": [
+                    "Eric Pairel",
+                    "Maurice Pillet",
+                    "Ephraïm Goldschmidt",
+                    "Stéphane Tichadou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417256,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "Comprendre et Concevoir les Animations dans le Contexte des Interfaces Graphiques"
+                ],
+                "authFullName_s": [
+                    "Amira Chalbi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417253,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Les services territoriaux d'archéologie en France : organisation et fonctionnement"
+                ],
+                "authFullName_s": [
+                    "Jamaludin Shable"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417252,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Le patrimoine numérisé et la recherche appliquée en TAL: PICARTEXT"
+                ],
+                "authFullName_s": [
+                    "Christophe Rey",
+                    "Fanny Martin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1417251,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "L’acquisition du vocabulaire des vêtements à partir d’un album de jeunesse en classe de moyenne section de maternelle"
+                ],
+                "authFullName_s": [
+                    "Florine Chardonnet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417250,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "« Conclusions », Le temps de la bataille de Muret (12 septembre 1213)"
+                ],
+                "authFullName_s": [
+                    "Martin Aurell"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417249,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Les design charrettes, un dispositif de terrain pour un projet périurbain. Participation, expertise et pédagogie"
+                ],
+                "authFullName_s": [
+                    "Rémy Vigneron",
+                    "Stéphane Sadoux",
+                    "Anne Coste"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417247,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "2.sdv.mhep.geo"
+                ],
+                "title_s": [
+                    "Évaluation et pertinence des césariennes programmées à terme à l’APHM"
+                ],
+                "authFullName_s": [
+                    "Héloïse Beaulier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417244,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Un bloc d'architecture : son étude, sa restitution et son impression 3D"
+                ],
+                "authFullName_s": [
+                    "Pauline Salanave-Péhé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417243,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-ins-det"
+                ],
+                "title_s": [
+                    "Développement de capteurs flexibles à courants de Foucault : applications à la caractérisation des propriétés électromagnétiques des matériaux et à la détection de défauts par imagerie statique",
+                    "Development of flexible eddy current probes : applications to the characterization of the electromagnetic properties of materials and the detection of flaws by static imaging"
+                ],
+                "authFullName_s": [
+                    "Benjamin Delabre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417236,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "2.sdv.mhep.geo"
+                ],
+                "title_s": [
+                    "Microchimérisme et prédiction des complications de la grossesse chez les femmes primigestes"
+                ],
+                "authFullName_s": [
+                    "Érika Vigorito"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417233,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Conclusion [dans En Orient et en Occident le culte de saint Nicolas en Europe Xe-XXIe siècle]"
+                ],
+                "authFullName_s": [
+                    "Véronique Gazeau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417231,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.auto"
+                ],
+                "title_s": [
+                    "Modélisation et commande de l’anesthésie en milieu clinique",
+                    "On the modeling and control of anesthesia in clinical settings"
+                ],
+                "authFullName_s": [
+                    "Saïd Zabi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417230,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Reconstruction de sollicitations dynamiques par méthodes inverses",
+                    "Reconstruction of dynamic stresses using inverse methods"
+                ],
+                "authFullName_s": [
+                    "Duc Toan Tran"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417228,
+                "domain_s": [
+                    "0.scco"
+                ],
+                "title_s": [
+                    "Substrats cérébraux de la production du langage écrit"
+                ],
+                "authFullName_s": [
+                    "Samuel Planton",
+                    "Sonia Kandel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417227,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Des discours à l’action, tour d’horizon des appels à la \"ville inclusive\" et à l’ \"inclusion"
+                ],
+                "authFullName_s": [
+                    "Francois Valegeas",
+                    "Garance Clément"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1417224,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "2.sdv.mhep.geo"
+                ],
+                "title_s": [
+                    "Évaluation de la mise en place de la permanence téléphonique professionnelle « SOS Allaitement 75 » : soutien à l’allaitement maternel",
+                    "Assessment of the setting up of \"SOS Allaitement 75\": professional answering service"
+                ],
+                "authFullName_s": [
+                    "Angélique Gauzins"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1417222,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Optimisation de forme avec détection automatique de paramètres",
+                    "Shape optimization with automatic parameters detection"
+                ],
+                "authFullName_s": [
+                    "Ferdinand Frabolot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417221,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "En Orient et en Occident, le culte de saint Nicolas en Europe (Xe-XXIe siècle)"
+                ],
+                "authFullName_s": [
+                    "Véronique Gazeau",
+                    "Catherine Guyon",
+                    "Catherine Vincent"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417220,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Les chercheurs « habitat » de l’Institut d’Urbanisme de Paris."
+                ],
+                "authFullName_s": [
+                    "Francois Valegeas",
+                    "Garance Clément",
+                    "Camille Devaux",
+                    "Tournon Mariana"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1417217,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Danaé savonnée"
+                ],
+                "authFullName_s": [
+                    "Jean-Michel Durafour"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFRgLQF"
+}

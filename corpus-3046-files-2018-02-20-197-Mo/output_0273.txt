@@ -1,0 +1,1961 @@
+{
+    "response": {
+        "numFound": 515921,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1628189,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.stat",
+                    "0.spi",
+                    "1.spi.signal"
+                ],
+                "title_s": [
+                    "Note sur l'utilisation du logiciel CROP-VGT appliqué aux images NDVI du capteur VEGETATION",
+                    "Technical note about the use of CROP-VGT software applied to NDVI images from SPOT-VEGETATION"
+                ],
+                "authFullName_s": [
+                    "Natacha Volto"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628179,
+                "domain_s": [
+                    "0.chim",
+                    "1.chim.othe"
+                ],
+                "title_s": [
+                    "Complexes de BODIPY - phosphine - or : application à la conception de théranostiques optiques",
+                    "BODIPY - phosphane - gold complexes : towards the elaboration of optical theranostics"
+                ],
+                "authFullName_s": [
+                    "Pierre-Emmanuel Doulain"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628176,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Cartographie et typologie des polémoformes de la forêt domaniale de Verdun à l’aide du traitement semi-automatisé de données LiDAR"
+                ],
+                "authFullName_s": [
+                    "Rémi De Matos-Machado",
+                    "Jean-Paul Amat",
+                    "Gilles Arnaud-Fassetta",
+                    "Francois Betard",
+                    "Clélia Bilodeau",
+                    "Stéphanie Jacquemot",
+                    "Jean-Pierre Toumazet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628174,
+                "domain_s": [
+                    "0.sde"
+                ],
+                "title_s": [
+                    "Rivières de pierres, nouvelles données, nouvelles questions"
+                ],
+                "authFullName_s": [
+                    "Coline Peignelin",
+                    "Emmanuelle Defive",
+                    "Alexandre Poiraud",
+                    "Clémence Le Coeur",
+                    "Clément Virmoux",
+                    "Franck Vautier",
+                    "Erwan Roussel",
+                    "Jean-Pierre Toumazet",
+                    "Yanni Gunnell"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628172,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Un paysage boisé enfin à découvert. Apport du levé lidar sur l’occupation diachronique de la partie centrale de la Chaîne des Puys (Massif central, France)"
+                ],
+                "authFullName_s": [
+                    "Pierre Boivin",
+                    "Bertrand Dousteyssier",
+                    "Philippe Labazuy",
+                    "Didier Miallier",
+                    "Marta Florez",
+                    "Erwan Roussel",
+                    "Jean-Pierre Toumazet",
+                    "Franck Vautier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628171,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Vidéoformation « orientée-activité » : quelles utilisations pour quels effets sur les enseignants ?"
+                ],
+                "authFullName_s": [
+                    "Simon Flandin",
+                    "Serge Leblanc",
+                    "Alain Muller"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628169,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Le LiDAR (Light Detection And Ranging) : pour une histoire renouvelée des forêts charentaises charbonnées, couplage entre approche classique et détection automatisée des plates-formes de charbonnage »"
+                ],
+                "authFullName_s": [
+                    "Graziella Rassat",
+                    "Jean-Pierre Toumazet",
+                    "Rémi Crouzevialle",
+                    "Fabien Cerbelaud",
+                    "Philippe Allée",
+                    "Marie Bal",
+                    "Nadine Dieudonné-Glad"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628168,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Parcours hybride de formation à partir de NéoPass@ction"
+                ],
+                "authFullName_s": [
+                    "Simon Flandin",
+                    "Serge Leblanc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628166,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Nouvelles données sur le pastoralisme à l'époque moderne dans la chaîne des Puys (Massif Central, France)"
+                ],
+                "authFullName_s": [
+                    "Marta Florez",
+                    "Bertrand Dousteyssier",
+                    "Franck Vautier",
+                    "Erwan Roussel",
+                    "Jean-Pierre Toumazet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628165,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Comment rendre compte de l’expérience ?"
+                ],
+                "authFullName_s": [
+                    "Luc Ria",
+                    "Eric Flavier",
+                    "Carole Sève",
+                    "Serge Leblanc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628158,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Utilisation d’images dérivées d’un jeu de données LIDAR pour la détection automatisée de vestiges archéologiques (programme de recherche méthodologique LiDARCHEO)"
+                ],
+                "authFullName_s": [
+                    "Franck Vautier",
+                    "Jean-Pierre Toumazet",
+                    "Erwan Roussel",
+                    "Marlène Faure",
+                    "Mohamed Abadi",
+                    "Marta Florez",
+                    "Bertrand Dousteyssier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628155,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Faut-il concevoir des dispositifs de formation professionnelle à partir des savoirs, des compétences ou de l’analyse de l’activité ?"
+                ],
+                "authFullName_s": [
+                    "Serge Leblanc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628148,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Chroniques de l’entre-soi des éditeurs de droit parisiens au milieu du XIXe s. Co-éditions, faillites et suicides en chaînes"
+                ],
+                "authFullName_s": [
+                    "Viera Rebolledo-Dhuin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628146,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Une approche PPC pour la fouille de données séquentielles"
+                ],
+                "authFullName_s": [
+                    "Jean-Philippe Metivier",
+                    "Samir Loudni",
+                    "Thierry Charnois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628143,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "La prosopographie à l'heure du web sémantique"
+                ],
+                "authFullName_s": [
+                    "Viera Rebolledo-Dhuin",
+                    "Jean-Charles Geslot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1628140,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "L’accès au « monde propre » de l’acteur pour analyser l’activité : effets sur l’implication et l’émancipation du formé et du tuteur/formateur"
+                ],
+                "authFullName_s": [
+                    "Serge Leblanc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628139,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Étude de l’activité exploratoire et d’apprentissage de l’utilisateur d’un dispositif hypermédia de formation d'éducateurs sportifs"
+                ],
+                "authFullName_s": [
+                    "Serge Leblanc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628131,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ida"
+                ],
+                "title_s": [
+                    "Note stratégique Aliments Alimentation AllEnvi"
+                ],
+                "authFullName_s": [
+                    "Catherine Esnouf",
+                    "Hubert Devautour",
+                    "Monique Axelos",
+                    "J. Berger",
+                    "Nicolas Bricas",
+                    "A. Dary",
+                    "Francis Delpeuch",
+                    "N. Devauchelle",
+                    "C. Fischler",
+                    "Isabelle Iteman",
+                    "B. Laurioux",
+                    "T. Lucas",
+                    "Emmanuelle Maguin",
+                    "Camille Michon",
+                    "P. Parisot",
+                    "L. Pénicaud",
+                    "Vincent Requillart",
+                    "Gilles Trystram",
+                    "G. Boëtsch"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628125,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Analyse environnementale de procédés bio-industriels"
+                ],
+                "authFullName_s": [
+                    "Caroline Pénicaud",
+                    "Thibaut Maury",
+                    "Stéphanie Passot",
+                    "Bruno Perret",
+                    "Fernanda Fonseca"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1628122,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Réponse physiologique de Saccharomyces cerevisiae et Yarrowia lipolytica aux conditions de production et de stabilisation"
+                ],
+                "authFullName_s": [
+                    "Caroline Pénicaud",
+                    "Jean-Marie Beckerich",
+                    "Yvann Pennont",
+                    "Fernanda Fonseca",
+                    "Marielle Bouix",
+                    "Sophie Landaud-Liautaud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1628112,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "L’amélioration génétique des animaux : une action collective au service des éleveurs et des filières"
+                ],
+                "authFullName_s": [
+                    "Etienne Verrier",
+                    "Isabelle Palhiere",
+                    "Dominique François",
+                    "Jérôme Raoul",
+                    "Nathalie Mandonnet",
+                    "Coralie Danchin-Burge",
+                    "Xavier Rognon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1628111,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Les animaux convoqués dans la propagande de guerre : dessins de presse, affiches et cartes postales en 1914-1918"
+                ],
+                "authFullName_s": [
+                    "Etienne Verrier",
+                    "Denis Laloë"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1628106,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Lyophilisation: impact sur la valeur nutritionnelle des aliments"
+                ],
+                "authFullName_s": [
+                    "Stéphanie Passot",
+                    "Fernanda Fonseca"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1628095,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Composition modifiant les propriétés mécaniques d'un polymère thermoplastique"
+                ],
+                "authFullName_s": [
+                    "Violette Ducruet",
+                    "Alexandre Ruellan",
+                    "Sandra Domenek",
+                    "Alain Guinault",
+                    "Cyrille Sollogoub",
+                    "Carine Alfos",
+                    "Guillaume Chollet",
+                    "Anne-Chrystelle Delamour"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "PATENT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1628091,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Prendre la mesure d’une culture ouverte et responsable"
+                ],
+                "authFullName_s": [
+                    "Claire Marris",
+                    "Thomas Heams",
+                    "Francois Kepes",
+                    "Luis Campos",
+                    "Pierre Monsan",
+                    "Jean-Francois Toussaint",
+                    "Dorothee Benoit-Browaeys",
+                    "Jacques Haiech",
+                    "Jean-Pierre Alix",
+                    "Marc Fellous"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628090,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Vers une modélisation mathématique des modifications physicochimiques des protéines lors du chauffage"
+                ],
+                "authFullName_s": [
+                    "Aurélie Promeyrat",
+                    "Philippe Gatellier",
+                    "Bertrand Broyart",
+                    "Alain Kondjoyan",
+                    "Jean-Dominique Daudin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1628089,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Étude de l’activité d’apprenant en interaction avec l’espace numérique d’analyse de pratiques « Réfléchir les pratiques »"
+                ],
+                "authFullName_s": [
+                    "Serge Leblanc",
+                    "Guillaume Serres",
+                    "Luc Ria",
+                    "Fabrice Roublot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628087,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Plan Ecophyto - Pesticides et biodiversité : premiers enseignements"
+                ],
+                "authFullName_s": [
+                    "Christian Mougin",
+                    "Thierry Caquet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1628083,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mp",
+                    "0.sdv",
+                    "1.sdv.ida",
+                    "0.sdv",
+                    "1.sdv.aen"
+                ],
+                "title_s": [
+                    "Colonies bactériennes dans le fromage : distribution spatiale et micro-environnement"
+                ],
+                "authFullName_s": [
+                    "Anne Thierry",
+                    "Valerie Gagnaire",
+                    "Clémentine Leboucher",
+                    "Ilham El Mourdi",
+                    "Juliana Valle Costa Silva",
+                    "Sylvie Lortal",
+                    "Juliane Floury",
+                    "Sophie Jeanson"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1628078,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Vidéo formation, transformations de l’expérience et anticipations"
+                ],
+                "authFullName_s": [
+                    "Serge Leblanc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628068,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Des situations de formation de simulation vidéo élaborées à partir d’un observatoire de l’activité professionnelle réelle et typique des enseignants"
+                ],
+                "authFullName_s": [
+                    "Serge Leblanc",
+                    "Luc Ria"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628067,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Effets de l’utilisation en formation de traces vidéo de l’activité de classe mettant en scène des « pairs », « soi-même » ou « son expérience » sur le développement professionnel"
+                ],
+                "authFullName_s": [
+                    "Serge Leblanc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628066,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Des dispositifs de vidéo-formation mettant en scène « l’expérience d’autrui » et « sa propre expérience » : principes de conception, effets formatifs et projectifs"
+                ],
+                "authFullName_s": [
+                    "Serge Leblanc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628065,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Analyse des multiples préoccupations d’un enseignant de physique et de leurs évolutions lors de la mise en œuvre d’une démarche d’investigation : possibilités d’articulation d’une approche activité et didactique"
+                ],
+                "authFullName_s": [
+                    "Serge Leblanc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628063,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "L’improvisation, objet paradoxal et praxis incontournable du travail ordinaire de l’enseignant"
+                ],
+                "authFullName_s": [
+                    "Guillaume Azéma",
+                    "Serge Leblanc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628062,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Ressources filmiques issues de l’analyse du travail des enseignants et scénarisées pour la formation : effets sur l’activité en formation et en classe"
+                ],
+                "authFullName_s": [
+                    "Serge Leblanc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628059,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "L’improvisation en classe, un chèque avec ou sans pro-visions"
+                ],
+                "authFullName_s": [
+                    "Guillaume Azéma",
+                    "Serge Leblanc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628057,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Les gestes de Louis jusque dans leurs silences…"
+                ],
+                "authFullName_s": [
+                    "Guillaume Azéma",
+                    "Serge Leblanc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628056,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Immersion, réflexion, imagination et transformation via le visionnement de films de pairs"
+                ],
+                "authFullName_s": [
+                    "Serge Leblanc",
+                    "Céline Blanes-Maestre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628055,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Faire parler l’activité « silencieuse » de visionnement d’une vidéo de pairs en formation"
+                ],
+                "authFullName_s": [
+                    "Serge Leblanc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628053,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Conception d’un système de formation professionnelle rénové à partir de l’analyse de l’activité et de la culture d’action d’un expert : le cas de la formation équestre des meneurs d’attelage"
+                ],
+                "authFullName_s": [
+                    "Serge Leblanc",
+                    "Guillaume Azéma"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628050,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-mm"
+                ],
+                "title_s": [
+                    "M++ : Un Modèle Temporel de Documents Multimédias",
+                    "M++ : A Temporal Model for Multimedia Documents"
+                ],
+                "authFullName_s": [
+                    "Cheikh Boumediene",
+                    "Lynda Zaoui"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1628049,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Analyse de la « mise en usage » et de l’appropriation par des formateurs d’outils et de ressources issus de l’ergonomie"
+                ],
+                "authFullName_s": [
+                    "Serge Leblanc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628047,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Approche enactive de l’activité de l’infirmière puéricultrice lors des soins au nouveau-né grand prématuré : la place des gestes dans les interactions"
+                ],
+                "authFullName_s": [
+                    "Anne-Marie Mottaz",
+                    "Serge Leblanc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628044,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Étude informatique de la dynamique de l’air lors du cycle respiratoire dans les cavités naso-sinusiennes adultes",
+                    "Computational Fluid Dynamics and Nasal Airways: how does it work ?"
+                ],
+                "authFullName_s": [
+                    "Nicolas Réville"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1628042,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Évaluation médico-économique du traitement par HIFU en thérapie focale comparé à une stratégie de surveillance active dans le cancer de la prostate localisé de risque faible à intermédiaire",
+                    "Cost-effectiveness analysis of focal HIFU versus active surveillance using a Markov multi-state model in localized low- to intermediate-risk prostate cancer"
+                ],
+                "authFullName_s": [
+                    "Thomas Duroux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1628039,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "La place du discours rapporté dans les débats politiques télévisés: le cas des débats de l’entre-deux-tours des présidentielles françaises"
+                ],
+                "authFullName_s": [
+                    "Domitille Caillat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628035,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Les recours au discours rapporté dans le débat de l’entre-deux tours de 2007 : des usages sexués ?"
+                ],
+                "authFullName_s": [
+                    "Domitille Caillat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628034,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Bibliographie générale en trois tomes"
+                ],
+                "authFullName_s": [
+                    "Soliman Fandie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628032,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Le discours rapporté direct à l’oral: un simulacre multimodal"
+                ],
+                "authFullName_s": [
+                    "Domitille Caillat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628026,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "La folie des uns fait le travail des autres, la Vacma et le tramway"
+                ],
+                "authFullName_s": [
+                    "Robin Foot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628023,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Méthode d'analyse du processus d'innovation dans le secteur de la défense: le lien entre science et technologie"
+                ],
+                "authFullName_s": [
+                    "Cécile Fauconnet",
+                    "Célia Zyla",
+                    "Augustin Lorne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628021,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Cas VeloBoo - Où produire ? Où vendre un vélo en bambou ?"
+                ],
+                "authFullName_s": [
+                    "Catherine Mercier-Suissa"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1628013,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Kleuster : innovation et écomobilité dans les marchés internationaux, G1917"
+                ],
+                "authFullName_s": [
+                    "Catherine Mercier-Suissa",
+                    "Pierre-Olivier Eric",
+                    "Céline Bouveret-Rivat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1628004,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Le jeu"
+                ],
+                "authFullName_s": [
+                    "Colas Duflo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628002,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "La finalité dans la nature"
+                ],
+                "authFullName_s": [
+                    "Colas Duflo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1628001,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Jouer et philosopher"
+                ],
+                "authFullName_s": [
+                    "Colas Duflo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627999,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Technique de Simulation Event-Driven en Vue d'une Simulation Mixte Efficace"
+                ],
+                "authFullName_s": [
+                    "Nizar Abdallah",
+                    "Pirouz Bazargan Sabet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627989,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Étude numérique du fonctionnement d’un moteur à détonation rotative",
+                    "Numerical study of the rotating detonation engine operation"
+                ],
+                "authFullName_s": [
+                    "Thomas Gaillard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1627986,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Recueil des attentes des internes de médecine générale de l'université de Grenoble pour leur formation initiale à l'éducation thérapeutique du patient",
+                    "Expectations record of general practitioner residents of Grenoble university for an initial training to patient education"
+                ],
+                "authFullName_s": [
+                    "Pauline Girard",
+                    "Kévin Butin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1627984,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "L'enfant consommateur : variations interdisciplinaires sur l'enfant et le marché"
+                ],
+                "authFullName_s": [
+                    "Valérie-Inès De La Ville"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627977,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "On ne joue pas avec la nourriture ! Enfance, divertissement, jeu et alimentation: entre risques et plaisirs"
+                ],
+                "authFullName_s": [
+                    "Gilles Brougère",
+                    "Valérie-Inès De La Ville"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627971,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Le rural sous toutes ses \"formes"
+                ],
+                "authFullName_s": [
+                    "Lucie Lazaro",
+                    "Mathilde Denoël",
+                    "Adriana Blache"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627968,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.sde",
+                    "1.sde.es"
+                ],
+                "title_s": [
+                    "Perceptions et représentations des éleveurs par rapport à l'évolution des ressources et des activités agropastorales au Sahel : Cas d'étude appliqué au Ferlo sénégalais et au Gourma malien"
+                ],
+                "authFullName_s": [
+                    "Oumar Marega"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627967,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Modéliser le pouvoir expansif de la structuration des connaissances en conception innovante : mise en évidence des effets génératifs du K-preordering grâce à l'étude du non-verbal",
+                    "Modeling the expansive power of knowledge structures in design: how non-verbal tools support knowledge preordering"
+                ],
+                "authFullName_s": [
+                    "Juliette Brun"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1627955,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Avis juridique sur La licéité de la consommation du tabac"
+                ],
+                "authFullName_s": [
+                    "Soliman Fandie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627954,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Une sociologie des usages des TIC à l'épreuve du temps libre"
+                ],
+                "authFullName_s": [
+                    "Laurence Le Douarin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1627953,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "La conjugalité dans (tous) ses états ! Usages des tic, couple conjugal, couple parental"
+                ],
+                "authFullName_s": [
+                    "Laurence Le Douarin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1627952,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Usages des \"nouvelles\" technologies en famille"
+                ],
+                "authFullName_s": [
+                    "Laurence Le Douarin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1627951,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Avis juridique sur la licéité de l'interdiction faite aux femmes de sortir de leur maison"
+                ],
+                "authFullName_s": [
+                    "Soliman Fandie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627948,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Si volueris per demones habere scientiam : l'Experimentum nigromantie attribué à Michel Sot"
+                ],
+                "authFullName_s": [
+                    "Jean-Patrice Boudet",
+                    "Julien Véronèse"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627947,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit",
+                    "0.shs",
+                    "1.shs.hisphilso",
+                    "0.shs",
+                    "1.shs.relig"
+                ],
+                "title_s": [
+                    "Avis juridique sur l’incursion des chrétiens en Afrique subsaharienne"
+                ],
+                "authFullName_s": [
+                    "Soliman Fandie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627945,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Associer une modalité ludique à l’aliment : éléments de reflexion a partir de l'étude de cas Danonino"
+                ],
+                "authFullName_s": [
+                    "Valérie-Inès De La Ville"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627941,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Une \"écologisation\" précipitée du social ? Par-delà la précarité énergétique.\" p.101-119"
+                ],
+                "authFullName_s": [
+                    "Joseph Cacciari"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627940,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Une astrologie rurale et populaire ? Le calendrier des bergers et celui des bergères"
+                ],
+                "authFullName_s": [
+                    "Jean-Patrice Boudet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627934,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Le rôle des licences dans la structuration des systèmes d’objets de l’enfance"
+                ],
+                "authFullName_s": [
+                    "Valérie-Inès De La Ville"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627929,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Recension de : Moritz Hunsmann, Sébastien Kapp (dir.), Devenir chercheur. Écrire une thèse en sciences sociales, Paris, Éditions de l’École des hautes études en sciences sociales, 2013, 359 p.\" Revue Emulations, revue des jeunes chercheurs et chercheuses en sciences sociales."
+                ],
+                "authFullName_s": [
+                    "Joseph Cacciari"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627928,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Vendre une chambre d’enfant : un design nourri par les apports du point de vente"
+                ],
+                "authFullName_s": [
+                    "Valérie-Inès De La Ville",
+                    "Nathalie Nicol",
+                    "Anne Krupicka"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627926,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Expertise et contre-expertise : la consultation astrologique de Robert de Mauvoisin, archevêque d'aix, en 1316"
+                ],
+                "authFullName_s": [
+                    "Jean-Patrice Boudet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627921,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "« Nadège Vezinat, Sociologie des groupes professionnels », Lectures [En ligne], Les comptes rendus, 2016, mis en ligne le 16 novembre 2016. URL : http://lectures.revues.org/21723"
+                ],
+                "authFullName_s": [
+                    "Joseph Cacciari"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627919,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Adam, premier savant, premier magicien"
+                ],
+                "authFullName_s": [
+                    "Jean-Patrice Boudet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627918,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "« Irène Pereira, Travailler et lutter. Essais d’auto-ethnographie », Lectures [En ligne], Les comptes rendus, 2016, mis en ligne le 13 avril 2016. URL : http://lectures.revues.org/20615"
+                ],
+                "authFullName_s": [
+                    "Joseph Cacciari"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627915,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "L'étayage en toute petite section - petite section au niveau du langage oral"
+                ],
+                "authFullName_s": [
+                    "Sarah Alves Dias"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627909,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-bi",
+                    "0.chim",
+                    "1.chim.theo",
+                    "0.sdv",
+                    "1.sdv.bbm",
+                    "2.sdv.bbm.bs",
+                    "0.sdv",
+                    "1.sdv.bbm",
+                    "2.sdv.bbm.gtp",
+                    "0.sdv",
+                    "1.sdv.bbm",
+                    "2.sdv.bbm.bp",
+                    "0.sdv",
+                    "1.sdv.bbm"
+                ],
+                "title_s": [
+                    "Des viroïdes et virus à l'homme, dans les traces du « RNA World » Activités enzymatiques requises pour la réplication des viroïdes."
+                ],
+                "authFullName_s": [
+                    "Fabrice Leclerc",
+                    "Carine Tisné"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627908,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.museo",
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Établissement du catalogue analytique des manuscrits arabes de Toumbouctou relatifs aux avis juridiques (Fatwâ)"
+                ],
+                "authFullName_s": [
+                    "Soliman Fandie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627907,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Épilogue"
+                ],
+                "authFullName_s": [
+                    "Jean-Patrice Boudet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627900,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Le procès de Jean XXII contre l'archevêque d'Aix Robert de Mauvoisin (1317-1318) : astrologie, arts prohibés et politique"
+                ],
+                "authFullName_s": [
+                    "Jean-Patrice Boudet",
+                    "Julien Théry"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627898,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Participer dans le monde chinois : une jeunesse connectée"
+                ],
+                "authFullName_s": [
+                    "Emilie Frenkiel",
+                    "Simeng Wang"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1627897,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "L’enfance de l’art : les maîtres de musique et l’enseignement du plain-chant au XVIIIe siècle"
+                ],
+                "authFullName_s": [
+                    "Xavier Bisaro"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627894,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Responsabilité sociale de l’entreprise et responsabilité du chercheur en gestion : essai de mise en abyme à propos de la consommation enfantine"
+                ],
+                "authFullName_s": [
+                    "Valérie-Inès De La Ville",
+                    "Benjamin Dreveton"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627893,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Identification bayésienne des paramètres de modélisation de la pénétration des ions chlorure dans le béton"
+                ],
+                "authFullName_s": [
+                    "Emilio Bastidas-Arteaga",
+                    "Manh Tuan Nguyen",
+                    "Franck Schoefs",
+                    "Stéphanie Bonnet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627891,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ts"
+                ],
+                "title_s": [
+                    "Déconvolution de signaux vocaux"
+                ],
+                "authFullName_s": [
+                    "Francis Goulamhoussen Satsou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1627890,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bid",
+                    "2.sdv.bid.evo"
+                ],
+                "title_s": [
+                    "Génomique évolutive chez les champignons Microbotryum : adaptation et chromosomes de types sexuels",
+                    "Evolutionary genomics in the Microbotryum fungi : adaptation and mating-type chromosomes"
+                ],
+                "authFullName_s": [
+                    "Hélène Badouin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627888,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Les guichets de la misère énergétique. Le traitement social des impayés d'énergie des ménages comme mode de production, de tri et de moralisation des « consommateurs » à l'ère de la transition énergétique.",
+                    "10.3917/soco.105.0053"
+                ],
+                "authFullName_s": [
+                    "Joseph Cacciari"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627887,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Le Dossier des Ouvrages Exécutés : un outil de faire-valoir pour l'entreprise de paysage",
+                    "As-built records : an asset for landscape company ?"
+                ],
+                "authFullName_s": [
+                    "Maxime Goascoz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627875,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ts"
+                ],
+                "title_s": [
+                    "Détection automatique des instants de fermeture glottale dans les voix pathologiques"
+                ],
+                "authFullName_s": [
+                    "Quentin Robin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1627874,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "A quel jeu joues-tu sur Facebook ?"
+                ],
+                "authFullName_s": [
+                    "Olivier Rampnoux",
+                    "Valérie-Inès De La Ville"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627871,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Envahissement ganglionnaire des tumeurs mammaires du quadrant inféro-externe en fonction de la profondeur : identification d’atteintes de la chaîne mammaire interne et impact thérapeutique potentiel",
+                    "Lymphatic involvement depends of the depth level of the infero-lateral tumor in breast cancer: involvement of the internal mammary chain and potential therapeutic impact"
+                ],
+                "authFullName_s": [
+                    "Benjamin Dubois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1627870,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "La bibliothèque de Clémence de Hongrie, un reflet de la culture d'une reine de France ?"
+                ],
+                "authFullName_s": [
+                    "Jean-Patrice Boudet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1627864,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Les fabricants de jouets et jeux français et leur responsabilité sociale vis-à-vis de l’enfant, 1891-1911",
+                    "French toy and games manufacturers and their responsibility towards children, 1891-1911"
+                ],
+                "authFullName_s": [
+                    "Valérie-Inès De La Ville",
+                    "Michel Manson"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFY7ZoG"
+}

@@ -1,0 +1,1958 @@
+{
+    "response": {
+        "numFound": 515923,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 953468,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-se"
+                ],
+                "title_s": [
+                    "Gestion des données pour systèmes d'information ubiquitaires"
+                ],
+                "authFullName_s": [
+                    "Claudia Lucia Roncancio"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953466,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-se"
+                ],
+                "title_s": [
+                    "Evolution des profils UML : vers une migration automatisée et une optimisation assistée des modèles"
+                ],
+                "authFullName_s": [
+                    "Fadoi Lakhal",
+                    "Hubert Dubois",
+                    "Dominique Rieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953465,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-se"
+                ],
+                "title_s": [
+                    "P²E : Une solution outillée dédiée à la gestion des évolutions des profils UML"
+                ],
+                "authFullName_s": [
+                    "Fadoi Lakhal",
+                    "Hubert Dubois",
+                    "Dominique Rieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953464,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-se"
+                ],
+                "title_s": [
+                    "Qualité des langages de modélisation et des modèles : vers un catalogue des patrons collaboratifs"
+                ],
+                "authFullName_s": [
+                    "Khaoula Sayeb",
+                    "Dominique Rieu",
+                    "Sophie Dupuy-Chessa",
+                    "Nadine Mandran"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953463,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-se"
+                ],
+                "title_s": [
+                    "Préférences utilisateurs dans la gestion de données ubiquitaires"
+                ],
+                "authFullName_s": [
+                    "Claudia Lucia Roncancio",
+                    "Loïc Petit",
+                    "Sandra De Amo",
+                    "Cyril Labbé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953462,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-se"
+                ],
+                "title_s": [
+                    "L'adaptation dans tous ses états"
+                ],
+                "authFullName_s": [
+                    "Philippe Lopisteguy",
+                    "Dominique Rieu",
+                    "Philippe Roose"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953461,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-se"
+                ],
+                "title_s": [
+                    "Une vision sur les problématiques actuelles de la recherche en Systèmes d'Information"
+                ],
+                "authFullName_s": [
+                    "Agnès Front",
+                    "Dominique Rieu",
+                    "Jean-Pierre Giraudin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953448,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-se"
+                ],
+                "title_s": [
+                    "Réutilisation orientée métier"
+                ],
+                "authFullName_s": [
+                    "Rajaa Saidi",
+                    "Agnès Front",
+                    "Dominique Rieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953447,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-se"
+                ],
+                "title_s": [
+                    "Approche de gestion des processus basée sur les jeux"
+                ],
+                "authFullName_s": [
+                    "Marco Oswaldo Santorum",
+                    "Agnès Front",
+                    "Dominique Rieu",
+                    "Nadine Mandran"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953446,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-se"
+                ],
+                "title_s": [
+                    "Développement des SI à base de modèles : exigencies, traçabilité et co-conception"
+                ],
+                "authFullName_s": [
+                    "Dominique Rieu",
+                    "Hubert Dubois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953445,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-se"
+                ],
+                "title_s": [
+                    "DomVision : Intergiciel de gestion de données pour l'environnement domestique"
+                ],
+                "authFullName_s": [
+                    "Loïc Petit",
+                    "Claudia Lucia Roncancio",
+                    "Cyril Labbé",
+                    "François-Gaël Ottogalli"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953436,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-se"
+                ],
+                "title_s": [
+                    "Approche de gestion des processus universitaires basée sur les jeux"
+                ],
+                "authFullName_s": [
+                    "Marco Oswaldo Santorum",
+                    "Agnès Front",
+                    "Dominique Rieu",
+                    "Nadine Mandran"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953435,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-se"
+                ],
+                "title_s": [
+                    "Event-based modeling for ubiquitous information systems"
+                ],
+                "authFullName_s": [
+                    "Ansem Ben Cheikh",
+                    "Agnès Front",
+                    "Stéphane Coulondre",
+                    "Jean-Pierre Giraudin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953434,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-se"
+                ],
+                "title_s": [
+                    "Une modélisation événementielle des SI ubiquitaires"
+                ],
+                "authFullName_s": [
+                    "Ansem Ben Cheikh",
+                    "Agnès Front",
+                    "Stéphane Coulondre",
+                    "Jean-Pierre Giraudin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953433,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-se"
+                ],
+                "title_s": [
+                    "Vers une caractérisation intentionnelle des organisations virtuelles"
+                ],
+                "authFullName_s": [
+                    "Luz-Maria Priego-Roche",
+                    "Dominique Rieu",
+                    "Agnès Front"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953425,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-oh"
+                ],
+                "title_s": [
+                    "De la Métaphore à la tâche : une bibliothèque de concepts métaphoriques pour le prototypage de techniques d’interactions.",
+                    "From metaphor to the task. A library of metaphorical concepts for the prototyping of technical interaction"
+                ],
+                "authFullName_s": [
+                    "Pedro Martins Alessio"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953412,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "La prescription des émotions pour les infirmières hospitalières et les volontaires d'une association d'aide aux malades du SIDA (AIDES). Contrôle de soi et juste distance au malade"
+                ],
+                "authFullName_s": [
+                    "Jean-Marc Weller",
+                    "Marc Loriol"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953410,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "« Une bière à l'édifice: spécificités et devenir de l'industrie brassicole lyonnaise du XIXe siècle »"
+                ],
+                "authFullName_s": [
+                    "Romain Thinon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953409,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-gen"
+                ],
+                "title_s": [
+                    "Sélection des électrons et recherche du boson de Higgs se désintégrant en paires de leptons tau avec l'expérience CMS au LHC",
+                    "Electron selection and search for the Higgs boson decaying into tau leptons pairs with the CMS detector at the LHC"
+                ],
+                "authFullName_s": [
+                    "Nadir Daci"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953408,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "La crise comme processus et comme événement : Analyse de deux études de cas"
+                ],
+                "authFullName_s": [
+                    "Aline Pereira PÜndrich",
+                    "Olivier Brunel",
+                    "Luciano Barin-Cruz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 953407,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "L'émergence du capitalisme au prisme de l'histoire globale"
+                ],
+                "authFullName_s": [
+                    "Philippe Norel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 953406,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Caractérisation des échanges entre patients et médecins : approche outillée d'un corpus de consultations médicales"
+                ],
+                "authFullName_s": [
+                    "Ludovic Tanguy",
+                    "Cécile Fabre",
+                    "Lydia-Mai Ho-Dac",
+                    "Josette Rebeyrolle"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953405,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-gen"
+                ],
+                "title_s": [
+                    "Développement et optimisation d'un modèle numérique 3D pour la simulation d'un système dédié au contrôle non destructif des tubes ferromagnétiques par flux de fuite",
+                    "Development and optimisation of a numerical 3D model for the simulation of a system of non destructive testing for ferromagnetic pipes by the magnetic flux leakage method"
+                ],
+                "authFullName_s": [
+                    "Steve Moses Djafa Tchuspa"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 953388,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Transmission d'un savoir ecclésiastique et construction d'une mémoire monastique dans les chartes du monastère de Sahagún (Castille-León, XIIe-XIIIe siècles)"
+                ],
+                "authFullName_s": [
+                    "Ludivine Gaffard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953386,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "L'apprentissage dans une dynamique de crise : Cas d'un grand groupe pétrolier"
+                ],
+                "authFullName_s": [
+                    "Hela Chebbi",
+                    "Aline Pereira PÜndrich"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 953383,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Les fondations d'entreprise de l'économie classique et de l'économie sociale et solidaire : des fonctions et des stratégies communes"
+                ],
+                "authFullName_s": [
+                    "Aline Pereira PÜndrich",
+                    "Sylvaine Mercuri"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 953378,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "Débridons l'interaction homme-machine pour une meilleure qualité des soins"
+                ],
+                "authFullName_s": [
+                    "Laure Martins-Baltar",
+                    "Yann Laurillau",
+                    "Gaëlle Calvary"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953371,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "Les dendro-matrices~: une alternative aux dendrogrammes pour visualiser les résultats d'une classification ascendante hiérarchique"
+                ],
+                "authFullName_s": [
+                    "Renaud Blanch",
+                    "Rémy Dautriche",
+                    "Gilles Bisson"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953364,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "Plasticité des Interfaces Homme-Machine par Ingénierie Dirigée par les Modèles"
+                ],
+                "authFullName_s": [
+                    "Éric Céret",
+                    "Sophie Dupuy-Chessa",
+                    "Gaëlle Calvary"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953363,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "Essai sans prétention sur l'Interaction Homme-Machine et son évolution"
+                ],
+                "authFullName_s": [
+                    "Joëlle Coutaz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953350,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-cy"
+                ],
+                "title_s": [
+                    "Développement de méthodes statistiques nécessaires à l'analyse de données génomiques : application à l'influence du polymorphisme génétique sur les caractéristiques cutanées individuelles et l'expression du vieillissement cutané.",
+                    "Development of statistical methods for genetic data analysis : identification of genetic polymorphisms potentially involved in skin aging."
+                ],
+                "authFullName_s": [
+                    "Anne Bernard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953341,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "Plasticité des IHM"
+                ],
+                "authFullName_s": [
+                    "Sophie Dupuy-Chessa",
+                    "Gaëlle Calvary",
+                    "Audrey Serna"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953340,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "Intégration de métriques de qualité des diagrammes et des langages dans l'outil ModX"
+                ],
+                "authFullName_s": [
+                    "Xavier Le Pallec",
+                    "Sophie Dupuy-Chessa"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953339,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "IHM perlées pour le Cloud Computing : premiers retours d'expérience en informatique médicale"
+                ],
+                "authFullName_s": [
+                    "Laure Martins-Baltar",
+                    "Yann Laurillau",
+                    "Gaëlle Calvary"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953338,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "De l'impersonnel au personnel, du pérenne à l'éphémère : retours d'expérience de Cocoon - Vive les arbres de vie"
+                ],
+                "authFullName_s": [
+                    "Fatoumata Camara",
+                    "Gaëlle Calvary",
+                    "Rachel Demumieux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953337,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "Comparaison de différentes approches de simulation dans les modèles de tâches"
+                ],
+                "authFullName_s": [
+                    "Thomas Lachaume",
+                    "Sybille Caffiau",
+                    "Patrick Girard",
+                    "Allan Fousse",
+                    "Laurent Guittet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953334,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "Quelle efficacité des Serious Games"
+                ],
+                "authFullName_s": [
+                    "Franck Tarpin-Bernard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953331,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "Les transports : un terrain fertile pour la plasticité des Interfaces Homme-Machine"
+                ],
+                "authFullName_s": [
+                    "Gaëlle Calvary",
+                    "Audrey Serna",
+                    "Christophe Kolski",
+                    "Joëlle Coutaz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953330,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.stru"
+                ],
+                "title_s": [
+                    "Caractérisation robuste de liaisons amortissantes avec dispositifs piezo-électriques pour la réduction de vibrations de structures.",
+                    "Robust characterization of damping joints with piezoelectric devices for the vibrational reduction of structures"
+                ],
+                "authFullName_s": [
+                    "Yassine Karim"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 953329,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "Ergonomie et Informatique avancée"
+                ],
+                "authFullName_s": [
+                    "Gaëlle Calvary",
+                    "Marion Wolff"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953328,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "Approche orientée services pour la construction des environnements de modélisation"
+                ],
+                "authFullName_s": [
+                    "Jorge-Luis Pérez-Medina",
+                    "Sophie Dupuy-Chessa",
+                    "Dominique Rieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953326,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "A la croisée de l'Ingénierie de l'Interaction Homme-Machine et de l'Ingénierie Dirigée par les Modèles"
+                ],
+                "authFullName_s": [
+                    "Gaëlle Calvary",
+                    "Anne-Marie Dery-Pinna",
+                    "Audrey Occello",
+                    "Philippe Renevier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953325,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "e-COMM, un éditeur pour spécifier l'interaction multimodale et multiutilisateur"
+                ],
+                "authFullName_s": [
+                    "Frédéric Jourde",
+                    "Yann Laurillau",
+                    "Laurence Nigay"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953324,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "Penser \"Plasticité\" peut améliorer la Qualité des Interfaces Homme-Machine : une étude de cas"
+                ],
+                "authFullName_s": [
+                    "Audrey Serna",
+                    "Gaëlle Calvary",
+                    "Dominique Scapin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953323,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "Cocoon, un système de recommandation sensible au contexte : analyse de la valeur par une étude qualitative"
+                ],
+                "authFullName_s": [
+                    "Fatoumata Camara",
+                    "Rachel Demumieux",
+                    "Gaëlle Calvary",
+                    "Nadine Mandran"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953303,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Une production engagée : sociologie des labels, chartes et systèmes participatifs de l'économie solidaire.",
+                    "A committed production. Sociology of solidarity economy's labels, charters and participatory systems."
+                ],
+                "authFullName_s": [
+                    "Diane Rodet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953302,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "Collecticiels : Neuf Degrés de Couplage"
+                ],
+                "authFullName_s": [
+                    "Frédéric Jourde",
+                    "Yann Laurillau",
+                    "Laurence Nigay"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953301,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "Composition dynamique d'Interfaces Homme-Machine : Besoin utilisateur ou Défi de chercheur ?"
+                ],
+                "authFullName_s": [
+                    "Yoann Gabillon",
+                    "Gaëlle Calvary",
+                    "Nadine Mandran",
+                    "Humbert Fiorino"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953300,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "Ethylene : composants dynamiques pour la mise en øeuvre d'IHM plastiques en informatique ambiante"
+                ],
+                "authFullName_s": [
+                    "Lionel Balme",
+                    "Joëlle Coutaz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953299,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "Wavelet Menu : Adaptation des Marking Menus pour les Dispositifs Mobiles"
+                ],
+                "authFullName_s": [
+                    "Jeremie Francone",
+                    "Gilles Bailly",
+                    "Laurence Nigay",
+                    "Éric Lecolinet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953298,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "OpenWizard : Une approche pour la création et l'évaluation rapide de prototypes multimodaux"
+                ],
+                "authFullName_s": [
+                    "Marcos Serrano",
+                    "Laurence Nigay"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953297,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "Conception de l'Interaction Homme-Machine et Partage d'Autorité : Application aux Systèmes de Drones"
+                ],
+                "authFullName_s": [
+                    "Angelica Leal",
+                    "Jullien Bouchet",
+                    "Gaëlle Langlois",
+                    "Frédéric Jourde"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953290,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Les stratégies de RSE en temps de crise : le contexte des crises intraitables"
+                ],
+                "authFullName_s": [
+                    "Aline Pereira PÜndrich",
+                    "Dora Triki"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 953287,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Découverte de configurations de traits textuels pour la caractérisation des segments d'obsolescence"
+                ],
+                "authFullName_s": [
+                    "Marion Laignelet",
+                    "Marie-Paule Péry-Woodley",
+                    "Ludovic Tanguy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953286,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Recherche d'une amélioration de la relation d'intégration de la productivité et de la qualité par l'adaptation des procédures de contrôle de gestion."
+                ],
+                "authFullName_s": [
+                    "Manuel Garcia"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 953285,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les origines du capitalisme et l'histoire globale"
+                ],
+                "authFullName_s": [
+                    "Philippe Norel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 953284,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Aménager la ville des flux"
+                ],
+                "authFullName_s": [
+                    "Nathalie Roseau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953280,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "L'histoire économique globale"
+                ],
+                "authFullName_s": [
+                    "Philippe Norel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 953279,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Les conflits dans les joint-ventures internationales (JVI) sous le prisme de la gestion de crise"
+                ],
+                "authFullName_s": [
+                    "Emna Moalla",
+                    "Aline Pereira PÜndrich",
+                    "Dora Triki"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 953278,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Responsabilité sociales du chercheur en sciences de gestion : conséquences méthodologiques de l'intervention clinique"
+                ],
+                "authFullName_s": [
+                    "Manuel Garcia"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 953271,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Enseigner la productivité en intégrant la qualité et la flexibilité"
+                ],
+                "authFullName_s": [
+                    "Manuel Garcia"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 953270,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Résistance-Fer, du \" réseau \" à l'association : une dynamique corporative intéressée ?"
+                ],
+                "authFullName_s": [
+                    "Georges Ribeill"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953269,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-oh"
+                ],
+                "title_s": [
+                    "Localisation et cartographie visuelles simultanées en milieu intérieur et en temps réel",
+                    "Visual SLAM in indoor environment"
+                ],
+                "authFullName_s": [
+                    "Marion Decrouez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953264,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "L'introduction de la variation d'activité dans les coûts et dans les comptes : l'implication rationnelle des frais fixes est-elle utilisable ?"
+                ],
+                "authFullName_s": [
+                    "Manuel Garcia"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 953260,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-oh"
+                ],
+                "title_s": [
+                    "Capacités audiovisuelles en robot humanoïde NAO",
+                    "Audio-visual capabilities in humanoid robot NAO"
+                ],
+                "authFullName_s": [
+                    "Jordi Sanchez-Riera"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953259,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Une histoire du monde global"
+                ],
+                "authFullName_s": [
+                    "Philippe Norel",
+                    "Laurent Testot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 953254,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Flexibilité comptable et crise économique : le regard des acteurs de la comptabilité des PME"
+                ],
+                "authFullName_s": [
+                    "Manuel Garcia"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 953251,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Analyse comparative d'une norme langagière et de ses usages dans le domaine du contrôle aérien"
+                ],
+                "authFullName_s": [
+                    "Stéphanie Lopez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953241,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-oh"
+                ],
+                "title_s": [
+                    "Détection et diagnostic des fautes dans des systèmes à base de réseaux de capteurs sans fils",
+                    "Fault detection and diagnosis in wireless sensor networks"
+                ],
+                "authFullName_s": [
+                    "Dima Hamdan"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 953239,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Traditions et révolutions de la culture constructive du pisé."
+                ],
+                "authFullName_s": [
+                    "Hubert Guillaud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 953238,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Solar Decathlon - Canopea"
+                ],
+                "authFullName_s": [
+                    "Laurent Tochon",
+                    "Maxime Bonnevie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 953237,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Solar Decathlon - Canopea"
+                ],
+                "authFullName_s": [
+                    "Christophe De Tricaud",
+                    "Maxime Bonnevie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 953236,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Solar Decathlon - Canopea"
+                ],
+                "authFullName_s": [
+                    "Maxime Bonnevie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 953235,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Solar Decathlon"
+                ],
+                "authFullName_s": [
+                    "Benjamin Le Naour",
+                    "Maxime Bonnevie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 953233,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Projet Canopea"
+                ],
+                "authFullName_s": [
+                    "François Grimal",
+                    "Lydie Lahitette Larroque",
+                    "Maxime Bonnevie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 953230,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Les bâtiments du futur au Solar Decathlon Europe"
+                ],
+                "authFullName_s": [
+                    "Laurent Tochon",
+                    "Thomas Jusselme",
+                    "Maxime Bonnevie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 953229,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "L'énergie grise dans le bâtiment, la pratique d'un bureau d'étude"
+                ],
+                "authFullName_s": [
+                    "Thomas Jusselme"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 953228,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Du bâtiment intelligent à l'écosystème urbain interconnecté, le projet Canopea"
+                ],
+                "authFullName_s": [
+                    "Maxime Bonnevie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 953227,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Conférence de presse"
+                ],
+                "authFullName_s": [
+                    "Christophe De Tricaud",
+                    "Maxime Bonnevie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 953226,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Concours Solar Decathlon Europe 2012"
+                ],
+                "authFullName_s": [
+                    "Hugo Rigard",
+                    "Christophe De Tricaud",
+                    "Maxime Bonnevie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 953224,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Canopea, Nanotours dans un système urbain"
+                ],
+                "authFullName_s": [
+                    "Benjamin Le Naour",
+                    "Maxime Bonnevie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 953222,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Canopéa, concours Solar decathlon 2012"
+                ],
+                "authFullName_s": [
+                    "Maxime Bonnevie",
+                    "Daniel Hilaire",
+                    "Pierre-Francis Canat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 953221,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Canopea - Solar Decathlon"
+                ],
+                "authFullName_s": [
+                    "Pascal Rollet",
+                    "Christophe De Tricaud",
+                    "Lydie Lahitette Larroque",
+                    "Fanny Jacquet",
+                    "Hugo Rigard",
+                    "Marielle Martin",
+                    "Maxime Bonnevie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 953220,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Canopea - Solar Decathlon"
+                ],
+                "authFullName_s": [
+                    "Christophe De Tricaud",
+                    "Maxime Bonnevie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 953219,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Bâtir en terre"
+                ],
+                "authFullName_s": [
+                    "Romain Anger",
+                    "Laetitia Fontaine",
+                    "Hugo Houben",
+                    "Patrice Doat",
+                    "Henri Van Damme"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953218,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Architectures de pisé : évolutions innovations, résistances et prospective"
+                ],
+                "authFullName_s": [
+                    "Hubert Guillaud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 953215,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Les juifs d'Algérie et la citoyenneté (1870-1902). Les enjeux d'un statut contesté"
+                ],
+                "authFullName_s": [
+                    "Florence Renucci"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953211,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Platon et Aristote pour mieux comprendre les sources épistémologiques de la théorie du management socio-économique"
+                ],
+                "authFullName_s": [
+                    "Emmanuel Beck",
+                    "Marc Bonnet",
+                    "Manuel Garcia"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 953189,
+                "domain_s": [
+                    "0.scco",
+                    "1.scco.comp"
+                ],
+                "title_s": [
+                    "Modélisation des hiérarchies territoriales multiples évolutives"
+                ],
+                "authFullName_s": [
+                    "Christine Plumejeaud",
+                    "Jérôme Gensel",
+                    "Marlène Villanova-Oliver",
+                    "Maher Ben Rebah",
+                    "Guillaume Vergnaud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953186,
+                "domain_s": [
+                    "0.scco",
+                    "1.scco.comp"
+                ],
+                "title_s": [
+                    "SIG Mobiles"
+                ],
+                "authFullName_s": [
+                    "T. Badard",
+                    "Hervé Martin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953183,
+                "domain_s": [
+                    "0.scco",
+                    "1.scco.comp"
+                ],
+                "title_s": [
+                    "Risques naturels et environnement"
+                ],
+                "authFullName_s": [
+                    "Philippe Gueguen",
+                    "Céline Lutoff",
+                    "Paule-Annick Davoine",
+                    "G. Taliercio",
+                    "Franck Cotton",
+                    "Stéphane Cartier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953142,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Platon et Aristote : managers : des modèles d'investigation non-mathématiques ont-ils encore une place dans la recherche en sciences de gestion ?"
+                ],
+                "authFullName_s": [
+                    "Emmanuel Beck",
+                    "Manuel Garcia"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 953141,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Comment s'est construit le capitalisme ? Les réponses de Braudel et de l'histoire économique globale"
+                ],
+                "authFullName_s": [
+                    "Philippe Norel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 953140,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ir"
+                ],
+                "title_s": [
+                    "Annotation de vidéos par paires rares de concepts"
+                ],
+                "authFullName_s": [
+                    "Abdelkader Hamadi",
+                    "Philippe Mulhem",
+                    "Georges Quénot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953139,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ir"
+                ],
+                "title_s": [
+                    "Correspondances compatibles avec les fichiers inverses pour la recherche d'information."
+                ],
+                "authFullName_s": [
+                    "Philippe Mulhem",
+                    "Jean-Pierre Chevallet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953136,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-oh"
+                ],
+                "title_s": [
+                    "Intégration du déploiement de flotte et du service aux passagers dans la gestion de la planification pour compagnie aérienne",
+                    "Integration of the fleet deployment and of the passengers services into the airline scheduling management"
+                ],
+                "authFullName_s": [
+                    "Christophe-Marie Duquesne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953134,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "L'ère de la responsabilité sociale de l'entreprise"
+                ],
+                "authFullName_s": [
+                    "Sylvaine Mercuri",
+                    "Aline Pereira PÜndrich",
+                    "Fabrice Roth"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 953130,
+                "title_s": [
+                    "Antenne imprimée pour sondeur de canal à 2.2 GHz"
+                ],
+                "authFullName_s": [
+                    "Laurent Le Coq",
+                    "Jean-Marie Floc'H",
+                    "Ronan Cosquer",
+                    "Daniel Thouroude"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 953128,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Le siècle de l'abondance ?"
+                ],
+                "authFullName_s": [
+                    "Philippe Norel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 953126,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-oh"
+                ],
+                "title_s": [
+                    "Modèles, outils et plate-forme d’exécution pour les applications à service dynamiques",
+                    "Models, tools and execution platform for dynamique service-oriented applications"
+                ],
+                "authFullName_s": [
+                    "Diana Moreno-Garcia"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFWstED"
+}

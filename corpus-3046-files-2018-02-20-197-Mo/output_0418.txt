@@ -1,0 +1,2137 @@
+{
+    "response": {
+        "numFound": 515921,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1580057,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu"
+                ],
+                "title_s": [
+                    "Du volcanisme acide d'Argentré-du-Plessis (Domaine centre-armoricain)"
+                ],
+                "authFullName_s": [
+                    "Jean-Alix Barrat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1580056,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-ap",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mefl"
+                ],
+                "title_s": [
+                    "Un schéma volumes finis pour la simulation d’écoulements diphasiques gaz particules à deux phases incompressibles sur maillage triangulaire"
+                ],
+                "authFullName_s": [
+                    "Sylvain Boivin",
+                    "Florent Cayré",
+                    "Jean-Marc Hérard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1580054,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu"
+                ],
+                "title_s": [
+                    "Le volcanisme d'Argentré du Plessis (I&V)"
+                ],
+                "authFullName_s": [
+                    "Jean-Alix Barrat",
+                    "Didier Leroi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1580050,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-ap",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mefl"
+                ],
+                "title_s": [
+                    "Comparaison de solveurs numériques pour simuler la turbulence compressible"
+                ],
+                "authFullName_s": [
+                    "Emmanuelle Declercq",
+                    "Alain Forestier",
+                    "Jean-Marc Hérard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1580039,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gciv",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Détermination du comportement visco-élastique d’une grave routière à base de MIOM traitée au bitume par modélisation numérique 3D hiérarchique multi-échelle"
+                ],
+                "authFullName_s": [
+                    "Libasse Sow",
+                    "Fabrice Bernard",
+                    "Siham Kamali-Bernard",
+                    "Cheikh Mouhamed Fadel Kébé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1580037,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.msmeca"
+                ],
+                "title_s": [
+                    "Effet de la contrainte T sur un super alliage base Nickel soumis à un chargement de fatigue en mode I"
+                ],
+                "authFullName_s": [
+                    "Besnik Sadriji",
+                    "Bumedijen Raka",
+                    "François Brugier",
+                    "Yoann Guilhem",
+                    "Sylvie Pommier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1580036,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.msmeca"
+                ],
+                "title_s": [
+                    "Model reduction strategy applied to a problem of crack propagation in anisotropic materials"
+                ],
+                "authFullName_s": [
+                    "Walid Tezeghdanti",
+                    "Yoann Guilhem",
+                    "Sylvie Pommier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1580035,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.msmeca"
+                ],
+                "title_s": [
+                    "Critère unifié pour la modélisation de l'endurance en fatigue sous chargement combiné : statique et vibratoire"
+                ],
+                "authFullName_s": [
+                    "Bhimal Bholah",
+                    "Yoann Guilhem",
+                    "Julien Jaravel",
+                    "Sylvie Pommier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1580034,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.msmeca"
+                ],
+                "title_s": [
+                    "Prédiction de la durée de vie en fretting-fatigue"
+                ],
+                "authFullName_s": [
+                    "Guillaume Rousseau",
+                    "Yoann Guilhem",
+                    "Sylvie Pommier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1580026,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gciv",
+                    "2.spi.gciv.geotech"
+                ],
+                "title_s": [
+                    "Modélisation de la propagation de fractures hydrauliques par la méthode des éléments finis étendue",
+                    "Modeling fluid-driven cracks with the extended finite element method"
+                ],
+                "authFullName_s": [
+                    "Bertrand Paul"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1580025,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bio"
+                ],
+                "title_s": [
+                    "Tomographie d’impédance électrique à l’aide d’une matrice de microélectrodes : vers l’imagerie des nerfs périphériques",
+                    "Electrical impedance tomography using a microelectrode array : towards peripheral nerve imaging"
+                ],
+                "authFullName_s": [
+                    "Alexandre Fouchard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579994,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Un rêve chimérique: la clôture du débat autour de l'enseignement oral de Platon."
+                ],
+                "authFullName_s": [
+                    "Marie-Dominique Richard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579993,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "L'Ardèche, terre d'expérimentation agricole"
+                ],
+                "authFullName_s": [
+                    "Florence Charpigny"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579983,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Devenir des antibiotiques dans les sols agricoles amendés ou non par des déchets organiques, et effets combinés de contaminants"
+                ],
+                "authFullName_s": [
+                    "Aurore Andriamalala",
+                    "Laure Vieublé",
+                    "Philippe Cambier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579979,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Impact des flux d'eau sur la biogéographie du 2,4-D et des microorganismes dégradants dans le sol : une étude en microcosmes"
+                ],
+                "authFullName_s": [
+                    "Marc Pinheiro",
+                    "Franziska Ditterich",
+                    "Holger Pagel",
+                    "Christian Poll",
+                    "Patricia Garnier",
+                    "Thilo Streck",
+                    "Ellen Kandeler",
+                    "Laure Vieublé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579978,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Jeux et enjeux d’associations de deux dispositifs d’apprentissage collaboratif : « Check your Smile » et « Dictionnaire d’Agroécologie »"
+                ],
+                "authFullName_s": [
+                    "Nadia Yassine-Diab",
+                    "Veronique Batifol",
+                    "Sophie Aubin",
+                    "Michel Galaup",
+                    "Nathalie Del-Vecchio"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579977,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.mcg"
+                ],
+                "title_s": [
+                    "Les systèmes de culture à finalité énergétique"
+                ],
+                "authFullName_s": [
+                    "Benoit Gabrielle"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579974,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-oc",
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modélisation du comportement élastique endommageable de matériaux composites à renfort tridimensionnel",
+                    "Modeling of the damaging and elastic behavior of three-dimensional reinforced composite materials"
+                ],
+                "authFullName_s": [
+                    "Christiane El-Hage"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579972,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Parcours et itinéraires des musiciens militaires à Tours entre 1815 et 1870"
+                ],
+                "authFullName_s": [
+                    "Edith Marois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579965,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Les relations entre Laure Surville et son frère Honoré… de Balzac"
+                ],
+                "authFullName_s": [
+                    "Edith Marois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579964,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "L'analyse des données au service de la bibliométrie. Outil de veille technologique à la dimension des moyennes entreprises"
+                ],
+                "authFullName_s": [
+                    "Henri Dou",
+                    "Luc Quoniam",
+                    "Hervé Rostaing",
+                    "William Nivol"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579963,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Utilisation du MS-DOS en bibliométrie. Evolution des productions scientifiques traitant du noyau atomique en chimie"
+                ],
+                "authFullName_s": [
+                    "William Nivol",
+                    "Luc Quoniam",
+                    "Hervé Rostaing"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579960,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Perception d'un programme de R&D à travers l'analyse bibliométrique des banques de données d'origine japonaise"
+                ],
+                "authFullName_s": [
+                    "Hélène Haon",
+                    "Clément Paoli",
+                    "Hervé Rostaing"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579959,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Le logiciel bibliométrique Dataview et son application comme outil d'aide à l'évaluation de la concurrence"
+                ],
+                "authFullName_s": [
+                    "Hervé Rostaing",
+                    "William Nivol",
+                    "Luc Quoniam",
+                    "Albert La Tela"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579956,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Analyse bibliométrique multi-bases pour l'élaboration d'un dossier électronique de veille technologique"
+                ],
+                "authFullName_s": [
+                    "Hervé Rostaing",
+                    "Samira Djaouzi",
+                    "Albert La Tela",
+                    "Thierry Avignon",
+                    "Luc Quoniam"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579954,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Génération automatique de réseaux en bibliométrie"
+                ],
+                "authFullName_s": [
+                    "Eric Boutin",
+                    "Phillipe Dumas",
+                    "Luc Quoniam",
+                    "Hervé Rostaing",
+                    "Henri Dou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579953,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Système intégré d'analyse automatique de l'information structurée"
+                ],
+                "authFullName_s": [
+                    "Henri Dou",
+                    "Parina Hassanaly",
+                    "Luc Quoniam",
+                    "Hervé Rostaing",
+                    "Albert La Tela",
+                    "Eric Giraud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579952,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Les réseaux de compétences : application à l'élaboration d'un groupe de recherche en physique fondamentale"
+                ],
+                "authFullName_s": [
+                    "Hervé Rostaing",
+                    "Marie-Gabrielle Suraud",
+                    "Luc Quoniam"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579951,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Méthode d'évaluation bibliométrique d'un logiciel de développement d'applications : Visual Basic"
+                ],
+                "authFullName_s": [
+                    "Gérard Pillet",
+                    "Luc Quoniam",
+                    "Hervé Rostaing",
+                    "Henri Dou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579950,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Traitement de l'information : analyse des données classiques versus analyse réseau. Un cas d'application : la bibliométrie"
+                ],
+                "authFullName_s": [
+                    "Eric Boutin",
+                    "Luc Quoniam",
+                    "Hervé Rostaing",
+                    "Phillipe Dumas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579949,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Vigilance, logiciel de gestion et de diffusion des dossiers de Veille Technologique"
+                ],
+                "authFullName_s": [
+                    "Parina Hassanaly",
+                    "Samira Djaouzi",
+                    "Hervé Rostaing",
+                    "Henri Dou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579948,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "La bibliométrie et ses techniques"
+                ],
+                "authFullName_s": [
+                    "Hervé Rostaing"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579946,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Une méthode de traitement automatique des questions ouvertes dans une enquête consommateur"
+                ],
+                "authFullName_s": [
+                    "Hélène Ziegelbaum",
+                    "Michel Rogeaux",
+                    "Hervé Rostaing"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579945,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Un lien automatique entre recherche scientifique et technologie : de la nécessité de rendre transparent un système de mise en correspondance de bases de données scientifiques et techniques"
+                ],
+                "authFullName_s": [
+                    "Pascal Faucompré",
+                    "Luc Quoniam",
+                    "Hervé Rostaing"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579944,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Conception d'un nouvel outil de gestion des ressources hétérogènes en veille technologique"
+                ],
+                "authFullName_s": [
+                    "Valérie Léveillé",
+                    "Hervé Rostaing",
+                    "Parina Hassanaly"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579943,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Création d'hypertextes automatiques appliqués à la veille"
+                ],
+                "authFullName_s": [
+                    "Valérie Léveillé",
+                    "Hervé Rostaing",
+                    "Luc Quoniam"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579942,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Du veilleur à l'expert, de l'entreprise au laboratoire : pour une veille technologique active"
+                ],
+                "authFullName_s": [
+                    "Pascal Faucompré",
+                    "Luc Quoniam",
+                    "Hervé Rostaing"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579940,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Construction automatique de réseaux : un outil pour mieux appréhender l'information provenant de l'Internet"
+                ],
+                "authFullName_s": [
+                    "Eric Boutin",
+                    "Bruno Mannina",
+                    "Hervé Rostaing",
+                    "Luc Quoniam"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579939,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Evaluation des sites Internet. Construction d'indicateurs à partir des réseaux de \"sitations"
+                ],
+                "authFullName_s": [
+                    "Hervé Rostaing",
+                    "Eric Boutin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579938,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Elaboration d'un réseau cartographique de codes CIB à partir de commandes statistiques en ligne"
+                ],
+                "authFullName_s": [
+                    "Antonio Da Silva",
+                    "Sandrine Collet",
+                    "Catherine Bainier-Girard",
+                    "Luc Quoniam",
+                    "Hervé Rostaing"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579937,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Double expérience en Sciences de l'Information : formation doctorale internationale et ma\\ⁱtrise à distance électronique"
+                ],
+                "authFullName_s": [
+                    "Hervé Rostaing",
+                    "Henri Dou",
+                    "Céline Riffaut",
+                    "Luc Quoniam"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579936,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Utilisation de la représentation hypertextuelle en veille technologique"
+                ],
+                "authFullName_s": [
+                    "Valérie Léveillé",
+                    "Hervé Rostaing"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579935,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Formation universitaire à distance : Ma\\ⁱtrise NTIDE. Conception et retour d'expérience du site Internet de formation non-présentielle"
+                ],
+                "authFullName_s": [
+                    "Céline Riffaut",
+                    "Hervé Rostaing",
+                    "Henri Dou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579933,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Exemple de traitement de l'information à l'aide d'outils infométriques"
+                ],
+                "authFullName_s": [
+                    "Hervé Rostaing"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579931,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Guide des bonnes pratiques de veille en PME-PMI"
+                ],
+                "authFullName_s": [
+                    "Serge Quazzotti",
+                    "Cyril Dubois",
+                    "Henri Dou",
+                    "Hervé Rostaing",
+                    "Pere Escorsa",
+                    "Roberto Arnau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579929,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Intégration du système de veille dans le système d'information de l'entreprise"
+                ],
+                "authFullName_s": [
+                    "Valérie Léveillé",
+                    "Hervé Rostaing",
+                    "Henri Dou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579928,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Etude bibliométrique pour l'évaluation des programmes de recherche nationaux. Difficulté de mise en œuvre et d'exploitation dans le cas de la recherche scientifique algérienne"
+                ],
+                "authFullName_s": [
+                    "Hervé Rostaing",
+                    "Valérie Léveillé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579924,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Enseignement à distance : l'expérience acquise au cours de la réalisation de la maîtrise à distance NTIDE"
+                ],
+                "authFullName_s": [
+                    "Henri Dou",
+                    "Céline Riffaut",
+                    "Hervé Rostaing"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579922,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Analyse du transfert de l'information scientifique et technique entre les secteurs public et privé, à partir des co-publications dans les revues scientifiques espagnoles"
+                ],
+                "authFullName_s": [
+                    "Elea Giménez Toledo",
+                    "Adelaida Román Román",
+                    "Hervé Rostaing"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579921,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Mise en relation de deux bases de données bibliographiques, Pascal et le Science Citation Index pour l'élaboration d'indicateurs de la production scientifique brésilienne"
+                ],
+                "authFullName_s": [
+                    "Joachim Queyras",
+                    "Leandro Innocentini Lopes de Faria",
+                    "Hervé Rostaing",
+                    "Luc Quoniam"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579920,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Etiqueter\" ses publications pour plus de visibilité"
+                ],
+                "authFullName_s": [
+                    "Hervé Rostaing",
+                    "Nicolas Barts"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579918,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Système d'information pour l'aide au pilotage de la recherche. Méthodologie et accompagnement de la mise en place d'un Infocentre Recherche pour l'Université Paul Cézanne : contraintes techniques et communautaires"
+                ],
+                "authFullName_s": [
+                    "Nicolas Barts",
+                    "Hervé Rostaing",
+                    "Jacky Kister"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579917,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Contribution à l'évaluation stratégique de la recherche par l'étude des temps de premières citations"
+                ],
+                "authFullName_s": [
+                    "Tam Dang Nguyen",
+                    "Pascal Prinderre",
+                    "Christophe Sauzet",
+                    "Hervé Rostaing",
+                    "Jacky Kister"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579906,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Management des systèmes d'information: Manuel et applications"
+                ],
+                "authFullName_s": [
+                    "Marc Bidan",
+                    "Cécile Godé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579905,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.droit",
+                    "0.shs",
+                    "1.shs.stat"
+                ],
+                "title_s": [
+                    "entrée \"Le suivi statistique des politiques publiques afférentes aux logements inoccupés\", Memento du Logement 2015 en Wallonie, Belgique : Wolters Kluwer, pp. 328-335"
+                ],
+                "authFullName_s": [
+                    "Stéphanie Cassilde"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579904,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-ap",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mefl"
+                ],
+                "title_s": [
+                    "A naive scheme to solve shallow-water equations"
+                ],
+                "authFullName_s": [
+                    "Thierry Buffard",
+                    "Thierry Gallouët",
+                    "Jean-Marc Hérard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579902,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "entrée \"race Brésil\". Dictionnaire des inégalités, Armand Colin (Paris), p. 325"
+                ],
+                "authFullName_s": [
+                    "Stéphanie Cassilde"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579901,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-ap",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mefl"
+                ],
+                "title_s": [
+                    "Un schéma Volumes-Finis pour la simulation d'un modèle bi-fluide d'écoulements diphasiques compressibles gaz-solide"
+                ],
+                "authFullName_s": [
+                    "Laure Combe",
+                    "Jean-Marc Hérard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579899,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-ap",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mefl"
+                ],
+                "title_s": [
+                    "Solveur de type Godunov pour simuler les écoulements turbulents compressibles"
+                ],
+                "authFullName_s": [
+                    "Alain Forestier",
+                    "Jean-Marc Hérard",
+                    "Xavier Louis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579896,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.stat"
+                ],
+                "title_s": [
+                    "De la singularité en géographie"
+                ],
+                "authFullName_s": [
+                    "Denise Pumain"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579893,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-ap",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mefl"
+                ],
+                "title_s": [
+                    "Modèles au second ordre réalisables non dégénérés pour les écoulements turbulents incompressibles."
+                ],
+                "authFullName_s": [
+                    "Jean-Marc Hérard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579892,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.neu"
+                ],
+                "title_s": [
+                    "Analyse de la composition en acides gras des lipides dans la sclérose latérale amyotrophique : implications dans le processus pathologique",
+                    "Analysis of fatty acid composition in lipids of ALS : implications in the pathological process"
+                ],
+                "authFullName_s": [
+                    "Laura Robelin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579891,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Une carte scientométrique de la recherche en éducation vue par la base de données internationales Scopus"
+                ],
+                "authFullName_s": [
+                    "Kristine Lund",
+                    "H. Jeong",
+                    "Sebastian Grauwin",
+                    "Pablo Jensen"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579889,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Blanche Leidert et Thibauld Moulaert, Emulations, n°13, 2014 \"Résistance(s) et viellissement(s)\", Lectures, Les comptes rendus, mis en ligne le 26 octobre 2015"
+                ],
+                "authFullName_s": [
+                    "Stéphanie Cassilde"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579887,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Tone Huse, Everyday Life in the Gentrifying City. On displacement, Ethnic Privileging and the Right to Stay Put, Lectures, Les comptes rendus, mis en ligne le 22 octobre 2014"
+                ],
+                "authFullName_s": [
+                    "Stéphanie Cassilde"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579883,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.stat"
+                ],
+                "title_s": [
+                    "EQH 2006-2007. Les indices de salubrité et de qualité"
+                ],
+                "authFullName_s": [
+                    "Stéphanie Cassilde",
+                    "Marie-Noëlle Anfrie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579881,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.stat"
+                ],
+                "title_s": [
+                    "EQH 2012-2013. Les indices de salubrité et de qualité. Construction d'indices comparables EQH 2006-2007 / EQH 2012-2013"
+                ],
+                "authFullName_s": [
+                    "Stéphanie Cassilde",
+                    "Marie-Noëlle Anfrie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579879,
+                "domain_s": [
+                    "0.scco",
+                    "1.scco.neur"
+                ],
+                "title_s": [
+                    "Implication de l’habénula latérale dans les processus mnésiques chez le rat",
+                    "Involvement of the lateral habenula in memory processes in rat"
+                ],
+                "authFullName_s": [
+                    "Victor Mathis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579876,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Sur le contrôle des résultats issus de simulations numériques"
+                ],
+                "authFullName_s": [
+                    "Ludovic Chamoin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579875,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-ap",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mefl"
+                ],
+                "title_s": [
+                    "Un schéma conservatif à pas fractionnaires pour résoudre les équations d'Euler en maillage non structuré."
+                ],
+                "authFullName_s": [
+                    "Thierry Buffard",
+                    "Jean-Marc Hérard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579869,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Relire “Ngando” de Paul Lomami-Tchibamba (1948), cinquante ans après"
+                ],
+                "authFullName_s": [
+                    "Pierre Halen"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579868,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Contribution à l’étude de la révolte de Muqanna‘ (c. 775-780) : traces matérielles, traces hérésiographiques"
+                ],
+                "authFullName_s": [
+                    "Frantz Grenet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579865,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Stratégie de vérification et validation de modèles dédiée au calcul de quantités d’intérêt en ingénierie mécanique"
+                ],
+                "authFullName_s": [
+                    "Ludovic Chamoin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "HDR",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579862,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Transmission(s): la médiation en révolution : [journée d'étude, Paris, 12 décembre 2013]"
+                ],
+                "authFullName_s": [
+                    "Pascal Lardellier",
+                    "Delaye Richard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579859,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Sensible et communication: du cognitif au symbolique"
+                ],
+                "authFullName_s": [
+                    "Jean-Jacques Boutaud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579858,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.museo"
+                ],
+                "title_s": [
+                    "TRACES NOIRES DE L’HISTOIRE EN OCCIDENT"
+                ],
+                "authFullName_s": [
+                    "Sylvie Chalaye"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579857,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion",
+                    "0.shs",
+                    "1.shs.psy",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Activités et collectifs. Approches cognitives et organisationnelles. Introduction"
+                ],
+                "authFullName_s": [
+                    "Lise Gastaldi",
+                    "Cathy Krohmer",
+                    "Claude Paraponaris"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579856,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.museo"
+                ],
+                "title_s": [
+                    "OMBRES DE LA RAMPE : LES COMEDIENS NOIRS DE LA SCENE FRANÇAISE"
+                ],
+                "authFullName_s": [
+                    "Sylvie Chalaye"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579855,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Organisations et savoirs: quelles médiations ?"
+                ],
+                "authFullName_s": [
+                    "Jacques Bonnet",
+                    "Olivier Galibert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579852,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.museo"
+                ],
+                "title_s": [
+                    "NOUVELLES DRAMATURGIES D’AFRIQUE NOIRE FRANCOPHONE"
+                ],
+                "authFullName_s": [
+                    "Sylvie Chalaye"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579851,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion",
+                    "0.shs",
+                    "1.shs.psy",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Le passage des frontières : difficultés et perspectives. L’expérience des frontières cognitives"
+                ],
+                "authFullName_s": [
+                    "Claude Paraponaris"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579849,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.museo"
+                ],
+                "title_s": [
+                    "MONDE NOIR ET SCENES CONTEMPORAINES (AFRIQUE, CARAÏBES, OCEAN INDIEN, NOUVELLE CALEDONIE)"
+                ],
+                "authFullName_s": [
+                    "Sylvie Chalaye"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579847,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "La confiance: relations, organisations, capital humain"
+                ],
+                "authFullName_s": [
+                    "Delaye Richard",
+                    "Pascal Lardellier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579846,
+                "domain_s": [
+                    "0.scco",
+                    "1.scco.psyc"
+                ],
+                "title_s": [
+                    "Vécu des situations à risque d’erreur en réanimation : une étude qualitative auprès des médecins et infirmiers",
+                    "Perception of the risk of error in intensive care units: Qualitative study among doctors and nurses"
+                ],
+                "authFullName_s": [
+                    "Alexandra Laurent",
+                    "Khadija Chahraoui",
+                    "Antoine Bioy",
+                    "Jean-Pierre Quenot",
+                    "Gilles Capellier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579845,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.museo"
+                ],
+                "title_s": [
+                    "L’AFRICANITE EN QUESTIONS"
+                ],
+                "authFullName_s": [
+                    "Sylvie Chalaye"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579842,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Jeunesse et classes sociales : regards rétrospectifs"
+                ],
+                "authFullName_s": [
+                    "Pierre Bruno"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579841,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.museo"
+                ],
+                "title_s": [
+                    "AFRIQUE NOIRE : ECRITURES CONTEMPORAINES D’EXPRESSION FRANÇAISE"
+                ],
+                "authFullName_s": [
+                    "Sylvie Chalaye"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579838,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Des personnages dans le goût du temps"
+                ],
+                "authFullName_s": [
+                    "Anne Embs"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579837,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Collaboration au Dictionnaire de l'Histoire de France"
+                ],
+                "authFullName_s": [
+                    "Natacha Coquery"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579836,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.museo"
+                ],
+                "title_s": [
+                    "ACTEURS NOIRS"
+                ],
+                "authFullName_s": [
+                    "Sylvie Chalaye"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579832,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Génération 3.0: enfants et ados à l'ère des cultures numérisées"
+                ],
+                "authFullName_s": [
+                    "Pascal Lardellier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579826,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.museo"
+                ],
+                "title_s": [
+                    "TIRAILLEURS EN IMAGES"
+                ],
+                "authFullName_s": [
+                    "Sylvie Chalaye"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579825,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les courtisans et le crédit à Paris au XVIIIe siècle"
+                ],
+                "authFullName_s": [
+                    "Natacha Coquery"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579823,
+                "domain_s": [
+                    "0.stat",
+                    "1.stat.ap",
+                    "0.qfin"
+                ],
+                "title_s": [
+                    "De l’importance d’un bon suivi des hypothèses actuarielles"
+                ],
+                "authFullName_s": [
+                    "Yahia Salhi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579819,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "L'art de consommer: la mentalité économique des courtisans parisiens à la fin de l'Ancien Régime"
+                ],
+                "authFullName_s": [
+                    "Natacha Coquery"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579818,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.museo"
+                ],
+                "title_s": [
+                    "LA TRAITE : UN TABOU EN AFRIQUE ?"
+                ],
+                "authFullName_s": [
+                    "Sylvie Chalaye"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579814,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.ther"
+                ],
+                "title_s": [
+                    "Couplage d'une thermofrigopompe à une unité de distillation membranaire"
+                ],
+                "authFullName_s": [
+                    "Paul Byrne",
+                    "Ahmadou Tidiane Diaby"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579809,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.museo"
+                ],
+                "title_s": [
+                    "THEATRES EN ECRITURES"
+                ],
+                "authFullName_s": [
+                    "Sylvie Chalaye"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1579808,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "La beauté d'une ville: un château bien bâti ou un théâtre magnifique? Nantes d'après Brackenhoffer (1643-1644) et Young (1788)"
+                ],
+                "authFullName_s": [
+                    "Natacha Coquery"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1579798,
+                "domain_s": [
+                    "0.info",
+                    "0.info",
+                    "1.info.eiah",
+                    "0.info",
+                    "1.info.info-hc"
+                ],
+                "title_s": [
+                    "IntuiScript : le cahier numérique pour le suivi et l'aide à l'apprentissage de l'écriture à l'école"
+                ],
+                "authFullName_s": [
+                    "Nathalie Girard",
+                    "Damien Simonnet",
+                    "Mickaël Renault",
+                    "Eric Anquetil"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "PRESCONF",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFWsYMG"
+}

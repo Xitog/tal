@@ -1,0 +1,1861 @@
+{
+    "response": {
+        "numFound": 515923,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 948351,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Les résistances observées dans l'usage des systèmes de commandement au sein de l'armée de terre : un problème interculturel"
+                ],
+                "authFullName_s": [
+                    "Emmanuel Cardona Gil"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 948348,
+                "title_s": [
+                    "Optimisation de l'utilisation de capteurs de vibration pour la surveillance de santé des structures du génie civil"
+                ],
+                "authFullName_s": [
+                    "Désirée Najem",
+                    "Pierre Argoul",
+                    "Gwendal Cumunel",
+                    "Wassim Raphael",
+                    "Fouad Kaddah"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948345,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.auto"
+                ],
+                "title_s": [
+                    "Commande tolérante aux défauts de systèmes non linéaires représentés par des modèles de Takagi-Sugeno",
+                    "Fault tolerant control for Takagi-Sugeno nonlinear systems"
+                ],
+                "authFullName_s": [
+                    "Souad Bezzaoucha"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948343,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-cy"
+                ],
+                "title_s": [
+                    "Modélisation stochastique du risque de pandémie, Stratégie de couvertures et d’assurance"
+                ],
+                "authFullName_s": [
+                    "Marine Habart Corlosquet",
+                    "Jacques Janssen",
+                    "Raimondo Manca"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948341,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-mo",
+                    "0.info",
+                    "1.info.info-lg"
+                ],
+                "title_s": [
+                    "Prise en compte des recommandations de l'humain dans le processus décisionnel d'un agent"
+                ],
+                "authFullName_s": [
+                    "Nicolas Côté",
+                    "Maroua Bouzid",
+                    "Bruno Zanuttini",
+                    "Abdel-Illah Mouaddib"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948340,
+                "title_s": [
+                    "Modèles 2D discrets de foule en mouvement : stratégies d'évacuation - synchronisation piétons-structure"
+                ],
+                "authFullName_s": [
+                    "Bachar Kabalan",
+                    "Pierre Argoul",
+                    "Gwendal Cumunel",
+                    "Silvano Erlicher"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948339,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Prise en compte d'une période d'activité à l'étranger dans le calcul de l'ACAATA : le \"oui mais\" de l'Assemblée plénière"
+                ],
+                "authFullName_s": [
+                    "Marion Del Sol"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948333,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Généralisation de la couverture complémentaire santé des salariés : éléments de controverse"
+                ],
+                "authFullName_s": [
+                    "Marion Del Sol"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948332,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.math",
+                    "1.math.math-nt"
+                ],
+                "title_s": [
+                    "Étude de processus de recherche de chercheurs, élèves et étudiants, engagés dans la recherche d'un problème non résolu en théorie des nombres",
+                    "Study of a research process for researchers, pupils and students involved in the research of an unsolved problem in number theory"
+                ],
+                "authFullName_s": [
+                    "Marie-Line Gardes"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948330,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.info",
+                    "1.info.info-mo",
+                    "0.info",
+                    "1.info.info-gt",
+                    "0.info",
+                    "1.info.info-ma"
+                ],
+                "title_s": [
+                    "Etude des attaques Sybil sur les jeux hédoniques"
+                ],
+                "authFullName_s": [
+                    "Thibaut Vallée",
+                    "Grégory Bonnet",
+                    "Bruno Zanuttini",
+                    "François Bourdon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948328,
+                "domain_s": [
+                    "0.sde"
+                ],
+                "title_s": [
+                    "Mise au point d'une typologie de combustibles pour la Basse Provence calcaire"
+                ],
+                "authFullName_s": [
+                    "O. Chandioux",
+                    "C. Lampin-Maillet",
+                    "M. Jappiot",
+                    "T. Curt"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 948324,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Approche expérimentale de la conservation des charbons de bois dans les gisements paléolithiques : processus post-dépositionnels, fragmentation et représentativité des assemblages anthracologiques",
+                    "Experimental approach of the preservation of charcoals in the palaeolithic deposits : process post--dépositional, fragmentation and representativeness of the anthracological assemblies anthracologiques"
+                ],
+                "authFullName_s": [
+                    "Julia Chrzavzez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948319,
+                "title_s": [
+                    "Imagerie et endométriose : apport du coloscanner"
+                ],
+                "authFullName_s": [
+                    "Céline Savoye-Collet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948314,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Eléments pour servir à l'histoire et à la géographie industrielles de la Région Aquitaine du début du XIXe siècle à nos jours"
+                ],
+                "authFullName_s": [
+                    "Frédéric Ogé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948312,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Proximité : quelle proximité ? Une perspective comparative internationale"
+                ],
+                "authFullName_s": [
+                    "Vincent Hoffmann-Martinot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948307,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Eléments pour servir à l'histoire et à la géographie industrielles de la Région Midi-Pyrénées du début du XIXe siècle à nos jours ."
+                ],
+                "authFullName_s": [
+                    "Frédéric Ogé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948305,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Futur et conditionnel de conjecture dans Le Rouge et le noir"
+                ],
+                "authFullName_s": [
+                    "Jacques Bres"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948304,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "La figure matérielle"
+                ],
+                "authFullName_s": [
+                    "Véronique Perez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 948301,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Les nécropoles mérovingiennes de Grand"
+                ],
+                "authFullName_s": [
+                    "Jacques Guillaume"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948300,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Aller et venir : des verbes de déplacement aux auxiliaires aspectuels-temporels-modaux"
+                ],
+                "authFullName_s": [
+                    "Jacques Bres",
+                    "Emmanuelle Labeau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948294,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Dynamiques professionnelles et salariales des journalistes",
+                    "The journalists between employees and profession"
+                ],
+                "authFullName_s": [
+                    "Camille Dupuy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948292,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Peut-on apprendre à vivre à l'école ?"
+                ],
+                "authFullName_s": [
+                    "Didier Moreau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 948287,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Équipements et sports collectifs de haut niveau"
+                ],
+                "authFullName_s": [
+                    "Anne Griffond-Boitier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948286,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Escalade: sport individuel et activité d'animation"
+                ],
+                "authFullName_s": [
+                    "Anne Griffond-Boitier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948285,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Navigation et tourisme d'eau douce"
+                ],
+                "authFullName_s": [
+                    "Anne Griffond-Boitier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948283,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "L'A39: une aubaine pour le tourisme dans le massif du Jura?"
+                ],
+                "authFullName_s": [
+                    "Anne Griffond-Boitier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948281,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "Identités virtuelles"
+                ],
+                "authFullName_s": [
+                    "Fanny Georges"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 948275,
+                "title_s": [
+                    "Comportement mécanique et dégradation d'une voie ferrée en tunnel"
+                ],
+                "authFullName_s": [
+                    "Tien Hoang",
+                    "Denis Duhamel",
+                    "Gilles Forêt",
+                    "Yin Hai-Ping",
+                    "Patrick Joyez",
+                    "Raphael Caby"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948264,
+                "title_s": [
+                    "Les recherches sur le bois à Navier......du matériau à la structure"
+                ],
+                "authFullName_s": [
+                    "Sabine Caré"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948261,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "RELATION AGRICULTURE-ELEVAGE Combinaison d'approches analytiques et systémiques"
+                ],
+                "authFullName_s": [
+                    "Jean-Marie Paillat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "HDR",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 948259,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Le cheval mexicain en Nouvelle Espagne entre 1519 et 1639",
+                    "The mexican horse in New Spain, 1519-1639"
+                ],
+                "authFullName_s": [
+                    "Marion Du Bron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948256,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.gp",
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-geo-ph",
+                    "0.sde",
+                    "1.sde.mcg"
+                ],
+                "title_s": [
+                    "Modélisation de l'aléa tsunamis et des résonances côtières en France",
+                    "Evaluation of tsunami hazard and coastal free oscillation in France"
+                ],
+                "authFullName_s": [
+                    "Sebastien Allgeyer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948255,
+                "domain_s": [
+                    "0.chim",
+                    "1.chim.mate",
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-ms"
+                ],
+                "title_s": [
+                    "Elaboration, Propriétés optiques et applications de suspensions colloïdales de nanobâtonnets de LaPO4",
+                    "Elaboration, optical properties, and applications of colloidal suspensions of LaPO4 nanorods"
+                ],
+                "authFullName_s": [
+                    "Jongwook Kim"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948250,
+                "domain_s": [
+                    "0.chim",
+                    "1.chim.anal",
+                    "0.sde",
+                    "1.sde.ie"
+                ],
+                "title_s": [
+                    "Comportement à long terme, caractérisation opérationnelle et évaluation environnementale des contaminants organiques des sédiments de dragage",
+                    "Long-term Behavior, Characterizing Operational and Environmental Assessment of Organic Contaminants in Sediments from Dredging"
+                ],
+                "authFullName_s": [
+                    "Benoit Charrasse"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948249,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Lorsque les institutions colonisent : l'offensive missionnaire des Jésuites sur le Chaco (XVIIIe s.)"
+                ],
+                "authFullName_s": [
+                    "Nicolas Richard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948243,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "L'apparence, le juge et la doctrine après 1804 : manifestations et fondements"
+                ],
+                "authFullName_s": [
+                    "David Deroussin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948240,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Les sources du Code des obligations et des contrats libanais : L. Josserand et le droit commun législatif mondial"
+                ],
+                "authFullName_s": [
+                    "David Deroussin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948238,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Épilogue : R. Saleilles : le droit, la méthode et la postérité"
+                ],
+                "authFullName_s": [
+                    "David Deroussin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948234,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "La coutume dans la doctrine civiliste après l'Exégèse : un renouveau en trompe l'œil ?"
+                ],
+                "authFullName_s": [
+                    "David Deroussin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948230,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Comment forger une identité nationale ? La culture juridique française vue par la doctrine civiliste au tournant des XIXe et XXe s."
+                ],
+                "authFullName_s": [
+                    "David Deroussin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948228,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Remarques sur les regulae iuris et les principes en droit (Temps Modernes)"
+                ],
+                "authFullName_s": [
+                    "David Deroussin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948226,
+                "domain_s": [
+                    "0.spi",
+                    "0.spi",
+                    "1.spi.tron",
+                    "0.spi",
+                    "1.spi.nano"
+                ],
+                "title_s": [
+                    "Analyse comportementale des filtres à capacités commutées pour les radiocommunications : Conception d'une nouvelle architecture en technologie BiCMOS 0,35 μm",
+                    "Behavioral Analysis of switched capacitor filters for radiocommunications : Design of a new architecture in BiCMOS 0.35 μm technology"
+                ],
+                "authFullName_s": [
+                    "Ahmed El Oualkadi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948225,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Le divorce en droit comparé"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 948222,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Nationalité, naturalisation, acquisition de la nationalité par décision de l'autorité publique"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948221,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Nationalité, naturalisation, Acquisition de la nationalité française à raison du mariage"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948220,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Nationalité, naturalisation, acquisition de la nationalité française à raison de la naissance et de la résidence en France"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948219,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Nationalité, naturalisation, attribution de la nationalité française par filiation ou naissance en France"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948218,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Droit à une nationalité, droit à la nationalité, droit à sa nationalité (variations sur l'évolution contemporaine des rapports entre individu et nationalité)"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948217,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "La nationalité est-elle toujours une prérogative souveraine des Etats ? (réflexions sur les évolutions récentes du droit de la nationalité en Europe)"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948213,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Pour un instrument international sur la protection des personnes âgées vulnérables"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948212,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Pour un instrument international sur la protection des personnes âgées vulnérables"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948211,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Peut on protéger une personne vulnérable malgré elle ? A propos d'une affaire B."
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948209,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Le juge français de la famille face à la pluralité des cultures"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948208,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Parenté, filiation, origines : un nouveau monde en gestation"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948207,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Le mariage est-il soluble dans la partenariat (et réciproquement) ?"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948206,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Mariage-conjugalité, parenté-parentalité : métamorphose ou rupture ?"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948205,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Revue Ethique Politique et religions. 2013-2. N°3"
+                ],
+                "authFullName_s": [
+                    "Jean-Philippe Pierron",
+                    "Jean Philippe Pierron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948204,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Des solidarités dans les familles séparées"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948203,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "La famille"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948202,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Parenté, filiation, origine : le droit et l'engendrement à plusieurs"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948200,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Mariage-conjugalité, parenté-parentalité"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948199,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Travaux dirigés de droit international privé"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948198,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Une théorie pour l'économie sociale et solidaire ?"
+                ],
+                "authFullName_s": [
+                    "Jérôme Blanc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948197,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Homoparenté v. homoparentalité ? Le droit français face à la question homoparentale"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948196,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Le mariage entre personnes de même sexe : le cas français"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948193,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Livre d'heures enluminé par Pèlerin Frison, peintre des capitouls dans les années 1500"
+                ],
+                "authFullName_s": [
+                    "Pascale Charron",
+                    "Avril François"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948184,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Le plaidoyer du syndicat béninois Synergie Paysanne sur les questions foncières"
+                ],
+                "authFullName_s": [
+                    "Camille Saiah"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 948182,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Les solidarités dans les couples séparés : renouvellement ou déclin ?"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948181,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Trésors enluminés des musées de France. Pays de la Loire et Centre"
+                ],
+                "authFullName_s": [
+                    "Pascale Charron",
+                    "Girault Pierre-Gilles",
+                    "Gautier Marc-Edouard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948178,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "La prestation compensatoire, mythe et réalités"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948176,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Statut du beau-parent ou reconnaissance de la famille homosexuelle ?"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 948172,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "L'intérêt de l'enfant à la mesure des droits de l'enfant"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 948171,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "La figure sociale du Game Guard de Nyae Nyae. Les agents déconnectés de la conservation"
+                ],
+                "authFullName_s": [
+                    "Bruno Tayeb"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 948168,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "La nationalité française, entre identité et appartenance"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948167,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Tours 1500, capitale des arts"
+                ],
+                "authFullName_s": [
+                    "Pascale Charron",
+                    "Guillouet Jean-Marie",
+                    "Girault Pierre-Gilles",
+                    "Chancel-Bardelot Beatrice De"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948166,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "L’émergence de violence domestique comme rubrique du discours institutionnel : le cas du Conseil de l’Europe",
+                    "The emergence of violence domestique as a category of institutional discourse : the case of the Council of Europe"
+                ],
+                "authFullName_s": [
+                    "Silvia Nugara"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 948165,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Conférence invitée dans le cadre du séminaire d'Histoire des sciences et de Philosophie du corps, équipe ACCORPS (LHSP Archives H. Poincaré - UMR 7117 CNRS), amphithéâtre du Muséum-Aquarium de Nancy, 7 avril 2010 / Invited lecture at the History of Sciences and Philosophy of the Body seminar, ACCORPS team (LHSP Archives H. Poincaré - UMR 7117 CNRS), Nancy, April 7, 2010"
+                ],
+                "authFullName_s": [
+                    "Jérôme Beauchez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948164,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Peut on protéger la personne contre elle-même ?"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948162,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "La protection légale protège-t-elle adéquatement le patrimoine du majeur vulnérable ? Vues françaises"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948160,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Invitation à une lecture critique de l'ouvrage collectif La Tentation du corps. Corporéité et sciences sociales (codirigé par D. Memmi, D. Guillo et O. Martin, Paris : Editions de l'EHESS, 2009) lors du séminaire \" \"Corps\" et sciences sociales - présentation critique d'ouvrages en présence de leurs auteurs \" ; séminaire animé par Dominique Memmi (DR CNRS, équipe \" Cultures et sociétés urbaines \" du Centre de Recherches Sociologiques et Politiques de Paris, UMR 7217), et Florence Bellivier (Pr de droit, université Paris X), Paris, Maison des Sciences de l'Homme, 8 octobre 2010. Invitation to a critical reading of the book The Temptation of the Body. Corporeality and Social Science (edited by D. Memmi, D. Guillo, and O. Martin, Paris: EHESS Editions, 2009) during the seminar \"'Bodies' and Social Science - A Critical Presentation of Works in the Presence of Their Authors\"; a seminar led by Dominique Memmi (CNRS research director, Paris Sociological and Political Research Center, UMR 7217), and Florence Bellivier (law professor, University Paris X), Paris, Maison des Sciences de l'Homme, October 8, 2010"
+                ],
+                "authFullName_s": [
+                    "Jérôme Beauchez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948159,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Partisans, fonctionnaires et paysans. Administration foncière et encadrement au Bénishangul-Gumuz, Éthiopie"
+                ],
+                "authFullName_s": [
+                    "Mehdi Labzaé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 948158,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Chronique de droit des personnes protégées"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948156,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Le notaire et l'exécution du mandat de protection future"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948154,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Présentation de travaux lors du séminaire de l'équipe \" Dynamiques de la vie privée et des institutions \" du Centre Max Weber (UMR CNRS 5283), Lyon, séance du vendredi 14 janvier 2011 / Presentation of work at the seminar \"Dynamics of privacy and institutions\", Centre Max Weber (UMR CNRS 5283), Lyon, January 14, 2011"
+                ],
+                "authFullName_s": [
+                    "Jérôme Beauchez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948153,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Le mariage entre personnes de même sexe en droit international privé au lendemain de la reconnaissance du \"mariage pour tous"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948151,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Dictionnaire d'histoire de l'art du Moyen Âge occidental"
+                ],
+                "authFullName_s": [
+                    "Pascale Charron",
+                    "Guillouët Jean-Marie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948149,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "La reconnaissance du mariage homosexuel en droit français à l'étranger : un monde incertain"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948148,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Conférence invitée au séminaire sur \" L'émotion sportive \" du Centre d'Histoire de Sciences Po (CHSP, EA 0113), Paris, 7 mars 2011 / Invited lecture at the seminar on \"Sports Emotion\" of the Sciences Po History Center (CHSP, EA 0113), Paris, March 7, 2011"
+                ],
+                "authFullName_s": [
+                    "Jérôme Beauchez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948147,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Les enjeux du foncier : autorité, pouvoir et identité. Le cas de l'investissement de Green Resources dans la réserve forestière de Bukaleba, en Ouganda"
+                ],
+                "authFullName_s": [
+                    "Hanne Dihle"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 948146,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Le \"mariage pour tous en DIP : le législateur français à la peine"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948144,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "la cour européenne des droits de l'homme n'impose pas le mariage homosexuel"
+                ],
+                "authFullName_s": [
+                    "Hugues Fulchiron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 948143,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Conférence invitée au séminaire du CRIS (Centre de Recherche et d'Innovation sur le Sport, EA 647), Lyon, 7 avril 2011 / Invited lecture at the seminar of the CRIS (Center of Research and Innovation in Sport), Lyon, April 7, 2011"
+                ],
+                "authFullName_s": [
+                    "Jérôme Beauchez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948142,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Patrimoine mondial et compétition politique : l'extraversion comme logique d'adaptation, de projection et de résistance"
+                ],
+                "authFullName_s": [
+                    "Julia Gascon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 948141,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Communication à la 1ère Journée du CARC (Cultures Art Rue et Corps), UMR ADESS, CNRS/Université de Bordeaux, 4 novembre 2011 / Paper presented at the 1st study day of the CARC (Cultures Art Rue et Corps / Cultures Art Street and Bodies), UMR ADESS, CNRS/University of Bordeaux, November 4, 2011"
+                ],
+                "authFullName_s": [
+                    "Jérôme Beauchez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948139,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Introduction aux 1ères journées d'étude du programme ANR SOCIORESIST, Centre Max Weber, Saint-Etienne, 18-19 avril 2013 / Introduction to the 1st study days of the ANR SOCIORESIST programme, Centre Max Weber, Saint-Etienne, 18-19 April, 2013"
+                ],
+                "authFullName_s": [
+                    "Jérôme Beauchez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948138,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "Rumeur : du cyber espace sider espace"
+                ],
+                "authFullName_s": [
+                    "Serge Dufoulon",
+                    "Mohamed El Methni"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948136,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "La tyrannie de l'art. La place d'égo dans l'espace esthétique"
+                ],
+                "authFullName_s": [
+                    "Serge Dufoulon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948134,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Présentation de l'ANR SOCIORESIST dans le cadre du séminaire commun ANR SOCIORESIST/groupe de travail \" Aux frontières du sans-abrisme \" (Katia Chopin, Edouard Gardella, Claudia Girola, Elodie Jouve, Pascale Pichon), Saint-Etienne, 24 janvier 2014 / Presentation of ANR SOCIORESIST at the joint seminar ANR SOCIORESIST/work group \"On the Borders of Homelessness\" (Katia Chopin, Edouard Gardella, Claudia Girola, Elodie Jouve, Pascale Pichon), Saint-Etienne, January 24, 2014"
+                ],
+                "authFullName_s": [
+                    "Jérôme Beauchez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948133,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "Colères des temps et réfugiés climatiques : pour une approche sociologique"
+                ],
+                "authFullName_s": [
+                    "Serge Dufoulon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 948131,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Femmes et alcool en Bretagne : une histoire particulière ?"
+                ],
+                "authFullName_s": [
+                    "Thierry Fillaut"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFT+s4D"
+}

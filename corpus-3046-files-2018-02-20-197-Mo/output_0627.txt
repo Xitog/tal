@@ -1,0 +1,2003 @@
+{
+    "response": {
+        "numFound": 515921,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1517345,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sp"
+                ],
+                "title_s": [
+                    "Bactériologie et cancers : vers de nouvelles stratégies thérapeutiques"
+                ],
+                "authFullName_s": [
+                    "Quentin Albert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517341,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "La réanalyse au service de l’interdisciplinarité ?"
+                ],
+                "authFullName_s": [
+                    "Claire Dupuy",
+                    "Sophie Duchesne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517339,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "La reconquête de la qualité des eaux"
+                ],
+                "authFullName_s": [
+                    "Nicolas Rollo",
+                    "Etienne Chauveau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517336,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Les 50 pas géométriques dans les territoires ultramarins"
+                ],
+                "authFullName_s": [
+                    "Céline Chadenas",
+                    "Nicolas Rollo",
+                    "Michel Desse"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517334,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.nano"
+                ],
+                "title_s": [
+                    "IoT : programmez votre objet connecté RPi avec Python"
+                ],
+                "authFullName_s": [
+                    "Patrice Kadionik"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517325,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Besançon (Doubs). Vaisselle du quotidien chez un artisan de Battant, XIVe s."
+                ],
+                "authFullName_s": [
+                    "Corinne Goy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517318,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Des sépultures isolées du haut Moyen Âge découvertes à Besançon et à Mandeure (Doubs)"
+                ],
+                "authFullName_s": [
+                    "David Billoin",
+                    "Corinne Goy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517317,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Les Pères de l’Église"
+                ],
+                "authFullName_s": [
+                    "Guillaume Bady"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517316,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Le «Démosthène chrétien» : Grégoire le Théologien dans les Rhetores Graeci"
+                ],
+                "authFullName_s": [
+                    "Guillaume Bady"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517314,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.relig"
+                ],
+                "title_s": [
+                    "Temps, liturgie et comédie dans les homélies pascales inédites transmises sous le nom de Jean Chrysostome"
+                ],
+                "authFullName_s": [
+                    "Guillaume Bady"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517312,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Identification multi-échelle par l'erreur en relation de comportement modifiée"
+                ],
+                "authFullName_s": [
+                    "Shaojuan Huang",
+                    "Pierre Feissel",
+                    "Pierre Villon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517311,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Passage du modèle d'endommagement Thick Level Set au modèle de zone cohésive et vice versa : cas unidimensionnel"
+                ],
+                "authFullName_s": [
+                    "Nicolas Moes",
+                    "Claude Stolz",
+                    "Andres Parrilla-Gomez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517310,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Approche level-set pour la résolution de problèmes comportant des d'inégalités : application au cas de membrane contactant un solide rigide"
+                ],
+                "authFullName_s": [
+                    "Nicolas Chevaugeon",
+                    "Mathieu Graveleau",
+                    "Nicolas Moes"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517308,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Une nouvelle stratégie de calcul de modèles réduits PGD basée sur l'erreur en relation de comportement"
+                ],
+                "authFullName_s": [
+                    "Pierre-Eric Allier",
+                    "Ludovic Chamoin",
+                    "Pierre Ladevèze"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517307,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Analyse tribologique d'un contact d'un assemblage boulonné via la DEM"
+                ],
+                "authFullName_s": [
+                    "Komla Apélété Kounoudji",
+                    "Mathieu Renouf",
+                    "Guilhem Mollon",
+                    "Yves Berthier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517306,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Simulation numérique de la propagation d'ondes dans un solide mou pour l'élastographie ultrasonore"
+                ],
+                "authFullName_s": [
+                    "Wenfeng Ye",
+                    "Alain Combescure",
+                    "Aline Bel-Brunon",
+                    "Stefan Catheline",
+                    "Michel Rochette"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517303,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Réponse d'un matériau hyperélastique fragile : comparaison approches analytiques et numériques en mode anti-plan"
+                ],
+                "authFullName_s": [
+                    "Claude Stolz",
+                    "Andrès Parilla Gomez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517302,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Couplage entre filtre de Kalman, erreur en relation de comportement modifiée, et réduction de modèle pour le recalage en temps réel de modèles dynamiques"
+                ],
+                "authFullName_s": [
+                    "Basile Marchand",
+                    "Ludovic Chamoin",
+                    "Christian Rey"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517301,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Génération de modèles NURBS volumiques issus de la CAO pour l'Analyse Isogéométrique"
+                ],
+                "authFullName_s": [
+                    "Hassan Al-Akhras",
+                    "Thomas Elguedj",
+                    "Anthony Gravouil",
+                    "Michel Rochette"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517298,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Enrichissement local de modèles NURBS par couplage non intrusif avec des éléments finis classiques"
+                ],
+                "authFullName_s": [
+                    "Robin Bouclier",
+                    "Jean-Charles Passieux",
+                    "Michel Saläun",
+                    "Patrick Laborde"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517297,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Modélisation du comportement mécanique de la peau humaine in vivo&nbsp;: prise en compte de la précontrainte des fibres de collagène"
+                ],
+                "authFullName_s": [
+                    "Alexandre Bergheau",
+                    "Marie-Angèle Abellan",
+                    "Eric Feulvarch",
+                    "Hassan Zahouani"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517296,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Mise en place d'une méthodologie de prédiction d'endurance sous chargements aléatoires acoustiques"
+                ],
+                "authFullName_s": [
+                    "Alexandre Bedos",
+                    "Dominique Tougard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517295,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Existence et unicité pour des problèmes de contact élastoplastique avec des transferts thermiques"
+                ],
+                "authFullName_s": [
+                    "Pavel Krejčí",
+                    "Adrien Petrov"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517294,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Etude de la réponse numérique des ponts roulants exposés aux chocs répétés au cours d'un séisme"
+                ],
+                "authFullName_s": [
+                    "Fatima Fekak",
+                    "Anthony Gravouil",
+                    "Michael Brun",
+                    "Bruno Depale"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517293,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Couplage éléments-finis/volumes-finis pour de l'interaction fluide compressible/structures-immergées en dynamique transitoire"
+                ],
+                "authFullName_s": [
+                    "Olivier Jamond",
+                    "Vincent Faucher",
+                    "Alberto Beccantini"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517292,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Weak Trefftz Discontinuous Galerkin method: an approach to resolve low and mid frequency mixed vibration problems"
+                ],
+                "authFullName_s": [
+                    "Hao Li",
+                    "Hervé Riou",
+                    "Pierre Ladevèze"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517291,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Projet CHARGEOL : Etude expérimentale et numérique des pieux de fondation des éoliennes offshore"
+                ],
+                "authFullName_s": [
+                    "Rocio Isorna",
+                    "Christophe Dano",
+                    "Panagiotis Kotronis",
+                    "Luc Thorel",
+                    "Matthieu Blanc",
+                    "Maxime Philippe"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517290,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Modèle en éléments finis de mélange fluide/grains"
+                ],
+                "authFullName_s": [
+                    "Jonathan Lambrechts",
+                    "Frédéric Dubois",
+                    "Jean-Francois Remacle"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517289,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Absorption d'énergie: un modèle de fragmentation diffuse et localisée pour le crash de composite carbone/epoxy"
+                ],
+                "authFullName_s": [
+                    "Floran Tostain",
+                    "Christine Espinosa",
+                    "Samuel Rivallant"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517287,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Méthode Asymptotique Numérique pour le calcul des solutions et des instabilités dans les écoulements de fluides non newtoniens"
+                ],
+                "authFullName_s": [
+                    "Jean-Marc Cadou",
+                    "Awatif Jawadi",
+                    "Hassan Boutyour"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517286,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Modèle de comportement élastoplastique en transformations finies dans le cadre d'un formalisme quadridimensionnel"
+                ],
+                "authFullName_s": [
+                    "Mingchuan Wang",
+                    "Emmanuelle Rouhaud",
+                    "Benoît Panicaud",
+                    "Richard Kerner",
+                    "Arjen Roos",
+                    "Guillaume Altmeyer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517285,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Sur la sensibilité paramétrique de l'Hyper-réduction en Dynamique des structures"
+                ],
+                "authFullName_s": [
+                    "Nissrine Akkari",
+                    "Fatima Daim",
+                    "David Ryckelynck"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517284,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Approximation de faible rang d'un échantillon de solution d'une équation paramétrée"
+                ],
+                "authFullName_s": [
+                    "Loïc Giraldi",
+                    "Anthony Nouy",
+                    "Olivier Zahm"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517283,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Implémentation robuste pour maîtriser le conditionnement et la précision des modélisations X-FEM"
+                ],
+                "authFullName_s": [
+                    "Marcel Ndeffo",
+                    "Patrick Massin",
+                    "Nicolas Moes"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517282,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Simulations numériques sur des solides plongés, dans un contexte X-FEM"
+                ],
+                "authFullName_s": [
+                    "Frédéric Duboeuf",
+                    "Éric Béchet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517281,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Effet du Champ de Contrainte Non-Uniforme sur Évolution de Fissure Cohésive 2D"
+                ],
+                "authFullName_s": [
+                    "Tuan-Hiep Pham",
+                    "Jérôme Laverne",
+                    "Jean-Jacques Marigo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517280,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Sur les conditions aux limites en hyperréduction"
+                ],
+                "authFullName_s": [
+                    "Georges Peyre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517279,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Méthode des discontinuités fortes et rupture ductile en grandes déformations"
+                ],
+                "authFullName_s": [
+                    "Jérémie Bude",
+                    "Delphine Brancherie",
+                    "Jean-Marc Roelandt"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517278,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "ISAAC : simulation du contact entre massifs au comportement non linéaire par méthode semi-analytique"
+                ],
+                "authFullName_s": [
+                    "Arnaud Duval",
+                    "Thibaut Chaise",
+                    "Daniel Nelias"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517277,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Modélisation par la méthode des éléments discrets du comportement élastique de milieux continus hétérogènes"
+                ],
+                "authFullName_s": [
+                    "Hamza Haddad",
+                    "Willy Leclerc",
+                    "Mohamed Guessasma",
+                    "Nabil Ferguen",
+                    "Christine Pelegris",
+                    "Emmanuel Bellenger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517276,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Une méthode de réduction de modèle basée sur l'échantillonnage pour le calcul d'une réponse vibro-acoustique aléatoire en basse fréquence"
+                ],
+                "authFullName_s": [
+                    "Mathilde Chevreuil",
+                    "Cédric Leblond",
+                    "Anthony Nouy",
+                    "Yendoubouam Tampango",
+                    "Jean-Francois Sigrist"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517275,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Une méthodologie de réduction utilisant des modes propres de composant et un enrichissement de type Arnoldi"
+                ],
+                "authFullName_s": [
+                    "Hadrien Tournaire",
+                    "Franck Renaud",
+                    "Jean-Luc Dion"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517274,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Etude numérique de l'environnement micromécanique des cellules souches mésenchymateuses dans un bioréacteur d'ingénierie tissulaire osseuse"
+                ],
+                "authFullName_s": [
+                    "Magali Cruel",
+                    "Morad Bensidhoum",
+                    "Pierre Becquart",
+                    "Cécile Nouguier-Lehon",
+                    "Hervé Petite",
+                    "Thierry Hoc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517269,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Imaginaire des lieux et attractivité des territoires : Une entrée par le tourisme littéraire : Maisons d’écrivain, routes et sentiers littéraires",
+                    "Imaginary of places and territorial attractiveness : a literary tourism approach"
+                ],
+                "authFullName_s": [
+                    "Aurore Bonniot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517268,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "L'impact de la réglementation sur la qualité et le coût de l'audit en Europe",
+                    "The impact of audit regulation on quality and cost of audit in Europe"
+                ],
+                "authFullName_s": [
+                    "Imen Ben Slimene"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517266,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.ie",
+                    "0.sde",
+                    "1.sde.be"
+                ],
+                "title_s": [
+                    "L'EAU À CANAAN : QUELLES FORMES DE PARTICIPATION À UNE GESTION DÉMOCRATIQUE DE CE BIEN COMMUN ?"
+                ],
+                "authFullName_s": [
+                    "Yolette Jérôme",
+                    "Evens Emmanuel",
+                    "Pascal Saffache"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517261,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Alexandre HOGUE : peintre du \"dust bowl"
+                ],
+                "authFullName_s": [
+                    "Alexis Metzger",
+                    "Martine Tabeaud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517260,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.ie",
+                    "0.sde",
+                    "1.sde.be"
+                ],
+                "title_s": [
+                    "DE L'INFORMALITÉ À LA GESTION ALTERNATIVE D'UNE VILLE SOUTENABLE : LE CAS DE CANAAN"
+                ],
+                "authFullName_s": [
+                    "Anne-Laurence Verret",
+                    "Anie Bras",
+                    "Evens Emmanuel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517257,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Adaptation des modes de valorisation des prairies permanentes océaniques sous contraintes de pentes"
+                ],
+                "authFullName_s": [
+                    "Jean-Marc Arranz",
+                    "Nicolas Bernos",
+                    "Marion Charbonneau",
+                    "Pierre Gascouat",
+                    "Philippe Inarra",
+                    "Marlène Haristoy",
+                    "Marie-Claude Mareaux",
+                    "Ludivine Mignot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517253,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Prairies permanentes basco-béarnaises : une typologie pour évaluer les services écosystémiques rendus par les prairies et par les exploitations",
+                    "A classification system for assessing the ecosystem services provided by permanent grasslands and farms in Béarn and the Northern Basque Country"
+                ],
+                "authFullName_s": [
+                    "Jean-Marc Arranz",
+                    "Nicolas Bernos",
+                    "Pascal Carrère",
+                    "Marion Charbonneau",
+                    "Pierre Gascouat",
+                    "Sophie Hulin",
+                    "Philippe Inarra",
+                    "Marie-Claude Mareaux",
+                    "Jean-Marie Noblia",
+                    "Elise Olha"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517250,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "La symbolique des langues de la nature dans les nouvelles d'Aharon Appelfeld",
+                    "The Symbolism of Natural Languages in Aharon Appelfeld's Short Stories",
+                    "הסמליות בתיאורי הטבע בסיפורי אהרן אפלפלד"
+                ],
+                "authFullName_s": [
+                    "Michèle Tauber",
+                    "Michèle Tauber"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517248,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Science(s) et édition(s), de 1780 à l'entre-deux-guerres"
+                ],
+                "authFullName_s": [
+                    "Franck Jovanovic",
+                    "Viera Rebolledo-Dhuin",
+                    "Norbert Verdier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517247,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "2.sdv.mhep.phy"
+                ],
+                "title_s": [
+                    "Modèle géométrique, statistique et mécanique de la contraction musculaire",
+                    "Geometrical, statistical and mechanical modeling of muscular contraction"
+                ],
+                "authFullName_s": [
+                    "Sylvain Louvet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517246,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Par-delà le changement climatique, les représentations du changement environnemental : le poids de la tension entre filière et territoire dans les secteurs pastoral et viticole en Aquitaine"
+                ],
+                "authFullName_s": [
+                    "Marion Charbonneau",
+                    "Gaëlle Deletraz",
+                    "Julien Rebotier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517241,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Déjections animales : comment intervenir sur les pratiques agricoles au moindre coût"
+                ],
+                "authFullName_s": [
+                    "Pierre Rainelli"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517237,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Essai de typologie des régions françaises en fonction des problèmes agricoles"
+                ],
+                "authFullName_s": [
+                    "Pierre Rainelli"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517236,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "P.A.C. et politique régionale"
+                ],
+                "authFullName_s": [
+                    "Pierre Rainelli"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517231,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "L'appréciation sur le plan économique des mesures de protection des lacs"
+                ],
+                "authFullName_s": [
+                    "Pierre Rainelli"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517227,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Commande non-linéaire d'un séchoir à céréales"
+                ],
+                "authFullName_s": [
+                    "Francis Courtois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517224,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Problèmes et perspectives en commande de procédés alimentaires"
+                ],
+                "authFullName_s": [
+                    "Gilles Trystram",
+                    "Francis Courtois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517221,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Prévention et assurance des risques de pollution : le cas de l'agriculture"
+                ],
+                "authFullName_s": [
+                    "Pierre Rainelli",
+                    "Robert D. Weaver"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517220,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Evaluation contingente et contexte institutionnel"
+                ],
+                "authFullName_s": [
+                    "Pierre Rainelli"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517219,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Agriculture et environnement"
+                ],
+                "authFullName_s": [
+                    "Pierre Rainelli"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517208,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Dynamique temporelle et dispositif hybride. Apports potentiels de l'outil de classe virtuelle"
+                ],
+                "authFullName_s": [
+                    "Philippe Teutsch",
+                    "Pierre Salam",
+                    "Jean-François Bourdet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517202,
+                "domain_s": [
+                    "0.info",
+                    "0.info",
+                    "1.info.info-ai",
+                    "0.scco",
+                    "1.scco.psyc"
+                ],
+                "title_s": [
+                    "Logique floue et prise de décision"
+                ],
+                "authFullName_s": [
+                    "Bernadette Bouchon-Meunier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517197,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.ie"
+                ],
+                "title_s": [
+                    "Évolution des méthodes de caractérisation des aléas littoraux"
+                ],
+                "authFullName_s": [
+                    "Céline Perherin",
+                    "Amélie Roche"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517193,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Potentialités de la microfiltration tangentielle sur membranes minérales pour la clarification du jus de pomme de cajou"
+                ],
+                "authFullName_s": [
+                    "Fernando Abreu",
+                    "Ana Pérez",
+                    "Manuel Dornier",
+                    "Max Reynes"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517186,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-dc",
+                    "0.info",
+                    "1.info.info-ds",
+                    "0.info",
+                    "1.info.info-db",
+                    "0.info",
+                    "1.info.info-dm"
+                ],
+                "title_s": [
+                    "Impact de la réplication sur la latence dans les bases de données distribuées et application à Cassandra"
+                ],
+                "authFullName_s": [
+                    "Noël Gillet",
+                    "Nicolas Hanusse",
+                    "Frédéric Lalanne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517184,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Dialogisme, mouvements et places discursives : des entrées pour analyser une demande de reconnaissance au travail"
+                ],
+                "authFullName_s": [
+                    "Marie Carcassonne",
+                    "Laurence Servel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517183,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Discours au travail : perspectives dialogiques"
+                ],
+                "authFullName_s": [
+                    "Marie Carcassonne",
+                    "Laurence Servel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517179,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Étude des paysages agricoles par télédétection radar. Observation des surfaces continentales par télédétection.. Observation des surfaces continentales par télédétection"
+                ],
+                "authFullName_s": [
+                    "Samuel Corgne",
+                    "Laurence Hubert-Moy",
+                    "Julie Betbeder"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517178,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "La Terre entière, une seule patrie. Diogène d'Œnoanda et la politique"
+                ],
+                "authFullName_s": [
+                    "Pierre-Marie Morel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517177,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-dc"
+                ],
+                "title_s": [
+                    "Algorithme distribué d'orientation de graphes dans un environnement asynchrone et avec pannes"
+                ],
+                "authFullName_s": [
+                    "Noël Gillet",
+                    "Nicolas Hanusse"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517175,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Épicure et les biens matériels, ou la pauvreté bien tempérée"
+                ],
+                "authFullName_s": [
+                    "Pierre-Marie Morel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517173,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "La physiologie des passions dans le De motu animalium d’Aristote"
+                ],
+                "authFullName_s": [
+                    "Pierre-Marie Morel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517167,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "L'essor du lexique juridique au XIIIe siècle: l'édition de la traduction du Digeste dans le \"Livre de jostice et de plet"
+                ],
+                "authFullName_s": [
+                    "Graziella Pastore"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517166,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Compromis entre traits d'histoire de vie et saisonnalité chez un primate hétérotherme",
+                    "Life-history trade-offs and seasonality in a heterothermic primate species"
+                ],
+                "authFullName_s": [
+                    "Julie Landes"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517158,
+                "domain_s": [
+                    "0.sdv",
+                    "0.sdv",
+                    "1.sdv.neu",
+                    "0.sdv",
+                    "1.sdv.ib",
+                    "2.sdv.ib.ima"
+                ],
+                "title_s": [
+                    "Méthodes pour la modélisation et la quantification en imagerie fonctionnelle par tomographie d’émission de positons et imagerie par résonnance magnétique",
+                    "Methods for Modeling and Quantification in Functional Imaging by Positron Emissions Tomography and Magnetic Resonance Imaging"
+                ],
+                "authFullName_s": [
+                    "Nicolas Costes"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "HDR",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517157,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ni"
+                ],
+                "title_s": [
+                    "À la racine du parallélisme"
+                ],
+                "authFullName_s": [
+                    "Thomas Bonald",
+                    "Céline Comte",
+                    "Fabien Mathieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517150,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ni"
+                ],
+                "title_s": [
+                    "À la racine du parallélisme"
+                ],
+                "authFullName_s": [
+                    "Thomas Bonald",
+                    "Céline Comte",
+                    "Fabien Mathieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517145,
+                "domain_s": [
+                    "0.info",
+                    "1.info.eiah"
+                ],
+                "title_s": [
+                    "Approche narrative des processus d'analyses de traces d'apprentissage : un framework ontologique pour la capitalisation"
+                ],
+                "authFullName_s": [
+                    "Alexis Lebis",
+                    "Marie Lefevre",
+                    "Vanda Luengo",
+                    "Nathalie Guin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517144,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Institutions historiques et développement économique en Afrique. Une revue sélective et critique de travaux récents"
+                ],
+                "authFullName_s": [
+                    "Denis Cogneau",
+                    "Yannick Dupraz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517142,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Visualiser et mesurer les échanges à l’âge du Fer"
+                ],
+                "authFullName_s": [
+                    "Katherine Gruel",
+                    "F. Olmer",
+                    "Stéphane Marion"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517138,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "L’économie du IIIe siècle a.C., 20 ans après"
+                ],
+                "authFullName_s": [
+                    "Stéphane Marion"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517137,
+                "domain_s": [
+                    "0.info",
+                    "1.info.eiah"
+                ],
+                "title_s": [
+                    "MAGAM : Un modèle générique pour l’adaptation multi-aspects dans les EIAH"
+                ],
+                "authFullName_s": [
+                    "Baptiste Monterrat",
+                    "Amel Yessad",
+                    "François Bouchet",
+                    "Elise Lavoué",
+                    "Vanda Luengo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517127,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "La ville, creuset de la culture."
+                ],
+                "authFullName_s": [
+                    "Pierre Sansot",
+                    "Henry Torgue"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517126,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "1921 : Parfumer le monde"
+                ],
+                "authFullName_s": [
+                    "Eugénie Briot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517123,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ni"
+                ],
+                "title_s": [
+                    "La Grille de Kleinberg, l’Univers et le Reste"
+                ],
+                "authFullName_s": [
+                    "Céline Comte",
+                    "Fabien Mathieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517121,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Les espaces de travail en gare : les services « Work&Station » de SNCF Île-de-France"
+                ],
+                "authFullName_s": [
+                    "Cyprien Richer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517119,
+                "domain_s": [
+                    "0.info",
+                    "1.info.eiah"
+                ],
+                "title_s": [
+                    "Analyse de connaissances perceptivo-gestuelles dans un Système Tutoriel Intelligent"
+                ],
+                "authFullName_s": [
+                    "Ben-Manson Toussaint",
+                    "Vanda Luengo",
+                    "Jambon Francis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517116,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Ex pots... Céramique médiévales et modernes en Franche-Comté"
+                ],
+                "authFullName_s": [
+                    "Corinne Goy",
+                    "Sylviane Humbert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517114,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Table ronde \"Vivre autrement"
+                ],
+                "authFullName_s": [
+                    "Antoine Picon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517113,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Un service à la mobilité près de la gare TER : la maison du vélo à Bayeux"
+                ],
+                "authFullName_s": [
+                    "Cyprien Richer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517112,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "L'aménagement participatif, entre injonction et co-construction",
+                    "The participative regional planning between injunction and co-construction",
+                    "El ordenamiento territorial participativo entre imposición y co-construcción"
+                ],
+                "authFullName_s": [
+                    "Claudia Lopez-Rieux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517110,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Importance de la procrastination dans le processus de décision d'achat. Approche sémiotique et mesure"
+                ],
+                "authFullName_s": [
+                    "Denis Darpy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517103,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les Ponts et Chaussées : histoire d'un corps de l'Etat"
+                ],
+                "authFullName_s": [
+                    "Antoine Picon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517101,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Le discours de l'échec de la démocratisation en France : arguments épistémiques et statistiques"
+                ],
+                "authFullName_s": [
+                    "Hervé Glevarec"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517099,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "L'architecture et son enseignement, quels futurs ?"
+                ],
+                "authFullName_s": [
+                    "Antoine Picon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517096,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Une archéologie de la guerre au second âge du Fer (fin du IV e siècle av. – début du I er siècle ap. J.-C.)"
+                ],
+                "authFullName_s": [
+                    "Gérard Bataille",
+                    "Jenny Kaurin",
+                    "Stéphane Marion"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517089,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Les institutions européennes confrontées à la définition des limites de l'Europe pour leurs propres frontières."
+                ],
+                "authFullName_s": [
+                    "Thibault Courcelle"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFR4uQF"
+}

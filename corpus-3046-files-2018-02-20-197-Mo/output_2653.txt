@@ -1,0 +1,1961 @@
+{
+    "response": {
+        "numFound": 515923,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 869153,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mefl",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mefl",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.ther",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.ther"
+                ],
+                "title_s": [
+                    "Un Algorithme Faible Nombre de Mach pour la Simulation des Ecoulements de Fluides Supercritiques par des Méthodes Spectrales."
+                ],
+                "authFullName_s": [
+                    "Isabelle Raspo",
+                    "Jalil Ouazzani"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 869152,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Modèles de diffusion non linéaire en milieux poreux. Applications a la dissolution et au séchage des matériaux cimentaires"
+                ],
+                "authFullName_s": [
+                    "Marc Mainguy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 869151,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "0.sdv",
+                    "1.sdv.spee"
+                ],
+                "title_s": [
+                    "Synthèse d'activités du groupe PSP"
+                ],
+                "authFullName_s": [
+                    "Nhan Le Thanh"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "PRESCONF",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 869149,
+                "domain_s": [
+                    "0.scco",
+                    "1.scco.ling"
+                ],
+                "title_s": [
+                    "Nominalisations, référents clandestins et anaphores atypiques"
+                ],
+                "authFullName_s": [
+                    "Denis Apothéloz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 869147,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "0.sdv",
+                    "1.sdv.spee"
+                ],
+                "title_s": [
+                    "La télémédecine et la formation continue des médecins"
+                ],
+                "authFullName_s": [
+                    "Pascal Staccini",
+                    "David Darmon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "PRESCONF",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 869145,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.be"
+                ],
+                "title_s": [
+                    "Transformation sociales et spaciales dans un contexte d'exploitation minière. Le cas du projet Ambatovy (Moramanga-Tamatave)"
+                ],
+                "authFullName_s": [
+                    "Henitsoa Sissie Rakotonirina"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 869143,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Contribution à l'étude du comportement thermomécanique d'une résine époxy-amine aux jeunes âges"
+                ],
+                "authFullName_s": [
+                    "Jacques Djofack Dongfack"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 869140,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Conformité des pratiques de l'hypothermie aux recommandations : étude multicentrique chez le nouveau-né à terme"
+                ],
+                "authFullName_s": [
+                    "Marie Chevallier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 869137,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.be"
+                ],
+                "title_s": [
+                    "Migrations, transformations sociales et spatiales. Le cas des zones d'exploitation du saphir d'Ilakaka et Sakaraha"
+                ],
+                "authFullName_s": [
+                    "Gaetan Feltz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 869136,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "0.sdv",
+                    "1.sdv.spee"
+                ],
+                "title_s": [
+                    "Problématiques de capture et de classification des informations"
+                ],
+                "authFullName_s": [
+                    "Cécile Belleudy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "PRESCONF",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 869101,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Utilisation de la voix et des sons : dans l'éducation et la thérapie psychomotrice"
+                ],
+                "authFullName_s": [
+                    "Adriana Marc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 869088,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Les collaborations scientifiques mondiales, 1999-2008"
+                ],
+                "authFullName_s": [
+                    "Laurent Jégou",
+                    "Marion Maisonobe"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 869087,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "0.sdv",
+                    "1.sdv.spee"
+                ],
+                "title_s": [
+                    "Projet BoxOffice : une initiative de modernisation des cabinets médicaux"
+                ],
+                "authFullName_s": [
+                    "Pascal Staccini",
+                    "David Darmon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "PRESCONF",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 869085,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Les enfants du voyage dans le système scolaire : une intégration à repenser"
+                ],
+                "authFullName_s": [
+                    "Camille Fourrey"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 869083,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gciv"
+                ],
+                "title_s": [
+                    "Identification et contrôle d'une grille de tenségrité"
+                ],
+                "authFullName_s": [
+                    "Sarah Amouri",
+                    "Julien Averseng",
+                    "Jean-François Dubé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 869082,
+                "title_s": [
+                    "De Gaulle et la démocratie (1940-1969)"
+                ],
+                "authFullName_s": [
+                    "Michel Boivin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 869055,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.be"
+                ],
+                "title_s": [
+                    "Recomposition sociale et territoriales. Présentation"
+                ],
+                "authFullName_s": [
+                    "Gaetan Feltz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 869047,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "La langue bretonne à Arradon au XXe siècle : réflexion sociolinguistique sur l'histoire du breton à travers un exemple particulier",
+                    "Breton language in Arradon during the XXth century : a sociolinguistic reflection about the history of Breton through a particular example"
+                ],
+                "authFullName_s": [
+                    "Armelle Faby-Audic"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 869046,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.be"
+                ],
+                "title_s": [
+                    "Localisation et justification des zones d'études"
+                ],
+                "authFullName_s": [
+                    "Sigrid Aubert-Gilon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 869044,
+                "domain_s": [
+                    "0.chim",
+                    "1.chim.othe",
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-gen"
+                ],
+                "title_s": [
+                    "Couplage AFM/Raman et spectroscopie Raman exaltée par effet de pointe de nanostructures",
+                    "Study of nanostructures with AFM/Raman coupling device and Tip Enhanced Raman Spectroscopy (TERS)"
+                ],
+                "authFullName_s": [
+                    "Samar Najjar"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 869043,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "0.sdv",
+                    "1.sdv.spee"
+                ],
+                "title_s": [
+                    "De la médecine personnalisée à la médecine fonctionnelle"
+                ],
+                "authFullName_s": [
+                    "Alain Franco"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "PRESCONF",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 869041,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-gt",
+                    "0.math",
+                    "1.math.math-mg",
+                    "0.math",
+                    "1.math.math-gr"
+                ],
+                "title_s": [
+                    "Finitude géométrique en géométrie de Hilbert"
+                ],
+                "authFullName_s": [
+                    "Mickaël Crampon",
+                    "Ludovic Marquis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 869036,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.be"
+                ],
+                "title_s": [
+                    "La gestion intégrée des ressources naturelles renouvelables : contexte et objectifs"
+                ],
+                "authFullName_s": [
+                    "Philippe Karpe",
+                    "Sigrid Aubert-Gilon",
+                    "Minoarivelo Randrianarison",
+                    "Gaetan Feltz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 869034,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.musiq",
+                    "0.shs",
+                    "1.shs.relig"
+                ],
+                "title_s": [
+                    "Serpentiste d'Église : une profession au XVIIIe siècle"
+                ],
+                "authFullName_s": [
+                    "Bernard Dompnier",
+                    "Isabelle Langlois",
+                    "Bastien Mailhot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 869033,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "0.sdv",
+                    "1.sdv.spee"
+                ],
+                "title_s": [
+                    "Retour d'expérience : PRIMEGE PACA"
+                ],
+                "authFullName_s": [
+                    "David Darmon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "PRESCONF",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 869025,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec",
+                    "0.spi",
+                    "1.spi.nano"
+                ],
+                "title_s": [
+                    "Cellule déphaseuse 3-bit pour les antennes réseaux réflecteurs à double polarisation linéaire"
+                ],
+                "authFullName_s": [
+                    "Tony Makdissy",
+                    "Raphaël Gillard",
+                    "Erwan Fourn",
+                    "Etienne Girard",
+                    "Hervé Legay"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 869021,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec",
+                    "0.spi",
+                    "1.spi.nano"
+                ],
+                "title_s": [
+                    "Antenne spirale avec élément rayonnant parasite"
+                ],
+                "authFullName_s": [
+                    "Vincent Callec",
+                    "Erwan Fourn",
+                    "Raphaël Gillard",
+                    "Hubert Diez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 869020,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.relig"
+                ],
+                "title_s": [
+                    "L'épigraphie syriaque du monachisme"
+                ],
+                "authFullName_s": [
+                    "Alain Desreumaux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 869014,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.relig"
+                ],
+                "title_s": [
+                    "Découverte d'une inscription syriaque mentionnant l'évêque Rabbula"
+                ],
+                "authFullName_s": [
+                    "Alain Desreumaux",
+                    "Françoise Briquel Chatonnet",
+                    "Joseph Moukarzel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 869013,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Un cas très ancien de garshouni ? Quelques réflexions sur le manuscrit BL Add. 14644"
+                ],
+                "authFullName_s": [
+                    "Alain Desreumaux",
+                    "Françoise Briquel Chatonnet",
+                    "André Binggeli"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 869010,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Inscriptions syriaques de Syrie, premiers résultats"
+                ],
+                "authFullName_s": [
+                    "Alain Desreumaux",
+                    "Françoise Briquel Chatonnet",
+                    "Widad Khoury"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 869007,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Les inscriptions syriaques du Kérala (Inde)"
+                ],
+                "authFullName_s": [
+                    "Alain Desreumaux",
+                    "Jacob Thekeparampil",
+                    "Françoise Briquel Chatonnet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 869002,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Les inscriptions syriaques de Chine"
+                ],
+                "authFullName_s": [
+                    "Alain Desreumaux",
+                    "Pierre Marsone",
+                    "Ruji Niu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 869000,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.neu",
+                    "2.sdv.neu.sc"
+                ],
+                "title_s": [
+                    "Travail de perception et de conscience vocale dans la rééducation de l'enfant dysphonique"
+                ],
+                "authFullName_s": [
+                    "Guillemette Du Tertre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 868998,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Les inscriptions de Syrie et de Turquie"
+                ],
+                "authFullName_s": [
+                    "Alain Desreumaux",
+                    "Françoise Briquel Chatonnet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868995,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Apamée : fouilles de la nécropole"
+                ],
+                "authFullName_s": [
+                    "Alain Desreumaux",
+                    "Jean-Sylvain Caillou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868994,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Nouvelles découvertes à Apamée de l'Euphrate"
+                ],
+                "authFullName_s": [
+                    "Alain Desreumaux",
+                    "Justine Gaborit",
+                    "Jean-Sylvain Caillou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868982,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Séleucie-Zeugma : Chantier 5"
+                ],
+                "authFullName_s": [
+                    "Alain Desreumaux",
+                    "Jean-Sylvain Caillou",
+                    "I. Gökçayli"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868979,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Présentation des motifs gravés"
+                ],
+                "authFullName_s": [
+                    "Alain Desreumaux",
+                    "Dominique, Jeanne Couson",
+                    "Christiane Poher"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868972,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Catalogue des stèles funéraires"
+                ],
+                "authFullName_s": [
+                    "Alain Desreumaux",
+                    "Dominique, Jeanne Couson"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868968,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "0.sdv",
+                    "1.sdv.spee"
+                ],
+                "title_s": [
+                    "Le nouveau cycle de santé de 2009 - Relever le défi de la modernisation du système de soins. Une initiative responsable pour le préserver. Une révolution culturelle des pratiques médicales."
+                ],
+                "authFullName_s": [
+                    "Luc Fontaine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "PRESCONF",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 868962,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Identification du site : le nom antique de Samra"
+                ],
+                "authFullName_s": [
+                    "Alain Desreumaux",
+                    "Thomas Bauzou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868959,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Cinq cents villages du comté de Bourgogne, entre Saône et Doubs vers 1567-1572"
+                ],
+                "authFullName_s": [
+                    "Paul Delsalle"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868958,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-gm"
+                ],
+                "title_s": [
+                    "Intégrale de Kontsevich elliptique et enchevêtrements en genre supérieur",
+                    "Elliptic Kontsevich integral, and higher genus tangles"
+                ],
+                "authFullName_s": [
+                    "Philippe Humbert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868957,
+                "domain_s": [
+                    "0.chim",
+                    "1.chim.othe",
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-gen"
+                ],
+                "title_s": [
+                    "Construction de nouveaux Bodipys solubles pour la concentration d'énergie et les cellules photovoltaïques",
+                    "Construction of new soluble Bodipys for energy concentration and organic solar cells"
+                ],
+                "authFullName_s": [
+                    "Thomas Bura"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868956,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Histoire de l'exploration de Samra et de sa région"
+                ],
+                "authFullName_s": [
+                    "Alain Desreumaux",
+                    "Jean-Baptiste Humbert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868950,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.neu",
+                    "2.sdv.neu.sc"
+                ],
+                "title_s": [
+                    "Dysphagie dans le cadre de séquelles tardives postradiques : intérêt d'une prise en charge orthophonique"
+                ],
+                "authFullName_s": [
+                    "Émeline Madej",
+                    "Charlène Roubieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 868943,
+                "domain_s": [
+                    "0.info",
+                    "1.info.eiah",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Conception et mise en place d'un entrepôt de traces et processus de traitement EIAH : UnderTracks"
+                ],
+                "authFullName_s": [
+                    "Denis Bouhineau",
+                    "Vanda Luengo",
+                    "Nadine Mandran",
+                    "Michael Ortega",
+                    "Claire Wajeman"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868941,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.neu",
+                    "2.sdv.neu.sc"
+                ],
+                "title_s": [
+                    "Étude de la compréhension de la prosodie dans la maladie d'Alzheimer"
+                ],
+                "authFullName_s": [
+                    "Marion Nerva",
+                    "Énora Ninon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 868940,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Deux bas-reliefs palmyréniens au musée de Gaziantep"
+                ],
+                "authFullName_s": [
+                    "Alain Desreumaux",
+                    "Françoise Briquel Chatonnet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868939,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "0.sdv",
+                    "1.sdv.spee"
+                ],
+                "title_s": [
+                    "Projet de KIC OneMoreLife"
+                ],
+                "authFullName_s": [
+                    "Guérin Olivier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "PRESCONF",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 868937,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Secret médical et droit de la preuve"
+                ],
+                "authFullName_s": [
+                    "Léa Jalliffier-Verne"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 868936,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.relig"
+                ],
+                "title_s": [
+                    "Catalogue des manuscrits syriaques de la collection du Saint Ephrem Ecumenical Research Institute (Kottayam)"
+                ],
+                "authFullName_s": [
+                    "Alain Desreumaux",
+                    "Françoise Briquel Chatonnet",
+                    "Jacob Thekeparampil"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868935,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "La partie urbaine de la chaîne de transport, premiers enseignements tirés de l'enquête ECHO. In : enquête \" ECHO \" - Les apports des enquêtes chargeurs pour la connaissance des chaînes de transport de marchandises et de leurs déterminants logistiques"
+                ],
+                "authFullName_s": [
+                    "Laetitia Dablanc",
+                    "Jean-Louis Routhier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868934,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.neu",
+                    "2.sdv.neu.sc"
+                ],
+                "title_s": [
+                    "Effets de la prise en charge précoce sur la communication prélinguistique dans la trisomie 21"
+                ],
+                "authFullName_s": [
+                    "Anna Fantin",
+                    "Émilie Périe"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 868933,
+                "title_s": [
+                    "Moulins de l'Eure en Révolution"
+                ],
+                "authFullName_s": [
+                    "Bernard Bodinier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868932,
+                "domain_s": [
+                    "0.stat",
+                    "1.stat.ml"
+                ],
+                "title_s": [
+                    "Vote de majorité a priori contraint pour la classification binaire : spécification au cas des plus proches voisins"
+                ],
+                "authFullName_s": [
+                    "Aurélien Bellet",
+                    "Amaury Habrard",
+                    "Emilie Morvant",
+                    "Marc Sebban"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868931,
+                "title_s": [
+                    "Stratification sociale des artisans de la rivière dans la campagne alençonnaise au XVIIe et XVIIIe siècles : l'exemple de la paroisse de radon"
+                ],
+                "authFullName_s": [
+                    "Patrick Birée"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868930,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "En quoi la technologie favorise-t-elle le développement des compétences transversales ?"
+                ],
+                "authFullName_s": [
+                    "Emilie Buiche"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 868929,
+                "title_s": [
+                    "L'enquête de 1809 sur les moulins : le cas de l'Orne"
+                ],
+                "authFullName_s": [
+                    "Alain-Gilles Chaussat",
+                    "Patrick Birée"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868928,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.neu",
+                    "2.sdv.neu.sc"
+                ],
+                "title_s": [
+                    "L'ETP destinée au couple aphasique : grille d'aide à l'élaboration du diagnostic éducatif"
+                ],
+                "authFullName_s": [
+                    "Jenny Barutel",
+                    "Chloé Rousseau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 868921,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.relig"
+                ],
+                "title_s": [
+                    "J. W. Wenham, Initiation au grec du Nouveau Testament"
+                ],
+                "authFullName_s": [
+                    "Alain Desreumaux",
+                    "C.-B. Amphoux",
+                    "J.-C. Ingelaere"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868919,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "La RSE : déterminant de la relocalisation ou outil de communication ?"
+                ],
+                "authFullName_s": [
+                    "Catherine Mercier-Suissa",
+                    "Céline Bouveret-Rivat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 868912,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.info"
+                ],
+                "title_s": [
+                    "L'IST au prisme de l'Europe"
+                ],
+                "authFullName_s": [
+                    "Armelle Jézéquel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868911,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Lois de survie du parc automobile et deux-roues à moteurs vus dans les sources statistiques françaises, Groupe Parcs et émissions"
+                ],
+                "authFullName_s": [
+                    "Laurent Hivert",
+                    "Zehir Kolli"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 868909,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Les échecs médiévaux : jeu des élites, jeux de couleurs"
+                ],
+                "authFullName_s": [
+                    "Luc Bourgeois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868908,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-gm"
+                ],
+                "title_s": [
+                    "Valeurs extrêmes : covariables et cadre bivarié",
+                    "Extreme values : covariates and bivariate case"
+                ],
+                "authFullName_s": [
+                    "Antoine Schorgen"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868907,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Impacts du coût de l'énergie sur les pratiques d'(auto)mobilité, Formation PFC 15/11/2012"
+                ],
+                "authFullName_s": [
+                    "Laurent Hivert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 868906,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.auto"
+                ],
+                "title_s": [
+                    "Contributions aux équations généralisées de Riccati et systèmes à commutations"
+                ],
+                "authFullName_s": [
+                    "Marc Jungers"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "HDR",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868903,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Rôle du domaine extracellulaire d’ABCG2 dans l’homéostasie des porphyrines",
+                    "Role of the extracellular domain of ABCG2 in porphyrin homeostasis"
+                ],
+                "authFullName_s": [
+                    "Elodie Desuzinges-Mandon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868901,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Quand les regards se croisent...\" Intérêts d'une consultation conjointe pédiatre-psychomotricien dans le cadre du suivi de la grande prématurité"
+                ],
+                "authFullName_s": [
+                    "Maylis Normand"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 868898,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Les émissions de CO2 des objets de la vie quotidienne : quelle est la part du transport ?"
+                ],
+                "authFullName_s": [
+                    "Cecilia Cruz",
+                    "A Goncalves"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 868891,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.spi",
+                    "1.spi.signal"
+                ],
+                "title_s": [
+                    "Reconnaissance de feuilles d'arbres par fusion de décisions partielles"
+                ],
+                "authFullName_s": [
+                    "Honghui Liu",
+                    "Didier Coquin",
+                    "Lionel Valet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868890,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu"
+                ],
+                "title_s": [
+                    "Mémo visuel de géologie : L'essentiel en fiches"
+                ],
+                "authFullName_s": [
+                    "Yves Lagabrielle",
+                    "René C. Maury",
+                    "Maurice Renard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868883,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.neu",
+                    "2.sdv.neu.sc"
+                ],
+                "title_s": [
+                    "Dépistage des troubles de la communication des malades Alzheimer : validation de la GECCO dépistage"
+                ],
+                "authFullName_s": [
+                    "Sandrine Callon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 868871,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.neu",
+                    "2.sdv.neu.sc"
+                ],
+                "title_s": [
+                    "Profil neuropsychologique des enfants présentant un trouble neurovisuel à la suite d'une anoxie périnatale"
+                ],
+                "authFullName_s": [
+                    "Leslie Courtine",
+                    "Lucile Vincent"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 868870,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Transports internationaux. In : Images Economiques du Monde"
+                ],
+                "authFullName_s": [
+                    "David Guerrero"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 868865,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.neu",
+                    "2.sdv.neu.sc"
+                ],
+                "title_s": [
+                    "Pertinence d'un étalonnage spécifique à Tahiti pour la batterie de tests ELO de Khomsi"
+                ],
+                "authFullName_s": [
+                    "Tiphaine Bruyère",
+                    "Sophie Doisy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 868864,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "L'élève et son rapport au monde : le cas de l'art brut"
+                ],
+                "authFullName_s": [
+                    "Camille Locqueville"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 868859,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Défis et cohésion des espaces français : Interdépendance et cohésion des espaces à différentes échelles. In : Rapport de l’Observatoire des territoires au parlement. Dynamiques, interdépendance et cohésion des territoires"
+                ],
+                "authFullName_s": [
+                    "David Guerrero"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 868853,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Les conditions favorables à l'inclusion en milieu ordinaire d'élèves atteints d'autisme scolarisés en ULIS"
+                ],
+                "authFullName_s": [
+                    "Alice Duprez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 868846,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "L'estime de soi des élèves de SEGPA"
+                ],
+                "authFullName_s": [
+                    "Joilita Huyghebaert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 868844,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.neu"
+                ],
+                "title_s": [
+                    "Application de la spectroscopie proche infrarouge dans la discrimination de la charge de travail.",
+                    "Near-infrared Spectroscopy application for discriminating the mental workload in humans."
+                ],
+                "authFullName_s": [
+                    "Kevin Mandrick"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 868841,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.neu",
+                    "2.sdv.neu.sc"
+                ],
+                "title_s": [
+                    "Comparaison des compétences pragmatiques entre sourds sévères appareillés et dysphasiques de 6 à 11 ans"
+                ],
+                "authFullName_s": [
+                    "Marine Salomon de Saint Sernin",
+                    "Elsa Séverac"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 868837,
+                "domain_s": [
+                    "0.chim",
+                    "1.chim.orga"
+                ],
+                "title_s": [
+                    "[Causes and differential diagnosis of flush.]"
+                ],
+                "authFullName_s": [
+                    "E. Lafont",
+                    "H. Sokol",
+                    "M.-E. Sarre-Annweiler",
+                    "E. Lecornet-Sokol",
+                    "S. Barete",
+                    "O. Hermine",
+                    "J. Pouchot",
+                    "S. Georgin-Lavialle"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868828,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Œil et posture"
+                ],
+                "authFullName_s": [
+                    "Yves Gauthier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 868799,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-gen"
+                ],
+                "title_s": [
+                    "Radiothérapie par Photoactivation de Nanoparticules : modélisation à l'Échelle Sub-Micrométrique et Comparaison Expérimentale",
+                    "Photo-activation Therapy with Nanoparticles : modeling at a Sub-Micrometer Level and Experimental Comparison"
+                ],
+                "authFullName_s": [
+                    "Rachel Delorme"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868797,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Etude de l’effet sur la P‐glycoprotéine (ABCB1) de deux médicaments dirigés contre le récepteur de facteur de croissance épithélial (EGFR), le cétuximab et le lapatinib et conséquence sur la pharmacocinétique et l’efficacité anti‐tumorale de médicaments substrats de ABCB1",
+                    "Effect of two epidermal growth factor receptor (EGFR) targeting drugs, cetuximab and lapatinib, on P-glycoprotein (ABCB1) and their influence on pharmacokinetics and antitumoral efficiency of ABCB1 substrate drugs"
+                ],
+                "authFullName_s": [
+                    "Céline Chu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 868795,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-gm"
+                ],
+                "title_s": [
+                    "Étude explicite de quelques n-champs géométriques"
+                ],
+                "authFullName_s": [
+                    "Brahim Benzeghli"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868794,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-gen"
+                ],
+                "title_s": [
+                    "Ferrites de cobalt nanostructurés ; élaboration, caractérisation, propriétés catalytiques, électriques et magnétiques",
+                    "Nanostructured cobalt ferrite; elaboration, characterization, catalytic, electric and magnetic properties"
+                ],
+                "authFullName_s": [
+                    "Lilia Ajroudi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868793,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Identification et caractérisation des inhibiteurs de type 2 et 3 de la phosphatase de type 1 chez Plasmodium falciparum",
+                    "Characterisation and functional studies of Inhibitors 2 and 3 of protein phosphatase type 1 in Plasmodium falciparum"
+                ],
+                "authFullName_s": [
+                    "Aline Fréville"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868792,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Rôle des phophodiestérases dans la compartimentation subcellulaire de l'AMPc dans la cellule musculaire lisse vasculaire : étude des altérations dans l'insuffisance cardiaque",
+                    "Role of phosphodiesterases in subcellular compartmentation of cAMP in vascular smooth muscle cell : alterations in heart failure"
+                ],
+                "authFullName_s": [
+                    "Fabien Hubert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 868791,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Étude et caractérisation des propriétés d’absorption électromagnétique du silicium micro/nano-structuré",
+                    "Study and characterization of the properties of electromagnetic absorption of the silicon micro/nano structured"
+                ],
+                "authFullName_s": [
+                    "Kim Ngoc Nguyen"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 868790,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Développement d’une sonde de photoaffinité pour la détection sensible de formes actives de Métalloprotéases Matricielles dans des systèmes biologiques complexes",
+                    "Developpement of a photoaffinity probe for the sensitive detection of Matrix Metalloprotease active forms from complex biological systems"
+                ],
+                "authFullName_s": [
+                    "Catherine Nury"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868789,
+                "domain_s": [
+                    "0.chim",
+                    "1.chim.othe"
+                ],
+                "title_s": [
+                    "Synthèse et étude de composés Ga₂₋ₓFeₓO₃",
+                    "Synthesis and study of the Ga₂₋ₓFeₓO₃ compounds"
+                ],
+                "authFullName_s": [
+                    "Monica Ciomaga Hatnean"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868788,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Etudes fonctionnelles et biophysiques de Hug1 ; une protéine intrinsèquement désordonnée impliquée dans le métabolisme des nucléotides",
+                    "Hug1, an intrinsically disordered protein involved in nucleotide metabolism ; functional and biophysical insights"
+                ],
+                "authFullName_s": [
+                    "Julie Meurisse"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868785,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Caractérisation fonctionnelle de l'activité de l'histone acétyltransférase GCN5 au sein des complexes ATAC et SAGA chez l'homme",
+                    "Functional characterization of the histone acetyltransferase GCN5 in the human ATAC and SAGA complexes"
+                ],
+                "authFullName_s": [
+                    "Anne Riss"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 868783,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.ba"
+                ],
+                "title_s": [
+                    "Etude fonctionnelle de deux marqueurs régionaux du cerveau chez la souris",
+                    "A functional study of two regional markers of the mouse brain"
+                ],
+                "authFullName_s": [
+                    "Nada Caudy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 868756,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Commentaire de jurisprudence à la Revue générale du droit des assurances, rubrique Assurances de personnes"
+                ],
+                "authFullName_s": [
+                    "Mayaux Luc"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2013
+            },
+            {
+                "docid": 868755,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Qu'est-ce qu'un contrat d'assurance ?"
+                ],
+                "authFullName_s": [
+                    "Luc Mayaux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2013
+            }
+        ]
+    },
+    "nextCursorMark": "AoFTmagD"
+}

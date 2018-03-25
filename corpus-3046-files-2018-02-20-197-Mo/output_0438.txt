@@ -1,0 +1,1880 @@
+{
+    "response": {
+        "numFound": 515921,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1573173,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Architecture des ordinateurs - Représentation des nombres en machine et codes - Cours avec exercices corrigés"
+                ],
+                "authFullName_s": [
+                    "Philippe Darche"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573171,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.eth",
+                    "0.sdv",
+                    "1.sdv.spee"
+                ],
+                "title_s": [
+                    "La fatigue des aidants et la prise de décisions en fin de vie par autrui"
+                ],
+                "authFullName_s": [
+                    "Vivian Mcalister"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1573170,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Rapport d'activité 1987 - Centre technique du bois et de l'ameublement"
+                ],
+                "authFullName_s": [
+                    "Centre Technique Du Bois Et de L'Ameublement (ctba)"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPACT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1573168,
+                "domain_s": [
+                    "0.sde"
+                ],
+                "title_s": [
+                    "LA MORPHOGENESE ACTUELLE SUR LE PIEMONT MERIDIONAL DE LA MONTAGNE SAINTE-VICTOIRE (BASSE PROVENCE) : L'EXEMPLE DU RAVIN DE L'AURIGON"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Ballais"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573167,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Rapport d'activité 1993 - Centre technique du bois et de l'ameublement"
+                ],
+                "authFullName_s": [
+                    "Centre Technique Du Bois Et de L'Ameublement (ctba)"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPACT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1573164,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Rapport d'activité 1992 - Centre technique du bois et de l'ameublement"
+                ],
+                "authFullName_s": [
+                    "Centre Technique Du Bois Et de L'Ameublement (ctba)"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPACT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1573163,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "La théorie des files d'attente : des chaînes de Markov aux réseaux à forme produit"
+                ],
+                "authFullName_s": [
+                    "Bruno Baynat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573162,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Support de QoS pour les Applications Multimédias sur LAN Partagé par Différentiation de Services"
+                ],
+                "authFullName_s": [
+                    "Bouchaid Nassereddine",
+                    "Pascal Anelli",
+                    "Eric Horlait",
+                    "Amine Benkiran"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573160,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Rapport d'activité 1991 - Centre technique du bois et de l'ameublement"
+                ],
+                "authFullName_s": [
+                    "Centre Technique Du Bois Et de L'Ameublement (ctba)"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPACT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1573157,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Rapport d'activité 1990 - Centre technique du bois et de l'ameublement"
+                ],
+                "authFullName_s": [
+                    "Centre Technique Du Bois Et de L'Ameublement (ctba)"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPACT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1573156,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Architecture de QoS en Environnement IPv6 à services différenciés"
+                ],
+                "authFullName_s": [
+                    "Christophe Chassot",
+                    "Fabien Garcia",
+                    "André Lozes",
+                    "Pascal Anelli",
+                    "Thomas Bonald"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573154,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Rapport d'activité 1989 - Centre technique du bois et de l'ameublemen"
+                ],
+                "authFullName_s": [
+                    "Centre Technique Du Bois Et de L'Ameublement (ctba)"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPACT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1573152,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Rapport d'activité 1988 - Centre Technique du Bois et de l'Ameublement"
+                ],
+                "authFullName_s": [
+                    "Centre Technique Du Bois Et de L'Ameublement (ctba)"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPACT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1573150,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "CTB - Rapport d'activité 1983"
+                ],
+                "authFullName_s": [
+                    "Centre Technique Du Bois Et de L'Ameublement (ctba)"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPACT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1573147,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "CTB - Rapport d'activité 1981"
+                ],
+                "authFullName_s": [
+                    "Centre Technique Du Bois Et de L'Ameublement (ctba)"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPACT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1573146,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Quel Contrôle de Congestion Choisir pour l'UDP?"
+                ],
+                "authFullName_s": [
+                    "Anca Dracinschi",
+                    "Serge Fdida"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573144,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "CTB - Rapport d'activité 1980"
+                ],
+                "authFullName_s": [
+                    "Centre Technique Du Bois Et de L'Ameublement (ctba)"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPACT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1573140,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Communication de groupe et multicast"
+                ],
+                "authFullName_s": [
+                    "Serge Fdida"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573139,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "CTB - Rapport d'activité 1979"
+                ],
+                "authFullName_s": [
+                    "Centre Technique Du Bois Et de L'Ameublement (ctba)"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPACT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1573137,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "CTB - Rapport d'activité 1978"
+                ],
+                "authFullName_s": [
+                    "Centre Technique Du Bois Et de L'Ameublement (ctba)"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPACT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1573135,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Gestion de trafic intra et inter-cellulaire dans les réseaux sans fil"
+                ],
+                "authFullName_s": [
+                    "Gwendal Le Grand",
+                    "Jalel Ben Othman",
+                    "Eric Horlait"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573133,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "CTB - Rapport d'activité 1976"
+                ],
+                "authFullName_s": [
+                    "Centre Technique Du Bois Et de L'Ameublement (ctba)"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPACT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1573132,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "CTB - Rapport d'activité 1975"
+                ],
+                "authFullName_s": [
+                    "Centre Technique Du Bois Et de L'Ameublement (ctba)"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPACT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1573129,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "CTB - Rapport d'activité 1974"
+                ],
+                "authFullName_s": [
+                    "Centre Technique Du Bois Et de L'Ameublement (ctba)"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPACT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1573127,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "CTB - Rapport d'activité 1973"
+                ],
+                "authFullName_s": [
+                    "Centre Technique Du Bois Et de L'Ameublement (ctba)"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPACT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1573126,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.spee"
+                ],
+                "title_s": [
+                    "Les outils juridiques de coopération issus de la loi HPST : des instruments au service de la restructuration de l'offre hospitalière ?"
+                ],
+                "authFullName_s": [
+                    "Catherine Keller",
+                    "Michel Louazel",
+                    "Marie-Laure Moquet-Anger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573125,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "CTB - Rapport d'activité 1972"
+                ],
+                "authFullName_s": [
+                    "Centre Technique Du Bois Et de L'Ameublement (ctba)"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPACT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1573123,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "L'approche Multi-Agents pour le contrôle adaptatif d'une constellation de satellites"
+                ],
+                "authFullName_s": [
+                    "Sidi-Mohammed Senouci",
+                    "Dominique Gaïti",
+                    "Guy Pujolle"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573118,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Justification automatique de partitions musicales"
+                ],
+                "authFullName_s": [
+                    "Nabil Bouzaiene",
+                    "Catherine Guastavino",
+                    "Emmanuel Saint-James"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573114,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.gl"
+                ],
+                "title_s": [
+                    "Laboratoire de glaciologie et géophysique de l'environnement : rapport d'activité janvier 2002 - juin 2005"
+                ],
+                "authFullName_s": [
+                    "Laboratoire de Glaciologie Et Géophysique de L'Environnement (lgge)"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPACT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573113,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Formalisation de modèles multi-agents par les réseaux de petri: Application à l'étude d'un système de gestion de la chasse à l'Est-Cameroun"
+                ],
+                "authFullName_s": [
+                    "Innocent Bakam",
+                    "Fabrice Kordon",
+                    "Christophe Le Page",
+                    "François Bousquet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573110,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "La charia"
+                ],
+                "authFullName_s": [
+                    "Baudouin Dupret"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573101,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.gl"
+                ],
+                "title_s": [
+                    "Laboratoire de glaciologie et géophysique de l'environnement : rapport d'activité janvier 1986 - décembre 1988"
+                ],
+                "authFullName_s": [
+                    "Laboratoire de Glaciologie Et Géophysique de L'Environnement (lgge)"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPACT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573097,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Résolution exacte de problèmes d'optimisation de réseaux résistant aux pannes"
+                ],
+                "authFullName_s": [
+                    "Arnaud Knippel",
+                    "Virginie Gabrel",
+                    "Michel Minoux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573096,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.gl"
+                ],
+                "title_s": [
+                    "Laboratoire de glaciologie et géophysique de l'environnement : rapport d'activité 1987-1991"
+                ],
+                "authFullName_s": [
+                    "Laboratoire de Glaciologie Et Géophysique de L'Environnement (lgge)"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPACT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573095,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.gl"
+                ],
+                "title_s": [
+                    "Laboratoire de glaciologie et géophysique de l'environnement : rapport d'activité 1991-1995"
+                ],
+                "authFullName_s": [
+                    "Laboratoire de Glaciologie Et Géophysique de L'Environnement (lgge)"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPACT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573091,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.gl"
+                ],
+                "title_s": [
+                    "Laboratoire de glaciologie et géophysique de l'environnement : rapport d'activité juin 1999 - décembre 2001"
+                ],
+                "authFullName_s": [
+                    "Laboratoire de Glaciologie Et Géophysique de L'Environnement (lgge)"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPACT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573082,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Structures de controle pour des comportements répartis"
+                ],
+                "authFullName_s": [
+                    "Laurence Duchien",
+                    "Gérard Florin",
+                    "Lionel Seinturier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573081,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "La collecte de fonds dans les établissements de santé : facteurs clefs d’efficacité"
+                ],
+                "authFullName_s": [
+                    "Florence Busson-Villa",
+                    "Karine Gallopel-Morvan",
+                    "Marine Le Gall-Ely"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573078,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Délibérer sous la coupole"
+                ],
+                "authFullName_s": [
+                    "Baudouin Dupret",
+                    "Jean-Noël Ferrié"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573073,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "PLERS : Plateforme Logiciel Embarqué Reconfigurable pour Satellites - Application au satellite Corot"
+                ],
+                "authFullName_s": [
+                    "Bertil Folliot",
+                    "Damien Cailliau",
+                    "Ian Piumarta",
+                    "R. Bellenger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573072,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Aspects et réflexivité pour la machine virtuelle virtuelle"
+                ],
+                "authFullName_s": [
+                    "Bertil Folliot",
+                    "Ian Piumarta",
+                    "Lionel Seinturier",
+                    "Carine Baillarguet",
+                    "Christian Khoury"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573068,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Environnement de programmmation actif pour la mobilité"
+                ],
+                "authFullName_s": [
+                    "Christian Khoury",
+                    "Bertil Folliot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573059,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Article Internet"
+                ],
+                "authFullName_s": [
+                    "Danièle Dromard",
+                    "Dominique Seret"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573056,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Une approche pour la conception des systèmes intégrés"
+                ],
+                "authFullName_s": [
+                    "Denis Hommais",
+                    "Frédéric Pétrot",
+                    "Ivan Augé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573052,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "L'ingestion d'ayahuasca parmi les populations indigènes et métisses de l'actuel Pérou. Une définition du chamanisme amazonien"
+                ],
+                "authFullName_s": [
+                    "Sébastien Baud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573051,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mefl"
+                ],
+                "title_s": [
+                    "Une lecture du dérèglement climatique et de ses conséquences en Ile-de-France"
+                ],
+                "authFullName_s": [
+                    "Patrick Gilliéron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1573046,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Bali, de la marge à la centralité touristique ?"
+                ],
+                "authFullName_s": [
+                    "Sylvine Pickel-Chevalier",
+                    "Philippe Violier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1573045,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "2.sdv.mhep.geg",
+                    "0.sdv",
+                    "1.sdv.spee",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Prise de position de la Société française de gériatrie et gérontologie sur le concept d'intégration : texte intégral Première partie"
+                ],
+                "authFullName_s": [
+                    "Dominique Somme",
+                    "Hélène Trouvé",
+                    "Yves Passadori",
+                    "Alain Corvez",
+                    "Claude Jeandel",
+                    "Marie-Aline Bloch",
+                    "Geneviève Ruault",
+                    "Olivier Dupont",
+                    "Matthieu De Stampa"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572996,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Le commerce lié à l’équitation révolutionné ? Un secteur bouleversé, entre traditions et innovations (l’exemple français)"
+                ],
+                "authFullName_s": [
+                    "Gwenaëlle Grefe",
+                    "Sylvine Pickel-Chevalier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572949,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "A propos de Heinz Heinen (ed.), Handwörterbuch der antiken Sklaverei (HAS). Lieferung I-IV (2012). Forschungen zur antiken Sklaverei, Beiheft 5. Stuttgart: Franz Steiner Verlag, 2012. Pp. 36; 1 CD"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572831,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Représentations et symbolismes du cheval. La révolution contemporaine interprétée à travers les arts populaires et enfantins"
+                ],
+                "authFullName_s": [
+                    "Sylvine Pickel-Chevalier",
+                    "Gwenaëlle Grefe"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572705,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Culture classique et esclavage face à la modernité de l’abolition. A propos de Edith Hall, Richard Alston and Justine McConnell (edd.), Ancient slavery and abolition : from Hobbes to Hollywood"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572703,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Histoire comparée de l’esclavage et constructions historiographiques, de l’Antiquité à l’esclavage américain"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572702,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Do ut facias. Prolégomènes pour penser l’esclavage et les autres formes de sujétion"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572701,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "De la figure paradoxale de l’esclave marchandise. Compétences et prix de l’esclave chez Pline l’Ancien"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572700,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Mesure stoïcienne, démesure sonore et dysharmonie sociale dans l’œuvre non tragique de Sénèque"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572699,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les incertitudes des classifications normatives de l’index thématique de l’esclavage et la question de la marginalité"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572697,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Penser l’esclavage. Modèles antiques, pratiques modernes, problématiques contemporaines"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572696,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Paupertas et frugalitas comme modèles rhétorique du consensus social et religieux dans l’Antiquité tardiv"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572694,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Étude typo-technologique des produits lamellaires du site Garm Roud 2 (Paléolithique supérieur, Iran)"
+                ],
+                "authFullName_s": [
+                    "Mahkameh Abolfathi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572693,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "L’esclavage antique dans la constitution des discours esclavagistes et leur justification dans le monde colonial américain francophone, hispanophone et anglophone"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572687,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "A propos de Heinz Heinen (Hrsg.), Kindersklaven – Sklavenkinder. Schicksale zwischen Zuneigung und Ausbeutung in der Antike und im interkulturellen Vergleich"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572685,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "A propos de Heinz H e i n e n (Hrsg.), Antike Sklaverei: Rückblick und Ausblick. Neue Beiträge zur Forschungsgeschichte und zur Erschließung der archäologischen Zeugnisse"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572683,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Esclavage, liberté et soumission volontaire. A propos de Mélina Tamiolaki, Liberté et esclavage chez les historiens grecs classiques"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572680,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Le point de vue de l’autre. Relations culturelles et diplomatiques"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales",
+                    "Maria Teresa Schettino"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572678,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Discours contre le bruit, discours contre l’autre dans une mégalopole antique : le cas de Rome"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572676,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Le beneficium, l’esclavage et la construction d’un contrat moral stoïcien dans le De Beneficiis de Sénèque"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572675,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Esclavage, universalisme et cosmopolitisme stoïciens entre cité idéale et histoire"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572674,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bbm",
+                    "2.sdv.bbm.bp",
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-ins-det"
+                ],
+                "title_s": [
+                    "Tomographie de fluorescence DUV sur des systèmes d’intérêt biologique"
+                ],
+                "authFullName_s": [
+                    "Matthieu Refregiers",
+                    "Frédéric Jamme",
+                    "Slávka Kaščáková",
+                    "Alain Buleon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1572673,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil",
+                    "0.shs",
+                    "1.shs.hisphilso"
+                ],
+                "title_s": [
+                    "‘Mathématiser la médecine’ : les enjeux de la position leibnizienne"
+                ],
+                "authFullName_s": [
+                    "Raphaële Andrault"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572672,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Proposition pour l'acquisition d'un corpus de Tweets V5"
+                ],
+                "authFullName_s": [
+                    "Julien Longhi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1572671,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "L’esclavage dans la philosophie stoïcienne : rupture ou adaptation morale"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572670,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "COSMOGONIE TOUAREGUE",
+                    "Tuareg cosmogony"
+                ],
+                "authFullName_s": [
+                    "Hélène Claudot-Hawad"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572669,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les sons du pouvoir"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572668,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Une révolution historiographique ? Réflexions sur l’esclavage antique et moderne"
+                ],
+                "authFullName_s": [
+                    "Antonio Gonzales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572665,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Approche économique des activités sociales et culturelles des Comités d’entreprise : entre pouvoir d’achat, redistribution, consommation … et émancipation militante !"
+                ],
+                "authFullName_s": [
+                    "Gilles Caire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1572663,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Le désir de vacances et de voyages reste intact"
+                ],
+                "authFullName_s": [
+                    "Gilles Caire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1572661,
+                "domain_s": [
+                    "0.scco",
+                    "1.scco.ling"
+                ],
+                "title_s": [
+                    "Outils multilingues de génération de formes fléchies et dérivées"
+                ],
+                "authFullName_s": [
+                    "Claude Martineau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572658,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Ecole de Tolstoï et non école de Proust\" ? De la formation scolaire à la représentation de l'Ecole, l'exemple de Roger Martin du Gard"
+                ],
+                "authFullName_s": [
+                    "Jean-François Massol"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572643,
+                "domain_s": [
+                    "0.info",
+                    "0.scco",
+                    "1.scco.ling"
+                ],
+                "title_s": [
+                    "Langue naturelle et compression"
+                ],
+                "authFullName_s": [
+                    "Claude Martineau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572641,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "La place de l’industrie touristique dans l’économie française"
+                ],
+                "authFullName_s": [
+                    "Gilles Caire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1572640,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Compression de texte à base de mots à l'aide de l'algorithme de Ziv, Lempel et Welch"
+                ],
+                "authFullName_s": [
+                    "Claude Martineau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572638,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Algorithmes de compression de texte avec dictionnaire"
+                ],
+                "authFullName_s": [
+                    "Claude Martineau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572625,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Rime et raison"
+                ],
+                "authFullName_s": [
+                    "Etienne Brunet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572621,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "L'entremetteuse des fabliaux, un singulier personnage"
+                ],
+                "authFullName_s": [
+                    "Corinne Pierreville"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572614,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Centre de ressources sur la conception dans les domaines de l’agriculture, de l’environnement et de l’alimentation: intérêt et conditions de faisabilité"
+                ],
+                "authFullName_s": [
+                    "Marie-Helene Jeuffroy",
+                    "Lorène Prost",
+                    "Marianne Cerf",
+                    "Jean Marc Meynard",
+                    "Veronique Souchere"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572613,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Quels renouvellements des savoirs agronomiques ? Dialogue entre agronomes et zootechniciens"
+                ],
+                "authFullName_s": [
+                    "Lorène Prost",
+                    "Mathieu Capitaine",
+                    "Benoit Dedieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572612,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Observatoire et tableau de bord pour un pilotage dynamique des pertes de nitrate dans une aire d’alimentation de captage"
+                ],
+                "authFullName_s": [
+                    "Laurette Paravano",
+                    "Lorène Prost",
+                    "Raymond Reau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572611,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Editorial du numéro « Innovations agricoles : quelle place pour l'agronomie et les agronomes ?»"
+                ],
+                "authFullName_s": [
+                    "Pierre-Yves Le Gal",
+                    "Lorène Prost",
+                    "Bernard Triomphe"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572602,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.es",
+                    "0.sde",
+                    "1.sde.ie"
+                ],
+                "title_s": [
+                    "RISQUES HYDROCLIMATIQUES ET VULNERABILITES DES ECOSYSTEMES DANS LE BASSIN VERSANT DE LA SOTA A L’EXUTOIRE DE COUBERI",
+                    "HYDROCLIMATIC RISKS AND VULNERABILITY OF ECOSYSTEMS IN THE SOTA WATER BASIN AT THE COUBERI EXPORT"
+                ],
+                "authFullName_s": [
+                    "Herve Koumassi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1572599,
+                "domain_s": [
+                    "0.sde",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Bir Oum Ali (Présentation géomorphologique)"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Ballais",
+                    "Hédi Ben Ouezdou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1572589,
+                "domain_s": [
+                    "0.sde"
+                ],
+                "title_s": [
+                    "L'INFLUENCE DE LA GEOMORPHOLOGIE SUR LE COMPORTEMENT DE LA NAPPE PHREATIQUE DU SOUF"
+                ],
+                "authFullName_s": [
+                    "Jean-Louis Ballais",
+                    "Marc Côte",
+                    "Ali Bensaad"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572588,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Réseaux Probabilistes Orientés Objet"
+                ],
+                "authFullName_s": [
+                    "Pierre-Henri Wuillemin",
+                    "Olav Bangsø"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572587,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Réseaux probabilistes et Arbres de Décisions Binaires en Diagnostic"
+                ],
+                "authFullName_s": [
+                    "Pierre-Henri Wuillemin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572581,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Place et rôle des ONG dans l’acceptation des parcs nationaux : le cas du Haut-Atlas oriental marocain",
+                    "The role of NGOs in making national parks acceptable: the case of the Eastern High Atlas in Morocco"
+                ],
+                "authFullName_s": [
+                    "David Goeury"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572578,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "La lexicométrie française: naissance, évolution et perspectives"
+                ],
+                "authFullName_s": [
+                    "Etienne Brunet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572573,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Apprentissage d'une représentation humaine du monde par un robot"
+                ],
+                "authFullName_s": [
+                    "Nicolas Bredèche",
+                    "Jean-Daniel Zucker"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572566,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Modélisation de l'inférence abductive par inversion du modus ponens généralisé"
+                ],
+                "authFullName_s": [
+                    "Nedra Mellouli",
+                    "Bernadette Bouchon-Meunier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1572562,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Les espaces du mérite, ou la valorisation touristique de l’enclavement dans les vallées du Haut-Atlas central (Maroc) et du Zanskar (Inde)"
+                ],
+                "authFullName_s": [
+                    "David Goeury"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFS7f8F"
+}

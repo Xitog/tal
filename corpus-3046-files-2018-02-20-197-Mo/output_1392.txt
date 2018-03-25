@@ -1,0 +1,1949 @@
+{
+    "response": {
+        "numFound": 515922,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1264830,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.stat",
+                    "1.stat.ml"
+                ],
+                "title_s": [
+                    "Extraction de la voix dans un signal audio par factorisation en matrices non-négatives semi-supervisée"
+                ],
+                "authFullName_s": [
+                    "Bouvier Damien"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264826,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "L'Union se dote d'un cadre juridique spécifique aux sanctions commerciales"
+                ],
+                "authFullName_s": [
+                    "Alan Hervé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264825,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gciv",
+                    "2.spi.gciv.mat"
+                ],
+                "title_s": [
+                    "Contrôle Santé des Structures Composites : application à la Surveillance des Nacelles Aéronautiques.",
+                    "Structural Health Monitoring of Composite Structures : application to the Monitoring of Aeronautical Nacelles."
+                ],
+                "authFullName_s": [
+                    "Claude Fendzi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264824,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Contribution au pronostic d'une pile à combustible de type PEMFC - approche par filtrage particulaire.",
+                    "Contribution to prognostics of fuel cells of PEMFC type - approach based on particle filtering."
+                ],
+                "authFullName_s": [
+                    "Marine Jouin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264822,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Antidumping : le Tribunal se prononce sur la notion de menace de préjudice et sur la portée d'un avis interprétatif dans le cadre d'une demande de remboursement"
+                ],
+                "authFullName_s": [
+                    "Alexandre Thillier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264820,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sp"
+                ],
+                "title_s": [
+                    "Les laits infantiles‎ : analyse comparatives et rôle du pharmacien"
+                ],
+                "authFullName_s": [
+                    "Cécile Follain"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264819,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Les métiers à l'épreuve des nouvelles technologies"
+                ],
+                "authFullName_s": [
+                    "Jean Bourdon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1264818,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Antidumping : le Conseil refuse de réinstituer un droit antidumping sur les importations de certaines chaussures à dessus en cuir originaires de Chine"
+                ],
+                "authFullName_s": [
+                    "Alexandre Thillier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264815,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Politique commerciale commune : le Parlement européen et le Conseil adoptent les règlements qui mettent en oeuvre les nouvelles compétences de la Commission en matière de politique commerciale commune"
+                ],
+                "authFullName_s": [
+                    "Alexandre Thillier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264812,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "L'effet des soft-skills sur la rémunération des diplômés"
+                ],
+                "authFullName_s": [
+                    "Inès Albandea",
+                    "Jean-François Giret"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1264808,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-db"
+                ],
+                "title_s": [
+                    "Interrogation floue de bases de données relationnelles : de la théorie à la pratique"
+                ],
+                "authFullName_s": [
+                    "Grégory Smits",
+                    "Olivier Pivert",
+                    "Thomas Girault"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264806,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Relations de l'Union européenne avec l'ASEAN : l'Union conclut son premier accord-cadre global de partenariat et de coopération avec l'Indonésie tandis que la Cour annule la décision relative à la signature de l'accord-cadre de partenariat et de coopération avec les Philippines"
+                ],
+                "authFullName_s": [
+                    "Catherine Flaesch-Mougin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264792,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Évaluer sans noter : quels effets sur le sentiment d'efficacité personnelle des collégiens ?"
+                ],
+                "authFullName_s": [
+                    "Sophie Genelot",
+                    "Nathalie Cartierre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264773,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Contribution de l'expérience scolaire au développement de la créativité"
+                ],
+                "authFullName_s": [
+                    "Agathe Dirani"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1264771,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sp"
+                ],
+                "title_s": [
+                    "Apports théoriques de la communication dans les interactions pharmacien-patient à l’officine"
+                ],
+                "authFullName_s": [
+                    "Alice Hermann"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264766,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "L'efficacité des dispositifs d'aide à la réussite en premier cycle : constats et questionnements"
+                ],
+                "authFullName_s": [
+                    "Cathy Perret"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1264765,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Imagerie et spectroscopie Terahertz: applications aux problématiques de défense et de sécurité"
+                ],
+                "authFullName_s": [
+                    "Joyce Bou Sleiman",
+                    "Jb Perraud",
+                    "Benoît Recur",
+                    "Bruno Bousquet",
+                    "Norbert Palka",
+                    "Patrick Mounaix"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264759,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "La créativité dans les parcours de jeunes"
+                ],
+                "authFullName_s": [
+                    "Agathe Dirani"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1264756,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Contrôle de gestion"
+                ],
+                "authFullName_s": [
+                    "Aurélien Ragaigne",
+                    "Caroline Tahar"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264754,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Urbanisme et prévention situationnelle en France. Jouissance paisible et/ou partage des espaces collectifs urbains"
+                ],
+                "authFullName_s": [
+                    "Jacques Comby"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264747,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "2.sdv.mhep.chi"
+                ],
+                "title_s": [
+                    "Gestion de la dimension verticale d'occlusion dans les réhabilitations totales adhésives",
+                    "Management of the vertical dimension of occlusion in the full-mouth adhesive rehabilitations"
+                ],
+                "authFullName_s": [
+                    "Annabelle Pogam"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264744,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Gouvernance et démarches de conception des réseaux routiers urbains : les exemples de Paris et Londres",
+                    "Project Governance and Road Network development : Paris and London examples"
+                ],
+                "authFullName_s": [
+                    "David Carrignon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264735,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep",
+                    "2.sdv.mhep.chi"
+                ],
+                "title_s": [
+                    "Réhabilitation occlusale d'un patient polytraumatisé : protocole de prise en charge pluridisciplinaire",
+                    "Occlusal rehabilitation of a polytrauma patient: multiidisciplinary management protocol"
+                ],
+                "authFullName_s": [
+                    "Timothée Bertail"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264723,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Structure paysagère et dynamiques spatiales des transferts hydro-sédimentaires. Approche par simulation multi-agents.",
+                    "Landscape structure and spatial dynamic of hydro-sedimentary transfers. Multi-agent approach simulation."
+                ],
+                "authFullName_s": [
+                    "Romain Reulier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264720,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Les organisations communautaires des usagers de l’eau dans le Chili suburbain (1962-2015). La « Gestion Intégrée des Ressources Hydriques » en question : le cas du bassin de Chicureo"
+                ],
+                "authFullName_s": [
+                    "Chloé Nicolas-Artero"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264716,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Consulter les habitants du Grand Paris"
+                ],
+                "authFullName_s": [
+                    "Nathalie Montel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264711,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Conflits environnementaux en territoire industriel : réappropriation territoriale et émergence d'une justice environnementale : le cas de l'étang de Berre et de Fos-sur-Mer",
+                    "Environmental conflicts in industrial areas : territorial re-appropriation and emergence of an environmental justice : the case of the Etang de Berre and the Fos gulf"
+                ],
+                "authFullName_s": [
+                    "Clara Osadtchy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264709,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Mises en récit de l'innovation et du développement durable : rapports entre la technique et le temps"
+                ],
+                "authFullName_s": [
+                    "Marianne Chouteau",
+                    "Céline Nguyen"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264702,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Lancement de deux nouvelles opérations de gestion de crise de l'Union européenne en Afrique"
+                ],
+                "authFullName_s": [
+                    "Anne Hamonic"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264701,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "L'intégration des dimensions environnementales et sociales dans les pratiques urbaines en Algérie : enjeux et perspectives",
+                    "The integration of environmental and social dimension in urban practice in Algeria : issues and prospects"
+                ],
+                "authFullName_s": [
+                    "Keira Bachar"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264697,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.gestion"
+                ],
+                "title_s": [
+                    "Les associations à l’image de marque dans les services"
+                ],
+                "authFullName_s": [
+                    "Amina Djedidi",
+                    "Hammoutene Ali"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1264695,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Variété et interprétations des réactions de l'Union européenne à la crise en Ukraine"
+                ],
+                "authFullName_s": [
+                    "Anne Hamonic"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264689,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Procédure de conclusion des accords internationaux dans le domaine de la PESC : quand la Cour se fait équilibriste"
+                ],
+                "authFullName_s": [
+                    "Isabelle Bosse-Platière"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264683,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.gproc"
+                ],
+                "title_s": [
+                    "Intégration de la maturité des connaissances dans la prise de décision en conception mécanique : application à un système solaire.",
+                    "Integration of knowledge maturity in decision making for mechanical design : application to a solar system."
+                ],
+                "authFullName_s": [
+                    "Mehdi El Amine"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264681,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Aspects procéduraux de l'action extérieure de l'Union européenne : le Parlement européen confirme l'importance qu'il accorde à son pouvoir d'appobation"
+                ],
+                "authFullName_s": [
+                    "Christine Delcourt"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264679,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Les compétences sociales des élèves du cycle III : comment les évaluer ?"
+                ],
+                "authFullName_s": [
+                    "Agathe Fanchini"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1264676,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Du bon usage de « l'innovation et de l'expérimentation » dans l'élaboration et la mise en oeuvre des politiques éducatives."
+                ],
+                "authFullName_s": [
+                    "Guy Lapostolle",
+                    "Sophie Genelot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264672,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.neu",
+                    "2.sdv.neu.pc"
+                ],
+                "title_s": [
+                    "Evaluation des effets résiduels de psychotropes sur les capacités à conduire et l'éveil : interaction médicamenteuse. In S. Gaymard, T. Tiplica (Eds), Sécurité des déplacements, protection des usagers et de l'environnement. Maîtrise des risques et prévention. Tome 1"
+                ],
+                "authFullName_s": [
+                    "Jean-Noël Amato",
+                    "Catherine Berthelon",
+                    "Patrice Clochon",
+                    "Franck Doidy",
+                    "Joy Perrier",
+                    "Pierre Denise",
+                    "Marie-Laure Bocca"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264667,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.solid"
+                ],
+                "title_s": [
+                    "Couplage optimisation à convergence partielle et stratégie multiparamétrique en calcul de structures",
+                    "Coupling partially converged data and a multiparametric strategy for the optimization of assemblies"
+                ],
+                "authFullName_s": [
+                    "Nicolas Courrier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264665,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Georges Gresset, peintre et héraut d’armes des ducs de Lorraine (1523-1559)"
+                ],
+                "authFullName_s": [
+                    "Jean-Christophe Blanchard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264661,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.st",
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.te"
+                ],
+                "title_s": [
+                    "Etude des hauts et bas topographiques dans les marges profondes de type « upper plate » : Exemple des unités du Briançonnais et du Prépiémontais dans les Alpes et comparaison avec des analogues modernes",
+                    "Study of topographic high and low in \"upper plate\" margins : Example with the Briançonnais and Prépiémontais units in the Alps and comparisons with modern analogs"
+                ],
+                "authFullName_s": [
+                    "Isabelle Haupert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264658,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Innover dans le respect de la tradition : Les sceaux équestres des ducs de Lorraine de René II à Charles III (1473-1608)"
+                ],
+                "authFullName_s": [
+                    "Jean-Christophe Blanchard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264655,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Ethique et médiation technique"
+                ],
+                "authFullName_s": [
+                    "Michel Faucheux",
+                    "Céline Nguyen",
+                    "Marianne Chouteau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264647,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "L'incidence de la loi du 4 mars 2002 sur la responsabilité du fait des produits de santé"
+                ],
+                "authFullName_s": [
+                    "Philippe Pierre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264644,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "L'armorial Wijnbergen est-il un reflet de la communauté du royaume de France ?"
+                ],
+                "authFullName_s": [
+                    "Jean-Christophe Blanchard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264625,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Images sigillaires de la noblesse lorraine au temps de Ferry III (1251-1303)"
+                ],
+                "authFullName_s": [
+                    "Jean-Christophe Blanchard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264619,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Piloter la transition énergétique par les démarches stratégiques : usine à gaz ou atout pour l'action publique ?"
+                ],
+                "authFullName_s": [
+                    "François-Mathieu Poupeau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "PRESCONF",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264617,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Un bilan des travaux concernant l’héraldique médiévale messine (XIXe-XXIe s.)"
+                ],
+                "authFullName_s": [
+                    "Jean-Christophe Blanchard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264611,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les monnaies anciennes du patricien de Metz Nicolas IV de Heu : trésor ou collection ?"
+                ],
+                "authFullName_s": [
+                    "Jean-Christophe Blanchard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264610,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-ao-ph",
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.me"
+                ],
+                "title_s": [
+                    "Développement et mise en oeuvre de LiDAR embarqués sur bouées dérivantes pour l’étude des propriétés des aérosols et des nuages en Arctique et des forçages radiatifs induits",
+                    "Development and deployment of autonomous LiDAR set on drifting buoys to study aerosols and clouds arctic properties, and induced radiative forcing"
+                ],
+                "authFullName_s": [
+                    "Vincent Mariage"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264608,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "The new organization of local State departments in France : what's new with the RéATE ?",
+                    "L’organisation des services déconcentrés de l’Etat : quels changements avec la RéATE ?"
+                ],
+                "authFullName_s": [
+                    "François-Mathieu Poupeau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264605,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.genre"
+                ],
+                "title_s": [
+                    "Ici et ailleurs : la notion de frontière(s) dans Le Ventre de l'Atlantique de Fatou Diome.",
+                    "Home and Exile : The Notion of Frontier(s)/Boundary(‐ies)in Fatou Diome’s Le Ventre de l’Atlantique."
+                ],
+                "authFullName_s": [
+                    "Francis Etsè Awitor"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1264604,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les évêques du XVIIIe siècle et l’héritage de la Réforme catholique"
+                ],
+                "authFullName_s": [
+                    "Bernard Dompnier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1264601,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "L'Observatoire Régional des Circuits Courts : Un Dispositif de Coordination pour une Gouvernance Alimentaire Régionale"
+                ],
+                "authFullName_s": [
+                    "Noé Guiraud",
+                    "Juliette Rouchier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264597,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Livres et relations d'un patricien de messin de la Renaissance : la \"librairie\" de Nicolas IV de Heu à l'épreuve du temps"
+                ],
+                "authFullName_s": [
+                    "Jean-Christophe Blanchard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264595,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Local governance of energy networks in France.",
+                    "La gouvernance locale des réseaux d’énergie."
+                ],
+                "authFullName_s": [
+                    "François-Mathieu Poupeau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264591,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "L'anoblissement, un instrument au service de la construction de l’État ? Le cas barrois sous le règne de René II"
+                ],
+                "authFullName_s": [
+                    "Jean-Christophe Blanchard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264590,
+                "domain_s": [
+                    "0.sdv",
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Évaluation multicritère de systèmes de culture en verger de pommiers dans le cadre du réseau national Expé Ecophyto Pomme",
+                    "Multicriteria evaluation of apple orchard system in relation to the national network Expé Ecophyto Pomme"
+                ],
+                "authFullName_s": [
+                    "Agnès Salaün"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264588,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Construire la biographie de Jean-Baptiste Massillon. Un bilan historiographique"
+                ],
+                "authFullName_s": [
+                    "Stéphane Gomis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1264584,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Intercommunal structures and public policies in climate change in France.",
+                    "Les Communautés et les politiques énergie-climat en France."
+                ],
+                "authFullName_s": [
+                    "Pascale Bosboeuf",
+                    "Marie Dégremont",
+                    "François-Mathieu Poupeau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264581,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les \"armes\" de Turenne"
+                ],
+                "authFullName_s": [
+                    "Jean-Christophe Blanchard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264579,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.envir"
+                ],
+                "title_s": [
+                    "Quelle réception sociale pour l'ingénierie écologique industrielle? L'insertion socio-territoriale des zones humides artificielles"
+                ],
+                "authFullName_s": [
+                    "Marion Amalric",
+                    "Claudia Cirelli",
+                    "Corinne Larrue"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264577,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Te radiante lucebo. La République messine et le roi au miroir des monnaies et jetons des maîtres-échevins (1561-1633)"
+                ],
+                "authFullName_s": [
+                    "Jean-Christophe Blanchard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264569,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.droit",
+                    "0.shs",
+                    "1.shs.eco",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Gouvernance et innovations dans le système énergétique."
+                ],
+                "authFullName_s": [
+                    "Eiller Anne-Christine",
+                    "Marcou Gérard",
+                    "François-Mathieu Poupeau",
+                    "Carine Staropoli"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264567,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Le cartulaire de la seigneurie de Germiny réalisé en 1540 pour Nicolas de Lutzelbourg"
+                ],
+                "authFullName_s": [
+                    "Jean-Christophe Blanchard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264560,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "René II, lieutenant et duc de Bar (1473-1508)"
+                ],
+                "authFullName_s": [
+                    "Jean-Christophe Blanchard",
+                    "Hélène Schneider"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264559,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "How an instrument shapes local governance.",
+                    "Ce que le contrat fait à la gouvernance territoriale."
+                ],
+                "authFullName_s": [
+                    "François-Mathieu Poupeau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264557,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sp"
+                ],
+                "title_s": [
+                    "Prévention de l’insuffisance rénale aiguë par l’optimisation de la prise des médicaments inhibiteurs du système rénine angiotensine et aldostérone et des diurétiques"
+                ],
+                "authFullName_s": [
+                    "Édouard Le Moing"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264555,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Influences réciproques des images numismatiques et sigillaires : sceaux et monnaies du duc de Lorraine Ferry III (1251-1303)"
+                ],
+                "authFullName_s": [
+                    "Jean-Christophe Blanchard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264540,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca"
+                ],
+                "title_s": [
+                    "Développement d'un interféromètre optique à chemin commun pour l'acoustique picoseconde",
+                    "Development of an optical common-path interferometer for picosecond acoustics"
+                ],
+                "authFullName_s": [
+                    "Julien Chandezon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264539,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Cultes et identités en France au XVIIe siècle : étude des calendriers et des livres liturgiques",
+                    "Cults and indentities in 17th century France : study of liturgical books and calendars"
+                ],
+                "authFullName_s": [
+                    "Thomas D'Hour"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264536,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Offre de soins dans le Massif central : Territorialisation, gouvernance et initiatives pour faire face aux nouveaux enjeux",
+                    "Health care in Massif central : territorialisation, governance and initiatives to face the new challenges"
+                ],
+                "authFullName_s": [
+                    "Adélaïde Schindler Hamiti"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264535,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-med-ph",
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-optics"
+                ],
+                "title_s": [
+                    "Nanoscopie résolue en temps : étude de la réponse spatiale et temporelle pour l'imagerie ultra-rapide",
+                    "Time resolved nanoscopy : spatial and temporal study for ultra-fast imaging"
+                ],
+                "authFullName_s": [
+                    "Déborah Persuy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264533,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bc"
+                ],
+                "title_s": [
+                    "Mécanismes du transfert intercellulaire des homéoprotéines",
+                    "Mechanisms of homeoproteins intercellular transfer"
+                ],
+                "authFullName_s": [
+                    "Thibault Lin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264531,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.be"
+                ],
+                "title_s": [
+                    "Estimation des capacités comportementales des larves de poissons et leurs implications pour la phase larvaire : un cas d'étude d'espèces démersales de Méditerranée Nord-Occidentale",
+                    "Exploring the behavioral abilities of fish larvae and their relevance for the larval phase : a case study of temperate, demersal fish species in the Northwestern Mediterranean Sea"
+                ],
+                "authFullName_s": [
+                    "Robin Faillettaz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264519,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-gr",
+                    "0.info",
+                    "1.info.info-ts",
+                    "0.info",
+                    "1.info.info-ti",
+                    "0.info",
+                    "1.info.info-cv",
+                    "0.info",
+                    "1.info.info-ai"
+                ],
+                "title_s": [
+                    "Allocation conjointe de puissance et rendement d'un utilisateur cognitif exploitant les retransmissions d'un utilisateur primaire : le cas du canal en Z"
+                ],
+                "authFullName_s": [
+                    "Romain Tajan",
+                    "Charly Poulliat",
+                    "Inbar Fijalkow"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264517,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "L’émergence du concept de discours indirect libre et la représentation des pensées : quand le terme opacifie la réalité"
+                ],
+                "authFullName_s": [
+                    "Olga Artyushkina"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264479,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-ho"
+                ],
+                "title_s": [
+                    "Utiliser des éléments imaginaires en géométrie : Carnot, Poncelet, von Staudt et Chasles"
+                ],
+                "authFullName_s": [
+                    "Philippe Nabonnand"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264468,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.genre",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "« >Eines ist mir klar: Daß die Weiber auch in der Hypnose lügen< - Mensonge et genre chez Arthur Schnitzler »"
+                ],
+                "authFullName_s": [
+                    "Susanne Böhmisch"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264467,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.relig"
+                ],
+                "title_s": [
+                    "Ernest Renan : du génie des langues au génie des peuples. La littérature biblique au prisme du comparatisme."
+                ],
+                "authFullName_s": [
+                    "Claire Placial"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264460,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.genre"
+                ],
+                "title_s": [
+                    "« De l'extrême à l'agonal dans l'univers chorégraphique de Pina Bausch »"
+                ],
+                "authFullName_s": [
+                    "Susanne Böhmisch"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1264459,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Les Bibles de Rétif"
+                ],
+                "authFullName_s": [
+                    "Claire Placial"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264451,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "De la polyphonie du texte à la pluralité des traductions. Réflexions sur les traductions françaises du Cantique des cantiques"
+                ],
+                "authFullName_s": [
+                    "Claire Placial"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264450,
+                "domain_s": [
+                    "0.scco",
+                    "1.scco.psyc"
+                ],
+                "title_s": [
+                    "Comment les intervalles temporels entre les répétitions d’une information en influencent-ils la mémorisation ? Revue théorique des effets de pratique distribuée",
+                    "How do the temporal intervals between repetitions of information influence its memorisation? A theoretical review of the effects of distributed practice"
+                ],
+                "authFullName_s": [
+                    "Emilie Gerbier",
+                    "Olivier Koenig"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264441,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.genre",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "« La bascule de l'amour - lire Pina Bausch avec Ingeborg Bachmann »"
+                ],
+                "authFullName_s": [
+                    "Susanne Böhmisch"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1264438,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "La nature des compétences transversales développées par les étudiants de Licence et leur poids dans les parcours de réussite"
+                ],
+                "authFullName_s": [
+                    "Julien Berthaud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1264430,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "L'ambivalence de l'insertion du tramway dans les espaces publics des villes françaises"
+                ],
+                "authFullName_s": [
+                    "Elisa Maitre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1264426,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec",
+                    "0.spi",
+                    "1.spi.tron"
+                ],
+                "title_s": [
+                    "Structures de guidage hyperfréquences - Propagation et géométrie"
+                ],
+                "authFullName_s": [
+                    "Michel Ney",
+                    "Camilla Karnfelt"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264424,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les évêques des Lumières. Administrateurs, pasteurs, prédicateurs. Introduction"
+                ],
+                "authFullName_s": [
+                    "Stéphane Gomis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264414,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les évêques des Lumières. Administrateurs, pasteurs, prédicateurs"
+                ],
+                "authFullName_s": [
+                    "Stéphane Gomis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1264406,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.art"
+                ],
+                "title_s": [
+                    "Dépeindre son temps : la picturalité à l'ère de la mondialisation"
+                ],
+                "authFullName_s": [
+                    "Manon Bessière"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264404,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Pour une conception extensive de la submorphologie lexicale : l’exemple du substantif espagnol urraca",
+                    "Toward a extended view of lexical submorphology : the example of the Spanish noun \"urraca"
+                ],
+                "authFullName_s": [
+                    "Michaël Grégoire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264395,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Eskom. Electricité et pouvoir en Afrique du Sud"
+                ],
+                "authFullName_s": [
+                    "Sylvy Jaglin",
+                    "Alain Dubresson"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264385,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.tron",
+                    "0.spi",
+                    "1.spi.signal"
+                ],
+                "title_s": [
+                    "5 gigabits/s de débit utile pour un turbo décodeur"
+                ],
+                "authFullName_s": [
+                    "Patrick Adde",
+                    "Christophe Jego",
+                    "Camille Leroux",
+                    "Gérald Le Mestre",
+                    "Michel Jezequel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264383,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.info",
+                    "1.info.info-sd"
+                ],
+                "title_s": [
+                    "Amélioration d'un algorithme de détection d'onset pour la transcription automatique de la musique"
+                ],
+                "authFullName_s": [
+                    "Céline Jacques"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264378,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "La subversion prise par le bout des doigts. Aux origines policières du Plan Cóndor : de la lutte contre la délinquance intérieure à la coalition d'États contre la subversion internationale",
+                    "The fingerprints of subversion. The origins of the Condor Plan in law enforcement : from the fight against domestic crime to the coalition of states against international subversion"
+                ],
+                "authFullName_s": [
+                    "Gabriel Périès"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1264372,
+                "domain_s": [
+                    "0.sdv",
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Impacts de couverts permanents de légumineuses sur les composantes de rendement et sur la nutrition azotée d'une culture de blé d'hiver",
+                    "Consequences of the legume living mulch on yield and nitrogen nutrition of a winter wheat"
+                ],
+                "authFullName_s": [
+                    "Matthieu Sablé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264367,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-plasm-ph"
+                ],
+                "title_s": [
+                    "Étude et modélisation de la diffusion Raman stimulée en configuration multi-dimensionnelle pour la FCI",
+                    "Modeling stimulated Raman scattering in multidimensional configurations for ICF"
+                ],
+                "authFullName_s": [
+                    "Guillaume Tran"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1264364,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Table-ronde \" La question française \". Ce que le génocide au Rwanda nous apprend du fonctionnement de l'appareil d'Etat français"
+                ],
+                "authFullName_s": [
+                    "Gabriel Périès"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1264363,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.msmeca"
+                ],
+                "title_s": [
+                    "Une méthode d 'Eigenerosion pour les matériaux hétérogènes. Application aux matériaux cimentaires"
+                ],
+                "authFullName_s": [
+                    "Lionel Bichet",
+                    "Frédéric Dubois",
+                    "Yann Monerie",
+                    "Céline Pélissou",
+                    "Frédéric Perales"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFbrukE"
+}

@@ -1,0 +1,1969 @@
+{
+    "response": {
+        "numFound": 515923,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 961767,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "0.sde"
+                ],
+                "title_s": [
+                    "Accompagner l'innovation en maîtrisant les risques émergents"
+                ],
+                "authFullName_s": [
+                    "Christophe Didier",
+                    "Mehdi Ghoreychi",
+                    "Pierre Toulhoat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 961763,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.ie"
+                ],
+                "title_s": [
+                    "Le benzène en air intérieur : bilan des niveaux de concentration rencontrés"
+                ],
+                "authFullName_s": [
+                    "Laura Chiappini"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 961756,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "0.sde"
+                ],
+                "title_s": [
+                    "Un modèle de calcul des hauteurs prévisibles de remontée de fontis à l'aplomb d'exploitations souterraines peu profondes"
+                ],
+                "authFullName_s": [
+                    "Christophe Didier",
+                    "Romuald Salmon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 961754,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Explosion de poussières dans les lieux de travail : recensement et analyse",
+                    "An Analysis of Dust Explosions in Workplaces"
+                ],
+                "authFullName_s": [
+                    "Agnès Janes",
+                    "Jacques Chaineaux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 961752,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "0.sde"
+                ],
+                "title_s": [
+                    "Analyse en retour d'expérience de deux effondrements miniers dans des mines de coalbrook (Afrique du Sud) et de Gardanne (France)",
+                    "Back analysis of two collapses in underground coal mines : cases of coalbrokok (South Africa) and Gardanne (France)"
+                ],
+                "authFullName_s": [
+                    "Christophe Didier",
+                    "N. Van Der Merwe"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2014
+            },
+            {
+                "docid": 961745,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Evaluation de l'explosibilité des substances chimiques : des approches expérimentales classiques à la prédiction par la chimie quantique et les méthodes statistiques QSPR",
+                    "Evaluation of chemicals explosive properties: from classical experimental methods to predictive methods combining statistical QSPR methodology and quantum chemistry"
+                ],
+                "authFullName_s": [
+                    "Patricia Rotureau",
+                    "Guillaume Fayet",
+                    "Guy Marlair",
+                    "Christian Michot",
+                    "Laurent Joubert",
+                    "Carlo Adamo"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 961737,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Préface"
+                ],
+                "authFullName_s": [
+                    "Olivier Costa"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961736,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.stru",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.stru",
+                    "0.spi",
+                    "1.spi.mat",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.msmeca",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.msmeca",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.geme",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.geme",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.mema",
+                    "0.spi",
+                    "1.spi.meca",
+                    "2.spi.meca.solid",
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.solid"
+                ],
+                "title_s": [
+                    "Application du martelage à haute fréquence à l'optimisation de la maintenance des ouvrages et des structures soudées",
+                    "Application of high frequency hammering to the optimization of the maintenance of metallic welded structures"
+                ],
+                "authFullName_s": [
+                    "Guénhaël Le Quilliec"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 961724,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "La lutte contre le décrochage scolaire en France : deux expérimentations régionales à l'aune des capabilités individuelles"
+                ],
+                "authFullName_s": [
+                    "Berthet Thierry",
+                    "Véronique Simon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961717,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Construction et mise en place d'un programme d'éducation thérapeutique à la mesure continue du glucose chez les patients diabétiques de type 1"
+                ],
+                "authFullName_s": [
+                    "Marlène Rousset"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 961714,
+                "title_s": [
+                    "Albert Chappellier (1873-1949). Un acteur méconnu de la protection de la nature au XXe siècle [en ligne]"
+                ],
+                "authFullName_s": [
+                    "Rémi Luglia"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961710,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Babouches et nus pieds. Perceptions antagoniques des frontières juridico-politiques entre juifs et musulmans dans le Maroc précolonial"
+                ],
+                "authFullName_s": [
+                    "Colette Zytnicki"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961707,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.mat"
+                ],
+                "title_s": [
+                    "Laminage asymétrique de l'alliage de magnésium AZ31",
+                    "Structural and textural design of metallic alloys rolled by non conventional way"
+                ],
+                "authFullName_s": [
+                    "Mathilde Forget"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961704,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-mo"
+                ],
+                "title_s": [
+                    "Le développement durable comme levier d'innovation des services"
+                ],
+                "authFullName_s": [
+                    "Corinne Berneman",
+                    "Ridha Derrouiche",
+                    "Gilles Neubert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961703,
+                "domain_s": [
+                    "0.chim",
+                    "1.chim.orga"
+                ],
+                "title_s": [
+                    "Réactions des arylzinciques avec les dérivés d'alcynes catalysées par le cobalt",
+                    "Cobalt-catalyzed reactions of Arylzinc bromides with alkyne derivatives"
+                ],
+                "authFullName_s": [
+                    "Martin Corpet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961702,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Effet thermoélectrique dans les métaux liquides sous champ magnétique.",
+                    "Thermoelectric current and magnetic field interaction Influence on the structure of binary metallic alloys"
+                ],
+                "authFullName_s": [
+                    "Imants Kaldre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961699,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-mo"
+                ],
+                "title_s": [
+                    "Collaborative Supply Chain : revue de littérature des attributs de caractérisation des relations dyadiques"
+                ],
+                "authFullName_s": [
+                    "Ridha Derrouiche",
+                    "Gilles Neubert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961695,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.other"
+                ],
+                "title_s": [
+                    "Sélection d'un précurseur pour l'élaboration de couches atomiques de cuivre : application à l'intégration 3D",
+                    "Selection of a precursor for the atomic layer deposition of copper : application to the 3D integration"
+                ],
+                "authFullName_s": [
+                    "Thomas Prieur"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961651,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Les pratiques culturelles et l'impact du numérique"
+                ],
+                "authFullName_s": [
+                    "Pierre Mercklé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961648,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Les réseaux sociaux en ligne : une révolution ?"
+                ],
+                "authFullName_s": [
+                    "Pierre Mercklé"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961645,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Analyse longitudinale et réduction de l'illusion biographique"
+                ],
+                "authFullName_s": [
+                    "Pierre Mercklé",
+                    "Sylvie Octobre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961635,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Etablissements à vocation artisanale et réseaux d'échanges en Europe celtique entre Hallstatt et la Tène (VIe et Ve s. av. J.-C.)."
+                ],
+                "authFullName_s": [
+                    "Katherine Gruel",
+                    "Thierry Lejars"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961634,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Radiographies des villages gaulois"
+                ],
+                "authFullName_s": [
+                    "Geoffroy D.",
+                    "Soyer A.",
+                    "Katherine Gruel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961633,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Formes et effets de la pluridisciplinarité dans le diagnostic et la prise en charge de la maladie d'Alzheimer"
+                ],
+                "authFullName_s": [
+                    "Arnaud Campéon",
+                    "Blanche Le Bihan",
+                    "Isabelle Mallon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961632,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Ségrégation résidentielle et pratiques de mobilité spatiale des adolescents de zones urbaines sensibles franciliennes : des modes d'habiter propre à la concentration résidentielle ?"
+                ],
+                "authFullName_s": [
+                    "Nicolas Oppenchaim"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 961619,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-bio-ph"
+                ],
+                "title_s": [
+                    "Fluorescence picoseconde de complexes bio-moléculaires hors équilibre dans un écoulement microfluidique",
+                    "Picosecond fluorescence of out-of-equilibrium biomolecular complexes in microfluidic devices"
+                ],
+                "authFullName_s": [
+                    "Sacha Maillot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961618,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Demeurer au pays ou vivre sa retraite à la campagne : comment cohabitent les personnes âgées en milieu rural isolé ?"
+                ],
+                "authFullName_s": [
+                    "Isabelle Mallon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961614,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.nano"
+                ],
+                "title_s": [
+                    "Non-localité et contextualité, ou théorèmes de Bell et Kochen- Specker, et dessins d'enfants"
+                ],
+                "authFullName_s": [
+                    "Michel Planat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961609,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "La France avantagée."
+                ],
+                "authFullName_s": [
+                    "Mario Polèse",
+                    "Richard Shearmur",
+                    "Laurent Terral"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961608,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-mo"
+                ],
+                "title_s": [
+                    "Supply Chain Collaborative : revue de littérature des attributs de caractérisation des relations dyadiques"
+                ],
+                "authFullName_s": [
+                    "Ridha Derrouiche",
+                    "Gilles Neubert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961606,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.nano"
+                ],
+                "title_s": [
+                    "Réseaux organiques supramoléculaires étendus sur sels ioniques : Versatilité de la liaison hydrogène"
+                ],
+                "authFullName_s": [
+                    "Ania Amrous",
+                    "Franck Bocquet",
+                    "Laurent Nony",
+                    "Franck Para",
+                    "Christian Loppacher",
+                    "Simon Lamare",
+                    "Frank Palmino",
+                    "Frédéric Cherioux",
+                    "David Gao",
+                    "Matt Wattkins",
+                    "Alex Shluger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961604,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Bertran de Born et la sextine"
+                ],
+                "authFullName_s": [
+                    "Dominique Billy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961602,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-gen"
+                ],
+                "title_s": [
+                    "Combinaison de la diffusion diffuse thermique de la diffusion inélastique des rayons X et des calculs ab inito pour l'étude de la dynamique de réseau",
+                    "On the combination of thermal diffuse scattering, inelastic x-ray scattering and ab initio lattice dynamics calculations"
+                ],
+                "authFullName_s": [
+                    "Björn Wehinger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 961600,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-gen"
+                ],
+                "title_s": [
+                    "Propriétés structurelles et électroniques du graphène sur SiC(0001) étudiées par microscopie combinée STM/AFM",
+                    "Structural and electronic properties of graphene on SiC(0001) studied by combined STM/AFM microscopy"
+                ],
+                "authFullName_s": [
+                    "José Antonio Morán Meza"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961598,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "La mise en scène événementielle des saisons dans la ville"
+                ],
+                "authFullName_s": [
+                    "Benjamin Pradel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 961597,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Rouvrir le passé\". Note sur l'histoire de la mémoire comme archéologie disciplinaire"
+                ],
+                "authFullName_s": [
+                    "Stéphane Zékian"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961596,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Une poésie porteuse de sa propre théorie : Guillaume de Machaut et les prémices des arts poétiques français"
+                ],
+                "authFullName_s": [
+                    "Hélène Basso"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961595,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Les mutations de l'alba dans la poésie des troubadours"
+                ],
+                "authFullName_s": [
+                    "Dominique Billy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961592,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Le monnayage armoricain, le contexte de la Guerre des Gaules, le trésor armoricain d'Amanlis et le dépôt de Brech"
+                ],
+                "authFullName_s": [
+                    "Katherine Gruel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961591,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Pleins feux, (conférences données dans le cadre d'une manifestation pluridisciplinaire, scientifique et culturelle à l'Université d'Avignon, 2011)"
+                ],
+                "authFullName_s": [
+                    "Hélène Basso",
+                    "Dimondo Isabelle"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961589,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-gen"
+                ],
+                "title_s": [
+                    "Ondes de choc relativistes",
+                    "Relativistic Shock Waves : Structure, turbulence generation, particle acceleration and radiation."
+                ],
+                "authFullName_s": [
+                    "Illya Plotnikov"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961588,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "La transmission de l'oeuvre"
+                ],
+                "authFullName_s": [
+                    "Hélène Maurel-Indart"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2015
+            },
+            {
+                "docid": 961587,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Les frontières du savoir. D'Alembert et la spécialisation des discours au XIXe siècle"
+                ],
+                "authFullName_s": [
+                    "Stéphane Zékian"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961586,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Corpus, terminologie et traduction. De l'apport des corpus spécialisés pour le traducteur."
+                ],
+                "authFullName_s": [
+                    "Amélie Josselin-Leray"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961582,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Le traitement théorique de l'alba dans la Doctrina de compondre dictats et la question de l'alborada"
+                ],
+                "authFullName_s": [
+                    "Dominique Billy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961580,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Présence de Guillaume de Machaut dans quelques recueils collectifs"
+                ],
+                "authFullName_s": [
+                    "Hélène Basso"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961579,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Conclusion"
+                ],
+                "authFullName_s": [
+                    "Berthet Thierry"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961578,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Comment améliorer les œuvres classiques ? Le cas de Boileau"
+                ],
+                "authFullName_s": [
+                    "Stéphane Zékian"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961577,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "L'hybridation générique dans l'œuvre de Cerveri de Girona"
+                ],
+                "authFullName_s": [
+                    "Dominique Billy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961573,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.scco",
+                    "1.scco.psyc"
+                ],
+                "title_s": [
+                    "Les processus cognitifs impliqués dans l'acquisition de l'orthographe : dictée vs copie."
+                ],
+                "authFullName_s": [
+                    "Manuel Pérez",
+                    "Hélène Giraudo",
+                    "André Tricot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961572,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Sommes-nous sortis du XIXe siècle ? Le romantisme français comme matrice historiographique"
+                ],
+                "authFullName_s": [
+                    "Stéphane Zékian"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961570,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.genre",
+                    "0.shs",
+                    "1.shs.info",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Pour une dénotation objectivée"
+                ],
+                "authFullName_s": [
+                    "Nicole Pradalier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 961568,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bv"
+                ],
+                "title_s": [
+                    "Comparaison moléculaire des graines orthodoxes de Medicago truncatula et récalcitrantes de Castanospermum australe : une nouvelle approche pour comprendre l'acquisition de la tolérance à la dessiccation",
+                    "Molecular comparison of orthodox Medicago truncatula seeds and recalcitrant Castanospermum australe seeds: a new model to unravel desiccation tolerance acquisition"
+                ],
+                "authFullName_s": [
+                    "Julien Delahaie"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 961567,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-oh"
+                ],
+                "title_s": [
+                    "Sélection contextuelle de services continus pour la robotique ambiante",
+                    "Contextual selection of continuous services applied to ambient robotics"
+                ],
+                "authFullName_s": [
+                    "Benjamin Cogrel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 961565,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Relier, relire. Des poèmes courtois faits galanteries"
+                ],
+                "authFullName_s": [
+                    "Hélène Basso"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961564,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Le mots des éditeurs"
+                ],
+                "authFullName_s": [
+                    "Katherine Gruel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961561,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bbm",
+                    "0.sdv",
+                    "1.sdv.mp"
+                ],
+                "title_s": [
+                    "[Cutaneous mucormycosis caused by Rhizopus microsporus]."
+                ],
+                "authFullName_s": [
+                    "G. Desoubeaux",
+                    "M. Leperlier",
+                    "H. Chaussade",
+                    "C. Schneider",
+                    "M. Roriz",
+                    "C. Houssin",
+                    "C. Rogez",
+                    "A. De Muret",
+                    "D. García-Hermoso",
+                    "E. Bailly",
+                    "E. Le Fourn",
+                    "L. Machet",
+                    "J. Chandenier",
+                    "L. Bernard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961560,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.nano"
+                ],
+                "title_s": [
+                    "Auto-assemblage 2D de molécules halogénées sur semi-conducteur"
+                ],
+                "authFullName_s": [
+                    "Matthieu Beyer",
+                    "Frédéric Cherioux",
+                    "Judicaël Jeannoutot",
+                    "Simon Lamare",
+                    "Younes Makoudi",
+                    "Fabien Picaud",
+                    "Frank Palmino"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961558,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Le lyrisme comme rapport au monde : retrait, ou engagement ? (exemples de Machaut, Deschamps, Grandson)"
+                ],
+                "authFullName_s": [
+                    "Hélène Basso"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961557,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Visualiser et mesurer les échanges à l'Age du Fer"
+                ],
+                "authFullName_s": [
+                    "Katherine Gruel",
+                    "F. Olmer",
+                    "Stéphane Marion",
+                    "Girard B."
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961555,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "La contrafacture de modèles occitans dans la lyrique galégo-portugaise"
+                ],
+                "authFullName_s": [
+                    "Dominique Billy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961550,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.nano"
+                ],
+                "title_s": [
+                    "Architectures supramoléculaires sur la surface de Si(111)-B"
+                ],
+                "authFullName_s": [
+                    "Younes Makoudi",
+                    "Judicaël Jeannoutot",
+                    "Matthieu Beyer",
+                    "Bulent Baris",
+                    "Bruno Grandidier",
+                    "Frank Palmino",
+                    "Frédéric Cherioux"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961548,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "La structure de La Comédie de Mont-de-Marsan de Marguerite de Navarre"
+                ],
+                "authFullName_s": [
+                    "Hélène Basso"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961545,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Nouvelles perspectives sur l'alba"
+                ],
+                "authFullName_s": [
+                    "Dominique Billy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961538,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "La variation socio-phonologique illustrée"
+                ],
+                "authFullName_s": [
+                    "Jean-Michel Tarrier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961537,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sa"
+                ],
+                "title_s": [
+                    "Potentialités des associations de variétés pour limiter la progression épidémique de la septoriose du blé : rôle des mécanismes de dispersion des spores par la pluie dans un couvert végétal hétérogène",
+                    "Potentialities of cultivar mixtures to prevent epidemic progression of septoria tritici blotch : Input of spore rain-splash dispersal mechanisms within a heterogeneous canopy"
+                ],
+                "authFullName_s": [
+                    "Christophe Gigot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 961533,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.signal",
+                    "0.info",
+                    "1.info.info-ts"
+                ],
+                "title_s": [
+                    "Contribution à l'Appréhension du Système Cardiovasculaire Modélisation et Traitement de Signaux issus de la Macrocirculation et de la Microcirculation sanguines",
+                    "Contribution to the understanding of the Cardiovascular System Modeling and Processing of Signals from the Macrocirculation and the Microcirculation"
+                ],
+                "authFullName_s": [
+                    "Emmanuelle Guerreschi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961532,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Circulations monétaires et modes de production du numéraire dans le monde celtique"
+                ],
+                "authFullName_s": [
+                    "Katherine Gruel",
+                    "David Wigg-Wolf"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961530,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Un genre fantôme : le lai narratif"
+                ],
+                "authFullName_s": [
+                    "Dominique Billy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961521,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-mo"
+                ],
+                "title_s": [
+                    "Modélisation d'une stratégie de mutualisation logistique en intégrant les objectifs de Développement Durable pour des PME agroalimentaires"
+                ],
+                "authFullName_s": [
+                    "Abdelhamid Moutaoukil",
+                    "Ridha Derrouiche",
+                    "Gilles Neubert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961519,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.scco",
+                    "1.scco.ling"
+                ],
+                "title_s": [
+                    "Verbes supports et prédicats non-verbaux dans l'acquisition du système allemand - prédicat nominal et élasticité sémantique : le cas de \" N + machen ('faire')"
+                ],
+                "authFullName_s": [
+                    "Anne Rohr",
+                    "Karine Duvignau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961518,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Le dictionnaire bilingue comme enjeu linguistique national. L'exemple du Dictionnaire Canadien Bilingue."
+                ],
+                "authFullName_s": [
+                    "Amélie Josselin-Leray",
+                    "Roda Roberts"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961513,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Insularité et sécurité : l'île entre sécurité et conflictualité"
+                ],
+                "authFullName_s": [
+                    "Paul Bacot",
+                    "Albane Geslin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961511,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Proposition de hiérarchisation des 45 graphèmes de base de l'orthographe du français"
+                ],
+                "authFullName_s": [
+                    "Manuel Pérez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961504,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "L' âge du fer en Europe : Mélanges offerts à Olivier Buchsenschutz"
+                ],
+                "authFullName_s": [
+                    "Sophie Krausz",
+                    "Anne Colin",
+                    "Katherine Gruel",
+                    "Ian Beith Mc Laren Ralston",
+                    "Thierry Dechezleprêtre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961501,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.auto"
+                ],
+                "title_s": [
+                    "Méthodes ensemblistes pour la localisation en robotique mobile",
+                    "Set-Membership Approaches for Mobile Robot Localization"
+                ],
+                "authFullName_s": [
+                    "Rémy Guyonneau"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961499,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.math",
+                    "1.math.math-ho"
+                ],
+                "title_s": [
+                    "Des éléments d'analyse des pratiques de classe dans les phases de correction en calcul littéral au collège"
+                ],
+                "authFullName_s": [
+                    "Sylvie Coppé",
+                    "Rabih El Mouhayar"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961497,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Tableaux de la distinction. Retour sur la statistique de Pierre Bourdieu"
+                ],
+                "authFullName_s": [
+                    "Bernard Lahire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961494,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Franz Kafka : biographie sociologique et interprétation de l'œuvre"
+                ],
+                "authFullName_s": [
+                    "Bernard Lahire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961493,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.mphy",
+                    "0.math",
+                    "1.math.math-mp"
+                ],
+                "title_s": [
+                    "Sur les origines du cocycle de Virasoro"
+                ],
+                "authFullName_s": [
+                    "Claude Roger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961492,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Les socialisations littéraire et extra-littéraire de Franz Kafka"
+                ],
+                "authFullName_s": [
+                    "Bernard Lahire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961490,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Contextes pertinents de l'action et différenciation sociale des activités"
+                ],
+                "authFullName_s": [
+                    "Bernard Lahire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961488,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Penser l'acteur entre dispositions et contextes d'action"
+                ],
+                "authFullName_s": [
+                    "Bernard Lahire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961486,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "À quoi servent les sciences sociales ?"
+                ],
+                "authFullName_s": [
+                    "Bernard Lahire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961483,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Éléments pour une théorie de la socialisation"
+                ],
+                "authFullName_s": [
+                    "Bernard Lahire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961481,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Généralité des concepts et théorie générale de la société : ce que peut la sociologie"
+                ],
+                "authFullName_s": [
+                    "Bernard Lahire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961473,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "The individual and the mixing of genres : cultural dissonance and self-distinction"
+                ],
+                "authFullName_s": [
+                    "Bernard Lahire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961471,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Figures du détective dans le polar américain contemporain",
+                    "Figures of the detective in contemporary american detective fiction"
+                ],
+                "authFullName_s": [
+                    "Delphine Carron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961470,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "La voix des citoyens entre politiques publiques et mobilisations collectives"
+                ],
+                "authFullName_s": [
+                    "Claire Autant-Dorier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961468,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.psy"
+                ],
+                "title_s": [
+                    "Influence of built environment on pedestrian’s crossing decision"
+                ],
+                "authFullName_s": [
+                    "Marie-Axelle Granié",
+                    "Thierry Brenac",
+                    "Marie Claude Montel",
+                    "Marine Millot",
+                    "Cécile Coquelet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961467,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les réfugiées espagnoles en France (1939 - 1942) : des femmes entre assujettissements et résistances",
+                    "The Spanish refugee women in France (1939-1942) : women between subjection and resistance",
+                    "Las refugiadas españolas en Francia (1939-1942) : mujeres entre sometimientos y resistencias"
+                ],
+                "authFullName_s": [
+                    "Maëlle Maugendre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961465,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Les prolongements critiques de Bourdieu : champ et habitus"
+                ],
+                "authFullName_s": [
+                    "Bernard Lahire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961464,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Sociologie de l'échec et de la réussite scolaires"
+                ],
+                "authFullName_s": [
+                    "Bernard Lahire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961463,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Franz Kafka. Éléments pour une théorie de la création littéraire"
+                ],
+                "authFullName_s": [
+                    "Bernard Lahire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961461,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "À propos de la sociologie de Pierre Bourdieu"
+                ],
+                "authFullName_s": [
+                    "Bernard Lahire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961460,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "La redéfinition des classes populaires dans les discours sur l'\"illettrisme"
+                ],
+                "authFullName_s": [
+                    "Bernard Lahire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961458,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Pour une sociologie dispositionnaliste et contextualiste de l'action"
+                ],
+                "authFullName_s": [
+                    "Bernard Lahire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961457,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Conditions de classe et socialisations individuelles"
+                ],
+                "authFullName_s": [
+                    "Bernard Lahire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961454,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "La création littéraire chez Franz Kafka"
+                ],
+                "authFullName_s": [
+                    "Bernard Lahire"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 961453,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Y a-t-il des résistances françaises à l'empowerment et comment les lever ?"
+                ],
+                "authFullName_s": [
+                    "Claire Autant-Dorier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            }
+        ]
+    },
+    "nextCursorMark": "AoFdutUD"
+}

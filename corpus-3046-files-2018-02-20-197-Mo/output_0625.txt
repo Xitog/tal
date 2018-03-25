@@ -1,0 +1,1949 @@
+{
+    "response": {
+        "numFound": 515921,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1518093,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les nouveaux modèles de l'aménagement"
+                ],
+                "authFullName_s": [
+                    "Antoine Picon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1518086,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-sm",
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-class-ph"
+                ],
+                "title_s": [
+                    "Physique des transports (théorie classique)"
+                ],
+                "authFullName_s": [
+                    "Thierry Hocquet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "LECTURE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1518085,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "ID-îles Magazine n°13: Dynamiques agricoles belliloises et insulaires"
+                ],
+                "authFullName_s": [
+                    "Laura Corsi",
+                    "Louis Brigand",
+                    "Laurence David"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "VIDEO",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1518081,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Dans les cuisines de l'auberge du Sauvage"
+                ],
+                "authFullName_s": [
+                    "Corinne Goy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1518080,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.nano"
+                ],
+                "title_s": [
+                    "Optimisation technologique de transistors pour le développement de microcapteurs chimiques nano-fonctionnalisés"
+                ],
+                "authFullName_s": [
+                    "L. Donero",
+                    "F. Le Bihan",
+                    "L. Le Brizoual",
+                    "Régis Rogel",
+                    "A.A. El Mel",
+                    "P.Y. Tessier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1518079,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.ie"
+                ],
+                "title_s": [
+                    "Un diagnostic des méthodes de prévision des niveaux marins extrêmes sur les côtes vendéennes",
+                    "Diagnosis of the methods of extreme sea levels forecast on the coasts of the Vendée"
+                ],
+                "authFullName_s": [
+                    "Pascal Lebreton",
+                    "Céline Perherin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1518073,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Histoire de quartier : phase 7 (65 à 120 ap. J.-C.) à 10 (1250 à 1800)"
+                ],
+                "authFullName_s": [
+                    "Corinne Goy",
+                    "Jean Olivier Guilhot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1518049,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.sp",
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Place de la phytothérapie dans le traitement de l'hypertrophie bénigne de la prostate"
+                ],
+                "authFullName_s": [
+                    "Ella Darchy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1518047,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "20000 m3 d'histoire. Les fouilles du parking de la mairie à Besançon"
+                ],
+                "authFullName_s": [
+                    "Jean Olivier Guilhot",
+                    "Corinne Goy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1518026,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Territoires de la violence politique en France de la fin de la guerre d’Algérie à nos jours / sous la direction de Fanny Bugnon et Isabelle Lacroix"
+                ],
+                "authFullName_s": [
+                    "Fanny Bugnon",
+                    "Isabelle Lacroix"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1518023,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Les échanges"
+                ],
+                "authFullName_s": [
+                    "Corinne Goy",
+                    "Elisabeth Fuhrer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1518019,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Fruits et légumes, herbes et fleurs : nourrir et soigner le corps"
+                ],
+                "authFullName_s": [
+                    "Corinne Goy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1518018,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs",
+                    "1.shs.hisphilso"
+                ],
+                "title_s": [
+                    "Néolibéralisation et évolution du « Droit à la ville »"
+                ],
+                "authFullName_s": [
+                    "Laurence Costes"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1518016,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "« Prolétaires de tous les pays, qui lave vos chaussettes ? » :le genre de l’engagement dans les années 1968"
+                ],
+                "authFullName_s": [
+                    "Ludivine Bantigny",
+                    "Fanny Bugnon",
+                    "Fanny Gallot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1518014,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Les soins : récipients, médications et problèmes de digestion"
+                ],
+                "authFullName_s": [
+                    "Corinne Goy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1518008,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Le service et la conservation des liquides"
+                ],
+                "authFullName_s": [
+                    "Corinne Goy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517999,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Les récipients de cuisson"
+                ],
+                "authFullName_s": [
+                    "Corinne Goy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517994,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Les récipients pour préparer et pour conserver"
+                ],
+                "authFullName_s": [
+                    "Corinne Goy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517989,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Les récipients sur la table"
+                ],
+                "authFullName_s": [
+                    "Corinne Goy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517985,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "L'éclairage"
+                ],
+                "authFullName_s": [
+                    "Corinne Goy",
+                    "Elisabeth Fuhrer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517982,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-at",
+                    "0.math",
+                    "1.math.math-ct",
+                    "0.math",
+                    "1.math.math-rt"
+                ],
+                "title_s": [
+                    "Foncteurs faiblement polynomiaux",
+                    "Schwach polynomiale Funktoren",
+                    "Weakly polynomial functors"
+                ],
+                "authFullName_s": [
+                    "Aurélien Djament",
+                    "Christine Vespa"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517981,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Serrurerie et huisserie"
+                ],
+                "authFullName_s": [
+                    "Corinne Goy",
+                    "Elisabeth Fuhrer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517979,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.be",
+                    "0.sdv",
+                    "1.sdv.ee",
+                    "2.sdv.ee.ieo",
+                    "0.sdv",
+                    "1.sdv.bc",
+                    "2.sdv.bc.ic"
+                ],
+                "title_s": [
+                    "Diversité et implication des amibes libres dans la survie et la persistance des mycobactéries non tuberculeuses au sein d'un réseau d'eau potable",
+                    "Diversity and implication of free-living amoebae in the survival and persistence of nontuberculous mycobacteria in drinking water networks"
+                ],
+                "authFullName_s": [
+                    "Vincent Delafont"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517978,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-dc",
+                    "0.info",
+                    "1.info.info-os"
+                ],
+                "title_s": [
+                    "Grid'5000 et CIMENT, la synergie grenobloise"
+                ],
+                "authFullName_s": [
+                    "Pierre Neyron",
+                    "Olivier Richard"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517977,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Le chauffage, les couvre-feux"
+                ],
+                "authFullName_s": [
+                    "Corinne Goy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517975,
+                "domain_s": [
+                    "0.phys"
+                ],
+                "title_s": [
+                    "Spectroscopie Raman des défauts dans les matériaux"
+                ],
+                "authFullName_s": [
+                    "M.D. Fontana",
+                    "D. Chapron",
+                    "T.H. Kauffmann",
+                    "P. Bourson"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517974,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Immixtion d'un notaire dans l'administration d'une SARL"
+                ],
+                "authFullName_s": [
+                    "Dorothée Gallois-Cochet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517971,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Les plombs d'assemblage"
+                ],
+                "authFullName_s": [
+                    "Corinne Goy",
+                    "Elisabeth Fuhrer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517968,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Etude et évolution des structures archéologiques (XIIIe-XXe s.)"
+                ],
+                "authFullName_s": [
+                    "Sylvie Cantrelle",
+                    "Corinne Goy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517966,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Géologie de Montbéliard"
+                ],
+                "authFullName_s": [
+                    "Corinne Goy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517964,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Histoire d'un quartier de Montbéliard (Doubs). Le bourg Saint-Martin (XIIIe-XXe s.)"
+                ],
+                "authFullName_s": [
+                    "Sylvie Cantrelle",
+                    "Corinne Goy",
+                    "Claudine Munier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517963,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "Rémunération pour copie privée et services de médias audiovisuels"
+                ],
+                "authFullName_s": [
+                    "Philippe Mouron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517961,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Le chantier archéologique de Besançon-ZAC Pasteur : 4000 m² de fouille, 2000 ans d'histoire"
+                ],
+                "authFullName_s": [
+                    "Corinne Goy",
+                    "Amandine Viellet",
+                    "Claudine Munier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517959,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Besançon (25) : un ensemble clos du XVe siècle à la ZAC Pasteur et actualité des fouilles"
+                ],
+                "authFullName_s": [
+                    "Corinne Goy",
+                    "Claudine Munier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517958,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Petite histoire de céramique"
+                ],
+                "authFullName_s": [
+                    "Corinne Goy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517956,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "La vie des Pères du Jura"
+                ],
+                "authFullName_s": [
+                    "Corinne Goy",
+                    "David Billoin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517949,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca"
+                ],
+                "title_s": [
+                    "Réduction de modèle pour un problème de contact frottant: Couplage entre une technique de perturbation et une approche par contrôle"
+                ],
+                "authFullName_s": [
+                    "Franck Massa",
+                    "Hai Quan Do",
+                    "Thierry Tison",
+                    "Antonio Gonzales",
+                    "Jimmy Lauber",
+                    "Thierry-Marie Guerra"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517944,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.info",
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Le (souvenir du) 11 septembre 2001, les médias et Jean Baudrillard\", in: Poirier, Nicolas, Baudrillard, cet attracteur intellectuel étrange, Paris: la bibliothèque du Mauss, le bord de l’eau, 2016, p. 155-170."
+                ],
+                "authFullName_s": [
+                    "Katharina Niemeyer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517942,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-ni"
+                ],
+                "title_s": [
+                    "Vers plus d'hétérogénéité et d'interopérabilité dans Internet",
+                    "Towards more heterogeneity and interoperability in the Internet"
+                ],
+                "authFullName_s": [
+                    "Mohamed Diallo",
+                    "Prométhée Spathis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517940,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Ni gêneurs, ni partenaires, mais sous pression institutionnelle. Les familles d'élèves en ruptures scolaires"
+                ],
+                "authFullName_s": [
+                    "Mathias Millet",
+                    "Daniel Thin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517930,
+                "domain_s": [
+                    "0.info",
+                    "1.info.eiah",
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.info",
+                    "1.info.info-rb"
+                ],
+                "title_s": [
+                    "Inirobot et Poppy Education"
+                ],
+                "authFullName_s": [
+                    "Didier Roy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517920,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "SECURITE ET INSECURITE LINGUISTIQUE. APPROCHES SOCIOLINGUISTIQUE ET PRAGMATIQUE D'UNE SITUATION DE CONTACTS DE LANGUES : LA REUNION",
+                    "LINGUISTIC SECURITY AND INSECURITY. A PRAGMATIC AND SOCIOLINGUISTIC APPROACH TO A SITUATION OF CONTACTS OF LANGUAGES : THE ISLAND OF REUNION"
+                ],
+                "authFullName_s": [
+                    "Aude Bretegnier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517918,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Le français \"régional\" de la Réunion : Variété linguistique de rencontre ou d'exclusion ?"
+                ],
+                "authFullName_s": [
+                    "Aude Bretegnier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517917,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "L'insécurité linguistique : un objet insécurisé ?"
+                ],
+                "authFullName_s": [
+                    "Aude Bretegnier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517914,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Coton, terre et politique à l'Extrême Nord Cameroun"
+                ],
+                "authFullName_s": [
+                    "Guillaume Vadot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517913,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Le français \"régional\" de la Réunion : lexique, identification et insécurité linguistique"
+                ],
+                "authFullName_s": [
+                    "Aude Bretegnier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517909,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Un espace social de la tension. Antagonismes, quotidienneté, contrôle et conflits dans deux plantations industrielles du Cameroun contemporain"
+                ],
+                "authFullName_s": [
+                    "Guillaume Vadot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517908,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Vers la construction d'une modélisation de la sécurité / insécurité linguistique."
+                ],
+                "authFullName_s": [
+                    "Aude Bretegnier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517907,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Regards sur l’insécurité linguistique - Introduction"
+                ],
+                "authFullName_s": [
+                    "Aude Bretegnier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517905,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "BAT (Jean-Pierre), Le Syndrôme Foccart. La politique française en Afrique de 1959 à nos jours, Paris, Gallimard, 2012, 838 pages (CR de lecture)"
+                ],
+                "authFullName_s": [
+                    "Guillaume Vadot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517903,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Sécurité/insécurité linguistique : terrains et approches diversifiés"
+                ],
+                "authFullName_s": [
+                    "Aude Bretegnier",
+                    "Gudrun Ledegen"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517902,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Un travail de pros. Réforme de la Sodecoton et redéploiement des formes de mobilisation du travail paysan en zone cotonnière dans l'Extrême-Nord au Cameroun"
+                ],
+                "authFullName_s": [
+                    "Guillaume Vadot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517900,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Un impossible consensus. Les histoires divergentes d'un passé agricole"
+                ],
+                "authFullName_s": [
+                    "Solène Billaud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517898,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Impact d’un protocole de réhabilitation précoce dans la chirurgie de l’oesophage",
+                    "Impact of a multidisciplinary enhanced recovery protocol after oesophagectomy : a retrospective cohort study"
+                ],
+                "authFullName_s": [
+                    "Simon Monziols"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517895,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Ethos paradoxal de Genet. Langages et métalangage dans \"Journal du Voleur"
+                ],
+                "authFullName_s": [
+                    "Philippe Wahl"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517893,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Communauté linguistique, Etat des lieux et perspectives."
+                ],
+                "authFullName_s": [
+                    "Aude Bretegnier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517889,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Sociolinguistique, didactique et intervention : élargir le champ."
+                ],
+                "authFullName_s": [
+                    "Aude Bretegnier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517888,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Utilisation du chef médial du muscle triceps brachii pour la couverture des pertes de substance complexes des membres",
+                    "The medial head of the brachii triceps muscle in limb reconstruction"
+                ],
+                "authFullName_s": [
+                    "Anaïs Delgove"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517886,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Langues et Insertions : Recherches, interventions, réflexivité"
+                ],
+                "authFullName_s": [
+                    "Aude Bretegnier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517881,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "A partir de quelques histoires de langues. Rapports construits aux langues et appropriation linguistique."
+                ],
+                "authFullName_s": [
+                    "Aude Bretegnier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517880,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Montpellier. Flaugergues, RE31 et RE32"
+                ],
+                "authFullName_s": [
+                    "Laurent Vidal"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517879,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.archi",
+                    "0.shs",
+                    "1.shs.hisphilso",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.relig",
+                    "0.shs",
+                    "1.shs.litt",
+                    "0.shs",
+                    "1.shs.anthro-se"
+                ],
+                "title_s": [
+                    "Paroles d'image ou discours iconographique d'un espace sacré. L'exemple du Palais des Papes d'Avignon",
+                    "Words and pictures : An iconographical speech of a sacred area. The example of the Popes' Palace of Avignon"
+                ],
+                "authFullName_s": [
+                    "Fabienne Féraud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517877,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Le cinéma fait sa Havane",
+                    "The movies make their Havana"
+                ],
+                "authFullName_s": [
+                    "Laura Corsi"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517876,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.class",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.relig"
+                ],
+                "title_s": [
+                    "Actes des Apôtres ACTES I"
+                ],
+                "authFullName_s": [
+                    "Gilles Courtieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517875,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.class",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.relig"
+                ],
+                "title_s": [
+                    "Evangile de Marc"
+                ],
+                "authFullName_s": [
+                    "Gilles Courtieu"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517871,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Une production céramique de la seconde moitié du XVe siècle ou du début du XVIe siècle à Sélestat (Bas-Rhin)"
+                ],
+                "authFullName_s": [
+                    "Corinne Goy",
+                    "David Billoin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517870,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "La subordination des femmes dans l'analyse des publicités sportives et les apports de Goffman"
+                ],
+                "authFullName_s": [
+                    "Stéphane Héas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517866,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Investiguer et objectiver le terrain des maladies \"rares\" avec l'exemple des Pemphigus et de l'infection au VIH"
+                ],
+                "authFullName_s": [
+                    "Stéphane Héas"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517865,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Des monstres et des hommes"
+                ],
+                "authFullName_s": [
+                    "Corinne Goy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517864,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "Les dysfonctionnements de « la responsabilité élargie du producteur » et des éco-organismes"
+                ],
+                "authFullName_s": [
+                    "Jean-Baptiste Bahers"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517862,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Le coutumier des clarisses ou l'alimentation dans un couvent au début du XVIIIe s."
+                ],
+                "authFullName_s": [
+                    "Corinne Goy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517861,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.info",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Sport électronique, agressivité motrice et sociabilités",
+                    "Electronic sports, motor aggression and sociabilities"
+                ],
+                "authFullName_s": [
+                    "Nicolas Besombes"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517860,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Avoir le sens de l'autre comme éthique"
+                ],
+                "authFullName_s": [
+                    "Omar Zanna"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517859,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Perception de l’obésité infantile par les familles polynésiennes : étude qualitative, entretiens de 12 familles d’enfants obèses",
+                    "Perception of childhood obesity by Polynesian families : qualitative study, interviews of 12 families of obese children"
+                ],
+                "authFullName_s": [
+                    "Jérémy Fabre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517858,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Tourtières, cafetières et pochons... Vente au château de Beaufort (Jura), an premier de la République française"
+                ],
+                "authFullName_s": [
+                    "Corinne Goy",
+                    "Henri Brossault de Rambay"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517856,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Eduquer à l'empathie au collège Youri gagarine, Trappes-en-Yvelines"
+                ],
+                "authFullName_s": [
+                    "Omar Zanna"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517855,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo"
+                ],
+                "title_s": [
+                    "La mise en accessibilité des ERP : quelle intégration dans la chaîne du déplacement, l'accessibilité de la ville et à la ville ?"
+                ],
+                "authFullName_s": [
+                    "Pauline Escarmant"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517853,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Compte rendu de lecture de l'ouvrage : Langue et travail, F. MOURLHON-DALLIES (coord.), 2007, Le français dans le monde, n° 42."
+                ],
+                "authFullName_s": [
+                    "Aude Bretegnier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517851,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Présentation du fonds d'archives Yves Person"
+                ],
+                "authFullName_s": [
+                    "Michèle Raffutin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517850,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Besançon (Doubs). Pots de chambre et cuvettes à laver, les objets de toilette à l'auberge du Sauvage"
+                ],
+                "authFullName_s": [
+                    "Corinne Goy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517833,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Intervention de l'enseignant et transformation des élèves : un modèle de l'intervention de l'enseignant d'EPS au second degré basé sur les différents types de transformations des élèves"
+                ],
+                "authFullName_s": [
+                    "Jean Trohel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517831,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "La recherche-intervention sociolinguistique : un champ à construire et à légitimer"
+                ],
+                "authFullName_s": [
+                    "Aude Bretegnier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517830,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Château de Montbéliard (Doubs). Céramique de la cave de la tour en éperon, XIVe-XVIIIe s."
+                ],
+                "authFullName_s": [
+                    "Corinne Goy",
+                    "Bernard Goëtz"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517828,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Insérer par le sport dans le développement des politiques locales"
+                ],
+                "authFullName_s": [
+                    "Gaelle Sempé",
+                    "François Le Yondre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517825,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.genre",
+                    "0.shs",
+                    "1.shs.stat"
+                ],
+                "title_s": [
+                    "Le patrimoine rural entre fragilité et évolutivité"
+                ],
+                "authFullName_s": [
+                    "Guy Burgel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517822,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "L'événement sportif en milieu naturel : négociations, stratégies et justifications"
+                ],
+                "authFullName_s": [
+                    "Elodie Paget",
+                    "Yohann Rech"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517818,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Compte-rendu de lecture de l'ouvrage : Enseigner le français aux migrants (N. GLOAGUEN-VERNET, 2009, Hachette FLE)"
+                ],
+                "authFullName_s": [
+                    "Aude Bretegnier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517816,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Besançon (Doubs). Mobilier de la poubelle d'un vigneron, seconde moitié du XVIe s."
+                ],
+                "authFullName_s": [
+                    "Corinne Goy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517815,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.genre",
+                    "0.shs",
+                    "1.shs.stat"
+                ],
+                "title_s": [
+                    "Contradictions spatiales et sociales de l’urbanisation pour les services de santé"
+                ],
+                "authFullName_s": [
+                    "Guy Burgel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517813,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "La perception de la pauvreté dans un monde globalisé"
+                ],
+                "authFullName_s": [
+                    "Marie Duru-Bellat",
+                    "Camille Bedock",
+                    "Élise Tenret"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517812,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.genre",
+                    "0.shs",
+                    "1.shs.stat"
+                ],
+                "title_s": [
+                    "L’invité de la revue"
+                ],
+                "authFullName_s": [
+                    "Guy Burgel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OTHER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517811,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Quelles expériences de la discrimination à l’école ? Entre dénonciation du racisme et discours méritocratique"
+                ],
+                "authFullName_s": [
+                    "Séverine Chauvel",
+                    "Yaël Brinbaum",
+                    "Élise Tenret"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517809,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Le petit lot de sainte Colette : regard de l'archéologie sur les reliques"
+                ],
+                "authFullName_s": [
+                    "Corinne Goy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517807,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Histoires de langues en formation. Construire une démarche de recherche-intervention alter-réflexive"
+                ],
+                "authFullName_s": [
+                    "Aude Bretegnier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517806,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Comment peut-on éduquer les chômeurs par le sport ?"
+                ],
+                "authFullName_s": [
+                    "François Le Yondre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517803,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Aux frontières des institutions : le cas du sport scolaire"
+                ],
+                "authFullName_s": [
+                    "Doriane Gomet",
+                    "Jean-Nicolas Renaud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517801,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Villeneuve-sous-Pymont (Jura). Céramique d'un château ou l'approche d'un certain art de vivre, XIVe s."
+                ],
+                "authFullName_s": [
+                    "Corinne Goy",
+                    "Jean-Claude Jeanjacquot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1517794,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Le Centre de Formation en Éducation Physique et sportive d'Angers: une organisation entrepreneuriale de formation / Doriane Gomet, Laurent Ciron"
+                ],
+                "authFullName_s": [
+                    "Doriane Gomet",
+                    "Laurent Ciron"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517790,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Le statut de l’événement dans la pensée de Michel Foucault : des Mots et les choses à L’Archéologie du savoir."
+                ],
+                "authFullName_s": [
+                    "Philippe Sabot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "UNDEFINED",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1517788,
+                "domain_s": [
+                    "0.shs"
+                ],
+                "title_s": [
+                    "Articuler recherches et interventions… pour construire une professionnalité de sociolinguiste."
+                ],
+                "authFullName_s": [
+                    "Aude Bretegnier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            }
+        ]
+    },
+    "nextCursorMark": "AoFcjeUF"
+}

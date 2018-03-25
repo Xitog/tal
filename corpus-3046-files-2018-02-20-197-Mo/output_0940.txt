@@ -1,0 +1,2032 @@
+{
+    "response": {
+        "numFound": 515922,
+        "start": 0,
+        "docs": [
+            {
+                "docid": 1420690,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Marmoutier, le « grand monastère » de Martin"
+                ],
+                "authFullName_s": [
+                    "Elisabeth Lorans",
+                    "Thomas Creissen"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420685,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-se"
+                ],
+                "title_s": [
+                    "Extensions du diagramme d’activité pour contrôler l’accès au SI"
+                ],
+                "authFullName_s": [
+                    "Salim Chehida",
+                    "Akram Idani",
+                    "Yves Ledru",
+                    "Mustapha Rahmouni"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420683,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-se"
+                ],
+                "title_s": [
+                    "GenISIS : un outil de recherche d’attaques d’initié en Systèmes d’Information (Article court)"
+                ],
+                "authFullName_s": [
+                    "Amira Radhouani",
+                    "Akram Idani",
+                    "Yves Ledru",
+                    "Narjes Ben Rajeb"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420669,
+                "domain_s": [
+                    "0.stat",
+                    "1.stat.me"
+                ],
+                "title_s": [
+                    "Compromis précision-temps de calcul appliqué au problèeme de détection de ruptures"
+                ],
+                "authFullName_s": [
+                    "Maxime Brunin",
+                    "Christophe Biernacki",
+                    "Alain Celisse"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420668,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Linguistique du signe, linguistique du signifiant : de Mo.La.Che à la cognématique"
+                ],
+                "authFullName_s": [
+                    "Gabrielle Le Tallec Lloret"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420661,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.relig"
+                ],
+                "title_s": [
+                    "Jean le Baptiste était-il Élie ?"
+                ],
+                "authFullName_s": [
+                    "Menahem R. Macina"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420660,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.nrj",
+                    "0.spi",
+                    "1.spi.tron",
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-ms"
+                ],
+                "title_s": [
+                    "Caractérisations avancées, modélisations multi-physiques et multi-échelles de dispositifs : des cellules aux modules photovoltaïques"
+                ],
+                "authFullName_s": [
+                    "Anne Migan-Dubois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "HDR",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420649,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Un opus 1 choisi : le Quatuor à cordes de György Kurtág (1959)"
+                ],
+                "authFullName_s": [
+                    "Grégoire Tosser"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420647,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Observer le travail enseignant.",
+                    "Observing teachers' work"
+                ],
+                "authFullName_s": [
+                    "Christine Felix",
+                    "René Amigues",
+                    "Laurence Espinassy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420646,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.relig"
+                ],
+                "title_s": [
+                    "Cassiodore et l'École de Nisibe"
+                ],
+                "authFullName_s": [
+                    "Menahem R. Macina"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420645,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.class",
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Le Prestige à Rome à la fin de la République et au début du principat. Introduction"
+                ],
+                "authFullName_s": [
+                    "Robinson Baudry",
+                    "Frédéric Hurlet",
+                    "Isabelle Rivoal"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420640,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "La population de la région Rhône-Alpes"
+                ],
+                "authFullName_s": [
+                    "Guy Brunet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420639,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Familles et fratries à l'épreuve de la mortalité. La Dombes au XVIIIe et XIXe siècles"
+                ],
+                "authFullName_s": [
+                    "Guy Brunet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420637,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-gr"
+                ],
+                "title_s": [
+                    "OpenViBE et les outils logiciels pour les BCI"
+                ],
+                "authFullName_s": [
+                    "Jussi Lindgren",
+                    "Anatole Lécuyer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420635,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les approches intergénérationnelles en démographie historique. Annales de Démographie Historique"
+                ],
+                "authFullName_s": [
+                    "Guy Brunet",
+                    "Hélène Vézina"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420633,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.shs",
+                    "1.shs.class",
+                    "0.shs",
+                    "1.shs.art",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Entre affirmation de statut et désir de reconnaissance. Introduction au prestige",
+                    "Between assertion of social status and desire for acknowledment. An introduction to 'prestige"
+                ],
+                "authFullName_s": [
+                    "Frédéric Hurlet",
+                    "Isabelle Rivoal",
+                    "Isabelle Sidéra"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420632,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Jouer avec les mots, tordre les outils : la production plastique au collège."
+                ],
+                "authFullName_s": [
+                    "Laurence Espinassy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420629,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-gr"
+                ],
+                "title_s": [
+                    "BCI et jeux vidéo : état de l’art à travers le projet OpenViBE2"
+                ],
+                "authFullName_s": [
+                    "Anatole Lécuyer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420628,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les familles israélites d'Algérie au XIXe siècle: de l'indigénat à l'assimilation"
+                ],
+                "authFullName_s": [
+                    "Guy Brunet",
+                    "Kateb Kamel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420627,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Etat des connaissances sur les liens entre les troubles de la reproduction et l’exposition aux produits cosmétiques chez les professionnels de la coiffure et des soins de beauté. Approche épidémiologique et méta-analytique."
+                ],
+                "authFullName_s": [
+                    "C. Picot",
+                    "M. Bouslama",
+                    "D. Collot-Fertey",
+                    "J.B. Henrotin",
+                    "M.T. Labro",
+                    "B. Larroque",
+                    "A. Radauceanu",
+                    "Alain-Claude Roudot",
+                    "N. Sater",
+                    "D. Lafon",
+                    "M. Ould Elhkim"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420624,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Enseigner les Arts Plastiques en ZEP : les dessous du métier"
+                ],
+                "authFullName_s": [
+                    "Laurence Espinassy",
+                    "Frédéric Saujat"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420622,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.shs",
+                    "1.shs.class",
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Le Prestige des revues scientifiques et les logiques de classement",
+                    "Prestige of scientific journals and logics of ranking"
+                ],
+                "authFullName_s": [
+                    "Carine Constans",
+                    "Isabelle Rivoal"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420620,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Une nouvelle approche de l'intégration de la planification de production et de l'ordonnancement"
+                ],
+                "authFullName_s": [
+                    "Anna Robert",
+                    "Claude Le Pape",
+                    "Frédéric Paulin",
+                    "Francis Sourd"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420619,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.musiq"
+                ],
+                "title_s": [
+                    "Dramaturgies de plateau"
+                ],
+                "authFullName_s": [
+                    "Anne-Françoise Benhamou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420618,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.nrj",
+                    "0.spi",
+                    "1.spi.tron",
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-ms"
+                ],
+                "title_s": [
+                    "Mieux comprendre le comportement des modules photovoltaïques en fonctionnement réel"
+                ],
+                "authFullName_s": [
+                    "Anne Migan-Dubois"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420616,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Une nouvelle approche de l'intégration de la planification de production et de l'ordonnancement détaillé"
+                ],
+                "authFullName_s": [
+                    "Anna Robert"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420615,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Gaz toxiques dans les conteneurs maritimes. Etat des lieux"
+                ],
+                "authFullName_s": [
+                    "B. Savary"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420614,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Voisinage exponentiel pour un problème d'ordonnacement avec des pénalités d'avance-retard autour d'une date d'échéance commune"
+                ],
+                "authFullName_s": [
+                    "Yasmin Agueda Rios Solis",
+                    "Francis Sourd"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420613,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.nrj",
+                    "0.spi",
+                    "1.spi.tron",
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-ms"
+                ],
+                "title_s": [
+                    "Cellule photovoltaïque"
+                ],
+                "authFullName_s": [
+                    "Zakaria Djebbour",
+                    "Anne Migan-Dubois",
+                    "Walid El-Huni",
+                    "Jean-Paul Kleider"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "PATENT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420611,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "LabINRS. Mesures en laboratoire du coefficient de frottement dynamique de revêtements de sol"
+                ],
+                "authFullName_s": [
+                    "P. Marchal",
+                    "M. Jacques"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420610,
+                "domain_s": [
+                    "0.math",
+                    "1.math.math-oc",
+                    "0.phys",
+                    "1.phys.phys",
+                    "2.phys.phys.phys-data-an",
+                    "0.info",
+                    "1.info.info-ts"
+                ],
+                "title_s": [
+                    "Méthodes d'optimisation pour l'analyse de processus invariants d'échelle",
+                    "Optimization methods for the analysis of scale invariant processes"
+                ],
+                "authFullName_s": [
+                    "Jordan Frécon"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420608,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.nrj",
+                    "0.spi",
+                    "1.spi.tron",
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-ms"
+                ],
+                "title_s": [
+                    "Modélisation de cellules tandem InGaN sur Silicium: Comparaison des structures à 2 et 4 contacts"
+                ],
+                "authFullName_s": [
+                    "Walid El-Huni",
+                    "Anne Migan-Dubois",
+                    "Zakaria Djebbour"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420606,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.nrj",
+                    "0.spi",
+                    "1.spi.tron",
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-ms"
+                ],
+                "title_s": [
+                    "Performances de modules photovoltaïques en conditions réelles"
+                ],
+                "authFullName_s": [
+                    "Anne Migan-Dubois",
+                    "Jordi Badosa",
+                    "Vincent Bourdin",
+                    "Marko Pavlov"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420604,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.nrj",
+                    "0.spi",
+                    "1.spi.tron",
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-ms"
+                ],
+                "title_s": [
+                    "Développement d’un nanoréseau expérimental de la taille d’un panneau photovoltaïque pour la recherche et l’enseignement"
+                ],
+                "authFullName_s": [
+                    "Jordi Badosa",
+                    "Anne Migan-Dubois",
+                    "Vincent Bourdin",
+                    "Aïssatou Ndong",
+                    "Marko Pavlov"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420602,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Dictionnaire Étymologique Roman (DÉRom) 2. Pratique lexicographique et réflexions théoriques"
+                ],
+                "authFullName_s": [
+                    "Eva Buchi",
+                    "Jan Reinhardt",
+                    "Jean-Paul Chauveau",
+                    "Jérémie Delorme",
+                    "Marco Maggiore",
+                    "Pascale Baudinot",
+                    "Wolfgang Schweickard",
+                    "Xavier Gouvert",
+                    "Yan Greub",
+                    "Valentin Tomachpolski",
+                    "Marie-Thérèse Kneib",
+                    "Romain Garnier",
+                    "Victor Celac",
+                    "Mihaela-Mariana Morcov"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "DOUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420599,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.nrj",
+                    "0.spi",
+                    "1.spi.tron",
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-ms"
+                ],
+                "title_s": [
+                    "Projet ALEPH : Caractérisations avancées et modélisation d’un système photovoltaïque équipé de réflecteurs plans"
+                ],
+                "authFullName_s": [
+                    "Marko Pavlov",
+                    "Anne Migan-Dubois",
+                    "Vincent Bourdin",
+                    "Michel Pons",
+                    "Jordi Badosa",
+                    "Martial Haeffelin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420598,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Mécanismes organisationnels de formation des violences au travail. Proposition d’un modèle - cadre pour comprendre et intervenir"
+                ],
+                "authFullName_s": [
+                    "M. Favaro"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420597,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.bbm",
+                    "2.sdv.bbm.bm",
+                    "0.sdv",
+                    "1.sdv.mp",
+                    "2.sdv.mp.vir"
+                ],
+                "title_s": [
+                    "Rôle de la protéine EB2 du virus d'Epstein-Barr dans le métabolisme des ARN messagers",
+                    "Role of the Epstein-Barr virus protein EB2 in messenger RNA metabolism"
+                ],
+                "authFullName_s": [
+                    "Fabrice Mure"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420595,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.nrj",
+                    "0.spi",
+                    "1.spi.tron",
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-ms"
+                ],
+                "title_s": [
+                    "Modélisation électrique des installations PV équipées de réflecteurs"
+                ],
+                "authFullName_s": [
+                    "Marko Pavlov",
+                    "Anne Migan-Dubois",
+                    "Vincent Bourdin",
+                    "Michel Pons",
+                    "Jordi Badosa",
+                    "Martial Haeffelin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420594,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Portable Tester Friction (PFT). Mesures du coefficient de frottement dynamique de revêtements de sol"
+                ],
+                "authFullName_s": [
+                    "P. Marchal",
+                    "M. Jacques"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420589,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.nrj",
+                    "0.spi",
+                    "1.spi.tron",
+                    "0.phys",
+                    "1.phys.cond",
+                    "2.phys.cond.cm-ms"
+                ],
+                "title_s": [
+                    "Recherche sur les nanoréseaux pour répondre aux enjeux de flexibilité électrique"
+                ],
+                "authFullName_s": [
+                    "Jordi Badosa",
+                    "Anne Migan-Dubois",
+                    "Philippe Drobinsky",
+                    "Aïssatou Ndong"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "POSTER",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420588,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Besoins d’études épidémiologiques sur les effets de l’exposition à de(s) perturbateur(s) endocrinien(s) en entreprises"
+                ],
+                "authFullName_s": [
+                    "J.B. Henrotin"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420587,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.droit"
+                ],
+                "title_s": [
+                    "L’avènement d’un nouveau droit sectoriel : le droit applicable aux personnels des chemins de fer"
+                ],
+                "authFullName_s": [
+                    "Stéphane Carre"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420586,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.edu"
+                ],
+                "title_s": [
+                    "Une structure dialogique et plastique : une hypothèse de l’usage de Néopass@ction",
+                    "A dialogical and plastic structure: hypothesis for the use of Neopass@ction"
+                ],
+                "authFullName_s": [
+                    "Laurence Espinassy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420578,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Introduction Ethnographies à contre-temps."
+                ],
+                "authFullName_s": [
+                    "Monica Heintz",
+                    "Isabelle Rivoal"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420577,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Répartition de la force d'appui sur les protecteurs des genoux."
+                ],
+                "authFullName_s": [
+                    "P. Marchal",
+                    "M. Jacques"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420573,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Aborder la norme NF EN ISO 13849-1 via la conception d'une fonction de sécurité basique."
+                ],
+                "authFullName_s": [
+                    "J. Baudoin",
+                    "J.P. Bello"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420570,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Un modèle cognitif de l'interaction pour agents logiciels"
+                ],
+                "authFullName_s": [
+                    "Alexandre Pauchet",
+                    "Nathalie Chaignaud",
+                    "Amal El Fallah Seghrouchni"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420568,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Du ciel au territoire, vers une nouvelle perception de l’espace archéologique"
+                ],
+                "authFullName_s": [
+                    "Laure Nuninger"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420564,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Industrialisation des changements sur le système d’information de gestion de la clientèle EDF-SIMM"
+                ],
+                "authFullName_s": [
+                    "Alvaro Rodriguez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420562,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Approche \"bien-être au travail\" pour la prévention des RPS. SATIN (version 2.1). Questionnaire d'évaluation des conditions de travail et de la santé. Manuel d'utilisation."
+                ],
+                "authFullName_s": [
+                    "V. Grosjean",
+                    "J.L. Kop",
+                    "N. Formet",
+                    "V. Althaus"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420559,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Les risques chimiques liés aux opérations de récupération et recyclage des métaux."
+                ],
+                "authFullName_s": [
+                    "F. Diebold",
+                    "A. Chollot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420553,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.astr"
+                ],
+                "title_s": [
+                    "Spectropolarimétrie stellaire UV et Visible depuis l’espace",
+                    "Stellar UV and visible spectropolarimetry from space"
+                ],
+                "authFullName_s": [
+                    "Martin Pertenais"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420552,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Ecritures suspendues, vies engagées. Traverser la guerre civile libanaise",
+                    "Suspended Writings, Engaged Lives. Living throughout the Civil War in Lebanon"
+                ],
+                "authFullName_s": [
+                    "Isabelle Rivoal"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420549,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Exemple didactique d'application de la norme NF EN 62061."
+                ],
+                "authFullName_s": [
+                    "J. Baudoin",
+                    "J.P. Bello"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420548,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "Algorithme de Branch-and-cut pour le problème Anneau-Etoile"
+                ],
+                "authFullName_s": [
+                    "Safia Kedad-Sidhoum",
+                    "Viet Hung Nguyen"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420546,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Sécurité des machines à bois. Cahier des protecteurs et des équipements pour les machines du menuisier."
+                ],
+                "authFullName_s": [
+                    "P. Obrecht"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420543,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Les restitutions 3D du prieuré Saint-Cosme (La Riche/Indre-et-Loire)"
+                ],
+                "authFullName_s": [
+                    "Bruno Dufaÿ",
+                    "Pascal Mora"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420541,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Les « jeunes » dans le sud de la Méditerranée Cadres conceptuels pour l’étude de sociétés sous tension",
+                    "“Youths” in the southern Mediterranean: Conceptual frameworks for the study of societies under stress"
+                ],
+                "authFullName_s": [
+                    "Isabelle Rivoal",
+                    "Anne-Marie Peatrik"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420540,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Éléments critiques de la culture écranique. A partir du spectacle Kiss & Cry"
+                ],
+                "authFullName_s": [
+                    "Pierluigi Basso Fossali"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420518,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Détermination des paléotempératures des océans à partir du rapport Mg/Ca des foraminifères"
+                ],
+                "authFullName_s": [
+                    "Vincent Scao"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420517,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Les activités de maintenance. Exploitation d'une enquête et analyse ergonomique dans une entreprise."
+                ],
+                "authFullName_s": [
+                    "C. Grusenmeyer"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420515,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist",
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Le rôle des références bibliques dans Sublime and Beautiful d'Edmund Burke"
+                ],
+                "authFullName_s": [
+                    "Norbert Col"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420512,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Etude d'un système de rafraîchissement solaire à absorption: dimensionnement et simulations numériques"
+                ],
+                "authFullName_s": [
+                    "Lavinia Grosu",
+                    "Alexandru Dobrovicescu",
+                    "Adrian Untea",
+                    "Pierre Rochelle"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420504,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Micro-cogénérateur à moteur Stirling. Etude de la géométrie et simulation numérique"
+                ],
+                "authFullName_s": [
+                    "Lavinia Grosu",
+                    "Cătălina Dobre",
+                    "A. Patulea"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420502,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.elec"
+                ],
+                "title_s": [
+                    "Mesure de l'émissivité thermique d'un corps"
+                ],
+                "authFullName_s": [
+                    "Philippe Hervé",
+                    "Nicolas Rambure"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "PATENT",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420499,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Sécurisation des procédures d’arrimage de couronnes de fil d’acier."
+                ],
+                "authFullName_s": [
+                    "P. Lemerle",
+                    "D. Bruant"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420497,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.litt"
+                ],
+                "title_s": [
+                    "Étoffes zoliennes et goncourtiennes. Endroit et envers. Émile Zola, <i>La curée</i>, <i>Au bonheur des dames</i>. Edmond de Goncourt, <i>Chérie</i>"
+                ],
+                "authFullName_s": [
+                    "Tristan Fourré"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420492,
+                "domain_s": [
+                    "0.spi",
+                    "1.spi.signal"
+                ],
+                "title_s": [
+                    "Analyse des images de tomographie par émission de positons pour la prédiction de récidive du cancer du col de l'utérus",
+                    "Analysis of positron emission tomography images for recurrence prediction of cervical cancer"
+                ],
+                "authFullName_s": [
+                    "Geoffrey Roman Jimenez"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420491,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Un nouveau regard sur la forteresse de Chinon : bilan de dix années de fouilles archéologiques (2002-2012)"
+                ],
+                "authFullName_s": [
+                    "Bruno Dufaÿ"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420489,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "“Un Grand Progrès—sur le papier”"
+                ],
+                "authFullName_s": [
+                    "Marc Aymes"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420487,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Le prieuré Saint-Cosme à La Riche, un lieu de retraite pour les chanoines de Saint-Martin ?"
+                ],
+                "authFullName_s": [
+                    "Bruno Dufaÿ"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420486,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.anthro-se",
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "Vouloir de la politique\". Exaltation et proximité dans l’engagement partisan des jeunes au Liban »",
+                    "“Wanting politics”: exaltation and proximity in the partisan engagement of youths in Lebanon"
+                ],
+                "authFullName_s": [
+                    "Isabelle Rivoal"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420482,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "Le site de la chapelle Saint-Libert dans la Cité de Tours"
+                ],
+                "authFullName_s": [
+                    "Bruno Dufaÿ",
+                    "Samuel Riou"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420481,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Approche \"bien-être au travail\" pour la prévention des RPS. SATIN (version 2.1). Questionnaire d'évaluation des conditions de travail et de la santé. Démarche de validation."
+                ],
+                "authFullName_s": [
+                    "J.L. Kop",
+                    "V. Grosjean",
+                    "N. Formet",
+                    "V. Althaus"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420478,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Réalisation et installation d’un patin de masse sur les soudeuses haute fréquence de conception ancienne."
+                ],
+                "authFullName_s": [
+                    "R. Klein",
+                    "P. Donati"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420477,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "La norme comme instrument de réussite d'une société de la connaissance partagée"
+                ],
+                "authFullName_s": [
+                    "Pierre Jarraud",
+                    "Brigitte De La Passardière"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420476,
+                "domain_s": [
+                    "0.spi"
+                ],
+                "title_s": [
+                    "Evaluation de la méthode d’essai des semelles anti-perforation en textile selon la norme NF EN ISO 20344 : 2012."
+                ],
+                "authFullName_s": [
+                    "G. Grand"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "REPORT",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420475,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hisphilso",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Un mouvement empiriste dans la linguistique américaine"
+                ],
+                "authFullName_s": [
+                    "Jean-Michel Fortis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420468,
+                "domain_s": [
+                    "0.phys",
+                    "1.phys.meca",
+                    "2.phys.meca.mefl"
+                ],
+                "title_s": [
+                    "Modélisation et simulation de la cavitation"
+                ],
+                "authFullName_s": [
+                    "Eric Goncalves da Silva"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "LECTURE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420464,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Évaluation de l’acceptabilité d’une échelle d’alliance thérapeutique traduite en français, la Working alliance inventory, auprès des internes de médecine générale de Brest : étude descriptive- étude pilote"
+                ],
+                "authFullName_s": [
+                    "Margot Gicquel"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420462,
+                "domain_s": [
+                    "0.shs",
+                    "0.shs",
+                    "1.shs.archeo",
+                    "0.shs",
+                    "1.shs.envir",
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Géoarchéologie du bassin portuaire d'Ostie"
+                ],
+                "authFullName_s": [
+                    "Jean-Philippe Goiran",
+                    "Ferréol Salomon",
+                    "Cécile Vittori",
+                    "Giulia Boetto",
+                    "Elisa Pleuger",
+                    "Christiansen Jonathan",
+                    "Noirot Brice",
+                    "Pellegrino Angelo",
+                    "Ilaria Mazzini",
+                    "Laura Sadori",
+                    "Christine Oberlin",
+                    "Pepe Caterina",
+                    "Ruscito Valerio",
+                    "Pascal Arnaud"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420456,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hisphilso",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "Sapir et le sentiment de la forme"
+                ],
+                "authFullName_s": [
+                    "Jean-Michel Fortis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420451,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.archeo"
+                ],
+                "title_s": [
+                    "La Corroirie de la Chartreuse du Liget à Chemillé-sur-Indrois (Indre-et-Loire). Étude historique et architecturale"
+                ],
+                "authFullName_s": [
+                    "Bruno Dufaÿ"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420442,
+                "domain_s": [
+                    "0.info",
+                    "1.info.info-cl"
+                ],
+                "title_s": [
+                    "Multithreading"
+                ],
+                "authFullName_s": [
+                    "Frédéric Camps"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "LECTURE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420437,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.ie"
+                ],
+                "title_s": [
+                    "Eau-Aménagement-Environnement CONTRIBUTION DES EAUX SOUTERRAINES AUX DÉBITS ET À LA QUALITÉ DES EAUX DE SURFACE : exemple de la Garonne, de ses sources à la confluence du Tarn L. Danneville Documents du BRGM 262 Editions BRGM",
+                    "CONTRIBUTION OF UNDERGROUND WATER TO FLOW AND QUALITY OF SURFACE WATER, Example of the Garonne, from its sources to the confluence of the Tarn"
+                ],
+                "authFullName_s": [
+                    "Laurent Danneville"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "THESE",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420433,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hist"
+                ],
+                "title_s": [
+                    "Les femmes guerrières (XIe et XIIe siècles)"
+                ],
+                "authFullName_s": [
+                    "Martin Aurell"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420432,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.geo",
+                    "0.shs",
+                    "1.shs.socio",
+                    "0.shs",
+                    "1.shs.scipo",
+                    "0.shs",
+                    "1.shs.archi"
+                ],
+                "title_s": [
+                    "Pour une ville plurielle (Préface)"
+                ],
+                "authFullName_s": [
+                    "Jean-Pierre Lévy"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420427,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.scipo"
+                ],
+                "title_s": [
+                    "Le Pakistan, Islam et Modernité"
+                ],
+                "authFullName_s": [
+                    "Carla Di Martino"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420425,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.langue",
+                    "0.shs",
+                    "1.shs.edu",
+                    "0.shs",
+                    "1.shs.psy",
+                    "0.shs",
+                    "1.shs.socio"
+                ],
+                "title_s": [
+                    "L’éthique dans la formation des enseignants de langues"
+                ],
+                "authFullName_s": [
+                    "Jose Ignacio Aguilar Río"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420424,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.hisphilso",
+                    "0.shs",
+                    "1.shs.langue"
+                ],
+                "title_s": [
+                    "L'amalgame : un aperçu historique"
+                ],
+                "authFullName_s": [
+                    "Jean-Michel Fortis"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420423,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Devenir des patients adressés par un médecin avec courrier médical, aux urgences adultes du CHU Pellegrin, à Bordeaux"
+                ],
+                "authFullName_s": [
+                    "Nadège Lemonnier"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420421,
+                "domain_s": [
+                    "0.sde",
+                    "1.sde.es"
+                ],
+                "title_s": [
+                    "Ecologie urbaine"
+                ],
+                "authFullName_s": [
+                    "Jean-Pierre Lévy",
+                    "Isabelle Hajek"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420420,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.phil"
+                ],
+                "title_s": [
+                    "Ratio Particularis, Doctrines des Sens Internes d'Avicenne à Thomas d'Aquin"
+                ],
+                "authFullName_s": [
+                    "Carla Di Martino"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "OUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420410,
+                "domain_s": [
+                    "0.sdv",
+                    "1.sdv.mhep"
+                ],
+                "title_s": [
+                    "Programme « Télémédecine en EHPAD » en Gironde : enquête de satisfaction en médecine générale"
+                ],
+                "authFullName_s": [
+                    "Laura Haw-Shing"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            },
+            {
+                "docid": 1420407,
+                "domain_s": [
+                    "0.info"
+                ],
+                "title_s": [
+                    "La bionique"
+                ],
+                "authFullName_s": [
+                    "Agnès Guillot"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COUV",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420402,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Le projet de liaison Rhin-Rhône à gabarit européen ou les mystères d'un pari"
+                ],
+                "authFullName_s": [
+                    "Alain Bonnafous"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420397,
+                "domain_s": [
+                    "0.shs",
+                    "1.shs.eco"
+                ],
+                "title_s": [
+                    "Que nous apprennent les BRIC ? Trois conjectures sur les économies émergentes"
+                ],
+                "authFullName_s": [
+                    "Julien Vercueil"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "ART",
+                "modifiedDateY_i": 2016
+            },
+            {
+                "docid": 1420384,
+                "domain_s": [
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.gp",
+                    "0.sdu",
+                    "1.sdu.stu",
+                    "2.sdu.stu.hy"
+                ],
+                "title_s": [
+                    "Etude de la zone critique : Variations temporelles des données sismiques",
+                    "CRITICAL ZONE STUDY: SEISMIC DATA TEMPORAL VARIATIONS"
+                ],
+                "authFullName_s": [
+                    "Marine Dangeard",
+                    "Sylvain Pasquet",
+                    "Ludovic Bodet",
+                    "Roger Guérin",
+                    "Laurent Longuevergne",
+                    "Julien Thiesson"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "COMM",
+                "modifiedDateY_i": 2018
+            },
+            {
+                "docid": 1420383,
+                "domain_s": [
+                    "0.sdv"
+                ],
+                "title_s": [
+                    "Quels sont les besoins d’un(e) patient(e) anorexique mentale lors d’une primo-consultation en médecine générale ?"
+                ],
+                "authFullName_s": [
+                    "Fabien Pauchet"
+                ],
+                "language_s": [
+                    "fr"
+                ],
+                "docType_s": "MEM",
+                "modifiedDateY_i": 2017
+            }
+        ]
+    },
+    "nextCursorMark": "AoFfxbUF"
+}
