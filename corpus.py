@@ -3,9 +3,11 @@ import os
 import os.path
 import json
 import datetime
+import sys
 
 # external
 import xlwt
+import matplotlib.pyplot as plt
 
 class Repository:
 
@@ -48,7 +50,7 @@ class Repository:
         self.num_read += len(docs)
         for doc in docs:
             try:
-                self.titles.append(Title(doc))
+                self.titles.append(Title(doc, filename))
             except KeyError as ke:
                 kes = str(ke)
                 if kes not in self.discarded:
@@ -75,12 +77,12 @@ class Domain:
         self.children = {}
         self.parent = None
 
-    def display(self, nb):
+    def display(self, nb, out=sys.stdout):
         ttl = len(self.titles)
-        print('    ' * (self.level + 1), self.level, '.', nb, ' ', str(self), sep='')
+        out.write('    ' * (self.level + 1) + f"{self.level}.{nb} {self}\n")
         i = 1
         for child in sorted(self.children.keys()):
-            ttl += self.children[child].display(i)
+            ttl += self.children[child].display(i, out)
             i += 1
         return ttl
     
@@ -90,6 +92,7 @@ class Domain:
         for domain_code in domain_list:
             last = Domain.register_one(domain_code)
         last.titles.append(title) # we link the title and the domain only once
+        return last # we retains only the last domain to put into title#domains
     
     ROOTS = {}
 
@@ -132,17 +135,47 @@ class Author:
         Author.ALL_AUTHORS[name].titles.append(title)
         return Author.ALL_AUTHORS[name]
 
+    def __repr__(self):
+        return self.name
+
+
+def segment_string(string):
+    words = []
+    start = 0
+    end = 0
+    length = 0
+    for c in string:
+        if start == end: # we are not in a word
+            if c.isspace() or c in ["“", '"', "'", '’', '.', '«', '»', '°', '(', ')', '/', '\\', ':', '[', ']', ',']:
+                start += 1
+                end += 1
+            else:
+                end += 1
+        else: # we are in a word
+            if c.isspace() or c in ["“", '"', "'", '’', '.', '«', '»', '°', '(', ')', '/', '\\', ':', '[', ']', ',']:
+                words.append((start, end))
+                start = end + 1
+                end = start
+            else:
+                end += 1
+    if start != end:
+        words.append((start, end))
+    return words
+
+# if a title has twice a not alphanumeric, it is counted only one
+# for this character. We don't want to know how many time there is "."
+# in a title, but how many titles have at least one "." in
+SPECIAL_CHAR_COUNT = {}
 
 class Title:
 
-    def __init__(self, dic):
+    def __init__(self, dic, filename):
+        global WRONG_TITLES
         # Atomic values
         self.docid = dic['docid']
         self.kind = dic['docType_s']
         self.date = dic['modifiedDateY_i']
-        # Title
-        title_list = dic['title_s']
-        self.title = title_list[0]
+        self.filename = filename
         # Lang
         lang_list = dic['language_s']
         if len(lang_list) > 1:
@@ -158,14 +191,37 @@ class Title:
         # Domains
         domain_list = dic['domain_s']
         self.domains = Domain.register_list(domain_list, self)
+        # Title
+        title_list = dic['title_s']
+        self.title = title_list[0]
+        self.char_count = len(self.title)
+        self.words = segment_string(self.title)
+        self.word_count = len(self.words)
+        self.special_char = False
+        self.special_char_count = {}
+        for c in self.title:
+            if not c.isalnum() and not c.isspace():
+                self.special_char = True
+                if c not in self.special_char_count:
+                    self.special_char_count[c] = 1
+                    if c not in SPECIAL_CHAR_COUNT:
+                        SPECIAL_CHAR_COUNT[c] = 0
+                    SPECIAL_CHAR_COUNT[c] += 1
+                else:
+                    self.special_char_count[c] += 1
+    
+    def __repr__(self):
+        return f"{self.docid} in {self.filename}"
 
 
-class Counter:
+
+
+class Statistic:
 
     def __init__(self, repo):
         self.repo = repo
 
-    def count_values(self, key=''):
+    def count_values(self, key):
         values = {}
         for t in repo.titles:
             val = getattr(t, key)
@@ -173,10 +229,9 @@ class Counter:
                 values[val] = 1
             else:
                 values[val] += 1
-        for val in sorted(values.keys()):
-            print('    ', val, ' => ', values[val], sep='')
+        return values
 
-    def count_length(self, key='', threshold=None, export=None):
+    def count_length(self, key, threshold=None, export=None):
         sums = {}
         for t in repo.titles:
             val = len(getattr(t, key))
@@ -184,23 +239,64 @@ class Counter:
                 sums[val] = 1
             else:
                 sums[val] += 1
-            #if val == 2 and key == 'title':
-            #    print(getattr(t, key))
-        for val in sorted(sums.keys()):
-            if threshold is None or sums[val] >= threshold:
-                print('    ', val, ' => ', sums[val], sep='')
-        if export is not None:
-            if export == 'Excel':
-                wb = xlwt.Workbook()
-                ws = wb.add_sheet(key)
-                ws.write(0, 0, 'lenght of ' + key)
-                ws.write(0, 1, 'number of titles')
-                row = 1
-                for val in sorted(sums.keys()):
-                    ws.write(row, 0, val)
-                    ws.write(row, 1, sums[val])
-                    row += 1
-                wb.save(key + '.xls')
+        return sums
+
+    def count_word_n(self, index):
+        values = {}
+        for t in repo.titles:
+            if index >= 0 and index < len(t.words):
+                delim = t.words[index]
+                word = t.title[delim[0]:delim[1]]
+                if word not in values:
+                    values[word] = 1
+                else:
+                    values[word] += 1
+        return values
+    
+    def count_values_n(self, key, index):
+        values = {}
+        for t in repo.titles:
+            att = getattr(t, key)
+            if index >= 0 and index < len(att):
+                val = att[index]
+                if val not in values:
+                    values[val] = 1
+                else:
+                    values[val] += 1
+        return values
+    
+    def select(self, **keyval):
+        results = []
+        for t in repo.titles:
+            ok = True
+            for key, val in keyval.items():
+                if getattr(t, key) != val:
+                    ok = False
+                    break
+            if ok:
+                results.append(t)
+        return results
+
+    def info(self, idv):
+        for t in repo.titles:
+            if t.docid == idv:
+                print('docid =', t.docid)
+                print('kind =', t.kind)
+                print('date =', t.date)
+                print('filename =', t.filename)
+                print('title =', t.title)
+                print('char_count=', t.char_count)
+                print('word_count=', t.word_count)
+                print('lang=', t.lang)
+                print('authors=')
+                for auth in t.authors:
+                    print('   ', auth)
+                print('domains=')
+                if t.domains is not None:
+                    for dom in t.domains:
+                        print('   ', dom)
+                else:
+                    print('    None')
 
 start = datetime.datetime.now()
 
@@ -208,17 +304,61 @@ repo = Repository('corpus-3046-files-2018-02-20-197-Mo')
 print('Nb files :', repo.count_files())
 repo.load_all()
 print('Nb titles:', repo.count_titles())
-#LOAD = 1000
-#for i in range(0, LOAD):
-#    repo.load_one(i)
-counter = Counter(repo)
+stat = Statistic(repo)
+
+# Result file
+
+wb = xlwt.Workbook()
+
+def save_to_excel(wb, name, values):
+    ws = wb.add_sheet(name)
+    row = 0
+    for val in sorted(values.keys()):
+        ws.write(row, 0, val)
+        ws.write(row, 1, values[val])
+        row += 1
+
+def save_to_graph(name, values):
+    plt.bar(range(len(values)), values.values(), align="center")
+    plt.xticks(range(len(values)), list(values.keys()))
+    plt.legend((name), 'upper left')
+    plt.autoscale(True)
+    plt.grid(True)
+    #plt.show()
+    plt.savefig(name + '.png')
+
 # Atomic values
-print('\n------ Date ------\n')
-counter.count_values('date')
-print('\n------ Kind ------\n')
-counter.count_values('kind')
-print('\n------ Lang ------\n')
-counter.count_values('lang')
+
+by_date = stat.count_values('date')
+save_to_excel(wb, 'Date | nb', by_date)
+save_to_graph('date', by_date)
+
+by_kind = stat.count_values('kind')
+save_to_excel(wb, 'Type | nb', by_kind)
+save_to_graph('kind', by_kind)
+
+by_lang = stat.count_values('lang')
+save_to_excel(wb, 'Lang | nb', by_lang)
+del by_lang
+
+by_char_count = stat.count_values('char_count')
+save_to_excel(wb, 'Char Count | nb', by_char_count)
+save_to_graph('char_count', by_char_count)
+del by_char_count
+
+by_sc = stat.count_values('special_char')
+save_to_excel(wb, 'Special char in title | nb', by_sc)
+del by_sc
+# Not alpha numeric char
+save_to_excel(wb, 'Special char | nb', SPECIAL_CHAR_COUNT)
+
+by_word_count = stat.count_values('word_count')
+save_to_excel(wb, 'Word Count | nb', by_word_count)
+save_to_graph('word_count', by_word_count)
+
+first_word = stat.count_word_n(0)
+save_to_excel(wb, 'First word | nb', first_word)
+
 # Author
 print('\n----- Authors ------\n')
 print('    There is', len(Author.ALL_AUTHORS), 'authors.\n')
@@ -237,19 +377,32 @@ for name, author in Author.ALL_AUTHORS.items():
         print('   ', name, 'has', len(author.titles), 'publications.')
 print()
 print('    nb authors (Y) => articles (X) (there is X articles having Y authors)')
-counter.count_length('authors', threshold=6)
-# Title
-print('\n----- Title -----\n')
-counter.count_length('title', export='Excel') # calcul de longueur
+stat.count_length('authors', threshold=6)
+
 # Domain
 print('\n----- Domains -----\n')
-print('    There is', len(Domain.ROOTS), 'roots domain:')
+print('    There is', len(Domain.ROOTS), 'roots domain.')
+out = open('domains.txt', mode='w', encoding='utf8')
 i = 1
 nb = 0
 for _, dom in Domain.ROOTS.items():
-    nb += dom.display(i) #print('    ', i, '. ', dom, sep='')
+    nb += dom.display(i, out) #print('    ', i, '. ', dom, sep='')
     i += 1
-print('There is', nb, 'publications linked to the domains.')
+out.close()
+print('    There is', nb, 'publications linked to the domains.')
+# Request
+print('\n----- Request -----\n')
+res = stat.select(char_count=0)
+print('    Length of selection of char_count == 0:', len(res))
+for r in res:
+    print('      ', r)
+res = stat.select(char_count=1)
+print('    Length of selection of char_count == 1:', len(res))
+for r in res:
+    print('      ', r)
+print('\n----- End -----\n')
+
+wb.save('results.xls')
 
 end = datetime.datetime.now()
 
@@ -258,6 +411,19 @@ delta = end - start
 print(f"Script has ended [{delta} elapsed].")
 
 repo.discarded_info()
+
+
+#bwc = by_word_count
+#lists = sorted(bwc.items())
+#x, y = zip(*lists)
+#plt.plot(x, y)
+#plt.savefig('one.png')
+#plt.show()
+
+#plt.bar(range(len(bwc)), bwc.values(), align="center")
+#plt.xticks(range(len(bwc)), list(bwc.keys()))
+#plt.show()
+#plt.savefig('two.png')
 
 # 3046 fichiers
 # 100 enregistrements à chaque fois
@@ -279,4 +445,12 @@ repo.discarded_info()
 # fr 100
 
 # 298 118 une fois "filtré"
+
+# matplotlib 2.2.2
+#   numpy 1.14.2
+#   pyparsing 2.2.0
+#   pytz 2018.3
+#   python-dateutil 2.7.2 
+#   kiwi-solver 1.0.1
+#   cycler 0.10.0
 
