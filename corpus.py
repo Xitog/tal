@@ -7,7 +7,8 @@ import sys
 
 # external
 import xlwt
-import matplotlib.pyplot as plt
+import langdetect
+#import matplotlib.pyplot as plt
 
 class Repository:
 
@@ -88,14 +89,14 @@ class Domain:
     
     @staticmethod
     def register_list(domain_list, title):
-        last = None
+        domains = []
         for domain_code in domain_list:
-            last = Domain.register_one(domain_code)
-        last.titles.append(title) # we link the title and the domain only once
-        return last # we retains only the last domain to put into title#domains
+            domains.append(Domain.register_one(domain_code))
+        domains[-1].titles.append(title) # we link the title and the domain only once
+        return [dom for dom in domains if dom.level == 0] # we retains only the first level domain to put into title#domains
     
     ROOTS = {}
-
+    
     @staticmethod
     def register_one(domain_code):
         element = domain_code.split('.')
@@ -146,13 +147,13 @@ def segment_string(string):
     length = 0
     for c in string:
         if start == end: # we are not in a word
-            if c.isspace() or c in ["“", '"', "'", '’', '.', '«', '»', '°', '(', ')', '/', '\\', ':', '[', ']', ',']:
+            if c.isspace() or c in ["“", '"', "'", '’', '.', '«', '»', '°', '(', ')', '/', '\\', ':', '[', ']', ',', '•', '″', '…', '„', '‘']:
                 start += 1
                 end += 1
             else:
                 end += 1
         else: # we are in a word
-            if c.isspace() or c in ["“", '"', "'", '’', '.', '«', '»', '°', '(', ')', '/', '\\', ':', '[', ']', ',']:
+            if c.isspace() or c in ["“", '"', "'", '’', '.', '«', '»', '°', '(', ')', '/', '\\', ':', '[', ']', ',', '•', '″', '…', '„', '‘']:
                 words.append((start, end))
                 start = end + 1
                 end = start
@@ -176,13 +177,6 @@ class Title:
         self.kind = dic['docType_s']
         self.date = dic['modifiedDateY_i']
         self.filename = filename
-        # Lang
-        lang_list = dic['language_s']
-        if len(lang_list) > 1:
-            raise Exception('Too many langs')
-        self.lang = lang_list[0]
-        if self.lang != 'fr':
-            raise KeyError('lang')
         # Authors
         author_list = dic['authFullName_s']
         self.authors = []
@@ -209,6 +203,28 @@ class Title:
                     SPECIAL_CHAR_COUNT[c] += 1
                 else:
                     self.special_char_count[c] += 1
+        # Lang
+        lang_list = dic['language_s']
+        if len(lang_list) > 1:
+            raise Exception('Too many langs')
+        self.lang = lang_list[0]
+        if self.lang != 'fr':
+            raise KeyError('lang')
+        # checking it
+        #try:
+        #    import multiprocessing
+        #    import time
+        #    def pipo():
+        #    self.lang = langdetect.detect(self.title)
+        #    p = multiprocessing.Process(target=pipo)
+        #    p.start()
+        #    p.join(2)
+        #    if p.is_alive():
+        #        p.terminate()
+        #        p.join()
+        #except langdetect.lang_detect_exception.LangDetectException:
+        #    pass
+            
     
     def __repr__(self):
         return f"{self.docid} in {self.filename}"
@@ -252,6 +268,32 @@ class Statistic:
                 else:
                     values[word] += 1
         return values
+
+    def where_is_it(self, what):
+        values = {}
+        for t in repo.titles:
+            find = t.title.find(what)
+            if find != -1:
+                if find not in values:
+                    values[find] = 1
+                else:
+                    values[find] += 1
+        return values
+    
+    def count_word_after(self, after):
+        values = {}
+        for t in repo.titles:
+            find = t.title.find(after)
+            if find != -1:
+                for w in t.words:
+                    if w[0] > find + len(after):
+                        word = t.title[w[0]:w[1]]
+                        if word not in values:
+                            values[word] = 1
+                        else:
+                            values[word] += 1
+                        break
+        return values
     
     def count_values_n(self, key, index):
         values = {}
@@ -293,8 +335,9 @@ class Statistic:
                     print('   ', auth)
                 print('domains=')
                 if t.domains is not None:
-                    for dom in t.domains:
-                        print('   ', dom)
+                    print('   ', t.domains)
+                    #for dom in t.domains:
+                    #    print('   ', dom)
                 else:
                     print('    None')
 
@@ -310,15 +353,18 @@ stat = Statistic(repo)
 
 wb = xlwt.Workbook()
 
-def save_to_excel(wb, name, values):
+def save_to_excel(wb, name, values, percent=None):
     ws = wb.add_sheet(name)
     row = 0
-    for val in sorted(values.keys()):
+    for val in sorted(values, key=values.get, reverse=True): #sorted(values.keys()):
         ws.write(row, 0, val)
         ws.write(row, 1, values[val])
+        if percent is not None:
+            ws.write(row, 2, values[val] / percent)
         row += 1
 
 def save_to_graph(name, values):
+    return
     plt.bar(range(len(values)), values.values(), align="center")
     plt.xticks(range(len(values)), list(values.keys()))
     plt.legend((name), 'upper left')
@@ -330,34 +376,40 @@ def save_to_graph(name, values):
 # Atomic values
 
 by_date = stat.count_values('date')
-save_to_excel(wb, 'Date | nb', by_date)
+save_to_excel(wb, 'Date | nb', by_date, repo.count_titles())
 save_to_graph('date', by_date)
 
 by_kind = stat.count_values('kind')
-save_to_excel(wb, 'Type | nb', by_kind)
+save_to_excel(wb, 'Type | nb', by_kind, repo.count_titles())
 save_to_graph('kind', by_kind)
 
 by_lang = stat.count_values('lang')
-save_to_excel(wb, 'Lang | nb', by_lang)
+save_to_excel(wb, 'Lang | nb', by_lang, repo.count_titles())
 del by_lang
 
 by_char_count = stat.count_values('char_count')
-save_to_excel(wb, 'Char Count | nb', by_char_count)
+save_to_excel(wb, 'Char Count | nb', by_char_count, repo.count_titles())
 save_to_graph('char_count', by_char_count)
 del by_char_count
 
 by_sc = stat.count_values('special_char')
-save_to_excel(wb, 'Special char in title | nb', by_sc)
+save_to_excel(wb, 'Special char in title | nb', by_sc, repo.count_titles())
 del by_sc
 # Not alpha numeric char
 save_to_excel(wb, 'Special char | nb', SPECIAL_CHAR_COUNT)
 
 by_word_count = stat.count_values('word_count')
-save_to_excel(wb, 'Word Count | nb', by_word_count)
+save_to_excel(wb, 'Word Count | nb', by_word_count, repo.count_titles())
 save_to_graph('word_count', by_word_count)
 
 first_word = stat.count_word_n(0)
-save_to_excel(wb, 'First word | nb', first_word)
+save_to_excel(wb, 'First word | nb', first_word, repo.count_titles())
+
+where_is_double_point = stat.where_is_it(':')
+save_to_excel(wb, 'Place of column | nb', where_is_double_point, repo.count_titles())
+
+first_word_after_double_point = stat.count_word_after(':')
+save_to_excel(wb, 'First word after column | nb', first_word_after_double_point, repo.count_titles())
 
 # Author
 print('\n----- Authors ------\n')
@@ -369,9 +421,10 @@ for name, author in Author.ALL_AUTHORS.items():
     if nb not in nb_authors_by_length:
         nb_authors_by_length[nb] = 0
     nb_authors_by_length[nb] += 1
-for nb in sorted(nb_authors_by_length.keys()):
-    print('   ', nb, ':', nb_authors_by_length[nb])
-print()
+save_to_excel(wb, 'Author production | nb', nb_authors_by_length)
+#for nb in sorted(nb_authors_by_length.keys()):
+#    print('   ', nb, ':', nb_authors_by_length[nb])
+#print()
 for name, author in Author.ALL_AUTHORS.items():
     if len(author.titles) >= 190:
         print('   ', name, 'has', len(author.titles), 'publications.')
@@ -390,6 +443,16 @@ for _, dom in Domain.ROOTS.items():
     i += 1
 out.close()
 print('    There is', nb, 'publications linked to the domains.')
+
+DOMAIN_COUNT = {}
+for t in repo.titles:
+    for d in t.domains:
+        if d.name not in DOMAIN_COUNT:
+            DOMAIN_COUNT[d.name] = 1
+        else:
+            DOMAIN_COUNT[d.name] += 1
+save_to_excel(wb, 'Domain | nb', DOMAIN_COUNT, repo.count_titles())
+
 # Request
 print('\n----- Request -----\n')
 res = stat.select(char_count=0)
