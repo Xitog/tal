@@ -15,12 +15,10 @@ import os.path
 import json
 import datetime
 import sys
+import zipfile
 
 # external
 import openpyxl
-#import xlwt
-#import langdetect
-#import matplotlib.pyplot as plt
 
 #-------------------------------------------------------------------------------
 # Global functions
@@ -190,10 +188,35 @@ class Repository:
     def __repr__(self):
         return str(self)
 
+    def dump(self, output='json', minimize=True, index='docid',makezip=False):
+        data = {}
+        for t in self.titles:
+            if output == 'json':
+                title_data = t.to_json()
+            else:
+                raise Exception('Not known format: ' + output)
+            if index == 'docid':
+                data[t.docid] = title_data
+            else:
+                raise Exception('Index not known: ' + index)
+        filename = 'dump_' + datetime.datetime.now().strftime('%Y-%m-%d %H-%M-%S')
+        outfile = open(filename + '.json', encoding='utf-8', mode='w')
+        if minimize:
+            indent=None
+        else:
+            indent='    '
+        json.dump(data, outfile, ensure_ascii=False, indent=indent)
+        outfile.close()
+        if makezip:
+            out = zipfile.ZipFile(filename + '.zip', mode='w')
+            out.write(filename + '.json')
+            out.close()
+    
     def discarded_info(self):
         for key in self.discarded:
             print(f'    {len(self.discarded[key])} because of missing key {key}')
         print(f'    {len(self.discard)} where also discarded as specified by the parameter of the constructor.')
+
 
 class Domain:
     """
@@ -207,7 +230,8 @@ class Domain:
         self.titles = []
         self.children = {}
         self.parent = None
-
+        self.fullname = '{:02}'.format(self.level) + ' ' + self.name
+    
     def display(self, nb, out=sys.stdout):
         ttl = len(self.titles)
         out.write('    ' * (self.level + 1) + f"{self.level}.{nb} {self}\n")
@@ -288,8 +312,8 @@ class Title:
         for author in author_list:
             self.authors.append(Author.register(author, self))
         # Domains
-        domain_list = dic['domain_s']
-        self.domains = Domain.register_list(domain_list, self)
+        self.raw_domains = dic['domain_s']
+        self.domains = Domain.register_list(self.raw_domains, self)
         # Title
         title_list = dic['title_s']
         self.title = title_list[0]
@@ -315,7 +339,28 @@ class Title:
         self.lang = lang_list[0]
         if self.lang != 'fr':
             raise KeyError('lang')
-    
+
+    def to_json(self):
+        authors = []
+        for a in self.authors:
+            authors.append(a.name)
+        #domains = []
+        #for d in self.domains:
+        #    domains.append(d.fullname)
+        data = {
+            'id' : self.docid,
+            'type' : self.kind,
+            'date' : self.date,
+            'title' : self.title,
+            'authors' : authors,
+            'domains' : self.raw_domains,
+            #'words' : self.words,
+            #'count' : self.word_count,
+            #'special' : self.special_char,
+            #'lang' : self.lang
+        }
+        return data
+            
     def get_words(self):
         for delim in self.words:
             yield t.title[delim[0]:delim[1]]
@@ -446,10 +491,16 @@ if __name__ == '__main__':
     
     repo = Repository('corpus-3046-files-2018-02-20-197-Mo', discard=english_titles)
     print('Nb files :', repo.count_files())
-    repo.load_all()
+    #repo.load_all()
+    repo.load_one(0)
     print('Nb titles:', repo.count_titles())
     stat = Statistic(repo)
 
+    # Dump
+
+    #repo.dump(output='json', minimize=True, index='docid')
+    repo.dump(output='json', minimize=False, index='docid', makezip=True)
+    exit()
     # Result file
 
     excel = ExcelFile(name='results', mode='w')
