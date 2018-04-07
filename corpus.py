@@ -16,9 +16,11 @@ import json
 import datetime
 import sys
 import zipfile
+from xml.sax.saxutils import escape, unescape
 
 # external
 import openpyxl
+from stanfordcorenlp import StanfordCoreNLP
 
 #-------------------------------------------------------------------------------
 # Global functions
@@ -134,14 +136,19 @@ class Repository:
         Total after checks: 298 118
     """
 
-    def __init__(self, path, discard=[]):
+    def __init__(self, path, id_discard=[], char_discard=[], nlp=None):
+        "Discard must be a dict or a list of id discarded."
         self.path = path
         self.filenames = os.listdir(self.path)
         self.num_found = None
         self.num_read = 0
         self.titles = []
         self.discarded = {}
-        self.discard = discard
+        self.id_discard = id_discard
+        self.char_discard = char_discard
+        self.nb_id_discard = 0
+        #self.nb_char_discard = 0 & char_discard are not used
+        self.nlp = nlp
     
     def count_files(self):
         return len(self.filenames)
@@ -149,9 +156,16 @@ class Repository:
     def count_titles(self):
         return len(self.titles)
     
-    def load_all(self):
+    def load_all(self, step=1000):
+        count = 0
+        total = 0
         for i in range(0, len(self.filenames)):
             self.load_one(i)
+            count += 1
+            if count == step:
+                total += count
+                print('Total loaded:', total)
+                count = 0
     
     def load_one(self, num):
         filename = self.filenames[num]
@@ -174,8 +188,10 @@ class Repository:
         self.num_read += len(docs)
         for doc in docs:
             try:
-                if doc['docid'] not in self.discard:
-                    self.titles.append(Title(doc, filename))
+                if doc['docid'] not in self.id_discard:
+                    self.titles.append(Title.from_raw_json(doc, filename, self.nlp))
+                else:
+                    self.nb_id_discard += 1
             except KeyError as ke:
                 kes = str(ke)
                 if kes not in self.discarded:
@@ -189,27 +205,42 @@ class Repository:
         return str(self)
 
     def dump(self, output='json', minimize=True, index='docid',makezip=False):
-        data = {}
-        for t in self.titles:
-            if output == 'json':
-                title_data = t.to_json()
-            else:
-                raise Exception('Not known format: ' + output)
-            if index == 'docid':
-                data[t.docid] = title_data
-            else:
-                raise Exception('Index not known: ' + index)
+        if not os.path.isdir('output_dump_repo'):
+             os.makedirs('output_dump_repo')
         filename = 'dump_' + datetime.datetime.now().strftime('%Y-%m-%d %H-%M-%S')
-        outfile = open(filename + '.json', encoding='utf-8', mode='w')
-        if minimize:
-            indent=None
+        if output == 'json':
+            data = {}
+            for t in self.titles:
+                title_data = t.to_json()
+                if index == 'docid':
+                    data[t.docid] = title_data
+                else:
+                    raise Exception('Index not known: ' + index)
+            if minimize:
+                indent=None
+            else:
+                indent='    '
+            full_filename = 'output_dump_repo' + os.sep + filename + '.' + output
+            outfile = open(full_filename, encoding='utf-8', mode='w')
+            json.dump(data, outfile, ensure_ascii=False, indent=indent)
+            outfile.close()
+        elif output == 'xml':
+            full_filename = 'output_dump_repo' + os.sep + filename + '.' + output
+            outfile = open(full_filename, encoding='utf-8', mode='w')
+            outfile.write('<notices>\n')
+            for t in self.titles:
+                try:
+                    outfile.write(t.to_xml())
+                except Exception as problem:
+                    print(problem)
+                    print(t.title)
+            outfile.write('</notices>')
+            outfile.close()
         else:
-            indent='    '
-        json.dump(data, outfile, ensure_ascii=False, indent=indent)
-        outfile.close()
+            raise Exception('Not known format: ' + output)
         if makezip:
-            out = zipfile.ZipFile(filename + '.zip', mode='w')
-            out.write(filename + '.json')
+            out = zipfile.ZipFile('output_dump_repo' + os.sep + filename + '_' + output + '.zip', mode='w')
+            out.write(full_filename)
             out.close()
     
     def discarded_info(self):
@@ -298,48 +329,115 @@ class Author:
 
 
 class Title:
-
-    def __init__(self, dic, filename):
-        global WRONG_TITLES
+    
+    def __init__(self):
+        self.words = []
+        self.pos_tags = []
+        self.authors = []
+    
+    @staticmethod
+    def from_raw_json(self, dic, filename, nlp=None, count_special_char=False):
+        t = Title()
         # Atomic values
-        self.docid = dic['docid']
-        self.kind = dic['docType_s']
-        self.date = dic['modifiedDateY_i']
-        self.filename = filename
+        t.docid = dic['docid']
+        t.kind = dic['docType_s']
+        t.date = dic['modifiedDateY_i']
+        t.filename = filename
         # Authors
         author_list = dic['authFullName_s']
-        self.authors = []
         for author in author_list:
-            self.authors.append(Author.register(author, self))
+            t.authors.append(Author.register(author, t))
         # Domains
-        self.raw_domains = dic['domain_s']
-        self.domains = Domain.register_list(self.raw_domains, self)
+        t.raw_domains = dic['domain_s']
+        t.domains = Domain.register_list(self.raw_domains, t)
         # Title
         title_list = dic['title_s']
-        self.title = title_list[0]
-        self.char_count = len(self.title)
-        self.words = segment_string(self.title)
-        self.word_count = len(self.words)
-        self.special_char = False
-        self.special_char_count = {}
-        for c in self.title:
-            if not c.isalnum() and not c.isspace():
-                self.special_char = True
-                if c not in self.special_char_count:
-                    self.special_char_count[c] = 1
-                    if c not in SPECIAL_CHAR_COUNT:
-                        SPECIAL_CHAR_COUNT[c] = 0
-                    SPECIAL_CHAR_COUNT[c] += 1
-                else:
-                    self.special_char_count[c] += 1
+        t.title = title_list[0]
+        #self.raw_title & self.filter() ?
+        t.char_count = len(t.title)
+        if nlp is not None:
+            t.words = nlp.word_tokenize(t.title)
+            t.pos_tags = nlp.pos_tag(t.title)
+        else:
+            t.words = segment_string(t.title)
+            t.pos_tags = []
+        t.word_count = len(self.words)
+        t.special_char = False
+        t.special_char_count = {}
+        if count_special_char:
+            for c in self.title:
+                if not c.isalnum() and not c.isspace():
+                    t.special_char = True
+                    if c not in t.special_char_count:
+                        t.special_char_count[c] = 1
+                        if c not in SPECIAL_CHAR_COUNT:
+                            SPECIAL_CHAR_COUNT[c] = 0
+                        SPECIAL_CHAR_COUNT[c] += 1
+                    else:
+                        t.special_char_count[c] += 1
         # Lang
         lang_list = dic['language_s']
         if len(lang_list) > 1:
             raise Exception('Too many langs')
-        self.lang = lang_list[0]
-        if self.lang != 'fr':
+        t.lang = lang_list[0]
+        if t.lang != 'fr':
             raise KeyError('lang')
-
+        return t
+    
+    @staticmethod
+    def from_xml(elem):
+        t = Title()
+        # Atomic values
+        for child in elem:
+            if child.tag == 'id':
+                t.docid = int(child.text)
+            elif child.tag == 'type':
+                t.kind = child.text
+            elif child.tag == 'date':
+                t.date = child.text
+            elif child.tag == 'title':
+                if child.text is not None:
+                    t.title = unescape(child.text)
+                else:
+                    t.title = ''
+            elif child.tag == 'words':
+                for word in child:
+                    t.words.append(word.text)
+            elif child.tag == 'pos_tags':
+                for tag in child:
+                    t.pos_tags.append(tag.text)
+            elif child.tag == 'authors':
+                for author in child:
+                    t.authors.append(unescape(author.text))
+            elif child.tag == 'domain':
+                for domain in child:
+                    t.domains.append(domain.text)
+        return t
+    
+    def to_xml(self):
+        authors_xml = ''
+        for a in self.authors:
+            authors_xml += f'            <author>{a.name}</author>\n'
+        domains_xml = ''
+        for d in self.raw_domains:
+            domains_xml += f'            <domain>{d}</domain>\n'
+        words_xml = ''
+        pos_tags_xml = ''
+        for p in self.pos_tags:
+            words_xml += f'            <word>{escape(p[0])}</word>\n'
+            pos_tags_xml += f'            <pos_tag>{p[1]}</pos_tag>\n'
+        data = """    <notice>
+        <id>{0}</id>
+        <type>{1}</type>
+        <date>{2}</date>
+        <title>{3}</title>
+        <words>\n{4}        </words>
+        <pos_tags>\n{5}        </pos_tags>
+        <authors>\n{6}        </authors>
+        <domains>\n{7}        </domains>
+    </notice>\n""".format(self.docid, self.kind, self.date, escape(self.title), words_xml, pos_tags_xml, authors_xml, domains_xml)
+        return data
+    
     def to_json(self):
         authors = []
         for a in self.authors:
@@ -354,19 +452,37 @@ class Title:
             'title' : self.title,
             'authors' : authors,
             'domains' : self.raw_domains,
+            'words' : self.words,
+            'pos_tags' : self.pos_tags,
             #'words' : self.words,
             #'count' : self.word_count,
             #'special' : self.special_char,
             #'lang' : self.lang
         }
         return data
-            
+
+##    def filter(self):
+##        for c in self.raw_title:
+##            if not c.isalpha() and not c.isdigit() and c not in [
+##                '"', "'", '’', '‘', '«', '»', '‟', '„', '´', '`', 
+##                '(', ')', '[', ']', '{', '}',
+##                '*', '/', '//', '+', '-', '%', '=', '×', '^', '∞',
+##                '—', '—', # the second is longer
+##                '&', '®', '©', '™', '\\', '@', '#', '|', '•', '†', '·', '●',
+##                '€', '$', '£', '¢',
+##                ',', ';', ':', 
+##                ' ', ' ', # the second is an unbreakable space
+##                '.', '!', '?', '…',
+##                '~']:
+##                print(c, ord(c), ':', self.raw_title)
+##        return self.raw_title
+    
     def get_words(self):
         for delim in self.words:
             yield t.title[delim[0]:delim[1]]
     
     def __repr__(self):
-        return f"{self.docid} in {self.filename}"
+        return f"{self.docid}" # in {self.filename}"
 
 
 class Statistic:
@@ -477,11 +593,58 @@ class Statistic:
                     #    print('   ', dom)
                 else:
                     print('    None')
+                for i in range(0, len(self.words)):
+                    if i < len(self.pos_tags):
+                        print(i, self.words[i], self.pos_tags[i])
+                    else:
+                        print(i, self.words[i])
+                break
+
+import xml.etree.ElementTree as ET
+
+class Corpus:
+
+    def __init__(self, filepath):
+        start = datetime.datetime.now()
+        self.titles = {}
+        #tree = ET.parse(filepath)
+        #root = tree.getroot()
+        for event, elem in ET.iterparse(filepath, events=('end',)):
+            if event == 'end':
+                if elem.tag == 'notice':
+                    t = Title.from_xml(elem)
+                    self.titles[t.docid] = t
+                    elem.clear()
+        delta = datetime.datetime.now() - start
+        print('Nb titles:', len(self.titles))
+        print(f"Loaded in {delta}.")
+
 
 if __name__ == '__main__':
-    
+
     start = datetime.datetime.now()
 
+    # debug
+    #f = open(r'output_dump_repo\dump_2018-04-07 00-01-04.xml', mode='r', encoding='utf-8')
+    ##f = open(r'output_dump_repo\dump.xml', mode='r', encoding='utf-8')
+    ##lines = f.readlines()
+    ##f.close()
+    ##print(lines[13347945])
+    ##lines[13347945] = lines[13347945].replace('&', '&amp;')
+    #lines[4443448] = lines[4443448].replace('&', '&amp;')
+    ##print(lines[13347945])
+    ##f = open(r'output_dump_repo\dump.xml', mode='w', encoding='utf-8')
+    ##for line in lines:
+    ##  f.write(line)
+    ##f.close()
+    
+    c = Corpus(r'output_dump_repo\dump.xml')
+    exit()
+    
+    # Starting the server
+    
+    NLP = StanfordCoreNLP('http://localhost', port=9000, lang='fr')
+        
     # Input data
 
     excel = ExcelFile(name=r'io_english_titles\english_title_man', mode='r')
@@ -489,10 +652,10 @@ if __name__ == '__main__':
     del excel
     english_titles = { k : v for k, v in english_titles.items() if v[2] != 'fr'}
     
-    repo = Repository('corpus-3046-files-2018-02-20-197-Mo', discard=english_titles)
+    repo = Repository('corpus-3046-files-2018-02-20-197-Mo', id_discard=english_titles, nlp=NLP)
     print('Nb files :', repo.count_files())
-    #repo.load_all()
-    repo.load_one(0)
+    repo.load_all()
+    #repo.load_one(0)
     print('Nb titles:', repo.count_titles())
     stat = Statistic(repo)
 
@@ -500,6 +663,7 @@ if __name__ == '__main__':
 
     #repo.dump(output='json', minimize=True, index='docid')
     repo.dump(output='json', minimize=False, index='docid', makezip=True)
+    repo.dump(output='xml', makezip=True)
     exit()
     # Result file
 
