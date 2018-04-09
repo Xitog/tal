@@ -100,10 +100,17 @@ class ExcelFile:
         self.wb = openpyxl.Workbook()
         ws = self.wb.active
         ws.title = 'Information'
+        self.nb_sheet = 0
         
     def save_to_sheet(self, name, values, percent=None, test_val=None):
         # ws = wb.add_sheet(name)
-        ws = self.wb.create_sheet(name)
+        if self.nb_sheet > 0:
+            ws = self.wb.create_sheet(name)
+            self.nb_sheet += 1
+        else:
+            ws= self.wb.active
+            ws.title = name
+            self.nb_sheet += 1
         row = 1
         for val in sorted(values, key=values.get, reverse=True): #sorted(values.keys()):
             if test_val is None or test_val(values[val]):
