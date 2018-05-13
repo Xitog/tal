@@ -9,10 +9,11 @@ def open_sock():
     sock.connect(('localhost', 7272))
     return sock
 
-def send_receive(sock, cmd):
+def send_receive(sock, cmd, debug=False):
     # send data
     cmd += '\f\f\f'
-    print('Sending input to server:', cmd)
+    if debug:
+        print('Sending input to server:', cmd)
     sock.send(cmd.encode(encoding='utf-8'))
     
     # receive data
@@ -24,9 +25,11 @@ def send_receive(sock, cmd):
             done = True
         chunks.append(chunk)
     res = b''.join(chunks)
-    print('Server:', res)
+    if debug:
+        print('Server:', res)
 
     # close socket
+    #if sock != GLOBAL_SOCK:
     sock.close()
 
     # return data
@@ -107,19 +110,34 @@ class Word:
 # The token number of this token's governor (or 0 when the governor is the root)
 # The label of the dependency governing this token
 #res = console()
-sock = open_sock()
-res = send_receive(sock, 'Bonjour le monde !')
-print(res)
 
-lines = res.split('\n')
-#print('Number of lines:', len(lines))
-words = []
-for lin in lines:
-    elems = lin.split('\t')
-    if len(elems) == 10:
-        words.append(Word(*elems))
-    #else:
-    #    print(len(lin),':', lin)
-for word in words:
-    print(word)
+def from_res_to_words(res):
+    lines = res.split('\n')
+    #print('Number of lines:', len(lines))
+    words = []
+    for lin in lines:
+        elems = lin.split('\t')
+        if len(elems) == 10:
+            words.append(Word(*elems))
+        #else:
+        #    print(len(lin),':', lin)
+    return words
 
+#GLOBAL_SOCK = None
+
+def process_string(string, sock=None, debug=False):
+    global GLOBAL_SOCK
+    if sock is None:
+        #if GLOBAL_SOCK is None:
+        #    GLOBAL_SOCK = open_sock()
+        #sock = GLOBAL_SOCK
+        sock = open_sock()
+    res = send_receive(sock, string)
+    if debug:
+        print(res)
+    return from_res_to_words(res)
+
+if __name__ == '__main__':
+    words = process_string('Bonjour le monde !', debug=True)
+    for word in words:
+        print(word)
