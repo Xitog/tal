@@ -152,7 +152,7 @@ def hashtag_and_ref(content):
 # Main program
 #-------------------------------------------------------------------------------
 
-PASS = 2
+PASS = 3
 
 if __name__ == '__main__':
     if PASS == 1:
@@ -228,5 +228,59 @@ if __name__ == '__main__':
         relationships.display(50)
         print('\nLanguage Acts\n')
         language_acts.display(50)
+    elif PASS == 3:
+        o_json = json.load(open(r'projet_tweet\projet_tweet_save.json', mode='r', encoding='utf-8'))
+        tweets = jsonpickle.decode(o_json)
         
+        rules = { 'cat_milieu_media' : {
+                    'typ' : 'set_of_words',
+                    'ens' : ['media', 'journalisme', 'chaîne', 'journaliste'],
+                    'cat' : 'milieu',
+                    'val' : 'Média',
+                    'plus': 'score',
+                }, 'ref_milieu_media' : {
+                    'typ' : 'ref',
+                    'ens' : ['@frhaz'],
+                    'cat' : 'milieu',
+                    'val' : 'Média',
+                    'plus': 'score',
+                }, 'cat_milieu_études' : {
+                    'typ' : 'set_of_words',
+                    'ens' : ['étudiant', 'étudiants', 'fac', 'université'],
+                    'cat' : 'milieu',
+                    'val' : 'Études',
+                    'plus': 'score'
+                },
+            }
+        for tw in tweets:
+            print('Tweet:', tw.text[:50])
+            categories = {
+                    'milieu' : {
+                            'Média' : 0,
+                            'Études': 0,
+                        }
+                }
+            for rule in rules.values():
+                score = 0
+                if rule['typ'] == 'set_of_words':
+                    for w in tw.words:
+                        if w.lemma in rule['ens']:
+                            #print('    ', w.lemma, sep='')
+                            score += 1
+                elif rule['typ'] == 'ref':
+                    for h in tw.hashtag_and_ref:
+                        if h.ids in rule['ens']:
+                            score += 1
+                if score > 0:
+                    categories[rule['cat']][rule['val']] += score
+            #end of rules
+            for key, val in categories['milieu'].items():
+                if val > 0:
+                    print(f"Milieu = {key} for with tweet with a score of {val}")
+            print('This has for milieu: ', getattr(tw, rule['cat']), '.', sep='')
+            #print(f"    Its category {rule['cat']} should be {rule['val']} with a score of {score} and is {getattr(tw, rule['cat'])}.") 
+            print()
+            print()
+        
+        # 16h39 : YES ! Cela valide mon archi.
         
