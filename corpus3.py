@@ -82,26 +82,81 @@ class Corpus:
         return len(self.titles)
 
 
-def filter_zero_words_title():
-    corpus_from = Corpus.load(r'.\output_dump_repo\dump.xml')
-    corpus_to = Corpus()
+def count_by_domain():
+    corpus = Corpus.load(r'.\output_dump_repo\dump.xml') #minidump
+    domains = { 'UNKNOWN-DGX' : 0}
+    itercount = 0
+    iterdisplay = 1000
+    iterstep = 1000
+    print('-- Counting --')
+    for title_id in corpus.titles:
+        itercount += 1
+        if itercount == iterdisplay:
+            print(itercount, 'titles done.')
+            iterdisplay += iterstep
+        title = corpus[title_id]
+        if len(title.domains) > 0:
+            for dom in title.domains:
+                if dom not in domains:
+                    domains[dom] = 0
+                domains[dom] += 1
+        else:
+            domains['UNKNOWN-DGX'] += 1
+    print('-- Display --')
+    excel = ExcelFile(name='titles_by_domain', mode='w')
+    excel.save_to_sheet('Domains | nb', domains, corpus.count_titles())
+    excel.save()
+    # first by importance
+    for key in sorted(domains, key=domains.get, reverse=True):
+        if domains[key] > 0 and key.startswith('0. '):
+            print(key, domains[key])
+    print('---------------------------')
+    print('---------------------------')
+    # all by alphabetical order
+    for key in sorted(domains.keys()):
+        if domains[key] > 0:
+            print(key, domains[key])
+
+CORPUS = None
+
+def filter_zero_words_duplicates_title():
+    global CORPUS
+    corpus = Corpus.load(r'.\output_dump_repo\dump.xml') #minidump
+    CORPUS = corpus
+    key_to_delete = []
     nb_double = 0
     nb_empty = 0
     all_title_text = []
-    for title_id in corpus_from.titles:
-        title = corpus_from[title_id]
+    itercount = 0
+    iterdisplay = 1000
+    iterstep = 1000
+    old_length = len(corpus)
+    print('-- Filtering --')
+    for title_id in corpus.titles:
+        itercount += 1
+        if itercount == iterdisplay:
+            print(itercount, 'titles done.')
+            iterdisplay += iterstep
+        title = corpus[title_id]
         if len(title.words) == 0:
             nb_empty += 1
             #print(nb_empty, '. (EMPTY) ', title.title, sep='')
+            key_to_delete.append(title_id)
         elif title.title in all_title_text:
             nb_double += 1
             #print(nb_double, '. (DOUBLE) ', title.title, sep='')
+            key_to_delete.append(title_id)
         else:
-            corpus_to.add_title(title)
+            #corpus.add_title(title)
             all_title_text.append(title.title)
-    print('Saved corpus is:', len(corpus_to))
-    print('Discarded: empty =', nb_empty, 'double =', nb_double)
-    corpus_to.save('corpus_filtered')
+    # Deletion
+    for key in key_to_delete:
+        del corpus.titles[key]
+    print('-- Saving --')
+    print('Origin corpus:', old_length)
+    print('Saved corpus is:', len(corpus))
+    print('Discarded: empty =', nb_empty, 'double =', nb_double, 'total =', nb_empty + nb_double)
+    corpus.save('corpus_filtered')
 
 
 def basic_statistics():
@@ -152,9 +207,14 @@ def basic_statistics():
 if __name__ == '__main__':
     start_time = datetime.datetime.now()
     print('\n----- Starting ------\n')
+    print('Started at', start_time)
     # action
-    filter_zero_words_title()
+    #01
+    filter_zero_words_duplicates_title()
+    #02
+    #count_by_domain()
     # end of action
+    print('Ending at', datetime.datetime.now())
     print('\n----- End -----\n')
     delta = datetime.datetime.now() - start_time
     print(f"    Script has ended [{delta} elapsed].")

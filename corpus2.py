@@ -363,6 +363,8 @@ class Title:
         self.words = []
         self.pos_tags = []
         self.authors = []
+        self.raw_domains = []
+        self.domains = []
     
     @staticmethod
     def from_raw_json(dic, filename, nlp=None, count_special_char=False):
@@ -416,6 +418,8 @@ class Title:
     @staticmethod
     def from_xml(elem):
         t = Title()
+        words = []
+        pos_tags = []
         # Atomic values
         for child in elem:
             if child.tag == 'id':
@@ -431,24 +435,34 @@ class Title:
                     t.title = ''
             elif child.tag == 'words':
                 for word in child:
-                    t.words.append(word.text)
+                    words.append(word.text)
             elif child.tag == 'pos_tags':
                 for tag in child:
-                    t.pos_tags.append(tag.text)
+                    pos_tags.append(tag.text)
             elif child.tag == 'authors':
                 for author in child:
                     t.authors.append(unescape(author.text))
-            elif child.tag == 'domain':
+            elif child.tag == 'domains':
                 for domain in child:
                     t.domains.append(domain.text)
+        for i in range(0, len(words)):
+            t.words.append(words[i])
+            t.pos_tags.append((words[i], pos_tags[i]))
         return t
     
     def to_xml(self):
         authors_xml = ''
         for a in self.authors:
-            authors_xml += f'            <author>{a.name}</author>\n'
+            if hasattr(a, 'name'):
+                authors_xml += f'            <author>{a.name}</author>\n'
+            else:
+                authors_xml += f'            <author>{a}</author>\n'
         domains_xml = ''
-        for d in self.raw_domains:
+        if len(self.raw_domains) == 0:
+            doms = self.domains
+        else:
+            doms = self.raw_domains
+        for d in doms:
             domains_xml += f'            <domain>{d}</domain>\n'
         words_xml = ''
         pos_tags_xml = ''
@@ -511,7 +525,7 @@ class Title:
             yield t.title[delim[0]:delim[1]]
     
     def __repr__(self):
-        return f"{self.docid}" # in {self.filename}"
+        return f"Title : {self.docid}" # in {self.filename}"
 
 
 class Statistic:
