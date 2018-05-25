@@ -16,11 +16,131 @@ import zipfile
 import os
 
 # project
-from corpus2 import Title, ExcelFile
+from corpus2 import ExcelFile
+import pytalismane
+from xml.sax.saxutils import escape, unescape
 
 #-------------------------------------------------------------------------------
 # Classes
 #-------------------------------------------------------------------------------
+
+#
+# Word
+#
+class Word:
+
+    def __init__(self, form, lemma, pos):
+        self.form = form
+        self.lemma = lemma
+        self.pos = pos
+
+    #def to_xml(self):
+    #    s = '            <word>\n'
+    #    s += f'                <form>{escape(self.form)}</form>\n'
+    #    s += f'                <lemma>{escape(self.lemma)}</lemma>\n'
+    #    s += f'                <pos>{self.pos}</pos>\n'
+    #    s += '            </word>\n'
+    #    return s
+
+    # minimized version
+    def to_xml(self):
+        s = f'<word><form>{escape(self.form)}</form><lemma>{escape(self.lemma)}</lemma><pos>{self.pos}</pos></word>\n'
+        return s
+    
+    @staticmethod
+    def from_xml(elem):
+        form = None
+        lemma = ''
+        pos = ''
+        if len(elem) > 0:
+            for child in elem:
+                if child.tag == 'form':
+                    form = unescape(child.text)
+                elif child.tag == 'lemma':
+                    if child.text is not None:
+                        lemma = unescape(child.text)
+                elif child.tag == 'pos':
+                    if child.text is not None:
+                        pos = child.text
+        # compat mode
+        else:
+            form = elem.text            
+        return Word(form, lemma, pos)
+
+    def __str__(self):
+        return f'<Word Object form={self.form}, lemma={self.lemma}, pos={self.pos}>'
+#
+# Title
+#
+class Title:
+
+    def __init__(self):
+        self.docid = None
+        self.kind = None
+        self.date = None
+        self.text = None
+        self.words = []
+        self.authors = []
+        self.domains = []
+
+    def to_xml(self):
+        authors_xml = ''
+        for a in self.authors:
+            #authors_xml += f'            <author>{escape(a)}</author>\n'
+            authors_xml += f'<author>{escape(a)}</author>\n'
+        domains_xml = ''
+        for d in self.domains:
+            #domains_xml += f'            <domain>{d}</domain>\n'
+            domains_xml += f'<domain>{d}</domain>\n'
+        words_xml = ''
+        for w in self.words:
+            words_xml += w.to_xml()
+        data = """<notice>
+<id>{0}</id>
+<type>{1}</type>
+<date>{2}</date>
+<text>{3}</text>
+<words>\n{4}</words>
+<authors>\n{5}</authors>
+<domains>\n{6}</domains>
+</notice>\n""".format(self.docid, self.kind, self.date, escape(self.text), words_xml, authors_xml, domains_xml)
+        return data
+        data = """    <notice>
+        <id>{0}</id>
+        <type>{1}</type>
+        <date>{2}</date>
+        <text>{3}</text>
+        <words>\n{4}        </words>
+        <authors>\n{5}        </authors>
+        <domains>\n{6}        </domains>
+    </notice>\n""".format(self.docid, self.kind, self.date, escape(self.text), words_xml, authors_xml, domains_xml)
+        return data
+
+    @staticmethod
+    def from_xml(elem):
+        t = Title()
+        for child in elem:
+            if child.tag == 'id':
+                t.docid = int(child.text)
+            elif child.tag == 'type':
+                t.kind = child.text
+            elif child.tag == 'date':
+                t.date = child.text
+            elif child.tag == 'text':
+                t.text = unescape(child.text)
+            # compat mode
+            elif child.tag == 'title':
+                t.text = unescape(child.text)
+            elif child.tag == 'words':
+                for word in child:
+                    t.words.append(Word.from_xml(word))
+            elif child.tag == 'authors':
+                for author in child:
+                    t.authors.append(unescape(author.text))
+            elif child.tag == 'domains':
+                for domain in child:
+                    t.domains.append(domain.text)
+        return t
 
 #
 # Corpus
@@ -43,22 +163,22 @@ class Corpus:
                     corpus.titles[t.docid] = t
                     elem.clear()
         delta = datetime.datetime.now() - start
-        print('Nb titles:', len(corpus.titles))
-        print(f"Loaded in {delta}.")
+        print('[INFO] --- Nb titles:', len(corpus.titles))
+        print(f"[INFO] --- Loaded in {delta}.")
         return corpus
     
     # Code taken from Repository.dump
     def save(self, filename, makezip=False):
-        full_filename = 'output_dump_repo' + os.sep + filename + '.xml'
+        full_filename = 'output_dump_repo' + os.sep + filename # + '.xml'
         outfile = open(full_filename, encoding='utf-8', mode='w')
         outfile.write('<notices>\n')
         for title_id in self.titles:
             title = self.titles[title_id]
-            try:
-                outfile.write(title.to_xml())
-            except Exception as problem:
-                print(problem)
-                print(title.title, title_id)
+            #try:
+            outfile.write(title.to_xml())
+            #except Exception as problem:
+            #    print(problem)
+            #    print(title.text, title_id)
         outfile.write('</notices>')
         outfile.close()
         if makezip:
@@ -117,12 +237,9 @@ def count_by_domain():
         if domains[key] > 0:
             print(key, domains[key])
 
-CORPUS = None
 
 def filter_zero_words_duplicates_title():
-    global CORPUS
     corpus = Corpus.load(r'.\output_dump_repo\dump.xml') #minidump
-    CORPUS = corpus
     key_to_delete = []
     nb_double = 0
     nb_empty = 0
@@ -204,18 +321,65 @@ def basic_statistics():
     
     excel.save()
 
+def convert_to_new_format():
+    corpus = Corpus.load(r'.\output_dump_repo\minidump.xml')
+    corpus.save('mini_dump_converted')
+
+def save_dont_mess(origin):
+    print('[INFO] Running save_dont_mess')
+    corpus = Corpus.load(r'.\output_dump_repo' + os.sep + origin)
+    corpus.save(os.path.splitext(origin)[0] + '_same.xml')
+
+def run_talismane(origin):
+    print('[INFO] Running run_talismane')
+    corpus = Corpus.load(r'.\output_dump_repo' + os.sep + origin)
+    for title_id in corpus.titles:
+        title = corpus[title_id]
+        words = pytalismane.process_string(title.text)
+        title.words = []
+        for i in range(0, len(words)):
+            title.words.append(Word(words[i].form, words[i].lemma, words[i].pos))
+    corpus.save(os.path.splitext(origin)[0] + '_talismane.xml')
+
+def run_talismane_heavy(origin):
+    print('[INFO] --- Running run_talismane_heavy')
+    print('[INFO] --- Loading corpus')
+    corpus = Corpus.load(r'.\output_dump_repo' + os.sep + origin)
+    itercount = 0
+    iterdisplay = 1000
+    iterstep = 1000
+    print('[INFO] --- Counting')
+    for title_id in corpus.titles:
+        itercount += 1
+        if itercount == iterdisplay:
+            print(itercount, 'titles done.')
+            iterdisplay += iterstep
+        title = corpus[title_id]
+        words = pytalismane.process_string(title.text)
+        title.words = []
+        for i in range(0, len(words)):
+            title.words.append(Word(words[i].form, words[i].lemma, words[i].pos))
+    print('[INFO] --- Saving')
+    corpus.save(os.path.splitext(origin)[0] + '_talismane.xml')
+
 if __name__ == '__main__':
     start_time = datetime.datetime.now()
-    print('\n----- Starting ------\n')
-    print('Started at', start_time)
+    print('[INFO] --- Start -------------------------------------------------\n')
+    print('[INFO] --- Started at', start_time)
     # action
     #01
-    filter_zero_words_duplicates_title()
+    #filter_zero_words_duplicates_title()
     #02
     #count_by_domain()
+    #03
+    #convert_to_new_format()
+    #save_dont_mess('mini_dump.xml') # mini_dump_converted.xml
+    #run_talismane('mini_dump_same.xml')
+    #04
+    run_talismane_heavy('corpus.xml')
     # end of action
-    print('Ending at', datetime.datetime.now())
-    print('\n----- End -----\n')
+    print('[INFO] --- Ending at', datetime.datetime.now())
+    print('\n[INFO] --- End -------------------------------------------------')
     delta = datetime.datetime.now() - start_time
-    print(f"    Script has ended [{delta} elapsed].")
+    print(f"[INFO] --- Script has ended [{delta} elapsed].")
     

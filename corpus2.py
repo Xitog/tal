@@ -456,7 +456,7 @@ class Title:
             if hasattr(a, 'name'):
                 authors_xml += f'            <author>{a.name}</author>\n'
             else:
-                authors_xml += f'            <author>{a}</author>\n'
+                authors_xml += f'            <author>{escape(a)}</author>\n'
         domains_xml = ''
         if len(self.raw_domains) == 0:
             doms = self.domains
