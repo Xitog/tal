@@ -203,7 +203,7 @@ class Corpus:
 
 
 def count_by_domain():
-    corpus = Corpus.load(r'.\output_dump_repo\dump.xml') #minidump
+    corpus = Corpus.load(r'.\output_dump_repo\corpus_talismane.xml') #minidump
     domains = { 'UNKNOWN-DGX' : 0}
     itercount = 0
     iterdisplay = 1000
@@ -362,6 +362,32 @@ def run_talismane_heavy(origin):
     print('[INFO] --- Saving')
     corpus.save(os.path.splitext(origin)[0] + '_talismane.xml')
 
+def make_lexique(origin):
+    excel = ExcelFile(name='lexiqueX', mode='w')
+    print('[INFO] --- Running make_lexique')
+    print('[INFO] --- Loading corpus')
+    corpus = Corpus.load(r'.\output_dump_repo' + os.sep + origin)
+    itercount = 0
+    iterdisplay = 1000
+    iterstep = 1000
+    print('[INFO] --- Counting')
+    lemmas = {}
+    for title_id in corpus.titles:
+        itercount += 1
+        if itercount == iterdisplay:
+            print(itercount, 'titles done.')
+            iterdisplay += iterstep
+        title = corpus[title_id]
+        for w in title.words:
+            if w.lemma not in lemmas:
+                lemmas[w.lemma] = 1
+            else:
+                lemmas[w.lemma] += 1
+    print('[INFO] --- Saving')
+    excel.save_to_sheet('LEMMAS | nb', lemmas, len(lemmas))
+    excel.save()
+
+
 if __name__ == '__main__':
     start_time = datetime.datetime.now()
     print('[INFO] --- Start -------------------------------------------------\n')
@@ -370,13 +396,15 @@ if __name__ == '__main__':
     #01
     #filter_zero_words_duplicates_title()
     #02
-    #count_by_domain()
+    count_by_domain()
     #03
     #convert_to_new_format()
     #save_dont_mess('mini_dump.xml') # mini_dump_converted.xml
     #run_talismane('mini_dump_same.xml')
     #04
-    run_talismane_heavy('corpus.xml')
+    #run_talismane_heavy('corpus.xml')
+    #05
+    #make_lexique('corpus_talismane.xml') #mini_corpus_talismane.xml')
     # end of action
     print('[INFO] --- Ending at', datetime.datetime.now())
     print('\n[INFO] --- End -------------------------------------------------')
