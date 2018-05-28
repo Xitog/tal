@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<import author="damie_000"
+        date="2018-05-28"
+        desc="&lt;pre&gt;&lt;br/&gt;- TEST2&#xD;&lt;br/&gt;- damie_000&#xD;&lt;br/&gt;- 2018-05-28&lt;/pre&gt;"
+        name="TEST2"
+        rootDir="C:\Users\damie_000\Documents\GitHub\tal\output_dump_repo\test2"
+        script="frantextLoader.groovy"
+        version="0.7.8">
+   <linkGrp type="align"/>
+   <corpora>
+      <corpus annotate="true"
+              cqpid="TEST21527542357002"
+              desc="&lt;pre&gt;&lt;br/&gt;- TEST2&#xD;&lt;br/&gt;- damie_000&#xD;&lt;br/&gt;- 2018-05-28&lt;/pre&gt;"
+              encoding="UTF-8"
+              font=""
+              lang="fr"
+              name="TEST2">
+         <tokenizer onlyThoseTests="false" skip="false">
+            <param name="whitespaces">[\p{Z}\p{C}]+</param>
+            <param name="regPunct">[\p{Ps}\p{Pe}\p{Pi}\p{Pf}\p{Po}\p{S}]</param>
+            <param name="punct_strong">[.!?]|\.\.|\.\.\.|…|\|</param>
+            <param name="regElision">['‘’]</param>
+         </tokenizer>
+         <xslt xsl=""/>
+         <pattributes/>
+         <sattributes/>
+         <biblios/>
+         <uis>
+            <ui command="textualplans">
+               <word>w</word>
+            </ui>
+            <ui command="concordance">
+               <context_limits type="list">text</context_limits>
+            </ui>
+         </uis>
+         <editions default="default">
+       	    <edition build_edition="true"
+                     mode="groovy"
+                     name="default"
+                     page_break_tag="pb"
+                     script="pager.groovy"
+                     words_per_page="500"/>
+         </editions>
+         <texts/>
+         <queries/>
+         <knowledgeRepositories/>
+         <preBuild/>
+         <parameters/>
+      </corpus>
+   </corpora>
+</import>

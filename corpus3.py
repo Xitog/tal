@@ -388,6 +388,25 @@ def make_lexique(origin):
     excel.save()
 
 
+def produce_antconc_files(origin):
+    print('[INFO] --- Running produce_antconc_files')
+    print('[INFO] --- Loading corpus')
+    corpus = Corpus.load(r'.\output_dump_repo' + os.sep + origin)
+    itercount = 0
+    iterdisplay = 1000
+    iterstep = 1000
+    outfile = open(r'.\output_dump_repo' + os.sep + 'corpus_antconc.txt', mode='w', encoding='utf8')
+    print('[INFO] --- Processing')
+    for title_id in corpus.titles:
+        itercount += 1
+        if itercount == iterdisplay:
+            print(itercount, 'titles done.')
+            iterdisplay += iterstep
+        title = corpus[title_id]
+        outfile.write(title.text + '\n')
+    print('[INFO] --- Saving')
+    outfile.close()
+
 if __name__ == '__main__':
     start_time = datetime.datetime.now()
     print('[INFO] --- Start -------------------------------------------------\n')
@@ -396,7 +415,7 @@ if __name__ == '__main__':
     #01
     #filter_zero_words_duplicates_title()
     #02
-    count_by_domain()
+    #count_by_domain()
     #03
     #convert_to_new_format()
     #save_dont_mess('mini_dump.xml') # mini_dump_converted.xml
@@ -405,6 +424,8 @@ if __name__ == '__main__':
     #run_talismane_heavy('corpus.xml')
     #05
     #make_lexique('corpus_talismane.xml') #mini_corpus_talismane.xml')
+    #06
+    produce_antconc_files('corpus_talismane.xml')
     # end of action
     print('[INFO] --- Ending at', datetime.datetime.now())
     print('\n[INFO] --- End -------------------------------------------------')
