@@ -379,12 +379,18 @@ def make_lexique(origin):
             iterdisplay += iterstep
         title = corpus[title_id]
         for w in title.words:
-            if w.lemma not in lemmas:
-                lemmas[w.lemma] = 1
+            key = w.lemma + '_' + w.pos
+            if key not in lemmas:
+                lemmas[key] = [w.lemma, w.pos, 1]
             else:
-                lemmas[w.lemma] += 1
+                lemmas[key][2] += 1
     print('[INFO] --- Saving')
-    excel.save_to_sheet('LEMMAS | nb', lemmas, len(lemmas))
+    excel.save_to_sheet_mul(
+        name = 'LEMME | POS | NB',
+        values = lemmas,
+        order_col = 2,
+        reverse_order = True,
+        percent_col = 2)
     excel.save()
 
 
@@ -423,9 +429,10 @@ if __name__ == '__main__':
     #04
     #run_talismane_heavy('corpus.xml')
     #05
-    #make_lexique('corpus_talismane.xml') #mini_corpus_talismane.xml')
+    #make_lexique('mini_corpus_talismane.xml')
+    make_lexique('corpus_talismane.xml')
     #06
-    produce_antconc_files('corpus_talismane.xml')
+    #produce_antconc_files('corpus_talismane.xml')
     # end of action
     print('[INFO] --- Ending at', datetime.datetime.now())
     print('\n[INFO] --- End -------------------------------------------------')

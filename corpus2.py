@@ -101,7 +101,39 @@ class ExcelFile:
         ws = self.wb.active
         ws.title = 'Information'
         self.nb_sheet = 0
-        
+
+    # you must send a dict with :
+    # { key : [key, v1, v2, v3] }
+    # order => which column to use to order
+    # percent => which column to use to percent
+    def save_to_sheet_mul(self, name, values, order_col=0, reverse_order=True, percent_col=None, percent_val=None):
+        # Handle if a new sheet is needed
+        if self.nb_sheet > 0:
+            ws = self.wb.create_sheet(name)
+            self.nb_sheet += 1
+        else:
+            ws= self.wb.active
+            ws.title = name
+            self.nb_sheet += 1
+        # Calculate the value to divide to have the percent
+        if percent_col is not None and percent_val is None:
+            percent_val = 0
+            for _, val in values.items():
+                percent_val += val[percent_col]
+        # Process all the values
+        row = 1
+        for sorted_values_with_key in sorted(values.items(), key=lambda t: t[1][order_col], reverse=reverse_order):
+            # (key, [list of values])
+            nb = 1
+            for val in sorted_values_with_key[1]: # we iterate on [list of values]
+                ws.cell(column=nb, row=row, value=val)
+                nb += 1
+                if percent_col is not None and type(percent_col) == int:
+                    if nb == percent_col + 2:
+                        ws.cell(column=nb, row=row, value=val / percent_val)
+                        nb += 1
+            row += 1
+    
     def save_to_sheet(self, name, values, percent=None, test_val=None):
         # ws = wb.add_sheet(name)
         if self.nb_sheet > 0:
@@ -132,8 +164,11 @@ class ExcelFile:
                     ws.cell(column=nb, row=row, value=values[val])
                     #ws.write(row, nb, values[val])
                     nb += 1
-                if percent is not None:
-                    ws.cell(column=nb, row=row, value=values[val] / percent)
+                if percent is not None: # percent on last value
+                    if type(values[val]) in [tuple, list]:
+                        ws.cell(column=nb, row=row, value=values[val][-1] / percent)
+                    else:
+                        ws.cell(column=nb, row=row, value=values[val] / percent)
                     #ws.write(row, nb, values[val] / percent)
                 row += 1
 
