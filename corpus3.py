@@ -413,6 +413,118 @@ def produce_antconc_files(origin):
     print('[INFO] --- Saving')
     outfile.close()
 
+
+def stats_after_column(origin, start=':', after=5):
+    excel = ExcelFile(name='stats1', mode='w')
+    print('[INFO] --- Running produce_antconc_files')
+    print('[INFO] --- Loading corpus')
+    corpus = Corpus.load(r'.\output_dump_repo' + os.sep + origin)
+    itercount = 0
+    iterdisplay = 1000
+    iterstep = 1000
+    stats = {}
+    print('[INFO] --- Processing')
+    for title_id in corpus.titles:
+        itercount += 1
+        if itercount == iterdisplay:
+            print(itercount, 'titles done.')
+            iterdisplay += iterstep
+        title = corpus[title_id]
+        key = '' # we are going to make a key pos1|pos2|pos3...
+        found = False
+        nb = 0
+        for w in title.words:
+            #print(w.form)
+            if found == False and w.form != start:
+                #print('Start form not detected')
+                continue
+            if found == False:
+                #print('Start form found')
+                found = True
+                continue # do not take the start symbol into the key
+            #print('Form put into the key')
+            key += w.pos + '|'
+            nb += 1
+            if nb == after:
+                break
+        if found:
+            if nb < after:
+                key += '-|' * (after - nb) # complete to have keys of the same size
+            key = key[:-1]
+            #print('key is:', key)
+            if key not in stats:
+                stats[key] = 1
+            else:
+                stats[key] += 1
+    print('[INFO] --- Saving')
+    stats_excel = {}
+    for s in stats:
+        stats_excel[s] = s.split('|')
+        stats_excel[s].append(stats[s])
+    excel.save_to_sheet_mul(
+        name = 'STATS',
+        values = stats_excel,
+        order_col = 5,
+        reverse_order = True,
+        percent_col = 5)
+    excel.save()
+
+
+def find_examples(origin, start=':', after=5, rule=''):
+    excel = ExcelFile(name='examples_' + rule.replace('|', '_'), mode='w')
+    print('[INFO] --- Running produce_antconc_files')
+    print('[INFO] --- Loading corpus')
+    corpus = Corpus.load(r'.\output_dump_repo' + os.sep + origin)
+    itercount = 0
+    iterdisplay = 1000
+    iterstep = 1000
+    examples = {}
+    count = 0
+    print('[INFO] --- Processing')
+    for title_id in corpus.titles:
+        itercount += 1
+        if itercount == iterdisplay:
+            print(itercount, 'titles done.')
+            iterdisplay += iterstep
+        title = corpus[title_id]
+        key = '' # we are going to make a key pos1|pos2|pos3...
+        forms = ''
+        lemmas = ''
+        found = False
+        nb = 0
+        for w in title.words:
+            if found == False and w.form != start:
+                continue
+            if found == False:
+                found = True
+                continue # do not take the start symbol into the key
+            key += w.pos + '|'
+            lemmas += w.lemma + '|'
+            forms += w.form + '|'
+            nb += 1
+            if nb == after:
+                break
+        if found:
+            if nb < after:
+                key += '-|' * (after - nb) # complete to have keys of the same size
+                lemmas += '-|' * (after - nb)
+                forms += '-|' * (after - nb)
+            key = key[:-1]
+            lemmas = lemmas[:-1]
+            forms = forms[:-1]
+            if key == rule:
+                examples[count] = lemmas + '|-----|' + forms
+                count += 1
+    print('[INFO] --- Saving')
+    examples_excel = {}
+    for i in range(0, len(examples)):
+        examples_excel[i] = examples[i].split('|')
+    excel.save_to_sheet_mul(
+        name = 'EXAMPLES',
+        values = examples_excel)
+    excel.save()
+
+
 if __name__ == '__main__':
     start_time = datetime.datetime.now()
     print('[INFO] --- Start -------------------------------------------------\n')
@@ -430,9 +542,15 @@ if __name__ == '__main__':
     #run_talismane_heavy('corpus.xml')
     #05
     #make_lexique('mini_corpus_talismane.xml')
-    make_lexique('corpus_talismane.xml')
+    #make_lexique('corpus_talismane.xml')
     #06
     #produce_antconc_files('corpus_talismane.xml')
+    #07 after :, lemme
+    #stats_after_column('mini_corpus_talismane.xml')
+    #stats_after_column('corpus_talismane.xml')
+    #08 found example of rule
+    # Ex : DET  NC  P  DET  NC
+    find_examples('corpus_talismane.xml', rule='DET|NC|P|DET|NC')
     # end of action
     print('[INFO] --- Ending at', datetime.datetime.now())
     print('\n[INFO] --- End -------------------------------------------------')
