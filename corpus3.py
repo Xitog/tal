@@ -340,7 +340,7 @@ def produce_antconc_files(origin):
     outfile.close()
 
 
-def stats_after_word(origin, start=':', after=None):
+def stats_after_word(corpus, start=':', after=None):
     print('[INFO] RUN stats_after_word')
     itercount = 0
     iterdisplay = 1000
@@ -357,15 +357,11 @@ def stats_after_word(origin, start=':', after=None):
         found = False
         nb = 0
         for w in title.words:
-            #print(w.form)
             if found == False and w.form != start:
-                #print('Start form not detected')
                 continue
             if found == False:
-                #print('Start form found')
                 found = True
                 continue # do not take the start symbol into the key
-            #print('Form put into the key')
             key += w.pos + '|'
             nb += 1
             if after is not None and nb == after:
@@ -374,7 +370,6 @@ def stats_after_word(origin, start=':', after=None):
             if after is not None and nb < after:
                 key += '-|' * (after - nb) # complete to have keys of the same size
             key = key[:-1]
-            #print('key is:', key)
             if key not in stats:
                 stats[key] = 1
             else:
@@ -384,7 +379,7 @@ def stats_after_word(origin, start=':', after=None):
     for s in stats:
         stats_excel[s] = s.split('|')
         stats_excel[s].insert(0, stats[s])
-    excel = ExcelFile(name='stats_' + start.replace(':', 'dblcol'), mode='w')
+    excel = ExcelFile(name='stats_after_' + start.replace(':', 'dblcol'), mode='w')
     excel.save_to_sheet_mul(
         name = 'STATS',
         values = stats_excel,
@@ -395,11 +390,10 @@ def stats_after_word(origin, start=':', after=None):
     print('[INFO] END stats_after_word')
 
 
-def find_examples(origin, start=':', after=5, rule=''):
+def find_examples(corpus, start=':', after=5, rule=''):
     excel = ExcelFile(name='examples_' + rule.replace('|', '_'), mode='w')
     print('[INFO] --- Running produce_antconc_files')
     print('[INFO] --- Loading corpus')
-    corpus = Corpus.load(r'.\output_dump_repo' + os.sep + origin)
     itercount = 0
     iterdisplay = 1000
     iterstep = 1000
@@ -450,15 +444,66 @@ def find_examples(origin, start=':', after=5, rule=''):
     excel.save()
 
 
+def get_pattern_after(title, form = ':'):
+    pattern = []
+    found = False
+    for w in title.words:
+        if found == False and w.form != form:
+            continue
+        if found == False:
+            found = True
+            continue # do not take the start symbol into the pattern
+        pattern.append(w.pos)
+    return pattern
+
+
+def pattern_matching(corpus):
+    print('[INFO] --- Running pattern_matching')
+    print('[INFO] --- Loading corpus')
+    itercount = 0
+    iterdisplay = 1000
+    iterstep = 1000
+    examples = {}
+    count = 0
+    print('[INFO] --- Processing')
+    for title_id in corpus.titles:
+        itercount += 1
+        if itercount == iterdisplay:
+            print(itercount, 'titles done.')
+            iterdisplay += iterstep
+        title = corpus[title_id]
+        pattern = get_pattern_after(title)
+        print(pattern)
+    print('[INFO] --- Saving')
+
+
+def FUNCTION_NAME(corpus):
+    print('[INFO] --- Running FUNCTION_NAME')
+    print('[INFO] --- Loading corpus')
+    itercount = 0
+    iterdisplay = 1000
+    iterstep = 1000
+    examples = {}
+    count = 0
+    print('[INFO] --- Processing')
+    for title_id in corpus.titles:
+        itercount += 1
+        if itercount == iterdisplay:
+            print(itercount, 'titles done.')
+            iterdisplay += iterstep
+        title = corpus[title_id]
+    print('[INFO] --- Saving')
+
+
 if __name__ == '__main__':
     start_time = datetime.datetime.now()
     print('[INFO] RUN -------------------------------------------------------\n')
     print('[INFO] --- Started at', start_time, '\n')
-    #origin = 'corpus_medium_talismane.xml'
-    origin = 'corpus_talismane.xml'
-    #origin = 'corpus_dblcol_talismane.xml'
-    corpus = Corpus.load(r'.\output_dump_repo' + os.sep + origin)
-    ACTION = 9
+    #origin = r'.\corpus\corpus_medium\corpus_medium.xml'
+    #origin = r'.\corpus\corpus_big\corpus_big.xml'
+    origin = r'.\corpus\corpus_1dblcolno0inf30\corpus_1dblcolno0inf30.xml'
+    corpus = Corpus.load(origin)
+    ACTION = 11
     # Actions
     if ACTION == 1:
         filter_zero_words_duplicates_title()
@@ -481,7 +526,7 @@ if __name__ == '__main__':
     elif ACTION == 8:
         # found example of rule (lemme & form)
         # Ex : DET  NC  P  DET  NC
-        find_examples('corpus_talismane.xml', rule='DET|NC|P|DET|NC')
+        find_examples(corpus, rule='DET|NC|P|DET|NC')
     elif ACTION == 9:
         # - count number of titles with ':'
         # - extract the sub corpus of titles with only one ':'
@@ -503,7 +548,7 @@ if __name__ == '__main__':
         print()
         count_after(corpus, ':')
     elif ACTION == 11:
-        pass
+        pattern_matching(corpus)
     # end of actions
     print('\n[INFO] --- Ending at', datetime.datetime.now())
     delta = datetime.datetime.now() - start_time

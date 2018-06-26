@@ -235,7 +235,7 @@ def has_x_after_form(title, form, nb, tst):
             start_counting = True
     if tst == '==':
         return count == nb
-    elif tst != '!=':
+    elif tst == '!=':
         return count != nb
     elif tst == '>=':
         return count >= nb
