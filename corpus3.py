@@ -503,7 +503,7 @@ if __name__ == '__main__':
     #origin = r'.\corpus\corpus_big\corpus_big.xml'
     origin = r'.\corpus\corpus_1dblcolno0inf30\corpus_1dblcolno0inf30.xml'
     corpus = Corpus.load(origin)
-    ACTION = 11
+    ACTION = 7
     # Actions
     if ACTION == 1:
         filter_zero_words_duplicates_title()
@@ -528,6 +528,7 @@ if __name__ == '__main__':
         # Ex : DET  NC  P  DET  NC
         find_examples(corpus, rule='DET|NC|P|DET|NC')
     elif ACTION == 9:
+        # = from "corpus_big" (278806) to "corpus_1dblcolno0inf30" (84923)
         # - count number of titles with ':'
         # - extract the sub corpus of titles with only one ':'
         #print()
