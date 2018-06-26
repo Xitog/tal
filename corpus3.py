@@ -1,8 +1,9 @@
 #===============================================================================
-# Code handling the elaborated corpus for TAL
+# Code handling the processing of the corpus of titles
+#-------------------------------------------------------------------------------
 # Author : Damien Gouteux
-# Last updated : 22 May 2018
-# Technologies : Python, Excel, XML
+# Last updated : 25 June 2018
+# Technologies & Tools : Python, Excel, XML, Talismane
 #===============================================================================
 
 #-------------------------------------------------------------------------------
@@ -11,195 +12,119 @@
 
 # standard
 import datetime
-import xml.etree.ElementTree as ET
-import zipfile
 import os
 
 # project
-from corpus2 import ExcelFile
-import pytalismane
-from xml.sax.saxutils import escape, unescape
+from titles import Word, Title, Corpus, has_only_one_form, no_filter, has_x_after_form
+from excel import ExcelFile
+#import pytalismane
 
 #-------------------------------------------------------------------------------
-# Classes
+# Functions
 #-------------------------------------------------------------------------------
 
-#
-# Word
-#
-class Word:
 
-    def __init__(self, form, lemma, pos):
-        self.form = form
-        self.lemma = lemma
-        self.pos = pos
+def display(corpus : Corpus):
+    print('[INFO] RUN dispay')
+    print('[INFO] --- Processing')
+    for title_id, title in corpus.titles.items():
+        print('          ', title_id, ':', title.text)
+    print('[INFO] END count')
 
-    #def to_xml(self):
-    #    s = '            <word>\n'
-    #    s += f'                <form>{escape(self.form)}</form>\n'
-    #    s += f'                <lemma>{escape(self.lemma)}</lemma>\n'
-    #    s += f'                <pos>{self.pos}</pos>\n'
-    #    s += '            </word>\n'
-    #    return s
 
-    # minimized version
-    def to_xml(self):
-        s = f'<word><form>{escape(self.form)}</form><lemma>{escape(self.lemma)}</lemma><pos>{self.pos}</pos></word>\n'
-        return s
-    
-    @staticmethod
-    def from_xml(elem):
-        form = None
-        lemma = ''
-        pos = ''
-        if len(elem) > 0:
-            for child in elem:
-                if child.tag == 'form':
-                    form = unescape(child.text)
-                elif child.tag == 'lemma':
-                    if child.text is not None:
-                        lemma = unescape(child.text)
-                elif child.tag == 'pos':
-                    if child.text is not None:
-                        pos = child.text
-        # compat mode
-        else:
-            form = elem.text            
-        return Word(form, lemma, pos)
-
-    def __str__(self):
-        return f'<Word Object form={self.form}, lemma={self.lemma}, pos={self.pos}>'
-#
-# Title
-#
-class Title:
-
-    def __init__(self):
-        self.docid = None
-        self.kind = None
-        self.date = None
-        self.text = None
-        self.words = []
-        self.authors = []
-        self.domains = []
-
-    def to_xml(self):
-        authors_xml = ''
-        for a in self.authors:
-            #authors_xml += f'            <author>{escape(a)}</author>\n'
-            authors_xml += f'<author>{escape(a)}</author>\n'
-        domains_xml = ''
-        for d in self.domains:
-            #domains_xml += f'            <domain>{d}</domain>\n'
-            domains_xml += f'<domain>{d}</domain>\n'
-        words_xml = ''
-        for w in self.words:
-            words_xml += w.to_xml()
-        data = """<notice>
-<id>{0}</id>
-<type>{1}</type>
-<date>{2}</date>
-<text>{3}</text>
-<words>\n{4}</words>
-<authors>\n{5}</authors>
-<domains>\n{6}</domains>
-</notice>\n""".format(self.docid, self.kind, self.date, escape(self.text), words_xml, authors_xml, domains_xml)
-        return data
-        data = """    <notice>
-        <id>{0}</id>
-        <type>{1}</type>
-        <date>{2}</date>
-        <text>{3}</text>
-        <words>\n{4}        </words>
-        <authors>\n{5}        </authors>
-        <domains>\n{6}        </domains>
-    </notice>\n""".format(self.docid, self.kind, self.date, escape(self.text), words_xml, authors_xml, domains_xml)
-        return data
-
-    @staticmethod
-    def from_xml(elem):
-        t = Title()
-        for child in elem:
-            if child.tag == 'id':
-                t.docid = int(child.text)
-            elif child.tag == 'type':
-                t.kind = child.text
-            elif child.tag == 'date':
-                t.date = child.text
-            elif child.tag == 'text':
-                t.text = unescape(child.text)
-            # compat mode
-            elif child.tag == 'title':
-                t.text = unescape(child.text)
-            elif child.tag == 'words':
-                for word in child:
-                    t.words.append(Word.from_xml(word))
-            elif child.tag == 'authors':
-                for author in child:
-                    t.authors.append(unescape(author.text))
-            elif child.tag == 'domains':
-                for domain in child:
-                    t.domains.append(domain.text)
-        return t
-
-#
-# Corpus
-#
-class Corpus:
-    """A corpus is a collection of Title serialized in an xml File.
-       Loading of the xml file is iterative: it is too big for reading it directly.
+def count_after(corpus : Corpus, form : str, display=True):
+    """Count the number of words after a specific form in the titles. Return a dict:
+         { 1 : title with only 1 word after this form,
+           2 : title with two words after this form,
+           ...
+         }
     """
-    def __init__(self):
-        self.titles = {}
+    print('[INFO] RUN count_after')
+    print('[INFO] --- Processing')
+    big = open('big.txt', mode='w', encoding='utf-8')
+    one = open('one.txt', mode='w', encoding='utf-8')
+    zero = open('zero.txt', mode='w', encoding='utf-8')
+    counts = {}
+    for title_id, title in corpus.titles.items():
+        count = 0
+        last = 0
+        for i in range(0, len(title.words)):
+            word = title.words[i]
+            if word.form == form:
+                count += 1
+                last = i
+        if count > 0: # at least once in the title
+            after = len(title.words) - last - 1
+            if after >= 30:
+                big.write(f'{after} --- {title.docid} --- {title.text}\n')
+            elif after == 0:
+                zero.write(f'{after} --- {title.docid} --- {title.text}\n')
+            elif after == 1:
+                one.write(f'{after} --- {title.docid} --- {title.text}\n')
+            if after not in counts:
+                counts[after] = 1
+            else:
+                counts[after] += 1
+    if display:
+        print('[INFO] TXT Found ', len(counts), ' different number of words after ', form, sep='')
+        for key in sorted(counts):
+            print('          ', key, ':', f"{counts[key]:>6}")
+    print('[INFO] --- Saving')
+    excel = ExcelFile(name='count_after_' + form.replace(':', 'dblcol'), mode='w')
+    data = {}
+    for key, val in counts.items():
+        data[key] = [key, val]
+    excel.save_to_sheet_mul(
+        name = 'COUNT_AFTER | nb occ %',
+        values = data,
+        order_col = 1,
+        reverse_order = True,
+        percent_col = 1)
+    excel.save()
+    zero.close()
+    one.close()
+    big.close()
+    print('[INFO] END count_after')
+    return counts
 
-    @staticmethod
-    def load(filepath):
-        corpus = Corpus()
-        start = datetime.datetime.now()
-        for event, elem in ET.iterparse(filepath, events=('end',)):
-            if event == 'end':
-                if elem.tag == 'notice':
-                    t = Title.from_xml(elem)
-                    corpus.titles[t.docid] = t
-                    elem.clear()
-        delta = datetime.datetime.now() - start
-        print('[INFO] --- Nb titles:', len(corpus.titles))
-        print(f"[INFO] --- Loaded in {delta}.")
-        return corpus
-    
-    # Code taken from Repository.dump
-    def save(self, filename, makezip=False):
-        full_filename = 'output_dump_repo' + os.sep + filename # + '.xml'
-        outfile = open(full_filename, encoding='utf-8', mode='w')
-        outfile.write('<notices>\n')
-        for title_id in self.titles:
-            title = self.titles[title_id]
-            #try:
-            outfile.write(title.to_xml())
-            #except Exception as problem:
-            #    print(problem)
-            #    print(title.text, title_id)
-        outfile.write('</notices>')
-        outfile.close()
-        if makezip:
-            out = zipfile.ZipFile('output_dump_repo' + os.sep + filename + '_' + output + '.zip', mode='w')
-            out.write(full_filename)
-            out.close()
 
-    def __getitem__(self, key):
-        return self.titles[key]
-
-    def __setitem__(self, key, val):
-        self.titles[key] = val
-    
-    def __len__(self):
-        return len(self.titles)
-    
-    def add_title(self, t):
-        self[t.docid] = t
-    
-    def count_titles(self):
-        return len(self.titles)
+def count(corpus : Corpus, form : str, display=True):
+    """Count a specific form in the titles. Return a dict:
+         { 1 : title with only once this form,
+           2 : title with twice this form,
+           ...
+         }
+    """
+    print('[INFO] RUN count')
+    print('[INFO] --- Processing')
+    counts = {}
+    for title_id, title in corpus.titles.items():
+        count = 0
+        for word in title.words:
+            if word.form == form:
+                count += 1
+        if count not in counts:
+            counts[count] = 1
+        else:
+            counts[count] += 1
+    if display:
+        print('[INFO] TXT Found for form "', form, '", ', len(counts), ' configurations :', sep='')
+        for key in sorted(counts):
+            print('          ', key, ':', f"{counts[key]:>6}")
+    print('[INFO] --- Saving')
+    excel = ExcelFile(name='count_' + form.replace(':', 'dblcol'), mode='w')
+    data = {}
+    for key, val in counts.items():
+        data[key] = [key, val]
+    excel.save_to_sheet_mul(
+        name = 'COUNT',
+        values = data,
+        order_col = 1,
+        reverse_order = True,
+        percent_col = 1)
+    excel.save()
+    print('[INFO] END count')
+    return counts
 
 
 def count_by_domain():
@@ -236,10 +161,10 @@ def count_by_domain():
     for key in sorted(domains.keys()):
         if domains[key] > 0:
             print(key, domains[key])
+    
 
-
-def filter_zero_words_duplicates_title():
-    corpus = Corpus.load(r'.\output_dump_repo\dump.xml') #minidump
+def filter_zero_words_duplicates_title(corpus):
+    print('[INFO] RUN filter_zero_words_duplicates_title')
     key_to_delete = []
     nb_double = 0
     nb_empty = 0
@@ -248,7 +173,7 @@ def filter_zero_words_duplicates_title():
     iterdisplay = 1000
     iterstep = 1000
     old_length = len(corpus)
-    print('-- Filtering --')
+    print('[INFO] --- Processing : Filtering')
     for title_id in corpus.titles:
         itercount += 1
         if itercount == iterdisplay:
@@ -269,11 +194,12 @@ def filter_zero_words_duplicates_title():
     # Deletion
     for key in key_to_delete:
         del corpus.titles[key]
-    print('-- Saving --')
-    print('Origin corpus:', old_length)
-    print('Saved corpus is:', len(corpus))
-    print('Discarded: empty =', nb_empty, 'double =', nb_double, 'total =', nb_empty + nb_double)
+    print('[INFO] --- Saving')
+    print('[INFO] TXT Origin corpus:', old_length)
+    print('[INFO] TXT Saved corpus is:', len(corpus))
+    print('[INFO] TXT Discarded: empty =', nb_empty, 'double =', nb_double, 'total =', nb_empty + nb_double)
     corpus.save('corpus_filtered')
+    print('[INFO] END filter_zero_words_duplicates_title')
 
 
 def basic_statistics():
@@ -414,11 +340,8 @@ def produce_antconc_files(origin):
     outfile.close()
 
 
-def stats_after_column(origin, start=':', after=5):
-    excel = ExcelFile(name='stats1', mode='w')
-    print('[INFO] --- Running produce_antconc_files')
-    print('[INFO] --- Loading corpus')
-    corpus = Corpus.load(r'.\output_dump_repo' + os.sep + origin)
+def stats_after_word(origin, start=':', after=None):
+    print('[INFO] RUN stats_after_word')
     itercount = 0
     iterdisplay = 1000
     iterstep = 1000
@@ -445,10 +368,10 @@ def stats_after_column(origin, start=':', after=5):
             #print('Form put into the key')
             key += w.pos + '|'
             nb += 1
-            if nb == after:
+            if after is not None and nb == after:
                 break
         if found:
-            if nb < after:
+            if after is not None and nb < after:
                 key += '-|' * (after - nb) # complete to have keys of the same size
             key = key[:-1]
             #print('key is:', key)
@@ -460,14 +383,16 @@ def stats_after_column(origin, start=':', after=5):
     stats_excel = {}
     for s in stats:
         stats_excel[s] = s.split('|')
-        stats_excel[s].append(stats[s])
+        stats_excel[s].insert(0, stats[s])
+    excel = ExcelFile(name='stats_' + start.replace(':', 'dblcol'), mode='w')
     excel.save_to_sheet_mul(
         name = 'STATS',
         values = stats_excel,
-        order_col = 5,
+        order_col = 0,
         reverse_order = True,
-        percent_col = 5)
+        percent_col = 0)
     excel.save()
+    print('[INFO] END stats_after_word')
 
 
 def find_examples(origin, start=':', after=5, rule=''):
@@ -527,33 +452,62 @@ def find_examples(origin, start=':', after=5, rule=''):
 
 if __name__ == '__main__':
     start_time = datetime.datetime.now()
-    print('[INFO] --- Start -------------------------------------------------\n')
-    print('[INFO] --- Started at', start_time)
-    # action
-    #01
-    #filter_zero_words_duplicates_title()
-    #02
-    #count_by_domain()
-    #03
-    #convert_to_new_format()
-    #save_dont_mess('mini_dump.xml') # mini_dump_converted.xml
-    #run_talismane('mini_dump_same.xml')
-    #04
-    #run_talismane_heavy('corpus.xml')
-    #05
-    #make_lexique('mini_corpus_talismane.xml')
-    #make_lexique('corpus_talismane.xml')
-    #06
-    #produce_antconc_files('corpus_talismane.xml')
-    #07 after :, lemme
-    #stats_after_column('mini_corpus_talismane.xml')
-    #stats_after_column('corpus_talismane.xml')
-    #08 found example of rule
-    # Ex : DET  NC  P  DET  NC
-    find_examples('corpus_talismane.xml', rule='DET|NC|P|DET|NC')
-    # end of action
-    print('[INFO] --- Ending at', datetime.datetime.now())
-    print('\n[INFO] --- End -------------------------------------------------')
+    print('[INFO] RUN -------------------------------------------------------\n')
+    print('[INFO] --- Started at', start_time, '\n')
+    #origin = 'corpus_medium_talismane.xml'
+    origin = 'corpus_talismane.xml'
+    #origin = 'corpus_dblcol_talismane.xml'
+    corpus = Corpus.load(r'.\output_dump_repo' + os.sep + origin)
+    ACTION = 9
+    # Actions
+    if ACTION == 1:
+        filter_zero_words_duplicates_title()
+    elif ACTION == 2:
+        count_by_domain()
+    elif ACTION == 3:
+        convert_to_new_format()
+        save_dont_mess('mini_dump.xml') # mini_dump_converted.xml
+        run_talismane('mini_dump_same.xml')
+    elif ACTION == 4:
+        run_talismane_heavy('corpus.xml')
+    elif ACTION == 5:
+        make_lexique('mini_corpus_talismane.xml')
+        make_lexique('corpus_talismane.xml')
+    elif ACTION == 6:
+        produce_antconc_files('corpus_talismane.xml')
+    elif ACTION == 7:
+        # All the POS combination 5 after ':'
+        stats_after_word(corpus)
+    elif ACTION == 8:
+        # found example of rule (lemme & form)
+        # Ex : DET  NC  P  DET  NC
+        find_examples('corpus_talismane.xml', rule='DET|NC|P|DET|NC')
+    elif ACTION == 9:
+        # - count number of titles with ':'
+        # - extract the sub corpus of titles with only one ':'
+        #print()
+        #display(corpus)
+        #print()
+        #count(corpus, ':')
+        print()
+        sub = corpus.extract(has_only_one_form, ':')
+        sub = sub.extract(has_x_after_form, ':', 0, '!=')
+        sub = sub.extract(has_x_after_form, ':', 30, '<')
+        sub.save('only_one.xml')
+    elif ACTION == 10:
+        # Check action of the previous result
+        # - count number of titles with ':' (100% = 1)
+        # - count after ':'
+        print()
+        count(corpus, ':')
+        print()
+        count_after(corpus, ':')
+    elif ACTION == 11:
+        pass
+    # end of actions
+    print('\n[INFO] --- Ending at', datetime.datetime.now())
     delta = datetime.datetime.now() - start_time
-    print(f"[INFO] --- Script has ended [{delta} elapsed].")
+    print(f"[INFO] --- Script has ended [{delta} elapsed].\n")
+    print('[INFO] END -------------------------------------------------------')
+
     
