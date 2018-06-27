@@ -444,26 +444,35 @@ def find_examples(corpus, start=':', after=5, rule=''):
     excel.save()
 
 
-def get_pattern_after(title, form = ':'):
-    pattern = []
+def get_words_after(words : [Word], field = 'form', value = ':'):
+    result = []
     found = False
-    for w in title.words:
-        if found == False and w.form != form:
+    for w in words:
+        if found == False and getattr(w, field) != value:
             continue
         if found == False:
             found = True
             continue # do not take the start symbol into the pattern
-        pattern.append(w.pos)
-    return pattern
+        result.append(w)
+    return result
 
 
+def get_fields(words : [Word], field = 'pos'):
+    result = []
+    for w in words:
+        result.append(getattr(w, field))
+    return result
+
+
+det_pos = {}
+det_forms = {}
 def pattern_matching(corpus):
+    global det_combi
     print('[INFO] --- Running pattern_matching')
     print('[INFO] --- Loading corpus')
     itercount = 0
     iterdisplay = 1000
     iterstep = 1000
-    examples = {}
     count = 0
     print('[INFO] --- Processing')
     for title_id in corpus.titles:
@@ -472,8 +481,36 @@ def pattern_matching(corpus):
             print(itercount, 'titles done.')
             iterdisplay += iterstep
         title = corpus[title_id]
-        pattern = get_pattern_after(title)
-        print(pattern)
+        words = get_words_after(title.words, field='form', value=':')
+        start = False
+        forms = []
+        pos = []
+        for w in words:
+            if not start and w.pos == 'DET':
+                forms = [w.form]
+                pos = [w.pos]
+                start = True
+            elif start:
+                forms.append(w.form)
+                pos.append(w.pos)
+                if w.pos in ['NC', 'NPP']:
+                    break
+        if len(pos) > 0:
+            tpos = tuple(pos)
+            if tpos not in det_pos:
+                det_pos[tpos] = 1
+                det_forms[tpos] = [forms]
+            else:
+                det_pos[tpos] += 1
+                if len(det_forms[tpos]) < 10:
+                    det_forms[tpos].append(forms)
+    nb = 0
+    for combi in sorted(det_pos, key=det_pos.get, reverse=True):
+        occ = det_pos[combi]
+        if occ >= 10:
+            print(nb+1, '.', combi, ' : ', occ, sep='')
+            nb += 1
+    print(nb, '/', len(det_pos))
     print('[INFO] --- Saving')
 
 
@@ -503,7 +540,7 @@ if __name__ == '__main__':
     #origin = r'.\corpus\corpus_big\corpus_big.xml'
     origin = r'.\corpus\corpus_1dblcolno0inf30\corpus_1dblcolno0inf30.xml'
     corpus = Corpus.load(origin)
-    ACTION = 7
+    ACTION = 11
     # Actions
     if ACTION == 1:
         filter_zero_words_duplicates_title()
