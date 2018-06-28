@@ -62,6 +62,9 @@ class Word:
     def __str__(self):
         return f'<Word Object form={self.form}, lemma={self.lemma}, pos={self.pos}>'
 
+    def __repr__(self):
+        return f'<{self.form},{self.lemma},{self.pos}>'
+
 
 class Title:
 

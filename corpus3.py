@@ -340,56 +340,6 @@ def produce_antconc_files(origin):
     outfile.close()
 
 
-def stats_after_word(corpus, start=':', after=None):
-    print('[INFO] RUN stats_after_word')
-    itercount = 0
-    iterdisplay = 1000
-    iterstep = 1000
-    stats = {}
-    print('[INFO] --- Processing')
-    for title_id in corpus.titles:
-        itercount += 1
-        if itercount == iterdisplay:
-            print(itercount, 'titles done.')
-            iterdisplay += iterstep
-        title = corpus[title_id]
-        key = '' # we are going to make a key pos1|pos2|pos3...
-        found = False
-        nb = 0
-        for w in title.words:
-            if found == False and w.form != start:
-                continue
-            if found == False:
-                found = True
-                continue # do not take the start symbol into the key
-            key += w.pos + '|'
-            nb += 1
-            if after is not None and nb == after:
-                break
-        if found:
-            if after is not None and nb < after:
-                key += '-|' * (after - nb) # complete to have keys of the same size
-            key = key[:-1]
-            if key not in stats:
-                stats[key] = 1
-            else:
-                stats[key] += 1
-    print('[INFO] --- Saving')
-    stats_excel = {}
-    for s in stats:
-        stats_excel[s] = s.split('|')
-        stats_excel[s].insert(0, stats[s])
-    excel = ExcelFile(name='stats_after_' + start.replace(':', 'dblcol'), mode='w')
-    excel.save_to_sheet_mul(
-        name = 'STATS',
-        values = stats_excel,
-        order_col = 0,
-        reverse_order = True,
-        percent_col = 0)
-    excel.save()
-    print('[INFO] END stats_after_word')
-
-
 def find_examples(corpus, start=':', after=5, rule=''):
     excel = ExcelFile(name='examples_' + rule.replace('|', '_'), mode='w')
     print('[INFO] --- Running produce_antconc_files')
@@ -514,14 +464,141 @@ def pattern_matching(corpus):
     print('[INFO] --- Saving')
 
 
-def FUNCTION_NAME(corpus):
-    print('[INFO] --- Running FUNCTION_NAME')
+#-------------------------------------------------------------------------------
+# Iterative functions
+# These functions must be used with iterate to work:
+# - last_index_of_the_second_NC_NPP
+# - stats_after_word
+#-------------------------------------------------------------------------------
+
+# we consider the block of NC/NPP like ONE occurence !
+def last_index_of_the_second_NC_NPP(title, data_sets, **parameters):
+    if "LENGTHS" not in data_sets:
+        data_sets["LENGTHS"] = {}
+    if "INDEXES_1" not in data_sets:
+        data_sets["INDEXES_1"] = {}
+    if "INDEXES_2" not in data_sets:
+        data_sets["INDEXES_2"] = {}
+    if "LAST_1" not in data_sets:
+        data_sets["LAST_1"] = {}
+    if "LAST_2" not in data_sets:
+        data_sets["LAST_2"] = {}
+    nb = 0              # How many NC/NPP (we want 2 maximum)
+    start = 0           # Last starting index of NC/NPP
+    length = 0          # Length of the current NC/NPP
+    started = False     # In an NC/NPP suite?
+    save = False
+    for count in range(len(title.words)):
+        w = title.words[count]
+        if w.pos in ['NC', 'NPP']:
+            if not started: # start an NC/NPP suite
+                started = True
+                length = 1
+                start = count
+            elif started: # in an NC/NPP suite
+                length += 1
+        else:
+            if started: # exit an NC/NPP suite
+                started = False
+                nb += 1
+                save = True
+        # if this is the last iteration and we are in an NC/NPP, we must save!
+        if started and count == len(title.words) - 1:
+            nb += 1
+            save = True
+        # Saving info
+        if save:
+            if length in data_sets["LENGTHS"]: # we store the length of the suites
+                data_sets["LENGTHS"][length][1] += 1
+            else:
+                data_sets["LENGTHS"][length] = [length, 1]
+            key = "INDEXES_" + str(nb)
+            #print(start, title.text)
+            if start in data_sets[key]: # we store the starting index of the NC/NPP suite found
+                data_sets[key][start][1] += 1
+            else:
+                data_sets[key][start] = [start, 1]
+            key = "LAST_" + str(nb)
+            if start + length in data_sets[key]: # we store the last index of the NC/NPP suite found
+                data_sets[key][start + length][1] += 1
+            else:
+                data_sets[key][start + length] = [start + length, 1]
+            save = False
+            if nb == 2:
+                break
+    if nb < 2: # handling the titles where there is not 2 NC/NPP suites
+        key = "INDEXES_" + str(nb + 1) # we will increment the key -1 in INDEXES_1 if 0 or INDEXES_2 if 1
+        if -1 in data_sets[key]:
+            data_sets[key][-1][1] += 1
+        else:
+            data_sets[key][-1] = [-1, 1]
+
+
+def stats_after_word(title, data_sets, **parameters):
+    """
+        Onglet STATS : nb_occ | rule...
+            Ex : 2034 | DET | NC
+        Onglet LENGTH : length | nb
+            Ex : 6 | 23
+        Onglet RULES : id_rule | rule...
+            Ex : 1 | DET | NC
+        Onglet TITLES : id_rule | id...
+            Ex : 1 | id23 | id45 | id24 | id87
+    """
+    # data_set
+    if "STATS" not in data_sets:
+        data_sets["STATS"] = {}
+    if "LENGTH" not in data_sets:
+        data_sets["LENGTH"] = {}
+    if "RULES" not in data_sets:
+        data_sets["RULES"] = {}
+    if "TITLES" not in data_sets:
+        data_sets["TITLES"] = {}
+    # parameters
+    limit = parameters['limit'] if 'limit' in parameters else None
+    start = parameters['start']
+    # algorithm
+    key = []
+    found = False
+    length = 0
+    for w in title.words:
+        if found == False and w.form != start:
+            continue
+        if found == False:
+            found = True
+            continue # do not take the start symbol into the key
+        key.append(w.pos)
+        length += 1
+        if limit is not None and length == limit:
+            break
+    if found:
+        #if after is not None and length < limit:
+        #    key += '-|' * (limit - length) # complete to have keys of the same size
+        #key = key[:-1] # remove last |
+        tkey = tuple(key)
+        if tkey not in data_sets["STATS"]:
+            stats_after_word.id_rule += 1
+            data_sets["STATS"][tkey] = [1, *tkey] # '|'.join(tkey),
+            data_sets["RULES"][tkey] = [stats_after_word.id_rule, *tkey]
+            data_sets["TITLES"][tkey] = [stats_after_word.id_rule, title.docid]
+        else:
+            data_sets["STATS"][tkey][0] += 1
+            data_sets["TITLES"][tkey].append(title.docid)
+        if length not in data_sets["LENGTH"]:
+            data_sets["LENGTH"][length] = [length, 1]
+        else:
+            data_sets["LENGTH"][length][1] += 1
+stats_after_word.id_rule = 0
+
+
+# Iterate through the corpus with a function
+def iterate(corpus, function, excel=False, **parameters):
+    print('[INFO] RUN ' + function.__name__)
     print('[INFO] --- Loading corpus')
     itercount = 0
     iterdisplay = 1000
     iterstep = 1000
-    examples = {}
-    count = 0
+    data_sets = {}
     print('[INFO] --- Processing')
     for title_id in corpus.titles:
         itercount += 1
@@ -529,18 +606,34 @@ def FUNCTION_NAME(corpus):
             print(itercount, 'titles done.')
             iterdisplay += iterstep
         title = corpus[title_id]
+        function(title, data_sets, **parameters)
     print('[INFO] --- Saving')
+    if excel:
+        excel = ExcelFile(name = function.__name__, mode='w')
+        for key, val in data_sets.items():
+            excel.save_to_sheet_mul(
+                name = key[:31],
+                values = val)
+        excel.save()
+    print('[INFO] END ' + function.__name__)
+    return data_sets
 
+
+# simple pattern
+def simple_pattern():
+    data = ExcelFile('')
+    
 
 if __name__ == '__main__':
     start_time = datetime.datetime.now()
     print('[INFO] RUN -------------------------------------------------------\n')
     print('[INFO] --- Started at', start_time, '\n')
+    #origin = r'.\corpus\corpus_6\corpus_6.xml'
     #origin = r'.\corpus\corpus_medium\corpus_medium.xml'
-    #origin = r'.\corpus\corpus_big\corpus_big.xml'
     origin = r'.\corpus\corpus_1dblcolno0inf30\corpus_1dblcolno0inf30.xml'
+    #origin = r'.\corpus\corpus_big\corpus_big.xml'
     corpus = Corpus.load(origin)
-    ACTION = 11
+    ACTION = 7
     # Actions
     if ACTION == 1:
         filter_zero_words_duplicates_title()
@@ -558,14 +651,14 @@ if __name__ == '__main__':
     elif ACTION == 6:
         produce_antconc_files('corpus_talismane.xml')
     elif ACTION == 7:
-        # All the POS combination 5 after ':'
-        stats_after_word(corpus)
+        # All the POS combination after ':'
+        iterate(corpus, stats_after_word, excel=True, start=':')
     elif ACTION == 8:
-        # found example of rule (lemme & form)
+        # Found example of rule (lemme & form)
         # Ex : DET  NC  P  DET  NC
         find_examples(corpus, rule='DET|NC|P|DET|NC')
     elif ACTION == 9:
-        # = from "corpus_big" (278806) to "corpus_1dblcolno0inf30" (84923)
+        # From "corpus_big" (278806) to "corpus_1dblcolno0inf30" (84923)
         # - count number of titles with ':'
         # - extract the sub corpus of titles with only one ':'
         #print()
@@ -587,6 +680,9 @@ if __name__ == '__main__':
         count_after(corpus, ':')
     elif ACTION == 11:
         pattern_matching(corpus)
+    elif ACTION == 12:
+        # Compter où est la dernière suite NC/NPP
+        iterate(corpus, last_index_of_the_second_NC_NPP, True)
     # end of actions
     print('\n[INFO] --- Ending at', datetime.datetime.now())
     delta = datetime.datetime.now() - start_time
