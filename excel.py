@@ -26,11 +26,20 @@ class ExcelFile:
         self.name = name
         self.mode = mode
         #self.wb = xlwt.Workbook()
-        self.wb = openpyxl.Workbook()
-        ws = self.wb.active
-        ws.title = 'Information'
-        self.nb_sheet = 0
-
+        if mode == 'w':
+            self.wb = openpyxl.Workbook(write_only=True)
+            ws = self.wb.active
+            ws.title = 'Information'
+            self.nb_sheet = 0
+        elif mode == 'r':
+            self.wb = openpyxl.load_workbook(name, read_only=True)
+            self.nb_sheet = len(self.wb.sheetnames)
+    
+    def sheet(self, name):
+        if name not in self.wb.sheetnames:
+            raise Exception("Sheet unknown: ", name)
+        return self.wb[name]
+    
     # you must send a dict with :
     # { key : [key, v1, v2, v3] }
     # order => which column to use to order

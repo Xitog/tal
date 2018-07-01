@@ -394,76 +394,6 @@ def find_examples(corpus, start=':', after=5, rule=''):
     excel.save()
 
 
-def get_words_after(words : [Word], field = 'form', value = ':'):
-    result = []
-    found = False
-    for w in words:
-        if found == False and getattr(w, field) != value:
-            continue
-        if found == False:
-            found = True
-            continue # do not take the start symbol into the pattern
-        result.append(w)
-    return result
-
-
-def get_fields(words : [Word], field = 'pos'):
-    result = []
-    for w in words:
-        result.append(getattr(w, field))
-    return result
-
-
-det_pos = {}
-det_forms = {}
-def pattern_matching(corpus):
-    global det_combi
-    print('[INFO] --- Running pattern_matching')
-    print('[INFO] --- Loading corpus')
-    itercount = 0
-    iterdisplay = 1000
-    iterstep = 1000
-    count = 0
-    print('[INFO] --- Processing')
-    for title_id in corpus.titles:
-        itercount += 1
-        if itercount == iterdisplay:
-            print(itercount, 'titles done.')
-            iterdisplay += iterstep
-        title = corpus[title_id]
-        words = get_words_after(title.words, field='form', value=':')
-        start = False
-        forms = []
-        pos = []
-        for w in words:
-            if not start and w.pos == 'DET':
-                forms = [w.form]
-                pos = [w.pos]
-                start = True
-            elif start:
-                forms.append(w.form)
-                pos.append(w.pos)
-                if w.pos in ['NC', 'NPP']:
-                    break
-        if len(pos) > 0:
-            tpos = tuple(pos)
-            if tpos not in det_pos:
-                det_pos[tpos] = 1
-                det_forms[tpos] = [forms]
-            else:
-                det_pos[tpos] += 1
-                if len(det_forms[tpos]) < 10:
-                    det_forms[tpos].append(forms)
-    nb = 0
-    for combi in sorted(det_pos, key=det_pos.get, reverse=True):
-        occ = det_pos[combi]
-        if occ >= 10:
-            print(nb+1, '.', combi, ' : ', occ, sep='')
-            nb += 1
-    print(nb, '/', len(det_pos))
-    print('[INFO] --- Saving')
-
-
 #-------------------------------------------------------------------------------
 # Iterative functions
 # These functions must be used with iterate to work:
@@ -619,10 +549,118 @@ def iterate(corpus, function, excel=False, **parameters):
     return data_sets
 
 
-# simple pattern
-def simple_pattern():
-    data = ExcelFile('')
-    
+#
+# Pattern matching
+#
+
+def match_patterns(filename):
+    data = ExcelFile(filename, 'r')
+    # read from file
+    # pos (by rule id)
+    rules = {}
+    rules_data = data.sheet("RULES")
+    nb_row = 0
+    for row in rules_data.iter_rows(min_row=0):
+        nb_cell = 0
+        last_id = 0
+        for cell in row:
+            if cell.value is not None:
+                if nb_cell == 0:
+                    last_id = cell.value
+                    rules[last_id] = []
+                else:
+                    rules[last_id].append(cell.value)
+            nb_cell += 1
+        nb_row += 1
+    # title to pos (by rule id)
+    titles = {}
+    titles_data = data.sheet("TITLES")
+    for row in titles_data.iter_rows():
+        nb_cell = 0
+        last_id = 0
+        for cell in row:
+            if cell.value is not None:
+                if nb_cell == 0:
+                    last_id = cell.value
+                    titles[last_id] = []
+                else:
+                    titles[last_id].append(cell.value)
+            nb_cell += 1
+    nb_titles = 0
+    for key, val in titles.items():
+        nb_titles += len(val)
+    # define pattern
+    #pattern = 'DET,NC|NPP'
+    #tab = pattern.split(',')
+    #pattern_compiled = []
+    #for e in tab:
+    #    if '|' in e:
+    #        pattern_compiled.append(['or', *e.split('|')])
+    #    else:
+    #        pattern_compiled.append(['elem', e])
+    pattern_compiled = [
+        ['option', 'DET'],
+        ['option', 'ADJ'],
+        ['or',
+             [
+                 ['elem', 'NC']
+             ],
+             [
+                 ['elem', 'NPP']
+             ]
+        ],
+        ['option', 'ADJ'],
+        ['or',
+             [
+                 ['elem', 'P'],
+                 ['option', 'DET']
+             ],
+             [
+                 ['elem', 'P+D'],
+             ]
+        ],
+        ['option', 'ADJ'],
+        ['or',
+             [
+                 ['elem', 'NC']
+             ],
+             [
+                 ['elem', 'NPP']
+             ]
+        ],
+        ['option', 'ADJ']
+    ]
+    print(pattern_compiled)
+    # match pattern
+    matched_rules = []
+    nb_pos = 0
+    nb_pat = 0
+    for i in range(0, 
+    #for key, rule in rules.items():
+    #    match = True
+    #    for nb_elem in range(len(pattern_compiled)):
+    #        operator = pattern_compiled[nb_elem][0]
+    #        parameters = pattern_compiled[nb_elem][1:]
+    #        if operator == 'elem':
+    #            if len(rule) < nb_elem - 1 or rule[nb_elem] != parameters[0]:
+    #                match = False
+    #        elif operator == 'or':
+    #            if len(rule) < nb_elem - 1 or rule[nb_elem] not in parameters:
+    #                match = False
+    #        if not match:
+    #            break
+    #    if match:
+    #        matched_rules.append(key)
+    # GO
+    # display result
+    nb_title_matched = 0
+    for key in matched_rules:
+        nb_title_matched += len(titles[key])
+        #print(rules[key])
+    print("Matched rules:", len(matched_rules), "/", len(rules))
+    print("Matched titles:", nb_title_matched, "/", nb_titles)
+    return rules
+
 
 if __name__ == '__main__':
     start_time = datetime.datetime.now()
@@ -630,10 +668,10 @@ if __name__ == '__main__':
     print('[INFO] --- Started at', start_time, '\n')
     #origin = r'.\corpus\corpus_6\corpus_6.xml'
     #origin = r'.\corpus\corpus_medium\corpus_medium.xml'
-    origin = r'.\corpus\corpus_1dblcolno0inf30\corpus_1dblcolno0inf30.xml'
+    #origin = r'.\corpus\corpus_1dblcolno0inf30\corpus_1dblcolno0inf30.xml'
     #origin = r'.\corpus\corpus_big\corpus_big.xml'
-    corpus = Corpus.load(origin)
-    ACTION = 7
+    #corpus = Corpus.load(origin)
+    ACTION = 11
     # Actions
     if ACTION == 1:
         filter_zero_words_duplicates_title()
@@ -679,7 +717,7 @@ if __name__ == '__main__':
         print()
         count_after(corpus, ':')
     elif ACTION == 11:
-        pattern_matching(corpus)
+        rules = match_patterns(r'corpus\corpus_1dblcolno0inf30\stats_after_word2.xlsx')
     elif ACTION == 12:
         # Compter où est la dernière suite NC/NPP
         iterate(corpus, last_index_of_the_second_NC_NPP, True)
