@@ -553,7 +553,7 @@ def iterate(corpus, function, excel=False, **parameters):
 # Pattern matching
 #
 
-def match_patterns(filename):
+def match_patterns(filename, pattern):
     data = ExcelFile(filename, 'r')
     # read from file
     # pos (by rule id)
@@ -590,78 +590,217 @@ def match_patterns(filename):
     for key, val in titles.items():
         nb_titles += len(val)
     # define pattern
-    #pattern = 'DET,NC|NPP'
-    #tab = pattern.split(',')
-    #pattern_compiled = []
-    #for e in tab:
-    #    if '|' in e:
-    #        pattern_compiled.append(['or', *e.split('|')])
-    #    else:
-    #        pattern_compiled.append(['elem', e])
-    pattern_compiled = [
-        ['option', 'DET'],
-        ['option', 'ADJ'],
-        ['or',
-             [
-                 ['elem', 'NC']
-             ],
-             [
-                 ['elem', 'NPP']
-             ]
-        ],
-        ['option', 'ADJ'],
-        ['or',
-             [
-                 ['elem', 'P'],
-                 ['option', 'DET']
-             ],
-             [
-                 ['elem', 'P+D'],
-             ]
-        ],
-        ['option', 'ADJ'],
-        ['or',
-             [
-                 ['elem', 'NC']
-             ],
-             [
-                 ['elem', 'NPP']
-             ]
-        ],
-        ['option', 'ADJ']
-    ]
-    print(pattern_compiled)
+    suite = parse(pattern)
+    print(suite)
+    pattern_compiled = build_possibilities(suite, [[]])
+    print('Possibilities:')
+    for line in pattern_compiled:
+        print(line)
+    print('Possibilities:', len(pattern_compiled))
+    # find longuest
+    max_length = 0
+    for pc in pattern_compiled:
+         if len(pc) > max_length:
+             max_length = len(pc)
+    print('Nb patterns variants:', len(pattern_compiled)) # 1728   288
+    print('Longuest pattern:', max_length)                #   10     9    
     # match pattern
     matched_rules = []
-    nb_pos = 0
-    nb_pat = 0
-    for i in range(0, 
-    #for key, rule in rules.items():
-    #    match = True
-    #    for nb_elem in range(len(pattern_compiled)):
-    #        operator = pattern_compiled[nb_elem][0]
-    #        parameters = pattern_compiled[nb_elem][1:]
-    #        if operator == 'elem':
-    #            if len(rule) < nb_elem - 1 or rule[nb_elem] != parameters[0]:
-    #                match = False
-    #        elif operator == 'or':
-    #            if len(rule) < nb_elem - 1 or rule[nb_elem] not in parameters:
-    #                match = False
-    #        if not match:
-    #            break
-    #    if match:
-    #        matched_rules.append(key)
-    # GO
+    unmatched_rules = []
+    #rules = { '1' : ['DET', 'ADJ', 'NC' ],
+    #          '2' : ['NC', 'CC', 'NC'],
+    #          '3' : ['DET', 'NPP', 'P', 'NC']
+    #        }
+    for key, rule in rules.items():
+        #print('Rule', key)
+        selected = pattern_compiled
+        for i in range(len(rule)):
+            filtered = []
+            #print('Selected length:', len(selected))
+            for j in range(len(selected)):
+                #print('i =', i, 'into rule with', len(rule), 'and selected[j] with', len(selected[j]))
+                #print('j =', j, 'into selected with', len(selected))
+                if i >= len(selected[j]) or i >= len(rule) or rule[i] == selected[j][i]:
+                    filtered.append(selected[j])
+            selected = filtered
+            if len(selected) == 0:
+                break
+        if len(selected) > 0:
+            #print('Final selected length:', len(selected))
+            perfect = False
+            for pc in selected:
+                if len(pc) == len(rule):
+                    perfect = True
+                    break
+            res = 'perfectyl matched' if perfect else 'matched'
+            #print('>>>', res)
+            matched_rules.append(key)
+        else:
+            unmatched_rules.append(key)
+        #    print('>>> no match')
     # display result
     nb_title_matched = 0
     for key in matched_rules:
         nb_title_matched += len(titles[key])
-        #print(rules[key])
-    print("Matched rules:", len(matched_rules), "/", len(rules))
-    print("Matched titles:", nb_title_matched, "/", nb_titles)
+    print("Matched rules:", len(matched_rules), "/", len(rules), "(", f"{len(matched_rules)/len(rules)*100:.2f}",")")
+    print("Unmatched rules:", len(unmatched_rules), "/", len(rules), "(", f"{len(unmatched_rules)/len(rules)*100:.2f}", ")")
+    print("Matched titles:", nb_title_matched, "/", nb_titles, "(", f"{nb_title_matched/nb_titles*100:.2f}", ")")
+    # save unmatched rules
+    f = open('out.txt', mode='w', encoding='utf-8')
+    for key in unmatched_rules:
+        f.write(str(rules[key]) + '\n')
+    f.close()
     return rules
 
 
+class Node:
+    
+    def __init__(self):
+        self.opt = False
+    
+    def __str__(self):
+        return f'<Node opt={self.opt}/>'
+
+    def display(self, level=0):
+        return '    ' * level + str(self)
+
+
+class Identifier(Node):
+    
+    def __init__(self, val):
+        Node.__init__(self)
+        self.val = val
+
+    def __str__(self):
+        return f'<Identifier val={self.val} opt={self.opt}/>'
+
+
+class Suite(Node):
+    
+    def __init__(self):
+        Node.__init__(self)
+        self.nodes = []
+        self.name = 'Suite'
+        self.mod = 'AND'
+    
+    def append(self, node : Node):
+        if not isinstance(node, Node):
+            raise Exception('Not a Node: ' + str(node))
+        self.nodes.append(node)
+    
+    def last(self):
+        return self.nodes[-1]
+
+    def display(self, level=0):
+        s = '    ' * level + f'<{self.name} opt={self.opt}\n'
+        cpt = 0
+        for n in self.nodes:
+            x = self.mod if cpt < len(self.nodes) - 1 else ''
+            s += n.display(level + 1) + f' {x}\n'
+            cpt += 1
+        s += '    ' * level + '/>'
+        return s
+    
+    def __str__(self):
+        return self.display()
+
+    def __getitem__(self, i):
+        return self.nodes[i]
+
+
+class Choice(Suite):
+
+    def __init__(self):
+        Suite.__init__(self)
+        self.name = 'Choice'
+        self.mod = 'OR'
+
+
+def parse(pattern, choice=False):
+    print('Parsing:', pattern, 'choice=', choice)
+    suite = Suite() if not choice else Choice()
+    w = ''
+    in_word = False
+    i = 0
+    def find_closing(pattern, form, i):
+        level = 1
+        last = None
+        closing = {'(' : ')', '[' : ']'}
+        closing = closing[form]
+        for i2 in range(i + 1, len(pattern)):
+            c2 = pattern[i2]
+            if c2 == form:
+                level += 1
+            elif c2 == closing:
+                level -= 1
+            if level == 0:
+                last = i2
+                break
+        if last is None:
+            raise Exception("Not closing ) found!")
+        return last
+    while i  < len(pattern):
+        c = pattern[i]
+        # identifier
+        if c.isalpha() or c == '+':
+            in_word = True
+        elif in_word:
+            in_word = False
+            suite.append(Identifier(w))
+            w = ''
+        if in_word:
+            w += c
+        # option
+        if c == '?':
+            suite.last().opt = True
+        elif c == '[':
+            last = find_closing(pattern, '[', i)
+            suite.append(parse(pattern[i+1 : last], True))
+            i = last
+        elif c == '(':
+            last = find_closing(pattern, '(', i)
+            suite.append(parse(pattern[i+1 : last]))
+            i = last
+        i += 1
+    if in_word:
+        suite.append(Identifier(w))
+    return suite
+
+
+from copy import deepcopy
+def build_possibilities(elem, possibilities):
+    if type(elem) == Identifier:
+        print('Identifier')
+        new_possibilities = deepcopy(possibilities)
+        for np in new_possibilities:
+            np.append(elem.val)
+        if not elem.opt:
+            possibilities = new_possibilities
+        else:
+            possibilities += new_possibilities
+    elif type(elem) == Suite:
+        print('Suite')
+        new_possibilities = deepcopy(possibilities)
+        for e2 in elem:
+            new_possibilities = build_possibilities(e2, new_possibilities)
+        if not elem.opt:
+            possibilities = new_possibilities
+        else:
+            possibilities += new_possibilities
+    elif type(elem) == Choice:
+        new_possibilities = []
+        for e2 in elem:
+            new_possibilities.append(deepcopy(possibilities))
+            new_possibilities[-1] = build_possibilities(e2, new_possibilities[-1])
+        if not elem.opt: # if not optional, there will be only our choices available, not the original ones that we must delete
+            possibilities = []
+        for n in new_possibilities:
+            possibilities += n
+    else:
+        raise Exception("Type not known: " + str(type(elem)))
+    return possibilities
+
+        
 if __name__ == '__main__':
     start_time = datetime.datetime.now()
     print('[INFO] RUN -------------------------------------------------------\n')
@@ -717,7 +856,8 @@ if __name__ == '__main__':
         print()
         count_after(corpus, ':')
     elif ACTION == 11:
-        rules = match_patterns(r'corpus\corpus_1dblcolno0inf30\stats_after_word2.xlsx')
+        pattern = 'DET? ADJ? [NC NPP] [NC NPP]? ADJ? [(P DET?) P+D] ADJ? [NC NPP] [NC NPP]? ADJ?'
+        rules = match_patterns(r'corpus\corpus_1dblcolno0inf30\stats_after_word2.xlsx', pattern)
     elif ACTION == 12:
         # Compter où est la dernière suite NC/NPP
         iterate(corpus, last_index_of_the_second_NC_NPP, True)
