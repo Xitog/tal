@@ -27,7 +27,7 @@ class ExcelFile:
         self.mode = mode
         #self.wb = xlwt.Workbook()
         if mode == 'w':
-            self.wb = openpyxl.Workbook(write_only=True)
+            self.wb = openpyxl.Workbook() #write_only=True)
             ws = self.wb.active
             ws.title = 'Information'
             self.nb_sheet = 0
@@ -50,7 +50,7 @@ class ExcelFile:
             ws = self.wb.create_sheet(name)
             self.nb_sheet += 1
         else:
-            ws= self.wb.active
+            ws = self.wb.active
             ws.title = name
             self.nb_sheet += 1
         # Calculate the value to divide to have the percent
@@ -69,17 +69,26 @@ class ExcelFile:
                     raise e
         # Process all the values
         row = 1
-        for sorted_values_with_key in sorted(values.items(), key=lambda t: t[1][order_col], reverse=reverse_order):
-            # (key, [list of values])
-            nb = 1
-            for val in sorted_values_with_key[1]: # we iterate on [list of values]
-                ws.cell(column=nb, row=row, value=val)
-                nb += 1
-                if percent_col is not None and type(percent_col) == int:
-                    if nb == percent_col + 2:
-                        ws.cell(column=nb, row=row, value=val / percent_val)
-                        nb += 1
-            row += 1
+        if isinstance(values, dict):
+            for sorted_values_with_key in sorted(values.items(), key=lambda t: t[1][order_col], reverse=reverse_order):
+                # (key, [list of values])
+                nb = 1
+                for val in sorted_values_with_key[1]: # we iterate on [list of values]
+                    ws.cell(column=nb, row=row, value=val)
+                    nb += 1
+                    if percent_col is not None and type(percent_col) == int:
+                        if nb == percent_col + 2:
+                            ws.cell(column=nb, row=row, value=val / percent_val)
+                            nb += 1
+                row += 1
+        elif isinstance(values, list):
+            for list_of_values in sorted(values, key=lambda t: t[order_col], reverse=reverse_order):
+                nb = 1
+                for val in list_of_values:
+                    ws.cell(column=nb, row=row, value=val)
+                    nb +=1
+                row += 1
+
     
     def save_to_sheet(self, name, values, percent=None, test_val=None):
         # ws = wb.add_sheet(name)
@@ -119,7 +128,29 @@ class ExcelFile:
                     #ws.write(row, nb, values[val] / percent)
                 row += 1
 
-    def load(self):
+    def load_sheet(self, name,key=0, ignore=None):
+        # load any sheet in dict with the choosen column as a key
+        # ignoring specific column
+        data = {}
+        sheet = self.sheet(name)
+        nb_row = 0
+        for row in sheet.iter_rows(min_row=0):
+            nb_cell = 0
+            last_id = 0
+            values = []
+            for cell in row:
+                if cell.value is not None:
+                    if nb_cell == key:
+                        last_id = cell.value
+                    else:
+                        if ignore is None or nb_cell not in ignore:
+                            values.append(cell.value)
+                nb_cell += 1
+            data[last_id] = values
+            nb_row += 1
+        return data
+    
+    def load(self): # load the first sheet
         if self.mode != 'r':
             raise Exception('This ExcelFile should be on read mode.')
         wb = openpyxl.load_workbook(self.name + '.xlsx', keep_vba=True, read_only=True)

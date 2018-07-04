@@ -1,0 +1,30 @@
+<Suite opt=False
+    <Identifier val=DET opt=True/> AND
+    <Identifier val=ADJ opt=True/> AND
+    <Choice opt=False
+        <Identifier val=NC opt=False/> OR
+        <Identifier val=NPP opt=False/> 
+    /> AND
+    <Choice opt=True
+        <Identifier val=NC opt=False/> OR
+        <Identifier val=NPP opt=False/> 
+    /> AND
+    <Identifier val=ADJ opt=True/> AND
+    <Choice opt=False
+        <Suite opt=False
+            <Identifier val=P opt=False/> AND
+            <Identifier val=DET opt=True/> 
+        /> OR
+        <Identifier val=P+D opt=False/> 
+    /> AND
+    <Identifier val=ADJ opt=True/> AND
+    <Choice opt=False
+        <Identifier val=NC opt=False/> OR
+        <Identifier val=NPP opt=False/> 
+    /> AND
+    <Choice opt=True
+        <Identifier val=NC opt=False/> OR
+        <Identifier val=NPP opt=False/> 
+    /> AND
+    <Identifier val=ADJ opt=True/> 
+/>

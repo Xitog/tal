@@ -17,6 +17,7 @@ import os
 # project
 from titles import Word, Title, Corpus, has_only_one_form, no_filter, has_x_after_form
 from excel import ExcelFile
+from patterns import Pattern
 #import pytalismane
 
 #-------------------------------------------------------------------------------
@@ -466,22 +467,18 @@ def last_index_of_the_second_NC_NPP(title, data_sets, **parameters):
 
 def stats_after_word(title, data_sets, **parameters):
     """
-        Onglet STATS : nb_occ | rule...
-            Ex : 2034 | DET | NC
-        Onglet LENGTH : length | nb
+        Onglet POS LENGTHS : length | nb
             Ex : 6 | 23
-        Onglet RULES : id_rule | rule...
-            Ex : 1 | DET | NC
-        Onglet TITLES : id_rule | id...
+        Onglet POS : nb_occ | id_combi | combi...
+            Ex : 1 | 34675 | DET | NC
+        Onglet TITLES : id_combi | id...
             Ex : 1 | id23 | id45 | id24 | id87
     """
     # data_set
-    if "STATS" not in data_sets:
-        data_sets["STATS"] = {}
-    if "LENGTH" not in data_sets:
-        data_sets["LENGTH"] = {}
-    if "RULES" not in data_sets:
-        data_sets["RULES"] = {}
+    if "POS LENGTHS" not in data_sets:
+        data_sets["POS LENGTHS"] = {}
+    if "POS = nb occ | id | combi..." not in data_sets:
+        data_sets["POS = nb occ | id | combi..."] = {}
     if "TITLES" not in data_sets:
         data_sets["TITLES"] = {}
     # parameters
@@ -502,22 +499,18 @@ def stats_after_word(title, data_sets, **parameters):
         if limit is not None and length == limit:
             break
     if found:
-        #if after is not None and length < limit:
-        #    key += '-|' * (limit - length) # complete to have keys of the same size
-        #key = key[:-1] # remove last |
         tkey = tuple(key)
-        if tkey not in data_sets["STATS"]:
+        if tkey not in data_sets["POS = nb occ | id | combi..."]:
             stats_after_word.id_rule += 1
-            data_sets["STATS"][tkey] = [1, *tkey] # '|'.join(tkey),
-            data_sets["RULES"][tkey] = [stats_after_word.id_rule, *tkey]
+            data_sets["POS = nb occ | id | combi..."][tkey] = [1, stats_after_word.id_rule, *tkey]
             data_sets["TITLES"][tkey] = [stats_after_word.id_rule, title.docid]
         else:
-            data_sets["STATS"][tkey][0] += 1
+            data_sets["POS = nb occ | id | combi..."][tkey][0] += 1
             data_sets["TITLES"][tkey].append(title.docid)
-        if length not in data_sets["LENGTH"]:
-            data_sets["LENGTH"][length] = [length, 1]
+        if length not in data_sets["POS LENGTHS"]:
+            data_sets["POS LENGTHS"][length] = [length, 1]
         else:
-            data_sets["LENGTH"][length][1] += 1
+            data_sets["POS LENGTHS"][length][1] += 1
 stats_after_word.id_rule = 0
 
 
@@ -554,253 +547,52 @@ def iterate(corpus, function, excel=False, **parameters):
 #
 
 def match_patterns(filename, pattern):
-    data = ExcelFile(filename, 'r')
-    # read from file
-    # pos (by rule id)
-    rules = {}
-    rules_data = data.sheet("RULES")
-    nb_row = 0
-    for row in rules_data.iter_rows(min_row=0):
-        nb_cell = 0
-        last_id = 0
-        for cell in row:
-            if cell.value is not None:
-                if nb_cell == 0:
-                    last_id = cell.value
-                    rules[last_id] = []
-                else:
-                    rules[last_id].append(cell.value)
-            nb_cell += 1
-        nb_row += 1
-    # title to pos (by rule id)
-    titles = {}
-    titles_data = data.sheet("TITLES")
-    for row in titles_data.iter_rows():
-        nb_cell = 0
-        last_id = 0
-        for cell in row:
-            if cell.value is not None:
-                if nb_cell == 0:
-                    last_id = cell.value
-                    titles[last_id] = []
-                else:
-                    titles[last_id].append(cell.value)
-            nb_cell += 1
+    try:
+        data = ExcelFile(filename, 'r')
+    except FileNotFoundError:
+        print("[WARN] File not found. Action aborted.")
+        return
+    pos = data.load_sheet("POS = nb occ | id | combi...", key=1, ignore=[0])
+    titles = data.load_sheet("TITLES")
     nb_titles = 0
     for key, val in titles.items():
         nb_titles += len(val)
-    # define pattern
-    suite = parse(pattern)
-    print(suite)
-    pattern_compiled = build_possibilities(suite, [[]])
-    print('Possibilities:')
-    for line in pattern_compiled:
-        print(line)
-    print('Possibilities:', len(pattern_compiled))
-    # find longuest
-    max_length = 0
-    for pc in pattern_compiled:
-         if len(pc) > max_length:
-             max_length = len(pc)
-    print('Nb patterns variants:', len(pattern_compiled)) # 1728   288
-    print('Longuest pattern:', max_length)                #   10     9    
     # match pattern
-    matched_rules = []
-    unmatched_rules = []
-    #rules = { '1' : ['DET', 'ADJ', 'NC' ],
-    #          '2' : ['NC', 'CC', 'NC'],
-    #          '3' : ['DET', 'NPP', 'P', 'NC']
-    #        }
-    for key, rule in rules.items():
-        #print('Rule', key)
-        selected = pattern_compiled
-        for i in range(len(rule)):
-            filtered = []
-            #print('Selected length:', len(selected))
-            for j in range(len(selected)):
-                #print('i =', i, 'into rule with', len(rule), 'and selected[j] with', len(selected[j]))
-                #print('j =', j, 'into selected with', len(selected))
-                if i >= len(selected[j]) or i >= len(rule) or rule[i] == selected[j][i]:
-                    filtered.append(selected[j])
-            selected = filtered
-            if len(selected) == 0:
-                break
-        if len(selected) > 0:
-            #print('Final selected length:', len(selected))
-            perfect = False
-            for pc in selected:
-                if len(pc) == len(rule):
-                    perfect = True
-                    break
-            res = 'perfectyl matched' if perfect else 'matched'
-            #print('>>>', res)
-            matched_rules.append(key)
-        else:
-            unmatched_rules.append(key)
-        #    print('>>> no match')
-    # display result
+    matched, unmatched = pattern.match(pos)
+    # save results
     nb_title_matched = 0
-    for key in matched_rules:
+    for key in matched:
         nb_title_matched += len(titles[key])
-    print("Matched rules:", len(matched_rules), "/", len(rules), "(", f"{len(matched_rules)/len(rules)*100:.2f}",")")
-    print("Unmatched rules:", len(unmatched_rules), "/", len(rules), "(", f"{len(unmatched_rules)/len(rules)*100:.2f}", ")")
+    print("Pattern :", pattern)
+    print(f"   Possibilities = {pattern.possibilities}")
+    print(f"   Longuest = {pattern.max_length}")
+    print(f"   Shortest = {pattern.min_length}")
+    print("Matched rules:", len(matched), "/", len(pos), "(", f"{len(matched)/len(pos)*100:.2f}",")")
+    print("Unmatched rules:", len(unmatched), "/", len(pos), "(", f"{len(unmatched)/len(pos)*100:.2f}", ")")
     print("Matched titles:", nb_title_matched, "/", nb_titles, "(", f"{nb_title_matched/nb_titles*100:.2f}", ")")
-    # save unmatched rules
-    f = open('out.txt', mode='w', encoding='utf-8')
-    for key in unmatched_rules:
-        f.write(str(rules[key]) + '\n')
-    f.close()
-    return rules
+    results = ExcelFile('patron_results', mode='w')
+    results.save_to_sheet_mul(
+        name = "PATTERN",
+        values = {'Patron' : [str(pattern)]})
+    results.save_to_sheet_mul(
+        name = "EXTENDED id | length | ...",
+        values = pattern.extended_by_length(),
+        order_col = 1,
+        reverse_order = False)
+    def save(data, name):
+        data_dict = {}
+        for key in data:
+            data_dict[key] = [key, len(pos[key]), *(pos[key])]
+        results.save_to_sheet_mul(
+            name = name,
+            values = data_dict,
+            order_col = 1, # by length
+            reverse_order = False) # asc
+    save(matched, 'MATCHED nb occ | length | ...')
+    save(unmatched, 'UNMATCHED nb occ | length | ...')
+    results.save()
 
 
-class Node:
-    
-    def __init__(self):
-        self.opt = False
-    
-    def __str__(self):
-        return f'<Node opt={self.opt}/>'
-
-    def display(self, level=0):
-        return '    ' * level + str(self)
-
-
-class Identifier(Node):
-    
-    def __init__(self, val):
-        Node.__init__(self)
-        self.val = val
-
-    def __str__(self):
-        return f'<Identifier val={self.val} opt={self.opt}/>'
-
-
-class Suite(Node):
-    
-    def __init__(self):
-        Node.__init__(self)
-        self.nodes = []
-        self.name = 'Suite'
-        self.mod = 'AND'
-    
-    def append(self, node : Node):
-        if not isinstance(node, Node):
-            raise Exception('Not a Node: ' + str(node))
-        self.nodes.append(node)
-    
-    def last(self):
-        return self.nodes[-1]
-
-    def display(self, level=0):
-        s = '    ' * level + f'<{self.name} opt={self.opt}\n'
-        cpt = 0
-        for n in self.nodes:
-            x = self.mod if cpt < len(self.nodes) - 1 else ''
-            s += n.display(level + 1) + f' {x}\n'
-            cpt += 1
-        s += '    ' * level + '/>'
-        return s
-    
-    def __str__(self):
-        return self.display()
-
-    def __getitem__(self, i):
-        return self.nodes[i]
-
-
-class Choice(Suite):
-
-    def __init__(self):
-        Suite.__init__(self)
-        self.name = 'Choice'
-        self.mod = 'OR'
-
-
-def parse(pattern, choice=False):
-    print('Parsing:', pattern, 'choice=', choice)
-    suite = Suite() if not choice else Choice()
-    w = ''
-    in_word = False
-    i = 0
-    def find_closing(pattern, form, i):
-        level = 1
-        last = None
-        closing = {'(' : ')', '[' : ']'}
-        closing = closing[form]
-        for i2 in range(i + 1, len(pattern)):
-            c2 = pattern[i2]
-            if c2 == form:
-                level += 1
-            elif c2 == closing:
-                level -= 1
-            if level == 0:
-                last = i2
-                break
-        if last is None:
-            raise Exception("Not closing ) found!")
-        return last
-    while i  < len(pattern):
-        c = pattern[i]
-        # identifier
-        if c.isalpha() or c == '+':
-            in_word = True
-        elif in_word:
-            in_word = False
-            suite.append(Identifier(w))
-            w = ''
-        if in_word:
-            w += c
-        # option
-        if c == '?':
-            suite.last().opt = True
-        elif c == '[':
-            last = find_closing(pattern, '[', i)
-            suite.append(parse(pattern[i+1 : last], True))
-            i = last
-        elif c == '(':
-            last = find_closing(pattern, '(', i)
-            suite.append(parse(pattern[i+1 : last]))
-            i = last
-        i += 1
-    if in_word:
-        suite.append(Identifier(w))
-    return suite
-
-
-from copy import deepcopy
-def build_possibilities(elem, possibilities):
-    if type(elem) == Identifier:
-        print('Identifier')
-        new_possibilities = deepcopy(possibilities)
-        for np in new_possibilities:
-            np.append(elem.val)
-        if not elem.opt:
-            possibilities = new_possibilities
-        else:
-            possibilities += new_possibilities
-    elif type(elem) == Suite:
-        print('Suite')
-        new_possibilities = deepcopy(possibilities)
-        for e2 in elem:
-            new_possibilities = build_possibilities(e2, new_possibilities)
-        if not elem.opt:
-            possibilities = new_possibilities
-        else:
-            possibilities += new_possibilities
-    elif type(elem) == Choice:
-        new_possibilities = []
-        for e2 in elem:
-            new_possibilities.append(deepcopy(possibilities))
-            new_possibilities[-1] = build_possibilities(e2, new_possibilities[-1])
-        if not elem.opt: # if not optional, there will be only our choices available, not the original ones that we must delete
-            possibilities = []
-        for n in new_possibilities:
-            possibilities += n
-    else:
-        raise Exception("Type not known: " + str(type(elem)))
-    return possibilities
-
-        
 if __name__ == '__main__':
     start_time = datetime.datetime.now()
     print('[INFO] RUN -------------------------------------------------------\n')
@@ -809,58 +601,54 @@ if __name__ == '__main__':
     #origin = r'.\corpus\corpus_medium\corpus_medium.xml'
     #origin = r'.\corpus\corpus_1dblcolno0inf30\corpus_1dblcolno0inf30.xml'
     #origin = r'.\corpus\corpus_big\corpus_big.xml'
-    #corpus = Corpus.load(origin)
-    ACTION = 11
-    # Actions
-    if ACTION == 1:
-        filter_zero_words_duplicates_title()
-    elif ACTION == 2:
-        count_by_domain()
-    elif ACTION == 3:
-        convert_to_new_format()
-        save_dont_mess('mini_dump.xml') # mini_dump_converted.xml
-        run_talismane('mini_dump_same.xml')
-    elif ACTION == 4:
-        run_talismane_heavy('corpus.xml')
-    elif ACTION == 5:
-        make_lexique('mini_corpus_talismane.xml')
-        make_lexique('corpus_talismane.xml')
-    elif ACTION == 6:
-        produce_antconc_files('corpus_talismane.xml')
-    elif ACTION == 7:
-        # All the POS combination after ':'
-        iterate(corpus, stats_after_word, excel=True, start=':')
-    elif ACTION == 8:
-        # Found example of rule (lemme & form)
-        # Ex : DET  NC  P  DET  NC
-        find_examples(corpus, rule='DET|NC|P|DET|NC')
-    elif ACTION == 9:
-        # From "corpus_big" (278806) to "corpus_1dblcolno0inf30" (84923)
-        # - count number of titles with ':'
-        # - extract the sub corpus of titles with only one ':'
-        #print()
-        #display(corpus)
-        #print()
-        #count(corpus, ':')
-        print()
-        sub = corpus.extract(has_only_one_form, ':')
-        sub = sub.extract(has_x_after_form, ':', 0, '!=')
-        sub = sub.extract(has_x_after_form, ':', 30, '<')
-        sub.save('only_one.xml')
-    elif ACTION == 10:
-        # Check action of the previous result
-        # - count number of titles with ':' (100% = 1)
-        # - count after ':'
-        print()
-        count(corpus, ':')
-        print()
-        count_after(corpus, ':')
-    elif ACTION == 11:
-        pattern = 'DET? ADJ? [NC NPP] [NC NPP]? ADJ? [(P DET?) P+D] ADJ? [NC NPP] [NC NPP]? ADJ?'
-        rules = match_patterns(r'corpus\corpus_1dblcolno0inf30\stats_after_word2.xlsx', pattern)
-    elif ACTION == 12:
-        # Compter où est la dernière suite NC/NPP
-        iterate(corpus, last_index_of_the_second_NC_NPP, True)
+    ACTIONS = ['load_corpus_1dblcolno0inf30', 'pos_combinaisons', 'match_pattern']
+    #ACTIONS = ['match_pattern']
+    for nb_action in range(len(ACTIONS)):
+        action = ACTIONS[nb_action]
+        print("[INFO] ACT ACTION", nb_action + 1, "/", len(ACTIONS), ":", action)
+        # Actions
+        if action == 1:
+            filter_zero_words_duplicates_title()
+        elif action == 2:
+            count_by_domain()
+        elif action == 3:
+            convert_to_new_format()
+            save_dont_mess('mini_dump.xml') # mini_dump_converted.xml
+            run_talismane('mini_dump_same.xml')
+        elif action == 4:
+            run_talismane_heavy('corpus.xml')
+        elif action == 5:
+            make_lexique('mini_corpus_talismane.xml')
+            make_lexique('corpus_talismane.xml')
+        elif action == 6:
+            produce_antconc_files('corpus_talismane.xml')
+        elif action == 8:
+            find_examples(corpus, rule='DET|NC|P|DET|NC')
+        elif action == 12:
+            # Compter où est la dernière suite NC/NPP
+            iterate(corpus, last_index_of_the_second_NC_NPP, True)
+        # NEW ACTIONS
+        elif action.startswith('load_'):
+            origin = action[5:]
+            corpus = Corpus.load('.\\corpus\\' + origin + '\\' + origin + '.xml')
+        elif action == 'make_corpus_1dblcolno0inf30': # only one ':', 0 < nb word after ':' < 30
+            sub = corpus.extract(has_only_one_form, ':')
+            sub = sub.extract(has_x_after_form, ':', 0, '!=')
+            sub = sub.extract(has_x_after_form, ':', 30, '<')
+            sub.save('corpus_1dblcolno0inf30.xml')
+            # check
+            print()
+            count(corpus, ':') # should be 100% with 1
+            print()
+            count_after(corpus, ':') # should be between 1 and 29
+        elif action == 'pos_combinaisons': # after ':'
+            iterate(corpus, stats_after_word, excel=True, start=':')
+        elif action == 'match_pattern':
+            pattern = Pattern('DET? ADJ? [NC NPP] [NC NPP]? ADJ? [(P DET?) P+D] ADJ? [NC NPP] [NC NPP]? ADJ?')
+            match_patterns('stats_after_word.xlsx', pattern)
+        elif action == 'make_stat':
+            make_stat('stats_after_word.xlsx', 'patron_results.xlsx')
+        print("[INFO] END ACTION\n")
     # end of actions
     print('\n[INFO] --- Ending at', datetime.datetime.now())
     delta = datetime.datetime.now() - start_time
