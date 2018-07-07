@@ -25,72 +25,36 @@ class ExcelFile:
     def __init__(self, name, mode='r'):
         self.name = name
         self.mode = mode
-        #self.wb = xlwt.Workbook()
         if mode == 'w':
-            self.wb = openpyxl.Workbook() #write_only=True)
-            ws = self.wb.active
-            ws.title = 'Information'
-            self.nb_sheet = 0
+            self.wb = openpyxl.Workbook(write_only=True)
         elif mode == 'r':
             self.wb = openpyxl.load_workbook(name, read_only=True)
-            self.nb_sheet = len(self.wb.sheetnames)
-    
+
     def sheet(self, name):
         if name not in self.wb.sheetnames:
             raise Exception("Sheet unknown: ", name)
         return self.wb[name]
-    
-    # you must send a dict with :
-    # { key : [key, v1, v2, v3] }
-    # order => which column to use to order
-    # percent => which column to use to percent
-    def save_to_sheet_mul(self, name, values, order_col=0, reverse_order=True, percent_col=None, percent_val=None):
-        # Handle if a new sheet is needed
-        if self.nb_sheet > 0:
-            ws = self.wb.create_sheet(name)
-            self.nb_sheet += 1
-        else:
-            ws = self.wb.active
-            ws.title = name
-            self.nb_sheet += 1
-        # Calculate the value to divide to have the percent
-        if percent_col is not None and percent_val is None:
-            percent_val = 0
-            for _, val in values.items():
-                try:
-                    percent_val += val[percent_col]
-                except TypeError as e:
-                    print("An error has been encountered.")
-                    print("val of percent_col is :", val[percent_col])
-                    print("percent_col is:", percent_col)
-                    print("data is:")
-                    for v in val:
-                        print("   ", v)
-                    raise e
-        # Process all the values
-        row = 1
+
+    def save_to_sheet(self, name, values, order_col=0, reverse_order=True):
+        ws = self.wb.create_sheet(name)
         if isinstance(values, dict):
             for sorted_values_with_key in sorted(values.items(), key=lambda t: t[1][order_col], reverse=reverse_order):
-                # (key, [list of values])
-                nb = 1
-                for val in sorted_values_with_key[1]: # we iterate on [list of values]
-                    ws.cell(column=nb, row=row, value=val)
-                    nb += 1
-                    if percent_col is not None and type(percent_col) == int:
-                        if nb == percent_col + 2:
-                            ws.cell(column=nb, row=row, value=val / percent_val)
-                            nb += 1
-                row += 1
+                ws.append(sorted_values_with_key[1])
         elif isinstance(values, list):
-            for list_of_values in sorted(values, key=lambda t: t[order_col], reverse=reverse_order):
-                nb = 1
-                for val in list_of_values:
-                    ws.cell(column=nb, row=row, value=val)
-                    nb +=1
-                row += 1
-
+            if order_col is not None:
+                for list_of_values in sorted(values, key=lambda t: t[order_col], reverse=reverse_order):
+                    ws.append(list_of_values)
+            else:
+                for row in values:
+                    ws.append(row)
+        elif isinstance(values, DynMatrix):
+            ws.append(['', *values.words]) # titles
+            nb_row = 0
+            for row in values.matrix:
+                ws.append([values.words[nb_row], *row])
+                nb_row += 1
     
-    def save_to_sheet(self, name, values, percent=None, test_val=None):
+    def save_to_sheet_old(self, name, values, percent=None, test_val=None):
         # ws = wb.add_sheet(name)
         if self.nb_sheet > 0:
             ws = self.wb.create_sheet(name)
@@ -164,7 +128,7 @@ class ExcelFile:
                 table[record[0]] = record[1:]
         return table
     
-    def save(self):
+    def close(self):
         if self.mode != 'w':
             raise Exception('This ExcelFile should be on write mode.')
         done = False
@@ -178,11 +142,120 @@ class ExcelFile:
                 count += 1
                 modifier = '_' + str(count)
 
+
+class DynMatrix:
+    
+    def __init__(self, name):
+        self.name = name
+        self.words = []
+        self.count = []
+        self.oriented_cooccurrences = {}
+        self.matrix = None
+
+    def info(self):
+        print('Words:', len(self.words))
+        count = 0
+        for w1, vals in self.oriented_cooccurrences.items():
+            print('   ', f'{w1:10}', vals)
+            for w2, nb in vals.items():
+                count += nb
+        print('Oriented Cooccurrences:', count, '\n')
+        
+    def add(self, w1, w2):
+        # count each words
+        for w in [w1, w2]:
+            if w not in self.words:
+                self.words.append(w)
+                self.count.append(1)
+            else:
+                i = self.words.index(w)
+                self.count[i] += 1
+        # save the oriented cooccurrence
+        if w1 not in self.oriented_cooccurrences:
+            self.oriented_cooccurrences[w1] = {w2 : 1}
+        else:
+            if w2 in self.oriented_cooccurrences[w1]:
+                self.oriented_cooccurrences[w1][w2] += 1
+            else:
+                self.oriented_cooccurrences[w1][w2] = 1
+    
+    def filter(self, threshold, display=False):
+        new_words = []
+        new_count = []
+        for i in range(len(self.words)):
+            if self.count[i] >= threshold:
+                new_words.append(self.words[i])
+                new_count.append(0)
+            elif display:
+                print('Deleting', self.words[i], 'occ=', self.count[i], '\n')
+        for word in self.words:
+            if word not in new_words:
+                if word in self.oriented_cooccurrences:
+                    del self.oriented_cooccurrences[word]
+                for other, oc in self.oriented_cooccurrences.items():
+                    if word in oc:
+                        del oc[word]
+        print('Filtered:', len(new_words), 'on', len(self.words))
+        self.words = new_words
+        self.count = new_count
+        for w1, others in self.oriented_cooccurrences.items():
+            i = self.words.index(w1)
+            for w2, nb in others.items():
+                j = self.words.index(w2)
+                self.count[i] += nb
+                self.count[j] += nb
+        self.build_matrix(decorated=True)
+    
+    def build_matrix(self, decorated=False):
+        # build structure
+        if decorated:
+            content = [ ['MATRIX'] + self.words ]
+        else:
+            content = []
+        for w1 in range(len(self.words)):
+            if decorated:
+                content.append([self.words[w1]])
+            else:
+                content.append([])
+            for w2 in range(len(self.words)):
+                content[-1].append(0)
+        # fill structure
+        for w1, oc in self.oriented_cooccurrences.items():
+            for w2 in oc:
+                i = self.words.index(w1)
+                j = self.words.index(w2)
+                if decorated:
+                    i += 1
+                    j += 1
+                content[i][j] += oc[w2]
+        self.matrix = content
+        return self.matrix
+    
+    def to_excel(self, regen=False, decorated=False):
+        if regen or self.matrix is None: self.build_matrix(decorated)
+        excel = ExcelFile(name = self.name, mode = 'w')
+        excel.save_to_sheet(name = 'matrix', values = self.matrix, order_col=None)
+        rows = []
+        for i in range(len(self.words)):
+            rows.append([self.words[i], self.count[i]])
+        excel.save_to_sheet(name = 'count', values = rows, order_col=1, reverse_order=True)
+        excel.close()
+    
+    def display(self, regen=False, decorated=False):
+        if regen or self.matrix is None: self.build_matrix(decorated)
+        nb_row = 0
+        for row in self.matrix:
+            for cell in row:
+                print(f"{str(cell):10}", end='')
+            print()
+            nb_row += 1
+        print()
+
 #-------------------------------------------------------------------------------
 # Test code if main
 #-------------------------------------------------------------------------------
 
-if __name__ == '__main__':
+def test_excel():
     excel = ExcelFile(name='test', mode='w')
     data = {
         "bordeaux" : ['Bordeaux', 'préfecture', 33, 'Gironde'],
@@ -190,6 +263,30 @@ if __name__ == '__main__':
         "albi"     : ['Albi', 'préfecture', 81, 'Tarn-et-Garonne'],
         "castres"  : ['Castres', 'sous-préfecture', 81, 'Tarn-et-Garonne'],
     }
-    excel.save_to_sheet_mul('VILLES', data, order_col = 2, reverse_order = False)
-    excel.save()
+    excel.save_to_sheet('VILLES', data, order_col = 2, reverse_order = False)
+    excel.close()
 
+def test_dynmatrix():
+    dm = DynMatrix('Test')
+    dm.add('blanche', 'noire')
+    dm.add('noire', 'jaune')
+    dm.add('jaune', 'jaune')
+    dm.add('bleu', 'rouge')
+    dm.add('rouge', 'bleu')
+    dm.add('blanche', 'bleu')
+    dm.add('jaune', 'bleu')
+    dm.add('bleu', 'violet')
+    dm.add('jaune', 'bleu')
+    dm.add('jaune', 'bleu')
+    dm.info()
+    dm.display(decorated=True)
+    dm.filter(2, display=True)
+    dm.display(decorated=True)
+    dm.to_excel(decorated=True)
+
+if __name__ == '__main__':
+    #test_excel()
+    test_dynmatrix()
+
+    
+    

@@ -77,6 +77,9 @@ class Title:
         self.authors = []
         self.domains = []
 
+    def __str__(self):
+        return self.text
+    
     def to_xml(self):
         authors_xml = ''
         for a in self.authors:

@@ -35,6 +35,58 @@ class Pattern:
             f.write(str(line) + '\n')
         f.close()
 
+    def find_one(self, corpus):
+        """ Try to find in data one title corresponding to at least one extended form of the pattern.
+            Pattern is searched EVERYWHERE in the title.
+            data must be a CORPUS.
+            Warning:
+                - contrary to the rest of the lib, this function needs a Corpus.
+                - contrary to the rest of the lib, this function searches anywhere in the title."""
+        for key, title in corpus.titles.items():
+            words = title.words
+            for ex in self.extended:
+                i = 0
+                start = None
+                matched = None
+                while i < min(len(ex), len(words)) and ex[i] != words[i].pos:
+                    i += 1
+                if i < min(len(ex), len(words)):
+                    start = i
+                    i += 1
+                    ln = 1
+                    while ln < len(ex) and i < min(len(ex), len(words)):
+                        if ex[i] == words[i].pos:
+                            ln += 1
+                        else:
+                            break
+                    if ln == len(ex):
+                        return title, start, ex
+        return None, None, None
+    
+    def match_one(self, val):
+        if len(val) < self.min_length:
+            return None
+        selected = self.extended
+        for i in range(len(val)):
+            filtered = []
+            for j in range(len(selected)):
+                if i >= len(selected[j]) or val[i] == selected[j][i]:
+                    if len(val) >= len(selected[j]): # don't match start of extended form not complete!
+                        filtered.append(selected[j])
+            selected = filtered
+            if len(selected) == 0:
+                break
+        if len(selected) > 0:
+            max_length = 0
+            final = None
+            for pc in selected:
+                if len(pc) > max_length:
+                    max_length = len(pc)
+                    final = pc
+            return final
+        else:
+            return None
+    
     def match(self, data, info=True):
         matched = []
         unmatched = []
@@ -70,10 +122,11 @@ class Pattern:
                 unmatched.append(key)
         return matched, unmatched
 
-
     def __str__(self):
-        return "Pattern : " + self.text
+        return self.text
 
+    def __repr__(self):
+        return "Pattern : " + self.text
 
 class Node:
     
