@@ -14,11 +14,32 @@
 
 # external
 import openpyxl
+from openpyxl.worksheet.write_only import WriteOnlyCell
+from openpyxl.styles import PatternFill, Font
 #import xlwt
 
 #-------------------------------------------------------------------------------
 # Classes
 #-------------------------------------------------------------------------------
+
+class MiniCell:
+
+    yellow = PatternFill(fgColor='FFFFFF00', fill_type='solid')
+    
+    def __init__(self, val, bg=None, w=None):
+        self.val = val
+        self.bg = bg
+        self.w = w
+
+    def to_cell(self, ws):
+        if self.bg is None and self.w is None:
+            return self.val
+        else:
+            cell = WriteOnlyCell(ws, self.val)
+            if self.bg is not None:
+                cell.fill = self.bg
+            return cell
+
 
 class ExcelFile:
 
@@ -28,31 +49,47 @@ class ExcelFile:
         if mode == 'w':
             self.wb = openpyxl.Workbook(write_only=True)
         elif mode == 'r':
-            self.wb = openpyxl.load_workbook(name, read_only=True)
+            self.wb = openpyxl.load_workbook(name, read_only=True) # keep_vba=True
 
-    def sheet(self, name):
-        if name not in self.wb.sheetnames:
-            raise Exception("Sheet unknown: ", name)
-        return self.wb[name]
-
+    # find a sheet from its name or its number
+    # ex : sheet('TITLE') or sheet(0)
+    def sheet(self, ws):
+        if isinstance(ws, str):
+            if ws not in self.wb.sheetnames:
+                raise Exception("Sheet unknown: ", ws)
+            return self.wb[ws]
+        elif isinstance(ws, int):
+            if len(self.wb.sheetnames) <= ws:
+                raise Exception("Not enough sheet: ", ws, " (", len(self.wb.sheetnames), ")")
+            ws = self.wb.sheetnames[ws]
+            return self.wb[ws]
+    
     def save_to_sheet(self, name, values, order_col=0, reverse_order=True):
         ws = self.wb.create_sheet(name)
+        if name == 'TITLES': # hack
+            column = ['E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W']
+            for c in column:
+                ws.column_dimensions[c].width = 2
         if isinstance(values, dict):
-            for sorted_values_with_key in sorted(values.items(), key=lambda t: t[1][order_col], reverse=reverse_order):
-                ws.append(sorted_values_with_key[1])
-        elif isinstance(values, list):
-            if order_col is not None:
-                for list_of_values in sorted(values, key=lambda t: t[order_col], reverse=reverse_order):
-                    ws.append(list_of_values)
-            else:
-                for row in values:
-                    ws.append(row)
-        elif isinstance(values, DynMatrix):
-            ws.append(['', *values.words]) # titles
-            nb_row = 0
-            for row in values.matrix:
-                ws.append([values.words[nb_row], *row])
-                nb_row += 1
+            values = values.values()
+        if order_col is not None:
+            for list_of_values in sorted(values, key=lambda t: t[order_col], reverse=reverse_order):
+                out = []
+                for obj in list_of_values:
+                    if isinstance(obj, MiniCell):
+                        out.append(obj.to_cell(ws))
+                    else:
+                        out.append(obj)
+                ws.append(out)
+        else:
+            for list_of_values in values:
+                out = []
+                for obj in list_of_values:
+                    if isinstance(obj, MiniCell):
+                        out.append(obj.to_cell(ws))
+                    else:
+                        out.append(obj)
+                ws.append(out)
     
     def save_to_sheet_old(self, name, values, percent=None, test_val=None):
         # ws = wb.add_sheet(name)
@@ -92,13 +129,21 @@ class ExcelFile:
                     #ws.write(row, nb, values[val] / percent)
                 row += 1
 
-    def load_sheet(self, name,key=0, ignore=None):
+    def load_sheet(self, idx=None, key=0, ignore=None):
         # load any sheet in dict with the choosen column as a key
-        # ignoring specific column
+        # ignoring specific column (a list of column : 0, 1, 2...)
+        # by default, loading the sheet number 0, with key=first column, ignoring none
+        # test
+        if self.mode != 'r':
+            raise Exception('This ExcelFile should be on read mode.')
+        # loading the sheet
+        if idx is None:
+            idx = 0
+        sheet = self.sheet(idx)
+        # fetching the data
         data = {}
-        sheet = self.sheet(name)
         nb_row = 0
-        for row in sheet.iter_rows(min_row=0):
+        for row in ws.rows(): # sheet.iter_rows(min_row=0):
             nb_cell = 0
             last_id = 0
             values = []
@@ -113,20 +158,6 @@ class ExcelFile:
             data[last_id] = values
             nb_row += 1
         return data
-    
-    def load(self): # load the first sheet
-        if self.mode != 'r':
-            raise Exception('This ExcelFile should be on read mode.')
-        wb = openpyxl.load_workbook(self.name + '.xlsx', keep_vba=True, read_only=True)
-        ws = wb[wb.sheetnames[0]]
-        table = {}
-        for row in ws.rows:
-            record = []
-            for cell in row:
-                record.append(cell.value)
-            if len(record) > 1:
-                table[record[0]] = record[1:]
-        return table
     
     def close(self):
         if self.mode != 'w':
@@ -231,7 +262,7 @@ class DynMatrix:
         self.matrix = content
         return self.matrix
     
-    def to_excel(self, regen=False, decorated=False):
+    def to_excel(self, regen=False, decorated=False, debug=False):
         if regen or self.matrix is None: self.build_matrix(decorated)
         excel = ExcelFile(name = self.name, mode = 'w')
         excel.save_to_sheet(name = 'matrix', values = self.matrix, order_col=None)
@@ -240,6 +271,13 @@ class DynMatrix:
             rows.append([self.words[i], self.count[i]])
         excel.save_to_sheet(name = 'count', values = rows, order_col=1, reverse_order=True)
         excel.close()
+        del excel
+        if debug:
+            f = open(self.name + '_debug', mode='w', encoding='utf-8')
+            for w1, oc in self.oriented_cooccurrences.items():
+                for w2 in oc:
+                    f.write(w1 + ',' + w2 + ',' + str(oc[w2]))
+            f.close()
     
     def display(self, regen=False, decorated=False):
         if regen or self.matrix is None: self.build_matrix(decorated)

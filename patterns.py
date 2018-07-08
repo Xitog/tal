@@ -40,7 +40,7 @@ class Pattern:
             Pattern is searched EVERYWHERE in the title.
             data must be a CORPUS.
             Warning:
-                - contrary to the rest of the lib, this function needs a Corpus.
+                - contrary to the rest of the lib, this function needs a Corpus, not a list of POS.
                 - contrary to the rest of the lib, this function searches anywhere in the title."""
         for key, title in corpus.titles.items():
             words = title.words
@@ -63,7 +63,34 @@ class Pattern:
                         return title, start, ex
         return None, None, None
     
+    def trilist(self, words, after=None):
+        "Transform a list of words to 3 lists for forms, lemma and pos."
+        forms = []
+        lemma = []
+        pos = []
+        if after is None:
+            for w in words:
+                forms.append(w.form)
+                lemma.append(w.lemma)
+                pos.append(w.pos)
+        else:
+            started = False
+            for w in words:
+                if started:
+                    forms.append(w.form)
+                    lemma.append(w.lemma)
+                    pos.append(w.pos)
+                if w.form == after:
+                    started = True
+        return forms, lemma, pos
+    
+    #def find_all_with(self, corpus, n1, n2):
+    #    for key, title in corpus.titles.items():
+    #        forms, lemma, pos = self.trilist(title.words, after=':')
+            
+
     def match_one(self, val):
+        """Take a list of pos as val"""
         if len(val) < self.min_length:
             return None
         selected = self.extended
@@ -272,4 +299,14 @@ def build_possibilities(elem, possibilities):
         raise Exception("Type not known: " + str(type(elem)))
     return possibilities
 
+if __name__ == '__main__':
+    from titles import Word
+    w = [Word('tests', 'test', 'DET'), Word(':', ':', 'PONCT'), Word('la', 'la', 'DET'), Word('maison', 'maison', 'NC'), Word('de', 'de', 'P'), Word('la', 'la', 'DET'), Word('forêt', 'forêt', 'NC')]
+    pattern = Pattern('DET? ADJ? [NC NPP] [NC NPP]? ADJ? [(P DET?) P+D] ADJ? [NC NPP] [NC NPP]? ADJ?')
+    forms, lemma, pos = pattern.trilist(w, after=':')
+    print(forms)
+    print(lemma)
+    print(pos)
 
+
+    

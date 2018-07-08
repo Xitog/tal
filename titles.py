@@ -218,7 +218,7 @@ class Corpus:
         return sub
 
 #-------------------------------------------------------------------------------
-# Functions
+# Functions for extract
 #-------------------------------------------------------------------------------
 
 def has_only_one_form(title, form):
@@ -251,6 +251,12 @@ def has_x_after_form(title, form, nb, tst):
         return count > nb
     elif tst == '<':
         return count < nb
+
+def has_domain(title, domain):
+    for d in title.domains:
+        if d.startswith('0.') and d[2:] == domain:
+            return True
+    return False
 
 #-------------------------------------------------------------------------------
 # Test if main

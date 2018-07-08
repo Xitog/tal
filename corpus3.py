@@ -15,8 +15,8 @@ import datetime
 import os
 
 # project
-from titles import Word, Title, Corpus, has_only_one_form, no_filter, has_x_after_form
-from excel import ExcelFile, DynMatrix
+from titles import Word, Title, Corpus, has_only_one_form, no_filter, has_x_after_form, has_domain
+from excel import ExcelFile, DynMatrix, MiniCell
 from patterns import Pattern
 #import pytalismane
 
@@ -533,6 +533,9 @@ corpus2excel.MAX_TITLE_EXCEL = 60000
 
 # From a translation corpus2excel, this function has derivated into a pattern filtering machine
 def corpus2excel_pattern(title, data_sets, **parameters):
+    # parameters
+    pattern = parameters['pattern']
+    name = parameters['name']
     # data set
     if "TITLES" not in data_sets:
         data_sets["TITLES"] = {}
@@ -549,29 +552,19 @@ def corpus2excel_pattern(title, data_sets, **parameters):
     if "STATS N2 after" not in data_sets:
         data_sets["STATS N2 after"] = {}
     if "STATS N1 N2" not in data_sets:
-        data_sets["STATS N1 N2"] = DynMatrix('matrix_1dblcolno0inf30')
+        data_sets["STATS N1 N2"] = {}
+    if 'MATRIX' not in data_sets:
+        data_sets['MATRIX'] = DynMatrix('matrix_' + name)
     # algorithm
-    # Special for after ":" process
-    pos = []
-    lemma = []
-    forms = []
-    save = False
-    for w in title.words:
-        if save:
-            pos.append(w.pos)
-            lemma.append(w.lemma)
-            forms.append(w.form)
-        elif w.form == ':':
-            save = True
-    # Special for pattern
-    res = corpus2excel_pattern.pattern.match_one(pos)
+    forms, lemma, pos = pattern.trilist(title.words, after=':')
+    res = pattern.match_one(pos)
     if res is not None:
         data_sets["MATCH after"][title.docid] = [
             title.docid,
             len(res),
             *res
         ]
-        # stats on pattern <= victory
+        # stats on pattern
         nb = 0
         inside = False
         suite = []
@@ -603,7 +596,13 @@ def corpus2excel_pattern(title, data_sets, **parameters):
                     elif nb == 1:
                         save = "STATS N2 after"
                         n2 = ' + '.join(suite)
-                        data_sets["STATS N1 N2"].add(n1, n2)
+                        # stats for n1 + n2
+                        nkey = '1. ' + n1 + ' 2. ' + n2
+                        if nkey not in data_sets["STATS N1 N2"]:
+                            data_sets["STATS N1 N2"][nkey] = [nkey, 1]
+                        else:
+                            data_sets["STATS N1 N2"][nkey][1] += 1
+                        data_sets['MATRIX'].add(n1, n2)
                     tsuite = tuple(suite)
                     if tsuite not in data_sets[save]:
                         data_sets[save][tsuite] = [0, *suite]
@@ -629,29 +628,36 @@ def corpus2excel_pattern(title, data_sets, **parameters):
             if name not in roots:
                 raise Exception("Unknown domain:" + name)
             roots[name] = 1
+    roots_style = []
+    for roo in roots:
+        roots_style.append(MiniCell(roots[roo], w=2))
     data_sets["TITLES"][title.docid] = [
         title.docid,
         title.kind,
         len(title.authors),
         title.date,
-        *roots.values(),
+        *roots_style,
         title.text
     ]
     # Special for after ":" save
-    data_sets["POS after"][title.docid] = [title.docid, len(pos)] + pos
-    data_sets["LEMMA after"][title.docid] = [title.docid, len(lemma)] + lemma
-
-corpus2excel_pattern.pattern = Pattern('DET? ADJ? [NC NPP] [NC NPP]? ADJ? [(P DET?) P+D] ADJ? [NC NPP] [NC NPP]? ADJ?')
+    pos_style = []
+    for i in range(len(pos)):
+        if i < len(res):
+            pos_style.append(MiniCell(pos[i], bg = MiniCell.yellow))
+        else:
+            pos_style.append(pos[i])
+    lemma_style = []
+    for i in range(len(pos)):
+        if i < len(res):
+            lemma_style.append(MiniCell(lemma[i], MiniCell.yellow))
+        else:
+            lemma_style.append(lemma[i])
+    data_sets["POS after"][title.docid] = [title.docid, len(pos)] + pos_style
+    data_sets["LEMMA after"][title.docid] = [title.docid, len(lemma)] + lemma_style 
 
 
 def post_process(excelfile):
     return
-    nb = 0
-    ws = excelfile.sheet("TITLES")
-    for column_cells in ws.columns:
-        if 4 <= nb <= 22:
-            ws.column_dimensions[column_cells[0].column].width = 2
-        nb += 1
 
 
 def stats_after_word(title, data_sets, **parameters):
@@ -695,6 +701,7 @@ def stats_after_word(title, data_sets, **parameters):
 stats_after_word.id_rule = 0
 
 
+import gc
 # Iterate through the corpus with a function
 # name : name of the excel file
 # fun : a special function to call on the Excel file
@@ -713,27 +720,46 @@ def iterate(corpus, function, excel=False, **parameters):
             iterdisplay += iterstep
         title = corpus[title_id]
         function(title, data_sets, **parameters)
-    print('[INFO] --- Saving')
     if excel:
         if 'name' in parameters:
             name = parameters['name']
         else:
             name = function.__name__
+        print('[INFO] --- Saving to', name + '.xlsx')
         try:
             excel = ExcelFile(name = name, mode = 'w')
+            dynmatrix = None
+            to_delete = []
             for key, val in data_sets.items():
                 if isinstance(val, DynMatrix): # hack
+                    dynmatrix = val
                     continue
                 excel.save_to_sheet(
                     name = key[:31],
                     values = val)
+                to_delete.append(key)
             if 'fun' in parameters:
                 parameters['fun'](excel)
             excel.close()
-            for key, val in data_sets.items():
-                if isinstance(val, DynMatrix):
-                    val.filter(5)
-                    val.to_excel(decorated=True)
+            if dynmatrix is not None:
+                # release memory
+                del excel
+                for key in to_delete:
+                    del data_sets[key]
+                #for key, val in data_sets.items():
+                #    if isinstance(val, DynMatrix):
+                #
+                done = False
+                threshold = 10 # 5 => Out of Memory
+                step = 5
+                while not done:
+                    try:
+                        gc.collect()
+                        dynmatrix.filter(threshold)
+                        dynmatrix.to_excel(decorated=True)
+                        done = True
+                    except MemoryError:
+                        threshold += step
         except MemoryError:
             print('[ERROR] Out of Memory.')
     print('[INFO] END ' + function.__name__)
@@ -838,13 +864,19 @@ class Application:
             # Compter où est la dernière suite NC/NPP
             iterate(corpus, last_index_of_the_second_NC_NPP, True)
         # NEW ACTIONS
-        elif action.startswith('load_'):
-            origin = action[5:]
+        elif action.startswith('load_excel?'):
+            filename = action[len('load_excel?'):]
+            print(filename)
+            data = ExcelFile(filename, mode='r')
+            titles = data.load_sheet(0)
+            
+        elif action.startswith('load?'):
+            origin = action[len('load?'):]
             try:
                 self.corpus = Corpus.load('.\\corpus\\' + origin + '\\' + origin + '.xml')
             except FileNotFoundError:
                 self.corpus = Corpus.load(origin + '.xml')
-        elif action == 'make_corpus_1dblcolno0inf30': # only one ':', 0 < nb word after ':' < 30
+        elif action == 'make?corpus_1dblcolno0inf30': # only one ':', 0 < nb word after ':' < 30
             sub = self.corpus.extract(has_only_one_form, ':')
             sub = sub.extract(has_x_after_form, ':', 0, '!=')
             sub = sub.extract(has_x_after_form, ':', 30, '<')
@@ -854,30 +886,36 @@ class Application:
             count(self.corpus, ':') # should be 100% with 1
             print()
             count_after_word(self.corpus, ':') # should be between 1 and 29
-        elif action.startswith('stats_after_word_'):
-            form = action[len('stats_after_word_'):]
+        elif action.startswith('filter_corpus?'):
+            parameters = action[len('filter_corpus?'):]
+            parameters = parameters.split('&')
+            for par in parameters:
+                var, val = par.split('=')
+                print(var, val)
+                sub = self.corpus.extract(has_domain, val)
+                sub.save('corpus_' + var + '_' + val + '.xml')
+        elif action.startswith('stats_after_word?'):
+            form = action[len('stats_after_word?'):]
             iterate(self.corpus, stats_after_word, excel = True, start = form)
         elif action == 'match_pattern':
             pattern = Pattern('DET? ADJ? [NC NPP] [NC NPP]? ADJ? [(P DET?) P+D] ADJ? [NC NPP] [NC NPP]? ADJ?')
             match_patterns('stats_after_word.xlsx', pattern)
-        elif action.startswith('corpus2excel_pattern_'):
+        elif action.startswith('corpus2excel_pattern?'):
             if self.corpus is None: raise Exception('[ERROR] A corpus should be loaded first!')
-            name = action[len('corpus2excel_pattern_'):]
-            iterate(self.corpus, corpus2excel_pattern, excel = True, name = name, fun = post_process)
-        elif action.startswith('corpus2excel_'):
+            pattern = Pattern('DET? ADJ? [NC NPP] [NC NPP]? ADJ? [(P DET?) P+D] ADJ? [NC NPP] [NC NPP]? ADJ?')
+            name = action[len('corpus2excel_pattern?'):]
+            iterate(self.corpus, corpus2excel_pattern, excel = True, name = name, fun = post_process, pattern = pattern)
+        elif action.startswith('corpus2excel?'):
             if self.corpus is None: raise Exception('[ERROR] A corpus should be loaded first!')
-            name = action[len('corpus2excel_'):]
+            name = action[len('corpus2excel?'):]
             iterate(self.corpus, corpus2excel, excel = True, name = name, after = True, form = ':')
-        elif action == 'detect_underscore':
-            if self.corpus is None: raise Exception('[ERROR] A corpus should be loaded first!')
-            iterate(self.corpus, detect_underscore, excel = True)
         elif action == 'repl':
             cmd = ''
             while cmd != 'exit':
                 cmd = input('>>> ')
                 print(cmd)
                 self.exec_cmd(cmd)
-                    
+    
     def exec_cmd(self, cmd):
         try:
             if cmd == 'debug':
@@ -903,10 +941,21 @@ class Application:
 
 if __name__ == '__main__':
     app = Application()
-    #ACTIONS = ['load_corpus_1dblcolno0inf30', 'stats_after_word_:', 'match_pattern', 'stat_pattern']
-    #ACTIONS = ['load_corpus_1dblcolno0inf30', 'corpus2excel_1dblcolno0inf30']
+
+    # Corpus 2 Corpus with filtering
+    app.start('load?corpus_1dblcolno0inf30', 'filter_corpus?domain=shs')
+    #app.start('make?corpus_1dblcolno0inf30')
     
-    #app.start('load_corpus_medium', 'corpus2excel_pattern_1dblcolno0inf30')
-    app.start('load_corpus_1dblcolno0inf30', 'corpus2excel_pattern_1dblcolno0inf30')
-    #app.start('load_corpus_1dblcolno0inf30', 'stats_after_word_:')
-    #app.start('load_corpus_1dblcolno0inf30', 'repl')
+    # Corpus 2 Excel without filtering
+    #app.start('load?corpus_1dblcolno0inf30', 'corpus2excel?1dblcolno0inf30')
+
+    # Corpus 2 Excel with Pattern filtering
+    #app.start('load?corpus_medium', 'corpus2excel_pattern?medium')                     # For test
+    #app.start('load?corpus_1dblcolno0inf30', 'corpus2excel_pattern?1dblcolno0inf30')   # Slow ~13-20 minutes
+
+    # Corpus 2 Stats and eventually match_pattern
+    #app.start('load?corpus_1dblcolno0inf30', 'stats_after_word?:')
+    #app.start('load?corpus_1dblcolno0inf30', 'stats_after_word?:', 'match_pattern', 'stat_pattern')
+
+    # Simple REPL
+    #app.start('load?corpus_1dblcolno0inf30', 'repl')

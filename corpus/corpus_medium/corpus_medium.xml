@@ -3,7 +3,7 @@
 <id>777</id>
 <type>ART</type>
 <date>2018</date>
-<text>Test : la maison de la forêt</text>
+<text>Test : la maison de la forêt profonde et mystérieuse</text>
 <words>
 <word><form>Test</form><lemma>test</lemma><pos>NC</pos></word>
 <word><form>:</form><lemma>:</lemma><pos>PONCT</pos></word>
@@ -12,6 +12,9 @@
 <word><form>de</form><lemma>de</lemma><pos>P</pos></word>
 <word><form>la</form><lemma>la</lemma><pos>DET</pos></word>
 <word><form>forêt</form><lemma>forêt</lemma><pos>NC</pos></word>
+<word><form>profonde</form><lemma>profond</lemma><pos>ADJ</pos></word>
+<word><form>et</form><lemma>et</lemma><pos>CC</pos></word>
+<word><form>mystérieuse</form><lemma>mystérieux</lemma><pos>ADJ</pos></word>
 </words>
 <authors>
 <author>Damien Gouteux</author>
