@@ -262,9 +262,10 @@ class DynMatrix:
         self.matrix = content
         return self.matrix
     
-    def to_excel(self, regen=False, decorated=False, debug=False):
+    def to_excel(self, regen=False, decorated=False, debug=False, excel=None):
         if regen or self.matrix is None: self.build_matrix(decorated)
-        excel = ExcelFile(name = self.name, mode = 'w')
+        if excel is None:
+            excel = ExcelFile(name = self.name, mode = 'w')
         excel.save_to_sheet(name = 'matrix', values = self.matrix, order_col=None)
         rows = []
         for i in range(len(self.words)):

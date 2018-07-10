@@ -545,14 +545,18 @@ def corpus2excel_pattern(title, data_sets, **parameters):
         data_sets["POS after"] = {}
     if "MATCH after" not in data_sets:
         data_sets["MATCH after"] = {}
-    if "STATS N1 after" not in data_sets:
-        data_sets["STATS N1 after"] = {}
-    if "STATS P after" not in data_sets:
-        data_sets["STATS P after"] = {}
-    if "STATS N2 after" not in data_sets:
-        data_sets["STATS N2 after"] = {}
+    if "STATS N1" not in data_sets:
+        data_sets["STATS N1"] = {}
+    if "STATS P" not in data_sets:
+        data_sets["STATS P"] = {}
+    if "STATS N2" not in data_sets:
+        data_sets["STATS N2"] = {}
     if "STATS N1 N2" not in data_sets:
         data_sets["STATS N1 N2"] = {}
+    if "STATS N1 P" not in data_sets:
+        data_sets["STATS N1 P"] = {}
+    if "STATS N1 P N2" not in data_sets:
+        data_sets["STATS N1 P N2"] = {}
     if 'MATRIX' not in data_sets:
         data_sets['MATRIX'] = DynMatrix('matrix_' + name)
     # algorithm
@@ -566,16 +570,18 @@ def corpus2excel_pattern(title, data_sets, **parameters):
         ]
         # stats on pattern
         nb = 0
+        nb_prep = 0
         inside = False
         suite = []
         n1 = None
         n2 = None
+        prep = None
         for i in range(len(pos) + 1):
             if i < len(pos):
                 p = pos[i]
             else:
                 p = 'STOP'
-            if p == 'NC':
+            if p in ['NC', 'NPP']:
                 if inside:
                     if lemma[i] != '_':
                         suite.append(lemma[i])
@@ -590,35 +596,58 @@ def corpus2excel_pattern(title, data_sets, **parameters):
             else:
                 if inside:
                     if nb == 0:
-                        save = "STATS N1 after"
+                        save = "STATS N1"
                         n1 = ' + '.join(suite)
                         nb += 1
                     elif nb == 1:
-                        save = "STATS N2 after"
+                        save = "STATS N2"
                         n2 = ' + '.join(suite)
                         # stats for n1 + n2
-                        nkey = '1. ' + n1 + ' 2. ' + n2
+                        nkey = (n1, n2) #'1. ' + n1 + ' 2. ' + n2
                         if nkey not in data_sets["STATS N1 N2"]:
-                            data_sets["STATS N1 N2"][nkey] = [nkey, 1]
+                            data_sets["STATS N1 N2"][nkey] = [n1, n2, 1]
                         else:
-                            data_sets["STATS N1 N2"][nkey][1] += 1
+                            data_sets["STATS N1 N2"][nkey][-1] += 1
+                        npkey = (n1, prep, n2) #n1 + ' ' + prep + ' ' + n2
+                        if npkey not in data_sets["STATS N1 P N2"]:
+                            data_sets["STATS N1 P N2"][npkey] = [n1, prep, n2, 1]
+                        else:
+                            data_sets["STATS N1 P N2"][npkey][-1] += 1
                         data_sets['MATRIX'].add(n1, n2)
-                    tsuite = tuple(suite)
-                    if tsuite not in data_sets[save]:
-                        data_sets[save][tsuite] = [0, *suite]
-                    data_sets[save][tsuite][0] += 1
+                        nb += 1
+                    else:
+                        nb += 1
+                    if nb in [1, 2]:
+                        tsuite = tuple(suite)
+                        if tsuite not in data_sets[save]:
+                            data_sets[save][tsuite] = [0, *suite]
+                        data_sets[save][tsuite][0] += 1
                     inside = False       
                 if p in ['P+D', 'P']:
-                    lemme = lemma[i]
-                    if lemme not in data_sets["STATS P after"]:
-                        data_sets["STATS P after"][lemma[i]] = [0, lemme]
-                    data_sets["STATS P after"][lemme][0] += 1
+                    if n1 is None:
+                        print('DOCID:', title.docid)
+                        print('TITLE:', title.text)
+                        print('FORM:', forms)
+                        print('LEMMA:', lemma)
+                        print('POS:', pos)
+                        print('Match:', res)
+                        raise Exception("WTF")
+                    if nb_prep == 0:
+                        prep = lemma[i]
+                        if prep not in data_sets["STATS P"]:
+                            data_sets["STATS P"][prep] = [0, prep]
+                        data_sets["STATS P"][prep][0] += 1
+                        pkey = (n1, prep) # n1 + ' ' + prep
+                        if pkey not in data_sets["STATS N1 P"]:
+                            data_sets["STATS N1 P"][pkey] = [n1, prep, 0]
+                        data_sets["STATS N1 P"][pkey][-1] += 1
+                        nb_prep += 1
     else:
         return
     roots = {
         'shs' : 0, 'sdv' : 0, 'sdu' : 0, 'info' : 0, 'scco' : 0,
         'phys' : 0, 'spi' : 0, 'sde' : 0, 'math' : 0, 'chim' : 0,
-        'stat' : 0, 'qfin' : 0, 'nlin' : 0, 'phys-atom ' : 0,
+        'stat' : 0, 'qfin' : 0, 'nlin' : 0, 'phys-atom' : 0,
         'electromag' : 0, 'photon' : 0, 'other' : 0, 'image' : 0,
         'stic' : 0
     }
@@ -731,35 +760,51 @@ def iterate(corpus, function, excel=False, **parameters):
             dynmatrix = None
             to_delete = []
             for key, val in data_sets.items():
-                if isinstance(val, DynMatrix): # hack
-                    dynmatrix = val
-                    continue
-                excel.save_to_sheet(
-                    name = key[:31],
-                    values = val)
+                if 'divide' in parameters and 'name2' in parameters: # make multiple excel
+                    if key == parameters['divide']:
+                        excel.close()
+                        excel = ExcelFile(name = parameters['name2'], mode = 'w')
+                #if isinstance(val, DynMatrix): # hack
+                #    dynmatrix = val
+                #    continue
+                try:
+                    excel.save_to_sheet(
+                        name = key[:31],
+                        values = val)
+                except TypeError:
+                    print(key)
+                    print('Type:', type(val))
+                    print('Length:', len(val))
+                    for key, val in val.items():
+                        print('Key: ', key, ' = ', end='')
+                        for cell in val:
+                            print(cell, '  ', end='')
+                            if cell is None:
+                                raise Exception("NONE DETECTED")
+                        print()
                 to_delete.append(key)
             if 'fun' in parameters:
                 parameters['fun'](excel)
             excel.close()
-            if dynmatrix is not None:
-                # release memory
-                del excel
-                for key in to_delete:
-                    del data_sets[key]
-                #for key, val in data_sets.items():
-                #    if isinstance(val, DynMatrix):
-                #
-                done = False
-                threshold = 10 # 5 => Out of Memory
-                step = 5
-                while not done:
-                    try:
-                        gc.collect()
-                        dynmatrix.filter(threshold)
-                        dynmatrix.to_excel(decorated=True)
-                        done = True
-                    except MemoryError:
-                        threshold += step
+            #if dynmatrix is not None:
+            #    # release memory
+            #    del excel
+            #    for key in to_delete:
+            #        del data_sets[key]
+            #    #for key, val in data_sets.items():
+            #    #    if isinstance(val, DynMatrix):
+            #    #
+            #    done = False
+            #    threshold = 10 # 5 => Out of Memory
+            #    step = 5
+            #    while not done:
+            #        try:
+            #            gc.collect()
+            #            dynmatrix.filter(threshold)
+            #            dynmatrix.to_excel(decorated=True)
+            #            done = True
+            #        except MemoryError:
+            #            threshold += step
         except MemoryError:
             print('[ERROR] Out of Memory.')
     print('[INFO] END ' + function.__name__)
@@ -904,7 +949,9 @@ class Application:
             if self.corpus is None: raise Exception('[ERROR] A corpus should be loaded first!')
             pattern = Pattern('DET? ADJ? [NC NPP] [NC NPP]? ADJ? [(P DET?) P+D] ADJ? [NC NPP] [NC NPP]? ADJ?')
             name = action[len('corpus2excel_pattern?'):]
-            iterate(self.corpus, corpus2excel_pattern, excel = True, name = name, fun = post_process, pattern = pattern)
+            iterate(self.corpus, corpus2excel_pattern, excel = True, name = name,
+                    fun = post_process, pattern = pattern)
+                    #fun = post_process, pattern = pattern, divide = 'STATS N1', name2 = name + '_stat') # divide into 2 files : titles + stats
         elif action.startswith('corpus2excel?'):
             if self.corpus is None: raise Exception('[ERROR] A corpus should be loaded first!')
             name = action[len('corpus2excel?'):]
@@ -943,7 +990,27 @@ if __name__ == '__main__':
     app = Application()
 
     # Corpus 2 Corpus with filtering
-    app.start('load?corpus_1dblcolno0inf30', 'filter_corpus?domain=shs')
+    #app.start('load?corpus_1dblcolno0inf30',
+    #          'filter_corpus?domain=shs',       # Extracted: 60724 / 84923 1. Sciences de l'Homme et Société (487646)
+    #          'filter_corpus?domain=sdv',       # Extracted: 12233 / 84923 Sciences du Vivant [q-bio] (207100)
+    #          'filter_corpus?domain=sdu',       # Extracted: 1804 / 84923  Planète et Univers [physics] (76471)
+    #          'filter_corpus?domain=info',      # Extracted: 3746 / 84923  Informatique [cs] (210465)
+    #          'filter_corpus?domain=scco',      # Extracted: 1153 / 84923  Sciences cognitives (20938)
+    #          'filter_corpus?domain=phys',      # Extracted: 1709 / 84923  2. Physique [physics] (229921)
+    #          'filter_corpus?domain=spi',       # Extracted: 3796 / 84923  Sciences de l'ingénieur [physics] (181699)
+    #          'filter_corpus?domain=sde',       # Extracted: 3027 / 84923  Sciences de l'environnement (56405)
+    #          'filter_corpus?domain=math',      # Extracted: 747 / 84923   Mathématiques [math] (76696)
+    #          'filter_corpus?domain=chim',      # Extracted: 950 / 84923   Chimie(81098)
+    #          'filter_corpus?domain=stat',      # Extracted: 191 / 84923   Statistiques [stat] (10738)
+    #          'filter_corpus?domain=qfin',      # Extracted: 265 / 84923   Économie et finance quantitative [q-fin] (3527)
+    #          'filter_corpus?domain=nlin',      # Extracted: 19 / 84923    Science non linéaire [physics] (2211)
+    #          'filter_corpus?domain=phys-atom', # Extracted: 0 / 84923
+    #          'filter_corpus?domain=electromag',# Extracted: 0 / 84923
+    #          'filter_corpus?domain=photon',    # Extracted: 0 / 84923
+    #          'filter_corpus?domain=other',     # Extracted: 0 / 84923
+    #          'filter_corpus?domain=image',     # Extracted: 0 / 84923
+    #          'filter_corpus?domain=stic',      # Extracted: 0 / 84923
+    #          )
     #app.start('make?corpus_1dblcolno0inf30')
     
     # Corpus 2 Excel without filtering
@@ -951,8 +1018,9 @@ if __name__ == '__main__':
 
     # Corpus 2 Excel with Pattern filtering
     #app.start('load?corpus_medium', 'corpus2excel_pattern?medium')                     # For test
-    #app.start('load?corpus_1dblcolno0inf30', 'corpus2excel_pattern?1dblcolno0inf30')   # Slow ~13-20 minutes
-
+    #app.start('load?corpus_1dbl_6', 'corpus2excel_pattern?corpus_1dbl_6')              # For test 6 titles and 4 matching the pattern
+    app.start('load?corpus_1dblcolno0inf30', 'corpus2excel_pattern?1dblcolno0inf30')    # Slow ~13-20 minutes
+    
     # Corpus 2 Stats and eventually match_pattern
     #app.start('load?corpus_1dblcolno0inf30', 'stats_after_word?:')
     #app.start('load?corpus_1dblcolno0inf30', 'stats_after_word?:', 'match_pattern', 'stat_pattern')

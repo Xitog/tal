@@ -166,8 +166,11 @@ class Corpus:
     
     # Code taken from Repository.dump
     def save(self, filename, makezip=False):
-        full_filename = 'output_dump_repo' + os.sep + filename # + '.xml'
-        outfile = open(full_filename, encoding='utf-8', mode='w')
+        try:
+            full_filename = 'output_dump_repo' + os.sep + filename # + '.xml'
+            outfile = open(full_filename, encoding='utf-8', mode='w')
+        except FileNotFoundError:
+            outfile = open(filename, encoding='utf-8', mode='w')
         outfile.write('<notices>\n')
         for title_id in self.titles:
             title = self.titles[title_id]
