@@ -15,7 +15,7 @@ import datetime
 import os
 
 # project
-from titles import Word, Title, Corpus, has_only_one_form, no_filter, has_x_after_form, has_domain
+from titles import Word, Title, Corpus, has_only_one_form, no_filter, has_x_after_form, has_domain, has_not_domain
 from excel import ExcelFile, DynMatrix, MiniCell
 from patterns import Pattern
 #import pytalismane
@@ -603,12 +603,12 @@ def corpus2excel_pattern(title, data_sets, **parameters):
                         save = "STATS N2"
                         n2 = ' + '.join(suite)
                         # stats for n1 + n2
-                        nkey = (n1, n2) #'1. ' + n1 + ' 2. ' + n2
+                        nkey = n1 + '|' + n2 #(n1, n2) #'1. ' + n1 + ' 2. ' + n2
                         if nkey not in data_sets["STATS N1 N2"]:
                             data_sets["STATS N1 N2"][nkey] = [n1, n2, 1]
                         else:
                             data_sets["STATS N1 N2"][nkey][-1] += 1
-                        npkey = (n1, prep, n2) #n1 + ' ' + prep + ' ' + n2
+                        npkey = n1 + '|' + prep + '|' + n2 # (n1, prep, n2) #n1 + ' ' + prep + ' ' + n2
                         if npkey not in data_sets["STATS N1 P N2"]:
                             data_sets["STATS N1 P N2"][npkey] = [n1, prep, n2, 1]
                         else:
@@ -637,7 +637,7 @@ def corpus2excel_pattern(title, data_sets, **parameters):
                         if prep not in data_sets["STATS P"]:
                             data_sets["STATS P"][prep] = [0, prep]
                         data_sets["STATS P"][prep][0] += 1
-                        pkey = (n1, prep) # n1 + ' ' + prep
+                        pkey = n1 + '|' + prep # (n1, prep) # n1 + ' ' + prep
                         if pkey not in data_sets["STATS N1 P"]:
                             data_sets["STATS N1 P"][pkey] = [n1, prep, 0]
                         data_sets["STATS N1 P"][pkey][-1] += 1
@@ -760,17 +760,24 @@ def iterate(corpus, function, excel=False, **parameters):
             dynmatrix = None
             to_delete = []
             for key, val in data_sets.items():
+                order_col = 0
                 if 'divide' in parameters and 'name2' in parameters: # make multiple excel
                     if key == parameters['divide']:
                         excel.close()
                         excel = ExcelFile(name = parameters['name2'], mode = 'w')
-                #if isinstance(val, DynMatrix): # hack
-                #    dynmatrix = val
-                #    continue
+                if isinstance(val, DynMatrix): # hack
+                    dynmatrix = val
+                    continue
+                #    threshold = 5 #1
+                #    val.filter(threshold)
+                #    #val.to_excel(decorated=True)
+                #    val = val.matrix
+                #    order_col = None
                 try:
                     excel.save_to_sheet(
                         name = key[:31],
-                        values = val)
+                        values = val,
+                        order_col = order_col)
                 except TypeError:
                     print(key)
                     print('Type:', type(val))
@@ -786,25 +793,22 @@ def iterate(corpus, function, excel=False, **parameters):
             if 'fun' in parameters:
                 parameters['fun'](excel)
             excel.close()
-            #if dynmatrix is not None:
-            #    # release memory
-            #    del excel
-            #    for key in to_delete:
-            #        del data_sets[key]
-            #    #for key, val in data_sets.items():
-            #    #    if isinstance(val, DynMatrix):
-            #    #
-            #    done = False
-            #    threshold = 10 # 5 => Out of Memory
-            #    step = 5
-            #    while not done:
-            #        try:
-            #            gc.collect()
-            #            dynmatrix.filter(threshold)
-            #            dynmatrix.to_excel(decorated=True)
-            #            done = True
-            #        except MemoryError:
-            #            threshold += step
+            if dynmatrix is not None:
+                # release memory
+                del excel
+                for key in to_delete:
+                    del data_sets[key]
+                done = False
+                threshold = 10 # 5 => Out of Memory
+                step = 5
+                while not done:
+                    try:
+                        gc.collect()
+                        dynmatrix.filter(threshold)
+                        dynmatrix.to_excel(decorated=True)
+                        done = True
+                    except MemoryError:
+                        threshold += step
         except MemoryError:
             print('[ERROR] Out of Memory.')
     print('[INFO] END ' + function.__name__)
@@ -937,7 +941,10 @@ class Application:
             for par in parameters:
                 var, val = par.split('=')
                 print(var, val)
-                sub = self.corpus.extract(has_domain, val)
+                if val[0] == '!':
+                    sub = self.corpus.extract(has_not_domain, val[1:])
+                else:
+                    sub = self.corpus.extract(has_domain, val)
                 sub.save('corpus_' + var + '_' + val + '.xml')
         elif action.startswith('stats_after_word?'):
             form = action[len('stats_after_word?'):]
@@ -986,31 +993,36 @@ class Application:
         except Exception as e:
             print(e)
 
+def actions_make_sub_corpus():
+    return ['load?corpus_1dblcolno0inf30',
+            'filter_corpus?domain=shs',
+            'filter_corpus?domain=!shs']
+    return ['load?corpus_1dblcolno0inf30',
+            'filter_corpus?domain=shs',       # Extracted: 60724 / 84923 1. Sciences de l'Homme et Société (487646)
+            'filter_corpus?domain=sdv',       # Extracted: 12233 / 84923 Sciences du Vivant [q-bio] (207100)
+            'filter_corpus?domain=sdu',       # Extracted: 1804 / 84923  Planète et Univers [physics] (76471)
+            'filter_corpus?domain=info',      # Extracted: 3746 / 84923  Informatique [cs] (210465)
+            'filter_corpus?domain=scco',      # Extracted: 1153 / 84923  Sciences cognitives (20938)
+            'filter_corpus?domain=phys',      # Extracted: 1709 / 84923  2. Physique [physics] (229921)
+            'filter_corpus?domain=spi',       # Extracted: 3796 / 84923  Sciences de l'ingénieur [physics] (181699)
+            'filter_corpus?domain=sde',       # Extracted: 3027 / 84923  Sciences de l'environnement (56405)
+            'filter_corpus?domain=math',      # Extracted: 747 / 84923   Mathématiques [math] (76696)
+            'filter_corpus?domain=chim',      # Extracted: 950 / 84923   Chimie(81098)
+            'filter_corpus?domain=stat',      # Extracted: 191 / 84923   Statistiques [stat] (10738)
+            'filter_corpus?domain=qfin',      # Extracted: 265 / 84923   Économie et finance quantitative [q-fin] (3527)
+            'filter_corpus?domain=nlin',      # Extracted: 19 / 84923    Science non linéaire [physics] (2211)
+            'filter_corpus?domain=phys-atom', # Extracted: 0 / 84923
+            'filter_corpus?domain=electromag',# Extracted: 0 / 84923
+            'filter_corpus?domain=photon',    # Extracted: 0 / 84923
+            'filter_corpus?domain=other',     # Extracted: 0 / 84923
+            'filter_corpus?domain=image',     # Extracted: 0 / 84923
+            'filter_corpus?domain=stic']      # Extracted: 0 / 84923
+
 if __name__ == '__main__':
     app = Application()
 
     # Corpus 2 Corpus with filtering
-    #app.start('load?corpus_1dblcolno0inf30',
-    #          'filter_corpus?domain=shs',       # Extracted: 60724 / 84923 1. Sciences de l'Homme et Société (487646)
-    #          'filter_corpus?domain=sdv',       # Extracted: 12233 / 84923 Sciences du Vivant [q-bio] (207100)
-    #          'filter_corpus?domain=sdu',       # Extracted: 1804 / 84923  Planète et Univers [physics] (76471)
-    #          'filter_corpus?domain=info',      # Extracted: 3746 / 84923  Informatique [cs] (210465)
-    #          'filter_corpus?domain=scco',      # Extracted: 1153 / 84923  Sciences cognitives (20938)
-    #          'filter_corpus?domain=phys',      # Extracted: 1709 / 84923  2. Physique [physics] (229921)
-    #          'filter_corpus?domain=spi',       # Extracted: 3796 / 84923  Sciences de l'ingénieur [physics] (181699)
-    #          'filter_corpus?domain=sde',       # Extracted: 3027 / 84923  Sciences de l'environnement (56405)
-    #          'filter_corpus?domain=math',      # Extracted: 747 / 84923   Mathématiques [math] (76696)
-    #          'filter_corpus?domain=chim',      # Extracted: 950 / 84923   Chimie(81098)
-    #          'filter_corpus?domain=stat',      # Extracted: 191 / 84923   Statistiques [stat] (10738)
-    #          'filter_corpus?domain=qfin',      # Extracted: 265 / 84923   Économie et finance quantitative [q-fin] (3527)
-    #          'filter_corpus?domain=nlin',      # Extracted: 19 / 84923    Science non linéaire [physics] (2211)
-    #          'filter_corpus?domain=phys-atom', # Extracted: 0 / 84923
-    #          'filter_corpus?domain=electromag',# Extracted: 0 / 84923
-    #          'filter_corpus?domain=photon',    # Extracted: 0 / 84923
-    #          'filter_corpus?domain=other',     # Extracted: 0 / 84923
-    #          'filter_corpus?domain=image',     # Extracted: 0 / 84923
-    #          'filter_corpus?domain=stic',      # Extracted: 0 / 84923
-    #          )
+    #app.start(*actions_make_sub_corpus())
     #app.start('make?corpus_1dblcolno0inf30')
     
     # Corpus 2 Excel without filtering
@@ -1019,7 +1031,9 @@ if __name__ == '__main__':
     # Corpus 2 Excel with Pattern filtering
     #app.start('load?corpus_medium', 'corpus2excel_pattern?medium')                     # For test
     #app.start('load?corpus_1dbl_6', 'corpus2excel_pattern?corpus_1dbl_6')              # For test 6 titles and 4 matching the pattern
-    app.start('load?corpus_1dblcolno0inf30', 'corpus2excel_pattern?1dblcolno0inf30')    # Slow ~13-20 minutes
+    #app.start('load?corpus_1dblcolno0inf30', 'corpus2excel_pattern?1dblcolno0inf30')    # Slow ~13-20 minutes
+    app.start('load?corpus_domain_shs', 'corpus2excel_pattern?shs')
+    app.start('load?corpus_domain_!shs', 'corpus2excel_pattern?not_shs')
     
     # Corpus 2 Stats and eventually match_pattern
     #app.start('load?corpus_1dblcolno0inf30', 'stats_after_word?:')

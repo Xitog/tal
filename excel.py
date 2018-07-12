@@ -226,7 +226,7 @@ class DynMatrix:
                 for other, oc in self.oriented_cooccurrences.items():
                     if word in oc:
                         del oc[word]
-        print('Filtered:', len(new_words), 'on', len(self.words))
+        print('Filtered:', len(new_words), 'on', len(self.words), 'with threshold=', threshold)
         self.words = new_words
         self.count = new_count
         for w1, others in self.oriented_cooccurrences.items():
@@ -240,7 +240,7 @@ class DynMatrix:
     def build_matrix(self, decorated=False):
         # build structure
         if decorated:
-            content = [ ['MATRIX'] + self.words ]
+            content = [ ['MATRIX'] + self.words + ['Total'] ]
         else:
             content = []
         for w1 in range(len(self.words)):
@@ -259,7 +259,22 @@ class DynMatrix:
                     i += 1
                     j += 1
                 content[i][j] += oc[w2]
-        self.matrix = content
+        # count
+        for irow, row in enumerate(content):
+            count = 0
+            for icell, cell in enumerate(row):
+                if (irow > 0 and decorated) and icell > 0:
+                    count += cell
+            if irow > 0:
+                row.append(count)
+        # filter
+        new_content = []
+        for index, row in enumerate(content):
+            if index == 0 and decorated:
+                    new_content.append(row)
+            elif row[-1] > 0:
+                new_content.append(row)
+        self.matrix = new_content
         return self.matrix
     
     def to_excel(self, regen=False, decorated=False, debug=False, excel=None):

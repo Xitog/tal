@@ -261,6 +261,12 @@ def has_domain(title, domain):
             return True
     return False
 
+def has_not_domain(title, domain):
+    for d in title.domains:
+        if d.startswith('0.') and d[2:] == domain:
+            return False
+    return True
+
 #-------------------------------------------------------------------------------
 # Test if main
 #-------------------------------------------------------------------------------
