@@ -730,6 +730,24 @@ def stats_after_word(title, data_sets, **parameters):
 stats_after_word.id_rule = 0
 
 
+def count_by_type_and_year(title, data_sets, **parameters):
+    # data_set
+    kind = 'TYPE'
+    year = 'YEAR'
+    if kind not in data_sets: data_sets[kind] = {}
+    if year not in data_sets: data_sets[year] = {}
+    # no parameters
+    # algorithm
+    if title.date not in data_sets[year]:
+        data_sets[year][title.date] = [title.date, 1]
+    else:
+        data_sets[year][title.date][1] += 1
+    if title.kind not in data_sets[kind]:
+        data_sets[kind][title.kind] = [title.kind, 1]
+    else:
+        data_sets[kind][title.kind][1] += 1
+
+
 import gc
 # Iterate through the corpus with a function
 # name : name of the excel file
@@ -749,7 +767,16 @@ def iterate(corpus, function, excel=False, **parameters):
             iterdisplay += iterstep
         title = corpus[title_id]
         function(title, data_sets, **parameters)
-    if excel:
+    if not excel:
+        print()
+        for key, val in data_sets.items():
+            print('===', key, '=== [', len(val), ']')
+            for value, row in val.items():
+                for cell in row:
+                    print(f"{str(cell):6}", end='')
+                print()
+            print()
+    else:
         if 'name' in parameters:
             name = parameters['name']
         else:
@@ -925,6 +952,12 @@ class Application:
                 self.corpus = Corpus.load('.\\corpus\\' + origin + '\\' + origin + '.xml')
             except FileNotFoundError:
                 self.corpus = Corpus.load(origin + '.xml')
+        elif action == 'count':
+            print(len(self.corpus))
+        elif action == 'count_by_type_and_year':
+            iterate(self.corpus, count_by_type_and_year, excel = False)
+        elif action == 'stats_phrase_longueurs':
+            pass
         elif action == 'make?corpus_1dblcolno0inf30': # only one ':', 0 < nb word after ':' < 30
             sub = self.corpus.extract(has_only_one_form, ':')
             sub = sub.extract(has_x_after_form, ':', 0, '!=')
@@ -1029,11 +1062,14 @@ if __name__ == '__main__':
     #app.start('load?corpus_1dblcolno0inf30', 'corpus2excel?1dblcolno0inf30')
 
     # Corpus 2 Excel with Pattern filtering
+    #corpus = 'corpus_1dbl_6'
+    corpus = 'corpus_big'
+    app.start('load?' + corpus, 'count', 'count_by_type_and_year')
     #app.start('load?corpus_medium', 'corpus2excel_pattern?medium')                     # For test
     #app.start('load?corpus_1dbl_6', 'corpus2excel_pattern?corpus_1dbl_6')              # For test 6 titles and 4 matching the pattern
     #app.start('load?corpus_1dblcolno0inf30', 'corpus2excel_pattern?1dblcolno0inf30')    # Slow ~13-20 minutes
-    app.start('load?corpus_domain_shs', 'corpus2excel_pattern?shs')
-    app.start('load?corpus_domain_!shs', 'corpus2excel_pattern?not_shs')
+    #app.start('load?corpus_domain_shs', 'corpus2excel_pattern?shs')
+    #app.start('load?corpus_domain_!shs', 'corpus2excel_pattern?not_shs')
     
     # Corpus 2 Stats and eventually match_pattern
     #app.start('load?corpus_1dblcolno0inf30', 'stats_after_word?:')
