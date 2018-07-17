@@ -64,7 +64,7 @@ class ExcelFile:
             ws = self.wb.sheetnames[ws]
             return self.wb[ws]
     
-    def save_to_sheet(self, name, values, order_col=0, reverse_order=True):
+    def save_to_sheet(self, name, values, order_col=0, reverse_order=True, percent_col=None):
         ws = self.wb.create_sheet(name)
         if name == 'TITLES': # hack
             column = ['E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W']
@@ -72,6 +72,10 @@ class ExcelFile:
                 ws.column_dimensions[c].width = 2
         if isinstance(values, dict):
             values = values.values()
+        if percent_col is not None:
+            count = 0
+            for list_of_values in values:
+                count += list_of_values[percent_col]
         if order_col is not None:
             for list_of_values in sorted(values, key=lambda t: t[order_col], reverse=reverse_order):
                 out = []
@@ -80,6 +84,8 @@ class ExcelFile:
                         out.append(obj.to_cell(ws))
                     else:
                         out.append(obj)
+                if percent_col is not None:
+                    out.append(list_of_values[percent_col] / count)
                 ws.append(out)
         else:
             for list_of_values in values:
@@ -89,6 +95,8 @@ class ExcelFile:
                         out.append(obj.to_cell(ws))
                     else:
                         out.append(obj)
+                if percent_col is not None:
+                    out.append(list_of_values[percent_col] / count)
                 ws.append(out)
     
     def save_to_sheet_old(self, name, values, percent=None, test_val=None):

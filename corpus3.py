@@ -55,7 +55,11 @@ def count_after_word(corpus : Corpus, form : str, display=True):
                 count += 1
                 last = i
         if count > 0: # at least once in the title
-            after = len(title.words) - last - 1
+            after = 0
+            for i in range(last + 1, len(title.words)):
+                if title.words[i].pos != "PONCT":
+                    after += 1
+            #after = len(title.words) - last - 1
             if after >= 30:
                 big.write(f'{after} --- {title.docid} --- {title.text}\n')
             elif after == 0:
@@ -75,7 +79,7 @@ def count_after_word(corpus : Corpus, form : str, display=True):
     data = {}
     for key, val in counts.items():
         data[key] = [key, val]
-    excel.save_to_sheet_mul(
+    excel.save_to_sheet(
         name = 'COUNT_AFTER | nb occ %',
         values = data,
         order_col = 1,
@@ -117,7 +121,7 @@ def count(corpus : Corpus, form : str, display=True):
     data = {}
     for key, val in counts.items():
         data[key] = [key, val]
-    excel.save_to_sheet_mul(
+    excel.save_to_sheet(
         name = 'COUNT',
         values = data,
         order_col = 1,
@@ -730,22 +734,104 @@ def stats_after_word(title, data_sets, **parameters):
 stats_after_word.id_rule = 0
 
 
-def count_by_type_and_year(title, data_sets, **parameters):
+def stats_count(title, data_sets, **parameters):
     # data_set
     kind = 'TYPE'
     year = 'YEAR'
+    length = 'LENGTH'
+    domain = 'DOMAIN'
+    authors = 'AUTHORS'
+    specials = 'SPECIALS'
+    sentence = 'SENTENCE'
+    segmentation = 'SEGMENTATION'
+    nbauth_length = 'AUTHORS LENGTH'
+    sentence_domain = 'SENTENCE DOMAIN'
     if kind not in data_sets: data_sets[kind] = {}
     if year not in data_sets: data_sets[year] = {}
+    if length not in data_sets: data_sets[length] = {}
+    if domain not in data_sets: data_sets[domain] = {}
+    if authors not in data_sets: data_sets[authors] = {}
+    if specials not in data_sets: data_sets[specials] = {'?' : ['?', 0], '!' : ['!', 0], '«' : ['«', 0], '»' : ['»', 0], '"' : ['"', 0], ':' : [':', 0], ';' : [';', 0] }
+    if sentence not in data_sets: data_sets[sentence] = {'oui' : ['oui', 0], 'non' : ['non', 0]}
+    if segmentation not in data_sets: data_sets[segmentation] = {}
+    if nbauth_length not in data_sets: data_sets[nbauth_length] = {}
+    if sentence_domain not in data_sets: data_sets[sentence_domain] = {}
     # no parameters
     # algorithm
+    # date
     if title.date not in data_sets[year]:
         data_sets[year][title.date] = [title.date, 1]
     else:
         data_sets[year][title.date][1] += 1
+    # kind
     if title.kind not in data_sets[kind]:
         data_sets[kind][title.kind] = [title.kind, 1]
     else:
         data_sets[kind][title.kind][1] += 1
+    # length
+    if len(title.words) not in data_sets[length]:
+        data_sets[length][len(title.words)] = [len(title.words), 1]
+    else:
+        data_sets[length][len(title.words)][1] += 1
+    # domains
+    domains = []
+    for d in title.domains:
+        if d.startswith('0.'):
+            dom = d[len('0.'):]
+            domains.append(dom)
+            if dom not in data_sets[domain]:
+                data_sets[domain][dom] = [dom, 1]
+            else:
+                data_sets[domain][dom][1] += 1
+    # sentence
+    has_verb = False
+    for w in title.words:
+        if w.pos in ['VS', 'V', 'VIMP']:
+            has_verb = True
+            break
+    if has_verb:
+        data_sets[sentence]['oui'][1] += 1
+    else:
+        data_sets[sentence]['non'][1] += 1
+    #if has_verb:
+    #    print('Sentence:', title.text)
+    # nb authors
+    if len(title.authors) not in data_sets[authors]:
+        data_sets[authors][len(title.authors)] = [len(title.authors), 1]
+    else:
+        data_sets[authors][len(title.authors)][1] += 1
+    # segmentation
+    title.text = title.text.replace('...', '…')
+    nb_segment = title.text.count(':')
+    nb_segment += title.text.count(';')
+    nb_segment += title.text.count('.')
+    nb_segment += title.text.count('?')
+    nb_segment += title.text.count('!')
+    if title.text[-1] not in [':', ';', '?', '!', '.']:
+        nb_segment += 1
+    if nb_segment not in data_sets[segmentation]:
+        data_sets[segmentation][nb_segment] = [nb_segment, 1]
+    else:
+        data_sets[segmentation][nb_segment][1] += 1
+    #if nb_segment > 2:
+    #    print(nb_segment, title.text)
+    # nb authors & length
+    key = (len(title.authors), len(title.words))
+    if key not in data_sets[nbauth_length]:
+        data_sets[nbauth_length][key] = [len(title.authors), len(title.words), 1]
+    else:
+        data_sets[nbauth_length][key][2] += 1
+    # special chars
+    for spe in data_sets[specials]:
+        if title.text.find(spe) != -1:
+            data_sets[specials][spe][1] += 1
+    # sentence and domain
+    if has_verb:
+        for d in domains:
+            if d not in data_sets[sentence_domain]:
+                data_sets[sentence_domain][d] = [d, 1]
+            else:
+                data_sets[sentence_domain][d][1] += 1
 
 
 import gc
@@ -800,22 +886,22 @@ def iterate(corpus, function, excel=False, **parameters):
                 #    #val.to_excel(decorated=True)
                 #    val = val.matrix
                 #    order_col = None
-                try:
-                    excel.save_to_sheet(
-                        name = key[:31],
-                        values = val,
-                        order_col = order_col)
-                except TypeError:
-                    print(key)
-                    print('Type:', type(val))
-                    print('Length:', len(val))
-                    for key, val in val.items():
-                        print('Key: ', key, ' = ', end='')
-                        for cell in val:
-                            print(cell, '  ', end='')
-                            if cell is None:
-                                raise Exception("NONE DETECTED")
-                        print()
+                #try:
+                excel.save_to_sheet(
+                    name = key[:31],
+                    values = val,
+                    order_col = order_col)
+                #except TypeError:
+                #    print(key)
+                #    print('Type:', type(val))
+                #    print('Length:', len(val))
+                #    for key, val in val.items():
+                #        print('Key: ', key, ' = ', end='')
+                #        for cell in val:
+                #            print(cell, '  ', end='')
+                #            if cell is None:
+                #                raise Exception("NONE DETECTED")
+                #        print()
                 to_delete.append(key)
             if 'fun' in parameters:
                 parameters['fun'](excel)
@@ -954,16 +1040,22 @@ class Application:
                 self.corpus = Corpus.load(origin + '.xml')
         elif action == 'count':
             print(len(self.corpus))
-        elif action == 'count_by_type_and_year':
-            iterate(self.corpus, count_by_type_and_year, excel = False)
+        elif action == 'stats_count':
+            iterate(self.corpus, stats_count, excel = True, name = 'stats_x')
         elif action == 'stats_phrase_longueurs':
             pass
-        elif action == 'make?corpus_1dblcolno0inf30': # only one ':', 0 < nb word after ':' < 30
-            sub = self.corpus.extract(has_only_one_form, ':')
-            sub = sub.extract(has_x_after_form, ':', 0, '!=')
-            sub = sub.extract(has_x_after_form, ':', 30, '<')
-            sub.save('corpus_1dblcolno0inf30.xml')
-            # check
+        elif action.startswith('make?'):
+            param = action[len('make?'):]
+            if param == 'corpus_1dblpt_sup0_inf30': # only one ':', 0 < nb word after ':' < 30
+                sub = self.corpus.extract(has_only_one_form, ':')
+                sub = sub.extract(has_x_after_form, ':', 0, '!=')
+                sub = sub.extract(has_x_after_form, ':', 30, '<')
+                sub.save(param + '.xml')
+            elif param == 'corpus_1dblpt':
+                sub = self.corpus.extract(has_only_one_form, ':')
+                sub.save(param + '.xml')
+            del self.corpus
+            self.corpus = sub
             print()
             count(self.corpus, ':') # should be 100% with 1
             print()
@@ -1054,20 +1146,23 @@ def actions_make_sub_corpus():
 if __name__ == '__main__':
     app = Application()
 
-    # Corpus 2 Corpus with filtering
-    #app.start(*actions_make_sub_corpus())
-    #app.start('make?corpus_1dblcolno0inf30')
+    #Choose corpus
+    #corpus = 'corpus_1dbl_6'
+    #corpus = 'corpus_medium'
+    corpus = 'corpus_big'
     
-    # Corpus 2 Excel without filtering
+    # Corpus 2 Make a corpus with filtering
+    #app.start('load?' + corpus, 'make?corpus_1dblpt')
+    app.start('load?' + corpus, 'make?corpus_1dblpt_sup0_inf30')
+    
+    # Corpus 2 Make an Excel without filtering
     #app.start('load?corpus_1dblcolno0inf30', 'corpus2excel?1dblcolno0inf30')
 
     # Corpus 2 Excel with Pattern filtering
-    #corpus = 'corpus_1dbl_6'
-    corpus = 'corpus_big'
-    app.start('load?' + corpus, 'count', 'count_by_type_and_year')
+    #app.start('load?' + corpus, 'count', 'stats_count')
     #app.start('load?corpus_medium', 'corpus2excel_pattern?medium')                     # For test
     #app.start('load?corpus_1dbl_6', 'corpus2excel_pattern?corpus_1dbl_6')              # For test 6 titles and 4 matching the pattern
-    #app.start('load?corpus_1dblcolno0inf30', 'corpus2excel_pattern?1dblcolno0inf30')    # Slow ~13-20 minutes
+    #app.start('load?corpus_1dblcolno0inf30', 'corpus2excel_pattern?1dblcolno0inf30')   # Slow ~13-20 minutes
     #app.start('load?corpus_domain_shs', 'corpus2excel_pattern?shs')
     #app.start('load?corpus_domain_!shs', 'corpus2excel_pattern?not_shs')
     

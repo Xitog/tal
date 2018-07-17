@@ -239,7 +239,8 @@ def has_x_after_form(title, form, nb, tst):
     start_counting = False
     for word in title.words:
         if start_counting:
-            count += 1
+            if word.pos != 'PONCT':
+                count += 1
         if word.form == form:
             start_counting = True
     if tst == '==':
