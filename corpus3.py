@@ -1031,7 +1031,6 @@ class Application:
             print(filename)
             data = ExcelFile(filename, mode='r')
             titles = data.load_sheet(0)
-            
         elif action.startswith('load?'):
             origin = action[len('load?'):]
             try:
@@ -1041,9 +1040,7 @@ class Application:
         elif action == 'count':
             print(len(self.corpus))
         elif action == 'stats_count':
-            iterate(self.corpus, stats_count, excel = True, name = 'stats_x')
-        elif action == 'stats_phrase_longueurs':
-            pass
+            iterate(self.corpus, stats_count, excel = True, name = 'stats_' + self.corpus.name)
         elif action.startswith('make?'):
             param = action[len('make?'):]
             if param == 'corpus_1dblpt_sup0_inf30': # only one ':', 0 < nb word after ':' < 30
@@ -1120,9 +1117,6 @@ class Application:
 
 def actions_make_sub_corpus():
     return ['load?corpus_1dblcolno0inf30',
-            'filter_corpus?domain=shs',
-            'filter_corpus?domain=!shs']
-    return ['load?corpus_1dblcolno0inf30',
             'filter_corpus?domain=shs',       # Extracted: 60724 / 84923 1. Sciences de l'Homme et Société (487646)
             'filter_corpus?domain=sdv',       # Extracted: 12233 / 84923 Sciences du Vivant [q-bio] (207100)
             'filter_corpus?domain=sdu',       # Extracted: 1804 / 84923  Planète et Univers [physics] (76471)
@@ -1146,29 +1140,33 @@ def actions_make_sub_corpus():
 if __name__ == '__main__':
     app = Application()
 
-    #Choose corpus
+    # Choose corpus
     #corpus = 'corpus_1dbl_6'
     #corpus = 'corpus_medium'
-    corpus = 'corpus_big'
+    #corpus = 'corpus_big'
+    corpus = 'corpus_1dblpt_sup0_inf30'
     
-    # Corpus 2 Make a corpus with filtering
+    # Make a corpus with filtering
     #app.start('load?' + corpus, 'make?corpus_1dblpt')
-    app.start('load?' + corpus, 'make?corpus_1dblpt_sup0_inf30')
+    #app.start('load?' + corpus, 'make?corpus_1dblpt_sup0_inf30')
+    app.start('load?' + corpus, 'filter_corpus?domain=shs', 'filter_corpus?domain=!shs')
+
+    # Make some stats
+    #app.start('load?' + corpus, 'count', 'stats_count')
     
-    # Corpus 2 Make an Excel without filtering
+    # Make an Excel without filtering
     #app.start('load?corpus_1dblcolno0inf30', 'corpus2excel?1dblcolno0inf30')
 
-    # Corpus 2 Excel with Pattern filtering
-    #app.start('load?' + corpus, 'count', 'stats_count')
+    # Make an Excel with Pattern filtering
     #app.start('load?corpus_medium', 'corpus2excel_pattern?medium')                     # For test
     #app.start('load?corpus_1dbl_6', 'corpus2excel_pattern?corpus_1dbl_6')              # For test 6 titles and 4 matching the pattern
     #app.start('load?corpus_1dblcolno0inf30', 'corpus2excel_pattern?1dblcolno0inf30')   # Slow ~13-20 minutes
     #app.start('load?corpus_domain_shs', 'corpus2excel_pattern?shs')
     #app.start('load?corpus_domain_!shs', 'corpus2excel_pattern?not_shs')
     
-    # Corpus 2 Stats and eventually match_pattern
+    # Stats and eventually match_pattern
     #app.start('load?corpus_1dblcolno0inf30', 'stats_after_word?:')
-    #app.start('load?corpus_1dblcolno0inf30', 'stats_after_word?:', 'match_pattern', 'stat_pattern')
+    #app.start('load?corpus_1dblcolno0inf30', 'stats_after_word?:', 'match_pattern')
 
     # Simple REPL
     #app.start('load?corpus_1dblcolno0inf30', 'repl')

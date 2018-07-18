@@ -144,13 +144,15 @@ class Corpus:
     """A corpus is a collection of Title serialized in an xml File.
        Loading of the xml file is iterative: it is too big for reading it directly.
     """
-    def __init__(self):
+    def __init__(self, name='undefined'):
         self.titles = {}
+        self.name = name
 
     @staticmethod
     def load(filepath):
         print('[INFO] RUN Corpus#load')
-        corpus = Corpus()
+        name = os.path.splitext(os.path.basename(filepath))[0]
+        corpus = Corpus(name)
         start = datetime.datetime.now()
         for event, elem in ET.iterparse(filepath, events=('end',)):
             if event == 'end':
@@ -165,7 +167,12 @@ class Corpus:
         return corpus
     
     # Code taken from Repository.dump
-    def save(self, filename, makezip=False):
+    def save(self, filename=None, makezip=False, overwrite=False):
+        if filename is None:
+            if not overwrite:
+                raise Exception('Warning: you are trying to save over an existing Corpus file.')
+            else:
+                filename = self.name
         try:
             full_filename = 'output_dump_repo' + os.sep + filename # + '.xml'
             outfile = open(full_filename, encoding='utf-8', mode='w')
@@ -207,7 +214,7 @@ class Corpus:
         iterdisplay = 1000
         iterstep = 1000
         stats = {}
-        sub = Corpus()
+        sub = Corpus(self.name + '_extract')
         for title_id in self.titles:
             itercount += 1
             if itercount == iterdisplay:
