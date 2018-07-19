@@ -151,7 +151,7 @@ class ExcelFile:
         # fetching the data
         data = {}
         nb_row = 0
-        for row in ws.rows(): # sheet.iter_rows(min_row=0):
+        for row in sheet.rows: # sheet.iter_rows(min_row=0):
             nb_cell = 0
             last_id = 0
             values = []

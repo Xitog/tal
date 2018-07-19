@@ -938,8 +938,8 @@ def match_patterns(filename, pattern):
     except FileNotFoundError:
         print("[WARN] File not found. Action aborted.")
         return
-    pos = data.load_sheet("POS = nb occ | id | combi...", key=1, ignore=[0])
-    titles = data.load_sheet("TITLES")
+    pos = data.load_sheet("POS id | length | nb occ | comb", key=0, ignore=[0, 1, 2])
+    titles = data.load_sheet("TITLES id_pos | id_titles...")
     nb_titles = 0
     for key, val in titles.items():
         nb_titles += len(val)
@@ -957,10 +957,10 @@ def match_patterns(filename, pattern):
     print("Unmatched rules:", len(unmatched), "/", len(pos), "(", f"{len(unmatched)/len(pos)*100:.2f}", ")")
     print("Matched titles:", nb_title_matched, "/", nb_titles, "(", f"{nb_title_matched/nb_titles*100:.2f}", ")")
     results = ExcelFile('patron_results', mode='w')
-    results.save_to_sheet_mul(
+    results.save_to_sheet(
         name = "PATTERN",
         values = {'Patron' : [str(pattern)]})
-    results.save_to_sheet_mul(
+    results.save_to_sheet(
         name = "EXTENDED id | length | ...",
         values = pattern.extended_by_length(),
         order_col = 1,
@@ -969,18 +969,20 @@ def match_patterns(filename, pattern):
         data_dict = {}
         for key in data:
             data_dict[key] = [key, len(pos[key]), *(pos[key])]
-        results.save_to_sheet_mul(
+        results.save_to_sheet(
             name = name,
             values = data_dict,
             order_col = 1, # by length
             reverse_order = False) # asc
     save(matched, 'MATCHED nb occ | length | ...')
     save(unmatched, 'UNMATCHED nb occ | length | ...')
-    results.save()
+    results.close()
 
       
 class Application:    
 
+    pattern_sn_1 = 'DET? ADJ? [NC NPP] [NC NPP]? ADJ? [(P DET?) P+D] ADJ? [NC NPP] [NC NPP]? ADJ?'
+    
     def __init__(self):
         self.corpus = None
         self.debug = False
@@ -1072,11 +1074,11 @@ class Application:
             form = action[len('stats_after_word?'):]
             iterate(self.corpus, stats_after_word, excel = True, start = form)
         elif action == 'match_pattern':
-            pattern = Pattern('DET? ADJ? [NC NPP] [NC NPP]? ADJ? [(P DET?) P+D] ADJ? [NC NPP] [NC NPP]? ADJ?')
+            pattern = Pattern(Application.pattern_sn_1)
             match_patterns('stats_after_word.xlsx', pattern)
         elif action.startswith('corpus2excel_pattern?'):
             if self.corpus is None: raise Exception('[ERROR] A corpus should be loaded first!')
-            pattern = Pattern('DET? ADJ? [NC NPP] [NC NPP]? ADJ? [(P DET?) P+D] ADJ? [NC NPP] [NC NPP]? ADJ?')
+            pattern = Pattern(Application.pattern_sn_1)
             name = action[len('corpus2excel_pattern?'):]
             iterate(self.corpus, corpus2excel_pattern, excel = True, name = name,
                     fun = post_process, pattern = pattern)
@@ -1149,10 +1151,14 @@ if __name__ == '__main__':
     # Make a corpus with filtering
     #app.start('load?' + corpus, 'make?corpus_1dblpt')
     #app.start('load?' + corpus, 'make?corpus_1dblpt_sup0_inf30')
-    app.start('load?' + corpus, 'filter_corpus?domain=shs', 'filter_corpus?domain=!shs')
+    #app.start('load?' + corpus, 'filter_corpus?domain=shs', 'filter_corpus?domain=!shs')
 
     # Make some stats
     #app.start('load?' + corpus, 'count', 'stats_count')
+    #app.start('load?' + corpus, 'stats_after_word?:')
+
+    # Pattern matching (stats_after_word is mandatory before match_pattern)
+    app.start('load?' + corpus, 'stats_after_word?:', 'match_pattern')
     
     # Make an Excel without filtering
     #app.start('load?corpus_1dblcolno0inf30', 'corpus2excel?1dblcolno0inf30')
@@ -1164,9 +1170,5 @@ if __name__ == '__main__':
     #app.start('load?corpus_domain_shs', 'corpus2excel_pattern?shs')
     #app.start('load?corpus_domain_!shs', 'corpus2excel_pattern?not_shs')
     
-    # Stats and eventually match_pattern
-    #app.start('load?corpus_1dblcolno0inf30', 'stats_after_word?:')
-    #app.start('load?corpus_1dblcolno0inf30', 'stats_after_word?:', 'match_pattern')
-
     # Simple REPL
     #app.start('load?corpus_1dblcolno0inf30', 'repl')
