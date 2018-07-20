@@ -702,6 +702,7 @@ def stats_after_word(title, data_sets, **parameters):
     if pos_combi not in data_sets: data_sets[pos_combi] = {}
     if pos_titles not in data_sets: data_sets[pos_titles] = {}
     # parameters
+    form_stop = parameters['form_stop'].split(',') if 'form_stop' in parameters else None
     limit = parameters['limit'] if 'limit' in parameters else None
     start = parameters['start']
     # algorithm
@@ -716,6 +717,8 @@ def stats_after_word(title, data_sets, **parameters):
             continue # do not take the start symbol into the key
         key.append(w.pos)
         length += 1
+        if form_stop is not None and w.form in form_stop:
+            break
         if limit is not None and length == limit:
             break
     if found:
@@ -932,7 +935,7 @@ def iterate(corpus, function, excel=False, **parameters):
 # Pattern matching
 #
 
-def match_patterns(filename, pattern):
+def match_patterns(filename, pattern, code):
     try:
         data = ExcelFile(filename, 'r')
     except FileNotFoundError:
@@ -956,7 +959,7 @@ def match_patterns(filename, pattern):
     print("Matched rules:", len(matched), "/", len(pos), "(", f"{len(matched)/len(pos)*100:.2f}",")")
     print("Unmatched rules:", len(unmatched), "/", len(pos), "(", f"{len(unmatched)/len(pos)*100:.2f}", ")")
     print("Matched titles:", nb_title_matched, "/", nb_titles, "(", f"{nb_title_matched/nb_titles*100:.2f}", ")")
-    results = ExcelFile('patron_results', mode='w')
+    results = ExcelFile(code + '_patron_results', mode='w')
     results.save_to_sheet(
         name = "PATTERN",
         values = {'Patron' : [str(pattern)]})
@@ -977,11 +980,19 @@ def match_patterns(filename, pattern):
     save(matched, 'MATCHED nb occ | length | ...')
     save(unmatched, 'UNMATCHED nb occ | length | ...')
     results.close()
+    del data
 
       
 class Application:    
 
-    pattern_sn_1 = 'DET? ADJ? [NC NPP] [NC NPP]? ADJ? [(P DET?) P+D] ADJ? [NC NPP] [NC NPP]? ADJ?'
+    # 3456 poss, length= 3 <= x <= 11
+    patterns = {
+        'sn_v1' : 'DET? ADJ? [NC NPP] [NC NPP]? ADJ? [(P DET?) P+D] ADJ? [NC NPP] [NC NPP]? ADJ?',
+        'sn_v2' : '[DETWH DET]? ADJ? [NC NPP] [NC NPP]? [(ADV ADJ) ADJ (ADJ ADV)]? [(P DET?) P+D] ADJ? [NC NPP] [NC NPP]? ADJ?',
+        'sp_v1' : '[P+D P] DET? ADJ? [NC NPP] [NC NPP]? ADJ? [(P DET?) P+D] ADJ? [NC NPP] [NC NPP]? ADJ?',
+        'cc_v1' : '[NC NPP] CC NC',
+        'cc_v2' : '[DET DETWH]? ADJ? [NC NPP] [NC NPP]? ADJ? CC DET? ADJ? [NC NPP] [NC NPP]?'
+    }
     
     def __init__(self):
         self.corpus = None
@@ -1027,22 +1038,29 @@ class Application:
         elif action == 12:
             # Compter où est la dernière suite NC/NPP
             iterate(corpus, last_index_of_the_second_NC_NPP, True)
+        #
         # NEW ACTIONS
+        #
+        #   load_excel? filename
         elif action.startswith('load_excel?'):
             filename = action[len('load_excel?'):]
             print(filename)
             data = ExcelFile(filename, mode='r')
             titles = data.load_sheet(0)
+        #   load? filename
         elif action.startswith('load?'):
             origin = action[len('load?'):]
             try:
                 self.corpus = Corpus.load('.\\corpus\\' + origin + '\\' + origin + '.xml')
             except FileNotFoundError:
                 self.corpus = Corpus.load(origin + '.xml')
+        #   count   (count a corpus)
         elif action == 'count':
             print(len(self.corpus))
-        elif action == 'stats_count':
+        #   stats   (make various stats on the corpus)
+        elif action == 'stats':
             iterate(self.corpus, stats_count, excel = True, name = 'stats_' + self.corpus.name)
+        #   make? what_to_make (make a corpus from a corpus)
         elif action.startswith('make?'):
             param = action[len('make?'):]
             if param == 'corpus_1dblpt_sup0_inf30': # only one ':', 0 < nb word after ':' < 30
@@ -1059,6 +1077,7 @@ class Application:
             count(self.corpus, ':') # should be 100% with 1
             print()
             count_after_word(self.corpus, ':') # should be between 1 and 29
+        # filter_corpus? (make a corpus from a corpus)
         elif action.startswith('filter_corpus?'):
             parameters = action[len('filter_corpus?'):]
             parameters = parameters.split('&')
@@ -1070,23 +1089,29 @@ class Application:
                 else:
                     sub = self.corpus.extract(has_domain, val)
                 sub.save('corpus_' + var + '_' + val + '.xml')
+        # stats_after_word? form (make an Excel of all the combi of POS after the form)
         elif action.startswith('stats_after_word?'):
             form = action[len('stats_after_word?'):]
-            iterate(self.corpus, stats_after_word, excel = True, start = form)
-        elif action == 'match_pattern':
-            pattern = Pattern(Application.pattern_sn_1)
-            match_patterns('stats_after_word.xlsx', pattern)
+            iterate(self.corpus, stats_after_word, excel = True, start = form, form_stop = '.,?,!,;')
+        # match_pattern? pattern_name (make an Excel of the matched and unmatched POS combi from a stats_after_word Excel)
+        elif action.startswith('match_pattern'):
+            code = action[len('match_pattern?'):]
+            pattern = Pattern(Application.patterns[code])
+            match_patterns('stats_after_word.xlsx', pattern, code)
+        # corpus2excel_pattern? filename_output (make an Excel from a corpus filtered through a Pattern)
         elif action.startswith('corpus2excel_pattern?'):
             if self.corpus is None: raise Exception('[ERROR] A corpus should be loaded first!')
-            pattern = Pattern(Application.pattern_sn_1)
+            pattern = Pattern(Application.pattern_sn)
             name = action[len('corpus2excel_pattern?'):]
             iterate(self.corpus, corpus2excel_pattern, excel = True, name = name,
                     fun = post_process, pattern = pattern)
                     #fun = post_process, pattern = pattern, divide = 'STATS N1', name2 = name + '_stat') # divide into 2 files : titles + stats
+        # corpus2excel? filename_output (make an Excel from a corpus)
         elif action.startswith('corpus2excel?'):
             if self.corpus is None: raise Exception('[ERROR] A corpus should be loaded first!')
             name = action[len('corpus2excel?'):]
             iterate(self.corpus, corpus2excel, excel = True, name = name, after = True, form = ':')
+        # Start an REPL
         elif action == 'repl':
             cmd = ''
             while cmd != 'exit':
@@ -1154,11 +1179,12 @@ if __name__ == '__main__':
     #app.start('load?' + corpus, 'filter_corpus?domain=shs', 'filter_corpus?domain=!shs')
 
     # Make some stats
-    #app.start('load?' + corpus, 'count', 'stats_count')
+    #app.start('load?' + corpus, 'count', 'stats')
     #app.start('load?' + corpus, 'stats_after_word?:')
 
-    # Pattern matching (stats_after_word is mandatory before match_pattern)
-    app.start('load?' + corpus, 'stats_after_word?:', 'match_pattern')
+    # Pattern matching (an stats_after_word.xlsx file is mandatory before match_pattern)
+    #app.start('load?' + corpus, 'stats_after_word?:', 'match_pattern')
+    app.start('match_pattern?cc_v2')
     
     # Make an Excel without filtering
     #app.start('load?corpus_1dblcolno0inf30', 'corpus2excel?1dblcolno0inf30')
