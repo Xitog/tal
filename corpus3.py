@@ -293,11 +293,11 @@ def run_talismane_heavy(origin):
     print('[INFO] --- Saving')
     corpus.save(os.path.splitext(origin)[0] + '_talismane.xml')
 
-def make_lexique(origin):
+def make_lexique(corpus):
     excel = ExcelFile(name='lexiqueX', mode='w')
     print('[INFO] --- Running make_lexique')
     print('[INFO] --- Loading corpus')
-    corpus = Corpus.load(r'.\output_dump_repo' + os.sep + origin)
+    #corpus = Corpus.load(r'.\output_dump_repo' + os.sep + origin)
     itercount = 0
     iterdisplay = 1000
     iterstep = 1000
@@ -310,13 +310,17 @@ def make_lexique(origin):
             iterdisplay += iterstep
         title = corpus[title_id]
         for w in title.words:
-            key = w.lemma + '_' + w.pos
+            if w.lemma == '_': # handling of word without lemme
+                lemme = w.form
+            else:
+                lemme = w.lemma
+            key = lemme + '_' + w.pos # handling of word withe same lemme but different POS
             if key not in lemmas:
-                lemmas[key] = [w.lemma, w.pos, 1]
+                lemmas[key] = [lemme, w.pos, 1]
             else:
                 lemmas[key][2] += 1
     print('[INFO] --- Saving')
-    excel.save_to_sheet_mul(
+    excel.save_to_sheet(
         name = 'LEMME | POS | NB',
         values = lemmas,
         order_col = 2,
@@ -754,7 +758,7 @@ def stats_count(title, data_sets, **parameters):
     if length not in data_sets: data_sets[length] = {}
     if domain not in data_sets: data_sets[domain] = {}
     if authors not in data_sets: data_sets[authors] = {}
-    if specials not in data_sets: data_sets[specials] = {'?' : ['?', 0], '!' : ['!', 0], '«' : ['«', 0], '»' : ['»', 0], '"' : ['"', 0], ':' : [':', 0], ';' : [';', 0] }
+    if specials not in data_sets: data_sets[specials] = {'?' : ['?', 0], '!' : ['!', 0], '«' : ['«', 0], '»' : ['»', 0], '"' : ['"', 0], ':' : [':', 0], ';' : [';', 0], '.' : ['.', 0] }
     if sentence not in data_sets: data_sets[sentence] = {'oui' : ['oui', 0], 'non' : ['non', 0]}
     if segmentation not in data_sets: data_sets[segmentation] = {}
     if nbauth_length not in data_sets: data_sets[nbauth_length] = {}
@@ -772,10 +776,14 @@ def stats_count(title, data_sets, **parameters):
     else:
         data_sets[kind][title.kind][1] += 1
     # length
-    if len(title.words) not in data_sets[length]:
-        data_sets[length][len(title.words)] = [len(title.words), 1]
+    nb = 0
+    for w in title.words:
+        if w.pos != 'PONCT':
+            nb += 1
+    if nb not in data_sets[length]:
+        data_sets[length][nb] = [nb, 1]
     else:
-        data_sets[length][len(title.words)][1] += 1
+        data_sets[length][nb][1] += 1
     # domains
     domains = []
     for d in title.domains:
@@ -1060,6 +1068,9 @@ class Application:
         #   stats   (make various stats on the corpus)
         elif action == 'stats':
             iterate(self.corpus, stats_count, excel = True, name = 'stats_' + self.corpus.name)
+        #   lexique (make the lexique)
+        elif action == 'lexique':
+            make_lexique(self.corpus)
         #   make? what_to_make (make a corpus from a corpus)
         elif action.startswith('make?'):
             param = action[len('make?'):]
@@ -1181,10 +1192,11 @@ if __name__ == '__main__':
     # Make some stats
     #app.start('load?' + corpus, 'count', 'stats')
     #app.start('load?' + corpus, 'stats_after_word?:')
-
+    app.start('load?' + corpus, 'lexique')
+    
     # Pattern matching (an stats_after_word.xlsx file is mandatory before match_pattern)
     #app.start('load?' + corpus, 'stats_after_word?:', 'match_pattern')
-    app.start('match_pattern?cc_v2')
+    #app.start('match_pattern?cc_v2')
     
     # Make an Excel without filtering
     #app.start('load?corpus_1dblcolno0inf30', 'corpus2excel?1dblcolno0inf30')
