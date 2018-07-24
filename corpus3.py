@@ -750,6 +750,8 @@ def stats_count(title, data_sets, **parameters):
     authors = 'AUTHORS'
     specials = 'SPECIALS'
     sentence = 'SENTENCE'
+    specials_nb = 'SPECIALS_NB'
+    specials_end = 'SPECIALS_END'
     segmentation = 'SEGMENTATION'
     nbauth_length = 'AUTHORS LENGTH'
     sentence_domain = 'SENTENCE DOMAIN'
@@ -758,7 +760,9 @@ def stats_count(title, data_sets, **parameters):
     if length not in data_sets: data_sets[length] = {}
     if domain not in data_sets: data_sets[domain] = {}
     if authors not in data_sets: data_sets[authors] = {}
-    if specials not in data_sets: data_sets[specials] = {'?' : ['?', 0], '!' : ['!', 0], '«' : ['«', 0], '»' : ['»', 0], '"' : ['"', 0], ':' : [':', 0], ';' : [';', 0], '.' : ['.', 0] }
+    if specials not in data_sets: data_sets[specials] = {'?' : ['?', 0], '!' : ['!', 0], '«' : ['«', 0], '»' : ['»', 0], '"' : ['"', 0], ':' : [':', 0], ';' : [';', 0], '.' : ['.', 0], '“' : ['“', 0], '”' : ['”', 0] }
+    if specials_nb not in data_sets: data_sets[specials_nb] = {}
+    if specials_end not in data_sets: data_sets[specials_end] = {'?' : ['?', 0], '!' : ['!', 0], '«' : ['«', 0], '»' : ['»', 0], '"' : ['"', 0], ':' : [':', 0], ';' : [';', 0], '.' : ['.', 0], '“' : ['“', 0], '”' : ['”', 0] }
     if sentence not in data_sets: data_sets[sentence] = {'oui' : ['oui', 0], 'non' : ['non', 0]}
     if segmentation not in data_sets: data_sets[segmentation] = {}
     if nbauth_length not in data_sets: data_sets[nbauth_length] = {}
@@ -818,7 +822,8 @@ def stats_count(title, data_sets, **parameters):
     nb_segment += title.text.count('.')
     nb_segment += title.text.count('?')
     nb_segment += title.text.count('!')
-    if title.text[-1] not in [':', ';', '?', '!', '.']:
+    nb_segment += title.text.count('…')
+    if title.text[-1] not in [':', ';', '.', '?', '!', '…']:
         nb_segment += 1
     if nb_segment not in data_sets[segmentation]:
         data_sets[segmentation][nb_segment] = [nb_segment, 1]
@@ -832,10 +837,22 @@ def stats_count(title, data_sets, **parameters):
         data_sets[nbauth_length][key] = [len(title.authors), len(title.words), 1]
     else:
         data_sets[nbauth_length][key][2] += 1
-    # special chars
-    for spe in data_sets[specials]:
-        if title.text.find(spe) != -1:
-            data_sets[specials][spe][1] += 1
+
+    if title.words[-1].form in data_sets[specials_end]:
+        data_sets[specials_end][title.words[-1].form][1] += 1
+    #  special chars : nb of titles with and special chars count
+    spe = {'?' : 0, '!' : 0, '«' : 0, '»' : 0, '"' : 0, ':' : 0, ';' : 0, '.' : 0, '“' : 0, '”' : 0 }
+    for special_char in spe:
+        spe[special_char] += title.text.count(special_char)
+        #if special_char == ':' and spe[special_char] > 1:
+        #    raise Exception(str(spe[special_char]) + ' >>> ' + title.text + ' >>> ' + str(title.words))
+        if spe[special_char] > 0:
+            data_sets[specials][special_char][1] += 1
+        spe_key = (special_char, spe[special_char])
+        if spe_key not in data_sets[specials_nb]:
+            data_sets[specials_nb][spe_key] = [special_char, spe[special_char], 1]
+        else:
+            data_sets[specials_nb][spe_key][2] +=1
     # sentence and domain
     if has_verb:
         for d in domains:
@@ -1190,9 +1207,9 @@ if __name__ == '__main__':
     #app.start('load?' + corpus, 'filter_corpus?domain=shs', 'filter_corpus?domain=!shs')
 
     # Make some stats
-    #app.start('load?' + corpus, 'count', 'stats')
+    app.start('load?' + corpus, 'count', 'stats')
     #app.start('load?' + corpus, 'stats_after_word?:')
-    app.start('load?' + corpus, 'lexique')
+    #app.start('load?' + corpus, 'lexique')
     
     # Pattern matching (an stats_after_word.xlsx file is mandatory before match_pattern)
     #app.start('load?' + corpus, 'stats_after_word?:', 'match_pattern')
