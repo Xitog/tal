@@ -293,6 +293,7 @@ def run_talismane_heavy(origin):
     print('[INFO] --- Saving')
     corpus.save(os.path.splitext(origin)[0] + '_talismane.xml')
 
+# count also before and after ":"
 def make_lexique(corpus):
     excel = ExcelFile(name='lexiqueX', mode='w')
     print('[INFO] --- Running make_lexique')
@@ -303,29 +304,46 @@ def make_lexique(corpus):
     iterstep = 1000
     print('[INFO] --- Counting')
     lemmas = {}
+    lemmas_before = {}
+    lemmas_after = {}
     for title_id in corpus.titles:
         itercount += 1
         if itercount == iterdisplay:
             print(itercount, 'titles done.')
             iterdisplay += iterstep
         title = corpus[title_id]
+        after = False
         for w in title.words:
             if w.lemma == '_': # handling of word without lemme
                 lemme = w.form
             else:
                 lemme = w.lemma
+            if w.form == ':':
+                after = True
             key = lemme + '_' + w.pos # handling of word withe same lemme but different POS
             if key not in lemmas:
                 lemmas[key] = [lemme, w.pos, 1]
             else:
                 lemmas[key][2] += 1
+            if after:
+                if key not in lemmas_after:
+                    lemmas_after[key] = [lemme, w.pos, 1]
+                else:
+                    lemmas_after[key][2] += 1
+            else:
+                if key not in lemmas_before:
+                    lemmas_before[key] = [lemme, w.pos, 1]
+                else:
+                    lemmas_before[key][2] += 1                
     print('[INFO] --- Saving')
-    excel.save_to_sheet(
-        name = 'LEMME | POS | NB',
-        values = lemmas,
-        order_col = 2,
-        reverse_order = True,
-        percent_col = 2)
+    to_save = [lemmas, lemmas_before, lemmas_after]
+    for data in to_save:
+        excel.save_to_sheet(
+            name = 'LEMME | POS | NB',
+            values = data,
+            order_col = 2,
+            reverse_order = True,
+            percent_col = 2)
     excel.close()
 
 
@@ -1207,9 +1225,9 @@ if __name__ == '__main__':
     #app.start('load?' + corpus, 'filter_corpus?domain=shs', 'filter_corpus?domain=!shs')
 
     # Make some stats
-    app.start('load?' + corpus, 'count', 'stats')
+    #app.start('load?' + corpus, 'count', 'stats')
     #app.start('load?' + corpus, 'stats_after_word?:')
-    #app.start('load?' + corpus, 'lexique')
+    app.start('load?' + corpus, 'lexique')
     
     # Pattern matching (an stats_after_word.xlsx file is mandatory before match_pattern)
     #app.start('load?' + corpus, 'stats_after_word?:', 'match_pattern')
