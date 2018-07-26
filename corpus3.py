@@ -306,6 +306,7 @@ def make_lexique(corpus):
     lemmas = {}
     lemmas_before = {}
     lemmas_after = {}
+    lemmas_after_distance = {}
     for title_id in corpus.titles:
         itercount += 1
         if itercount == iterdisplay:
@@ -313,33 +314,52 @@ def make_lexique(corpus):
             iterdisplay += iterstep
         title = corpus[title_id]
         after = False
+        dist = 0
         for w in title.words:
+            if w.form == ':':
+                after = True
+            elif after and w.pos != 'PONCT':
+                dist += 1
+            if w.pos != 'NPP': #'NC': # not in ['NC', 'NPP']:
+                continue
             if w.lemma == '_': # handling of word without lemme
                 lemme = w.form
             else:
                 lemme = w.lemma
-            if w.form == ':':
-                after = True
             key = lemme + '_' + w.pos # handling of word withe same lemme but different POS
             if key not in lemmas:
-                lemmas[key] = [lemme, w.pos, 1]
+                # 0:lemme 1:pos 2:nb 3:#before 4:%before 5:#after 6:%after
+                lemmas[key] = [lemme, w.pos, 1, 0, 0, 0, 0]
             else:
                 lemmas[key][2] += 1
+            # after / before
             if after:
+                lemmas[key][5] += 1
                 if key not in lemmas_after:
                     lemmas_after[key] = [lemme, w.pos, 1]
                 else:
                     lemmas_after[key][2] += 1
             else:
+                lemmas[key][3] += 1
                 if key not in lemmas_before:
                     lemmas_before[key] = [lemme, w.pos, 1]
                 else:
-                    lemmas_before[key][2] += 1                
+                    lemmas_before[key][2] += 1
+            # distance 
+            keydist = (key, dist)
+            if keydist not in lemmas_after_distance:
+                lemmas_after_distance[keydist] = [lemme, w.pos, dist, 1]
+            else:
+                lemmas_after_distance[keydist][3] += 1
     print('[INFO] --- Saving')
-    to_save = [lemmas, lemmas_before, lemmas_after]
+    to_save = [lemmas, lemmas_before, lemmas_after, lemmas_after_distance]
+    # percent
+    for key in lemmas:
+        lemmas[key][4] = lemmas[key][3] / lemmas[key][2] # %before
+        lemmas[key][6] = lemmas[key][5] / lemmas[key][2] # %after
     for data in to_save:
         excel.save_to_sheet(
-            name = 'LEMME | POS | NB',
+            name = 'LEM POS NB PRE POST',
             values = data,
             order_col = 2,
             reverse_order = True,
@@ -759,6 +779,26 @@ def stats_after_word(title, data_sets, **parameters):
 stats_after_word.id_rule = 0
 
 
+def answer_if_dbl_pnt_longer(title, data_sets, **parameters):
+    data = "NB_DBLPT NB LENGTHS"
+    if data not in data_sets: data_sets[data] = {}
+    nb = 0
+    length = 0
+    for w in title.words:
+        if w.form == ':':
+            nb += 1
+        if w.pos != 'PONCT':
+            length += 1
+    if nb not in data_sets[data]:
+        data_sets[data][nb] = [nb, 1, length]
+    else:
+        data_sets[data][nb][1] += 1
+        data_sets[data][nb][2] += length
+    #lengths = data_sets[data][nb][2:]
+    #if length not in lengths:
+    #    data_sets[data][nb].append(length)
+
+
 def stats_count(title, data_sets, **parameters):
     # data_set
     kind = 'TYPE'
@@ -855,7 +895,6 @@ def stats_count(title, data_sets, **parameters):
         data_sets[nbauth_length][key] = [len(title.authors), len(title.words), 1]
     else:
         data_sets[nbauth_length][key][2] += 1
-
     if title.words[-1].form in data_sets[specials_end]:
         data_sets[specials_end][title.words[-1].form][1] += 1
     #  special chars : nb of titles with and special chars count
@@ -1157,6 +1196,9 @@ class Application:
             if self.corpus is None: raise Exception('[ERROR] A corpus should be loaded first!')
             name = action[len('corpus2excel?'):]
             iterate(self.corpus, corpus2excel, excel = True, name = name, after = True, form = ':')
+        # Ansewers
+        elif action == 'answer_if_dbl_pnt_longer':
+            iterate(self.corpus, answer_if_dbl_pnt_longer, excel = True, name = 'Answer1')
         # Start an REPL
         elif action == 'repl':
             cmd = ''
@@ -1216,8 +1258,8 @@ if __name__ == '__main__':
     # Choose corpus
     #corpus = 'corpus_1dbl_6'
     #corpus = 'corpus_medium'
-    #corpus = 'corpus_big'
-    corpus = 'corpus_1dblpt_sup0_inf30'
+    corpus = 'corpus_big'
+    #corpus = 'corpus_1dblpt_sup0_inf30'
     
     # Make a corpus with filtering
     #app.start('load?' + corpus, 'make?corpus_1dblpt')
@@ -1227,7 +1269,7 @@ if __name__ == '__main__':
     # Make some stats
     #app.start('load?' + corpus, 'count', 'stats')
     #app.start('load?' + corpus, 'stats_after_word?:')
-    app.start('load?' + corpus, 'lexique')
+    #app.start('load?' + corpus, 'lexique')
     
     # Pattern matching (an stats_after_word.xlsx file is mandatory before match_pattern)
     #app.start('load?' + corpus, 'stats_after_word?:', 'match_pattern')
@@ -1245,3 +1287,6 @@ if __name__ == '__main__':
     
     # Simple REPL
     #app.start('load?corpus_1dblcolno0inf30', 'repl')
+
+    # Answer some questions
+    app.start('load?' + corpus, 'answer_if_dbl_pnt_longer')
