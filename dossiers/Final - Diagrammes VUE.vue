@@ -1,18 +1,18 @@
-<!-- Tufts VUE 3.3.0 concept-map (Diagrammes Finaux.vue) 2018-07-19 -->
+<!-- Tufts VUE 3.2.2 concept-map (Final - Diagrammes VUE.vue) 2018-07-27 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
-<!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/D:/Tools/Utilitaires/VUE/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Thu Jul 19 15:59:36 CEST 2018 by gouteud on platform Windows 7 6.1 in JVM 1.7.0_21-b11 -->
-<!-- Do Not Remove: Saving version @(#)VUE: built October 8 2015 at 1658 by tomadm on Linux 2.6.32-504.23.4.el6.x86_64 i386 JVM 1.7.0_21-b11(bits=32) -->
+<!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/C:/Program%20Files%20(x86)/Dev/VUE/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
+<!-- Do Not Remove: Saved date Fri Jul 27 18:40:03 CEST 2018 by damie_000 on platform Windows 8 6.2 in JVM 1.7.0_21-b11 -->
+<!-- Do Not Remove: Saving version @(#)VUE: built May 23 2013 at 2146 by tomadm on Linux 2.6.18-348.2.1.el5 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0"
-    label="Diagrammes Finaux.vue" created="1532003805033" x="0.0"
+    label="Final - Diagrammes VUE.vue" created="1532003805033" x="0.0"
     y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1532008777104"
-        spec="D:\Users\gouteud\Downloads\cp\Diagrammes Finaux.vue"
+    <resource referenceCreated="1532709603592" size="13264"
+        spec="C:\Users\damie_000\Documents\GitHub\tal\dossiers\Final - Diagrammes VUE.vue"
         type="1" xsi:type="URLResource">
-        <title>Diagrammes Finaux.vue</title>
-        <property key="File" value="D:\Users\gouteud\Downloads\cp\Diagrammes Finaux.vue"/>
+        <title>Final - Diagrammes VUE.vue</title>
+        <property key="File" value="C:\Users\damie_000\Documents\GitHub\tal\dossiers\Final - Diagrammes VUE.vue"/>
     </resource>
     <fillColor>#FFFFFF</fillColor>
     <strokeColor>#404040</strokeColor>
@@ -183,6 +183,16 @@
         <ID1 xsi:type="node">9</ID1>
         <ID2 xsi:type="node">15</ID2>
     </child>
+    <child ID="22" label="Syntagme nominal" layerID="1"
+        created="1532708927550" x="821.0" y="112.5" width="115.0"
+        height="63.0" strokeWidth="1.0" autoSized="false" xsi:type="node">
+        <fillColor>#99CCFF</fillColor>
+        <strokeColor>#33A8F5</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/dc9c8972c0a80024009b36f59fd2f7a3</URIString>
+        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
+    </child>
     <layer ID="1" label="Layer 1" created="1532003805038" x="0.0"
         y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/b2d6c5deac10707a01e3332d2e5f41ba</URIString>
@@ -193,7 +203,7 @@
     <PathwayList currentPathway="0" revealerIndex="-1">
         <pathway ID="0" label="Chemin sans nom" created="1532003805032"
             x="0.0" y="0.0" width="1.4E-45" height="1.4E-45"
-            strokeWidth="0.0" autoSized="false" currentIndex="-1" open="true">
+            strokeWidth="0.0" autoSized="false" currentIndex="0" open="true">
             <strokeColor>#B3993333</strokeColor>
             <textColor>#000000</textColor>
             <font>SansSerif-plain-14</font>
@@ -240,6 +250,6 @@
     </PathwayList>
     <date>2018-07-19</date>
     <modelVersion>6</modelVersion>
-    <saveLocation>D:\Users\gouteud\Downloads\cp</saveLocation>
-    <saveFile>D:\Users\gouteud\Downloads\cp\Diagrammes Finaux.vue</saveFile>
+    <saveLocation>C:\Users\damie_000\Documents\GitHub\tal\dossiers</saveLocation>
+    <saveFile>C:\Users\damie_000\Documents\GitHub\tal\dossiers\Final - Diagrammes VUE.vue</saveFile>
 </LW-MAP>

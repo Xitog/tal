@@ -35,6 +35,33 @@ class Pattern:
             f.write(str(line) + '\n')
         f.close()
 
+    def find_x(self, corpus, nb):
+        """Warning : this method find the pattern anywhere in th title"""
+        data = []
+        for key, title in corpus.titles.items():
+            words = title.words
+            for ex in self.extended:
+                i = 0
+                start = None
+                matched = None
+                while i < min(len(ex), len(words)) and ex[i] != words[i].pos:
+                    i += 1
+                if i < min(len(ex), len(words)):
+                    start = i
+                    i += 1
+                    ln = 1
+                    while ln < len(ex) and i < min(len(ex), len(words)):
+                        if ex[i] == words[i].pos:
+                            ln += 1
+                        else:
+                            break
+                    if ln == len(ex):
+                        data.append(title)
+                        break
+            if len(data) > nb:
+                break
+        return data
+    
     def find_one(self, corpus):
         """ Try to find in data one title corresponding to at least one extended form of the pattern.
             Pattern is searched EVERYWHERE in the title.

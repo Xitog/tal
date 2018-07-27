@@ -320,7 +320,7 @@ def make_lexique(corpus):
                 after = True
             elif after and w.pos != 'PONCT':
                 dist += 1
-            if w.pos != 'NPP': #'NC': # not in ['NC', 'NPP']:
+            if w.pos != 'NC': # not in ['NC', 'NPP']:
                 continue
             if w.lemma == '_': # handling of word without lemme
                 lemme = w.form
@@ -339,18 +339,20 @@ def make_lexique(corpus):
                     lemmas_after[key] = [lemme, w.pos, 1]
                 else:
                     lemmas_after[key][2] += 1
+                # distance only AFTER
+                if w.lemma == 'cas' and dist == 0:
+                    raise Exception('>>>' + str(title.words))
+                keydist = (key, dist)
+                if keydist not in lemmas_after_distance:
+                    lemmas_after_distance[keydist] = [lemme, w.pos, dist, 1]
+                else:
+                    lemmas_after_distance[keydist][3] += 1
             else:
                 lemmas[key][3] += 1
                 if key not in lemmas_before:
                     lemmas_before[key] = [lemme, w.pos, 1]
                 else:
                     lemmas_before[key][2] += 1
-            # distance 
-            keydist = (key, dist)
-            if keydist not in lemmas_after_distance:
-                lemmas_after_distance[keydist] = [lemme, w.pos, dist, 1]
-            else:
-                lemmas_after_distance[keydist][3] += 1
     print('[INFO] --- Saving')
     to_save = [lemmas, lemmas_before, lemmas_after, lemmas_after_distance]
     # percent
@@ -779,6 +781,50 @@ def stats_after_word(title, data_sets, **parameters):
 stats_after_word.id_rule = 0
 
 
+
+def answer_bio_v(title, data_sets, **parameters):
+    data = "BIO VERBE CONJ"
+    if data not in data_sets:
+        data_sets[data] = {
+            'bio V' : ['bio V', 0], 'bio non V' : ['bio non V', 0],
+            'non bio V' : ['non bio V', 0], 'non bio non V' : ['non bio non V', 0]
+        }
+    found = False
+    bio = False
+    for d in title.domains:
+        if d == '0.sdv':
+            bio = True
+    for w in title.words:
+        if w.pos == 'V':
+            found = True
+            break
+    if bio:
+        if found:
+            data_sets[data]['bio V'][1] += 1
+        else:
+            data_sets[data]['bio non V'][1] += 1
+    else:
+        if found:
+            data_sets[data]['non bio V'][1] += 1
+        else:
+            data_sets[data]['non bio non V'][1] += 1
+
+
+def answer_nb_authors_longer(title, data_sets, **parameters):
+    data = "NB_AUTHORS NB LENGTHS"
+    if data not in data_sets: data_sets[data] = {}
+    nb = len(title.authors)
+    length = 0
+    for w in title.words:
+        if w.pos != 'PONCT':
+            length += 1
+    if nb not in data_sets[data]:
+        data_sets[data][nb] = [nb, 1, length]
+    else:
+        data_sets[data][nb][1] += 1
+        data_sets[data][nb][2] += length
+
+
 def answer_if_dbl_pnt_longer(title, data_sets, **parameters):
     data = "NB_DBLPT NB LENGTHS"
     if data not in data_sets: data_sets[data] = {}
@@ -1041,7 +1087,7 @@ def match_patterns(filename, pattern, code):
     print("Matched rules:", len(matched), "/", len(pos), "(", f"{len(matched)/len(pos)*100:.2f}",")")
     print("Unmatched rules:", len(unmatched), "/", len(pos), "(", f"{len(unmatched)/len(pos)*100:.2f}", ")")
     print("Matched titles:", nb_title_matched, "/", nb_titles, "(", f"{nb_title_matched/nb_titles*100:.2f}", ")")
-    results = ExcelFile(code + '_patron_results', mode='w')
+    results = ExcelFile('match_pattern_' + code, mode='w')
     results.save_to_sheet(
         name = "PATTERN",
         values = {'Patron' : [str(pattern)]})
@@ -1069,6 +1115,7 @@ class Application:
 
     # 3456 poss, length= 3 <= x <= 11
     patterns = {
+        'test'  : 'DET? NC [ (P DET?) P+D ] NC ADJ?',
         'sn_v1' : 'DET? ADJ? [NC NPP] [NC NPP]? ADJ? [(P DET?) P+D] ADJ? [NC NPP] [NC NPP]? ADJ?',
         'sn_v2' : '[DETWH DET]? ADJ? [NC NPP] [NC NPP]? [(ADV ADJ) ADJ (ADJ ADV)]? [(P DET?) P+D] ADJ? [NC NPP] [NC NPP]? ADJ?',
         'sp_v1' : '[P+D P] DET? ADJ? [NC NPP] [NC NPP]? ADJ? [(P DET?) P+D] ADJ? [NC NPP] [NC NPP]? ADJ?',
@@ -1186,9 +1233,9 @@ class Application:
         # corpus2excel_pattern? filename_output (make an Excel from a corpus filtered through a Pattern)
         elif action.startswith('corpus2excel_pattern?'):
             if self.corpus is None: raise Exception('[ERROR] A corpus should be loaded first!')
-            pattern = Pattern(Application.pattern_sn)
-            name = action[len('corpus2excel_pattern?'):]
-            iterate(self.corpus, corpus2excel_pattern, excel = True, name = name,
+            code = action[len('corpus2excel_pattern?'):]
+            pattern = Pattern(Application.patterns[code])
+            iterate(self.corpus, corpus2excel_pattern, excel = True, name = 'pattern_' + code,
                     fun = post_process, pattern = pattern)
                     #fun = post_process, pattern = pattern, divide = 'STATS N1', name2 = name + '_stat') # divide into 2 files : titles + stats
         # corpus2excel? filename_output (make an Excel from a corpus)
@@ -1196,9 +1243,29 @@ class Application:
             if self.corpus is None: raise Exception('[ERROR] A corpus should be loaded first!')
             name = action[len('corpus2excel?'):]
             iterate(self.corpus, corpus2excel, excel = True, name = name, after = True, form = ':')
-        # Ansewers
+        # Answers
         elif action == 'answer_if_dbl_pnt_longer':
             iterate(self.corpus, answer_if_dbl_pnt_longer, excel = True, name = 'Answer1')
+        elif action == 'answer_nb_authors_longer':
+            iterate(self.corpus, answer_nb_authors_longer, excel = True, name = 'Answer2')
+        elif action == 'answer_bio_v':
+            iterate(self.corpus, answer_bio_v, excel = True, name = 'Answer3')
+        # expand_pattern? pattern_name
+        elif action.startswith('expand_pattern?'):
+            code = action[len('expand_pattern?'):]
+            pattern = Pattern(Application.patterns[code])
+            for poss in pattern.extended:
+                print(poss)
+        # find examples
+        elif action.startswith('find?'):
+            parameters = action[len('find?'):]
+            code, nb = parameters.split('&')
+            pattern = Pattern(Application.patterns[code])
+            data = pattern.find_x(self.corpus, int(nb))
+            for title in data:
+                print(title.text)
+                print(title.date)
+                print(title.authors)
         # Start an REPL
         elif action == 'repl':
             cmd = ''
@@ -1258,8 +1325,8 @@ if __name__ == '__main__':
     # Choose corpus
     #corpus = 'corpus_1dbl_6'
     #corpus = 'corpus_medium'
-    corpus = 'corpus_big'
-    #corpus = 'corpus_1dblpt_sup0_inf30'
+    #corpus = 'corpus_big'
+    corpus = 'corpus_1dblpt_sup0_inf30'
     
     # Make a corpus with filtering
     #app.start('load?' + corpus, 'make?corpus_1dblpt')
@@ -1272,8 +1339,18 @@ if __name__ == '__main__':
     #app.start('load?' + corpus, 'lexique')
     
     # Pattern matching (an stats_after_word.xlsx file is mandatory before match_pattern)
+    #app.start('expand_pattern?test')
     #app.start('load?' + corpus, 'stats_after_word?:', 'match_pattern')
+    #app.start('load?' + corpus, 'stats_after_word?:')
+    #app.start('match_pattern?sn_v2')
+    #app.start('match_pattern?sp_v1')
     #app.start('match_pattern?cc_v2')
+
+    # Pattern examples
+    app.start('load?' + corpus)
+    #app.start('find?sn_v2&5')
+    #app.start('find?sp_v1&5')
+    #app.start('find?cc_v2&5')
     
     # Make an Excel without filtering
     #app.start('load?corpus_1dblcolno0inf30', 'corpus2excel?1dblcolno0inf30')
@@ -1284,9 +1361,15 @@ if __name__ == '__main__':
     #app.start('load?corpus_1dblcolno0inf30', 'corpus2excel_pattern?1dblcolno0inf30')   # Slow ~13-20 minutes
     #app.start('load?corpus_domain_shs', 'corpus2excel_pattern?shs')
     #app.start('load?corpus_domain_!shs', 'corpus2excel_pattern?not_shs')
+    app.start('corpus2excel_pattern?sn_v2')
+    app.start('corpus2excel_pattern?sp_v1')
+    app.start('corpus2excel_pattern?cc_v2')
     
     # Simple REPL
     #app.start('load?corpus_1dblcolno0inf30', 'repl')
 
     # Answer some questions
-    app.start('load?' + corpus, 'answer_if_dbl_pnt_longer')
+    #app.start('load?' + corpus, 'answer_if_dbl_pnt_longer')
+    #app.start('load?' + corpus, 'answer_nb_authors_longer')
+    #app.start('load?' + corpus, 'answer_bio_v')
+
