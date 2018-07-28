@@ -56,7 +56,10 @@ class Word:
                         pos = child.text
         # compat mode
         else:
-            form = elem.text            
+            form = elem.text
+        # no '_' anymore
+        if lemma == '_':
+            lemma = form
         return Word(form, lemma, pos)
 
     def __str__(self):

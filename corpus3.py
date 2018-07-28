@@ -581,6 +581,7 @@ corpus2excel.MAX_TITLE_EXCEL = 60000
 
 # From a translation corpus2excel, this function has derivated into a pattern filtering machine
 def corpus2excel_pattern(title, data_sets, **parameters):
+    do_matrix = False
     # parameters
     pattern = parameters['pattern']
     name = parameters['name']
@@ -595,17 +596,21 @@ def corpus2excel_pattern(title, data_sets, **parameters):
         data_sets["MATCH after"] = {}
     if "STATS N1" not in data_sets:
         data_sets["STATS N1"] = {}
-    if "STATS P" not in data_sets:
-        data_sets["STATS P"] = {}
+    if "STATS P1" not in data_sets:
+        data_sets["STATS P1"] = {}
+    if "STATS P2" not in data_sets:
+        data_sets["STATS P2"] = {}
     if "STATS N2" not in data_sets:
         data_sets["STATS N2"] = {}
     if "STATS N1 N2" not in data_sets:
         data_sets["STATS N1 N2"] = {}
+    if "STATS P1 P2" not in data_sets:
+        data_sets["STATS P1 P2"] = {}
     if "STATS N1 P" not in data_sets:
         data_sets["STATS N1 P"] = {}
     if "STATS N1 P N2" not in data_sets:
         data_sets["STATS N1 P N2"] = {}
-    if 'MATRIX' not in data_sets:
+    if 'MATRIX' not in data_sets and do_matrix:
         data_sets['MATRIX'] = DynMatrix('matrix_' + name)
     # algorithm
     forms, lemma, pos = pattern.trilist(title.words, after=':')
@@ -616,80 +621,175 @@ def corpus2excel_pattern(title, data_sets, **parameters):
             len(res),
             *res
         ]
-        # stats on pattern
-        nb = 0
-        nb_prep = 0
-        inside = False
-        suite = []
-        n1 = None
-        n2 = None
-        prep = None
-        for i in range(len(pos) + 1):
-            if i < len(pos):
-                p = pos[i]
-            else:
-                p = 'STOP'
-            if p in ['NC', 'NPP']:
-                if inside:
-                    if lemma[i] != '_':
-                        suite.append(lemma[i])
-                    else:
-                        suite.append(forms[i])
+        # FIXME: stats on pattern are not auto handled
+        if name.startswith('pattern_sp_v'):
+            # harvest
+            preps = []
+            nouns = []
+            for i in range(len(pos) + 1):
+                p = pos[i] if i < len(pos) else 'STOP'
+                if p in ['P', 'P+D']:
+                    lem = lemma[i] if lemma[i] != '_' else forms[i]
+                    preps.append(lem)
+                if p in ['NC', 'NPP']:
+                    lem = lemma[i] if lemma[i] != '_' else forms[i]
+                    nouns.append(lem)
+                if len(preps) == 2 and len(nouns) == 2:
+                    break
+            # check
+            if len(preps) < 2 or len(nouns) < 2:
+                print('len of preps', len(preps))
+                print('len of nouns', len(nouns))
+                print(title.text)
+                print(pos)
+                raise Exception('This pattern should have tow prep and two noun')
+            # save
+            # noun saves
+            for index, key in {0 : "STATS N1", 1 : "STATS N2"}.items():
+                if nouns[index] not in data_sets[key]:
+                    data_sets[key][nouns[index]] = [nouns[index], 1]
                 else:
-                    if lemma[i] != '_':
-                        suite = [lemma[i]]
-                    else:
-                        suite = [forms[i]]
-                    inside = True
+                    data_sets[key][nouns[index]][1] += 1
+            # prep saves
+            for index, key in {0 : "STATS P1", 1 : "STATS P2"}.items():
+                if preps[index] not in data_sets[key]:
+                    data_sets[key][preps[index]] = [preps[index], 1]
+                else:
+                    data_sets[key][preps[index]][1] += 1
+            # n1 n2 saves
+            skey = (nouns[0], nouns[1])
+            if skey not in data_sets["STATS N1 N2"]:
+                data_sets["STATS N1 N2"][skey] = [*skey, 1]
             else:
-                if inside:
-                    if nb == 0:
-                        save = "STATS N1"
-                        n1 = ' + '.join(suite)
-                        nb += 1
-                    elif nb == 1:
-                        save = "STATS N2"
-                        n2 = ' + '.join(suite)
-                        # stats for n1 + n2
-                        nkey = n1 + '|' + n2 #(n1, n2) #'1. ' + n1 + ' 2. ' + n2
-                        if nkey not in data_sets["STATS N1 N2"]:
-                            data_sets["STATS N1 N2"][nkey] = [n1, n2, 1]
+                data_sets["STATS N1 N2"][skey][-1] += 1
+            # p1 p2 saves
+            skey = (preps[0], preps[1])
+            if skey not in data_sets["STATS P1 P2"]:
+                data_sets["STATS P1 P2"][skey] = [*skey, 1]
+            else:
+                data_sets["STATS P1 P2"][skey][-1] += 1
+            # p1 n1 p2 n2 save in STATS N1 P N2
+            skey = (preps[0], nouns[0], preps[1], nouns[1])
+            if skey not in data_sets["STATS N1 P N2"]:
+                data_sets["STATS N1 P N2"][skey] = [*skey, 1]
+            else:
+                data_sets["STATS N1 P N2"][skey][-1] += 1
+        elif name.startswith('pattern_cc_v'):
+            # harvest
+            cc = None
+            nouns = []
+            for i in range(len(pos) + 1):
+                p = pos[i] if i < len(pos) else 'STOP'
+                if p in ['CC']:
+                    lem = lemma[i] if lemma[i] != '_' else forms[i]
+                    cc = lem
+                if p in ['NC', 'NPP']:
+                    lem = lemma[i] if lemma[i] != '_' else forms[i]
+                    nouns.append(lem)
+                if cc is not None and len(nouns) == 2:
+                    break
+            # check
+            if cc is None or len(nouns) < 2:
+                raise Exception('This pattern should have tow prep and two noun')
+            # save
+            # noun saves
+            for i in [0, 1]:
+                if nouns[i] not in data_sets["STATS N1"]:
+                    data_sets["STATS N1"][nouns[i]] = [nouns[i], 0, 0, 0] # before CC, after CC, total
+                data_sets["STATS N1"][nouns[i]][1 + i] += 1 # inc before OR after
+                data_sets["STATS N1"][nouns[i]][-1] += 1 # inc total
+            # cc saves (in P1)
+            if cc not in data_sets["STATS P1"]:
+                data_sets["STATS P1"][cc] = [cc, 1]
+            else:
+                data_sets["STATS P1"][cc][1] += 1
+            # n1 n2 saves
+            skey = (nouns[0], nouns[1])
+            if skey not in data_sets["STATS N1 N2"]:
+                data_sets["STATS N1 N2"][skey] = [*skey, 1]
+            else:
+                data_sets["STATS N1 N2"][skey][-1] += 1
+            # n1 cc n2 save in STATS N1 P N2
+            skey = (nouns[0], cc, nouns[1])
+            if skey not in data_sets["STATS N1 P N2"]:
+                data_sets["STATS N1 P N2"][skey] = [*skey, 1]
+            else:
+                data_sets["STATS N1 P N2"][skey][-1] += 1
+        elif name.startswith('pattern_sn_v'): # for pattern NC P NC
+            nb = 0
+            nb_prep = 0
+            inside = False
+            suite = []
+            n1 = None
+            n2 = None
+            prep = None
+            for i in range(len(pos) + 1):
+                if i < len(pos):
+                    p = pos[i]
+                else:
+                    p = 'STOP'
+                if p in ['NC', 'NPP']:
+                    if inside:
+                        if lemma[i] != '_':
+                            suite.append(lemma[i])
                         else:
-                            data_sets["STATS N1 N2"][nkey][-1] += 1
-                        npkey = n1 + '|' + prep + '|' + n2 # (n1, prep, n2) #n1 + ' ' + prep + ' ' + n2
-                        if npkey not in data_sets["STATS N1 P N2"]:
-                            data_sets["STATS N1 P N2"][npkey] = [n1, prep, n2, 1]
-                        else:
-                            data_sets["STATS N1 P N2"][npkey][-1] += 1
-                        data_sets['MATRIX'].add(n1, n2)
-                        nb += 1
+                            suite.append(forms[i])
                     else:
-                        nb += 1
-                    if nb in [1, 2]:
-                        tsuite = tuple(suite)
-                        if tsuite not in data_sets[save]:
-                            data_sets[save][tsuite] = [0, *suite]
-                        data_sets[save][tsuite][0] += 1
-                    inside = False       
-                if p in ['P+D', 'P']:
-                    if n1 is None:
-                        print('DOCID:', title.docid)
-                        print('TITLE:', title.text)
-                        print('FORM:', forms)
-                        print('LEMMA:', lemma)
-                        print('POS:', pos)
-                        print('Match:', res)
-                        raise Exception("WTF")
-                    if nb_prep == 0:
-                        prep = lemma[i]
-                        if prep not in data_sets["STATS P"]:
-                            data_sets["STATS P"][prep] = [0, prep]
-                        data_sets["STATS P"][prep][0] += 1
-                        pkey = n1 + '|' + prep # (n1, prep) # n1 + ' ' + prep
-                        if pkey not in data_sets["STATS N1 P"]:
-                            data_sets["STATS N1 P"][pkey] = [n1, prep, 0]
-                        data_sets["STATS N1 P"][pkey][-1] += 1
-                        nb_prep += 1
+                        if lemma[i] != '_':
+                            suite = [lemma[i]]
+                        else:
+                            suite = [forms[i]]
+                        inside = True
+                else:
+                    if inside:
+                        if nb == 0:
+                            save = "STATS N1"
+                            n1 = ' + '.join(suite)
+                            nb += 1
+                        elif nb == 1:
+                            save = "STATS N2"
+                            n2 = ' + '.join(suite)
+                            # stats for n1 + n2
+                            nkey = n1 + '|' + n2 #(n1, n2) #'1. ' + n1 + ' 2. ' + n2
+                            if nkey not in data_sets["STATS N1 N2"]:
+                                data_sets["STATS N1 N2"][nkey] = [n1, n2, 1]
+                            else:
+                                data_sets["STATS N1 N2"][nkey][-1] += 1
+                            npkey = n1 + '|' + prep + '|' + n2 # (n1, prep, n2) #n1 + ' ' + prep + ' ' + n2
+                            if npkey not in data_sets["STATS N1 P N2"]:
+                                data_sets["STATS N1 P N2"][npkey] = [n1, prep, n2, 1]
+                            else:
+                                data_sets["STATS N1 P N2"][npkey][-1] += 1
+                            if do_matrix:
+                                data_sets['MATRIX'].add(n1, n2)
+                            nb += 1
+                        else:
+                            nb += 1
+                        if nb in [1, 2]:
+                            tsuite = tuple(suite)
+                            if tsuite not in data_sets[save]:
+                                data_sets[save][tsuite] = [0, *suite]
+                            data_sets[save][tsuite][0] += 1
+                        inside = False       
+                    if p in ['P+D', 'P']:
+                        if n1 is None:
+                            print('DOCID:', title.docid)
+                            print('TITLE:', title.text)
+                            print('FORM:', forms)
+                            print('LEMMA:', lemma)
+                            print('POS:', pos)
+                            print('Match:', res)
+                            raise Exception("WTF")
+                        if nb_prep == 0:
+                            prep = lemma[i]
+                            if prep not in data_sets["STATS P1"]:
+                                data_sets["STATS P1"][prep] = [0, prep]
+                            data_sets["STATS P1"][prep][0] += 1
+                            pkey = n1 + '|' + prep # (n1, prep) # n1 + ' ' + prep
+                            if pkey not in data_sets["STATS N1 P"]:
+                                data_sets["STATS N1 P"][pkey] = [n1, prep, 0]
+                            data_sets["STATS N1 P"][pkey][-1] += 1
+                            nb_prep += 1
     else:
         return
     roots = {
@@ -1361,8 +1461,8 @@ if __name__ == '__main__':
     #app.start('load?corpus_1dblcolno0inf30', 'corpus2excel_pattern?1dblcolno0inf30')   # Slow ~13-20 minutes
     #app.start('load?corpus_domain_shs', 'corpus2excel_pattern?shs')
     #app.start('load?corpus_domain_!shs', 'corpus2excel_pattern?not_shs')
-    app.start('corpus2excel_pattern?sn_v2')
-    app.start('corpus2excel_pattern?sp_v1')
+    #app.start('corpus2excel_pattern?sn_v2')
+    #app.start('corpus2excel_pattern?sp_v1')
     app.start('corpus2excel_pattern?cc_v2')
     
     # Simple REPL
