@@ -756,12 +756,18 @@ def corpus2excel_pattern(title, data_sets, **parameters):
                             else:
                                 data_sets["STATS N1 N2"][nkey][-1] += 1
                             npkey = n1 + '|' + prep + '|' + n2 # (n1, prep, n2) #n1 + ' ' + prep + ' ' + n2
-                            if npkey not in data_sets["STATS N1 P N2"]:
-                                data_sets["STATS N1 P N2"][npkey] = [n1, prep, n2, 1]
+                            # special filter for dealing only with état...
+                            #if n1 in ['état'] and n2 in ['lieu', 'art', 'connaissance', 'question', 'recherche', 'savoir', 'Art', 'questio', 'lieu + 2010', 'découverte', 'champ', 'réflexion', 'état', 'débat', 'documentation', 'littérature']:
+                            if n1 in ['revue', 'revue + critique'] and n2 in ['littérature', 'connaissance', 'question', 'littérature + 2005-2015']:
+                                FILTER_OK = True
+                                if npkey not in data_sets["STATS N1 P N2"]:
+                                    data_sets["STATS N1 P N2"][npkey] = [n1, prep, n2, 1]
+                                else:
+                                    data_sets["STATS N1 P N2"][npkey][-1] += 1
+                                if do_matrix:
+                                    data_sets['MATRIX'].add(n1, n2)
                             else:
-                                data_sets["STATS N1 P N2"][npkey][-1] += 1
-                            if do_matrix:
-                                data_sets['MATRIX'].add(n1, n2)
+                                FILTER_OK = False
                             nb += 1
                         else:
                             nb += 1
@@ -801,36 +807,38 @@ def corpus2excel_pattern(title, data_sets, **parameters):
     }
     for d in title.domains:
         if d.startswith('0.'):
-            name = d[len('0.'):]
-            if name not in roots:
-                raise Exception("Unknown domain:" + name)
-            roots[name] = 1
+            dname = d[len('0.'):]
+            if dname not in roots:
+                raise Exception("Unknown domain:" + dname)
+            roots[dname] = 1
     roots_style = []
     for roo in roots:
         roots_style.append(MiniCell(roots[roo], w=2))
-    data_sets["TITLES"][title.docid] = [
-        title.docid,
-        title.kind,
-        len(title.authors),
-        title.date,
-        *roots_style,
-        title.text
-    ]
-    # Special for after ":" save
-    pos_style = []
-    for i in range(len(pos)):
-        if i < len(res):
-            pos_style.append(MiniCell(pos[i], bg = MiniCell.yellow))
-        else:
-            pos_style.append(pos[i])
-    lemma_style = []
-    for i in range(len(pos)):
-        if i < len(res):
-            lemma_style.append(MiniCell(lemma[i], MiniCell.yellow))
-        else:
-            lemma_style.append(lemma[i])
-    data_sets["POS after"][title.docid] = [title.docid, len(pos)] + pos_style
-    data_sets["LEMMA after"][title.docid] = [title.docid, len(lemma)] + lemma_style 
+    # special filter for dealing only with état...
+    if not name.startswith('pattern_sn_v') or (name.startswith('pattern_sn_v') and FILTER_OK):
+        data_sets["TITLES"][title.docid] = [
+            title.docid,
+            title.kind,
+            len(title.authors),
+            title.date,
+            *roots_style,
+            title.text
+        ]
+        # Special for after ":" save
+        pos_style = []
+        for i in range(len(pos)):
+            if i < len(res):
+                pos_style.append(MiniCell(pos[i], bg = MiniCell.yellow))
+            else:
+                pos_style.append(pos[i])
+        lemma_style = []
+        for i in range(len(pos)):
+            if i < len(res):
+                lemma_style.append(MiniCell(lemma[i], MiniCell.yellow))
+            else:
+                lemma_style.append(lemma[i])
+        data_sets["POS after"][title.docid] = [title.docid, len(pos)] + pos_style
+        data_sets["LEMMA after"][title.docid] = [title.docid, len(lemma)] + lemma_style 
 
 
 def post_process(excelfile):
@@ -1461,9 +1469,9 @@ if __name__ == '__main__':
     #app.start('load?corpus_1dblcolno0inf30', 'corpus2excel_pattern?1dblcolno0inf30')   # Slow ~13-20 minutes
     #app.start('load?corpus_domain_shs', 'corpus2excel_pattern?shs')
     #app.start('load?corpus_domain_!shs', 'corpus2excel_pattern?not_shs')
-    #app.start('corpus2excel_pattern?sn_v2')
+    app.start('corpus2excel_pattern?sn_v2')
     #app.start('corpus2excel_pattern?sp_v1')
-    app.start('corpus2excel_pattern?cc_v2')
+    #app.start('corpus2excel_pattern?cc_v2')
     
     # Simple REPL
     #app.start('load?corpus_1dblcolno0inf30', 'repl')
