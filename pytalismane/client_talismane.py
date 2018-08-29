@@ -138,6 +138,11 @@ def process_string(string, sock=None, debug=False):
     return from_res_to_words(res)
 
 if __name__ == '__main__':
-    words = process_string('Bonjour le monde !', debug=True)
-    for word in words:
-        print(word)
+    #words = process_string('Bonjour le monde !', debug=True)
+    cmd = None
+    while cmd != 'exit':
+        cmd = input('enter sentence: ')
+        if cmd != 'exit':
+            words = process_string(cmd, debug=True)
+            for word in words:
+                print('   ', word)
