@@ -889,6 +889,49 @@ def stats_after_word(title, data_sets, **parameters):
 stats_after_word.id_rule = 0
 
 
+def answer_how_many_titles_with_two_names_after(title, data_sets, **parameters):
+    data = "NB NAMES AFTER"
+    if data not in data_sets:
+        data_sets[data] = {}
+    after = False
+    nb_names_after = 0
+    for w in title.words:
+        if w.pos == 'PONCT' and w.form == ':':
+            after = True
+        elif w.pos in ['NC']:
+            if after: nb_names_after += 1
+    if nb_names_after not in data_sets[data]:
+        data_sets[data][nb_names_after] = [nb_names_after, 1]
+    else:
+        data_sets[data][nb_names_after][1] += 1
+
+
+def answer_number_of_names(title, data_sets, **parameters):
+    data = "BEFORE AFTER"
+    if data not in data_sets:
+        data_sets[data] = {
+            'BEFORE' : ['BEFORE', 0],
+            'AFTER'  : ['AFTER', 0],
+        }
+    after = False
+    #inside = False
+    for w in title.words:
+        if w.pos == 'PONCT' and w.form == ':':
+            after = True
+        elif w.pos in ['NC']: #, 'NPP']:
+            if not after: data_sets[data]['BEFORE'][1] += 1
+            else: data_sets[data]['AFTER'][1] += 1
+        # Pour compter les suites comme un nom, mais ce n'est pas la peine
+        #elif inside:
+        #    if w.pos not in ['NC', 'NPP']:
+        #        inside = False
+        #        if not after: data_sets[data]['BEFORE'][1] += 1
+        #        else: data_sets[data]['AFTER'][1] += 1
+        #    else:
+        #        pass #we are still in a NC/NPP suite, do nothing
+        #else:
+        #    if w.pos in ['NC', 'NPP']:
+        #        inside = True
 
 def answer_bio_v(title, data_sets, **parameters):
     data = "BIO VERBE CONJ"
@@ -1358,6 +1401,10 @@ class Application:
             iterate(self.corpus, answer_nb_authors_longer, excel = True, name = 'Answer2')
         elif action == 'answer_bio_v':
             iterate(self.corpus, answer_bio_v, excel = True, name = 'Answer3')
+        elif action == 'answer_number_of_names':
+            iterate(self.corpus, answer_number_of_names, excel = False)
+        elif action == 'answer_how_many_titles_with_two_names_after':
+            iterate(self.corpus, answer_how_many_titles_with_two_names_after, excel = False)
         # expand_pattern? pattern_name
         elif action.startswith('expand_pattern?'):
             code = action[len('expand_pattern?'):]
@@ -1447,6 +1494,7 @@ if __name__ == '__main__':
     #app.start('load?' + corpus, 'lexique')
     
     # Pattern matching (an stats_after_word.xlsx file is mandatory before match_pattern)
+    # It only compares to the existing sequences and divide them in two: matched or unmatched
     #app.start('expand_pattern?test')
     #app.start('load?' + corpus, 'stats_after_word?:', 'match_pattern')
     #app.start('load?' + corpus, 'stats_after_word?:')
@@ -1469,7 +1517,9 @@ if __name__ == '__main__':
     #app.start('load?corpus_1dblcolno0inf30', 'corpus2excel_pattern?1dblcolno0inf30')   # Slow ~13-20 minutes
     #app.start('load?corpus_domain_shs', 'corpus2excel_pattern?shs')
     #app.start('load?corpus_domain_!shs', 'corpus2excel_pattern?not_shs')
-    app.start('corpus2excel_pattern?sn_v2')
+    # Match patterns
+    # It makes a list of TITLES witht the part matched.
+    #app.start('corpus2excel_pattern?sn_v2')
     #app.start('corpus2excel_pattern?sp_v1')
     #app.start('corpus2excel_pattern?cc_v2')
     
@@ -1480,4 +1530,5 @@ if __name__ == '__main__':
     #app.start('load?' + corpus, 'answer_if_dbl_pnt_longer')
     #app.start('load?' + corpus, 'answer_nb_authors_longer')
     #app.start('load?' + corpus, 'answer_bio_v')
-
+    #app.start('answer_number_of_names')
+    app.start('answer_how_many_titles_with_two_names_after')    
