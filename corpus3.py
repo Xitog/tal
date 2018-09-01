@@ -1478,10 +1478,11 @@ if __name__ == '__main__':
     app = Application()
 
     # Choose corpus
-    #corpus = 'corpus_1dbl_6'
+    #corpus = 'corpus_1dbl_6' # DEPRECATED
     #corpus = 'corpus_medium'
-    #corpus = 'corpus_big'
-    corpus = 'corpus_1dblpt_sup0_inf30'
+    corpus = 'corpus_big' # All downloaded titles
+    #corpus = 'corpus_1dblpt_sup0_inf30' # Work Corpus
+    app.start('load?' + corpus)
     
     # Make a corpus with filtering
     #app.start('load?' + corpus, 'make?corpus_1dblpt')
@@ -1489,7 +1490,7 @@ if __name__ == '__main__':
     #app.start('load?' + corpus, 'filter_corpus?domain=shs', 'filter_corpus?domain=!shs')
 
     # Make some stats
-    #app.start('load?' + corpus, 'count', 'stats')
+    app.start('count', 'stats')
     #app.start('load?' + corpus, 'stats_after_word?:')
     #app.start('load?' + corpus, 'lexique')
     
@@ -1503,7 +1504,6 @@ if __name__ == '__main__':
     #app.start('match_pattern?cc_v2')
 
     # Pattern examples
-    app.start('load?' + corpus)
     #app.start('find?sn_v2&5')
     #app.start('find?sp_v1&5')
     #app.start('find?cc_v2&5')
