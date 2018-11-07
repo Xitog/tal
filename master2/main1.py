@@ -5,6 +5,9 @@
 # standard
 from enum import Enum
 import datetime
+# dynamic code
+from importlib import reload
+import whiteboard as wb
 
 #-------------------------------------------------
 # Data model
@@ -14,14 +17,17 @@ class Word:
     
     def __init__(self, form, lemma, pos, info, gov, dep):
         self.form = form
-        self.lemma = lemma
+        if lemma == '_':
+            self.lemma = f"?{form}"
+        else:
+            self.lemma = lemma
         self.pos = pos
         self.info = info
         self.gov = gov
         self.dep = dep
 
     def __str__(self):
-        return "f{self.form}"
+        return f"{self.form}"
     
     def __repr__(self):
         return f"<Word {self.form, self.lemma, self.pos}>"
@@ -78,7 +84,8 @@ def split(file_name, nb_total_part = 6):
                 nb = 0
             if nb == 0:
                 nb_part += 1
-                output = open(f"output_{nb_part:02d}.txt", encoding='utf8', mode='w')
+                output = open(f"details\\{nb_part:02d}.txt", encoding='utf8', mode='w')
+                #output = open(f"output_{nb_part:02d}.txt", encoding='utf8', mode='w')
             nb += 1
             output.write(line)
         if output is not None:
@@ -248,17 +255,65 @@ def info(titles):
         print('          ', d)
     print(f'[INFO] --- {len(titles)} titles.')
     print(f'[INFO] --- {nb_words} words.')
+    print('[END ] --- end info.\n')
+
+#-------------------------------------------------
+# Explore
+#-------------------------------------------------
+
+def explore(titles, lemma):
+    print('[RUN ] --- explore')
+    data = {}
+    for key, t in titles.items():
+        for iw in range(len(t.words)):
+            w = t.words[iw]
+            if w.lemma == lemma:
+                if len(t.words)-1 > iw > 0:
+                    key = (t.words[iw-1].lemma, lemma, t.words[iw+1].lemma)
+                elif iw < len(t.words)-1:
+                    key = ('START', lemma, t.words[iw+1].lemma)
+                elif iw > 0:
+                    key = (t.words[iw-1].lemma, lemma, 'END')
+                if key in data:
+                    data[key] += 1
+                else:
+                    data[key] = 1
+    print('[END ] --- end explore.\n')
+    return data
+
+def explore2(titles, lemma, ok_lemma_after):
+    print('[RUN ] --- explore2')
+    data = {}
+    for key, t in titles.items():
+        for iw in range(len(t.words)):
+            w = t.words[iw]
+            if w.lemma == lemma:
+                if iw < len(t.words)-2:
+                    if t.words[iw+1].lemma in ok_lemma_after:
+                        key = t.words[iw+2].lemma
+                    if key in data:
+                        data[key] += 1
+                    else:
+                        data[key] = 1
+    print('[END ] --- end explore2.\n')
+    return data
+
+def display(data, threshold=0):
+    for key in sorted(data, key=data.get, reverse=True):
+        value = data[key]
+        if value >= threshold:
+            print(f"{value:05d} {key}")
 
 #-------------------------------------------------
 # Write only title, one title per line
 #-------------------------------------------------
 
 if __name__ == '__main__':
-    # OK split('titres-articles-HAL.tal', 6)
+    # split('titres-articles-HAL.tal', 6)
     # Read meta data and output titles only
     titles = read_titles_metadata(r'data\total-articles-HAL.tsv')
-    # OK output_titles(titles)
-    # output_titles_multifiles(titles)
+    # output_titles(titles)
+    # output_titles_multifiles(titles, 5)
     # Read Talismane data
     files = [r"data\output_tal_01.txt",
              r"data\output_tal_02.txt",
@@ -272,7 +327,10 @@ if __name__ == '__main__':
     # if len(titles) > 0:
     #    t = titles[list(titles.keys())[0]]
     #    print(t)
-    info(titles)
+    #info(titles)
+    #data = explore(titles, "outil")
+    data = explore2(titles, "outil", ['de', 'pour'])
+    display(data, 10)
 
 # 339687 titres
 
