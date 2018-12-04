@@ -1,0 +1,4 @@
+DocID;YearCoded;Gender;Age;LocationOfDeath;LineID;RawText;IntType;IntValue;CauseRank;StandardText;ICD10
+1;2006;1;20;1;1;Tableau de mort subite de cause inconnue au terme du temps macroscopique de l'autopsie ;NULL;NULL;;;
+2;2006;1;30;5;1;Carbonisation diffuse avec traumatisme thoracique;NULL;NULL;1-1;carbonisation;T293
+2;2006;1;30;5;1;Carbonisation diffuse avec traumatisme thoracique;NULL;NULL;1-2;traumatisme thoracique;S299
