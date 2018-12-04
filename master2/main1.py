@@ -76,7 +76,7 @@ def split(file_name, nb_total_part = 6):
         for line in content:
             itercount += 1
             if itercount == iterdisplay:
-                print('Titles done : ', itercount, ' / ', len(lines), '.', sep='')
+                print('Titles done : ', itercount, ' / ', len(content), '.', sep='')
                 iterdisplay += iterstep
             # end counting
             if nb == nb_by_part:
@@ -84,7 +84,7 @@ def split(file_name, nb_total_part = 6):
                 nb = 0
             if nb == 0:
                 nb_part += 1
-                output = open(f"details\\{nb_part:02d}.txt", encoding='utf8', mode='w')
+                output = open(f"data\\details\\{nb_part:02d}.txt", encoding='utf8', mode='w')
                 #output = open(f"output_{nb_part:02d}.txt", encoding='utf8', mode='w')
             nb += 1
             output.write(line)
@@ -309,6 +309,7 @@ def display(data, threshold=0):
 #-------------------------------------------------
 
 if __name__ == '__main__':
+    # split(r'data\titles_339687.txt', 1000)
     # split('titres-articles-HAL.tal', 6)
     # Read meta data and output titles only
     titles = read_titles_metadata(r'data\total-articles-HAL.tsv')
