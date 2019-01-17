@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annotations>
+<unit id="anonymous_0">
+	<metadata>
+		<author>anonymous</author>
+		<creation-date>0</creation-date>
+	</metadata>
+	<characterisation>
+		<type>title</type>
+		<featureSet/>
+	</characterisation>
+	<positioning>
+		<start>
+			<singlePosition index="0"/>
+		</start>
+		<end>
+			<singlePosition index="47"/>
+		</end>
+	</positioning>
+</unit>
+<unit id="anonymous_0">
+	<metadata>
+		<author>anonymous</author>
+		<creation-date>0</creation-date>
+	</metadata>
+	<characterisation>
+		<type>sectionTitle</type>
+		<featureSet/>
+	</characterisation>
+	<positioning>
+		<start>
+			<singlePosition index="47"/>
+		</start>
+		<end>
+			<singlePosition index="56"/>
+		</end>
+	</positioning>
+</unit>
+<unit id="anonymous_0">
+	<metadata>
+		<author>anonymous</author>
+		<creation-date>0</creation-date>
+	</metadata>
+	<characterisation>
+		<type>paragraph</type>
+		<featureSet/>
+	</characterisation>
+	<positioning>
+		<start>
+			<singlePosition index="56"/>
+		</start>
+		<end>
+			<singlePosition index="134"/>
+		</end>
+	</positioning>
+</unit>
+<unit id="anonymous_0">
+	<metadata>
+		<author>anonymous</author>
+		<creation-date>0</creation-date>
+	</metadata>
+	<characterisation>
+		<type>paragraph</type>
+		<featureSet/>
+	</characterisation>
+	<positioning>
+		<start>
+			<singlePosition index="134"/>
+		</start>
+		<end>
+			<singlePosition index="154"/>
+		</end>
+	</positioning>
+</unit>
+<unit id="anonymous_0">
+	<metadata>
+		<author>anonymous</author>
+		<creation-date>0</creation-date>
+	</metadata>
+	<characterisation>
+		<type>bold</type>
+		<featureSet/>
+	</characterisation>
+	<positioning>
+		<start>
+			<singlePosition index="134"/>
+		</start>
+		<end>
+			<singlePosition index="154"/>
+		</end>
+	</positioning>
+</unit>
+<unit id="anonymous_0">
+	<metadata>
+		<author>anonymous</author>
+		<creation-date>0</creation-date>
+	</metadata>
+	<characterisation>
+		<type>Signature</type>
+		<featureSet/>
+	</characterisation>
+	<positioning>
+		<start>
+			<singlePosition index="134"/>
+		</start>
+		<end>
+			<singlePosition index="154"/>
+		</end>
+	</positioning>
+</unit>
+</annotations>

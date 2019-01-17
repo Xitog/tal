@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annotationModel>
+    <units>
+        <type name="Mention" groups="mention">
+            <featureSet>
+                <feature name="fonction">
+                    <possibleValues default="question">
+                        <value>autorisation</value>
+                        <value>expression d'accord</value>
+                        <value>expression de désaccord</value>
+                        <value>demande d'intervention</value>
+                        <value>demande de pardon</value>
+                        <value>demande de politesse</value>
+                        <value>question</value>
+                        <value>citation</value>
+                        <value>félicitation</value>
+                        <value>remerciement</value>
+                        <value>salutation</value>
+                        <value>affirmation</value>
+                    </possibleValues>
+                </feature>
+                <feature name="contexte">
+                    <possibleValues default="neutre">
+                        <value>positif (laudateur)</value>
+                        <value>neutre</value>
+                        <value>négatif (ironie, sarcasme, agressif)</value>
+                    </possibleValues>
+                </feature>
+                <feature name="repriseID">
+                    <possibleValues default="non">
+                        <value>oui</value>
+                        <value>non</value>
+                    </possibleValues>
+                </feature>
+                <feature name="autoref">
+                    <possibleValues default="non">
+                        <value>oui</value>
+                        <value>non</value>
+                    </possibleValues>
+                </feature>
+                <feature name="commentaire">
+                    <value type="free" default="" />
+                </feature>
+            </featureSet>
+        </type>
+        <type name="Text" groups="mention">
+            <featureSet/>
+        </type>
+        <type name="Signature" groups="mention">
+            <featureSet/>
+        </type>
+    </units>
+    <relations>
+        <type name="MentionOfText" oriented="true" groups="mention">
+            <featureSet/>
+        </type>
+    </relations>
+    <schemas/>
+</annotationModel>

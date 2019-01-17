@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>207754.xml</title>
+        <bibl>Ho-Dac, L.-M. and Laippala V. (2017) Le corpus WikiDisc : ressource pour la caractérisation des discussions en ligne. In Wigham, Ciara R.; Ledegen, Gudrun (eds). Corpus de communication médiée par les réseaux : construction, structuration, analyse., l'Harmattan, pp.107-124, ISBN 978-2-343-11212-1. idHal : halshs-01488029</bibl>
+        <respStmt>
+          <resp>récupération du fichier depuis la sauvegarde globale et encodage la TEI P5</resp>
+          <name>Lydia-Mai Ho-Dac</name>
+          <email>hodac_at_univ-tlse2.fr</email>
+        </respStmt>
+        <sponsor>
+          <orgName>CORLI</orgName>
+          <note>Le consortium CORLI est né du rapprochement des deux consortiums de linguistique de la TGIR Huma-Num : Corpus Écrits et Corpus Oraux et Multimodaux (IRCOM). Leurs membres ont souhaité poursuivre leurs activités dans le cadre d’un nouveau programme scientifique autour des notions de Langues, Corpus et Interactions. Le consortium CORLI est porté par l’Institut de Linguistique Française (CNRS – FR 2393)</note>
+        </sponsor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <orgName>CLLE-ERSS</orgName>
+          <address>
+            <street>5 Allées A. Machado</street>
+            <postCode>31058</postCode>
+            <settlement>Toulouse Cedex 9</settlement>
+          </address>
+        </publisher>
+        <date when="Sun Jul  8 13:40:35 2018"/>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by-sa/3.0/">
+            <p>Following Wikipedia.fr recommendation this corpus (and all its related contents) can be freely distributed and shared subject only to attribution, and share alike. How to reference / cite this contents is given in the titleSmt</p>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <analytic>
+            <author>Wikipedia</author>
+            <title>Discussion:Son musical</title>
+            <idno type="Wikipedia">207754</idno>
+          </analytic>
+          <monogr>
+            <title>Wikipedia</title>
+            <imprint>
+              <date>2018-01-01</date>
+              <publisher>Wikipedia</publisher>
+              <pubPlace>http://dumps.wikimedia.org/frwiki/frwiki-20180101-pages-meta-current.xml.bz2</pubPlace>
+            </imprint>
+          </monogr>
+        </biblStruct>
+      </sourceDesc>
+      <notesStmt>
+        <note>This text is the current (2018-01-01) talk page associated with the French Wikipedia article <name type="article">son_musical</name></note>
+      </notesStmt>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc></projectDesc>
+      <classDecl>
+        <taxonomy>
+          <bibl>All the category informations are those occurring in the header of the talk page</bibl>
+          <category type="genre">
+            <catDesc type="main">discussion</catDesc>
+            <catDesc type="sub">Wikipedia talk page</catDesc>
+          </category>
+          <category type="Wikipedia article portal">
+            <catDesc>art,,,,,,,,,,,</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fr">french</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <titlePage>
+        <docTitle>Son musical</docTitle>
+      </titlePage>
+    </front>
+    <body>
+      <div id="1" level="1">
+        <head/>
+        <post bot="no" id="1" indentLevel="0" num="1" when="2005-03-02T16:13" who="Lucronde">
+          <p id="1">La version primitive de cet article comportait certaines redondances avec d'autres définitions déjà présentes sur Wikipedia. De plus, un nouvel article acoustique musicale est en cours d'élaboration qui permet à présent de rentrer dans le détail des caractéristiques à la fois physiques et musicales d'un son musical. La version proposée ici essaie de tenir compte de ces éléments. --<signed><ref target="https://fr.wikipedia.org/wiki/Lucronde"><name>Lucronde</name></ref> LR <date>2 mar 2005 à 16:13 (CET)</date></signed></p>
+        </post>
+      </div>
+    </body>
+  </text>
+</TEI>

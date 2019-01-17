@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>405394.xml</title>
+        <bibl>Ho-Dac, L.-M. and Laippala V. (2017) Le corpus WikiDisc : ressource pour la caractérisation des discussions en ligne. In Wigham, Ciara R.; Ledegen, Gudrun (eds). Corpus de communication médiée par les réseaux : construction, structuration, analyse., l'Harmattan, pp.107-124, ISBN 978-2-343-11212-1. idHal : halshs-01488029</bibl>
+        <respStmt>
+          <resp>récupération du fichier depuis la sauvegarde globale et encodage la TEI P5</resp>
+          <name>Lydia-Mai Ho-Dac</name>
+          <email>hodac_at_univ-tlse2.fr</email>
+        </respStmt>
+        <sponsor>
+          <orgName>CORLI</orgName>
+          <note>Le consortium CORLI est né du rapprochement des deux consortiums de linguistique de la TGIR Huma-Num : Corpus Écrits et Corpus Oraux et Multimodaux (IRCOM). Leurs membres ont souhaité poursuivre leurs activités dans le cadre d’un nouveau programme scientifique autour des notions de Langues, Corpus et Interactions. Le consortium CORLI est porté par l’Institut de Linguistique Française (CNRS – FR 2393)</note>
+        </sponsor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <orgName>CLLE-ERSS</orgName>
+          <address>
+            <street>5 Allées A. Machado</street>
+            <postCode>31058</postCode>
+            <settlement>Toulouse Cedex 9</settlement>
+          </address>
+        </publisher>
+        <date when="Sun Jul  8 13:49:27 2018"/>
+        <availability>
+          <licence target="http://creativecommons.org/licenses/by-sa/3.0/">
+            <p>Following Wikipedia.fr recommendation this corpus (and all its related contents) can be freely distributed and shared subject only to attribution, and share alike. How to reference / cite this contents is given in the titleSmt</p>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <analytic>
+            <author>Wikipedia</author>
+            <title>Discussion:Françafrique (livre)</title>
+            <idno type="Wikipedia">405394</idno>
+          </analytic>
+          <monogr>
+            <title>Wikipedia</title>
+            <imprint>
+              <date>2018-01-01</date>
+              <publisher>Wikipedia</publisher>
+              <pubPlace>http://dumps.wikimedia.org/frwiki/frwiki-20180101-pages-meta-current.xml.bz2</pubPlace>
+            </imprint>
+          </monogr>
+        </biblStruct>
+      </sourceDesc>
+      <notesStmt>
+        <note>This text is the current (2018-01-01) talk page associated with the French Wikipedia article <name type="article">francafrique_livre</name></note>
+      </notesStmt>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc></projectDesc>
+      <classDecl>
+        <taxonomy>
+          <bibl>All the category informations are those occurring in the header of the talk page</bibl>
+          <category type="genre">
+            <catDesc type="main">discussion</catDesc>
+            <catDesc type="sub">Wikipedia talk page</catDesc>
+          </category>
+          <category type="Wikipedia article portal">
+            <catDesc>,geographie,,,,,,,,,,</catDesc>
+          </category>
+          <category type="discipline">
+            <catDesc>Politique française</catDesc>
+            <catDesc>Afrique</catDesc>
+          </category>
+          <category type="rate">
+            <catDesc>?</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fr">french</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <titlePage>
+        <docTitle>Françafrique (livre)</docTitle>
+      </titlePage>
+    </front>
+    <body>
+      <div id="2" level="1">
+        <head>Message du principal contribut(rice-eur)</head>
+        <post bot="no" id="3" indentLevel="0" num="1" when="unknown" who="Esperanza36">
+          <p id="1"> Je vous propose la rédaction suivante. Mais n'hésitez pas à compléter ou corriger selon. Mais il etait nécessaire de développer.Utilisateur:<signed><name>Esperanza36</name></signed></p>
+        </post>
+        <post bot="no" id="4" indentLevel="1" num="2" when="2005-10-01T22:48" who="Mutima">
+          <p id="1">Merci ! --<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Mutima"><name>Mutima</name></ref><date>1 octobre 2005 à 22:48 (CEST)</date></signed></p>
+        </post>
+      </div>
+      <div id="3" level="1">
+        <head>STOP !</head>
+        <post bot="no" id="5" indentLevel="0" num="1" when="2005-10-11T10:22" who="Powermonger">
+          <p id="1"> Wikipédia n'est pas là pour servir la soupe à Survie et à ses potes de la LCR.</p>
+          <p id="2"> Votre gourou FXV ne vous à sans doute pas dis qu'on ne peut être juge et parti. En plus, je vous soupçonne FORTEMENT de faire tout ça pour booster les ventes de livres de FXV sur lesquelles votre association (en difficultés financières) touche des droits d'auteur, et pour recruter de nouveaux adeptes.</p>
+          <p id="3"> On n'a jamais présenté un livre ou un concept de façon aussi tendancieuse dans wikipédia. Je vous suggère d'allez voir d'autres articles traitant d'essais politiques. Ou alors concentrez vous sur la photographie...  <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Powermonger"><name>Powermonger</name></ref><date>11 octobre 2005 à 10:22 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="6" indentLevel="1" num="2" when="unknown" who="esperanza36">
+          <p id="1">S'il te plait, je ne suis ni membre de Survie ni membre de la LCR donc je te  prie de te calmer dans tes attaques. Si ta version de wikipedia est de dénigrer des contributeurs qui prennent du temps pour développer des concepts complexes, alors nous ne partageons pas la meme vision de wikipedia. Je trouve ton commentaire insultant et indécent. Si tu ne partages pas ce point de vue, alors rajoute du conditionnel à certaines phrases utilisées. Tu peux rajouter des paragraphes sur la critique du concept de francafrique. J'ai pris du temps à rédiger cette contribution, c'est pas pour me prendre ces remarques.. "Je vous soupconne fortement de faire ca pour booster les ventes des livres de FXV" : J'ALLUCINE sur cette remarque. Merci donc à l'avenir de ne pas manquer de respect. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:esperanza36"><name>esperanza36</name></ref></signed></p>
+        </post>
+        <post bot="no" id="7" indentLevel="1" num="3" when="unknown" who="anonyme">
+          <p id="1">Je parle de Mutima</p>
+        </post>
+        <post bot="no" id="8" indentLevel="2" num="4" when="unknown" who="esperanza36">
+          <p id="1">Sauf qu'il se trouve que je suis le principal auteur de cette contribution. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:esperanza36"><name>esperanza36</name></ref></signed></p>
+        </post>
+        <post bot="no" id="9" indentLevel="3" num="5" when="2005-10-11T21:19" who="Mutima">
+          <p id="1">Je confirme--<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Mutima"><name>Mutima</name></ref><date>11 octobre 2005 à 21:19 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="10" indentLevel="3" num="6" when="2005-10-11T16:30" who="Mutima">
+          <p id="1">Rien n'empêche d'ouvrir un chapitre de critique du concept de françafrique. Mais évidemment il faufrait adopter un ton moins passionnel que celui de Powermonger car ce ne serait pas crédible. Le terme de françafrique est adopté par suffisamment de chercheurs, historiens, journalistes pour qu'il soit expliqué ici. Si on retire toutes les références aux auteurs sur Wikipédia pour ne pas "booster leurs ventes"... que restera-t-il de cette encyclopédie ? C'est absurde. Quant aux difficultés financières de Survie il serait intéressant que vous nous donniez vos sources ? Avez-vous eu accès à ses comptes par exemple ?--<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Mutima"><name>Mutima</name></ref><date>11 octobre 2005 à 16:30 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="11" indentLevel="1" num="7" when="unknown" who="anonyme">
+          <p id="1">Difficulté sur marquée sur le site même de l'association http://www.survie-france.org/article.php3?id_article=318. Mal informé Monsieur le Président de Survie Bas Rhin ?</p>
+        </post>
+        <post bot="no" id="12" indentLevel="0" num="8" when="2005-10-11T18:06" who="Powermonger">
+          <p id="1">
+            <signed>
+              <ref target="https://fr.wikipedia.org/wiki/Utilisateur:Powermonger">
+                <name>Powermonger</name>
+              </ref>
+              <date>11 octobre 2005 à 18:06 (CEST)</date>
+            </signed>
+          </p>
+        </post>
+        <post bot="no" id="13" indentLevel="0" num="9" when="2005-10-11T20:01" who="Mutima">
+          <p id="1"> Je vous mets au défi de montrer que Survie a des difficultés financières jusqu'à aujourd'hui. Depuis 20 ans Survie a toujours équilibré son budget, parfois in extrémis et de justesse avec des appels aux militants. Prouvez le contraire.--<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Mutima"><name>Mutima</name></ref><date>11 octobre 2005 à 20:01 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="14" indentLevel="1" num="10" when="2005-11-03T06:34" who="Poppy">
+          <p id="1">Je partage tout à fait l'avis de RRR_Utilisateur:Powermonger_RRR Powermonger. Vous voules faire de la propagande, c'est votre droit, mais pas sur wikipedia. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Poppy"><name>Poppy</name></ref><date>3 novembre 2005 à 06:34 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="15" indentLevel="2" num="11" when="2005-11-24T14:34" who="Le survivant">
+          <p id="1">Généralement ceux qui font de la propagande n'avancent pas à visage découvert. Si Mutima disait partout il faut adhérer à Survie etc... je comprendrais. Mais là, il dit voilà mes attachements, mes choix pour que vous puissiez juger pourquoi je dis ceci ou cela. C'est le contraire de la propagande. Bon il est vexé, il a blanchi sa page utilisateur. Mais on la trouve dans l'historique. Voir en particulier cette page  : Utilisateur:Emmanuel Cattier/Lettre. L'accuser de propagande est abusif, sauf si vous estimez que la neutralité exigerait qu'il parle comme vous. Pourquoi n'aurait-il pas le droit de s'exprimer aussi ? (Utilisateur Emmanuel Cattier et Mutima renvoient à la même page utilisateur http://fr.wikipedia.org/w/index.php?title=Utilisateur:Emmanuel_Cattieroldid=4186387)--<signed><ref target="https://fr.wikipedia.org/wiki/Le survivant"><name>Le survivant</name></ref> Le Survivant <date>24 novembre 2005 à 14:34 (CET)</date></signed></p>
+        </post>
+      </div>
+      <div id="4" level="1">
+        <head>Que les contradicteurs amènent des sources et non des jugements sans fondement</head>
+        <post bot="no" id="16" indentLevel="0" num="1" when="2005-11-03T10:32" who="Mutima">
+          <p id="1"> Je vois qu'un vent se lève contre les articles qui tournent autour de Survie.</p>
+          <p id="2"> Bizarrement cela commence en même temps que la grave mise en cause par le pouvoir politique français du comportement de l'armée française en Afrique. Je ne pense pas que ce soit un hasard. Il est probable que cette sanction contre le général Henri Poncet soit secrètement attribuée par des milieux militaires et françafricains aux campagnes d'associations civiles en France et en Afrique. Il est évident qu'en France la première visée est Survie dont François-Xavier Verschave fût président jusqu'à sa mort en juin dernier et qui fût le créateur du concept de françafrique. Je suis très inquiet pour les militants d'associations civiles en Afrique francophone.</p>
+          <p id="3"> Que ceux qui estiment que la françfrique est un concept qui doit être défini autrement que par son créateur en créent un autre. Mais ils ne peuvent pas déformer le sens qu'il lui a donné. Ce serait complètement NPOV. A qui viendrait l'idée de dire que tel ou tel concept défini par un sociologue ou un philosophe doit être différent de sa définition initiale ? On peut contester le concept et avancer des éléments contre lui dans ce cas c'est un débat, mais on ne peut pas dénaturer sa source en tant que telle. Bien évidemment si la définition du concept  évolue dans le temps, il faudra noter cette évolution. Mais cette évolution ne pourra pas censurer sa définition initiale.--<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Mutima"><name>Mutima</name></ref><date>3 novembre 2005 à 10:32 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="17" indentLevel="1" num="2" when="2005-11-03T19:22" who="Poppy">
+          <p id="1">Non, tu confonds tout. C'est toi qui fait des affirmations, c'est donc à toi de les prouver. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Poppy"><name>Poppy</name></ref><date>3 novembre 2005 à 19:22 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="18" indentLevel="2" num="3" when="2005-11-03T23:27" who="Mutima">
+          <p id="1">Si tu es si sûr de toi, expliques-nous avec des sources d'où vient le terme « françafrique » selon toi.--<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Mutima"><name>Mutima</name></ref><date>3 novembre 2005 à 23:27 (CET)</date></signed></p>
+        </post>
+      </div>
+      <div id="5" level="1">
+        <head>Neutralisation</head>
+        <post bot="no" id="19" indentLevel="0" num="1" when="2005-11-09T08:44" who="Powermonger">
+          <p id="1"> Poppy,</p>
+          <p id="2"> Le créateur de l'article (Mutima) m'a affirmé que c'était un livre de Verschave et non un concept (voir ma page de  discussion). D'après moi, cet article est à effacer et a recommencer comme livre. Ni plus, ni moins.</p>
+          <p id="3"> Sans ça, la françafrique, comme concept, dépasse de beaucoup la lorgnette Survie. Notamment, grace à l'aide au developpement et aux rallonges de l'état français qui evitent bcp de morts en afrique, aux centres culturels français qui sont les seuls endroits ou un africain, même pauvre, peux avoir accés à des livres, et bien d'autres choses (réhabilitation, investissements, etc...).</p>
+          <p id="4">
+            <signed>
+              <ref target="https://fr.wikipedia.org/wiki/Utilisateur:Powermonger">
+                <name>Powermonger</name>
+              </ref>
+              <date>9 novembre 2005 à 08:44 (CET)</date>
+            </signed>
+          </p>
+        </post>
+        <post bot="no" id="20" indentLevel="1" num="2" when="unknown" who="Poppy">
+          <p id="1">Oui et non. Je le cite " Françafrique désigne bien selon son auteur les relations politiques et économiques mafieuses entre la France et l' Afrique". Donc c'est plus un concept selon moi. Pour le coup je serais assez d'accord avec lui (c'est un comble). Françafrique est le concept inventé par cette association ce qui n'a rien à voir avec qqc du genre Relations entre la France et les pays africains qui correspond beaucoup plus à ce que tu veux y mettre. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Poppy"><name>Poppy</name></ref></signed> 10:08, 9 novembre 2005 (CET)</p>
+        </post>
+        <post bot="no" id="21" indentLevel="0" num="3" when="unknown" who="Powermonger">
+          <p id="1"> C'est donc oublier que Houphouet Boigny est l'auteur de ce terme alors. Je pense qu'il faut préciser en tête d'article qu'il s'agit de la doctrine de l'association Survie (et consort). <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Powermonger"><name>Powermonger</name></ref></signed> 10:20, 9 novembre 2005 (CET)</p>
+        </post>
+        <post bot="no" id="22" indentLevel="1" num="4" when="2005-11-09T11:15" who="Poppy">
+          <p id="1">Il faudrait effectivement savoir si Houphouet Boigny a "vraiment" utilisé le terme (plus d'une ou deux fois). Tout à fait d'accord pour mentionner Survie en tête d'article. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Poppy"><name>Poppy</name></ref><date>9 novembre 2005 à 11:15 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="23" indentLevel="0" num="5" when="unknown" who="Powermonger">
+          <p id="1"> Concernant l'histoire de la LCR, le wikipedien, c'est moi, et quelque part il y a un lien qui prouve ça.</p>
+          <p id="2"> L'histoire de Houphouet, c'est Mutima qui l'affirme et je crois qu'il a raison, mais cela ne devait pas vraimment avoir le même sens dans la bouche du "vieux".</p>
+          <p id="3"> On pourrait peut être créer une page homonymie sur françafrique :</p>
+          <list>
+            <item id="4"> françafrique (livre)</item>
+            <item id="5"> françafrique (doctrine survie)</item>
+            <item id="6"> françafrique (relation privilègiée entre la france et l'afrique)</item>
+          </list>
+          <p id="7"> Qu'en dis tu ?</p>
+          <p id="8"><signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Powermonger"><name>Powermonger</name></ref></signed> 11:43, 9 novembre 2005 (CET)</p>
+        </post>
+        <post bot="no" id="24" indentLevel="0" num="6" when="unknown" who="Esperanza36">
+          <p id="1"> C'est absurde. Si tu veux parler des relations privilégiée entre la France et l'Afrique, soit tu parles de la Françafrique, soit de la France-Afrique. Mais la confusion entre les termes pour masquer des différentes opinions me parait malhonete idéologiquement.</p>
+          <p id="2"> Pour ce qu'a dit Houphouet, il parlait lui de la France-Afrique, au sens auquel tu l'entends. Mais cela a servi de base et d'illustration au concept de Francafrique (qui est évidemment plus qu'un bouquin de FXV)</p>
+          <p id="3"><signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Esperanza36"><name>Esperanza36</name></ref></signed> 11:43, 9 novembre 2005 (CET)</p>
+        </post>
+        <post bot="no" id="25" indentLevel="0" num="7" when="unknown" who="Felipeh">
+          <p id="1"> La Françafrique, c'est effectivement les bons cotés comme les mauvais cotés. Il faut assumer les deux. Le terme est autant d'Houphouet que de Verschave. Coopération et détournement, des braves types et des pourris: c'est une configuration qui existe ailleurs. Et quant à l'un des aspects de la Françafrique de Verschave qui est la Mafiafrique et qui existe certainement, elle est plus le fait d'une criminalité (en col blanc ou organisé comme on voudra) qui dépasse le cadre national puisqu'elle implique de nombreuses nationalités extra-africaines au même titre que divers réseaux français et/ou africains. Comme ces affaires n'impliquent qu'une minorité d'oligarques, on peut se demander s'il ne s'agit pas plutôt d'une version récente et globalisée de la lutte des classes (non je ne suis pas marxiste!) au lieu d'un crime raciste.<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Felipeh"><name>Felipeh</name></ref></signed> 03:05, 11 novembre 2005 (CET)</p>
+        </post>
+        <post bot="no" id="26" indentLevel="1" num="8" when="unknown" who="Powermonger">
+          <p id="1">La françafrique décrite dans l'article est une idéologie. C'est un ensemble d'opinions, sujettes à discussion et polémique, qui constituent la base idéologique de Survie et consort.</p>
+          <p id="2"> Ces opinions sont issues d'un livre qui s'appelait "françafrique". Il peut y avoir des divergences entre le livre et l'idéologie et elles risquent de s'accroitre dans le temps.</p>
+          <p id="3"> Enfin, la françafrique, c'est aussi un terme qu'à utilisé Houphouet-Boigny pour décrire les bons cotés de cette relation.</p>
+          <p id="4"> Pour faire une analogie, la bible n'est pas le catholiscisme et la religion n'est pas la bible.</p>
+          <p id="5"> C'est pourquoi il me semble qu'il faut séparer les trois notions.</p>
+          <p id="6"><signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Powermonger"><name>Powermonger</name></ref></signed> 11:43, 12 novembre 2005 (CET)</p>
+        </post>
+        <post bot="no" id="27" indentLevel="0" num="9" when="2005-11-12T17:41" who="Felipeh">
+          <list>
+            <item id="1">*Séparer les différentes notions ne ferait qu'accentuer la difficulté de compréhension de liens qui, quoi qu'on en dise resteront toujours ambigus et contradictoire. Il faut évidemment parler des "bons cotés" pour rétablir la balance (peut-être insister sur le rôle des ONG, les Français expatriés, les immigrés, les coopérations techniques et culturelles), mais on ne peut nier les réseaux politico-affairistes, les détournements d'aide au développement et les interventions contestables, qui ont donné une image contestable de la Françafrique. Les bons comme les mauvais cotés ont les mêmes origines issues de la colonisation mais après c'est un autre débat<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Felipeh"><name>Felipeh</name></ref><date>12 novembre 2005 à 17:41 (CET)</date></signed></item>
+          </list>
+        </post>
+      </div>
+      <div id="6" level="1">
+        <head>La françafrique est le mauvais côté de la France-Afrique</head>
+        <post bot="no" id="28" indentLevel="0" num="1" when="unknown" who="Le survivant">
+          <p id="1"> Vous avez une homnymie sur France-Afrique qui renvoit à deux articles :</p>
+          <list>
+            <item id="2">France-Afrique (diplomatie)</item>
+            <item id="3">Françafrique</item>
+          </list>
+          <p id="4"> Est-ce que cela ne suffit pas à clarifier ce débat ? On développre dans France-Afrique (diplomatie) ce qui est "constructif" et on renvoit à l'article Françafrique ce qui est "négatif" et déjà abondamment décrit par Verschave et ceux qui emploient ce terme... A ce sujet je trouve que la modification de Poppy dans l'homonymie est réductrice. Il s'agit bien des relations mafieuses selon Verschave et non pas des éventuelles relations contructives. Certes c'est bien Survie qui a développé ce concept, mais c'est bien un concept et un concept idéologique comme dit Powermonger : il décrit l'idéologie de la Françafrique, qu'il assimile à l'idéologie de Survie, alors que Survie tient ce discours pour contester cette idéologie.--<signed><ref target="https://fr.wikipedia.org/wiki/Le survivant"><name>Le survivant</name></ref></signed> Le Survivant 21:59, 12 novembre 2005 (CET)</p>
+        </post>
+        <post bot="no" id="29" indentLevel="2" num="2" when="2005-11-14T14:07" who="Poppy">
+          <p id="1">J'ai supprimé "mafieuses" dans l'homonymie car c'est une prise de position. La phrase originale laissait entendre que les relations entre la France et l'Afrique étaient mafieuses, ce qui ne correspond pas à la neutralité de point de vue de Wikifr. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Poppy"><name>Poppy</name></ref><date>14 novembre 2005 à 14:07 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="30" indentLevel="0" num="3" when="2005-11-13T13:53" who="Felipeh">
+          <list>
+            <item id="1">*Il suffit de lire couramment la presse pour constater que le terme de Françafrique renvoit aux deux aspects indistinctement et que le terme "France-Afrique" n'est quasiment pas utilisé. La notion de Françafrique n'appartient plus à Survie, puisqu'il a largement été popularisé, avec ses défenseurs, ses détracteurs et ses observateurs neutres. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Felipeh"><name>Felipeh</name></ref><date>13 novembre 2005 à 13:53 (CET)</date></signed></item>
+          </list>
+        </post>
+        <post bot="no" id="31" indentLevel="0" num="4" when="2005-11-13T13:55" who="Felipeh">
+          <p id="1"> Si on sépare les "bons" et les "mauvais" cotés, tant qu'on y est, autant faire pareil avec la colonisation, ou le marxisme, le capitalisme, etc. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Felipeh"><name>Felipeh</name></ref><date>13 novembre 2005 à 13:55 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="32" indentLevel="2" num="5" when="2005-11-14T08:38" who="Powermonger">
+          <p id="1">Je vous fais la proposition suivante :</p>
+          <list>
+            <item id="2"> Un article spécifique -Françafrique (livre)- pour mettre le livre uniquement (ISBN, éditeur, auteur, etc...)</item>
+            <item id="3"> Un article -Françafrique (relations France-Afrique)-, qui décrit les relations entre la France et les pays africains depuis les indépendances, bons et mauvais cotés, et qui dépasse le cadre de Survie.</item>
+            <item id="4"> Les thèses "non neutres" propres à Survie restent décrites dans l'article Survie.</item>
+          </list>
+          <p id="5">
+            <signed>
+              <ref target="https://fr.wikipedia.org/wiki/Utilisateur:Powermonger">
+                <name>Powermonger</name>
+              </ref>
+              <date>14 novembre 2005 à 08:38 (CET)</date>
+            </signed>
+          </p>
+        </post>
+        <post bot="no" id="33" indentLevel="0" num="6" when="2005-11-14T11:50" who="Felipeh">
+          <list>
+            <item id="1"> Il faut au moins un article avec les deux aspects. Ca me semblerait plus équilibré. Les thèses "non neutres" sont à la fois du coté des défenseurs et des détracteurs. La preuve n'a pas encore faite que les relations françafricaines ont été soit bénéfiques soit néfastes. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Felipeh"><name>Felipeh</name></ref><date>14 novembre 2005 à 11:50 (CET)</date></signed></item>
+          </list>
+        </post>
+        <post bot="no" id="34" indentLevel="2" num="7" when="2005-11-14T12:21" who="Powermonger">
+          <p id="1">Par thèses non neutres, je voulais plutôt parler des trucs du genre "l'implication de Turquoise dans les massacres aux rwanda".</p>
+          <p id="2"> Je pense qu'il ne faut laisser dedans que des faits et éviter l'aspect "théories nouvelles".</p>
+          <p id="3"> Par exemple, il vaut mieux "la France est intervenue au Rwanda" plutôt que "la France est intervenue au Rwanda et a sauvé des milliers de gens" ou que "la France est intervenue au Rwanda et a collaboré au génocide".</p>
+          <p id="4"> Ainsi, on conserve la neutralité de PdV et on évite la polémique.</p>
+          <p id="5"> Et pourquoi ne pas le faire par pays ?</p>
+          <p id="6"> Qu'en penses tu ? <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Powermonger"><name>Powermonger</name></ref><date>14 novembre 2005 à 12:21 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="35" indentLevel="0" num="8" when="2005-11-14T12:39" who="Felipeh">
+          <list>
+            <item id="1">* Le faire par pays africains serait une bonne idée (si elle suit une approche thématique générale: culture, économie, armée, etc.). En ce qui concerne l'implication trouble de la France, certaines sont avéré, une commission de l'Assemblée nationale l'a montré en ce pour le Rwanda, sans aller pour autant à la complicité de génocide (c'est plutôt, d'après ce que j'ai compris, complicité avant et non-assistance à personnes en danger pendant, Mitterrand a réellement dit sur le sujet: "Mille morts là-bas, c'est comme un mort en Europe"). On peutt faire comme ceci: "La France est intervenue au Rwanda. Son action a été contestée parce que 1); parce que 2); etc. (sources hors Survie à l'appui). Il y a d'autre affaires sombres bien documentés, comme le rôle d'Elf notamment au Congo-Brazzaville, ou le soutien à des dictateurs comme Mobutu ou Eyadéma, le rôle dans la guerre du Biafra, les réseaux de mercenaires, le PMU gabonais, l'Angolagate, etc. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Felipeh"><name>Felipeh</name></ref><date>14 novembre 2005 à 12:39 (CET)</date></signed></item>
+          </list>
+        </post>
+        <post bot="no" id="36" indentLevel="2" num="9" when="2005-11-14T14:25" who="Powermonger">
+          <p id="1">Je pense qu'on est bien sur la même longueur d'onde. Je ne peux pas intervenir directement pour cause d'arbitrage. Je te laisse donc proposer un plan et créer la page d'homonymie ad-hoc (pour le livre)... <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Powermonger"><name>Powermonger</name></ref><date>14 novembre 2005 à 14:25 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="37" indentLevel="0" num="10" when="2005-11-14T19:15" who="Felipeh">
+          <list>
+            <item id="1">Je propose ce plan non exhaustif (ma participation à la rédaction ne serait que ponctuelle):</item>
+          </list>
+          <p id="2"> "'1- Introduction : origine de la Françafrique"'</p>
+          <p id="3"> a) l’héritage colonial (et de la guerre froide)</p>
+          <p id="4"> b) liens étatiques et expatriés</p>
+          <p id="5"> "'2- Champs d’actions de la Françafrique"'</p>
+          <p id="6"> a) l’armée</p>
+          <p id="7"> b) la diplomatie</p>
+          <p id="8"> c) la francophonie</p>
+          <p id="9"> d) le commerce</p>
+          <p id="10"> e) l’aide au développement</p>
+          <p id="11"> "'3- Le débat autour de la Françafrique"'</p>
+          <p id="12"> a) approches divergentes : Smith  Verschave</p>
+          <p id="13"> b) les réseaux politiques et affairistes (Foccart, Elf, etc.)</p>
+          <p id="14"> c) mercenaires, interventions militaires et soutien de dictatures</p>
+          <p id="15"> d) aspects économiques contestables</p>
+          <p id="16"> e) rivalités anglo-saxonnes</p>
+          <p id="17"> f) dérives mafieuses et responsabilités africaines</p>
+          <p id="18"> "'4- La Françafrique pays par pays"'</p>
+          <p id="19"> Angola, Togo, RDC, Rwanda, Sénégal, Côte d’Ivoire, Cameroun, Tchad, Comores, Gabon, Congo, Burkina Faso, Nigéria, etc.</p>
+          <p id="20">
+            <signed>
+              <ref target="https://fr.wikipedia.org/wiki/Utilisateur:Felipeh">
+                <name>Felipeh</name>
+              </ref>
+              <date>14 novembre 2005 à 19:15 (CET)</date>
+            </signed>
+          </p>
+        </post>
+        <post bot="no" id="38" indentLevel="1" num="11" when="2005-11-15T08:17" who="Powermonger">
+          <p id="1">Le plan est bien (enfin, d'après moi).</p>
+          <p id="2"> Ceci dit, il manque:</p>
+          <list>
+            <item id="3"> L'action culturel (c'est un des aspects les plus visibles)</item>
+            <item id="4"> La coopération (il y a des coopérants dans tous les ministères ou presque)</item>
+            <item id="5"> Les rivalités chinoises (bcp plus que la rivalité américaine)</item>
+            <item id="6"> Les investissements français (les Français sont un des seuls investisseurs en Afrique, car très risqué)</item>
+            <item id="7"> La diaspora (africaine en France, française en Afrique)</item>
+          </list>
+          <p id="8"> Maintenant, bon courage... <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Powermonger"><name>Powermonger</name></ref><date>15 novembre 2005 à 08:17 (CET)</date></signed></p>
+        </post>
+      </div>
+      <div id="7" level="1">
+        <head>Je mets au défi quiconque de trouver dans les médias ou dans des livres l'utilisation du mot françafrique dans un sens positif</head>
+        <post bot="no" id="39" indentLevel="0" num="1" when="2005-11-15T21:06" who="Le survivant">
+          <p id="1"> Ce que la petite équipe est en train de préparer est complètement NPOV. Jamais on a employé le mot françafrique dans un sens positif pour désigner les relations entre la France et l'Afrique. C'est un contresens. C'est si énorme qu'on se demande bien ce qui pousse cette équipe à agir ainsi. --<signed><ref target="https://fr.wikipedia.org/wiki/Le survivant"><name>Le survivant</name></ref> Le Survivant <date>15 novembre 2005 à 21:06 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="40" indentLevel="0" num="2" when="2005-11-15T23:36" who="Felipeh">
+          <list>
+            <item id="1">Quand on parle des liens entre la France et l'Afrique dans les médias, on en parle plutôt en bien ou en mal? Ceux qui parlent positivement de ces liens n'ont pas de terme précis pour les décrire (mais Houphouet avait un vocabulaire semblable, et faire une différence entre France-Afrique et Françafrique me semble débile, on parle de la même chose, mais pas de la même façon, est-ce qu'on va faire deux pages différentes pour spationaute et cosmonaute? ou un article avec une thèse et un autre avec l'antithèse?) De toute façon, si liens positifs il y a, ils n'auraient pas existé sans une emprise coloniale concomitante à l'édification de la Françafrique "sombre". L'un n'existerait pas sans l'autre. Alors c'est vrai, on parle de Françafrique (et c'est normal avec ce qu'on a su du Zaire, du Rwanda, de la Cote d'Ivoire) de manière quasiment toujours négative (toutefois Le Monde dans sa nécro de Verschave le qualifie de "détracteur de la Françafrique" ce qui signifie qu'il reconnait son existence mais compte tenu des rapports Survie/Smith, il n'a pas le même regard sur la chose), mais pourquoi ignorer les contextes autres que strictement négatifs et les phénomènes indissociables, comme l'établissement de civils français en Afrique qui ne sont pas systématiquement néfaste, mais ne seraient sans doute pas là sans le contexte de la Françafrique. Tous ces phénomènes sont imbriqués, dans ces liens particuliers et complexes, qu'à défaut on ne peut définir que comme françafricains. Le rôle d'une encyclopédie est aussi de tenir compte de l'évolution des mentalités, et à mon (humble) avis, la majorité des gens qui s'intéressent aux relations entre la France et l'Afrique considèrent qu'elles considèrent des salopards autant que des humanistes. Schématiquement, ce sont ces deux approches qui façonnent ces relations et l'image que chacun a des autres. Est-ce-qu'il n'y a que des salopards chez les Français au service de l'Etat (ou pas) qui travaillent avec l'Afrique? Surement pas. Est-ce-que c'est parce que les médias n'en parlent pas qu'ils n'existent pas? Non plus. D'après moi, on doit traiter les bons et les mauvais cotés ensemble, et il n'y a que le terme Françafrique (inventé apparemment à la fois par Houphouet et Verschave) qui peut aujourd'hui les rassembler. Après si on dit qu'il n'y a eu que des mauvais cotés, c'est autre chose, et d'après moi c'est une malhonneteté intellectuelle. Ceci dit, pour mettre les choses au point, je voudrais préciser, et cela n'est que mon humble avis, que selon moi, depuis les indépendances l'ingérence de l'Etat ou de réseaux français (mais pas seulement français) a eu une incidence catastrophique sur le développement politique et économique de l'Afrique, et que sous couvert de liens paternalistes on a pillé sans vergogne ce continent, avec le concours de nombreux collaborateurs autochotones, et plusieurs politiques/affairistes/militaires ont des milliers de morts sur la conscience, mais cela ne suffit pas à condamner en bloc l'Etat français (pour moi ce n'est pas l'Etat qui a érigé un système mais un système qui s'est imposé à l'Etat, qui a plusieurs chats à fouetter). Pour terminer, je mets au défit quinconque de démontrer que mon plan a une connotation plutôt favorable pour le rôle de la France, il permet même au contraire de la charger. J'ai dit les choses en vrac alors je sais pas si j'ai tout dit, mais suis à disposition pour poursuivre discussion. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Felipeh"><name>Felipeh</name></ref><date>15 novembre 2005 à 23:36 (CET)</date></signed></item>
+          </list>
+        </post>
+        <post bot="no" id="41" indentLevel="2" num="3" when="2005-11-16T09:08" who="Powermonger">
+          <p id="1">On ne parle jamais de ce qui va bien, mais toujours de ce qui va mal dans les médias.</p>
+          <p id="2"> La françafrique avait son ardent défenseur et promoteur africain : Houphouet Boigny.</p>
+          <p id="3"> Par ailleurs, pour "l'influence catastrophique", l'Afrique anglophone (ou sous mandat britannique) plutôt préservée de l'influence française ne s'en est pas mieux sortie (voire ça a été pire). C'est donc clairement non neutre de généraliser. Des massacres ont aussi été évités en RCA par les interventions françaises.</p>
+          <p id="4"> Le premier point commun aux malheurs de l'Afrique, c'est l'Afrique.</p>
+          <p id="5"> Si on compare le Nigéria (plutôt sans influence) au Cameroun (influence française), ce qui est très comparable puisqu'il y a de nombreuses ethines communes et la même structure religieuse, vous noterez le développement plus avancé du Cameroun au point de vue économique ainsi que la sécurité et la stabilité de ce dernier. Il faut donc être extrèmement prudent dans les jugements.</p>
+          <p id="6"> D'ailleurs, la Côte d'Ivoire Houphouetiste est le symbole des côtés positifs de la françafrique et la Côte d'Ivoire "Gbagboiste" est le symbole de ce que devient un pays africain sans puissance stabilisatrice.</p>
+          <p id="7"> C'est pourquoi, il ne faut pas voir un système ou il n'y a que des dérives, mais un système mutuellement accepté de coopération qui a eu des ratés.</p>
+          <p id="8"> M. Cattier/Mutima, je vous ai reconnu sous votre faux nez de "survivant".</p>
+          <p id="9">
+            <signed>
+              <ref target="https://fr.wikipedia.org/wiki/Utilisateur:Powermonger">
+                <name>Powermonger</name>
+              </ref>
+              <date>16 novembre 2005 à 09:08 (CET)</date>
+            </signed>
+          </p>
+        </post>
+        <post bot="no" id="42" indentLevel="0" num="4" when="2005-11-16T09:11" who="Le survivant">
+          <p id="1"> Merci pour le «débile»...</p>
+          <p id="2"> L'expression initale de Felix HB était France-Afrique (diplomatie). Dans son esprit de militant pour la décolonisation, "'en même temps que députés français"', cela signifiait qu'il voulait dissocier l'entité France de l'entité Afrique, dans une perspective décrite comme harmonieuse pour mieux faire avaler la pillule en 1955.</p>
+          <p id="3"> Le système Jacques Foccart est bien une création de l'Etat français et plus particulièrement du Général de Gaulle. Ce système a complètement récupéré les volontés d'indépendance, entre autre celle de Felix HB. Ce système s'est ensuite diversifié pour que toutes les chapelles politiques et économique françaises puissent prendre leur part du magot néocolonial. C'est ce système que François-Xavier Verschave a décrit, dans une expression qui sous entendait ironiquement "France à fric", et qu'il a qualifié volontairement, en réunissant en 1998 les deux entités que les indépendantistes avaient voulu séparer, dans un nouveau terme caricatural : françafrique.</p>
+          <p id="4"> Le problème actuel des services de communication de l'Etat français, et des français qui travaillent en Afrique dans la même communauté d'intérêt que l'Etat français, c'est que le terme Françafrique est devenu populaire. Ils voudraient bien le récupérer pour l'édulcorer et abaisser le seuil critique qu'il contient contre la France. Ils commencent seulement à essayer de le faire. Wikipédia doit-elle se faire l'agent de cette propagande ?</p>
+          <p id="5"> Vouloir confondre les deux expressions France-Afrique (diplomatie) et françafrique n'est pas pertinent en ce qui concerne leurs usages initiaux et actuel.</p>
+          <p id="6"> Par contre on peut très bien développer un article, par exemple les relations entre la France et l' Afrique depuis les indépendances, dans lequel on présenterait les deux notions jusqu'à aujourd'hui et dans le quel on renverrait aux articles détaillés sur les articles France-Afrique (diplomatie) et Françafrique</p>
+          <p id="7"> --<signed><ref target="https://fr.wikipedia.org/wiki/Le survivant"><name>Le survivant</name></ref> Le Survivant <date>16 novembre 2005 à 09:11 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="43" indentLevel="2" num="5" when="2005-11-16T09:18" who="Powermonger">
+          <p id="1">Encore un complot Mutima ?</p>
+          <p id="2"> Heureusement que vous avez survécu pour défendre la bonne pensée vraie et juste... <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Powermonger"><name>Powermonger</name></ref><date>16 novembre 2005 à 09:18 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="44" indentLevel="0" num="6" when="2005-11-16T13:33" who="Felipeh">
+          <p id="1"> Pour ce qui de Houphouet, j'ai pas compris en quoi ca me contredisait. Si on fait un article relations entre la France et l'Afrique depuis l'indépendance, elle prendra en compte tous les aspects. L'article Françafrique (encore une fois, dans l'esprit de la majorité des gens, quelle que soit la thèse de tel ou tel bouquin peu ou pas lu, cela évoque bien l'ensemble des relations dont les exemples récents sont effectivement négatifs ont été récemment développés) ne prendrait que les aspects sombres sans contrepoints? N'est-ce-pas objectivement deux poids deux mesures? Par ailleurs, si on fusionne, n'est-ce pas la meilleure façon de cesser une guerre d'édition? Y'aurait-il autant de Français (pas forcément mal intentionnés) sans la présence d'entreprises françaises? Est-ce-que leur présence ne perpértue pas des liens inter-culturels? Est-ce-que les réseaux n'évoluent pas au fur et à mesure, se dissociant progressivement de l'Etat pour rejoindre des intérêts privés pas forcément français? Est-ce-que le fait de piller l'Afrique ne nécessite pas, pour donner bonne mesure de développer de façon certes hypocrite, une politique d'aide? N'est-il pas injuste d'accuser globalement un Etat, quand c'est d'un système qu'il s'agit? Tu parles de France à fric, mais n'est-ce pas réducteur, dans la mesure ou même Verschave admet qu'il y a d'autres facteurs comme la défense de la francophonie? J'ai lu le bouquin de Verschave, il m'a fait prendre conscience de nombreuses choses, et sur de nombreux points, j'ai un profond respect son travail. Mais Verschave était sans doute un peu trop systématique, apposant toujours le même schéma quelles que soient les situation. En général, les histoires sont toujours nuancées, et un certain manichéisme a du être préjudiciable à son entreprise. Même si j'ai eu honte de l'attitude de la France à plusieurs reprises, je pense que l'on se trompe de cible quend on veut qu'un peuple entier se flagelle, alors que la responsabilité incombe à quelques réseaux, dont la légitimité n'a jamais été reconnue par qui que ce soit. De toute manière, les faits doivent suffire à parler d'eux-mêmes. S'il y a controverse sur un fait, on cite différente sources contradictoires, et c'est à chacun de se faire son idée, c'est ca la démocratie et la neutralité. Pour préciser un point: quand les médias parlent de la Françafrique: c'est sans préjuger d'un résultat positif ou négatif, mais pour constater la réalité de liens hérités de la colonisation, et on ne parle pas de pays comme le Mali ou le Sénégal parce que la Françafrique n'y a pas fomenté une dictature ou une guerre civile ou un pillage spectaculaire, mais il y a là-bas les mêmes réseaux, les mêmes entreprises, les mêmes coopérants et des problèmes similaires. Et quand je dis "débile", c'est pas la personne ou l'idée que j'attaque mais la méthodologie. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Felipeh"><name>Felipeh</name></ref><date>16 novembre 2005 à 13:33 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="45" indentLevel="1" num="7" when="2005-11-16T20:50" who="Le survivant">
+          <p id="1">Les gens qui n'ont pas lu de livre sur la question, quand ils parlent de France-Afrique, il s'agit bien de France-Afrique au sens général et pas de françafrique. Pour faire la différence il faut au moins avoir lu ce terme. Vous voulez déplacer le sens d'un terme sur un autre sans aucun respect de la réalité des faits.--<signed><ref target="https://fr.wikipedia.org/wiki/Le survivant"><name>Le survivant</name></ref> Le Survivant <date>16 novembre 2005 à 20:50 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="46" indentLevel="0" num="8" when="2005-11-17T13:19" who="Felipeh">
+          <list>
+            <item id="1">Faut arrêter de prendre les gens pour des cons. Tout le monde sait qu'il y a eu des magouilles dégeulasses dans la France-Afrique/Françafrique. Et quand bien même ce serait deux choses différentes, je maintiens qu'il faut en parler dans le même article parce que: 1) on parle de la même chose mais sous des angles différents ; 2) ça favorise la compréhension du sujet ; 3) le terme passé dans le langage populaire ne se résume plus aux seuls contenus du bouquin ; 4) il vaut mieux essayer d'avoir un article neutre que deux articles de propagande séparés sur le même thème. J'ajoute que pour ce qui est des seules thèses du livre, l'article de Survie devrait sufire, d'autant qu'il n'y a pas eu que Françafrique comme bouquin. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Felipeh"><name>Felipeh</name></ref><date>17 novembre 2005 à 13:19 (CET)</date></signed></item>
+          </list>
+        </post>
+        <post bot="no" id="47" indentLevel="2" num="9" when="2005-11-18T14:08" who="Le survivant">
+          <p id="1">Restons calme. La France-Afrique selon Felix HB est datée (1955). La Françafrique selon Verschave est un aspect précis des relations entre la France et l'Afrique après les indépendances, et ne prétend pas couvrir tous les aspects de ces relations. De plus l'expression de Verschave est polémique. Volontairement polémique, car il s'agissait de trouver un levier pour mettre en évidence ce que tu qualifies toi-même de «dégeulasses». L'objectif est atteint et est reconnu dans les médias et les organismes spécialisés sur ces questions. Il reste que "'les relations entre la France et l'Afrique"' sont l'expression normale et encyclopédique, éloignée de toute considération polémique de cette réalité des échanges entre un pays, la France, et la quasi totalité des pays du continent africain. Il faut rester sur le plan de relations qui devraient être celles que la France entretient avec les autres pays étrangers, même si un tel article ne peut pas ignorer, ces considérations particulières qui sont encore actuelles vis-à-vis de certains pays. Je ne vois pas en quoi dire cela serait « "prendre les gens pour des cons" » selon ton expression. Si une forte minorité d'homme est atteinte d'une maladie, est-ce qu'on va faire un article qui décrira l'homme uniquement à travers cette maladie ? Non on fera un article sur la maladie et un autre sur l'Homme. La Françafrique est une maladie politique, elle doit être traitée comme telle. Les relations entre la France et l'Afrique sont le cadre normal pour parler de ce sujet.--<signed><ref target="https://fr.wikipedia.org/wiki/Le survivant"><name>Le survivant</name></ref> Le Survivant <date>18 novembre 2005 à 14:08 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="48" indentLevel="0" num="10" when="2005-11-18T15:18" who="Felipeh">
+          <p id="1"> Lors de la crise ivoirienne, les médias ont parlé de "Françafrique". Ils n'ont cependant pas repris les termes exacts des reflexions de Verschave. Les relations entre la France et l'Afrique sont de toute façon particulières et ne ressemblent à d'autres relations entre la France et d'autre pays étrangers. C'est pourquoi le terme Françafrique a été repris pour désigner des faits connus mais qui n'avait pas encore été désigné par un terme précis. "Prendre pour des cons": expression utilisée parce que tu sembles croire que tout le monde est ignorant sur ce sujet, d'où l'instistance militante et quelque peu rigide selon moi de ta position: tu n'envisages même pas d'intégrer des contrepoints ou une mise en perspective plus vaste, considérant qu'il faut recopier un résumé d'un bouquin sans ajouter le moindre commentaire. Si plusieurs points du livre Françafrique sont incontestables, ce n'est pas une raison pour tout avaler comme la Sainte Bible. Pour ta tirade sur la maladie: c'est bien pour cela que j'ai développé les positions plus haut, vu que désormais, Françafrique est certainement le terme le plus utilisé pour décrire les relations françafricaines. Et quand à l'éventualité d'un article relations entre la France et l'Afrique il ferait doublon pour une large partie et les problèmes de neutralité seraient les mêmes qu'ici. Autre chose, on a pas attendu Verschave pour savoir sur la Françafrique. De nombreux articles du "Canard Enchaîné" peuvent en témoigner avant 1998. Le principal mérite de Verschave a été de trouver le nom et d'écrire un bouquin facile à lire rassemblant les principaux méfaits. D'autre part, la Françafrique évolue sans son auteur, alors qui est en charge pour en rendre compte? De manière générale, je ne trouverais pas logique qu'on parle de Françafrique sans évoquer les phénomènes indissociables même s'ils ne sont pas dans le livre. Et les idées évoquées dans le bouquin ne sont pas innocentes vis à vis de la présence de militaires ou de civils français, dont il faut alors parler en en retraçant au moins brièvement. Il serait souhaitable que d'autres avis se joignent à la discussion et qu'il soit à présent question de négociations sur le contenu. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Felipeh"><name>Felipeh</name></ref><date>18 novembre 2005 à 15:18 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="49" indentLevel="1" num="11" when="unknown" who="Le survivant">
+          <p id="1">«"tu n'envisages même pas d'intégrer des contrepoints ou une mise en perspective plus vaste, considérant qu'il faut recopier un résumé d'un bouquin sans ajouter le moindre commentaire"». Tu exagères. Je constate que le chapitre des "Arguments des opposants au concept de Françafrique" est apparu dans la version du 11 octobre 2005 à 15 h 44. L'auteur de la création de ce chapitre est utilisateur:Mutima. Je trouve que cette initiative est correcte. Je ne la conteste pas et elle devrait te permettre de développer tes arguments au lieu de les mettre dans la page de discussion. Mon point de vue est que dans Wikipédia un concept doit être décrit sans le démolir à priori. On peut ensuite montrer les critiques qui lui sont faites. Mais on ne peut pas en donner une définition qui ferait abstraction de son origine et de son histoire, de façon horizontale, en ne le traitant que sous l'angle de ses partisans et opposants actuels. C'est à mon avis une question de méthode. Donc certains des éléments du plan de Powermonger peuvent être développés dans ce chapitre des "Arguments des opposants au concept de Françafrique", notamment la contestation de Stephen Smith dans "Négrologie" et dans "Comment la France a perdu l'Afrique".--<signed><ref target="https://fr.wikipedia.org/wiki/Le survivant"><name>Le survivant</name></ref></signed> Le Survivant 25 novembre 2005 à 13:54 (CET)</p>
+        </post>
+        <post bot="no" id="50" indentLevel="2" num="12" when="2005-11-25T14:25" who="Powermonger">
+          <p id="1">Eh ! Je ne suis pas opposé au concept de Françafrique ! Je suis à 100% pour le maintien d'une relation privilégiée entre le France et les pays africains. Mais pour moi, la françafrique, c'est beaucoup plus que les élucubrations de personnes qui n'y ont jamais mis les pieds ou presque. J'irai même à dire que les quelques "surviveries" qui sont exactes, sont des dérapages à la marge par rapport à tout le reste car on oublie tout ce qui va bien. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Powermonger"><name>Powermonger</name></ref><date>25 novembre 2005 à 14:25 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="51" indentLevel="3" num="13" when="2005-11-25T14:40" who="Le survivant">
+          <p id="1">L'un des principaux prédécesseur de FXV, avant qu'il structure avec Survie ce courant dans le concept de françafrique, est le Camerounais Mongo Beti avec son livre "Main Basse sur le Cameroun". On ne peut pas dire que Mongo Beti n'ait jamais mis les pieds au Cameroun. A la fin de sa vie il a rejoint Survie, et son épouse est l'actuelle présidente de Survie, qui travaille au Cameroun, et qu'elle connait bien ! Donc parler "d'élucubrations de personnes qui n'y ont jamais mis les pieds", est un cache sexe pour nudiste surpris de l'être ! Vous êtes opposés Powermonger, au concept de françafrique (avec un "'ç"' cédille) tel que qu'il a été développé par ses inventeurs. Reconnaissez-le et ne cherchez pas à récupérer leur invention au profit de vos propres idées. C'est une question d'honnêteté intellectuelle de fond. Mais je croyais parler avec Feliphe ? Seriez-vous la même personne ?--<signed><ref target="https://fr.wikipedia.org/wiki/Le survivant"><name>Le survivant</name></ref> Le Survivant <date>25 novembre 2005 à 14:40 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="52" indentLevel="2" num="14" when="2005-11-25T14:49" who="Powermonger">
+          <p id="1">Arretez votre nombrilisme. Vous n'êtes pas le centre du monde, mais bien un épiphénomène autour d'un concept imaginé par FHB et mis en oeuvre sous De Gaulle. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Powermonger"><name>Powermonger</name></ref><date>25 novembre 2005 à 14:49 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="53" indentLevel="3" num="15" when="2005-11-25T15:08" who="anonyme">
+          <p id="1"> Je vous accorde un point, un seul : Survie et FXV ont détourné le mot France-Afrique. Que voulez-vous développer dans le cadre de vos idées ? l'original ou son détournement ? Soyez-donc conséquents. Si votre France-Afrique est si belle que cela, montrez-le nous en développant l'autre article : France-Afrique (diplomatie) qui recouvre votre vision neutre. Françafrique est un concept polémique selon vous, pourquoi voudriez-vous l'employer ?. --Le Survivant <signed><date>25 novembre 2005 à 15:08 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="54" indentLevel="2" num="16" when="2005-11-25T15:29" who="Powermonger">
+          <p id="1">Voilà ce que vous n'avez jamais compris : la neutralité est indépendante de l'observateur. Vous reconnaissez que vous ne souhaitez un article neutre que pour France-Afrique et pas pour Françafrique. Fort intéressant... <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Powermonger"><name>Powermonger</name></ref><date>25 novembre 2005 à 15:29 (CET)</date></signed></p>
+        </post>
+      </div>
+      <div id="8" level="1">
+        <head>Nouvelle proposition</head>
+        <post bot="no" id="55" indentLevel="0" num="1" when="2005-11-17T14:46" who="Powermonger">
+          <p id="1"> On peut rajouter une ligne à la page d'homonymie.</p>
+          <list>
+            <item id="2"> françafrique (livre)</item>
+            <item id="3"> françafrique</item>
+            <item id="4"> françafrique ©1998 (TOUS droits réservés à E. Cattier)</item>
+          </list>
+          <p id="5"> Comme ça, Mutima pourra imposer son point de vue d'"expert" et il pourra même se reverter lui même !</p>
+          <p id="6">
+            <signed>
+              <ref target="https://fr.wikipedia.org/wiki/Utilisateur:Powermonger">
+                <name>Powermonger</name>
+              </ref>
+              <date>17 novembre 2005 à 14:46 (CET)</date>
+            </signed>
+          </p>
+        </post>
+      </div>
+      <div id="9" level="1">
+        <head>Proposition de plan</head>
+        <post bot="no" id="56" indentLevel="0" num="1" when="unknown" who="anonyme">
+          <p id="1"> J'ai amendé le plan proposé précédemment. J'espère que ça aidera à se diriger vers un consensus. J'ai réduit les deux premières parties initiales en une.</p>
+          <p id="2"> "'Qu'est-ce que la Françafrique"'</p>
+          <p id="3"> a) Origines de la Françafrique</p>
+          <p id="4"> (héritage colonial, guerre froide, expatriés  entreprises, origines du terme, etc.)</p>
+          <p id="5"> b) Le cadre de la Françafrique</p>
+          <p id="6"> (armée, diplomatie, francophonie, commerce, aide au développement, etc.)</p>
+          <p id="7"> "'3- Le débat autour de la Françafrique"'</p>
+          <p id="8"> a) approches divergentes : Smith  Verschave</p>
+          <p id="9"> b) réseaux politiques et affairistes (Foccart, Elf, etc.)</p>
+          <p id="10"> c) mercenaires, interventions militaires et soutien de dictatures</p>
+          <p id="11"> d) aspects économiques</p>
+          <p id="12"> e) dérives mafieuses, seigneurs de guerre, etc.</p>
+          <p id="13"> f) rivalités anglo-saxonnes (et autres)</p>
+          <p id="14"> "'4- La Françafrique pays par pays"' (situtations nationales et principaux exemples)</p>
+          <p id="15"> Angola, Togo, RDC, Rwanda, Sénégal, Côte d’Ivoire, Cameroun, Tchad, Comores, Gabon, Congo, Burkina Faso, Nigéria, etc.</p>
+        </post>
+        <post bot="no" id="57" indentLevel="1" num="2" when="2005-11-18T19:30" who="Powermonger">
+          <p id="1">Là, il n'y a que du négatif ! Il ne faudrait pas oublier d'autres points comme la francophonie, l'aide au développement, les CCF, les "exfiltrations" d'opposants, l'asile politique, etc...</p>
+          <p id="2"> De toute façon, Mutima n'acceptera jamais un compromis. Je suis bien placé pour le savoir !</p>
+          <p id="3"> Néanmoins, il faut bien se lancer un jour où l'autre, non ? On peut commencer comme ça malgré tout, et le temps et les contributions feront le reste.</p>
+          <p id="4">
+            <signed>
+              <ref target="https://fr.wikipedia.org/wiki/Utilisateur:Powermonger">
+                <name>Powermonger</name>
+              </ref>
+              <date>18 novembre 2005 à 19:30 (CET)</date>
+            </signed>
+          </p>
+        </post>
+        <post bot="no" id="58" indentLevel="2" num="3" when="2005-11-23T23:47" who="Felipeh">
+          <p id="1">J'attend de voir une semaine ou deux s'il y a des réactions. S'il n'y en a pas de contradictoires, je réorganiserai le plan de l'article, et je mettrai les éléments de ce qui existe déjà dans les différents chapitres, certains seront donc vide. A partir de là, chacun met la main à la pate, je suis déjà occuppé sur d'autres articles (et dans la vie en général) donc mes interventions seront forcément lentes. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Felipeh"><name>Felipeh</name></ref><date>23 novembre 2005 à 23:47 (CET)</date></signed></p>
+        </post>
+        <div id="10" level="2">
+          <head/>
+          <div id="10" level="3">
+            <head>Proposition de plan alternative</head>
+            <post bot="no" id="59" indentLevel="0" num="1" when="2005-11-25T14:10" who="Le survivant">
+              <p id="1">     * 1 Présentation du concept de la Françafrique et origines</p>
+              <p id="2">     * 2 Caractéristiques et réseaux</p>
+              <p id="3">           o 2.1 Les réseaux politico-affairistes</p>
+              <p id="4">           o 2.2 Les grandes entreprises</p>
+              <p id="5">           o 2.3 Les militaires et les services secrets</p>
+              <p id="6">           o 2.4 Un système néo-colonial</p>
+              <p id="7">     * 3 Evolutions de la Françafrique</p>
+              <p id="8">           o 3.1 Un processus de démocratisation… très relatif</p>
+              <p id="9">           o 3.2 Une criminalisation toujours plus importante : « vers la Mafiafrique »</p>
+              <p id="10">           o 3.3 Un apparent déclin à relativiser</p>
+              <p id="11">     * 4 Des conséquences désastreuses sur le développement</p>
+              <p id="12">     * 5 Les prises de consciences des politiques français</p>
+              <p id="13">     * 5 Les institutions françaises saisies</p>
+              <p id="14">           o 5.1 Les plaintes de Rwandais contre l'armée française devant la justice française</p>
+              <p id="15">           o 5.2 Les plaintes venant de Côte d'Ivoire concernant les événements de novembre 2004</p>
+              <p id="16">           o 5.3 L'affaire Poncet</p>
+              <p id="17">     * 6 Arguments des opposants au concept de françafrique</p>
+              <p id="18">           o 6.1 L'approche divergente de Stephen Smith</p>
+              <p id="19">                 Négrologie - Comment la France a perdu l'Afrique</p>
+              <p id="20">           o 6.2 La mise en cause de l'honnêteté des dirigeants de l'association Survie</p>
+              <p id="21">                 Colonel Hogard - Pierre Péan - Stephen Smith</p>
+              <p id="22">     * 7 Voir aussi</p>
+              <p id="23">     * 8 Liens externes</p>
+              <p id="24"> Ce plan intégre donc l'existant et les contestations de Powermonger et Felippe et respecte la démarche de l'origine du concept, de son développement par FXV qui en est l'auteur, et les conséquences et contestations du concept qui ont suivi et font débat aujourd'hui.--<signed><ref target="https://fr.wikipedia.org/wiki/Le survivant"><name>Le survivant</name></ref> Le Survivant <date>25 novembre 2005 à 14:10 (CET)</date></signed></p>
+            </post>
+            <post bot="no" id="60" indentLevel="1" num="2" when="2005-11-25T14:35" who="Powermonger">
+              <p id="1">Tout à fait contre. Ce plan est non neutre, et met Survie et Verschave au centre du concept alors que ce sont deux épiphénomènes à la marge. Le coeur de la Françafrique se trouve en Afrique, pas en France et a commencé bien avant Survie. En plus, il n'y a même aucun endroit pour les aspects positifs qui, à mon sens, dépassent de loin les aspects négatifs.</p>
+              <p id="2"> Je reste sur le plan de Felipeh qui me semble structuré et neutre. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Powermonger"><name>Powermonger</name></ref><date>25 novembre 2005 à 14:35 (CET)</date></signed></p>
+            </post>
+            <post bot="no" id="61" indentLevel="2" num="3" when="2005-11-25T14:59" who="Le survivant">
+              <p id="1">Vous continuez de confondre France-Afrique et françafrique. Trouvez-nous un document, un seul, qui parle de françafrique (avec un ç cédille) avant ceux de l'association Survie et nous vous croiront. «L'épiphénomène» est à l'origine de ce mot. Il n'appartient certes pas à ses créateurs qui en ont fait dont à la communauté humaine, mais vous n'avez pas le droit d'en détourner le sens au profit de vos propres idées. Ce terme a un sens pour les analystes des relations entre la France et l' Afrique et ce n'est pas celui que vous voulez lui donner et qui est tout à fait non neutre car non respectueux de sa définition. Vous avez une attitude de propagande face à un concept qui vous dérange. Même si pour vous ce concept serait lui-même un concept de propagande, vous ne pouvez pas en déformer le sens. Imaginez que Microsoft utilise le concept Linux pour promouvoir son OS, que dirait-on ?--<signed><ref target="https://fr.wikipedia.org/wiki/Le survivant"><name>Le survivant</name></ref> Le Survivant <date>25 novembre 2005 à 14:59 (CET)</date></signed></p>
+            </post>
+            <post bot="no" id="62" indentLevel="3" num="4" when="2005-11-25T15:08" who="Le survivant">
+              <p id="1">Je vous accorde un point, un seul : Survie et FXV ont détourné le mot France-Afrique. Que voulez-vous développer dans le cadre de vos idées ? l'original ou son détournement ? Soyez-donc conséquents. Si votre France-Afrique est si belle que cela, montrez-le nous en développant l'autre article : France-Afrique (diplomatie) qui recouvre votre vision.--<signed><ref target="https://fr.wikipedia.org/wiki/Le survivant"><name>Le survivant</name></ref> Le Survivant <date>25 novembre 2005 à 15:08 (CET)</date></signed></p>
+            </post>
+            <post bot="no" id="63" indentLevel="4" num="5" when="2005-11-25T15:25" who="Powermonger">
+              <p id="1">Confondons, confondons, puisqu'internet n'existait pas avant 1984 ! Vous n'avez pas le monopole de l'analyse. Je crois que le comité d'arbitrage est en train de vous épingler à vouloir "imposer votre vérité". Vous recommencez donc. Si ce n'est pas en accord avec vous c'est non neutre ! Du haut de votre millier d'adhérents, vous ne représentez pas l'opinion publique, mais votre millier d'adhérents. C'est tout.</p>
+              <p id="2"> Pour la majorité des gens, le terme françafrique, ce n'est pas que les magouilles, mais la présence "en général" de la France en Afrique (et de l'Afrique en France). A tel point, que votre gourou a du inventer le terme "Mafiafrique" pour isoler les comportements déviants.</p>
+              <p id="3"> Non, vraiment M. Cattier, ne tentez pas une nouvelle fois de vouloir imposer votre point de vue...</p>
+              <p id="4">
+                <signed>
+                  <ref target="https://fr.wikipedia.org/wiki/Utilisateur:Powermonger">
+                    <name>Powermonger</name>
+                  </ref>
+                  <date>25 novembre 2005 à 15:25 (CET)</date>
+                </signed>
+              </p>
+            </post>
+            <post bot="no" id="64" indentLevel="5" num="6" when="2005-11-25T16:04" who="Le survivant">
+              <p id="1">Monsieur je crois que vous avez mal lu la signature. De plus c'est vous qui essayez d'imposer votre vérité contre Utilisateur:Esperanza36 qui a fait l'essentiel de cet article et que vous avez fait fuir (voir début de page). Mutima et moi-même sommes de Survie. J'accepte donc que nous ne comptions qu'une seule voix sur cet article et celui de l'association. Mais nous confirmons ce qu'Esperanza36 a écrit. C'est quelqu'un qui semble être proche des socialistes, d'après http://fr.wikipedia.org/w/index.php?title=Special:Contributionstarget=Esperanza36offset=0limit=500 ses contributions. "'Votre vérité que vous voulez imposer après l'écriture de cet article par d'autres auteurs, n'est pas respectueuse du concept françafrique tel qu'il a été défini par ses inventeurs"'. Je suis désolé mais votre obstination n'est pas honnête, et même particulièrement partisane.</p>
+              <p id="2"> Ce parti-pris est illustré par l'usage, complètement déformé, que vous faites du terme Mafiafrique. Il ne concerne pas les comportements déviants de la françafrique (qui est elle-même un comportment déviant de la France-Afrique (diplomatie)), mais au contraire l'imbrication de la corruption de la françafrique à d'autres pays non africains ou africains (ou l'inverse), tels que les USA, la Russie, la Chine, Israel, des pays africains de l'influence anglosaxone, etc. Je vois que vous ne connaissez pas du tout ce dont vous parlez. http://www.survie-france.org/article.php3?id_article=403 Voir ce lien--<signed><ref target="https://fr.wikipedia.org/wiki/Le survivant"><name>Le survivant</name></ref> Le Survivant <date>25 novembre 2005 à 16:04 (CET)</date></signed></p>
+            </post>
+            <post bot="no" id="65" indentLevel="0" num="7" when="2005-11-25T16:19" who="Powermonger">
+              <p id="1"> Elle écrit que Verschave a repris et popularisé l'idée, pas qu'il l'a inventé.</p>
+              <p id="2"> De toute façon, elle s'est contenté de faire un copier coller à partir de l'université des jeunes socialistes (il ne doit d'ailleurs pas y avoir foule). Ca ne rend pas l'article neutre, mais passons. Voici le texte original : http://www.mjsfrance.org/actu/larochelle2005/guide_du_participant.pdf. Le jeu des sept différences commence ! En plus le tout est pompé sans vérification aucune sur le site de Survie et sur les articles que vous avez rédigé sur Wikipédia. On comprend mieux comment les socialistes ont soutenu Gbagbo !</p>
+              <p id="3"> Je suis fort heureux que Mutima ait trouvé une secrétaire pour taper ce qu'il dicte. Le président, c'est le président et il faut obéir !</p>
+              <p id="4"> Malgré tout, la françafrique reste quelque chose d'un peu plus consistant que ce sur quoi Survie veut mettre son copyright.</p>
+              <p id="5">
+                <signed>
+                  <ref target="https://fr.wikipedia.org/wiki/Utilisateur:Powermonger">
+                    <name>Powermonger</name>
+                  </ref>
+                  <date>25 novembre 2005 à 16:19 (CET)</date>
+                </signed>
+              </p>
+            </post>
+            <post bot="no" id="66" indentLevel="2" num="8" when="2005-11-25T20:26" who="81.56.101.24">
+              <p id="1">Et bien Powermonger, je vois que vous savez que Survie n'a pas des relations qu'avec l'extrême gauche... Alors pourquoi avoir essayé de soutenir le contraire dans l'article Survie ? Cela nous aurait évité un conflit.</p>
+              <p id="2"> Ceci dit, Survie ne soutient pas Gbagbo, même si les partisans de l'Ivoirité le voudraient bien. Car Survie ne peut accepter le principe de l'ivoirité, qui s'apparente aux revendications d'extrême droite en France, et le problème des "escadrons de la mort" n'est toujours pas éclairci.</p>
+              <p id="3"> De même, au passage Survie ne soutient pas le FPR. Nous avons d'ailleurs tenté une mise au point sur http://www.survie-alsace.org/Rwanda/Divers/violence.htm les noeuds de violence au Rwanda aux différentes époques. Survie essaye d'éviter tout esprit partisan et recherche absolument les faits qui permettent d'étayer ses choix et ses analyses. Voilà un peu de propagande partisane puisqu'on me reproche d'en faire, voilà qui jsutifiera les critiques--<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:81.56.101.24"><name>81.56.101.24</name></ref><date>25 novembre 2005 à 20:26 (CET)</date></signed></p>
+            </post>
+            <post bot="no" id="67" indentLevel="1" num="9" when="2005-11-25T18:43" who="Felipeh">
+              <p id="1">Sans revenir sur le fond (nécessité d'une mise en perspective, vocabulaire dont la signification s'est élargie (voir par exemple édito de D.Dhombres dans "Le Monde" du 8-02-2003: "La fin de la Françafrique?" au sujet de la Côte d'Ivoire, où il est clair qu'on parle de la présence française en général dont des milliers de civils), description d'un phénomène (action contestable de la France) évoqué bien avant actions de Survie, phénomènes négatifs et non négatifs en interaction) ; sans revenir sur le fond donc, une simple constatation au sujet du plan alternatif proposé: rien qu'en lisant les titres, on constate qu'il n'est pas neutre. Qu'il y ait ces éléments dans le corps du texte est une chose et on peut en discuter, mais il ne peut y avoir de parti pris dès l'annonce du plan.</p>
+              <p id="2"> "Un processus de démocratisation… très relatif": relative est aussi l'appréciation de ce sujet, ça veut rien dire. "Une criminalisation toujours plus importante": est-ce uniquement la France de Françafrique qui est en cause? demande une vision un peu plus large et concerne tout aussi bien le thème de la mondialisation. "Un apparent déclin à relativiser": même remarque, ne laisse pas présager de points de vue contradictoires ("un apparent"=en fait c'est faux ; "à relativiser"=je vous affirme que c'est comme ça et pas autrement) donc non neutre par principe, il s'agit pas de faire un édito ou un manifeste. "Les prises de consciences des politiques français": des politiques dans leur ensemble? je crois pas. "Les plaintes": les plaintes ne sont pas toujours à sens unique, et elles ne me semblent pas très solides juridiquement (vu que n'importe qui peut déposer plainte) pour constituer un fait méritant des sous-chapitres, même si on peut l'évoquer. De plus le plan ne laisse aucune place au cas des populations civiles françaises en Afrique, qui, qu'on le veuille ou non sont concerné par et font partie de la problématique de la Françafrique.</p>
+              <p id="3"> D'après moi, pour qu'un plan (sans parler encore de l'article) soit non neutre, il faut que l'on ne puisse pas déterminer en le lisant s'il prend parti pour une thèse ou une autre, tout en pouvant défendre les deux (de manière à avoir un débat contradictoire avec l'évocation de faits allant dans un sens ou dans un autre, comme dans un tribunal). <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Felipeh"><name>Felipeh</name></ref><date>25 novembre 2005 à 18:43 (CET)</date></signed></p>
+            </post>
+            <post bot="no" id="68" indentLevel="2" num="10" when="2005-11-25T19:52" who="Mutima">
+              <p id="1">J'ai modifié un titre pour qu'il vous soit moins choquant. "Les prises de consciences des politiques français" deviennent "Les institutions françaises saisies". Cela me semble sans connotation particulière. Ce n'est pas un parti pris, c'est une réalité des relations conflictuelles actuelles entre la France et certains pays d'Afrique. Le taire serait du parti pris. Les plaintes existent ce sont des réalités juridiques. Votre appréciation sur leur solidité est une opinion. Quand un juge français se déplace jusqu'au Rwanda pour entendre les plaignants, c'est qu'il y a au minimum un suspicion de sérieux. On verra la suite de l'affaire. S'il y a des plaintes dans le sens Français contre des pays africains, comme sans doute en Côte d'Ivoire, (je ne sais plus comment les français chassés de Côte d'Ivoire agissent, s'ils s'adressent uniquement au gouvernement français où s'ils ont porté plaintes en Côte d'Ivoire, vous le savez vous ?) il faudra compléter en conséquence.</p>
+              <p id="2"> On ne peut pas à la fois revendiquer de parler de françafrique pour parler de la réalité france-africaine et parler en même temps de fin de la françafrique devant l'évolution de cette réalité. Faites un choix cohérent une fois pour toute. Sinon nous pourrions être amenés à penser que vous intervenez sur cet article uniquement pour le torpiller. Nos proposition nous semblent constructives--<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Mutima"><name>Mutima</name></ref><date>25 novembre 2005 à 19:52 (CET)</date></signed></p>
+            </post>
+            <post bot="no" id="69" indentLevel="3" num="11" when="2005-11-25T23:50" who="Felipeh">
+              <p id="1">Vous devriez lire plus attentivement les propos de vos contradicteurs. Je n'ai pas nié l'existence de la Françafrique. La "fin de la Françafrique" est un titre d'article et pas un de mes propos. Il n'y a pas de plainte contre la Cote d'Ivoire, parce qu'il y a encore des Français là-bas  (ça les mettrait en position délicate) que la France est censé s'interposer entre les deux parties, mais vous n'êtes pas sans méconnaître les accusations qui pèsent contre le régime de Gbagbo et les campagnes anti-françaises orchestrées par sa femme et Blé-Goudé. Je n'ai pas dit qu'il ne fallait pas parler des plaintes, mais étant donné l'épaisseur des infos jusqu'à présent, puisqu'il n'y a eu aucun verdict jusqu'à présent, cela me semble présomptueux de vouloir en faire un chapitre à part entière. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Felipeh"><name>Felipeh</name></ref><date>25 novembre 2005 à 23:50 (CET)</date></signed></p>
+            </post>
+          </div>
+        </div>
+      </div>
+      <div id="11" level="1">
+        <head>France-Afrique n'est plus à la mode</head>
+        <post bot="no" id="70" indentLevel="0" num="1" when="2005-11-23T21:59" who="Le survivant">
+          <p id="1"> Le sommet de Bamako qui aura lieu début décembre fait la part belle à une nouvelle expression : "'Afrique-France"'. Voir cette http://news.google.fr/news?hl=frned=frie=UTF-8q=sommet+de+bamakobtnG=Recherche+Actualit%C3%A9s réponse de Google à l'expression "sommet de Bamako". Visiblement les officiels veulent casser la consonnance Françafrique et France-Afrique et les médias emboitent le pas !--<signed><ref target="https://fr.wikipedia.org/wiki/Le survivant"><name>Le survivant</name></ref> Le Survivant <date>23 novembre 2005 à 21:59 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="71" indentLevel="1" num="2" when="2005-11-23T23:42" who="Felipeh">
+          <p id="1">Question, que peut-on conclure de cette série de chiffre?</p>
+          <p id="2"> réponse sur Google à Françafrique: 127.000 ; à France-Afrique: 115.000 ; à Afrique-France: 47.700 ; France-Asie: 17.800 ; Asie-France: 836 ; France-Etats-Unis: 123.000 ; Etats-Unis-France: 193.000 ; France-Amérique: 98.700 ; Amérique-France: 9.940 ; France-Chine: 87.800 ; Chine-France: 36.700. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Felipeh"><name>Felipeh</name></ref><date>23 novembre 2005 à 23:42 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="72" indentLevel="2" num="3" when="unknown" who="Powermonger">
+          <p id="1">Et l'expression Françallemagne (604), Françalgérie (18.400) et Françalbanie (37)...<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Powermonger"><name>Powermonger</name></ref></signed></p>
+        </post>
+        <post bot="no" id="73" indentLevel="0" num="4" when="2005-11-24T11:19" who="Le survivant">
+          <p id="1"> Votre dérision ne répond pas à mon intervention. Même si cette observation vous déçoit, elle montre que les acteurs de la françafrique (les états et leurs relais médiatiques)cherchent à le faire oublier cette expression. Pour eux il n'y a rien de bon dans ce terme, il leur semble trop négatif... ce qui ne va pas dans le sens du développement que vous voulez donner à l'article où tout le monde y trouverait son compte. Ce terme est jugé irrécupérable.--<signed><ref target="https://fr.wikipedia.org/wiki/Le survivant"><name>Le survivant</name></ref> Le Survivant <date>24 novembre 2005 à 11:19 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="74" indentLevel="1" num="5" when="2005-11-24T14:18" who="Felipeh">
+          <p id="1">Au delà de la dérision, on peut remarquer qu'avec des recherches sur Google, on peut faire dire tout et n'importe quoi. Le terme est jugé irrécupérable? Vous croyez que l'utilisation du langage est régularisée? Les mots évoluent comme des êtres vivants. Quand on a parlé de Françafrique pour la Cote d'Ivoire en 2004, on parlait en même temps des milliers de français qui y étaient installés et menacés. La politique française (donc la Françafrique) ne serait pas la même sans leur présence (qui comporte des aspects non négatifs) et vice-versa. Cependant, ne pas en parler arrange certainement les tenants de certaines thèses simplificatrices, comme il était plus simple d'oublier les Pieds-Noirs en 1962. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Felipeh"><name>Felipeh</name></ref><date>24 novembre 2005 à 14:18 (CET)</date></signed></p>
+        </post>
+      </div>
+      <div id="12" level="1">
+        <head>Péan vs Survie</head>
+        <post bot="no" id="75" indentLevel="0" num="1" when="2005-11-23T23:21" who="Felipeh">
+          <p id="1"> Après "Négrologie" de S. Smith, un nouveau livre s'attaque à la conception "anti-française" et françafricaine de Survie, accusée d'être manipulée par le président rwandais Kagamé, qualifié de criminel contre l'humanité et de chef mafieux, de croire (avec bonne foi) aveuglement en une vérité "radicale et sacralisée", et d'activer des réseaux notamment protestants, ayant réussi à convaincre Michel Rocard en 3 jours entre autres. Il estime que la France n'a certainement pas eu un rôle glorieux, mais qu'elle a au moins eu le mérite d'avoir été la seule dans la communauté internationale à essayer d'intervenir pour séparer les belligérants. Le livre s'appelle "Noires fureurs, blancs menteurs" (pastiche de titres de Verschave), c'est de Pierre Péan, qui a déjà enquété sur Mitterrand, TF1, Foccart, Le Monde, etc. On pourra l'évoquer dans l'article, ça fait partie du pluralisme et on est en plein dans la question. Un point pour Survivor, pour lui Françafrique ça représente définitivement le pas bien. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Felipeh"><name>Felipeh</name></ref><date>23 novembre 2005 à 23:21 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="76" indentLevel="1" num="2" when="2005-11-24T11:33" who="Le survivant">
+          <p id="1">Oui je suis en train de lire ce livre paru hier. Les critiques concernent Survie et les journalistes, historiens, intellectuels qui essayent de faire entendre un autre son de cloche sur le génocide au Rwanda que celui de l'Etat français. J'ai d'ailleurs complété l'article de Survie (association) à ce sujet. Ceci dit Pierre Péan, c'est la voix de son maître... et son maître lui donne des infos qui sont réservées aux initiés et sur lesquels il brode allègrement pour faire apparaitre avec la même info le visage d'une vieille femme ou celui d'une jeune femme... C'est ce qu'on appelle de l'illusionisme. Tout cela c'est fait pour essayer de protéger des responsables français qui craignent les conséquences de poursuites judiciaires éventuelles pour complicité de génocide. Tiens un petit lien que mon ami Mutima ne renierait pas : http://cec.rwanda.free.fr/informations/infos.htm infos sur les plaintes de Rwandais pour comprendre le choix de la date de publication du livre... et son intention.--<signed><ref target="https://fr.wikipedia.org/wiki/Le survivant"><name>Le survivant</name></ref> Le Survivant <date>24 novembre 2005 à 11:33 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="77" indentLevel="2" num="3" when="2005-11-24T11:57" who="Powermonger">
+          <p id="1">"'Le complot !"' Ultime argument quand tout est contre vous !</p>
+          <p id="2"> La voiture de Survie ne démarre pas, le complot bien sur ! Plus de café, encore le complot ! Quelqu'un qui n'a pas les mêmes idées, le complot vous dis-je !</p>
+          <p id="3">
+            <signed>
+              <ref target="https://fr.wikipedia.org/wiki/Utilisateur:Powermonger">
+                <name>Powermonger</name>
+              </ref>
+              <date>24 novembre 2005 à 11:57 (CET)</date>
+            </signed>
+          </p>
+        </post>
+        <post bot="no" id="78" indentLevel="3" num="4" when="2005-11-24T13:59" who="Le survivant">
+          <p id="1">Allons allons, cher Powermonger, vous n'allez pas vous montrer aussi megalo avec moi qu'avec Mutima. Le "complot", c'est votre appréciation, "Tout est contre vous"... bon vous d'accord, et quelques autres. Bien, un peu de mesure.--<signed><ref target="https://fr.wikipedia.org/wiki/Le survivant"><name>Le survivant</name></ref> Le Survivant <date>24 novembre 2005 à 13:59 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="79" indentLevel="1" num="5" when="2005-11-24T14:09" who="Felipeh">
+          <p id="1">De fait Péan, en tant que journaliste indépendant ou non, n'aurait aucun intérêt à sortir ce livre s'il n'y avait pas de manière générale de controverse sur le rôle de la France au Rwanda. Et un livre a d'autant plus de chance de se vendre sur une actualité. La plainte actuelle, si elle peut faire mal médiatiquement à la France en Afrique, a à mon avis de toute façon peu de chance d'aboutir à la reconnaissance de complicité de génocide. Au moins, en France, on peut demander d'ouvrir une instruction, c'est pas le cas partout. Quoiqu'il en soit, il y a deux point de vue sur la Françafrique, pour faire simple: le complot français et le complot anti-français, et il n'y a aucune raison de ne pas parler de la deuxième version. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Felipeh"><name>Felipeh</name></ref><date>24 novembre 2005 à 14:09 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="80" indentLevel="2" num="6" when="2005-11-24T14:48" who="Powermonger">
+          <p id="1">Pas tout à fais d'accord, il y a deux versions : le complot français et l'absence de complot.</p>
+          <p id="2"> Je ne pense pas que des forces chtonniennes manipulent Péan !</p>
+          <p id="3"> Avec Survie c'est très simple, quand un écrit va dans le sens du Grand Maître Verschave, c'est une preuve. Quand ça va à l'encontre, c'est aussi une preuve, mais de complot cette fois !</p>
+          <p id="4">
+            <signed>
+              <ref target="https://fr.wikipedia.org/wiki/Utilisateur:Powermonger">
+                <name>Powermonger</name>
+              </ref>
+              <date>24 novembre 2005 à 14:48 (CET)</date>
+            </signed>
+          </p>
+        </post>
+        <post bot="no" id="81" indentLevel="3" num="7" when="unknown" who="anonyme">
+          <p id="1">Voir à ce sujet ce que disent vraiment des militants de Survie : http://survie67.free.fr/France/booh-booh.htm Le négationnisme français</p>
+        </post>
+      </div>
+      <div id="13" level="1">
+        <head>Création d'un nouvel article françafrique (média)</head>
+        <post bot="no" id="82" indentLevel="0" num="1" when="2005-11-25T22:35" who="Le survivant">
+          <p id="1"> Powermonger ayant crée dans l'homonymie un troisème article sur la France-Afrique, j'ai renommé celui-ci françafrique (livres). Le troisième article, françafrique (médias) essaiera de traiter la proposition de plan de Powermonger/Felipeh, si j'ai bien compris leurs intentions. Je l'y ai d'aillleurs recopié par copier/coller !--<signed><ref target="https://fr.wikipedia.org/wiki/Le survivant"><name>Le survivant</name></ref> Le Survivant <date>25 novembre 2005 à 22:35 (CET)</date></signed></p>
+        </post>
+        <post bot="no" id="83" indentLevel="1" num="2" when="2005-11-26T09:57" who="Le survivant">
+          <p id="1">il a été renommé encore Françafrique (concept initial). Puis Powermonger a entammé une guerre d'édition en le renommant autrement. Je remarque que Powermonger/Felipeh n'ont pas accepté les propositions d'intégration de leur vison des choses. Qu'ils la développent dans "leur" article, cela pourra être éventuellement fusionné. J'ai fait une redirection du terme Françafrique sur la page d'homonymie France-Afrique pour respecter la neutralité entre les divers articles, car Powermonger/Felipeh avaient gardé le terme françafrique pour eux-même... et je renvoie à leur article dans un chapitre évolution du concept. J'ai corrigé toutes les redirections vers le choix que Powermonger a imposé par sa guerre d'édition françafrique (livre) pour la définition du concept initial de françafrique. (Choix imposé qui n'est pas neutre par rapport au réel)--<signed><ref target="https://fr.wikipedia.org/wiki/Le survivant"><name>Le survivant</name></ref> Le Survivant <date>26 novembre 2005 à 09:57 (CET)</date></signed></p>
+        </post>
+      </div>
+      <div id="14" level="1">
+        <head>Sur-Catégorisation</head>
+        <post bot="no" id="84" indentLevel="0" num="1" when="2006-05-10T16:07" who="anonyme">
+          <p id="1"> La bible et le Discours de la méthode ont aussi eu beaucoup d'influence sur le mouvement altermondialiste, mais cela n'en fait pas des livres altermondialistes pour autant. Par ailleurs, le livre parle de complot de la part des services français d'un bout à l'autre. La catégorie Théorie du complot est donc pleinement justifiée. Mais bon, pour le savoir, il faut l'avoir lu... --Utilisateur:Powermonger/Signature <signed><date>10 mai 2006 à 16:07 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="85" indentLevel="2" num="2" when="2006-05-10T17:08" who="HDDTZUZDSQ">
+          <p id="1">Et bien ça n'est pas une théorie : c'est des faits rééls. Et j'ai lu le livre. (FXV était un piler d'ATTAC, et Survie est une asso fondatrice du mouvement.) <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:HDDTZUZDSQ"><name>HDDTZUZDSQ</name></ref><date>10 mai 2006 à 17:08 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="86" indentLevel="3" num="3" when="2006-05-10T17:37" who="anonyme">
+          <p id="1"> Si. Ou alors vous ne savez pas ce qu'est une théorie. --Utilisateur:Powermonger/Signature <signed><date>10 mai 2006 à 17:37 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="87" indentLevel="4" num="4" when="2006-05-10T17:42" who="HDDTZUZDSQ">
+          <p id="1">Reseaux Pasqua, Foccart, Affaires ELF, etc... C'est des théories ? ou des faits ? A la limite, créé une catégorie "Complot", mais faire croire que c'est fictif, ca s'approche un peu d'une tentative de désinformation. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:HDDTZUZDSQ"><name>HDDTZUZDSQ</name></ref><date>10 mai 2006 à 17:42 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="88" indentLevel="3" num="5" when="2006-05-10T17:50" who="anonyme">
+          <p id="1"> L'auteur expose ses théories sur ces affaires (September, Olympio) qui comprennent un complot (plusieurs personnes qui s'entendent) au sein des services spéciaux français. --Utilisateur:Powermonger/Signature <signed><date>10 mai 2006 à 17:50 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="89" indentLevel="4" num="6" when="2006-05-10T17:53" who="HDDTZUZDSQ">
+          <p id="1">La "Théorie du complot" N'EST PAS EVOQUE DANS L'ARTICLE. Poubelle. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:HDDTZUZDSQ"><name>HDDTZUZDSQ</name></ref><date>10 mai 2006 à 17:53 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="90" indentLevel="5" num="7" when="2006-05-10T17:59" who="anonyme">
+          <p id="1"> Ca y est, c'est fait. Maintenant tu peux retourner créer tes catégories à la ... --Utilisateur:Powermonger/Signature <signed><date>10 mai 2006 à 17:59 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="91" indentLevel="4" num="8" when="2006-05-10T18:09" who="HDDTZUZDSQ">
+          <p id="1">Non sourcé. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:HDDTZUZDSQ"><name>HDDTZUZDSQ</name></ref><date>10 mai 2006 à 18:09 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="92" indentLevel="5" num="9" when="2006-05-10T18:17" who="anonyme">
+          <p id="1"> La source, c'est le livre... Fin du débat. --Utilisateur:Powermonger/Signature <signed><date>10 mai 2006 à 18:17 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="93" indentLevel="4" num="10" when="2006-05-10T18:18" who="HDDTZUZDSQ">
+          <p id="1">FX ne dit pas dans son livre qu'il a monté une théorie du complot. Fin du débat. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:HDDTZUZDSQ"><name>HDDTZUZDSQ</name></ref><date>10 mai 2006 à 18:18 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="94" indentLevel="6" num="11" when="2006-05-11T13:02" who="Esperanza36">
+          <p id="1">M. Powermonger, pouvez-vous être plus précis. Ou voyez vous également dans le livre "Françafrique" Verschave mentionner la théorie du complot? <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Esperanza36"><name>Esperanza36</name></ref><date>11 mai 2006 à 13:02 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="95" indentLevel="7" num="12" when="2006-05-11T14:42" who="Papa6">
+          <p id="1">Je peux répondre moi aussi. Je prends la définition du wikitionnaire : "Entreprise formée secrètement entre deux ou plusieurs personnes contre la sûreté de l’état ou contre quelqu’un."</p>
+          <p id="2"> Chaque chapitre du livre mentionne ces accords secrets, ces coups tordus, ces manipulations fomentés par plusieurs personnes proches des milieux mafieux, FN, franc-maçons, contre la démocratie et les opposants politiques de plusieurs pays d'Afrique. Le livre regorge de ces exemples. Mais c'est vrai que le terme "complot" est implicite. Si ce n'est pas clair, et que vous voulez qu'on en fasse un paragraphe, on peut le faire. --<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Papa6"><name>Papa6</name></ref><date>11 mai 2006 à 14:42 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="96" indentLevel="8" num="13" when="2006-05-11T15:23" who="anonyme">
+          <p id="1"> J'aurais pas pu dire mieux... --Utilisateur:Powermonger/Signature <signed><date>11 mai 2006 à 15:23 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="97" indentLevel="9" num="14" when="2006-05-12T16:21" who="Esperanza36">
+          <p id="1">Sans vouloir jouer sur les mots, la THEORIE du complot a une connotation négative : voir définition dans wikipedia : "Théorie du complot est un terme, le plus souvent péjoratif, désignant une théorie selon laquelle un pouvoir illégitime et occulte agit en secret pour arriver à ses fins." Dans cette meme définition, mais encore plus explicite : "La qualification de théorie du complot permet de discréditer une argumentation, en l'assimilant à une attitude paranoïaque, les arguments à son encontre passent pour des manipulations supplémentaires." Le mentionner suggere que la dénonciation de ces complots ne sont qu'affabulations. C'est pourquoi je demandais où vous aviez vu que Verschave revendiquait utiliser cette THEORIE du complot. Si vous ne pouvez pas le citer, il faut supprimer la référence à cette fumeuse "THEORIE du complot". <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Esperanza36"><name>Esperanza36</name></ref><date>12 mai 2006 à 16:21 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="98" indentLevel="2" num="15" when="2006-05-12T16:38" who="anonyme">
+          <p id="1"> Le pouvoir occulte = le SDECE, Foccart et les autres. Je vous signale que la tentative d'assassinat du pape et l'assassinat de Kennedy sont aussi dans théorie du complot. Ensuite il y a une définition dans la catégorie et l'article colle tout à fait. Enfin, rien ne prouve les accusations de Verschave puisqu'elles n'ont jamais fait l'objet de confirmation de la part des interressé. Il s'agit de théories verschaviennes, et non pas d'un manuel d'histoire. --Utilisateur:Powermonger/Signature <signed><date>12 mai 2006 à 16:38 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="99" indentLevel="1" num="16" when="2006-05-14T10:33" who="Morula">
+          <p id="1">Je suis plutôt d'accord avec Esperanza, je ne vois pas en quoi ce livre élaborerait une "théorie du complot". Exposer les multiples ententes existant entre personnes haut placées n'a rien à voir avec un délire paranoïaque... <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Morula"><name>Morula</name></ref><date>14 mai 2006 à 10:33 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="100" indentLevel="2" num="17" when="2006-05-15T17:10" who="Esperanza36">
+          <p id="1">Powermonger, vous ne repondez pas à ce que j'écrit. Je vous renvoi à la définition donnée de theorie du complot "La qualification de théorie du complot permet de discréditer une argumentation, en l'assimilant à une attitude paranoïaque, les arguments à son encontre passent pour des manipulations supplémentaires." Ecrire cela sur les ouvrages de Verschave est un point de vue subjectif. Cela n'a donc rien à faire dans wikipedia. Cela n'a rien d'objectif. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Esperanza36"><name>Esperanza36</name></ref><date>15 mai 2006 à 17:10 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="101" indentLevel="2" num="18" when="2006-05-14T14:31" who="Nkm">
+          <p id="1">Attention, la théorie du complot ne relève pas forcément du délire!!<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Nkm"><name>Nkm</name></ref><date>14 mai 2006 à 14:31 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="102" indentLevel="3" num="19" when="2006-05-15T17:10" who="Esperanza36">
+          <p id="1">Dans ce cas, Nkm, il faut changer la définition de théorie du complot dans wikipedia. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Esperanza36"><name>Esperanza36</name></ref><date>15 mai 2006 à 17:10 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="103" indentLevel="0" num="20" when="2006-05-15T17:34" who="Papa6">
+          <p id="1"> C'est bizarre d'en arriver à se disputer sur un terme, car dans l'ensemble, il me semble que (dans l'ordre des interventions) Powermonger, moi, Nkm et Esperanza36 pouvons être d'accord.</p>
+          <p id="2"> Je cite à nouveau la définition (intitullée "concept") sur la page Théorie du complot :</p>
+          <p id="3"> "On qualifie couramment de théories du complot les diverses expressions de la « manipulation des masses » par un groupe de pouvoir secret. Ce groupe serait typiquement minoritaire, élitiste et/ou sectaire et utiliserait des moyens politiques, financiers, militaires, psychologiques ou scientifiques."</p>
+          <p id="4"> Peut-être ce que veut dire Espéranza36 (faut me corriger), c'est que le livre de Verschave n'est pas une théorie non aboutie, mais plutôt réalisée. Autrement dit, il y a des comploteurs qui n'arrivent pas à leur fin (et il semble qu'Espéranza36 limite la définition du complot à ce stade), tandis que d'autres aboutissent. C'est le cas de ce qui est présenté dans le livre.</p>
+          <p id="5"> Je crois qu'il ne faut pas limiter les complots aux seules tentatives non abouties. On peut comploter et réussir. C'est pour ça qu'il me semble que le livre rentre dans cette catégorie.</p>
+          <p id="6"> Et que pensez-vous de demander l'avis à des gens de Survie ? (pardon Powermonger, c'est pour la "bonne cause"  ;-)</p>
+          <p id="7"> --<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Papa6"><name>Papa6</name></ref><date>15 mai 2006 à 17:34 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="104" indentLevel="2" num="21" when="unknown" who="anonyme">
+          <p id="1">Ce qui me gene dans le fait de catégoriser les thèses de verschave comme une Théorie du complot n'est pas le passage que vous citez mais ce qu'il est ecrit un peu plus loin : "La qualification de théorie du complot permet de discréditer une argumentation, en l'assimilant à une attitude paranoïaque, les arguments à son encontre passent pour des manipulations supplémentaires."</p>
+        </post>
+        <post bot="no" id="105" indentLevel="0" num="22" when="2006-05-16T16:40" who="Esperanza36">
+          <p id="1">Assigner la terme de théorie du complot, c donc discrediter les thèses développées ici. Il n'y a rien d'objectif à cela.</p>
+          <p id="2"> Par alleurs, la théorie du complot mentionne "Une théorie du complot est totale, c'est à dire qu'une seule entité exercerait ce complot universel pancratique.". C'est totalement faux par rapport à ce que raconte vershave sur la francafrique puisqu'il parle d'une multitude d'entités distinctes.</p>
+          <p id="3">
+            <signed>
+              <ref target="https://fr.wikipedia.org/wiki/Utilisateur:Esperanza36">
+                <name>Esperanza36</name>
+              </ref>
+              <date>16 mai 2006 à 16:40 (CEST)</date>
+            </signed>
+          </p>
+        </post>
+        <post bot="no" id="106" indentLevel="1" num="23" when="2006-06-06T17:24" who="anonyme">
+          <p id="1">Non,non non. La définition s'applique pleinement. Vous n'avez convaincu personne.</p>
+          <p id="2"> La définition de la catégorie est la suivante :</p>
+          <p id="3"> "Cette catégorie réunit : des éléments, avérés ou non, ayant donné lieu à des interprétations pouvant être considérés comme relevant de la théorie du complot; des théories existant sur divers faits historiques; des personnalités dont les actions ou les oeuvres peuvent être vues comme alimentant de telles théories; des oeuvres ayant alimenté une vision conspirationniste de la réalité ou étant accusées de l'alimenter."</p>
+          <p id="4"> On est en plein dedans. --Utilisateur:Powermonger/Signature <signed><date>6 juin 2006 à 17:24 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="107" indentLevel="3" num="24" when="unknown" who="anonyme">
+          <p id="1">Je ne vous ai peut etre pas convaincu mais cela ne signifie pas que je n'ai convaincu personne..</p>
+        </post>
+        <post bot="no" id="108" indentLevel="0" num="25" when="2006-06-09T14:37" who="Esperanza36">
+          <p id="1">Vous ne répondez pas aux autres points que je soulève "La qualification de théorie du complot permet de discréditer une argumentation, en l'assimilant à une attitude paranoïaque" (C'est d'ailleurs pr cela que vous insistez tant pour garder cette catégorie) et sur l'argument "Une théorie du complot est totale, c'est à dire qu'une seule entité exercerait ce complot universel pancratique.".</p>
+          <p id="2"> Merci donc de répondre à ces deux points avant de remettre la catégorie théorie du complot. Quand à votre définition de la catégorie que vous donnez, elle semble très incomplète au regard de la définition Théorie du complot. Votre argument n'est donc pas valide. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Esperanza36"><name>Esperanza36</name></ref><date>9 juin 2006 à 14:37 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="109" indentLevel="4" num="26" when="2006-06-09T15:29" who="anonyme">
+          <p id="1">La catégorie est bien définie, ce bouquin rentre en plein dedans. Votre argument est de nature a supprimer "'tous"' les articles de cette catégorie, ce qui a été refusé par vote de la communauté. Il ne s'agit, à mon avis, ni plus, ni moins que d'une remise en cause d'une décision commune.</p>
+          <p id="2"> L'attitude paranoïaque de Verschave vis-à-vis de l'Afrique et de la politique africaine de la France n'est par ailleurs plus a démontrer (même si c'est hors sujet pour ce classement). --Utilisateur:Powermonger/Signature <signed><date>9 juin 2006 à 15:29 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="110" indentLevel="5" num="27" when="2006-06-09T18:48" who="anonyme">
+          <p id="1"> Je ne comprends pas bien l'argument. La DEFINITION de théorie du complot est extremement clair, et bien plus développé que la définition de la CATEGORIE de la théorie du complot. Ce qui n'a  pas de sens. Et je maintiens que la théorie du complot, telle que définie dans Wikipedia, ne s'applique pas aux propos de Verschave pour les deux raisons mis en avant plus haut. <signed><date>9 juin 2006 à 18:48 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="111" indentLevel="6" num="28" when="2006-06-09T18:58" who="anonyme">
+          <p id="1"> Il y a eu un vote, la définition de la cat a été acceptée. Ou est le problème ? --Utilisateur:Powermonger/Signature <signed><date>9 juin 2006 à 18:58 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="112" indentLevel="3" num="29" when="2006-06-09T19:26" who="HDDTZUZDSQ">
+          <p id="1">La cat oui, pas du tout son emploi pour y mettre tout et n'importe quoi. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:HDDTZUZDSQ"><name>HDDTZUZDSQ</name></ref><date>9 juin 2006 à 19:26 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="113" indentLevel="4" num="30" when="2006-06-09T19:40" who="anonyme">
+          <p id="1"> M'enfin... La définition a été faite suite à ça non ? --Utilisateur:Powermonger/Signature <signed><date>9 juin 2006 à 19:40 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="114" indentLevel="5" num="31" when="2006-06-09T21:02" who="HDDTZUZDSQ">
+          <p id="1">Mettre la cat "théorie du complot" sur des faits rééls est une idiotie.  <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:HDDTZUZDSQ"><name>HDDTZUZDSQ</name></ref><date>9 juin 2006 à 21:02 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="115" indentLevel="6" num="32" when="2006-06-10T10:48" who="anonyme">
+          <p id="1"> Merci d'avoir fait part de cette information capitale... --Utilisateur:Powermonger/Signature <signed><date>10 juin 2006 à 10:48 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="116" indentLevel="5" num="33" when="2006-06-10T13:02" who="Papa6">
+          <p id="1">HDDTZUZDSQ écrit "Mettre la cat "théorie du complot" sur des faits rééls est une idiotie."</p>
+          <p id="2"> C'est, à mon avis, en contradiction avec les définitions établies. Je répète qu'il peut y avoir des théories qui échouent, et d'autres qui réussissent et aboutissent sur des faits réels.--<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Papa6"><name>Papa6</name></ref><date>10 juin 2006 à 13:02 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="117" indentLevel="6" num="34" when="2006-06-10T13:32" who="anonyme">
+          <p id="1"> Il me semble d'ailleurs que l'exemple-type est l'assassinat de Kennedy, où il y a fait réel et de nombreuses théories sur les complots y relatifs. Le cas est exactement le même que celui de Dulcie September. --Utilisateur:Powermonger/Signature <signed><date>10 juin 2006 à 13:32 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="118" indentLevel="3" num="35" when="2006-06-12T09:28" who="anonyme">
+          <p id="1"> Pas de revers sans arguments. --Utilisateur:Powermonger/Signature <signed><date>12 juin 2006 à 09:28 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="119" indentLevel="5" num="36" when="2006-06-12T14:14" who="HDDTZUZDSQ">
+          <p id="1">Je pense que les arguments sont les mêmes. Rien ne permet de soupconner une théorie du complot dans le livre de Verschave, et on ne va pas se mettre à catégoriser n'importe quoi. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:HDDTZUZDSQ"><name>HDDTZUZDSQ</name></ref><date>12 juin 2006 à 14:14 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="120" indentLevel="6" num="37" when="2006-06-12T15:14" who="anonyme">
+          <p id="1"> Quand on accuse le SDECE d'avoir fomenter un complot contre Dulcie September, alors l'auteur évoque une théorie du complot. Il y a théorie, c'est le sujet du livre et il y a complot, c'est à dire un ensemble de personnes qui s'entendent pour nuire à une autre. CQFD. Tout autre argument ne saurait que révéler une mauvaise foi. --Utilisateur:Powermonger/Signature <signed><date>12 juin 2006 à 15:14 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="121" indentLevel="6" num="38" when="2006-06-12T15:34" who="HDDTZUZDSQ">
+          <p id="1">Tant que l'article n'en parle pas, avec un texte précisément sourcé sur ce "complot" avec ce vocable, il n'y pas de raison de mettre cette catégorie. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:HDDTZUZDSQ"><name>HDDTZUZDSQ</name></ref><date>12 juin 2006 à 15:34 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="122" indentLevel="7" num="39" when="2006-06-12T15:50" who="anonyme">
+          <p id="1"> Il y un chapitre "une série de complot" dans l'article. Le livre ne parle que de ça. Faut lire avant de décider que TU ne veux pas de ça. --Utilisateur:Powermonger/Signature <signed><date>12 juin 2006 à 15:50 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="123" indentLevel="8" num="40" when="2006-06-12T15:54" who="anonyme">
+          <p id="1"> Je rajoute la catégorie et un bandeau de désaccord. Tu mettras tes motivations dedans. Comme ça, les gens qui consulterons la catégorie Théorie du Complot pourront aussi donner leur avis. --Utilisateur:Powermonger/Signature <signed><date>12 juin 2006 à 15:54 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="124" indentLevel="9" num="41" when="2006-06-12T16:05" who="anonyme">
+          <p id="1"> Si on ne met pas la catégorie en litige, comment les contributeurs vont-ils y venir ? Je m'en fous, lance ton CAr, je n'y répondrais pas. --Utilisateur:Powermonger/Signature <signed><date>12 juin 2006 à 16:05 (CEST)</date></signed></p>
+        </post>
+      </div>
+      <div id="15" level="1">
+        <head>Conflit sur la catégorie</head>
+        <post bot="no" id="125" indentLevel="0" num="1" when="2006-06-12T17:00" who="Markov">
+          <p id="1"> Bon, en passant j'ai vu qu'il y avait un conflit sur la page, j'en profite pour donner mon point de vue sur le fond.</p>
+          <p id="2"> Si j'ai bien compris, les intervenants semblent d'accord pour dire que "si" on catégorise cet article dans "Théorie du complot", cela signifie que ce livre relève effectivement de la théorie du complot. Ce point étant posé, il faut s'interroger ce qui permet de respecter au maximum la neutralité :</p>
+          <list>
+            <item id="3"> Est-ce que des sources publiées qualifient ce livre de théorie du complot ? Sont-elles unanimes sur ce point ?</item>
+            <item id="4"> Est-ce que l'auteur ou ceux qui le défendent font part, assument, ou au contraire récusent que le livre constitue une théorie du complot ?</item>
+          </list>
+          <p id="5"> Au final, la question des sources et références constituent toujours ce qui fait foi en cas de désaccord entre contributeurs. On peut "conclure" ou "démontrer" que le livre relève de la théorie du complot, mais Wikipédia n'est pas là pour évoquer nos démonstrations, aussi pertinentes soient-elles. Par exemple je pourrais "démontrer" tout aussi rigoureusement que J. Chirac est un menteur. Mais sur Wikipédia, tout ce que je peux faire, c'est de dire qu'il est qualifié ainsi par telle ou telle personne, ce n'est pas à nous d'attribuer les qualifications, "même si elles sont vraies". Je ne me prononce pas sur la catégorie, je ne connais pas assez le sujet, mais je pense que pour catégoriser, il faut dans le cas présent que l'on soit sûr que les sources publiées qui parlent de ce livre s'accordent de façon générale sur ce point. --<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Markov"><name>Markov</name></ref><date>12 juin 2006 à 17:00 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="126" indentLevel="1" num="2" when="2006-06-12T17:26" who="HDDTZUZDSQ">
+          <p id="1">Personne n'a parlé de "théorie du complot" au sujet de ce bouquin ... c'est une invention de powermonger... <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:HDDTZUZDSQ"><name>HDDTZUZDSQ</name></ref><date>12 juin 2006 à 17:26 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="127" indentLevel="2" num="3" when="2006-06-12T18:10" who="Markov">
+          <p id="1">Si tel est le cas, alors la catégorie ne se justifie pas. Le rôle de Wikipédia n'est pas de dire la vérité mais de décrire de façon impartiale ce qui s'écrit sur un sujet donné. C'est peut-être vrai et "démontrable" que ce livre relève de la théorie du complot, mais ce n'est pas à wikipédia de le déduire lui-même. --<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Markov"><name>Markov</name></ref><date>12 juin 2006 à 18:10 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="128" indentLevel="3" num="4" when="2006-06-12T18:22" who="anonyme">
+          <p id="1">Dans ce bouquin, Verschave emet un certain nombre de théories sur certains évènements au regard de son analyse des relations franco-africaines. Tout au long du livre, il dénonce des complots auxquels auraient participé la France, via le SDECE.</p>
+          <p id="2"> A cet égard, le cas de Sylvanus Olympio est très explicite. Verschave accuse la France d'avoir activement aidé à l'assassinat de celui-ci. C'est une théorie, puisque la France n'a jamais rien reconnu de tel. Et il y a complot, puisqu'il y aurait eu entente préalable avec Eyadema.</p>
+          <p id="3"> L'important n'est pas le terme, c'est l'esprit. Parce que sinon, en partant de la même logique, on peut noter que le terme altermondialisme est aussi absent de l'article.</p>
+          <p id="4"> Tiens, une source bien alter comme il aime qui qualifie l'histoire de Sylvanus Olympio de complot : http://www.cequilfautdetruire.org/article.php3?id_article=631</p>
+          <p id="5"> --Utilisateur:Powermonger/Signature <signed><date>12 juin 2006 à 18:22 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="129" indentLevel="4" num="5" when="2006-06-12T18:32" who="anonyme">
+          <p id="1">Une autre ""pure invention"" : http://www.letogolais.com/article.html?nid=2265</p>
+          <p id="2"> Encore une ""pure invention"", mais de Verschave lui-même : http://www.lemonde.fr/web/chat/0,46-0@2-3212,55-644503@45-2,0.html</p>
+          <p id="3"> La ""pure invention"", vue par Survie : http://www.survie-france.org/IMG/doc/32.doc</p>
+          <p id="4"> Bref, le monde entier peut bien expliquer que Verschave a passé sa vie a dénoncer des complots, HDD ne l'a pas fait, donc le monde entier à tort. CQFD ? --Utilisateur:Powermonger/Signature <signed><date>12 juin 2006 à 18:32 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="130" indentLevel="5" num="6" when="2006-06-12T18:37" who="Markov">
+          <p id="1">""Parce que sinon, en partant de la même logique, on peut noter que le terme altermondialisme est aussi absent de l'article."" Lorsqu'une qualification, info n'est pas contestée par un contributeur, une source n'est pas obligatoire, mais dès lors qu'il y a désaccord, ce sont les sources publiées qui font foi. Powermonger tu as peut-être raison de déduire que le livre constitue de fait une théorie du complot, mais c'est ta déduction. Peut-être que Verschave ne considère pas son livre comme une théorie du complot, ni même qu'il s'agisse d'une théorie. --<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Markov"><name>Markov</name></ref><date>12 juin 2006 à 18:37 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="131" indentLevel="3" num="7" when="2006-06-12T18:41" who="Markov">
+          <p id="1">Justtement ton lien Powermonger détaille que Gilles Labarthe a finalement abondonné l'idée qu'il s'agisse d'une théorie du complot. La qualification n'est donc pas unanime, non ? --<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Markov"><name>Markov</name></ref><date>12 juin 2006 à 18:41 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="132" indentLevel="6" num="8" when="2006-06-12T18:44" who="anonyme">
+          <p id="1"> Verschave lui-même parle de complot dans l'histoire Sylvanus Olympio ! Idem pour l'association Survie. A coup sur on trouverait la même chose pour Dulcie September. Quant à la catégorie Altermondialisme, elle n'a survécue que parce que nous en avons eu marre des revers de HDD. --Utilisateur:Powermonger/Signature <signed><date>12 juin 2006 à 18:44 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="133" indentLevel="6" num="9" when="2006-06-12T18:44" who="anonyme">
+          <p id="1"> Non, il dit que ce n'est pas qu'une théorie, mais une vérité. --Utilisateur:Powermonger/Signature <signed><date>12 juin 2006 à 18:44 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="134" indentLevel="7" num="10" when="2006-06-12T18:46" who="Markov">
+          <p id="1">C'est donc bien que le terme "théorie" ne représente qu'un seul point de vue, non ? --<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Markov"><name>Markov</name></ref><date>12 juin 2006 à 18:46 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="135" indentLevel="8" num="11" when="2006-06-12T18:50" who="anonyme">
+          <p id="1"> Si on demande à l'auteur d'une théorie si il s'agit d'une théorie, il dira que non, c'est la vérité. En raisonnant comme ça, la théorie de Meyssan, l"'effroyabe imposture" n'a pas sa place dans la catégorie de la même façon. --Utilisateur:Powermonger/Signature <signed><date>12 juin 2006 à 18:50 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="136" indentLevel="1" num="12" when="2006-06-12T18:51" who="anonyme">
+          <p id="1"> Et bien, sort nous ta preuve miracle qui montre que ce n'est pas une théorie, mais une vérité démontrée. --Utilisateur:Powermonger/Signature <signed><date>12 juin 2006 à 18:51 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="137" indentLevel="2" num="13" when="2006-06-12T18:52" who="HDDTZUZDSQ">
+          <p id="1">Héhé. Prend moi pour un con en rhétorique, aussi. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:HDDTZUZDSQ"><name>HDDTZUZDSQ</name></ref><date>12 juin 2006 à 18:52 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="138" indentLevel="3" num="14" when="2006-06-12T18:53" who="anonyme">
+          <p id="1"> Déjà fait. --Utilisateur:Powermonger/Signature <signed><date>12 juin 2006 à 18:53 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="139" indentLevel="4" num="15" when="2006-06-12T18:54" who="HDDTZUZDSQ">
+          <p id="1">Pov bout d'chou. T'es faché ? :-) <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:HDDTZUZDSQ"><name>HDDTZUZDSQ</name></ref><date>12 juin 2006 à 18:54 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="140" indentLevel="0" num="16" when="unknown" who="anonyme">
+          <p id="1"> Ne coupe pas la parole !</p>
+        </post>
+        <post bot="no" id="141" indentLevel="5" num="17" when="2006-06-12T18:42" who="HDDTZUZDSQ">
+          <p id="1">Et oui, ta démonstration, c'est un "travail inédit", pas de chance ...  <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:HDDTZUZDSQ"><name>HDDTZUZDSQ</name></ref><date>12 juin 2006 à 18:42 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="142" indentLevel="5" num="18" when="2006-06-12T18:42" who="HDDTZUZDSQ">
+          <p id="1">Et oui, mais c'est pas une "théorie", à la limite, la catégorie:complot tout court en tant que mot-clé, se justifierait ...  <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:HDDTZUZDSQ"><name>HDDTZUZDSQ</name></ref><date>12 juin 2006 à 18:42 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="143" indentLevel="5" num="19" when="2006-06-12T18:42" who="HDDTZUZDSQ">
+          <p id="1">Alors là c'est carrément excellent : Bravo pour tes sources : ces deux articles t'expliquent "'justement pourquoi"' tu ne dois pas mettre ce bandeau, si tu les lis bien: Tu cherches à décrédibiliser les travaux de Verschave. Héhéhé. C'est exactement pour ça que je t'empêche de le mettre: Parce que tu considères que ce bouquin c'est de la foutaise et que tu veux le décrédibiliser aux yeux du lecteur. A la limite tu peux créér "Désinformation en accusant de théorie du complot", et là y'aura pas de problème. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:HDDTZUZDSQ"><name>HDDTZUZDSQ</name></ref><date>12 juin 2006 à 18:42 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="144" indentLevel="0" num="20" when="2006-06-12T19:02" who="Markov">
+          <p id="1"> Bon, si vous continuez à vous invectiver tous les deux, je vous laisse à vos débats stériles. Pour répondre à Powermonger, puisque le point de vue de Gilles Labarthe est que ce n'est pas une théorie du complot, et que la règle de neutralité indique qu'il ne faut pas laisser entendre qu'un point de vue vaut moins qu'un autre, la catégorisation pose bien un problème de neutralité. --<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Markov"><name>Markov</name></ref><date>12 juin 2006 à 19:02 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="145" indentLevel="1" num="21" when="2006-06-12T19:05" who="anonyme">
+          <p id="1"> Dans ce cas, c'est valable pour tous les articles listés dedans. --Utilisateur:Powermonger/Signature <signed><date>12 juin 2006 à 19:05 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="146" indentLevel="2" num="22" when="2006-06-12T19:06" who="Markov">
+          <p id="1">Peut-être, je n'ai pas été voir. --<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Markov"><name>Markov</name></ref><date>12 juin 2006 à 19:06 (CEST)</date></signed></p>
+        </post>
+      </div>
+      <div id="16" level="1">
+        <head>Discussion avec Markov</head>
+        <post bot="no" id="147" indentLevel="0" num="1" when="2006-06-12T18:56" who="anonyme">
+          <p id="1"> Si on prend la définition de la catégorie :</p>
+          <p id="2"> "Cette catégorie réunit : des éléments, avérés ou non, ayant donné lieu à des interprétations pouvant être considérés comme relevant de la théorie du complot; des théories existant sur divers faits historiques; des personnalités dont les actions ou les oeuvres peuvent être vues comme alimentant de telles théories; des oeuvres ayant alimenté une vision conspirationniste de la réalité ou étant accusées de l'alimenter."</p>
+          <p id="3"> On en arrive à la conclusion qu'a partir du moment où un auteur dénonce un ou plusieurs complots (comme c'est le cas dans françafrique), et que cette dénonciation en reste au stade théorique (c'est à dire avec des détracteurs et sans preuve formelle), alors il a sa place dans cette catégorie. --Utilisateur:Powermonger/Signature <signed><date>12 juin 2006 à 18:56 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="148" indentLevel="1" num="2" when="2006-06-12T19:04" who="Markov">
+          <p id="1">Justement l'auteur ou en tout cas certains de ses défenseurs démentent qu'il s'agisse d'une théorie. De plus, la définition de la catégorie ne semble pas faire consensus. --<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Markov"><name>Markov</name></ref><date>12 juin 2006 à 19:04 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="149" indentLevel="2" num="3" when="2006-06-12T19:10" who="anonyme">
+          <p id="1"> Raisonnons sur le cas Thierry Meyssan. Il dit, grosso modo, que c'est faux, jamais un avion ne s'est écrasé sur le pentagone. Si on demande aus siens si il y a eu complot, il diront oui. Si on leur demande si il y a théorie du complot, ils vont dire non, c'est la vérité, pas une théorie. Dans ce cas, la notion même de théorie n'existe plus. --Utilisateur:Powermonger/Signature <signed><date>12 juin 2006 à 19:10 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="150" indentLevel="3" num="4" when="2006-06-12T19:37" who="Markov">
+          <p id="1">Est-ce que l'ouvrage de Verschave est vu de façon très consensuelle comme une théorie du complot, comme peut l'être le travail de Meyssan ?, ca ne me parait pas évident. Plus un point de vue est confidentiel, plus se pose la question de l'analyse inédite. D'où l'importance du travail de recherche de sources, pour savoir précisément comment est qualifié l'ouvrage : par les revues littéraires, les journaux d'opinions et din'formation, etc. Mais la règle est que cela ne doit pas être "nous" qui qualifions nous-même. --<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Markov"><name>Markov</name></ref><date>12 juin 2006 à 19:37 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="151" indentLevel="4" num="5" when="2006-06-12T19:38" who="anonyme">
+          <p id="1"> Le livre parle de complots. Je ne pense pas que HDD remette ça en cause. Maintenant, la question est de savoir si celà reste au stade de théorie (ma version) ou de fait avéré (la version d'HDD). --Utilisateur:Powermonger/Signature <signed><date>12 juin 2006 à 19:38 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="152" indentLevel="5" num="6" when="2006-06-12T19:42" who="anonyme">
+          <p id="1"> Pour élargir le débat, j'ai même une bonne idée : définissons des critères "binaires" qui permettent (ou ne permettent pas) d'entrer dans cette catégorie. Ensuite, appliquons les critères. --Utilisateur:Powermonger/Signature <signed><date>12 juin 2006 à 19:42 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="153" indentLevel="6" num="7" when="2006-06-12T19:45" who="anonyme">
+          <p id="1"> Si tu donnes ton accord, je lancerait un débat sur la page de la catégorie. Ensuite, le débat devrait s'éteindre de lui même.  --Utilisateur:Powermonger/Signature <signed><date>12 juin 2006 à 19:45 (CEST)</date></signed></p>
+        </post>
+      </div>
+      <div id="17" level="1">
+        <head>Bac à sable d'HDD</head>
+        <post bot="no" id="154" indentLevel="1" num="1" when="2006-06-12T18:58" who="HDDTZUZDSQ">
+          <p id="1">Tu l'as vu le bandeau "pertinence" sur la catégorie ? De plus, tu es en train de recommencer ta démonstration inédite. Lire: Wikipédia:Travaux inédits. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:HDDTZUZDSQ"><name>HDDTZUZDSQ</name></ref><date>12 juin 2006 à 18:58 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="155" indentLevel="2" num="2" when="2006-06-12T19:02" who="anonyme">
+          <p id="1"> Oui, c'est ta vengeance contre le refus de suppression de la catégorie. C'est tout. --Utilisateur:Powermonger/Signature <signed><date>12 juin 2006 à 19:02 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="156" indentLevel="3" num="3" when="2006-06-12T19:19" who="anonyme">
+          <p id="1"> Tiens, tu en profiteras pour démontrer la pertinence des catégories Altermondialisme et livre documentaire. --Utilisateur:Powermonger/Signature <signed><date>12 juin 2006 à 19:19 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="157" indentLevel="2" num="4" when="2006-06-12T19:32" who="HDDTZUZDSQ">
+          <p id="1">Tututu. Aucune vengeance là dedans. J'avais dis sur la PaS que certains utilisateurs (malveillants) apposait cette catégorie sans qu'elle ne se justifie. C'est EXACTEMENT ton cas : tu cherches à décrédibiliser le travail de Verschave parce que tu n'aimes pas ce type. Tes "'propres sources"' montrent que c'est comme ça que faisaient ceux qui voulaient nuire a Verschave. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:HDDTZUZDSQ"><name>HDDTZUZDSQ</name></ref><date>12 juin 2006 à 19:32 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="158" indentLevel="3" num="5" when="2006-06-12T19:33" who="anonyme">
+          <p id="1"> Démontre que ce n'est pas une théorie alors, mais un complot avéré. --Utilisateur:Powermonger/Signature <signed><date>12 juin 2006 à 19:33 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="159" indentLevel="4" num="6" when="2006-06-12T21:42" who="Markov">
+          <p id="1">Sur Wikipédia, on ne démontre rien... Wikipédia n'est pas là pour prouver des choses, révéler des démonstrations. Tout ce qui est écrit doit être vérifiable par des sources publiées. --<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Markov"><name>Markov</name></ref><date>12 juin 2006 à 21:42 (CEST)</date></signed></p>
+        </post>
+      </div>
+      <div id="18" level="1">
+        <head>Amis lecteur, qui passe par hasard ...</head>
+        <post bot="no" id="160" indentLevel="0" num="1" when="2006-06-13T00:10" who="HDDTZUZDSQ">
+          <p id="1"> ... dis-toi bien que tout cela n'a pas grand intérêt et qu'il ne faut pas te formaliser des attaques personnelles qui surgissent sur cette page, ni de ces débats houleux. Cette page est un très mauvais exemple de ce qu'est Wikipédia. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:HDDTZUZDSQ"><name>HDDTZUZDSQ</name></ref><date>13 juin 2006 à 00:10 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="161" indentLevel="1" num="2" when="unknown" who="anonyme">
+          <p id="1">Au contraire, elle me paraît un peu trop représentative de ce que je vois depuis quelques semaines / mois. En ce qui concerne la théorie du complot, </p>
+        </post>
+        <post bot="no" id="162" indentLevel="0" num="3" when="2006-06-13T10:02" who="Inisheer">
+          <p id="1">les doutes de Markov sont justifiés: cette catégorie est réservée aux articles qui traitent d'affaires "qui se sont effectivement révélés comme des théories du complot" et dont la véracité n'est plus revendiquée que de manière marginale (je pense aux Protocoles des Sages de Sion ou au complot des blouses blanches). Ce n'est pas (encore?) le cas de Françafrique, qui n'a donc rien à y faire. De même, la pertinence des catégories mises en avant par HDD me paraît tout aussi douteuse (l'article consacré à Verschave ne mentionne pas de positions altermondialisme ormi sa catégorisation, et le livre n'est certainement pas un documentaire mais un livre politique / polémique / d'accusation / etc. / et j'en passe). Je propose donc le retrait de ces trois catégories, et accessoirement la clôture du débat. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Inisheer"><name>Inisheer</name></ref> :: Canal 16 <date>13 juin 2006 à 10:02 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="163" indentLevel="1" num="4" when="2006-06-13T10:06" who="HDDTZUZDSQ">
+          <p id="1">C'est malin de dire que c'est un bon exemple, ca décourage les nouveaux utilisateurs. Le bouquin de Verschave (militant altermondialiste), dirigeant de l'association Survie (Survie étant une des association FONDATRICE d'Attac), est un monument de la lecture altermondialiste. Donc catégorie:altermondialisme.<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:HDDTZUZDSQ"><name>HDDTZUZDSQ</name></ref><date>13 juin 2006 à 10:06 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="164" indentLevel="0" num="5" when="2006-06-13T00:12" who="HDDTZUZDSQ">
+          <p id="1"> "Déplacé depuis la page de discussion de Powermonger, par Powermonger, et contre l'avis de <signed><name>HDDTZUZDSQ</name></signed> qui estime qu'il faut arrêter ces polémiques stériles:"</p>
+          <p id="2"> Je pense qu'il faut arrêter de mettre n'importe quoi sur la page de discussion de Françafrique. On a bien compris que nos avis divergent, maintenant la question, c'est : jusqu'où défendre son point de vue ? Personnellement, je pense que nous sommes en conflit, et je n'ai pas l'intention de céder d'un pouce sur ta "théorie du complot". Est-ce que tu as quelque chose à proposer ?  <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:HDDTZUZDSQ"><name>HDDTZUZDSQ</name></ref><date>13 juin 2006 à 00:12 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="165" indentLevel="0" num="6" when="2006-06-13T00:13" who="HDDTZUZDSQ">
+          <p id="1"> Je rappelle que je suis chômeur, sans problème de ressources, et que j'ai donc "'tout mon temps"'. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:HDDTZUZDSQ"><name>HDDTZUZDSQ</name></ref><date>13 juin 2006 à 00:13 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="166" indentLevel="2" num="7" when="2006-06-13T09:32" who="anonyme">
+          <p id="1"> No comment. --Utilisateur:Powermonger/Signature <signed><date>13 juin 2006 à 09:32 (CEST)</date></signed></p>
+        </post>
+      </div>
+      <div id="19" level="1">
+        <head>Catégorie Altermondialisme et livre documentaire</head>
+        <post bot="no" id="167" indentLevel="0" num="1" when="2006-06-13T09:44" who="anonyme">
+          <p id="1"> Tout autant injustifié, sinon plus que théorie du complot. Le livre ne parle pas d'altermondialisme et Verschaves se définit comme apolitique. Livre documentaire contient livre de cuisine et de mathématiques. --Utilisateur:Powermonger/Signature <signed><date>13 juin 2006 à 09:44 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="168" indentLevel="1" num="2" when="unknown" who="anonyme">
+          <p id="1">"livre majeur dans le courant altermondialiste, comme c'est dit dans l'article, FXV étant aussi un pilier du mouvement, et Survie étant fondateur d'ATTAC. Ca suffit largement."</p>
+        </post>
+        <post bot="no" id="169" indentLevel="2" num="3" when="2006-06-13T10:02" who="anonyme">
+          <p id="1">C'est toi qui a rajouté ce passage pour justifié la catégorie.</p>
+          <p id="2"> N'a jamais prétendu avoir écrit un bouquin d'histoire ou de géopolitique. Viré aussi. --Utilisateur:Powermonger/Signature <signed><date>13 juin 2006 à 10:02 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="170" indentLevel="0" num="4" when="2006-06-13T10:04" who="anonyme">
+          <p id="1"> SOURCES DEMANDEES --Utilisateur:Powermonger/Signature <signed><date>13 juin 2006 à 10:04 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="171" indentLevel="1" num="5" when="2006-06-13T10:21" who="HDDTZUZDSQ">
+          <p id="1">J'en ai mis trois. Je t'assures que je peux en mettre 30 si tu souhaites que je continue la pub ATTAC/Survie. <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:HDDTZUZDSQ"><name>HDDTZUZDSQ</name></ref><date>13 juin 2006 à 10:21 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="172" indentLevel="2" num="6" when="2006-06-13T10:26" who="anonyme">
+          <p id="1"> Le bonhomme, oui. Le livre non. Ou alors rajoute la bible, qui a eu encore plus d'influence sur le mouvement altermondialiste. --Utilisateur:Powermonger/Signature <signed><date>13 juin 2006 à 10:26 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="173" indentLevel="3" num="7" when="2006-06-13T10:28" who="HDDTZUZDSQ">
+          <p id="1">Le livre aussi: http://www.attac.org/fra/asso/doc/bibliotheque19.htm (faudrait que tu lises l'article...) <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:HDDTZUZDSQ"><name>HDDTZUZDSQ</name></ref><date>13 juin 2006 à 10:28 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="174" indentLevel="0" num="8" when="2006-06-13T10:24" who="Markov">
+          <p id="1"> Attention à éviter les réactions du type de celles décrites sur la page POINT. Et éviter si possible d'écrire en majuscules, ce qui est l'équivalent de crier sur internet. Bon, je vous laisse, je n'ai plus grand'chose à ajouter. Pensez à faire venir des wikipompiers s'ils ne se manifestent pas directement (certaines fois il faut les relancer). En se basant sur des sources et le maximum de références, vous devriez trouver un terrain d'entente. Bon courage, et surtout, restez calmes et supposez la bonne foi de votre interlocuteur. --<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:Markov"><name>Markov</name></ref><date>13 juin 2006 à 10:24 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="175" indentLevel="1" num="9" when="2006-06-13T10:26" who="anonyme">
+          <p id="1"> Merci quand même de ton intervention. :-) --Utilisateur:Powermonger/Signature <signed><date>13 juin 2006 à 10:26 (CEST)</date></signed></p>
+        </post>
+        <post bot="no" id="176" indentLevel="1" num="10" when="2006-06-13T10:28" who="HDDTZUZDSQ">
+          <p id="1">Merci aussi. Surtout pour avoir déjoué le "complot" de la "théorie" Powermongienne. :-) <signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:HDDTZUZDSQ"><name>HDDTZUZDSQ</name></ref><date>13 juin 2006 à 10:28 (CEST)</date></signed></p>
+        </post>
+      </div>
+      <div id="20" level="1">
+        <head>Proposition de retrait du bandeau Wikipompier.</head>
+        <post bot="no" id="177" indentLevel="0" num="1" when="2006-08-13T15:14" who="LudovicRivallain">
+          <p id="1"> Il semble que ce article soit cité dans la :Catégorie:Wikipompiers Feux éteints des wikipompiers. Est-il nécessaire de garder le bandeau à présent ou souhaitez vous le faire retirer? Merci de me contacter sur ma page de discussion (ma page de discussion) en précisant le nom de l'article concerné et la décision que j'appliquerais au plus vite. Merci. --<signed><ref target="https://fr.wikipedia.org/wiki/Utilisateur:LudovicRivallain"><name>LudovicRivallain</name></ref><date>13 août 2006 à 15:14 (CEST)</date></signed></p>
+        </post>
+      </div>
+    </body>
+  </text>
+</TEI>
