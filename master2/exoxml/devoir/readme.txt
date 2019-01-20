@@ -26,7 +26,7 @@ Plan
 
 Ce document présente le travail effectué pour l'UE traitant de XML et Glozz en Master 2 LITL.
 
-Après une brève présentation du contenu de l'archive, nous présentons notre modèle d'annotation.Nous dressons ensuite un bilan de l'annotation avant de terminer par des notes sur le code.
+Après une brève présentation du contenu de l'archive, nous présentons notre modèle d'annotation. Nous dressons ensuite un bilan de l'annotation avant de terminer par des notes sur le code.
 
 Rechercher le code court entre crochets pour accéder directement à une partie.
 
@@ -107,7 +107,7 @@ Il possède 5 attributs :
         + négatif (ironie, sarcasme, agressif)
       Une félicitation dans un contexte ironique n'a pas la même valeur sémantique qu'une félicitation dans un contexte positif.
     o repriseID : booléen (oui/non) indiquant si la mention d'un locuteur reprend directement son identifiant comme "Cher Crainquebille". Par défaut non.
-    o autoref : si l'utilisateur se mentionne lui même (oui / non), cela correspond à l'utilisation de la première personne. Par défaut non.
+    o autoref : si l'utilisateur se mentionne lui-même (oui / non), cela correspond à l'utilisation de la première personne. Par défaut non.
     o commentaire : pour rajouter une indication libre sur l'annotation comme exprimer un doute, une nuance.
 
 2.2 Type Text
@@ -118,7 +118,13 @@ Une portion de texte. Le type << Text >> n'est pas utilisé.
 2.3 Type Signature
 ------------------
 
-Le type << Signature >> indique simplement une signature de post. Elles sont automatiquement créés par le script de conversion XML => AA/AC mais l'annotateur peut en rajouter manuellement.
+Le type << Signature >> indique simplement une signature de post. Elles sont automatiquement créées par le script de conversion XML => AA/AC mais l'annotateur peut en rajouter manuellement.
+
+*******************
+*** Commentaire ***
+*******************
+
+Il aurait été intéressant d'ajouter un attribut appelé automatique pour garder en mémoire si la balise avait été générée automatiquement ou non.
 
 2.4 Relation MentionOfText
 --------------------------
@@ -126,7 +132,7 @@ Le type << Signature >> indique simplement une signature de post. Elles sont aut
 Une relation qui relie une mention à une partie de texte. Cette relation n'est pas utilisée.
 Notre idée était de pouvoir relier certaines mentions à une portion de texte concernée mais nous avons abandonné cette idée car elle ne semblait pas assez pertinente.
 
-Par exemple pour le remerciement, un intervenant A sur la page de discussion remercie un intervenant B pour une action. Cette action pour laquelle B est remercié n'a que rarement une traduction textuelle ou celle-ci est trop diffuse pour être intéressante.
+Par exemple pour le remerciement, un intervenant A sur la page de discussion remercie un intervenant B pour une action. Cette action pour laquelle B est remerciée n'a que rarement une traduction textuelle ou celle-ci est trop diffuse pour être intéressante.
 
 *******************
 *** Commentaire ***
@@ -162,11 +168,21 @@ o Il ne semble pas possible de modifier le style d'un type en fonction de la val
 3. Bilan de l'annotation [BIL]
 -----------------------------------------------------------
 
+Nous avons demandé à notre camarade Silvia Federzoni d'annoter le texte choisi, la discussion à propos de l'article sur le philosophe Friedrich Nietzsche (fichier original 15075.xml), et elle a aimablement bien voulu se prêter à l'exercice. Nous l'avons annoté de notre côté pour également pour obtenir une paire d'annotation (fichiers AA).
+
+Le script2.py a été conçu pour traiter automatiquement deux annotations, constituées d'unités, et en faire la comparaison.
+
 TODO
 
 -----------------------------------------------------------
 4. Notes sur le code [COD]
 -----------------------------------------------------------
+
+Notre code dépend des modules suivants :
+    o LXML
+    o NLTK (seulement pour le calcul du kappa)
+    o openpyxl (seulement pour la sortie Excel)
+Il a été compilé avec succès sous Windows avec Python 3.6 en version 32 bits.
 
 4.1 script1.py
 --------------
@@ -181,10 +197,10 @@ Le script essaye d'obtenir pour chaque < post > une signature. Pour cela, il reg
 
 Cette systématicité permet de mieux comprendre l'enchaînement des discussions. Un mode debug permet de rajouter des lignes dans le document produit pour Glozz et visualiser mieux les différentes parties de la page de discussion.
 
-Nous avons pas utilisé l'attribut indentLevel pour cette fonctionnalité car le résultat obtenu par notre méthode - en nous basant sur la structure de l'arbre XML - nous semblait suffisant, mais ce serait plus rigoureux, ne serait-ce que pour vérifier.
+Nous n'avons pas utilisé l'attribut [ indentLevel ] pour cette fonctionnalité car le résultat obtenu par notre méthode - en nous basant sur la structure de l'arbre XML - nous semblait suffisant, mais ce serait plus rigoureux, ne serait-ce que pour vérifier.
 
-4.2 script.py
--------------
+4.2 script2.py
+--------------
 
 TODO
 

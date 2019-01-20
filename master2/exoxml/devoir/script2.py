@@ -13,6 +13,7 @@ Damien Gouteux - 2019 - CC 3.0 BY-SA-NC
 
 # External library
 from lxml import etree
+import openpyxl
 
 # Project library
 from log import Log
@@ -49,7 +50,7 @@ class Unit:
     def fun_match(self, other):
         if not isinstance(other, Unit):
             raise Exception('Impossible to compare Annotation to ' + str(type(other)))
-        return self.features['fonction'] != self.features['fonction']
+        return self.features['fonction'] == self.features['fonction']
     
     def __eq__(self, other):
         if not isinstance(other, Unit):
@@ -130,12 +131,55 @@ class Comparison:
                     break
                 p2 += 1
             p1 += 1
+        # Output console
         for p in range(len(ano)):
             print(f"{p}. {ano[p][0]} vs {ano[p][1]}")
-        ### EQUALITY
+        # Save
         self.ano1 = ano1
         self.ano2 = ano2
-        self.ano = ano
+        self.ano = []
+        # Calc
+        for elem in ano:
+            u1 = elem[0]
+            u2 = elem[1]
+            if u1 is not None and u2 is not None:
+                self.ano.append([u1, u2, u1.fun_match(u2)])
+            else:
+                self.ano.append([u1, u2, 'missing annotation'])
+
+    def to_excel(self):
+        data = open('15075.ac', mode='r', encoding='utf8').read()
+        wb = openpyxl.Workbook(write_only=True)
+        ws = wb.active
+        if ws is None:
+            ws = wb.create_sheet("Results")
+        else:
+            ws.title = "Results"
+        for a in self.ano:
+            u1 = a[0]
+            u2 = a[1]
+            row_data = []
+            if u1 is not None:
+                row_data += [u1.start, u1.end, data[u1.start : u1.end], u1.typ]
+            if u2 is not None:
+                row_data += [u2.start, u2.end, data[u2.start : u2.end], u2.typ]
+            row_data.append(a[2])
+            ws.append(row_data)
+        # If the excel is opened we will get an PermissionError.
+        # To prevent the loss of our data, the add a modifier to the filename,
+        # until finding one not already taken.
+        done = False
+        modifier = ''
+        count = 0
+        while not done:
+            try:
+                # We could add a datetime stamp to the filename
+                wb.save(filename='out' + modifier + '.xlsx')
+            except PermissionError:
+                count += 1
+                modifier = '_' + str(count)
+            else:
+                done = True
     
     def naive_diff(self):
         """Make a diff of two annotation"""
@@ -157,7 +201,7 @@ class Comparison:
         print('Length of annotation 1:', len(self.ano1.units))
         print('Length of annotation 2:', len(self.ano2.units))
         print('Length of fusion      :', len(self.ano))
-        print('Equality              :', self.eq)
+        #print('Equality              :', self.eq)
 
 #-------------------------------------------------------------------------------
 # Main & tool function
@@ -172,6 +216,8 @@ if __name__ == '__main__':
         dgx = Annotation('15075_dgx.aa')
         slv = Annotation('15075_dgx.aa')
         #slv = Annotation('15075_silvia.aa')
-        Comparison(dgx, slv).info()
+        c = Comparison(dgx, slv)
+        c.info()
+        c.to_excel()
     Log.end()
 
