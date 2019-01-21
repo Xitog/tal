@@ -175,7 +175,7 @@ Nous avons demandé à notre camarade Silvia Federzoni d'annoter le texte choisi, 
 Le script2.py a été conçu pour traiter automatiquement les deux annotations, constituées d'unités, et en faire la comparaison.
 
 Il compte le nombre d'annotations dans chaque jeu d'annotation, en différenciant :
-- les annotations de mise en page qui sont générées automatiquement
+- les annotations typographiques qui sont générées automatiquement
 - les annotations de type << Signature >> qui peuvent avoir été générées automatiquement ou non
 - les annotations de type << Mention >>
 

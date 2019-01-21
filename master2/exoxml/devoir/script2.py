@@ -50,7 +50,7 @@ class Unit:
     def fun_match(self, other):
         if not isinstance(other, Unit):
             raise Exception('Impossible to compare Annotation to ' + str(type(other)))
-        return self.features['fonction'] == self.features['fonction']
+        return self.features['fonction'] == other.features['fonction']
     
     def __eq__(self, other):
         if not isinstance(other, Unit):
@@ -73,7 +73,8 @@ class Unit:
 class Annotation:
     """A representation of a Glozz Annotation file (AA)."""
 
-    def __init__(self, filepath : str):
+    def __init__(self, filepath : str, code : str):
+        self.code = code
         try:
             file = open(filepath, mode='r', encoding='utf8')
         except (FileNotFoundError, IOError) as e:
@@ -107,6 +108,9 @@ class Annotation:
     def get_nb_mention(self):
         return sum(1 for u in self.units if u.typ == 'Mention')
 
+    def get_code(self):
+        return self.code
+    
     def __len__(self):
         return len(self.units)
 
@@ -126,26 +130,31 @@ class Comparison:
         #             [1, 2, 'question'] None
         #                           None [3, 4, 'félicitation']
         #       [10, 12, 'remerciement'] [10, 12, 'remerciement'] ]
-        p1 = 0
+        cpt = 0
         ano = []
-        while p1 < len(ano1.units):
-            u1 = ano1.units[p1]
-            if 'fonction' not in u1.features:
-                p1 += 1
+        taken = []
+        if ano1.get_nb_mention() > ano2.get_nb_mention():
+            biggest = ano1
+            smallest = ano2
+        while cpt < len(biggest.units):
+            u1 = biggest.units[cpt]
+            if u1.typ != 'Mention':
+                cpt += 1
                 continue
-            p2 = p1
-            while p2 < len(ano2.units):
-                u2 = ano2.units[p2]
+            found = False
+            for u2 in smallest.units:
                 if u1.pos_match(u2):
                     ano.append([u1, u2])
+                    taken.append(u2)
+                    found = True
                     break
-                elif u2.is_before(u1):
-                    ano.append([None, u2])
-                else:
-                    ano.append([u1, None])
-                    break
-                p2 += 1
-            p1 += 1
+            if not found:
+                ano.append([u1, None])
+            cpt += 1
+        # Check if we take everything from the smallest
+        for u2 in smallest.units:
+            if u2.typ == 'Mention' and u2 not in taken:
+                ano.append([None, u2])
         # Output console
         #for p in range(len(ano)):
         #    print(f"{p}. {ano[p][0]} vs {ano[p][1]}")
@@ -154,7 +163,6 @@ class Comparison:
         self.ano2 = ano2
         self.ano = []
         self.eq = 0
-        self.not_eq = 0
         # Calc
         for elem in ano:
             u1 = elem[0]
@@ -162,10 +170,9 @@ class Comparison:
             if u1 is not None and u2 is not None:
                 self.ano.append([u1, u2, u1.fun_match(u2)])
                 if u1.fun_match(u2): self.eq += 1
-                else: self.not_eq += 1
             else:
                 self.ano.append([u1, u2, 'missing annotation'])
-                self.not_eq += 1
+        self.not_eq = max(self.ano1.get_nb_mention(), self.ano2.get_nb_mention()) - self.eq
 
     def to_file(self):
         datafile = open('15075.ac', mode='r', encoding='utf8')
@@ -185,29 +192,36 @@ class Comparison:
         out.write(f"                      {self.eq:3d}\n\n")
         out.write("Number of different Mentions\n")
         out.write("----------------------------\n")
-        out.write(f"                         {self.not_eq:3d}\n")
+        out.write(f"                         {self.not_eq:3d}\n\n")
         out.write("Common mentions\n")
-        out.write("---------------\n")
+        out.write("---------------\n\n")
+        nb_common = 1
         for elem in self.ano:
             u1 = elem[0]
             u2 = elem[1]
-            if u1 is not None and u2 is not None:
-                if u1.fun_match(u2):
-                    out.write(f"{u1.start:6d}, {u1.end:6d}, {data[u1.start : u1.end]:30s}, {u1.typ:10s}, {u1.get_function():10s}\n")
-                    out.write(f"{u2.start:6d}, {u2.end:6d}, {data[u2.start : u2.end]:30s}, {u2.typ:10s}, {u2.get_function():10s}\n\n")
+            if u1 is not None and u2 is not None and u1.fun_match(u2):
+                out.write(f"= {nb_common:03d}\n")
+                out.write(f"= {self.ano1.get_code()} {u1.start:6d}, {u1.end:6d}, {data[u1.start : u1.end]:30s}, {u1.typ:10s}, {u1.get_function():10s}\n")
+                out.write(f"= {self.ano2.get_code()} {u2.start:6d}, {u2.end:6d}, {data[u2.start : u2.end]:30s}, {u2.typ:10s}, {u2.get_function():10s}\n\n")
+                nb_common += 1
         out.write("Different mentions\n")
-        out.write("------------------\n")
+        out.write("------------------\n\n")
+        nb_uncommon = 1
         for elem in self.ano:
             u1 = elem[0]
             u2 = elem[1]
+            if u1 is not None and u2 is not None and u1.fun_match(u2):
+                continue
+            out.write(f"! {nb_uncommon:03d}\n")
             if u1 is None:
-                out.write("No mention at this position.\n")
+                out.write(f"! {self.ano1.get_code()} No mention at this position.\n")
             else:
-                out.write(f"{u1.start:6d}, {u1.end:6d}, {data[u1.start : u1.end]:30s}, {u1.typ:10s}, {u1.get_function():10s}\n")
+                out.write(f"! {self.ano1.get_code()} {u1.start:6d}, {u1.end:6d}, {data[u1.start : u1.end]:30s}, {u1.typ:10s}, {u1.get_function():10s}\n")
             if u2 is None:
-                out.write("No mention at this position.\n")
+                out.write(f"! {self.ano2.get_code()} No mention at this position.\n\n")
             else:
-                out.write(f"{u2.start:6d}, {u2.end:6d}, {data[u2.start : u2.end]:30s}, {u2.typ:10s}, {u2.get_function():10s}\n\n")
+                out.write(f"! {self.ano2.get_code()} {u2.start:6d}, {u2.end:6d}, {data[u2.start : u2.end]:30s}, {u2.typ:10s}, {u2.get_function():10s}\n\n")
+            nb_uncommon += 1
         out.close()
     
     def to_excel(self):
@@ -277,18 +291,20 @@ if __name__ == '__main__':
     Log.start()
     if mode == 'PROD':
         Log.info('Production mode')
-        dgx = Annotation('15075_dgx.aa')
-        slv = Annotation('15075_dgx.aa')
-        #slv = Annotation('15075_silvia.aa')
+        dgx = Annotation('15075_dgx.aa', 'DGX')
+        #slv = Annotation('15075_dgx.aa', 'DGX')
+        slv = Annotation('15075_silvia.aa', 'SLV')
         c = Comparison(dgx, slv)
         c.info()
         try:
             c.to_excel()
-        except:
+        except Exception as e:
+            print(e)
             Log.warn("Failed to produce Excel output.")
-        try:
-            c.to_file()
-        except:
-            Log.warn("Failed to produce file output.")
+        #try:
+        c.to_file()
+        #except Exception as e:
+        #    print(e)
+        #    Log.warn("Failed to produce file output.")
     Log.end()
 
