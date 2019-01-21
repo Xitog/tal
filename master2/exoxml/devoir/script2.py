@@ -13,11 +13,22 @@ Damien Gouteux - 2019 - CC 3.0 BY-SA-NC
 
 # External library
 from lxml import etree
-import openpyxl
+try:
+    import openpyxl
+except ModuleNotFoundError:
+    EXCEL = False
+else:
+    EXCEL = True
+try:
+    from nltk.metrics.agreement import AnnotationTask
+    from nltk.metrics import ConfusionMatrix
+except ModuleNotFoundError:
+    KAPPA = False
+else:
+    KAPPA = True
 
 # Project library
 from log import Log
-from kappa import kappa
 
 #-------------------------------------------------------------------------------
 # Object model
@@ -35,22 +46,28 @@ class Unit:
         self.start = start
         self.end = end
         self.features = features if features is not None else {}
-
-    def is_before(self, other):
-        if not isinstance(other, Unit):
-            raise Exception('Impossible to compare Annotation to ' + str(type(other)))
-        return self.start < other.start
     
     def pos_match(self, other):
         if not isinstance(other, Unit):
             raise Exception('Impossible to compare Annotation to ' + str(type(other)))
         return abs(self.start - other.start) <= Unit.PRECISION and \
             abs(self.end - other.end) <= Unit.PRECISION
-    
-    def fun_match(self, other):
+
+    def match_on(self, other, feature):
         if not isinstance(other, Unit):
             raise Exception('Impossible to compare Annotation to ' + str(type(other)))
-        return self.features['fonction'] == other.features['fonction']
+        if feature is None:
+            return self.match_all(other)
+        else:
+            return self.features[feature] == other.features[feature]
+    
+    def match_all(self, other):
+        if not isinstance(other, Unit):
+            raise Exception('Impossible to compare Annotation to ' + str(type(other)))
+        for key in self.features:
+            if self.features[key] != other.features[key]:
+                return False
+        return True
     
     def __eq__(self, other):
         if not isinstance(other, Unit):
@@ -59,8 +76,16 @@ class Unit:
                self.typ == other.typ and self.start == other.start and \
                self.end == other.end and self.features == other.features
 
-    def get_function(self):
-        return self.features['fonction'] if 'fonction' in self.features else None
+    def get(self, feature):
+        if feature is None:
+            s = ""
+            nb = 0
+            for key,val in self.features.items():
+                s += f"{key} : {val}"
+                if nb < len(self.features) - 1: s += ','
+                nb += 1
+            return s
+        return self.features[feature] if feature in self.features else None
     
     def __str__(self):
         fun = self.features['fonction'] if 'fonction' in self.features else 'no'
@@ -119,23 +144,24 @@ class Comparison:
     """Comparison of two annotations."""
     
     def __init__(self, ano1 : Annotation, ano2 : Annotation):
-        self.diff(ano1, ano2)
-
-    def diff(self, ano1 : Annotation, ano2 : Annotation):
-        # Doing a exact list, removing all standard unit (paragraph)
-        # for example we have:
-        # annotator1 : [1, 2, 'question'] [10, 12, 'remerciement']
-        # annotator2 : [3, 4, 'félicitation'] [10, 12, 'remerciement']
-        # results : ano = [
-        #             [1, 2, 'question'] None
-        #                           None [3, 4, 'félicitation']
-        #       [10, 12, 'remerciement'] [10, 12, 'remerciement'] ]
+        """Constructor for Comparison instance"""
+        self.ano1 = ano1
+        self.ano2 = ano2
+        self.ano = []
+        self.last = None
+    
+    def diff(self, feature=None):
+        """Make a diff between two annotations on a specific feature or all"""
         cpt = 0
-        ano = []
         taken = []
-        if ano1.get_nb_mention() > ano2.get_nb_mention():
-            biggest = ano1
-            smallest = ano2
+        self.ano = []
+        self.last = feature
+        self.corresponding = 0
+        self.matching = 0
+        self.no_corresponding = 0
+        if self.ano1.get_nb_mention() > self.ano2.get_nb_mention():
+            biggest = self.ano1
+            smallest = self.ano2
         while cpt < len(biggest.units):
             u1 = biggest.units[cpt]
             if u1.typ != 'Mention':
@@ -143,42 +169,36 @@ class Comparison:
                 continue
             found = False
             for u2 in smallest.units:
-                if u1.pos_match(u2):
-                    ano.append([u1, u2])
+                if u1.pos_match(u2) and u2 not in taken:
+                    self.corresponding += 1
+                    match = u1.match_on(u2, feature)
+                    self.ano.append([min(u1.start, u2.start), u1, u2, match])
+                    if match: self.matching += 1
                     taken.append(u2)
                     found = True
                     break
             if not found:
-                ano.append([u1, None])
+                self.ano.append([u1.start, u1, None, 'missing annotation'])
             cpt += 1
-        # Check if we take everything from the smallest
+        # Check if we took everything from the smallest annotation
         for u2 in smallest.units:
             if u2.typ == 'Mention' and u2 not in taken:
-                ano.append([None, u2])
-        # Output console
-        #for p in range(len(ano)):
-        #    print(f"{p}. {ano[p][0]} vs {ano[p][1]}")
-        # Save
-        self.ano1 = ano1
-        self.ano2 = ano2
-        self.ano = []
-        self.eq = 0
-        # Calc
-        for elem in ano:
-            u1 = elem[0]
-            u2 = elem[1]
-            if u1 is not None and u2 is not None:
-                self.ano.append([u1, u2, u1.fun_match(u2)])
-                if u1.fun_match(u2): self.eq += 1
-            else:
-                self.ano.append([u1, u2, 'missing annotation'])
-        self.not_eq = max(self.ano1.get_nb_mention(), self.ano2.get_nb_mention()) - self.eq
+                self.ano.append([u2.start, None, u2, 'missing annotation'])
+        # Sort
+        return self.ano.sort(key=lambda e: e[0])
+    
 
-    def to_file(self):
+    def to_file(self, ano=None):
+        """Produce a simple text file of results"""
+        if ano is None:
+            ano = self.ano
         datafile = open('15075.ac', mode='r', encoding='utf8')
         data = datafile.read()
         datafile.close()
-        out = open('out.txt', mode='w', encoding='utf8')
+        last = self.last if self.last is not None else 'all'
+        out = open(last + '_diff.txt', mode='w', encoding='utf8')
+        out.write("Study on feature : " + last + "\n")
+        out.write("===================================================\n\n")
         out.write("Number of units by types\n")
         out.write("------------------------\n")
         out.write(f"Layout types : {self.ano1.get_nb_layout():3d} {self.ano2.get_nb_layout():3d}\n")
@@ -187,44 +207,64 @@ class Comparison:
         out.write(f"-----------------------\n")
         out.write(f"Total        : {len(self.ano1)} {len(self.ano2)}\n")
         out.write("\n")
-        out.write("Number of common Mentions\n")
-        out.write("-------------------------\n")
-        out.write(f"                      {self.eq:3d}\n\n")
-        out.write("Number of different Mentions\n")
-        out.write("----------------------------\n")
-        out.write(f"                         {self.not_eq:3d}\n\n")
-        out.write("Common mentions\n")
-        out.write("---------------\n\n")
+        out.write("Number of Mentions...\n")
+        out.write("--------------------------------------------------\n")
+        out.write(f"  with corresponding positions                 {self.corresponding:3d}\n")
+        out.write(f"     including X with matching feature         {self.matching:3d}\n")
+        out.write(f"     including X with no matching feature      {self.corresponding-self.matching:3d}\n")
+        out.write(f"  with no corresponding positions              {self.ano1.get_nb_mention()-self.corresponding + self.ano2.get_nb_mention()-self.corresponding:3d}\n")
+        out.write(f"     including X from ano1 {self.ano1.code}                 {self.ano1.get_nb_mention()-self.corresponding:3d}\n")
+        out.write(f"     including X from ano2 {self.ano2.code}                 {self.ano2.get_nb_mention()-self.corresponding:3d}\n")
+        out.write("\n")
+        out.write(f"Mentions with matching feature and corresponding positions    ({self.matching:3d})\n")
+        out.write("-------------------------------------------------------------------\n\n")
         nb_common = 1
-        for elem in self.ano:
-            u1 = elem[0]
-            u2 = elem[1]
-            if u1 is not None and u2 is not None and u1.fun_match(u2):
+        for elem in ano:
+            u1 = elem[1]
+            u2 = elem[2]
+            if u1 is not None and u2 is not None and u1.match_on(u2, 'fonction'):
                 out.write(f"= {nb_common:03d}\n")
-                out.write(f"= {self.ano1.get_code()} {u1.start:6d}, {u1.end:6d}, {data[u1.start : u1.end]:30s}, {u1.typ:10s}, {u1.get_function():10s}\n")
-                out.write(f"= {self.ano2.get_code()} {u2.start:6d}, {u2.end:6d}, {data[u2.start : u2.end]:30s}, {u2.typ:10s}, {u2.get_function():10s}\n\n")
+                out.write(f"= {self.ano1.get_code()} {u1.start:6d}, {u1.end:6d}, {data[u1.start : u1.end]:30s}, {u1.typ:10s}, {u1.get(self.last):10s}\n")
+                out.write(f"= {self.ano2.get_code()} {u2.start:6d}, {u2.end:6d}, {data[u2.start : u2.end]:30s}, {u2.typ:10s}, {u2.get(self.last):10s}\n\n")
                 nb_common += 1
-        out.write("Different mentions\n")
-        out.write("------------------\n\n")
+        out.write(f"Mentions with corresponding positions but no matching feature   ({self.corresponding-self.matching:3d})\n")
+        out.write("---------------------------------------------------------------------\n\n")
+        nb_common = 1
+        for elem in ano:
+            u1 = elem[1]
+            u2 = elem[2]
+            if u1 is not None and u2 is not None and not u1.match_on(u2, 'fonction'):
+                out.write(f"! {nb_common:03d}\n")
+                out.write(f"! {self.ano1.get_code()} {u1.start:6d}, {u1.end:6d}, {data[u1.start : u1.end]:30s}, {u1.typ:10s}, {u1.get(self.last):10s}\n")
+                out.write(f"! {self.ano2.get_code()} {u2.start:6d}, {u2.end:6d}, {data[u2.start : u2.end]:30s}, {u2.typ:10s}, {u2.get(self.last):10s}\n\n")
+                nb_common += 1
+        out.write(f"Mentions with no corresponding positions and no matching feature    ({self.ano1.get_nb_mention()-self.corresponding + self.ano2.get_nb_mention()-self.corresponding:3d})\n")
+        out.write("-------------------------------------------------------------------------\n\n")
         nb_uncommon = 1
-        for elem in self.ano:
-            u1 = elem[0]
-            u2 = elem[1]
-            if u1 is not None and u2 is not None and u1.fun_match(u2):
+        for elem in ano:
+            u1 = elem[1]
+            u2 = elem[2]
+            if u1 is not None and u2 is not None:
                 continue
-            out.write(f"! {nb_uncommon:03d}\n")
+            out.write(f"? {nb_uncommon:03d}\n")
             if u1 is None:
-                out.write(f"! {self.ano1.get_code()} No mention at this position.\n")
+                out.write(f"? {self.ano1.get_code()} No mention at this position.\n")
             else:
-                out.write(f"! {self.ano1.get_code()} {u1.start:6d}, {u1.end:6d}, {data[u1.start : u1.end]:30s}, {u1.typ:10s}, {u1.get_function():10s}\n")
+                out.write(f"? {self.ano1.get_code()} {u1.start:6d}, {u1.end:6d}, {data[u1.start : u1.end]:30s}, {u1.typ:10s}, {u1.get(self.last):10s}\n")
             if u2 is None:
-                out.write(f"! {self.ano2.get_code()} No mention at this position.\n\n")
+                out.write(f"? {self.ano2.get_code()} No mention at this position.\n\n")
             else:
-                out.write(f"! {self.ano2.get_code()} {u2.start:6d}, {u2.end:6d}, {data[u2.start : u2.end]:30s}, {u2.typ:10s}, {u2.get_function():10s}\n\n")
+                out.write(f"? {self.ano2.get_code()} {u2.start:6d}, {u2.end:6d}, {data[u2.start : u2.end]:30s}, {u2.typ:10s}, {u2.get(self.last):10s}\n\n")
             nb_uncommon += 1
+        out.write("\nKAPPA\n")
+        out.write("-----\n")
+        out.write(f"Kappa = {self.kappa()}\n")
         out.close()
+
     
     def to_excel(self):
+        """Produce an Excel file of results"""
+        if not EXCEL: return
         datafile = open('15075.ac', mode='r', encoding='utf8')
         data = datafile.read()
         datafile.close()
@@ -235,8 +275,8 @@ class Comparison:
         else:
             ws.title = "Results"
         for a in self.ano:
-            u1 = a[0]
-            u2 = a[1]
+            u1 = a[1]
+            u2 = a[2]
             row_data = []
             if u1 is not None:
                 row_data += [u1.start, u1.end, data[u1.start : u1.end], u1.typ]
@@ -259,27 +299,35 @@ class Comparison:
                 modifier = '_' + str(count)
             else:
                 done = True
-    
-    def naive_diff(self):
-        """Make a diff of two annotation"""
-        p1 = 0
-        self.eq = 0
-        while p1 < len(ano1.units):
-            u1 = ano1.units[p1]
-            p2 = 0
-            while p2 < len(ano2.units):
-                u2 = ano2.units[p2]
-                if u1 == u2:
-                    self.eq += 1
-                p2 += 1
-            p1 += 1
-        self.ano1 = ano1
-        self.ano2 = ano2
+
     
     def info(self):
+        """Display information on standard output"""
         Log.info(f'Length of annotation 1: {len(self.ano1.units)}')
         Log.info(f'Length of annotation 2: {len(self.ano2.units)}')
         Log.info(f'Length of fusion      : {len(self.ano)}')
+
+
+    def kappa(self):
+        """Data is a list of list.
+           Each element is a list :
+           [annotator, element, label]
+        """
+        if not KAPPA: return
+        #if self.last is None: return # must be specific to a feature
+        data = []
+        nb = 1
+        for elem in self.ano:
+            u1 = elem[1]
+            u2 = elem[2]
+            if u1 is None or u2 is None:
+                continue
+            else:
+                data.append([self.ano1.get_code(), nb, u1.get(self.last)])
+                data.append([self.ano2.get_code(), nb, u2.get(self.last)])
+                nb += 1
+        task = AnnotationTask(data)
+        return task.kappa()
 
 #-------------------------------------------------------------------------------
 # Main & tool function
@@ -295,14 +343,26 @@ if __name__ == '__main__':
         #slv = Annotation('15075_dgx.aa', 'DGX')
         slv = Annotation('15075_silvia.aa', 'SLV')
         c = Comparison(dgx, slv)
+
+        c.diff('fonction')
         c.info()
-        try:
-            c.to_excel()
-        except Exception as e:
-            print(e)
-            Log.warn("Failed to produce Excel output.")
-        #try:
         c.to_file()
+
+        c.diff('autoref')
+        c.info()
+        c.to_file()
+
+        c.diff()
+        c.info()
+        c.to_file()
+        
+        #try:
+        #c.to_excel()
+        #except Exception as e:
+        #    print(e)
+        #    Log.warn("Failed to produce Excel output.")
+        #try:
+        
         #except Exception as e:
         #    print(e)
         #    Log.warn("Failed to produce file output.")

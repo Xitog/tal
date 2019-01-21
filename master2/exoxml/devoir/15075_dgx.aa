@@ -7093,4 +7093,30 @@
 </end>
 </positioning>
 </unit>
+<unit id="dgouteux_1548092871915">
+<metadata>
+<author>dgouteux</author>
+<creation-date>1548092871915</creation-date>
+<lastModifier>dgouteux</lastModifier>
+<lastModificationDate>1548092893818</lastModificationDate>
+</metadata>
+<characterisation>
+<type>Mention</type>
+<featureSet>
+<feature name="fonction">affirmation</feature>
+<feature name="contexte">négatif (ironie, sarcasme, agressif)</feature>
+<feature name="repriseID">non</feature>
+<feature name="autoref">oui</feature>
+<feature name="commentaire"/>
+</featureSet>
+</characterisation>
+<positioning>
+<start>
+<singlePosition index="6990"/>
+</start>
+<end>
+<singlePosition index="6992"/>
+</end>
+</positioning>
+</unit>
 </annotations>

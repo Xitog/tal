@@ -1,0 +1,421 @@
+Study on feature : autoref
+===================================================
+
+Number of units by types
+------------------------
+Layout types : 214 214
+Signature    :  47  45
+Mention      :  73  59
+-----------------------
+Total        : 334 318
+
+Number of Mentions...
+--------------------------------------------------
+  with corresponding positions                  35
+     including X with matching feature          35
+     including X with no matching feature        0
+  with no corresponding positions               62
+     including X from ano1 DGX                  38
+     including X from ano2 SLV                  24
+
+Mentions with matching feature and corresponding positions    ( 35)
+-------------------------------------------------------------------
+
+= 001
+= DGX     77,     79, me                            , Mention   , oui       
+= SLV     77,     79, me                            , Mention   , oui       
+
+= 002
+= DGX   2122,   2126, vous                          , Mention   , non       
+= SLV   2122,   2126, vous                          , Mention   , non       
+
+= 003
+= DGX   3370,   3372, je                            , Mention   , oui       
+= SLV   3370,   3372, je                            , Mention   , oui       
+
+= 004
+= DGX   4018,   4022, vous                          , Mention   , non       
+= SLV   4018,   4022, vous                          , Mention   , non       
+
+= 005
+= DGX   6331,   6335, vous                          , Mention   , non       
+= SLV   6331,   6335, vous                          , Mention   , non       
+
+= 006
+= DGX   6990,   6992, je                            , Mention   , oui       
+= SLV   6990,   6992, je                            , Mention   , oui       
+
+= 007
+= DGX  17084,  17086, je                            , Mention   , oui       
+= SLV  17084,  17086, je                            , Mention   , oui       
+
+= 008
+= DGX  18739,  18741, je                            , Mention   , oui       
+= SLV  18740,  18741, e                             , Mention   , oui       
+
+= 009
+= DGX  19578,  19580, Je                            , Mention   , oui       
+= SLV  19578,  19580, Je                            , Mention   , oui       
+
+= 010
+= DGX  19656,  19658, te                            , Mention   , non       
+= SLV  19656,  19658, te                            , Mention   , non       
+
+= 011
+= DGX  19670,  19683, Crainquebille                 , Mention   , non       
+= SLV  19670,  19683, Crainquebille                 , Mention   , non       
+
+= 012
+= DGX  20351,  20353, tu                            , Mention   , non       
+= SLV  20351,  20353, tu                            , Mention   , non       
+
+= 013
+= DGX  20602,  20604, Je                            , Mention   , oui       
+= SLV  20602,  20604, Je                            , Mention   , oui       
+
+= 014
+= DGX  22793,  22795, je                            , Mention   , oui       
+= SLV  22793,  22795, je                            , Mention   , oui       
+
+= 015
+= DGX  24257,  24259, je                            , Mention   , oui       
+= SLV  24257,  24259, je                            , Mention   , oui       
+
+= 016
+= DGX  24349,  24351, je                            , Mention   , oui       
+= SLV  24349,  24351, je                            , Mention   , oui       
+
+= 017
+= DGX  25401,  25403, Je                            , Mention   , oui       
+= SLV  25401,  25403, Je                            , Mention   , oui       
+
+= 018
+= DGX  26175,  26177, J'                            , Mention   , oui       
+= SLV  26175,  26176, J                             , Mention   , oui       
+
+= 019
+= DGX  26883,  26885, je                            , Mention   , oui       
+= SLV  26882,  26885,  je                           , Mention   , oui       
+
+Mentions with corresponding positions but no matching feature   (  0)
+---------------------------------------------------------------------
+
+! 001
+! DGX    889,    891, Je                            , Mention   , oui       
+! SLV    889,    891, Je                            , Mention   , oui       
+
+! 002
+! DGX   1199,   1201, je                            , Mention   , oui       
+! SLV   1199,   1201, je                            , Mention   , oui       
+
+! 003
+! DGX   2656,   2658, Je                            , Mention   , oui       
+! SLV   2656,   2658, Je                            , Mention   , oui       
+
+! 004
+! DGX   2878,   2880, je                            , Mention   , oui       
+! SLV   2878,   2880, je                            , Mention   , oui       
+
+! 005
+! DGX   3460,   3464, vous                          , Mention   , non       
+! SLV   3460,   3464, vous                          , Mention   , non       
+
+! 006
+! DGX   6034,   6047, Crainquebille                 , Mention   , non       
+! SLV   6034,   6047, Crainquebille                 , Mention   , non       
+
+! 007
+! DGX   6485,   6487, je                            , Mention   , oui       
+! SLV   6485,   6487, je                            , Mention   , oui       
+
+! 008
+! DGX   6978,   6988, Windreaver                    , Mention   , non       
+! SLV   6978,   6988, Windreaver                    , Mention   , non       
+
+! 009
+! DGX   7108,   7110, j'                            , Mention   , oui       
+! SLV   7108,   7109, j                             , Mention   , oui       
+
+! 010
+! DGX   7220,   7224, vous                          , Mention   , non       
+! SLV   7220,   7224, vous                          , Mention   , non       
+
+! 011
+! DGX   7642,   7646, vous                          , Mention   , non       
+! SLV   7642,   7646, vous                          , Mention   , non       
+
+! 012
+! DGX   7677,   7682, votre                         , Mention   , non       
+! SLV   7677,   7682, votre                         , Mention   , non       
+
+! 013
+! DGX  11059,  11064, votre                         , Mention   , non       
+! SLV  11059,  11064, votre                         , Mention   , non       
+
+! 014
+! DGX  20967,  20969, je                            , Mention   , oui       
+! SLV  20967,  20969, je                            , Mention   , oui       
+
+! 015
+! DGX  23204,  23206, Je                            , Mention   , oui       
+! SLV  23204,  23206, Je                            , Mention   , oui       
+
+! 016
+! DGX  23969,  23973, vous                          , Mention   , non       
+! SLV  23969,  23973, vous                          , Mention   , non       
+
+Mentions with no corresponding positions and no matching feature    ( 62)
+-------------------------------------------------------------------------
+
+? 001
+? DGX    214,    216, j'                            , Mention   , oui       
+? SLV No mention at this position.
+
+? 002
+? DGX    341,    343, me                            , Mention   , oui       
+? SLV No mention at this position.
+
+? 003
+? DGX    505,    507, me                            , Mention   , oui       
+? SLV No mention at this position.
+
+? 004
+? DGX   1205,   1206, m                             , Mention   , oui       
+? SLV No mention at this position.
+
+? 005
+? DGX   2828,   2830, J'                            , Mention   , oui       
+? SLV No mention at this position.
+
+? 006
+? DGX No mention at this position.
+? SLV   3713,   3717, vous                          , Mention   , non       
+
+? 007
+? DGX No mention at this position.
+? SLV   3818,   3820, je                            , Mention   , oui       
+
+? 008
+? DGX No mention at this position.
+? SLV   3841,   3843, je                            , Mention   , oui       
+
+? 009
+? DGX No mention at this position.
+? SLV   3966,   3967, j                             , Mention   , oui       
+
+? 010
+? DGX No mention at this position.
+? SLV   6049,   6051, je                            , Mention   , oui       
+
+? 011
+? DGX No mention at this position.
+? SLV   6173,   6177, vous                          , Mention   , non       
+
+? 012
+? DGX   6388,   6391, moi                           , Mention   , oui       
+? SLV No mention at this position.
+
+? 013
+? DGX   7467,   7470, ous                           , Mention   , oui       
+? SLV No mention at this position.
+
+? 014
+? DGX No mention at this position.
+? SLV   7787,   7789, je                            , Mention   , oui       
+
+? 015
+? DGX   7799,   7802, mon                           , Mention   , non       
+? SLV No mention at this position.
+
+? 016
+? DGX No mention at this position.
+? SLV   7973,   7976, mon                           , Mention   , oui       
+
+? 017
+? DGX No mention at this position.
+? SLV   7997,   7998, j                             , Mention   , oui       
+
+? 018
+? DGX No mention at this position.
+? SLV  10947,  10949, je                            , Mention   , oui       
+
+? 019
+? DGX No mention at this position.
+? SLV  10975,  10979, vous                          , Mention   , non       
+
+? 020
+? DGX  12622,  12625, moi                           , Mention   , oui       
+? SLV No mention at this position.
+
+? 021
+? DGX No mention at this position.
+? SLV  12640,  12642, j'                            , Mention   , oui       
+
+? 022
+? DGX  12667,  12670, mon                           , Mention   , oui       
+? SLV No mention at this position.
+
+? 023
+? DGX No mention at this position.
+? SLV  13742,  13744, Je                            , Mention   , oui       
+
+? 024
+? DGX No mention at this position.
+? SLV  13790,  13791, j                             , Mention   , oui       
+
+? 025
+? DGX No mention at this position.
+? SLV  14053,  14055, Je                            , Mention   , oui       
+
+? 026
+? DGX No mention at this position.
+? SLV  14334,  14335, J                             , Mention   , oui       
+
+? 027
+? DGX No mention at this position.
+? SLV  14820,  14822, Je                            , Mention   , oui       
+
+? 028
+? DGX No mention at this position.
+? SLV  15799,  15801, je                            , Mention   , oui       
+
+? 029
+? DGX No mention at this position.
+? SLV  15854,  15856, Je                            , Mention   , oui       
+
+? 030
+? DGX  15909,  15911, me                            , Mention   , oui       
+? SLV No mention at this position.
+
+? 031
+? DGX No mention at this position.
+? SLV  15988,  15990, Je                            , Mention   , oui       
+
+? 032
+? DGX No mention at this position.
+? SLV  16461,  16463, je                            , Mention   , oui       
+
+? 033
+? DGX  16984,  16988, vous                          , Mention   , non       
+? SLV No mention at this position.
+
+? 034
+? DGX  17087,  17089, me                            , Mention   , oui       
+? SLV No mention at this position.
+
+? 035
+? DGX  17245,  17247, j'                            , Mention   , oui       
+? SLV No mention at this position.
+
+? 036
+? DGX  17296,  17301, vous                          , Mention   , non       
+? SLV No mention at this position.
+
+? 037
+? DGX  17423,  17433, Windreaver                    , Mention   , non       
+? SLV No mention at this position.
+
+? 038
+? DGX  17795,  17799, vous                          , Mention   , non       
+? SLV No mention at this position.
+
+? 039
+? DGX  18154,  18156, Je                            , Mention   , oui       
+? SLV No mention at this position.
+
+? 040
+? DGX  19829,  19832, tes                           , Mention   , non       
+? SLV No mention at this position.
+
+? 041
+? DGX No mention at this position.
+? SLV  19907,  19909, je                            , Mention   , oui       
+
+? 042
+? DGX  19910,  19912, te                            , Mention   , non       
+? SLV No mention at this position.
+
+? 043
+? DGX  19981,  19982, j                             , Mention   , oui       
+? SLV No mention at this position.
+
+? 044
+? DGX  20030,  20031, m                             , Mention   , oui       
+? SLV No mention at this position.
+
+? 045
+? DGX  20076,  20077, j                             , Mention   , oui       
+? SLV No mention at this position.
+
+? 046
+? DGX  20192,  20193, m                             , Mention   , oui       
+? SLV No mention at this position.
+
+? 047
+? DGX  20234,  20236, je                            , Mention   , oui       
+? SLV No mention at this position.
+
+? 048
+? DGX  20289,  20290, j                             , Mention   , oui       
+? SLV No mention at this position.
+
+? 049
+? DGX  20462,  20464, il                            , Mention   , oui       
+? SLV No mention at this position.
+
+? 050
+? DGX  20541,  20543, je                            , Mention   , oui       
+? SLV No mention at this position.
+
+? 051
+? DGX No mention at this position.
+? SLV  20887,  20889, tu                            , Mention   , non       
+
+? 052
+? DGX  21116,  21119, nos                           , Mention   , oui       
+? SLV No mention at this position.
+
+? 053
+? DGX  21260,  21264, nous                          , Mention   , oui       
+? SLV No mention at this position.
+
+? 054
+? DGX  21819,  21823, Nous                          , Mention   , oui       
+? SLV No mention at this position.
+
+? 055
+? DGX  21895,  21899, nous                          , Mention   , oui       
+? SLV No mention at this position.
+
+? 056
+? DGX  21942,  21945, Moi                           , Mention   , oui       
+? SLV No mention at this position.
+
+? 057
+? DGX  23532,  23536, vous                          , Mention   , non       
+? SLV No mention at this position.
+
+? 058
+? DGX No mention at this position.
+? SLV  23620,  23622, Je                            , Mention   , oui       
+
+? 059
+? DGX  26204,  26208, vous                          , Mention   , non       
+? SLV No mention at this position.
+
+? 060
+? DGX  26677,  26678, J                             , Mention   , oui       
+? SLV No mention at this position.
+
+? 061
+? DGX  26995,  26997, je                            , Mention   , oui       
+? SLV No mention at this position.
+
+? 062
+? DGX  27043,  27044, j                             , Mention   , oui       
+? SLV No mention at this position.
+
+
+KAPPA
+-----
+Kappa = 1.0
