@@ -9,7 +9,7 @@
 
                              Titre du document : readme.txt
                                     Auteur : Damien Gouteux
-                                    Version : 2019-01-19-2a
+                                    Version : 2019-01-21-3a
                                     Licence : CC3.0BY-SA-NC
 
 
@@ -31,10 +31,12 @@ Après une brève présentation du contenu de l'archive, nous présentons notre modè
 Rechercher le code court entre crochets pour accéder directement à une partie.
 
 Ce document utilise les conventions suivantes :
-    o << Mention >> pour un type d'unités dans un modèle d'annotation.
+    o << Mention >> pour un type d'unités dans un modèle d'annotation Glozz.
+    o [[ feature ]] pour une feature d'une unité Glozz.
     o < div > pour une balise XML.
-    o [ attr ] pour un attribut de balise XML. 
-    
+    o [ attr ] pour un attribut de balise XML.
+    o les guillemets doubles " " signalent un exemple.
+
 -----------------------------------------------------------
 1. Présentation du contenu de l'archive [ARC]
 -----------------------------------------------------------
@@ -48,7 +50,7 @@ Nous présentons dans cette partie le contenu de l'archive livrée sous la forme d
 +----------------+-----------------------+-------------------------------------------+
 | log.py         | Script Python         | Simple classe statique de logging         |
 +----------------+-----------------------+-------------------------------------------+
-| kappa.py       | Script Python         | Calcul de Kappa basé sur NLTK             |
+| kappa.py       | Script Python         | Calcul de Kappa en utilisant NLTK         |
 +----------------+-----------------------+-------------------------------------------+
 | script1.py     | Script Python         | Traduction XML TEI-P5 => GLOZZ AC + AA    |
 +----------------+-----------------------+-------------------------------------------+
@@ -72,9 +74,9 @@ Nous présentons dans cette partie le contenu de l'archive livrée sous la forme d
 2.1 Type Mention
 ----------------
 
-L'unité centrale de notre annotation est le type << Mention >>.
-Il possède 5 attributs :
-    o fonction est une énumération de 12 valeurs possibles. 
+Le type central d'unité de notre annotation est le type << Mention >>.
+Il possède 5 features :
+    o [[ fonction ]] est une énumération de 12 valeurs possibles. 
       Nous fournissons de nombreuses possibilités à l'annotateur pour qu'il puisse exprimer finement son choix. Les 12 valeurs sont :
         + autorisation
             - le locuteur donne une autorisation à un autre
@@ -100,15 +102,15 @@ Il possède 5 attributs :
             - le locuteur salut un autre
         + affirmation
             - le locuteur affirme une information
-    o contexte : le contexte général de la mention qui apporte une nuance à la fonction. 
+    o [[ contexte ]] : le contexte général de la mention qui apporte une nuance à la fonction. 
       À choisir entre trois contextes larges :
         + positif (laudateur)
         + neutre
         + négatif (ironie, sarcasme, agressif)
       Une félicitation dans un contexte ironique n'a pas la même valeur sémantique qu'une félicitation dans un contexte positif.
-    o repriseID : booléen (oui/non) indiquant si la mention d'un locuteur reprend directement son identifiant comme "Cher Crainquebille". Par défaut non.
-    o autoref : si l'utilisateur se mentionne lui-même (oui / non), cela correspond à l'utilisation de la première personne. Par défaut non.
-    o commentaire : pour rajouter une indication libre sur l'annotation comme exprimer un doute, une nuance.
+    o [[ repriseID ]] : booléen (oui/non) indiquant si la mention d'un locuteur reprend directement son identifiant comme "Cher Crainquebille". Par défaut non.
+    o [[ autoref ]] : si l'utilisateur se mentionne lui-même (oui / non), cela correspond à l'utilisation de la première personne. Par défaut non.
+    o [[ commentaire ]] : pour rajouter une indication libre sur l'annotation comme exprimer un doute, une nuance.
 
 2.2 Type Text
 -------------
@@ -124,7 +126,7 @@ Le type << Signature >> indique simplement une signature de post. Elles sont aut
 *** Commentaire ***
 *******************
 
-Il aurait été intéressant d'ajouter un attribut appelé automatique pour garder en mémoire si la balise avait été générée automatiquement ou non.
+o Il aurait été intéressant d'ajouter une feature [[ automatique ]] pour garder en mémoire si la balise avait été générée automatiquement ou non.
 
 2.4 Relation MentionOfText
 --------------------------
@@ -138,7 +140,7 @@ Par exemple pour le remerciement, un intervenant A sur la page de discussion rem
 *** Commentaire ***
 *******************
 
-Nous avons remarqué que Glozz ne semble pas permettre de typer les deux extrémités d'une relation. Nous aurions aimé pouvoir dire qu'une extrémité devait être forcément un type de mention donné. Ex : << Mention >> -------MentionOfText-----------> << Texte >>
+o Nous avons remarqué que Glozz ne semble pas permettre de typer les deux extrémités d'une relation. Nous aurions aimé pouvoir dire qu'une extrémité devait être forcément un type donné d'unité comme dans << Mention >> -------MentionOfText-----------> << Texte >>
 
 2.5 Style
 ---------
@@ -157,9 +159,9 @@ Nous avons joué sur les couleurs pour distinguer les différents types.
 | << Text >>      |  bleu   |
 +-----------------+---------+
 
-*******************
-*** Commentaire ***
-*******************
+********************
+*** Commentaires ***
+********************
 
 o Il ne semble pas possible de modifier la couleur de la bordure d'un type, ni sa police.
 o Il ne semble pas possible de modifier le style d'un type en fonction de la valeur de ses features. On aurait pu imaginer des couleurs différentes selon la fonction de la mention.
@@ -168,21 +170,47 @@ o Il ne semble pas possible de modifier le style d'un type en fonction de la val
 3. Bilan de l'annotation [BIL]
 -----------------------------------------------------------
 
-Nous avons demandé à notre camarade Silvia Federzoni d'annoter le texte choisi, la discussion à propos de l'article sur le philosophe Friedrich Nietzsche (fichier original 15075.xml), et elle a aimablement bien voulu se prêter à l'exercice. Nous l'avons annoté de notre côté pour également pour obtenir une paire d'annotation (fichiers AA).
+Nous avons demandé à notre camarade Silvia Federzoni d'annoter le texte choisi, la discussion à propos de l'article sur le philosophe Friedrich Nietzsche (fichier original 15075.xml), et elle a aimablement bien voulu se prêter à l'exercice. Nous l'avons annoté de notre côté pour obtenir une paire d'annotations, soit deux fichiers AA.
 
-Le script2.py a été conçu pour traiter automatiquement deux annotations, constituées d'unités, et en faire la comparaison.
+Le script2.py a été conçu pour traiter automatiquement les deux annotations, constituées d'unités, et en faire la comparaison.
 
-TODO
+Il compte le nombre d'annotations dans chaque jeu d'annotation, en différenciant :
+- les annotations de mise en page qui sont générées automatiquement
+- les annotations de type << Signature >> qui peuvent avoir été générées automatiquement ou non
+- les annotations de type << Mention >>
+
+Nous ne comparons que les annotations du type << Mention >>.
+
+Nous considérons qu'il existe une marge d'erreur entre deux annotations. La sélection des limites se faisant à la souris, l'utilisateur peut toujours déborder d'un caractère ou deux. Nous considérons ainsi deux annotations égales si les différences absolues entre les bornes start et les bornes end sont inférieures à une précision donnée, que nous avons mis empiriquement à deux. Nous ne testons les chaînes délimitées par les bornes car les bornes se réfèrent au même corpus. Prenons un exemple :
+
+"J'adore"
+
+L'utilisateur 1 annote J, l'utilisateur 2 annote J'.
+La différence entre les bornes de départ est de 0.
+La différence entre les bornes de fin est de 1, donc inférieure à notre précision de 2.
+Donc nous considérons les annotations comme égales pour cet exercice mais si leurs contenus est différent ("J" contre "J'").
+
+********************
+*** Commentaires ***
+********************
+
+o La précision est réglable via la variable statique Unit.PRECISION. Nous pensons qu'elle ne devrait pas excéder trois pour ne avoir de problème avec deux annotations se suivant de façon très proche comme dans "Je me".  
+o Il est très facile de développer un mode strict qui considérerait toute différence de borne comme une inégalité. Il nous a semblé que cela n'allait pas dans le sens de l'exercice. 
 
 -----------------------------------------------------------
 4. Notes sur le code [COD]
 -----------------------------------------------------------
 
 Notre code dépend des modules suivants :
-    o LXML
-    o NLTK (seulement pour le calcul du kappa)
-    o openpyxl (seulement pour la sortie Excel)
-Il a été compilé avec succès sous Windows avec Python 3.6 en version 32 bits.
+    o LXML (obligatoire)
+    o NLTK (seulement pour le calcul du kappa, optionnel)
+    o openpyxl (seulement pour la sortie Excel, optionnel)
+
+Il a été exécuté avec succès sous Windows avec Python 3.6.1 en version 32 bits et Python 3.7.0 en version 64 bits.
+
+Les scripts utilisent la PEP 498, formatted string literals introduite en version 3.6.0. Ils ne fonctionneront donc pas avec une version antérieure.
+
+Nous n'avons pas cherché à optimiser le code.
 
 4.1 script1.py
 --------------

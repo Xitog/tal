@@ -58,6 +58,9 @@ class Unit:
         return self.author == other.author and self.date == other.date and \
                self.typ == other.typ and self.start == other.start and \
                self.end == other.end and self.features == other.features
+
+    def get_function(self):
+        return self.features['fonction'] if 'fonction' in self.features else None
     
     def __str__(self):
         fun = self.features['fonction'] if 'fonction' in self.features else 'no'
@@ -94,6 +97,18 @@ class Annotation:
             for feat in list(fset):
                 features[feat.attrib['name']] = feat.text
             self.units.append(Unit(author, date, typ, start, end, features))
+
+    def get_nb_layout(self):
+        return sum(1 for u in self.units if u.typ not in ['Signature', 'Mention'])
+    
+    def get_nb_signature(self):
+        return sum(1 for u in self.units if u.typ == 'Signature')
+
+    def get_nb_mention(self):
+        return sum(1 for u in self.units if u.typ == 'Mention')
+
+    def __len__(self):
+        return len(self.units)
 
 
 class Comparison:
@@ -132,23 +147,73 @@ class Comparison:
                 p2 += 1
             p1 += 1
         # Output console
-        for p in range(len(ano)):
-            print(f"{p}. {ano[p][0]} vs {ano[p][1]}")
+        #for p in range(len(ano)):
+        #    print(f"{p}. {ano[p][0]} vs {ano[p][1]}")
         # Save
         self.ano1 = ano1
         self.ano2 = ano2
         self.ano = []
+        self.eq = 0
+        self.not_eq = 0
         # Calc
         for elem in ano:
             u1 = elem[0]
             u2 = elem[1]
             if u1 is not None and u2 is not None:
                 self.ano.append([u1, u2, u1.fun_match(u2)])
+                if u1.fun_match(u2): self.eq += 1
+                else: self.not_eq += 1
             else:
                 self.ano.append([u1, u2, 'missing annotation'])
+                self.not_eq += 1
 
+    def to_file(self):
+        datafile = open('15075.ac', mode='r', encoding='utf8')
+        data = datafile.read()
+        datafile.close()
+        out = open('out.txt', mode='w', encoding='utf8')
+        out.write("Number of units by types\n")
+        out.write("------------------------\n")
+        out.write(f"Layout types : {self.ano1.get_nb_layout():3d} {self.ano2.get_nb_layout():3d}\n")
+        out.write(f"Signature    : {self.ano1.get_nb_signature():3d} {self.ano2.get_nb_signature():3d}\n")
+        out.write(f"Mention      : {self.ano1.get_nb_mention():3d} {self.ano2.get_nb_mention():3d}\n")
+        out.write(f"-----------------------\n")
+        out.write(f"Total        : {len(self.ano1)} {len(self.ano2)}\n")
+        out.write("\n")
+        out.write("Number of common Mentions\n")
+        out.write("-------------------------\n")
+        out.write(f"                      {self.eq:3d}\n\n")
+        out.write("Number of different Mentions\n")
+        out.write("----------------------------\n")
+        out.write(f"                         {self.not_eq:3d}\n")
+        out.write("Common mentions\n")
+        out.write("---------------\n")
+        for elem in self.ano:
+            u1 = elem[0]
+            u2 = elem[1]
+            if u1 is not None and u2 is not None:
+                if u1.fun_match(u2):
+                    out.write(f"{u1.start:6d}, {u1.end:6d}, {data[u1.start : u1.end]:30s}, {u1.typ:10s}, {u1.get_function():10s}\n")
+                    out.write(f"{u2.start:6d}, {u2.end:6d}, {data[u2.start : u2.end]:30s}, {u2.typ:10s}, {u2.get_function():10s}\n\n")
+        out.write("Different mentions\n")
+        out.write("------------------\n")
+        for elem in self.ano:
+            u1 = elem[0]
+            u2 = elem[1]
+            if u1 is None:
+                out.write("No mention at this position.\n")
+            else:
+                out.write(f"{u1.start:6d}, {u1.end:6d}, {data[u1.start : u1.end]:30s}, {u1.typ:10s}, {u1.get_function():10s}\n")
+            if u2 is None:
+                out.write("No mention at this position.\n")
+            else:
+                out.write(f"{u2.start:6d}, {u2.end:6d}, {data[u2.start : u2.end]:30s}, {u2.typ:10s}, {u2.get_function():10s}\n\n")
+        out.close()
+    
     def to_excel(self):
-        data = open('15075.ac', mode='r', encoding='utf8').read()
+        datafile = open('15075.ac', mode='r', encoding='utf8')
+        data = datafile.read()
+        datafile.close()
         wb = openpyxl.Workbook(write_only=True)
         ws = wb.active
         if ws is None:
@@ -198,10 +263,9 @@ class Comparison:
         self.ano2 = ano2
     
     def info(self):
-        print('Length of annotation 1:', len(self.ano1.units))
-        print('Length of annotation 2:', len(self.ano2.units))
-        print('Length of fusion      :', len(self.ano))
-        #print('Equality              :', self.eq)
+        Log.info(f'Length of annotation 1: {len(self.ano1.units)}')
+        Log.info(f'Length of annotation 2: {len(self.ano2.units)}')
+        Log.info(f'Length of fusion      : {len(self.ano)}')
 
 #-------------------------------------------------------------------------------
 # Main & tool function
@@ -218,6 +282,13 @@ if __name__ == '__main__':
         #slv = Annotation('15075_silvia.aa')
         c = Comparison(dgx, slv)
         c.info()
-        c.to_excel()
+        try:
+            c.to_excel()
+        except:
+            Log.warn("Failed to produce Excel output.")
+        try:
+            c.to_file()
+        except:
+            Log.warn("Failed to produce file output.")
     Log.end()
 
