@@ -1,17 +1,88 @@
-Tout notre travail a été effectué avec MinGW + MSYS sur Windows.
+                         _____  _                   _ 
+                        |  __ \| |                 (_)
+                        | |  \/| |  __ _ __      __ _ 
+                        | | __ | | / _` |\ \ /\ / /| |
+                        | |_\ \| || (_| | \ V  V / | |
+                         \____/|_| \__,_|  \_/\_/  |_|
+                              
+                              
+                                                        Auteur : Damien Gouteux
+                                                        Version : 2019-01-22-1a
+                                                        
+-------------------------------------------------------------------------------
+Plan
+-------------------------------------------------------------------------------
 
-1. Observation de fichiers volumineux
+Table des matières [TAB]
+    o Introduction [INTRO]
+    o Partie A : utilisation des outils Unix [UNIX]
+        o 1. Observation de fichiers volumineux [OBS]
+            o 1.1 Décompression de l'extrait de dump du Wiktionnaire
+            o 1.2 Observation du fichier décompressé
+            o 1.3 Organisation de l'information
+        o 2. Manipulations [MAN]
+            o 2.1 Extraire la nomenclature
+            o 2.2 Extraire la nomenclature en supprimant les pages méta
+        o 3. Dump et pages du Wiktionnaire [DUM]
+            o 3.1 Extraction d'un article
+            o 3.2 Observation de la page en ligne
+            o 3.3 Différences dans le wikicode
+        4. Analyse et conversion du wikicode [ANA]
+            o 4.1 Extraction et trie des types de sections
+            o 4.2 Comptes dans l'extrait
+            o 4.3 Patrons les plus fréquents
+    o Partie B : utilisation de Java [JAVA]
 
-1.1 Décompression de l'extrait de dump du Wiktionnaire :
+Rechercher par le code rapide pour directement aller à la section voulue.
+
+===============================================================================
+Introduction [INTRO]
+===============================================================================
+
+Ce document présente le travail fait pour les deux présentations de F. Sajous
+sur Glawi. La première partie traite des commandes Unix et la seconde de Java.
+
+===============================================================================
+Partie A : utilisation des outils Unix [UNIX]
+===============================================================================
+
+Pour cette partie, notre travail a été effectué avec MinGW + MSYS sur Windows.
+
+1. Observation de fichiers volumineux [OBS]
+===========================================
+
+1.1 Décompression de l'extrait de dump du Wiktionnaire
+------------------------------------------------------
+
+Nous travaillons sur le premier fichier d'extrait du dump du Wiktionnaire.
+Nous le décompressons avec :
+
+..............................
 bzip2 -d glawiSplit__1.xml.bz2
+..............................
 
-1.2 Observation du fichier décompressé :
+1.2 Observation du fichier décompressé
+--------------------------------------
+
+Nous l'observons avec :
+
+......................
 less glawiSplit__1.xml
+......................
 
-Prendre les 100 premières lignes et les mettre dans un autre fichier :
+Nous pouvous aussi prendre les 100 premières lignes et les mettre dans un autre
+fichier :
+
+......................................................
 head -n 100 glawiSplit__1.xml > head_glawiSplit__1.xml
+......................................................
 
-1.3 La balise <page> indique une page qui possède un <titre> et une <revision>. La révision contient le texte de la page à un moment donné dans la balise <text>. Dans les fichiers donnés, il n'y a qu'une révision par page.
+1.3 Organisation de l'information
+---------------------------------
+
+La balise <page> indique une page qui possède un <titre> et une <revision>.
+La révision contient le texte de la page à un moment donné dans la balise 
+<text>. Dans les fichiers donnés, il n'y a qu'une révision par page.
 
 Les informations sur le mot sont en WikiCode à l'intérieur de la balise <text> :
     o == {{langue|fr}} == Langue du mot
@@ -19,58 +90,100 @@ Les informations sur le mot sont en WikiCode à l'intérieur de la balise <text>
     o ==== {{S|synonymes}} ==== Synonymes du mot
     o ==== {{S|traductions}} ==== Traductions du mot
 
-2. Manipulations
+2. Manipulations [MAN]
+======================
 
-2.1 Extraire la nomenclature :
+2.1 Extraire la nomenclature
+----------------------------
 
+Nous cherchons la balise <title> qui indique une entrée :
+
+............................................
 grep \<title\> glawiSplit__1.xml > grep1.txt
+............................................
 
 Avec cut :
 
+..............................................................
 cut -d ">" -f 2 grep1.txt | cut -d "<" -f 1 > nomenclature.txt
+..............................................................
 
 Avec sed :
 
+..........................................................................
 sed 's/ *<title>//' grep1.txt | sed 's/<\/title>//' > nomenclature_bis.txt
+..........................................................................
 
 On obtient avec les deux méthodes le même fichier (vérifié avec WinMerge).
 
-2.2 Extraire la nomenclature en supprimant les pages méta :
+2.2 Extraire la nomenclature en supprimant les pages méta
+---------------------------------------------------------
 
 Les pages méta contiennent un ":" dans le titre.
 
-Nous utilisons un grep inversé pour ne PAS sélectionner les lignes correspondant au motif :
+Nous utilisons un grep inversé pour ne PAS sélectionner les lignes 
+qui correspondent au motif :
 
+...............................................................
 grep -v " *: *" nomenclature_bis.txt > nomenclature_filtree.txt
+...............................................................
 
 La taille de cette nomenclature filtrée est obtenue avec :
 
+..............................
 wc -l nomenclature_filtree.txt
+..............................
 
 Elle compte 46 337 éléments.
 
-3. Dump et pages du Wiktionnaire
+3. Dump et pages du Wiktionnaire [DUM]
+======================================
 
-Pour extraire le contenu de l'article "avant", je le cherche avec grep et je mets les 1000 lignes avant et après dans un fichier intermédiaire.
+3.1 Extraction d'un article
+---------------------------
 
+Pour extraire le contenu de l'article "avant", nous le cherchons avec grep et
+nous mettons les 1000 lignes avant et après dans un fichier intermédiaire :
+
+...........................................................................
 grep -A 1000 -B 1000 \<title\>avant\</avant\> glawiSplit__1.xml > avant.txt
+...........................................................................
 
 À la ligne 1001 du fichier en sortie nous avons bien "    <title>avant</title>".
 
-2. La page en ligne correspondant à ce dump est accessible à cette adresse : https://fr.wiktionary.org/wiki/avant
+3.2 Observation de la page en ligne
+-----------------------------------
 
-Comme le Wiktionnaire change constamment, il n'est pas garanti que le dump que nous avons corresponde exactement à ce qui est actuellement sur la page, surtout s'il est ancien.
+La page en ligne correspondant à ce dump est accessible à cette adresse : https://fr.wiktionary.org/wiki/avant
 
-3. Nous avons copié le wikicode du dump qui se trouve dans la balise <text> et l'avons comparé au wikicode actuel à l'aide du logiciel WinMerge.
+Comme le Wiktionnaire change constamment, il n'est pas garanti que le dump que
+nous avons corresponde exactement à ce qui est actuellement sur la page, 
+surtout s'il est ancien.
 
-On peut faire les remarques suivantes à propos du wikicode actuel par rapport au dump :
+3.3 Différences dans le wikicode
+--------------------------------
+
+Nous avons copié le wikicode du dump qui se trouve dans la balise <text> et 
+l'avons comparé au wikicode actuel à l'aide du logiciel WinMerge.
+Nous avons donc deux fichiers :
+    o wikicode_avant_dump.txt => wikicode de l'entrée "avant" extrait du dump
+    o wikicode_avant_2019-01-22-16h41.txt => wikicode de la page à cette date
+
+On peut faire les remarques suivantes à propos du wikicode actuel par rapport 
+au dump :
     o Le format du wikicode n'a pas évolué.
-    o Des prononciations ont été rajoutées dans la section === {{S|prononciation}} ===
-    o Des traductions ont été rajoutées dans la section ==== {{S|traductions}} ==== pour la préposition et l'adverbe français.
-    o Une nouvelle entrée pour la langue gallo a été rajoutée (langue d'oïl parlée en Bretagne)
-    o Des liens de la forme [[code langue:avant]] ont été supprimés à la fin de la page.
+    o Des prononciations ont été rajoutées dans la section 
+      === {{S|prononciation}} ===
+    o Des traductions ont été rajoutées dans la section 
+      ==== {{S|traductions}} ==== pour la préposition et l'adverbe français.
+    o Une nouvelle entrée pour la langue gallo a été rajoutée 
+      (langue d'oïl parlée en Bretagne)
+    o Des liens de la forme [[code langue:avant]] ont été supprimés à la fin de
+      la page.
 
-Le nombre de '=' indique la profondeur de la section dans l'arbre des sections du document. On relève la structure suivante dans la version actuelle (le 22 janvier 2019 à 16h41) :
+Le nombre de '=' indique la profondeur de la section dans l'arbre des sections
+du document. On relève la structure suivante dans la version à la date du 22 
+janvier 2019 à 16h41 :
     o == {{langue|fr}} ==
         o === {{S|étymologie}} ===
         o === {{S|préposition|fr}} ===
@@ -103,7 +216,146 @@ Le nombre de '=' indique la profondeur de la section dans l'arbre des sections d
             o ==== {{S|dérivés}} ====
         o === {{S|références}} ===
 
-4. Analyse et conversion du wikicode
+4. Analyse et conversion du wikicode [ANA]
+==========================================
 
-Pour trouver les types de section existantes dans le dump, nous utilisons la commande suivante :
+4.1 Extraction et trie des types de sections
+--------------------------------------------
 
+Pour trouver les types de section existantes dans le dump, nous utilisons les
+commandes suivantes :
+
+.................................................................................................
+grep '= {{S|' glawiSplit__1.xml | grep '^=' | grep '=$' | sort > sections.txt
+sed -r 's/^=* \{\{S\|//' sections.txt > sections2.txt
+sed -r 's/([^\|]*)\|[^|\]+\|[^|\]+\|[^|\]+\}\} ?=+/\1/' sections2.txt | sed -r 's/([^\|]*)\|[^|\]+\|[^|\]+\}\} ?=+/\1/' | sed -r 's/([^\|]*)\|[^|\]+\}\} ?=+/\1/' | sed -r 's/([^\|]*)\}\} ?=+/\1/' | sort | uniq -c | sort -r > types.txt
+.................................................................................................
+
+Nous avons préféré faire des étapes intermédiaires.
+Dans sections2.txt on se retrouve avec trois types de lignes :
+    o type|xxx|xxx|xxx}} =+
+    o type|xxx|xxx}} =+
+    o type|xxx}} =+
+    o type}} =+
+Ces trois types de lignes correspondent à nos trois derniers sed.
+Nous avons remarqué des séquences incorrectes :
+    o absence d'espace entre l'accolade fermante et le premier espace
+    o plusieurs espaces entre l'accolade fermante et le premier espace
+Nous avons choisi de prendre en compte la première.
+La seconde étant trop mineure pour affecter nos résultats.
+
+On compte les doublons avec l'option -c de la commande uniq.
+On fait un dernier sort en reverse pour la liste ordonné par fréquences
+descendances. Nous reproduisons ici les 5 premières lignes :
+    o 62 464 étymologie
+    o 46 102 nom
+    o 19 985 prononciation
+    o 15 359 références
+    o 14 136 synonymes
+    o 12 996 traductions
+    o 12 861 verbe
+    o 10 984 adjectif
+    o 10 599 voir aussi
+    o 10 440 dérivés
+L'ensemble des 167 types (dont certains incorrects) se trouve dans le fichier :
+types.txt
+
+4.2 Comptes dans l'extrait
+--------------------------
+
+Nous comptons d'abord les types contenant ' nom ' dans notre extrait :
+
+...........................................
+grep -E ' nom( |$)' types.txt > nb_noms.txt
+...........................................
+
+Résultats :
+    o 46 102 nom
+    o  5 218 nom propre
+    o     63 nom de famille
+    o      6 nom scientifique
+    o      5 nom commun
+    o      1 nom 
+Les types sont au singulier dans notre fichier de résultats.
+
+Le problème de la cohérence est central dans ses ressources. 
+Ainsi nom, nom commun, nom et nom scientifique peuvent être agrégés dans un seul
+type, nom commun, pour notre exercice. De même, nom propre et nom de famille
+dans le type nom propre. Ce qui nous donne :
+    o 46 114 noms communs
+    o  5 191 noms propres
+
+Nous comptons ensuite les verbes dans notre extrait :
+
+...............................................
+grep -E ' verbe( |$)' types.txt > nb_verbes.txt
+...............................................
+
+Résultat :
+    o 12 861 verbe
+
+Pour compter le nombre d'infinitif et de formes fléchies, il faut revenir à
+notre extrait initial. Nous supposons que :
+    o Le niveau 2 est une langue
+        o === {{S|verbe|fr|flexion}} === : indique une forme fléchie
+        o === {{S|verbe|fr}} === : indique un infinitif
+        
+Le code de langue étant au minimum sur deux caractères en minuscules, il suffit
+donc de passer ces commandes :
+
+..................................................................................
+grep -E '=== {{S|verbe|[a-z][a-z]+|flexion}} ===' glawiSplit__1.xml > flexions.txt
+wc -l flexions.txt
+..................................................................................
+
+Ce qui nous donne 2 728 516 formes verbales fléchies.
+
+........................................................................
+grep -E '=== {{S|verbe|[a-z][a-z]+}} ===' glawiSplit__1.xml > verbes.txt
+wc -l verbes.txt
+........................................................................
+
+Ce qui nous donne 271 073 verbes à l'infinitif.
+
+4.3 Patrons les plus fréquents
+------------------------------
+
+Pour trouver les patrons les plus fréquents en dehors de ceux indiquant une
+section de langue ou un titre de section / sous-section, nous procédons ainsi :
+
+............................................................................................
+grep -E '= {{[^{S]' glawiSplit__1.xml | grep -v -E '= {{langue' > patrons.txt
+sed -r 's/[^\{]*\{\{([^\}]*)\}\}.*/\1/' patrons.txt > patrons2.txt
+sed -r 's/([^\|]*)\|.*$/\1/' patrons2.txt | grep -v -E '*\{?S$' | sort | uniq -c | sort -r > patrons3.txt
+............................................................................................
+
+Dans la première ligne, nous sélections toutes les lignes avec un {{ patron }}.
+Dans la deuxième ligne, nous ne prenons que l'intérieur des accolades.
+Dans la troisième ligne, nous supprimons les arguments du patrons, puis enlevons
+les séquences problématiques S et {S avant de trier, de supprimer les doublons
+en comptant et enfin de retrier en inverse pour avoir les patrons par ordre 
+décroissant de fréquence. Nous avons pour résultats le fichier patrons3.txt,
+dont nous prenons les lignes avec une fréquence supérieur ou égale à trois :
+    o 625 caractère
+    o  35 modl
+    o  18 +
+    o   8 polytonique
+    o   8 fr-conj-1
+    o   4 es-conj-2-tener
+    o   4 Etymologie graphique chinoise 
+    o   3 Étymologie graphique chinoise 
+    o   3 es-conj-2-haber
+    o   3 de
+    o   3 T
+
+Dans notre premier grep, nous ne voulons par des séquences {{S et {{{ car nous
+avons remarqué la présence de triplet d'ouverture pour {{{sél, {{{1, {{{nocat
+avec la commande suivante :
+
+......................................
+. grep '{{{' glawiSplit__1.xml | cat .
+......................................
+
+-------------------------------------------------------------------------------
+Partie B : utilisation de Java [JAVA]
+-------------------------------------------------------------------------------
