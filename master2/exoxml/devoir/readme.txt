@@ -81,6 +81,8 @@ Nous présentons dans cette partie le contenu de l'archive livrée sous la forme d
 +--------------------+-----------------------+----------------------------------------------+
 | talk.as            | Modèle de styles      | Modèle de styles pour modèle d'annotation    |
 +--------------------+-----------------------+----------------------------------------------+
+| 15075.ac           | Corpus Glozz          | Les annotations se fondent sur ce corpus     |
++--------------------+-----------------------+----------------------------------------------+
 | 15075_dgx.aa       | Annotations de Damien | Annotations Glozz faites par Damien G.       |
 +--------------------+-----------------------+----------------------------------------------+
 | 15075_slv.aa       | Annotations de Silvia | Annotations Glozz faites par Silvia F.       |
