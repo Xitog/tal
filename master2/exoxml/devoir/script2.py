@@ -270,20 +270,71 @@ class Comparison:
         datafile.close()
         wb = openpyxl.Workbook(write_only=True)
         ws = wb.active
+        # Units
         if ws is None:
-            ws = wb.create_sheet("Results")
+            ws = wb.create_sheet("Units")
         else:
-            ws.title = "Results"
-        for a in self.ano:
-            u1 = a[1]
-            u2 = a[2]
-            row_data = []
+            ws.title = "Units"
+        for pair in self.ano:
+            u1 = pair[1]
+            u2 = pair[2]
             if u1 is not None:
-                row_data += [u1.start, u1.end, data[u1.start : u1.end], u1.typ]
+                ws.append([u1.start, u1.end, data[u1.start : u1.end], u1.typ, data[max(0,u1.start-10):min(u1.end+10, len(data)-1)]])
             if u2 is not None:
-                row_data += [u2.start, u2.end, data[u2.start : u2.end], u2.typ]
-            row_data.append(a[2])
-            ws.append(row_data)
+                ws.append([u2.start, u2.end, data[u2.start : u2.end], u2.typ, data[max(0,u2.start-10):min(u2.end+10, len(data)-1)]])
+        # Corresponding units with matching feature
+        ws = wb.create_sheet("Matching feature")
+        ws.append(['=', 'Nb', 'U1 start', 'U1 end', 'Text', 'Type', self.last if self.last is not None else 'All', \
+                             'U2 start', 'U2 end', 'Text', 'Type', self.last if self.last is not None else 'All'])
+        nb = 1
+        for pair in self.ano:
+            u1 = pair[1]
+            u2 = pair[2]
+            if u1 is not None and u2 is not None and u1.match_on(u2, 'fonction'):
+                ws.append([ '=', nb,
+                    u1.start, u1.end, data[u1.start : u1.end], u1.typ, u1.get(self.last),
+                    u2.start, u2.end, data[u2.start : u2.end], u2.typ, u2.get(self.last)
+                    ])
+                nb += 1
+        # Corresponding units with no matching feature
+        ws = wb.create_sheet("No matching feature")
+        ws.append(['!', 'Nb', 'U1 start', 'U1 end', 'Text', 'Type', self.last if self.last is not None else 'All', \
+                             'U2 start', 'U2 end', 'Text', 'Type', self.last if self.last is not None else 'All'])
+        nb = 1
+        for pair in self.ano:
+            u1 = pair[1]
+            u2 = pair[2]
+            if u1 is not None and u2 is not None and not u1.match_on(u2, 'fonction'):
+                ws.append([ '!', nb,
+                    u1.start, u1.end, data[u1.start : u1.end], u1.typ, u1.get(self.last),
+                    u2.start, u2.end, data[u2.start : u2.end], u2.typ, u2.get(self.last)
+                    ])
+                nb += 1
+        # Units with no corresponding positions
+        ws = wb.create_sheet("No corresponding pos")
+        ws.append(['?', 'Nb', 'U1 start', 'U1 end', 'Text', 'Type', self.last if self.last is not None else 'All', \
+                             'U2 start', 'U2 end', 'Text', 'Type', self.last if self.last is not None else 'All'])
+        nb = 1
+        for pair in self.ano:
+            u1 = pair[1]
+            u2 = pair[2]
+            if u1 is None or u2 is None:
+                row = ['?', nb]
+                if u1 is None:
+                    row.extend(['xxx', 'xxx', 'no corresponding unit', 'xxx', 'xxx'])
+                else:
+                    row.extend([u1.start, u1.end, data[u1.start : u1.end], u1.typ, u1.get(self.last)])
+                if u2 is None:
+                    row.extend(['xxx', 'xxx', 'no corresponding unit', 'xxx', 'xxx'])
+                else:
+                    row.extend([u2.start, u2.end, data[u2.start : u2.end], u2.typ, u2.get(self.last)])
+                ws.append(row)
+                nb += 1
+        # Kappa
+        ws = wb.create_sheet("Kappa")
+        ws.append(['KAPPA', self.kappa()])
+        # Save
+        last = self.last if self.last is not None else 'all'
         # If the excel is opened we will get an PermissionError.
         # To prevent the loss of our data, the add a modifier to the filename,
         # until finding one not already taken.
@@ -293,12 +344,13 @@ class Comparison:
         while not done:
             try:
                 # We could add a datetime stamp to the filename
-                wb.save(filename='out' + modifier + '.xlsx')
+                wb.save(filename=last + '_diff' + modifier + '.xlsx')
             except PermissionError:
                 count += 1
                 modifier = '_' + str(count)
             else:
                 done = True
+        return
 
     
     def info(self):
@@ -313,7 +365,7 @@ class Comparison:
            Each element is a list :
            [annotator, element, label]
         """
-        if not KAPPA: return
+        if not KAPPA: return 'Not installed'
         #if self.last is None: return # must be specific to a feature
         data = []
         nb = 1
@@ -333,38 +385,28 @@ class Comparison:
 # Main & tool function
 #-------------------------------------------------------------------------------
 
-mode = 'PROD' # TEST
+def produce(c : Comparison, feat=None):
+    c.diff(feat)
+    c.info()
+    try:
+        c.to_excel()
+    except Exception as e:
+        print(e)
+        Log.warn("Failed to produce Excel output.")
+    try:
+        c.to_file()
+    except Exception as e:
+        print(e)
+        Log.warn("Failed to produce file output.")
 
 if __name__ == '__main__':
     Log.start()
-    if mode == 'PROD':
-        Log.info('Production mode')
-        dgx = Annotation('15075_dgx.aa', 'DGX')
-        #slv = Annotation('15075_dgx.aa', 'DGX')
-        slv = Annotation('15075_silvia.aa', 'SLV')
-        c = Comparison(dgx, slv)
-
-        c.diff('fonction')
-        c.info()
-        c.to_file()
-
-        c.diff('autoref')
-        c.info()
-        c.to_file()
-
-        c.diff()
-        c.info()
-        c.to_file()
-        
-        #try:
-        #c.to_excel()
-        #except Exception as e:
-        #    print(e)
-        #    Log.warn("Failed to produce Excel output.")
-        #try:
-        
-        #except Exception as e:
-        #    print(e)
-        #    Log.warn("Failed to produce file output.")
+    Log.info('Production mode')
+    dgx = Annotation('15075_dgx.aa', 'DGX')
+    slv = Annotation('15075_silvia.aa', 'SLV')
+    c = Comparison(dgx, slv)
+    produce(c, 'fonction')
+    produce(c, 'autoref')
+    produce(c)
     Log.end()
 

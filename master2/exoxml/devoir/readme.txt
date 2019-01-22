@@ -66,27 +66,39 @@ Ce document utilise les conventions typographiques suivantes :
 
 Nous présentons dans cette partie le contenu de l'archive livrée sous la forme d'un tableau :
 
-+================+=======================+===========================================+
-| Nom du fichier | Type                  | Contenu                                   |
-+================+=======================+===========================================+
-| readme.txt     | Fichier texte         | Ce fichier                                |
-+----------------+-----------------------+-------------------------------------------+
-| log.py         | Script Python         | Simple classe statique de logging         |
-+----------------+-----------------------+-------------------------------------------+
-| script1.py     | Script Python         | Traduction XML TEI-P5 => GLOZZ AC + AA    |
-+----------------+-----------------------+-------------------------------------------+
-| script2.py     | Script Python         | Comparaison de deux annotations GLOZZ AA  |
-+----------------+-----------------------+-------------------------------------------+
-| talk.aam       | Modèle d'annotation   | Modèle d'annotation pour Glozz AAM        |
-+----------------+-----------------------+-------------------------------------------+
-| talk.as        | Modèle de styles      | Modèle de styles pour modèle d'annotation |
-+----------------+-----------------------+-------------------------------------------+
-| 15075_dgx.aa   | Annotations de Damien | Annotations Glozz faites par Damien G.    |
-+----------------+-----------------------+-------------------------------------------+
-| 15075_slv.aa   | Annotations de Silvia | Annotations Glozz faites par Silvia F.    |
-+----------------+-----------------------+-------------------------------------------+
-| data (dossier) | Fichiers AA + AC      | Tous les fichiers XML traduits en AA + AC |
-+----------------+-----------------------+-------------------------------------------+
++====================+=======================+==============================================+
+| Nom du fichier     | Type                  | Contenu                                      |
++====================+=======================+==============================================+
+| readme.txt         | Fichier texte         | Ce fichier                                   |
++--------------------+-----------------------+----------------------------------------------+
+| log.py             | Script Python         | Simple classe statique de logging            |
++--------------------+-----------------------+----------------------------------------------+
+| script1.py         | Script Python         | Traduction XML TEI-P5 => GLOZZ AC + AA       |
++--------------------+-----------------------+----------------------------------------------+
+| script2.py         | Script Python         | Comparaison de deux annotations GLOZZ AA     |
++--------------------+-----------------------+----------------------------------------------+
+| talk.aam           | Modèle d'annotation   | Modèle d'annotation pour Glozz AAM           |
++--------------------+-----------------------+----------------------------------------------+
+| talk.as            | Modèle de styles      | Modèle de styles pour modèle d'annotation    |
++--------------------+-----------------------+----------------------------------------------+
+| 15075_dgx.aa       | Annotations de Damien | Annotations Glozz faites par Damien G.       |
++--------------------+-----------------------+----------------------------------------------+
+| 15075_slv.aa       | Annotations de Silvia | Annotations Glozz faites par Silvia F.       |
++--------------------+-----------------------+----------------------------------------------+
+| data (dossier)     | Fichiers AA + AC      | Tous les fichiers XML traduits en AA + AC    |
++--------------------+-----------------------+----------------------------------------------+
+| fonction_diff.txt  | Fichier texte         | Fichier de résultats sur feature fonction    |
++--------------------+-----------------------+----------------------------------------------+
+| autoref_diff.txt   | Fichier texte         | Fichier de résultats sur feature autoref     |
++--------------------+-----------------------+----------------------------------------------+
+| all_diff.txt       | Fichier texte         | Fichier de résultats sur toutes les features |
++--------------------+-----------------------+----------------------------------------------+
+| fonction_diff.xlsx | Fichier Excel 2007    | Fichier de résultats sur feature fonction    |
++--------------------+-----------------------+----------------------------------------------+
+| autoref_diff.xlsx  | Fichier Excel 2007    | Fichier de résultats sur feature autoref     |
++--------------------+-----------------------+----------------------------------------------+
+| all_diff.xlsx      | Fichier Excel 2007    | Fichier de résultats sur toutes les features |
++--------------------+-----------------------+----------------------------------------------+
 
 1.2 Notes sur le code
 ---------------------
@@ -294,6 +306,15 @@ Le script script2.py produit une sortie dans un fichier texte simple ainsi que d
     o DGX est le code utilisé pour désigner les unités provenant de l'annotation de Damien
     o SLV est le code utilisé pour désigner les unités provenant de l'annotation de Silvia
 
+Le script script2.py produit également une sortie Excel si le module openpyxl est présent. Cette présentation reprend les informations du fichier texte mais dans une autre présentation :
+    o Le premier onglet décrit les unités avec pour chacune son contexte dans une fenêtre de 10 caractères avant et après, dans la limite du texte disponible.
+    o Le deuxième onglet décrit les unités en correspondance de positions et dont la valeur pour la feature sélectionnée est égale.
+    o Le troisième onglet décrit les unités en correspondance de positions et dont la valeur pour la feature sélectionnée est différente.
+    o Le quatrième onglet décrit les unités sans correspondance de positions.
+    o Le cinquième onglet donne la valeur kappa.
+    
+La valeur du kappa de Cohen est calculé grâce à la bibliothèque NTLK si elle est disponible. Pour l'interpréter, nous nous basons sur Landis, J. R., Koch, G. G., The measurement of observer agreement for categorical data. Biometrics, 33, 159-174. 
+
 3.6 Résultats
 -------------
 
@@ -341,7 +362,7 @@ En regardant les textes des différents unités sans correspondance, il s'agit tou
 
 Nous avons d'abord testé l'accord inter-annotateur sur les 35 unités en correspondance pour la feature [[ fonction ]]. Cette feature indique la fonction de la mention.
 
-Nous constatons que 19 unités, sur 35 soit 54%, ont la même valeur pour leur feature [[ fonction ]]. Il reste 16 unités n'ayant pas la même valeur. Nous avons un kappa de Cohen de 0.40.
+Nous constatons que 19 unités, sur 35 soit 54%, ont la même valeur pour leur feature [[ fonction ]]. Il reste 16 unités n'ayant pas la même valeur. Nous avons un kappa de Cohen de 0.40. Selon l'échelle de Landis et Koch, nous sommes à la l'extrême limite de la plage définissant un accord faible (de 0.21 à 0.40) pour les unités en correspondance de positions.
 
 Les résultats sont consignés dans le fichier fonction_diff.txt.
 
@@ -350,7 +371,7 @@ Les résultats sont consignés dans le fichier fonction_diff.txt.
 
 Nous avons ensuite testé l'accord inter-annotateur sur les 35 unités en correspondance pour la feature [[ autoref ]]. Cette feature indique si l'utilisateur s'implique dans la mention, qu'il s'auto-implique.
 
-Nous constations que 35 unités, sur 35 soit 100%, ont la même valeur pour leur feature [[ autoref ]]. Nous avons donc un kappa de Cohen de 1.0.
+Nous constations que 35 unités, sur 35 soit 100%, ont la même valeur pour leur feature [[ autoref ]]. Nous avons donc un kappa de Cohen de 1.0. Selon l'échelle de Landis et Koch, nous avons un accord parfait pour les unités en correspondance de positions.
 
 Les résultats sont consignés dans le fichier autoref_diff.txt.
 
@@ -359,7 +380,7 @@ Les résultats sont consignés dans le fichier autoref_diff.txt.
 
 Au lieu de considérer l'accord feature par feature, on peut également considérer l'accord "total", c'est-à-dire qu'il y a accord sur deux unités entre deux annotateurs si et seulement si toutes les valeurs des features des deux unités sont les mêmes.
 
-Nous constatons que 12 unités, sur 35 soit 34%, ont les mêmes valeurs pour toutes les features. Nous avons un kappa de Cohen de 0.30.
+Nous constatons que 12 unités, sur 35 soit 34%, ont les mêmes valeurs pour toutes les features. Nous avons un kappa de Cohen de 0.30. Selon l'échelle de Landis et Koch, nous acons un accord inter-annotateurs faible. Pour calculer ce kappa, nous construisons une valeur en agrégeant toutes les features par simple concaténation.
 
 Les résultats sont consignés dans le fichier all_diff.txt.
 
