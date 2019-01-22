@@ -275,45 +275,46 @@ class Comparison:
             ws = wb.create_sheet("Units")
         else:
             ws.title = "Units"
+        ws.append(['Provenance', 'Start', 'End', 'Text', 'Type', 'Contexte'])
         for pair in self.ano:
             u1 = pair[1]
             u2 = pair[2]
             if u1 is not None:
-                ws.append([u1.start, u1.end, data[u1.start : u1.end], u1.typ, data[max(0,u1.start-10):min(u1.end+10, len(data)-1)]])
+                ws.append([self.ano1.code, u1.start, u1.end, data[u1.start : u1.end], u1.typ, data[max(0,u1.start-10):min(u1.end+10, len(data)-1)]])
             if u2 is not None:
-                ws.append([u2.start, u2.end, data[u2.start : u2.end], u2.typ, data[max(0,u2.start-10):min(u2.end+10, len(data)-1)]])
+                ws.append([self.ano2.code, u2.start, u2.end, data[u2.start : u2.end], u2.typ, data[max(0,u2.start-10):min(u2.end+10, len(data)-1)]])
         # Corresponding units with matching feature
         ws = wb.create_sheet("Matching feature")
-        ws.append(['=', 'Nb', 'U1 start', 'U1 end', 'Text', 'Type', self.last if self.last is not None else 'All', \
-                             'U2 start', 'U2 end', 'Text', 'Type', self.last if self.last is not None else 'All'])
+        ws.append(['=', 'Nb', 'U1 Code', 'U1 start', 'U1 end', 'Text', 'Type', self.last if self.last is not None else 'All', \
+                              'U2 Code', 'U2 start', 'U2 end', 'Text', 'Type', self.last if self.last is not None else 'All'])
         nb = 1
         for pair in self.ano:
             u1 = pair[1]
             u2 = pair[2]
             if u1 is not None and u2 is not None and u1.match_on(u2, 'fonction'):
                 ws.append([ '=', nb,
-                    u1.start, u1.end, data[u1.start : u1.end], u1.typ, u1.get(self.last),
-                    u2.start, u2.end, data[u2.start : u2.end], u2.typ, u2.get(self.last)
+                    self.ano1.code, u1.start, u1.end, data[u1.start : u1.end], u1.typ, u1.get(self.last),
+                    self.ano2.code, u2.start, u2.end, data[u2.start : u2.end], u2.typ, u2.get(self.last)
                     ])
                 nb += 1
         # Corresponding units with no matching feature
         ws = wb.create_sheet("No matching feature")
-        ws.append(['!', 'Nb', 'U1 start', 'U1 end', 'Text', 'Type', self.last if self.last is not None else 'All', \
-                             'U2 start', 'U2 end', 'Text', 'Type', self.last if self.last is not None else 'All'])
+        ws.append(['!', 'Nb', 'U1 Code', 'U1 start', 'U1 end', 'Text', 'Type', self.last if self.last is not None else 'All', \
+                              'U2 Code', 'U2 start', 'U2 end', 'Text', 'Type', self.last if self.last is not None else 'All'])
         nb = 1
         for pair in self.ano:
             u1 = pair[1]
             u2 = pair[2]
             if u1 is not None and u2 is not None and not u1.match_on(u2, 'fonction'):
                 ws.append([ '!', nb,
-                    u1.start, u1.end, data[u1.start : u1.end], u1.typ, u1.get(self.last),
-                    u2.start, u2.end, data[u2.start : u2.end], u2.typ, u2.get(self.last)
+                    self.ano1.code, u1.start, u1.end, data[u1.start : u1.end], u1.typ, u1.get(self.last),
+                    self.ano2.code, u2.start, u2.end, data[u2.start : u2.end], u2.typ, u2.get(self.last)
                     ])
                 nb += 1
         # Units with no corresponding positions
         ws = wb.create_sheet("No corresponding pos")
-        ws.append(['?', 'Nb', 'U1 start', 'U1 end', 'Text', 'Type', self.last if self.last is not None else 'All', \
-                             'U2 start', 'U2 end', 'Text', 'Type', self.last if self.last is not None else 'All'])
+        ws.append(['?', 'Nb', 'U1 Code', 'U1 start', 'U1 end', 'Text', 'Type', self.last if self.last is not None else 'All', \
+                              'U2 Code', 'U2 start', 'U2 end', 'Text', 'Type', self.last if self.last is not None else 'All'])
         nb = 1
         for pair in self.ano:
             u1 = pair[1]
@@ -321,13 +322,13 @@ class Comparison:
             if u1 is None or u2 is None:
                 row = ['?', nb]
                 if u1 is None:
-                    row.extend(['xxx', 'xxx', 'no corresponding unit', 'xxx', 'xxx'])
+                    row.extend(['xxx', 'xxx', 'xxx', 'no corresponding unit', 'xxx', 'xxx'])
                 else:
-                    row.extend([u1.start, u1.end, data[u1.start : u1.end], u1.typ, u1.get(self.last)])
+                    row.extend([self.ano1.code, u1.start, u1.end, data[u1.start : u1.end], u1.typ, u1.get(self.last)])
                 if u2 is None:
-                    row.extend(['xxx', 'xxx', 'no corresponding unit', 'xxx', 'xxx'])
+                    row.extend(['xxx', 'xxx', 'xxx', 'no corresponding unit', 'xxx', 'xxx'])
                 else:
-                    row.extend([u2.start, u2.end, data[u2.start : u2.end], u2.typ, u2.get(self.last)])
+                    row.extend([self.ano2.code, u2.start, u2.end, data[u2.start : u2.end], u2.typ, u2.get(self.last)])
                 ws.append(row)
                 nb += 1
         # Kappa
