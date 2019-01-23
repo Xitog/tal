@@ -39,6 +39,10 @@ Table des matières [TAB]
                 o 4.2.3 Patron des étymologies
                 o 4.2.4 Les langues des étymons par fréquence décroissante
             o 4.3 Extraction et conversion des gloses
+                o 4.3.1 Signalement des gloses
+                o 4.3.2 Extraction et comptage de l'ensemble des gloses
+                o 4.3.3 Encodage des hyperliens
+                o 4.3.5 Les 10 patrons qui restent
         5. GLÀFF [GLAFF]
         6. Comparaison des nomenclatures de GLÀFF et de Morphalou [MORPH]
         7. Conversion de GLÀFF en format CSV [CSV]
@@ -478,6 +482,149 @@ Les 10 langues d'origine des étymons les plus fréquentes sont :
 
 4.3 Extraction et conversion des gloses
 ---------------------------------------
+
+4.3.1 Signalement des gloses
+----------------------------
+
+Nous avons étudié l'entrée "tour" car elle contient deux sens :
+    o la tour, construction défensive élevée
+    o le tour, déplacement qui finit là où il commence
+    
+Les deux gloses / sens sont traduits par deux sections :
+    o === {{S|nom|fr|num=1}} ===
+    o === {{S|nom|fr|num=2}} ===
+
+Les gloses sont donc des sections de la forme : 
+
+=== {{S|pos|code-langue|num=nombre}} ===
+
+Le nombre est là pour distinguer entre plusieurs sens de même catégorie du
+discours (part of speech).
+
+4.3.2 Extraction et comptage de l'ensemble des gloses
+-----------------------------------------------------
+
+Selon la page : 
+https://fr.wiktionary.org/wiki/Wiktionnaire:Liste_de_tous_les_mod%C3%A8les/Titres_de_sections/Liste_automatique
+
+Il existe 67 catégories du discours différentes, certaines utilisant le même
+code. Nous avons fait le fichier pos.txt qui reprend ces catégories par un 
+copier-coller de la page. Pour que cela marche avec cut et uniq, avec Notepad++,
+nous convertissons les tabulations en espace et les fins de ligne en UNIX.
+
+Nous exécutons ensuite la commande suivante :
+
+....................................................
+cut -d ' ' -f 1 pos.txt | sort | uniq > pos_uniq.txt
+....................................................
+
+Pour obtenir dans le fichier pos_uniq.txt juste les codes uniques. 
+
+Puis, par concaténation manuelle nous fabriquons la commande suivante :
+
+................................................................................
+grep -E "{{S\|adj|{{S\|adj-dém|{{S\|adj-excl|{{S\|adj-indéf|{{S\|adj-int|{{S\|adj-num|{{S\|adj-pos|{{S\|adj-rel|{{S\|adjectif|{{S\|adv|{{S\|adv-ind|{{S\|adv-int|{{S\|adv-pron|{{S\|adv-rel|{{S\|adverbe|{{S\|aff|{{S\|art|{{S\|art-déf|{{S\|art-indéf|{{S\|art-part|{{S\|article|{{S\|circon|{{S\|circonf|{{S\|class|{{S\|classif|{{S\|conj|{{S\|conj-coord|{{S\|conjonction|{{S\|copule|{{S\|dét|{{S\|encl|{{S\|faute|{{S\|gismu|{{S\|inf|{{S\|interf|{{S\|interj|{{S\|lettre|{{S\|loc|{{S\|loc-phr|{{S\|locution|{{S\|locution-phrase|{{S\|nom|{{S\|nom-fam|{{S\|nom-pr|{{S\|nom-sciences|{{S\|num|{{S\|numeral|{{S\|numér|{{S\|onom|{{S\|onoma|{{S\|part|{{S\|part-num|{{S\|particule|{{S\|patronyme|{{S\|phr|{{S\|phrase|{{S\|post|{{S\|postpos|{{S\|procl|{{S\|pronom|{{S\|pronom-adj|{{S\|pronom-dém|{{S\|pronom-indéf|{{S\|pronom-int|{{S\|pronom-per|{{S\|pronom-pers|{{S\|pronom-pos|{{S\|pronom-rel|{{S\|pronom-réfl|{{S\|prov|{{S\|pré-nom|{{S\|pré-verb|{{S\|préf|{{S\|prénom|{{S\|prép|{{S\|quantif|{{S\|rad|{{S\|radical|{{S\|rafsi|{{S\|sino|{{S\|sinog|{{S\|sinogramme|{{S\|substantif|{{S\|suf|{{S\|suff|{{S\|symb|{{S\|var-typo|{{S\|variante|{{S\|verb" glawiSplit__1.xml > gloses1.txt
+................................................................................
+
+Nous avons ainsi toutes les patrons indiquant une glose avec ses paramètres.
+
+Pour faire un compte, il suffit d'effectuer :
+
+.....................................................................................
+cut -d '|' -f 2 gloses1.txt | sed -r 's/^([a-z]*).*/\1/' | sort | uniq -c | sort -r > gloses_count.txt
+.....................................................................................
+
+Les 5 premières lignes du fichier gloses_count.txt sont :
+    o 52 313 nom
+    o 13 137 verbe
+    o 12 050 adjectif
+    o  3 608 adverbe
+    o  2 857 variantes
+
+4.3.3 Encodage des hyperliens
+-----------------------------
+
+Les hyperliens sont encodés en wikicode ainsi : [[ ]]
+
+Ils peuvent eux aussi avec des arguments à l'intérieur, séparés par |
+
+Les liens vers des fichiers ont "Fichier:" comme préfixe :
+
+[[Fichier:Tour de Montlhéry.jpg|vignette|La '''tour''' de Montlhéry ''(sens 1)'']]
+
+...............................................................................................
+sed -r 's/\[\[(Fichier|Image):.*\]\]//' glawiSplit__1.xml | sed -r 's/\[\[[^\:]*:(.*)\]\]/\1/g' | sed -r 's/\[\[([^\|]*).*\]\]/\1/' | sed -r 's/\[\[//' | sed -r 's/\]\]//' > nohyperlink.txt
+...............................................................................................
+
+Notes :
+    o Le premier sed remplace les liens de la forme "[[Fichier:...]" ou ceux
+      de la forme "[[Image:...]]" par rien.
+    o Le deuxième sed remplace les liens de la forme [[langue:mot]] par mot.
+    o Le troisième sed remplace les liens de la forme [[xxx|...]] par xxx.
+    o Si sur une même ligne on a "[[xxx]] ou [[yyy]]" le troisième sed donne
+      "xxx]]" ou "[[yyy". Pour effacer les dernières traces on fait deux simples
+      sed sur "]]" et "[[".
+    o Théoriquement, en rendant l'opérateur * non greedy avec ?, cela devrait
+      éviter de faire les deux derniers sed, mais sur notre environnement, cela
+      ne marche pas. Après bien des interrogations, nous avons essayé l'exemple
+      suivant donné dans le cours :
+      ..............................................................
+      echo "un lapin au vin blanc" | sed -r 's/l.*?n/DICTIONNAIRE/g'
+      ..............................................................
+      Malgré l'opérateur ? modificateur du * pour le rendre non greedy
+      et le modificateur global g pour effectuer le remplacement autant de fois 
+      que le motif est trouvé, nous obtenons : un DICTIONNAIREc au lieu de :
+      un DICTIONNAIRE au vin bDICTIONNAIREc
+    o Nous avons également testé avec le même résultat ici : 
+      https://www.tutorialspoint.com/execute_bash_online.php
+
+4.3.4 Encodage du gras et de l'italique
+---------------------------------------
+
+Le gras est encodé par '''mot en gras'''.
+L'italique est encodé par ''mot en italique''.
+
+On fait l'opération suivante :
+
+...................................................
+sed -r "s/'''?//g" glawiSplit__1.xml > noquotes.txt
+...................................................
+
+Pour encoder le formatage au lieu de le supprimer :
+
+..........................................................................................
+sed -r "s/'''(.*?)'''/<b>\1<\/b>/g" glawiSplit__1.xml| sed -r "s/''(.*?)''/<i>\1<\/i>/g" > noquotes.txt
+..........................................................................................
+
+Notes : comme expliqué plus haut, utiliser le ? pour rendre le * non greedy ne
+marche pas sur ma configuration. Il le faut car sinon :
+''aaa'' ''bbb'' est transformé en <i>aaa'' ''bbb</i> car .* "mange" le plus
+possible. Alors qu'avec .?*, il s'arrête au premier '' qu'il rencontre ce qui
+est essentiel pour différencier un '' fermant d'un ouvrant pour remplacer par
+<i> ou <\i>.
+
+Une solution est d'utiliser Perl avec :
+perl -p -e "s/'''(.*?)'''/<b>\1<\/b>/g" avant.txt | perl -p -e "s/''(.*?)''/<i>\1<\/i>/g" > avant2.txt
+
+4.3.5 Les 10 patrons qui restent
+--------------------------------
+
+Nous cumulons les deux traitements précédents pour obtenir un fichier sans
+liens et sans gras et italique.
+
+.................................................................................................
+sed -r 's/\[\[(Fichier|Image):.*\]\]//' glawiSplit__1.xml | sed -r 's/\[\[[^\:]*:(.*)\]\]/\1/g' | sed -r 's/\[\[([^\|]*).*\]\]/\1/' | sed -r 's/\[\[//' | sed -r 's/\]\]//' | sed -r "s/'''?//g" > nothing.txt
+.................................................................................................
+
+A partir du fichier nothing.txt obtenu, nous analysons les patrons restant :
+
+...........................................
+grep -E "{{" nothing.txt > last_patrons.txt
+...........................................
+
+
+
+
 
 5. GLÀFF [GLAFF]
 ================
