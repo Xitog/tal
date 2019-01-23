@@ -1,3 +1,4 @@
+
                          _____  _                   _ 
                         |  __ \| |                 (_)
                         | |  \/| |  __ _ __      __ _ 
@@ -28,9 +29,19 @@ Table des matières [TAB]
             o 3.2 Observation de la page en ligne
             o 3.3 Différences dans le wikicode
         4. Analyse et conversion du wikicode [ANA]
-            o 4.1 Extraction et trie des types de sections
-            o 4.2 Comptes dans l'extrait
-            o 4.3 Patrons les plus fréquents
+            o 4.1 Sections, sous-sections et patrons
+                o 4.1.1 Extraction et trie des types de sections
+                o 4.1.2 Comptes dans l'extrait
+                o 4.1.3 Patrons les plus fréquents
+            o 4.2 Langue des étymons
+                o 4.2.1 Section étymologie
+                o 4.2.2 Extraction des étymologies
+                o 4.2.3 Patron des étymologies
+                o 4.2.4 Les langues des étymons par fréquence décroissante
+            o 4.3 Extraction et conversion des gloses
+        5. GLÀFF [GLAFF]
+        6. Comparaison des nomenclatures de GLÀFF et de Morphalou [MORPH]
+        7. Conversion de GLÀFF en format CSV [CSV]
     o Partie B : utilisation de Java [JAVA]
 
 Rechercher par le code rapide pour directement aller à la section voulue.
@@ -40,13 +51,22 @@ Introduction [INTRO]
 ===============================================================================
 
 Ce document présente le travail fait pour les deux présentations de F. Sajous
-sur Glawi. La première partie traite des commandes Unix et la seconde de Java.
+sur Glawi dans l'UE Thématiques actuelles de la recherche en traitement 
+automatique des langues.
+
+La première partie traite des commandes Unix et la seconde de Java.
 
 ===============================================================================
 Partie A : utilisation des outils Unix [UNIX]
 ===============================================================================
 
 Pour cette partie, notre travail a été effectué avec MinGW + MSYS sur Windows.
+
+Nous avons utilisé la partie glawiSplit__1.xml comme base de travail.
+
+Nous avons parfois choisi de décomposer les commandes complexes avec des 
+fichiers intermédiaires. Ces fichiers intermédiaires étaient autant de "point de
+debug" dans notre mise au point.
 
 1. Observation de fichiers volumineux [OBS]
 ===========================================
@@ -219,8 +239,11 @@ janvier 2019 à 16h41 :
 4. Analyse et conversion du wikicode [ANA]
 ==========================================
 
-4.1 Extraction et trie des types de sections
---------------------------------------------
+4.1 Sections, sous-sections et patrons
+--------------------------------------
+
+4.1.1 Extraction et trie des types de sections
+----------------------------------------------
 
 Pour trouver les types de section existantes dans le dump, nous utilisons les
 commandes suivantes :
@@ -260,8 +283,8 @@ descendances. Nous reproduisons ici les 5 premières lignes :
 L'ensemble des 167 types (dont certains incorrects) se trouve dans le fichier :
 types.txt
 
-4.2 Comptes dans l'extrait
---------------------------
+4.1.2 Comptes dans l'extrait
+----------------------------
 
 Nous comptons d'abord les types contenant ' nom ' dans notre extrait :
 
@@ -317,8 +340,8 @@ wc -l verbes.txt
 
 Ce qui nous donne 271 073 verbes à l'infinitif.
 
-4.3 Patrons les plus fréquents
-------------------------------
+4.1.3 Patrons les plus fréquents
+--------------------------------
 
 Pour trouver les patrons les plus fréquents en dehors de ceux indiquant une
 section de langue ou un titre de section / sous-section, nous procédons ainsi :
@@ -352,9 +375,118 @@ Dans notre premier grep, nous ne voulons par des séquences {{S et {{{ car nous
 avons remarqué la présence de triplet d'ouverture pour {{{sél, {{{1, {{{nocat
 avec la commande suivante :
 
-......................................
-. grep '{{{' glawiSplit__1.xml | cat .
-......................................
+..................................
+grep '{{{' glawiSplit__1.xml | cat
+..................................
+
+4.2 Langue des étymons
+----------------------
+
+4.2.1 Section étymologie
+------------------------
+
+Les étymologies sont dans une section signalée par === {{S|étymologie}} ===
+Les lignes de cette section commence toujours par un double point ":".
+
+Voici quelques exemples d'étymologies dans notre extrait autour de l'entrée
+avant :
+
+=== {{S|étymologie}} ===
+: ''(Préposition et adjectif)'' {{date|842}} Du bas {{étyl|la|fr}} ''[[ab ante#la|ab ante]]'', qui est une forme renforcée de ''[[ante#la|ante]]'' (« avant »).
+: ''(Nom)'' {{date|1678}} Même origine. {{date|1422}} ''[[avance]]''.
+
+=== {{S|étymologie}} ===
+:De ''[[alternus#la|alternus]]'' avec le suffixe ''[[-e#la|-e]]''.
+
+=== {{S|étymologie}} ===
+:{{date}} Mot {{compos|isomère|-ie|lang=fr}}.
+
+4.2.2 Extraction des étymologies
+--------------------------------
+
+Pour extraire les étymmologies, nous prenons toutes les lignes commençant par
+un double point.
+
+.............................................
+grep '^:' glawiSplit__1.xml > etymologies.txt
+.............................................
+
+4.2.3 Patron des étymologies
+----------------------------
+
+Le patron utilisé est : {{étyl}}.
+Il est documenté sur cette page :
+    https://fr.wiktionary.org/wiki/Mod%C3%A8le:%C3%A9tyl
+    
+Sa syntaxe :
+    {{étyl|
+        code-langue-1|
+        code-langue-2|
+        mot=mot1|
+        tr=translittération1|
+        type=code-gramm|
+        num=lemme|
+        sens=traduction1
+    }}
+
+Quelques exemples :
+    o {{étyl|la|fr|mot=alternus}} pour alterne
+    o {{étyl|la|nl|mot=albumen|sens=blanc d’œuf}} pour albumen
+
+Le code-langue-1 indique la langue d'origine de l'étymon.
+Le code-langue-2 indique la langue de l'entrée.
+    On peut s'interroger sur le "nl" du deuxième exemple qui pour nous est une
+    erreur, il devrait être mis "fr". Cela a été corrigée dans la version en
+    ligne d'albumen (au 23 janvier 2019 à 16h29).
+
+4.2.4 Les langues des étymons par fréquence décroissante
+--------------------------------------------------------
+
+Pour extraire toutes les utilisations du patron, nous utilisons les commandes suivantes :
+
+.............................................................................................
+grep "tyl|" glawiSplit__1.xml | sed -r 's/[^\{]*\{\{[^\|]*([^\}]*)\}.*/\1/' > etymologies_patrons.txt
+.............................................................................................
+
+Le fichier etymologies_patrons.txt contient seulement les arguments du patron car nous
+avions un problème d'encodage sur le 'é' de étyl. Nous avons contourné la
+difficulté dans l'écriture de notre expression régulière. Voici des exemples
+tirés du fichier :
+
+|it|fr|mot=lira
+|la|fr|mot=interrogatio
+|la|fr|mot=procrastino|dif=procrastinare
+
+Nous faisons ensuite une extraction du code-langue-1 avec trie et unicité pour
+obtenir une liste des langues d'étymons par ordre décroissant de fréquence :
+
+..................................................................................
+sed -r 's/^\|([^|]*)\|.*/\1/' etymologies_patrons.txt | sort | uniq -c | sort -r > langues_etymons.txt
+..................................................................................
+
+Les 10 langues d'origine des étymons les plus fréquentes sont :
+   o 8 894 la
+   o 1 025 fr
+   o   848 grc
+   o   619 en
+   o   406 it
+   o   365 de
+   o   337 indo-européen commun
+   o   333 es
+   o   320 eo
+   o   304 goh
+
+4.3 Extraction et conversion des gloses
+---------------------------------------
+
+5. GLÀFF [GLAFF]
+================
+
+6. Comparaison des nomenclatures de GLÀFF et de Morphalou [MORPH]
+=================================================================
+
+7. Conversion de GLÀFF en format CSV [CSV]
+==========================================
 
 -------------------------------------------------------------------------------
 Partie B : utilisation de Java [JAVA]
