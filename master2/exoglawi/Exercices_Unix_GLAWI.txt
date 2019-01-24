@@ -58,7 +58,9 @@ Table des matières [TAB]
         7. Conversion de GLÀFF en format CSV [CSV]
             o 7.1 Conversion du GLÀFF en CSV
     o Partie B : utilisation de Java [JAVA]
-        1. Environnement de travail
+        1. Environnement de travail [ENV]
+        2. Extractions à partir du GLAWI [EXT]
+        3. Inspecteur de structure [INS]
 
 Rechercher par le code rapide pour directement aller à la section voulue.
 
@@ -1075,8 +1077,8 @@ Et nous pouvons ensuite ouvrir final.csv avec OpenOffice, LibreOffice ou Excel.
 Partie B : utilisation de Java [JAVA]
 ================================================================================
 
-1. Environnement de travail
----------------------------
+1. Environnement de travail [ENV]
+---------------------------------
 
 Pour cette partie, nous développons sur Windows avec un JDK et Notepad++.
 
@@ -1103,4 +1105,29 @@ if exist .\saxo\DGXHandler.java (
 if not exist .\saxo\DGXHandler.java (
     echo SOMETHING WENT WRONT WHILE COMPILING
 )
+
+2. Extractions à partir du GLAWI [EXT]
+--------------------------------------
+
+Nous avons créé une classe DGXHandler dans le package saxo qui étend la classe
+DefaultHandler. Nous redéfinissons plusieurs méthodes :
+    o La méthode startElement est appelée à la balise ouvrante. On a accès à ses
+      attributs.
+    o La méthode characters est appelée entre la balise ouvrante et fermante.
+    o La méthode endElement est appelée à la balise fermante.
+    
+Avec, nous parsons un extrait de GLAWI pour extraite sa nomenclature.
+Nous la stockons dans la variable d'instance protected nomenclature de type 
+ArrayList<String>. La méthode getTitles() permet d'y accéder en lecture seule.
+
+Nous stockons dans la variable d'instance protected pos de type
+HashMap<String, Integer>.
+
+
+TODO
+
+3. Inspecteur de structure [INS]
+--------------------------------
+
+TODO
 
