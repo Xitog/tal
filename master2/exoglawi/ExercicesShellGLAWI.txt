@@ -575,8 +575,17 @@ Notes :
       et le modificateur global g pour effectuer le remplacement autant de fois 
       que le motif est trouvé, nous obtenons : un DICTIONNAIREc au lieu de :
       un DICTIONNAIRE au vin bDICTIONNAIREc
-    o Nous avons également testé avec le même résultat ici : 
+    o Nous avons également testé avec le même résultat ici (GNU Sed 4.4) :
       https://www.tutorialspoint.com/execute_bash_online.php
+
+Une solution serait d'utiliser Perl pour palier le problème de .*? :
+
+...............................................................................................
+perl -CSDA -p -e 's/\[\[(Fichier|Image):.*\]\]//' glawiSplit__1.xml | perl -CDSA  -p -e 's/\[\[[^\:]*:(.*)\]\]/\1/g' | perl -CSDA -p -e 's/\[\[([^#]*?)\#.*?\]\]/\1/g' | perl -CSDA -p -e 's/\[\[([^\|]*?)\|.*?\]\]/\1/g' | perl -CSDA -p -e 's/\[\[(.*?)\]\]/\1/g' | perl -CDSA -p -e 's/(\[\[)|(\]\])//g' > nohyperlink2.txt
+...............................................................................................
+
+Cette dernière commande permet de corriger de nombreux problèmes de la
+précédente.
 
 4.3.4 Encodage du gras et de l'italique
 ---------------------------------------
@@ -600,31 +609,111 @@ Notes : comme expliqué plus haut, utiliser le ? pour rendre le * non greedy ne
 marche pas sur ma configuration. Il le faut car sinon :
 ''aaa'' ''bbb'' est transformé en <i>aaa'' ''bbb</i> car .* "mange" le plus
 possible. Alors qu'avec .?*, il s'arrête au premier '' qu'il rencontre ce qui
-est essentiel pour différencier un '' fermant d'un ouvrant pour remplacer par
+est essentiel pour différencier un '' fermant d'un '' ouvrant pour remplacer par
 <i> ou <\i>.
 
 Une solution est d'utiliser Perl avec :
-perl -p -e "s/'''(.*?)'''/<b>\1<\/b>/g" avant.txt | perl -p -e "s/''(.*?)''/<i>\1<\/i>/g" > avant2.txt
+................................................................................
+perl -p -e "s/'''(.*?)'''/<b>\1<\/b>/g" glawiSplit__1.xml | perl -p -e "s/''(.*?)''/<i>\1<\/i>/g" > quotebold.txt
+................................................................................
+
+Mais nous avons un autre problème : la succession de deux balises wikicode comme
+dans l'exemple :
+
+#* '''''Pendant''' de baudrier ou de ceinturon.''
+
+La bonne traduction est <i><b>Pendant</b> de baudrier ou de ceinturon.</i>
+Alors que la nôtre est <b><i>Pendant</b> de baudrier ou de ceinturon.</i>
+Ce qui ne respecte pas les règles XHTML (HTML est lui permissif) :
+On ne doit pas fermer une balise parente puis fermer une balise fille.
+Cela vient du fait que nous matchons en premier le triple. On corrige ainsi
+notre commande :
+
+.................................................................................
+perl -CSDA -p -e "s/'''([\w ].*?)'''/<b>\1<\/b>/g" glawiSplit__1.xml | perl -p -e "s/''(.*?)''/<i>\1<\/i>/g" > quotebold.txt
+.................................................................................
+
+Nous obtenons la bonne traduction. Nous précisons CSDA pour signaler à Perl de
+fonctionner en Unicode pour que \w reconnaisse bien toutes les lettres non
+romanes.
 
 4.3.5 Les 10 patrons qui restent
 --------------------------------
 
 Nous cumulons les deux traitements précédents pour obtenir un fichier sans
-liens et sans gras et italique.
+liens et en ayant converti le gras et l'italique.
 
-.................................................................................................
-sed -r 's/\[\[(Fichier|Image):.*\]\]//' glawiSplit__1.xml | sed -r 's/\[\[[^\:]*:(.*)\]\]/\1/g' | sed -r 's/\[\[([^\|]*).*\]\]/\1/' | sed -r 's/\[\[//' | sed -r 's/\]\]//' | sed -r "s/'''?//g" > nothing.txt
-.................................................................................................
+...............................................................................................
+perl -CSDA -p -e 's/\[\[(Fichier|Image):.*\]\]//' glawiSplit__1.xml | perl -CDSA  -p -e 's/\[\[[^\:]*:(.*)\]\]/\1/g' | perl -CSDA -p -e 's/\[\[([^#]*?)\#.*?\]\]/\1/g' | perl -CSDA -p -e 's/\[\[([^\|]*?)\|.*?\]\]/\1/g' | perl -CSDA -p -e 's/\[\[(.*?)\]\]/\1/g' | perl -CDSA -p -e 's/(\[\[)|(\]\])//g' | perl -CSDA -p -e "s/'''([\w ].*?)'''/<b>\1<\/b>/g" | perl -p -e "s/''(.*?)''/<i>\1<\/i>/g" > nothing.txt
+...............................................................................................
 
-A partir du fichier nothing.txt obtenu, nous analysons les patrons restant :
+Il faut à présent sélectionner les patrons en enlevant tous les patrons traitant
+des types de mots déjà analysés :
 
-...........................................
-grep -E "{{" nothing.txt > last_patrons.txt
-...........................................
+................................................................................
+grep -E "{{" nothing.txt | grep -v -E "{{S\|adj|{{S\|adj-dém|{{S\|adj-excl|{{S\|adj-indéf|{{S\|adj-int|{{S\|adj-num|{{S\|adj-pos|{{S\|adj-rel|{{S\|adjectif|{{S\|adv|{{S\|adv-ind|{{S\|adv-int|{{S\|adv-pron|{{S\|adv-rel|{{S\|adverbe|{{S\|aff|{{S\|art|{{S\|art-déf|{{S\|art-indéf|{{S\|art-part|{{S\|article|{{S\|circon|{{S\|circonf|{{S\|class|{{S\|classif|{{S\|conj|{{S\|conj-coord|{{S\|conjonction|{{S\|copule|{{S\|dét|{{S\|encl|{{S\|faute|{{S\|gismu|{{S\|inf|{{S\|interf|{{S\|interj|{{S\|lettre|{{S\|loc|{{S\|loc-phr|{{S\|locution|{{S\|locution-phrase|{{S\|nom|{{S\|nom-fam|{{S\|nom-pr|{{S\|nom-sciences|{{S\|num|{{S\|numeral|{{S\|numér|{{S\|onom|{{S\|onoma|{{S\|part|{{S\|part-num|{{S\|particule|{{S\|patronyme|{{S\|phr|{{S\|phrase|{{S\|post|{{S\|postpos|{{S\|procl|{{S\|pronom|{{S\|pronom-adj|{{S\|pronom-dém|{{S\|pronom-indéf|{{S\|pronom-int|{{S\|pronom-per|{{S\|pronom-pers|{{S\|pronom-pos|{{S\|pronom-rel|{{S\|pronom-réfl|{{S\|prov|{{S\|pré-nom|{{S\|pré-verb|{{S\|préf|{{S\|prénom|{{S\|prép|{{S\|quantif|{{S\|rad|{{S\|radical|{{S\|rafsi|{{S\|sino|{{S\|sinog|{{S\|sinogramme|{{S\|substantif|{{S\|suf|{{S\|suff|{{S\|symb|{{S\|var-typo|{{S\|variante|{{S\|verb" > nothing2.txt
+................................................................................
+ 
+A partir du fichier nothing2.txt obtenu, nous analysons les patrons restant :
 
+...............................................................................................
+perl -CSDA -p -e 's/(.*?)\{\{(.*?)\}\}(.*?)/\2/g' nothing2.txt > nothing3.txt
 
+sort nothing3.txt | uniq -c | sort -r > nothing4.txt
 
+head -n 10 nothing4.txt > last_patrons.txt
+...............................................................................................
 
+Voici les 10 patrons les plus fréquents restant :
+    o 62 456 S|étymologie ===
+    o 19 976 S|prononciation ===
+    o 17 225 langue|fr ==
+    o 16 420 trad-fin
+    o 15 273 S|références ===
+    o 14 115 S|synonymes ====
+    o 12 881 S|traductions ====
+    o 10 589 S|voir aussi ===
+    o 10 386 S|dérivés ====
+    o  9 129 trad-début
+J'ai laissé les "=" finaux pour analyser le niveau de titre.
+
+Nous avons observés ces dix patrons à l'aide de grep par exemple pour trois
+d'entre eux :
+
+.............................................
+grep -E "\{\{S\|étymologie" glawiSplit__1.xml
+grep -E trad-fin avant.txt | head -n 10
+grep -E trad-début avant.txt | head -n 10
+.............................................
+
+À partir de ces observations, nous avons construit des commandes pour remplacer
+les 10 patrons les plus fréquents pour rendre plus lisible le Wikicode.
+
+Nous avons notamment choisi de traduire :
+{{trad-début|Composés chimique en chimie (1)}}
+    xxx
+{{trad-fin}}
+Par :
+<p><u>Composés chimique en chimie (1)</u> :
+    xxx
+</p>
+
+À chaque ligne suivante correspond un changement de patron :
+
+................................................................................................
+perl -CSDA -p -e 's/=== \{\{S\|.tymologie\}\} ===/<h3>Etymologie<\/h3>/g' glawiSplit__1.xml | \
+perl -CSDA -p -e 's/=== \{\{S\|prononciation\}\} ===/<h3>Prononciation<\/h3>/g' | \
+perl -CSDA -p -e 's/=== \{\{S\|r.f.rences\}\} ===/<h3>References<\/h3>/g' | \
+perl -CSDA -p -e 's/=== \{\{S\|synonymes\}\} ===/<h3>Synonymes<\/h3>/g' | \
+perl -CSDA -p -e 's/=== \{\{S\|traductions\}\} ===/<h3>Traductions<\/h3>/g' | \
+perl -CSDA -p -e 's/=== \{\{S\|voir aussi\}\} ===/<h3>Voir aussi<\/h3>/g' | \
+perl -CSDA -p -e 's/=== \{\{S\|d.riv.s\}\} ===/<h3>Derives<\/h3>/g' | \
+perl -CSDA -p -e 's/\{\{trad-d.but\|(.*?)\}\}/<p><u>\1<\/u> :/g' | \
+perl -CSDA -p -e 's/\{\{trad-fin\}\}/<\/p>/g'> last10.txt
+................................................................................................
+
+Nous avons dû utiliser le "." à chaque caractère accentué, ayant des problèmes
+d'encodage.
 
 5. GLÀFF [GLAFF]
 ================
