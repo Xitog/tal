@@ -10,9 +10,9 @@
                                                         Auteur : Damien Gouteux
                                                         Version : 2019-01-22-1a
                                                         
--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 Plan
--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 Table des matières [TAB]
     o Introduction [INTRO]
@@ -43,25 +43,28 @@ Table des matières [TAB]
                 o 4.3.2 Extraction et comptage de l'ensemble des gloses
                 o 4.3.3 Encodage des hyperliens
                 o 4.3.5 Les 10 patrons qui restent
-        5. GLÀFF [GLAFF]
+        5. GLÀFF [GLÀFF]
             o 5.1 Nombre de formes, nombre de lemmes
-            o 5.2 Trie des étiquettes morphosyntaxiques par fréquence décroissante
+            o 5.2 Trie des étiquettes morphosyntaxiques par fréquence
+                  décroissante
             o 5.3 Formes fléchis du verbe googler
-            o 5.4 Formes fléchis avec étiquettes morphosyntaxiques du verbe hacker
+            o 5.4 Formes fléchis avec étiquettes morphosyntaxiques du verbe
+                  hacker
             o 5.5 Nombre de formes fléchies pour chaque verbe 
             o 5.6 Verbes surabondants et verbes défectifs
         6. Comparaison des nomenclatures de GLÀFF et de Morphalou [MORPH]
-            o 6.1 Liste des formes dans le Morphalou et pas dans GLAFF
-            o 6.2 Liste des formes dans GLAFF et pas dans Morphalou
+            o 6.1 Liste des formes dans le Morphalou et pas dans GLÀFF
+            o 6.2 Liste des formes dans GLÀFF et pas dans Morphalou
         7. Conversion de GLÀFF en format CSV [CSV]
-            o 7.1 Conversion du GLAFF en CSV
+            o 7.1 Conversion du GLÀFF en CSV
     o Partie B : utilisation de Java [JAVA]
+        1. Environnement de travail
 
 Rechercher par le code rapide pour directement aller à la section voulue.
 
-===============================================================================
+================================================================================
 Introduction [INTRO]
-===============================================================================
+================================================================================
 
 Ce document présente le travail fait pour les deux présentations de F. Sajous
 sur Glawi dans l'UE Thématiques actuelles de la recherche en traitement 
@@ -69,9 +72,9 @@ automatique des langues.
 
 La première partie traite des commandes Unix et la seconde de Java.
 
-===============================================================================
+================================================================================
 Partie A : utilisation des outils Unix [UNIX]
-===============================================================================
+================================================================================
 
 Pour cette partie, notre travail a été effectué avec MinGW + MSYS sur Windows.
 
@@ -80,6 +83,10 @@ Nous avons utilisé la partie glawiSplit__1.xml comme base de travail.
 Nous avons parfois choisi de décomposer les commandes complexes avec des 
 fichiers intermédiaires. Ces fichiers intermédiaires étaient autant de "point de
 debug" dans notre mise au point.
+
+Tous les fichiers sont reproductibles en suivant les commandes décrites ici.
+Nous avons également mis dans le dossier fichiers_5_GLAFF quelques fichiers émis
+par nos commandes pour la partie 5.
 
 1. Observation de fichiers volumineux [OBS]
 ===========================================
@@ -187,7 +194,8 @@ grep -A 1000 -B 1000 \<title\>avant\</avant\> glawiSplit__1.xml > avant.txt
 3.2 Observation de la page en ligne
 -----------------------------------
 
-La page en ligne correspondant à ce dump est accessible à cette adresse : https://fr.wiktionary.org/wiki/avant
+La page en ligne correspondant à ce dump est accessible à cette adresse :
+https://fr.wiktionary.org/wiki/avant
 
 Comme le Wiktionnaire change constamment, il n'est pas garanti que le dump que
 nous avons corresponde exactement à ce qui est actuellement sur la page, 
@@ -261,11 +269,11 @@ janvier 2019 à 16h41 :
 Pour trouver les types de section existantes dans le dump, nous utilisons les
 commandes suivantes :
 
-.................................................................................................
+................................................................................
 grep '= {{S|' glawiSplit__1.xml | grep '^=' | grep '=$' | sort > sections.txt
 sed -r 's/^=* \{\{S\|//' sections.txt > sections2.txt
 sed -r 's/([^\|]*)\|[^|\]+\|[^|\]+\|[^|\]+\}\} ?=+/\1/' sections2.txt | sed -r 's/([^\|]*)\|[^|\]+\|[^|\]+\}\} ?=+/\1/' | sed -r 's/([^\|]*)\|[^|\]+\}\} ?=+/\1/' | sed -r 's/([^\|]*)\}\} ?=+/\1/' | sort | uniq -c | sort -r > types.txt
-.................................................................................................
+................................................................................
 
 Nous avons préféré faire des étapes intermédiaires.
 Dans sections2.txt on se retrouve avec trois types de lignes :
@@ -339,10 +347,10 @@ notre extrait initial. Nous supposons que :
 Le code de langue étant au minimum sur deux caractères en minuscules, il suffit
 donc de passer ces commandes :
 
-..................................................................................
+................................................................................
 grep -E '=== {{S|verbe|[a-z][a-z]+|flexion}} ===' glawiSplit__1.xml > flexions.txt
 wc -l flexions.txt
-..................................................................................
+................................................................................
 
 Ce qui nous donne 2 728 516 formes verbales fléchies.
 
@@ -359,11 +367,11 @@ Ce qui nous donne 271 073 verbes à l'infinitif.
 Pour trouver les patrons les plus fréquents en dehors de ceux indiquant une
 section de langue ou un titre de section / sous-section, nous procédons ainsi :
 
-............................................................................................
+................................................................................
 grep -E '= {{[^{S]' glawiSplit__1.xml | grep -v -E '= {{langue' > patrons.txt
 sed -r 's/[^\{]*\{\{([^\}]*)\}\}.*/\1/' patrons.txt > patrons2.txt
 sed -r 's/([^\|]*)\|.*$/\1/' patrons2.txt | grep -v -E '*\{?S$' | sort | uniq -c | sort -r > patrons3.txt
-............................................................................................
+................................................................................
 
 Dans la première ligne, nous sélections toutes les lignes avec un {{ patron }}.
 Dans la deuxième ligne, nous ne prenons que l'intérieur des accolades.
@@ -455,15 +463,16 @@ Le code-langue-2 indique la langue de l'entrée.
 4.2.4 Les langues des étymons par fréquence décroissante
 --------------------------------------------------------
 
-Pour extraire toutes les utilisations du patron, nous utilisons les commandes suivantes :
+Pour extraire toutes les utilisations du patron, nous utilisons les commandes
+suivantes :
 
-.............................................................................................
+................................................................................
 grep "tyl|" glawiSplit__1.xml | sed -r 's/[^\{]*\{\{[^\|]*([^\}]*)\}.*/\1/' > etymologies_patrons.txt
-.............................................................................................
+................................................................................
 
-Le fichier etymologies_patrons.txt contient seulement les arguments du patron car nous
-avions un problème d'encodage sur le 'é' de étyl. Nous avons contourné la
-difficulté dans l'écriture de notre expression régulière. Voici des exemples
+Le fichier etymologies_patrons.txt contient seulement les arguments du patron
+car nous avions un problème d'encodage sur le 'é' de étyl. Nous avons contourné
+la difficulté dans l'écriture de notre expression régulière. Voici des exemples
 tirés du fichier :
 
 |it|fr|mot=lira
@@ -473,9 +482,9 @@ tirés du fichier :
 Nous faisons ensuite une extraction du code-langue-1 avec trie et unicité pour
 obtenir une liste des langues d'étymons par ordre décroissant de fréquence :
 
-..................................................................................
+................................................................................
 sed -r 's/^\|([^|]*)\|.*/\1/' etymologies_patrons.txt | sort | uniq -c | sort -r > langues_etymons.txt
-..................................................................................
+................................................................................
 
 Les 10 langues d'origine des étymons les plus fréquentes sont :
    o 8 894 la
@@ -539,9 +548,9 @@ Nous avons ainsi toutes les patrons indiquant une glose avec ses paramètres.
 
 Pour faire un compte, il suffit d'effectuer :
 
-.....................................................................................
+................................................................................
 cut -d '|' -f 2 gloses1.txt | sed -r 's/^([a-z]*).*/\1/' | sort | uniq -c | sort -r > gloses_count.txt
-.....................................................................................
+................................................................................
 
 Les 5 premières lignes du fichier gloses_count.txt sont :
     o 52 313 nom
@@ -561,9 +570,9 @@ Les liens vers des fichiers ont "Fichier:" comme préfixe :
 
 [[Fichier:Tour de Montlhéry.jpg|vignette|La '''tour''' de Montlhéry ''(sens 1)'']]
 
-...............................................................................................
+................................................................................
 sed -r 's/\[\[(Fichier|Image):.*\]\]//' glawiSplit__1.xml | sed -r 's/\[\[[^\:]*:(.*)\]\]/\1/g' | sed -r 's/\[\[([^\|]*).*\]\]/\1/' | sed -r 's/\[\[//' | sed -r 's/\]\]//' > nohyperlink.txt
-...............................................................................................
+................................................................................
 
 Notes :
     o Le premier sed remplace les liens de la forme "[[Fichier:...]" ou ceux
@@ -589,9 +598,9 @@ Notes :
 
 Une solution serait d'utiliser Perl pour palier le problème de .*? :
 
-...............................................................................................
+................................................................................
 perl -CSDA -p -e 's/\[\[(Fichier|Image):.*\]\]//' glawiSplit__1.xml | perl -CDSA  -p -e 's/\[\[[^\:]*:(.*)\]\]/\1/g' | perl -CSDA -p -e 's/\[\[([^#]*?)\#.*?\]\]/\1/g' | perl -CSDA -p -e 's/\[\[([^\|]*?)\|.*?\]\]/\1/g' | perl -CSDA -p -e 's/\[\[(.*?)\]\]/\1/g' | perl -CDSA -p -e 's/(\[\[)|(\]\])//g' > nohyperlink2.txt
-...............................................................................................
+................................................................................
 
 Cette dernière commande permet de corriger de nombreux problèmes de la
 précédente.
@@ -610,9 +619,9 @@ sed -r "s/'''?//g" glawiSplit__1.xml > noquotes.txt
 
 Pour encoder le formatage au lieu de le supprimer :
 
-..........................................................................................
+................................................................................
 sed -r "s/'''(.*?)'''/<b>\1<\/b>/g" glawiSplit__1.xml| sed -r "s/''(.*?)''/<i>\1<\/i>/g" > noquotes.txt
-..........................................................................................
+................................................................................
 
 Notes : comme expliqué plus haut, utiliser le ? pour rendre le * non greedy ne
 marche pas sur ma configuration. Il le faut car sinon :
@@ -638,9 +647,9 @@ On ne doit pas fermer une balise parente puis fermer une balise fille.
 Cela vient du fait que nous matchons en premier le triple. On corrige ainsi
 notre commande :
 
-.................................................................................
+................................................................................
 perl -CSDA -p -e "s/'''([\w ].*?)'''/<b>\1<\/b>/g" glawiSplit__1.xml | perl -p -e "s/''(.*?)''/<i>\1<\/i>/g" > quotebold.txt
-.................................................................................
+................................................................................
 
 Nous obtenons la bonne traduction. Nous précisons CSDA pour signaler à Perl de
 fonctionner en Unicode pour que \w reconnaisse bien toutes les lettres non
@@ -652,9 +661,9 @@ romanes.
 Nous cumulons les deux traitements précédents pour obtenir un fichier sans
 liens et en ayant converti le gras et l'italique.
 
-...............................................................................................
+................................................................................
 perl -CSDA -p -e 's/\[\[(Fichier|Image):.*\]\]//' glawiSplit__1.xml | perl -CDSA  -p -e 's/\[\[[^\:]*:(.*)\]\]/\1/g' | perl -CSDA -p -e 's/\[\[([^#]*?)\#.*?\]\]/\1/g' | perl -CSDA -p -e 's/\[\[([^\|]*?)\|.*?\]\]/\1/g' | perl -CSDA -p -e 's/\[\[(.*?)\]\]/\1/g' | perl -CDSA -p -e 's/(\[\[)|(\]\])//g' | perl -CSDA -p -e "s/'''([\w ].*?)'''/<b>\1<\/b>/g" | perl -p -e "s/''(.*?)''/<i>\1<\/i>/g" > nothing.txt
-...............................................................................................
+................................................................................
 
 Il faut à présent sélectionner les patrons en enlevant tous les patrons traitant
 des types de mots déjà analysés :
@@ -665,13 +674,13 @@ grep -E "{{" nothing.txt | grep -v -E "{{S\|adj|{{S\|adj-dém|{{S\|adj-excl|{{S\
  
 A partir du fichier nothing2.txt obtenu, nous analysons les patrons restant :
 
-...............................................................................................
+................................................................................
 perl -CSDA -p -e 's/(.*?)\{\{(.*?)\}\}(.*?)/\2/g' nothing2.txt > nothing3.txt
 
 sort nothing3.txt | uniq -c | sort -r > nothing4.txt
 
 head -n 10 nothing4.txt > last_patrons.txt
-...............................................................................................
+................................................................................
 
 Voici les 10 patrons les plus fréquents restant :
     o 62 456 S|étymologie ===
@@ -709,7 +718,7 @@ Par :
 
 À chaque ligne suivante correspond un changement de patron :
 
-................................................................................................
+................................................................................
 perl -CSDA -p -e 's/=== \{\{S\|.tymologie\}\} ===/<h3>Etymologie<\/h3>/g' glawiSplit__1.xml | \
 perl -CSDA -p -e 's/=== \{\{S\|prononciation\}\} ===/<h3>Prononciation<\/h3>/g' | \
 perl -CSDA -p -e 's/=== \{\{S\|r.f.rences\}\} ===/<h3>References<\/h3>/g' | \
@@ -719,24 +728,24 @@ perl -CSDA -p -e 's/=== \{\{S\|voir aussi\}\} ===/<h3>Voir aussi<\/h3>/g' | \
 perl -CSDA -p -e 's/=== \{\{S\|d.riv.s\}\} ===/<h3>Derives<\/h3>/g' | \
 perl -CSDA -p -e 's/\{\{trad-d.but\|(.*?)\}\}/<p><u>\1<\/u> :/g' | \
 perl -CSDA -p -e 's/\{\{trad-fin\}\}/<\/p>/g'> last10.txt
-................................................................................................
+................................................................................
 
 Nous avons dû utiliser le "." à chaque caractère accentué, ayant des problèmes
 d'encodage.
 
-5. GLÀFF [GLAFF]
+5. GLÀFF [GLÀFF]
 ================
 
 5.1 Nombre de formes, nombre de lemmes
 --------------------------------------
 
-Nous décompressons le lexique à partir de l'archive GLAFF-1.2.1.tar.bz.
-Nous obtenons le fichier glaff-1.2.2.txt.
+Nous décompressons le lexique à partir de l'archive GLÀFF-1.2.1.tar.bz.
+Nous obtenons le fichier GLAFF-1.2.2.txt.
 
-Pour mettre au point nos scripts, nous créons miniglaff.txt avec la commande :
+Pour mettre au point nos scripts, nous créons miniGLÀFF.txt avec la commande :
 
 ............................................
-head -n 1000 glaff-1.2.2.txt > miniglaff.txt
+head -n 1000 GLAFF-1.2.2.txt > miniGLÀFF.txt
 ............................................
 
 Exemple de ligne :
@@ -745,7 +754,7 @@ affluent|Vmip3p-|affluer|a.fly|a.fly|9|0.318|187|6.485|369|1.672|1207|5.498|500|
 Pour compter le nombre de formes :
 
 .....................
-wc -l glaff-1.2.2.txt
+wc -l GLAFF-1.2.2.txt
 .....................
 
 On a 1 406 857 formes.
@@ -753,7 +762,7 @@ On a 1 406 857 formes.
 Pour compter le nombre de lemmes :
 
 .....................................................
-cut -d "|" -f 3 glaff-1.2.2.txt | sort | uniq | wc -l
+cut -d "|" -f 3 GLAFF-1.2.2.txt | sort | uniq | wc -l
 .....................................................
 
 On prend la colonne n°3 (en comptant à partir de un) qui contient le lemme, on
@@ -766,13 +775,13 @@ L'étiquette est dans la deuxième colonne (en comptant à partir de un). On
 effectue donc la commande suivante :
 
 ...........................................................................
-cut -d "|" -f 2 glaff-1.2.2.txt | sort | uniq -c | sort -r > etiquettes.txt
+cut -d "|" -f 2 GLAFF-1.2.2.txt | sort | uniq -c | sort -r > etiquettes.txt
 ...........................................................................
 
 Les 10 étiquettes les plus fréquentes sont les 10 premières lignes du fichier.
 Le format utilisé pour les étiquettes est GRACE. 
 Sa documentation est accessible sur ce site :
-http://redac.univ-tlse2.fr/glaffoli/about/posGrace.jsp
+http://redac.univ-tlse2.fr/GLÀFFoli/about/posGrace.jsp
 
 Nous présentons ici les 10 étiquettes les plus fréquentes avec la signification
 du code GRACE :
@@ -784,8 +793,10 @@ du code GRACE :
     o 36 652 Afpfp   Ajdectif qualificatif féminin pluriel
     o 25 416 Afpms   Adjectif qualificatif masculin singulier
     o 23 646 Afpmp   Adjectif qualificatif masculin pluriel
-    o 21 801 Vmip3s- Verbe sous forme flexionnelle à l'indicatif 3e personne singulier
-    o 21 798 Vmcp3s- Verbe sous forme flexionnelle au conditionnel 3e personne singulier
+    o 21 801 Vmip3s- Verbe sous forme flexionnelle à l'indicatif 3e personne
+                     du singulier
+    o 21 798 Vmcp3s- Verbe sous forme flexionnelle au conditionnel 3e personne
+                     du singulier
 
 5.3 Formes fléchis du verbe googler
 -----------------------------------
@@ -795,9 +806,9 @@ Nous ne voulons que les formes fléchies du verbe googler.
 
 Première étape, filtrer pour n'avoir que le lemme googler :
 
-...............................................
-grep -E "\|googler\|" glaff-1.2.2.txt > tmp.txt
-...............................................
+......................................................
+grep -E "V......\|googler\|" GLAFF-1.2.2.txt > tmp.txt
+......................................................
 
 Seconde étape, filtrer pour n'avoir que les formes fléchies et pas l'infinitif :
 
@@ -811,33 +822,68 @@ Dernière étape, couper pour n'avoir que la première colonne :
 cut -d "|" -f 1 tmp2.txt | sort > google.txt
 ............................................
 
-Et on obtient toutes les formes fléchies du verbe googler.
+Et on obtient toutes les formes fléchies du verbe googler sans son infinitif.
+Il y en a 50 (avec wc -l).
+En n'ayant que la forme, nous avons donc des doublons et pour les supprimer nous
+pouvons faire :
+
+...............
+uniq google.txt
+...............
+
+Ce qui ramène à 38 formes et nous amène à réfléchir sur la notion de forme :
+
+    Une forme fléchie peut être comprise simplement comme une suite de lettre :
+        parle = parle
+    Mais une forme fléchie peut être aussi comprise comme une forme ET une
+    catégorisation. Ainsi dans cette optique :
+        parle|Vmip1s- (indicatif, présent, 1ère personne, singulier)
+        parle|Vmmp2s- (impératif, présent, 2ème personne, singulier)
+    ne sont PAS la même forme, alors que dans la première optique, si.
+    Nous préciserons à chaque fois dans quelle optique nous nous plaçons.
 
 5.4 Formes fléchis avec étiquettes morphosyntaxiques du verbe hacker
 --------------------------------------------------------------------
 
-Cela reprend les mêmes étapes que la partie précédente, mais nous ne savons pas
-s'il faut prendre l'infinitif ou pas, nous l'écartons. Nous faisons ces étapes
-plus rapidement en changeant juste la dernière étape pour remplacer le cut par
-un effacement de tout ce qui suit le lemme pour garder juste la forme fléchie et
-l'étiquette :
+Dans la question précédente, nous avons compris la mention :
+    formes fléchies (uniquement) 
+comme le fait de ne pas prendre l'infinitif.
 
-.............................................................................................
-grep -E "\|hacker\|" glaff-1.2.2.txt | grep -v -E "\|Vmn----\|" | sed -r "s/\|hacker\|.*//" > hacker.txt
-.............................................................................................
+Pour les questions suivantes, la mention formes fléchies n'est pas suivie de
+uniquement, nous pensons donc qu'il faut prendre également l'infinitif.
 
-Pour rajouter l'infinitif, il suffit de supprimer le second grep.
+En effet, l'infinitif est une forme fléchie, avec le suffixe -er, qui a la
+particularité d'avoir été choisie pour représenter le lemme, c'est sa forme
+canonique ou de citation.
+
+Nous prenons donc dans les questions suivantes l'infintif également en 
+considération, sachant que sa suppression pas simplement par l'ajout du filtre
+suivant :
+
+........................
+grep -v -E "\|Vmn----\|"
+........................
+
+Pour toutes les formes fléchies du verbe hacker, nous reprenons les étapes pour
+googler en gardant l'infinitif et en changeant juste la dernière étape pour
+garder également l'étiquette :
+
+............................................................................
+grep -E "Vm.....\|hacker\|" GLAFF-1.2.2.txt | cut -d "|" -f 1,2 > hacker.txt
+............................................................................
+
+Comme il nous est demandé la forme fléchie et l'étiquette, nous nous plaçons
+dans cette optique. Le fichier résultat a 51 formes. Par rapport aux 50 de
+googler dans la même optique, la différence est l'infinitif.
 
 5.5 Nombre de formes fléchies pour chaque verbe
 -----------------------------------------------
 
-Première chose, nous allons prendre que les verbes, sans les infinitifs :
+Première chose, nous allons prendre que les verbes, avec les infinitifs :
 
-...................................................................
-grep -E "\|V" glaff-1.2.2.txt | grep -v -E "\|Vmn----\|" > tmp1.txt
-...................................................................
-
-Pour rajouter l'infinitif, il suffit de supprimer le second grep.
+................................................
+grep -E "\|V......\|" GLAFF-1.2.2.txt > tmp1.txt
+................................................
 
 Puis nous allons garder seulement le lemme car nous voulons simplement compter.
 En effet, si on a :
@@ -853,37 +899,50 @@ lesquelles. Il suffit ensuite faire sort, uniq -c puis sort -r.
 cut -d "|" -f 3 tmp1.txt | sort | uniq -c | sort -r > flechies.txt
 ..................................................................
 
-Nous voulons ensuite savoir combien il y a de nombres de formes fléchies.
-Pour cela, nous faisons la commande suivante :
+Nous voulons ensuite savoir combien il y a de nombres de formes fléchies, en
+considérant donc qu'une forme et à la fois une suite de lettres et une
+catégorisation. Pour cela, nous faisons la commande suivante :
 
 .............................................................................
 sed -r 's/[^0-9]+([0-9]+).*/\1/' flechies.txt | uniq -c | sort -r > count.txt
 .............................................................................
 
 Les 13 premiers résultats sont :
-    o 17 337 verbes ont 50 formes fléchies (hors infinitif)
-    o  2 905 verbes ont 47 formes fléchies (hors infinitif)
-    o  1 839 verbes ont  2 formes fléchies (hors infinitif)
-    o    379 verbes ont 71 formes fléchies (hors infinitif)
-    o    172 verbes ont 49 formes fléchies (hors infinitif)
-    o     92 verbes ont 51 formes fléchies (hors infinitif)
-    o     83 verbes ont 48 formes fléchies (hors infinitif)
-    o     82 verbes ont 68 formes fléchies (hors infinitif)
-    o     61 verbes ont 52 formes fléchies (hors infinitif)
-    o     53 verbes ont 1  formes fléchies (hors infinitif)
-    o     25 verbes ont 9  formes fléchies (hors infinitif)
-    o     14 verbes ont 97 formes fléchies (hors infinitif)
-    o     12 verbes ont 59 formes fléchies (hors infinitif)
+    o 17 003 verbes ont 51 formes fléchies
+    o  2 789 verbes ont 48 formes fléchies
+    o    505 verbes ont 50 formes fléchies
+    o    353 verbes ont 72 formes fléchies
+    o    120 verbes ont 47 formes fléchies
+    o    102 verbes ont  1 formes fléchies
+    o     92 verbes ont 52 formes fléchies
+    o     85 verbes ont 49 formes fléchies
+    o     75 verbes ont 69 formes fléchies
+    o     60 verbes ont 53 formes fléchies
+    o     26 verbes ont 71 formes fléchies
+    o     26 verbes ont 10 formes fléchies
+    o     12 verbes ont 98 formes fléchies
+    o     12 verbes ont 60 formes fléchies
 
-Le minimum de formes fléchies est 1 pour 53 verbes.
-Le maximum de formes fléchies est 118 pour 1 verbes (broebeler).
-La moyenne est de 46 formes fléchies par verbe.
-75% des verbes ont néanmoins 50 formes fléchies. 
+Le minimum de formes fléchies est 1 pour 102 verbes.
+Le maximum de formes fléchies est 119 pour 1 verbes (broebeler).
+La moyenne est de 51 formes fléchies par verbe.
+79% des verbes ont 51 formes fléchies. 
+13% des verbes ont 48 formes fléchies.
+En comptant les verbes de 51 et 48 formes, on obtient 92%.
 
 Les verbes avec très peu de formes fléchis s'expliquent car le matériau de base
-à partir duquel a été constitué GLAFF peu contenir des formes fléchies "seules".
-Les verbes surabondants peuvent s'expliquer par une modification de la racine
-qui permet ensuite d'avoir toutes les formes fléchies en double.
+à partir duquel a été constitué GLÀFF peut ne pas contenir toutes les formes
+fléchies des verbes. On a par exemple :
+    fazéier, embaquer, dérompre, déradicaliser, décarpiller, débocarder,
+    débadger, câlicer, cassecouiller, carapaçonner, bréquer, brasseïer
+    bamboucher
+
+Les verbes surabondants peuvent s'expliquer par une possibilité de choix dans
+la racine qui permet ensuite d'avoir toutes les formes fléchies en double.
+Nous avons étudié le verbe bunkeriser et avons vu que la plupart de ses formes
+étaient doublées, sans que ce soit systématique, ainsi :
+    o bunkériserions    Vmcp1p-
+    o bunkeriserions    Vmcp1p-
 
 5.6 Verbes surabondants et verbes défectifs
 -------------------------------------------
@@ -891,33 +950,157 @@ qui permet ensuite d'avoir toutes les formes fléchies en double.
 Un verbe surabondant à plusieurs formes possibles pour une même personne, un
 même genre, un même temps, un même mode.
 Un verbe défectif à des formes manquantes.
-En nous basant sur les résultats de la partie précédente, nous prenons  
+En nous basant sur les résultats de la partie précédente, nous prenons 51 comme
+nombre normal de formes fléchies pour un verbe, en considérant une forme comme
+une suite de lettres et une catégorisation.
 
-TODO
+Il suffit de reprendre le fichier flechies.txt et de prendre toutes les lignes
+différentes de 51. Avec un nombre supérieur pour les verbes surabondant, avec
+un nombre inférieur pour les verbes défectifs. Ce qui donne pour les 
+surabondants :
+
+................................................................................
+grep -E "(72)|(52)|(69)|(53)|(71)|(98)|(60)|(55)|(54)|(68)|(81)|(56)|(93)|(73)|(64)|(85)|(70)|(57)|(97)|(74)|(59)|(89)|(82)|(78)|(77)|(66)|(63)|(62)|(61)|(58)|(199)" flechies.txt > surabondants.txt
+................................................................................
+
+Et pour les défectifs on fait l'inverse en oubliant pas d'ajouter 51 :
+
+................................................................................
+grep -v -E "(51)|(72)|(52)|(69)|(53)|(71)|(98)|(60)|(55)|(54)|(68)|(81)|(56)|(93)|(73)|(64)|(85)|(70)|(57)|(97)|(74)|(59)|(89)|(82)|(78)|(77)|(66)|(63)|(62)|(61)|(58)|(199)" flechies.txt > defectifs.txt
+................................................................................
+
+On a :
+    o wc -l surabondants.txt =>          699
+    o wc -l defectifs.txt    =>        3 708
+    ----------------------------------------
+    o verbes avec 51 formes fléchies  17 003
+    o wc -l flechies.txt     =>       21 410
+Le compte est bon.
 
 6. Comparaison des nomenclatures de GLÀFF et de Morphalou [MORPH]
 =================================================================
 
-6.1 Liste des formes dans le Morphalou et pas dans GLAFF
+Pour les deux points suivants, nous construisons un fichier de toutes les
+formes du Morphalou. Nous avons repéré qu'elles sont dans :
+<orthography>mousse</orthography>
+
+................................................................................
+grep -E "<orthography>" Morphalou-2.0.xml | sed -r 's/^[^<]*<orthography>([^<]*)<\/orthography>.*$/\1/' | sort | uniq > morphalou.txt
+................................................................................
+
+wc -l nous informe qu'il comporte 410 441 formes.
+
+Nous construisons un fichier des formes, en ne considérant que la suite de
+lettres cette fois-ci, à partir du GLÀFF :
+
+.........................................................
+cut -d "|" -f 1 glaff-1.2.2.txt | sort | uniq > glaff.txt
+.........................................................
+
+wc -l nous informe qu'il comporte 1 082 688 formes.
+
+Nous faisons ensuite un diff des deux :
+
+.......................................
+diff morphalou.txt glaff.txt > diff.txt
+.......................................
+
+Nous avons à présent un fichier à partir duquel travailler.
+
+6.1 Liste des formes dans le Morphalou et pas dans GLÀFF
 --------------------------------------------------------
 
-TODO
+Les lignes du fichier diff.txt commençant par < indique une forme présente dans
+le Morphalou et pas dans GLÀFF :
 
-6.2 Liste des formes dans GLAFF et pas dans Morphalou
+..........................................
+grep -E "^<" diff.txt > pas_dans_glaff.txt
+..........................................
+
+wc -l nous informe qu'il y en 58 168.
+
+6.2 Liste des formes dans GLÀFF et pas dans Morphalou
 -----------------------------------------------------
 
-TODO
+Les lignes du fichier diff.txt commençant par > indique une forme présente dans
+le GLÀFF et pas dans Morphalou :
+
+..............................................
+grep -E "^>" diff.txt > pas_dans_morphalou.txt
+..............................................
+
+wc -l nous informe qu'il y en 730 415.
+
++----------------------------------------------+------------+-----------+
+|                                              |   GLÀFF    | Morphalou |
++----------------------------------------------+------------+-----------+
+| Nombre de forme (suite de lettres seulement) | 1 082 688  |  410 441  |
++----------------------------------------------+------------+-----------+
+| Présente uniquement dans la ressource        |   730 415  |   58 168  |
++----------------------------------------------+------------+-----------+
+| Pourcentage de non recouvrement              |        67% |       14% |
++----------------------------------------------+------------+-----------+
+
+On constate donc que le GLÀFF est beaucoup plus riche que le Morphalou, mais
+qu'il gagnerait à être enrichi des 58 168 formes que le Morphalou possède et pas
+lui.
 
 7. Conversion de GLÀFF en format CSV [CSV]
 ==========================================
 
-7.1 Conversion du GLAFF en CSV
+7.1 Conversion du GLÀFF en CSV
 ------------------------------
 
-TODO
+Nous devons produire une version de GLÀFF qui contienne :
+    o forme
+    o étiquette
+    o lemme
+    o transcriptions API (séparées par un ;)
 
--------------------------------------------------------------------------------
+Nous sélectionnons les champs demandés avec la commande suivante :
+
+.............................................
+cut -d "|" f 1,2,3,4 miniglawi.txt > tmp1.txt
+.............................................
+
+Puis nous remplaçons le | par un , :
+
+......................................
+sed -r 's/\|/,/g' tmp1.txt > final.csv
+......................................
+
+Et nous pouvons ensuite ouvrir final.csv avec OpenOffice, LibreOffice ou Excel.
+
+================================================================================
 Partie B : utilisation de Java [JAVA]
--------------------------------------------------------------------------------
+================================================================================
 
-TODO
+1. Environnement de travail
+---------------------------
+
+Pour cette partie, nous développons sur Windows avec un JDK et Notepad++.
+
+Nous utilisons quotidiennement Eclipse à notre travail mais préférons un
+environnement plus léger quand c'est possible.
+
+Nous utilisons le script bat suivant pour compiler :
+
+@echo off
+set JAVADIR=C:\tools\jdk-11.0.2\bin
+echo ------------------- CLEANING ---------------------
+del .\saxo\DGXHandler.class
+echo ------------------- END CLEANING -----------------
+echo ------------------ COMPILING ---------------------
+%JAVADIR%\javac.exe .\saxo\DGXHandler.java -Xlint
+echo ------------------ END COMPILING ---------------------
+pause
+if exist .\saxo\DGXHandler.java (
+    echo ------------------ EXECUTING ---------------------
+    %JAVADIR%\java.exe saxo.DGXHandler
+    echo ------------------ END EXECUTING ---------------------
+    pause
+)
+if not exist .\saxo\DGXHandler.java (
+    echo SOMETHING WENT WRONT WHILE COMPILING
+)
+
