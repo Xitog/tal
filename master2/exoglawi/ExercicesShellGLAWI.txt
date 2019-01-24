@@ -44,8 +44,17 @@ Table des matières [TAB]
                 o 4.3.3 Encodage des hyperliens
                 o 4.3.5 Les 10 patrons qui restent
         5. GLÀFF [GLAFF]
+            o 5.1 Nombre de formes, nombre de lemmes
+            o 5.2 Trie des étiquettes morphosyntaxiques par fréquence décroissante
+            o 5.3 Formes fléchis du verbe googler
+            o 5.4 Formes fléchis avec étiquettes morphosyntaxiques du verbe hacker
+            o 5.5 Nombre de formes fléchies pour chaque verbe 
+            o 5.6 Verbes surabondants et verbes défectifs
         6. Comparaison des nomenclatures de GLÀFF et de Morphalou [MORPH]
+            o 6.1 Liste des formes dans le Morphalou et pas dans GLAFF
+            o 6.2 Liste des formes dans GLAFF et pas dans Morphalou
         7. Conversion de GLÀFF en format CSV [CSV]
+            o 7.1 Conversion du GLAFF en CSV
     o Partie B : utilisation de Java [JAVA]
 
 Rechercher par le code rapide pour directement aller à la section voulue.
@@ -718,12 +727,197 @@ d'encodage.
 5. GLÀFF [GLAFF]
 ================
 
+5.1 Nombre de formes, nombre de lemmes
+--------------------------------------
+
+Nous décompressons le lexique à partir de l'archive GLAFF-1.2.1.tar.bz.
+Nous obtenons le fichier glaff-1.2.2.txt.
+
+Pour mettre au point nos scripts, nous créons miniglaff.txt avec la commande :
+
+............................................
+head -n 1000 glaff-1.2.2.txt > miniglaff.txt
+............................................
+
+Exemple de ligne :
+affluent|Vmip3p-|affluer|a.fly|a.fly|9|0.318|187|6.485|369|1.672|1207|5.498|500|0.393|1929|1.538
+
+Pour compter le nombre de formes :
+
+.....................
+wc -l glaff-1.2.2.txt
+.....................
+
+On a 1 406 857 formes.
+
+Pour compter le nombre de lemmes :
+
+.....................................................
+cut -d "|" -f 3 glaff-1.2.2.txt | sort | uniq | wc -l
+.....................................................
+
+On prend la colonne n°3 (en comptant à partir de un) qui contient le lemme, on
+trie puis on applique uniq et on compte le nombre de ligne. On a 164 291 lemmes.
+
+5.2 Trie des étiquettes morphosyntaxiques par fréquence décroissante
+--------------------------------------------------------------------
+
+L'étiquette est dans la deuxième colonne (en comptant à partir de un). On
+effectue donc la commande suivante :
+
+...........................................................................
+cut -d "|" -f 2 glaff-1.2.2.txt | sort | uniq -c | sort -r > etiquettes.txt
+...........................................................................
+
+Les 10 étiquettes les plus fréquentes sont les 10 premières lignes du fichier.
+Le format utilisé pour les étiquettes est GRACE. 
+Sa documentation est accessible sur ce site :
+http://redac.univ-tlse2.fr/glaffoli/about/posGrace.jsp
+
+Nous présentons ici les 10 étiquettes les plus fréquentes avec la signification
+du code GRACE :
+    o 54 226 Ncfs    Nom commun féminin singulier
+    o 50 532 Ncms    Nom commun masculin singulier
+    o 45 223 Ncfp    Nom commun féminin pluriel
+    o 42 406 Ncmp    Nom commun masculin pluriel
+    o 39 696 Afpfs   Adjectif qualificatif féminin singulier
+    o 36 652 Afpfp   Ajdectif qualificatif féminin pluriel
+    o 25 416 Afpms   Adjectif qualificatif masculin singulier
+    o 23 646 Afpmp   Adjectif qualificatif masculin pluriel
+    o 21 801 Vmip3s- Verbe sous forme flexionnelle à l'indicatif 3e personne singulier
+    o 21 798 Vmcp3s- Verbe sous forme flexionnelle au conditionnel 3e personne singulier
+
+5.3 Formes fléchis du verbe googler
+-----------------------------------
+
+Une étiquette GRACE commençant par Vmn est un verbe à l'infinitif.
+Nous ne voulons que les formes fléchies du verbe googler.
+
+Première étape, filtrer pour n'avoir que le lemme googler :
+
+...............................................
+grep -E "\|googler\|" glaff-1.2.2.txt > tmp.txt
+...............................................
+
+Seconde étape, filtrer pour n'avoir que les formes fléchies et pas l'infinitif :
+
+...........................................
+grep -v -E "\|Vmn----\|" tmp.txt > tmp2.txt
+...........................................
+
+Dernière étape, couper pour n'avoir que la première colonne :
+
+............................................
+cut -d "|" -f 1 tmp2.txt | sort > google.txt
+............................................
+
+Et on obtient toutes les formes fléchies du verbe googler.
+
+5.4 Formes fléchis avec étiquettes morphosyntaxiques du verbe hacker
+--------------------------------------------------------------------
+
+Cela reprend les mêmes étapes que la partie précédente, mais nous ne savons pas
+s'il faut prendre l'infinitif ou pas, nous l'écartons. Nous faisons ces étapes
+plus rapidement en changeant juste la dernière étape pour remplacer le cut par
+un effacement de tout ce qui suit le lemme pour garder juste la forme fléchie et
+l'étiquette :
+
+.............................................................................................
+grep -E "\|hacker\|" glaff-1.2.2.txt | grep -v -E "\|Vmn----\|" | sed -r "s/\|hacker\|.*//" > hacker.txt
+.............................................................................................
+
+Pour rajouter l'infinitif, il suffit de supprimer le second grep.
+
+5.5 Nombre de formes fléchies pour chaque verbe
+-----------------------------------------------
+
+Première chose, nous allons prendre que les verbes, sans les infinitifs :
+
+...................................................................
+grep -E "\|V" glaff-1.2.2.txt | grep -v -E "\|Vmn----\|" > tmp1.txt
+...................................................................
+
+Pour rajouter l'infinitif, il suffit de supprimer le second grep.
+
+Puis nous allons garder seulement le lemme car nous voulons simplement compter.
+En effet, si on a :
+    o dansons|...|danser
+    o dansez|...|danser
+On aura :
+    o danser
+    o danser
+Donc on sait qu'on a deux formes fléchies pour danser mais on ne sait pas
+lesquelles. Il suffit ensuite faire sort, uniq -c puis sort -r.
+
+..................................................................
+cut -d "|" -f 3 tmp1.txt | sort | uniq -c | sort -r > flechies.txt
+..................................................................
+
+Nous voulons ensuite savoir combien il y a de nombres de formes fléchies.
+Pour cela, nous faisons la commande suivante :
+
+.............................................................................
+sed -r 's/[^0-9]+([0-9]+).*/\1/' flechies.txt | uniq -c | sort -r > count.txt
+.............................................................................
+
+Les 13 premiers résultats sont :
+    o 17 337 verbes ont 50 formes fléchies (hors infinitif)
+    o  2 905 verbes ont 47 formes fléchies (hors infinitif)
+    o  1 839 verbes ont  2 formes fléchies (hors infinitif)
+    o    379 verbes ont 71 formes fléchies (hors infinitif)
+    o    172 verbes ont 49 formes fléchies (hors infinitif)
+    o     92 verbes ont 51 formes fléchies (hors infinitif)
+    o     83 verbes ont 48 formes fléchies (hors infinitif)
+    o     82 verbes ont 68 formes fléchies (hors infinitif)
+    o     61 verbes ont 52 formes fléchies (hors infinitif)
+    o     53 verbes ont 1  formes fléchies (hors infinitif)
+    o     25 verbes ont 9  formes fléchies (hors infinitif)
+    o     14 verbes ont 97 formes fléchies (hors infinitif)
+    o     12 verbes ont 59 formes fléchies (hors infinitif)
+
+Le minimum de formes fléchies est 1 pour 53 verbes.
+Le maximum de formes fléchies est 118 pour 1 verbes (broebeler).
+La moyenne est de 46 formes fléchies par verbe.
+75% des verbes ont néanmoins 50 formes fléchies. 
+
+Les verbes avec très peu de formes fléchis s'expliquent car le matériau de base
+à partir duquel a été constitué GLAFF peu contenir des formes fléchies "seules".
+Les verbes surabondants peuvent s'expliquer par une modification de la racine
+qui permet ensuite d'avoir toutes les formes fléchies en double.
+
+5.6 Verbes surabondants et verbes défectifs
+-------------------------------------------
+
+Un verbe surabondant à plusieurs formes possibles pour une même personne, un
+même genre, un même temps, un même mode.
+Un verbe défectif à des formes manquantes.
+En nous basant sur les résultats de la partie précédente, nous prenons  
+
+TODO
+
 6. Comparaison des nomenclatures de GLÀFF et de Morphalou [MORPH]
 =================================================================
+
+6.1 Liste des formes dans le Morphalou et pas dans GLAFF
+--------------------------------------------------------
+
+TODO
+
+6.2 Liste des formes dans GLAFF et pas dans Morphalou
+-----------------------------------------------------
+
+TODO
 
 7. Conversion de GLÀFF en format CSV [CSV]
 ==========================================
 
+7.1 Conversion du GLAFF en CSV
+------------------------------
+
+TODO
+
 -------------------------------------------------------------------------------
 Partie B : utilisation de Java [JAVA]
 -------------------------------------------------------------------------------
+
+TODO
