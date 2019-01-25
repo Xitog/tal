@@ -60,6 +60,17 @@ Table des matières [TAB]
     o Partie B : utilisation de Java [JAVA]
         1. Environnement de travail [ENV]
         2. Extractions à partir du GLAWI [EXT]
+            o 2.1 Extraction de la nomenclature
+            o 2.2 Table de fréquences des parties du discours
+            o 2.3 Types de marques lexicographiques
+            o 2.4 Les 5 marques de domaine les plus fréquents
+            o 2.5a Entrées avec au moins une définition dans le domaine le plus fréquent
+            o 2.5b Entrées avec toutes les définitions dans le domaine le plus fréquent
+            o 2.6 Extraction des entrées avec leurs gloses qui sont des néologies
+            o 2.7 Extraction des entrées avec plusieurs gloses dont une seule est une néologie
+            o 2.8 Extraction des entrées importées du Littré
+            o 2.9 Extraction des entrées importées du Littré portant une marque de néologie
+            o 2.10 Extraction des entrées importées du Littré dont toutes les gloses sont des néologies
         3. Inspecteur de structure [INS]
 
 Rechercher par le code rapide pour directement aller à la section voulue.
@@ -1087,24 +1098,27 @@ environnement plus léger quand c'est possible.
 
 Nous utilisons le script bat suivant pour compiler :
 
+................................................................
 @echo off
 set JAVADIR=C:\tools\jdk-11.0.2\bin
-echo ------------------- CLEANING ---------------------
-del .\saxo\DGXHandler.class
-echo ------------------- END CLEANING -----------------
+echo ------------------ CLEANING ----------------------
+if exist .\saxo\DGXHandler.class (
+    del .\saxo\DGXHandler.class
+)
+echo ------------------ END CLEANING ------------------
 echo ------------------ COMPILING ---------------------
-%JAVADIR%\javac.exe .\saxo\DGXHandler.java -Xlint
-echo ------------------ END COMPILING ---------------------
-pause
-if exist .\saxo\DGXHandler.java (
+%JAVADIR%\javac.exe -encoding utf8 .\saxo\DGXHandler.java -Xlint
+echo ------------------ END COMPILING -----------------
+if exist .\saxo\DGXHandler.class (
     echo ------------------ EXECUTING ---------------------
     %JAVADIR%\java.exe saxo.DGXHandler
-    echo ------------------ END EXECUTING ---------------------
-    pause
+    echo ------------------ END EXECUTING -----------------
 )
-if not exist .\saxo\DGXHandler.java (
+if not exist .\saxo\DGXHandler.class (
     echo SOMETHING WENT WRONT WHILE COMPILING
 )
+................................................................
+
 
 2. Extractions à partir du GLAWI [EXT]
 --------------------------------------
@@ -1115,19 +1129,266 @@ DefaultHandler. Nous redéfinissons plusieurs méthodes :
       attributs.
     o La méthode characters est appelée entre la balise ouvrante et fermante.
     o La méthode endElement est appelée à la balise fermante.
-    
-Avec, nous parsons un extrait de GLAWI pour extraite sa nomenclature.
-Nous la stockons dans la variable d'instance protected nomenclature de type 
-ArrayList<String>. La méthode getTitles() permet d'y accéder en lecture seule.
 
-Nous stockons dans la variable d'instance protected pos de type
-HashMap<String, Integer>.
+2.1 Extraction de la nomenclature
+---------------------------------
 
+Nous parsons en premier un extrait de GLAWI pour extraite sa nomenclature.
+
+Nous repérons les titres en détectant la balise ouvrante <titre>.
+Nous stockons ensuite le titre dans la variable d'instance protected 
+nomenclature de type ArrayList<String>. La méthode getTitles() permet d'y
+accéder ensuite.
+
+Nous l'affichons enfin sur la console et dans le fichier Nomenclature.txt.
+Nous reproduisons ici ses 20 premières lignes :
+
+-athlon
+-iser
+-ité
+-ière
+-lâtre
+-oir
+-oyer
+-phyte
+-thèque
+22 mètres
+89
+Abbevilloise
+Abbevilloises
+Abitibien
+Adolphe
+Amandine
+Amélie
+Astrolabe
+Astérix
+Belle
+
+2.2 Table de fréquences des parties du discours
+-----------------------------------------------
+
+Nous repérons les catégories en détectant la balise ouvrante <pos> et en 
+extrayant la valeur de son attribut type.
+
+Nous stockons ensuite dans la variable d'instance protected pos de type
+HashMap<String, Integer> les différentes parties du discours en comptant le
+nombre de leurs occurrences. La méthode getPos() permet d'y accéder ensuite.
+
+Nous l'affichons enfin sur la console et dans le fichier 
+Table of frequencies.txt en triant par le nombre d'occurrences en descendant.
+
+Le résultat est dans le fichier "Table of frequencies.txt" et reproduit ici :
+
+Key =                          verbe | Value =                          19754
+Key =                            nom | Value =                           3076
+Key =                       adjectif | Value =                           1397
+Key =                        adverbe | Value =                             70
+Key =                     nom propre | Value =                             47
+Key =                        préfixe | Value =                             24
+Key =                   interjection | Value =                             17
+Key =                         prénom | Value =                             12
+Key =                        suffixe | Value =                              9
+Key =                      synonymes | Value =                              3
+Key =         variante typographique | Value =                              2
+Key =                     onomatopée | Value =                              2
+Key =                         phrase | Value =                              2
+Key =                 nom de famille | Value =                              2
+Key =                        dérivés | Value =                              1
+Key =                    traductions | Value =                              1
+Key =                    préposition | Value =                              1
+Key =                    conjonction | Value =                              1
+Key =                   postposition | Value =                              1
+Key =                pronom indéfini | Value =                              1
+
+2.3 Types de marques lexicographiques
+-------------------------------------
+
+Nous repérons les marques lexicographiques en détectant la balise ouvrante
+<label> puis nous récupérons la valeur son attribut type.
+Nous le stockons dans une variable d'instance protected labelTypes de type
+HashMap<String, Integer> en comptant le nombre d'occurrences. La méthode
+getLabelTypes() permet d'y accéder ensuite.
+
+Le résultat est dans le fichier "Table of label types.txt" et reproduit ici :
+
+Key =                         domain | Value =                           1539
+Key =                     diachronic | Value =                            496
+Key =                    attitudinal | Value =                            306
+Key =                            sem | Value =                            247
+Key =                          other | Value =                            161
+Key =                       diatopic | Value =                            109
+Key =                 diafrequential | Value =                            102
+Key =                           gram | Value =                             24
+Key =                           loan | Value =                             13
+
+En bonus, nous avons également étudié toutes les valeurs du type sem. Le
+résultat est dans le fichier "Table values of sem types.txt" et reproduit ici :
+
+Key =                         figuré | Value =                            104
+Key =                  par extension | Value =                             87
+Key =                 en particulier | Value =                             23
+Key =                      métonymie | Value =                             11
+Key =                   spécialement | Value =                              9
+Key =                        ellipse | Value =                              4
+Key =                         propre | Value =                              3
+Key =                     absolument | Value =                              2
+Key =                       analogie | Value =                              1
+Key =                        apocope | Value =                              1
+Key =                      métaphore | Value =                              1
+Key =                   généralement | Value =                              1
+
+2.4 Les 5 marques de domaine les plus fréquents
+-----------------------------------------------
+
+Nous regardons la balise <label>, son attribut type doit avoir la valeur domain.
+On stocke et on compte dans la variable protégée domains de type
+HashMap<String, Integer>. On y accède ensuite avec la méthode getDomains().
+
+Le résultat est dans le fichier "Domains.txt" et est reproduit ici, seul les
+5 plus fréquents sont gardés. Nous avons considéré qu'il peut y avoir des 
+ex-aequo. Le contenu du fichier est reproduit ici :
+
+1]===================
+Key =                      botanique | Value =                            151
+2]===================
+Key =                         chimie | Value =                            131
+3]===================
+Key =                       médecine | Value =                             91
+4]===================
+Key =                       zoologie | Value =                             72
+5]===================
+Key =                       histoire | Value =                             50
+
+2.5a Entrées avec au moins une définition dans le domaine le plus fréquent
+--------------------------------------------------------------------------
+
+Le domaine le plus fréquent est "botanique".
+
+Il faut donc repérer toutes les entrées avec au moins une définition avec :
+<label type="domain" value="botanique"/>. On a déjà l'entrée stockée dans la
+variable nomenclature, il suffit alors de la stocker dans une autre variable
+protégée, entreeAtLeastOneBotanique, de type ArrayList<String>.
+
+On compte 151 résultats, nous en reproduisons ici les 10 premiers :
+    o actée
+    o albédo
+    o aléné
+    o aoutement
+    o aouter
+    o aouter
+    o aoûtement
+    o apiculé
+    o appendiculé
+    o aranéeux
+
+2.5b Entrées avec toutes les définitions dans le domaine le plus fréquent
+-------------------------------------------------------------------------
+
+Le domaine le plus fréquent est "botanique".
+Cette fois-ci il faut que TOUTES les définitions d'une section pos soient
+étiquetées par le domaine botanique pour que l'entrée figure dans notre lexique.
+
+Notre algorithme est le suivant :
+    o Quand on rencontre une balise ouvrante pos, on met les variables defCpt et
+      botCpt à zéro.
+    o On incrémente la variable defCpt à chaque balise ouvrante definition
+    o On incrémente la variable botCpt à chaque balise label avec comme type
+      domain et valeur botanique.
+    o Quand on rencontre une balise fermante pos, on teste si defCpt == botCpt.
+      Si c'est vrai, on stocke l'entrée dans la variable protégée
+      entreeAllBotanique de type ArrayList<String>
+
+On compte 129 résultats, nous en reproduisons ici les 10 premiers :
+    o actée
+    o aléné
+    o aoutement
+    o aoûtement
+    o apiculé
+    o arille
+    o arillé
+    o aristé
+    o aréolé
+    o badasse
+
+Nous pouvons comparer les deux fichiers de résultats avec diff ou WinMerge.
+
+2.6 Extraction des entrées avec leurs gloses qui sont des néologies
+-------------------------------------------------------------------
+
+Pour les trouver, il faut repérer <label type="diachronic" value="néologisme"/>.
+
+En sortie, nous allons produire un fichier CSV et prendre :
+    o article/titre
+    o article/text/pos@type
+    o article/text/pos/definitions/definition/txt
+Pour chaque définition ayant l'étiquette recherchée.
+
+Il faut bien faire attention de compiler le code avec l'option -encoding utf8 à
+javac pour que le equals("néologisme") marche.
+
+Nous utilisons comme séparateur le triplet "###" car des virgules et des points-
+virgules sont présents dans le texte des définitions. Nous n'avons pas trouvé
+le triplet "###" dans notre extrait, nous faisons l'hypothèse que c'est le cas
+pour l'ensemble de Glawi.
+
+De même, nous remplaçons dans le texte les nouvelles lignes par " // " pour ne
+pas corrompre la structure de notre fichier.
+
+Nous comptons 34 résultats, nous en reproduisons ici les 10 premiers :
+
+    o animathèque###nom###Établissement qui conserve des films d'animation.
+    o apprenant###nom###Personne qui apprend, en étant acteur de son apprentissage.
+    o archéographie###nom###Archéographie : tel est le nom que Marc-Alain Ouaknin propose pour désigner cette recherche qui raccorde notre alphabet à l'alphabet protosinaïtique et la distinguer ainsi d'une recherche étymologique ou purement linguistique. Elle s'en démarque en effet par son caractère largement anthropologique:.. (Commentaire sur « Les Mystères de l'Alphabet » de Marc-Alain Ouaknin (Editions Assouline), par Yvette Reynaud-Kherlakian)
+    o aroniste###nom###Tocquevilliens et aronistes de tout poil, l'histoire vous donnera forcément raison contre la racaille populaire que vous méprisez, et même le fait que sept Français sur dix désapprouvent le maintien du CPE est forcément une preuve supplémentaire du bien-fondé de la réforme.
+    o auteurisant###adjectif###Ce film est un catalogue de tout ce qu'il y a de plus nul dans le cinéma français auteurisant qui se regarde filmer et oublie juste que les fauteuils de cinéma ne sont pas là pour faire jolis.
+    o bombiner###verbe###A, noir corset velu des mouches éclatantes // Qui bombinent autour des puanteurs cruelles (Arthur Rimbaud, Voyelles)
+    o capillotracteur###adjectif###Personne racontant des histoires difficiles à croire.
+    o conspirationnisme###nom###Au contraire, elle pêche volontairement dans un conspirationnisme nihiliste qui la rend incapacitante dans le domaine des idées et de l'action métapolitique.
+    o coupleux###adjectif###Cette moto toute simple, pourvue d'un bon châssis, d'un moteur coupleux et d'une esthétique exceptionnelle était plébiscitée depuis longtemps par les concessionnaires.
+
+2.7 Extraction des entrées avec plusieurs gloses dont une seule est une néologie
+--------------------------------------------------------------------------------
+
+TODO
+
+2.8 Extraction des entrées importées du Littré
+----------------------------------------------
+
+TODO
+
+2.9 Extraction des entrées importées du Littré portant une marque de néologie
+-----------------------------------------------------------------------------
+
+TODO
+
+2.10 Extraction des entrées importées du Littré dont toutes les gloses sont des néologies
+-----------------------------------------------------------------------------------------
 
 TODO
 
 3. Inspecteur de structure [INS]
 --------------------------------
 
-TODO
+Pour cette dernière question, nous avons fait une autre classe, Inspector, dans
+le même package.
 
+Notre code se base sur une liste, level, qui va agir comme une pile où on met
+les niveaux.
+
+On convertit cette liste en une chaîne unique, une clé qui va permettre de
+stocker le niveau dans une HashMap<String, Integer> pour compter les
+occurrences.
+
+Dans la clé, les niveaux sont séparés par des "/", les attributs par "/@".
+Le caractère @ est inférieur à toutes les lettres, les attributs seront donc
+affichés avant les balises filles.
+
+Elle parcourt l'extrait et écrit dans un fichier :
+    3.1 Les balises en les comptant par ordre alphabétique des niveaux, sans attributs
+    3.2 Les balises en les comptant par ordre de fréquences décroissantes, sans attributs
+    3.3 Les balises en les comptant par ordre alphabétique des niveaux, avec attributs
+    3.4 Bonus : les balises en les comptant par ordre de rencontre, sans attributs
+
+--------------------------------------------------------------------------------
+
+                                    [FIN]

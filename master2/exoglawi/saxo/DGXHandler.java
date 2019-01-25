@@ -17,9 +17,21 @@ class DGXHandler extends DefaultHandler {
     
     protected ArrayList<String> nomenclature;
     protected HashMap<String, Integer> pos;
-    protected HashMap<String, Integer> lexMarks;
+    protected HashMap<String, Integer> labelTypes;
+    protected HashMap<String, Integer> semValues;
     protected HashMap<String, Integer> domains;
+    protected ArrayList<String> entreeAtLeastOneBotanique;
+    protected ArrayList<String> entreeAllBotanique;
+    protected ArrayList<String> neologisms;
+
     protected boolean inTitle;
+    protected boolean inTxt;
+    protected String currentPosType;
+    protected String currentPosDefTxt;
+    protected boolean isNeologism;
+    
+    private int defCpt;
+    private int botCpt;
     
     /**
      * Constructeur
@@ -28,9 +40,13 @@ class DGXHandler extends DefaultHandler {
         super();
         this.nomenclature = new ArrayList<String>();
         this.pos = new HashMap<String, Integer>();
-        this.lexMarks = new HashMap<String, Integer>();
+        this.labelTypes = new HashMap<String, Integer>();
+        this.semValues = new HashMap<String, Integer>();
         this.domains = new HashMap<String, Integer>();
         this.inTitle = false;
+        this.entreeAtLeastOneBotanique = new ArrayList<String>();
+        this.entreeAllBotanique = new ArrayList<String>();
+        this.neologisms = new ArrayList<String>();
     }
     
     /**
@@ -53,23 +69,35 @@ class DGXHandler extends DefaultHandler {
                 break;
             case "pos":
                 key = attrs.getValue("type");
+                this.currentPosType = key;
                 val = 1;
                 if (this.pos.containsKey(key)) {
                     val = val + this.pos.get(key);
                 }
-                this.pos.put(key, val); 
+                this.pos.put(key, val);
+                // For questions 2.5a & 2.5b
+                this.defCpt = 0;
+                this.botCpt = 0;
+                break;
+            case "definition":
+                this.defCpt += 1;
                 break;
             case "label":
-                key = attrs.getValue("type");
-                String typ = attrs.getValue("type");
-                switch (typ) {
+                // <label type="xxx">
+                String type = attrs.getValue("type");
+                val = 1;
+                if (labelTypes.containsKey(type)) {
+                    val = val + this.labelTypes.get(type);
+                }
+                this.labelTypes.put(type, val);
+                switch (type) {
                     case "sem":
                         value = attrs.getValue("value");
                         val = 1;
-                        if (this.lexMarks.containsKey(value)) {
-                            val = val + this.lexMarks.get(value);
+                        if (this.semValues.containsKey(value)) {
+                            val = val + this.semValues.get(value);
                         }
-                        this.lexMarks.put(value, val); 
+                        this.semValues.put(value, val); 
                         break;
                     case "domain":
                         value = attrs.getValue("value");
@@ -78,8 +106,23 @@ class DGXHandler extends DefaultHandler {
                             val = val + this.domains.get(value);
                         }
                         this.domains.put(value, val);
+                        if (value.equals("botanique")) {
+                            this.entreeAtLeastOneBotanique.add(this.nomenclature.get(this.nomenclature.size() - 1));
+                            this.botCpt += 1;
+                        }
+                        break;
+                    // For question 2.6
+                    case "diachronic":
+                        value = attrs.getValue("value");
+                        if (value.equals("néologisme")) {
+                            this.isNeologism = true;
+                        }
                         break;
                 }
+                break;
+            case "txt":
+                this.inTxt = true;
+                break;
         }
     }
     
@@ -90,8 +133,30 @@ class DGXHandler extends DefaultHandler {
      * @param qName le nom de la balise
      */
     public void endElement(String uri, String localName, String qName) {
-        if (qName.equals("title")) {
-            this.inTitle = false;
+        switch (qName) {
+            case "title":
+                this.inTitle = false;
+                break;
+            case "pos":
+                // For questions 2.5a & 2.5b
+                if (this.defCpt == this.botCpt && this.botCpt != 0) {
+                    this.entreeAllBotanique.add(this.nomenclature.get(this.nomenclature.size() - 1));
+                }
+                break;
+            // For questions 2.6
+            case "txt":
+                this.inTxt = false;
+                break;
+            case "definition":
+                if (this.isNeologism) {
+                    this.neologisms.add(
+                        this.nomenclature.get(this.nomenclature.size() - 1) + "###" +
+                        this.currentPosType + "###" +
+                        this.currentPosDefTxt.replace("\n", " // ")
+                    );
+                    this.isNeologism = false;
+                }
+                break;
         }
     }
     
@@ -107,6 +172,8 @@ class DGXHandler extends DefaultHandler {
         if (this.inTitle) {
             String donnees = new String(caracteres, debut, longueur);
             this.nomenclature.add(donnees);
+        } else if (this.inTxt) {
+            this.currentPosDefTxt = new String(caracteres, debut, longueur);
         }
     }
     
@@ -127,14 +194,23 @@ class DGXHandler extends DefaultHandler {
     public HashMap<String, Integer> getPos() {
         return this.pos;
     }
-    
+        
     /**
-     * Retourne les marques lexicales
+     * Retourne les différents types des labels
      *
-     * @return les marques lexicales
+     * @return les différents types des labels
      */
-    public HashMap<String, Integer> getLexicalMarks() {
-        return this.lexMarks;
+    public HashMap<String, Integer> getLabelTypes() {
+        return this.labelTypes;
+    }
+
+    /**
+     * Retourne les valeurs pour les labels de type sem
+     *
+     * @return les valeurs pour les labels de type sem
+     */
+    public HashMap<String, Integer> getSemValues() {
+        return this.semValues;
     }
     
     /**
@@ -147,6 +223,33 @@ class DGXHandler extends DefaultHandler {
     }
     
     /**
+     * Retourne les entrées ayant au moins une définition d'une section POS en botanique
+     *
+     * @return les entrées ayant au moins une définition d'une section POS en botanique
+     */
+    public ArrayList<String> getAtLeastOneBotanique() {
+        return this.entreeAtLeastOneBotanique;
+    }
+    
+    /**
+     * Retourne les entrées ayant toutes les définitions d'une section POS en botanique
+     *
+     * @return les entrées ayant toutes les définitions d'une section POS en botanique
+     */
+    public ArrayList<String> getAllOneBotanique() {
+        return this.entreeAllBotanique;
+    }
+    
+    /**
+     * Retourne les néologismes
+     *
+     * @return les néologismes
+     */
+    public ArrayList<String> getNeologisms() {
+        return this.neologisms;
+    }
+
+    /**
      * Output to file and console if console is true an Hashmap<String, Integer>
      *
      * @param title
@@ -156,8 +259,9 @@ class DGXHandler extends DefaultHandler {
     public static void output(String title, HashMap<String, Integer> hash, boolean console) {
         try {
             if (console) System.out.println("\n=== " + title + " ===\n");
-            Set<Map.Entry<String, Integer>> set = hash.entrySet();
-            Iterator<Map.Entry<String, Integer>> iterator = set.iterator();
+            List<Map.Entry<String, Integer>> list = new ArrayList<>(hash.entrySet());
+            list.sort(Collections.reverseOrder(Map.Entry.comparingByValue()));
+            Iterator<Map.Entry<String, Integer>> iterator = list.iterator();
             FileWriter fileWriter = new FileWriter(title + ".txt");
             PrintWriter printWriter = new PrintWriter(fileWriter);
             while(iterator.hasNext()) {
@@ -176,19 +280,20 @@ class DGXHandler extends DefaultHandler {
     /**
      * Output only to file
      */
-    public static void output(String title, ArrayList<String> arr) {
-        output(title, arr, false);
+    public static void output(String title, ArrayList<String> list) {
+        output(title, list, false);
     }
     
     /**
      * Output to file and console if console is true
      */
-    public static void output(String title, ArrayList<String> arr, boolean console) {
+    public static void output(String title, ArrayList<String> list, boolean console) {
         try {
             if (console) System.out.println("\n=== " + title + " ===\n");
+            Collections.sort(list);
             FileWriter fileWriter = new FileWriter(title + ".txt");
             PrintWriter printWriter = new PrintWriter(fileWriter);
-            for(String s : arr) {
+            for(String s : list) {
                 if (console) System.out.println(s);
                 printWriter.println(s);
             }
@@ -199,7 +304,9 @@ class DGXHandler extends DefaultHandler {
     }
     
     /**
+     * Fonction principale
      *
+     * @param args Paramètres d'entrées, non utilisés
      */
     public static void main(String[] args) {
         // Parcours de l'extrait de GLAWI
@@ -213,73 +320,86 @@ class DGXHandler extends DefaultHandler {
             e.printStackTrace();
         }
         
-        // Afficher les nomenclature (= les entrées)
+        // 2.1 Extraction de la nomenclature (= les entrées)
         output("Nomenclature", handler.nomenclature);
         
-        // Afficher la table de fréquences des parties du discours
+        // 2.2 Table de fréquences des parties du discours
         output("Table of frequencies", handler.getPos(), false);
         
-        // Afficher la table de fréquences des marques lexicographiques
-        output("Table of lexical marks", handler.getLexicalMarks(), false);
+        // 2.3 Types de marques lexicographiques
+        output("Table of label types", handler.getLabelTypes(), false);
         
-        //-------------------------------------------------
-        // Afficher les 5 domaines les plus fréquents
-        //-------------------------------------------------
-        // [1] Méthode une
-        // Le problème est qu'on peut avoir plusieurs domaines avec le même nombre
-        // d'éléments. Dans mon fichier texte, beaucoup n'en ont qu'un...
-        // Or, si on veut les plus fréquents, il faut éliciter tous les domaines pour
-        // un nombre d'éléments donnés.
-        System.out.println("\nFive most frequent domains\n");
-        ArrayList<Map.Entry<String,Integer>> list = new ArrayList<>(handler.getDomains().entrySet());
-        list.sort(Map.Entry.comparingByValue());
-        ListIterator<Map.Entry<String, Integer>> itelist = list.listIterator(list.size());
-        int nb = 0;
-        while (nb < 5 && itelist.hasPrevious()) {
-            Map.Entry<String, Integer> entry = itelist.previous();
-            System.out.println("Key = " + entry.getKey() + " & Value = " + String.valueOf(entry.getValue()));
-            nb += 1;
-        }
+        // Bonus : valeurs du type sem
+        output("Table values of sem types", handler.getSemValues(), false);
         
-        // [2] Méthode deux
-        // On va faire différemment donc : on repère la plus grande valeur
-        System.out.println("\nFive most frequent domains, take 2\n");
-        int old_max = -1;
-        int max = 0; // pour remplir la condition du while la première fois
-        nb = 0;
-        Set<Map.Entry<String, Integer>> set = handler.getDomains().entrySet();
-        while (nb < 5 && max != -1) {
-            System.out.println(String.valueOf(nb + 1) + "]=====================================");
-            max = -1;
-            Iterator<Map.Entry<String, Integer>> iterator = set.iterator();
-            while(iterator.hasNext()) {
-                Map.Entry<String, Integer> entry = iterator.next();
-                // Donc, on a un nouveau max si :
-                // max < value < old_max
-                // ou
-                // max < value si old_max == 1 (cas initial)
-                if (entry.getValue() > max && (entry.getValue() < old_max || old_max == -1)) {
-                    max = entry.getValue();
-                }
-            }
-            // Si on a trouvé un max
-            // On finira par ne plus en trouver à cause de la condition sur old_max
-            if (max != -1) {
-                // Ok, on a un max. Quel(s) domaine(s) sont aussi fréquents ?
-                iterator = set.iterator();
+        // 2.4 Les 5 marques de domaine les plus fréquents
+        try {
+            FileWriter fileWriter = new FileWriter("Five most frequent domains.txt");
+            PrintWriter printWriter = new PrintWriter(fileWriter);
+            int old_max = -1;
+            int max = 0; // pour remplir la condition du while la première fois
+            int nb = 0;
+            Set<Map.Entry<String, Integer>> set = handler.getDomains().entrySet();
+            while (nb < 5 && max != -1) {
+                printWriter.println(String.valueOf(nb + 1) + "]===================");
+                max = -1;
+                Iterator<Map.Entry<String, Integer>> iterator = set.iterator();
                 while(iterator.hasNext()) {
                     Map.Entry<String, Integer> entry = iterator.next();
-                    if (entry.getValue() == max) {
-                        System.out.println("    Key = " + entry.getKey() + " & Value = " + String.valueOf(entry.getValue()));
+                    // Donc, on a un nouveau max si :
+                    // max < value < old_max
+                    // ou
+                    // max < value si old_max == 1 (cas initial)
+                    if (entry.getValue() > max && (entry.getValue() < old_max || old_max == -1)) {
+                        max = entry.getValue();
                     }
                 }
-                // Et on répète
-                old_max = max;
-                nb += 1;
+                // Si on a trouvé un max
+                // On finira par ne plus en trouver à cause de la condition sur old_max
+                if (max != -1) {
+                    // Ok, on a un max. Quel(s) domaine(s) sont aussi fréquents ?
+                    iterator = set.iterator();
+                    while(iterator.hasNext()) {
+                        Map.Entry<String, Integer> entry = iterator.next();
+                        if (entry.getValue() == max) {
+                            String key = String.format("%30s", entry.getKey());
+                            String val = String.format("%30s", String.valueOf(entry.getValue()));
+                            printWriter.println("Key = " + key + " | Value = " + val);
+                        }
+                    }
+                    // Et on répète
+                    old_max = max;
+                    nb += 1;
+                }
             }
+            printWriter.close();
+        } catch (IOException ioe) {
+            System.out.println("[ERROR] Unable to write to file for 5 most frequent domains");
         }
         
+        // 2.5a Entrées avec au moins une définition dans le domaine le plus fréquent
+        output("At least one definition in botanique", handler.getAtLeastOneBotanique());
         
+        // 2.5b Entrées avec toutes les définitions dans le domaine le plus fréquent
+        output("All definitions in botanique", handler.getAllOneBotanique());
+        
+        // 2.6 Extraction des entrées avec leurs gloses qui sont des néologies
+        output("Neologismes", handler.getNeologisms());
+
+        // 3. Inspecteur de structure 
+        Inspector gadjet = new Inspector("glawiWork_1.xml");
+        
+        // 3.1 Les balises en les comptant par ordre alphabétique des niveaux, sans attributs
+        gadjet.inspect_alphabetical_order("3_1_out.txt", false);
+        
+        // 3.2 Les balises en les comptant par ordre de fréquences décroissantes, sans attributs
+        gadjet.inspect_freq_order("3_2_out.txt", false);
+        
+        // 3.3 Les balises en les comptant par ordre alphabétique des niveaux, avec attributs
+        gadjet.inspect_alphabetical_order("3_3_out.txt", true);
+        
+        // 3.4 Bonus : les balises en les comptant par ordre de rencontre, sans attributs
+        gadjet.inspect_encounter_order("3_4_out.txt", false);
     }
 
 }
