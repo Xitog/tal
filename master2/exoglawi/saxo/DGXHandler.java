@@ -5,6 +5,7 @@ import org.xml.sax.*;
 import javax.xml.parsers.*;
 import java.io.File;
 import java.util.*;
+import java.io.*;
 
 /**
  * Classe pour parser un extrait de GLAWI au format XML.
@@ -110,45 +111,101 @@ class DGXHandler extends DefaultHandler {
     }
     
     /**
+     * Retourne la nomenclature
      *
+     * @return les nomenclatures
      */
     public ArrayList<String> getTitles() {
         return this.nomenclature;
     }
     
     /**
+     * Retourne les catégories du discours
      *
+     * @return les catégories du discours
      */
     public HashMap<String, Integer> getPos() {
         return this.pos;
     }
     
     /**
+     * Retourne les marques lexicales
      *
+     * @return les marques lexicales
      */
     public HashMap<String, Integer> getLexicalMarks() {
         return this.lexMarks;
     }
     
     /**
+     * Retourne les domaines
      *
+     * @return les domaines
      */
     public HashMap<String, Integer> getDomains() {
         return this.domains;
     }
     
     /**
+     * Output to file and console if console is true an Hashmap<String, Integer>
+     *
+     * @param title
+     * @param hash
+     * @param console
+     */
+    public static void output(String title, HashMap<String, Integer> hash, boolean console) {
+        try {
+            if (console) System.out.println("\n=== " + title + " ===\n");
+            Set<Map.Entry<String, Integer>> set = hash.entrySet();
+            Iterator<Map.Entry<String, Integer>> iterator = set.iterator();
+            FileWriter fileWriter = new FileWriter(title + ".txt");
+            PrintWriter printWriter = new PrintWriter(fileWriter);
+            while(iterator.hasNext()) {
+                Map.Entry<String, Integer> entry = iterator.next();
+                String key = String.format("%30s", entry.getKey());
+                String val = String.format("%30s", String.valueOf(entry.getValue()));
+                if (console) System.out.println("Key = " + key + " | Value = " + val);
+                printWriter.println("Key = " + key + " | Value = " + val);
+            }
+            printWriter.close();
+        } catch (IOException ioe) {
+            System.out.println("[ERROR] Unable to write to file for " + title);
+        }
+    }
+    
+    /**
+     * Output only to file
+     */
+    public static void output(String title, ArrayList<String> arr) {
+        output(title, arr, false);
+    }
+    
+    /**
+     * Output to file and console if console is true
+     */
+    public static void output(String title, ArrayList<String> arr, boolean console) {
+        try {
+            if (console) System.out.println("\n=== " + title + " ===\n");
+            FileWriter fileWriter = new FileWriter(title + ".txt");
+            PrintWriter printWriter = new PrintWriter(fileWriter);
+            for(String s : arr) {
+                if (console) System.out.println(s);
+                printWriter.println(s);
+            }
+            printWriter.close();
+        } catch (IOException ioe) {
+            System.out.println("[ERROR] Unable to write to file for " + title);
+        }
+    }
+    
+    /**
      *
      */
     public static void main(String[] args) {
-        //-------------------------------------------------
         // Parcours de l'extrait de GLAWI
-        //-------------------------------------------------
         DGXHandler handler = new DGXHandler();
         File fileToParse = new File ("glawiWork_1.xml");
-        
         SAXParserFactory spf = SAXParserFactory.newInstance();
-
         try {
             SAXParser saxParser = spf.newSAXParser();
             saxParser.parse(fileToParse, handler);
@@ -156,35 +213,14 @@ class DGXHandler extends DefaultHandler {
             e.printStackTrace();
         }
         
-        //-------------------------------------------------
         // Afficher les nomenclature (= les entrées)
-        //-------------------------------------------------
-        System.out.println("\nNomenclature\n");
-        for(String s : handler.nomenclature) {
-            System.out.println(s);
-        }
+        output("Nomenclature", handler.nomenclature);
         
-        //-------------------------------------------------
         // Afficher la table de fréquences des parties du discours
-        //-------------------------------------------------
-        System.out.println("\nTable of frequencies\n");
-        Set<Map.Entry<String, Integer>> set = handler.getPos().entrySet();
-        Iterator<Map.Entry<String, Integer>> iterator = set.iterator();
-        while(iterator.hasNext()) {
-            Map.Entry<String, Integer> entry = iterator.next();
-            System.out.println("Key = " + entry.getKey() + " & Value = " + String.valueOf(entry.getValue()));
-        }
+        output("Table of frequencies", handler.getPos(), false);
         
-        //-------------------------------------------------
         // Afficher la table de fréquences des marques lexicographiques
-        //-------------------------------------------------
-        System.out.println("\nTable of lexical marks\n");
-        set = handler.getLexicalMarks().entrySet();
-        iterator = set.iterator();
-        while(iterator.hasNext()) {
-            Map.Entry<String, Integer> entry = iterator.next();
-            System.out.println("Key = " + entry.getKey() + " & Value = " + String.valueOf(entry.getValue()));
-        }
+        output("Table of lexical marks", handler.getLexicalMarks(), false);
         
         //-------------------------------------------------
         // Afficher les 5 domaines les plus fréquents
@@ -211,11 +247,11 @@ class DGXHandler extends DefaultHandler {
         int old_max = -1;
         int max = 0; // pour remplir la condition du while la première fois
         nb = 0;
-        set = handler.getDomains().entrySet();
+        Set<Map.Entry<String, Integer>> set = handler.getDomains().entrySet();
         while (nb < 5 && max != -1) {
             System.out.println(String.valueOf(nb + 1) + "]=====================================");
             max = -1;
-            iterator = set.iterator();
+            Iterator<Map.Entry<String, Integer>> iterator = set.iterator();
             while(iterator.hasNext()) {
                 Map.Entry<String, Integer> entry = iterator.next();
                 // Donc, on a un nouveau max si :
