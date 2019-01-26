@@ -15,23 +15,33 @@ import java.io.*;
  */
 class DGXHandler extends DefaultHandler {
     
-    protected ArrayList<String> nomenclature;
-    protected HashMap<String, Integer> pos;
-    protected HashMap<String, Integer> labelTypes;
-    protected HashMap<String, Integer> semValues;
-    protected HashMap<String, Integer> domains;
-    protected ArrayList<String> entreeAtLeastOneBotanique;
-    protected ArrayList<String> entreeAllBotanique;
-    protected ArrayList<String> neologisms;
-
-    protected boolean inTitle;
-    protected boolean inTxt;
-    protected String currentPosType;
-    protected String currentPosDefTxt;
-    protected boolean isNeologism;
+    protected ArrayList<String> nomenclature;               // For question 2.1
+    protected ArrayList<String> entreeAtLeastOneBotanique;  // For question 2.5a
+    protected ArrayList<String> entreeAllBotanique;         // For question 2.5b
+    protected ArrayList<String> neologisms;                 // For questions 2.6 and 2.9
+    protected ArrayList<String> neologismsOnlyOne;          // For question 2.7
+    protected ArrayList<String> entreeFromLittre;           // For questions 2.8 and 2.9
+    protected ArrayList<String> neologismsAll;              // For question 2.10
     
-    private int defCpt;
-    private int botCpt;
+    protected HashMap<String, Integer> pos;                 // For question 2.2
+    protected HashMap<String, Integer> labelTypes;          // For question 2.3
+    protected HashMap<String, Integer> semValues;           // For question 2.3 bonus
+    protected HashMap<String, Integer> domains;             // For question 2.4
+    
+    protected boolean inTitle;          // For question 2.1
+    protected boolean inTxt;            // For question 2.5
+    protected boolean inImport;         // For question 2.8
+    
+    protected boolean isNeologism;      // For questions 2.6 and 2.7 and 2.10
+    protected boolean isFromLittre;     // For questions 2.8, 2.9 and 2.10
+    
+    protected String currentPosType;    // For questions 2.5 and 2.6
+    protected String currentPosDefTxt;  // For question 2.6
+    
+    private int defCpt;                 // For questions 2.5 and 2.7 and 2.10
+    private int posCpt;                 // For questions 2.7 and 2.10
+    private int botCpt;                 // For question 2.5
+    private int neoCpt;                 // For questions 2.7 and 2.10
     
     /**
      * Constructeur
@@ -47,6 +57,9 @@ class DGXHandler extends DefaultHandler {
         this.entreeAtLeastOneBotanique = new ArrayList<String>();
         this.entreeAllBotanique = new ArrayList<String>();
         this.neologisms = new ArrayList<String>();
+        this.neologismsOnlyOne = new ArrayList<String>();
+        this.neologismsAll = new ArrayList<String>();
+        this.entreeFromLittre = new ArrayList<String>();
     }
     
     /**
@@ -64,10 +77,14 @@ class DGXHandler extends DefaultHandler {
         String key;
         String value;
         switch (qName) {
+            case "article":
+                this.posCpt = 0;
+                break;
             case "title":
                 this.inTitle = true;
                 break;
             case "pos":
+                this.posCpt += 1;
                 key = attrs.getValue("type");
                 this.currentPosType = key;
                 val = 1;
@@ -75,9 +92,11 @@ class DGXHandler extends DefaultHandler {
                     val = val + this.pos.get(key);
                 }
                 this.pos.put(key, val);
-                // For questions 2.5a & 2.5b
+                // For questions 2.5a and 2.5b
                 this.defCpt = 0;
                 this.botCpt = 0;
+                // For questions 2.7 and 2.10
+                this.neoCpt = 0;
                 break;
             case "definition":
                 this.defCpt += 1;
@@ -116,12 +135,18 @@ class DGXHandler extends DefaultHandler {
                         value = attrs.getValue("value");
                         if (value.equals("néologisme")) {
                             this.isNeologism = true;
+                            this.neoCpt += 1; // For questions 2.7 and 2.10
                         }
                         break;
                 }
                 break;
             case "txt":
                 this.inTxt = true;
+                break;
+            // For question 2.7
+            case "import":
+                this.isFromLittre = false;
+                this.inImport = true;
                 break;
         }
     }
@@ -133,29 +158,53 @@ class DGXHandler extends DefaultHandler {
      * @param qName le nom de la balise
      */
     public void endElement(String uri, String localName, String qName) {
+        String currentTitle = this.nomenclature.get(this.nomenclature.size() - 1);
         switch (qName) {
             case "title":
                 this.inTitle = false;
                 break;
             case "pos":
-                // For questions 2.5a & 2.5b
+                // For questions 2.5a and 2.5b
                 if (this.defCpt == this.botCpt && this.botCpt != 0) {
-                    this.entreeAllBotanique.add(this.nomenclature.get(this.nomenclature.size() - 1));
+                    this.entreeAllBotanique.add(currentTitle);
+                }
+                // For question 2.7
+                if (this.defCpt > 1 && this.neoCpt == 1) {
+                    this.neologismsOnlyOne.add(currentTitle + "###" + 
+                                               currentPosType + "###" + 
+                                               String.valueOf(this.posCpt) + "###" +
+                                               String.valueOf(this.defCpt) + "###" +
+                                               String.valueOf(this.neoCpt));
+                }
+                // For question 2.10
+                if (this.defCpt == this.neoCpt && this.neoCpt > 0) {
+                    this.neologismsAll.add(currentTitle + "###" + 
+                                           currentPosType + "###" + 
+                                           String.valueOf(this.posCpt) + "###" +
+                                           String.valueOf(this.defCpt) + "###" +
+                                           String.valueOf(this.neoCpt));
                 }
                 break;
-            // For questions 2.6
+            // For question 2.6
             case "txt":
                 this.inTxt = false;
                 break;
             case "definition":
                 if (this.isNeologism) {
                     this.neologisms.add(
-                        this.nomenclature.get(this.nomenclature.size() - 1) + "###" +
+                        currentTitle + "###" +
                         this.currentPosType + "###" +
                         this.currentPosDefTxt.replace("\n", " // ")
                     );
                     this.isNeologism = false;
                 }
+                break;
+            // For question 2.8
+            case "import":
+                if (this.isFromLittre) {
+                    this.entreeFromLittre.add(currentTitle);
+                }
+                this.inImport = false;
                 break;
         }
     }
@@ -174,6 +223,11 @@ class DGXHandler extends DefaultHandler {
             this.nomenclature.add(donnees);
         } else if (this.inTxt) {
             this.currentPosDefTxt = new String(caracteres, debut, longueur);
+        } else if (this.inImport) {
+            String s = new String(caracteres, debut, longueur);
+            if (s.equals("Littré")) {
+                this.isFromLittre = true;
+            }
         }
     }
     
@@ -248,7 +302,34 @@ class DGXHandler extends DefaultHandler {
     public ArrayList<String> getNeologisms() {
         return this.neologisms;
     }
-
+    
+    /**
+     * Retourne les entrées avec pos possédant plusieurs définitions dont une seule est marquée comme néologie
+     *
+     * @return les entrées avec pos possédant plusieurs définitions dont une seule est marquée comme néologie
+     */
+    public ArrayList<String> getNeologismsOnlyOne() {
+        return this.neologismsOnlyOne;
+    }
+    
+    /**
+     * Retourne les entrées avec pos possédant dont toutes les définitions sont marquées comme néologie
+     *
+     * @return les entrées avec pos possédant dont toutes les définitions sont marquées comme néologie
+     */
+    public ArrayList<String> getNeologismsAll() {
+        return this.neologismsAll;
+    }
+    
+    /**
+     * Retourne les entrées du Littré
+     *
+     * @return les entrées du Littré
+     */
+    public ArrayList<String> getEntreeFromLittre() {
+        return this.entreeFromLittre;
+    }
+    
     /**
      * Output to file and console if console is true an Hashmap<String, Integer>
      *
@@ -262,7 +343,7 @@ class DGXHandler extends DefaultHandler {
             List<Map.Entry<String, Integer>> list = new ArrayList<>(hash.entrySet());
             list.sort(Collections.reverseOrder(Map.Entry.comparingByValue()));
             Iterator<Map.Entry<String, Integer>> iterator = list.iterator();
-            FileWriter fileWriter = new FileWriter(title + ".txt");
+            FileWriter fileWriter = new FileWriter(title.replace(' ', '_') + ".txt");
             PrintWriter printWriter = new PrintWriter(fileWriter);
             while(iterator.hasNext()) {
                 Map.Entry<String, Integer> entry = iterator.next();
@@ -291,7 +372,7 @@ class DGXHandler extends DefaultHandler {
         try {
             if (console) System.out.println("\n=== " + title + " ===\n");
             Collections.sort(list);
-            FileWriter fileWriter = new FileWriter(title + ".txt");
+            FileWriter fileWriter = new FileWriter(title.replace(' ', '_') + ".txt");
             PrintWriter printWriter = new PrintWriter(fileWriter);
             for(String s : list) {
                 if (console) System.out.println(s);
@@ -321,20 +402,20 @@ class DGXHandler extends DefaultHandler {
         }
         
         // 2.1 Extraction de la nomenclature (= les entrées)
-        output("Nomenclature", handler.nomenclature);
+        output("2_01_Nomenclature", handler.nomenclature);
         
         // 2.2 Table de fréquences des parties du discours
-        output("Table of frequencies", handler.getPos(), false);
+        output("2_02_Table of frequencies", handler.getPos(), false);
         
         // 2.3 Types de marques lexicographiques
-        output("Table of label types", handler.getLabelTypes(), false);
+        output("2_03_Table of label types", handler.getLabelTypes(), false);
         
         // Bonus : valeurs du type sem
-        output("Table values of sem types", handler.getSemValues(), false);
+        output("2_03b_Table values of sem types", handler.getSemValues(), false);
         
         // 2.4 Les 5 marques de domaine les plus fréquents
         try {
-            FileWriter fileWriter = new FileWriter("Five most frequent domains.txt");
+            FileWriter fileWriter = new FileWriter("2_04_Five most frequent domains.txt");
             PrintWriter printWriter = new PrintWriter(fileWriter);
             int old_max = -1;
             int max = 0; // pour remplir la condition du while la première fois
@@ -378,28 +459,56 @@ class DGXHandler extends DefaultHandler {
         }
         
         // 2.5a Entrées avec au moins une définition dans le domaine le plus fréquent
-        output("At least one definition in botanique", handler.getAtLeastOneBotanique());
+        output("2_05a_At least one definition in botanique", handler.getAtLeastOneBotanique());
         
         // 2.5b Entrées avec toutes les définitions dans le domaine le plus fréquent
-        output("All definitions in botanique", handler.getAllOneBotanique());
+        output("2_05b_All definitions in botanique", handler.getAllOneBotanique());
         
         // 2.6 Extraction des entrées avec leurs gloses qui sont des néologies
-        output("Neologismes", handler.getNeologisms());
+        output("2_06_Neologismes", handler.getNeologisms());
 
+        // 2.7 Extraction des entrées avec plusieurs gloses dont une seule est une néologie
+        output("2_07_Neologismes plusieurs def only one neo", handler.getNeologismsOnlyOne());
+        
+        // 2.8 Extraction des entrées importées du Littré
+        output("2_08_From Littre", handler.getEntreeFromLittre());
+        
+        // 2.9 Extraction des entrées importées du Littré portant une marque de néologie
+        // Il faut croiser neologisms & entreeFromLittre
+        ArrayList<String> entreeFromLittreNeo = new ArrayList<String>();
+        for (String s : handler.getNeologisms()) {
+            String entree = s.split("###")[0];
+            if (handler.getEntreeFromLittre().contains(entree)) {
+                entreeFromLittreNeo.add(entree);
+            }
+        }
+        output("2_09_Neologism from Littre", entreeFromLittreNeo);
+        
+        // 2.10 Extraction des entrées importées du Littré dont toutes les gloses sont des néologies
+        output("2_10a_Entry with pos all neo", handler.getNeologismsAll());
+        ArrayList<String> entreeFromLittreAllNeo = new ArrayList<String>();
+        for (String s : handler.getNeologismsAll()) {
+            String entree = s.split("###")[0];
+            if (handler.getEntreeFromLittre().contains(entree) && !entreeFromLittreAllNeo.contains(entree)) {
+                entreeFromLittreAllNeo.add(entree);
+            }
+        }
+        output("2_10b_Entry from Littre with pos all neo", entreeFromLittreAllNeo);
+        
         // 3. Inspecteur de structure 
         Inspector gadjet = new Inspector("glawiWork_1.xml");
         
         // 3.1 Les balises en les comptant par ordre alphabétique des niveaux, sans attributs
-        gadjet.inspect_alphabetical_order("3_1_out.txt", false);
+        gadjet.inspect_alphabetical_order("3_01_alpha no attr.txt", false);
         
         // 3.2 Les balises en les comptant par ordre de fréquences décroissantes, sans attributs
-        gadjet.inspect_freq_order("3_2_out.txt", false);
+        gadjet.inspect_freq_order("3_02_freq no attr.txt", false);
         
         // 3.3 Les balises en les comptant par ordre alphabétique des niveaux, avec attributs
-        gadjet.inspect_alphabetical_order("3_3_out.txt", true);
+        gadjet.inspect_alphabetical_order("3_03_alpha attr.txt", true);
         
         // 3.4 Bonus : les balises en les comptant par ordre de rencontre, sans attributs
-        gadjet.inspect_encounter_order("3_4_out.txt", false);
+        gadjet.inspect_encounter_order("3_04_encounter no attr.txt", false);
     }
 
 }

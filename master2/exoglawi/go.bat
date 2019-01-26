@@ -1,5 +1,10 @@
 @echo off
-set JAVADIR=C:\tools\jdk-11.0.2\bin
+if exist "C:\tools\jdk-11.0.2\bin" (
+    set JAVADIR=C:\tools\jdk-11.0.2\bin
+)
+if exist "C:\Program Files (x86)\Dev\JavaSE8JDKu45\bin" (
+    set JAVADIR="C:\Program Files (x86)\Dev\JavaSE8JDKu45\bin"
+)
 echo ------------------ CLEANING ----------------------
 if exist .\saxo\DGXHandler.class (
     del .\saxo\DGXHandler.class
