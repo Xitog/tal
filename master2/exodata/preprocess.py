@@ -13,6 +13,7 @@
 # DOUBLONS_TEST
 # SHOW_BEST (for silhouette's words in Domains)
 # COVER_CALC (for silhouette's words on Domains)
+# EVALUATE_MY_MODEL (use my model)
 
 #-----------------------------------------------------------
 # Import
@@ -59,6 +60,7 @@ stopwords = []
 LOAD_STOPWORDS = True
 
 if LOAD_STOPWORDS:
+    # https://www.ranks.nl/stopwords/french
     stopwords_ = open("data/stopwords.txt", encoding="utf8", mode="r").readlines()
     for s in stopwords_:
         stopwords.append(s.strip())
@@ -83,6 +85,65 @@ def count(corpus):
     print("nb of dom:", len(dom))
     for k, v in dom.items():
         print(f"{k:12}", f"{v:6d}", pp(v / nb))
+
+#-----------------------------------------------------------
+# Part 0 : Convert the unreadable CSV to a readable CSV by pandas
+#-----------------------------------------------------------
+
+# "abc", "cde", "d,ef"
+# The comma inside d,ef is a problem. We must change the separator
+
+CONVERT = False
+
+# Read the teacher CSV. Convert it to a list of string with ### sep and no "x"
+def read_base_csv(filepath):
+    f = open(filepath, mode='r', encoding='utf8')
+    lines = f.readlines()
+    f.close()
+    first = True
+    out = []
+    for lin in lines:
+        data = lin.split(',')
+        output = ''
+        for i in range(0, 4):
+            d = data[i]
+            output += d.strip().replace('"', '') + '###'
+        output += ','.join(data[4:]).strip().replace('"', '') + "\n"
+        #if not first:
+        #    titles.append(MiniTitle(*output.split('###')))
+        #else:
+        #    first = False
+        out.append(output)
+    return out
+
+# Write a list of lines
+def write_to_csv(filename, lines, start=0, end=None, newsep=None, header=None):
+    if end is None: end = len(lines)
+    f = open(filename, mode='w', encoding='utf8')
+    if header is not None:
+        if type(header) in [bool]:
+            pass
+        else:
+            if newsep is not None:
+                f.write(header.replace("###", newsep))
+            else:
+                f.write(header)
+    nb = 0
+    for i in range(start, end):
+        if newsep is not None:
+            f.write(lines[i].replace("###", newsep))
+        else:
+            f.write(lines[i])
+        nb += 1
+    f.close()
+    if header is not None:
+        print('from', start, 'to', end, 'nb', nb, '+1 header')
+    else:
+        print('from', start, 'to', end, 'nb', nb, 'without header')
+
+if CONVERT:
+    lines = read_base_csv('data/litl-exam.csv')
+    write_to_csv('data/sharpAll.csv', lines, header=True)
 
 #-----------------------------------------------------------
 # Part 0 : Make PICKLE corpus for ALL, TRAIN, TEST from CSV
@@ -121,7 +182,7 @@ if MAKE_CORPUS_ALL:
     pickle.dump(titles, out)
     out.close()
 
-MAKE_TRAIN_TEST_FROM_PICKLE_ALL = True
+MAKE_TRAIN_TEST_FROM_PICKLE_ALL = False
 
 if MAKE_TRAIN_TEST_FROM_PICKLE_ALL:
     titles = pickle.load(open('data/backup.bin', mode='rb'))
@@ -178,9 +239,14 @@ if MAKE_TRAIN_TEST_FROM_PICKLE_ALL:
 # Part 0 : Load corpus from Pickle
 #-----------------------------------------------------------
 
-LOAD_ALL = False
-LOAD_TRAIN = True
-LOAD_TEST = True
+if __name__ == '__main__':
+    LOAD_ALL = False
+    LOAD_TRAIN = True
+    LOAD_TEST = True
+else:
+    LOAD_ALL = False
+    LOAD_TRAIN = False
+    LOAD_TEST = False
 
 if LOAD_ALL:
     # warning: no filtered
@@ -316,10 +382,25 @@ if CROSS_SUPPORT_AUTHORS:
         print()
 
 #-----------------------------------------------------------
-# PART2 : Stats on length & words
+# PART2 and PART3 : SWITCHES
 #-----------------------------------------------------------
 
-LENGTH_STATS = True
+if __name__ == '__main__':
+    LENGTH_STATS = True
+    DOUBLONS_TEST = False
+    COVER_CALC = False
+    SHOW_BEST = False
+    EVALUATE_MY_MODEL = False
+else:
+    LENGTH_STATS = False
+    DOUBLONS_TEST = False
+    COVER_CALC = False
+    SHOW_BEST = False
+    EVALUATE_MY_MODEL = False
+
+#-----------------------------------------------------------
+# PART2 : Stats on length & words
+#-----------------------------------------------------------
 
 class DomainInfo:
 
@@ -442,8 +523,6 @@ if LENGTH_STATS:
 # Pour cela, il faut calculer s'il y a une possibilité qu'un titre est
 # deux fois système dedans. Si non... Il y a 10% de titres qui ont système ;-)
 
-DOUBLONS_TEST = False
-
 if DOUBLONS_TEST:
     doublons = {}
     for t in train:
@@ -460,15 +539,13 @@ if DOUBLONS_TEST:
                             print(t.filtered)
     print("Doublons = ", len(doublons))
 
-
 #-----------------------------------------------------------
 # PART2 : Best indicators based on F-Mesure
 #-----------------------------------------------------------
 
-for key, dom in domains.items():
-    dom.get_best(domains)
-
-SHOW_BEST = False
+if SHOW_BEST or COVER_CALC:
+    for key, dom in domains.items():
+        dom.get_best(domains)
 
 if SHOW_BEST:
     nbmax = 10
@@ -502,8 +579,6 @@ def calc_cover(nbmax):
                 nb += 1
         print(f"{key:12}", f"covered for {nbmax:4} =", pp(nb / dom.nb))
 
-COVER_CALC = False
-
 if COVER_CALC:
     # How to reach 90?
     calc_cover(50)
@@ -516,24 +591,6 @@ if COVER_CALC:
 
 #del test
 #titles = train
-
-del train
-titles = test
-
-# Title with nothing
-cpt = 0
-for t in titles:
-    if len(t.filtered) == 0:
-       cpt += 1
-print("Title without silhouette =", cpt)
-
-# Getting the best
-nb_max = 10_000 # number of features 100 1000 10_000
-first_best = {
-    'Informatique' : domains['Informatique'].get_first_best(nb_max),
-    'Lettres' : domains['Lettres'].get_first_best(nb_max),
-    'Linguistique' : domains['Linguistique'].get_first_best(nb_max)
-}
 
 # Evaluate for a given domain the proximity of the title limited to nb best words
 def evaluate(t, domain):
@@ -578,363 +635,75 @@ def categorize_all(titles):
             cpt = 0
             threshold += step
 
-# Go & Count https://fr.wikipedia.org/wiki/Matrice_de_confusion
-start_time = datetime.datetime.now()
-categorize_all(titles)
-print('Duration : ' + str(datetime.datetime.now() - start_time))
+if EVALUATE_MY_MODEL:
+    del train
+    titles = test
 
-estimated = {
-    'Informatique' : {
-        'Informatique' : 0,
-        'Lettres' : 0,
-        'Linguistique' : 0
-    },
-    'Lettres' : {
-        'Informatique' : 0,
-        'Lettres' : 0,
-        'Linguistique' : 0
-    },
-    'Linguistique' : {
-        'Informatique' : 0,
-        'Lettres' : 0,
-        'Linguistique' : 0
-    },
-    'No silhouette' : {
-        'Informatique' : 0,
-        'Lettres' : 0,
-        'Linguistique' : 0
-    },
-    'Zero Equality' : {
-        'Informatique' : 0,
-        'Lettres' : 0,
-        'Linguistique' : 0 
-    },
-    'Non Zero Equality' : {
-        'Informatique' : 0,
-        'Lettres' : 0,
-        'Linguistique' : 0
-    }
-}
-
-for t in titles:
-    estimated[t.guess][t.domain] += 1
-
-good = estimated['Linguistique']['Linguistique'] + \
-       estimated['Lettres']['Lettres'] + \
-       estimated['Informatique']['Informatique']
-countall = len(titles)
-print(f"{'Accuracy =':15}", pp(good/countall))
-no_sil = estimated['No silhouette']['Linguistique'] + estimated['No silhouette']['Lettres'] + estimated['No silhouette']['Informatique']
-print(f"{'Title without Silhouette =':15}", cpt, no_sil)
-ze = estimated['Zero Equality']['Linguistique'] +  estimated['Zero Equality']['Lettres'] +  estimated['Zero Equality']['Informatique']
-print(f"{'Title with Zero Equality =':15}", ze)
-nze = estimated['Non Zero Equality']['Linguistique'] +  estimated['Non Zero Equality']['Lettres'] +  estimated['Non Zero Equality']['Informatique']
-print(f"{'Title with Non Zero Equality =':15}", nze)
-print(estimated)
-
-exit()
-
-#-----------------------------------------------------------
-# PART 3 : The Decision Tree
-#-----------------------------------------------------------
-
-# Make panda
-
-train_silhouette =  {
-    'silhouette' : [],
-    'domain' : [],
-}
-
-for t in train:
-    words = []
-    for w in t.filtered:
-        if w in first_best[t.domain]:
-            words.append(w)
-    train_silhouette['silhouette'].append(' '.join(words))
-    train_silhouette['domain'].append(t.domain)
-
-train_silhouette_frame = pd.DataFrame(train_silhouette)
-try:
-    train_silhouette_frame_onehot = pd.get_dummies(train_silhouette_frame, prefix='sil', dtype=int, columns=['silhouette'])
-except MemoryError:
-    print('Not enough memory.')
-
-exit()
-
-#-----------------------------------------------------------
-#-----------------------------------------------------------
-#-----------------------------------------------------------
-
-titles = []
-titles_string = []
-
-READ = True
-if READ:
-    # Read
-    f = open('litl-exam.csv', mode='r', encoding='utf8')
-    lines = f.readlines()
-    f.close()
-    first = True
-    for lin in lines:
-        data = lin.split(',')
-        output = ''
-        for i in range(0, 4):
-            d = data[i]
-            output += d.strip().replace('"', '') + '###'
-        output += ','.join(data[4:]).strip().replace('"', '') + "\n"
-        if not first:
-            titles.append(MiniTitle(*output.split('###')))
-        else:
-            first = False
-        titles_string.append(output)
-
-WRITE = False
-
-def write(filename, lines, start=0, end=None, newsep=None, header=None):
-    if end is None: end = len(lines)
-    f = open(filename, mode='w', encoding='utf8')
-    if header is not None:
-        if newsep is not None:
-            f.write(header.replace("###", newsep))
-        else:
-            f.write(header)
-    nb = 0
-    for i in range(start, end):
-        if newsep is not None:
-            f.write(lines[i].replace("###", newsep))
-        else:
-            f.write(lines[i])
-        nb += 1
-    f.close()
-    if header is not None:
-        print('from', start, 'to', end, 'nb', nb, '+1 header')
-    else:
-        print('from', start, 'to', end, 'nb', nb, 'without header')
-
-if WRITE:
-    write('data.csv', titles_string)
-
-# Stats
-domains = {}
-supports = {}
-years = {}
-nauthors = {}
-for t in titles:
-    if t.domain in domains:
-        domains[t.domain] += 1
-    else:
-        domains[t.domain] = 1
-    if t.support in supports:
-        supports[t.support] += 1
-    else:
-        supports[t.support] = 1
-    if t.year in years:
-        years[t.year] += 1
-    else:
-        years[t.year] = 1
-    if t.authors in nauthors:
-        nauthors[t.authors] += 1
-    else:
-        nauthors[t.authors] = 1
-
-#-----------------------------------------------------------
-
-PRINT=True
-
-if PRINT:
-    pprint("Domains by value", domains, domains.get)
-    pprint("Supports by value", supports, supports.get)
-    pprint("Years by value", years, years.get)
-    pprint("Years by key", years)
-    pprint("Nb authors by value", nauthors, nauthors.get)
-    pprint("Nb authors by key", nauthors)
-
-JSON=False
-
-if JSON:
-    import json
-    f = open('data.json', 'w')
-    big = []
+    # Title with nothing
+    cpt = 0
     for t in titles:
-        big.append({
-            "sparse" : False,
-            "weight" : 1.0,
-            "values" : t.to_list()
-        })
+        if len(t.filtered) == 0:
+            cpt += 1
+    print("Title without silhouette =", cpt)
 
-    big = {
-        "header" :
-        {
-            "relation" : "TEST",
-            "attributes" :
-            [
-                {
-                    "name" : "domain",
-                    "type" : "nominal",
-                    "class" : False,
-                    "weight" : 1.0,
-                    "labels" : [
-                        "Linguistique",
-			"Informatique",
-                        "Lettres"
-		    ]
-		},
-                {
-                    "name" : "support",
-                    "type" : "nominal",
-                    "class" : False,
-                    "weight" : 1.0,
-                    "labels" : [
-                        "COMM",
-			"ART",
-                        "COUV"
-		    ]
-		},
-                {
-                    "name" : "year",
-                    "type" : "numeric",
-                    "class" : False,
-                    "weight" : 1.0
-		},
-                {
-                    "name" : "authors",
-                    "type" : "numeric",
-                    "class" : False,
-                    "weight" : 1.0
-		},
-                {
-                    "name" : "title",
-                    "type" : "string",
-                    "class" : False,
-                    "weight" : 1.0
-		},
-            ],
+    # Getting the best
+    nb_max = 10_000 # number of features 100 1000 10_000
+    first_best = {
+        'Informatique' : domains['Informatique'].get_first_best(nb_max),
+        'Lettres' : domains['Lettres'].get_first_best(nb_max),
+        'Linguistique' : domains['Linguistique'].get_first_best(nb_max)
+    }
+
+    # Go & Count https://fr.wikipedia.org/wiki/Matrice_de_confusion
+    start_time = datetime.datetime.now()
+    categorize_all(titles)
+    print('Duration : ' + str(datetime.datetime.now() - start_time))
+
+    estimated = {
+        'Informatique' : {
+            'Informatique' : 0,
+            'Lettres' : 0,
+            'Linguistique' : 0
         },
-        "data" : big
+        'Lettres' : {
+            'Informatique' : 0,
+            'Lettres' : 0,
+            'Linguistique' : 0
+        },
+        'Linguistique' : {
+            'Informatique' : 0,
+            'Lettres' : 0,
+            'Linguistique' : 0
+        },
+        'No silhouette' : {
+            'Informatique' : 0,
+            'Lettres' : 0,
+            'Linguistique' : 0
+        },
+        'Zero Equality' : {
+            'Informatique' : 0,
+            'Lettres' : 0,
+            'Linguistique' : 0 
+        },
+        'Non Zero Equality' : {
+            'Informatique' : 0,
+            'Lettres' : 0,
+            'Linguistique' : 0
+        }
     }
-    json.dump(big, f, indent=" ")
-    f.close()
 
-#-----------------------------------------------------------
+    for t in titles:
+        estimated[t.guess][t.domain] += 1
 
-SPLIT=False
-
-if SPLIT:
-    # SPLIT
-    header = titles_string[0]
-    titles_string = titles_string[1:]
-    tier = int(len(titles_string)/3)
-    print(0, tier)
-    # 1 tier
-    write("testing.csv", titles_string, start=0, end=tier, header=header)
-    # 2 tiers
-    write("learning.csv", titles_string, start=tier, header=header)
-
-#-----------------------------------------------------------
-
-MERGE=False
-
-if MERGE:
-    print("[ACTION] Merging")
-    f = open('data_learning.csv', mode='r', encoding='utf8')
-    lines = f.readlines()
-    f.close()
-    f = open('data_testing.csv', mode='r', encoding='utf8')
-    lines.extend(f.readlines()[1:])
-    f.close()
-    f = open('data_all.csv', mode='w', encoding='utf8')
-    for lin in lines:
-        f.write(lin)
-    f.close()
-
-#-----------------------------------------------------------
-
-from sklearn.model_selection import train_test_split
-
-def test():
-    data = pd.read_csv("all.csv", doublequote=False, sep="###", engine='python', encoding='utf8')
-    print(data.dtypes)
-    print(data.describe())
-    
-    train, test = train_test_split(data, train_size = 35_618, test_size = len(data) - 35_618, random_state=1, stratify=data["Domaine"])
-    
-    freqTrain = pd.crosstab(index=train["Domaine"], columns="count")
-    print(freqTrain/freqTrain.sum())
-    freqTest = pd.crosstab(index=test["Domaine"], columns="count")
-    print(freqTest/freqTest.sum())
-
-    return train, test
-
-from copy import copy
-from sklearn.preprocessing import LabelEncoder
-from sklearn import tree
-
-def example():
-    mini = {
-        'name' : ['Stacy', 'Morgan', 'Fabien', 'Damien', 'Sandrine', 'Gloria', 'Camille'],
-        'age'  : [    20 ,      22 ,      32 ,      34 ,        25 ,      18 ,       28 ],
-        'sexe' : [   'F' ,     'F' ,     'M' ,     'M' ,       'F' ,     'F' ,      '?' ],
-    }
-    d = pd.DataFrame(mini)
-    
-    # ENCODE TOUT EN ONE HOT
-    #from sklearn.preprocessing import OneHotEncoder
-    #ohe = OneHotEncoder(dtype=int, sparse=False)
-    #x = ohe.fit_transform(d) # return <class 'numpy.ndarray'>
-    
-    d2 = copy(d)
-    d2 = d2.drop('name', axis=1)
-    le = LabelEncoder()
-    d2['sexe'] = le.fit_transform(d['sexe'])
-    dt = tree.DecisionTreeClassifier()
-    # Une seule feature, obligé de reshape !
-    dt.fit(d2['age'].values.reshape(-1, 1), d2['sexe'])
-    f = open("dt.dot", "w")
-    features = list(d2.columns[:1])
-    tree.export_graphviz(dt, out_file=f, feature_names=features, class_names=le.classes_)
-    f.close()
-
-
-
-#https://www.ranks.nl/stopwords/french
-
-#print("Nb    ", "Word      ", domain[:6], 
-#          f"{sorted_keys[k]:>10}",
-#          f"{freq[domain][sorted_keys[k]]:6d}",
-#    )
-
-
-def last(d):
-    from sklearn.feature_extraction.text import TfidfVectorizer
-    vec = TfidfVectorizer()
-    X = vec.fit_transform(d["Titre"])
-    new = pd.DataFrame(X.toarray(), columns=vec.get_feature_names())
-    #print(new)
-    dt = tree.DecisionTreeClassifier()
-    dt.fit(X, d["domain"])
-    f = open("minititle.dot", "w")
-    tree.export_graphviz(dt, out_file=f, feature_names=vec.get_feature_names(), class_names=d["domain"])
-    f.close()
-    return new
-
-mini = {
-    'Titre'   : [
-        "J'aime les nouilles.",
-        "Tu adores les saucisses ?",
-        "Bonjour le monde",
-        "Voici la fin"
-    ],
-    'domain'  : [
-        'A',
-        'B',
-        'C',
-        'C'
-    ]
-}
-d = pd.DataFrame(mini)
-
-#train, test = test()
-#titles = pd.DataFrame(train["Titre"])
-#bb = last(titles)
-
-
+    good = estimated['Linguistique']['Linguistique'] + \
+           estimated['Lettres']['Lettres'] + \
+           estimated['Informatique']['Informatique']
+    countall = len(titles)
+    print(f"{'Accuracy =':15}", pp(good/countall))
+    no_sil = estimated['No silhouette']['Linguistique'] + estimated['No silhouette']['Lettres'] + estimated['No silhouette']['Informatique']
+    print(f"{'Title without Silhouette =':15}", cpt, no_sil)
+    ze = estimated['Zero Equality']['Linguistique'] +  estimated['Zero Equality']['Lettres'] +  estimated['Zero Equality']['Informatique']
+    print(f"{'Title with Zero Equality =':15}", ze)
+    nze = estimated['Non Zero Equality']['Linguistique'] +  estimated['Non Zero Equality']['Lettres'] +  estimated['Non Zero Equality']['Informatique']
+    print(f"{'Title with Non Zero Equality =':15}", nze)
+    print(estimated)
