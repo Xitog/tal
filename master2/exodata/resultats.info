@@ -1,0 +1,116 @@
+100 traits, train MS => 3s
+
+Title without silhouette =        5
+Accuracy =                       65 %
+Title without Silhouette =        5 5
+Title with Zero Equality =     5587
+Title with Non Zero Equality =    0
+
+{'Informatique': {'Informatique': 9585, 'Lettres': 738, 'Linguistique': 1455}, 'Lettres': {'Informatique': 350, 'Lettres': 6008, 'Linguistique': 1177}, 'Linguistique': {'Informatique': 1280, 'Lettres': 1894, 'Linguistique': 7540}, 'No silhouette': {'Informatique': 0, 'Lettres': 3, 'Linguistique': 2}, 'Zero Equality': {'Informatique': 1248, 'Lettres': 2791, 'Linguistique': 1548}, 'Non Zero Equality': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 0}}
+
+1000 traits, train MS => 01m18
+
+Title without silhouette =        5
+Accuracy :                       78 %
+Title without Silhouette =        5 5
+Title with Zero Equality =      813
+Title with Non Zero Equality =    0
+
+{'Informatique': {'Informatique': 10828, 'Lettres': 796, 'Linguistique': 1438}, 'Lettres': {'Informatique': 299, 'Lettres': 8169, 'Linguistique': 1263}, 'Linguistique': {'Informatique': 1221, 'Lettres': 1959, 'Linguistique': 8828}, 'No silhouette': {'Informatique': 0, 'Lettres': 3, 'Linguistique': 2}, 'Zero Equality': {'Informatique': 115, 'Lettres': 507, 'Linguistique': 191}, 'Non Zero Equality': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 0}}
+
+10000 traits, train MS => 12m40
+
+Accuracy =          81 %
+Title without Silhouette = 5 5
+Title with Zero Equality = 73
+Title with Non Zero Equality = 0
+
+Estimé comme => Informatique        Lettres         Linguistique    NS   ZeroEq   NZE
+Sont des :                                                                               Total
+Informatique   <10954>               301            1204             0    4         0    12463
+Lettres           763              <8724>           1879             3   65         0    11434
+Linguistique     1398               1277           <9041>            2    4         0    11722
+                                                                                         35619
+La différence c'est les titres sont silhouettes au nombre de 5 !
+Yes, c'est ça, ouf :-)
+
+Les ZeroEq ont :
+    - soit pas de silhouette
+    - soit des mots non pris dans les 10 000 bests
+Les NZE sont inexistants.
+
+{'Informatique': {
+    'Informatique': 10954, 
+    'Lettres': 763, 
+    'Linguistique': 1398
+ },
+ 'Lettres': {
+    'Informatique': 301, 
+    'Lettres': 8724, 
+    'Linguistique': 1277
+ }, 
+ 'Linguistique': {
+    'Informatique': 1204, 
+    'Lettres': 1879, 
+    'Linguistique': 9041
+ }, 
+ 'No silhouette': {
+    'Informatique': 0, 
+    'Lettres': 3, 
+    'Linguistique': 2
+ }, 
+ 'Zero Equality': {
+    'Informatique': 4, 
+    'Lettres': 65, 
+    'Linguistique': 4
+ }, 
+ 'Non Zero Equality': {
+    'Informatique': 0, 
+    'Lettres': 0, 
+    'Linguistique': 0
+ }
+}
+
+-------------------------------------------------------------------------------
+
+100 traits, test MS => 2s
+
+Title without silhouette = 2
+00001000 / 17807 titles done.'
+00002000 / 17807 titles done.'
+00004000 / 17807 titles done.'
+00008000 / 17807 titles done.'
+Duration : 0:00:01.518076
+Accuracy =          63 %
+Title without Silhouette = 2 2
+Title with Zero Equality = 2894
+Title with Non Zero Equality = 0
+{'Informatique': {'Informatique': 4633, 'Lettres': 384, 'Linguistique': 729}, 'Lettres': {'Informatique': 199, 'Lettres': 2889, 'Linguistique': 622}, 'Linguistique': {'Informatique': 727, 'Lettres': 989, 'Linguistique': 3739}, 'No silhouette': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 2}, 'Zero Equality': {'Informatique': 672, 'Lettres': 1454, 'Linguistique': 768}, 'Non Zero Equality': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 0}}
+
+1000 traits, test MS => 25s
+
+Title without silhouette = 2
+00001000 / 17807 titles done.'
+00002000 / 17807 titles done.'
+00004000 / 17807 titles done.'
+00008000 / 17807 titles done.'
+Duration : 0:00:25.293959
+Accuracy =          76 %
+Title without Silhouette = 2 2
+Title with Zero Equality = 415
+Title with Non Zero Equality = 0
+{'Informatique': {'Informatique': 5274, 'Lettres': 420, 'Linguistique': 738}, 'Lettres': {'Informatique': 171, 'Lettres': 3980, 'Linguistique': 693}, 'Linguistique': {'Informatique': 717, 'Lettres': 1059, 'Linguistique': 4338}, 'No silhouette': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 2}, 'Zero Equality': {'Informatique': 69, 'Lettres': 257, 'Linguistique': 89}, 'Non Zero Equality': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 0}}
+
+10000 traits, test MS => 5m44
+
+Title without silhouette = 2
+00001000 / 17807 titles done.'
+00002000 / 17807 titles done.'
+00004000 / 17807 titles done.'
+00008000 / 17807 titles done.'
+Duration : 0:05:44.710770
+Accuracy =          78 %
+Title without Silhouette = 2 2
+Title with Zero Equality = 69
+Title with Non Zero Equality = 0
+{'Informatique': {'Informatique': 5321, 'Lettres': 407, 'Linguistique': 729}, 'Lettres': {'Informatique': 187, 'Lettres': 4218, 'Linguistique': 708}, 'Linguistique': {'Informatique': 716, 'Lettres': 1047, 'Linguistique': 4403}, 'No silhouette': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 2}, 'Zero Equality': {'Informatique': 7, 'Lettres': 44, 'Linguistique': 18}, 'Non Zero Equality': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 0}}

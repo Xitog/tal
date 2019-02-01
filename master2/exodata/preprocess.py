@@ -1,12 +1,34 @@
+# Functions
+# LOAD_STOPWORDS
+# MAKE_CORPUS_ALL
+# MAKE_TRAIN_TEST_FROM_PICKLE_ALL
+# LOAD_ALL = False
+# LOAD_TRAIN = True
+# LOAD_TEST = False
+# LOAD_ONE_FROM_PICKLE
+# COMPARE_TRAIN_TEST
+# STAT_DOMAIN_SUPPORT
+# CROSS_SUPPORT_AUTHORS
+# LENGTH_STATS (for Domains)
+# DOUBLONS_TEST
+# SHOW_BEST (for silhouette's words in Domains)
+# COVER_CALC (for silhouette's words on Domains)
+
 #-----------------------------------------------------------
 # Import
 #-----------------------------------------------------------
 
+# Standard library
+import datetime
+import time
 import pickle
 import json
+
+# External library
 #import nltk
 #from nltk.tokenize.regexp import RegexpTokenizer
 #import re
+import pandas as pd
 
 #-----------------------------------------------------------
 # Data Model
@@ -37,7 +59,7 @@ stopwords = []
 LOAD_STOPWORDS = True
 
 if LOAD_STOPWORDS:
-    stopwords_ = open("stopwords.txt", encoding="utf8", mode="r").readlines()
+    stopwords_ = open("data/stopwords.txt", encoding="utf8", mode="r").readlines()
     for s in stopwords_:
         stopwords.append(s.strip())
 
@@ -99,7 +121,7 @@ if MAKE_CORPUS_ALL:
     pickle.dump(titles, out)
     out.close()
 
-MAKE_TRAIN_TEST_FROM_PICKLE_ALL = False
+MAKE_TRAIN_TEST_FROM_PICKLE_ALL = True
 
 if MAKE_TRAIN_TEST_FROM_PICKLE_ALL:
     titles = pickle.load(open('data/backup.bin', mode='rb'))
@@ -156,9 +178,19 @@ if MAKE_TRAIN_TEST_FROM_PICKLE_ALL:
 # Part 0 : Load corpus from Pickle
 #-----------------------------------------------------------
 
-# titles = pickle.load(open('backup.bin', mode='rb'))
-train = pickle.load(open('data/train.bin', mode='rb'))
-test = pickle.load(open('data/test.bin', mode='rb'))
+LOAD_ALL = False
+LOAD_TRAIN = True
+LOAD_TEST = True
+
+if LOAD_ALL:
+    # warning: no filtered
+    titles = pickle.load(open('backup.bin', mode='rb'))
+    
+if LOAD_TRAIN:
+    train = pickle.load(open('data/train.bin', mode='rb'))
+
+if LOAD_TEST:
+    test = pickle.load(open('data/test.bin', mode='rb'))
 
 LOAD_ONE_FROM_PICKLE = False
 LOAD_WHAT =  'backup.bin'
@@ -166,10 +198,9 @@ if LOAD_ONE_FROM_PICKLE:
     titles = pickle.load(open(LOAD_WHAT, mode='rb'))
     print(len(titles), 'titles loaded from', LOAD_WHAT)
 
-COMPARE_TRAIN_TEST = True
+COMPARE_TRAIN_TEST = False
 
 if COMPARE_TRAIN_TEST:
-
     count(train)
     count(test)
 
@@ -314,6 +345,7 @@ class DomainInfo:
         self.sum_word_length += nb #len(t.words)
         self.nb += 1
 
+    # get word frequencies
     def get_frequencies(self):
         wf = {}
         for w in self.words:
@@ -322,6 +354,7 @@ class DomainInfo:
         self.mean_word_count = self.sum_word_length/self.nb
         self.freqs = wf
 
+    # calculate precision, rappel, fmesure for each words! (not only the best!)
     def get_best(self, domains):
         best = []
         for w in self.words:
@@ -335,6 +368,18 @@ class DomainInfo:
             fmesure = (2 * precision * rappel) / (precision + rappel)
             best.append((w, precision, rappel, fmesure))
         self.best = sorted(best, key=lambda x: x[3], reverse=True)
+        #self.bestkey = {}
+        #for b in self.best:
+        #    self.bestkey[b[0]] = (b[1], b[2], b[3])
+
+    def get_first_best(self, nb=None):
+        i = 0
+        ret = {}
+        if nb is None: nb = len(self.best)
+        for i in range(0, nb):
+            ret[self.best[i][0]] = self.best[i][3] # {word:f-mesure}
+        return ret
+
 
 def count(titles):
     domains = {}
@@ -466,13 +511,159 @@ if COVER_CALC:
     calc_cover(200)
 
 #-----------------------------------------------------------
-# PART 3 : The Deicision Tree
+# PART 3 : My evaluation model
 #-----------------------------------------------------------
+
+#del test
+#titles = train
+
+del train
+titles = test
+
+# Title with nothing
+cpt = 0
+for t in titles:
+    if len(t.filtered) == 0:
+       cpt += 1
+print("Title without silhouette =", cpt)
+
+# Getting the best
+nb_max = 10_000 # number of features 100 1000 10_000
+first_best = {
+    'Informatique' : domains['Informatique'].get_first_best(nb_max),
+    'Lettres' : domains['Lettres'].get_first_best(nb_max),
+    'Linguistique' : domains['Linguistique'].get_first_best(nb_max)
+}
+
+# Evaluate for a given domain the proximity of the title limited to nb best words
+def evaluate(t, domain):
+    factor = 0
+    for b in first_best[domain]:
+        if b in t.filtered:
+             factor += first_best[domain][b]
+    return factor
+
+# Categorize one title
+def categorize(t):
+    if len(t.filtered) == 0:
+        return 'No silhouette'
+    info = evaluate(t, 'Informatique')
+    lett = evaluate(t, 'Lettres')
+    ling = evaluate(t, 'Linguistique')
+    if info > lett and info > ling: return 'Informatique'
+    elif lett > info and lett > ling: return 'Lettres'
+    elif ling > info and ling> lett: return 'Linguistique'
+    elif ling == info or ling == lett or info == lett:
+        if ling == 0:
+            return 'Zero Equality'
+        else:
+            print(ling, info, lett, t.filtered)
+            return 'Non Zero Equality'
+    else:
+        print(ling, info, lett, t.filtered)
+        raise Exception("Impossible")
+
+# Categorize all titles
+def categorize_all(titles):
+    threshold = 1000
+    step = 1000
+    cpt = 0
+    total = len(titles)
+    for t in titles:
+        t.guess = categorize(t)
+        # Count progress
+        cpt += 1
+        if cpt == threshold:
+            print(f"{threshold:>08} / {total} titles done.'")
+            cpt = 0
+            threshold += step
+
+# Go & Count https://fr.wikipedia.org/wiki/Matrice_de_confusion
+start_time = datetime.datetime.now()
+categorize_all(titles)
+print('Duration : ' + str(datetime.datetime.now() - start_time))
+
+estimated = {
+    'Informatique' : {
+        'Informatique' : 0,
+        'Lettres' : 0,
+        'Linguistique' : 0
+    },
+    'Lettres' : {
+        'Informatique' : 0,
+        'Lettres' : 0,
+        'Linguistique' : 0
+    },
+    'Linguistique' : {
+        'Informatique' : 0,
+        'Lettres' : 0,
+        'Linguistique' : 0
+    },
+    'No silhouette' : {
+        'Informatique' : 0,
+        'Lettres' : 0,
+        'Linguistique' : 0
+    },
+    'Zero Equality' : {
+        'Informatique' : 0,
+        'Lettres' : 0,
+        'Linguistique' : 0 
+    },
+    'Non Zero Equality' : {
+        'Informatique' : 0,
+        'Lettres' : 0,
+        'Linguistique' : 0
+    }
+}
+
+for t in titles:
+    estimated[t.guess][t.domain] += 1
+
+good = estimated['Linguistique']['Linguistique'] + \
+       estimated['Lettres']['Lettres'] + \
+       estimated['Informatique']['Informatique']
+countall = len(titles)
+print(f"{'Accuracy =':15}", pp(good/countall))
+no_sil = estimated['No silhouette']['Linguistique'] + estimated['No silhouette']['Lettres'] + estimated['No silhouette']['Informatique']
+print(f"{'Title without Silhouette =':15}", cpt, no_sil)
+ze = estimated['Zero Equality']['Linguistique'] +  estimated['Zero Equality']['Lettres'] +  estimated['Zero Equality']['Informatique']
+print(f"{'Title with Zero Equality =':15}", ze)
+nze = estimated['Non Zero Equality']['Linguistique'] +  estimated['Non Zero Equality']['Lettres'] +  estimated['Non Zero Equality']['Informatique']
+print(f"{'Title with Non Zero Equality =':15}", nze)
+print(estimated)
 
 exit()
 
 #-----------------------------------------------------------
+# PART 3 : The Decision Tree
+#-----------------------------------------------------------
 
+# Make panda
+
+train_silhouette =  {
+    'silhouette' : [],
+    'domain' : [],
+}
+
+for t in train:
+    words = []
+    for w in t.filtered:
+        if w in first_best[t.domain]:
+            words.append(w)
+    train_silhouette['silhouette'].append(' '.join(words))
+    train_silhouette['domain'].append(t.domain)
+
+train_silhouette_frame = pd.DataFrame(train_silhouette)
+try:
+    train_silhouette_frame_onehot = pd.get_dummies(train_silhouette_frame, prefix='sil', dtype=int, columns=['silhouette'])
+except MemoryError:
+    print('Not enough memory.')
+
+exit()
+
+#-----------------------------------------------------------
+#-----------------------------------------------------------
+#-----------------------------------------------------------
 
 titles = []
 titles_string = []
@@ -545,8 +736,6 @@ for t in titles:
         nauthors[t.authors] += 1
     else:
         nauthors[t.authors] = 1
-
-
 
 #-----------------------------------------------------------
 
@@ -661,8 +850,7 @@ if MERGE:
 #-----------------------------------------------------------
 
 from sklearn.model_selection import train_test_split
-import pandas as pd
-    
+
 def test():
     data = pd.read_csv("all.csv", doublequote=False, sep="###", engine='python', encoding='utf8')
     print(data.dtypes)
