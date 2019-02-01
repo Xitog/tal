@@ -2,18 +2,30 @@
 # Import
 #-----------------------------------------------------------
 
+# Standard library
+import datetime
+
 # External Library
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn import tree
+from sklearn.metrics import confusion_matrix
 import numpy as np
+from sklearn import svm
 
 # Project Library
 from preprocess import read_base_csv, write_to_csv
 
+CONVERT_CSV = False
+CONVERT_INPUT = "data/litl-exam-20000.csv" # 3000 10000 20000 rien
+CONVERT_OUTPUT = "data/sharp20000.csv"     # 3000 10000 20000 53426
+PREDICT_INPUT = "data/sharp53426.csv"      # 3000 10000 20000 53426
+DECISION_TREE_PREDICT = True
+SVM_PREDICT = True
+
 #-----------------------------------------------------------
-# Decision Tree
+# Convert data
 #-----------------------------------------------------------
 
 def make_panda(filepath):
@@ -25,13 +37,14 @@ def make_panda(filepath):
     print(data.columns)
     return data
 
-CONVERT_CSV = False
 if CONVERT_CSV:
-    lines = read_base_csv("data/litl-exam-3000.csv")
-    write_to_csv("data/sharp3000.csv", lines)
+    lines = read_base_csv(CONVERT_INPUT)
+    write_to_csv(CONVERT_OUTPUT, lines)
     print()
 
-data = make_panda("data/sharp3000.csv")
+#-----------------------------------------------------------
+# Prepare data
+#-----------------------------------------------------------
 
 def make_train_test(data):
     tiers = int(len(data)/3)
@@ -47,14 +60,11 @@ def make_train_test(data):
     print(freqTest/freqTest.sum())
     return train, test
 
-train, test = make_train_test(data)
+#-----------------------------------------------------------
+# Decision Tree
+#-----------------------------------------------------------
 
-def make_model(data, filename, debug=False):
-    #alldata = pd.concat([train , test])
-    #train['label'] = 'train'
-    #test['label'] = 'test'
-    #features_df = pd.get_dummies(alldata, columns=[], dummy_na=True) # il faut exploser avant Titre en mots !
-    
+def make_model(data, filename, debug=False, export=False):
     vec = TfidfVectorizer()
     X = vec.fit_transform(data["Titre"])
     if debug:
@@ -62,16 +72,17 @@ def make_model(data, filename, debug=False):
         print(ohe)
     dt = tree.DecisionTreeClassifier(min_samples_split=20, random_state=99)
     dt.fit(X, data["Domaine"]) # feature, target
-    f = open(filename, "w")
-    tree.export_graphviz(dt, out_file=f, feature_names=vec.get_feature_names(),
+    if export == True:
+        f = open(filename, "w", encoding='utf8')
+        tree.export_graphviz(dt, out_file=f, feature_names=vec.get_feature_names(),
                          class_names=data["Domaine"].unique(),
                          filled=True, rounded=True,  
                          special_characters=True)
-    f.close()
+        f.close()
     if debug:
         return vec, dt, ohe, X
     else:
-        return ohe
+        return vec, dt, None, X
 
 
 def predict(vec, model, data):
@@ -79,6 +90,9 @@ def predict(vec, model, data):
     # 8709 (train) vs 6646 (test)
     res = model.predict(Xtest)
     acc = model.score(Xtest, data["Domaine"])
+    print("Confusion matrix")
+    print(confusion_matrix(data["Domaine"], res))
+    print("Accuracy =", acc)
     return res, acc
 
 
@@ -116,14 +130,39 @@ def get_code(tree, feature_names, target_names,
 
     recurse(left, right, threshold, features, 0, 0, max_depth)
 
-# [3000 rows x 8709 columns]
-# only_titles = pd.DataFrame(train["Titre"])
-vec, dt, ohe, trainTransformed = make_model(data, "eval_based_on_titles_sklearn3000.dot", True)
-print(dt.tree_.node_count) # 1659
-print(dt.tree_.max_depth)  #   96
-get_code(dt, ohe.columns, data["Domaine"].unique(), "  ", 20)
-res, acc = predict(vec, dt, test)
-print(acc)
+# dataTransformed not yet used
+def get_errors(data, predicted, dataTransformed, nb = 2):
+    print("\nErrors\n---\n")
+    # domain has an header line!
+    for i in range(0, len(predicted)):
+        if data["Domaine"][i+1] != predicted[i]:
+            print(f'GroundTruth = {data["Domaine"][i+1]:10} vs Predicted = {predicted[i]:10}')
+            print('Titre =', data["Titre"][i+1])
+            print(data.iloc[i+1])
+            print(dataTransformed[i])
+            print()
+            nb -= 1
+        if nb == 0: break
 
 
+if DECISION_TREE_PREDICT:
+    data = make_panda(PREDICT_INPUT)
+    train, test = make_train_test(data)
+    vec, dt, ohe, trainTransformed = make_model(data, PREDICT_INPUT.replace('.csv', '.dot'))
+    print("Dimension of =", repr(trainTransformed))
+    print('Node count =', dt.tree_.node_count)
+    print('Max depth of tree=', dt.tree_.max_depth)
+    #get_code(dt, ohe.columns, data["Domaine"].unique(), "  ", 20)
+    start_time = datetime.datetime.now()
+    res, acc = predict(vec, dt, test)
+    print('Duration : ' + str(datetime.datetime.now() - start_time))
+    get_errors(data, res, trainTransformed, 10)
+
+#-----------------------------------------------------------
+# SVM
+#-----------------------------------------------------------
+
+#clf = svm.SVC(gamma=0.001, C=100.)
+#clf.fit(digits.data[:-1], digits.target[:-1])  # feature = all colums but last, target = last column***
+#clf.predict(digits.data[-1:])
 
