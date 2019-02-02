@@ -5,24 +5,32 @@ Idées :
   stop_words strip_accents
 - Une position moyenne du mot par domaine. Si cela respecte la position moyenne, alors bonus ?
 - En cas d'erreur, afficher les valeurs non nuls de la ligne transformée avec le label
-- Présence de verbe conjugué ?
 
 À faire : 
 
-- Mon modèle avec tous les facteurs (nb = None)
 - DecisionTreeClassifier sur Titres bruts + données non textuelles
 - SVM sur Titres bruts
 - SVM sur Titres bruts + données non textuelles
+
+Done :
+
+[ok] Mon modèle avec tous les facteurs sur test & train (nb = None)
+[ok] Présence de verbe conjugué et autres POS ?
+[ok] Calculer F-Measure pour catégoriseur sur pos NPP seul
+[ok] Calculer F-Measure pour catégoriseur sur pos PONCT seul
+[ok] Combiner silhouette et pos en ajoutant la fmeasure du domaine trouvé/pos
 
 --------------------------------------------------------------------------------
 Résumé des résultats
 --------------------------------------------------------------------------------
 
 Mon modèle      trainMS             testMS
-   100 traits   65 %     3s         ?
- 1 000 traits   78 %     01m18      ?
-10 000 traits   81 %     05m44      ?
+   100 traits   65 %     3s         63 %               2s
+ 1 000 traits   78 %     01m18      76 %              25s
+10 000 traits   81 %     05m44      78 %            5m44s
+   all traits   81 %     25m28      78 %           12m37s
 53 426 titres
+all = 12832 in Informatique, 20111 in Lettres, 12918 in Linguistique
 
 Titres bruts + TfidfVectorizer + DecisionTreeClassifier
 Nb Titres    Factors    Accuracy   Time     Nb nodes    Depth
@@ -171,13 +179,31 @@ Confusion matrix
  [ 175 5252  290]
  [ 290  321 5249]]
 Accuracy = 0.921102875112309
-Duration : 0:00:00.468001
+Duration : 0:00:00.468001 (sur portable)
+Duration : 0:00:00.986701 (sur ma machine)
 
---------------------------------------------------------------------------------
+================================================================================
 Mon modèle
+================================================================================
+
+--------------------------------------------------------------------------------
+Sommaire
 --------------------------------------------------------------------------------
 
-100 traits, train MS => 3s
+1. 100 traits, train MS => 3s
+2. 1000 traits, train MS => 01m18
+3. 10000 traits, train MS => 12m40
+4. All traits, train MS => ?
+5. 100 traits, test MS => 2s
+6. 1000 traits, test MS => 25s
+7. 10000 traits, test MS => 5m44
+8. All traits, tests MS => 12m37
+9. Feature extraction : POS
+10. 10000 traits + POS, test MS => 16m49
+
+--------------------------------------------------------------------------------
+1. 100 traits, train MS => 3s
+--------------------------------------------------------------------------------
 
 Title without silhouette =        5
 Accuracy =                       65 %
@@ -187,7 +213,9 @@ Title with Non Zero Equality =    0
 
 {'Informatique': {'Informatique': 9585, 'Lettres': 738, 'Linguistique': 1455}, 'Lettres': {'Informatique': 350, 'Lettres': 6008, 'Linguistique': 1177}, 'Linguistique': {'Informatique': 1280, 'Lettres': 1894, 'Linguistique': 7540}, 'No silhouette': {'Informatique': 0, 'Lettres': 3, 'Linguistique': 2}, 'Zero Equality': {'Informatique': 1248, 'Lettres': 2791, 'Linguistique': 1548}, 'Non Zero Equality': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 0}}
 
-1000 traits, train MS => 01m18
+--------------------------------------------------------------------------------
+2. 1000 traits, train MS => 01m18
+--------------------------------------------------------------------------------
 
 Title without silhouette =        5
 Accuracy :                       78 %
@@ -197,7 +225,9 @@ Title with Non Zero Equality =    0
 
 {'Informatique': {'Informatique': 10828, 'Lettres': 796, 'Linguistique': 1438}, 'Lettres': {'Informatique': 299, 'Lettres': 8169, 'Linguistique': 1263}, 'Linguistique': {'Informatique': 1221, 'Lettres': 1959, 'Linguistique': 8828}, 'No silhouette': {'Informatique': 0, 'Lettres': 3, 'Linguistique': 2}, 'Zero Equality': {'Informatique': 115, 'Lettres': 507, 'Linguistique': 191}, 'Non Zero Equality': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 0}}
 
-10000 traits, train MS => 12m40
+--------------------------------------------------------------------------------
+3. 10000 traits, train MS => 12m40
+--------------------------------------------------------------------------------
 
 Accuracy =          81 %
 Title without Silhouette = 5 5
@@ -250,9 +280,23 @@ Les NZE sont inexistants.
  }
 }
 
--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+4. All traits, tests MS => 25m28
+--------------------------------------------------------------------------------
 
-100 traits, test MS => 2s
+Getting best from TRAIN corpus
+Title without silhouette in TRAIN = 5
+Evaluating on None factors. (= ALL)
+Duration : 0:25:28.132041
+Accuracy =          81 %
+Title without Silhouette = 5 5
+Title with Zero Equality = 0
+Title with Non Zero Equality = 0
+{'Informatique': {'Informatique': 10959, 'Lettres': 753, 'Linguistique': 1396}, 'Lettres': {'Informatique': 299, 'Lettres': 8813, 'Linguistique': 1278}, 'Linguistique': {'Informatique': 1205, 'Lettres': 1865, 'Linguistique': 9046}, 'No silhouette': {'Informatique': 0, 'Lettres': 3, 'Linguistique': 2}, 'Zero Equality': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 0}, 'Non Zero Equality': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 0}}
+
+-------------------------------------------------------------------------------
+5. 100 traits, test MS => 2s
+--------------------------------------------------------------------------------
 
 Title without silhouette = 2
 00001000 / 17807 titles done.'
@@ -266,7 +310,9 @@ Title with Zero Equality = 2894
 Title with Non Zero Equality = 0
 {'Informatique': {'Informatique': 4633, 'Lettres': 384, 'Linguistique': 729}, 'Lettres': {'Informatique': 199, 'Lettres': 2889, 'Linguistique': 622}, 'Linguistique': {'Informatique': 727, 'Lettres': 989, 'Linguistique': 3739}, 'No silhouette': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 2}, 'Zero Equality': {'Informatique': 672, 'Lettres': 1454, 'Linguistique': 768}, 'Non Zero Equality': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 0}}
 
-1000 traits, test MS => 25s
+--------------------------------------------------------------------------------
+6. 1000 traits, test MS => 25s
+--------------------------------------------------------------------------------
 
 Title without silhouette = 2
 00001000 / 17807 titles done.'
@@ -280,7 +326,9 @@ Title with Zero Equality = 415
 Title with Non Zero Equality = 0
 {'Informatique': {'Informatique': 5274, 'Lettres': 420, 'Linguistique': 738}, 'Lettres': {'Informatique': 171, 'Lettres': 3980, 'Linguistique': 693}, 'Linguistique': {'Informatique': 717, 'Lettres': 1059, 'Linguistique': 4338}, 'No silhouette': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 2}, 'Zero Equality': {'Informatique': 69, 'Lettres': 257, 'Linguistique': 89}, 'Non Zero Equality': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 0}}
 
-10000 traits, test MS => 5m44
+--------------------------------------------------------------------------------
+7. 10000 traits, test MS => 5m44
+--------------------------------------------------------------------------------
 
 Title without silhouette = 2
 00001000 / 17807 titles done.'
@@ -293,3 +341,123 @@ Title without Silhouette = 2 2
 Title with Zero Equality = 69
 Title with Non Zero Equality = 0
 {'Informatique': {'Informatique': 5321, 'Lettres': 407, 'Linguistique': 729}, 'Lettres': {'Informatique': 187, 'Lettres': 4218, 'Linguistique': 708}, 'Linguistique': {'Informatique': 716, 'Lettres': 1047, 'Linguistique': 4403}, 'No silhouette': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 2}, 'Zero Equality': {'Informatique': 7, 'Lettres': 44, 'Linguistique': 18}, 'Non Zero Equality': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 0}}
+
+--------------------------------------------------------------------------------
+8. All traits, tests MS => 12m37
+--------------------------------------------------------------------------------
+
+Title without silhouette in TEST = 2
+Evaluating on None factors.
+00001000 / 17807 titles done.'
+00002000 / 17807 titles done.'
+00003000 / 17807 titles done.'
+00004000 / 17807 titles done.'
+00005000 / 17807 titles done.'
+Duration : 0:12:37.529891
+Accuracy =          78 %
+Title without Silhouette = 2 2
+Title with Zero Equality = 52
+Title with Non Zero Equality = 0
+{'Informatique': {'Informatique': 5321, 'Lettres': 407, 'Linguistique': 730}, 'Lettres': {'Informatique': 186, 'Lettres': 4233, 'Linguistique': 710}, 'Linguistique': {'Informatique': 717, 'Lettres': 1048, 'Linguistique': 4401}, 'No silhouette': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 2}, 'Zero Equality': {'Informatique': 7, 'Lettres': 28, 'Linguistique': 17}, 'Non Zero Equality': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 0}}
+
+--------------------------------------------------------------------------------
+9. Feature extraction : POS
+--------------------------------------------------------------------------------
+
+Principales différences :
+NPP         10564      7 %      26234     16 %       9002      6 %
+PONCT        9141      6 %      24333     15 %      17149     11 %
+P           31080     20 %      21320     13 %      23084     15 %
+NC          56697     37 %      42156     25 %      50848     32 %
+ADJ         13790      9 %      11706      7 %      15608     10 %
+
+Feature extraction : POS
+             Informatique        Lettres            Linguistique
+ADV           963      1 %        949      1 %       1143      1 %
+PONCT        9141      6 %      24333     15 %      17149     11 %
+PROWH          19      0 %         53      0 %         83      0 %
+I              15      0 %         23      0 %         16      0 %
+PRO            38      0 %        252      0 %        283      0 %
+VS             11      0 %         35      0 %         28      0 %
+NC          56697     37 %      42156     25 %      50848     32 %
+P           31080     20 %      21320     13 %      23084     15 %
+NPP         10564      7 %      26234     16 %       9002      6 %
+CLS           143      0 %        350      0 %        510      0 %
+PROREL         43      0 %        199      0 %        193      0 %
+CLO            51      0 %        154      0 %        201      0 %
+CC           3845      2 %       6664      4 %       6868      4 %
+ADJ         13790      9 %      11706      7 %      15608     10 %
+ET            436      0 %        434      0 %         94      0 %
+P+D          5598      4 %       6117      4 %       7477      5 %
+CS             61      0 %        164      0 %        280      0 %
+VIMP           21      0 %         21      0 %         26      0 %
+VINF         1398      1 %       1172      1 %       1520      1 %
+DETWH          90      0 %         69      0 %        287      0 %
+VPP          2516      2 %       1259      1 %       1634      1 %
+V             688      0 %       1162      1 %       1297      1 %
+VPR           331      0 %        106      0 %        186      0 %
+ADVWH          97      0 %        117      0 %        227      0 %
+CLR            40      0 %        110      0 %        109      0 %
+DET         17327     11 %      20220     12 %      20568     13 %
+
+Moyenne de NPP par titre pour domaine Informatique = 0.06985772976260159
+Moyenne de PONCT par titre pour domaine Informatique = 0.05180327475794362
+
+Moyenne de NPP par titre pour domaine Lettres = 0.15170332213057197
+Moyenne de PONCT par titre pour domaine Lettres = 0.11768722659526903
+
+Moyenne de NPP par titre pour domaine Linguistique = 0.05335999774579773
+Moyenne de PONCT par titre pour domaine Linguistique = 0.0967350821984055
+
+Duration : 0:00:00.833598
+Accuracy based on pos  NPP =        22 %
+Precision for Informatique =        33 %
+Rappel for Informatique =           17 %
+F-measure for Informatique =        22 % 0.22342113614725484
+Precision for Lettres =             60 %
+Rappel for Lettres =                45 %
+F-measure for Lettres =             51 % 0.5107107107107107
+Precision for Linguistique =        36 %
+Rappel for Linguistique =            4 %
+F-measure for Linguistique =         8 % 0.07739679160647761
+{'Informatique': {'Informatique': 2112, 'Lettres': 2448, 'Linguistique': 1883}, 
+ 'Lettres':      {'Informatique': 1972, 'Lettres': 5102, 'Linguistique': 1472}, 
+ 'Linguistique': {'Informatique':  576, 'Lettres':  346, 'Linguistique':  509}, 
+ 'Unknow':       {'Informatique': 7803, 'Lettres': 3538, 'Linguistique': 7858}}
+
+Precision de NPP pour Informatique = 2112 / (2112 + 2448 + 1883) = 
+Rappel de NPP pour Informatique = 
+
+Duration : 0:00:00.834597
+Accuracy based on pos  PONCT =      24 %
+Precision for Informatique =        35 %
+Rappel for Informatique =           21 %
+F-measure for Informatique =        26 % 0.2585027168444355
+Precision for Lettres =             45 %
+Rappel for Lettres =                43 % 0.438816291705959
+F-measure for Lettres =             44 %
+Precision for Linguistique =        38 %
+Rappel for Linguistique =           10 %
+F-measure for Linguistique =        16 % 0.15549089924893433
+{'Informatique': {'Informatique': 2569, 'Lettres': 2198, 'Linguistique': 2646}, 
+ 'Lettres':      {'Informatique': 1950, 'Lettres': 4886, 'Linguistique': 3999}, 
+ 'Linguistique': {'Informatique':  914, 'Lettres':  994, 'Linguistique': 1149}, 
+ 'Unknow':       {'Informatique': 7030, 'Lettres': 3356, 'Linguistique': 3928}}
+
+--------------------------------------------------------------------------------
+10. 10000 traits + POS, test MS => 16m49
+--------------------------------------------------------------------------------
+
+Getting best from TRAIN corpus + POS !
+Title without silhouette in TRAIN = 5
+Evaluating on 10000 factors.
+Duration : 0:16:49.106497
+Accuracy =          57 %
+Title without Silhouette = 5 5
+Title with Zero Equality = 32
+Title with Non Zero Equality = 0
+{'Informatique': {'Informatique': 8147, 'Lettres': 2082, 'Linguistique': 3096}, 'Lettres': {'Informatique': 3360, 'Lettres': 8594, 'Linguistique': 4984}, 'Linguistique': {'Informatique': 953, 'Lettres': 727, 'Linguistique': 3639}, 'No silhouette': {'Informatique': 0, 'Lettres': 3, 'Linguistique': 2}, 'Zero Equality': {'Informatique': 3, 'Lettres': 28, 'Linguistique': 1}, 'Non Zero Equality': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 0}}
+Nb factors :
+Informatique = 10000
+Lettres = 10000
+Linguistique = 10000

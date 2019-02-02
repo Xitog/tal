@@ -17,10 +17,16 @@ from sklearn import svm
 # Project Library
 from preprocess import read_base_csv, write_to_csv
 
-CONVERT_CSV = False
-CONVERT_INPUT = "data/litl-exam-20000.csv" # 3000 10000 20000 rien
-CONVERT_OUTPUT = "data/sharp20000.csv"     # 3000 10000 20000 53426
+#-----------------------------------------------------------
+# Switch
+#-----------------------------------------------------------
+
+CONVERT_CSV = True
+CONVERT_INPUT = "data/litl-exam.csv"       # 3000 10000 20000 rien
+CONVERT_OUTPUT = "data/sharp53426.csv"     # 3000 10000 20000 53426
 PREDICT_INPUT = "data/sharp53426.csv"      # 3000 10000 20000 53426
+ONLY_TITLE = False # <TODO>
+ON_SILHOUETTE = True # <TODO>
 DECISION_TREE_PREDICT = True
 SVM_PREDICT = True
 
@@ -41,6 +47,7 @@ if CONVERT_CSV:
     lines = read_base_csv(CONVERT_INPUT)
     write_to_csv(CONVERT_OUTPUT, lines)
     print()
+    del lines
 
 #-----------------------------------------------------------
 # Prepare data
