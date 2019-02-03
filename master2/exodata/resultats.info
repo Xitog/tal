@@ -1,24 +1,3 @@
-Idées :
-
-- Faire un DecisionTreeClassifier à partir de la silhouette.
-- Programmer un "testeur" qui modifie certains paramètres et sélectionne la meilleure accuracy
-  stop_words strip_accents
-- Une position moyenne du mot par domaine. Si cela respecte la position moyenne, alors bonus ?
-- En cas d'erreur, afficher les valeurs non nuls de la ligne transformée avec le label
-
-À faire : 
-
-- DecisionTreeClassifier sur Titres bruts + données non textuelles
-- SVM sur Titres bruts
-- SVM sur Titres bruts + données non textuelles
-
-Done :
-
-[ok] Mon modèle avec tous les facteurs sur test & train (nb = None)
-[ok] Présence de verbe conjugué et autres POS ?
-[ok] Calculer F-Measure pour catégoriseur sur pos NPP seul
-[ok] Calculer F-Measure pour catégoriseur sur pos PONCT seul
-[ok] Combiner silhouette et pos en ajoutant la fmeasure du domaine trouvé/pos
 
 --------------------------------------------------------------------------------
 Résumé des résultats
@@ -38,6 +17,20 @@ Nb Titres    Factors    Accuracy   Time     Nb nodes    Depth
 10 000       18966      89%        0s16      3219       220
 19 999       28282      91%        0s16      6405       323
 53 426       49699      92%        0s47     16311       656
+53 426       42636      95%        1s88     13235      1906 (avec silhouette)
+
+Confusion matrix pour 53 426 / 49 699
+[[5902  108  221]
+ [ 175 5252  290]
+ [ 290  321 5249]]
+Temps sur mon PC pour 53 426 = 0s98, 1s94, 0s55
+
+Confusion matrix pour 53 426 / 42 636
+[[6021   38  172]
+ [  83 5459  175]
+ [ 201  155 5504]]
+
+Il manquerait Title + All columns pour DecisionTree et Classifier.
 
 --------------------------------------------------------------------------------
 10 erreurs de Titres bruts + TfidfVectorizer + DecisionTreeClassifier
@@ -134,7 +127,168 @@ Titre       Caractérisation des systèmes autoguérissants :...
 Name: 10, dtype: object
 
 --------------------------------------------------------------------------------
-Sklearn DecisionTreeClassifier
+10 erreurs de Titres bruts + TfidfVectorizer + DecisionTreeClassifier avec Silhouette
+--------------------------------------------------------------------------------
+
+GroundTruth = Informatique vs Predicted = Lettres   
+Titre = éligibilité gel contrainte résolution réseau qualitatif temporel spatial
+Domaine                                          Informatique
+Support                                                  COMM
+Année                                                    2008
+Nauteurs                                                    3
+Titre       éligibilité gel contrainte résolution réseau q...
+Name: 2, dtype: object
+  (0, 2361)	0.5521164627631785
+  (0, 26246)	0.41699578153708466
+  (0, 12303)	0.38896008168720697
+  (0, 37401)	0.3204464414051293
+  (0, 13389)	0.5170165014492497
+
+GroundTruth = Informatique vs Predicted = Linguistique
+Titre = seuillage agrégation approche comportemental multi modèle
+Domaine                                          Informatique
+Support                                                  COMM
+Année                                                    2008
+Nauteurs                                                    2
+Titre       seuillage agrégation approche comportemental m...
+Name: 3, dtype: object
+  (0, 42065)	0.4835870762917177
+  (0, 16504)	0.5076249742495417
+  (0, 9424)	0.2743085147233217
+  (0, 34175)	0.2998771586144225
+  (0, 34153)	0.22893149613635674
+  (0, 31933)	0.3470550133599296
+  (0, 38012)	0.2839354985636602
+  (0, 36295)	0.2996877943582628
+
+GroundTruth = Informatique vs Predicted = Linguistique
+Titre = nouveau approche corrélation alerte baser connaissance préférence opérateur sécurité
+Domaine                                          Informatique
+Support                                                  COMM
+Année                                                    2009
+Nauteurs                                                    2
+Titre       nouveau approche corrélation alerte baser conn...
+Name: 4, dtype: object
+  (0, 25163)	0.26634562030452363
+  (0, 35349)	0.5775940426821892
+  (0, 2039)	0.44396446667249223
+  (0, 3366)	0.2658509219516445
+  (0, 8866)	0.481809524507664
+  (0, 25729)	0.30906885013862695
+
+GroundTruth = Informatique vs Predicted = Lettres   
+Titre = suivre horizon sismique discontinu résolution équation Poisson associer condition dirichlet bord incrémentales
+Domaine                                          Informatique
+Support                                                  COMM
+Année                                                    2011
+Nauteurs                                                    4
+Titre       suivre horizon sismique discontinu résolution ...
+Name: 6, dtype: object
+  (0, 38012)	0.2624190278270879
+  (0, 14169)	0.2769776235975197
+  (0, 28620)	0.3587349170700204
+  (0, 35690)	0.36758964023153223
+  (0, 37931)	0.270348375548315
+  (0, 34062)	0.4021619393204344
+  (0, 37569)	0.3212359501391832
+  (0, 9871)	0.33960099361081714
+  (0, 6309)	0.3704901151271267
+
+GroundTruth = Informatique vs Predicted = Linguistique
+Titre = estimation joindre multiple décalage fréquence canal système coopératif relais ofdm idma
+Domaine                                          Informatique
+Support                                                  COMM
+Année                                                    2011
+Nauteurs                                                    4
+Titre       estimation joindre multiple décalage fréquence...
+Name: 7, dtype: object
+  (0, 34175)	0.21463991725731685
+  (0, 36996)	0.23691678427304033
+  (0, 18475)	0.267910620434862
+  (0, 35756)	0.3227858217159145
+  (0, 11584)	0.31394901004168974
+  (0, 42266)	0.28578295504253753
+  (0, 30189)	0.28933165111460796
+  (0, 3922)	0.27066165583009594
+  (0, 9032)	0.24591184899052276
+  (0, 11556)	0.3536478320313964
+  (0, 5852)	0.2815672775565678
+  (0, 19544)	0.34613203126758574
+
+GroundTruth = Informatique vs Predicted = Linguistique
+Titre = simulation automate déterministe pile après cook jones
+Domaine                                          Informatique
+Support                                                  COMM
+Année                                                    1980
+Nauteurs                                                    1
+Titre       simulation automate déterministe pile après co...
+Name: 9, dtype: object
+  (0, 3366)	0.26519942811604935
+  (0, 12398)	0.4755137829335483
+  (0, 34184)	0.46648243101205045
+  (0, 30940)	0.3025945801210552
+  (0, 39039)	0.4155904290249872
+  (0, 10884)	0.4708196709021655
+
+GroundTruth = Informatique vs Predicted = Lettres   
+Titre = contrainte global extraction motif séquentiel
+Domaine                                      Informatique
+Support                                               ART
+Année                                                2016
+Nauteurs                                                5
+Titre       contrainte global extraction motif séquentiel
+Name: 10, dtype: object
+  (0, 35683)	0.26718590249070673
+  (0, 4323)	0.34471143511229013
+  (0, 12925)	0.3868768650624419
+  (0, 29798)	0.41082321933399607
+  (0, 3395)	0.28967259809303886
+  (0, 9565)	0.4664805488734171
+  (0, 21049)	0.4356856403249305
+
+GroundTruth = Informatique vs Predicted = Lettres   
+Titre = calcul groupe galois
+Domaine             Informatique
+Support                     COMM
+Année                       1998
+Nauteurs                       1
+Titre       calcul groupe galois
+Name: 11, dtype: object
+  (0, 9424)	0.39227845025416375
+  (0, 16854)	0.48233755632902303
+  (0, 14652)	0.3918073089519593
+  (0, 25567)	0.4446785432923638
+  (0, 37556)	0.5120704297339804
+
+GroundTruth = Informatique vs Predicted = Lettres   
+Titre = régulation trafic urbain priorité transport commun aide système multi agent
+Domaine                                          Informatique
+Support                                                  COMM
+Année                                                    2010
+Nauteurs                                                    2
+Titre       régulation trafic urbain priorité transport co...
+Name: 12, dtype: object
+  (0, 6679)	0.504547803246541
+  (0, 17338)	0.5372139591414138
+  (0, 16294)	0.6758939830644279
+
+GroundTruth = Informatique vs Predicted = Lettres   
+Titre = agent coopératif politique échange information
+Domaine                                       Informatique
+Support                                               COMM
+Année                                                 2011
+Nauteurs                                                 2
+Titre       agent coopératif politique échange information
+Name: 14, dtype: object
+  (0, 26126)	0.38437880992165696
+  (0, 37314)	0.425285430835421
+  (0, 34761)	0.5237115118777728
+  (0, 30109)	0.40600802876851483
+  (0, 22138)	0.34841705678448004
+  (0, 41948)	0.3329782579181164
+
+--------------------------------------------------------------------------------
+Sklearn DecisionTreeClassifier on Title
 --------------------------------------------------------------------------------
 
 Dimension of = <3000x8709 sparse matrix of type '<class 'numpy.float64'>'
@@ -181,6 +335,119 @@ Confusion matrix
 Accuracy = 0.921102875112309
 Duration : 0:00:00.468001 (sur portable)
 Duration : 0:00:00.986701 (sur ma machine)
+
+--------------------------------------------------------------------------------
+Sklearn DecisionTreeClassifier on Silhouette
+--------------------------------------------------------------------------------
+
+Avec Silhouette :
+Dimension of = <53426x42636 sparse matrix of type '<class 'numpy.float64'>'
+	with 368907 stored elements in Compressed Sparse Row format>
+Node count = 13235
+Max depth of tree= 1906
+Confusion matrix
+[[6021   38  172]
+ [  83 5459  175]
+ [ 201  155 5504]]
+Accuracy = 0.9537286612758311
+Duration : 0:00:01.886342
+
+--------------------------------------------------------------------------------
+Sklearn DecisionTreeClassifier on Silhouette + all columns
+--------------------------------------------------------------------------------
+
+Compare the frequence of domains in both set
+---
+col_0            count
+Domaine               
+Informatique  0.349907
+Lettres       0.320989
+Linguistique  0.329103
+col_0            count
+Domaine               
+Informatique  0.349899
+Lettres       0.321035
+Linguistique  0.329066
+Confusion matrix
+[[5164  398  669]
+ [ 233 4346 1138]
+ [ 713 1228 3919]]
+Accuracy = 0.7540992812219227
+
+(sans scalers)
+Duration : 0:00:01.111758
+Confusion matrix
+[[5164  398  669]
+ [ 233 4346 1138]
+ [ 713 1227 3920]]
+Accuracy = 0.7541554357592093
+
+--------------------------------------------------------------------------------
+Sklearn SVM on Title only
+--------------------------------------------------------------------------------
+
+col_0            count
+Domaine               
+Informatique  0.349907
+Lettres       0.320989
+Linguistique  0.329103
+col_0            count
+Domaine               
+Informatique  0.349899
+Lettres       0.321035
+Linguistique  0.329066
+Fit Duration : 0:06:53.397531
+Predict Duration : 0:02:42.575438
+Confusion matrix
+[[5488  311  432]
+ [ 102 5229  386]
+ [ 413 1059 4388]]
+Accuracy = 0.8482142857142857
+
+--------------------------------------------------------------------------------
+Sklearn SVM on Silhouette only
+--------------------------------------------------------------------------------
+
+col_0            count
+Domaine               
+Informatique  0.349907
+Lettres       0.320989
+Linguistique  0.329103
+col_0            count
+Domaine               
+Informatique  0.349899
+Lettres       0.321035
+Linguistique  0.329066
+Fit Duration : 0:05:24.329323
+Predict Duration : 0:01:55.016663
+Confusion matrix
+[[5526  287  418]
+ [  90 5239  388]
+ [ 377 1079 4404]]
+Accuracy = 0.851808176100629
+
+--------------------------------------------------------------------------------
+Sklearn SVM on Silhouette + all columns
+--------------------------------------------------------------------------------
+
+col_0            count
+Domaine               
+Informatique  0.349907
+Lettres       0.320989
+Linguistique  0.329103
+col_0            count
+Domaine               
+Informatique  0.349899
+Lettres       0.321035
+Linguistique  0.329066
+Duration : 0:02:09.222761
+Confusion matrix
+[[5497  326  408]
+ [  97 5241  379]
+ [ 415 1090 4355]]
+Accuracy = 0.8475404312668463
+
+(ça a bien duré 10 minutes je pense, pourquoi il me dit 2 ??? => le predict, pas la construction du modèle !!!)
 
 ================================================================================
 Mon modèle
