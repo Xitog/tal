@@ -45,6 +45,8 @@ DECISION_TREE_PRINT_CODE = False # must be done with debug. To big :-(
 
 # To predict with SVM on only title or silhouette (change DATA_INPUT to choose)
 SVM_PREDICT = True
+SVM_TRUE_GRID = False
+SVM_FALSE_GRID = True
 
 # To predict on all features
 DECISION_PREDICT_ALL = False
@@ -332,6 +334,23 @@ if DECISION_TREE_PREDICT:
 # SVM
 #-----------------------------------------------------------
 
+def fit_predict(clf, XtrainVec, Ytrain, XtestVec, Ytest):
+    start_time = datetime.datetime.now()
+    clf.fit(XtrainVec, Ytrain)
+    print('Fit Duration : ' + str(datetime.datetime.now() - start_time))
+    start_time = datetime.datetime.now()
+    res = clf.predict(XtestVec)
+    print('Predict Duration : ' + str(datetime.datetime.now() - start_time))
+    acc = clf.score(XtestVec, Ytest)
+    print("Confusion matrix")
+    print(confusion_matrix(Ytest, res))
+    print("Accuracy =", acc)
+    if isinstance(clf, svm.SVC):
+        print("Kernel =", clf.kernel)
+        print("Info on classifier SVM =\n", clf)
+    else:
+        print("Info on best_estimator_ =\n", clf.best_estimator_)
+        
 if SVM_PREDICT:
     print('SVM Predict on', DATA_INPUT)
     data = make_panda(DATA_INPUT)
@@ -357,15 +376,33 @@ if SVM_PREDICT:
         XtestVec = vec.transform(Xtest["Titre"])
     except ValueError:
         XtestVec = vec.transform(Xtest["Titre"].values.astype('U'))
-    
-    clf = svm.SVC(gamma=0.001, C=100.)
-    start_time = datetime.datetime.now()
-    clf.fit(XtrainVec, Ytrain)
-    print('Fit Duration : ' + str(datetime.datetime.now() - start_time))
-    start_time = datetime.datetime.now()
-    res = clf.predict(XtestVec)
-    print('Predict Duration : ' + str(datetime.datetime.now() - start_time))
-    acc = clf.score(XtestVec, Ytest)
-    print("Confusion matrix")
-    print(confusion_matrix(Ytest, res))
-    print("Accuracy =", acc)
+
+    if SVM_TRUE_GRID:
+        from sklearn.model_selection import GridSearchCV
+        param_grid = [
+            { 'kernel' : ['linear'], 'C' : [10., 100., 1000.] },
+            { 'kernel' : ['rbf'], 'gamma' : [0.001, 0.0001], 'C' : [10., 100., 1000.] },
+            #{ 'kernel' : ['linear'], 'C' : [1., 10., 100., 1000.] },
+            #{ 'kernel' : ['rbf'], 'gamma' : [0.001, 0.0001], 'C' : [1., 10., 100., 1000.] },
+            #{ 'kernel' : ['poly'], 'gamma' : [0.001, 0.0001],'degree' : [2, 3], 'C' : [1., 10., 100., 1000.] },
+        ]
+        clf = GridSearchCV(svm.SVC(), param_grid, cv=5)
+        fit_predict(clf, XtrainVec, Ytrain, XtestVec, Ytest)
+    if SVM_FALSE_GRID:
+        print('Kernel =    rbf, C =  100 ==========================================')
+        clf = svm.SVC(kernel='rbf', gamma=0.001, C=100.)
+        fit_predict(clf, XtrainVec, Ytrain, XtestVec, Ytest)
+        print('Kernel =    rbf, C =   10 ==========================================')
+        clf = svm.SVC(kernel='rbf', gamma=0.001, C=10.)
+        fit_predict(clf, XtrainVec, Ytrain, XtestVec, Ytest)
+        print('Kernel =    rbf, C = 1000 ==========================================')
+        clf = svm.SVC(kernel='rbf', gamma=0.001, C=1000.)
+        fit_predict(clf, XtrainVec, Ytrain, XtestVec, Ytest)
+        print('Kerbel = linear, C = 100 ==========================================')
+        clf = svm.SVC(kernel='linear', C=1000.)
+        fit_predict(clf, XtrainVec, Ytrain, XtestVec, Ytest)
+    else:
+        clf = svm.SVC(kernel='rbf', gamma=0.001, C=100.)
+        fit_predict(clf, XtrainVec, Ytrain, XtestVec, Ytest)
+
+

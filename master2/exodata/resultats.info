@@ -386,6 +386,9 @@ Accuracy = 0.7541554357592093
 Sklearn SVM on Title only
 --------------------------------------------------------------------------------
 
+Sur Shodan 32 bits :
+--------------------
+
 col_0            count
 Domaine               
 Informatique  0.349907
@@ -403,6 +406,99 @@ Confusion matrix
  [ 102 5229  386]
  [ 413 1059 4388]]
 Accuracy = 0.8482142857142857
+
+Sur portable 64 bits :
+----------------------
+
+Fit Duration : 0:02:30.568784
+Predict Duration : 0:00:48.492693
+Confusion matrix
+[[5488  311  432]
+ [ 102 5229  386]
+ [ 413 1059 4388]]
+Accuracy = 0.8482142857142857
+Kernel = rbf
+Info on classifier SVM =
+SVC(C=100.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma=0.001, kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+
+Sur portable 64 bits avec GridSearchCV (mêmes paramètres) :
+-----------------------------------------------------------
+
+Je refais avec les mêmes paramètres mais en utilisant GridSearchCV pour vérifier
+que ça ne vient pas d'elle.
+
+Fit Duration : 0:09:55.225227
+Predict Duration : 0:00:52.331381
+Confusion matrix
+[[5488  311  432]
+ [ 102 5229  386]
+ [ 413 1059 4388]]
+Accuracy = 0.8482142857142857
+Best =
+SVC(C=100.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma=0.001, kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+
+Sur portable 64 bits avec GridSearchCV (variations sur kernel, C, gamma, degree) :
+----------------------------------------------------------------------------------
+
+Trop long ! Il faut dire, si à a chaque fois ça prend 10 minutes...
+Bon j'ai été trop gourmand, je referais un test avec un grille simple (2 cas).
+
+kernel =    rbf, C =  100
+-------------------------
+
+Fit Duration : 0:02:53.568310
+Predict Duration : 0:00:54.444497
+Confusion matrix
+[[5488  311  432]
+ [ 102 5229  386]
+ [ 413 1059 4388]]
+Accuracy = 0.8482142857142857
+Kernel = rbf
+Info on classifier SVM =
+ SVC(C=100.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma=0.001, kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+  
+Kernel =    rbf, C =   10
+-------------------------
+
+Fit Duration : 0:04:41.426591
+Predict Duration : 0:01:27.387701
+Confusion matrix
+[[5050  811  370]
+ [ 268 5157  292]
+ [ 666 2231 2963]]
+Accuracy = 0.7395552560646901
+Kernel = rbf
+Info on classifier SVM =
+ SVC(C=10.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma=0.001, kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+
+Kernel =    rbf, C = 1000
+-------------------------
+
+Fit Duration : 0:07:38.458537
+Predict Duration : 0:00:42.144016
+Confusion matrix
+[[5658  169  404]
+ [ 146 5039  532]
+ [ 427  728 4705]]
+Accuracy = 0.8648921832884097
+Kernel = rbf
+Info on classifier SVM =
+ SVC(C=1000.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma=0.001, kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
 
 --------------------------------------------------------------------------------
 Sklearn SVM on Silhouette only

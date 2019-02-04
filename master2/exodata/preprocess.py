@@ -37,16 +37,17 @@ if __name__ == '__main__':
     STAT_DOMAIN_SUPPORT = False
     CROSS_SUPPORT_AUTHORS = False
 
-    LENGTH_FREQ_STATS = True
-    DOUBLONS_TEST = False
+    LENGTH_FREQ_STATS = True    # make stat for each word of silhouette
+    DOUBLONS_TEST = False       # test if there is any word x2 in sil (never)
     COVER_CALC = False          # (for silhouette's words on Domains)
     SHOW_BEST = False           # (for silhouette's words in Domains)
     FEATURE_EXTRACTION_POS = False
     EVALUATE_MY_MODEL_POS = False
     EVALUATE_MY_MODEL_SILHOUETTE = True    # (use my model) or True
-    COMBINED_SILHOUETTE_AND_POS = True     # combine Silhouette & POS => BAD
+    COMBINED_SILHOUETTE_AND_POS = False     # combine Silhouette & POS => BAD
     EVALUATE_TARGET = 'TRAIN'
     EVALUATE_NB_FACTOR = 10_000 # number of features 100 1000 10_000 None=all
+    GET_ERRORS = 10
 else:
     LOAD_ALL = False
     LOAD_TRAIN = False
@@ -71,6 +72,7 @@ else:
     EVALUATE_MY_MODEL_SILHOUETTE = False
     EVALUATE_TARGET = None
     EVALUATE_NB_FACTOR = 0
+    GET_ERRORS = None
 
 #-----------------------------------------------------------
 # Data Model
@@ -764,9 +766,13 @@ if EVALUATE_MY_MODEL_POS:
 # Evaluate for a given domain the proximity of the title limited to nb best words
 def evaluate(t, domain):
     factor = 0
-    for b in first_best[domain]:
-        if b in t.filtered:
-             factor += first_best[domain][b]
+    # less words in filtered = shorter loops!
+    for w in t.filtered:
+        if w in first_best[domain]:
+            factor += first_best[domain][w]
+    #for b in first_best[domain]:
+    #    if b in t.filtered:
+    #         factor += first_best[domain][b]
     return factor
 
 # Categorize one title
@@ -877,4 +883,18 @@ if EVALUATE_MY_MODEL_SILHOUETTE:
     print('Informatique =', len(first_best['Informatique']))
     print('Lettres =', len(first_best['Lettres']))
     print('Linguistique =', len(first_best['Linguistique']))
-
+    if GET_ERRORS is not None:
+        i = 0
+        for t in titles:
+            if t.guess != t.domain:
+                print('Titre   = ', t.title)
+                print('Support = ', t.support)
+                print('Year    = ', t.year)
+                print('Authors = ', t.authors)
+                print('Domain  = ', t.domain)
+                print('Guess   = ', t.guess)
+                print('Filtered= ')
+                for w in t.filtered:
+                    print('\t', w, f"{first_best['Linguistique'][w]:.06f}", f"{first_best['Lettres'][w]:.06f}", f"{first_best['Informatique'][w]:.06f}")
+                i += 1
+            if i >= GET_ERRORS: break
