@@ -3,13 +3,19 @@
 Résumé des résultats
 --------------------------------------------------------------------------------
 
-Mon modèle      trainMS             testMS
-   100 traits   65 %     3s         63 %               2s
- 1 000 traits   78 %     01m18      76 %              25s
-10 000 traits   81 %     05m44      78 %            5m44s
-   all traits   81 %     25m28      78 %           12m37s
+Mon modèle      trainMS                 testMS
+   100 traits   65 %     3s             63 %               2s
+ 1 000 traits   78 %     01m18          76 %              25s
+10 000 traits   81 %     05m44          78 %            5m44s
+   all traits   81 %     25m28          78 %           12m37s
+   all traits   81 %     00s62,00s58    78 %           00s34, 00s32 *NewAlgo*
 53 426 titres
 all = 12832 in Informatique, 20111 in Lettres, 12918 in Linguistique
+*NewAlgo* = avant je parcourais TOUS les bests pour CHAQUE TITRE et si le best
+était dans la silhouette, le facteur était ajouté. Maintenant je ne parcours
+que les MOTS de la silhouette et je regarde si c'est des bests. On a divisé le
+temps de façon monstrueuse : 12m => 00s34 pour la prédiction !
+Et le temps de fit (= construction du modèle) a toujours été rapide : 00.43
 
 Titres bruts + TfidfVectorizer + DecisionTreeClassifier
 Nb Titres    Factors    Accuracy   Time     Nb nodes    Depth
@@ -29,8 +35,6 @@ Confusion matrix pour 53 426 / 42 636
 [[6021   38  172]
  [  83 5459  175]
  [ 201  155 5504]]
-
-Il manquerait Title + All columns pour DecisionTree et Classifier.
 
 --------------------------------------------------------------------------------
 10 erreurs de Titres bruts + TfidfVectorizer + DecisionTreeClassifier
@@ -499,6 +503,12 @@ Info on classifier SVM =
   decision_function_shape='ovr', degree=3, gamma=0.001, kernel='rbf',
   max_iter=-1, probability=False, random_state=None, shrinking=True,
   tol=0.001, verbose=False)
+  
+--------------------------------------------------------------------------------
+Sklearn SVM on Title + all columns
+--------------------------------------------------------------------------------
+
+???
 
 --------------------------------------------------------------------------------
 Sklearn SVM on Silhouette only
@@ -556,11 +566,13 @@ Sommaire
 1. 100 traits, train MS => 3s
 2. 1000 traits, train MS => 01m18
 3. 10000 traits, train MS => 12m40
-4. All traits, train MS => ?
+4. All traits, train MS => 25m28
+4b. All traits, train MS + Erreurs => 00s62
 5. 100 traits, test MS => 2s
 6. 1000 traits, test MS => 25s
 7. 10000 traits, test MS => 5m44
 8. All traits, tests MS => 12m37
+8b. All traits, tests MS + Erreurs => 00s34
 9. Feature extraction : POS
 10. 10000 traits + POS, test MS => 16m49
 
@@ -657,6 +669,206 @@ Title with Zero Equality = 0
 Title with Non Zero Equality = 0
 {'Informatique': {'Informatique': 10959, 'Lettres': 753, 'Linguistique': 1396}, 'Lettres': {'Informatique': 299, 'Lettres': 8813, 'Linguistique': 1278}, 'Linguistique': {'Informatique': 1205, 'Lettres': 1865, 'Linguistique': 9046}, 'No silhouette': {'Informatique': 0, 'Lettres': 3, 'Linguistique': 2}, 'Zero Equality': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 0}, 'Non Zero Equality': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 0}}
 
+--------------------------------------------------------------------------------
+4b. All traits, train MS + Erreurs => 00s62
+--------------------------------------------------------------------------------
+
+Getting best from TRAIN corpus
+Title without silhouette in TRAIN = 5
+Evaluating on ALL factors.
+00001000 / 35619 titles done.'
+00002000 / 35619 titles done.'
+00003000 / 35619 titles done.'
+00004000 / 35619 titles done.'
+00005000 / 35619 titles done.'
+00006000 / 35619 titles done.'
+00007000 / 35619 titles done.'
+00008000 / 35619 titles done.'
+00009000 / 35619 titles done.'
+00010000 / 35619 titles done.'
+00011000 / 35619 titles done.'
+00012000 / 35619 titles done.'
+00013000 / 35619 titles done.'
+00014000 / 35619 titles done.'
+00015000 / 35619 titles done.'
+00016000 / 35619 titles done.'
+00017000 / 35619 titles done.'
+00018000 / 35619 titles done.'
+00019000 / 35619 titles done.'
+00020000 / 35619 titles done.'
+00021000 / 35619 titles done.'
+00022000 / 35619 titles done.'
+00023000 / 35619 titles done.'
+00024000 / 35619 titles done.'
+00025000 / 35619 titles done.'
+00026000 / 35619 titles done.'
+00027000 / 35619 titles done.'
+00028000 / 35619 titles done.'
+00029000 / 35619 titles done.'
+00030000 / 35619 titles done.'
+00031000 / 35619 titles done.'
+00032000 / 35619 titles done.'
+00033000 / 35619 titles done.'
+00034000 / 35619 titles done.'
+00035000 / 35619 titles done.'
+Duration : 0:00:00.618439
+Accuracy =          81 %
+Title without Silhouette = 5 5
+Title with Zero Equality = 0
+Title with Non Zero Equality = 0
+{'Informatique': {'Informatique': 10959, 'Lettres': 753, 'Linguistique': 1396}, 'Lettres': {'Informatique': 299, 'Lettres': 8813, 'Linguistique': 1278}, 'Linguistique': {'Informatique': 1205, 'Lettres': 1865, 'Linguistique': 9046}, 'No silhouette': {'Informatique': 0, 'Lettres': 3, 'Linguistique': 2}, 'Zero Equality': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 0}, 'Non Zero Equality': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 0}}
+Nb factors :
+Informatique = 12832
+Lettres = 20111
+Linguistique = 12918
+Titre   =  Mécanisme de synchronisation scalable à plusieurs lecteurs et un écrivain
+Support =  COMM
+Year    =  2014
+Authors =  4
+Domain  =  Informatique
+Guess   =  Lettres
+Filtered= 
+	      WORD         LING     LETTRES  INFO
+	 mécanisme  0.003224 0.000348 0.006706
+	 synchronisation NOT BEST NOT BEST 0.003364
+	 scalable   NOT BEST NOT BEST 0.000481
+	 plusieurs  0.001531 0.000872 0.003680
+	 lecteur    0.002534 0.016452 0.000795
+	 écrivain   0.002023 0.022113 0.000476
+Titre   =  Parcours par liste de chemins : une nouvelle classe de mécanismes de suivi de flot SIMT
+Support =  COMM
+Year    =  2017
+Authors =  2
+Domain  =  Informatique
+Guess   =  Linguistique
+Filtered= 
+	      WORD         LING     LETTRES  INFO
+	 parcours   0.008631 0.003816 0.003663
+	 liste      0.001702 0.001920 0.000801
+	 chemin     0.001527 0.003304 0.006225
+	 nouveau    0.030620 0.033342 0.035611
+	 classe     0.032495 0.002732 0.010829
+	 mécanisme  0.003224 0.000348 0.006706
+	 suivi      0.000340 NOT BEST 0.008468
+	 flot       NOT BEST NOT BEST 0.005441
+	 simt       NOT BEST NOT BEST 0.000642
+Titre   =  Chapter in IPv6: Théorie et Pratique
+Support =  COUV
+Year    =  1998
+Authors =  2
+Domain  =  Informatique
+Guess   =  Linguistique
+Filtered= 
+	      WORD         LING     LETTRES  INFO
+	 chapter    NOT BEST NOT BEST 0.000321
+	 in         0.010619 0.023967 0.019852
+	 ipv6       NOT BEST NOT BEST 0.002404
+	 théorie    0.022801 0.011766 0.013952
+	 pratique   0.038827 0.012524 0.011521
+Titre   =  Langage C
+Support =  COUV
+Year    =  2001
+Authors =  1
+Domain  =  Informatique
+Guess   =  Linguistique
+Filtered= 
+	      WORD         LING     LETTRES  INFO
+	 langage    0.051651 0.011550 0.019881
+	 c          0.001020 0.003832 0.003197
+Titre   =  Exposition de la population française aux champs magnétiques 50 Hz
+Support =  COMM
+Year    =  2010
+Authors =  8
+Domain  =  Informatique
+Guess   =  Linguistique
+Filtered= 
+	      WORD         LING     LETTRES  INFO
+	 exposition 0.000681 0.002444 0.000801
+	 population 0.001021 0.000174 0.004002
+	 français   0.196892 0.045285 0.014799
+	 champ      0.006586 0.004500 0.008900
+	 magnétique 0.000170 NOT BEST 0.002244
+	 50         0.000171 0.000699 0.000321
+	 hz         NOT BEST NOT BEST 0.000160
+Titre   =  Deux types de représentations des séquences nominales figées en coréen et de leurs formes fléchies avec INTEX
+Support =  ART
+Year    =  2001
+Authors =  1
+Domain  =  Informatique
+Guess   =  Linguistique
+Filtered= 
+	      WORD         LING     LETTRES  INFO
+	 deux       0.023823 0.031805 0.018120
+	 type       0.012955 0.001035 0.012987
+	 représentation 0.035377 0.024875 0.027673
+	 séquence   0.007591 0.001383 0.012860
+	 nominal    0.013382 0.000521 0.000478
+	 figer      0.004764 0.000523 0.000320
+	 coréen     0.001192 0.000873 0.001122
+	 leurs      0.009132 0.003813 0.004615
+	 forme      0.031263 0.015674 0.023263
+	 fléchir    0.000171 NOT BEST 0.000321
+	 intex      NOT BEST NOT BEST 0.000481
+Titre   =  Verbes à trois compléments essentiels
+Support =  ART
+Year    =  2000
+Authors =  1
+Domain  =  Informatique
+Guess   =  Linguistique
+Filtered= 
+	      WORD         LING     LETTRES  INFO
+	 verbe      0.030029 0.001547 0.001895
+	 trois      0.008914 0.015168 0.004433
+	 complément 0.006461 0.000174 0.000320
+	 essentiel  0.000341 NOT BEST 0.000802
+Titre   =  Sur quelques extensions possibles de l'appellation passif
+Support =  ART
+Year    =  2000
+Authors =  1
+Domain  =  Informatique
+Guess   =  Linguistique
+Filtered= 
+	      WORD         LING     LETTRES  INFO
+	 quelques   0.050366 0.038596 0.007049
+	 extension  0.001694 0.001042 0.010522
+	 possible   0.003905 0.004699 0.001118
+	 appellation 0.000512 0.000350 0.000160
+	 passif     0.003063 0.000523 0.001761
+Titre   =  E-Quality : Mise en oeuvre de la qualité pour la FOAD dans l'enseignement supérieur en Europe
+Support =  COMM
+Year    =  2008
+Authors =  2
+Domain  =  Informatique
+Guess   =  Linguistique
+Filtered= 
+	      WORD         LING     LETTRES  INFO
+	 e          0.006732 0.013453 0.006970
+	 quality    NOT BEST NOT BEST 0.001764
+	 mise       0.014531 0.012494 0.014471
+	 oeuvre     0.004556 0.012279 0.005082
+	 qualité    0.005048 0.000690 0.020748
+	 foad       0.000512 NOT BEST 0.000481
+	 enseignement 0.047769 0.006773 0.007632
+	 supérieur  0.001701 0.002093 0.002080
+	 Europe     0.005083 0.007641 0.001435
+Titre   =  Utilisation d'un robot pour faciliter l'émergence de la communication sociale chez l'enfant avec autisme
+Support =  COMM
+Year    =  2009
+Authors =  8
+Domain  =  Informatique
+Guess   =  Linguistique
+Filtered= 
+	      WORD         LING     LETTRES  INFO
+	 utilisation 0.006992 0.001365 0.037792
+	 robot      0.000339 0.000695 0.012592
+	 faciliter  0.000341 NOT BEST 0.002564
+	 émergence  0.011334 0.002774 0.002865
+	 communication 0.019192 0.004275 0.019175
+	 social     0.019807 0.010402 0.017873
+	 chez       0.048585 0.068937 0.004238
+	 enfant     0.042233 0.012894 0.003589
+	 autisme    0.001534 NOT BEST 0.000160
+
 -------------------------------------------------------------------------------
 5. 100 traits, test MS => 2s
 --------------------------------------------------------------------------------
@@ -723,6 +935,183 @@ Title with Zero Equality = 52
 Title with Non Zero Equality = 0
 {'Informatique': {'Informatique': 5321, 'Lettres': 407, 'Linguistique': 730}, 'Lettres': {'Informatique': 186, 'Lettres': 4233, 'Linguistique': 710}, 'Linguistique': {'Informatique': 717, 'Lettres': 1048, 'Linguistique': 4401}, 'No silhouette': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 2}, 'Zero Equality': {'Informatique': 7, 'Lettres': 28, 'Linguistique': 17}, 'Non Zero Equality': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 0}}
 
+--------------------------------------------------------------------------------
+8b. All traits, tests MS + Erreurs => 00s34
+--------------------------------------------------------------------------------
+
+Getting best from TRAIN corpus
+Title without silhouette in TEST = 2
+Evaluating on ALL factors.
+00001000 / 17807 titles done.'
+00002000 / 17807 titles done.'
+00003000 / 17807 titles done.'
+00004000 / 17807 titles done.'
+00005000 / 17807 titles done.'
+00006000 / 17807 titles done.'
+00007000 / 17807 titles done.'
+00008000 / 17807 titles done.'
+00009000 / 17807 titles done.'
+00010000 / 17807 titles done.'
+00011000 / 17807 titles done.'
+00012000 / 17807 titles done.'
+00013000 / 17807 titles done.'
+00014000 / 17807 titles done.'
+00015000 / 17807 titles done.'
+00016000 / 17807 titles done.'
+00017000 / 17807 titles done.'
+Duration : 0:00:00.344244
+Accuracy =          78 %
+Title without Silhouette = 2 2
+Title with Zero Equality = 52
+Title with Non Zero Equality = 0
+{'Informatique': {'Informatique': 5321, 'Lettres': 407, 'Linguistique': 730}, 'Lettres': {'Informatique': 186, 'Lettres': 4233, 'Linguistique': 710}, 'Linguistique': {'Informatique': 717, 'Lettres': 1048, 'Linguistique': 4401}, 'No silhouette': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 2}, 'Zero Equality': {'Informatique': 7, 'Lettres': 28, 'Linguistique': 17}, 'Non Zero Equality': {'Informatique': 0, 'Lettres': 0, 'Linguistique': 0}}
+Nb factors :
+Informatique = 12832
+Lettres = 20111
+Linguistique = 12918
+Titre   =  La théorisation énonciative proposée comme modèle : son objet et les tentatives de délimitation
+Support =  ART
+Year    =  2011
+Authors =  1
+Domain  =  Linguistique
+Guess   =  Informatique
+Filtered= 
+	      WORD         LING     LETTRES  INFO
+	 théorisation 0.001364 0.000350 NOT BEST
+	 énonciatif 0.021924 0.001037 0.000159
+	 proposer   0.000682 0.000350 0.000641
+	 modèle     0.014393 0.014728 0.110713
+	 objet      0.015072 0.005430 0.035893
+	 tentative  0.002042 0.003314 0.000160
+	 délimitation 0.000682 0.000175 0.000160
+Titre   =  Sur la famille du gr. βόσκω
+Support =  ART
+Year    =  2009
+Authors =  1
+Domain  =  Linguistique
+Guess   =  Lettres
+Filtered= 
+	      WORD         LING     LETTRES  INFO
+	 famille    0.005250 0.005729 0.003665
+	 gr         NOT BEST NOT BEST NOT BEST
+	 βόσκω      NOT BEST NOT BEST NOT BEST
+Titre   =  L'Anthologie poétique de Philippe Jaccottet : Une constellation tout près
+Support =  COMM
+Year    =  2006
+Authors =  1
+Domain  =  Linguistique
+Guess   =  Lettres
+Filtered= 
+	      WORD         LING     LETTRES  INFO
+	 anthologie NOT BEST 0.002446 NOT BEST
+	 poétique   0.005504 0.040161 0.000157
+	 Philippe   0.000849 0.007487 0.000799
+	 jaccottet  NOT BEST 0.001748 NOT BEST
+	 constellation NOT BEST 0.000699 0.000641
+	 près       0.000852 0.000874 0.000160
+Titre   =  François Cheng, l'homme de longue errance
+Support =  COMM
+Year    =  2003
+Authors =  1
+Domain  =  Linguistique
+Guess   =  Lettres
+Filtered= 
+	      WORD         LING     LETTRES  INFO
+	 François   0.002886 0.006613 0.000479
+	 Cheng      NOT BEST 0.000175 NOT BEST
+	 homme      0.006209 0.019261 0.007426
+	 long       0.001868 0.003830 0.003355
+	 errance    NOT BEST 0.001747 0.000321
+Titre   =  Le projet Ambience : les perspectives au niveau QoS
+Support =  COMM
+Year    =  2002
+Authors =  4
+Domain  =  Informatique
+Guess   =  Linguistique
+Filtered= 
+	      WORD         LING     LETTRES  INFO
+	 projet     0.015345 0.006836 0.021521
+	 ambience   NOT BEST NOT BEST NOT BEST
+	 perspective 0.026241 0.005652 0.008499
+	 niveau     0.007084 0.000173 0.014763
+	 qos        NOT BEST NOT BEST 0.001603
+Titre   =  Graphes des liens et anti-liens statistiquement valides entre les mots d'un corpus textuel
+Support =  COMM
+Year    =  2009
+Authors =  2
+Domain  =  Informatique
+Guess   =  Linguistique
+Filtered= 
+	      WORD         LING     LETTRES  INFO
+	 graphe     0.000334 NOT BEST 0.039940
+	 lien       0.003898 0.002432 0.006856
+	 anti       0.000170 0.003840 0.000320
+	 statistiquement NOT BEST NOT BEST NOT BEST
+	 valide     NOT BEST NOT BEST 0.001123
+	 entre      0.071089 0.071605 0.029772
+	 corpus     0.062000 0.005013 0.019386
+	 textuel    0.017147 0.005168 0.006805
+Titre   =  Proust et les architectures déconstruites
+Support =  COUV
+Year    =  2006
+Authors =  1
+Domain  =  Lettres
+Guess   =  Informatique
+Filtered= 
+	      WORD         LING     LETTRES  INFO
+	 proust     0.001019 0.009050 NOT BEST
+	 architecture 0.000668 0.003424 0.035245
+	 déconstruire 0.000341 0.000525 NOT BEST
+Titre   =  compte rendu d'ouvrage: Ségal, Jérôme, Le Zéro et le Un: histoire de la notion scientifique d'information au 20e siècle.
+Support =  ART
+Year    =  2007
+Authors =  1
+Domain  =  Linguistique
+Guess   =  Lettres
+Filtered= 
+	      WORD         LING     LETTRES  INFO
+	 compte     0.012476 0.025394 0.012065
+	 rendre     0.009042 0.025395 0.003153
+	 ouvrage    0.004733 0.012993 0.001272
+	 ségal      NOT BEST NOT BEST NOT BEST
+	 Jérôme     0.000341 0.002445 0.000320
+	 zéro       0.001704 0.000524 0.000321
+	 histoire   0.026275 0.070580 0.003366
+	 notion     0.019522 0.004829 0.002851
+	 scientifique 0.016244 0.009781 0.010564
+	 information 0.007038 0.001173 0.069130
+	 20e        0.000512 0.000524 NOT BEST
+	 siècle     0.035240 0.112872 0.001941
+Titre   =  L'étrangère de la chambre
+Support =  COUV
+Year    =  2011
+Authors =  1
+Domain  =  Lettres
+Guess   =  Linguistique
+Filtered= 
+	      WORD         LING     LETTRES  INFO
+	 étranger   0.026185 0.006020 0.000316
+	 chambre    0.000341 0.002271 0.000321
+Titre   =  Cabinets et garde-robes : la représentation de quelques lieux privés dans l'<i>Amadis de Gaule</i> français
+Support =  COUV
+Year    =  2014
+Authors =  1
+Domain  =  Lettres
+Guess   =  Linguistique
+Filtered= 
+	      WORD         LING     LETTRES  INFO
+	 cabinet    NOT BEST 0.000699 NOT BEST
+	 garde      0.000852 0.002619 0.000160
+	 robe       NOT BEST 0.000525 NOT BEST
+	 représentation 0.035377 0.024875 0.027673
+	 quelques   0.050366 0.038596 0.007049
+	 lieu       0.010956 0.011574 0.001904
+	 priver     0.000679 0.003308 0.004634
+	 <i>amadis  NOT BEST NOT BEST NOT BEST
+	 gaule<     NOT BEST NOT BEST NOT BEST
+	 i>         0.003234 0.001221 0.000480
+	 français   0.196892 0.045285 0.014799
+     
 --------------------------------------------------------------------------------
 9. Feature extraction : POS
 --------------------------------------------------------------------------------

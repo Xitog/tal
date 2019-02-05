@@ -45,9 +45,9 @@ if __name__ == '__main__':
     EVALUATE_MY_MODEL_POS = False
     EVALUATE_MY_MODEL_SILHOUETTE = True    # (use my model) or True
     COMBINED_SILHOUETTE_AND_POS = False     # combine Silhouette & POS => BAD
-    EVALUATE_TARGET = 'TRAIN'
-    EVALUATE_NB_FACTOR = 10_000 # number of features 100 1000 10_000 None=all
-    GET_ERRORS = 10
+    EVALUATE_TARGET = 'TRAIN'   # TEST or TRAIN
+    EVALUATE_NB_FACTOR = None   # number of features 100 1000 10_000 None=all
+    GET_ERRORS = -1             # -1 => All errors
 else:
     LOAD_ALL = False
     LOAD_TRAIN = False
@@ -506,6 +506,7 @@ def head(domains, nb):
     print()
 
 if LENGTH_FREQ_STATS:
+    start_time = datetime.datetime.now()
     domains = count(train)
     for key, dom in domains.items():
         dom.get_frequencies()
@@ -513,6 +514,7 @@ if LENGTH_FREQ_STATS:
                   '\tmean char length=\t', f"{dom.mean_char_count:.2f}",
                   '\tmean word length=\t', f"{dom.mean_word_count:.2f}")
     print()
+    print('Fit Duration : ' + str(datetime.datetime.now() - start_time))
     head(domains, 10)
 
 # Accès au nombre d'occurrence d'un mots :
@@ -664,7 +666,7 @@ def categorize_all(titles, categorize_function):
             print(f"{threshold:>08} / {total} titles done.'")
             cpt = 0
             threshold += step
-    print('Duration : ' + str(datetime.datetime.now() - start_time))
+    print('Prediction Duration : ' + str(datetime.datetime.now() - start_time))
 
 if EVALUATE_MY_MODEL_POS or EVALUATE_MY_MODEL_SILHOUETTE:
     if EVALUATE_TARGET == 'TEST':
@@ -884,17 +886,25 @@ if EVALUATE_MY_MODEL_SILHOUETTE:
     print('Lettres =', len(first_best['Lettres']))
     print('Linguistique =', len(first_best['Linguistique']))
     if GET_ERRORS is not None:
+        def get_first_or_none(dom, key):
+            if key in first_best[dom]:
+                return f"{first_best[dom][key]:.06f}"
+            else:
+                return f"NOT BEST"
         i = 0
+        f = open('all_errors_mymodel_alltraits.txt', mode='w', encoding='utf8')
         for t in titles:
             if t.guess != t.domain:
-                print('Titre   = ', t.title)
-                print('Support = ', t.support)
-                print('Year    = ', t.year)
-                print('Authors = ', t.authors)
-                print('Domain  = ', t.domain)
-                print('Guess   = ', t.guess)
-                print('Filtered= ')
+                print('Titre   = ', t.title, file=f)
+                print('Support = ', t.support, file=f)
+                print('Year    = ', t.year, file=f)
+                print('Authors = ', t.authors, file=f)
+                print('Domain  = ', t.domain, file=f)
+                print('Guess   = ', t.guess, file=f)
+                print('Filtered= ', file=f)
+                print('\t      WORD         LING     LETTRES  INFO', file=f)
                 for w in t.filtered:
-                    print('\t', w, f"{first_best['Linguistique'][w]:.06f}", f"{first_best['Lettres'][w]:.06f}", f"{first_best['Informatique'][w]:.06f}")
+                    print('\t', f"{w:10s}", get_first_or_none('Linguistique', w), get_first_or_none('Lettres', w), get_first_or_none('Informatique', w), file=f)
                 i += 1
-            if i >= GET_ERRORS: break
+            if GET_ERRORS != -1 and i >= GET_ERRORS: break
+        f.close()
