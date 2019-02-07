@@ -508,8 +508,43 @@ Info on classifier SVM =
 Sklearn SVM on Title + all columns
 --------------------------------------------------------------------------------
 
-???
+Vrai grille
+-----------
 
+Vrai grille 1 :
+{ 'kernel' : ['rbf'], 'gamma' : [0.001, 0.0001], 'C' : [100., 1000.] },
+
+Résultat :
+Fit Duration : 0:23:05.253173
+Predict Duration : 0:00:39.002069
+Confusion matrix
+[[5658  169  404]
+ [ 146 5039  532]
+ [ 427  728 4705]]
+Accuracy = 0.8648921832884097
+Info on best_estimator_ =
+ SVC(C=1000.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma=0.001, kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False) 
+
+Vrai grille 2 :
+{ 'kernel' : ['linear'], 'gamma' : [0.001], 'C' : [1000.] },
+
+Résulat :
+Fit Duration : 0:11:34.189029
+Predict Duration : 0:00:32.046457
+Confusion matrix
+[[5409  177  645]
+ [ 358 4404  955]
+ [ 800  914 4146]]
+Accuracy = 0.7838611859838275
+Info on best_estimator_ =
+ SVC(C=1000.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma=0.001, kernel='linear',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+  
 --------------------------------------------------------------------------------
 Sklearn SVM on Silhouette only
 --------------------------------------------------------------------------------
@@ -1213,3 +1248,72 @@ Nb factors :
 Informatique = 10000
 Lettres = 10000
 Linguistique = 10000
+
+--------------------------------------------------------------------------------
+Derniers tests
+--------------------------------------------------------------------------------
+
+Accuracy = 0.851808176100629
+Kernel = rbf
+Info on classifier SVM =
+ SVC(C=100.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma=0.001, kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+  
+SVC + Silhouette + C=1000
+
+Normal One SVM
+Fit Duration : 0:04:10.656443
+Predict Duration : 0:00:25.804445
+Confusion matrix
+[[5651  144  436]
+ [ 147 5012  558]
+ [ 429  725 4706]]
+Accuracy = 0.8630390835579514
+Kernel = rbf
+Info on classifier SVM =
+ SVC(C=1000.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma=0.001, kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+  
+SVC + Titre + All feature + C=100
+
+col_0            count
+Domaine               
+Informatique  0.349907
+Lettres       0.320989
+Linguistique  0.329103
+col_0            count
+Domaine               
+Informatique  0.349899
+Lettres       0.321035
+Linguistique  0.329066
+Fit Duration : 0:02:39.814082
+Predict Duration : 0:00:50.436889
+Confusion matrix
+[[5510  320  401]
+ [  64 5296  357]
+ [ 409 1116 4335]]
+Accuracy = 0.8502358490566038
+
+DecisionTree + Titre + All feature + min_sample=20
+
+col_0            count
+Domaine               
+Informatique  0.349907
+Lettres       0.320989
+Linguistique  0.329103
+col_0            count
+Domaine               
+Informatique  0.349899
+Lettres       0.321035
+Linguistique  0.329066
+Fit Duration : 0:00:14.648426
+Predict Duration : 0:00:00.421201
+Confusion matrix
+[[4993  426  812]
+ [ 318 3951 1448]
+ [ 891 1499 3470]]
+Accuracy = 0.6971024258760108
