@@ -36,20 +36,23 @@ CONVERT_INPUT = "data/litl-exam.csv"        # 3000 10000 20000 rien
 CONVERT_OUTPUT = "data/sharp53426.csv"      # 3000 10000 20000 53426
 
 # Target of predicting
-DATA_INPUT = "data/sharp53426.csv"          # 3000 10000 20000 53426 53426silhouette
+DATA_INPUT = "data/sharp53426.csv"     # 3000 10000 20000 53426 (=titles) 53426silhouette (=only sil)
 
-# To predict on only title or silhouette (change DATA_INPUT to choose)
+# To predict on only title or silhouette change DATA_INPUT
 DECISION_TREE_PREDICT = False
 DECISION_TREE_EXPORT_DOT = False
 DECISION_TREE_PRINT_CODE = False # must be done with debug. To big :-(
+DECISION_TREE_ERROR_DISPLAY = False
 
 # To predict with SVM on only title or silhouette (change DATA_INPUT to choose)
-SVM_PREDICT = True
+SVM_PREDICT = False # PREDICT, TRUE_GRID and FALSE_GRID ARE EXCLUSIVE
+SVM_PREDICT_C = 1000. # C value, default 100.
 SVM_TRUE_GRID = False
-SVM_FALSE_GRID = True
+SVM_FALSE_GRID = False # house made multitest
+SVM_ERROR_DISPLAY = False # option for SVM_PREDICT only
 
 # To predict on all features
-DECISION_PREDICT_ALL = False
+DECISION_PREDICT_ALL = True
 SVM_PREDICT_ALL = False
 
 #-----------------------------------------------------------
@@ -319,16 +322,23 @@ def get_errors(data, predicted, dataTransformed, nb = 2):
 if DECISION_TREE_PREDICT:
     data = make_panda(DATA_INPUT)
     train, test = make_train_test(data)
-    vec, dt, ohe, trainTransformed = make_model(data, DATA_INPUT.replace('.csv', '.dot'), debug=PRINT_CODE, export=DECISION_TREE_EXPORT_DOT)
+    vec, dt, ohe, trainTransformed = make_model(data, DATA_INPUT.replace('.csv', '.dot'), debug=DECISION_TREE_PRINT_CODE, export=DECISION_TREE_EXPORT_DOT)
     print("Dimension of =", repr(trainTransformed))
     print('Node count =', dt.tree_.node_count)
     print('Max depth of tree=', dt.tree_.max_depth)
-    if PRINT_CODE: # with debug !
+    if DECISION_TREE_PRINT_CODE: # with debug !
         get_code(dt, ohe.columns, data["Domaine"].unique(), "  ", 20)
     start_time = datetime.datetime.now()
     res, acc = predict(vec, dt, test)
     print('Predict Duration : ' + str(datetime.datetime.now() - start_time))
-    get_errors(data, res, trainTransformed, 10)
+    if DECISION_TREE_ERROR_DISPLAY:
+        #get_errors(data, res, trainTransformed, 10)
+        f = open('all_errors_decision_tree.txt', mode='w', encoding='utf8')
+        for i in range(0, len(test["Domaine"])):
+            ground_truth = test["Domaine"].iloc[i]
+            if res[i] != ground_truth:
+                print('?=', f"{res[i]:12}", '=', f"{ground_truth:12}", test.iloc[i]["Titre"], file=f)
+        f.close()
 
 #-----------------------------------------------------------
 # SVM
@@ -350,8 +360,9 @@ def fit_predict(clf, XtrainVec, Ytrain, XtestVec, Ytest):
         print("Info on classifier SVM =\n", clf)
     else:
         print("Info on best_estimator_ =\n", clf.best_estimator_)
+    return res
         
-if SVM_PREDICT:
+if SVM_PREDICT or SVM_TRUE_GRID or SVM_FALSE_GRID:
     print('SVM Predict on', DATA_INPUT)
     data = make_panda(DATA_INPUT)
     Xtrain, Xtest = make_train_test(data)
@@ -378,17 +389,22 @@ if SVM_PREDICT:
         XtestVec = vec.transform(Xtest["Titre"].values.astype('U'))
 
     if SVM_TRUE_GRID:
+        print("True Grid")
         from sklearn.model_selection import GridSearchCV
         param_grid = [
-            { 'kernel' : ['linear'], 'C' : [10., 100., 1000.] },
-            { 'kernel' : ['rbf'], 'gamma' : [0.001, 0.0001], 'C' : [10., 100., 1000.] },
+            #{ 'kernel' : ['linear'], 'C' : [10., 100., 1000.] },
+            #OK { 'kernel' : ['rbf'], 'gamma' : [0.001, 0.0001], 'C' : [100., 1000.] },
+            #OK { 'kernel' : ['linear'], 'gamma' : [0.001], 'C' : [1000.] },
+            { 'kernel' : ['rbf'], 'gamma' : [0.0001], 'C' : [100.] },
             #{ 'kernel' : ['linear'], 'C' : [1., 10., 100., 1000.] },
             #{ 'kernel' : ['rbf'], 'gamma' : [0.001, 0.0001], 'C' : [1., 10., 100., 1000.] },
             #{ 'kernel' : ['poly'], 'gamma' : [0.001, 0.0001],'degree' : [2, 3], 'C' : [1., 10., 100., 1000.] },
         ]
-        clf = GridSearchCV(svm.SVC(), param_grid, cv=5)
+        print(param_grid)
+        clf = GridSearchCV(svm.SVC(), param_grid, cv=2)
         fit_predict(clf, XtrainVec, Ytrain, XtestVec, Ytest)
     if SVM_FALSE_GRID:
+        print("False Grid")
         print('Kernel =    rbf, C =  100 ==========================================')
         clf = svm.SVC(kernel='rbf', gamma=0.001, C=100.)
         fit_predict(clf, XtrainVec, Ytrain, XtestVec, Ytest)
@@ -401,8 +417,16 @@ if SVM_PREDICT:
         print('Kerbel = linear, C = 100 ==========================================')
         clf = svm.SVC(kernel='linear', C=1000.)
         fit_predict(clf, XtrainVec, Ytrain, XtestVec, Ytest)
-    else:
-        clf = svm.SVC(kernel='rbf', gamma=0.001, C=100.)
-        fit_predict(clf, XtrainVec, Ytrain, XtestVec, Ytest)
+    if SVM_PREDICT:
+        print("Normal One SVM")
+        clf = svm.SVC(kernel='rbf', gamma=0.001, C=SVM_PREDICT_C)
+        res = fit_predict(clf, XtrainVec, Ytrain, XtestVec, Ytest)
+        if SVM_ERROR_DISPLAY:
+            f = open('all_errors_svm_sil_C100.txt', mode='w', encoding='utf8')
+            for i in range(0, len(Ytest)):
+                if res[i] != Ytest.iloc[i]:
+                    print('?=', f"{res[i]:12}", '=', f"{Ytest.iloc[i]:12}", Xtest.iloc[i]["Titre"], file=f)
+            f.close()
+
 
 
