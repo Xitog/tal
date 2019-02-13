@@ -2,15 +2,39 @@
 # Import
 #-------------------------------------------------
 
-# standard
+# Standard
 from enum import Enum
 import datetime
-# dynamic code
+import pickle
+
+# Dynamic code
 from importlib import reload
 import whiteboard as wb
 
 #-------------------------------------------------
-# Data model
+# Switches
+#-------------------------------------------------
+
+LOAD_ALL_TITLES = True
+STATS = True
+
+#-------------------------------------------------
+# Save or load results from binary dump
+#-------------------------------------------------
+
+def save(obj, filename):
+    f = open(filename, mode='wb')
+    pickle.dump(obj, f)
+    f.close()
+
+def load(filename):
+    f = open(filename, mode='rb')
+    data = pickle.load(f)
+    f.close()
+    return data
+
+#-------------------------------------------------
+# Data model for Words and Titles
 #-------------------------------------------------
 
 class Word:
@@ -40,6 +64,7 @@ class Title:
         self.typ = typ
         self.domains = domains
         self.authors = authors
+        self.nb = authors.count(',') + 1
         self.text = text
         self.words = []
 
@@ -101,6 +126,7 @@ def split(file_name, nb_total_part = 6):
 #-------------------------------------------------
 
 def read_titles_metadata(file_name):
+    """Create the titles from a TSV file"""
     print('[RUN ] --- read_titles_metadata @' + file_name)
     start_time = datetime.datetime.now()
     print('[INFO] --- Started at', start_time)
@@ -141,6 +167,7 @@ class State(Enum):
     IN_TITLE = 2
 
 def read_update_from_talismane_data(titles, file_name):
+    """Update the titles with Talismane informations"""
     print('[RUN ] --- read_update_from_talismane_data @ ' + file_name)
     start_time = datetime.datetime.now()
     print('[INFO] --- Started at', start_time)
@@ -282,6 +309,7 @@ def explore(titles, lemma):
     return data
 
 def explore2(titles, lemma, ok_lemma_after):
+    """Explore what comes after an expression"""
     print('[RUN ] --- explore2')
     data = {}
     for key, t in titles.items():
@@ -299,10 +327,130 @@ def explore2(titles, lemma, ok_lemma_after):
     return data
 
 def display(data, threshold=0):
+    print('[INFO] --- Display threshold=', threshold)
     for key in sorted(data, key=data.get, reverse=True):
         value = data[key]
         if value >= threshold:
             print(f"{value:05d} {key}")
+    print()
+
+
+def gets(arr, idx):
+    if idx < len(arr):
+        return arr[idx]
+    else:
+        return None
+
+def match(titles, elems):
+    """match even there is not all elem"""
+    print('[RUN ] --- match')
+    data = {}
+    for k, t in titles.items():
+        for wc in range(len(t.words)):
+            w = t.words[wc]
+            if w.lemma == elems[0]:
+                res = True
+                for ec in range(1, len(elems)):
+                    wx = gets(t.words, wc + ec)
+                    if wx is None or wx.lemma != elems[ec]:
+                        res = False
+                        break
+                if res:
+                    data[k] = t
+                break
+    print('[END ] --- match')
+    return data
+
+#-------------------------------------------------
+# Global information
+#-------------------------------------------------
+
+def stats(titles, attr):
+    values = {}
+    for k, t in titles.items():
+        val = getattr(t, attr)
+        if val in values:
+            values[val] += 1
+        else:
+            values[val] = 1
+    return values
+
+# nb = stats(titles, 'nb')
+
+def longueurs(titles):
+    lng = {}
+    for k, t in titles.items():
+        cpt = 0
+        for w in t.words:
+            if w.pos != 'PONCT':
+                cpt += 1
+        if cpt in lng:
+            lng[cpt] += 1
+        else:
+            lng[cpt] = 1
+    return lng
+
+def nb_with(titles, x, at_least = True):
+    cpt = 0
+    for k, t in titles.items():
+        for w in t.words:
+            if w.lemma == x or w.form == x:
+                cpt += 1
+                if at_least: break
+    return cpt
+
+# nb = nb_with(titles, ':')
+
+def at_least_one_verb(titles):
+    cpt = 0
+    for k, t in titles.items():
+        for w in t.words:
+            if w.pos in ['V', 'VIMP', 'VS']:
+                 if w.info.find('t=') != -1:
+                     cpt += 1
+                     break
+    return cpt
+
+def nb_true_phrases(titles):
+    cpt = 0
+    tenses = {}
+    for k, t in titles.items():
+        for w in t.words:
+            if w.pos == 'V':
+                i = w.info.find('t=')
+                if i != -1:
+                    cpt += 1
+                    t = w.info[i + 2]
+                    if t not in tenses:
+                        tenses[t] = 1
+                    else:
+                        tenses[t] += 1
+                    #print(w.form, t)
+    return cpt, tenses
+
+# key can be a string !
+def d2s(dic):
+    total = 0
+    kmax = None
+    kmin = None
+    for k in dic:
+        total += dic[k]
+    print('Total =', total)
+    print()
+    for k in sorted(dic, key=dic.get, reverse=True):
+        print(f"{k:5d} {dic[k]:8d} {dic[k]/total:.3f}")
+        if kmax is None: kmax = k
+        elif kmax < k: kmax = k
+        if kmin is None: kmin = k
+        elif kmin > k: kmin = k
+    print()
+    print('Kmin =', kmin)
+    print('Kmax =', kmax)
+    print()
+    cumul = 0
+    for k in sorted(dic):
+        cumul += dic[k]/total
+        print(f"{k:5d} {dic[k]:8d} {dic[k]/total:.3f} {cumul:.3f}")
 
 #-------------------------------------------------
 # Write only title, one title per line
@@ -311,27 +459,36 @@ def display(data, threshold=0):
 if __name__ == '__main__':
     # split(r'data\titles_339687.txt', 1000)
     # split('titres-articles-HAL.tal', 6)
-    # Read meta data and output titles only
-    titles = read_titles_metadata(r'data\total-articles-HAL.tsv')
-    # output_titles(titles)
-    # output_titles_multifiles(titles, 5)
-    # Read Talismane data
-    files = [r"data\output_tal_01.txt",
-             r"data\output_tal_02.txt",
-             r"data\output_tal_03.txt",
-             r"data\output_tal_04.txt",
-             r"data\output_tal_05.txt",
-             r"data\output_tal_06.txt"]
-    for file in files:
-        read_update_from_talismane_data(titles, file)
+    titles = {}
+    if LOAD_ALL_TITLES:
+        # Read meta data
+        titles = read_titles_metadata(r'data\total-articles-HAL.tsv')
+        # Output titles only
+        #output_titles(titles)
+        #output_titles_multifiles(titles, 5)
+        # Read Talismane data
+        files = [r"data\output_tal_01.txt",
+                 r"data\output_tal_02.txt",
+                 r"data\output_tal_03.txt",
+                 r"data\output_tal_04.txt",
+                 r"data\output_tal_05.txt",
+                 r"data\output_tal_06.txt"]
+        for file in files:
+            read_update_from_talismane_data(titles, file)
     # Info on titles
     # if len(titles) > 0:
     #    t = titles[list(titles.keys())[0]]
     #    print(t)
     #info(titles)
     #data = explore(titles, "outil")
-    data = explore2(titles, "outil", ['de', 'pour'])
-    display(data, 10)
+    #data = explore2(titles, "outil", ['de', 'pour'])
+    #display(data, 10)
+    #data = explore2(titles, "problème", ['de'])
+    #display(data, 10)
+    if STATS:
+        years = stats(titles, 'year')
+        supports = stats(titles, 'typ')
+        nb = stats(titles, 'nb')
 
 # 339687 titres
 
@@ -377,4 +534,44 @@ if __name__ == '__main__':
 #   root
 #   sub
 #   suj
+
+# http://joliciel-informatique.github.io/talismane/#tagset
+# ADJ	 Adjective
+# ADV	 Adverb
+# ADVWH	 Interrogative adverb
+# CC	 Coordinating conjunction
+# CLO	 Clitic (object)
+# CLR	 Clitic (reflexive)
+# CLS	 Clitic (subject)
+# CS	 Subordinating conjunction
+# DET	 Determinent
+# DETWH	 Interrogative determinent
+# ET	 Foreign word
+# I	 Interjection
+# NC	 Common noun
+# NPP	 Proper noun
+# P	 Preposition
+# P+D	 Preposition and determinant combined (e.g. "du")
+# P+PRO	 Preposition and pronoun combined (e.g. "duquel")
+# PONCT	 Punctuation
+# PRO	 Pronoun
+# PROREL Relative pronoun
+# PROWH	 Interrogative pronoun
+# V	 Indicative verb
+# VIMP	 Imperative verb
+# VINF	 Infinitive verb
+# VPP	 Past participle
+# VPR	 Present participle
+# VS	 Subjunctive verb
+
+# g=m|f: gender = male or female
+# n=p|s: number = plural or singluar
+# p=1|2|3|12|23|123: person = 1st, 2nd, 3rd (or a combination thereof if several can apply)
+# poss=p|s: possessor number = plural or singular
+# t=pst|past|imp|fut|cond: tense = present, past, imperfect, future or conditional. Verb mood is not included, since it is already in the postag.
+# P = présent/pst
+# J = past
+# I = imparfait
+# F = futur
+# C = cond
 
