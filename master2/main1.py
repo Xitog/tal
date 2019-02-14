@@ -428,6 +428,16 @@ def nb_true_phrases(titles):
                     #print(w.form, t)
     return cpt, tenses
 
+#-----------------------------------------------------------
+# Info
+#-----------------------------------------------------------
+
+def dump_text(titles, filename):
+    f = open(filename, mode='w', encoding='utf8')
+    for k in titles:
+        print(titles[k].text, file=f)
+    f.close()
+
 # key can be a string !
 def d2s(dic):
     total = 0
@@ -451,6 +461,18 @@ def d2s(dic):
     for k in sorted(dic):
         cumul += dic[k]/total
         print(f"{k:5d} {dic[k]:8d} {dic[k]/total:.3f} {cumul:.3f}")
+
+#-------------------------------------------------
+# Combined
+#-------------------------------------------------
+
+def ana(titles, pattern, name):
+    if not isinstance(pattern, list):
+        pattern = pattern.split(" ")
+    data = match(titles, pattern)
+    print(len(data))
+    save(data, name + ".bin")
+    dump_text(data, name + ".txt")
 
 #-------------------------------------------------
 # Write only title, one title per line

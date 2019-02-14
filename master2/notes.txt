@@ -1,3 +1,65 @@
+--------------------------------
+Notes sur le projet de recherche
+--------------------------------
+
+---------------
+14 février 2019
+---------------
+
+NG
+
+Pattern lexico-syntaxico-sémantique
+
+le problème de => 306 : surtout au début. une introduction ?
+    23 : le problème de
+    Science et histoire chez Hobbes : le problème de la méthode
+    De Schopenhauer à Nietzsche et Bergson : le problème de la volonté comme passivité
+    La Princesse de Clèves : le problème de l'originalité dans la construction de l'identité
+        PLSS    <sujet/concept> : le problème de <précision/facette>
+
+le cas de => 3099 : une instanciation d'un sujet ?
+    Les Dominicains et la confession royale à la Renaissance : le cas de Guillaume Petit\, confesseur de Louis XII et de François Ier
+    Exposer des objets sonores : le cas des chansons de Brassens
+        PLSS    <sujet/concept> : le cas de <instance>
+
+un exemple de => 361
+    L’épée à poignée métallique de Niffer (Haut-Rhin) : un exemple de production occidentale au Bronze moyen
+    La serre dans le roman zolien: un exemple d'insularisation de l'érotisme fin-de-siècle
+    Un exemple de valorisation : la création d'entreprise par un chercheur au statut de fonctionnaire. Approches des spécificités juridiques françaises.
+    Un exemple de gouvernance rénovée : la lettre de mission des inspecteurs de l’enseignement primaire français.
+    Les romans de Juan Benet : un exemple de géopoésie
+        PLSS    <instance> : un exemple de <sujet/concept>
+                un exemple de <sujet/concept> : <instance>
+    Le discours patronal\, un exemple de discours économique ?
+    La coopération intercommunale depuis la loi du 12 juillet 1999\, un exemple de simplification réussie du droit ?
+        PLSS    <instance>, un exemple de <sujet/concept> ?
+
+le exemple de => 1776
+    Saisir la culture d'avocat général au Parlement de Paris : l'exemple de Pierre VI Gilbert de Voisins (1684-1769)
+    Du paradoxe au style paradoxal : l'exemple des Caractères de La Bruyère
+    Géothermie et planification énergétique territoriale : l'exemple du schéma régional de l'île-de-France
+        PLSS    <sujet/concept> : l'exemple de <instance>
+
+la question de => 727
+    Parler au peuple\, parler au roi : la question des harangues (XVIIe-XVIIIe siècles)
+    Conditionnel contrefactuel ou supposition : la question du possible chez Musil et Wittgenstein
+        PLSS    <instance> : la question de <sujet/concept>
+          ou    <sujet/concept> : la question de <précision>
+    La question de l'Orient hellénisé
+        PLSS    La question de <sujet/concept> => "présentatif"
+
+Exemples :
+    ana(titles, "un exemple de", "unexde")
+    ana(titles, "le exemple de", "leexde")
+    ana(titles, "la question de", "laquestionde")
+
+Exemples de titres :
+    La question des langues avant 1200
+
+---------------
+7 novembre 2018
+---------------
+
 1530 dyncode ok
 
 00179 aide
