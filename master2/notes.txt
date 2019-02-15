@@ -10,17 +10,25 @@ NG
 
 Pattern lexico-syntaxico-sémantique
 
+cas
+étude
+exemple
+problème
+question
+
 le problème de => 306 : surtout au début. une introduction ?
     23 : le problème de
     Science et histoire chez Hobbes : le problème de la méthode
     De Schopenhauer à Nietzsche et Bergson : le problème de la volonté comme passivité
     La Princesse de Clèves : le problème de l'originalité dans la construction de l'identité
         PLSS    <sujet/concept> : le problème de <précision/facette>
+{2: 17, 0: 106, 6: 23, 10: 5, 4: 32, 12: 3, 9: 8, 5: 25, 7: 21, 3: 29, 8: 11, 14: 4, 1: 10, 11: 7, 13: 2, 15: 1, 29: 1, 19: 1}
 
 le cas de => 3099 : une instanciation d'un sujet ?
     Les Dominicains et la confession royale à la Renaissance : le cas de Guillaume Petit\, confesseur de Louis XII et de François Ier
     Exposer des objets sonores : le cas des chansons de Brassens
         PLSS    <sujet/concept> : le cas de <instance>
+{7: 328, 20: 18, 6: 319, 10: 303, 4: 124, 5: 223, 15: 100, 13: 155, 0: 42, 9: 321, 11: 256, 8: 335, 12: 199, 14: 143, 16: 62, 21: 11, 17: 41, 18: 34, 3: 23, 24: 7, 19: 25, 2: 6, 23: 7, 22: 7, 38: 1, 26: 1, 33: 2, 48: 1, 30: 1, 25: 3, 27: 1}
 
 un exemple de => 361
     L’épée à poignée métallique de Niffer (Haut-Rhin) : un exemple de production occidentale au Bronze moyen
@@ -33,12 +41,14 @@ un exemple de => 361
     Le discours patronal\, un exemple de discours économique ?
     La coopération intercommunale depuis la loi du 12 juillet 1999\, un exemple de simplification réussie du droit ?
         PLSS    <instance>, un exemple de <sujet/concept> ?
+{18: 3, 6: 21, 19: 3, 27: 4, 10: 13, 13: 11, 7: 27, 11: 14, 3: 16, 4: 15, 0: 110, 9: 14, 8: 26, 2: 9, 24: 1, 12: 17, 5: 25, 15: 5, 1: 7, 14: 11, 20: 3, 26: 2, 17: 3, 23: 1}
 
 le exemple de => 1776
     Saisir la culture d'avocat général au Parlement de Paris : l'exemple de Pierre VI Gilbert de Voisins (1684-1769)
     Du paradoxe au style paradoxal : l'exemple des Caractères de La Bruyère
     Géothermie et planification énergétique territoriale : l'exemple du schéma régional de l'île-de-France
         PLSS    <sujet/concept> : l'exemple de <instance>
+{11: 114, 8: 209, 10: 168, 18: 23, 6: 202, 12: 136, 19: 20, 5: 90, 15: 57, 20: 17, 9: 180, 16: 56, 7: 186, 3: 6, 13: 84, 4: 75, 26: 3, 14: 74, 21: 10, 22: 6, 17: 38, 25: 1, 0: 11, 24: 3, 2: 2, 27: 1, 23: 2, 28: 1, 1: 1}
 
 la question de => 727
     Parler au peuple\, parler au roi : la question des harangues (XVIIe-XVIIIe siècles)
@@ -47,6 +57,7 @@ la question de => 727
           ou    <sujet/concept> : la question de <précision>
     La question de l'Orient hellénisé
         PLSS    La question de <sujet/concept> => "présentatif"
+{9: 25, 3: 41, 6: 49, 8: 35, 15: 5, 0: 289, 5: 49, 12: 17, 20: 4, 16: 5, 11: 17, 4: 48, 17: 4, 14: 11, 7: 28, 1: 25, 10: 23, 2: 33, 13: 6, 23: 1, 21: 1, 18: 3, 26: 1, 19: 5, 28: 1, 27: 1}
 
 Exemples :
     ana(titles, "un exemple de", "unexde")
@@ -55,6 +66,11 @@ Exemples :
 
 Exemples de titres :
     La question des langues avant 1200
+
+étude de => 7198
+    Étude d'un dispositif innovant de formation en Master EEE
+        PLSS    étude de <sujet>
+{15: 140, 0: 3151, 12: 206, 27: 8, 9: 291, 8: 318, 5: 216, 10: 252, 3: 443, 16: 110, 13: 145, 17: 96, 11: 248, 22: 28, 4: 170, 7: 320, 19: 63, 25: 17, 18: 90, 6: 288, 2: 146, 20: 53, 21: 28, 1: 138, 14: 140, 28: 11, 23: 15, 30: 7, 26: 11, 24: 28, 43: 1, 31: 4, 29: 5, 45: 1, 39: 1, 40: 1, 47: 1, 90: 1, 42: 1, 36: 2, 41: 1, 33: 1, 44: 1}
 
 ---------------
 7 novembre 2018

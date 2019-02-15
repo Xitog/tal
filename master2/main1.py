@@ -345,7 +345,9 @@ def match(titles, elems):
     """match even there is not all elem"""
     print('[RUN ] --- match')
     data = {}
+    where = {}
     for k, t in titles.items():
+        nb = 0
         for wc in range(len(t.words)):
             w = t.words[wc]
             if w.lemma == elems[0]:
@@ -357,9 +359,14 @@ def match(titles, elems):
                         break
                 if res:
                     data[k] = t
+                    if nb not in where:
+                        where[nb] = 1
+                    else:
+                        where[nb] += 1
                 break
+            nb += 1
     print('[END ] --- match')
-    return data
+    return data, where
 
 #-------------------------------------------------
 # Global information
@@ -466,13 +473,53 @@ def d2s(dic):
 # Combined
 #-------------------------------------------------
 
+# ana(titles, "étude de", "étudede")
 def ana(titles, pattern, name):
     if not isinstance(pattern, list):
         pattern = pattern.split(" ")
-    data = match(titles, pattern)
+    data, where = match(titles, pattern)
     print(len(data))
+    print('Position :')
+    print(where)
     save(data, name + ".bin")
     dump_text(data, name + ".txt")
+
+#-------------------------------------------------
+# Lexique
+#-------------------------------------------------
+
+def lexique(titles, only=None):
+    words = {}
+    for k, t in titles.items():
+        for w in t.words:
+            o = w.lemma if w.lemma != '_' else w.form
+            if only is not None and w.pos != only: continue
+            if o not in words:
+                words[o] = 1
+            else:
+                words[o] += 1
+    return words
+
+
+def total(data):
+    cpt = 0
+    for k in data:
+        cpt += data[k]
+    return cpt
+
+
+def display(data, nb, maxx):
+    print("Total = ", nb)
+    for k in sorted(data, key=data.get, reverse=True):
+        print(f"{k:14} {data[k]:8d} {data[k]/nb:.3f}")
+        maxx -= 1
+        if maxx == 0: break
+
+def go(titles, maxx = 30):
+    words = lexique(titles, 'NC')
+    nb = total(words)
+    display(words, nb, maxx)
+    return words
 
 #-------------------------------------------------
 # Write only title, one title per line
