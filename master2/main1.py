@@ -11,12 +11,17 @@ import pickle
 from importlib import reload
 import whiteboard as wb
 
+# External lib
+import xlwt
+
 #-------------------------------------------------
 # Switches
 #-------------------------------------------------
 
-LOAD_ALL_TITLES = True
-STATS = True
+LOAD_TITLES     = 'text' #'binary'
+MAKE_STATS      = False
+SEARCH_PATTERN  = 'le cas de' # None
+DO_BINARY_SAVE  = False # 541 Mo, too slow to read!
 
 #-------------------------------------------------
 # Save or load results from binary dump
@@ -308,9 +313,9 @@ def explore(titles, lemma):
     print('[END ] --- end explore.\n')
     return data
 
-def explore2(titles, lemma, ok_lemma_after):
+def explore_after(titles, lemma, ok_lemma_after):
     """Explore what comes after an expression"""
-    print('[RUN ] --- explore2')
+    print('[RUN ] --- explore_after')
     data = {}
     for key, t in titles.items():
         for iw in range(len(t.words)):
@@ -340,33 +345,6 @@ def gets(arr, idx):
         return arr[idx]
     else:
         return None
-
-def match(titles, elems):
-    """match even there is not all elem"""
-    print('[RUN ] --- match')
-    data = {}
-    where = {}
-    for k, t in titles.items():
-        nb = 0
-        for wc in range(len(t.words)):
-            w = t.words[wc]
-            if w.lemma == elems[0]:
-                res = True
-                for ec in range(1, len(elems)):
-                    wx = gets(t.words, wc + ec)
-                    if wx is None or wx.lemma != elems[ec]:
-                        res = False
-                        break
-                if res:
-                    data[k] = t
-                    if nb not in where:
-                        where[nb] = 1
-                    else:
-                        where[nb] += 1
-                break
-            nb += 1
-    print('[END ] --- match')
-    return data, where
 
 #-------------------------------------------------
 # Global information
@@ -469,20 +447,78 @@ def d2s(dic):
         cumul += dic[k]/total
         print(f"{k:5d} {dic[k]:8d} {dic[k]/total:.3f} {cumul:.3f}")
 
+def dump_excel(titles, filename):
+    print('[RUN ] --- dump_excel to', filename)
+    book = xlwt.Workbook()
+    sheet1 = book.add_sheet('Results')
+    nb = 0
+    for key, t in titles.items():
+        row = sheet1.row(nb)
+        for index, word in enumerate(t.words):
+            row.write(index, word.form)
+        nb += 1
+    book.save(filename)
+    print('[END ] --- dump_excel')
+
 #-------------------------------------------------
 # Combined
 #-------------------------------------------------
 
-# ana(titles, "étude de", "étudede")
-def ana(titles, pattern, name):
-    if not isinstance(pattern, list):
-        pattern = pattern.split(" ")
-    data, where = match(titles, pattern)
-    print(len(data))
-    print('Position :')
-    print(where)
-    save(data, name + ".bin")
-    dump_text(data, name + ".txt")
+class Search:
+
+    def __init__(self, titles, pattern, name, output="text"):
+        self.titles = titles
+        if isinstance(pattern, str): self.pattern = pattern.split(' ')
+        elif isinstance(pattern, list): self.pattern = pattern
+        else: raise Exception('Pattern must be a list or a string')
+        self.name = name
+        self.output = output
+        self.data = None
+        self.where = None
+        
+    def run(self):
+        print('[RUN ] --- Search#run')
+        print('[INFO] --- Matching')
+        self.match()
+        print('[INFO] --- Results')
+        print('[INFO] Length:', len(self.data))
+        print('[INFO] Position :')
+        print('...  ', self.where)
+        total = 0
+        nb = 0
+        for key, item in self.where.items(): 
+            total += key * item
+            nb += item
+        print('[INFO] Average position :', total / nb)
+        if 'bin' in self.output: save(self.data, self.name + ".bin")
+        if 'text' in self.output: dump_text(self.data, self.name + ".txt")
+        if 'excel' in self.output: dump_excel(self.data, self.name + ".xls")
+        print('[END ] --- Search#run')
+
+
+    def match(self):
+        """match even there is not all elem"""
+        self.data = {}
+        self.where = {}
+        for k, t in self.titles.items():
+            nb = 0
+            for wc in range(len(t.words)):
+                w = t.words[wc]
+                if w.lemma == self.pattern[0]:
+                    res = True
+                    for ec in range(1, len(self.pattern)):
+                        wx = gets(t.words, wc + ec)
+                        if wx is None or wx.lemma != self.pattern[ec]:
+                            res = False
+                            break
+                    if res:
+                        self.data[k] = t
+                        if nb not in self.where:
+                            self.where[nb] = 1
+                        else:
+                            self.where[nb] += 1
+                    break
+                nb += 1
 
 #-------------------------------------------------
 # Lexique
@@ -529,7 +565,7 @@ if __name__ == '__main__':
     # split(r'data\titles_339687.txt', 1000)
     # split('titres-articles-HAL.tal', 6)
     titles = {}
-    if LOAD_ALL_TITLES:
+    if LOAD_TITLES == 'text':
         # Read meta data
         titles = read_titles_metadata(r'data\total-articles-HAL.tsv')
         # Output titles only
@@ -544,103 +580,32 @@ if __name__ == '__main__':
                  r"data\output_tal_06.txt"]
         for file in files:
             read_update_from_talismane_data(titles, file)
+    elif LOAD_TITLES == 'binary':
+        print('[INFO] Load binary save for all titles.')
+        titles = load("titles.bin")
+    else:
+        raise Exception("Titles must be loaded from text or binary.")
+    if DO_BINARY_SAVE:
+        print('[INFO] Do binary save for all titles.') 
+        save(titles, "titles.bin")
     # Info on titles
     # if len(titles) > 0:
     #    t = titles[list(titles.keys())[0]]
     #    print(t)
     #info(titles)
+    if SEARCH_PATTERN is not None:
+        s = Search(titles, SEARCH_PATTERN, 'roguetwo', 'excel').run()
     #data = explore(titles, "outil")
     #data = explore2(titles, "outil", ['de', 'pour'])
     #display(data, 10)
     #data = explore2(titles, "problème", ['de'])
     #display(data, 10)
-    if STATS:
+    if MAKE_STATS:
         years = stats(titles, 'year')
         supports = stats(titles, 'typ')
         nb = stats(titles, 'nb')
-
+        
 # 339687 titres
 
-# http://joliciel-informatique.github.io/talismane/#section2.3.5
-# The CoNLL format used by Talismane outputs the following information in each row:
 
-# The token number (starting at 1 for the first token)
-# The original word form (or _ for an empty token)
-# The lemma found in the lexicon (or _ when unknown)
-# The part-of-speech tag
-# The grammatical category found in the lexicon
-# The additional morpho-syntaxic information found in the lexicon.
-# Additional morpho-syntaxic information:
-#   g=m|f: gender = male or female
-#   n=p|s: number = plural or singluar
-#   p=1|2|3|12|23|123: person = 1st, 2nd, 3rd (or a combination thereof if several can apply)
-#   poss=p|s: possessor number = plural or singular
-#   t=pst|past|imp|fut|cond: tense = present, past, imperfect, future or conditional. Verb mood is not included, since it is already in the postag.
-# The token number of this token's governor (or 0 when the governor is the root)
-# The label of the dependency governing this token
-# Labels :
-#   _
-#   a_obj
-#   aff
-#   arg
-#   ato
-#   ats
-#   aux_caus
-#   aux_pass
-#   aux_tps
-#   comp
-#   coord
-#   de_obj
-#   dep
-#   dep_coord
-#   det
-#   mod
-#   mod_rel
-#   obj
-#   p_obj
-#   ponct
-#   prep
-#   root
-#   sub
-#   suj
-
-# http://joliciel-informatique.github.io/talismane/#tagset
-# ADJ	 Adjective
-# ADV	 Adverb
-# ADVWH	 Interrogative adverb
-# CC	 Coordinating conjunction
-# CLO	 Clitic (object)
-# CLR	 Clitic (reflexive)
-# CLS	 Clitic (subject)
-# CS	 Subordinating conjunction
-# DET	 Determinent
-# DETWH	 Interrogative determinent
-# ET	 Foreign word
-# I	 Interjection
-# NC	 Common noun
-# NPP	 Proper noun
-# P	 Preposition
-# P+D	 Preposition and determinant combined (e.g. "du")
-# P+PRO	 Preposition and pronoun combined (e.g. "duquel")
-# PONCT	 Punctuation
-# PRO	 Pronoun
-# PROREL Relative pronoun
-# PROWH	 Interrogative pronoun
-# V	 Indicative verb
-# VIMP	 Imperative verb
-# VINF	 Infinitive verb
-# VPP	 Past participle
-# VPR	 Present participle
-# VS	 Subjunctive verb
-
-# g=m|f: gender = male or female
-# n=p|s: number = plural or singluar
-# p=1|2|3|12|23|123: person = 1st, 2nd, 3rd (or a combination thereof if several can apply)
-# poss=p|s: possessor number = plural or singular
-# t=pst|past|imp|fut|cond: tense = present, past, imperfect, future or conditional. Verb mood is not included, since it is already in the postag.
-# P = présent/pst
-# J = past
-# I = imparfait
-# F = futur
-# C = cond
 
