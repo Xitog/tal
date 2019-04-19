@@ -7,12 +7,15 @@ from enum import Enum
 import datetime
 import pickle
 
+# External lib
+import xlwt
+
+# Project
+from disciplines import domain
+
 # Dynamic code
 from importlib import reload
 import whiteboard as wb
-
-# External lib
-import xlwt
 
 #-------------------------------------------------
 # Switches
@@ -20,7 +23,12 @@ import xlwt
 
 LOAD_TITLES     = 'text' #'binary'
 MAKE_STATS      = False
-SEARCH_PATTERN  = 'le cas de' # None
+SEARCH_PATTERN  = [      # []
+    "le cas de", "un cas de",
+    "le problème de", "un problème de",
+    "le exemple de", "un exemple de",
+    "la question de", "une question de",
+    "le étude de", "une étude de"]
 DO_BINARY_SAVE  = False # 541 Mo, too slow to read!
 
 #-------------------------------------------------
@@ -454,8 +462,10 @@ def dump_excel(titles, filename):
     nb = 0
     for key, t in titles.items():
         row = sheet1.row(nb)
+        row.write(0, domain(t.domains))
+        row.write(1, t.nb)
         for index, word in enumerate(t.words):
-            row.write(index, word.form)
+            row.write(index + 2, word.form)
         nb += 1
     book.save(filename)
     print('[END ] --- dump_excel')
@@ -477,7 +487,7 @@ class Search:
         self.where = None
         
     def run(self):
-        print('[RUN ] --- Search#run')
+        print('[RUN ] --- Search#run', ' '.join(self.pattern))
         print('[INFO] --- Matching')
         self.match()
         print('[INFO] --- Results')
@@ -489,7 +499,10 @@ class Search:
         for key, item in self.where.items(): 
             total += key * item
             nb += item
-        print('[INFO] Average position :', total / nb)
+        if nb > 0:
+            print('[INFO] Average position :', total / nb)
+        else:
+            print('[WARN] Nb is zero ! total=', total, 'nb=', nb)
         if 'bin' in self.output: save(self.data, self.name + ".bin")
         if 'text' in self.output: dump_text(self.data, self.name + ".txt")
         if 'excel' in self.output: dump_excel(self.data, self.name + ".xls")
@@ -593,8 +606,10 @@ if __name__ == '__main__':
     #    t = titles[list(titles.keys())[0]]
     #    print(t)
     #info(titles)
-    if SEARCH_PATTERN is not None:
-        s = Search(titles, SEARCH_PATTERN, 'roguetwo', 'excel').run()
+    if SEARCH_PATTERN is not None and len(SEARCH_PATTERN) > 0:
+        for pattern in SEARCH_PATTERN:
+            s = Search(titles, pattern, pattern.replace(' ', '_'), 'excel').run()
+            print()
     #data = explore(titles, "outil")
     #data = explore2(titles, "outil", ['de', 'pour'])
     #display(data, 10)
