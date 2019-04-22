@@ -23,12 +23,15 @@ import whiteboard as wb
 
 LOAD_TITLES     = 'text' #'binary'
 MAKE_STATS      = False
+MAKE_POS_STATS  = True
+MAKE_VERB_STATS = True
 SEARCH_PATTERN  = [      # []
     "le cas de", "un cas de",
     "le problème de", "un problème de",
     "le exemple de", "un exemple de",
     "la question de", "une question de",
     "le étude de", "une étude de"]
+PATTERN_OUTPUT  = None # 'excel'
 DO_BINARY_SAVE  = False # 541 Mo, too slow to read!
 
 #-------------------------------------------------
@@ -358,7 +361,7 @@ def gets(arr, idx):
 # Global information
 #-------------------------------------------------
 
-def stats(titles, attr):
+def title_stats(titles, attr):
     values = {}
     for k, t in titles.items():
         val = getattr(t, attr)
@@ -368,7 +371,18 @@ def stats(titles, attr):
             values[val] = 1
     return values
 
-# nb = stats(titles, 'nb')
+
+def word_stats(titles, attr):
+    values = {}
+    for k, t in titles.items():
+        for w in t.words:
+            val = getattr(w, attr)
+            if val in values:
+                values[val] += 1
+            else:
+                values[val] = 1
+    return values
+
 
 def longueurs(titles):
     lng = {}
@@ -394,32 +408,97 @@ def nb_with(titles, x, at_least = True):
 
 # nb = nb_with(titles, ':')
 
-def at_least_one_verb(titles):
-    cpt = 0
-    for k, t in titles.items():
-        for w in t.words:
-            if w.pos in ['V', 'VIMP', 'VS']:
-                 if w.info.find('t=') != -1:
-                     cpt += 1
-                     break
-    return cpt
+#def at_least_one_verb(titles):
+#    cpt = 0
+#    for k, t in titles.items():
+#        for w in t.words:
+#            if w.pos in ['V', 'VIMP', 'VS']:
+#                 if w.info.find('t=') != -1:
+#                     cpt += 1
+#                     break
+#    return cpt
 
-def nb_true_phrases(titles):
-    cpt = 0
+#def nb_true_phrases(titles):
+#    cpt = 0
+#    tenses = {}
+#    for k, t in titles.items():
+#        for w in t.words:
+#            if w.pos == 'V':
+#                i = w.info.find('t=')
+#                if i != -1:
+#                    cpt += 1
+#                    t = w.info[i + 2]
+#                    if t not in tenses:
+#                        tenses[t] = 1
+#                    else:
+#                        tenses[t] += 1
+#                    #print(w.form, t)
+#    return cpt, tenses
+
+def count_all_verbs(titles):
+    combi = []
+    combi_count = []
+    for k, t in titles.items():
+        count = {
+            'VPP'  : 0,
+            'VINF' : 0,
+            'V'    : 0,
+            'VPR'  : 0,
+            'VS'   : 0,
+            'VIMP' : 0
+        }
+        for w in t.words:
+            if w.pos in count:
+                count[w.pos] += 1
+        if count in combi:
+            index = combi.index(count)
+            combi_count[index] += 1
+        else:
+            combi.append(count)
+            combi_count.append(1)
+    sortdict = {}
+    for index, value in enumerate(combi_count):
+        sortdict[index] = value
+    # Output console
+    for index in sorted(sortdict, key=sortdict.get, reverse=True):
+        print("i=", index, "nb=", combi_count[index], "combi=", combi[index])
+    # Output excel
+    book = xlwt.Workbook()
+    sheet1 = book.add_sheet('Verbs')
+    header = sheet1.row(0)
+    header.write(0, 'NB')
+    header.write(1, 'VPP')
+    header.write(2, 'VINF')
+    header.write(3, 'V')
+    header.write(4, 'VPR')
+    header.write(5, 'VS')
+    header.write(6, 'VIMP')
+    irow = 1
+    for index in sorted(sortdict, key=sortdict.get, reverse=True):
+        row = sheet1.row(irow)
+        icol = 0
+        row.write(icol, combi_count[index])
+        icol += 1
+        for cpt, val in combi[index].items():
+            row.write(icol, val)
+            icol += 1
+        irow += 1
+    book.save('verbs.xls')
+
+def count_all_tenses(titles, mode='V'):
     tenses = {}
     for k, t in titles.items():
         for w in t.words:
-            if w.pos == 'V':
+            if w.pos == mode:
                 i = w.info.find('t=')
                 if i != -1:
-                    cpt += 1
                     t = w.info[i + 2]
                     if t not in tenses:
                         tenses[t] = 1
                     else:
                         tenses[t] += 1
-                    #print(w.form, t)
-    return cpt, tenses
+    for k in sorted(tenses, key=tenses.get, reverse=True):
+        print(k, tenses[k])
 
 #-----------------------------------------------------------
 # Info
@@ -483,8 +562,10 @@ class Search:
         else: raise Exception('Pattern must be a list or a string')
         self.name = name
         self.output = output
-        self.data = None
-        self.where = None
+        self.data = {}
+        self.where = {}
+        self.after_what_pos = { '$TART' : 0}
+        self.after_what_form = {}
         
     def run(self):
         print('[RUN ] --- Search#run', ' '.join(self.pattern))
@@ -492,6 +573,7 @@ class Search:
         self.match()
         print('[INFO] --- Results')
         print('[INFO] Length:', len(self.data))
+        #---
         print('[INFO] Position :')
         print('...  ', self.where)
         total = 0
@@ -503,16 +585,19 @@ class Search:
             print('[INFO] Average position :', total / nb)
         else:
             print('[WARN] Nb is zero ! total=', total, 'nb=', nb)
-        if 'bin' in self.output: save(self.data, self.name + ".bin")
-        if 'text' in self.output: dump_text(self.data, self.name + ".txt")
-        if 'excel' in self.output: dump_excel(self.data, self.name + ".xls")
+        #---
+        print('[INFO] What before :')
+        print('... ', self.after_what_pos)
+        print('... ', self.after_what_form)
+        if self.output is not None:
+            if 'bin' in self.output: save(self.data, self.name + ".bin")
+            if 'text' in self.output: dump_text(self.data, self.name + ".txt")
+            if 'excel' in self.output: dump_excel(self.data, self.name + ".xls")
         print('[END ] --- Search#run')
 
 
     def match(self):
         """match even there is not all elem"""
-        self.data = {}
-        self.where = {}
         for k, t in self.titles.items():
             nb = 0
             for wc in range(len(t.words)):
@@ -530,6 +615,19 @@ class Search:
                             self.where[nb] = 1
                         else:
                             self.where[nb] += 1
+                        if nb > 0:
+                            pos = t.words[nb - 1].pos
+                            form = t.words[nb - 1].form
+                            if pos in self.after_what_pos:
+                                self.after_what_pos[pos] += 1
+                            else:
+                                self.after_what_pos[pos] = 1
+                            if form in self.after_what_form:
+                                self.after_what_form[form] += 1
+                            else:
+                                self.after_what_form[form] = 1
+                        else:
+                            self.after_what_pos['$TART'] += 1
                     break
                 nb += 1
 
@@ -608,7 +706,7 @@ if __name__ == '__main__':
     #info(titles)
     if SEARCH_PATTERN is not None and len(SEARCH_PATTERN) > 0:
         for pattern in SEARCH_PATTERN:
-            s = Search(titles, pattern, pattern.replace(' ', '_'), 'excel').run()
+            s = Search(titles, pattern, pattern.replace(' ', '_'), PATTERN_OUTPUT).run()
             print()
     #data = explore(titles, "outil")
     #data = explore2(titles, "outil", ['de', 'pour'])
@@ -616,10 +714,15 @@ if __name__ == '__main__':
     #data = explore2(titles, "problème", ['de'])
     #display(data, 10)
     if MAKE_STATS:
-        years = stats(titles, 'year')
-        supports = stats(titles, 'typ')
-        nb = stats(titles, 'nb')
-        
+        years = title_stats(titles, 'year')
+        supports = title_stats(titles, 'typ')
+        nb = title_stats(titles, 'nb')
+    if MAKE_POS_STATS:
+        pos = word_stats(titles, 'pos')
+    if MAKE_VERB_STATS:
+        count_all_verbs(titles)
+        #count_all_tenses(titles, mode='V')
+
 # 339687 titres
 
 
