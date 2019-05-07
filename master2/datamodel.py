@@ -22,7 +22,9 @@
 #   3. Data model for Words and Titles
 #   4. Read titles metadata
 #   5. Reading Talismane data file and updating titles
-#   6. Boot
+#   6. Utils
+#   7. Stats
+#   8. Boot
 
 #-------------------------------------------------
 # Imports
@@ -43,7 +45,7 @@ import whiteboard as wb # Dynamic code
 # Loading recoding dictionary
 recode=dict()
 
-def load_recode(debug=False):
+def load_recoding_table(debug=False):
     global recode
     entree = open("recodage-josette.tsv", mode="r", encoding="UTF8")
     header = entree.readline()
@@ -53,15 +55,15 @@ def load_recode(debug=False):
         recode[t[0]]=t[3]
     entree.close()
 
-def domain(domains):
-     champs = domains.split(",")
+def recode_domain(title):
+     champs = title.domains.split(",")
      dom=""
      for c in champs:
           if (c.startswith("0") or c.startswith("1")) and c != "0.shs":
                if c in recode:
                     return recode[c] #first domain only
                else:
-                    return 'RECODE FAIL'
+                    raise Exception('Recoding domain failed for title: ' + title.idt)
 
 #-------------------------------------------------
 # Data model for Words and Titles
@@ -104,16 +106,33 @@ class Title:
         self.year = year
         self.typ = typ
         self.domains = domains
+        self.domain = recode_domain(self)
         self.authors = authors
         self.nb = authors.count(',') + 1
         self.text = text
         self.words = []
-
+        self.restart = 0
+        # updated in stats, must be called afer words is set
+        self.nb_root = 0
+        self.len_with_ponct = 0
+        self.len_without_ponct = 0
+        self.nb_seg = 1
+    
     def __repr__(self):
-        return f"<Title |{self.text[:20]}| #{self.typ} @{self.year}>"
+        return f"<Title |{self.text[:20]}| #{self.typ} @{self.year} D{self.domain} Len({self.len_without_ponct} +{self.len_with_ponct - self.len_without_ponct}) Seg({self.nb_seg}) Root({self.nb_root})>"
 
     def __str__(self):
         return f"{self.text}"
+
+    def stats(self):
+        for w in self.words:
+            if w.gov == 0 and w.dep == '_':
+                self.nb_root += 1
+            if w.pos != 'PONCT':
+                self.len_without_ponct += 1
+            elif w.form in [':', '.', '?', '!', '...', '…']:
+                self.nb_seg += 1
+            self.len_with_ponct += 1
 
 #-------------------------------------------------
 # Read titles metadata
@@ -156,11 +175,14 @@ def read_titles_metadata(file_name):
 # Reading Talismane data file and updating titles
 #-------------------------------------------------
 
+titles_with_more_than_one_paragraph = 0
+
 class State(Enum):
     START = 1
     IN_TITLE = 2
 
 def read_update_from_talismane_data(titles, file_name):
+    global titles_with_more_than_one_paragraph
     """Update the titles with Talismane informations"""
     print('[RUN ] --- read_update_from_talismane_data @ ' + file_name)
     start_time = datetime.datetime.now()
@@ -183,10 +205,17 @@ def read_update_from_talismane_data(titles, file_name):
     for lin in lines:
         if state == State.START:
             if lin.startswith('<title id="'):
+                if idt is not None:
+                    titles[idt].stats() # on previous
+                    titles[idt].restart = restart
                 state = State.IN_TITLE
                 idt = lin[11:len(lin)-3]
                 key_lin = lin
                 words = []
+                prev_idw = 0
+                restart = 0
+                len_last_restart = 0
+                count_before_restart = 0
             elif lin.startswith("</title>"):
                 pass # bug, multiple </title>
             else:
@@ -205,18 +234,31 @@ def read_update_from_talismane_data(titles, file_name):
             else:
                 try:
                     elements = lin.split('\t')
-                    #idw = elements[0]
+                    idw = elements[0]
+                    int_idw = int(idw)
+                    if int(idw) <= prev_idw:
+                        #raise Exception('Title with restarting Talismane indexes, aborting on ' + idt)
+                        titles_with_more_than_one_paragraph += 1
+                        restart += 1
+                        len_last_restart = count_before_restart
+                        count_before_restart = 0
+                    prev_idw = int_idw
                     form = elements[1]
                     lemma = elements[2]
                     typ1 = elements[3]
                     #typ2 = elements[4]
                     info = elements[5]
-                    gov = elements[6]
+                    gov = int(elements[6])
+                    if gov != 0:
+                        gov += len_last_restart
                     dep = elements[7]
                     #x3 = elements[8]
                     #x4 = elements[9]
                     words.append(Word(form, lemma, typ1, info, gov, dep))
-                except IndexError:
+                    count_before_restart += 1
+                # ValueError is for int(idw)
+                # IndexError is for access to elements
+                except (ValueError, IndexError):
                     #unclosed title
                     titles[idt].words = words
                     updated += 1
@@ -234,6 +276,54 @@ def read_update_from_talismane_data(titles, file_name):
     return titles
 
 #-------------------------------------------------
+# Filtering
+#-------------------------------------------------
+
+def filter_titles():
+    global titles
+    keys = []
+    for kt, t in titles.items():
+        if t.restart > 1:
+            keys.append(kt)
+    for k in keys:
+        del titles[k]
+
+#-------------------------------------------------
+# Utils
+#-------------------------------------------------
+
+def find_title(attr, value, stop_on_first=True, listing=True):
+    for kt, t in titles.items():
+        if getattr(t, attr) == value:
+            print(kt)
+            print(t)
+            print(repr(t))
+            if stop_on_first:
+                if listing:
+                    for i, w in enumerate(t.words):
+                        print(i+1, w.form, w.gov, w.dep)
+                return t
+
+#-------------------------------------------------
+# Stats
+#-------------------------------------------------
+
+stats = {}
+
+def calc_stats(titles):
+    global stats
+    keys = ["restart", "nb_seg", "nb_root"]
+    for k in keys:
+        stats[k] = {}
+    for kt, t in titles.items():
+        for k in keys:
+            val = getattr(t, k)
+            if val not in stats[k]:
+                stats[k][val] = 1
+            else:
+                stats[k][val] += 1
+
+#-------------------------------------------------
 # Boot
 #-------------------------------------------------
 
@@ -241,7 +331,7 @@ titles = {}
 
 def init(debug):
     global titles
-    load_recode(debug)
+    load_recoding_table(debug)
     if debug: print('[INFO] --- Domain recode dictionary loaded\n')
     titles = read_titles_metadata(r'data\total-articles-HAL.tsv')
     files = [r"data\output_tal_01.txt",
@@ -252,9 +342,15 @@ def init(debug):
              r"data\output_tal_06.txt"]
     for file in files:
         read_update_from_talismane_data(titles, file)
+    if debug:
+        print("[INFO] --- Total Titles :", len(titles))
+        print("[INFO] --- Titles with more than one paragraph (restarting index) :", titles_with_more_than_one_paragraph)
     #Word.write_unknown_lemma()
+    filter_titles()
+    calc_stats(titles)
     t = titles[list(titles.keys())[0]]
     print(t)
+    print(repr(t))
 
 if __name__ == '__main__':
     init(True)
