@@ -23,6 +23,8 @@
 #   4. Read titles metadata
 #   5. Reading Talismane data file and updating titles
 #   6. Utils
+#       find_title(attr, value, stop_on_first=True, listing=True)
+#       pprint(dic)
 #   7. Stats
 #   8. Boot
 
@@ -126,7 +128,7 @@ class Title:
 
     def stats(self):
         for w in self.words:
-            if w.gov == 0 and w.dep == '_':
+            if w.gov == 0 and w.dep in ['root', '_']:
                 self.nb_root += 1
             if w.pos != 'PONCT':
                 self.len_without_ponct += 1
@@ -285,6 +287,8 @@ def filter_titles():
     for kt, t in titles.items():
         if t.restart > 1:
             keys.append(kt)
+        elif t.nb_root not in [1, 2, 3]:
+            keys.append(kt)
     for k in keys:
         del titles[k]
 
@@ -304,6 +308,20 @@ def find_title(attr, value, stop_on_first=True, listing=True):
                         print(i+1, w.form, w.gov, w.dep)
                 return t
 
+def pprint(dic):
+    total = sum(dic.values())
+    print("--------------------------------")
+    for k in sorted(dic, key=dic.get, reverse=True):
+        v = dic[k]
+        if type(k) == str:
+            col1 = f"{k:10}"
+        elif type(k) == int:
+            col1 = f"{k:10d}"
+        col2 = f" | {v:7d}"
+        col3 = f" | {((v/total)*100):8.4f}"
+        print(col1 + col2 + col3)
+        print("--------------------------------")
+
 #-------------------------------------------------
 # Stats
 #-------------------------------------------------
@@ -312,9 +330,12 @@ stats = {}
 
 def calc_stats(titles):
     global stats
+    # Title stats
     keys = ["restart", "nb_seg", "nb_root"]
     for k in keys:
         stats[k] = {}
+    # Word stats
+    stats['root_pos'] = {}
     for kt, t in titles.items():
         for k in keys:
             val = getattr(t, k)
@@ -322,6 +343,12 @@ def calc_stats(titles):
                 stats[k][val] = 1
             else:
                 stats[k][val] += 1
+        for w in t.words:
+            if w.gov == 0:
+                if w.pos in stats['root_pos']:
+                    stats['root_pos'][w.pos] += 1
+                else:
+                    stats['root_pos'][w.pos] = 1
 
 #-------------------------------------------------
 # Boot
@@ -347,7 +374,10 @@ def init(debug):
         print("[INFO] --- Titles with more than one paragraph (restarting index) :", titles_with_more_than_one_paragraph)
     #Word.write_unknown_lemma()
     filter_titles()
+    if debug: print('[INFO] --- Total Titles filtered (only 1 or 2 parts) :', len(titles))
     calc_stats(titles)
+    if debug: print('[INFO] --- Stats calculated, access by stats')
+    print()
     t = titles[list(titles.keys())[0]]
     print(t)
     print(repr(t))
