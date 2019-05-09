@@ -128,7 +128,7 @@ class Title:
 
     def stats(self):
         for w in self.words:
-            if w.gov == 0 and w.dep in ['root', '_']:
+            if is_root(w):
                 self.nb_root += 1
             if w.pos != 'PONCT':
                 self.len_without_ponct += 1
@@ -287,7 +287,7 @@ def filter_titles():
     for kt, t in titles.items():
         if t.restart > 1:
             keys.append(kt)
-        elif t.nb_root not in [1, 2, 3]:
+        elif t.nb_root != 1: #not in [1, 2, 3]:
             keys.append(kt)
     for k in keys:
         del titles[k]
@@ -305,11 +305,12 @@ def find_title(attr, value, stop_on_first=True, listing=True):
             if stop_on_first:
                 if listing:
                     for i, w in enumerate(t.words):
-                        print(i+1, w.form, w.gov, w.dep)
+                        print(f"{i+1:2d} {w.form:10s} {w.lemma:10s} {w.gov:3d}, {w.dep:5s}")
                 return t
 
 def pprint(dic):
     total = sum(dic.values())
+    total_percent = 0
     print("--------------------------------")
     for k in sorted(dic, key=dic.get, reverse=True):
         v = dic[k]
@@ -319,8 +320,14 @@ def pprint(dic):
             col1 = f"{k:10d}"
         col2 = f" | {v:7d}"
         col3 = f" | {((v/total)*100):8.4f}"
+        total_percent += (v/total)*100
         print(col1 + col2 + col3)
         print("--------------------------------")
+    print(f"TOTAL      | {total:7d} | {total_percent:8.4f}")
+    print("--------------------------------")
+
+def is_root(word):
+    return word.gov == 0 and word.dep in ['_', 'root']
 
 #-------------------------------------------------
 # Stats
@@ -344,7 +351,7 @@ def calc_stats(titles):
             else:
                 stats[k][val] += 1
         for w in t.words:
-            if w.gov == 0:
+            if is_root(w):
                 if w.pos in stats['root_pos']:
                     stats['root_pos'][w.pos] += 1
                 else:
@@ -381,6 +388,10 @@ def init(debug):
     t = titles[list(titles.keys())[0]]
     print(t)
     print(repr(t))
+    print()
+    pprint(stats["root_pos"])
+    print()
+    pprint(stats["nb_root"])
 
 if __name__ == '__main__':
     init(True)
