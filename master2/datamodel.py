@@ -288,16 +288,52 @@ def read_update_from_talismane_data(titles, file_name):
 # Filtering
 #-------------------------------------------------
 
-def filter_titles():
+filter_text = """           We keep :
+             - only the title with 0 or 1 restart (= 1 or 2 paragraph)
+             - only the title with 1 root
+             - the root must be of type NC or NPP
+             - nb_seg <= 2
+"""
+
+def filter_titles(debug=False):
     global titles
-    keys = []
+    too_many_restart = 0
+    too_many_root = 0
+    too_many_seg = 0
+    root_not_nc_npp = 0
+    ponct_not_known = 0
+    keys_to_delete = []
     for kt, t in titles.items():
         if t.restart > 1:
-            keys.append(kt)
-        elif t.nb_root != 1: #not in [1, 2, 3]:
-            keys.append(kt)
-    for k in keys:
+            keys_to_delete.append(kt)
+            too_many_restart += 1
+        elif t.nb_root != 1:
+            keys_to_delete.append(kt)
+            too_many_root += 1
+        elif t.nb_seg > 2:
+            keys_to_delete.append(kt)
+            too_many_seg += 1
+        else:
+            for w in t.words:
+                if is_root(w) and w.pos not in ['NC', 'NPP']:
+                    keys_to_delete.append(kt)
+                    root_not_nc_npp += 1
+                    break
+                elif w.pos == 'PONCT' and not is_seg(w) and not ponct_ok(w):
+                    keys_to_delete.append(kt)
+                    ponct_not_known += 1
+                    break
+    old_len = len(titles)
+    for k in keys_to_delete:
         del titles[k]
+    if debug:
+        print(f"[INFO] --- Starting length =     {old_len:10d}")
+        print(f"[INFO] --- Too many restart =    {too_many_restart:10d}")
+        print(f"[INFO] --- Too many root =       {too_many_root:10d}")
+        print(f"[INFO] --- Too many seg =        {too_many_seg:10d}")
+        print(f"[INFO] --- Root not nc or npp =  {root_not_nc_npp:10d}")
+        print(f"[INFO] --- Ponct not known =     {ponct_not_known:10d}")
+        print(f"[INFO] --- Length after filter = {len(titles):10d}")
 
 #-------------------------------------------------
 # Utils
@@ -315,14 +351,23 @@ def find_title(attr, value, stop_on_first=True, listing=True):
                         print(f"{i+1:2d} {w.form:10s} {w.lemma:10s} {w.gov:3d}, {w.dep:5s}")
                 return t
 
-def pprint(dic):
+def pprint(dic,
+           min_num=None, min_percent=None,
+           until_total_percent = None,
+           with_line = True):
     total = sum(dic.values())
     total_percent = 0
-    print("--------------------------------")
+    max_length = None
+    if with_line: print("--------------------------------")
     for k in sorted(dic, key=dic.get, reverse=True):
         v = dic[k]
         if type(k) == str:
-            col1 = f"{k:10}"
+            if max_length is None:
+                for kk in dic:
+                    if max_length is None or max_length < len(kk):
+                        max_length = len(kk)
+                max_length = max(10, max_length)
+            col1 = f"{k:{max_length}}"
         elif type(k) == int:
             col1 = f"{k:10d}"
         elif type(k) == tuple:
@@ -331,15 +376,35 @@ def pprint(dic):
         col3 = f" | {((v/total)*100):8.4f}"
         total_percent += (v/total)*100
         print(col1 + col2 + col3)
-        print("--------------------------------")
-    print(f"TOTAL      | {total:7d} | {total_percent:8.4f}")
-    print("--------------------------------")
+        if with_line: print("--------------------------------")
+        if min_num is not None and v < min_num: break
+        if min_percent is not None and v/total*100 < min_percent: break
+        if until_total_percent is not None and total_percent >= until_total_percent: break
+    if max_length is None: max_length = 10
+    if not with_line: print("--------------------------------")
+    t = "TOTAL"
+    print(f"{t:{max_length}} | {total:7d} | {total_percent:8.4f}")
+    if with_line: print("--------------------------------")
+    print()
 
 def is_root(word):
     return word.gov == 0 and word.dep in ['_', 'root']
 
 def is_seg(word):
-     return word.pos == 'PONCT' and word.form in [':', '.', '?', '!', '...', '…']
+     return word.pos == 'PONCT' and word.form in [
+         ':', '.', '?', '!', '...', '…', ';', '..', '....', '?.', '?!',
+         '...?', '?...', '.....', '!...', '!?', '!.', '!!!', '!!',
+         '......', '??', '?..', '.?', '?!...']
+
+def ponct_ok(word):
+    if word.pos != 'PONCT':
+        raise Exception('Not a ponct: ' + str(word))
+    elif word.form in [',', '-', '"', '(', ')', "'", '[', ']', '&', '\\',
+                       '*', '‑', '}', '{', '§', '†', '|', '·', '^', '‚', '‹',
+                       '›', '¡', '‛', '・', '•', '/']:
+        return True
+    else:
+        return False
 
 #-------------------------------------------------
 # Stats
@@ -355,6 +420,7 @@ def calc_stats(titles):
         stats[k] = {}
     # Word stats
     stats['root_pos'] = {}
+    stats['root_lemma'] = {}
     stats['ponct_combi'] = {}
     for kt, t in titles.items():
         combi = []
@@ -370,6 +436,11 @@ def calc_stats(titles):
                     stats['root_pos'][w.pos] += 1
                 else:
                     stats['root_pos'][w.pos] = 1
+                lemma_pos = w.lemma + '::' + w.pos
+                if lemma_pos in stats['root_lemma']:
+                    stats['root_lemma'][lemma_pos] += 1
+                else:
+                    stats['root_lemma'][lemma_pos] = 1
             if is_seg(w):
                 combi.append(w.form)
         combi_tuple = tuple(combi)
@@ -401,8 +472,11 @@ def init(debug):
         print("[INFO] --- Total Titles :", len(titles))
         print("[INFO] --- Titles with more than one paragraph (restarting index) :", titles_with_more_than_one_paragraph)
     #Word.write_unknown_lemma()
-    filter_titles()
-    if debug: print('[INFO] --- Total Titles filtered (only 1 or 2 parts) :', len(titles))
+    filter_titles(debug)
+    if debug:
+        print('[INFO] Filtered with filter =')
+        print(filter_text)
+        print('[INFO] --- Total Titles filtered :', len(titles))
     calc_stats(titles)
     if debug: print('[INFO] --- Stats calculated, access by stats')
     if debug:
@@ -413,9 +487,15 @@ def init(debug):
     print(t)
     print(repr(t))
     print()
+    print('Root pos :')
     pprint(stats["root_pos"])
-    print()
+    print('Nb root :')
     pprint(stats["nb_root"])
+    print('Root lemma :')
+    pprint(stats['root_lemma'], until_total_percent=50.00, with_line=False)
+    print('Nb seg :')
+    pprint(stats["nb_seg"])
+    print()
 
 if __name__ == '__main__':
     init(True)
