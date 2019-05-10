@@ -126,14 +126,21 @@ class Title:
     def __str__(self):
         return f"{self.text}"
 
+    ponct_no_seg = {}
+    
     def stats(self):
         for w in self.words:
             if is_root(w):
                 self.nb_root += 1
             if w.pos != 'PONCT':
                 self.len_without_ponct += 1
-            elif w.form in [':', '.', '?', '!', '...', '…']:
+            elif is_seg(w):
                 self.nb_seg += 1
+            else:
+                if w.form in Title.ponct_no_seg:
+                    Title.ponct_no_seg[w.form] += 1
+                else:
+                    Title.ponct_no_seg[w.form] = 1
             self.len_with_ponct += 1
 
 #-------------------------------------------------
@@ -318,6 +325,8 @@ def pprint(dic):
             col1 = f"{k:10}"
         elif type(k) == int:
             col1 = f"{k:10d}"
+        elif type(k) == tuple:
+            col1 = f"{str(k):10}"
         col2 = f" | {v:7d}"
         col3 = f" | {((v/total)*100):8.4f}"
         total_percent += (v/total)*100
@@ -328,6 +337,9 @@ def pprint(dic):
 
 def is_root(word):
     return word.gov == 0 and word.dep in ['_', 'root']
+
+def is_seg(word):
+     return word.pos == 'PONCT' and word.form in [':', '.', '?', '!', '...', '…']
 
 #-------------------------------------------------
 # Stats
@@ -343,7 +355,9 @@ def calc_stats(titles):
         stats[k] = {}
     # Word stats
     stats['root_pos'] = {}
+    stats['ponct_combi'] = {}
     for kt, t in titles.items():
+        combi = []
         for k in keys:
             val = getattr(t, k)
             if val not in stats[k]:
@@ -356,6 +370,13 @@ def calc_stats(titles):
                     stats['root_pos'][w.pos] += 1
                 else:
                     stats['root_pos'][w.pos] = 1
+            if is_seg(w):
+                combi.append(w.form)
+        combi_tuple = tuple(combi)
+        if combi_tuple in stats['ponct_combi']:
+            stats['ponct_combi'][combi_tuple] += 1
+        else:
+            stats['ponct_combi'][combi_tuple] = 1
 
 #-------------------------------------------------
 # Boot
@@ -384,6 +405,9 @@ def init(debug):
     if debug: print('[INFO] --- Total Titles filtered (only 1 or 2 parts) :', len(titles))
     calc_stats(titles)
     if debug: print('[INFO] --- Stats calculated, access by stats')
+    if debug:
+        print('[INFO] --- Ponctuation which is not segment :')
+        pprint(Title.ponct_no_seg)
     print()
     t = titles[list(titles.keys())[0]]
     print(t)
