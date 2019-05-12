@@ -406,6 +406,12 @@ def ponct_ok(word):
     else:
         return False
 
+def count(key, dic):
+    if key in dic:
+        dic[key] += 1
+    else:
+        dic[key] = 1
+
 #-------------------------------------------------
 # Stats
 #-------------------------------------------------
@@ -419,35 +425,24 @@ def calc_stats(titles):
     for k in keys:
         stats[k] = {}
     # Word stats
-    stats['root_pos'] = {}
-    stats['root_lemma'] = {}
-    stats['ponct_combi'] = {}
+    stats['root_pos']    = {} # pos of root
+    stats['root_lemma']  = {} # lemma of root
+    stats['seg_combi']   = {} # combinaison of seg
+    stats['seg_lemma']   = {} # lemma of seg ponct
     for kt, t in titles.items():
         combi = []
         for k in keys:
             val = getattr(t, k)
-            if val not in stats[k]:
-                stats[k][val] = 1
-            else:
-                stats[k][val] += 1
+            count(val, stats[k])
         for w in t.words:
             if is_root(w):
-                if w.pos in stats['root_pos']:
-                    stats['root_pos'][w.pos] += 1
-                else:
-                    stats['root_pos'][w.pos] = 1
-                lemma_pos = w.lemma + '::' + w.pos
-                if lemma_pos in stats['root_lemma']:
-                    stats['root_lemma'][lemma_pos] += 1
-                else:
-                    stats['root_lemma'][lemma_pos] = 1
+                count(w.pos, stats['root_pos'])
+                count(w.lemma + '::' + w.pos, stats['root_lemma'])
             if is_seg(w):
+                count(w.lemma, stats['seg_lemma'])
                 combi.append(w.form)
         combi_tuple = tuple(combi)
-        if combi_tuple in stats['ponct_combi']:
-            stats['ponct_combi'][combi_tuple] += 1
-        else:
-            stats['ponct_combi'][combi_tuple] = 1
+        count(tuple(combi), stats['seg_combi'])
 
 #-------------------------------------------------
 # Boot
@@ -495,6 +490,10 @@ def init(debug):
     pprint(stats['root_lemma'], until_total_percent=50.00, with_line=False)
     print('Nb seg :')
     pprint(stats["nb_seg"])
+    print('Lemma seg :')
+    pprint(stats["seg_lemma"])
+    print('Combi of seg :')
+    pprint(stats["seg_combi"])
     print()
 
 if __name__ == '__main__':
