@@ -351,6 +351,20 @@ def find_title(attr, value, stop_on_first=True, listing=True):
                         print(f"{i+1:2d} {w.form:10s} {w.lemma:10s} {w.gov:3d}, {w.dep:5s}")
                 return t
 
+def tabpprint(tab,
+              sort_key,
+              until_total_percent = None,
+              with_line = True,
+              max_line = 50):
+    lines = 0
+    for k1 in sorted(tab, key=lambda x: tab[x][sort_key], reverse=True):
+        for k2 in tab[k1]:
+            print(tab[k1][k2], sep=' ', end='')
+        print()
+        lines += 1
+        if lines >= max_line:
+            break
+
 def pprint(dic,
            min_num=None, min_percent=None,
            until_total_percent = None,
@@ -406,12 +420,39 @@ def ponct_ok(word):
     else:
         return False
 
-def count(key, dic):
+def count(key, dic, typ=int):
     if key in dic:
-        dic[key] += 1
+        if type(dic[key]) == int:
+            dic[key] += 1
+        elif type(dic[key]) == dict:
+            dic[key]['count'] += 1
     else:
-        dic[key] = 1
+        if typ == int:
+            dic[key] = 1
+        elif typ == dict:
+            dic[key] = { 'count' : 1 }
 
+def is_top_100_signoun(word):
+    return word in ['exemple', 'cas', 'modèle', 'résultat', 'façon', 'problème',
+                      'équation', 'théorie', 'terme', 'section', 'idée', 'point',
+                      'figure', 'chose', 'système', 'table', 'question', 'raison',
+                      'effet', 'méthode', 'procédé', 'facteur', 'type', 'fait',
+                      'principe', 'réaction', 'problème', 'approche', 'expérience',
+                      'procédure', 'forme', 'condition', 'taux', 'droit', 'type',
+                      'solution', 'fonction', 'changement', 'valeur', 'étude',
+                      'argument', 'possibilité', 'abilité', 'différence', 'loi',
+                      'série', 'zone', 'concept', 'analyse', 'conclusion', 'situation',
+                      'article', 'politique', 'vue', 'réponse', 'relation', 'stratégie',
+                      'conséquence', 'supposition', 'étape', 'période', 'scène', 'but',
+                      'discussion', 'échec', 'essai', 'propriété', 'chapitre', 'trait',
+                      'caractéristique', 'expression', 'potentiel', 'technique', 'sujet',
+                      'paramètre', 'mécanisme', 'instance', 'indice', 'partie',
+                      'introduction', 'test', 'rôle', 'objectif', 'coefficient',
+                      'décision', 'comportement', 'intention', 'prévision',
+                      'hypothèse', 'nombre', 'implication', 'avantage', 'définition',
+                      'observation', 'notion', 'phénomène', 'objectif', 'mot',
+                      'difficulté', 'sujet']
+                      
 #-------------------------------------------------
 # Stats
 #-------------------------------------------------
@@ -437,12 +478,17 @@ def calc_stats(titles):
         for w in t.words:
             if is_root(w):
                 count(w.pos, stats['root_pos'])
-                count(w.lemma + '::' + w.pos, stats['root_lemma'])
+                count(w.lemma + '::' + w.pos, stats['root_lemma'], typ=dict)
             if is_seg(w):
                 count(w.lemma, stats['seg_lemma'])
                 combi.append(w.form)
         combi_tuple = tuple(combi)
         count(tuple(combi), stats['seg_combi'])
+    for k in stats['root_lemma']:
+        elements = k.split('::')
+        stats['root_lemma'][k]['lemma'] = elements[0]
+        stats['root_lemma'][k]['pos'] = elements[1]
+        stats['root_lemma'][k]['top 100 SgN'] = is_top_100_signoun(elements[0])
 
 #-------------------------------------------------
 # Boot
@@ -487,7 +533,8 @@ def init(debug):
     print('Nb root :')
     pprint(stats["nb_root"])
     print('Root lemma :')
-    pprint(stats['root_lemma'], until_total_percent=50.00, with_line=False)
+    tabpprint(stats['root_lemma'], sort_key='count')
+    #pprint(stats['root_lemma'], until_total_percent=50.00, with_line=False)
     print('Nb seg :')
     pprint(stats["nb_seg"])
     print('Lemma seg :')
