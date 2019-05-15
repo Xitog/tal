@@ -1,0 +1,789 @@
+Python 3.6.1 (v3.6.1:69c0db5, Mar 21 2017, 17:54:52) [MSC v.1900 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+=== RESTART: C:\Users\damie_000\Documents\GitHub\tal\master2\datamodel.py ===
+[INFO] --- Domain recode dictionary loaded
+
+[RUN ] --- read_titles_metadata @data\total-articles-HAL.tsv
+[INFO] --- Started at 2019-05-15 23:34:40.662725
+[INFO] --- 339687 lines.
+[INFO] --- 339687 titles.
+[INFO] --- Ending at 2019-05-15 23:34:51.643507
+[INFO] --- Script has ended [0:00:10.980782 elapsed].
+
+[RUN ] --- read_update_from_talismane_data @ data\output_tal_01.txt
+[INFO] --- Started at 2019-05-15 23:34:51.775533
+[INFO] --- Lines read: 997068
+[INFO] --- Titles updated: 57378
+[INFO] --- Ending at 2019-05-15 23:35:14.201087
+[INFO] --- Script has ended [0:00:22.425554 elapsed].
+
+[RUN ] --- read_update_from_talismane_data @ data\output_tal_02.txt
+[INFO] --- Started at 2019-05-15 23:35:14.321090
+[INFO] --- Lines read: 997081
+[INFO] --- Titles updated: 56801
+[INFO] --- Ending at 2019-05-15 23:35:34.958567
+[INFO] --- Script has ended [0:00:20.637477 elapsed].
+
+[RUN ] --- read_update_from_talismane_data @ data\output_tal_03.txt
+[INFO] --- Started at 2019-05-15 23:35:35.098549
+[INFO] --- Lines read: 997068
+[INFO] --- Titles updated: 56719
+[INFO] --- Ending at 2019-05-15 23:35:56.096048
+[INFO] --- Script has ended [0:00:20.997499 elapsed].
+
+[RUN ] --- read_update_from_talismane_data @ data\output_tal_04.txt
+[INFO] --- Started at 2019-05-15 23:35:56.224034
+[INFO] --- Lines read: 997082
+[INFO] --- Titles updated: 57704
+[INFO] --- Ending at 2019-05-15 23:36:16.865485
+[INFO] --- Script has ended [0:00:20.641451 elapsed].
+
+[RUN ] --- read_update_from_talismane_data @ data\output_tal_05.txt
+[INFO] --- Started at 2019-05-15 23:36:17.029494
+[INFO] --- Lines read: 997071
+[INFO] --- Titles updated: 56198
+[INFO] --- Ending at 2019-05-15 23:36:39.347063
+[INFO] --- Script has ended [0:00:22.317569 elapsed].
+
+[RUN ] --- read_update_from_talismane_data @ data\output_tal_06.txt
+[INFO] --- Started at 2019-05-15 23:36:39.495080
+[INFO] --- Lines read: 997091
+[INFO] --- Titles updated: 54886
+[INFO] --- Ending at 2019-05-15 23:36:57.557515
+[INFO] --- Script has ended [0:00:18.062435 elapsed].
+
+[INFO] --- Total Titles : 339687
+[INFO] --- Titles with more than one paragraph (restarting index) : 56580
+[INFO] --- Starting length =         339687
+[INFO] --- Too many restart =         46678
+[INFO] --- Too many root =            65545
+[INFO] --- Too many seg =             12182
+[INFO] --- Root not nc or npp =       49619
+[INFO] --- Ponct not known =             61
+[INFO] --- Length after filter =     165602
+[INFO] Filtered with filter =
+           We keep :
+             - only the title with 1 part (restart = nb_part - 1)
+             - only the title with 1 <= root <= 1
+             - the root must be of type ['NC']
+             - nb_seg <= 2
+
+[INFO] --- Total Titles filtered : 165602
+[INFO] --- Stats calculated, access by stats
+[INFO] --- Ponctuation which is not segment :
+-------------------------
+key   count      percent 
+-------------------------
+,     100329      31.4694 
+-------------------------
+-     73552       23.0705 
+-------------------------
+"     51752       16.2327 
+-------------------------
+(     36618       11.4857 
+-------------------------
+)     36486       11.4443 
+-------------------------
+/     7827         2.4550 
+-------------------------
+'     6413         2.0115 
+-------------------------
+[     1842         0.5778 
+-------------------------
+]     1837         0.5762 
+-------------------------
+&     879          0.2757 
+-------------------------
+\     428          0.1342 
+-------------------------
+‐     217          0.0681 
+-------------------------
+*     188          0.0590 
+-------------------------
+&und; 96           0.0301 
+-------------------------
+‑     63           0.0198 
+-------------------------
+}     60           0.0188 
+-------------------------
+{     55           0.0173 
+-------------------------
+§     32           0.0100 
+-------------------------
+†     30           0.0094 
+-------------------------
+|     18           0.0056 
+-------------------------
+·     17           0.0053 
+-------------------------
+^     10           0.0031 
+-------------------------
+‚     10           0.0031 
+-------------------------
+‹     8            0.0025 
+-------------------------
+›     8            0.0025 
+-------------------------
+¡     6            0.0019 
+-------------------------
+‛     6            0.0019 
+-------------------------
+・     5            0.0016 
+-------------------------
+¿     5            0.0016 
+-------------------------
+•     4            0.0013 
+-------------------------
+「     2            0.0006 
+-------------------------
+」     2            0.0006 
+-------------------------
+□     1            0.0003 
+-------------------------
+′     1            0.0003 
+-------------------------
+⟨     1            0.0003 
+-------------------------
+⟩     1            0.0003 
+-------------------------
+‡     1            0.0003 
+-------------------------
+՝     1            0.0003 
+-------------------------
+，     1            0.0003 
+-------------------------
+）     1            0.0003 
+-------------------------
+／     1            0.0003 
+-------------------------
+key   count      percent 
+      318814    100.0000
+-------------------------
+
+
+Développement d'Edgeworth de deux estimateurs d'une proportion de mesures
+<Title |Développement d'Edge| #COMM @2007 D0.math Len(11 +0) Seg(1) Root(1)>
+
+Root pos :
+----------------------------
+root_pos count      percent 
+----------------------------
+NC       165602     100.0000 
+----------------------------
+root_pos count      percent 
+         165602    100.0000
+----------------------------
+
+Nb root :
+------------------------------
+nb_root    count      percent 
+------------------------------
+1          165602     100.0000 
+------------------------------
+nb_root    count      percent 
+           165602    100.0000
+------------------------------
+
+Root lemma :
+--------------------------------------------------------------
+root_lemma                      pos count      percent is_sgn 
+--------------------------------------------------------------
+étude                           NC  4102         2.4770 True  
+analyse                         NC  2163         1.3061 True  
+modélisation                    NC  1841         1.1117 False 
+influence                       NC  1479         0.8931 False 
+approche                        NC  1459         0.8810 True  
+effet                           NC  1455         0.8786 True  
+modèle                          NC  1186         0.7162 True  
+méthode                         NC  1164         0.7029 True  
+évaluation                      NC  1047         0.6322 False 
+évolution                       NC  1047         0.6322 False 
+droit                           NC  929          0.5610 True  
+caractérisation                 NC  918          0.5543 False 
+mesure                          NC  887          0.5356 False 
+utilisation                     NC  877          0.5296 False 
+rôle                            NC  851          0.5139 True  
+recherche                       NC  819          0.4946 False 
+impact                          NC  786          0.4746 False 
+construction                    NC  762          0.4601 False 
+apport                          NC  743          0.4487 False 
+politique                       NC  702          0.4239 True  
+système                         NC  689          0.4161 True  
+contribution                    NC  687          0.4149 False 
+développement                   NC  681          0.4112 False 
+enjeu                           NC  670          0.4046 False 
+représentation                  NC  641          0.3871 False 
+relation                        NC  616          0.3720 True  
+histoire                        NC  615          0.3714 False 
+gestion                         NC  615          0.3714 False 
+conception                      NC  605          0.3653 False 
+application                     NC  578          0.3490 False 
+simulation                      NC  549          0.3315 False 
+mise                            NC  549          0.3315 False 
+note                            NC  549          0.3315 False 
+introduction                    NC  548          0.3309 True  
+pratique                        NC  515          0.3110 False 
+réflexion                       NC  502          0.3031 False 
+place                           NC  496          0.2995 False 
+stratégie                       NC  495          0.2989 True  
+dynamique                       NC  481          0.2905 False 
+contrôle                        NC  479          0.2892 False 
+projet                          NC  467          0.2820 False 
+estimation                      NC  466          0.2814 False 
+comparaison                     NC  461          0.2784 False 
+espace                          NC  461          0.2784 False 
+question                        NC  460          0.2778 True  
+théorie                         NC  441          0.2663 True  
+optimisation                    NC  438          0.2645 False 
+détermination                   NC  438          0.2645 False 
+propriété                       NC  424          0.2560 True  
+réseau                          NC  423          0.2554 False 
+usage                           NC  415          0.2506 False 
+structure                       NC  405          0.2446 False 
+détection                       NC  396          0.2391 False 
+expérience                      NC  391          0.2361 True  
+chronique                       NC  390          0.2355 False 
+ville                           NC  386          0.2331 False 
+outil                           NC  379          0.2289 False 
+comportement                    NC  375          0.2264 True  
+aspect                          NC  372          0.2246 False 
+forme                           NC  364          0.2198 True  
+formation                       NC  349          0.2107 False 
+identification                  NC  348          0.2101 False 
+intégration                     NC  342          0.2065 False 
+synthèse                        NC  341          0.2059 False 
+regard                          NC  340          0.2053 False 
+variation                       NC  340          0.2053 False 
+présentation                    NC  338          0.2041 False 
+travail                         NC  332          0.2005 False 
+traitement                      NC  330          0.1993 False 
+production                      NC  329          0.1987 False 
+problème                        NC  324          0.1956 True  
+élément                         NC  322          0.1944 False 
+responsabilité                  NC  322          0.1944 False 
+action                          NC  321          0.1938 False 
+interaction                     NC  319          0.1926 False 
+remarque                        NC  318          0.1920 False 
+architecture                    NC  312          0.1884 False 
+économie                        NC  311          0.1878 False 
+état                            NC  303          0.1830 False 
+image                           NC  303          0.1830 False 
+notion                          NC  303          0.1830 True  
+enseignement                    NC  290          0.1751 False 
+compte                          NC  286          0.1727 False 
+dispositif                      NC  285          0.1721 False 
+proposition                     NC  284          0.1715 False 
+organisation                    NC  280          0.1691 False 
+calcul                          NC  278          0.1679 False 
+apprentissage                   NC  275          0.1661 False 
+retour                          NC  274          0.1655 False 
+diffusion                       NC  271          0.1636 False 
+observation                     NC  270          0.1630 True  
+algorithme                      NC  269          0.1624 False 
+principe                        NC  269          0.1624 True  
+art                             NC  268          0.1618 False 
+territoire                      NC  267          0.1612 False 
+essai                           NC  267          0.1612 True  
+rapport                         NC  266          0.1606 False 
+processus                       NC  264          0.1594 False 
+risque                          NC  262          0.1582 False 
+figure                          NC  258          0.1558 True  
+notice                          NC  258          0.1558 False 
+condition                       NC  256          0.1546 True  
+technique                       NC  254          0.1534 True  
+intérêt                         NC  253          0.1528 False 
+protection                      NC  251          0.1516 False 
+réforme                         NC  251          0.1516 False 
+loi                             NC  249          0.1504 True  
+temps                           NC  247          0.1492 False 
+science                         NC  245          0.1479 False 
+culture                         NC  242          0.1461 False 
+extraction                      NC  241          0.1455 False 
+fonction                        NC  241          0.1455 True  
+paysage                         NC  240          0.1449 False 
+mobilité                        NC  238          0.1437 False 
+identité                        NC  236          0.1425 False 
+corps                           NC  234          0.1413 False 
+perception                      NC  231          0.1395 False 
+mémoire                         NC  231          0.1395 False 
+perspective                     NC  230          0.1389 False 
+valeur                          NC  230          0.1389 True  
+émergence                       NC  230          0.1389 False 
+activité                        NC  225          0.1359 False 
+crise                           NC  223          0.1347 False 
+reconnaissance                  NC  221          0.1335 False 
+transformation                  NC  219          0.1322 False 
+génération                      NC  219          0.1322 False 
+méthodologie                    NC  217          0.1310 False 
+adaptation                      NC  214          0.1292 False 
+femme                           NC  214          0.1292 False 
+langue                          NC  211          0.1274 False 
+discours                        NC  210          0.1268 False 
+classification                  NC  209          0.1262 False 
+jeu                             NC  209          0.1262 False 
+changement                      NC  209          0.1262 True  
+régulation                      NC  208          0.1256 False 
+lecture                         NC  204          0.1232 False 
+mécanisme                       NC  202          0.1220 True  
+société                         NC  201          0.1214 False 
+amélioration                    NC  201          0.1214 False 
+gouvernance                     NC  199          0.1202 False 
+facteur                         NC  197          0.1190 True  
+élaboration                     NC  197          0.1190 False 
+création                        NC  196          0.1184 False 
+commentaire                     NC  194          0.1171 False 
+cadre                           NC  193          0.1165 False 
+an                              NC  193          0.1165 False 
+diversité                       NC  192          0.1159 False 
+innovation                      NC  190          0.1147 False 
+qualité                         NC  187          0.1129 False 
+statut                          NC  185          0.1117 False 
+réalisation                     NC  184          0.1111 False 
+bilan                           NC  183          0.1105 False 
+dimension                       NC  183          0.1105 False 
+pouvoir                         NC  183          0.1105 False 
+interprétation                  NC  180          0.1087 False 
+origine                         NC  179          0.1081 False 
+transfert                       NC  179          0.1081 False 
+site                            NC  178          0.1075 False 
+migration                       NC  177          0.1069 False 
+communication                   NC  176          0.1063 False 
+musique                         NC  176          0.1063 False 
+point                           NC  176          0.1063 True  
+compétence                      NC  175          0.1057 False 
+source                          NC  174          0.1051 False 
+résultat                        NC  173          0.1045 True  
+écriture                        NC  173          0.1045 False 
+sociologie                      NC  173          0.1045 False 
+vie                             NC  173          0.1045 False 
+conflit                         NC  173          0.1045 False 
+éducation                       NC  172          0.1039 False 
+concept                         NC  171          0.1033 True  
+performance                     NC  170          0.1027 False 
+violence                        NC  169          0.1021 False 
+déterminant                     NC  166          0.1002 False 
+transmission                    NC  164          0.0990 False 
+traduction                      NC  164          0.0990 False 
+accès                           NC  162          0.0978 False 
+environnement                   NC  162          0.0978 False 
+transition                      NC  161          0.0972 False 
+expression                      NC  161          0.0972 True  
+spectre                         NC  160          0.0966 False 
+technologie                     NC  160          0.0966 False 
+géographie                      NC  159          0.0960 False 
+mode                            NC  157          0.0948 False 
+régime                          NC  156          0.0942 False 
+objet                           NC  155          0.0936 False 
+description                     NC  154          0.0930 False 
+exemple                         NC  154          0.0930 True  
+contrat                         NC  153          0.0924 False 
+inscription                     NC  153          0.0924 False 
+mouvement                       NC  153          0.0924 False 
+entreprise                      NC  153          0.0924 False 
+extension                       NC  152          0.0918 False 
+segmentation                    NC  152          0.0918 False 
+entretien                       NC  152          0.0918 False 
+exploitation                    NC  151          0.0912 False 
+conséquence                     NC  151          0.0912 True  
+livre                           NC  150          0.0906 False 
+réception                       NC  150          0.0906 False 
+emploi                          NC  150          0.0906 False 
+management                      NC  149          0.0900 False 
+mutation                        NC  147          0.0888 False 
+mot                             NC  147          0.0888 True  
+céramique                       NC  147          0.0888 False 
+genre                           NC  146          0.0882 False 
+choix                           NC  145          0.0876 False 
+marché                          NC  145          0.0876 False 
+défi                            NC  145          0.0876 False 
+théâtre                         NC  144          0.0870 False 
+commande                        NC  144          0.0870 False 
+antenne                         NC  144          0.0870 False 
+modification                    NC  143          0.0864 False 
+démarche                        NC  142          0.0857 False 
+résistance                      NC  141          0.0851 False 
+frontière                       NC  141          0.0851 False 
+limite                          NC  140          0.0845 False 
+lieu                            NC  140          0.0845 False 
+justice                         NC  139          0.0839 False 
+union                           NC  138          0.0833 False 
+article                         NC  138          0.0833 True  
+nature                          NC  137          0.0827 False 
+caractéristique                 NC  137          0.0827 True  
+guerre                          NC  137          0.0827 False 
+homme                           NC  137          0.0827 False 
+patrimoine                      NC  136          0.0821 False 
+diagnostic                      NC  136          0.0821 False 
+participation                   NC  136          0.0821 False 
+monde                           NC  135          0.0815 False 
+cartographie                    NC  135          0.0815 False 
+enquête                         NC  135          0.0815 False 
+critique                        NC  135          0.0815 False 
+habitat                         NC  134          0.0809 False 
+base                            NC  133          0.0803 False 
+aide                            NC  133          0.0803 False 
+variabilité                     NC  133          0.0803 False 
+cas                             NC  132          0.0797 True  
+actualité                       NC  131          0.0791 False 
+école                           NC  131          0.0791 False 
+définition                      NC  131          0.0791 True  
+logique                         NC  129          0.0779 False 
+problématique                   NC  129          0.0779 False 
+validation                      NC  128          0.0773 False 
+réduction                       NC  127          0.0767 False 
+service                         NC  127          0.0767 False 
+matériau                        NC  126          0.0761 False 
+incidence                       NC  126          0.0761 False 
+croissance                      NC  126          0.0761 False 
+... (percent indicates what's taken)
+--------------------------------------------------------------
+root_lemma                      pos count      percent is_sgn 
+                                    165602     50.0525       
+--------------------------------------------------------------
+
+Nb seg :
+------------------------------
+nb_seg     count      percent 
+------------------------------
+1          124447      75.1482 
+------------------------------
+2          41155       24.8518 
+------------------------------
+nb_seg     count      percent 
+           165602    100.0000
+------------------------------
+
+Lemma seg :
+-----------------------------
+seg_lemma count      percent 
+-----------------------------
+:         30036       72.9826 
+-----------------------------
+.         7456        18.1169 
+-----------------------------
+?         3027         7.3551 
+-----------------------------
+;         318          0.7727 
+-----------------------------
+...       168          0.4082 
+-----------------------------
+!         88           0.2138 
+-----------------------------
+…         53           0.1288 
+-----------------------------
+..        3            0.0073 
+-----------------------------
+....      2            0.0049 
+-----------------------------
+?.        2            0.0049 
+-----------------------------
+?!        1            0.0024 
+-----------------------------
+......    1            0.0024 
+-----------------------------
+seg_lemma count      percent 
+          41155     100.0000
+-----------------------------
+
+Combi of seg :
+-------------------------------
+seg_combi   count      percent 
+-------------------------------
+()          124447      75.1482 
+-------------------------------
+(':',)      30036       18.1375 
+-------------------------------
+('.',)      7456         4.5024 
+-------------------------------
+('?',)      3027         1.8279 
+-------------------------------
+(';',)      318          0.1920 
+-------------------------------
+('...',)    168          0.1014 
+-------------------------------
+('!',)      88           0.0531 
+-------------------------------
+('…',)      53           0.0320 
+-------------------------------
+('..',)     3            0.0018 
+-------------------------------
+('....',)   2            0.0012 
+-------------------------------
+('?.',)     2            0.0012 
+-------------------------------
+('?!',)     1            0.0006 
+-------------------------------
+('......',) 1            0.0006 
+-------------------------------
+seg_combi   count      percent 
+            165602    100.0000
+-------------------------------
+
+
+('nb_seg', 'restart')
+-----------------------------------------
+('nb_seg', 'restart') count      percent 
+-----------------------------------------
+(1, 0) 124447      75.1482 
+-----------------------------------------
+(2, 0) 41155       24.8518 
+-----------------------------------------
+('nb_seg', 'restart') count      percent 
+                      165602    100.0000
+-----------------------------------------
+
+('domain', 'nb_seg')
+----------------------------------------
+('domain', 'nb_seg') count      percent 
+----------------------------------------
+('0.phys', 1)        20011       12.0838 
+----------------------------------------
+('1.shs.droit', 1)   12959        7.8254 
+----------------------------------------
+('0.sdv', 1)         10223        6.1732 
+----------------------------------------
+('1.shs.socio', 1)   9142         5.5205 
+----------------------------------------
+('NONE', 1)          9034         5.4552 
+----------------------------------------
+('0.info', 1)        8966         5.4142 
+----------------------------------------
+('1.shs.hist', 1)    7865         4.7493 
+----------------------------------------
+('1.shs.gestion', 1) 6840         4.1304 
+----------------------------------------
+('1.shs.ling', 1)    5022         3.0326 
+----------------------------------------
+('1.shs.archeo', 1)  4654         2.8104 
+----------------------------------------
+('1.shs.socio', 2)   4650         2.8079 
+----------------------------------------
+('1.shs.litt', 1)    3978         2.4021 
+----------------------------------------
+('1.shs.gestion', 2) 3799         2.2941 
+----------------------------------------
+('NONE', 2)          3290         1.9867 
+----------------------------------------
+('1.shs.hist', 2)    2942         1.7765 
+----------------------------------------
+('1.shs.droit', 2)   2913         1.7590 
+----------------------------------------
+('1.shs.edu', 1)     2868         1.7319 
+----------------------------------------
+('0.sdv', 2)         2836         1.7125 
+----------------------------------------
+('1.shs.scipo', 1)   2752         1.6618 
+----------------------------------------
+('1.shs.art', 1)     2637         1.5924 
+----------------------------------------
+('1.shs.phil', 1)    2629         1.5875 
+----------------------------------------
+('0.sde', 1)         2536         1.5314 
+----------------------------------------
+('0.phys', 2)        2438         1.4722 
+----------------------------------------
+('1.shs.ling', 2)    2291         1.3834 
+----------------------------------------
+('1.shs.anthro', 1)  2157         1.3025 
+----------------------------------------
+('1.shs.infocom', 1) 2086         1.2596 
+----------------------------------------
+('1.shs.archeo', 2)  1972         1.1908 
+----------------------------------------
+('0.math', 1)        1656         1.0000 
+----------------------------------------
+('1.shs.litt', 2)    1622         0.9795 
+----------------------------------------
+('1.shs.edu', 2)     1438         0.8683 
+----------------------------------------
+('1.shs.archi', 1)   1400         0.8454 
+----------------------------------------
+('0.info', 2)        1379         0.8327 
+----------------------------------------
+('0.chim', 1)        1307         0.7892 
+----------------------------------------
+('0.sdu', 1)         1259         0.7603 
+----------------------------------------
+('1.shs.scipo', 2)   1229         0.7421 
+----------------------------------------
+('0.sde', 2)         1189         0.7180 
+----------------------------------------
+('1.shs.infocom', 2) 1170         0.7065 
+----------------------------------------
+('1.shs.phil', 2)    1034         0.6244 
+----------------------------------------
+('0.scco', 1)        979          0.5912 
+----------------------------------------
+('1.shs.art', 2)     943          0.5694 
+----------------------------------------
+('1.shs.psy', 1)     942          0.5688 
+----------------------------------------
+('1.shs.anthro', 2)  840          0.5072 
+----------------------------------------
+('0.sdu', 2)         722          0.4360 
+----------------------------------------
+('1.shs.archi', 2)   598          0.3611 
+----------------------------------------
+('0.scco', 2)        571          0.3448 
+----------------------------------------
+('0.chim', 2)        391          0.2361 
+----------------------------------------
+('1.shs.psy', 2)     365          0.2204 
+----------------------------------------
+('1.shs.geo', 1)     364          0.2198 
+----------------------------------------
+('0.math', 2)        265          0.1600 
+----------------------------------------
+('1.shs.geo', 2)     183          0.1105 
+----------------------------------------
+('0.qfin', 1)        141          0.0851 
+----------------------------------------
+('0.qfin', 2)        69           0.0417 
+----------------------------------------
+('1.shs.autre', 1)   40           0.0242 
+----------------------------------------
+('1.shs.autre', 2)   16           0.0097 
+----------------------------------------
+('domain', 'nb_seg') count      percent 
+                     165602    100.0000
+----------------------------------------
+
+-----------------------------------------
+seg2_nb_dep_from_root count      percent 
+-----------------------------------------
+1                     16340       39.7036 
+-----------------------------------------
+0                     15373       37.3539 
+-----------------------------------------
+2                     5593        13.5901 
+-----------------------------------------
+3                     2343         5.6931 
+-----------------------------------------
+4                     959          2.3302 
+-----------------------------------------
+5                     347          0.8432 
+-----------------------------------------
+6                     119          0.2892 
+-----------------------------------------
+7                     46           0.1118 
+-----------------------------------------
+8                     16           0.0389 
+-----------------------------------------
+9                     10           0.0243 
+-----------------------------------------
+10                    4            0.0097 
+-----------------------------------------
+12                    2            0.0049 
+-----------------------------------------
+19                    1            0.0024 
+-----------------------------------------
+11                    1            0.0024 
+-----------------------------------------
+15                    1            0.0024 
+-----------------------------------------
+seg2_nb_dep_from_root count      percent 
+                      41155     100.0000
+-----------------------------------------
+
+------------------------------------------
+seg2_pos_dep_from_root count      percent 
+------------------------------------------
+NC                     21170       51.0256 
+------------------------------------------
+P                      8345        20.1138 
+------------------------------------------
+CC                     3725         8.9783 
+------------------------------------------
+P+D                    2934         7.0718 
+------------------------------------------
+NPP                    2052         4.9459 
+------------------------------------------
+PONCT                  1296         3.1237 
+------------------------------------------
+VINF                   835          2.0126 
+------------------------------------------
+ADJ                    480          1.1569 
+------------------------------------------
+VPP                    274          0.6604 
+------------------------------------------
+CS                     171          0.4122 
+------------------------------------------
+VPR                    84           0.2025 
+------------------------------------------
+ADV                    52           0.1253 
+------------------------------------------
+V                      32           0.0771 
+------------------------------------------
+PRO                    24           0.0578 
+------------------------------------------
+VS                     8            0.0193 
+------------------------------------------
+ET                     6            0.0145 
+------------------------------------------
+ADVWH                  1            0.0024 
+------------------------------------------
+seg2_pos_dep_from_root count      percent 
+                       41489     100.0000
+------------------------------------------
+
+------------------------------------------
+seg2_dep_dep_from_root count      percent 
+------------------------------------------
+mod                    24295       58.5577 
+------------------------------------------
+dep                    12121       29.2150 
+------------------------------------------
+coord                  3731         8.9927 
+------------------------------------------
+ponct                  1302         3.1382 
+------------------------------------------
+mod_rel                37           0.0892 
+------------------------------------------
+aux_caus               3            0.0072 
+------------------------------------------
+seg2_dep_dep_from_root count      percent 
+                       41489     100.0000
+------------------------------------------
+
+---------------------------------------------------------------
+seg2_lem_dep_from_root        pos    count      percent is_sgn 
+---------------------------------------------------------------
+de                            P      3812         9.1880 False 
+et                            CC     3585         8.6408 False 
+de                            P+D    2182         5.2592 False 
+à                             P      1361         3.2804 False 
+                              :PONCT 1163         2.8032 False 
+entre                         P      926          2.2319 False 
+à                             P+D    752          1.8125 False 
+cas                           NC     642          1.5474 True  
+exemple                       NC     536          1.2919 True  
+étude                         NC     509          1.2268 True  
+dans                          P      477          1.1497 False 
+approche                      NC     434          1.0461 True  
+pour                          P      421          1.0147 False 
+en                            P      406          0.9786 False 
+enjeu                         NC     388          0.9352 False 
+application                   NC     373          0.8990 False 
+analyse                       NC     323          0.7785 True  
+sur                           P      311          0.7496 False 
+vers                          P      277          0.6676 False 
+état                          NC     252          0.6074 False 
+outil                         NC     175          0.4218 False 
+réflexion                     NC     167          0.4025 False 
+apport                        NC     166          0.4001 False 
+élément                       NC     162          0.3905 False 
+regard                        NC     159          0.3832 False 
+quand                         CS     154          0.3712 False 
+histoire                      NC     151          0.3640 False 
+aspect                        NC     132          0.3182 False 
+bilan                         NC     128          0.3085 False 
+retour                        NC     127          0.3061 False 
+modèle                        NC     126          0.3037 True  
+... (percent indicates what's taken)
+---------------------------------------------------------------
+seg2_lem_dep_from_root        pos    count      percent is_sgn 
+                                     41489      50.0783       
+---------------------------------------------------------------
+
+>>> 

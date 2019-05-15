@@ -25,8 +25,9 @@
 #   6. Utils
 #       find_title(attr, value, stop_on_first=True, listing=True)
 #       pprint(dic)
-#   7. Stats
-#   8. Boot
+#   7. Model for results
+#   8. Stats
+#   9. Boot
 
 #-------------------------------------------------
 # Imports
@@ -58,14 +59,15 @@ def load_recoding_table(debug=False):
     entree.close()
 
 def recode_domain(title):
-     champs = title.domains.split(",")
-     dom=""
-     for c in champs:
-          if (c.startswith("0") or c.startswith("1")) and c != "0.shs":
-               if c in recode:
-                    return recode[c] #first domain only
-               else:
-                    raise Exception('Recoding domain failed for title: ' + title.idt)
+    champs = title.domains.split(",")
+    dom=""
+    for c in champs:
+        if (c.startswith("0") or c.startswith("1")) and c != "0.shs":
+            if c in recode:
+                return recode[c] #first domain only
+            else:
+                raise Exception('Recoding domain failed for title: ' + title.idt)
+    return 'NONE'
 
 #-------------------------------------------------
 # Data model for Words and Titles
@@ -288,11 +290,17 @@ def read_update_from_talismane_data(titles, file_name):
 # Filtering
 #-------------------------------------------------
 
-filter_text = """           We keep :
-             - only the title with 0 or 1 restart (= 1 or 2 paragraph)
-             - only the title with 1 root
-             - the root must be of type NC or NPP
-             - nb_seg <= 2
+MAX_NB_PART = 1
+MIN_NB_ROOT = 1
+MAX_NB_ROOT = 1
+MAX_NB_SEG  = 2
+ROOT_POS_OK = ['NC', 'NPP']
+
+filter_text = f"""           We keep :
+             - only the title with {MAX_NB_PART} part (restart = nb_part - 1)
+             - only the title with {MIN_NB_ROOT} <= root <= {MAX_NB_ROOT}
+             - the root must be of type {ROOT_POS_OK}
+             - nb_seg <= {MAX_NB_SEG}
 """
 
 def filter_titles(debug=False):
@@ -304,18 +312,18 @@ def filter_titles(debug=False):
     ponct_not_known = 0
     keys_to_delete = []
     for kt, t in titles.items():
-        if t.restart > 1:
+        if t.restart > (MAX_NB_PART - 1):
             keys_to_delete.append(kt)
             too_many_restart += 1
-        elif t.nb_root != 1:
+        elif not MIN_NB_ROOT <= t.nb_root <= MAX_NB_ROOT:
             keys_to_delete.append(kt)
             too_many_root += 1
-        elif t.nb_seg > 2:
+        elif t.nb_seg > MAX_NB_SEG:
             keys_to_delete.append(kt)
             too_many_seg += 1
         else:
             for w in t.words:
-                if is_root(w) and w.pos not in ['NC', 'NPP']:
+                if is_root(w) and w.pos not in ROOT_POS_OK:
                     keys_to_delete.append(kt)
                     root_not_nc_npp += 1
                     break
@@ -339,7 +347,7 @@ def filter_titles(debug=False):
 # Utils
 #-------------------------------------------------
 
-def find_title(attr, value, nb=1, listing=True):
+def find_titles(attr, value, nb=1, listing=True):
     cpt = 0
     res = []
     for kt, t in titles.items():
@@ -356,66 +364,6 @@ def find_title(attr, value, nb=1, listing=True):
                 if cpt == 1: return res[0]
                 else:        return res
 
-def tabpprint(tab,
-              sort_key,
-              until_total_percent = None,
-              with_line = True,
-              max_line = 50):
-    # gen length of all column
-    len_max = []
-    for k1 in tab:
-        for i2, k2 in enumerate(tab[k1]):
-            if i2 == len(len_max):
-                len_max.append(len(str(tab[k1][k2])))
-            elif len_max[i2] < len(str(tab[k1][k2])):
-                len_max[i2] = len(str(tab[k1][k2]))
-    # display
-    lines = 0
-    for k1 in sorted(tab, key=lambda x: tab[x][sort_key], reverse=True):
-        for i2, k2 in enumerate(tab[k1]):
-            val = str(tab[k1][k2])
-            print(f"{val:{len_max[i2]}} ", end='')
-        print()
-        lines += 1
-        if lines >= max_line:
-            break
-    print()
-
-def pprint(dic,
-           min_num=None, min_percent=None,
-           until_total_percent = None,
-           with_line = True):
-    total = sum(dic.values())
-    total_percent = 0
-    max_length = None
-    if with_line: print("--------------------------------")
-    for k in sorted(dic, key=dic.get, reverse=True):
-        v = dic[k]
-        if type(k) == str:
-            if max_length is None:
-                for kk in dic:
-                    if max_length is None or max_length < len(kk):
-                        max_length = len(kk)
-                max_length = max(10, max_length)
-            col1 = f"{k:{max_length}}"
-        elif type(k) == int:
-            col1 = f"{k:10d}"
-        elif type(k) == tuple:
-            col1 = f"{str(k):10}"
-        col2 = f" | {v:7d}"
-        col3 = f" | {((v/total)*100):8.4f}"
-        total_percent += (v/total)*100
-        print(col1 + col2 + col3)
-        if with_line: print("--------------------------------")
-        if min_num is not None and v < min_num: break
-        if min_percent is not None and v/total*100 < min_percent: break
-        if until_total_percent is not None and total_percent >= until_total_percent: break
-    if max_length is None: max_length = 10
-    if not with_line: print("--------------------------------")
-    t = "TOTAL"
-    print(f"{t:{max_length}} | {total:7d} | {total_percent:8.4f}")
-    if with_line: print("--------------------------------")
-    print()
 
 def is_root(word):
     return word.gov == 0 and word.dep in ['_', 'root']
@@ -436,17 +384,6 @@ def ponct_ok(word):
     else:
         return False
 
-def count(key, dic, typ=int):
-    if key in dic:
-        if type(dic[key]) == int:
-            dic[key] += 1
-        elif type(dic[key]) == dict:
-            dic[key]['count'] += 1
-    else:
-        if typ == int:
-            dic[key] = 1
-        elif typ == dict:
-            dic[key] = { 'count' : 1 }
 
 def is_top_100_signoun(word):
     return word in ['exemple', 'cas', 'modèle', 'résultat', 'façon', 'problème',
@@ -468,7 +405,155 @@ def is_top_100_signoun(word):
                       'hypothèse', 'nombre', 'implication', 'avantage', 'définition',
                       'observation', 'notion', 'phénomène', 'objectif', 'mot',
                       'difficulté', 'sujet']
-                      
+
+#-------------------------------------------------
+# Model for results
+#-------------------------------------------------
+
+class Column:
+
+    def __init__(self, data, name, kind='num', wide=10):
+        self.data = data
+        self.name = name # can be a tuple (or any kind) !
+        self.kind = kind
+        self.total = 0
+        self.max_length = 10
+        self.wide = 10
+    
+    def update(self):
+        if self.kind == 'num':
+            self.total = 0
+            for rec in self.data:
+                self.total += self.data[rec][self.name]
+            self.max_length = max(self.wide, len(self.name), len(str(self.total)))
+        elif self.kind in ['str', 'tuple']:
+            self.max_length = 0
+            for rec in self.data:
+                if len(str(self.data[rec][self.name])) > self.max_length:
+                    self.max_length = len(str(self.data[rec][self.name]))
+            self.max_length = max(self.max_length, len(self.name))
+        elif self.kind == 'bool':
+            self.max_length = 5
+        else:
+            raise Exception('Type of column not known, must be num, str or bool for col ' + self.name)
+    
+    def __str__(self):
+        return f"{str(self.name):{self.max_length}} "
+    
+    def __getitem__(self, rec):
+        return self.data[rec][self.name]
+
+
+class Data:
+
+    def __init__(self, col_defs : dict):
+        self.columns = {}
+        for n, k in col_defs.items():
+            self.columns[n] = Column(self, name=n, kind=k)
+        self.content = {}
+        self.default_counted_columns = self.columns[next(iter(self.columns))]
+
+    @staticmethod
+    def from_dict(dic):
+        "convert a dict { 'abc' : 5, 'def' : 10 } to { 'abc' : { 'count' : 5 }, 'deg' : { 'count' : 10 } }"
+        d = Data({'key' : 'str', 'count' : 'num'})
+        for k, v in dic.items():
+            d.set_cell(k, 'key', k)
+            d.set_cell(k, 'count', v)
+        return d
+    
+    def __getitem__(self, rec):
+        return self.content[rec]
+
+    def __iter__(self):
+        self.itr = iter(self.content)
+        return self
+
+    def __next__(self):
+        return next(self.itr)
+    
+    def set_cell(self, rec, col, val):
+        if rec not in self.content:
+            self.content[rec] = {}
+        self.content[rec][col] = val
+
+    def get_cell(self, rec, col):
+        return self.content[rec][col]
+    
+    def __length__(self):
+        return len(self.content)
+    
+    def nb_columns(self):
+        return len(self.col_names)
+
+    def update(self):
+        for _, col in self.columns.items():
+            col.update()
+    
+    def count(self, rec, col = None):
+        if col is None:
+            col = self.default_counted_columns
+        if rec in self.content:
+            self.content[rec]['count'] += 1
+        else:
+            self.set_cell(rec, col.name, rec)
+            self.set_cell(rec, 'count', 1)
+    
+    def display(self, sort_key = 'count', with_line = True,
+                max_line = None, until_total_percent = None, min_percent = None):
+        self.update()
+        total_percent = 0.0
+        percent = None
+        len_line = 8 # for percent col
+        for _, col in self.columns.items():
+            len_line += len(str(col))
+        # Header
+        print('-' * len_line)
+        for _, col in self.columns.items():
+            print(str(col), end='')
+            if col.name == sort_key:
+                print("percent ", end='')
+        print()
+        print('-' * len_line)
+        # Body
+        lines = 0
+        for k1 in sorted(self.content, key=lambda x: self.content[x][sort_key], reverse=True):
+            for _, col in self.columns.items():
+                print(f"{str(col[k1]):{col.max_length}} ", end='')
+                if col.name == sort_key:
+                    percent = (col[k1]/col.total) * 100
+                    total_percent += percent
+                    print(f"{percent:8.4f} ", end='')
+            print()
+            if with_line: print('-' * len_line)
+            lines += 1
+            # breakers
+            if max_line is not None and lines >= max_line:
+                print("... (percent indicates what's taken)")
+                break
+            if until_total_percent is not None and total_percent >= until_total_percent:
+                print("... (percent indicates what's taken)")
+                break
+            if min_percent is not None and percent is not None and percent < min_percent:
+                print("... (percent indicates what's taken)")
+                break
+        # Footer
+        if not with_line: print('-' * len_line)
+        for _, col in self.columns.items():
+            print(str(col), end='')
+            if col.name == sort_key:
+                print("percent ", end='')
+        print()
+        for _, col in self.columns.items():
+            if col.name != sort_key:
+                print(len(str(col)) * ' ', end='')
+            else:
+                print(f"{str(col.total):{col.max_length}}", end='')
+                print(f"{total_percent:8.4f}", end='')
+        print()
+        print('-' * len_line)
+        print()
+
 #-------------------------------------------------
 # Stats
 #-------------------------------------------------
@@ -478,46 +563,78 @@ stats = {}
 def calc_stats(titles):
     global stats
     # Title stats
-    keys = ["restart", "nb_seg", "nb_root"]
-    for k in keys:
-        stats[k] = {}
+    keys = {
+        'restart' : 'num', 'nb_seg' : 'num', 'nb_root' : 'num', 'nb' : 'num', 'year' : 'num',
+        'domain' : 'str', 'typ' : 'str',
+        ('nb_seg', 'restart') : 'tuple', ('domain', 'nb_seg') : 'tuple',
+    }
+    for k, v in keys.items():
+        stats[k] = Data({k : v, 'count' : 'num'})
     # Word stats
-    stats['root_pos']    = {} # pos of root
-    stats['root_lemma']  = {} # lemma of root
-    stats['seg_combi']   = {} # combinaison of seg
-    stats['seg_lemma']   = {} # lemma of seg ponct
+    stats['root_pos']   = Data({ 'root_pos':'str', 'count':'num' }) # pos of root
+    stats['root_lemma'] = Data({ 'root_lemma':'str', 'pos':'str', 'count':'num', 'is_sgn':'bool' }) # lemma of root
+    stats['seg_combi']  = Data({ 'seg_combi':'tuple', 'count':'num' }) # combinaison of seg
+    stats['seg_lemma']  = Data({ 'seg_lemma':'tuple', 'count':'num' }) # lemma of seg ponct
+    # seg2 dependant from root of seg1
+    stats['seg2_nb_dep_from_root'] = Data({ 'seg2_nb_dep_from_root' : 'num', 'count' : 'num' })
+    stats['seg2_pos_dep_from_root'] = Data({ 'seg2_pos_dep_from_root' : 'str', 'count' : 'num' })
+    stats['seg2_dep_dep_from_root'] = Data({ 'seg2_dep_dep_from_root' : 'str', 'count' : 'num' })
+    stats['seg2_lem_dep_from_root'] = Data({ 'seg2_lem_dep_from_root' : 'str', 'pos' : 'str', 'count' : 'num', 'is_sgn' : 'bool' })
     for kt, t in titles.items():
         combi = []
         for k in keys:
-            val = getattr(t, k)
-            count(val, stats[k])
-        for w in t.words:
+            if type(k) == str:
+                val = getattr(t, k)
+            elif type(k) == tuple:
+                val = (getattr(t, k[0]), getattr(t, k[1]))
+            stats[k].count(val)
+        num_seg = 1
+        pos_root = None
+        nb_dep_from_root = 0
+        for i, w in enumerate(t.words):
             if is_root(w):
-                count(w.pos, stats['root_pos'])
-                count(w.lemma + '::' + w.pos, stats['root_lemma'], typ=dict)
+                stats['root_pos'].count(w.pos)
+                stats['root_lemma'].count(w.lemma + '::' + w.pos)
+                pos_root = i + 1 # TALISMANE starts at 1
             if is_seg(w):
-                count(w.lemma, stats['seg_lemma'])
+                stats['seg_lemma'].count(w.lemma)
                 combi.append(w.form)
-        combi_tuple = tuple(combi)
-        count(tuple(combi), stats['seg_combi'])
+                num_seg += 1
+            if num_seg > 1 and w.gov == pos_root:
+                nb_dep_from_root += 1
+                stats['seg2_pos_dep_from_root'].count(w.pos)
+                stats['seg2_dep_dep_from_root'].count(w.dep)
+                stats['seg2_lem_dep_from_root'].count(w.lemma + '::' + w.pos)
+        if num_seg > 1:
+            stats['seg2_nb_dep_from_root'].count(nb_dep_from_root)
+        stats['seg_combi'].count(tuple(combi))
     for k in stats['root_lemma']:
         elements = k.split('::')
-        stats['root_lemma'][k]['lemma'] = elements[0]
+        stats['root_lemma'][k]['root_lemma'] = elements[0]
         stats['root_lemma'][k]['pos'] = elements[1]
-        stats['root_lemma'][k]['top 100 SgN'] = is_top_100_signoun(elements[0])
+        stats['root_lemma'][k]['is_sgn'] = is_top_100_signoun(elements[0])
+    for k in stats['seg2_lem_dep_from_root']:
+        elements = k.split('::')
+        stats['seg2_lem_dep_from_root'][k]['seg2_lem_dep_from_root'] = elements[0]
+        stats['seg2_lem_dep_from_root'][k]['pos'] = elements[1]
+        stats['seg2_lem_dep_from_root'][k]['is_sgn'] = is_top_100_signoun(elements[0])
 
 #-------------------------------------------------
 # Boot
 #-------------------------------------------------
 
 titles = {}
+fast = False
 
 def init(debug):
     global titles
     load_recoding_table(debug)
     if debug: print('[INFO] --- Domain recode dictionary loaded\n')
     titles = read_titles_metadata(r'data\total-articles-HAL.tsv')
-    files = [r"data\output_tal_01.txt",
+    if fast:
+        files = [r"data\output_tal_01.txt"]
+    else:
+        files = [r"data\output_tal_01.txt",
              r"data\output_tal_02.txt",
              r"data\output_tal_03.txt",
              r"data\output_tal_04.txt",
@@ -538,26 +655,33 @@ def init(debug):
     if debug: print('[INFO] --- Stats calculated, access by stats')
     if debug:
         print('[INFO] --- Ponctuation which is not segment :')
-        pprint(Title.ponct_no_seg)
+        Data.from_dict(Title.ponct_no_seg).display()
     print()
     t = titles[list(titles.keys())[0]]
     print(t)
     print(repr(t))
     print()
     print('Root pos :')
-    pprint(stats["root_pos"])
+    stats["root_pos"].display()
     print('Nb root :')
-    pprint(stats["nb_root"])
+    stats["nb_root"].display()
     print('Root lemma :')
-    tabpprint(stats['root_lemma'], sort_key='count')
-    #pprint(stats['root_lemma'], until_total_percent=50.00, with_line=False)
+    stats['root_lemma'].display(with_line=False, until_total_percent=50.00)
     print('Nb seg :')
-    pprint(stats["nb_seg"])
+    stats["nb_seg"].display()
     print('Lemma seg :')
-    pprint(stats["seg_lemma"])
+    stats["seg_lemma"].display()
     print('Combi of seg :')
-    pprint(stats["seg_combi"])
+    stats["seg_combi"].display()
     print()
-
+    print("('nb_seg', 'restart')")
+    stats[('nb_seg', 'restart')].display()
+    print("('domain', 'nb_seg')")
+    stats[('domain', 'nb_seg')].display() #min_percent=1.0, until_total_percent=90.00, max_line=50)
+    stats['seg2_nb_dep_from_root'].display()
+    stats['seg2_pos_dep_from_root'].display()
+    stats['seg2_dep_dep_from_root'].display()
+    stats['seg2_lem_dep_from_root'].display(with_line=False, until_total_percent=50.0)
+    
 if __name__ == '__main__':
     init(True)
