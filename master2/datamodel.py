@@ -339,31 +339,47 @@ def filter_titles(debug=False):
 # Utils
 #-------------------------------------------------
 
-def find_title(attr, value, stop_on_first=True, listing=True):
+def find_title(attr, value, nb=1, listing=True):
+    cpt = 0
+    res = []
     for kt, t in titles.items():
         if getattr(t, attr) == value:
             print(kt)
             print(t)
             print(repr(t))
-            if stop_on_first:
-                if listing:
-                    for i, w in enumerate(t.words):
-                        print(f"{i+1:2d} {w.form:10s} {w.lemma:10s} {w.gov:3d}, {w.dep:5s}")
-                return t
+            cpt += 1
+            res.append(t)
+            if listing:
+                for i, w in enumerate(t.words):
+                    print(f"{i+1:2d} {w.form:10s} {w.lemma:10s} {w.gov:3d}, {w.dep:5s}")
+            if cpt == nb:
+                if cpt == 1: return res[0]
+                else:        return res
 
 def tabpprint(tab,
               sort_key,
               until_total_percent = None,
               with_line = True,
               max_line = 50):
+    # gen length of all column
+    len_max = []
+    for k1 in tab:
+        for i2, k2 in enumerate(tab[k1]):
+            if i2 == len(len_max):
+                len_max.append(len(str(tab[k1][k2])))
+            elif len_max[i2] < len(str(tab[k1][k2])):
+                len_max[i2] = len(str(tab[k1][k2]))
+    # display
     lines = 0
     for k1 in sorted(tab, key=lambda x: tab[x][sort_key], reverse=True):
-        for k2 in tab[k1]:
-            print(tab[k1][k2], sep=' ', end='')
+        for i2, k2 in enumerate(tab[k1]):
+            val = str(tab[k1][k2])
+            print(f"{val:{len_max[i2]}} ", end='')
         print()
         lines += 1
         if lines >= max_line:
             break
+    print()
 
 def pprint(dic,
            min_num=None, min_percent=None,
