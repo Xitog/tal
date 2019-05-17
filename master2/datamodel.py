@@ -37,6 +37,7 @@
 import datetime
 from enum import Enum
 from importlib import reload # Dynamic code
+import itertools # cribble
 
 # Project
 import whiteboard as wb # Dynamic code
@@ -88,6 +89,7 @@ class Word:
         self.info = info
         self.gov = gov # = index in title.words + 1 (start at 1, 0 = no gov)
         self.dep = dep
+        self.i = None # num in Title words, starts at 0.
 
     def __str__(self):
         return f"{self.form}"
@@ -121,19 +123,24 @@ class Title:
         self.len_with_ponct = 0
         self.len_without_ponct = 0
         self.nb_seg = 1
+        self.roots = []
     
     def __repr__(self):
         return f"<Title |{self.text[:20]}| #{self.typ} @{self.year} D{self.domain} Len({self.len_without_ponct} +{self.len_with_ponct - self.len_without_ponct}) Seg({self.nb_seg}) Root({self.nb_root})>"
 
     def __str__(self):
         return f"{self.text}"
-
+    
     ponct_no_seg = {}
     
     def stats(self):
+        cpt = 0
         for w in self.words:
+            w.i = cpt
+            cpt += 1
             if is_root(w):
                 self.nb_root += 1
+                self.roots.append(w)
             if w.pos != 'PONCT':
                 self.len_without_ponct += 1
             elif is_seg(w):
@@ -368,7 +375,7 @@ def find_titles(attr, value, nb=1, listing=True):
 def is_root(word):
     return word.gov == 0 and word.dep in ['_', 'root']
 
-def is_seg(word):
+def is_seg(word): # : ; . ? ! + variantes du .?!
      return word.pos == 'PONCT' and word.form in [
          ':', '.', '?', '!', '...', '…', ';', '..', '....', '?.', '?!',
          '...?', '?...', '.....', '!...', '!?', '!.', '!!!', '!!',
@@ -560,16 +567,139 @@ class Data:
 
 stats = {}
 
+def cribble(threshold, *keys):
+    # get all the values
+    vals = {}
+    for k in keys:
+        vals[k] = []
+    for kt, t in titles.items():
+        for k in keys:
+            val = getattr(t, k)
+            if val not in vals[k]:
+                vals[k].append(val)
+    # get the count for all combinaisons
+    counted = {}
+    total = 0
+    length = len(titles)
+    for combi in itertools.product(*vals.values()):
+        tested = {}
+        for i, k in enumerate(keys):
+            tested[k] = combi[i]
+        res = count(tested)
+        if (res / length)* 100 >= threshold:
+            counted[combi] = res
+            total += res
+    # display results
+    print('number of combi   :', len(counted))
+    print('number of titles  :', total)
+    print('percent of titles :', f"{(total/length)*100:5.2}")
+    # display the combi
+    for combi in counted:
+        print(f"{str(combi):10}", f"{counted[combi]:10d}", f"{(counted[combi]/length)*100:5.2f}")
+
+
+def count(tested_keys_values=None):
+    """
+        Used to count the title corresponding to the values of the tested keys.
+        Values can be :
+        - only one (the value of the key must be corresponding to it)
+        - a min and a max : through a tuple : min:max
+        - a list of values : through a list : v1|v2|v3
+        Exemples :
+            count({'nb_root' : 0})      only 0
+            count({'nb_root' : (0, 2)}) from 0 to 2
+            count({'nb_root' : [0, 2]}) only 0 or 2
+            count({'nb_root' : 0, 'nb_seg' : 1})
+    """
+    if tested_keys_values is None:
+        return len(titles)
+    count = 0
+    for kt, t in titles.items():
+        ok = True # for inclusive conditions, set this to False and set it True when a condition is reached
+        for tested_key, tested_value in tested_keys_values.items():
+            if '.' in tested_key:
+                attr_key, attr_index, obj_key, obj_val = k.split('.') # roots.0.pos.NC
+                attr = getattr(t, attr_key)
+                if int(attr_index) >= len(attr):
+                    vals.append('NO VAL')
+                # TODO
+            if type(tested_value) == int:
+                if getattr(t, tested_key) != tested_value:
+                    ok = False
+            elif type(tested_value) == tuple:
+                min_val = tested_value[0]
+                max_val = tested_value[1]
+                if not min_val <= getattr(t, tested_key) <= max_val:
+                    ok = False
+            elif type(tested_value) == list:
+                if getattr(t, tested_key) not in tested_value:
+                    ok = False
+            else:
+                raise Exception('Tested value unknown type:' + str(type(test_valued)))
+        if ok:
+            count += 1
+    return count
+
+
+def stat(keys=None, display=True, until_total_percent=None):
+    """
+        Used to make stat on one or more keys of the titles.
+        - If no keys is passed, it counts the number of titles.
+        - If one key is passed, it counts the number of titles for each different values of this key.
+        - If more than one key is passed, it counts the number of titles for each different combinations of the values of these keys.
+        - The key can be of a special format : roots.0.pos <=> t.roots[0].pos
+    """
+    if keys is None:
+        return len(titles)
+    if type(keys) == str:
+        keys = [keys]
+    values = {}
+    for key, t in titles.items():
+        vals = []
+        for k in keys:
+            if '.' in k:
+                attr_key, attr_index, obj_key = k.split('.') # roots.0.pos
+                attr = getattr(t, attr_key)
+                if int(attr_index) >= len(attr):
+                    vals.append('NO VAL')
+                else:
+                    vals.append(getattr(attr[int(attr_index)], obj_key))
+            else:
+                vals.append(getattr(t, k))
+        val = tuple(vals)
+        if val not in values:
+            values[val] = 0
+        values[val] += 1
+    total = 0
+    for val in values:
+        total += values[val]
+    if display:
+        s = f'*** {str(keys)} ***'
+        print(s, '\n', '-' * len(s), sep='')
+        i = 0
+        cumul_percent = 0.0
+        max_len = 10
+        for key in values:
+            if len(str(key)) > max_len: max_len = len(str(key))
+        for key in sorted(values, key=values.get, reverse=True):
+            i += 1
+            percent = (values[key]/total)*100
+            cumul_percent += percent
+            d = '-'.join(map(str, key))
+            print(f"{i:3d}. {d:>{max_len}} {values[key]:10d} {percent:8.4f} % {cumul_percent:6.2f} %")
+            if until_total_percent is not None and cumul_percent > until_total_percent:
+                print('...')
+                break
+    return values
+
+
 def calc_stats(titles):
     global stats
-    # Title stats
-    keys = {
-        'restart' : 'num', 'nb_seg' : 'num', 'nb_root' : 'num', 'nb' : 'num', 'year' : 'num',
-        'domain' : 'str', 'typ' : 'str',
-        ('nb_seg', 'restart') : 'tuple', ('domain', 'nb_seg') : 'tuple',
-    }
-    for k, v in keys.items():
-        stats[k] = Data({k : v, 'count' : 'num'})
+    # Basic title stats
+    keys = ['restart', 'nb_seg', 'nb_root', 'nb', 'year', 'domain', 'typ',
+            ('nb_seg', 'restart'), ('domain', 'nb_seg') ]
+    for key in keys:
+        stat(key)
     # Word stats
     stats['root_pos']   = Data({ 'root_pos':'str', 'count':'num' }) # pos of root
     stats['root_lemma'] = Data({ 'root_lemma':'str', 'pos':'str', 'count':'num', 'is_sgn':'bool' }) # lemma of root
@@ -582,12 +712,6 @@ def calc_stats(titles):
     stats['seg2_lem_dep_from_root'] = Data({ 'seg2_lem_dep_from_root' : 'str', 'pos' : 'str', 'count' : 'num', 'is_sgn' : 'bool' })
     for kt, t in titles.items():
         combi = []
-        for k in keys:
-            if type(k) == str:
-                val = getattr(t, k)
-            elif type(k) == tuple:
-                val = (getattr(t, k[0]), getattr(t, k[1]))
-            stats[k].count(val)
         num_seg = 1
         pos_root = None
         nb_dep_from_root = 0
@@ -624,7 +748,8 @@ def calc_stats(titles):
 #-------------------------------------------------
 
 titles = {}
-fast = False
+fast = True
+just_load = True
 
 def init(debug):
     global titles
@@ -645,43 +770,36 @@ def init(debug):
     if debug:
         print("[INFO] --- Total Titles :", len(titles))
         print("[INFO] --- Titles with more than one paragraph (restarting index) :", titles_with_more_than_one_paragraph)
-    #Word.write_unknown_lemma()
-    filter_titles(debug)
-    if debug:
-        print('[INFO] Filtered with filter =')
-        print(filter_text)
-        print('[INFO] --- Total Titles filtered :', len(titles))
-    calc_stats(titles)
-    if debug: print('[INFO] --- Stats calculated, access by stats')
-    if debug:
-        print('[INFO] --- Ponctuation which is not segment :')
-        Data.from_dict(Title.ponct_no_seg).display()
-    print()
-    t = titles[list(titles.keys())[0]]
-    print(t)
-    print(repr(t))
-    print()
-    print('Root pos :')
-    stats["root_pos"].display()
-    print('Nb root :')
-    stats["nb_root"].display()
-    print('Root lemma :')
-    stats['root_lemma'].display(with_line=False, until_total_percent=50.00)
-    print('Nb seg :')
-    stats["nb_seg"].display()
-    print('Lemma seg :')
-    stats["seg_lemma"].display()
-    print('Combi of seg :')
-    stats["seg_combi"].display()
-    print()
-    print("('nb_seg', 'restart')")
-    stats[('nb_seg', 'restart')].display()
-    print("('domain', 'nb_seg')")
-    stats[('domain', 'nb_seg')].display() #min_percent=1.0, until_total_percent=90.00, max_line=50)
-    stats['seg2_nb_dep_from_root'].display()
-    stats['seg2_pos_dep_from_root'].display()
-    stats['seg2_dep_dep_from_root'].display()
-    stats['seg2_lem_dep_from_root'].display(with_line=False, until_total_percent=50.0)
-    
+    if not just_load:
+        #Word.write_unknown_lemma()
+        filter_titles(debug)
+        if debug:
+            print('[INFO] Filtered with filter =')
+            print(filter_text)
+            print('[INFO] --- Total Titles filtered :', len(titles))
+        calc_stats(titles)
+        if debug: print('[INFO] --- Stats calculated, access by stats')
+        if debug:
+            print('[INFO] --- Ponctuation which is not segment :')
+            Data.from_dict(Title.ponct_no_seg).display()
+        print()
+        t = titles[list(titles.keys())[0]]
+        print(t)
+        print(repr(t))
+        print()
+        print('Root pos :')
+        stats["root_pos"].display()
+        print('Root lemma :')
+        stats['root_lemma'].display(with_line=False, until_total_percent=50.00)
+        print('Lemma seg :')
+        stats["seg_lemma"].display()
+        print('Combi of seg :')
+        stats["seg_combi"].display()
+        print()
+        stats['seg2_nb_dep_from_root'].display()
+        stats['seg2_pos_dep_from_root'].display()
+        stats['seg2_dep_dep_from_root'].display()
+        stats['seg2_lem_dep_from_root'].display(with_line=False, until_total_percent=50.0)
+            
 if __name__ == '__main__':
     init(True)
