@@ -78,18 +78,18 @@ class Word:
 
     unknown_lemma = {}
     
-    def __init__(self, form, lemma, pos, info, gov, dep):
+    def __init__(self, idw, form, lemma, pos, info, gov, dep):
         self.form = form
         if lemma == '_':
             self.lemma = f"?{form}"
             Word.unknown_lemma[form + ':::' + pos] = ''
         else:
             self.lemma = lemma
+        self.idw = idw
         self.pos = pos
         self.info = info
-        self.gov = gov # = index in title.words + 1 (start at 1, 0 = no gov)
+        self.gov = gov # = index in title.words + 1 (start at 1, 0 = no gov) /!\ if restarts !
         self.dep = dep
-        self.i = None # num in Title words, starts at 0.
 
     def __str__(self):
         return f"{self.form}"
@@ -117,29 +117,33 @@ class Title:
         self.nb = authors.count(',') + 1
         self.text = text
         self.words = []
-        self.restart = 0
+        self.restarts = []
+        self.nb_restarts = 0
         # updated in stats, must be called afer words is set
-        self.nb_root = 0
+        self.nb_roots = 0
+        self.roots = []
         self.len_with_ponct = 0
         self.len_without_ponct = 0
         self.nb_seg = 1
-        self.roots = []
     
     def __repr__(self):
-        return f"<Title |{self.text[:20]}| #{self.typ} @{self.year} D{self.domain} Len({self.len_without_ponct} +{self.len_with_ponct - self.len_without_ponct}) Seg({self.nb_seg}) Root({self.nb_root})>"
+        return f"<Title |{self.text[:20]}| #{self.typ} @{self.year} D{self.domain} Len({self.len_without_ponct} +{self.len_with_ponct - self.len_without_ponct}) Seg({self.nb_seg}) Root({self.nb_roots})>"
 
     def __str__(self):
         return f"{self.text}"
+
+    def info(self):
+        for i, w in enumerate(self.words):
+            print(f"{i+1:2d}. {w.idw:3d} {w.form:16} {w.pos:5} {w.lemma:16} {w.gov:3d}, {w.dep:5}")
     
     ponct_no_seg = {}
     
     def stats(self):
         cpt = 0
         for w in self.words:
-            w.i = cpt
             cpt += 1
             if is_root(w):
-                self.nb_root += 1
+                self.nb_roots += 1
                 self.roots.append(w)
             if w.pos != 'PONCT':
                 self.len_without_ponct += 1
@@ -193,12 +197,6 @@ def read_titles_metadata(file_name):
 # Reading Talismane data file and updating titles
 #-------------------------------------------------
 
-titles_with_more_than_one_paragraph = 0
-
-class State(Enum):
-    START = 1
-    IN_TITLE = 2
-
 def read_update_from_talismane_data(titles, file_name):
     global titles_with_more_than_one_paragraph
     """Update the titles with Talismane informations"""
@@ -214,83 +212,46 @@ def read_update_from_talismane_data(titles, file_name):
         lines = file.readlines()
         print('[INFO] --- Lines read:', len(lines))
     # parcours
-    state = State.START
-    words = []
-    idt = None
-    key_lin = ''
-    nb_line = 1
     updated = 0
-    for lin in lines:
-        if state == State.START:
-            if lin.startswith('<title id="'):
-                if idt is not None:
-                    titles[idt].stats() # on previous
-                    titles[idt].restart = restart
-                state = State.IN_TITLE
-                idt = lin[11:len(lin)-3]
-                key_lin = lin
-                words = []
-                prev_idw = 0
-                restart = 0
-                len_last_restart = 0
-                count_before_restart = 0
-            elif lin.startswith("</title>"):
-                pass # bug, multiple </title>
-            else:
-                raise Exception(str(state) + " encountered: |" + lin + "| @line " + str(nb_line))
-        elif state == State.IN_TITLE:
-            if len(lin) == 1: #only \n
-                pass
-            elif lin.startswith("</title>"):
-                state = State.START
-                try:
-                    titles[idt].words = words
-                    updated += 1
-                except KeyError:
-                    print('[ERROR] ---', key_lin)
-                    exit(1)
-            else:
-                try:
-                    elements = lin.split('\t')
-                    idw = elements[0]
-                    int_idw = int(idw)
-                    if int(idw) <= prev_idw:
-                        #raise Exception('Title with restarting Talismane indexes, aborting on ' + idt)
-                        titles_with_more_than_one_paragraph += 1
-                        restart += 1
-                        len_last_restart = count_before_restart
-                        count_before_restart = 0
-                    prev_idw = int_idw
+    for index in range(len(lines)):
+        line = lines[index]
+        if line.startswith('<title id="'):
+            idt = line[11:len(line)-3]
+            words = []
+            prev_idw = None
+            restarts = []
+            index += 1
+            line = lines[index]
+            while not line.startswith('<title id="'):
+                elements = line.split('\t')
+                if len(elements) == 10:
+                    idw = int(elements[0])
+                    if prev_idw is not None and idw < prev_idw:
+                        restarts.append(len(words))
+                    prev_idw = idw
                     form = elements[1]
                     lemma = elements[2]
-                    typ1 = elements[3]
-                    #typ2 = elements[4]
+                    typ1 = elements[3] # 4 is the same
                     info = elements[5]
                     gov = int(elements[6])
-                    if gov != 0:
-                        gov += len_last_restart
-                    dep = elements[7]
-                    #x3 = elements[8]
-                    #x4 = elements[9]
-                    words.append(Word(form, lemma, typ1, info, gov, dep))
-                    count_before_restart += 1
-                # ValueError is for int(idw)
-                # IndexError is for access to elements
-                except (ValueError, IndexError):
-                    #unclosed title
-                    titles[idt].words = words
-                    updated += 1
-                    state = State.IN_TITLE
-                    idt = lin[11:len(lin)-3]
-                    key_lin = lin
-                    words = []
-                    #raise Exception(str(state) + " IndexError : |" + lin + "| @line " + str(nb_line))
-        nb_line += 1
-    print('[INFO] --- Titles updated:', updated)
+                    dep = elements[7] # 8 and 9 are the same
+                    words.append(Word(idw, form, lemma, typ1, info, gov, dep))
+                index += 1
+                try:
+                    line = lines[index]
+                except IndexError:
+                    break
+            titles[idt].words = words
+            titles[idt].restarts = restarts
+            titles[idt].nb_restarts = len(restarts)
+            titles[idt].stats()
+            updated += 1
+            index -= 1
+        index += 1
     end_time = datetime.datetime.now()
-    print('[INFO] --- Ending at', end_time)
-    delta = end_time - start_time
-    print(f"[INFO] --- Script has ended [{delta} elapsed].\n")
+    print(f'[INFO] --- Titles updated: {updated}')
+    print(f'[INFO] --- Ending at {end_time}')
+    print(f"[INFO] --- Script has ended [{end_time - start_time} elapsed].\n")
     return titles
 
 #-------------------------------------------------
@@ -322,7 +283,7 @@ def filter_titles(debug=False):
         if t.restart > (MAX_NB_PART - 1):
             keys_to_delete.append(kt)
             too_many_restart += 1
-        elif not MIN_NB_ROOT <= t.nb_root <= MAX_NB_ROOT:
+        elif not MIN_NB_ROOT <= t.nb_roots <= MAX_NB_ROOT:
             keys_to_delete.append(kt)
             too_many_root += 1
         elif t.nb_seg > MAX_NB_SEG:
@@ -353,24 +314,6 @@ def filter_titles(debug=False):
 #-------------------------------------------------
 # Utils
 #-------------------------------------------------
-
-def find_titles(attr, value, nb=1, listing=True):
-    cpt = 0
-    res = []
-    for kt, t in titles.items():
-        if getattr(t, attr) == value:
-            print(kt)
-            print(t)
-            print(repr(t))
-            cpt += 1
-            res.append(t)
-            if listing:
-                for i, w in enumerate(t.words):
-                    print(f"{i+1:2d} {w.form:10s} {w.lemma:10s} {w.gov:3d}, {w.dep:5s}")
-            if cpt == nb:
-                if cpt == 1: return res[0]
-                else:        return res
-
 
 def is_root(word):
     return word.gov == 0 and word.dep in ['_', 'root']
@@ -567,6 +510,72 @@ class Data:
 
 stats = {}
 
+
+def match_title(t, tested_keys_values):
+    """
+        match_title is used by find & count
+        -> find retrieves titles corresponding to a set of conditions
+        -> count counts the number of titles corresponding to a set of conditions
+        -> match tells only if a title corresponds to a set of contions
+        Keys can be :
+        -> an attribute of title : nb_roots
+        -> an sub-attribute of an element in a list attribute : roots.0.pos
+        -> a length of an attribute : #roots
+        Values can be :
+        - only one (the value of the key must be corresponding to it)
+        - a min and a max : through a tuple : min:max
+        - a list of values : through a list : v1|v2|v3
+        Exemples :
+            count({'nb_roots' : 0})      only 0
+            count({'nb_roots' : (0, 2)}) from 0 to 2
+            count({'nb_roots' : [0, 2]}) only 0 or 2
+            count({'nb_roots' : 0, 'nb_seg' : 1})
+    """
+    ok = True # for inclusive conditions, set this to False and set it True when a condition is reached
+    for tested_key, tested_value in tested_keys_values.items():
+        # Get the value
+        if tested_key[0] == '#':
+            attr = getattr(t, tested_key[1:])
+            val = len(attr)
+        elif '.' in tested_key:
+            attr_key, attr_index, obj_key, obj_val = k.split('.') # roots.0.pos
+            attr = getattr(t, attr_key)
+            if int(attr_index) >= len(attr):
+                raise Exception('Index not in range')
+            val = getattr(attr[int(attr_index)], obj_key)
+        else:
+            val = getattr(t, tested_key)
+        # Test
+        if type(tested_value) == int:
+            if val != tested_value:
+                ok = False
+        elif type(tested_value) == tuple:
+            min_val = tested_value[0]
+            max_val = tested_value[1]
+            if not min_val <= val <= max_val:
+                ok = False
+        elif type(tested_value) == list:
+            if val not in tested_value:
+                ok = False
+        else:
+            raise Exception('Tested value unknown type:' + str(type(test_valued)))
+    return ok
+
+
+def find(tested_keys_values, nb=5, display=True):
+    selected = []
+    for kt, t in titles.items():
+        if match_title(t, tested_keys_values):
+            selected.append(t)
+            if display:
+                print(t)
+                print('-' * len(str(t)))
+                t.info()
+            if len(selected) == nb:
+                break
+    return selected
+
+
 def cribble(threshold, *keys):
     # get all the values
     vals = {}
@@ -601,42 +610,12 @@ def cribble(threshold, *keys):
 def count(tested_keys_values=None):
     """
         Used to count the title corresponding to the values of the tested keys.
-        Values can be :
-        - only one (the value of the key must be corresponding to it)
-        - a min and a max : through a tuple : min:max
-        - a list of values : through a list : v1|v2|v3
-        Exemples :
-            count({'nb_root' : 0})      only 0
-            count({'nb_root' : (0, 2)}) from 0 to 2
-            count({'nb_root' : [0, 2]}) only 0 or 2
-            count({'nb_root' : 0, 'nb_seg' : 1})
     """
     if tested_keys_values is None:
         return len(titles)
     count = 0
     for kt, t in titles.items():
-        ok = True # for inclusive conditions, set this to False and set it True when a condition is reached
-        for tested_key, tested_value in tested_keys_values.items():
-            if '.' in tested_key:
-                attr_key, attr_index, obj_key, obj_val = k.split('.') # roots.0.pos.NC
-                attr = getattr(t, attr_key)
-                if int(attr_index) >= len(attr):
-                    vals.append('NO VAL')
-                # TODO
-            if type(tested_value) == int:
-                if getattr(t, tested_key) != tested_value:
-                    ok = False
-            elif type(tested_value) == tuple:
-                min_val = tested_value[0]
-                max_val = tested_value[1]
-                if not min_val <= getattr(t, tested_key) <= max_val:
-                    ok = False
-            elif type(tested_value) == list:
-                if getattr(t, tested_key) not in tested_value:
-                    ok = False
-            else:
-                raise Exception('Tested value unknown type:' + str(type(test_valued)))
-        if ok:
+        if match_title(t, tested_keys_values):
             count += 1
     return count
 
@@ -657,7 +636,10 @@ def stat(keys=None, display=True, until_total_percent=None):
     for key, t in titles.items():
         vals = []
         for k in keys:
-            if '.' in k:
+            if '#' in k:
+                attr = getattr(t, attr_key[1:])
+                vals.append(len(attr))
+            elif '.' in k:
                 attr_key, attr_index, obj_key = k.split('.') # roots.0.pos
                 attr = getattr(t, attr_key)
                 if int(attr_index) >= len(attr):
@@ -696,8 +678,8 @@ def stat(keys=None, display=True, until_total_percent=None):
 def calc_stats(titles):
     global stats
     # Basic title stats
-    keys = ['restart', 'nb_seg', 'nb_root', 'nb', 'year', 'domain', 'typ',
-            ('nb_seg', 'restart'), ('domain', 'nb_seg') ]
+    keys = ['nb_restarts', 'nb_seg', 'nb_roots', 'nb', 'year', 'domain', 'typ',
+            ('nb_seg', 'nb_restarts'), ('domain', 'nb_seg') ]
     for key in keys:
         stat(key)
     # Word stats
@@ -748,7 +730,7 @@ def calc_stats(titles):
 #-------------------------------------------------
 
 titles = {}
-fast = True
+fast = False
 just_load = True
 
 def init(debug):
@@ -769,7 +751,6 @@ def init(debug):
         read_update_from_talismane_data(titles, file)
     if debug:
         print("[INFO] --- Total Titles :", len(titles))
-        print("[INFO] --- Titles with more than one paragraph (restarting index) :", titles_with_more_than_one_paragraph)
     if not just_load:
         #Word.write_unknown_lemma()
         filter_titles(debug)
