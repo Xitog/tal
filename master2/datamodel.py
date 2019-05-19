@@ -127,7 +127,7 @@ class Title:
         self.len_without_ponct = 0
         self.nb_segments = 1
         self.segments = []
-        self.roots_by_segments = []
+        self.roots_by_segments = 'NOVAL'
         # combi
         self.parts_segments = 'NOVAL'
     
@@ -149,6 +149,7 @@ class Title:
         self.nb_restarts = len(restarts)
         self.nb_parts = self.nb_restarts + 1
         current_seg_nb_roots = 0
+        self.roots_by_segments = []
         for cpt, w in enumerate(self.words):
             if is_root(w):
                 self.nb_roots += 1
@@ -167,6 +168,10 @@ class Title:
                 else:
                     Title.ponct_no_seg[w.form] = 1
             self.len_with_ponct += 1
+        if not is_seg(self.words[-1]):
+            self.roots_by_segments.append(current_seg_nb_roots)
+        if sum(self.roots_by_segments) != len(self.roots):
+            raise Exception("A root has no segment!")
         self.parts_segments = f"{self.nb_parts:1d}:{self.nb_segments:1d}"
         self.roots_by_segments = ':'.join([str(x) for x in self.roots_by_segments])
 
