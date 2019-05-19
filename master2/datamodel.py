@@ -119,15 +119,20 @@ class Title:
         self.words = []
         self.restarts = []
         self.nb_restarts = 0
+        self.nb_parts = 0 # nb_parts = nb_restarts + 1
         # updated in stats, must be called afer words is set
         self.nb_roots = 0
         self.roots = []
         self.len_with_ponct = 0
         self.len_without_ponct = 0
-        self.nb_seg = 1
+        self.nb_segments = 1
+        self.segments = []
+        self.roots_by_segments = []
+        # combi
+        self.parts_segments = 'NOVAL'
     
     def __repr__(self):
-        return f"<Title |{self.text[:20]}| #{self.typ} @{self.year} D{self.domain} Len({self.len_without_ponct} +{self.len_with_ponct - self.len_without_ponct}) Seg({self.nb_seg}) Root({self.nb_roots})>"
+        return f"<Title |{self.text[:20]}| #{self.typ} @{self.year} D{self.domain} Len({self.len_without_ponct} +{self.len_with_ponct - self.len_without_ponct}) Seg({self.nb_segments}) Root({self.nb_roots})>"
 
     def __str__(self):
         return f"{self.text}"
@@ -138,23 +143,32 @@ class Title:
     
     ponct_no_seg = {}
     
-    def stats(self):
-        cpt = 0
-        for w in self.words:
-            cpt += 1
+    def init(self, words, restarts):
+        self.words = words
+        self.restarts = restarts
+        self.nb_restarts = len(restarts)
+        self.nb_parts = self.nb_restarts + 1
+        current_seg_nb_roots = 0
+        for cpt, w in enumerate(self.words):
             if is_root(w):
                 self.nb_roots += 1
-                self.roots.append(w)
+                self.roots.append(cpt)
+                current_seg_nb_roots += 1
             if w.pos != 'PONCT':
                 self.len_without_ponct += 1
             elif is_seg(w):
-                self.nb_seg += 1
+                self.nb_segments += 1
+                self.segments.append(cpt)
+                self.roots_by_segments.append(current_seg_nb_roots)
+                current_seg_nb_roots = 0
             else:
                 if w.form in Title.ponct_no_seg:
                     Title.ponct_no_seg[w.form] += 1
                 else:
                     Title.ponct_no_seg[w.form] = 1
             self.len_with_ponct += 1
+        self.parts_segments = f"{self.nb_parts:1d}:{self.nb_segments:1d}"
+        self.roots_by_segments = ':'.join([str(x) for x in self.roots_by_segments])
 
 #-------------------------------------------------
 # Read titles metadata
@@ -241,10 +255,7 @@ def read_update_from_talismane_data(titles, file_name):
                     line = lines[index]
                 except IndexError:
                     break
-            titles[idt].words = words
-            titles[idt].restarts = restarts
-            titles[idt].nb_restarts = len(restarts)
-            titles[idt].stats()
+            titles[idt].init(words, restarts)
             updated += 1
             index -= 1
         index += 1
@@ -268,7 +279,7 @@ filter_text = f"""           We keep :
              - only the title with {MAX_NB_PART} part (restart = nb_part - 1)
              - only the title with {MIN_NB_ROOT} <= root <= {MAX_NB_ROOT}
              - the root must be of type {ROOT_POS_OK}
-             - nb_seg <= {MAX_NB_SEG}
+             - nb_segments <= {MAX_NB_SEG}
 """
 
 def filter_titles(debug=False):
@@ -286,7 +297,7 @@ def filter_titles(debug=False):
         elif not MIN_NB_ROOT <= t.nb_roots <= MAX_NB_ROOT:
             keys_to_delete.append(kt)
             too_many_root += 1
-        elif t.nb_seg > MAX_NB_SEG:
+        elif t.nb_segments > MAX_NB_SEG:
             keys_to_delete.append(kt)
             too_many_seg += 1
         else:
@@ -529,7 +540,7 @@ def match_title(t, tested_keys_values):
             count({'nb_roots' : 0})      only 0
             count({'nb_roots' : (0, 2)}) from 0 to 2
             count({'nb_roots' : [0, 2]}) only 0 or 2
-            count({'nb_roots' : 0, 'nb_seg' : 1})
+            count({'nb_roots' : 0, 'nb_segments' : 1})
     """
     ok = True # for inclusive conditions, set this to False and set it True when a condition is reached
     for tested_key, tested_value in tested_keys_values.items():
@@ -546,7 +557,7 @@ def match_title(t, tested_keys_values):
         else:
             val = getattr(t, tested_key)
         # Test
-        if type(tested_value) == int:
+        if type(tested_value) in [int, str]:
             if val != tested_value:
                 ok = False
         elif type(tested_value) == tuple:
@@ -558,8 +569,16 @@ def match_title(t, tested_keys_values):
             if val not in tested_value:
                 ok = False
         else:
-            raise Exception('Tested value unknown type:' + str(type(test_valued)))
+            raise Exception('Tested value unknown type:' + str(type(tested_value)))
     return ok
+
+
+def select(tested_keys_values):
+    res_list = find(tested_keys_values, len(titles), display=False)
+    res_dict = {}
+    for t in res_list:
+        res_dict[t.idt] = t
+    return res_dict
 
 
 def find(tested_keys_values, nb=5, display=True):
@@ -568,7 +587,7 @@ def find(tested_keys_values, nb=5, display=True):
         if match_title(t, tested_keys_values):
             selected.append(t)
             if display:
-                print(t)
+                print(t.idt, t)
                 print('-' * len(str(t)))
                 t.info()
             if len(selected) == nb:
@@ -678,8 +697,8 @@ def stat(keys=None, display=True, until_total_percent=None):
 def calc_stats(titles):
     global stats
     # Basic title stats
-    keys = ['nb_restarts', 'nb_seg', 'nb_roots', 'nb', 'year', 'domain', 'typ',
-            ('nb_seg', 'nb_restarts'), ('domain', 'nb_seg') ]
+    keys = ['nb_restarts', 'nb_segments', 'nb_roots', 'nb', 'year', 'domain', 'typ',
+            ('nb_parts', 'nb_segments'), ('domain', 'nb_segments') ]
     for key in keys:
         stat(key)
     # Word stats
@@ -729,12 +748,16 @@ def calc_stats(titles):
 # Boot
 #-------------------------------------------------
 
+old = None
 titles = {}
+t11 = None # t with 1 part, 1 segment
+t12 = None # t with 1 part, 2 segments
+
 fast = False
 just_load = True
 
 def init(debug):
-    global titles
+    global titles, old, t11, t12
     load_recoding_table(debug)
     if debug: print('[INFO] --- Domain recode dictionary loaded\n')
     titles = read_titles_metadata(r'data\total-articles-HAL.tsv')
@@ -751,6 +774,10 @@ def init(debug):
         read_update_from_talismane_data(titles, file)
     if debug:
         print("[INFO] --- Total Titles :", len(titles))
+    # Selectors
+    old = titles
+    t11 = select({'parts_segments' : '1:1'})
+    t12 = select({'parts_segments' : '1:2'})
     if not just_load:
         #Word.write_unknown_lemma()
         filter_titles(debug)
