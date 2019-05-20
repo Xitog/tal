@@ -1,0 +1,35 @@
+Requête : find{'nb_parts' : 1, 'nb_segments' : 2, 'roots_by_segments' : '1:0'}
+
+Exemples de titre retournés :
+
+62256 Traces de contenus africains sur Internet : entre homogénéité et identité
+
+ 1.   1 Traces           NC    trace              0, _          <= racine primaire
+ 2.   2 de               P     de                 1, dep  
+ 3.   3 contenus         NC    contenu            2, prep 
+ 4.   4 africains        ADJ   africain           3, mod  
+ 5.   5 sur              P     sur                1, dep  
+ 6.   6 Internet         NPP   ?Internet          5, prep 
+ 7.   7 :                PONCT :                  6, ponct      <= fin du segment 1
+ 8.   8 entre            P     entre              1, dep        <= racine secondaire  
+ 9.   9 homogénéité      NC    homogénéité        8, prep 
+10.  10 et               CC    et                 1, coord
+11.  11 identité         NC    identité          10, dep_coord
+                                                                <= fin du segment 2 et de la partie 1
+
+360074 Dynamique technologique controversée et débat démocratique : le cas des micros et nanotechnologies
+
+ 1.   1 Dynamique        NC    dynamique          0, _          <= racine primaire
+ 2.   2 technologique    ADJ   technologique      1, mod  
+ 3.   3 controversée     VPP   controverser       1, mod  
+ 4.   4 et               CC    et                 1, coord
+ 5.   5 débat            NC    débat              4, dep_coord
+ 6.   6 démocratique     ADJ   démocratique       1, mod  
+ 7.   7 :                PONCT :                  6, ponct      <= fin du segment 1
+ 8.   8 le               DET   le                 9, det  
+ 9.   9 cas              NC    cas                1, mod        <= racine secondaire
+10.  10 des              P+D   de                 9, dep  
+11.  11 micros           NC    micro             10, prep 
+12.  12 et               CC    et                 9, coord
+13.  13 nanotechnologies NC    nanotechnologie   12, dep_coord
+                                                                <= fin du segment 2 et de la partie 1

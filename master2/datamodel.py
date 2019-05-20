@@ -758,7 +758,7 @@ titles = {}
 t11 = None # t with 1 part, 1 segment
 t12 = None # t with 1 part, 2 segments
 
-fast = False
+fast = True
 just_load = True
 
 def init(debug):
