@@ -1,3 +1,53 @@
+# res = stat(['roots.0.pos', 'domain'])
+def agreg(data, max_pos=5):
+    # Get total of key 2 (domain)
+    domain_count = {}
+    for k, v in data.items():
+        dom = k[1]
+        if dom not in domain_count:
+            domain_count[dom] = v
+        else:
+            domain_count[dom] += v
+    # Get the first 5 POS for each domain
+    domain_stat = {}
+    for k, v in data.items():
+        pos = k[0]
+        dom = k[1]
+        if dom not in domain_stat:
+            domain_stat[dom] = {}
+        domain_stat[dom][pos] = round(v / domain_count[dom] * 100, 2)
+    # Display
+    for kdom in sorted(domain_count, key=domain_count.get, reverse=True):
+        dom = domain_stat[kdom]
+        print(f"{kdom:14}", end=' ')
+        cpt = 0
+        for pos in sorted(dom, key=dom.get, reverse=True):
+            v = dom[pos]
+            print(f"{pos:5} {v:5.2f}", end='  ')
+            cpt += 1
+            if cpt >= max_pos: break
+        print(f"{domain_count[kdom]:6d}")
+
+
+# Noun vs Verb
+def aggregate(data):
+    neo_data = {}
+    for k, v in data.items():
+        pos = k[0]
+        dom = k[1]
+        if pos in ['V', 'VIMP', 'VINF', 'VPP', 'VPR', 'VS']:
+            key = ('VERB', dom)
+        elif pos in ['NC', 'NPP']:
+            key = ('NOUN', dom)
+        else:
+            key = (pos, dom)
+        if key in neo_data:
+            neo_data[key] += v
+        else:
+            neo_data[key] = v
+    return neo_data
+
+
 def nb_seg_2_nb_restarts(titles):
     count = 0
     exceptions = []

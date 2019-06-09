@@ -372,6 +372,10 @@ def is_top_100_signoun(word : str):
                       'observation', 'notion', 'phénomène', 'objectif', 'mot',
                       'difficulté', 'sujet']
 
+
+def p(a):
+    return round(a/339687*100, 2)
+
 #-------------------------------------------------
 # Model for results
 #-------------------------------------------------
@@ -554,11 +558,11 @@ def match_title(t, tested_keys_values):
             attr = getattr(t, tested_key[1:])
             val = len(attr)
         elif '.' in tested_key:
-            attr_key, attr_index, obj_key, obj_val = k.split('.') # roots.0.pos
+            attr_key, attr_index, obj_key = tested_key.split('.') # roots.0.pos
             attr = getattr(t, attr_key)
             if int(attr_index) >= len(attr):
                 raise Exception('Index not in range')
-            val = getattr(attr[int(attr_index)], obj_key)
+            val = getattr(t.words[attr[int(attr_index)]], obj_key) # works only for words
         else:
             val = getattr(t, tested_key)
         # Test
@@ -753,20 +757,21 @@ def calc_stats(titles):
 # Boot
 #-------------------------------------------------
 
-old = None
+old    = None
 titles = {}
-t1   = None # t with 1 part
-t11  = None # t with 1 part, 1 segment
-t111 = None # t with 1 part, 1 segment, 1 root 
-t12  = None # t with 1 part, 2 segments
-t2   = None # t with 2 parts
-t22  = None # t with 2 parts, 2 segments
+t1     = None # t with 1 part
+t11    = None # t with 1 part, 1 segment
+t111   = None # t with 1 part, 1 segment, 1 root
+t111n  = None # t with 1 part, 1 segment, 1 root of pos in NC, NPP
+t12    = None # t with 1 part, 2 segments
+t2     = None # t with 2 parts
+t22    = None # t with 2 parts, 2 segments
 
 fast = False
 just_load = True
 
 def init(debug):
-    global titles, old, t1, t11, t111, t12, t2, t22
+    global titles, old, t1, t11, t111, t12, t2, t22, t111n
     load_recoding_table(debug)
     if debug: print('[INFO] --- Domain recode dictionary loaded\n')
     titles = read_titles_metadata(r'data\total-articles-HAL.tsv')
@@ -798,11 +803,16 @@ def init(debug):
             if v.nb_segments == 2:
                 t22[k] = v
     del t2x
+    titles = t111
+    t111n = select({'roots.0.pos' : ['NC', 'NPP']}) # len = 136707
+    titles = old
     print('t1 is available :', len(t1))
     print('t11 is available :', len(t11))
     print('t12 is available :', len(t12))
     print('t2 is available :', len(t2))
     print('t22 is available :', len(t22))
+    print('t111 is available :', len(t111))
+    print('t111n is available :', len(t111n))
     print('Set titles to one of these values to change the corpus requested.')
     print('Set titles to old to reset')
     if not just_load:
