@@ -331,16 +331,16 @@ def filter_titles(debug=False):
 # Utils
 #-------------------------------------------------
 
-def is_root(word):
+def is_root(word : Word):
     return word.gov == 0 and word.dep in ['_', 'root']
 
-def is_seg(word): # : ; . ? ! + variantes du .?!
+def is_seg(word : Word): # : ; . ? ! + variantes du .?!
      return word.pos == 'PONCT' and word.form in [
          ':', '.', '?', '!', '...', '…', ';', '..', '....', '?.', '?!',
          '...?', '?...', '.....', '!...', '!?', '!.', '!!!', '!!',
          '......', '??', '?..', '.?', '?!...']
 
-def ponct_ok(word):
+def ponct_ok(word : Word):
     if word.pos != 'PONCT':
         raise Exception('Not a ponct: ' + str(word))
     elif word.form in [',', '-', '"', '(', ')', "'", '[', ']', '&', '\\',
@@ -351,7 +351,7 @@ def ponct_ok(word):
         return False
 
 
-def is_top_100_signoun(word):
+def is_top_100_signoun(word : str):
     return word in ['exemple', 'cas', 'modèle', 'résultat', 'façon', 'problème',
                       'équation', 'théorie', 'terme', 'section', 'idée', 'point',
                       'figure', 'chose', 'système', 'table', 'question', 'raison',
@@ -669,7 +669,7 @@ def stat(keys=None, display=True, until_total_percent=None):
                 if int(attr_index) >= len(attr):
                     vals.append('NO VAL')
                 else:
-                    vals.append(getattr(attr[int(attr_index)], obj_key))
+                    vals.append(getattr(t.words[attr[int(attr_index)]], obj_key)) # works only for words
             else:
                 vals.append(getattr(t, k))
         val = tuple(vals)
@@ -755,14 +755,18 @@ def calc_stats(titles):
 
 old = None
 titles = {}
-t11 = None # t with 1 part, 1 segment
-t12 = None # t with 1 part, 2 segments
+t1   = None # t with 1 part
+t11  = None # t with 1 part, 1 segment
+t111 = None # t with 1 part, 1 segment, 1 root 
+t12  = None # t with 1 part, 2 segments
+t2   = None # t with 2 parts
+t22  = None # t with 2 parts, 2 segments
 
-fast = True
+fast = False
 just_load = True
 
 def init(debug):
-    global titles, old, t11, t12
+    global titles, old, t1, t11, t111, t12, t2, t22
     load_recoding_table(debug)
     if debug: print('[INFO] --- Domain recode dictionary loaded\n')
     titles = read_titles_metadata(r'data\total-articles-HAL.tsv')
@@ -781,8 +785,26 @@ def init(debug):
         print("[INFO] --- Total Titles :", len(titles))
     # Selectors
     old = titles
-    t11 = select({'parts_segments' : '1:1'})
-    t12 = select({'parts_segments' : '1:2'})
+    t1 = select({'nb_parts' : 1}) # len = 295331
+    t11 = select({'parts_segments' : '1:1'}) # len = 175915
+    t111 = select({'parts_segments' : '1:1', 'nb_roots' : 1}) # len = 155149
+    t12 = select({'parts_segments' : '1:2'}) # len = 98931
+    t2x = select({'nb_parts' : 2}) # len = 38808
+    t2 = {} # len = 38346 (minus 462)
+    t22 = {} # len = 25823
+    for k, v in t2x.items():
+        if is_seg(v.words[v.restarts[0] - 1]):
+            t2[k] = v
+            if v.nb_segments == 2:
+                t22[k] = v
+    del t2x
+    print('t1 is available :', len(t1))
+    print('t11 is available :', len(t11))
+    print('t12 is available :', len(t12))
+    print('t2 is available :', len(t2))
+    print('t22 is available :', len(t22))
+    print('Set titles to one of these values to change the corpus requested.')
+    print('Set titles to old to reset')
     if not just_load:
         #Word.write_unknown_lemma()
         filter_titles(debug)
