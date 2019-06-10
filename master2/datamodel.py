@@ -125,7 +125,7 @@ class Title:
         self.roots = []
         self.len_with_ponct = 0
         self.len_without_ponct = 0
-        self.nb_segments = 1
+        self.nb_segments = 0
         self.segments = []
         self.roots_by_segments = 'NOVAL'
         # combi
@@ -168,10 +168,16 @@ class Title:
                 else:
                     Title.ponct_no_seg[w.form] = 1
             self.len_with_ponct += 1
+        # Adding one if the last word is not seg
         if not is_seg(self.words[-1]):
+            self.nb_segments += 1
             self.roots_by_segments.append(current_seg_nb_roots)
+        # Check 1
         if sum(self.roots_by_segments) != len(self.roots):
             raise Exception("A root has no segment!")
+        # Check 2
+        if len(self.roots_by_segments) != self.nb_segments:
+            raise Exception('Invalid count roots_by_segment', self.idt)
         self.parts_segments = f"{self.nb_parts:1d}:{self.nb_segments:1d}"
         self.roots_by_segments = ':'.join([str(x) for x in self.roots_by_segments])
 
@@ -703,6 +709,66 @@ def stat(keys=None, display=True, until_total_percent=None):
     return values
 
 
+# Calculation of % by domain
+# works for every couple of (key, domain)
+# Ex : res = stat(['roots.0.pos', 'domain']) ; by_dom(res)
+def by_dom(data, max_pos=5):
+    # Get total of key 2 (domain)
+    domain_count = {}
+    for k, v in data.items():
+        dom = k[1]
+        if dom not in domain_count:
+            domain_count[dom] = v
+        else:
+            domain_count[dom] += v
+    # Get the first 5 POS for each domain
+    domain_stat = {}
+    for k, v in data.items():
+        key = k[0]
+        dom = k[1]
+        if dom not in domain_stat:
+            domain_stat[dom] = {}
+        domain_stat[dom][key] = round(v / domain_count[dom] * 100, 2)
+    # Display
+    for kdom in sorted(domain_count, key=domain_count.get, reverse=True):
+        dom = domain_stat[kdom]
+        print(f"{kdom:14}", end=' ')
+        cpt = 0
+        for key in sorted(dom, key=dom.get, reverse=True):
+            v = dom[key]
+            print(f"{key:5} {v:5.2f}", end='  ')
+            cpt += 1
+            if cpt >= max_pos: break
+        print(f"{domain_count[kdom]:6d}")
+
+
+# Noun vs Verb vs Prep
+# Should be used with pprint in whiteboard or by_dom
+def aggregate(data):
+    neo_data = {}
+    for k, v in data.items():
+        if len(k) == 2:
+            pos = k[0]
+            dom = k[1]
+        elif len(k) == 1:
+            pos = k[0]
+            dom = 'ALL'
+        if pos in ['V', 'VIMP', 'VINF', 'VPP', 'VPR', 'VS']:
+            key = ('VERB', dom)
+        elif pos in ['NC', 'NPP']:
+            key = ('NOUN', dom)
+        elif pos in ['P', 'P+D']:
+            key = ('PREP', dom)
+        else:
+            key = (pos, dom)
+        if key in neo_data:
+            neo_data[key] += v
+        else:
+            neo_data[key] = v
+    return neo_data
+
+
+# Global stat calulation, deprecated in favor of stat
 def calc_stats(titles):
     global stats
     # Basic title stats

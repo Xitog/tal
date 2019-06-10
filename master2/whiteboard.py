@@ -1,51 +1,79 @@
-# res = stat(['roots.0.pos', 'domain'])
-def agreg(data, max_pos=5):
-    # Get total of key 2 (domain)
-    domain_count = {}
+def pprint(data, nb_max=None):
+    total = 0
     for k, v in data.items():
-        dom = k[1]
-        if dom not in domain_count:
-            domain_count[dom] = v
-        else:
-            domain_count[dom] += v
-    # Get the first 5 POS for each domain
-    domain_stat = {}
-    for k, v in data.items():
-        pos = k[0]
-        dom = k[1]
-        if dom not in domain_stat:
-            domain_stat[dom] = {}
-        domain_stat[dom][pos] = round(v / domain_count[dom] * 100, 2)
-    # Display
-    for kdom in sorted(domain_count, key=domain_count.get, reverse=True):
-        dom = domain_stat[kdom]
-        print(f"{kdom:14}", end=' ')
-        cpt = 0
-        for pos in sorted(dom, key=dom.get, reverse=True):
-            v = dom[pos]
-            print(f"{pos:5} {v:5.2f}", end='  ')
-            cpt += 1
-            if cpt >= max_pos: break
-        print(f"{domain_count[kdom]:6d}")
+        total += v
+    nb = 0
+    for key in sorted(data, key=data.get, reverse=True):
+        val = data[key]
+        print(f"{str(key):20} {val:10} {round(val/total * 100, 2):5.2f}")
+        nb += 1
+        if nb_max is not None and nb == nb_max:
+            break
 
 
-# Noun vs Verb
-def aggregate(data):
-    neo_data = {}
-    for k, v in data.items():
-        pos = k[0]
-        dom = k[1]
-        if pos in ['V', 'VIMP', 'VINF', 'VPP', 'VPR', 'VS']:
-            key = ('VERB', dom)
-        elif pos in ['NC', 'NPP']:
-            key = ('NOUN', dom)
+def deter(titles):
+    det = {}
+    no_det = 0
+    nb_found = {}
+    for kt, t in titles.items():
+        root = t.roots[0] + 1
+        found = 0
+        for iw, w in enumerate(t.words):
+            if w.pos == 'DET' and w.gov == root and w.dep == 'det':
+                if iw < root:
+                    found +=1
+                    if w.form in det:
+                        det[w.form] += 1
+                    else:
+                        det[w.form] = 1
+                else:
+                    pass # Dîtes-le avec des cartes
+                    #t.info()
+                    #raise Exception("Deter AFTER root " + str(w))
+        if found in nb_found:
+            nb_found[found] += 1
         else:
-            key = (pos, dom)
-        if key in neo_data:
-            neo_data[key] += v
+            nb_found[found] = 1
+            #print('-------------------')
+            #print('Root :', root)
+            #t.info()
+    ordered_det = {}
+    for key in sorted(det, key=det.get, reverse=True):
+        val = det[key]
+        ordered_det[key] = val
+    return ordered_det, nb_found
+
+
+def comple(titles):
+    dep = {}
+    no_dep = 0
+    nb_found = {}
+    for kt, t in titles.items():
+        root = t.roots[0] + 1
+        found = 0
+        for iw, w in enumerate(t.words):
+            if w.pos == 'P' and w.gov == root and w.dep == 'dep':
+                if iw >= root:
+                    found +=1
+                    if w.form.lower() in dep:
+                        dep[w.form.lower()] += 1
+                    else:
+                        dep[w.form.lower()] = 1
+                else:
+                    t.info()
+                    raise Exception("Compl BEFORE root " + str(w))
+        if found in nb_found:
+            nb_found[found] += 1
         else:
-            neo_data[key] = v
-    return neo_data
+            nb_found[found] = 1
+            #print('-------------------')
+            #print('Root :', root)
+            #t.info()
+    ordered_dep = {}
+    for key in sorted(dep, key=dep.get, reverse=True):
+        val = dep[key]
+        ordered_dep[key] = val
+    return ordered_dep, nb_found
 
 
 def nb_seg_2_nb_restarts(titles):
