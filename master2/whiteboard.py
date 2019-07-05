@@ -1,3 +1,51 @@
+# get the different segmentator of the titles
+# the '.' is NOT ALWAYS a restarter (start a new part)
+# the '.' is ALWAYS a segmentator (start a new segment)
+def get_seg(titles):
+    res = {}
+    for kt, t in titles.items():
+        for s in t.segments:
+            v = t.words[s].form
+            if v not in res:
+                res[v] = 1
+            else:
+                res[v] += 1
+    return res
+
+# show in which segment are the roots
+def root_in_seg(titles):
+    res = {}
+    for kt, t in titles.items():
+        if len(t.segments) > 1:
+            if len(t.segments) == 2:
+                # if the second segmentator mark is a closing one it's ok
+                if t.segments[-1] != t.len_with_ponct - 1:
+                    raise Exception('Too many segmentors: ' + str(t.segments))
+            else:
+                raise Exception('Too many segments: ' + str(len(t.segments)))
+        # everything is ok
+        seg_mark = t.segments[0]
+        if len(t.roots) == 0:
+            raise Exception('No root')
+        elif len(t.roots) > 2:
+            raise Exception('Too many roots: ' + str(len(t.roots)))
+        in_seg1 = 0
+        in_seg2 = 0
+        for root in t.roots:
+            if root < seg_mark:
+                in_seg1 += 1
+            elif root > seg_mark:
+                in_seg2 += 1
+            else:
+                raise Exception('Root is segmentator!')
+        key = (in_seg1, in_seg2)
+        if key not in res:
+            res[key] = 1
+        else:
+            res[key] += 1
+    return res
+
+
 def pprint(data, nb_max=None):
     total = 0
     for k, v in data.items():

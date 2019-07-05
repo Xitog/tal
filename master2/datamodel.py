@@ -27,6 +27,14 @@
 #       pprint(dic)
 #   7. Model for results
 #   8. Stats
+#       select  Find ALL titles matching the key values, return a dict
+#       find    Find N titles matching the key values, return a list (based on find)
+#       count   Count the number of titles matching the key values
+#       stat    Make stats on one or more keys
+#       Exemple : 
+#            res = stat(['roots.0.pos', 'domain'])
+#            res_agg = aggregate(res)               Aggregate NC+NPP=>NOUN / Vx=>VERB / P+P+D=>PREP
+#            by_dom(res_agg)
 #   9. Boot
 
 #-------------------------------------------------
@@ -829,15 +837,19 @@ t1     = None # t with 1 part
 t11    = None # t with 1 part, 1 segment
 t111   = None # t with 1 part, 1 segment, 1 root
 t111n  = None # t with 1 part, 1 segment, 1 root of pos in NC, NPP
+t112   = None # t with 1 part, 1 segment, 2 roots
 t12    = None # t with 1 part, 2 segments
+t121   = None # t with 1 part, 2 segments, 1 root
+t122   = None # t with 1 part, 2 segments, 2 roots
 t2     = None # t with 2 parts
 t22    = None # t with 2 parts, 2 segments
+t222   = None # t with 2 parts, 2 segments, 2 roots
 
 fast = False
 just_load = True
 
 def init(debug):
-    global titles, old, t1, t11, t111, t12, t2, t22, t111n
+    global titles, old, t1, t11, t111, t111n, t112, t12, t121, t122, t2, t22, t222
     load_recoding_table(debug)
     if debug: print('[INFO] --- Domain recode dictionary loaded\n')
     titles = read_titles_metadata(r'data\total-articles-HAL.tsv')
@@ -856,29 +868,47 @@ def init(debug):
         print("[INFO] --- Total Titles :", len(titles))
     # Selectors
     old = titles
-    t1 = select({'nb_parts' : 1}) # len = 295331
-    t11 = select({'parts_segments' : '1:1'}) # len = 175915
-    t111 = select({'parts_segments' : '1:1', 'nb_roots' : 1}) # len = 155149
-    t12 = select({'parts_segments' : '1:2'}) # len = 98931
-    t2x = select({'nb_parts' : 2}) # len = 38808
-    t2 = {} # len = 38346 (minus 462)
-    t22 = {} # len = 25823
+    # 1 part
+    #t1 = select({'nb_parts' : 1})           # len = 295 331
+    t11 = select({'parts_segments' : '1:1'}) # len = 171 890
+    t12 = select({'parts_segments' : '1:2'}) # len =  98 931
+    titles = t11
+    t111 = select({'nb_roots' : 1})          # len = 171 890
+    t112 = select({'nb_roots' : 2})          # len =  20 160
+    titles = t12
+    t121 = select({'nb_roots' : 1})          # len =  56 851
+    t122 = select({'nb_roots' : 2})          # len =  33 631
+    titles = t111
+    t111n = select({'roots.0.pos' : ['NC', 'NPP']}) # len = 136707
+    del t11
+    del t12
+    # 2 parts
+    titles = old
+    t2x = select({'nb_parts' : 2})           # len =  38 808
+    t2 = {}                                  # len =  38 346 (minus 462)
+    t22 = {}                                 # len =  30 055
     for k, v in t2x.items():
         if is_seg(v.words[v.restarts[0] - 1]):
             t2[k] = v
             if v.nb_segments == 2:
                 t22[k] = v
     del t2x
-    titles = t111
-    t111n = select({'roots.0.pos' : ['NC', 'NPP']}) # len = 136707
+    titles = t22
+    t222 = select({'nb_roots' : 2})
+    del t22
+    # Info
     titles = old
-    print('t1 is available :', len(t1))
-    print('t11 is available :', len(t11))
-    print('t12 is available :', len(t12))
-    print('t2 is available :', len(t2))
-    print('t22 is available :', len(t22))
+    #print('t1 is available :', len(t1))
     print('t111 is available :', len(t111))
-    print('t111n is available :', len(t111n))
+    print('t112 is available :', len(t112))
+    print('t121 is available :', len(t121))
+    print('t122 is available :', len(t122))
+    print('t222 is available :', len(t222))
+    print('Sum :              ', len(t111)+len(t112)+len(t121)+len(t122)+len(t222))
+    #print('t2 is available :', len(t2))
+    #print('t22 is available :', len(t22))
+    #print('t111 is available :', len(t111))
+    #print('t111n is available :', len(t111n))
     print('Set titles to one of these values to change the corpus requested.')
     print('Set titles to old to reset')
     if not just_load:
