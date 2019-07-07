@@ -147,7 +147,7 @@ class Title:
 
     def info(self):
         for i, w in enumerate(self.words):
-            print(f"{i+1:2d}. {w.idw:3d} {w.form:16} {w.pos:5} {w.lemma:16} {w.gov:3d}, {w.dep:5}")
+            print(f"{i:2d}. {w.idw:3d} {w.form:16} {w.pos:5} {w.lemma:16} {w.gov:3d}, {w.dep:5}")
     
     ponct_no_seg = {}
     
@@ -596,6 +596,7 @@ def match_title(t, tested_keys_values):
     return ok
 
 
+# t121a = select({'roots_by_segments' : '1:0'})
 def select(tested_keys_values):
     res_list = find(tested_keys_values, len(titles), display=False)
     res_dict = {}
@@ -679,7 +680,7 @@ def stat(keys=None, display=True, until_total_percent=None):
         vals = []
         for k in keys:
             if '#' in k:
-                attr = getattr(t, attr_key[1:])
+                attr = getattr(t, k[1:])
                 vals.append(len(attr))
             elif '.' in k:
                 attr_key, attr_index, obj_key = k.split('.') # roots.0.pos
@@ -698,7 +699,7 @@ def stat(keys=None, display=True, until_total_percent=None):
     for val in values:
         total += values[val]
     if display:
-        s = f'*** {str(keys)} ***'
+        s = f'*** {str(keys)} *** ({len(titles)})'
         print(s, '\n', '-' * len(s), sep='')
         i = 0
         cumul_percent = 0.0
@@ -752,6 +753,7 @@ def by_dom(data, max_pos=5):
 
 # Noun vs Verb vs Prep
 # Should be used with pprint in whiteboard or by_dom
+# # Ex : res = stat(['roots.0.pos', 'domain']) ; res = aggregate(res) ; by_dom(res)
 def aggregate(data):
     neo_data = {}
     for k, v in data.items():
