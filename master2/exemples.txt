@@ -182,3 +182,42 @@ Traces de  contenus africains sur Internet :     entre homogénéité et    iden
 NC     P   NC       ADJ       P   NPP      PONCT P     NC          CC    NC
 0      1   2        3         1   5        6     1     8           1     10
 _      dep prep     mod       dep prep     ponct dep   prep        coord dep_coord
+
+
+
+AVEC DEUX SUBROOTS DANS UN SEGMENT
+
+62256 Traces de contenus africains sur Internet : entre homogénéité et identité
+-------------------------------------------------------------------------
+ 1.   1 Traces           NC    trace              0, _    
+ 2.   2 de               P     de                 1, dep  
+ 3.   3 contenus         NC    contenu            2, prep 
+ 4.   4 africains        ADJ   africain           3, mod  
+ 5.   5 sur              P     sur                1, dep  
+ 6.   6 Internet         NPP   ?Internet          5, prep 
+ 7.   7 :                PONCT :                  6, ponct
+ 8.   8 entre            P     entre              1, dep            ENTRE
+ 9.   9 homogénéité      NC    homogénéité        8, prep           ...
+10.  10 et               CC    et                 1, coord          ET
+11.  11 identité         NC    identité          10, dep_coord      ...
+
+1759477 Les objets communicants\, La problématique des Antennes: Dispositif pour détecter le vêlage des vaches.
+-------------------------------------------------------------------------------------------------------
+ 1.   1 Les              DET   les                2, det  
+ 2.   2 objets           NC    objet              0, _    
+ 3.   3 communicants     ADJ   communicant        2, mod  
+ 4.   4 ,                PONCT ,                  3, ponct
+ 5.   5 La               NC    la                 2, mod  
+ 6.   6 problématique    ADJ   problématique      5, mod  
+ 7.   7 des              P+D   de                 5, dep  
+ 8.   8 Antennes         NPP   ?Antennes          7, prep 
+ 9.   9 :                PONCT :                  8, ponct
+10.  10 Dispositif       NC    dispositif         2, mod            NC
+11.  11 pour             P     pour               2, dep            P
+12.  12 détecter         VINF  détecter          11, prep 
+13.  13 le               DET   le                14, det  
+14.  14 vêlage           NC    vêlage            12, obj  
+15.  15 des              P+D   de                14, dep  
+16.  16 vaches           NC    vache             15, prep 
+17.  17 .                PONCT .                 16, ponct
+
