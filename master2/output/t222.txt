@@ -1,0 +1,1061 @@
+360060 Le droit entre l'Etat et le marché. Pour une analyse prosopographique de la Cour de justice des Communautés européennes
+-----------------------------------------------------------------------------------------------------------------------
+ 0.   1 Le               DET   le                 2, det  
+ 1.   2 droit            NC    droit              0, _    
+ 2.   3 entre            P     entre              2, dep  
+ 3.   4 l'               DET   le                 5, det  
+ 4.   5 Etat             NPP   ?Etat              3, prep 
+ 5.   6 et               CC    et                 2, coord
+ 6.   7 le               DET   le                 8, det  
+ 7.   8 marché           NC    marché             6, dep_coord
+ 8.   9 .                PONCT .                  8, ponct
+ 9.   1 Pour             P     pour               0, _    
+10.   2 une              DET   une                3, det  
+11.   3 analyse          NC    analyse            1, prep 
+12.   4 prosopographique ADJ   ?prosopographique   3, mod  
+13.   5 de               P     de                 3, dep  
+14.   6 la               DET   la                 7, det  
+15.   7 Cour             NC    cour               5, prep 
+16.   8 de               P     de                 7, dep  
+17.   9 justice          NC    justice            8, prep 
+18.  10 des              P+D   de                 3, dep  
+19.  11 Communautés      NC    communauté        10, prep 
+20.  12 européennes      ADJ   européen          11, mod  
+
+960562 Quel littoral à l'horizon 2050 ? Un exercice de prospective participative en Languedoc-Roussillon
+-------------------------------------------------------------------------------------------------
+ 0.   1 Quel             DETWH quel               2, mod  
+ 1.   2 littoral         NC    littoral           0, _    
+ 2.   3 à                P     à                  2, dep  
+ 3.   4 l'               DET   le                 5, det  
+ 4.   5 horizon          NC    horizon            3, prep 
+ 5.   6 2050             ADJ   2050               5, mod  
+ 6.   7 ?                PONCT ?                  6, ponct
+ 7.   1 Un               DET   un                 2, det  
+ 8.   2 exercice         NC    exercice           0, _    
+ 9.   3 de               P     de                 2, dep  
+10.   4 prospective      NC    prospective        3, prep 
+11.   5 participative    ADJ   participatif       4, mod  
+12.   6 en               P     en                 2, dep  
+13.   7 Languedoc        NPP   Languedoc          6, prep 
+14.   8 -                PONCT -                  7, ponct
+15.   9 Roussillon       NPP   Roussillon         7, mod  
+
+62261 Le cadrage des causes des « sans » dans l'information télévisée. Le cas de la protestation des sans-logis (1994-95)
+-------------------------------------------------------------------------------------------------------------------
+ 0.   1 Le               DET   le                 2, det  
+ 1.   2 cadrage          NC    cadrage            0, _    
+ 2.   3 des              P+D   de                 2, dep  
+ 3.   4 causes           NC    cause              3, prep 
+ 4.   5 des              P+D   de                 2, dep  
+ 5.   6 "                PONCT "                  5, ponct
+ 6.   7 sans             P     sans               2, dep  
+ 7.   8 "                PONCT "                  7, ponct
+ 8.   9 dans             P     dans               2, dep  
+ 9.  10 l'               DET   le                11, det  
+10.  11 information      NC    information        9, prep 
+11.  12 télévisée        ADJ   téléviser         11, mod  
+12.  13 .                PONCT .                 12, ponct
+13.   1 Le               DET   le                 2, det  
+14.   2 cas              NC    cas                0, _    
+15.   3 de               P     de                 2, dep  
+16.   4 la               DET   la                 5, det  
+17.   5 protestation     NC    protestation       3, prep 
+18.   6 des              P+D   de                 2, dep  
+19.   7 sans             P     sans               2, dep  
+20.   8 -                PONCT -                  7, ponct
+21.   9 logis            NC    logis              2, mod  
+22.  10 (                PONCT (                  9, ponct
+23.  11 1994-95          NC    1994-95            2, mod  
+24.  12 )                PONCT )                 11, ponct
+
+1808329 Broyage du talc dans un broyeur à jets d'air opposés. Optimisation de la mise en régime\, de la finesse et du débit
+-------------------------------------------------------------------------------------------------------------------
+ 0.   1 Broyage          NC    broyage            0, _    
+ 1.   2 du               P+D   de                 1, dep  
+ 2.   3 talc             NC    talc               2, prep 
+ 3.   4 dans             P     dans               1, dep  
+ 4.   5 un               DET   un                 6, det  
+ 5.   6 broyeur          NC    broyeur            4, prep 
+ 6.   7 à                P     à                  1, dep  
+ 7.   8 jets             NC    jet                7, prep 
+ 8.   9 d'               P     de                 1, dep  
+ 9.  10 air              NC    air                9, prep 
+10.  11 opposés          VPP   opposer            1, mod  
+11.  12 .                PONCT .                 11, ponct
+12.   1 Optimisation     NC    optimisation       0, _    
+13.   2 de               P     de                 1, dep  
+14.   3 la               DET   la                 4, det  
+15.   4 mise             NC    mise               2, prep 
+16.   5 en               P     en                 1, dep  
+17.   6 régime           NC    régime             5, prep 
+18.   7 ,                PONCT ,                  6, ponct
+19.   8 de               P     de                 1, dep  
+20.   9 la               DET   la                10, det  
+21.  10 finesse          NC    finesse            8, prep 
+22.  11 et               CC    et                 8, coord
+23.  12 du               P+D   de                11, dep_coord
+24.  13 débit            NC    débit             12, prep 
+
+659215 Hélinand de Froidmont . Pour éclairer les dix-huit premiers livres inédits de sa chronique
+------------------------------------------------------------------------------------------
+ 0.   1 Hélinand         NPP   ?Hélinand          0, _    
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 Froidmont        NPP   ?Froidmont         2, prep 
+ 3.   4 .                PONCT .                  3, ponct
+ 4.   1 Pour             P     pour               0, _    
+ 5.   2 éclairer         VINF  éclairer           1, prep 
+ 6.   3 les              DET   les                6, det  
+ 7.   4 dix-huit         ADJ   dix-huit           6, mod  
+ 8.   5 premiers         ADJ   premier            6, mod  
+ 9.   6 livres           NC    livre              2, obj  
+10.   7 inédits          ADJ   inédit             6, mod  
+11.   8 de               P     de                 2, mod  
+12.   9 sa               DET   sa                10, det  
+13.  10 chronique        NC    chronique          8, prep 
+
+1460374 La « transformation » de l’exécutif régional. Le dépassement des évolutions juridiques par la communication politique
+---------------------------------------------------------------------------------------------------------------------
+ 0.   1 La               DET   la                 3, det  
+ 1.   2 "                PONCT "                  1, ponct
+ 2.   3 transformation   NC    transformation     0, _    
+ 3.   4 "                PONCT "                  3, ponct
+ 4.   5 de               P     de                 3, dep  
+ 5.   6 l'               DET   le                 7, det  
+ 6.   7 exécutif         NC    ?exécutif          5, prep 
+ 7.   8 régional         ADJ   régional           7, mod  
+ 8.   9 .                PONCT .                  8, ponct
+ 9.   1 Le               DET   le                 2, det  
+10.   2 dépassement      NC    dépassement        0, _    
+11.   3 des              P+D   de                 2, dep  
+12.   4 évolutions       NC    évolution          3, prep 
+13.   5 juridiques       ADJ   juridique          4, mod  
+14.   6 par              P     par                2, dep  
+15.   7 la               DET   la                 8, det  
+16.   8 communication    NC    communication      6, prep 
+17.   9 politique        ADJ   politique          8, mod  
+
+1609795 Frontières linguistiques dans les approches de la langue en théorie et en pratique. L’impact des contextes migratoires pour repenser l’enseignement en France
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Frontières       NC    frontière          0, _    
+ 1.   2 linguistiques    ADJ   linguistique       1, mod  
+ 2.   3 dans             P     dans               1, dep  
+ 3.   4 les              DET   les                5, det  
+ 4.   5 approches        NC    approche           3, prep 
+ 5.   6 de               P     de                 1, dep  
+ 6.   7 la               DET   la                 8, det  
+ 7.   8 langue           NC    langue             6, prep 
+ 8.   9 en               P     en                 8, dep  
+ 9.  10 théorie          NC    théorie            9, prep 
+10.  11 et               CC    et                 6, coord
+11.  12 en               P     en                11, dep_coord
+12.  13 pratique         NC    pratique          12, prep 
+13.  14 .                PONCT .                 13, ponct
+14.   1 L'               DET   le                 2, det  
+15.   2 impact           NC    impact             0, _    
+16.   3 des              P+D   de                 2, dep  
+17.   4 contextes        NC    contexte           3, prep 
+18.   5 migratoires      ADJ   migratoire         4, mod  
+19.   6 pour             P     pour               2, dep  
+20.   7 repenser         VINF  repenser           6, prep 
+21.   8 l'               DET   le                 9, det  
+22.   9 enseignement     NC    enseignement       7, obj  
+23.  10 en               P     en                 7, mod  
+24.  11 France           NPP   France            10, prep 
+
+1759215 “La vie commence à 76 ans”. Marcel Duchamp joue aux échecs avec Eve Babitz
+--------------------------------------------------------------------------
+ 0.   1 "                PONCT "                  0, ponct
+ 1.   2 La               DET   la                 3, det  
+ 2.   3 vie              NC    vie                4, suj  
+ 3.   4 commence         V     commencer          0, root 
+ 4.   5 à                P     à                  4, mod  
+ 5.   6 76               NC    76                 5, prep 
+ 6.   7 ans              NC    an                 6, mod  
+ 7.   8 "                PONCT "                  7, ponct
+ 8.   9 .                PONCT .                  7, ponct
+ 9.   1 Marcel           NPP   Marcel             3, suj  
+10.   2 Duchamp          NPP   ?Duchamp           1, mod  
+11.   3 joue             V     jouer              0, root 
+12.   4 aux              P+D   à                  3, mod  
+13.   5 échecs           NC    échec              4, prep 
+14.   6 avec             P     avec               3, mod  
+15.   7 Eve              NPP   Eve                6, prep 
+16.   8 Babitz           NPP   ?Babitz            7, mod  
+
+560330 Génération Y et marketing. Evolution ou révolution ?
+----------------------------------------------------
+ 0.   1 Génération       NC    génération         0, _    
+ 1.   2 Y                NPP   Y                  1, mod  
+ 2.   3 et               CC    et                 1, coord
+ 3.   4 marketing        NC    marketing          3, dep_coord
+ 4.   5 .                PONCT .                  4, ponct
+ 5.   1 Evolution        NC    évolution          0, _    
+ 6.   2 ou               CC    ou                 1, coord
+ 7.   3 révolution       NC    révolution         2, dep_coord
+ 8.   4 ?                PONCT ?                  3, ponct
+
+1609797 Que révèlent les parcours et les pratiques des enseignants en classe de français ? Éléments de réflexions sur les conflits cognitifs et méthodologiques face aux traditions didactiques
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Que              CS    que                0, _    
+ 1.   2 révèlent         V     révéler            1, sub  
+ 2.   3 les              DET   les                4, det  
+ 3.   4 parcours         NC    parcours           2, suj  
+ 4.   5 et               CC    et                 4, coord
+ 5.   6 les              DET   les                7, det  
+ 6.   7 pratiques        NC    pratique           5, dep_coord
+ 7.   8 des              P+D   de                 2, mod  
+ 8.   9 enseignants      NC    enseignant         8, prep 
+ 9.  10 en               P     en                 2, mod  
+10.  11 classe           NC    classe            10, prep 
+11.  12 de               P     de                 2, mod  
+12.  13 français         NC    français          12, prep 
+13.  14 ?                PONCT ?                 13, ponct
+14.   1 Éléments         NC    élément            0, _    
+15.   2 de               P     de                 1, dep  
+16.   3 réflexions       NC    réflexion          2, prep 
+17.   4 sur              P     sur                1, dep  
+18.   5 les              DET   les                6, det  
+19.   6 conflits         NC    conflit            4, prep 
+20.   7 cognitifs        ADJ   cognitif           6, mod  
+21.   8 et               CC    et                 7, coord
+22.   9 méthodologiques  ADJ   méthodologique     8, dep_coord
+23.  10 face             NC    face               6, mod  
+24.  11 aux              P+D   à                  1, dep  
+25.  12 traditions       NC    tradition         11, prep 
+26.  13 didactiques      ADJ   didactique        12, mod  
+
+162687 Développement d'instrumentation électroanalytique. Application aux mesures de faibles concentrations d'espèces électroactives dans divers domaines
+--------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Développement    NC    développement      0, _    
+ 1.   2 d'               P     de                 1, dep  
+ 2.   3 instrumentation  NC    instrumentation    2, prep 
+ 3.   4 électroanalytique ADJ   ?électroanalytique   3, mod  
+ 4.   5 .                PONCT .                  4, ponct
+ 5.   1 Application      NC    application        0, _    
+ 6.   2 aux              P+D   à                  1, dep  
+ 7.   3 mesures          NC    mesure             2, prep 
+ 8.   4 de               P     de                 1, dep  
+ 9.   5 faibles          ADJ   faible             6, mod  
+10.   6 concentrations   NC    concentration      4, prep 
+11.   7 d'               P     de                 1, dep  
+12.   8 espèces          NC    espèce             7, prep 
+13.   9 électroactives   ADJ   ?électroactives    8, mod  
+14.  10 dans             P     dans               1, dep  
+15.  11 divers           ADJ   divers            12, mod  
+16.  12 domaines         NC    domaine           10, prep 
+
+1759484 Où va la recherche en éducation ? Analyse factorielle de résumés de communications aux Biennales de l'éducation et de la formation
+----------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Où               ADVWH où                 2, mod  
+ 1.   2 va               V     aller              0, root 
+ 2.   3 la               DET   la                 4, det  
+ 3.   4 recherche        NC    recherche          2, obj  
+ 4.   5 en               P     en                 2, mod  
+ 5.   6 éducation        NC    éducation          5, prep 
+ 6.   7 ?                PONCT ?                  6, ponct
+ 7.   1 Analyse          NC    analyse            0, _    
+ 8.   2 factorielle      ADJ   factoriel          1, mod  
+ 9.   3 de               P     de                 1, dep  
+10.   4 résumés          NC    résumé             3, prep 
+11.   5 de               P     de                 1, dep  
+12.   6 communications   NC    communication      5, prep 
+13.   7 aux              P+D   à                  1, dep  
+14.   8 Biennales        NC    biennale           7, prep 
+15.   9 de               P     de                 1, dep  
+16.  10 l'               DET   le                11, det  
+17.  11 éducation        NC    éducation          9, prep 
+18.  12 et               CC    et                 1, coord
+19.  13 de               P     de                12, dep_coord
+20.  14 la               DET   la                15, det  
+21.  15 formation        NC    formation         13, prep 
+
+216407 CALCUL DES PERFORMANCES D'UN LASER CO2 A EXCITATION ÉLECTRIQUE. COMPARAISON AVEC L'EXPÉRIENCE
+---------------------------------------------------------------------------------------------
+ 0.   1 CALCUL           NC    calcul             0, _    
+ 1.   2 DES              P+D   de                 1, dep  
+ 2.   3 PERFORMANCES     NC    performance        2, prep 
+ 3.   4 D'               P     de                 1, dep  
+ 4.   5 UN               DET   un                 6, det  
+ 5.   6 LASER            NC    laser              4, prep 
+ 6.   7 CO2              NPP   ?CO2               6, mod  
+ 7.   8 A                P     à                  1, dep  
+ 8.   9 EXCITATION       NC    excitation         8, prep 
+ 9.  10 ÉLECTRIQUE       ADJ   électrique         9, mod  
+10.  11 .                PONCT .                 10, ponct
+11.   1 COMPARAISON      NC    comparaison        0, _    
+12.   2 AVEC             NPP   ?AVEC              1, mod  
+13.   3 L'               DET   le                 4, det  
+14.   4 EXPÉRIENCE       NC    expérience         1, mod  
+
+216413 ÉTUDE DE LA DÉCHARGE DU LASER HCN CONTINU\, OPTIMISATION DES PARAMÈTRES ET LOIS D'ÉCHELLE. RÉALISATION PRATIQUE ET APPLICATIONS
+-------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 ÉTUDE            NC    étude              0, _    
+ 1.   2 DE               P     de                 1, dep  
+ 2.   3 LA               DET   la                 4, det  
+ 3.   4 DÉCHARGE         NC    décharge           2, prep 
+ 4.   5 DU               P+D   de                 1, dep  
+ 5.   6 LASER            NC    laser              5, prep 
+ 6.   7 HCN              NPP   ?HCN               6, mod  
+ 7.   8 CONTINU          ADJ   continu            6, mod  
+ 8.   9 ,                PONCT ,                  8, ponct
+ 9.  10 OPTIMISATION     NC    optimisation       6, mod  
+10.  11 DES              P+D   de                10, dep  
+11.  12 PARAMÈTRES       NC    paramètre         11, prep 
+12.  13 ET               CC    et                10, coord
+13.  14 LOIS             NC    loi               13, dep_coord
+14.  15 D'               P     de                 1, dep  
+15.  16 ÉCHELLE          NPP   ?ÉCHELLE          15, prep 
+16.  17 .                PONCT .                 16, ponct
+17.   1 RÉALISATION      NC    réalisation        0, _    
+18.   2 PRATIQUE         ADJ   pratique           1, mod  
+19.   3 ET               CC    et                 1, coord
+20.   4 APPLICATIONS     NC    application        3, dep_coord
+
+1759556 Les sites côtiers du Pont-Euxin\, de Thémiskyra à Trapézous\, dans l'Antiquité. Textes littéraires grecs et latins\, d'Hécatée de Milet à Ammien Marcellin
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Les              DET   les                2, det  
+ 1.   2 sites            NC    site               0, _    
+ 2.   3 côtiers          ADJ   côtier             2, mod  
+ 3.   4 du               P+D   de                 2, dep  
+ 4.   5 Pont             NPP   Pont               4, prep 
+ 5.   6 -                PONCT -                  5, ponct
+ 6.   7 Euxin            NPP   ?Euxin             5, mod  
+ 7.   8 ,                PONCT ,                  7, ponct
+ 8.   9 de               P     de                 2, dep  
+ 9.  10 Thémiskyra       NPP   ?Thémiskyra        9, prep 
+10.  11 à                P     à                  2, dep  
+11.  12 Trapézous        NPP   ?Trapézous        11, prep 
+12.  13 ,                PONCT ,                 12, ponct
+13.  14 dans             P     dans               2, dep  
+14.  15 l'               DET   le                16, det  
+15.  16 Antiquité        NPP   ?Antiquité        14, prep 
+16.  17 .                PONCT .                 16, ponct
+17.   1 Textes           NC    texte              0, _    
+18.   2 littéraires      ADJ   littéraire         1, mod  
+19.   3 grecs            ADJ   grec               1, mod  
+20.   4 et               CC    et                 3, coord
+21.   5 latins           ADJ   latin              4, dep_coord
+22.   6 ,                PONCT ,                  5, ponct
+23.   7 d'               P     de                 1, dep  
+24.   8 Hécatée          NC    ?Hécatée           7, prep 
+25.   9 de               P     de                 1, dep  
+26.  10 Milet            NPP   ?Milet             9, prep 
+27.  11 à                P     à                  1, dep  
+28.  12 Ammien           NPP   ?Ammien           11, prep 
+29.  13 Marcellin        NPP   Marcellin         12, mod  
+
+1808487 ’J’ai mal à ma république"". Les conditions de l’(in)audibilité et de la performativité des discours des opposants dans une controverse autour d’un projet éolien terrestre.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 '                PONCT '                  0, ponct
+ 1.   2 J'               CLS   je                 3, suj  
+ 2.   3 ai               V     avoir              0, root 
+ 3.   4 mal              ADV   mal                3, mod  
+ 4.   5 à                P     à                  3, mod  
+ 5.   6 ma               DET   ma                 7, det  
+ 6.   7 république       NC    république         5, prep 
+ 7.   8 "                PONCT "                  7, ponct
+ 8.   9 .                PONCT .                  7, ponct
+ 9.   1 Les              DET   les                2, det  
+10.   2 conditions       NC    condition          0, _    
+11.   3 de               P     de                 2, dep  
+12.   4 l'               DET   le                 6, det  
+13.   5 (                PONCT (                  4, ponct
+14.   6 in               ADJ   in                 3, prep 
+15.   7 )                PONCT )                  6, ponct
+16.   8 audibilité       NC    audibilité         2, mod  
+17.   9 et               CC    et                 2, coord
+18.  10 de               P     de                 9, dep_coord
+19.  11 la               DET   la                12, det  
+20.  12 performativité   NC    ?performativité   10, prep 
+21.  13 des              P+D   de                 2, dep  
+22.  14 discours         NC    discours          13, prep 
+23.  15 des              P+D   de                 2, dep  
+24.  16 opposants        NC    opposant          15, prep 
+25.  17 dans             P     dans               2, dep  
+26.  18 une              DET   une               19, det  
+27.  19 controverse      NC    controverse       17, prep 
+28.  20 autour           NC    autour            19, mod  
+29.  21 d'               P     de                 2, dep  
+30.  22 un               DET   un                23, det  
+31.  23 projet           NC    projet            21, prep 
+32.  24 éolien           ADJ   éolien            23, mod  
+33.  25 terrestre        ADJ   terrestre         23, mod  
+34.  26 .                PONCT .                 25, ponct
+
+264736 Les frères ennemis du roman historique. Sur quelques romans des XIXe et XXe siècles consacrés aux guerres de religion
+---------------------------------------------------------------------------------------------------------------------
+ 0.   1 Les              DET   les                2, det  
+ 1.   2 frères           NC    frère              0, _    
+ 2.   3 ennemis          ADJ   ennemi             2, mod  
+ 3.   4 du               P+D   de                 2, dep  
+ 4.   5 roman            NC    roman              4, prep 
+ 5.   6 historique       ADJ   historique         5, mod  
+ 6.   7 .                PONCT .                  6, ponct
+ 7.   1 Sur              P     sur                0, _    
+ 8.   2 quelques         DET   quelques           3, det  
+ 9.   3 romans           NC    roman              1, prep 
+10.   4 des              P+D   de                 3, dep  
+11.   5 XIXe             NC    ?XIXe              4, prep 
+12.   6 et               CC    et                 3, coord
+13.   7 XXe              ADJ   ?XXe               8, mod  
+14.   8 siècles          NC    siècle             6, dep_coord
+15.   9 consacrés        VPP   consacrer          3, mod  
+16.  10 aux              P+D   à                  9, mod  
+17.  11 guerres          NC    guerre            10, prep 
+18.  12 de               P     de                 3, dep  
+19.  13 religion         NC    religion          12, prep 
+
+1460506 Introduction au thème ... La réflexion sur l’espace rural au Portugal\, jeu d’échelles
+--------------------------------------------------------------------------------------
+ 0.   1 Introduction     NC    introduction       0, _    
+ 1.   2 au               P+D   à                  1, dep  
+ 2.   3 thème            NC    thème              2, prep 
+ 3.   4 ...              PONCT ...                3, ponct
+ 4.   1 La               DET   la                 2, det  
+ 5.   2 réflexion        NC    réflexion          0, _    
+ 6.   3 sur              P     sur                2, dep  
+ 7.   4 l'               DET   le                 5, det  
+ 8.   5 espace           NC    espace             3, prep 
+ 9.   6 rural            ADJ   rural              5, mod  
+10.   7 au               P+D   à                  2, dep  
+11.   8 Portugal         NPP   Portugal           7, prep 
+12.   9 ,                PONCT ,                  8, ponct
+13.  10 jeu              NC    jeu                2, mod  
+14.  11 d'               P     de                10, dep  
+15.  12 échelles         NC    échelle           11, prep 
+
+1808586 La consécration du droit de participer par la Charte de l’environnement. Quelle portée juridique ?
+--------------------------------------------------------------------------------------------------
+ 0.   1 La               DET   la                 2, det  
+ 1.   2 consécration     NC    consécration       0, _    
+ 2.   3 du               P+D   de                 2, dep  
+ 3.   4 droit            NC    droit              3, prep 
+ 4.   5 de               P     de                 2, dep  
+ 5.   6 participer       VINF  participer         5, prep 
+ 6.   7 par              P     par                6, mod  
+ 7.   8 la               DET   la                 9, det  
+ 8.   9 Charte           NPP   ?Charte            7, prep 
+ 9.  10 de               P     de                 6, mod  
+10.  11 l'               DET   le                12, det  
+11.  12 environnement    NC    environnement     10, prep 
+12.  13 .                PONCT .                 12, ponct
+13.   1 Quelle           DETWH quel               2, det  
+14.   2 portée           NC    portée             0, _    
+15.   3 juridique        ADJ   juridique          2, mod  
+16.   4 ?                PONCT ?                  3, ponct
+
+911502 Les prémisses d'une restauration ? L'histoire enseignée saisie par le politique
+-------------------------------------------------------------------------------
+ 0.   1 Les              DET   les                2, det  
+ 1.   2 prémisses        NC    prémisse           0, _    
+ 2.   3 d'               P     de                 2, dep  
+ 3.   4 une              DET   une                5, det  
+ 4.   5 restauration     NC    restauration       3, prep 
+ 5.   6 ?                PONCT ?                  5, ponct
+ 6.   1 L'               DET   le                 2, det  
+ 7.   2 histoire         NC    histoire           0, _    
+ 8.   3 enseignée        VPP   enseigner          2, mod  
+ 9.   4 saisie           VPP   saisir             2, mod  
+10.   5 par              P     par                4, mod  
+11.   6 le               DET   le                 7, det  
+12.   7 politique        NC    politique          5, prep 
+
+860227 Quelle place pour l'Économie dans la Médecine ? Questions de normes
+-------------------------------------------------------------------
+ 0.   1 Quelle           DETWH quel               2, det  
+ 1.   2 place            NC    place              0, _    
+ 2.   3 pour             P     pour               2, dep  
+ 3.   4 l'               DET   le                 5, det  
+ 4.   5 Économie         NC    économie           3, prep 
+ 5.   6 dans             P     dans               2, dep  
+ 6.   7 la               DET   la                 8, det  
+ 7.   8 Médecine         NPP   ?Médecine          6, prep 
+ 8.   9 ?                PONCT ?                  8, ponct
+ 9.   1 Questions        NC    question           0, _    
+10.   2 de               P     de                 1, dep  
+11.   3 normes           NC    norme              2, prep 
+
+162749 Mise en évidence des facteurs clés favorisant l'émergence de projets. Etude de cas dans un réseau de santé
+----------------------------------------------------------------------------------------------------------
+ 0.   1 Mise             NC    mise               0, _    
+ 1.   2 en               P     en                 1, dep  
+ 2.   3 évidence         NC    évidence           2, prep 
+ 3.   4 des              P+D   de                 1, dep  
+ 4.   5 facteurs         NC    facteur            4, prep 
+ 5.   6 clés             NC    clé                5, mod  
+ 6.   7 favorisant       VPR   favoriser          1, mod  
+ 7.   8 l'               DET   le                 9, det  
+ 8.   9 émergence        NC    émergence          7, obj  
+ 9.  10 de               P     de                 9, dep  
+10.  11 projets          NC    projet            10, prep 
+11.  12 .                PONCT .                 11, ponct
+12.   1 Etude            NC    étude              0, _    
+13.   2 de               P     de                 1, dep  
+14.   3 cas              NC    cas                2, prep 
+15.   4 dans             P     dans               1, dep  
+16.   5 un               DET   un                 6, det  
+17.   6 réseau           NC    réseau             4, prep 
+18.   7 de               P     de                 6, dep  
+19.   8 santé            NC    santé              7, prep 
+
+1015246 L'impact des enceintes urbaines médiévales sur le territoire et ses limites. L'exemple de la Lorraine et de l'Alsace
+--------------------------------------------------------------------------------------------------------------------
+ 0.   1 L'               DET   le                 2, det  
+ 1.   2 impact           NC    impact             0, _    
+ 2.   3 des              P+D   de                 2, dep  
+ 3.   4 enceintes        NC    enceinte           3, prep 
+ 4.   5 urbaines         ADJ   urbain             4, mod  
+ 5.   6 médiévales       ADJ   médiéval           4, mod  
+ 6.   7 sur              P     sur                2, dep  
+ 7.   8 le               DET   le                 9, det  
+ 8.   9 territoire       NC    territoire         7, prep 
+ 9.  10 et               CC    et                 2, coord
+10.  11 ses              DET   ses               12, det  
+11.  12 limites          NC    limite            10, dep_coord
+12.  13 .                PONCT .                 12, ponct
+13.   1 L'               DET   le                 2, det  
+14.   2 exemple          NC    exemple            0, _    
+15.   3 de               P     de                 2, dep  
+16.   4 la               DET   la                 5, det  
+17.   5 Lorraine         NPP   Lorraine           3, prep 
+18.   6 et               CC    et                 3, coord
+19.   7 de               P     de                 6, dep_coord
+20.   8 l'               DET   le                 9, det  
+21.   9 Alsace           NPP   Alsace             7, prep 
+
+1258751 Phèdre janséniste ? retour sur un lieu commun (1)
+-------------------------------------------------
+ 0.   1 Phèdre           NC    ?Phèdre            0, _    
+ 1.   2 janséniste       ADJ   janséniste         1, mod  
+ 2.   3 ?                PONCT ?                  2, ponct
+ 3.   1 retour           NC    retour             0, _    
+ 4.   2 sur              P     sur                1, dep  
+ 5.   3 un               DET   un                 4, det  
+ 6.   4 lieu             NC    lieu               2, prep 
+ 7.   5 commun           ADJ   commun             4, mod  
+ 8.   6 (                PONCT (                  5, ponct
+ 9.   7 1                ADJ   1                  4, mod  
+10.   8 )                PONCT )                  7, ponct
+
+264708 MEGATOR 2004-2007 (ACI Masse de Données). Mesures de l'Evolution des Glaciers Alpins par Télédétection Optique et Radar
+-----------------------------------------------------------------------------------------------------------------------
+ 0.   1 MEGATOR          NPP   ?MEGATOR           0, _    
+ 1.   2 2004-2007        NPP   2004-2007          1, mod  
+ 2.   3 (                PONCT (                  2, ponct
+ 3.   4 ACI              NPP   ?ACI               1, mod  
+ 4.   5 Masse            NPP   ?Masse             1, mod  
+ 5.   6 de               P     de                 1, dep  
+ 6.   7 Données          NPP   ?Données           6, prep 
+ 7.   8 )                PONCT )                  7, ponct
+ 8.   9 .                PONCT .                  7, ponct
+ 9.   1 Mesures          NC    mesure             0, _    
+10.   2 de               P     de                 1, dep  
+11.   3 l'               DET   le                 4, det  
+12.   4 Evolution        NC    ?Evolution         2, prep 
+13.   5 des              P+D   de                 1, dep  
+14.   6 Glaciers         NC    glacier            5, prep 
+15.   7 Alpins           NPP   ?Alpins            6, mod  
+16.   8 par              P     par                1, dep  
+17.   9 Télédétection    NC    télédétection      8, prep 
+18.  10 Optique          NPP   ?Optique           9, mod  
+19.  11 et               CC    et                 1, coord
+20.  12 Radar            NPP   ?Radar            11, dep_coord
+
+62606 Les revues scientifiques face à l'émergence de nouvelles formes de publication sur Internet. L'exemple de la communauté de la physique des particules
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Les              DET   les                2, det  
+ 1.   2 revues           NC    revue              0, _    
+ 2.   3 scientifiques    ADJ   scientifique       2, mod  
+ 3.   4 face             NC    face               2, mod  
+ 4.   5 à                P     à                  2, dep  
+ 5.   6 l'               DET   le                 7, det  
+ 6.   7 émergence        NC    émergence          5, prep 
+ 7.   8 de               P     de                 7, dep  
+ 8.   9 nouvelles        ADJ   nouveau           10, mod  
+ 9.  10 formes           NC    forme              8, prep 
+10.  11 de               P     de                10, dep  
+11.  12 publication      NC    publication       11, prep 
+12.  13 sur              P     sur                2, dep  
+13.  14 Internet         NPP   ?Internet         13, prep 
+14.  15 .                PONCT .                 14, ponct
+15.   1 L'               DET   le                 2, det  
+16.   2 exemple          NC    exemple            0, _    
+17.   3 de               P     de                 2, dep  
+18.   4 la               DET   la                 5, det  
+19.   5 communauté       NC    communauté         3, prep 
+20.   6 de               P     de                 2, dep  
+21.   7 la               DET   la                 8, det  
+22.   8 physique         NC    physique           6, prep 
+23.   9 des              P+D   de                 8, dep  
+24.  10 particules       NC    particule          9, prep 
+
+1510896 TICE ET FORMATION A DISTANCE. Le cas de l'Université de la Formation Continue Virtuelle en Algérie
+--------------------------------------------------------------------------------------------------
+ 0.   1 TICE             NPP   ?TICE              0, _    
+ 1.   2 ET               CC    et                 1, coord
+ 2.   3 FORMATION        NC    formation          2, dep_coord
+ 3.   4 A                P     à                  1, dep  
+ 4.   5 DISTANCE         NC    distance           4, prep 
+ 5.   6 .                PONCT .                  5, ponct
+ 6.   1 Le               DET   le                 2, det  
+ 7.   2 cas              NC    cas                0, _    
+ 8.   3 de               P     de                 2, dep  
+ 9.   4 l'               DET   le                 5, det  
+10.   5 Université       NC    université         3, prep 
+11.   6 de               P     de                 2, dep  
+12.   7 la               DET   la                 8, det  
+13.   8 Formation        NC    formation          6, prep 
+14.   9 Continue         NPP   ?Continue          8, mod  
+15.  10 Virtuelle        NPP   ?Virtuelle         8, mod  
+16.  11 en               P     en                 2, dep  
+17.  12 Algérie          NPP   Algérie           11, prep 
+
+560412 Etat composé "" ou décomposé ? La réforme des autonomies espagnoles et ses effets sur la fragmentation territoriale et institutionnelle du pays
+-----------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Etat             NC    état               0, _    
+ 1.   2 composé          VPP   composer           1, mod  
+ 2.   3 "                PONCT "                  2, ponct
+ 3.   4 ou               CC    ou                 2, coord
+ 4.   5 décomposé        VPP   décomposer         4, dep_coord
+ 5.   6 ?                PONCT ?                  5, ponct
+ 6.   1 La               DET   la                 2, det  
+ 7.   2 réforme          NC    réforme            0, _    
+ 8.   3 des              P+D   de                 2, dep  
+ 9.   4 autonomies       NC    autonomie          3, prep 
+10.   5 espagnoles       ADJ   espagnol           4, mod  
+11.   6 et               CC    et                 2, coord
+12.   7 ses              DET   ses                8, det  
+13.   8 effets           NC    effet              6, dep_coord
+14.   9 sur              P     sur                8, dep  
+15.  10 la               DET   la                11, det  
+16.  11 fragmentation    NC    fragmentation      9, prep 
+17.  12 territoriale     ADJ   territorial       11, mod  
+18.  13 et               CC    et                12, coord
+19.  14 institutionnelle ADJ   institutionnel    13, dep_coord
+20.  15 du               P+D   de                11, dep  
+21.  16 pays             NC    pays              15, prep 
+
+1258763 Phèdre janséniste ? retour sur un lieu commun (2)
+-------------------------------------------------
+ 0.   1 Phèdre           NC    ?Phèdre            0, _    
+ 1.   2 janséniste       ADJ   janséniste         1, mod  
+ 2.   3 ?                PONCT ?                  2, ponct
+ 3.   1 retour           NC    retour             0, _    
+ 4.   2 sur              P     sur                1, dep  
+ 5.   3 un               DET   un                 4, det  
+ 6.   4 lieu             NC    lieu               2, prep 
+ 7.   5 commun           ADJ   commun             4, mod  
+ 8.   6 (                PONCT (                  5, ponct
+ 9.   7 2                ADJ   2                  4, mod  
+10.   8 )                PONCT )                  7, ponct
+
+1308693 Comment l'écologie vient à la ville en Méditerranée ? Une comparaison entre Barcelone\, Marseille et Sfax
+---------------------------------------------------------------------------------------------------------
+ 0.   1 Comment          ADVWH comment            4, mod  
+ 1.   2 l'               DET   le                 3, det  
+ 2.   3 écologie         NC    écologie           4, suj  
+ 3.   4 vient            V     venir              0, root 
+ 4.   5 à                P     à                  4, mod  
+ 5.   6 la               DET   la                 7, det  
+ 6.   7 ville            NC    ville              5, prep 
+ 7.   8 en               P     en                 4, mod  
+ 8.   9 Méditerranée     NPP   ?Méditerranée      8, prep 
+ 9.  10 ?                PONCT ?                  9, ponct
+10.   1 Une              DET   une                2, det  
+11.   2 comparaison      NC    comparaison        0, _    
+12.   3 entre            P     entre              2, dep  
+13.   4 Barcelone        NPP   Barcelone          3, prep 
+14.   5 ,                PONCT ,                  4, ponct
+15.   6 Marseille        NPP   Marseille          4, mod  
+16.   7 et               CC    et                 2, coord
+17.   8 Sfax             NPP   ?Sfax              7, dep_coord
+
+1409780 Développement et politique. Le cas d'une politique de santé en Géorgie.
+-----------------------------------------------------------------------
+ 0.   1 Développement    NC    développement      0, _    
+ 1.   2 et               CC    et                 1, coord
+ 2.   3 politique        ADJ   politique          2, dep_coord
+ 3.   4 .                PONCT .                  3, ponct
+ 4.   1 Le               DET   le                 2, det  
+ 5.   2 cas              NC    cas                0, _    
+ 6.   3 d'               P     de                 2, dep  
+ 7.   4 une              DET   une                5, det  
+ 8.   5 politique        NC    politique          3, prep 
+ 9.   6 de               P     de                 5, dep  
+10.   7 santé            NC    santé              6, prep 
+11.   8 en               P     en                 2, dep  
+12.   9 Géorgie          NPP   Géorgie            8, prep 
+13.  10 .                PONCT .                  9, ponct
+
+911521 Les deux cultures"". L'histoire du socialisme dans l'affrontement partisan
+--------------------------------------------------------------------------
+ 0.   1 Les              DET   les                3, det  
+ 1.   2 deux             ADJ   deux               3, mod  
+ 2.   3 cultures         NC    culture            0, _    
+ 3.   4 "                PONCT "                  3, ponct
+ 4.   5 .                PONCT .                  3, ponct
+ 5.   1 L'               DET   le                 2, det  
+ 6.   2 histoire         NC    histoire           0, _    
+ 7.   3 du               P+D   de                 2, dep  
+ 8.   4 socialisme       NC    socialisme         3, prep 
+ 9.   5 dans             P     dans               2, dep  
+10.   6 l'               DET   le                 7, det  
+11.   7 affrontement     NC    affrontement       5, prep 
+12.   8 partisan         NC    partisan           7, mod  
+
+62439 Le document comme contenant\, contenu et médium. Les reformulations du numérique
+--------------------------------------------------------------------------------
+ 0.   1 Le               DET   le                 2, det  
+ 1.   2 document         NC    document           0, _    
+ 2.   3 comme            P     comme              6, mod  
+ 3.   4 contenant        VPR   contenir           3, prep 
+ 4.   5 ,                PONCT ,                  4, ponct
+ 5.   6 contenu          VPP   contenir           2, mod  
+ 6.   7 et               CC    et                 2, coord
+ 7.   8 médium           NC    médium             7, dep_coord
+ 8.   9 .                PONCT .                  8, ponct
+ 9.   1 Les              DET   les                2, det  
+10.   2 reformulations   NC    reformulation      0, _    
+11.   3 du               P+D   de                 2, dep  
+12.   4 numérique        NC    ?numérique         3, prep 
+
+264710 Le public\, le romanesque et l'Histoire. Vigny et Mérimée explorateurs du roman historique
+------------------------------------------------------------------------------------------
+ 0.   1 Le               DET   le                 2, det  
+ 1.   2 public           NC    public             0, _    
+ 2.   3 ,                PONCT ,                  2, ponct
+ 3.   4 le               DET   le                 5, det  
+ 4.   5 romanesque       NC    romanesque         2, mod  
+ 5.   6 et               CC    et                 5, coord
+ 6.   7 l'               DET   le                 8, det  
+ 7.   8 Histoire         NPP   ?Histoire          6, dep_coord
+ 8.   9 .                PONCT .                  8, ponct
+ 9.   1 Vigny            NPP   Vigny              0, _    
+10.   2 et               CC    et                 1, coord
+11.   3 Mérimée          NPP   ?Mérimée           2, dep_coord
+12.   4 explorateurs     NC    explorateur        1, mod  
+13.   5 du               P+D   de                 1, dep  
+14.   6 roman            NC    roman              5, prep 
+15.   7 historique       ADJ   historique         6, mod  
+
+62553 Métaphore du chien de Pavlov et influence de la publicité. Etude critique du conditionnement classique au sein de la socio-cognition implicite
+----------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Métaphore        NC    métaphore          0, _    
+ 1.   2 du               P+D   de                 1, dep  
+ 2.   3 chien            NC    chien              2, prep 
+ 3.   4 de               P     de                 1, dep  
+ 4.   5 Pavlov           NPP   ?Pavlov            4, prep 
+ 5.   6 et               CC    et                 1, coord
+ 6.   7 influence        NC    influence          6, dep_coord
+ 7.   8 de               P     de                 1, dep  
+ 8.   9 la               DET   la                10, det  
+ 9.  10 publicité        NC    publicité          8, prep 
+10.  11 .                PONCT .                 10, ponct
+11.   1 Etude            NC    étude              0, _    
+12.   2 critique         NC    critique           1, mod  
+13.   3 du               P+D   de                 1, dep  
+14.   4 conditionnement  NC    conditionnement    3, prep 
+15.   5 classique        ADJ   classique          4, mod  
+16.   6 au               P+D   à                  1, dep  
+17.   7 sein             NC    sein               6, prep 
+18.   8 de               P     de                 1, dep  
+19.   9 la               DET   la                10, det  
+20.  10 socio            NC    ?socio             8, prep 
+21.  11 -                PONCT -                 10, ponct
+22.  12 cognition        NC    ?cognition         1, mod  
+23.  13 implicite        ADJ   implicite         12, mod  
+
+711104 Femmes\, politique et imaginaire. Deux romans de science-fiction au XIXe siècle
+-------------------------------------------------------------------------------
+ 0.   1 Femmes           NC    femme              0, _    
+ 1.   2 ,                PONCT ,                  1, ponct
+ 2.   3 politique        ADJ   politique          1, mod  
+ 3.   4 et               CC    et                 3, coord
+ 4.   5 imaginaire       ADJ   imaginaire         4, dep_coord
+ 5.   6 .                PONCT .                  5, ponct
+ 6.   1 Deux             DET   deux               2, det  
+ 7.   2 romans           NC    roman              0, _    
+ 8.   3 de               P     de                 2, dep  
+ 9.   4 science          NC    science            3, prep 
+10.   5 -                PONCT -                  4, ponct
+11.   6 fiction          NC    fiction            2, mod  
+12.   7 au               P+D   à                  6, dep  
+13.   8 XIXe             ADJ   ?XIXe              9, mod  
+14.   9 siècle           NC    siècle             7, prep 
+
+62382 Quels modèles pour la publication sur le web? Le cas des contenus informationnels et culturels.
+-----------------------------------------------------------------------------------------------
+ 0.   1 Quels            DETWH quel               2, det  
+ 1.   2 modèles          NC    modèle             0, _    
+ 2.   3 pour             P     pour               2, dep  
+ 3.   4 la               DET   la                 5, det  
+ 4.   5 publication      NC    publication        3, prep 
+ 5.   6 sur              P     sur                2, dep  
+ 6.   7 le               DET   le                 8, det  
+ 7.   8 web              NC    web                6, prep 
+ 8.   9 ?                PONCT ?                  8, ponct
+ 9.   1 Le               DET   le                 2, det  
+10.   2 cas              NC    cas                0, _    
+11.   3 des              P+D   de                 2, dep  
+12.   4 contenus         NC    contenu            3, prep 
+13.   5 informationnels  ADJ   informationnel     4, mod  
+14.   6 et               CC    et                 5, coord
+15.   7 culturels        ADJ   culturel           6, dep_coord
+16.   8 .                PONCT .                  7, ponct
+
+560355 Un tournant participatif ? Une mise en perspective historique de la participation du public dans les politiques scientifiques américaines
+-----------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Un               DET   un                 2, det  
+ 1.   2 tournant         NC    tournant           0, _    
+ 2.   3 participatif     ADJ   participatif       2, mod  
+ 3.   4 ?                PONCT ?                  3, ponct
+ 4.   1 Une              DET   une                2, det  
+ 5.   2 mise             NC    mise               0, _    
+ 6.   3 en               P     en                 2, dep  
+ 7.   4 perspective      NC    perspective        3, prep 
+ 8.   5 historique       ADJ   historique         4, mod  
+ 9.   6 de               P     de                 2, dep  
+10.   7 la               DET   la                 8, det  
+11.   8 participation    NC    participation      6, prep 
+12.   9 du               P+D   de                 8, dep  
+13.  10 public           NC    public             9, prep 
+14.  11 dans             P     dans               2, dep  
+15.  12 les              DET   les               13, det  
+16.  13 politiques       NC    politique         11, prep 
+17.  14 scientifiques    ADJ   scientifique      13, mod  
+18.  15 américaines      ADJ   américain         13, mod  
+
+609991 Variation du risque de cancer du sein en fonction de la nature de la mutation du gène ATM. Étude familiale rétrospective
+------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Variation        NC    variation          0, _    
+ 1.   2 du               P+D   de                 1, dep  
+ 2.   3 risque           NC    risque             2, prep 
+ 3.   4 de               P     de                 1, dep  
+ 4.   5 cancer           NC    cancer             4, prep 
+ 5.   6 du               P+D   de                 1, dep  
+ 6.   7 sein             NC    sein               6, prep 
+ 7.   8 en               P     en                 1, dep  
+ 8.   9 fonction         NC    fonction           8, prep 
+ 9.  10 de               P     de                 1, dep  
+10.  11 la               DET   la                12, det  
+11.  12 nature           NC    nature            10, prep 
+12.  13 de               P     de                 1, dep  
+13.  14 la               DET   la                15, det  
+14.  15 mutation         NC    mutation          13, prep 
+15.  16 du               P+D   de                 1, dep  
+16.  17 gène             NC    gène              16, prep 
+17.  18 ATM              NPP   ?ATM              17, mod  
+18.  19 .                PONCT .                 18, ponct
+19.   1 Étude            NC    étude              0, _    
+20.   2 familiale        ADJ   familial           1, mod  
+21.   3 rétrospective    NC    rétrospective      1, mod  
+
+360221 (2008) Comment les Chinois voient les Européens ? Quelques fondements de la vision chinoise du monde
+----------------------------------------------------------------------------------------------------
+ 0.   1 Comment          ADVWH comment            4, mod  
+ 1.   2 les              DET   les                3, det  
+ 2.   3 Chinois          NC    chinois            4, suj  
+ 3.   4 voient           V     voir               0, root 
+ 4.   5 les              DET   les                6, det  
+ 5.   6 Européens        NC    européen           4, obj  
+ 6.   7 ?                PONCT ?                  6, ponct
+ 7.   1 Quelques         DET   quelques           2, det  
+ 8.   2 fondements       NC    fondement          0, _    
+ 9.   3 de               P     de                 2, dep  
+10.   4 la               DET   la                 5, det  
+11.   5 vision           NC    vision             3, prep 
+12.   6 chinoise         ADJ   chinois            5, mod  
+13.   7 du               P+D   de                 5, dep  
+14.   8 monde            NC    monde              7, prep 
+
+1808545 Comment ne pas rater son train quand on est sourd ou malentendant ? Projet SUrDyn
+---------------------------------------------------------------------------------
+ 0.   1 Comment          ADVWH comment            4, mod  
+ 1.   2 ne               ADV   ne                 3, mod  
+ 2.   3 pas              ADV   pas                4, mod  
+ 3.   4 rater            VINF  rater              0, root 
+ 4.   5 son              DET   son                6, det  
+ 5.   6 train            NC    train              4, obj  
+ 6.   7 quand            CS    quand              4, mod  
+ 7.   8 on               CLS   on                 9, suj  
+ 8.   9 est              V     être               7, sub  
+ 9.  10 sourd            ADJ   sourd              9, ats  
+10.  11 ou               CC    ou                10, coord
+11.  12 malentendant     ADJ   malentendant      11, dep_coord
+12.  13 ?                PONCT ?                 12, ponct
+13.   1 Projet           NC    projet             0, _    
+14.   2 SUrDyn           NC    ?SUrDyn            1, mod  
+
+62646 La vente à la télévision. Une dynamique discursive conditionnée
+---------------------------------------------------------------
+ 0.   1 La               DET   la                 2, det  
+ 1.   2 vente            NC    vente              0, _    
+ 2.   3 à                P     à                  2, dep  
+ 3.   4 la               DET   la                 5, det  
+ 4.   5 télévision       NC    télévision         3, prep 
+ 5.   6 .                PONCT .                  5, ponct
+ 6.   1 Une              DET   une                2, det  
+ 7.   2 dynamique        NC    dynamique          0, _    
+ 8.   3 discursive       ADJ   discursif          2, mod  
+ 9.   4 conditionnée     ADJ   conditionner       2, mod  
+
+62390 Document et texte. Permanence et transformations
+------------------------------------------------
+ 0.   1 Document         NC    document           0, _    
+ 1.   2 et               CC    et                 1, coord
+ 2.   3 texte            NC    texte              2, dep_coord
+ 3.   4 .                PONCT .                  3, ponct
+ 4.   1 Permanence       NC    permanence         0, _    
+ 5.   2 et               CC    et                 1, coord
+ 6.   3 transformations  NC    transformation     2, dep_coord
+
+216467 THÉORIES LAGRANGIENNES A ZÉRO COMPOSANTE. APPLICATION A L'ÉTUDE DES POLYMÈRES EN SOLUTION (CHAÎNES AVEC VOLUME EXCLU) ET DES PROPRIÉTÉS D'ÉLECTRONS SOUMIS A UN POTENTIEL ALÉATOIRE
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 THÉORIES         NC    théorie            0, _    
+ 1.   2 LAGRANGIENNES    NPP   ?LAGRANGIENNES     1, mod  
+ 2.   3 A                P     à                  1, dep  
+ 3.   4 ZÉRO             NC    zéro               3, prep 
+ 4.   5 COMPOSANTE       ADJ   composant          1, mod  
+ 5.   6 .                PONCT .                  5, ponct
+ 6.   1 APPLICATION      NC    application        0, _    
+ 7.   2 A                NPP   ?A                 1, mod  
+ 8.   3 L'               DET   le                 4, det  
+ 9.   4 ÉTUDE            NC    étude              1, mod  
+10.   5 DES              P+D   de                 4, dep  
+11.   6 POLYMÈRES        NC    polymère           5, prep 
+12.   7 EN               P     en                 4, dep  
+13.   8 SOLUTION         NC    solution           7, prep 
+14.   9 (                PONCT (                  8, ponct
+15.  10 CHAÎNES          NC    chaîne             1, mod  
+16.  11 AVEC             P     avec              10, dep  
+17.  12 VOLUME           NC    volume            11, prep 
+18.  13 EXCLU            VPP   exclure           12, mod  
+19.  14 )                PONCT )                 13, ponct
+20.  15 ET               CC    et                 1, coord
+21.  16 DES              P+D   de                15, dep_coord
+22.  17 PROPRIÉTÉS       NC    propriété         16, prep 
+23.  18 D'               P     de                17, dep  
+24.  19 ÉLECTRONS        NC    électron          18, prep 
+25.  20 SOUMIS           VPP   soumettre         19, mod  
+26.  21 A                P     à                 20, mod  
+27.  22 UN               DET   un                23, det  
+28.  23 POTENTIEL        NC    potentiel         21, prep 
+29.  24 ALÉATOIRE        ADJ   aléatoire         23, mod  
+
+1015244 Sont-ils ""Bohémiens"" ou ""Égyptiens"" ? Viennent-ils d'ailleurs ou bien d'ici ?
+---------------------------------------------------------------------------------
+ 0.   1 Sont             V     être               0, root 
+ 1.   2 -ils             CLS   ils                1, suj  
+ 2.   3 "                PONCT "                  2, ponct
+ 3.   4 Bohémiens        ADJ   bohémien           1, ats  
+ 4.   5 "                PONCT "                  4, ponct
+ 5.   6 ou               CC    ou                 1, coord
+ 6.   7 "                PONCT "                  6, ponct
+ 7.   8 Égyptiens        NC    égyptien           6, dep_coord
+ 8.   9 "                PONCT "                  8, ponct
+ 9.  10 ?                PONCT ?                  8, ponct
+10.   1 Viennent         V     venir              0, root 
+11.   2 -ils             CLS   ils                1, suj  
+12.   3 d'               P     de                 1, mod  
+13.   4 ailleurs         ADV   ailleurs           3, mod  
+14.   5 ou               CC    ou                 3, coord
+15.   6 bien             ADV   bien               5, mod  
+16.   7 d'               P     de                 1, mod  
+17.   8 ici              ADV   ici                7, mod  
+18.   9 ?                PONCT ?                  8, ponct
+
+360220 (2008) Le temps des politistes. Une réponse par la Chine ?
+----------------------------------------------------------
+ 0.   1 Le               DET   le                 2, det  
+ 1.   2 temps            NC    temps              0, _    
+ 2.   3 des              P+D   de                 2, dep  
+ 3.   4 politistes       NC    ?politistes        3, prep 
+ 4.   5 .                PONCT .                  4, ponct
+ 5.   1 Une              DET   une                2, det  
+ 6.   2 réponse          NC    réponse            0, _    
+ 7.   3 par              P     par                2, dep  
+ 8.   4 la               DET   la                 5, det  
+ 9.   5 Chine            NPP   Chine              3, prep 
+10.   6 ?                PONCT ?                  5, ponct
+
+1258806 L’innovation démocratique ? Comment mener une analyse critique des politiques d’innovation contemporaine.
+---------------------------------------------------------------------------------------------------------
+ 0.   1 L'               DET   le                 2, det  
+ 1.   2 innovation       NC    innovation         0, _    
+ 2.   3 démocratique     ADJ   démocratique       2, mod  
+ 3.   4 ?                PONCT ?                  3, ponct
+ 4.   1 Comment          ADVWH comment            2, mod  
+ 5.   2 mener            VINF  mener              0, root 
+ 6.   3 une              DET   une                4, det  
+ 7.   4 analyse          NC    analyse            2, obj  
+ 8.   5 critique         ADJ   critique           4, mod  
+ 9.   6 des              P+D   de                 4, dep  
+10.   7 politiques       NC    politique          6, prep 
+11.   8 d'               P     de                 7, dep  
+12.   9 innovation       NC    innovation         8, prep 
+13.  10 contemporaine    ADJ   contemporain       9, mod  
+14.  11 .                PONCT .                 10, ponct
+
+1308650 La malnutrition infantile en AOF. Le cas du Sénégal\, 1930-1960.
+----------------------------------------------------------------
+ 0.   1 La               DET   la                 2, det  
+ 1.   2 malnutrition     NC    malnutrition       0, _    
+ 2.   3 infantile        ADJ   infantile          2, mod  
+ 3.   4 en               P     en                 2, dep  
+ 4.   5 AOF              NPP   ?AOF               4, prep 
+ 5.   6 .                PONCT .                  5, ponct
+ 6.   1 Le               DET   le                 2, det  
+ 7.   2 cas              NC    cas                0, _    
+ 8.   3 du               P+D   de                 2, dep  
+ 9.   4 Sénégal          NPP   Sénégal            3, prep 
+10.   5 ,                PONCT ,                  4, ponct
+11.   6 1930-1960        NC    1930-1960          2, mod  
+12.   7 .                PONCT .                  6, ponct
+
+1308700 « Étude et édition annotée du Quatrième Abécédaire spirituel de Francisco de Osuna (1530). Résumé de thèse »
+------------------------------------------------------------------------------------------------------------
+ 0.   1 "                PONCT "                  0, ponct
+ 1.   2 Étude            NC    étude              0, _    
+ 2.   3 et               CC    et                 2, coord
+ 3.   4 édition          NC    édition            3, dep_coord
+ 4.   5 annotée          VPP   annoter            2, mod  
+ 5.   6 du               P+D   de                 5, mod  
+ 6.   7 Quatrième        NC    quatrième          6, prep 
+ 7.   8 Abécédaire       NC    abécédaire         7, mod  
+ 8.   9 spirituel        ADJ   spirituel          8, mod  
+ 9.  10 de               P     de                 5, mod  
+10.  11 Francisco        NPP   Francisco         10, prep 
+11.  12 de               P     de                 5, mod  
+12.  13 Osuna            NPP   ?Osuna            12, prep 
+13.  14 (                PONCT (                 13, ponct
+14.  15 1530             NC    1530               2, mod  
+15.  16 )                PONCT )                 15, ponct
+16.  17 .                PONCT .                 15, ponct
+17.   1 Résumé           VPP   résumer            0, _    
+18.   2 de               P     de                 1, mod  
+19.   3 thèse            NC    thèse              2, prep 
+20.   4 "                PONCT "                  3, ponct
+
+62591 Découverte de connaissances dans les bases de données bibliographiques. Modèles expérimentaux autour de la première expérience de Swanson
+-----------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Découverte       VPP   découvrir          0, _    
+ 1.   2 de               P     de                 1, mod  
+ 2.   3 connaissances    NC    connaissance       2, prep 
+ 3.   4 dans             P     dans               1, mod  
+ 4.   5 les              DET   les                6, det  
+ 5.   6 bases            NC    base               4, prep 
+ 6.   7 de               P     de                 1, mod  
+ 7.   8 données          NC    donnée             7, prep 
+ 8.   9 bibliographiques ADJ   bibliographique    8, mod  
+ 9.  10 .                PONCT .                  9, ponct
+10.   1 Modèles          NC    modèle             0, _    
+11.   2 expérimentaux    ADJ   expérimental       1, mod  
+12.   3 autour           NC    autour             1, mod  
+13.   4 de               P     de                 1, dep  
+14.   5 la               DET   la                 7, det  
+15.   6 première         ADJ   premier            7, mod  
+16.   7 expérience       NC    expérience         4, prep 
+17.   8 de               P     de                 7, dep  
+18.   9 Swanson          NPP   ?Swanson           8, prep 
+

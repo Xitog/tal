@@ -1,0 +1,2262 @@
+264567 Traduire\, la réalisation d'un dessein d'existence : la double ""traduction"" de la Logique de Abû Hâmid Ghazâlî\, dit Al Ghazâlî\, par Raymonde Lulle\, au XIIIe siècle
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Traduire         VINF  traduire          24, suj  
+ 1.   2 ,                PONCT ,                  1, ponct
+ 2.   3 la               DET   la                 4, det  
+ 3.   4 réalisation      NC    réalisation        1, obj  
+ 4.   5 d'               P     de                 4, dep  
+ 5.   6 un               DET   un                 7, det  
+ 6.   7 dessein          NC    dessein            5, prep 
+ 7.   8 d'               P     de                 4, dep  
+ 8.   9 existence        NC    existence          8, prep 
+ 9.  10 :                PONCT :                  9, ponct
+10.  11 la               DET   la                14, det  
+11.  12 double           ADJ   double            14, mod  
+12.  13 "                PONCT "                 12, ponct
+13.  14 traduction       NC    traduction         4, mod  
+14.  15 "                PONCT "                 14, ponct
+15.  16 de               P     de                 1, mod  
+16.  17 la               DET   la                18, det  
+17.  18 Logique          NPP   ?Logique          16, prep 
+18.  19 de               P     de                 1, mod  
+19.  20 Abû              NPP   ?Abû              19, prep 
+20.  21 Hâmid            NPP   ?Hâmid            20, mod  
+21.  22 Ghazâlî          NPP   ?Ghazâlî          20, mod  
+22.  23 ,                PONCT ,                 22, ponct
+23.  24 dit              V     dire               0, root 
+24.  25 Al               NPP   Al                24, obj  
+25.  26 Ghazâlî          NPP   ?Ghazâlî          25, mod  
+26.  27 ,                PONCT ,                 26, ponct
+27.  28 par              P     par               24, mod  
+28.  29 Raymonde         NPP   Raymonde          28, prep 
+29.  30 Lulle            NPP   ?Lulle            29, mod  
+30.  31 ,                PONCT ,                 30, ponct
+31.  32 au               P+D   à                 24, mod  
+32.  33 XIIIe            ADJ   ?XIIIe            34, mod  
+33.  34 siècle           NC    siècle            32, prep 
+
+1660207 Quel pouvoir de stabilisation à l’échelle de l’UEM : le pacte de stabilité et de croissance est-il viable ?
+-----------------------------------------------------------------------------------------------------------
+ 0.   1 Quel             DETWH quel               2, mod  
+ 1.   2 pouvoir          NC    pouvoir           19, mod  
+ 2.   3 de               P     de                 2, dep  
+ 3.   4 stabilisation    NC    stabilisation      3, prep 
+ 4.   5 à                P     à                  2, dep  
+ 5.   6 l'               DET   le                 7, det  
+ 6.   7 échelle          NC    échelle            5, prep 
+ 7.   8 de               P     de                 2, dep  
+ 8.   9 l'               DET   le                10, det  
+ 9.  10 UEM              NPP   ?UEM               8, prep 
+10.  11 :                PONCT :                 10, ponct
+11.  12 le               DET   le                13, det  
+12.  13 pacte            NC    pacte             19, suj  
+13.  14 de               P     de                13, dep  
+14.  15 stabilité        NC    stabilité         14, prep 
+15.  16 et               CC    et                13, coord
+16.  17 de               P     de                16, dep_coord
+17.  18 croissance       NC    croissance        17, prep 
+18.  19 est              V     être               0, root 
+19.  20 -il              CLS   il                19, suj  
+20.  21 viable           ADJ   viable            19, ats  
+21.  22 ?                PONCT ?                 21, ponct
+
+659285 L'Etat et les "" autres "" : comparer la visibilisation de la main-d'œuvre immigrée
+-----------------------------------------------------------------------------------
+ 0.   1 L'               DET   le                 2, det  
+ 1.   2 Etat             NPP   ?Etat              9, suj  
+ 2.   3 et               CC    et                 2, coord
+ 3.   4 les              DET   les                6, det  
+ 4.   5 "                PONCT "                  4, ponct
+ 5.   6 autres           ADJ   autre              3, dep_coord
+ 6.   7 "                PONCT "                  6, ponct
+ 7.   8 :                PONCT :                  6, ponct
+ 8.   9 comparer         VINF  comparer           0, root 
+ 9.  10 la               DET   la                11, det  
+10.  11 visibilisation   NC    ?visibilisation    9, obj  
+11.  12 de               P     de                 9, mod  
+12.  13 la               DET   la                14, det  
+13.  14 main-d'œuvre     NC    ?main-d'œuvre     12, prep 
+14.  15 immigrée         ADJ   immigré           14, mod  
+
+62609 Le Libre Accès (Open Access) : partager les résultats de la recherche
+---------------------------------------------------------------------
+ 0.   1 Le               DET   le                 2, det  
+ 1.   2 Libre            NPP   ?Libre             9, suj  
+ 2.   3 Accès            NPP   ?Accès             2, mod  
+ 3.   4 (                PONCT (                  3, ponct
+ 4.   5 Open             NC    open               2, mod  
+ 5.   6 Access           NPP   ?Access            5, mod  
+ 6.   7 )                PONCT )                  6, ponct
+ 7.   8 :                PONCT :                  6, ponct
+ 8.   9 partager         VINF  partager           0, root 
+ 9.  10 les              DET   les               11, det  
+10.  11 résultats        NC    résultat           9, obj  
+11.  12 de               P     de                 9, mod  
+12.  13 la               DET   la                14, det  
+13.  14 recherche        NC    recherche         12, prep 
+
+264612 De récentes découvertes dans la plaine de la Siagne : le diagnotic des parcelles nord-est de l'aéroport de Cannes-Mandelieu (06)
+--------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 De               DET   de                 3, det  
+ 1.   2 récentes         ADJ   récent             3, mod  
+ 2.   3 découvertes      NC    découverte        17, mod  
+ 3.   4 dans             P     dans               3, dep  
+ 4.   5 la               DET   la                 6, det  
+ 5.   6 plaine           NC    plaine             4, prep 
+ 6.   7 de               P     de                 6, dep  
+ 7.   8 la               DET   la                 9, det  
+ 8.   9 Siagne           NPP   ?Siagne            7, prep 
+ 9.  10 :                PONCT :                  9, ponct
+10.  11 le               DET   le                12, det  
+11.  12 diagnotic        NC    ?diagnotic        17, suj  
+12.  13 des              P+D   de                12, dep  
+13.  14 parcelles        NC    parcelle          13, prep 
+14.  15 nord             NPP   ?nord             14, mod  
+15.  16 -                PONCT -                 15, ponct
+16.  17 est              V     être               0, root 
+17.  18 de               P     de                17, mod  
+18.  19 l'               DET   le                20, det  
+19.  20 aéroport         NC    aéroport          18, prep 
+20.  21 de               P     de                17, mod  
+21.  22 Cannes           NPP   Cannes            21, prep 
+22.  23 -                PONCT -                 22, ponct
+23.  24 Mandelieu        NPP   ?Mandelieu        17, mod  
+24.  25 (                PONCT (                 24, ponct
+25.  26 06               NC    06                24, mod  
+26.  27 )                PONCT )                 26, ponct
+
+960680 De l'apprenti footballeur au petit-rat de l'Opéra : comment les institutions d'excellence agissent face aux dispositions sociales des apprentis ?
+-------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 De               P     de                18, mod  
+ 1.   2 l'               DET   le                 3, det  
+ 2.   3 apprenti         NC    apprenti           1, prep 
+ 3.   4 footballeur      NC    footballeur        3, mod  
+ 4.   5 au               P+D   à                 18, mod  
+ 5.   6 petit            ADJ   petit              8, mod  
+ 6.   7 -                PONCT -                  6, ponct
+ 7.   8 rat              NC    rat                5, prep 
+ 8.   9 de               P     de                 8, dep  
+ 9.  10 l'               DET   le                11, det  
+10.  11 Opéra            NPP   ?Opéra             9, prep 
+11.  12 :                PONCT :                 11, ponct
+12.  13 comment          ADVWH comment           18, mod  
+13.  14 les              DET   les               15, det  
+14.  15 institutions     NC    institution       18, suj  
+15.  16 d'               P     de                15, dep  
+16.  17 excellence       NC    excellence        16, prep 
+17.  18 agissent         V     agir               0, root 
+18.  19 face             NC    face              18, obj  
+19.  20 aux              P+D   à                 18, mod  
+20.  21 dispositions     NC    disposition       20, prep 
+21.  22 sociales         ADJ   social            21, mod  
+22.  23 des              P+D   de                18, mod  
+23.  24 apprentis        NC    apprenti          23, prep 
+24.  25 ?                PONCT ?                 24, ponct
+
+1258715 Référentiels de compétences : ce que l'instrument fait à la logique compétence
+------------------------------------------------------------------------------
+ 0.   1 Référentiels     NC    référentiel        9, mod  
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 compétences      NC    compétence         2, prep 
+ 3.   4 :                PONCT :                  3, ponct
+ 4.   5 ce               PRO   ce                 9, suj  
+ 5.   6 que              PROREL que                9, mod  
+ 6.   7 l'               DET   le                 8, det  
+ 7.   8 instrument       NC    instrument         9, suj  
+ 8.   9 fait             V     faire              0, root 
+ 9.  10 à                P     à                  9, mod  
+10.  11 la               DET   la                12, det  
+11.  12 logique          NC    logique           10, prep 
+12.  13 compétence       NC    compétence        12, mod  
+
+860275 La question périurbaine : la repenser en tenant enfin compte de ce qui motive les périurbains
+---------------------------------------------------------------------------------------------
+ 0.   1 La               DET   la                 2, det  
+ 1.   2 question         NC    question           6, suj  
+ 2.   3 périurbaine      ADJ   ?périurbaine       2, mod  
+ 3.   4 :                PONCT :                  3, ponct
+ 4.   5 la               CLO   la                 6, obj  
+ 5.   6 repenser         VINF  repenser           0, root 
+ 6.   7 en               P     en                 6, mod  
+ 7.   8 tenant           VPR   tenir              7, prep 
+ 8.   9 enfin            ADV   enfin              8, mod  
+ 9.  10 compte           V     compter            6, mod  
+10.  11 de               P     de                10, mod  
+11.  12 ce               PRO   ce                11, prep 
+12.  13 qui              PROREL qui               14, suj  
+13.  14 motive           V     motiver           12, mod_rel
+14.  15 les              DET   les               16, det  
+15.  16 périurbains      NC    ?périurbains      14, obj  
+
+162787 La séparation des églises et de l'état dans l'orne (1902-1907) : Heurt des militants\, tourmente des inventaires\, ressac politique
+-----------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 La               DET   la                 2, det  
+ 1.   2 séparation       NC    séparation        20, suj  
+ 2.   3 des              P+D   de                 2, dep  
+ 3.   4 églises          NC    église             3, prep 
+ 4.   5 et               CC    et                 2, coord
+ 5.   6 de               P     de                 5, dep_coord
+ 6.   7 l'               DET   le                 8, det  
+ 7.   8 état             NC    état               6, prep 
+ 8.   9 dans             P     dans               2, dep  
+ 9.  10 l'               DET   le                11, det  
+10.  11 orne             NC    orne               9, prep 
+11.  12 (                PONCT (                 11, ponct
+12.  13 1902-1907        NC    1902-1907          2, mod  
+13.  14 )                PONCT )                 13, ponct
+14.  15 :                PONCT :                 13, ponct
+15.  16 Heurt            NC    heurt              2, mod  
+16.  17 des              P+D   de                16, dep  
+17.  18 militants        NC    militant          17, prep 
+18.  19 ,                PONCT ,                 18, ponct
+19.  20 tourmente        V     tourmenter         0, root 
+20.  21 des              DET   des               22, det  
+21.  22 inventaires      NC    inventaire        20, obj  
+22.  23 ,                PONCT ,                 22, ponct
+23.  24 ressac           NC    ressac            20, mod  
+24.  25 politique        NC    politique         24, mod  
+
+62568 Transférabilité des connaissances : une re-conceptualisation de la distinction tacite / explicite
+-------------------------------------------------------------------------------------------------
+ 0.   1 Transférabilité  NC    transférabilité   14, mod  
+ 1.   2 des              P+D   de                 1, dep  
+ 2.   3 connaissances    NC    connaissance       2, prep 
+ 3.   4 :                PONCT :                  3, ponct
+ 4.   5 une              DET   une                6, det  
+ 5.   6 re               NC    ?re               14, suj  
+ 6.   7 -                PONCT -                  6, ponct
+ 7.   8 conceptualisation NC    conceptualisation   6, mod  
+ 8.   9 de               P     de                 8, dep  
+ 9.  10 la               DET   la                11, det  
+10.  11 distinction      NC    distinction        9, prep 
+11.  12 tacite           ADJ   tacite            11, mod  
+12.  13 /                PONCT /                 12, ponct
+13.  14 explicite        V     expliciter         0, root 
+
+264762 Théophile Gautier : Regardez\, mais ne touchez pas (comédie)
+------------------------------------------------------------
+ 0.   1 Théophile        NPP   Théophile          4, suj  
+ 1.   2 Gautier          NPP   Gautier            1, mod  
+ 2.   3 :                PONCT :                  2, ponct
+ 3.   4 Regardez         VIMP  regarder           0, root 
+ 4.   5 ,                PONCT ,                  4, ponct
+ 5.   6 mais             CC    mais               4, coord
+ 6.   7 ne               ADV   ne                 8, mod  
+ 7.   8 touchez          V     toucher            6, dep_coord
+ 8.   9 pas              ADV   pas                8, mod  
+ 9.  10 (                PONCT (                  9, ponct
+10.  11 comédie          NC    comédie            8, obj  
+11.  12 )                PONCT )                 11, ponct
+
+1510887 Contrôle du pays d'accueil en matière de lutte contre le blanchiment de capitaux ; Note sous Cour de justice de l'Union européenne\, troisième Chambre\, 25 avril 2013\, décision numéro C-212/11
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Contrôle         NC    contrôle          16, suj  
+ 1.   2 du               P+D   de                 1, dep  
+ 2.   3 pays             NC    pays               2, prep 
+ 3.   4 d'               P     de                 1, dep  
+ 4.   5 accueil          NC    accueil            4, prep 
+ 5.   6 en               P     en                 1, dep  
+ 6.   7 matière          NC    matière            6, prep 
+ 7.   8 de               P     de                 1, dep  
+ 8.   9 lutte            NC    lutte              8, prep 
+ 9.  10 contre           P     contre             1, dep  
+10.  11 le               DET   le                12, det  
+11.  12 blanchiment      NC    blanchiment       10, prep 
+12.  13 de               P     de                 1, dep  
+13.  14 capitaux         NC    capital           13, prep 
+14.  15 ;                PONCT ;                 14, ponct
+15.  16 Note             V     noter              0, root 
+16.  17 sous             P     sous              16, mod  
+17.  18 Cour             NC    cour              17, prep 
+18.  19 de               P     de                16, mod  
+19.  20 justice          NC    justice           19, prep 
+20.  21 de               P     de                16, mod  
+21.  22 l'               DET   le                23, det  
+22.  23 Union            NC    union             21, prep 
+23.  24 européenne       ADJ   européen          23, mod  
+24.  25 ,                PONCT ,                 24, ponct
+25.  26 troisième        ADJ   troisième         23, mod  
+26.  27 Chambre          NC    chambre           23, mod  
+27.  28 ,                PONCT ,                 27, ponct
+28.  29 25               ADJ   25                30, mod  
+29.  30 avril            NC    avril             16, mod  
+30.  31 2013             NC    2013              30, mod  
+31.  32 ,                PONCT ,                 31, ponct
+32.  33 décision         NC    décision          16, mod  
+33.  34 numéro           NC    numéro            33, mod  
+34.  35 C                NC    ?C                16, mod  
+35.  36 -212             NC    -212              35, mod  
+36.  37 /                PONCT /                 36, ponct
+37.  38 11               NC    11                16, mod  
+
+1015049 Les (il)légalités ambiguës dans le travail policier : comment l'espace devient prétexte
+---------------------------------------------------------------------------------------
+ 0.   1 Les              DET   les                3, det  
+ 1.   2 (                PONCT (                  1, ponct
+ 2.   3 il               CLS   il                15, suj  
+ 3.   4 )                PONCT )                  3, ponct
+ 4.   5 légalités        NC    légalité          15, mod  
+ 5.   6 ambiguës         ADJ   ambigu             5, mod  
+ 6.   7 dans             P     dans               5, dep  
+ 7.   8 le               DET   le                 9, det  
+ 8.   9 travail          NC    travail            7, prep 
+ 9.  10 policier         ADJ   policier           9, mod  
+10.  11 :                PONCT :                 10, ponct
+11.  12 comment          ADVWH comment           15, mod  
+12.  13 l'               DET   le                14, det  
+13.  14 espace           NC    espace            15, suj  
+14.  15 devient          V     devenir            0, root 
+15.  16 prétexte         NC    prétexte          15, ats  
+
+1358243 Evolution de l'arboricolie chez les Cercopithèques: analyse combinée de données moléculaires\, morpho-anatomiques et comportementales
+-------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Evolution        NC    évolution         10, suj  
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 l'               DET   le                 4, det  
+ 3.   4 arboricolie      NC    ?arboricolie       2, prep 
+ 4.   5 chez             P     chez               1, dep  
+ 5.   6 les              DET   les                7, det  
+ 6.   7 Cercopithèques   NPP   ?Cercopithèques    5, prep 
+ 7.   8 :                PONCT :                  7, ponct
+ 8.   9 analyse          V     analyser          10, aux_tps
+ 9.  10 combinée         VPP   combiner           0, root 
+10.  11 de               P     de                10, mod  
+11.  12 données          NC    donnée            11, prep 
+12.  13 moléculaires     ADJ   moléculaire       12, mod  
+13.  14 ,                PONCT ,                 13, ponct
+14.  15 morpho           NC    ?morpho           10, mod  
+15.  16 -                PONCT -                 15, ponct
+16.  17 anatomiques      ADJ   anatomique        15, mod  
+17.  18 et               CC    et                17, coord
+18.  19 comportementales ADJ   comportemental    18, dep_coord
+
+1061109 ImPAC Lyon : évaluer l'impact environnemental et thermique de l'exploitation des aquifères superficiels pour la climatisation
+-----------------------------------------------------------------------------------------------------------------------------
+ 0.   1 ImPAC            NPP   ?ImPAC             4, suj  
+ 1.   2 Lyon             NPP   Lyon               1, mod  
+ 2.   3 :                PONCT :                  2, ponct
+ 3.   4 évaluer          VINF  évaluer            0, root 
+ 4.   5 l'               DET   le                 6, det  
+ 5.   6 impact           NC    impact             4, obj  
+ 6.   7 environnemental  ADJ   environnemental    6, mod  
+ 7.   8 et               CC    et                 7, coord
+ 8.   9 thermique        ADJ   thermique          8, dep_coord
+ 9.  10 de               P     de                 4, mod  
+10.  11 l'               DET   le                12, det  
+11.  12 exploitation     NC    exploitation      10, prep 
+12.  13 des              P+D   de                 4, mod  
+13.  14 aquifères        ADJ   aquifère          15, mod  
+14.  15 superficiels     ADJ   superficiel       13, prep 
+15.  16 pour             P     pour               4, mod  
+16.  17 la               DET   la                18, det  
+17.  18 climatisation    NC    climatisation     16, prep 
+
+1759247 Relation image/son : de l'illustration sonore à la fusion multi-modale
+----------------------------------------------------------------------
+ 0.   1 Relation         NC    relation           9, mod  
+ 1.   2 image            NC    image              1, mod  
+ 2.   3 /                PONCT /                  2, ponct
+ 3.   4 son              DET   son                9, suj  
+ 4.   5 :                PONCT :                  4, ponct
+ 5.   6 de               P     de                 4, dep  
+ 6.   7 l'               DET   le                 8, det  
+ 7.   8 illustration     NC    illustration       6, prep 
+ 8.   9 sonore           V     ?sonore            0, root 
+ 9.  10 à                P     à                  9, mod  
+10.  11 la               DET   la                12, det  
+11.  12 fusion           NC    fusion            10, prep 
+12.  13 multi            NPP   ?multi            12, mod  
+13.  14 -                PONCT -                 13, ponct
+14.  15 modale           NC    ?modale           12, mod  
+
+760065 D'une catastrophe\, l'autre : vivre avec l'atome
+------------------------------------------------
+ 0.   1 D'               P     de                 8, mod  
+ 1.   2 une              DET   une                3, det  
+ 2.   3 catastrophe      NC    catastrophe        1, prep 
+ 3.   4 ,                PONCT ,                  3, ponct
+ 4.   5 l'               DET   le                 6, det  
+ 5.   6 autre            ADJ   autre              8, mod  
+ 6.   7 :                PONCT :                  6, ponct
+ 7.   8 vivre            VINF  vivre              0, root 
+ 8.   9 avec             P     avec               8, mod  
+ 9.  10 l'               DET   le                11, det  
+10.  11 atome            NC    atome              9, prep 
+
+110247 Vers une économie des fonctionnalités: changer nos rapports avec le produit pour des économies d'échelle et des nouvelles logiques de responsabilités
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Vers             P     vers               7, mod  
+ 1.   2 une              DET   une                3, det  
+ 2.   3 économie         NC    économie           1, prep 
+ 3.   4 des              P+D   de                 3, dep  
+ 4.   5 fonctionnalités  NC    fonctionnalité     4, prep 
+ 5.   6 :                PONCT :                  5, ponct
+ 6.   7 changer          VINF  changer            0, root 
+ 7.   8 nos              DET   nos                9, det  
+ 8.   9 rapports         NC    rapport            7, obj  
+ 9.  10 avec             P     avec               7, mod  
+10.  11 le               DET   le                12, det  
+11.  12 produit          NC    produit           10, prep 
+12.  13 pour             P     pour               7, mod  
+13.  14 des              DET   des               15, det  
+14.  15 économies        NC    économie          13, prep 
+15.  16 d'               P     de                15, dep  
+16.  17 échelle          NC    échelle           16, prep 
+17.  18 et               CC    et                 7, coord
+18.  19 des              P+D   de                18, dep_coord
+19.  20 nouvelles        ADJ   nouveau           21, mod  
+20.  21 logiques         NC    logique           19, prep 
+21.  22 de               P     de                21, dep  
+22.  23 responsabilités  NC    responsabilité    22, prep 
+
+809358 Après la délocalisation...les PME doivent-elles relocaliser ?
+-------------------------------------------------------------
+ 0.   1 Après            P     après              7, mod  
+ 1.   2 la               DET   la                 3, det  
+ 2.   3 délocalisation   NC    délocalisation     1, prep 
+ 3.   4 ...              PONCT ...                3, ponct
+ 4.   5 les              DET   les                6, det  
+ 5.   6 PME              NC    PME                7, suj  
+ 6.   7 doivent          V     devoir             0, root 
+ 7.   8 -elles           CLS   elles              7, suj  
+ 8.   9 relocaliser      VINF  relocaliser        7, obj  
+ 9.  10 ?                PONCT ?                  9, ponct
+
+460346 Une jeune fille changée en jeune homme : homélie sur un miracle survenu dans le monastère couvent de Qartmin\, dans le Tur Abdin
+--------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Une              DET   une                3, det  
+ 1.   2 jeune            ADJ   jeune              3, mod  
+ 2.   3 fille            NC    fille             17, suj  
+ 3.   4 changée          VPP   changer            3, mod  
+ 4.   5 en               P     en                 4, mod  
+ 5.   6 jeune            ADJ   jeune              7, mod  
+ 6.   7 homme            NC    homme              5, prep 
+ 7.   8 :                PONCT :                  7, ponct
+ 8.   9 homélie          NC    homélie            4, mod  
+ 9.  10 sur              P     sur                4, mod  
+10.  11 un               DET   un                12, det  
+11.  12 miracle          NC    miracle           10, prep 
+12.  13 survenu          VPP   survenir          12, mod  
+13.  14 dans             P     dans              13, mod  
+14.  15 le               DET   le                16, det  
+15.  16 monastère        NC    monastère         14, prep 
+16.  17 couvent          V     couver             0, root 
+17.  18 de               P     de                17, mod  
+18.  19 Qartmin          NPP   ?Qartmin          18, prep 
+19.  20 ,                PONCT ,                 19, ponct
+20.  21 dans             P     dans              17, mod  
+21.  22 le               DET   le                23, det  
+22.  23 Tur              NPP   ?Tur              21, prep 
+23.  24 Abdin            NPP   ?Abdin            23, mod  
+
+1060698 Extension de procédure: ""Le législateur nous garde de l'opportunité du juge
+----------------------------------------------------------------------------
+ 0.   1 Extension        NC    extension          9, mod  
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 procédure        NC    procédure          2, prep 
+ 3.   4 :                PONCT :                  3, ponct
+ 4.   5 "                PONCT "                  3, ponct
+ 5.   6 Le               DET   le                 7, det  
+ 6.   7 législateur      NC    législateur        9, suj  
+ 7.   8 nous             CLO   nous               9, obj  
+ 8.   9 garde            V     garder             0, root 
+ 9.  10 de               P     de                 9, mod  
+10.  11 l'               DET   le                12, det  
+11.  12 opportunité      NC    opportunité       10, prep 
+12.  13 du               P+D   de                12, dep  
+13.  14 juge             NC    juge              13, prep 
+
+312714 Mise au point sur ""Les cathares devant l'histoire"" et retour sur ""L'histoire du catharisme en discussion: le débat sur la charte de Niquinta n'est pas clos
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Mise             VPP   mettre            33, mod  
+ 1.   2 au               P+D   à                  1, mod  
+ 2.   3 point            NC    point              2, prep 
+ 3.   4 sur              P     sur                1, mod  
+ 4.   5 "                PONCT "                  4, ponct
+ 5.   6 Les              DET   les                7, det  
+ 6.   7 cathares         NC    cathare            4, prep 
+ 7.   8 devant           P     devant             7, dep  
+ 8.   9 l'               DET   le                10, det  
+ 9.  10 histoire         NC    histoire           8, prep 
+10.  11 "                PONCT "                 10, ponct
+11.  12 et               CC    et                 7, coord
+12.  13 retour           NC    retour            12, dep_coord
+13.  14 sur              P     sur                1, mod  
+14.  15 "                PONCT "                 14, ponct
+15.  16 L'               DET   le                17, det  
+16.  17 histoire         NC    histoire          14, prep 
+17.  18 du               P+D   de                17, dep  
+18.  19 catharisme       NC    ?catharisme       18, prep 
+19.  20 en               P     en                17, dep  
+20.  21 discussion       NC    discussion        20, prep 
+21.  22 :                PONCT :                 21, ponct
+22.  23 le               DET   le                24, det  
+23.  24 débat            NC    débat             33, suj  
+24.  25 sur              P     sur               24, dep  
+25.  26 la               DET   la                27, det  
+26.  27 charte           NC    charte            25, prep 
+27.  28 de               P     de                27, dep  
+28.  29 Niquinta         NPP   ?Niquinta         28, prep 
+29.  30 n'               ADV   ne                33, mod  
+30.  31 est              V     être              33, aux_tps
+31.  32 pas              ADV   pas               33, mod  
+32.  33 clos             VPP   clore              0, root 
+
+162674 Communication financière : quelles sont les pratiques des entreprises ?
+-----------------------------------------------------------------------
+ 0.   1 Communication    NC    communication      5, mod  
+ 1.   2 financière       ADJ   financier          1, mod  
+ 2.   3 :                PONCT :                  2, ponct
+ 3.   4 quelles          DETWH quel               5, mod  
+ 4.   5 sont             V     être               0, root 
+ 5.   6 les              DET   les                7, det  
+ 6.   7 pratiques        NC    pratique           5, suj  
+ 7.   8 des              P+D   de                 7, dep  
+ 8.   9 entreprises      NC    entreprise         8, prep 
+ 9.  10 ?                PONCT ?                  9, ponct
+
+359963 Entre Antiquité et haut Moyen Age : tradition et renouveau de l'habitat de hauteur dans la Gaule du sud-est
+-----------------------------------------------------------------------------------------------------------
+ 0.   1 Entre            P     entre             22, mod  
+ 1.   2 Antiquité        NPP   ?Antiquité         1, prep 
+ 2.   3 et               CC    et                 1, coord
+ 3.   4 haut             ADJ   haut               3, dep_coord
+ 4.   5 Moyen            NPP   Moyen             22, suj  
+ 5.   6 Age              NPP   ?Age               5, mod  
+ 6.   7 :                PONCT :                  6, ponct
+ 7.   8 tradition        NC    tradition          5, mod  
+ 8.   9 et               CC    et                 8, coord
+ 9.  10 renouveau        NC    renouveau          9, dep_coord
+10.  11 de               P     de                 8, dep  
+11.  12 l'               DET   le                13, det  
+12.  13 habitat          NC    habitat           11, prep 
+13.  14 de               P     de                 8, dep  
+14.  15 hauteur          NC    hauteur           14, prep 
+15.  16 dans             P     dans               8, dep  
+16.  17 la               DET   la                18, det  
+17.  18 Gaule            NPP   ?Gaule            16, prep 
+18.  19 du               P+D   de                 8, dep  
+19.  20 sud              NPP   ?sud              19, prep 
+20.  21 -                PONCT -                 20, ponct
+21.  22 est              V     être               0, root 
+
+1258607 Les renégociations mutuellement avantageuses : sont-elles toujours souhaitables ?
+---------------------------------------------------------------------------------
+ 0.   1 Les              DET   les                2, det  
+ 1.   2 renégociations   NC    renégociation      6, suj  
+ 2.   3 mutuellement     ADV   ?mutuellement      4, mod  
+ 3.   4 avantageuses     ADJ   avantageux         2, mod  
+ 4.   5 :                PONCT :                  4, ponct
+ 5.   6 sont             V     être               0, root 
+ 6.   7 -elles           CLS   elles              6, suj  
+ 7.   8 toujours         ADV   toujours           6, mod  
+ 8.   9 souhaitables     ADJ   souhaitable        6, ats  
+ 9.  10 ?                PONCT ?                  9, ponct
+
+62138 Caractérisation de parties de discours scientifiques : Analyse des corrélations entre propriétés
+------------------------------------------------------------------------------------------------
+ 0.   1 Caractérisation  NC    caractérisation    8, suj  
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 parties          NC    partie             2, prep 
+ 3.   4 de               P     de                 1, dep  
+ 4.   5 discours         NC    discours           4, prep 
+ 5.   6 scientifiques    ADJ   scientifique       5, mod  
+ 6.   7 :                PONCT :                  6, ponct
+ 7.   8 Analyse          V     analyser           0, root 
+ 8.   9 des              DET   des               10, det  
+ 9.  10 corrélations     NC    corrélation        8, obj  
+10.  11 entre            P     entre              8, mod  
+11.  12 propriétés       NC    propriété         11, prep 
+
+609694 Circuler entre Roumanie et Allemagne : les Saxons de Transylvanie\, de l'émigration ethnique au va-et-vient
+-----------------------------------------------------------------------------------------------------------
+ 0.   1 Circuler         VINF  circuler          17, suj  
+ 1.   2 entre            P     entre              1, mod  
+ 2.   3 Roumanie         NPP   Roumanie           2, prep 
+ 3.   4 et               CC    et                 1, coord
+ 4.   5 Allemagne        NPP   Allemagne          4, dep_coord
+ 5.   6 :                PONCT :                  5, ponct
+ 6.   7 les              DET   les                8, det  
+ 7.   8 Saxons           NC    saxon              1, mod  
+ 8.   9 de               P     de                 8, dep  
+ 9.  10 Transylvanie     NPP   ?Transylvanie      9, prep 
+10.  11 ,                PONCT ,                 10, ponct
+11.  12 de               P     de                 1, mod  
+12.  13 l'               DET   le                14, det  
+13.  14 émigration       NC    émigration        12, prep 
+14.  15 ethnique         ADJ   ethnique          14, mod  
+15.  16 au               P+D   à                  1, mod  
+16.  17 va               V     aller              0, root 
+17.  18 -                PONCT -                 17, ponct
+18.  19 et               CC    et                17, coord
+19.  20 -                PONCT -                 19, ponct
+20.  21 vient            V     venir             19, dep_coord
+
+810529 La Grotte du Figuier (Saint-Martin-d'Ardèche) : bilan des travaux récents sur un site du Paléolithique moyen et supérieur de la moyenne vallée du Rhône (Sud- Est de la France)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 La               DET   la                 2, det  
+ 1.   2 Grotte           NPP   ?Grotte           35, suj  
+ 2.   3 du               P+D   de                 2, dep  
+ 3.   4 Figuier          NPP   ?Figuier           3, prep 
+ 4.   5 (                PONCT (                  4, ponct
+ 5.   6 Saint            ADJ   saint              8, mod  
+ 6.   7 -                PONCT -                  6, ponct
+ 7.   8 Martin           NC    martin             2, mod  
+ 8.   9 -                PONCT -                  8, ponct
+ 9.  10 d'               P     de                 8, dep  
+10.  11 Ardèche          NPP   Ardèche           10, prep 
+11.  12 )                PONCT )                 11, ponct
+12.  13 :                PONCT :                 11, ponct
+13.  14 bilan            NC    bilan              2, mod  
+14.  15 des              P+D   de                14, dep  
+15.  16 travaux          NC    travail           15, prep 
+16.  17 récents          ADJ   récent            16, mod  
+17.  18 sur              P     sur               14, dep  
+18.  19 un               DET   un                20, det  
+19.  20 site             NC    site              18, prep 
+20.  21 du               P+D   de                14, dep  
+21.  22 Paléolithique    NC    paléolithique     21, prep 
+22.  23 moyen            ADJ   moyen             22, mod  
+23.  24 et               CC    et                23, coord
+24.  25 supérieur        ADJ   supérieur         24, dep_coord
+25.  26 de               P     de                14, dep  
+26.  27 la               DET   la                28, det  
+27.  28 moyenne          NC    moyenne           26, prep 
+28.  29 vallée           NC    vallée            28, mod  
+29.  30 du               P+D   de                14, dep  
+30.  31 Rhône            NPP   Rhône             30, prep 
+31.  32 (                PONCT (                 31, ponct
+32.  33 Sud              NPP   ?Sud              31, mod  
+33.  34 -                PONCT -                 33, ponct
+34.  35 Est              V     être               0, root 
+35.  36 de               P     de                35, mod  
+36.  37 la               DET   la                38, det  
+37.  38 France           NPP   France            36, prep 
+38.  39 )                PONCT )                 38, ponct
+
+62325 ATTRACTIVITE TERRITORIALE ET STRATEGIES DE LOCALISATION DES FIRMES : LE TERRITOIRE CORSE PEUT-IL DEVENIR UN NOUVEL EDEN ?
+-------------------------------------------------------------------------------------------------------------------------
+ 0.   1 ATTRACTIVITE     NC    attractivité      13, mod  
+ 1.   2 TERRITORIALE     ADJ   territorial        1, mod  
+ 2.   3 ET               CC    et                 1, coord
+ 3.   4 STRATEGIES       NC    stratégie          3, dep_coord
+ 4.   5 DE               P     de                 4, dep  
+ 5.   6 LOCALISATION     NC    localisation       5, prep 
+ 6.   7 DES              P+D   de                 1, dep  
+ 7.   8 FIRMES           NC    firme              7, prep 
+ 8.   9 :                PONCT :                  8, ponct
+ 9.  10 LE               DET   le                11, det  
+10.  11 TERRITOIRE       NC    territoire        13, suj  
+11.  12 CORSE            ADJ   corse             11, mod  
+12.  13 PEUT             V     pouvoir            0, root 
+13.  14 -IL              CLS   il                13, suj  
+14.  15 DEVENIR          VINF  devenir           13, obj  
+15.  16 UN               DET   un                18, det  
+16.  17 NOUVEL           ADJ   ?NOUVEL           18, mod  
+17.  18 EDEN             NPP   Eden              15, obj  
+18.  19 ?                PONCT ?                 18, ponct
+
+960576 La théorie positive de la comptabilité : ""Je t'aime\, moi non plus
+-------------------------------------------------------------------
+ 0.   1 La               DET   la                 2, det  
+ 1.   2 théorie          NC    théorie           11, mod  
+ 2.   3 positive         ADJ   positif            2, mod  
+ 3.   4 de               P     de                 2, dep  
+ 4.   5 la               DET   la                 6, det  
+ 5.   6 comptabilité     NC    comptabilité       4, prep 
+ 6.   7 :                PONCT :                  6, ponct
+ 7.   8 "                PONCT "                  6, ponct
+ 8.   9 Je               CLS   je                11, suj  
+ 9.  10 t'               CLO   te                11, aff  
+10.  11 aime             V     aimer              0, root 
+11.  12 ,                PONCT ,                 11, ponct
+12.  13 moi              PRO   moi               11, mod  
+13.  14 non              ADV   non               11, mod  
+14.  15 plus             ADV   plus              11, mod  
+
+1510908 BNP Parisbas condamnée pour des maintiens abusifs d'inscription au FICP ; Note sous Commission nationale de l'informatique et des libertés\, délibéré de la formation restreinte\, 19 juin 2013\, décision numéro 2013-173
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 BNP              NPP   ?BNP              13, suj  
+ 1.   2 Parisbas         NPP   ?Parisbas          1, mod  
+ 2.   3 condamnée        VPP   condamner          1, mod  
+ 3.   4 pour             P     pour               3, mod  
+ 4.   5 des              DET   des                6, det  
+ 5.   6 maintiens        NC    maintien           4, prep 
+ 6.   7 abusifs          ADJ   abusif             6, mod  
+ 7.   8 d'               P     de                 3, mod  
+ 8.   9 inscription      NC    inscription        8, prep 
+ 9.  10 au               P+D   à                  3, mod  
+10.  11 FICP             NPP   ?FICP             10, prep 
+11.  12 ;                PONCT ;                 11, ponct
+12.  13 Note             V     noter              0, root 
+13.  14 sous             P     sous              13, mod  
+14.  15 Commission       NC    commission        14, prep 
+15.  16 nationale        ADJ   national          15, mod  
+16.  17 de               P     de                13, mod  
+17.  18 l'               DET   le                19, det  
+18.  19 informatique     NC    informatique      17, prep 
+19.  20 et               CC    et                17, coord
+20.  21 des              P+D   de                20, dep_coord
+21.  22 libertés         NC    liberté           21, prep 
+22.  23 ,                PONCT ,                 22, ponct
+23.  24 délibéré         VPP   délibérer         13, mod  
+24.  25 de               P     de                24, mod  
+25.  26 la               DET   la                27, det  
+26.  27 formation        NC    formation         25, prep 
+27.  28 restreinte       ADJ   restreindre       27, mod  
+28.  29 ,                PONCT ,                 28, ponct
+29.  30 19               ADJ   19                27, mod  
+30.  31 juin             NC    juin              27, mod  
+31.  32 2013             NC    2013              27, mod  
+32.  33 ,                PONCT ,                 32, ponct
+33.  34 décision         NC    décision          27, mod  
+34.  35 numéro           NC    numéro            27, mod  
+35.  36 2013             NC    2013              27, mod  
+36.  37 -173             NC    -173              27, mod  
+
+1510912 De l'usage excessif d'une clause attributive de juridiction potestative ; Note sous Cour d'appel d'Angers\, Chambre commerciale\, section A\, 10 septembre 2013\, RG numéro 12/01827
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 De               P     de                13, mod  
+ 1.   2 l'               DET   le                 3, det  
+ 2.   3 usage            NC    usage              1, prep 
+ 3.   4 excessif         ADJ   excessif           3, mod  
+ 4.   5 d'               P     de                 3, dep  
+ 5.   6 une              DET   une                7, det  
+ 6.   7 clause           NC    clause             5, prep 
+ 7.   8 attributive      ADJ   attributif         7, mod  
+ 8.   9 de               P     de                 7, dep  
+ 9.  10 juridiction      NC    juridiction        9, prep 
+10.  11 potestative      ADJ   ?potestative      10, mod  
+11.  12 ;                PONCT ;                 11, ponct
+12.  13 Note             V     noter              0, root 
+13.  14 sous             P     sous              13, mod  
+14.  15 Cour             NC    cour              14, prep 
+15.  16 d'               P     de                13, mod  
+16.  17 appel            NC    appel             16, prep 
+17.  18 d'               P     de                13, mod  
+18.  19 Angers           NPP   Angers            18, prep 
+19.  20 ,                PONCT ,                 19, ponct
+20.  21 Chambre          NC    chambre           19, mod  
+21.  22 commerciale      ADJ   commercial        21, mod  
+22.  23 ,                PONCT ,                 22, ponct
+23.  24 section          NC    section           19, mod  
+24.  25 A                NPP   ?A                24, mod  
+25.  26 ,                PONCT ,                 25, ponct
+26.  27 10               ADJ   10                24, mod  
+27.  28 septembre        NC    septembre         24, mod  
+28.  29 2013             NC    2013              28, mod  
+29.  30 ,                PONCT ,                 29, ponct
+30.  31 RG               ADJ   ?RG               32, mod  
+31.  32 numéro           NC    numéro            24, mod  
+32.  33 12               ADJ   12                32, mod  
+33.  34 /                PONCT /                 33, ponct
+34.  35 01827            NC    01827             19, mod  
+
+760695 Le naturel : Un bol de lait\, une tartine de pain et un fruit sont-ils toujours les amis du petit-déjeuner ?
+------------------------------------------------------------------------------------------------------------
+ 0.   1 Le               DET   le                 2, det  
+ 1.   2 naturel          ADJ   naturel           16, mod  
+ 2.   3 :                PONCT :                  2, ponct
+ 3.   4 Un               DET   un                 5, det  
+ 4.   5 bol              NC    bol               16, suj  
+ 5.   6 de               P     de                 5, dep  
+ 6.   7 lait             NC    lait               6, prep 
+ 7.   8 ,                PONCT ,                  7, ponct
+ 8.   9 une              DET   une               10, det  
+ 9.  10 tartine          NC    tartine            5, coord
+10.  11 de               P     de                10, dep  
+11.  12 pain             NC    pain              11, prep 
+12.  13 et               CC    et                10, coord
+13.  14 un               DET   un                15, det  
+14.  15 fruit            NC    fruit             13, dep_coord
+15.  16 sont             V     être               0, root 
+16.  17 -ils             CLS   ils               16, suj  
+17.  18 toujours         ADV   toujours          16, mod  
+18.  19 les              DET   les               20, det  
+19.  20 amis             NC    ami               16, obj  
+20.  21 du               P+D   de                16, mod  
+21.  22 petit            ADJ   petit             24, mod  
+22.  23 -                PONCT -                 22, ponct
+23.  24 déjeuner         NC    déjeuner          21, prep 
+24.  25 ?                PONCT ?                 24, ponct
+
+1808813 Vente et crédit-bail : la résolution de l'un entraîne désormais la caducité de l'autre
+--------------------------------------------------------------------------------------
+ 0.   1 Vente            NC    vente             12, mod  
+ 1.   2 et               CC    et                 1, coord
+ 2.   3 crédit           NC    crédit             2, dep_coord
+ 3.   4 -                PONCT -                  3, ponct
+ 4.   5 bail             NC    bail               1, mod  
+ 5.   6 :                PONCT :                  5, ponct
+ 6.   7 la               DET   la                 8, det  
+ 7.   8 résolution       NC    résolution        12, suj  
+ 8.   9 de               P     de                 8, dep  
+ 9.  10 l'               DET   le                11, det  
+10.  11 un               PRO   un                 9, prep 
+11.  12 entraîne         V     entraîner          0, root 
+12.  13 désormais        ADV   désormais         12, mod  
+13.  14 la               DET   la                15, det  
+14.  15 caducité         NC    caducité          12, obj  
+15.  16 de               P     de                15, dep  
+16.  17 l'               DET   le                18, det  
+17.  18 autre            ADJ   autre             16, prep 
+
+961256 Politiques culturelles : le niveau monte-t-il ?
+-----------------------------------------------
+ 0.   1 Politiques       NC    politique          6, mod  
+ 1.   2 culturelles      ADJ   culturel           1, mod  
+ 2.   3 :                PONCT :                  2, ponct
+ 3.   4 le               DET   le                 5, det  
+ 4.   5 niveau           NC    niveau             6, suj  
+ 5.   6 monte            V     monter             0, root 
+ 6.   7 -t-il            CLS   il                 6, suj  
+ 7.   8 ?                PONCT ?                  7, ponct
+
+961042 Du partage de l'information au partage des innovations : le modèle propriétaire est-il toujours pertinent ?
+-----------------------------------------------------------------------------------------------------------
+ 0.   1 Du               P+D   de                14, mod  
+ 1.   2 partage          NC    partage            1, prep 
+ 2.   3 de               P     de                 2, dep  
+ 3.   4 l'               DET   le                 5, det  
+ 4.   5 information      NC    information        3, prep 
+ 5.   6 au               P+D   à                  1, dep  
+ 6.   7 partage          NC    partage            6, prep 
+ 7.   8 des              P+D   de                 1, dep  
+ 8.   9 innovations      NC    innovation         8, prep 
+ 9.  10 :                PONCT :                  9, ponct
+10.  11 le               DET   le                12, det  
+11.  12 modèle           NC    modèle            14, suj  
+12.  13 propriétaire     NC    propriétaire      12, mod  
+13.  14 est              V     être               0, root 
+14.  15 -il              CLS   il                14, suj  
+15.  16 toujours         ADV   toujours          14, mod  
+16.  17 pertinent        ADJ   pertinent         14, ats  
+17.  18 ?                PONCT ?                 17, ponct
+
+1358751 L'infixe |-ɡ-| : l'aventure continue
+------------------------------------
+ 0.   1 L'               DET   le                 2, det  
+ 1.   2 infixe           NC    infixe            11, suj  
+ 2.   3 |                PONCT |                  2, ponct
+ 3.   4 -                PONCT -                  2, ponct
+ 4.   5 ɡ                NPP   ?ɡ                 2, mod  
+ 5.   6 -                PONCT -                  5, ponct
+ 6.   7 |                PONCT |                  5, ponct
+ 7.   8 :                PONCT :                  5, ponct
+ 8.   9 l'               DET   le                10, det  
+ 9.  10 aventure         NC    aventure           2, mod  
+10.  11 continue         VS    continuer          0, root 
+
+110889 PMI et technologie en Italie : tous les moyens sont bons
+--------------------------------------------------------
+ 0.   1 PMI              NC    PMI               10, mod  
+ 1.   2 et               CC    et                 1, coord
+ 2.   3 technologie      NC    technologie        2, dep_coord
+ 3.   4 en               P     en                 1, dep  
+ 4.   5 Italie           NPP   Italie             4, prep 
+ 5.   6 :                PONCT :                  5, ponct
+ 6.   7 tous             ADJ   tout               9, mod  
+ 7.   8 les              DET   les                9, det  
+ 8.   9 moyens           NC    moyen             10, suj  
+ 9.  10 sont             V     être               0, root 
+10.  11 bons             ADJ   bon               10, ats  
+
+217385 CHAÎNES DE POLYMÈRE ENCHEVÊTRÉES A L'ÉQUILIBRE : FLUCTUATIONS DE L'AIMANTATION NUCLÉAIRE ET DIFFUSION LOCALE ANISOTROPE DES SEGMENTS DE CHAÎNES
+-----------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 CHAÎNES          NC    chaîne            17, mod  
+ 1.   2 DE               P     de                 1, dep  
+ 2.   3 POLYMÈRE         NC    polymère           2, prep 
+ 3.   4 ENCHEVÊTRÉES     VPP   enchevêtrer        1, mod  
+ 4.   5 A                P     à                  4, mod  
+ 5.   6 L'               DET   le                 7, det  
+ 6.   7 ÉQUILIBRE        NPP   ?ÉQUILIBRE         5, prep 
+ 7.   8 :                PONCT :                  7, ponct
+ 8.   9 FLUCTUATIONS     NC    fluctuation       17, suj  
+ 9.  10 DE               NPP   ?DE                9, mod  
+10.  11 L'               DET   le                12, det  
+11.  12 AIMANTATION      NC    aimantation        9, mod  
+12.  13 NUCLÉAIRE        ADJ   nucléaire         12, mod  
+13.  14 ET               CC    et                12, coord
+14.  15 DIFFUSION        NC    diffusion         14, dep_coord
+15.  16 LOCALE           ADJ   local             15, mod  
+16.  17 ANISOTROPE       V     ?ANISOTROPE        0, root 
+17.  18 DES              DET   des               19, det  
+18.  19 SEGMENTS         NC    segment           17, obj  
+19.  20 DE               P     de                17, mod  
+20.  21 CHAÎNES          NC    chaîne            20, prep 
+
+610400 Plus ultra : Méditation sur le carré rond
+-----------------------------------------
+ 0.   1 Plus             ADV   plus               2, mod  
+ 1.   2 ultra            ADJ   ?ultra             4, mod  
+ 2.   3 :                PONCT :                  2, ponct
+ 3.   4 Méditation       NC    méditation         0, root 
+ 4.   5 sur              P     sur                4, dep  
+ 5.   6 le               DET   le                 7, det  
+ 6.   7 carré            NC    carré              5, prep 
+ 7.   8 rond             ADJ   rond               7, mod  
+
+1511041 Les Ançars de la République : la bay‘a au prisme de la laïcité malienne
+-----------------------------------------------------------------------
+ 0.   1 Les              DET   les                2, det  
+ 1.   2 Ançars           NC    ?Ançars           10, suj  
+ 2.   3 de               P     de                 2, dep  
+ 3.   4 la               DET   la                 5, det  
+ 4.   5 République       NC    république         3, prep 
+ 5.   6 :                PONCT :                  5, ponct
+ 6.   7 la               DET   la                 8, det  
+ 7.   8 bay              NC    bay                2, mod  
+ 8.   9 '                PONCT '                  8, ponct
+ 9.  10 a                V     avoir              0, root 
+10.  11 au               P+D   à                 10, mod  
+11.  12 prisme           NC    prisme            11, prep 
+12.  13 de               P     de                10, mod  
+13.  14 la               DET   la                15, det  
+14.  15 laïcité          NC    laïcité           13, prep 
+15.  16 malienne         ADJ   malien            15, mod  
+
+265105 Le risque dans la région de Bâle – Mulhouse : interactions risque sismique – risques technologiques\, effets de site\, effets potentiel d'un séisme
+---------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Le               DET   le                 2, det  
+ 1.   2 risque           NC    risque            12, suj  
+ 2.   3 dans             P     dans               2, dep  
+ 3.   4 la               DET   la                 5, det  
+ 4.   5 région           NC    région             3, prep 
+ 5.   6 de               P     de                 2, dep  
+ 6.   7 Bâle             NPP   ?Bâle              6, prep 
+ 7.   8 -                PONCT -                  7, ponct
+ 8.   9 Mulhouse         NPP   Mulhouse           2, mod  
+ 9.  10 :                PONCT :                  9, ponct
+10.  11 interactions     NC    interaction        2, mod  
+11.  12 risque           V     risquer            0, root 
+12.  13 sismique         NC    sismique          12, obj  
+13.  14 -                PONCT -                 13, ponct
+14.  15 risques          NC    risque            12, mod  
+15.  16 technologiques   ADJ   technologique     15, mod  
+16.  17 ,                PONCT ,                 16, ponct
+17.  18 effets           NC    effet             15, mod  
+18.  19 de               P     de                18, dep  
+19.  20 site             NC    site              19, prep 
+20.  21 ,                PONCT ,                 20, ponct
+21.  22 effets           NC    effet             15, mod  
+22.  23 potentiel        ADJ   potentiel         22, mod  
+23.  24 d'               P     de                22, dep  
+24.  25 un               DET   un                26, det  
+25.  26 séisme           NC    séisme            24, prep 
+
+1460901 Projet EVAD : Les chercheurs dévoilent leurs conclusions
+--------------------------------------------------------
+ 0.   1 Projet           NC    projet             6, suj  
+ 1.   2 EVAD             NPP   ?EVAD              1, mod  
+ 2.   3 :                PONCT :                  2, ponct
+ 3.   4 Les              DET   les                5, det  
+ 4.   5 chercheurs       NC    chercheur          1, mod  
+ 5.   6 dévoilent        V     dévoiler           0, root 
+ 6.   7 leurs            DET   leurs              8, det  
+ 7.   8 conclusions      NC    conclusion         6, obj  
+
+1510934 Arrêt CHS Tour : pour être interdites\, les pratiques commerciales induisant en erreur les consommateurs doivent-elles être contraires à la diligence professionnelle ?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Arrêt            NC    arrêt             17, mod  
+ 1.   2 CHS              NPP   ?CHS               1, mod  
+ 2.   3 Tour             NPP   ?Tour              1, mod  
+ 3.   4 :                PONCT :                  3, ponct
+ 4.   5 pour             P     pour              17, mod  
+ 5.   6 être             VINF  être               7, aux_pass
+ 6.   7 interdites       VPP   interdire          5, prep 
+ 7.   8 ,                PONCT ,                  7, ponct
+ 8.   9 les              DET   les               10, det  
+ 9.  10 pratiques        NC    pratique           7, mod  
+10.  11 commerciales     ADJ   commercial        10, mod  
+11.  12 induisant        VPR   induire           10, mod  
+12.  13 en               P     en                12, mod  
+13.  14 erreur           NC    erreur            13, prep 
+14.  15 les              DET   les               16, det  
+15.  16 consommateurs    NC    consommateur      12, obj  
+16.  17 doivent          V     devoir             0, root 
+17.  18 -elles           CLS   elles             17, suj  
+18.  19 être             VINF  être              17, obj  
+19.  20 contraires       ADJ   contraire         19, ats  
+20.  21 à                P     à                 19, mod  
+21.  22 la               DET   la                23, det  
+22.  23 diligence        NC    diligence         21, prep 
+23.  24 professionnelle  ADJ   professionnel     23, mod  
+24.  25 ?                PONCT ?                 24, ponct
+
+63416 Modalités de réinstallation d'une plate-forme carbonatée après une crise sédimentaire : Exemple de la limite Oxfordien moyen – Oxfordien supérieur dans le Sud-Est du Bassin de Paris.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Modalités        NC    modalité          28, mod  
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 réinstallation   NC    réinstallation     2, prep 
+ 3.   4 d'               P     de                 1, dep  
+ 4.   5 une              DET   une                6, det  
+ 5.   6 plate            NC    plate              4, prep 
+ 6.   7 -                PONCT -                  6, ponct
+ 7.   8 forme            NC    forme              1, mod  
+ 8.   9 carbonatée       VPP   carbonater         8, mod  
+ 9.  10 après            P     après              9, mod  
+10.  11 une              DET   une               12, det  
+11.  12 crise            NC    crise             10, prep 
+12.  13 sédimentaire     ADJ   sédimentaire      12, mod  
+13.  14 :                PONCT :                 13, ponct
+14.  15 Exemple          NC    exemple           12, mod  
+15.  16 de               P     de                15, dep  
+16.  17 la               DET   la                18, det  
+17.  18 limite           NC    limite            16, prep 
+18.  19 Oxfordien        NC    oxfordien         12, mod  
+19.  20 moyen            ADJ   moyen             19, mod  
+20.  21 -                PONCT -                 20, ponct
+21.  22 Oxfordien        NC    oxfordien         12, mod  
+22.  23 supérieur        ADJ   supérieur         22, mod  
+23.  24 dans             P     dans              22, dep  
+24.  25 le               DET   le                26, det  
+25.  26 Sud              NPP   ?Sud              24, prep 
+26.  27 -                PONCT -                 26, ponct
+27.  28 Est              V     être               0, root 
+28.  29 du               P+D   de                28, mod  
+29.  30 Bassin           NC    bassin            29, prep 
+30.  31 de               P     de                28, mod  
+31.  32 Paris            NPP   Paris             31, prep 
+32.  33 .                PONCT .                 32, ponct
+
+1160009 Gestion des risques\, cultures constructives et résiliences: de Bam à Haïti\, comment des approches ""utopiques"" alimentent la réflexion\, la projection\, pour finalement se concrétiser sur le terrain
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Gestion          NC    gestion           21, mod  
+ 1.   2 des              P+D   de                 1, dep  
+ 2.   3 risques          NC    risque             2, prep 
+ 3.   4 ,                PONCT ,                  3, ponct
+ 4.   5 cultures         NC    culture            1, mod  
+ 5.   6 constructives    ADJ   constructif        5, mod  
+ 6.   7 et               CC    et                 5, coord
+ 7.   8 résiliences      NC    résilience         7, dep_coord
+ 8.   9 :                PONCT :                  8, ponct
+ 9.  10 de               P     de                21, mod  
+10.  11 Bam              NPP   ?Bam              10, prep 
+11.  12 à                P     à                 11, dep  
+12.  13 Haïti            NPP   Haïti             12, prep 
+13.  14 ,                PONCT ,                 13, ponct
+14.  15 comment          NC    comment           13, mod  
+15.  16 des              P+D   de                15, dep  
+16.  17 approches        NC    approche          16, prep 
+17.  18 "                PONCT "                 17, ponct
+18.  19 utopiques        ADJ   utopique          17, mod  
+19.  20 "                PONCT "                 19, ponct
+20.  21 alimentent       V     alimenter          0, root 
+21.  22 la               DET   la                23, det  
+22.  23 réflexion        NC    réflexion         21, obj  
+23.  24 ,                PONCT ,                 23, ponct
+24.  25 la               DET   la                26, det  
+25.  26 projection       NC    projection        21, mod  
+26.  27 ,                PONCT ,                 26, ponct
+27.  28 pour             P     pour              21, mod  
+28.  29 finalement       ADV   ?finalement       31, mod  
+29.  30 se               CLR   se                31, aff  
+30.  31 concrétiser      VINF  concrétiser       28, prep 
+31.  32 sur              P     sur               31, mod  
+32.  33 le               DET   le                34, det  
+33.  34 terrain          NC    terrain           32, prep 
+
+410879 Les adjectivaux ambivalents : morphologie et prédication
+--------------------------------------------------------
+ 0.   1 Les              DET   les                2, det  
+ 1.   2 adjectivaux      ADJ   adjectival         5, mod  
+ 2.   3 ambivalents      ADJ   ambivalent         5, mod  
+ 3.   4 :                PONCT :                  3, ponct
+ 4.   5 morphologie      NC    morphologie        0, root 
+ 5.   6 et               CC    et                 5, coord
+ 6.   7 prédication      NC    prédication        6, dep_coord
+
+1480884 MOTIVATIONS Payer plus pour motiver moins : quand travailler c'est dire qui on est
+----------------------------------------------------------------------------------
+ 0.   1 MOTIVATIONS      NC    motivation        15, mod  
+ 1.   2 Payer            NPP   ?Payer             1, mod  
+ 2.   3 plus             ADV   plus               1, mod  
+ 3.   4 pour             P     pour               1, dep  
+ 4.   5 motiver          VINF  motiver            4, prep 
+ 5.   6 moins            ADV   moins              5, mod  
+ 6.   7 :                PONCT :                  6, ponct
+ 7.   8 quand            ADVWH quand              9, mod  
+ 8.   9 travailler       VINF  travailler         5, mod  
+ 9.  10 c'               CLS   ce                11, suj  
+10.  11 est              V     être               9, mod  
+11.  12 dire             VINF  dire              11, obj  
+12.  13 qui              PROREL qui               14, mod  
+13.  14 on               CLS   on                15, suj  
+14.  15 est              V     être               0, root 
+
+1578510 Les deux (?) Hélène de Stésichore
+------------------------------------
+ 0.   1 Les              DET   les                2, det  
+ 1.   2 deux             ADJ   deux               6, mod  
+ 2.   3 (                PONCT (                  2, ponct
+ 3.   4 ?                PONCT ?                  2, ponct
+ 4.   5 )                PONCT )                  2, ponct
+ 5.   6 Hélène         NPP   Hélène             0, root 
+ 6.   7 de               P     de                 6, dep  
+ 7.   8 Stésichore      NPP   ?Stésichore       7, prep 
+
+248571 Etat d'avancement d'un nouveau type de réfrigérateur : le tube a gaz pulsé
+--------------------------------------------------------------------------
+ 0.   1 Etat             NC    état              13, mod  
+ 1.   2 d'               P     de                 1, dep  
+ 2.   3 avancement       NC    avancement         2, prep 
+ 3.   4 d'               P     de                 1, dep  
+ 4.   5 un               DET   un                 7, det  
+ 5.   6 nouveau          ADJ   nouveau            7, mod  
+ 6.   7 type             NC    type               4, prep 
+ 7.   8 de               P     de                 7, dep  
+ 8.   9 réfrigérateur    NC    réfrigérateur      8, prep 
+ 9.  10 :                PONCT :                  9, ponct
+10.  11 le               DET   le                12, det  
+11.  12 tube             NC    tube              13, suj  
+12.  13 a                V     avoir              0, root 
+13.  14 gaz              NC    gaz               13, obj  
+14.  15 pulsé            ADJ   pulser            14, mod  
+
+1578385 Le refus de déclencher un mouvement : le comprendre pour y remédier
+-------------------------------------------------------------------
+ 0.   1 Le               DET   le                 2, det  
+ 1.   2 refus            NC    refus              9, suj  
+ 2.   3 de               P     de                 2, dep  
+ 3.   4 déclencher       VINF  déclencher         3, prep 
+ 4.   5 un               DET   un                 6, det  
+ 5.   6 mouvement        NC    mouvement          4, obj  
+ 6.   7 :                PONCT :                  6, ponct
+ 7.   8 le               CLO   le                 9, obj  
+ 8.   9 comprendre       VINF  comprendre         0, root 
+ 9.  10 pour             P     pour               9, mod  
+10.  11 y                CLO   y                 12, aff  
+11.  12 remédier         VINF  remédier          10, prep 
+
+80234 « La Révolution : Un entre-deux que l'on veut ignorer »
+-------------------------------------------------------
+ 0.   1 "                PONCT "                  0, ponct
+ 1.   2 La               DET   la                 3, det  
+ 2.   3 Révolution       NC    révolution        12, mod  
+ 3.   4 :                PONCT :                  3, ponct
+ 4.   5 Un               PRO   un                12, suj  
+ 5.   6 entre            P     entre              5, dep  
+ 6.   7 -                PONCT -                  8, det  
+ 7.   8 deux             ADJ   deux               6, prep 
+ 8.   9 que              PROREL que               12, obj  
+ 9.  10 l'               DET   le                11, det  
+10.  11 on               CLS   on                12, suj  
+11.  12 veut             V     vouloir            0, root 
+12.  13 ignorer          VINF  ignorer           12, obj  
+13.  14 "                PONCT "                 13, ponct
+
+1825883 La production écrite vue comme un processus bilingue : dans quelle mesure les TIC peuvent-elles aider ?
+-------------------------------------------------------------------------------------------------------
+ 0.   1 La               DET   la                 2, det  
+ 1.   2 production       NC    production        15, suj  
+ 2.   3 écrite           VPP   écrire             2, mod  
+ 3.   4 vue              VPP   voir               2, mod  
+ 4.   5 comme            P     comme              4, mod  
+ 5.   6 un               DET   un                 7, det  
+ 6.   7 processus        NC    processus          5, prep 
+ 7.   8 bilingue         ADJ   bilingue           7, mod  
+ 8.   9 :                PONCT :                  8, ponct
+ 9.  10 dans             P     dans              15, mod  
+10.  11 quelle           DETWH quel              12, det  
+11.  12 mesure           NC    mesure            10, prep 
+12.  13 les              DET   les               14, det  
+13.  14 TIC              NPP   ?TIC              15, suj  
+14.  15 peuvent          V     pouvoir            0, root 
+15.  16 -elles           PRO   elles             17, obj  
+16.  17 aider            VINF  aider             15, obj  
+17.  18 ?                PONCT ?                 17, ponct
+
+1078123 De l’offre technique dans les choix résidentiels ... à l’indifférence vis-à-vis du caractère écologique de leur habitat
+-----------------------------------------------------------------------------------------------------------------------
+ 0.   1 De               P     de                13, mod  
+ 1.   2 l'               DET   le                 3, det  
+ 2.   3 offre            NC    offre              1, prep 
+ 3.   4 technique        ADJ   technique          3, mod  
+ 4.   5 dans             P     dans               3, dep  
+ 5.   6 les              DET   les                7, det  
+ 6.   7 choix            NC    choix              5, prep 
+ 7.   8 résidentiels     ADJ   résidentiel        7, mod  
+ 8.   9 ...              PONCT ...                8, ponct
+ 9.  10 à                P     à                 13, mod  
+10.  11 l'               DET   le                12, det  
+11.  12 indifférence     NC    indifférence      10, prep 
+12.  13 vis              V     vivre              0, root 
+13.  14 -                PONCT -                 13, ponct
+14.  15 à                P     à                 13, mod  
+15.  16 -                PONCT -                 15, ponct
+16.  17 vis              NC    vis               15, prep 
+17.  18 du               P+D   de                13, mod  
+18.  19 caractère        NC    caractère         18, prep 
+19.  20 écologique       ADJ   écologique        19, mod  
+20.  21 de               P     de                13, mod  
+21.  22 leur             DET   leur              23, det  
+22.  23 habitat          NC    habitat           21, prep 
+
+1480807 Évaluation des compétences en langues : peut-on dépasser les standards ?
+------------------------------------------------------------------------
+ 0.   1 Évaluation       NC    évaluation         7, suj  
+ 1.   2 des              P+D   de                 1, dep  
+ 2.   3 compétences      NC    compétence         2, prep 
+ 3.   4 en               P     en                 1, dep  
+ 4.   5 langues          NC    langue             4, prep 
+ 5.   6 :                PONCT :                  5, ponct
+ 6.   7 peut             V     pouvoir            0, root 
+ 7.   8 -on              CLS   on                 7, suj  
+ 8.   9 dépasser         VINF  dépasser           7, obj  
+ 9.  10 les              DET   les               11, det  
+10.  11 standards        NC    standard           9, obj  
+11.  12 ?                PONCT ?                 11, ponct
+
+79900 Oral : ""Etude\, par spectroscopie 29Si-RMN\, de l'hydrolyse et la condensation d'un précurseur hybride organique-inorganique entrant dans la fabrication des couches pour l'optique guidée
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Oral             NC    oral              21, suj  
+ 1.   2 :                PONCT :                  1, ponct
+ 2.   3 "                PONCT "                  1, ponct
+ 3.   4 Etude            NC    étude              1, mod  
+ 4.   5 ,                PONCT ,                  4, ponct
+ 5.   6 par              P     par                4, dep  
+ 6.   7 spectroscopie    NC    spectroscopie      6, prep 
+ 7.   8 29Si             NPP   ?29Si              7, mod  
+ 8.   9 -                PONCT -                  8, ponct
+ 9.  10 RMN              NPP   ?RMN               7, mod  
+10.  11 ,                PONCT ,                 10, ponct
+11.  12 de               P     de                 4, dep  
+12.  13 l'               DET   le                14, det  
+13.  14 hydrolyse        NC    hydrolyse         12, prep 
+14.  15 et               CC    et                 4, coord
+15.  16 la               DET   la                17, det  
+16.  17 condensation     NC    condensation      15, dep_coord
+17.  18 d'               P     de                17, dep  
+18.  19 un               DET   un                20, det  
+19.  20 précurseur       NC    précurseur        18, prep 
+20.  21 hybride          V     hybrider           0, root 
+21.  22 organique        ADJ   organique         21, ats  
+22.  23 -                PONCT -                 22, ponct
+23.  24 inorganique      ADJ   inorganique       25, suj  
+24.  25 entrant          VPR   entrer            21, mod  
+25.  26 dans             P     dans              25, mod  
+26.  27 la               DET   la                28, det  
+27.  28 fabrication      NC    fabrication       26, prep 
+28.  29 des              P+D   de                25, mod  
+29.  30 couches          NC    couche            29, prep 
+30.  31 pour             P     pour              25, mod  
+31.  32 l'               DET   le                33, det  
+32.  33 optique          NC    optique           31, prep 
+33.  34 guidée           VPP   guider            33, mod  
+
+729016 Les indésirables : criminels et faux-sauniers à destination de la Nouvelle France
+---------------------------------------------------------------------------------
+ 0.   1 Les              DET   les                2, det  
+ 1.   2 indésirables     ADJ   indésirable        4, mod  
+ 2.   3 :                PONCT :                  2, ponct
+ 3.   4 criminels        NC    criminel           0, _    
+ 4.   5 et               CC    et                 4, coord
+ 5.   6 faux             ADJ   faux               5, dep_coord
+ 6.   7 -                PONCT -                  6, ponct
+ 7.   8 sauniers         NC    saunier            4, mod  
+ 8.   9 à                P     à                  8, dep  
+ 9.  10 destination      NC    destination        9, prep 
+10.  11 de               P     de                 8, dep  
+11.  12 la               DET   la                14, det  
+12.  13 Nouvelle         ADJ   nouveau           14, mod  
+13.  14 France           NPP   France            11, prep 
+
+1226451 Aliquid : être quelque chose
+----------------------------
+ 0.   1 Aliquid          NPP   ?Aliquid           3, suj  
+ 1.   2 :                PONCT :                  1, ponct
+ 2.   3 être             VINF  être               0, root 
+ 3.   4 quelque          DET   quelque            5, det  
+ 4.   5 chose            NC    chose              3, obj  
+
+830368 Les inscriptions d'Iruña-Veleia : analyse linguistique des principales inscriptions basques découvertes.
+--------------------------------------------------------------------------------------------------------
+ 0.   1 Les              DET   les                2, det  
+ 1.   2 inscriptions     NC    inscription        8, suj  
+ 2.   3 d'               P     de                 2, dep  
+ 3.   4 Iruña            NPP   ?Iruña             3, prep 
+ 4.   5 -                PONCT -                  4, ponct
+ 5.   6 Veleia           NPP   ?Veleia            2, mod  
+ 6.   7 :                PONCT :                  6, ponct
+ 7.   8 analyse          V     analyser           0, root 
+ 8.   9 linguistique     ADJ   linguistique       8, ats  
+ 9.  10 des              P+D   de                 8, mod  
+10.  11 principales      ADJ   principal         12, mod  
+11.  12 inscriptions     NC    inscription       10, prep 
+12.  13 basques          ADJ   basque            12, mod  
+13.  14 découvertes      NC    découverte        12, mod  
+14.  15 .                PONCT .                 14, ponct
+
+1077815 Anaphores et coréférences : analyse assistée par ordinateur
+-----------------------------------------------------------
+ 0.   1 Anaphores        NC    anaphore           6, suj  
+ 1.   2 et               CC    et                 1, coord
+ 2.   3 coréférences     NC    ?coréférences      2, dep_coord
+ 3.   4 :                PONCT :                  3, ponct
+ 4.   5 analyse          V     analyser           6, aux_tps
+ 5.   6 assistée         VPP   assister           0, root 
+ 6.   7 par              P     par                6, mod  
+ 7.   8 ordinateur       NC    ordinateur         7, prep 
+
+879400 Entente entre collectivités: une mise hors concurrence\, note sous CE\, 3 février 2012\, Commune de Veyrier-du-Lac
+------------------------------------------------------------------------------------------------------------------
+ 0.   1 Entente          NC    entente           10, mod  
+ 1.   2 entre            P     entre              1, dep  
+ 2.   3 collectivités    NC    collectivité       2, prep 
+ 3.   4 :                PONCT :                  3, ponct
+ 4.   5 une              DET   une                6, det  
+ 5.   6 mise             NC    mise              10, suj  
+ 6.   7 hors             P     hors               6, dep  
+ 7.   8 concurrence      NC    concurrence        7, prep 
+ 8.   9 ,                PONCT ,                  8, ponct
+ 9.  10 note             V     noter              0, root 
+10.  11 sous             P     sous              10, mod  
+11.  12 CE               NPP   ?CE               11, prep 
+12.  13 ,                PONCT ,                 12, ponct
+13.  14 3                ADJ   3                 15, mod  
+14.  15 février          NC    février           12, mod  
+15.  16 2012             NC    2012              15, mod  
+16.  17 ,                PONCT ,                 16, ponct
+17.  18 Commune          NPP   ?Commune          12, mod  
+18.  19 de               P     de                10, mod  
+19.  20 Veyrier          NPP   ?Veyrier          19, prep 
+20.  21 -                PONCT -                 20, ponct
+21.  22 du               P+D   de                10, mod  
+22.  23 -                PONCT -                 22, ponct
+23.  24 Lac              NC    lac               22, prep 
+
+879407 L'inscription en habilitation à diriger des recherches: l'appréciation encadrée sur la valeur scientifique du candidat\, note sous CE\, 26 octobre 2011\, Université de Pau et des pays de l'Adour
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 L'               DET   le                 2, det  
+ 1.   2 inscription      NC    inscription       20, suj  
+ 2.   3 en               P     en                 2, dep  
+ 3.   4 habilitation     NC    habilitation       3, prep 
+ 4.   5 à                P     à                  2, dep  
+ 5.   6 diriger          VINF  diriger            5, prep 
+ 6.   7 des              DET   des                8, det  
+ 7.   8 recherches       NC    recherche          6, obj  
+ 8.   9 :                PONCT :                  8, ponct
+ 9.  10 l'               DET   le                11, det  
+10.  11 appréciation     NC    appréciation       2, mod  
+11.  12 encadrée         VPP   encadrer          11, mod  
+12.  13 sur              P     sur               12, mod  
+13.  14 la               DET   la                15, det  
+14.  15 valeur           NC    valeur            13, prep 
+15.  16 scientifique     ADJ   scientifique      15, mod  
+16.  17 du               P+D   de                15, dep  
+17.  18 candidat         NC    candidat          17, prep 
+18.  19 ,                PONCT ,                 18, ponct
+19.  20 note             V     noter              0, root 
+20.  21 sous             P     sous              20, mod  
+21.  22 CE               NPP   ?CE               21, prep 
+22.  23 ,                PONCT ,                 22, ponct
+23.  24 26               ADJ   26                25, mod  
+24.  25 octobre          NC    octobre           22, mod  
+25.  26 2011             NC    2011              22, mod  
+26.  27 ,                PONCT ,                 26, ponct
+27.  28 Université       NC    université        22, mod  
+28.  29 de               P     de                28, dep  
+29.  30 Pau              NPP   Pau               29, prep 
+30.  31 et               CC    et                21, coord
+31.  32 des              P+D   de                31, dep_coord
+32.  33 pays             NC    pays              32, prep 
+33.  34 de               P     de                20, mod  
+34.  35 l'               DET   le                36, det  
+35.  36 Adour            NPP   Adour             34, prep 
+
+628397 analyse de l'activité pour améliorer les pratiques des élèves ingénieurs en conception : application a l'adaptation ergonomiques du matériel musical
+----------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 analyse          NC    analyse           16, suj  
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 l'               DET   le                 4, det  
+ 3.   4 activité         NC    activité           2, prep 
+ 4.   5 pour             P     pour               1, dep  
+ 5.   6 améliorer        VINF  améliorer          5, prep 
+ 6.   7 les              DET   les                8, det  
+ 7.   8 pratiques        NC    pratique           6, obj  
+ 8.   9 des              P+D   de                 6, mod  
+ 9.  10 élèves           NC    élève              9, prep 
+10.  11 ingénieurs       NC    ingénieur         10, mod  
+11.  12 en               P     en                 6, mod  
+12.  13 conception       NC    conception        12, prep 
+13.  14 :                PONCT :                 13, ponct
+14.  15 application      NC    application        6, mod  
+15.  16 a                V     avoir              0, root 
+16.  17 l'               DET   le                18, det  
+17.  18 adaptation       NC    adaptation        16, obj  
+18.  19 ergonomiques     ADJ   ergonomique       18, mod  
+19.  20 du               P+D   de                18, dep  
+20.  21 matériel         NC    matériel          20, prep 
+21.  22 musical          ADJ   musical           21, mod  
+
+879406 Traitement en hôpital de jour: ni risque spécial pour les tiers\, ni transfert de garde\, note sous CE\, 17 février 2012\, Société MAAF Assurances
+--------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Traitement       NC    traitement        19, suj  
+ 1.   2 en               P     en                 1, dep  
+ 2.   3 hôpital          NC    hôpital            2, prep 
+ 3.   4 de               P     de                 1, dep  
+ 4.   5 jour             NC    jour               4, prep 
+ 5.   6 :                PONCT :                  5, ponct
+ 6.   7 ni               CC    ni                 1, coord
+ 7.   8 risque           NC    risque             7, dep_coord
+ 8.   9 spécial          ADJ   spécial            8, mod  
+ 9.  10 pour             P     pour               1, dep  
+10.  11 les              DET   les               12, det  
+11.  12 tiers            NC    tiers             10, prep 
+12.  13 ,                PONCT ,                 12, ponct
+13.  14 ni               CC    ni                 1, coord
+14.  15 transfert        NC    transfert         14, dep_coord
+15.  16 de               P     de                15, dep  
+16.  17 garde            NC    garde             16, prep 
+17.  18 ,                PONCT ,                 17, ponct
+18.  19 note             V     noter              0, root 
+19.  20 sous             P     sous              19, mod  
+20.  21 CE               NPP   ?CE               20, prep 
+21.  22 ,                PONCT ,                 21, ponct
+22.  23 17               ADJ   17                24, mod  
+23.  24 février          NC    février           19, mod  
+24.  25 2012             NC    2012              24, mod  
+25.  26 ,                PONCT ,                 25, ponct
+26.  27 Société          NC    société           19, mod  
+27.  28 MAAF             NPP   ?MAAF             27, mod  
+28.  29 Assurances       NPP   ?Assurances       27, mod  
+
+1177271 Le rondeau renaissant et son épistémè : syntaxe\, sémantique et rime dans les rondeaux de Jean Bouchet et Clément Marot
+-----------------------------------------------------------------------------------------------------------------------
+ 0.   1 Le               DET   le                 2, det  
+ 1.   2 rondeau          NC    rondeau           12, suj  
+ 2.   3 renaissant       ADJ   renaissant         2, mod  
+ 3.   4 et               CC    et                 2, coord
+ 4.   5 son              DET   son                6, det  
+ 5.   6 épistémè         NC    ?épistémè          4, dep_coord
+ 6.   7 :                PONCT :                  6, ponct
+ 7.   8 syntaxe          NC    syntaxe            6, mod  
+ 8.   9 ,                PONCT ,                  8, ponct
+ 9.  10 sémantique       ADJ   sémantique         8, mod  
+10.  11 et               CC    et                 2, coord
+11.  12 rime             V     rimer              0, root 
+12.  13 dans             P     dans              12, mod  
+13.  14 les              DET   les               15, det  
+14.  15 rondeaux         NC    rondeau           13, prep 
+15.  16 de               P     de                12, mod  
+16.  17 Jean             NPP   Jean              16, prep 
+17.  18 Bouchet          NPP   Bouchet           17, mod  
+18.  19 et               CC    et                12, coord
+19.  20 Clément          V     ?Clément          19, dep_coord
+20.  21 Marot            NPP   ?Marot            20, obj  
+
+1376996 De l'innovation environnementale à l'innovation soutenable : penser la notion de capacité d'absorption au niveau territorial\, le cas SN Powers au Chili
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 De               P     de                10, mod  
+ 1.   2 l'               DET   le                 3, det  
+ 2.   3 innovation       NC    innovation         1, prep 
+ 3.   4 environnementale ADJ   environnemental    3, mod  
+ 4.   5 à                P     à                  3, dep  
+ 5.   6 l'               DET   le                 7, det  
+ 6.   7 innovation       NC    innovation         5, prep 
+ 7.   8 soutenable       ADJ   soutenable         7, mod  
+ 8.   9 :                PONCT :                  8, ponct
+ 9.  10 penser           VINF  penser             0, root 
+10.  11 la               DET   la                12, det  
+11.  12 notion           NC    notion            10, obj  
+12.  13 de               P     de                12, dep  
+13.  14 capacité         NC    capacité          13, prep 
+14.  15 d'               P     de                14, dep  
+15.  16 absorption       NC    absorption        15, prep 
+16.  17 au               P+D   à                 10, mod  
+17.  18 niveau           NC    niveau            17, prep 
+18.  19 territorial      ADJ   territorial       18, mod  
+19.  20 ,                PONCT ,                 19, ponct
+20.  21 le               DET   le                22, det  
+21.  22 cas              NC    cas               10, obj  
+22.  23 SN               NPP   ?SN               22, mod  
+23.  24 Powers           NPP   ?Powers           22, mod  
+24.  25 au               P+D   à                 10, mod  
+25.  26 Chili            NPP   Chili             25, prep 
+
+1725364 La concurrence entre la constitutionnalité et la conventionnalité devant la Cour de cassation : la priorité de la question ne résout pas toutes les questions
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 La               DET   la                 2, det  
+ 1.   2 concurrence      NC    concurrence       21, suj  
+ 2.   3 entre            P     entre              2, dep  
+ 3.   4 la               DET   la                 5, det  
+ 4.   5 constitutionnalité NC    constitutionnalité   3, prep 
+ 5.   6 et               CC    et                 2, coord
+ 6.   7 la               DET   la                 8, det  
+ 7.   8 conventionnalité NC    ?conventionnalité   6, dep_coord
+ 8.   9 devant           P     devant             2, dep  
+ 9.  10 la               DET   la                11, det  
+10.  11 Cour             NC    cour               9, prep 
+11.  12 de               P     de                 2, dep  
+12.  13 cassation        NC    cassation         12, prep 
+13.  14 :                PONCT :                 13, ponct
+14.  15 la               DET   la                16, det  
+15.  16 priorité         NC    priorité          21, suj  
+16.  17 de               P     de                16, dep  
+17.  18 la               DET   la                19, det  
+18.  19 question         NC    question          17, prep 
+19.  20 ne               ADV   ne                21, mod  
+20.  21 résout           V     résoudre           0, root 
+21.  22 pas              ADV   pas               21, mod  
+22.  23 toutes           ADJ   tout              25, mod  
+23.  24 les              DET   les               25, det  
+24.  25 questions        NC    question          21, obj  
+
+1826299 Conversation et non-respect du tour de parole : comment les bébés de 6 mois réagissent-ils ?
+--------------------------------------------------------------------------------------------
+ 0.   1 Conversation     NC    conversation      17, mod  
+ 1.   2 et               CC    et                 1, coord
+ 2.   3 non              ADV   non                2, mod  
+ 3.   4 -                PONCT -                  3, ponct
+ 4.   5 respect          NC    respect            2, dep_coord
+ 5.   6 du               P+D   de                 1, dep  
+ 6.   7 tour             NC    tour               6, prep 
+ 7.   8 de               P     de                 1, dep  
+ 8.   9 parole           NC    parole             8, prep 
+ 9.  10 :                PONCT :                  9, ponct
+10.  11 comment          ADVWH comment           17, mod  
+11.  12 les              DET   les               13, det  
+12.  13 bébés            NC    bébé              17, suj  
+13.  14 de               P     de                13, dep  
+14.  15 6                ADJ   6                 16, mod  
+15.  16 mois             NC    mois              14, prep 
+16.  17 réagissent       V     réagir             0, root 
+17.  18 -ils             CLS   ils               17, suj  
+18.  19 ?                PONCT ?                 18, ponct
+
+1177205 La religion civile : renfort ou menace pour la liberté ?
+--------------------------------------------------------
+ 0.   1 La               DET   la                 2, det  
+ 1.   2 religion         NC    religion           7, suj  
+ 2.   3 civile           ADJ   civil              2, mod  
+ 3.   4 :                PONCT :                  3, ponct
+ 4.   5 renfort          NC    renfort            2, mod  
+ 5.   6 ou               CC    ou                 2, coord
+ 6.   7 menace           V     menacer            0, root 
+ 7.   8 pour             P     pour               7, mod  
+ 8.   9 la               DET   la                10, det  
+ 9.  10 liberté          NC    liberté            8, prep 
+10.  11 ?                PONCT ?                 10, ponct
+
+1630145 Dirigeants repreneurs par personnes interposées : vous ne passerez pas !
+------------------------------------------------------------------------
+ 0.   1 Dirigeants       NC    dirigeant          9, mod  
+ 1.   2 repreneurs       NC    repreneur          1, mod  
+ 2.   3 par              P     par                1, dep  
+ 3.   4 personnes        NC    personne           3, prep 
+ 4.   5 interposées      VPP   interposer         4, mod  
+ 5.   6 :                PONCT :                  5, ponct
+ 6.   7 vous             CLS   vous               9, suj  
+ 7.   8 ne               ADV   ne                 9, mod  
+ 8.   9 passerez         V     passer             0, root 
+ 9.  10 pas              ADV   pas                9, mod  
+10.  11 !                PONCT !                 10, ponct
+
+879398 Appréciation de la RGPP: la France doit aller plus loin (à propos du rapport de l'OCDE)
+---------------------------------------------------------------------------------------
+ 0.   1 Appréciation     NC    appréciation       8, mod  
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 la               DET   la                 4, det  
+ 3.   4 RGPP             NPP   ?RGPP              2, prep 
+ 4.   5 :                PONCT :                  4, ponct
+ 5.   6 la               DET   la                 7, det  
+ 6.   7 France           NPP   France             8, suj  
+ 7.   8 doit             V     devoir             0, root 
+ 8.   9 aller            VINF  aller              8, obj  
+ 9.  10 plus             ADV   plus              11, mod  
+10.  11 loin             ADV   loin               9, mod  
+11.  12 (                PONCT (                 11, ponct
+12.  13 à                P     à                  9, mod  
+13.  14 propos           NC    propos            13, prep 
+14.  15 du               P+D   de                 9, mod  
+15.  16 rapport          NC    rapport           15, prep 
+16.  17 de               P     de                 9, mod  
+17.  18 l'               DET   le                19, det  
+18.  19 OCDE             NPP   ?OCDE             17, prep 
+19.  20 )                PONCT )                 19, ponct
+
+982435 ... un architecte qui aurait lu Benjamin et Tafuri ...
+------------------------------------------------------
+ 0.   1 ...              PONCT ...                0, ponct
+ 1.   2 un               DET   un                 3, det  
+ 2.   3 architecte       NC    architecte         0, _    
+ 3.   4 qui              PROREL qui                6, suj  
+ 4.   5 aurait           V     avoir              6, aux_tps
+ 5.   6 lu               VPP   lire               3, mod_rel
+ 6.   7 Benjamin         NPP   Benjamin           6, obj  
+ 7.   8 et               CC    et                 7, coord
+ 8.   9 Tafuri           NPP   ?Tafuri            8, dep_coord
+ 9.  10 ...              PONCT ...                9, ponct
+
+628488 La précarité : terreau de la défiance vis-à-vis du politique ?
+--------------------------------------------------------------
+ 0.   1 La               DET   la                 2, det  
+ 1.   2 précarité        NC    précarité          8, suj  
+ 2.   3 :                PONCT :                  2, ponct
+ 3.   4 terreau          NC    terreau            2, mod  
+ 4.   5 de               P     de                 4, dep  
+ 5.   6 la               DET   la                 7, det  
+ 6.   7 défiance         NC    défiance           5, prep 
+ 7.   8 vis              V     vivre              0, root 
+ 8.   9 -                PONCT -                  8, ponct
+ 9.  10 à                P     à                  8, mod  
+10.  11 -                PONCT -                 10, ponct
+11.  12 vis              NC    vis               10, prep 
+12.  13 du               P+D   de                 8, mod  
+13.  14 politique        NC    politique         13, prep 
+14.  15 ?                PONCT ?                 14, ponct
+
+1177295 Le fromage: tradition\, innovation et industrialisation coexistent.
+-------------------------------------------------------------------
+ 0.   1 Le               DET   le                 2, det  
+ 1.   2 fromage          NC    fromage            9, suj  
+ 2.   3 :                PONCT :                  2, ponct
+ 3.   4 tradition        NC    tradition          2, mod  
+ 4.   5 ,                PONCT ,                  4, ponct
+ 5.   6 innovation       NC    innovation         2, mod  
+ 6.   7 et               CC    et                 2, coord
+ 7.   8 industrialisation NC    industrialisation   7, dep_coord
+ 8.   9 coexistent       V     coexister          0, root 
+ 9.  10 .                PONCT .                  9, ponct
+
+1177307 Séchage des poudres: Optimisez vos performances.
+------------------------------------------------
+ 0.   1 Séchage          NC    séchage            5, suj  
+ 1.   2 des              P+D   de                 1, dep  
+ 2.   3 poudres          NC    poudre             2, prep 
+ 3.   4 :                PONCT :                  3, ponct
+ 4.   5 Optimisez        V     optimiser          0, root 
+ 5.   6 vos              DET   vos                7, det  
+ 6.   7 performances     NC    performance        5, obj  
+ 7.   8 .                PONCT .                  7, ponct
+
+1177381 Les pouvoirs de l’image dans le discours apologétique : les Tableaux sacrez des figures mystiques du très auguste sacrifice du sacrement de l’Eucharistie de Louis Richeome
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Les              DET   les                2, det  
+ 1.   2 pouvoirs         NC    pouvoir           13, mod  
+ 2.   3 de               P     de                 2, dep  
+ 3.   4 l'               DET   le                 5, det  
+ 4.   5 image            NC    image              3, prep 
+ 5.   6 dans             P     dans               2, dep  
+ 6.   7 le               DET   le                 8, det  
+ 7.   8 discours         NC    discours           6, prep 
+ 8.   9 apologétique     ADJ   apologétique       8, mod  
+ 9.  10 :                PONCT :                  9, ponct
+10.  11 les              DET   les               12, det  
+11.  12 Tableaux         NPP   ?Tableaux         13, suj  
+12.  13 sacrez           V     sacrer             0, root 
+13.  14 des              DET   des               15, det  
+14.  15 figures          NC    figure            13, obj  
+15.  16 mystiques        ADJ   mystique          15, mod  
+16.  17 du               P+D   de                15, dep  
+17.  18 très             ADV   très              19, mod  
+18.  19 auguste          ADJ   auguste           20, mod  
+19.  20 sacrifice        NC    sacrifice         17, prep 
+20.  21 du               P+D   de                20, dep  
+21.  22 sacrement        NC    sacrement         21, prep 
+22.  23 de               P     de                13, mod  
+23.  24 l'               DET   le                25, det  
+24.  25 Eucharistie      NPP   ?Eucharistie      23, prep 
+25.  26 de               P     de                13, mod  
+26.  27 Louis            NPP   Louis             26, prep 
+27.  28 Richeome         NPP   ?Richeome         27, mod  
+
+481768 Utilisation des critères non financiers pour évaluer ou piloter la performance : analyse théorique
+--------------------------------------------------------------------------------------------------
+ 0.   1 Utilisation      NC    utilisation       13, suj  
+ 1.   2 des              P+D   de                 1, dep  
+ 2.   3 critères         NC    critère            2, prep 
+ 3.   4 non              ADV   non                5, mod  
+ 4.   5 financiers       ADJ   financier          1, mod  
+ 5.   6 pour             P     pour              13, mod  
+ 6.   7 évaluer          VINF  évaluer            6, prep 
+ 7.   8 ou               CC    ou                 7, coord
+ 8.   9 piloter          VINF  piloter            8, dep_coord
+ 9.  10 la               DET   la                11, det  
+10.  11 performance      NC    performance        7, mod  
+11.  12 :                PONCT :                 11, ponct
+12.  13 analyse          V     analyser           0, root 
+13.  14 théorique        ADJ   théorique         13, ats  
+
+931336 Photovoltaïque : aperçu sur l'état de l'art
+-------------------------------------------
+ 0.   1 Photovoltaïque   ADJ   photovoltaïque     3, mod  
+ 1.   2 :                PONCT :                  1, ponct
+ 2.   3 aperçu           VPP   apercevoir         0, _    
+ 3.   4 sur              P     sur                3, mod  
+ 4.   5 l'               DET   le                 6, det  
+ 5.   6 état             NC    état               4, prep 
+ 6.   7 de               P     de                 3, mod  
+ 7.   8 l'               DET   le                 9, det  
+ 8.   9 art              NC    art                7, prep 
+
+287150 Le pouvoir de l'organisation : maîtrise des ressources juridiques et maîtrise du recours au juge dans la branche famille de la Sécurité sociale
+-----------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Le               DET   le                 2, det  
+ 1.   2 pouvoir          NC    pouvoir           16, suj  
+ 2.   3 de               P     de                 2, dep  
+ 3.   4 l'               DET   le                 5, det  
+ 4.   5 organisation     NC    organisation       3, prep 
+ 5.   6 :                PONCT :                  5, ponct
+ 6.   7 maîtrise         NC    maîtrise           2, mod  
+ 7.   8 des              P+D   de                 7, dep  
+ 8.   9 ressources       NC    ressource          8, prep 
+ 9.  10 juridiques       ADJ   juridique          9, mod  
+10.  11 et               CC    et                 2, coord
+11.  12 maîtrise         NC    maîtrise          11, dep_coord
+12.  13 du               P+D   de                12, dep  
+13.  14 recours          NC    recours           13, prep 
+14.  15 au               P+D   à                 16, mod  
+15.  16 juge             V     juger              0, root 
+16.  17 dans             P     dans              16, mod  
+17.  18 la               DET   la                19, det  
+18.  19 branche          NC    branche           17, prep 
+19.  20 famille          NC    famille           19, mod  
+20.  21 de               P     de                16, mod  
+21.  22 la               DET   la                23, det  
+22.  23 Sécurité         NC    sécurité          21, prep 
+23.  24 sociale          ADJ   social            23, mod  
+
+1725361 La puissance et la représentation\, l'Etat et le citoyen : quel est le fondement de l'autorité de la norme constitutionnelle et de la jurisprudence du juge constitutionnel ?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 La               DET   la                 2, det  
+ 1.   2 puissance        NC    puissance         14, suj  
+ 2.   3 et               CC    et                 2, coord
+ 3.   4 la               DET   la                 5, det  
+ 4.   5 représentation   NC    représentation     3, dep_coord
+ 5.   6 ,                PONCT ,                  5, ponct
+ 6.   7 l'               DET   le                 8, det  
+ 7.   8 Etat             NPP   ?Etat             14, suj  
+ 8.   9 et               CC    et                 8, coord
+ 9.  10 le               DET   le                11, det  
+10.  11 citoyen          NC    citoyen            9, dep_coord
+11.  12 :                PONCT :                 11, ponct
+12.  13 quel             DETWH quel              14, mod  
+13.  14 est              V     être               0, root 
+14.  15 le               DET   le                16, det  
+15.  16 fondement        NC    fondement         14, obj  
+16.  17 de               P     de                14, mod  
+17.  18 l'               DET   le                19, det  
+18.  19 autorité         NC    autorité          17, prep 
+19.  20 de               P     de                14, mod  
+20.  21 la               DET   la                22, det  
+21.  22 norme            NC    norme             20, prep 
+22.  23 constitutionnelle ADJ   constitutionnel   22, mod  
+23.  24 et               CC    et                14, coord
+24.  25 de               P     de                24, dep_coord
+25.  26 la               DET   la                27, det  
+26.  27 jurisprudence    NC    jurisprudence     25, prep 
+27.  28 du               P+D   de                14, mod  
+28.  29 juge             V     juger             14, mod  
+29.  30 constitutionnel  ADJ   constitutionnel   29, mod  
+30.  31 ?                PONCT ?                 30, ponct
+
+481728 Entre rupture et continuité : la guerre civile espagnole\, fabrique de la presse (Pays basque 1936-1937).
+---------------------------------------------------------------------------------------------------------
+ 0.   1 Entre            P     entre             11, mod  
+ 1.   2 rupture          NC    rupture            1, prep 
+ 2.   3 et               CC    et                 2, coord
+ 3.   4 continuité       NC    continuité         3, dep_coord
+ 4.   5 :                PONCT :                  4, ponct
+ 5.   6 la               DET   la                 7, det  
+ 6.   7 guerre           NC    guerre            11, suj  
+ 7.   8 civile           ADJ   civil              7, mod  
+ 8.   9 espagnole        ADJ   espagnol           7, mod  
+ 9.  10 ,                PONCT ,                  9, ponct
+10.  11 fabrique         V     fabriquer          0, root 
+11.  12 de               P     de                11, mod  
+12.  13 la               DET   la                14, det  
+13.  14 presse           NC    presse            12, prep 
+14.  15 (                PONCT (                 14, ponct
+15.  16 Pays             NC    pays              11, mod  
+16.  17 basque           ADJ   basque            16, mod  
+17.  18 1936-1937        NC    1936-1937         16, mod  
+18.  19 )                PONCT )                 18, ponct
+19.  20 .                PONCT .                 18, ponct
+
+430643 Evaluation et politiques : Y a-t-il de bons indicateurs pour la recherche ?
+---------------------------------------------------------------------------
+ 0.   1 Evaluation       NC    évaluation         6, suj  
+ 1.   2 et               CC    et                 1, coord
+ 2.   3 politiques       ADJ   politique          1, mod  
+ 3.   4 :                PONCT :                  3, ponct
+ 4.   5 Y                CLO   y                  6, aff  
+ 5.   6 a                V     avoir              0, root 
+ 6.   7 -t-il            CLS   il                 6, suj  
+ 7.   8 de               DET   de                10, det  
+ 8.   9 bons             ADJ   bon               10, mod  
+ 9.  10 indicateurs      NC    indicateur         6, obj  
+10.  11 pour             P     pour               6, mod  
+11.  12 la               DET   la                13, det  
+12.  13 recherche        NC    recherche         11, prep 
+13.  14 ?                PONCT ?                 13, ponct
+
+1177310 Agrocampus: Les chercheurs boivent du petit lait.
+-------------------------------------------------
+ 0.   1 Agrocampus       NPP   ?Agrocampus        5, suj  
+ 1.   2 :                PONCT :                  1, ponct
+ 2.   3 Les              DET   les                4, det  
+ 3.   4 chercheurs       NC    chercheur          1, mod  
+ 4.   5 boivent          V     boire              0, root 
+ 5.   6 du               P+D   de                 5, mod  
+ 6.   7 petit            ADJ   petit              8, mod  
+ 7.   8 lait             NC    lait               6, prep 
+ 8.   9 .                PONCT .                  8, ponct
+
+1676034 Transfert de contrôle en fraude d'un pacte de préférence ; Note sous Cour de cassation\, Chambre commerciale\, 15 mars 2017\, pourvoi numéro 15‐20.440
+------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Transfert        NC    transfert         12, suj  
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 contrôle         NC    contrôle           2, prep 
+ 3.   4 en               P     en                 1, dep  
+ 4.   5 fraude           NC    fraude             4, prep 
+ 5.   6 d'               P     de                 1, dep  
+ 6.   7 un               DET   un                 8, det  
+ 7.   8 pacte            NC    pacte              6, prep 
+ 8.   9 de               P     de                 1, dep  
+ 9.  10 préférence       NC    préférence         9, prep 
+10.  11 ;                PONCT ;                 10, ponct
+11.  12 Note             V     noter              0, root 
+12.  13 sous             P     sous              12, mod  
+13.  14 Cour             NC    cour              13, prep 
+14.  15 de               P     de                12, mod  
+15.  16 cassation        NC    cassation         15, prep 
+16.  17 ,                PONCT ,                 16, ponct
+17.  18 Chambre          NC    chambre           12, mod  
+18.  19 commerciale      ADJ   commercial        18, mod  
+19.  20 ,                PONCT ,                 19, ponct
+20.  21 15               ADJ   15                18, mod  
+21.  22 mars             NC    mars              18, mod  
+22.  23 2017             NC    2017              18, mod  
+23.  24 ,                PONCT ,                 23, ponct
+24.  25 pourvoi          NC    pourvoi           12, mod  
+25.  26 numéro           NC    numéro            25, mod  
+26.  27 15               ADJ   15                25, mod  
+27.  28 ‐                PONCT ‐                 27, ponct
+28.  29 20.440           NC    20.440            25, mod  
+
+1326712 Formation continue des salariés en Europe : les écarts entre pays se réduisent encore
+-------------------------------------------------------------------------------------
+ 0.   1 Formation        NC    formation         13, mod  
+ 1.   2 continue         ADJ   continu            1, mod  
+ 2.   3 des              P+D   de                 1, dep  
+ 3.   4 salariés         NC    salarié            3, prep 
+ 4.   5 en               P     en                 1, dep  
+ 5.   6 Europe           NPP   Europe             5, prep 
+ 6.   7 :                PONCT :                  6, ponct
+ 7.   8 les              DET   les                9, det  
+ 8.   9 écarts           NC    écart             13, suj  
+ 9.  10 entre            P     entre              9, dep  
+10.  11 pays             NC    pays              10, prep 
+11.  12 se               CLR   se                13, aff  
+12.  13 réduisent        V     réduire            0, root 
+13.  14 encore           ADV   encore            13, mod  
+
+1676044 D'une conception très extensive de l'objet social illicite ; Note sous Cour de cassation\, Chambre commerciale\, 26 avril 2017\, pourvoi numéro 15‐14.243\, JurisData numéro 2017‐007788
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 D'               P     de                12, mod  
+ 1.   2 une              DET   une                3, det  
+ 2.   3 conception       NC    conception         1, prep 
+ 3.   4 très             ADV   très               5, mod  
+ 4.   5 extensive        ADJ   extensif           3, mod  
+ 5.   6 de               P     de                 3, dep  
+ 6.   7 l'               DET   le                 8, det  
+ 7.   8 objet            NC    objet              6, prep 
+ 8.   9 social           ADJ   social             8, mod  
+ 9.  10 illicite         ADJ   illicite           8, mod  
+10.  11 ;                PONCT ;                 10, ponct
+11.  12 Note             V     noter              0, root 
+12.  13 sous             P     sous              12, mod  
+13.  14 Cour             NC    cour              13, prep 
+14.  15 de               P     de                12, mod  
+15.  16 cassation        NC    cassation         15, prep 
+16.  17 ,                PONCT ,                 16, ponct
+17.  18 Chambre          NC    chambre           12, mod  
+18.  19 commerciale      ADJ   commercial        18, mod  
+19.  20 ,                PONCT ,                 19, ponct
+20.  21 26               ADJ   26                18, mod  
+21.  22 avril            NC    avril             18, mod  
+22.  23 2017             NC    2017              22, mod  
+23.  24 ,                PONCT ,                 23, ponct
+24.  25 pourvoi          NC    pourvoi           12, mod  
+25.  26 numéro           NC    numéro            25, mod  
+26.  27 15               ADJ   15                25, mod  
+27.  28 ‐                PONCT ‐                 27, ponct
+28.  29 14.243           NPP   14.243            25, mod  
+29.  30 ,                PONCT ,                 29, ponct
+30.  31 JurisData        NPP   ?JurisData        25, mod  
+31.  32 numéro           NC    numéro            25, mod  
+32.  33 2017             ADJ   2017              32, mod  
+33.  34 ‐                PONCT ‐                 33, ponct
+34.  35 007788           NC    007788            25, mod  
+
+1676058 Navire et naufrage de la personnalité morale ; Note sous Cour de cassation\, Chambre commerciale\, 14 juin 2016\, pourvoi numéro 14‐18.671
+------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Navire           NC    navire             9, suj  
+ 1.   2 et               CC    et                 1, coord
+ 2.   3 naufrage         NC    naufrage           2, dep_coord
+ 3.   4 de               P     de                 1, dep  
+ 4.   5 la               DET   la                 6, det  
+ 5.   6 personnalité     NC    personnalité       4, prep 
+ 6.   7 morale           ADJ   moral              6, mod  
+ 7.   8 ;                PONCT ;                  7, ponct
+ 8.   9 Note             V     noter              0, root 
+ 9.  10 sous             P     sous               9, mod  
+10.  11 Cour             NC    cour              10, prep 
+11.  12 de               P     de                 9, mod  
+12.  13 cassation        NC    cassation         12, prep 
+13.  14 ,                PONCT ,                 13, ponct
+14.  15 Chambre          NC    chambre            9, mod  
+15.  16 commerciale      ADJ   commercial        15, mod  
+16.  17 ,                PONCT ,                 16, ponct
+17.  18 14               ADJ   14                15, mod  
+18.  19 juin             NC    juin              15, mod  
+19.  20 2016             NC    2016              19, mod  
+20.  21 ,                PONCT ,                 20, ponct
+21.  22 pourvoi          NC    pourvoi            9, mod  
+22.  23 numéro           NC    numéro            22, mod  
+23.  24 14               ADJ   14                22, mod  
+24.  25 ‐                PONCT ‐                 24, ponct
+25.  26 18.671           NC    18.671            22, mod  
+
+1676046 Interprétation extensive de l'engagement ; Note sous Cour d'appel de Paris\, huitième Chambre\, 9 février 2017\, Monsieur Victor contre SAS Amilton Partners\, RG numéro 15/20098\, JurisData numéro 2017‐002414
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Interprétation   NC    interprétation     7, suj  
+ 1.   2 extensive        ADJ   extensif           1, mod  
+ 2.   3 de               P     de                 1, dep  
+ 3.   4 l'               DET   le                 5, det  
+ 4.   5 engagement       NC    engagement         3, prep 
+ 5.   6 ;                PONCT ;                  5, ponct
+ 6.   7 Note             V     noter              0, root 
+ 7.   8 sous             P     sous               7, mod  
+ 8.   9 Cour             NC    cour               8, prep 
+ 9.  10 d'               P     de                 7, mod  
+10.  11 appel            NC    appel             10, prep 
+11.  12 de               P     de                 7, mod  
+12.  13 Paris            NPP   Paris             12, prep 
+13.  14 ,                PONCT ,                 13, ponct
+14.  15 huitième         ADJ   huitième          16, mod  
+15.  16 Chambre          NC    chambre            7, obj  
+16.  17 ,                PONCT ,                 16, ponct
+17.  18 9                ADJ   9                 16, mod  
+18.  19 février          NC    février           16, mod  
+19.  20 2017             NC    2017              16, mod  
+20.  21 ,                PONCT ,                 20, ponct
+21.  22 Monsieur         NC    Monsieur          16, mod  
+22.  23 Victor           NPP   Victor            22, mod  
+23.  24 contre           P     contre            16, dep  
+24.  25 SAS              NPP   ?SAS              24, prep 
+25.  26 Amilton          NPP   ?Amilton          25, mod  
+26.  27 Partners         NPP   ?Partners         25, mod  
+27.  28 ,                PONCT ,                 27, ponct
+28.  29 RG               NPP   ?RG               25, mod  
+29.  30 numéro           NC    numéro            25, mod  
+30.  31 15               ADJ   15                30, mod  
+31.  32 /                PONCT /                 31, ponct
+32.  33 20098            NC    20098             25, mod  
+33.  34 ,                PONCT ,                 33, ponct
+34.  35 JurisData        NPP   ?JurisData        25, mod  
+35.  36 numéro           NC    numéro            25, mod  
+36.  37 2017             ADJ   2017              36, mod  
+37.  38 ‐                PONCT ‐                 37, ponct
+38.  39 002414           NC    002414            25, mod  
+
+430700 Les émotions au Moyen-Age; analyse rétrospective
+------------------------------------------------
+ 0.   1 Les              DET   les                2, det  
+ 1.   2 émotions         NC    émotion            8, suj  
+ 2.   3 au               P+D   à                  2, dep  
+ 3.   4 Moyen            NPP   Moyen              3, prep 
+ 4.   5 -                PONCT -                  4, ponct
+ 5.   6 Age              NC    age                2, mod  
+ 6.   7 ;                PONCT ;                  6, ponct
+ 7.   8 analyse          V     analyser           0, root 
+ 8.   9 rétrospective    NC    rétrospective      8, obj  
+
+1676060 Transmission de l'astreinte à la société absorbante ; Note sous Cour de cassation\, deuxième Chambre civile\, 1 septembre 2016\, pourvoi numéro 15‐19.524
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Transmission     NC    transmission      10, suj  
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 l'               DET   le                 4, det  
+ 3.   4 astreinte        NC    astreinte          2, prep 
+ 4.   5 à                P     à                  1, dep  
+ 5.   6 la               DET   la                 7, det  
+ 6.   7 société          NC    société            5, prep 
+ 7.   8 absorbante       ADJ   absorbant          7, mod  
+ 8.   9 ;                PONCT ;                  8, ponct
+ 9.  10 Note             V     noter              0, root 
+10.  11 sous             P     sous              10, mod  
+11.  12 Cour             NC    cour              11, prep 
+12.  13 de               P     de                10, mod  
+13.  14 cassation        NC    cassation         13, prep 
+14.  15 ,                PONCT ,                 14, ponct
+15.  16 deuxième         ADJ   deuxième          17, mod  
+16.  17 Chambre          NC    chambre           10, obj  
+17.  18 civile           ADJ   civil             17, mod  
+18.  19 ,                PONCT ,                 18, ponct
+19.  20 1                ADJ   1                 17, mod  
+20.  21 septembre        NC    septembre         17, mod  
+21.  22 2016             NC    2016              17, mod  
+22.  23 ,                PONCT ,                 22, ponct
+23.  24 pourvoi          NC    pourvoi           17, mod  
+24.  25 numéro           NC    numéro            17, mod  
+25.  26 15               ADJ   15                17, mod  
+26.  27 ‐                PONCT ‐                 26, ponct
+27.  28 19.524           NC    19.524            10, mod  
+
+1676072 Garantie de passif réduite pour cause de manquement du cessionnaire à son obligation d'informer le cédant ; Note sous Cour de cassation\, Chambre commerciale\, 18 mai 2016\, pourvoi numéro 14‐22.354
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Garantie         NC    garantie          19, suj  
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 passif           NC    passif             2, prep 
+ 3.   4 réduite          ADJ   réduire            1, mod  
+ 4.   5 pour             P     pour               1, dep  
+ 5.   6 cause            NC    cause              5, prep 
+ 6.   7 de               P     de                 1, dep  
+ 7.   8 manquement       NC    manquement         7, prep 
+ 8.   9 du               P+D   de                 1, dep  
+ 9.  10 cessionnaire     NC    cessionnaire       9, prep 
+10.  11 à                P     à                  1, dep  
+11.  12 son              DET   son               13, det  
+12.  13 obligation       NC    obligation        11, prep 
+13.  14 d'               P     de                 1, dep  
+14.  15 informer         VINF  informer          14, prep 
+15.  16 le               DET   le                17, det  
+16.  17 cédant           NC    cédant            15, obj  
+17.  18 ;                PONCT ;                 17, ponct
+18.  19 Note             V     noter              0, root 
+19.  20 sous             P     sous              19, mod  
+20.  21 Cour             NC    cour              20, prep 
+21.  22 de               P     de                19, mod  
+22.  23 cassation        NC    cassation         22, prep 
+23.  24 ,                PONCT ,                 23, ponct
+24.  25 Chambre          NC    chambre           19, mod  
+25.  26 commerciale      ADJ   commercial        25, mod  
+26.  27 ,                PONCT ,                 26, ponct
+27.  28 18               ADJ   18                25, mod  
+28.  29 mai              NC    mai               25, mod  
+29.  30 2016             NC    2016              29, mod  
+30.  31 ,                PONCT ,                 30, ponct
+31.  32 pourvoi          NC    pourvoi           19, mod  
+32.  33 numéro           NC    numéro            32, mod  
+33.  34 14               ADJ   14                32, mod  
+34.  35 ‐                PONCT ‐                 34, ponct
+35.  36 22.354           NC    22.354            32, mod  
+
+628613 Entre le psy et l'assistante sociale : Où mène la prescription d'antidépresseurs en médecine générale quand la souffrance se fait sociale
+-----------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Entre            P     entre             10, mod  
+ 1.   2 le               DET   le                 3, det  
+ 2.   3 psy              NPP   ?psy               1, prep 
+ 3.   4 et               CC    et                 1, coord
+ 4.   5 l'               DET   le                 6, det  
+ 5.   6 assistante       NC    assistant          4, dep_coord
+ 6.   7 sociale          ADJ   social             6, mod  
+ 7.   8 :                PONCT :                  7, ponct
+ 8.   9 Où               PROREL où                10, suj  
+ 9.  10 mène             V     mener              0, root 
+10.  11 la               DET   la                12, det  
+11.  12 prescription     NC    prescription      10, obj  
+12.  13 d'               P     de                10, mod  
+13.  14 antidépresseurs  NC    antidépresseur    13, prep 
+14.  15 en               P     en                10, mod  
+15.  16 médecine         NC    médecine          15, prep 
+16.  17 générale         ADJ   général           16, mod  
+17.  18 quand            CS    quand             10, mod  
+18.  19 la               DET   la                20, det  
+19.  20 souffrance       NC    souffrance        22, suj  
+20.  21 se               CLR   se                22, aff  
+21.  22 fait             V     faire             18, sub  
+22.  23 sociale          ADJ   social            22, ats  
+
+1377179 Le chômage des jeunes en France : une 'épreuve' diversement vécue
+-----------------------------------------------------------------
+ 0.   1 Le               DET   le                 2, det  
+ 1.   2 chômage          NC    chômage           13, suj  
+ 2.   3 des              P+D   de                 2, dep  
+ 3.   4 jeunes           NC    jeune              3, prep 
+ 4.   5 en               P     en                 2, dep  
+ 5.   6 France           NPP   France             5, prep 
+ 6.   7 :                PONCT :                  6, ponct
+ 7.   8 une              DET   une               10, det  
+ 8.   9 '                PONCT '                  8, ponct
+ 9.  10 épreuve          NC    épreuve            2, mod  
+10.  11 '                PONCT '                 10, ponct
+11.  12 diversement      ADV   ?diversement      13, mod  
+12.  13 vécue            VPP   vivre              0, root 
+
+1676062 Vente entre sociétés constitutive d'un abus de majorité ; Note sous Cour de cassation\, Chambre commerciale\, 24 mai 2016\, pourvoi numéro 14‐28.121
+----------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Vente            NC    vente             11, suj  
+ 1.   2 entre            P     entre              1, dep  
+ 2.   3 sociétés         NC    société            2, prep 
+ 3.   4 constitutive     ADJ   constitutif        1, mod  
+ 4.   5 d'               P     de                 1, dep  
+ 5.   6 un               DET   un                 7, det  
+ 6.   7 abus             NC    abus               5, prep 
+ 7.   8 de               P     de                 1, dep  
+ 8.   9 majorité         NC    majorité           8, prep 
+ 9.  10 ;                PONCT ;                  9, ponct
+10.  11 Note             V     noter              0, root 
+11.  12 sous             P     sous              11, mod  
+12.  13 Cour             NC    cour              12, prep 
+13.  14 de               P     de                11, mod  
+14.  15 cassation        NC    cassation         14, prep 
+15.  16 ,                PONCT ,                 15, ponct
+16.  17 Chambre          NC    chambre           11, mod  
+17.  18 commerciale      ADJ   commercial        17, mod  
+18.  19 ,                PONCT ,                 18, ponct
+19.  20 24               ADJ   24                17, mod  
+20.  21 mai              NC    mai               17, mod  
+21.  22 2016             NC    2016              17, mod  
+22.  23 ,                PONCT ,                 22, ponct
+23.  24 pourvoi          NC    pourvoi           11, mod  
+24.  25 numéro           NC    numéro            24, mod  
+25.  26 14               ADJ   14                24, mod  
+26.  27 ‐                PONCT ‐                 26, ponct
+27.  28 28.121           NC    28.121            24, mod  
+
+1630317 Le net sentimental : tester sa capacité de séduction / devenir “infidèle” » ?
+-----------------------------------------------------------------------------
+ 0.   1 Le               DET   le                 2, det  
+ 1.   2 net              ADJ   net                5, suj  
+ 2.   3 sentimental      ADJ   sentimental        2, mod  
+ 3.   4 :                PONCT :                  3, ponct
+ 4.   5 tester           VINF  tester             0, root 
+ 5.   6 sa               DET   sa                 7, det  
+ 6.   7 capacité         NC    capacité           5, obj  
+ 7.   8 de               P     de                 5, mod  
+ 8.   9 séduction        NC    séduction          8, prep 
+ 9.  10 /                PONCT /                  9, ponct
+10.  11 devenir          VINF  devenir            5, coord
+11.  12 "                PONCT "                 11, ponct
+12.  13 infidèle         ADJ   infidèle          11, mod  
+13.  14 "                PONCT "                 13, ponct
+14.  15 "                PONCT "                 13, ponct
+15.  16 ?                PONCT ?                 13, ponct
+
+379964 Frontières nord-américaines et frontières européennes : le Canada peut-il tirer des leçons de l'Europe?
+-------------------------------------------------------------------------------------------------------
+ 0.   1 Frontières       NC    frontière         11, mod  
+ 1.   2 nord             NPP   ?nord              1, mod  
+ 2.   3 -                PONCT -                  2, ponct
+ 3.   4 américaines      ADJ   américain          1, mod  
+ 4.   5 et               CC    et                 1, coord
+ 5.   6 frontières       NC    frontière          5, dep_coord
+ 6.   7 européennes      ADJ   européen           6, mod  
+ 7.   8 :                PONCT :                  7, ponct
+ 8.   9 le               DET   le                10, det  
+ 9.  10 Canada           NPP   Canada            11, suj  
+10.  11 peut             V     pouvoir            0, root 
+11.  12 -il              CLS   il                11, suj  
+12.  13 tirer            VINF  tirer             11, obj  
+13.  14 des              DET   des               15, det  
+14.  15 leçons           NC    leçon             13, obj  
+15.  16 de               P     de                15, dep  
+16.  17 l'               DET   le                18, det  
+17.  18 Europe           NPP   Europe            16, prep 
+18.  19 ?                PONCT ?                 18, ponct
+
+781240 Le rôle du temps... entre autres dans l'explication des reliefs"" ou ""hiérarchisons les causes des changements !
+-----------------------------------------------------------------------------------------------------------------
+ 0.   1 Le               DET   le                 2, det  
+ 1.   2 rôle             NC    rôle              16, suj  
+ 2.   3 du               P+D   de                 2, dep  
+ 3.   4 temps            NC    temps              3, prep 
+ 4.   5 ...              PONCT ...                4, ponct
+ 5.   6 entre            P     entre              2, dep  
+ 6.   7 autres           PRO   autres             6, prep 
+ 7.   8 dans             P     dans               7, dep  
+ 8.   9 l'               DET   le                10, det  
+ 9.  10 explication      NC    explication        8, prep 
+10.  11 des              P+D   de                10, dep  
+11.  12 reliefs          NC    relief            11, prep 
+12.  13 "                PONCT "                 12, ponct
+13.  14 ou               CC    ou                 2, coord
+14.  15 "                PONCT "                 14, ponct
+15.  16 hiérarchisons    V     hiérarchiser       0, root 
+16.  17 les              DET   les               18, det  
+17.  18 causes           NC    cause             16, obj  
+18.  19 des              P+D   de                18, dep  
+19.  20 changements      NC    changement        19, prep 
+20.  21 !                PONCT !                 20, ponct
+
+1630401 Regards sur la co-production du client : comment les entreprises nous font-elles participer ?
+---------------------------------------------------------------------------------------------
+ 0.   1 Regards          NC    regard            14, suj  
+ 1.   2 sur              P     sur                1, dep  
+ 2.   3 la               DET   la                 4, det  
+ 3.   4 co               NPP   ?co                2, prep 
+ 4.   5 -                PONCT -                  4, ponct
+ 5.   6 production       NC    production         4, mod  
+ 6.   7 du               P+D   de                 6, dep  
+ 7.   8 client           NC    client             7, prep 
+ 8.   9 :                PONCT :                  8, ponct
+ 9.  10 comment          ADVWH comment           14, mod  
+10.  11 les              DET   les               12, det  
+11.  12 entreprises      NC    entreprise        14, suj  
+12.  13 nous             CLO   nous              14, obj  
+13.  14 font             V     faire              0, root 
+14.  15 -elles           CLS   elles             16, suj  
+15.  16 participer       VINF  participer        14, obj  
+16.  17 ?                PONCT ?                 16, ponct
+
+781464 Evaluation des propriétés hydrauliques des aquifères de socle cristallin et cristallophyllien: Cas de la région du N'zi-Comoé (Centre-Est de la Côte d'Ivoire)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Evaluation       NC    évaluation        25, suj  
+ 1.   2 des              P+D   de                 1, dep  
+ 2.   3 propriétés       NC    propriété          2, prep 
+ 3.   4 hydrauliques     ADJ   hydraulique        3, mod  
+ 4.   5 des              P+D   de                 1, dep  
+ 5.   6 aquifères        ADJ   aquifère           5, prep 
+ 6.   7 de               P     de                 1, dep  
+ 7.   8 socle            NC    socle              7, prep 
+ 8.   9 cristallin       ADJ   cristallin         8, mod  
+ 9.  10 et               CC    et                 9, coord
+10.  11 cristallophyllien ADJ   ?cristallophyllien  10, dep_coord
+11.  12 :                PONCT :                 11, ponct
+12.  13 Cas              NC    cas                8, mod  
+13.  14 de               P     de                 1, dep  
+14.  15 la               DET   la                16, det  
+15.  16 région           NC    région            14, prep 
+16.  17 du               P+D   de                16, dep  
+17.  18 N'               ADV   ne                19, mod  
+18.  19 zi               NPP   ?zi               17, prep 
+19.  20 -                PONCT -                 19, ponct
+20.  21 Comoé            NPP   ?Comoé            19, mod  
+21.  22 (                PONCT (                 21, ponct
+22.  23 Centre           NC    centre            19, mod  
+23.  24 -                PONCT -                 23, ponct
+24.  25 Est              V     être               0, root 
+25.  26 de               P     de                25, mod  
+26.  27 la               DET   la                28, det  
+27.  28 Côte             NC    côte              26, prep 
+28.  29 d'               P     de                25, mod  
+29.  30 Ivoire           NPP   ?Ivoire           29, prep 
+30.  31 )                PONCT )                 30, ponct
+
+984230 L'intelligence territoriale sous le regard de la sociologie : comment la production des données territoriales transforme le statut des acteurs.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 L'               DET   le                 2, det  
+ 1.   2 intelligence     NC    intelligence      17, suj  
+ 2.   3 territoriale     ADJ   territorial        2, mod  
+ 3.   4 sous             P     sous               2, dep  
+ 4.   5 le               DET   le                 6, det  
+ 5.   6 regard           NC    regard             4, prep 
+ 6.   7 de               P     de                 2, dep  
+ 7.   8 la               DET   la                 9, det  
+ 8.   9 sociologie       NC    sociologie         7, prep 
+ 9.  10 :                PONCT :                  9, ponct
+10.  11 comment          ADVWH comment           17, mod  
+11.  12 la               DET   la                13, det  
+12.  13 production       NC    production        17, suj  
+13.  14 des              P+D   de                13, dep  
+14.  15 données          NC    donnée            14, prep 
+15.  16 territoriales    ADJ   territorial       15, mod  
+16.  17 transforme       V     transformer        0, root 
+17.  18 le               DET   le                19, det  
+18.  19 statut           NC    statut            17, obj  
+19.  20 des              P+D   de                19, dep  
+20.  21 acteurs          NC    acteur            20, prep 
+21.  22 .                PONCT .                 21, ponct
+

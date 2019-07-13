@@ -1,0 +1,933 @@
+62226 Les temporalités médiatiques des personnes âgées : des évolutions dans la stabilité
+-----------------------------------------------------------------------------------
+ 0.   1 Les              DET   les                2, det  
+ 1.   2 temporalités     NC    temporalité        0, _    
+ 2.   3 médiatiques      ADJ   médiatique         2, mod  
+ 3.   4 des              P+D   de                 2, dep  
+ 4.   5 personnes        NC    personne           4, prep 
+ 5.   6 âgées            ADJ   âgé                5, mod  
+ 6.   7 :                PONCT :                  6, ponct
+ 7.   8 des              DET   des                9, det  
+ 8.   9 évolutions       NC    évolution          2, mod  
+ 9.  10 dans             P     dans               9, dep  
+10.  11 la               DET   la                12, det  
+11.  12 stabilité        NC    stabilité         10, prep 
+
+360068 La performativité de l'évidence : analyse du discours néolibéral
+----------------------------------------------------------------
+ 0.   1 La               DET   la                 2, det  
+ 1.   2 performativité   NC    ?performativité    0, _    
+ 2.   3 de               P     de                 2, dep  
+ 3.   4 l'               DET   le                 5, det  
+ 4.   5 évidence         NC    évidence           3, prep 
+ 5.   6 :                PONCT :                  5, ponct
+ 6.   7 analyse          NC    analyse            2, mod  
+ 7.   8 du               P+D   de                 7, dep  
+ 8.   9 discours         NC    discours           8, prep 
+ 9.  10 néolibéral       ADJ   néolibéral         9, mod  
+
+1061179 La Société de la Carte géologique de France (1869-1872) : une éphémère réaction à la création du Service de la Carte géologique de la France
+--------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 La               DET   la                 2, det  
+ 1.   2 Société          NC    société            0, _    
+ 2.   3 de               P     de                 2, dep  
+ 3.   4 la               DET   la                 5, det  
+ 4.   5 Carte            NPP   ?Carte             3, prep 
+ 5.   6 géologique       ADJ   géologique         5, mod  
+ 6.   7 de               P     de                 2, dep  
+ 7.   8 France           NPP   France             7, prep 
+ 8.   9 (                PONCT (                  8, ponct
+ 9.  10 1869-1872        NC    1869-1872          2, mod  
+10.  11 )                PONCT )                 10, ponct
+11.  12 :                PONCT :                 10, ponct
+12.  13 une              DET   une               15, det  
+13.  14 éphémère         ADJ   éphémère          15, mod  
+14.  15 réaction         NC    réaction           2, mod  
+15.  16 à                P     à                 15, dep  
+16.  17 la               DET   la                18, det  
+17.  18 création         NC    création          16, prep 
+18.  19 du               P+D   de                15, dep  
+19.  20 Service          NC    service           19, prep 
+20.  21 de               P     de                15, dep  
+21.  22 la               DET   la                23, det  
+22.  23 Carte            NPP   ?Carte            21, prep 
+23.  24 géologique       ADJ   géologique        23, mod  
+24.  25 de               P     de                15, dep  
+25.  26 la               DET   la                27, det  
+26.  27 France           NPP   France            25, prep 
+
+360074 Dynamique technologique controversée et débat démocratique : le cas des micros et nanotechnologies
+--------------------------------------------------------------------------------------------------
+ 0.   1 Dynamique        NC    dynamique          0, _    
+ 1.   2 technologique    ADJ   technologique      1, mod  
+ 2.   3 controversée     VPP   controverser       1, mod  
+ 3.   4 et               CC    et                 1, coord
+ 4.   5 débat            NC    débat              4, dep_coord
+ 5.   6 démocratique     ADJ   démocratique       1, mod  
+ 6.   7 :                PONCT :                  6, ponct
+ 7.   8 le               DET   le                 9, det  
+ 8.   9 cas              NC    cas                1, mod  
+ 9.  10 des              P+D   de                 9, dep  
+10.  11 micros           NC    micro             10, prep 
+11.  12 et               CC    et                 9, coord
+12.  13 nanotechnologies NC    nanotechnologie   12, dep_coord
+
+62256 Traces de contenus africains sur Internet : entre homogénéité et identité
+-------------------------------------------------------------------------
+ 0.   1 Traces           NC    trace              0, _    
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 contenus         NC    contenu            2, prep 
+ 3.   4 africains        ADJ   africain           3, mod  
+ 4.   5 sur              P     sur                1, dep  
+ 5.   6 Internet         NPP   ?Internet          5, prep 
+ 6.   7 :                PONCT :                  6, ponct
+ 7.   8 entre            P     entre              1, dep  
+ 8.   9 homogénéité      NC    homogénéité        8, prep 
+ 9.  10 et               CC    et                 1, coord
+10.  11 identité         NC    identité          10, dep_coord
+
+216312 MODÈLES THÉOTIQUES DE LA STRUCTURE DES JOINTS DE GRAINS.LES MODÈLES DE STRUCTURE DES JOINTS DE GRAINS ET LEUR UTILISATION
+-------------------------------------------------------------------------------------------------------------------------
+ 0.   1 MODÈLES          NC    modèle             0, _    
+ 1.   2 THÉOTIQUES       NPP   ?THÉOTIQUES        1, mod  
+ 2.   3 DE               P     de                 1, dep  
+ 3.   4 LA               DET   la                 5, det  
+ 4.   5 STRUCTURE        NC    structure          3, prep 
+ 5.   6 DES              P+D   de                 1, dep  
+ 6.   7 JOINTS           NC    joint              6, prep 
+ 7.   8 DE               P     de                 1, dep  
+ 8.   9 GRAINS           NC    grain              8, prep 
+ 9.  10 .                PONCT .                  9, ponct
+10.  11 LES              DET   les               12, det  
+11.  12 MODÈLES          NC    modèle             1, mod  
+12.  13 DE               P     de                12, dep  
+13.  14 STRUCTURE        NC    structure         13, prep 
+14.  15 DES              P+D   de                12, dep  
+15.  16 JOINTS           NC    joint             15, prep 
+16.  17 DE               P     de                12, dep  
+17.  18 GRAINS           NC    grain             17, prep 
+18.  19 ET               CC    et                12, coord
+19.  20 LEUR             DET   leur              21, det  
+20.  21 UTILISATION      NC    utilisation       19, dep_coord
+
+264567 Traduire\, la réalisation d'un dessein d'existence : la double ""traduction"" de la Logique de Abû Hâmid Ghazâlî\, dit Al Ghazâlî\, par Raymonde Lulle\, au XIIIe siècle
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Traduire         VINF  traduire          24, suj  
+ 1.   2 ,                PONCT ,                  1, ponct
+ 2.   3 la               DET   la                 4, det  
+ 3.   4 réalisation      NC    réalisation        1, obj  
+ 4.   5 d'               P     de                 4, dep  
+ 5.   6 un               DET   un                 7, det  
+ 6.   7 dessein          NC    dessein            5, prep 
+ 7.   8 d'               P     de                 4, dep  
+ 8.   9 existence        NC    existence          8, prep 
+ 9.  10 :                PONCT :                  9, ponct
+10.  11 la               DET   la                14, det  
+11.  12 double           ADJ   double            14, mod  
+12.  13 "                PONCT "                 12, ponct
+13.  14 traduction       NC    traduction         4, mod  
+14.  15 "                PONCT "                 14, ponct
+15.  16 de               P     de                 1, mod  
+16.  17 la               DET   la                18, det  
+17.  18 Logique          NPP   ?Logique          16, prep 
+18.  19 de               P     de                 1, mod  
+19.  20 Abû              NPP   ?Abû              19, prep 
+20.  21 Hâmid            NPP   ?Hâmid            20, mod  
+21.  22 Ghazâlî          NPP   ?Ghazâlî          20, mod  
+22.  23 ,                PONCT ,                 22, ponct
+23.  24 dit              V     dire               0, root 
+24.  25 Al               NPP   Al                24, obj  
+25.  26 Ghazâlî          NPP   ?Ghazâlî          25, mod  
+26.  27 ,                PONCT ,                 26, ponct
+27.  28 par              P     par               24, mod  
+28.  29 Raymonde         NPP   Raymonde          28, prep 
+29.  30 Lulle            NPP   ?Lulle            29, mod  
+30.  31 ,                PONCT ,                 30, ponct
+31.  32 au               P+D   à                 24, mod  
+32.  33 XIIIe            ADJ   ?XIIIe            34, mod  
+33.  34 siècle           NC    siècle            32, prep 
+
+1759477 Les objets communicants\, La problématique des Antennes: Dispositif pour détecter le vêlage des vaches.
+-------------------------------------------------------------------------------------------------------
+ 0.   1 Les              DET   les                2, det  
+ 1.   2 objets           NC    objet              0, _    
+ 2.   3 communicants     ADJ   communicant        2, mod  
+ 3.   4 ,                PONCT ,                  3, ponct
+ 4.   5 La               NC    la                 2, mod  
+ 5.   6 problématique    ADJ   problématique      5, mod  
+ 6.   7 des              P+D   de                 5, dep  
+ 7.   8 Antennes         NPP   ?Antennes          7, prep 
+ 8.   9 :                PONCT :                  8, ponct
+ 9.  10 Dispositif       NC    dispositif         2, mod  
+10.  11 pour             P     pour               2, dep  
+11.  12 détecter         VINF  détecter          11, prep 
+12.  13 le               DET   le                14, det  
+13.  14 vêlage           NC    vêlage            12, obj  
+14.  15 des              P+D   de                14, dep  
+15.  16 vaches           NC    vache             15, prep 
+16.  17 .                PONCT .                 16, ponct
+
+760329 L'omniprésence de la famille au sein de l'exploitation agricole : une situation de fait encouragé par les règles de droit
+-------------------------------------------------------------------------------------------------------------------------
+ 0.   1 L'               DET   le                 2, det  
+ 1.   2 omniprésence     NC    omniprésence       0, _    
+ 2.   3 de               P     de                 2, dep  
+ 3.   4 la               DET   la                 5, det  
+ 4.   5 famille          NC    famille            3, prep 
+ 5.   6 au               P+D   à                  2, dep  
+ 6.   7 sein             NC    sein               6, prep 
+ 7.   8 de               P     de                 2, dep  
+ 8.   9 l'               DET   le                10, det  
+ 9.  10 exploitation     NC    exploitation       8, prep 
+10.  11 agricole         ADJ   agricole          10, mod  
+11.  12 :                PONCT :                 11, ponct
+12.  13 une              DET   une               14, det  
+13.  14 situation        NC    situation          2, mod  
+14.  15 de               P     de                14, dep  
+15.  16 fait             NC    fait              15, prep 
+16.  17 encouragé        VPP   encourager        16, mod  
+17.  18 par              P     par               17, mod  
+18.  19 les              DET   les               20, det  
+19.  20 règles           NC    règle             18, prep 
+20.  21 de               P     de                20, dep  
+21.  22 droit            NC    droit             21, prep 
+
+1208785 SymbAphidBase : une base de données nouvelle dédiée aux symbiotes de pucerons pour stocker et visualiser les génomes séquencés en standardisant leurs annotations
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 SymbAphidBase    NPP   ?SymbAphidBase     0, _    
+ 1.   2 :                PONCT :                  1, ponct
+ 2.   3 une              DET   une                4, det  
+ 3.   4 base             NC    base               1, mod  
+ 4.   5 de               P     de                 4, dep  
+ 5.   6 données          NC    donnée             5, prep 
+ 6.   7 nouvelle         ADJ   nouveau            6, mod  
+ 7.   8 dédiée           VPP   dédier             4, mod  
+ 8.   9 aux              P+D   à                  8, mod  
+ 9.  10 symbiotes        NC    symbiote           9, prep 
+10.  11 de               P     de                 8, mod  
+11.  12 pucerons         NC    puceron           11, prep 
+12.  13 pour             P     pour               8, mod  
+13.  14 stocker          VINF  stocker           13, prep 
+14.  15 et               CC    et                14, coord
+15.  16 visualiser       VINF  visualiser        15, dep_coord
+16.  17 les              DET   les               18, det  
+17.  18 génomes          NC    génome            14, obj  
+18.  19 séquencés        VPP   séquencer         18, mod  
+19.  20 en               P     en                 8, mod  
+20.  21 standardisant    VPR   standardiser      20, prep 
+21.  22 leurs            DET   leurs             23, det  
+22.  23 annotations      NC    annotation        21, obj  
+
+264568 Bill Viola : voir l'eau ou la transparence en mouvement
+-------------------------------------------------------
+ 0.   1 Bill             NC    bill               0, _    
+ 1.   2 Viola            NPP   Viola              1, mod  
+ 2.   3 :                PONCT :                  2, ponct
+ 3.   4 voir             VINF  voir               1, dep  
+ 4.   5 l'               DET   le                 6, det  
+ 5.   6 eau              NC    eau                4, obj  
+ 6.   7 ou               CC    ou                 6, coord
+ 7.   8 la               DET   la                 9, det  
+ 8.   9 transparence     NC    transparence       7, dep_coord
+ 9.  10 en               P     en                 9, dep  
+10.  11 mouvement        NC    mouvement         10, prep 
+
+1759420 Les objets communicants\, La problématique des Antennes; Balises de Détresse
+----------------------------------------------------------------------------
+ 0.   1 Les              DET   les                2, det  
+ 1.   2 objets           NC    objet              0, _    
+ 2.   3 communicants     ADJ   communicant        2, mod  
+ 3.   4 ,                PONCT ,                  3, ponct
+ 4.   5 La               NC    la                 2, mod  
+ 5.   6 problématique    ADJ   problématique      5, mod  
+ 6.   7 des              P+D   de                 5, dep  
+ 7.   8 Antennes         NPP   ?Antennes          7, prep 
+ 8.   9 ;                PONCT ;                  8, ponct
+ 9.  10 Balises          NC    balise             2, mod  
+10.  11 de               P     de                10, dep  
+11.  12 Détresse         NC    détresse          11, prep 
+
+460618 PERCEPTION DE L'INDÉPENDANCE DE L'AUDITEUR : ANALYSE PAR LA THÉORIE D'ATTRIBUTION
+---------------------------------------------------------------------------------
+ 0.   1 PERCEPTION       NC    perception         0, _    
+ 1.   2 DE               NPP   ?DE                1, mod  
+ 2.   3 L'               DET   le                 4, det  
+ 3.   4 INDÉPENDANCE     NC    indépendance       1, mod  
+ 4.   5 DE               P     de                 4, dep  
+ 5.   6 L'               DET   le                 7, det  
+ 6.   7 AUDITEUR         NPP   ?AUDITEUR          5, prep 
+ 7.   8 :                PONCT :                  7, ponct
+ 8.   9 ANALYSE          NC    analyse            1, mod  
+ 9.  10 PAR              P     par                9, dep  
+10.  11 LA               DET   la                12, det  
+11.  12 THÉORIE          NC    théorie           10, prep 
+12.  13 D'               P     de                12, dep  
+13.  14 ATTRIBUTION      NC    attribution       13, prep 
+
+1707597 Élites maléfiques et ""complot pédophile"" : paniques morales autour des enfants
+--------------------------------------------------------------------------------
+ 0.   1 Élites           NC    élite              0, _    
+ 1.   2 maléfiques       ADJ   maléfique          1, mod  
+ 2.   3 et               CC    et                 1, coord
+ 3.   4 "                PONCT "                  3, ponct
+ 4.   5 complot          NC    complot            3, dep_coord
+ 5.   6 pédophile        NC    pédophile          5, mod  
+ 6.   7 "                PONCT "                  6, ponct
+ 7.   8 :                PONCT :                  6, ponct
+ 8.   9 paniques         NC    panique            1, mod  
+ 9.  10 morales          ADJ   moral              9, mod  
+10.  11 autour           NC    autour             9, mod  
+11.  12 des              P+D   de                 9, dep  
+12.  13 enfants          NC    enfant            12, prep 
+
+1759142 Formation et évolution des paroisses de la basse vallée du Drot : essai de synthèse
+-----------------------------------------------------------------------------------
+ 0.   1 Formation        NC    formation          0, _    
+ 1.   2 et               CC    et                 1, coord
+ 2.   3 évolution        NC    évolution          2, dep_coord
+ 3.   4 des              P+D   de                 1, dep  
+ 4.   5 paroisses        NC    paroisse           4, prep 
+ 5.   6 de               P     de                 1, dep  
+ 6.   7 la               DET   la                 9, det  
+ 7.   8 basse            ADJ   bas                9, mod  
+ 8.   9 vallée           NC    vallée             6, prep 
+ 9.  10 du               P+D   de                 9, dep  
+10.  11 Drot             NPP   ?Drot             10, prep 
+11.  12 :                PONCT :                 11, ponct
+12.  13 essai            NC    essai              9, mod  
+13.  14 de               P     de                13, dep  
+14.  15 synthèse         NC    synthèse          14, prep 
+
+859899 Classification floue généralisée : Application à la quantification de la stéatose sur des images histologiques couleurs
+-----------------------------------------------------------------------------------------------------------------------
+ 0.   1 Classification   NC    classification     0, _    
+ 1.   2 floue            ADJ   flou               1, mod  
+ 2.   3 généralisée      VPP   généraliser        1, mod  
+ 3.   4 :                PONCT :                  3, ponct
+ 4.   5 Application      NC    application        3, mod  
+ 5.   6 à                P     à                  3, mod  
+ 6.   7 la               DET   la                 8, det  
+ 7.   8 quantification   NC    quantification     6, prep 
+ 8.   9 de               P     de                 3, mod  
+ 9.  10 la               DET   la                11, det  
+10.  11 stéatose         NC    stéatose           9, prep 
+11.  12 sur              P     sur                3, mod  
+12.  13 des              DET   des               14, det  
+13.  14 images           NC    image             12, prep 
+14.  15 histologiques    ADJ   histologique      14, mod  
+15.  16 couleurs         NC    couleur           14, mod  
+
+510693 Les gastroentérites aiguës à rotavirus de l'enfant : une priorité de santé publique.
+------------------------------------------------------------------------------------
+ 0.   1 Les              DET   les                2, det  
+ 1.   2 gastroentérites  NC    ?gastroentérites   0, _    
+ 2.   3 aiguës           ADJ   aigu               2, mod  
+ 3.   4 à                P     à                  2, dep  
+ 4.   5 rotavirus        NC    ?rotavirus         4, prep 
+ 5.   6 de               P     de                 2, dep  
+ 6.   7 l'               DET   le                 8, det  
+ 7.   8 enfant           NC    enfant             6, prep 
+ 8.   9 :                PONCT :                  8, ponct
+ 9.  10 une              DET   une               11, det  
+10.  11 priorité         NC    priorité           2, mod  
+11.  12 de               P     de                11, dep  
+12.  13 santé            NC    santé             12, prep 
+13.  14 publique         ADJ   public            13, mod  
+14.  15 .                PONCT .                 14, ponct
+
+960530 Monde pluriel : penser l'unité des sciences sociales
+----------------------------------------------------
+ 0.   1 Monde            NC    monde              0, _    
+ 1.   2 pluriel          ADJ   pluriel            1, mod  
+ 2.   3 :                PONCT :                  2, ponct
+ 3.   4 penser           VINF  penser             1, dep  
+ 4.   5 l'               DET   le                 6, det  
+ 5.   6 unité            NC    unité              4, obj  
+ 6.   7 des              P+D   de                 6, dep  
+ 7.   8 sciences         NC    science            7, prep 
+ 8.   9 sociales         ADJ   social             8, mod  
+
+659177 Reconnaissance et appropriation : pour une anthropologie du travail
+-------------------------------------------------------------------
+ 0.   1 Reconnaissance   NC    reconnaissance     0, _    
+ 1.   2 et               CC    et                 1, coord
+ 2.   3 appropriation    NC    appropriation      2, dep_coord
+ 3.   4 :                PONCT :                  3, ponct
+ 4.   5 pour             P     pour               1, dep  
+ 5.   6 une              DET   une                7, det  
+ 6.   7 anthropologie    NC    anthropologie      5, prep 
+ 7.   8 du               P+D   de                 7, dep  
+ 8.   9 travail          NC    travail            8, prep 
+
+62190 Métiers émergents de la nouvelle économie: identification des compétences attendues et typologie des métiers exercés
+--------------------------------------------------------------------------------------------------------------------
+ 0.   1 Métiers          NC    métier             0, _    
+ 1.   2 émergents        ADJ   émergent           1, mod  
+ 2.   3 de               P     de                 1, dep  
+ 3.   4 la               DET   la                 6, det  
+ 4.   5 nouvelle         ADJ   nouveau            6, mod  
+ 5.   6 économie         NC    économie           3, prep 
+ 6.   7 :                PONCT :                  6, ponct
+ 7.   8 identification   NC    identification     6, mod  
+ 8.   9 des              P+D   de                 8, dep  
+ 9.  10 compétences      NC    compétence         9, prep 
+10.  11 attendues        VPP   attendre          10, mod  
+11.  12 et               CC    et                 8, coord
+12.  13 typologie        NC    typologie         12, dep_coord
+13.  14 des              P+D   de                 8, dep  
+14.  15 métiers          NC    métier            14, prep 
+15.  16 exercés          VPP   exercer           15, mod  
+
+162571 Conception Isotropique d'une morphologie parallèle : Application à l'usinage
+----------------------------------------------------------------------------
+ 0.   1 Conception       NC    conception         0, _    
+ 1.   2 Isotropique      NPP   ?Isotropique       1, mod  
+ 2.   3 d'               P     de                 1, dep  
+ 3.   4 une              DET   une                5, det  
+ 4.   5 morphologie      NC    morphologie        3, prep 
+ 5.   6 parallèle        ADJ   parallèle          5, mod  
+ 6.   7 :                PONCT :                  6, ponct
+ 7.   8 Application      NC    application        1, mod  
+ 8.   9 à                P     à                  8, dep  
+ 9.  10 l'               DET   le                11, det  
+10.  11 usinage          NC    usinage            9, prep 
+
+1209103 La méthode EMERGY : principes et application en analyse environnementale des systèmes agricoles et de production animale
+------------------------------------------------------------------------------------------------------------------------
+ 0.   1 La               DET   la                 2, det  
+ 1.   2 méthode          NC    méthode            0, _    
+ 2.   3 EMERGY           NPP   ?EMERGY            2, mod  
+ 3.   4 :                PONCT :                  3, ponct
+ 4.   5 principes        NC    principe           2, mod  
+ 5.   6 et               CC    et                 5, coord
+ 6.   7 application      NC    application        6, dep_coord
+ 7.   8 en               P     en                 5, dep  
+ 8.   9 analyse          NC    analyse            8, prep 
+ 9.  10 environnementale ADJ   environnemental    9, mod  
+10.  11 des              P+D   de                 2, dep  
+11.  12 systèmes         NC    système           11, prep 
+12.  13 agricoles        ADJ   agricole          12, mod  
+13.  14 et               CC    et                 2, coord
+14.  15 de               P     de                14, dep_coord
+15.  16 production       NC    production        15, prep 
+16.  17 animale          ADJ   animal            16, mod  
+
+62361 LE CDI VU PAR LES ELEVES : 1- Fréquentation
+-------------------------------------------
+ 0.   1 LE               DET   le                 2, det  
+ 1.   2 CDI              NPP   ?CDI               0, _    
+ 2.   3 VU               VPP   voir               2, mod  
+ 3.   4 PAR              P     par                3, mod  
+ 4.   5 LES              DET   les                6, det  
+ 5.   6 ELEVES           NC    élève              4, prep 
+ 6.   7 :                PONCT :                  6, ponct
+ 7.   8 1                NC    1                  2, mod  
+ 8.   9 -                PONCT -                  8, ponct
+ 9.  10 Fréquentation    NC    fréquentation      2, mod  
+
+460681 Caractérisation des systèmes autoguérissants : diagnostiquer ce que l'on va réparer
+-----------------------------------------------------------------------------------
+ 0.   1 Caractérisation  NC    caractérisation    0, _    
+ 1.   2 des              P+D   de                 1, dep  
+ 2.   3 systèmes         NC    système            2, prep 
+ 3.   4 autoguérissants  ADJ   ?autoguérissants   3, mod  
+ 4.   5 :                PONCT :                  4, ponct
+ 5.   6 diagnostiquer    VINF  diagnostiquer      1, dep  
+ 6.   7 ce               PRO   ce                 6, obj  
+ 7.   8 que              PROREL que               11, obj  
+ 8.   9 l'               DET   le                10, det  
+ 9.  10 on               CLS   on                11, suj  
+10.  11 va               V     aller              7, mod_rel
+11.  12 réparer          VINF  réparer           11, obj  
+
+1759485 ‘Ce sont des Anglais’ : un accord avec l’attribut (1re partie) ?
+----------------------------------------------------------------
+ 0.   1 '                PONCT '                  0, ponct
+ 1.   2 Ce               CLS   ce                 3, suj  
+ 2.   3 sont             V     être               0, root 
+ 3.   4 des              DET   des                5, det  
+ 4.   5 Anglais          NC    anglais            3, obj  
+ 5.   6 '                PONCT '                  5, ponct
+ 6.   7 :                PONCT :                  5, ponct
+ 7.   8 un               DET   un                 9, det  
+ 8.   9 accord           NC    accord             3, mod  
+ 9.  10 avec             P     avec               3, mod  
+10.  11 l'               DET   le                12, det  
+11.  12 attribut         NC    attribut          10, prep 
+12.  13 (                PONCT (                 12, ponct
+13.  14 1re              ADJ   ?1re              12, mod  
+14.  15 partie           NC    partie            12, mod  
+15.  16 )                PONCT )                 15, ponct
+16.  17 ?                PONCT ?                 15, ponct
+
+62371 Pour une approche communicationnelle des processus de rationalisation cognitive des organisations : contours\, enjeux et perspectives
+-------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Pour             P     pour               0, _    
+ 1.   2 une              DET   une                3, det  
+ 2.   3 approche         NC    approche           1, prep 
+ 3.   4 communicationnelle ADJ   communicationnel   3, mod  
+ 4.   5 des              P+D   de                 3, dep  
+ 5.   6 processus        NC    processus          5, prep 
+ 6.   7 de               P     de                 6, dep  
+ 7.   8 rationalisation  NC    rationalisation    7, prep 
+ 8.   9 cognitive        ADJ   cognitif           8, mod  
+ 9.  10 des              P+D   de                 3, dep  
+10.  11 organisations    NC    organisation      10, prep 
+11.  12 :                PONCT :                 11, ponct
+12.  13 contours         NC    contour            3, mod  
+13.  14 ,                PONCT ,                 13, ponct
+14.  15 enjeux           NC    enjeu              3, mod  
+15.  16 et               CC    et                15, coord
+16.  17 perspectives     NC    perspective       16, dep_coord
+
+1609801 Violence verbale au travers des classes ZEP : enjeux des langues et des variations
+----------------------------------------------------------------------------------
+ 0.   1 Violence         NC    violence           0, _    
+ 1.   2 verbale          ADJ   verbal             1, mod  
+ 2.   3 au               P+D   à                  1, dep  
+ 3.   4 travers          NC    travers            3, prep 
+ 4.   5 des              P+D   de                 1, dep  
+ 5.   6 classes          NC    classe             5, prep 
+ 6.   7 ZEP              NPP   ?ZEP               6, mod  
+ 7.   8 :                PONCT :                  7, ponct
+ 8.   9 enjeux           NC    enjeu              6, mod  
+ 9.  10 des              P+D   de                 9, dep  
+10.  11 langues          NC    langue            10, prep 
+11.  12 et               CC    et                10, coord
+12.  13 des              P+D   de                12, dep_coord
+13.  14 variations       NC    variation         13, prep 
+
+511060 Représentations sociales de l'activité physique et des fruits et légumes : panorama bourguignon.
+------------------------------------------------------------------------------------------------
+ 0.   1 Représentations  NC    représentation     0, _    
+ 1.   2 sociales         ADJ   social             1, mod  
+ 2.   3 de               P     de                 1, dep  
+ 3.   4 l'               DET   le                 5, det  
+ 4.   5 activité         NC    activité           3, prep 
+ 5.   6 physique         ADJ   physique           5, mod  
+ 6.   7 et               CC    et                 3, coord
+ 7.   8 des              P+D   de                 7, dep_coord
+ 8.   9 fruits           NC    fruit              8, prep 
+ 9.  10 et               CC    et                 1, coord
+10.  11 légumes          NC    légume            10, dep_coord
+11.  12 :                PONCT :                 11, ponct
+12.  13 panorama         NC    panorama           1, mod  
+13.  14 bourguignon      ADJ   bourguignon       13, mod  
+14.  15 .                PONCT .                 14, ponct
+
+760300 La protection du patrimoine culturel sous l'angle des droits français et de l'Union des indications géographiques et des appellations d'origine protégées : états des lieu et perspectives
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 La               DET   la                 2, det  
+ 1.   2 protection       NC    protection         0, _    
+ 2.   3 du               P+D   de                 2, dep  
+ 3.   4 patrimoine       NC    patrimoine         3, prep 
+ 4.   5 culturel         ADJ   culturel           4, mod  
+ 5.   6 sous             P     sous               2, dep  
+ 6.   7 l'               DET   le                 8, det  
+ 7.   8 angle            NC    angle              6, prep 
+ 8.   9 des              P+D   de                 2, dep  
+ 9.  10 droits           NC    droit              9, prep 
+10.  11 français         ADJ   français          10, mod  
+11.  12 et               CC    et                 2, coord
+12.  13 de               P     de                12, dep_coord
+13.  14 l'               DET   le                15, det  
+14.  15 Union            NC    union             13, prep 
+15.  16 des              P+D   de                 2, dep  
+16.  17 indications      NC    indication        16, prep 
+17.  18 géographiques    ADJ   géographique      17, mod  
+18.  19 et               CC    et                16, coord
+19.  20 des              P+D   de                19, dep_coord
+20.  21 appellations     NC    appellation       20, prep 
+21.  22 d'               P     de                21, dep  
+22.  23 origine          NC    origine           22, prep 
+23.  24 protégées        VPP   protéger          21, mod  
+24.  25 :                PONCT :                 24, ponct
+25.  26 états            NC    état              24, mod  
+26.  27 des              P+D   de                26, dep  
+27.  28 lieu             NC    lieu              27, prep 
+28.  29 et               CC    et                26, coord
+29.  30 perspectives     NC    perspective       29, dep_coord
+
+410468 L'autobiographie comme registre littéraire : Ameriketako orhoitzapenak de Jean Etchepare
+----------------------------------------------------------------------------------------
+ 0.   1 L'               DET   le                 2, det  
+ 1.   2 autobiographie   NC    autobiographie     0, _    
+ 2.   3 comme            P     comme              2, dep  
+ 3.   4 registre         NC    registre           3, prep 
+ 4.   5 littéraire       ADJ   littéraire         4, mod  
+ 5.   6 :                PONCT :                  5, ponct
+ 6.   7 Ameriketako      NPP   ?Ameriketako       2, mod  
+ 7.   8 orhoitzapenak    NPP   ?orhoitzapenak     2, mod  
+ 8.   9 de               P     de                 2, dep  
+ 9.  10 Jean             NPP   Jean               9, prep 
+10.  11 Etchepare        NPP   ?Etchepare        10, mod  
+
+62358 Le taux de TVA pour les médias électroniques : le point de vue d'un acheteur d'IST
+----------------------------------------------------------------------------------
+ 0.   1 Le               DET   le                 2, det  
+ 1.   2 taux             NC    taux               0, _    
+ 2.   3 de               P     de                 2, dep  
+ 3.   4 TVA              NC    TVA                3, prep 
+ 4.   5 pour             P     pour               2, dep  
+ 5.   6 les              DET   les                7, det  
+ 6.   7 médias           NC    média              5, prep 
+ 7.   8 électroniques    ADJ   électronique       7, mod  
+ 8.   9 :                PONCT :                  8, ponct
+ 9.  10 le               DET   le                11, det  
+10.  11 point            NC    point              2, mod  
+11.  12 de               P     de                11, dep  
+12.  13 vue              NC    vue               12, prep 
+13.  14 d'               P     de                11, dep  
+14.  15 un               DET   un                16, det  
+15.  16 acheteur         NC    acheteur          14, prep 
+16.  17 d'               P     de                16, dep  
+17.  18 IST              NC    ?IST              17, prep 
+
+62362 LE CDI VU PAR LES ELEVES : 2- Usages
+------------------------------------
+ 0.   1 LE               DET   le                 2, det  
+ 1.   2 CDI              NPP   ?CDI               0, _    
+ 2.   3 VU               VPP   voir               2, mod  
+ 3.   4 PAR              P     par                3, mod  
+ 4.   5 LES              DET   les                6, det  
+ 5.   6 ELEVES           NC    élève              4, prep 
+ 6.   7 :                PONCT :                  6, ponct
+ 7.   8 2                ADJ   2                  6, mod  
+ 8.   9 -                PONCT -                  8, ponct
+ 9.  10 Usages           NC    usage              6, mod  
+
+264578 Eloigner la peur au seuil de la modernité : les interprétations humanistes de Montaigne et Cervantès
+----------------------------------------------------------------------------------------------------
+ 0.   1 Eloigner         VINF  éloigner           0, _    
+ 1.   2 la               DET   la                 3, det  
+ 2.   3 peur             NC    peur               1, obj  
+ 3.   4 au               P+D   à                  1, mod  
+ 4.   5 seuil            NC    seuil              4, prep 
+ 5.   6 de               P     de                 1, mod  
+ 6.   7 la               DET   la                 8, det  
+ 7.   8 modernité        NC    modernité          6, prep 
+ 8.   9 :                PONCT :                  8, ponct
+ 9.  10 les              DET   les               11, det  
+10.  11 interprétations  NC    interprétation     1, obj  
+11.  12 humanistes       ADJ   humaniste         11, mod  
+12.  13 de               P     de                11, dep  
+13.  14 Montaigne        NPP   ?Montaigne        13, prep 
+14.  15 et               CC    et                14, coord
+15.  16 Cervantès        NPP   ?Cervantès        15, dep_coord
+
+1061225 Les taxis clandos à Dakar : quel avenir pour ces Transports A la demande (TAD) urbain ?
+---------------------------------------------------------------------------------------
+ 0.   1 Les              DET   les                2, det  
+ 1.   2 taxis            NC    taxi               0, _    
+ 2.   3 clandos          NPP   ?clandos           2, mod  
+ 3.   4 à                P     à                  2, dep  
+ 4.   5 Dakar            NPP   Dakar              4, prep 
+ 5.   6 :                PONCT :                  5, ponct
+ 6.   7 quel             DETWH quel               8, det  
+ 7.   8 avenir           NC    avenir             2, mod  
+ 8.   9 pour             P     pour               8, dep  
+ 9.  10 ces              DET   ces               11, det  
+10.  11 Transports       NPP   ?Transports        9, prep 
+11.  12 A                NPP   ?A                11, mod  
+12.  13 la               DET   la                14, det  
+13.  14 demande          NC    demande            8, mod  
+14.  15 (                PONCT (                 14, ponct
+15.  16 TAD              NPP   Tad                8, mod  
+16.  17 )                PONCT )                 16, ponct
+17.  18 urbain           ADJ   urbain             8, mod  
+18.  19 ?                PONCT ?                 18, ponct
+
+360130 Le Japon comme société de connaissance : quelles leçons pour la France ?
+------------------------------------------------------------------------
+ 0.   1 Le               DET   le                 2, det  
+ 1.   2 Japon            NPP   Japon              0, _    
+ 2.   3 comme            P     comme              2, dep  
+ 3.   4 société          NC    société            3, prep 
+ 4.   5 de               P     de                 2, dep  
+ 5.   6 connaissance     NC    connaissance       5, prep 
+ 6.   7 :                PONCT :                  6, ponct
+ 7.   8 quelles          DETWH quel               9, det  
+ 8.   9 leçons           NC    leçon              2, mod  
+ 9.  10 pour             P     pour               9, dep  
+10.  11 la               DET   la                12, det  
+11.  12 France           NPP   France            10, prep 
+12.  13 ?                PONCT ?                 12, ponct
+
+1209105 Observatoires hydrologiques et biologiques : de grands dispositifs pour la recherche
+------------------------------------------------------------------------------------
+ 0.   1 Observatoires    NC    observatoire       0, _    
+ 1.   2 hydrologiques    ADJ   hydrologique       1, mod  
+ 2.   3 et               CC    et                 2, coord
+ 3.   4 biologiques      ADJ   biologique         3, dep_coord
+ 4.   5 :                PONCT :                  4, ponct
+ 5.   6 de               DET   de                 8, det  
+ 6.   7 grands           ADJ   grand              8, mod  
+ 7.   8 dispositifs      NC    dispositif         1, mod  
+ 8.   9 pour             P     pour               8, dep  
+ 9.  10 la               DET   la                11, det  
+10.  11 recherche        NC    recherche          9, prep 
+
+1660207 Quel pouvoir de stabilisation à l’échelle de l’UEM : le pacte de stabilité et de croissance est-il viable ?
+-----------------------------------------------------------------------------------------------------------
+ 0.   1 Quel             DETWH quel               2, mod  
+ 1.   2 pouvoir          NC    pouvoir           19, mod  
+ 2.   3 de               P     de                 2, dep  
+ 3.   4 stabilisation    NC    stabilisation      3, prep 
+ 4.   5 à                P     à                  2, dep  
+ 5.   6 l'               DET   le                 7, det  
+ 6.   7 échelle          NC    échelle            5, prep 
+ 7.   8 de               P     de                 2, dep  
+ 8.   9 l'               DET   le                10, det  
+ 9.  10 UEM              NPP   ?UEM               8, prep 
+10.  11 :                PONCT :                 10, ponct
+11.  12 le               DET   le                13, det  
+12.  13 pacte            NC    pacte             19, suj  
+13.  14 de               P     de                13, dep  
+14.  15 stabilité        NC    stabilité         14, prep 
+15.  16 et               CC    et                13, coord
+16.  17 de               P     de                16, dep_coord
+17.  18 croissance       NC    croissance        17, prep 
+18.  19 est              V     être               0, root 
+19.  20 -il              CLS   il                19, suj  
+20.  21 viable           ADJ   viable            19, ats  
+21.  22 ?                PONCT ?                 21, ponct
+
+659290 Des territoires marins confrontés aux contraintes du développement durable - Nautisme\, côtes bretonnes et développement durable : dynamiques et résistances
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Des              DET   des                2, det  
+ 1.   2 territoires      NC    territoire         0, _    
+ 2.   3 marins           NC    marin              2, mod  
+ 3.   4 confrontés       VPP   confronter         2, mod  
+ 4.   5 aux              P+D   à                  4, mod  
+ 5.   6 contraintes      NC    contrainte         5, prep 
+ 6.   7 du               P+D   de                 6, dep  
+ 7.   8 développement    NC    développement      7, prep 
+ 8.   9 durable          ADJ   durable            8, mod  
+ 9.  10 -                PONCT -                  9, ponct
+10.  11 Nautisme         NC    nautisme           4, mod  
+11.  12 ,                PONCT ,                 11, ponct
+12.  13 côtes            NC    côte               2, mod  
+13.  14 bretonnes        ADJ   breton            13, mod  
+14.  15 et               CC    et                13, coord
+15.  16 développement    NC    développement     15, dep_coord
+16.  17 durable          ADJ   durable           16, mod  
+17.  18 :                PONCT :                 17, ponct
+18.  19 dynamiques       ADJ   dynamique         13, mod  
+19.  20 et               CC    et                13, coord
+20.  21 résistances      NC    résistance        20, dep_coord
+
+62384 Des machines pour chercher au hasard : moteurs de recherche et recherche d'information
+--------------------------------------------------------------------------------------
+ 0.   1 Des              DET   des                2, det  
+ 1.   2 machines         NC    machine            0, _    
+ 2.   3 pour             P     pour               2, dep  
+ 3.   4 chercher         VINF  chercher           3, prep 
+ 4.   5 au               P+D   à                  4, mod  
+ 5.   6 hasard           NC    hasard             5, prep 
+ 6.   7 :                PONCT :                  6, ponct
+ 7.   8 moteurs          NC    moteur             6, mod  
+ 8.   9 de               P     de                 4, mod  
+ 9.  10 recherche        NC    recherche          9, prep 
+10.  11 et               CC    et                 2, coord
+11.  12 recherche        NC    recherche         11, dep_coord
+12.  13 d'               P     de                 2, dep  
+13.  14 information      NC    information       13, prep 
+
+62391 E-DOC: Documentation et e-learning
+----------------------------------
+ 0.   1 E                NPP   ?E                 0, root 
+ 1.   2 -                PONCT -                  1, ponct
+ 2.   3 DOC              NC    doc                1, mod  
+ 3.   4 :                PONCT :                  3, ponct
+ 4.   5 Documentation    NC    documentation      1, mod  
+ 5.   6 et               CC    et                 5, coord
+ 6.   7 e                NC    ?e                 6, dep_coord
+ 7.   8 -                PONCT -                  7, ponct
+ 8.   9 learning         NC    ?learning          1, mod  
+
+860206 Analyse topologique de systèmes chaotiques faiblement dissipatifs : applications aux attracteurs Lorenz - 84 et cereal crops
+----------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Analyse          NC    analyse            0, _    
+ 1.   2 topologique      ADJ   topologique        1, mod  
+ 2.   3 de               P     de                 1, dep  
+ 3.   4 systèmes         NC    système            3, prep 
+ 4.   5 chaotiques       ADJ   chaotique          4, mod  
+ 5.   6 faiblement       NC    ?faiblement        4, mod  
+ 6.   7 dissipatifs      ADJ   ?dissipatifs       1, mod  
+ 7.   8 :                PONCT :                  7, ponct
+ 8.   9 applications     NC    application        1, mod  
+ 9.  10 aux              P+D   à                  9, dep  
+10.  11 attracteurs      NC    attracteur        10, prep 
+11.  12 Lorenz           NPP   Lorenz            11, mod  
+12.  13 -                PONCT -                 12, ponct
+13.  14 84               NC    84                11, mod  
+14.  15 et               CC    et                 9, coord
+15.  16 cereal           NC    ?cereal           15, dep_coord
+16.  17 crops            NC    ?crops            16, mod  
+
+1759502 La gestion des « Big data » en marketing : défis\, opportunités et voies de recherche
+-------------------------------------------------------------------------------------
+ 0.   1 La               DET   la                 2, det  
+ 1.   2 gestion          NC    gestion            0, _    
+ 2.   3 des              P+D   de                 2, dep  
+ 3.   4 "                PONCT "                  3, ponct
+ 4.   5 Big              ADJ   big                6, mod  
+ 5.   6 data             NC    ?data              3, prep 
+ 6.   7 "                PONCT "                  6, ponct
+ 7.   8 en               P     en                 2, dep  
+ 8.   9 marketing        NC    marketing          8, prep 
+ 9.  10 :                PONCT :                  9, ponct
+10.  11 défis            NC    défi               2, mod  
+11.  12 ,                PONCT ,                 11, ponct
+12.  13 opportunités     NC    opportunité        2, mod  
+13.  14 et               CC    et                13, coord
+14.  15 voies            NC    voie              14, dep_coord
+15.  16 de               P     de                13, dep  
+16.  17 recherche        NC    recherche         16, prep 
+
+62397 Réinterroger les structures documentaires : de la numérisation à l'informatisation
+----------------------------------------------------------------------------------
+ 0.   1 Réinterroger     VINF  réinterroger       0, _    
+ 1.   2 les              DET   les                3, det  
+ 2.   3 structures       NC    structure          1, obj  
+ 3.   4 documentaires    ADJ   documentaire       3, mod  
+ 4.   5 :                PONCT :                  4, ponct
+ 5.   6 de               P     de                 1, mod  
+ 6.   7 la               DET   la                 8, det  
+ 7.   8 numérisation     NC    numérisation       6, prep 
+ 8.   9 à                P     à                  8, dep  
+ 9.  10 l'               DET   le                11, det  
+10.  11 informatisation  NC    informatisation    9, prep 
+
+162752 Le management par la valeur pour donner du sens à un projet : application à l'intégration du personnel au bloc opératoire
+-------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Le               DET   le                 2, det  
+ 1.   2 management       NC    management         0, _    
+ 2.   3 par              P     par                2, dep  
+ 3.   4 la               DET   la                 5, det  
+ 4.   5 valeur           NC    valeur             3, prep 
+ 5.   6 pour             P     pour               2, dep  
+ 6.   7 donner           VINF  donner             6, prep 
+ 7.   8 du               P+D   de                 7, mod  
+ 8.   9 sens             NC    sens               8, prep 
+ 9.  10 à                P     à                  2, dep  
+10.  11 un               DET   un                12, det  
+11.  12 projet           NC    projet            10, prep 
+12.  13 :                PONCT :                 12, ponct
+13.  14 application      NC    application        2, mod  
+14.  15 à                P     à                 14, dep  
+15.  16 l'               DET   le                17, det  
+16.  17 intégration      NC    intégration       15, prep 
+17.  18 du               P+D   de                14, dep  
+18.  19 personnel        NC    personnel         18, prep 
+19.  20 au               P+D   à                 14, dep  
+20.  21 bloc             NC    bloc              20, prep 
+21.  22 opératoire       ADJ   opératoire        21, mod  
+
+1209151 AVIBIO : des systèmes durables pour dynamiser l'AVIculture BIOlogique
+---------------------------------------------------------------------
+ 0.   1 AVIBIO           NPP   ?AVIBIO            0, _    
+ 1.   2 :                PONCT :                  1, ponct
+ 2.   3 des              DET   des                4, det  
+ 3.   4 systèmes         NC    système            1, mod  
+ 4.   5 durables         ADJ   durable            4, mod  
+ 5.   6 pour             P     pour               4, dep  
+ 6.   7 dynamiser        VINF  dynamiser          6, prep 
+ 7.   8 l'               DET   le                 9, det  
+ 8.   9 AVIculture       NC    aviculture         7, obj  
+ 9.  10 BIOlogique       NC    ?BIOlogique        9, mod  
+
+216545 THEORIES OF CORRELATION AND COLLECTIVE DISTORTION IN NARROW BANDS.DÉGÉNÉRESCENCE ORBITALE ET STRUCTURE MAGNÉTIQUE ET CRISTALLOGRAPHIQUE
+---------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 THEORIES         NC    théorie            0, _    
+ 1.   2 OF               ADJ   ?OF                1, mod  
+ 2.   3 CORRELATION      NC    corrélation        1, mod  
+ 3.   4 AND              NPP   ?AND               3, mod  
+ 4.   5 COLLECTIVE       ADJ   collectif          3, mod  
+ 5.   6 DISTORTION       NC    ?DISTORTION        3, mod  
+ 6.   7 IN               ADJ   in                 6, mod  
+ 7.   8 NARROW           NPP   ?NARROW            6, mod  
+ 8.   9 BANDS            NPP   ?BANDS             6, mod  
+ 9.  10 .                PONCT .                  9, ponct
+10.  11 DÉGÉNÉRESCENCE   NC    dégénérescence     1, mod  
+11.  12 ORBITALE         ADJ   orbital           11, mod  
+12.  13 ET               CC    et                11, coord
+13.  14 STRUCTURE        NC    structure         13, dep_coord
+14.  15 MAGNÉTIQUE       ADJ   magnétique        14, mod  
+15.  16 ET               CC    et                14, coord
+16.  17 CRISTALLOGRAPHIQUE NC    ?CRISTALLOGRAPHIQUE  16, dep_coord
+
+1660299 Le futur de l'automobile: Couplage Véhicules Electriques et Renouvelables
+-------------------------------------------------------------------------
+ 0.   1 Le               DET   le                 2, det  
+ 1.   2 futur            NC    futur              0, _    
+ 2.   3 de               P     de                 2, dep  
+ 3.   4 l'               DET   le                 5, det  
+ 4.   5 automobile       NC    automobile         3, prep 
+ 5.   6 :                PONCT :                  5, ponct
+ 6.   7 Couplage         NC    couplage           2, mod  
+ 7.   8 Véhicules        NPP   ?Véhicules         7, mod  
+ 8.   9 Electriques      NPP   ?Electriques       7, mod  
+ 9.  10 et               CC    et                 7, coord
+10.  11 Renouvelables    NPP   ?Renouvelables    10, dep_coord
+
+62513 Les séries linéaires dans le discours : marques\, opérations et structures sous-jacentes.
+-----------------------------------------------------------------------------------------
+ 0.   1 Les              DET   les                2, det  
+ 1.   2 séries           NC    série              0, _    
+ 2.   3 linéaires        ADJ   linéaire           2, mod  
+ 3.   4 dans             P     dans               2, dep  
+ 4.   5 le               DET   le                 6, det  
+ 5.   6 discours         NC    discours           4, prep 
+ 6.   7 :                PONCT :                  6, ponct
+ 7.   8 marques          NC    marque             6, mod  
+ 8.   9 ,                PONCT ,                  8, ponct
+ 9.  10 opérations       NC    opération          6, mod  
+10.  11 et               CC    et                10, coord
+11.  12 structures       NC    structure         11, dep_coord
+12.  13 sous             P     sous               2, dep  
+13.  14 -                PONCT -                 13, ponct
+14.  15 jacentes         ADJ   jacent            13, prep 
+15.  16 .                PONCT .                 15, ponct
+
+62518 Interopérabilité : état de l'art et retour d'expériences sur l'accès aux données géographiques\, accéder et partager l'information géographique
+-----------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Interopérabilité NC    interopérabilité   0, _    
+ 1.   2 :                PONCT :                  1, ponct
+ 2.   3 état             NC    état               1, mod  
+ 3.   4 de               P     de                 3, dep  
+ 4.   5 l'               DET   le                 6, det  
+ 5.   6 art              NC    art                4, prep 
+ 6.   7 et               CC    et                 3, coord
+ 7.   8 retour           NC    retour             7, dep_coord
+ 8.   9 d'               P     de                 3, dep  
+ 9.  10 expériences      NC    expérience         9, prep 
+10.  11 sur              P     sur                3, dep  
+11.  12 l'               DET   le                13, det  
+12.  13 accès            NC    accès             11, prep 
+13.  14 aux              P+D   à                  3, dep  
+14.  15 données          NC    donnée            14, prep 
+15.  16 géographiques    ADJ   géographique      15, mod  
+16.  17 ,                PONCT ,                 16, ponct
+17.  18 accéder          VINF  accéder            1, dep  
+18.  19 et               CC    et                18, coord
+19.  20 partager         VINF  partager          19, dep_coord
+20.  21 l'               DET   le                22, det  
+21.  22 information      NC    information       18, mod  
+22.  23 géographique     ADJ   géographique      22, mod  
+
+1258815 L’Art Déco en Italie: des parcours de mise en valeur
+----------------------------------------------------
+ 0.   1 L'               DET   le                 2, det  
+ 1.   2 Art              NPP   Art                0, _    
+ 2.   3 Déco             NPP   ?Déco              2, mod  
+ 3.   4 en               P     en                 2, dep  
+ 4.   5 Italie           NPP   Italie             4, prep 
+ 5.   6 :                PONCT :                  5, ponct
+ 6.   7 des              DET   des                8, det  
+ 7.   8 parcours         NC    parcours           2, mod  
+ 8.   9 de               P     de                 8, dep  
+ 9.  10 mise             NC    mise               9, prep 
+10.  11 en               P     en                 8, dep  
+11.  12 valeur           NC    valeur            11, prep 
+

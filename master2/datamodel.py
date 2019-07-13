@@ -605,17 +605,28 @@ def select(tested_keys_values):
     return res_dict
 
 
-def find(tested_keys_values, nb=5, display=True):
+# find(nb=30, display=False, filename='t111.txt')
+def find(tested_keys_values=None, nb=5, display=True, filename=None):
+    if filename is not None:
+        f = open(filename, mode='w', encoding='utf8')
     selected = []
     for kt, t in titles.items():
-        if match_title(t, tested_keys_values):
+        if tested_keys_values is None or match_title(t, tested_keys_values):
             selected.append(t)
             if display:
                 print(t.idt, t)
                 print('-' * len(str(t)))
                 t.info()
+            if filename is not None:
+                f.write(t.idt + ' ' + str(t) + '\n')
+                f.write('-' * len(str(t)) + '\n')
+                for i, w in enumerate(t.words):
+                    f.write(f"{i:2d}. {w.idw:3d} {w.form:16} {w.pos:5} {w.lemma:16} {w.gov:3d}, {w.dep:5}\n")
+                f.write('\n')
             if len(selected) == nb:
                 break
+    if filename is not None:
+        f.close()
     return selected
 
 

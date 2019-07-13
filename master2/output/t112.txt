@@ -1,0 +1,868 @@
+1209040 Thèse « Évolution des structures » - 16 septembre 2014\, SPACE/Rennes Comité Stratégique
+----------------------------------------------------------------------------------------
+ 0.   1 Thèse            NC    thèse              0, _    
+ 1.   2 "                PONCT "                  1, ponct
+ 2.   3 Évolution        NC    évolution          1, mod  
+ 3.   4 des              P+D   de                 3, dep  
+ 4.   5 structures       NC    structure          4, prep 
+ 5.   6 "                PONCT "                  5, ponct
+ 6.   7 -                PONCT -                  5, ponct
+ 7.   8 16               ADJ   16                 9, mod  
+ 8.   9 septembre        NC    septembre          1, mod  
+ 9.  10 2014             NC    2014               9, mod  
+10.  11 ,                PONCT ,                 10, ponct
+11.  12 SPACE            NPP   ?SPACE             0, _    
+12.  13 /                PONCT /                 12, ponct
+13.  14 Rennes           NC    renne             12, mod  
+14.  15 Comité           NC    comité            14, mod  
+15.  16 Stratégique      NPP   ?Stratégique      15, mod  
+
+216380 DIFFUSION AVANT ET ARRIÈRE D'IONS LOURDS ET MOMENTS ANGULAIRES COMPLEXES
+------------------------------------------------------------------------
+ 0.   1 DIFFUSION        NC    diffusion          0, _    
+ 1.   2 AVANT            P     avant              1, dep  
+ 2.   3 ET               CC    et                 1, coord
+ 3.   4 ARRIÈRE          NC    arrière            0, _    
+ 4.   5 D'               P     de                 4, dep  
+ 5.   6 IONS             NC    ion                5, prep 
+ 6.   7 LOURDS           ADJ   lourd              6, mod  
+ 7.   8 ET               CC    et                 4, coord
+ 8.   9 MOMENTS          NC    moment             8, dep_coord
+ 9.  10 ANGULAIRES       ADJ   angulaire          9, mod  
+10.  11 COMPLEXES        NC    complexe           4, mod  
+
+1258669 Contenu et exigences du travail
+-------------------------------
+ 0.   1 Contenu          VPP   contenir           0, _    
+ 1.   2 et               CC    et                 1, coord
+ 2.   3 exigences        NC    exigence           0, _    
+ 3.   4 du               P+D   de                 3, dep  
+ 4.   5 travail          NC    travail            4, prep 
+
+1559312 Chronique de jurisprudence\, Droit pénal général
+------------------------------------------------
+ 0.   1 Chronique        NC    chronique          0, _    
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 jurisprudence    NC    jurisprudence      2, prep 
+ 3.   4 ,                PONCT ,                  3, ponct
+ 4.   5 Droit            NC    droit              0, _    
+ 5.   6 pénal            ADJ   pénal              5, mod  
+ 6.   7 général          NC    général            5, mod  
+
+1759217 La ""forme réseau"" dans la musique écrite
+------------------------------------------
+ 0.   1 La               DET   la                 3, det  
+ 1.   2 "                PONCT "                  1, ponct
+ 2.   3 forme            NC    forme              0, _    
+ 3.   4 réseau           NC    réseau             3, mod  
+ 4.   5 "                PONCT "                  4, ponct
+ 5.   6 dans             P     dans               0, _    
+ 6.   7 la               DET   la                 8, det  
+ 7.   8 musique          NC    musique            6, prep 
+ 8.   9 écrite           VPP   écrire             8, mod  
+
+312877 Demain la géographie sociale.
+-----------------------------
+ 0.   1 Demain           ADV   demain             0, _    
+ 1.   2 la               DET   la                 3, det  
+ 2.   3 géographie       NC    géographie         0, _    
+ 3.   4 sociale          ADJ   social             3, mod  
+ 4.   5 .                PONCT .                  4, ponct
+
+264208 Relevé d'architecture - Du nuage de points à la maquette 3D\, l'apport des modèles théoriques issus de l'histoire de la représentation
+--------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Relevé           VPP   relever            0, _    
+ 1.   2 d'               P     de                 1, mod  
+ 2.   3 architecture     NC    architecture       2, prep 
+ 3.   4 -                PONCT -                  3, ponct
+ 4.   5 Du               P+D   de                 1, mod  
+ 5.   6 nuage            NC    nuage              5, prep 
+ 6.   7 de               P     de                 6, dep  
+ 7.   8 points           NC    point              7, prep 
+ 8.   9 à                P     à                  1, mod  
+ 9.  10 la               DET   la                11, det  
+10.  11 maquette         NC    maquette           9, prep 
+11.  12 3D               NPP   ?3D               11, mod  
+12.  13 ,                PONCT ,                 12, ponct
+13.  14 l'               DET   le                15, det  
+14.  15 apport           NC    apport             0, _    
+15.  16 des              P+D   de                15, dep  
+16.  17 modèles          NC    modèle            16, prep 
+17.  18 théoriques       ADJ   théorique         17, mod  
+18.  19 issus            VPP   issir             17, mod  
+19.  20 de               P     de                19, mod  
+20.  21 l'               DET   le                22, det  
+21.  22 histoire         NC    histoire          20, prep 
+22.  23 de               P     de                22, dep  
+23.  24 la               DET   la                25, det  
+24.  25 représentation   NC    représentation    23, prep 
+
+216383 TRAJECTOIRES COMPLEXES ET APPROXIMATION SEMI-CLASSIQUE
+------------------------------------------------------
+ 0.   1 TRAJECTOIRES     NC    trajectoire        0, _    
+ 1.   2 COMPLEXES        ADJ   complexe           1, mod  
+ 2.   3 ET               CC    et                 1, coord
+ 3.   4 APPROXIMATION    NC    approximation      3, dep_coord
+ 4.   5 SEMI             NPP   ?SEMI              4, mod  
+ 5.   6 -                PONCT -                  5, ponct
+ 6.   7 CLASSIQUE        NC    classique          0, _    
+
+1015192 Évaluation de la dispersion des propriétés mécaniques d'un matériau composite par sous-échantillonnage
+------------------------------------------------------------------------------------------------------
+ 0.   1 Évaluation       NC    évaluation         0, _    
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 la               DET   la                 4, det  
+ 3.   4 dispersion       NC    dispersion         2, prep 
+ 4.   5 des              P+D   de                 1, dep  
+ 5.   6 propriétés       NC    propriété          5, prep 
+ 6.   7 mécaniques       ADJ   mécanique          6, mod  
+ 7.   8 d'               P     de                 1, dep  
+ 8.   9 un               DET   un                10, det  
+ 9.  10 matériau         NC    matériau           8, prep 
+10.  11 composite        NC    composite         10, mod  
+11.  12 par              P     par                1, dep  
+12.  13 sous             NC    sou               12, prep 
+13.  14 -                PONCT -                 13, ponct
+14.  15 échantillonnage  NC    échantillonnage    0, _    
+
+1209109 Effet azote à court\, moyen et long terme des produits résiduaires organiques issus d’élevages
+----------------------------------------------------------------------------------------------
+ 0.   1 Effet            NC    effet              0, _    
+ 1.   2 azote            NC    azote              1, mod  
+ 2.   3 à                P     à                  1, dep  
+ 3.   4 court            ADJ   court              3, prep 
+ 4.   5 ,                PONCT ,                  4, ponct
+ 5.   6 moyen            ADJ   moyen              9, mod  
+ 6.   7 et               CC    et                 6, coord
+ 7.   8 long             ADJ   long               7, dep_coord
+ 8.   9 terme            NC    terme              0, _    
+ 9.  10 des              P+D   de                 9, dep  
+10.  11 produits         NC    produit           10, prep 
+11.  12 résiduaires      NC    ?résiduaires      11, mod  
+12.  13 organiques       ADJ   organique         11, mod  
+13.  14 issus            VPP   issir             11, mod  
+14.  15 d'               P     de                14, mod  
+15.  16 élevages         NC    élevage           15, prep 
+
+216387 DIFFUSION QUASI LIBRE (p\, pα) SUR LES NOYAUX PAIR-PAIR 24Mg\, 28Si\, 40Ca ET 58Ni
+----------------------------------------------------------------------------------
+ 0.   1 DIFFUSION        NC    diffusion          0, root 
+ 1.   2 QUASI            ADV   quasi              3, mod  
+ 2.   3 LIBRE            ADJ   libre              1, mod  
+ 3.   4 (                PONCT (                  3, ponct
+ 4.   5 p                NPP   ?p                 0, _    
+ 5.   6 ,                PONCT ,                  5, ponct
+ 6.   7 pα               NPP   ?pα                5, mod  
+ 7.   8 )                PONCT )                  7, ponct
+ 8.   9 SUR              P     sur                5, dep  
+ 9.  10 LES              DET   les               11, det  
+10.  11 NOYAUX           NC    noyau              9, prep 
+11.  12 PAIR             NC    pair              11, mod  
+12.  13 -                PONCT -                 12, ponct
+13.  14 PAIR             NC    pair              11, mod  
+14.  15 24Mg             NPP   ?24Mg             14, mod  
+15.  16 ,                PONCT ,                 15, ponct
+16.  17 28Si             NPP   ?28Si             14, mod  
+17.  18 ,                PONCT ,                 17, ponct
+18.  19 40Ca             NC    ?40Ca             14, mod  
+19.  20 ET               NPP   ?ET               19, mod  
+20.  21 58Ni             NPP   ?58Ni             19, mod  
+
+1808361 Conditionnement des boues par gel-dégel
+---------------------------------------
+ 0.   1 Conditionnement  NC    conditionnement    0, _    
+ 1.   2 des              P+D   de                 1, dep  
+ 2.   3 boues            NC    boue               2, prep 
+ 3.   4 par              P     par                1, dep  
+ 4.   5 gel              NC    gel                4, prep 
+ 5.   6 -                PONCT -                  5, ponct
+ 6.   7 dégel            NC    dégel              0, _    
+
+216386 ÉTUDE DES RÉACTIONS (p\, pd)\, (p\, pt) ET (p\, p 3He) SUR 12C ET 16O A 75 MeV
+------------------------------------------------------------------------------
+ 0.   1 ÉTUDE            NC    étude              0, _    
+ 1.   2 DES              P+D   de                 1, dep  
+ 2.   3 RÉACTIONS        NC    réaction           2, prep 
+ 3.   4 (                PONCT (                  3, ponct
+ 4.   5 p                NPP   ?p                 0, _    
+ 5.   6 ,                PONCT ,                  5, ponct
+ 6.   7 pd               NPP   ?pd                5, mod  
+ 7.   8 )                PONCT )                  7, ponct
+ 8.   9 ,                PONCT ,                  7, ponct
+ 9.  10 (                PONCT (                  7, ponct
+10.  11 p                NPP   ?p                 5, coord
+11.  12 ,                PONCT ,                 11, ponct
+12.  13 pt               NC    point             11, mod  
+13.  14 )                PONCT )                 13, ponct
+14.  15 ET               CC    et                11, coord
+15.  16 (                PONCT (                 15, ponct
+16.  17 p                NPP   ?p                15, dep_coord
+17.  18 ,                PONCT ,                 17, ponct
+18.  19 p                NPP   ?p                17, mod  
+19.  20 3He              NPP   ?3He              17, mod  
+20.  21 )                PONCT )                 20, ponct
+21.  22 SUR              P     sur               15, dep_coord
+22.  23 12C              NPP   ?12C              22, prep 
+23.  24 ET               CC    et                11, coord
+24.  25 16O              NC    ?16O              24, dep_coord
+25.  26 A                P     à                 25, dep  
+26.  27 75               NC    75                26, prep 
+27.  28 MeV              NPP   ?MeV              27, mod  
+
+264579 Institutions [Les humanités et les grandes institutions du savoir en France]
+----------------------------------------------------------------------------
+ 0.   1 Institutions     NC    institution        0, _    
+ 1.   2 [                PONCT [                  1, ponct
+ 2.   3 Les              DET   les                4, det  
+ 3.   4 humanités        NC    humanité           0, _    
+ 4.   5 et               CC    et                 4, coord
+ 5.   6 les              DET   les                8, det  
+ 6.   7 grandes          ADJ   grand              8, mod  
+ 7.   8 institutions     NC    institution        5, dep_coord
+ 8.   9 du               P+D   de                 4, dep  
+ 9.  10 savoir           NC    savoir             9, prep 
+10.  11 en               P     en                 4, dep  
+11.  12 France           NPP   France            11, prep 
+12.  13 ]                PONCT ]                 12, ponct
+
+1258688 Comparaison isoenzymatique de deux populations boliviennes (altitude et plaine) de Triatoma infestans (Hemiptera\, Reduviidae)
+------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Comparaison      NC    comparaison        0, _    
+ 1.   2 isoenzymatique   ADJ   ?isoenzymatique    1, mod  
+ 2.   3 de               P     de                 1, dep  
+ 3.   4 deux             DET   deux               5, det  
+ 4.   5 populations      NC    population         3, prep 
+ 5.   6 boliviennes      ADJ   bolivien           5, mod  
+ 6.   7 (                PONCT (                  6, ponct
+ 7.   8 altitude         NC    altitude           5, mod  
+ 8.   9 et               CC    et                 8, coord
+ 9.  10 plaine           NC    plaine             9, dep_coord
+10.  11 )                PONCT )                 10, ponct
+11.  12 de               P     de                 0, _    
+12.  13 Triatoma         NPP   ?Triatoma         12, prep 
+13.  14 infestans        NPP   ?infestans        13, mod  
+14.  15 (                PONCT (                 14, ponct
+15.  16 Hemiptera        NPP   ?Hemiptera        13, coord
+16.  17 ,                PONCT ,                 16, ponct
+17.  18 Reduviidae       NPP   ?Reduviidae       16, coord
+18.  19 )                PONCT )                 18, ponct
+
+162715 Transfert de chaleur et de masse dans une salle d'opérations conditionnée\, comparaison entre deux modes de soufflage
+---------------------------------------------------------------------------------------------------------------------
+ 0.   1 Transfert        NC    transfert          0, _    
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 chaleur          NC    chaleur            2, prep 
+ 3.   4 et               CC    et                 1, coord
+ 4.   5 de               P     de                 4, dep_coord
+ 5.   6 masse            NC    masse              5, prep 
+ 6.   7 dans             P     dans               1, dep  
+ 7.   8 une              DET   une                9, det  
+ 8.   9 salle            NC    salle              7, prep 
+ 9.  10 d'               P     de                 1, dep  
+10.  11 opérations       NC    opération         10, prep 
+11.  12 conditionnée     ADJ   conditionner      11, mod  
+12.  13 ,                PONCT ,                 12, ponct
+13.  14 comparaison      NC    comparaison        0, _    
+14.  15 entre            P     entre             14, dep  
+15.  16 deux             DET   deux              17, det  
+16.  17 modes            NC    mode              15, prep 
+17.  18 de               P     de                17, dep  
+18.  19 soufflage        NC    soufflage         18, prep 
+
+264613 Accès à l'information et reconnaissance d'un droit à l'information environnementale - Le nouveau contexte juridique international
+---------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Accès            NC    accès              0, _    
+ 1.   2 à                P     à                  1, dep  
+ 2.   3 l'               DET   le                 4, det  
+ 3.   4 information      NC    information        2, prep 
+ 4.   5 et               CC    et                 1, coord
+ 5.   6 reconnaissance   NC    reconnaissance     5, dep_coord
+ 6.   7 d'               P     de                 1, dep  
+ 7.   8 un               DET   un                 9, det  
+ 8.   9 droit            NC    droit              7, prep 
+ 9.  10 à                P     à                  1, dep  
+10.  11 l'               DET   le                12, det  
+11.  12 information      NC    information       10, prep 
+12.  13 environnementale ADJ   environnemental   12, mod  
+13.  14 -                PONCT -                 13, ponct
+14.  15 Le               DET   le                17, det  
+15.  16 nouveau          ADJ   nouveau           17, mod  
+16.  17 contexte         NC    contexte           0, _    
+17.  18 juridique        ADJ   juridique         17, mod  
+18.  19 international    ADJ   international     17, mod  
+
+62420 De l'appropriation inachevée du concept de genre (gender) en communication organisationnelle
+--------------------------------------------------------------------------------------------
+ 0.   1 De               P     de                 0, _    
+ 1.   2 l'               DET   le                 3, det  
+ 2.   3 appropriation    NC    appropriation      1, prep 
+ 3.   4 inachevée        ADJ   inachevé           3, mod  
+ 4.   5 du               P+D   de                 3, dep  
+ 5.   6 concept          NC    concept            5, prep 
+ 6.   7 de               P     de                 6, dep  
+ 7.   8 genre            NC    genre              7, prep 
+ 8.   9 (                PONCT (                  8, ponct
+ 9.  10 gender           NPP   ?gender            3, mod  
+10.  11 )                PONCT )                 10, ponct
+11.  12 en               P     en                 0, _    
+12.  13 communication    NC    communication     12, prep 
+13.  14 organisationnelle ADJ   organisationnel   13, mod  
+
+216445 APPLICATION DES MÉTHODES STATISTIQUES AU CALCUL DES CHAMPS THERMIQUES TURBULENTS NON HOMOGÈNES
+----------------------------------------------------------------------------------------------
+ 0.   1 APPLICATION      NC    application        0, _    
+ 1.   2 DES              P+D   de                 1, dep  
+ 2.   3 MÉTHODES         NC    méthode            2, prep 
+ 3.   4 STATISTIQUES     NC    statistique        3, mod  
+ 4.   5 AU               P+D   à                  1, dep  
+ 5.   6 CALCUL           NC    calcul             5, prep 
+ 6.   7 DES              P+D   de                 1, dep  
+ 7.   8 CHAMPS           NC    champ              7, prep 
+ 8.   9 THERMIQUES       ADJ   thermique          8, mod  
+ 9.  10 TURBULENTS       ADJ   turbulent          8, mod  
+10.  11 NON              ADV   non               12, mod  
+11.  12 HOMOGÈNES        ADJ   homogène           0, _    
+
+960687 Amitiés\, des sciences sociales aux réseaux sociaux de l'internet
+-----------------------------------------------------------------
+ 0.   1 Amitiés          NC    amitié             0, _    
+ 1.   2 ,                PONCT ,                  1, ponct
+ 2.   3 des              DET   des                4, det  
+ 3.   4 sciences         NC    science            0, _    
+ 4.   5 sociales         ADJ   social             4, mod  
+ 5.   6 aux              P+D   à                  4, dep  
+ 6.   7 réseaux          NC    réseau             6, prep 
+ 7.   8 sociaux          ADJ   social             7, mod  
+ 8.   9 de               P     de                 4, dep  
+ 9.  10 l'               DET   le                11, det  
+10.  11 internet         NC    internet           9, prep 
+
+216532 TRANSITION MÉTAL-SEMICONDUCTEUR DANS LES COMPOSÉS Cr2S3-xSex ET Cr2+εSe3
+------------------------------------------------------------------------
+ 0.   1 TRANSITION       NC    transition         0, _    
+ 1.   2 MÉTAL            NC    métal              1, mod  
+ 2.   3 -                PONCT -                  2, ponct
+ 3.   4 SEMICONDUCTEUR   NPP   ?SEMICONDUCTEUR    0, _    
+ 4.   5 DANS             P     dans               4, dep  
+ 5.   6 LES              DET   les                7, det  
+ 6.   7 COMPOSÉS         NC    composé            5, prep 
+ 7.   8 Cr2S3            NPP   ?Cr2S3             7, mod  
+ 8.   9 -                PONCT -                  8, ponct
+ 9.  10 xSex             NPP   ?xSex              7, mod  
+10.  11 ET               NPP   ?ET                7, mod  
+11.  12 Cr2+εSe3         NPP   ?Cr2+εSe3          7, mod  
+
+1609898 Les Vigiles debout
+------------------
+ 0.   1 Les              DET   les                2, det  
+ 1.   2 Vigiles          NC    vigile             0, _    
+ 2.   3 debout           ADV   debout             0, _    
+
+264722 Calcul\, règles et normes dans les ""arbres de consanguinité et d'alliance"" chez Leibniz et ses contemporains
+--------------------------------------------------------------------------------------------------------------
+ 0.   1 Calcul           NC    calcul             0, _    
+ 1.   2 ,                PONCT ,                  1, ponct
+ 2.   3 règles           NC    règle              0, _    
+ 3.   4 et               CC    et                 3, coord
+ 4.   5 normes           NC    norme              4, dep_coord
+ 5.   6 dans             P     dans               3, dep  
+ 6.   7 les              DET   les                9, det  
+ 7.   8 "                PONCT "                  7, ponct
+ 8.   9 arbres           NC    arbre              6, prep 
+ 9.  10 de               P     de                 9, dep  
+10.  11 consanguinité    NC    consanguinité     10, prep 
+11.  12 et               CC    et                 6, coord
+12.  13 d'               P     de                12, dep_coord
+13.  14 alliance         NC    alliance          13, prep 
+14.  15 "                PONCT "                 14, ponct
+15.  16 chez             P     chez               3, dep  
+16.  17 Leibniz          NPP   ?Leibniz          16, prep 
+17.  18 et               CC    et                 3, coord
+18.  19 ses              DET   ses               20, det  
+19.  20 contemporains    NC    ?contemporains    18, dep_coord
+
+960764 Misère de l'hyper-spécialisation et dérives du professionnalisme
+----------------------------------------------------------------
+ 0.   1 Misère           NC    misère             0, _    
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 l'               DET   le                 4, det  
+ 3.   4 hyper            NC    ?hyper             2, prep 
+ 4.   5 -                PONCT -                  4, ponct
+ 5.   6 spécialisation   NC    spécialisation     0, _    
+ 6.   7 et               CC    et                 6, coord
+ 7.   8 dérives          NC    dérive             7, dep_coord
+ 8.   9 du               P+D   de                 6, dep  
+ 9.  10 professionnalisme NC    professionnalisme   9, prep 
+
+62668 Bibliothèques numériques et Google-Print
+----------------------------------------
+ 0.   1 Bibliothèques    NC    bibliothèque       0, _    
+ 1.   2 numériques       ADJ   numérique          1, mod  
+ 2.   3 et               CC    et                 1, coord
+ 3.   4 Google           NPP   Google             3, dep_coord
+ 4.   5 -                PONCT -                  4, ponct
+ 5.   6 Print            NPP   ?Print             0, _    
+
+1559698 Dispositif de de caractérisatioon simultanée de l'abondance de pucerons et de la croissance végétative d'arbres fruitiers
+-------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Dispositif       NC    dispositif         2, det  
+ 1.   2 de               P     de                 0, _    
+ 2.   3 de               P     de                 0, _    
+ 3.   4 caractérisatioon NC    ?caractérisatioon   3, prep 
+ 4.   5 simultanée       ADJ   simultané          4, mod  
+ 5.   6 de               P     de                 4, dep  
+ 6.   7 l'               DET   le                 8, det  
+ 7.   8 abondance        NC    abondance          6, prep 
+ 8.   9 de               P     de                 4, dep  
+ 9.  10 pucerons         NC    puceron            9, prep 
+10.  11 et               CC    et                 3, coord
+11.  12 de               P     de                11, dep_coord
+12.  13 la               DET   la                14, det  
+13.  14 croissance       NC    croissance        12, prep 
+14.  15 végétative       ADJ   végétatif         14, mod  
+15.  16 d'               P     de                14, dep  
+16.  17 arbres           NC    arbre             16, prep 
+17.  18 fruitiers        NC    fruitier          17, mod  
+
+264587 Le jeu\, une approche philosophique
+-----------------------------------
+ 0.   1 Le               DET   le                 2, det  
+ 1.   2 jeu              NC    jeu                0, _    
+ 2.   3 ,                PONCT ,                  2, ponct
+ 3.   4 une              DET   une                5, det  
+ 4.   5 approche         NC    approche           0, _    
+ 5.   6 philosophique    ADJ   philosophique      5, mod  
+
+460685 Surveillance de chorégraphies de Web Services basées sur WS-CDL
+---------------------------------------------------------------
+ 0.   1 Surveillance     NC    surveillance       0, _    
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 chorégraphies    NC    chorégraphie       2, prep 
+ 3.   4 de               P     de                 1, dep  
+ 4.   5 Web              NPP   ?Web               4, prep 
+ 5.   6 Services         NPP   ?Services          5, mod  
+ 6.   7 basées           VPP   baser              1, mod  
+ 7.   8 sur              P     sur                7, mod  
+ 8.   9 WS               NPP   ?WS                8, prep 
+ 9.  10 -                PONCT -                  9, ponct
+10.  11 CDL              NC    ?CDL               0, _    
+
+62413 Quelle offre éditoriale numérique pour l'usager « virtuel » des universités françaises ?
+----------------------------------------------------------------------------------------
+ 0.   1 Quelle           DETWH quel               2, det  
+ 1.   2 offre            NC    offre              0, _    
+ 2.   3 éditoriale       ADJ   éditorial          2, mod  
+ 3.   4 numérique        ADJ   numérique          2, mod  
+ 4.   5 pour             P     pour               2, dep  
+ 5.   6 l'               DET   le                 7, det  
+ 6.   7 usager           NC    usager             5, prep 
+ 7.   8 "                PONCT "                  7, ponct
+ 8.   9 virtuel          ADJ   virtuel            7, mod  
+ 9.  10 "                PONCT "                  9, ponct
+10.  11 des              DET   des               12, det  
+11.  12 universités      NC    université         0, _    
+12.  13 françaises       ADJ   français          12, mod  
+13.  14 ?                PONCT ?                 13, ponct
+
+460700 Responsabilité civile Chronique de jurisprudence
+------------------------------------------------
+ 0.   1 Responsabilité   NC    responsabilité     0, _    
+ 1.   2 civile           ADJ   civil              1, mod  
+ 2.   3 Chronique        NPP   ?Chronique         1, mod  
+ 3.   4 de               P     de                 0, _    
+ 4.   5 jurisprudence    NC    jurisprudence      4, prep 
+
+110483 Piratage de logiciel qualifié de contrefaçon\, TGI\, Bastia\, 17 janvier 2006"" (chronique CECOJI de propriété littéraire et artistique)
+----------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Piratage         NC    piratage           0, _    
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 logiciel         NC    logiciel           2, prep 
+ 3.   4 qualifié         ADJ   qualifier          3, mod  
+ 4.   5 de               P     de                 1, dep  
+ 5.   6 contrefaçon      NC    contrefaçon        5, prep 
+ 6.   7 ,                PONCT ,                  6, ponct
+ 7.   8 TGI              NPP   ?TGI               0, _    
+ 8.   9 ,                PONCT ,                  8, ponct
+ 9.  10 Bastia           NPP   Bastia             8, mod  
+10.  11 ,                PONCT ,                 10, ponct
+11.  12 17               ADJ   17                13, mod  
+12.  13 janvier          NC    janvier            8, mod  
+13.  14 2006             NC    2006               8, mod  
+14.  15 "                PONCT "                 14, ponct
+15.  16 (                PONCT (                 14, ponct
+16.  17 chronique        NC    chronique          8, mod  
+17.  18 CECOJI           NPP   ?CECOJI           17, mod  
+18.  19 de               P     de                17, dep  
+19.  20 propriété        NC    propriété         19, prep 
+20.  21 littéraire       ADJ   littéraire        20, mod  
+21.  22 et               CC    et                21, coord
+22.  23 artistique       ADJ   artistique        22, dep_coord
+23.  24 )                PONCT )                 23, ponct
+
+62434 Développement stratégique du tourisme sportif de rivière par régulation corporatiste L'expérience du bassin de Saint Anne (Québec) appliquée aux Rivières de Provence
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Développement    NC    développement      0, _    
+ 1.   2 stratégique      ADJ   stratégique        1, mod  
+ 2.   3 du               P+D   de                 1, dep  
+ 3.   4 tourisme         NC    tourisme           3, prep 
+ 4.   5 sportif          ADJ   sportif            4, mod  
+ 5.   6 de               P     de                 1, dep  
+ 6.   7 rivière          NC    rivière            6, prep 
+ 7.   8 par              P     par                7, dep  
+ 8.   9 régulation       NC    régulation         8, prep 
+ 9.  10 corporatiste     ADJ   corporatiste       9, mod  
+10.  11 L'               DET   le                12, det  
+11.  12 expérience       NC    expérience         0, _    
+12.  13 du               P+D   de                12, dep  
+13.  14 bassin           NC    bassin            13, prep 
+14.  15 de               P     de                14, dep  
+15.  16 Saint            NPP   ?Saint            15, prep 
+16.  17 Anne             NPP   Anne              16, mod  
+17.  18 (                PONCT (                 17, ponct
+18.  19 Québec           NPP   Québec            14, mod  
+19.  20 )                PONCT )                 19, ponct
+20.  21 appliquée        VPP   appliquer         12, mod  
+21.  22 aux              P+D   à                 21, mod  
+22.  23 Rivières         NC    rivière           22, prep 
+23.  24 de               P     de                23, dep  
+24.  25 Provence         NPP   Provence          24, prep 
+
+1759544 Vestiges antiques sur le littoral sud de la mer Noire (d'Ünye à Trabzon)
+------------------------------------------------------------------------
+ 0.   1 Vestiges         NC    vestige            0, _    
+ 1.   2 antiques         ADJ   antique            1, mod  
+ 2.   3 sur              P     sur                1, dep  
+ 3.   4 le               DET   le                 5, det  
+ 4.   5 littoral         NC    littoral           3, prep 
+ 5.   6 sud              ADJ   sud                5, mod  
+ 6.   7 de               P     de                 1, dep  
+ 7.   8 la               DET   la                 9, det  
+ 8.   9 mer              NC    mer                7, prep 
+ 9.  10 Noire            NPP   ?Noire             9, mod  
+10.  11 (                PONCT (                 10, ponct
+11.  12 d'               P     de                 0, _    
+12.  13 Ünye             NPP   ?Ünye             12, prep 
+13.  14 à                P     à                 13, dep  
+14.  15 Trabzon          NPP   ?Trabzon          14, prep 
+15.  16 )                PONCT )                 15, ponct
+
+264744 Alexandre Dumas entre l'Histoire et l'aventure - Éléments d'une poétique du roman de cape et d'épée
+---------------------------------------------------------------------------------------------------
+ 0.   1 Alexandre        NPP   Alexandre          0, _    
+ 1.   2 Dumas            NPP   ?Dumas             1, mod  
+ 2.   3 entre            P     entre              0, _    
+ 3.   4 l'               DET   le                 5, det  
+ 4.   5 Histoire         NPP   ?Histoire          3, prep 
+ 5.   6 et               CC    et                 5, coord
+ 6.   7 l'               DET   le                 8, det  
+ 7.   8 aventure         NC    aventure           6, dep_coord
+ 8.   9 -                PONCT -                  8, ponct
+ 9.  10 Éléments         NC    élément            5, mod  
+10.  11 d'               P     de                10, dep  
+11.  12 une              DET   une               13, det  
+12.  13 poétique         NC    poétique          11, prep 
+13.  14 du               P+D   de                10, dep  
+14.  15 roman            NC    roman             14, prep 
+15.  16 de               P     de                10, dep  
+16.  17 cape             NC    cape              16, prep 
+17.  18 et               CC    et                10, coord
+18.  19 d'               P     de                18, dep_coord
+19.  20 épée             NC    épée              19, prep 
+
+162867 Modélisation du déroulement d'activités humaines en mer côtière\, scénarios appliqués à la mer d'Iroise.
+--------------------------------------------------------------------------------------------------------
+ 0.   1 Modélisation     NC    modélisation       0, _    
+ 1.   2 du               P+D   de                 1, dep  
+ 2.   3 déroulement      NC    déroulement        2, prep 
+ 3.   4 d'               P     de                 1, dep  
+ 4.   5 activités        NC    activité           4, prep 
+ 5.   6 humaines         ADJ   humain             5, mod  
+ 6.   7 en               P     en                 1, dep  
+ 7.   8 mer              NC    mer                7, prep 
+ 8.   9 côtière          ADJ   côtier             8, mod  
+ 9.  10 ,                PONCT ,                  9, ponct
+10.  11 scénarios        NC    scénario           0, _    
+11.  12 appliqués        VPP   appliquer         11, mod  
+12.  13 à                P     à                 12, mod  
+13.  14 la               DET   la                15, det  
+14.  15 mer              NC    mer               13, prep 
+15.  16 d'               P     de                15, dep  
+16.  17 Iroise           NPP   ?Iroise           16, prep 
+17.  18 .                PONCT .                 17, ponct
+
+1559880 Concept et statut des entreprises familiales\, Le fait et le droit
+------------------------------------------------------------------
+ 0.   1 Concept          NC    concept            9, mod  
+ 1.   2 et               CC    et                 1, coord
+ 2.   3 statut           NC    statut             2, dep_coord
+ 3.   4 des              P+D   de                 1, dep  
+ 4.   5 entreprises      NC    entreprise         4, prep 
+ 5.   6 familiales       ADJ   familial           5, mod  
+ 6.   7 ,                PONCT ,                  6, ponct
+ 7.   8 Le               NPP   ?Le                9, suj  
+ 8.   9 fait             V     faire              0, root 
+ 9.  10 et               CC    et                 9, coord
+10.  11 le               DET   le                12, det  
+11.  12 droit            NC    droit              0, _    
+
+609995 L'abbé Grégoire devant les prophétesses
+---------------------------------------
+ 0.   1 L'               DET   le                 2, det  
+ 1.   2 abbé             NC    abbé               0, _    
+ 2.   3 Grégoire         NPP   Grégoire           2, mod  
+ 3.   4 devant           P     devant             0, _    
+ 4.   5 les              DET   les                6, det  
+ 5.   6 prophétesses     NC    ?prophétesses      4, prep 
+
+216539 INTERACTION QUADRUPOLAIRE NUCLÉAIRE DU TANTALE DANS 1T-TaS2
+-----------------------------------------------------------
+ 0.   1 INTERACTION      NC    interaction        0, _    
+ 1.   2 QUADRUPOLAIRE    NC    ?QUADRUPOLAIRE     1, mod  
+ 2.   3 NUCLÉAIRE        ADJ   nucléaire          1, mod  
+ 3.   4 DU               P+D   de                 1, dep  
+ 4.   5 TANTALE          NC    tantale            4, prep 
+ 5.   6 DANS             P     dans               1, dep  
+ 6.   7 1T               NPP   ?1T                6, prep 
+ 7.   8 -                PONCT -                  7, ponct
+ 8.   9 TaS2             NPP   ?TaS2              0, _    
+
+960723 De la nécessité d'articuler le langagier et le social
+-----------------------------------------------------
+ 0.   1 De               P     de                 0, _    
+ 1.   2 la               DET   la                 3, det  
+ 2.   3 nécessité        NC    nécessité          1, prep 
+ 3.   4 d'               P     de                 0, _    
+ 4.   5 articuler        VINF  articuler          4, prep 
+ 5.   6 le               DET   le                 7, det  
+ 6.   7 langagier        ADJ   langagier          5, obj  
+ 7.   8 et               CC    et                 4, coord
+ 8.   9 le               DET   le                10, det  
+ 9.  10 social           NC    social             8, dep_coord
+
+1808536 Conversion des résidus de micro-algues en bio-liant pour bitumes
+----------------------------------------------------------------
+ 0.   1 Conversion       NC    conversion         0, _    
+ 1.   2 des              P+D   de                 1, dep  
+ 2.   3 résidus          NC    résidu             2, prep 
+ 3.   4 de               P     de                 1, dep  
+ 4.   5 micro            NC    micro              4, prep 
+ 5.   6 -                PONCT -                  5, ponct
+ 6.   7 algues           NC    algue              0, _    
+ 7.   8 en               P     en                 7, dep  
+ 8.   9 bio              NC    bio                8, prep 
+ 9.  10 -                PONCT -                  9, ponct
+10.  11 liant            ADJ   liant              9, mod  
+11.  12 pour             P     pour               7, dep  
+12.  13 bitumes          NC    bitume            12, prep 
+
+62623 Les enjeux du nouveau positionnement territorial géostratégique en Europe à travers les communautés francophones et à l'aide des SIC comme levier collaboratif et participatif
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Les              DET   les                2, det  
+ 1.   2 enjeux           NC    enjeu              0, _    
+ 2.   3 du               P+D   de                 2, dep  
+ 3.   4 nouveau          ADJ   nouveau            5, mod  
+ 4.   5 positionnement   NC    positionnement     3, prep 
+ 5.   6 territorial      ADJ   territorial        5, mod  
+ 6.   7 géostratégique   ADJ   géostratégique     5, mod  
+ 7.   8 en               P     en                 5, dep  
+ 8.   9 Europe           NPP   Europe             8, prep 
+ 9.  10 à                P     à                  5, dep  
+10.  11 travers          NC    travers           10, prep 
+11.  12 les              DET   les               13, det  
+12.  13 communautés      NC    communauté         0, _    
+13.  14 francophones     ADJ   francophone       13, mod  
+14.  15 et               CC    et                13, coord
+15.  16 à                P     à                 15, dep_coord
+16.  17 l'               DET   le                18, det  
+17.  18 aide             NC    aide              16, prep 
+18.  19 des              P+D   de                18, dep  
+19.  20 SIC              NPP   ?SIC              19, prep 
+20.  21 comme            P     comme             13, dep  
+21.  22 levier           NC    levier            21, prep 
+22.  23 collaboratif     ADJ   collaboratif      22, mod  
+23.  24 et               CC    et                23, coord
+24.  25 participatif     ADJ   participatif      24, dep_coord
+
+110477 Rédaction de 47 notices
+-----------------------
+ 0.   1 Rédaction        NC    rédaction          0, _    
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 47               NC    47                 2, prep 
+ 3.   4 notices          NC    notice             0, _    
+
+62466 Réseau de neurones à topologie dynamique\, comparaison avec des invariants pour la reconnaissance de caractères multi-orientés multi-échelles
+---------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Réseau           NC    réseau             0, _    
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 neurones         NC    neurone            2, prep 
+ 3.   4 à                P     à                  1, dep  
+ 4.   5 topologie        NC    topologie          4, prep 
+ 5.   6 dynamique        ADJ   dynamique          5, mod  
+ 6.   7 ,                PONCT ,                  6, ponct
+ 7.   8 comparaison      NC    comparaison        0, _    
+ 8.   9 avec             P     avec               8, dep  
+ 9.  10 des              DET   des               11, det  
+10.  11 invariants       ADJ   invariant          9, prep 
+11.  12 pour             P     pour               8, dep  
+12.  13 la               DET   la                14, det  
+13.  14 reconnaissance   NC    reconnaissance    12, prep 
+14.  15 de               P     de                14, dep  
+15.  16 caractères       NC    caractère         15, prep 
+16.  17 multi            NPP   ?multi            16, mod  
+17.  18 -                PONCT -                 17, ponct
+18.  19 orientés         VPP   orienter          16, mod  
+19.  20 multi            NPP   ?multi            16, mod  
+20.  21 -                PONCT -                 20, ponct
+21.  22 échelles         NC    échelle           16, mod  
+
+810741 Estimation séquentielle et conjointe du bruit de phase\, de l'offset en fréquence et des symboles émis dans les systèmes OFDM
+-----------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Estimation       NC    estimation         0, _    
+ 1.   2 séquentielle     ADJ   séquentiel         1, mod  
+ 2.   3 et               CC    et                 2, coord
+ 3.   4 conjointe        ADJ   conjoindre         3, dep_coord
+ 4.   5 du               P+D   de                 1, dep  
+ 5.   6 bruit            NC    bruit              5, prep 
+ 6.   7 de               P     de                 6, dep  
+ 7.   8 phase            NC    phase              7, prep 
+ 8.   9 ,                PONCT ,                  8, ponct
+ 9.  10 de               P     de                 0, _    
+10.  11 l'               DET   le                12, det  
+11.  12 offset           NC    offset            10, prep 
+12.  13 en               P     en                12, dep  
+13.  14 fréquence        NC    fréquence         13, prep 
+14.  15 et               CC    et                10, coord
+15.  16 des              P+D   de                15, dep_coord
+16.  17 symboles         NC    symbole           16, prep 
+17.  18 émis             VPP   émettre           17, mod  
+18.  19 dans             P     dans              18, mod  
+19.  20 les              DET   les               21, det  
+20.  21 systèmes         NC    système           19, prep 
+21.  22 OFDM             NPP   ?OFDM             21, mod  
+
+659343 Apport de la chronologie à la compréhension de la géométrie des dépôts sableux plio-pléistocènes en Sologne\, premiers résultats.
+---------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Apport           NC    apport             0, _    
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 la               DET   la                 4, det  
+ 3.   4 chronologie      NC    chronologie        2, prep 
+ 4.   5 à                P     à                  1, dep  
+ 5.   6 la               DET   la                 7, det  
+ 6.   7 compréhension    NC    compréhension      5, prep 
+ 7.   8 de               P     de                 1, dep  
+ 8.   9 la               DET   la                10, det  
+ 9.  10 géométrie        NC    géométrie          8, prep 
+10.  11 des              P+D   de                10, dep  
+11.  12 dépôts           NC    dépôt             11, prep 
+12.  13 sableux          ADJ   sableux           12, mod  
+13.  14 plio             NC    ?plio             12, mod  
+14.  15 -                PONCT -                 14, ponct
+15.  16 pléistocènes     NC    pléistocène       12, mod  
+16.  17 en               P     en                10, dep  
+17.  18 Sologne          NPP   ?Sologne          17, prep 
+18.  19 ,                PONCT ,                 18, ponct
+19.  20 premiers         ADJ   premier           21, mod  
+20.  21 résultats        NC    résultat           0, _    
+21.  22 .                PONCT .                 21, ponct
+
+1510808 Le fleuve\, une infrastructure paysagère au service d’une image de renaturation urbaine
+---------------------------------------------------------------------------------------
+ 0.   1 Le               DET   le                 2, det  
+ 1.   2 fleuve           NC    fleuve             0, _    
+ 2.   3 ,                PONCT ,                  2, ponct
+ 3.   4 une              DET   une                5, det  
+ 4.   5 infrastructure   NC    infrastructure     0, _    
+ 5.   6 paysagère        ADJ   paysager           5, mod  
+ 6.   7 au               P+D   à                  5, dep  
+ 7.   8 service          NC    service            7, prep 
+ 8.   9 d'               P     de                 5, dep  
+ 9.  10 une              DET   une               11, det  
+10.  11 image            NC    image              9, prep 
+11.  12 de               P     de                11, dep  
+12.  13 renaturation     NC    ?renaturation     12, prep 
+13.  14 urbaine          ADJ   urbain            13, mod  
+
+960763 Démonstrateur émission-réception pour communications par satellite
+------------------------------------------------------------------
+ 0.   1 Démonstrateur    NC    démonstrateur      0, _    
+ 1.   2 émission         NC    émission           1, mod  
+ 2.   3 -                PONCT -                  2, ponct
+ 3.   4 réception        NC    réception          0, _    
+ 4.   5 pour             P     pour               4, dep  
+ 5.   6 communications   NC    communication      5, prep 
+ 6.   7 par              P     par                4, dep  
+ 7.   8 satellite        NC    satellite          7, prep 
+
+1209232 Création de MEANS (MulticritEria AssessmeNt of Sustainability)\, plateforme INRA d’analyse multicritère de la durabilité
+------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Création         NC    création           0, _    
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 MEANS            NPP   ?MEANS             2, prep 
+ 3.   4 (                PONCT (                  3, ponct
+ 4.   5 MulticritEria    NPP   ?MulticritEria     0, _    
+ 5.   6 AssessmeNt       NPP   ?AssessmeNt        5, mod  
+ 6.   7 of               NPP   ?of                5, mod  
+ 7.   8 Sustainability   NPP   ?Sustainability    5, mod  
+ 8.   9 )                PONCT )                  8, ponct
+ 9.  10 ,                PONCT ,                  8, ponct
+10.  11 plateforme       NC    plateforme         5, mod  
+11.  12 INRA             NPP   ?INRA             11, mod  
+12.  13 d'               P     de                11, dep  
+13.  14 analyse          NC    analyse           13, prep 
+14.  15 multicritère     NC    ?multicritère     14, mod  
+15.  16 de               P     de                11, dep  
+16.  17 la               DET   la                18, det  
+17.  18 durabilité       NC    durabilité        16, prep 
+
+710887 Rire et peur dans la poésie satirique au tournant des XVIe et XVIIe siècles ""\, in Peur et littérature du Moyen Âge au XVIIe siècle\, sous la direction de Pascal Debailly et Florence Dumora
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Rire             NC    rire               0, _    
+ 1.   2 et               CC    et                 1, coord
+ 2.   3 peur             NC    peur               2, dep_coord
+ 3.   4 dans             P     dans               1, dep  
+ 4.   5 la               DET   la                 6, det  
+ 5.   6 poésie           NC    poésie             4, prep 
+ 6.   7 satirique        ADJ   satirique          6, mod  
+ 7.   8 au               P+D   à                  1, dep  
+ 8.   9 tournant         NC    tournant           8, prep 
+ 9.  10 des              P+D   de                 9, dep  
+10.  11 XVIe             NC    ?XVIe             10, prep 
+11.  12 et               CC    et                 1, coord
+12.  13 XVIIe            ADJ   ?XVIIe            14, mod  
+13.  14 siècles          NC    siècle            12, dep_coord
+14.  15 "                PONCT "                 14, ponct
+15.  16 ,                PONCT ,                 14, ponct
+16.  17 in               ADJ   in                 1, mod  
+17.  18 Peur             NC    peur               0, _    
+18.  19 et               CC    et                18, coord
+19.  20 littérature      NC    littérature       19, dep_coord
+20.  21 du               P+D   de                18, dep  
+21.  22 Moyen            NPP   Moyen             21, prep 
+22.  23 Âge              NPP   ?Âge              22, mod  
+23.  24 au               P+D   à                 18, dep  
+24.  25 XVIIe            ADJ   ?XVIIe            26, mod  
+25.  26 siècle           NC    siècle            24, prep 
+26.  27 ,                PONCT ,                 26, ponct
+27.  28 sous             P     sous              18, dep  
+28.  29 la               DET   la                30, det  
+29.  30 direction        NC    direction         28, prep 
+30.  31 de               P     de                30, dep  
+31.  32 Pascal           NPP   Pascal            31, prep 
+32.  33 Debailly         NPP   ?Debailly         32, mod  
+33.  34 et               CC    et                32, coord
+34.  35 Florence         NPP   Florence          34, dep_coord
+35.  36 Dumora           NPP   ?Dumora           35, mod  
+
+216471 APPLICATIONS DE L'IDÉE DE RENORMALISATION EN PHYSIQUE DU SOLIDE
+---------------------------------------------------------------
+ 0.   1 APPLICATIONS     NC    application        0, _    
+ 1.   2 DE               NPP   ?DE                1, mod  
+ 2.   3 L'               DET   le                 4, det  
+ 3.   4 IDÉE             NC    idée               1, mod  
+ 4.   5 DE               P     de                 4, dep  
+ 5.   6 RENORMALISATION  NPP   ?RENORMALISATION   5, prep 
+ 6.   7 EN               P     en                 4, dep  
+ 7.   8 PHYSIQUE         NC    physique           7, prep 
+ 8.   9 DU               P+D   de                 4, dep  
+ 9.  10 SOLIDE           ADJ   solide             0, _    
+

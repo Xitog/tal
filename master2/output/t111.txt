@@ -1,0 +1,690 @@
+162587 Développement d'Edgeworth de deux estimateurs d'une proportion de mesures
+-------------------------------------------------------------------------
+ 0.   1 Développement    NC    développement      0, _    
+ 1.   2 d'               P     de                 1, dep  
+ 2.   3 Edgeworth        NPP   ?Edgeworth         2, prep 
+ 3.   4 de               P     de                 1, dep  
+ 4.   5 deux             DET   deux               6, det  
+ 5.   6 estimateurs      NC    estimateur         4, prep 
+ 6.   7 d'               P     de                 1, dep  
+ 7.   8 une              DET   une                9, det  
+ 8.   9 proportion       NC    proportion         7, prep 
+ 9.  10 de               P     de                 9, dep  
+10.  11 mesures          NC    mesure            10, prep 
+
+62230 Un possible modele semiotique global de la communication
+--------------------------------------------------------
+ 0.   1 Un               DET   un                 3, det  
+ 1.   2 possible         ADJ   possible           3, mod  
+ 2.   3 modele           NC    ?modele            0, _    
+ 3.   4 semiotique       NC    ?semiotique        3, mod  
+ 4.   5 global           ADJ   global             3, mod  
+ 5.   6 de               P     de                 3, dep  
+ 6.   7 la               DET   la                 8, det  
+ 7.   8 communication    NC    communication      6, prep 
+
+360059 L'actualité de la jurisprudence communautaire et internationale
+---------------------------------------------------------------
+ 0.   1 L'               DET   le                 2, det  
+ 1.   2 actualité        NC    actualité          0, _    
+ 2.   3 de               P     de                 2, dep  
+ 3.   4 la               DET   la                 5, det  
+ 4.   5 jurisprudence    NC    jurisprudence      3, prep 
+ 5.   6 communautaire    ADJ   communautaire      5, mod  
+ 6.   7 et               CC    et                 6, coord
+ 7.   8 internationale   ADJ   international      7, dep_coord
+
+1759414 La disposition et ses rapports avec l’itération
+-----------------------------------------------
+ 0.   1 La               DET   la                 2, det  
+ 1.   2 disposition      NC    disposition        0, _    
+ 2.   3 et               CC    et                 2, coord
+ 3.   4 ses              DET   ses                5, det  
+ 4.   5 rapports         NC    rapport            3, dep_coord
+ 5.   6 avec             P     avec               5, dep  
+ 6.   7 l'               DET   le                 8, det  
+ 7.   8 itération        NC    itération          6, prep 
+
+1258598 L’exubérance « eurotionnelle »
+------------------------------
+ 0.   1 L'               DET   le                 2, det  
+ 1.   2 exubérance       NC    exubérance         0, _    
+ 2.   3 "                PONCT "                  2, ponct
+ 3.   4 eurotionnelle    NC    ?eurotionnelle     2, mod  
+ 4.   5 "                PONCT "                  4, ponct
+
+609904 COMBINAISON COHERENTE D'AMPLIFICATEURS A FIBRE EN REGIME FEMTOSECONDE
+---------------------------------------------------------------------
+ 0.   1 COMBINAISON      NC    combinaison        0, _    
+ 1.   2 COHERENTE        NPP   ?COHERENTE         1, mod  
+ 2.   3 D'               P     de                 1, dep  
+ 3.   4 AMPLIFICATEURS   NC    amplificateur      3, prep 
+ 4.   5 A                P     à                  1, dep  
+ 5.   6 FIBRE            NC    fibre              5, prep 
+ 6.   7 EN               P     en                 1, dep  
+ 7.   8 REGIME           NC    régime             7, prep 
+ 8.   9 FEMTOSECONDE     NC    femtoseconde       8, mod  
+
+1258610 Doit-on écouter Björk ?
+-----------------------
+ 0.   1 Doit             V     devoir             0, root 
+ 1.   2 -on              CLS   on                 1, suj  
+ 2.   3 écouter          VINF  écouter            1, obj  
+ 3.   4 Björk            NPP   ?Björk             3, obj  
+ 4.   5 ?                PONCT ?                  4, ponct
+
+1707586 Excursions au pays des merveilles
+---------------------------------
+ 0.   1 Excursions       NC    excursion          0, _    
+ 1.   2 au               P+D   à                  1, dep  
+ 2.   3 pays             NC    pays               2, prep 
+ 3.   4 des              P+D   de                 1, dep  
+ 4.   5 merveilles       NC    merveille          4, prep 
+
+1808326 Algorithme de construction de modèles markoviens multidimensionnels pour le mélange des poudres
+-----------------------------------------------------------------------------------------------
+ 0.   1 Algorithme       NC    algorithme         0, _    
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 construction     NC    construction       2, prep 
+ 3.   4 de               P     de                 1, dep  
+ 4.   5 modèles          NC    modèle             4, prep 
+ 5.   6 markoviens       NC    ?markoviens        5, mod  
+ 6.   7 multidimensionnels ADJ   multidimensionnel   5, mod  
+ 7.   8 pour             P     pour               1, dep  
+ 8.   9 le               DET   le                10, det  
+ 9.  10 mélange          NC    mélange            8, prep 
+10.  11 des              P+D   de                10, dep  
+11.  12 poudres          NC    poudre            11, prep 
+
+1808328 Modélisation de la structure d'un mélange à haute dilution
+----------------------------------------------------------
+ 0.   1 Modélisation     NC    modélisation       0, _    
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 la               DET   la                 4, det  
+ 3.   4 structure        NC    structure          2, prep 
+ 4.   5 d'               P     de                 1, dep  
+ 5.   6 un               DET   un                 7, det  
+ 6.   7 mélange          NC    mélange            5, prep 
+ 7.   8 à                P     à                  1, dep  
+ 8.   9 haute            ADJ   haut              10, mod  
+ 9.  10 dilution         NC    dilution           8, prep 
+
+62249 Vers une approche ethnographique des usages des Technologies de l'Information et de la Communication au sein des petites et moyennes entreprises malaisiennes
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Vers             P     vers               0, _    
+ 1.   2 une              DET   une                3, det  
+ 2.   3 approche         NC    approche           1, prep 
+ 3.   4 ethnographique   ADJ   ethnographique     3, mod  
+ 4.   5 des              P+D   de                 3, dep  
+ 5.   6 usages           NC    usage              5, prep 
+ 6.   7 des              P+D   de                 3, dep  
+ 7.   8 Technologies     NC    technologie        7, prep 
+ 8.   9 de               P     de                 3, dep  
+ 9.  10 l'               DET   le                11, det  
+10.  11 Information      NC    information        9, prep 
+11.  12 et               CC    et                 1, coord
+12.  13 de               P     de                12, dep_coord
+13.  14 la               DET   la                15, det  
+14.  15 Communication    NC    communication     13, prep 
+15.  16 au               P+D   à                 15, dep  
+16.  17 sein             NC    sein              16, prep 
+17.  18 des              P+D   de                15, dep  
+18.  19 petites          ADJ   petit             22, mod  
+19.  20 et               CC    et                19, coord
+20.  21 moyennes         ADJ   moyen             20, dep_coord
+21.  22 entreprises      NC    entreprise        18, prep 
+22.  23 malaisiennes     ADJ   malaisien         22, mod  
+
+110374 Rédaction de 120 notices
+------------------------
+ 0.   1 Rédaction        NC    rédaction          0, _    
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 120              ADJ   120                4, mod  
+ 3.   4 notices          NC    notice             2, prep 
+
+1258621 Relevé\, indice ou comparateur de prix ?
+----------------------------------------
+ 0.   1 Relevé           VPP   relever            0, _    
+ 1.   2 ,                PONCT ,                  1, ponct
+ 2.   3 indice           NC    indice             1, mod  
+ 3.   4 ou               CC    ou                 1, coord
+ 4.   5 comparateur      ADJ   comparateur        4, dep_coord
+ 5.   6 de               P     de                 1, mod  
+ 6.   7 prix             NC    prix               6, prep 
+ 7.   8 ?                PONCT ?                  7, ponct
+
+62257 Les blockbusters américains\, essai d'analyse idéologique d'un produit culturel mondialisé.
+-------------------------------------------------------------------------------------------
+ 0.   1 Les              DET   les                2, det  
+ 1.   2 blockbusters     NC    ?blockbusters      0, _    
+ 2.   3 américains       ADJ   américain          2, mod  
+ 3.   4 ,                PONCT ,                  3, ponct
+ 4.   5 essai            NC    essai              2, mod  
+ 5.   6 d'               P     de                 5, dep  
+ 6.   7 analyse          NC    analyse            6, prep 
+ 7.   8 idéologique      ADJ   idéologique        7, mod  
+ 8.   9 d'               P     de                 5, dep  
+ 9.  10 un               DET   un                11, det  
+10.  11 produit          NC    produit            9, prep 
+11.  12 culturel         ADJ   culturel          11, mod  
+12.  13 mondialisé       VPP   mondialiser       11, mod  
+13.  14 .                PONCT .                 13, ponct
+
+760276 Dépôt sec des aérosols à l'interface air-eau
+--------------------------------------------
+ 0.   1 Dépôt            NC    dépôt              0, _    
+ 1.   2 sec              ADJ   sec                1, mod  
+ 2.   3 des              P+D   de                 1, dep  
+ 3.   4 aérosols         NC    aérosol            3, prep 
+ 4.   5 à                P     à                  1, dep  
+ 5.   6 l'               DET   le                 7, det  
+ 6.   7 interface        NC    interface          5, prep 
+ 7.   8 air              NC    air                7, mod  
+ 8.   9 -                PONCT -                  8, ponct
+ 9.  10 eau              NC    eau                7, mod  
+
+216325 DIFFUSION INTERGRANULAIRE ET ÉNERGIE DES JOINTS DE GRAINS
+---------------------------------------------------------
+ 0.   1 DIFFUSION        NC    diffusion          0, _    
+ 1.   2 INTERGRANULAIRE  NPP   ?INTERGRANULAIRE   1, mod  
+ 2.   3 ET               CC    et                 1, coord
+ 3.   4 ÉNERGIE          NC    énergie            3, dep_coord
+ 4.   5 DES              P+D   de                 1, dep  
+ 5.   6 JOINTS           NC    joint              5, prep 
+ 6.   7 DE               P     de                 6, dep  
+ 7.   8 GRAINS           NC    grain              7, prep 
+
+1258629 Influence des vibrations verticales sur la séparation des espèces en couche poreuse horizontale chauffée par le bas
+-------------------------------------------------------------------------------------------------------------------
+ 0.   1 Influence        NC    influence          0, _    
+ 1.   2 des              P+D   de                 1, dep  
+ 2.   3 vibrations       NC    vibration          2, prep 
+ 3.   4 verticales       ADJ   vertical           3, mod  
+ 4.   5 sur              P     sur                1, dep  
+ 5.   6 la               DET   la                 7, det  
+ 6.   7 séparation       NC    séparation         5, prep 
+ 7.   8 des              P+D   de                 7, dep  
+ 8.   9 espèces          NC    espèce             8, prep 
+ 9.  10 en               P     en                 1, dep  
+10.  11 couche           NC    couche            10, prep 
+11.  12 poreuse          ADJ   poreux            11, mod  
+12.  13 horizontale      ADJ   horizontal        11, mod  
+13.  14 chauffée         VPP   chauffer          11, mod  
+14.  15 par              P     par               14, mod  
+15.  16 le               DET   le                17, det  
+16.  17 bas              NC    bas               15, prep 
+
+760324 ISO 26000\, un an après
+-----------------------
+ 0.   1 ISO              NPP   ?ISO               0, _    
+ 1.   2 26000            NC    26000              1, mod  
+ 2.   3 ,                PONCT ,                  2, ponct
+ 3.   4 un               DET   un                 5, det  
+ 4.   5 an               NC    an                 1, mod  
+ 5.   6 après            P     après              5, dep  
+
+911470 L'héritage du Boiteux d'Orgemont
+--------------------------------
+ 0.   1 L'               DET   le                 2, det  
+ 1.   2 héritage         NC    héritage           0, _    
+ 2.   3 du               P+D   de                 2, dep  
+ 3.   4 Boiteux          NPP   ?Boiteux           3, prep 
+ 4.   5 d'               P     de                 2, dep  
+ 5.   6 Orgemont         NC    ?Orgemont          5, prep 
+
+110440 Penser la fréquentation des bibliothèques à l'heure d'Internet
+--------------------------------------------------------------
+ 0.   1 Penser           VINF  penser             0, _    
+ 1.   2 la               DET   la                 3, det  
+ 2.   3 fréquentation    NC    fréquentation      1, obj  
+ 3.   4 des              P+D   de                 3, dep  
+ 4.   5 bibliothèques    NC    bibliothèque       4, prep 
+ 5.   6 à                P     à                  1, mod  
+ 6.   7 l'               DET   le                 8, det  
+ 7.   8 heure            NC    heure              6, prep 
+ 8.   9 d'               P     de                 8, dep  
+ 9.  10 Internet         NPP   ?Internet          9, prep 
+
+410464 Optimisation de la précipitation des métaux lourds en mélange
+-------------------------------------------------------------
+ 0.   1 Optimisation     NC    optimisation       0, _    
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 la               DET   la                 4, det  
+ 3.   4 précipitation    NC    précipitation      2, prep 
+ 4.   5 des              P+D   de                 1, dep  
+ 5.   6 métaux           NC    métal              5, prep 
+ 6.   7 lourds           ADJ   lourd              6, mod  
+ 7.   8 en               P     en                 1, dep  
+ 8.   9 mélange          NC    mélange            8, prep 
+
+911256 Les enfants d'Hygie
+-------------------
+ 0.   1 Les              DET   les                2, det  
+ 1.   2 enfants          NC    enfant             0, _    
+ 2.   3 d'               P     de                 2, dep  
+ 3.   4 Hygie            NC    ?Hygie             3, prep 
+
+110366 Les débuts de l'imprimerie en Extrême-Orient
+--------------------------------------------
+ 0.   1 Les              DET   les                2, det  
+ 1.   2 débuts           NC    début              0, _    
+ 2.   3 de               P     de                 2, dep  
+ 3.   4 l'               DET   le                 5, det  
+ 4.   5 imprimerie       NC    imprimerie         3, prep 
+ 5.   6 en               P     en                 2, dep  
+ 6.   7 Extrême          NPP   ?Extrême           6, prep 
+ 7.   8 -                PONCT -                  7, ponct
+ 8.   9 Orient           NC    orient             2, mod  
+
+1808322 Détermination expérimentale de propriétés structurales d'un milieu poreux hétérogène composé de carton et de polyéthylène
+-------------------------------------------------------------------------------------------------------------------------
+ 0.   1 Détermination    NC    détermination      0, _    
+ 1.   2 expérimentale    ADJ   expérimental       1, mod  
+ 2.   3 de               P     de                 1, dep  
+ 3.   4 propriétés       NC    propriété          3, prep 
+ 4.   5 structurales     ADJ   structural         4, mod  
+ 5.   6 d'               P     de                 1, dep  
+ 6.   7 un               DET   un                 8, det  
+ 7.   8 milieu           NC    milieu             6, prep 
+ 8.   9 poreux           ADJ   poreux             8, mod  
+ 9.  10 hétérogène       ADJ   hétérogène         8, mod  
+10.  11 composé          VPP   composer           8, mod  
+11.  12 de               P     de                11, mod  
+12.  13 carton           NC    carton            12, prep 
+13.  14 et               CC    et                12, coord
+14.  15 de               P     de                14, dep_coord
+15.  16 polyéthylène     NC    polyéthylène      15, prep 
+
+110369 L'imprimerie et sa diffusion en Extrême-Orient
+----------------------------------------------
+ 0.   1 L'               DET   le                 2, det  
+ 1.   2 imprimerie       NC    imprimerie         0, _    
+ 2.   3 et               CC    et                 2, coord
+ 3.   4 sa               DET   sa                 5, det  
+ 4.   5 diffusion        NC    diffusion          3, dep_coord
+ 5.   6 en               P     en                 5, dep  
+ 6.   7 Extrême          NPP   ?Extrême           6, prep 
+ 7.   8 -                PONCT -                  7, ponct
+ 8.   9 Orient           NC    orient             5, mod  
+
+62244 Le déplacement médiatique du débat politique
+--------------------------------------------
+ 0.   1 Le               DET   le                 2, det  
+ 1.   2 déplacement      NC    déplacement        0, _    
+ 2.   3 médiatique       ADJ   médiatique         2, mod  
+ 3.   4 du               P+D   de                 2, dep  
+ 4.   5 débat            NC    débat              4, prep 
+ 5.   6 politique        ADJ   politique          5, mod  
+
+460613 Un indicateur de politique d'ouverture à l'immigration
+------------------------------------------------------
+ 0.   1 Un               DET   un                 2, det  
+ 1.   2 indicateur       NC    indicateur         0, _    
+ 2.   3 de               P     de                 2, dep  
+ 3.   4 politique        NC    politique          3, prep 
+ 4.   5 d'               P     de                 2, dep  
+ 5.   6 ouverture        NC    ouverture          5, prep 
+ 6.   7 à                P     à                  2, dep  
+ 7.   8 l'               DET   le                 9, det  
+ 8.   9 immigration      NC    immigration        7, prep 
+
+360069 La transmission des ""savoirs"" économiques dans les médias
+-----------------------------------------------------------
+ 0.   1 La               DET   la                 2, det  
+ 1.   2 transmission     NC    transmission       0, _    
+ 2.   3 des              P+D   de                 2, dep  
+ 3.   4 "                PONCT "                  3, ponct
+ 4.   5 savoirs          NC    savoir             3, prep 
+ 5.   6 "                PONCT "                  5, ponct
+ 6.   7 économiques      ADJ   économique         5, mod  
+ 7.   8 dans             P     dans               5, dep  
+ 8.   9 les              DET   les               10, det  
+ 9.  10 médias           NC    média              8, prep 
+
+62250 L'IMPACT DE L'EDITION ELECTRONIQUE SUR LA CRISE DU KOSOVO
+---------------------------------------------------------
+ 0.   1 L'               DET   le                 2, det  
+ 1.   2 IMPACT           NC    impact             0, _    
+ 2.   3 DE               P     de                 2, dep  
+ 3.   4 L'               DET   le                 5, det  
+ 4.   5 EDITION          NC    édition            3, prep 
+ 5.   6 ELECTRONIQUE     ADJ   électronique       5, mod  
+ 6.   7 SUR              P     sur                2, dep  
+ 7.   8 LA               DET   la                 9, det  
+ 8.   9 CRISE            NC    crise              7, prep 
+ 9.  10 DU               P+D   de                 9, dep  
+10.  11 KOSOVO           NC    ?KOSOVO           10, prep 
+
+62252 L'éthique et la déontologie comme éléments de la légitimité du journalisme
+--------------------------------------------------------------------------
+ 0.   1 L'               DET   le                 2, det  
+ 1.   2 éthique          NC    éthique            0, _    
+ 2.   3 et               CC    et                 2, coord
+ 3.   4 la               DET   la                 5, det  
+ 4.   5 déontologie      NC    déontologie        3, dep_coord
+ 5.   6 comme            P     comme              5, dep  
+ 6.   7 éléments         NC    élément            6, prep 
+ 7.   8 de               P     de                 2, dep  
+ 8.   9 la               DET   la                10, det  
+ 9.  10 légitimité       NC    légitimité         8, prep 
+10.  11 du               P+D   de                 2, dep  
+11.  12 journalisme      NC    journalisme       11, prep 
+
+1258618 Chypre et Malte\, enfin euro
+----------------------------
+ 0.   1 Chypre           NPP   Chypre             0, _    
+ 1.   2 et               CC    et                 1, coord
+ 2.   3 Malte            NPP   Malte              2, dep_coord
+ 3.   4 ,                PONCT ,                  3, ponct
+ 4.   5 enfin            ADV   enfin              6, mod  
+ 5.   6 euro             NC    euro               1, mod  
+
+1061184 Bernard Balan\, L'Évolution des idées en géologie - Des Cosmogonies à la Physique du Globe
+------------------------------------------------------------------------------------------
+ 0.   1 Bernard          NPP   ?Bernard           0, _    
+ 1.   2 Balan            NPP   Balan              1, mod  
+ 2.   3 ,                PONCT ,                  2, ponct
+ 3.   4 L'               DET   le                 5, det  
+ 4.   5 Évolution        NC    évolution          1, mod  
+ 5.   6 des              P+D   de                 5, dep  
+ 6.   7 idées            NC    idée               6, prep 
+ 7.   8 en               P     en                 7, dep  
+ 8.   9 géologie         NC    géologie           8, prep 
+ 9.  10 -                PONCT -                  9, ponct
+10.  11 Des              P+D   de                 5, dep  
+11.  12 Cosmogonies      NPP   ?Cosmogonies      11, prep 
+12.  13 à                P     à                  5, dep  
+13.  14 la               DET   la                15, det  
+14.  15 Physique         NC    physique          13, prep 
+15.  16 du               P+D   de                 5, dep  
+16.  17 Globe            NC    globe             16, prep 
+
+62254 Usages de sites d'artistes sur Internet
+---------------------------------------
+ 0.   1 Usages           NC    usage              0, _    
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 sites            NC    site               2, prep 
+ 3.   4 d'               P     de                 1, dep  
+ 4.   5 artistes         NC    artiste            4, prep 
+ 5.   6 sur              P     sur                1, dep  
+ 6.   7 Internet         NPP   ?Internet          6, prep 
+
+1808338 Rhéologie des suspensions concentrées de cendres volantes d'incinération
+------------------------------------------------------------------------
+ 0.   1 Rhéologie        NC    rhéologie          0, _    
+ 1.   2 des              P+D   de                 1, dep  
+ 2.   3 suspensions      NC    suspension         2, prep 
+ 3.   4 concentrées      VPP   concentrer         3, mod  
+ 4.   5 de               P     de                 4, mod  
+ 5.   6 cendres          NC    cendre             5, prep 
+ 6.   7 volantes         NC    volant             6, mod  
+ 7.   8 d'               P     de                 4, mod  
+ 8.   9 incinération     NC    incinération       8, prep 
+
+1015139 Analyse écophysiologique de la nitrophilie des espèces adventices
+-----------------------------------------------------------------
+ 0.   1 Analyse          NC    analyse            0, _    
+ 1.   2 écophysiologique ADJ   ?écophysiologique   1, mod  
+ 2.   3 de               P     de                 1, dep  
+ 3.   4 la               DET   la                 5, det  
+ 4.   5 nitrophilie      NC    ?nitrophilie       3, prep 
+ 5.   6 des              P+D   de                 1, dep  
+ 6.   7 espèces          NC    espèce             6, prep 
+ 7.   8 adventices       ADJ   adventice          7, mod  
+
+62276 L'instrumentalisation médiatique\, prisme télévisuel sur la Justice française du Crime contre l'Humanité
+--------------------------------------------------------------------------------------------------------
+ 0.   1 L'               DET   le                 2, det  
+ 1.   2 instrumentalisation NC    instrumentalisation   0, _    
+ 2.   3 médiatique       ADJ   médiatique         2, mod  
+ 3.   4 ,                PONCT ,                  3, ponct
+ 4.   5 prisme           NC    prisme             2, mod  
+ 5.   6 télévisuel       ADJ   télévisuel         5, mod  
+ 6.   7 sur              P     sur                5, dep  
+ 7.   8 la               DET   la                 9, det  
+ 8.   9 Justice          NC    justice            7, prep 
+ 9.  10 française        ADJ   français           9, mod  
+10.  11 du               P+D   de                 9, dep  
+11.  12 Crime            NPP   ?Crime            11, prep 
+12.  13 contre           P     contre             9, dep  
+13.  14 l'               DET   le                15, det  
+14.  15 Humanité         NC    humanité          13, prep 
+
+62311 La logique du pouvoir et la dynamique du discours politique
+-----------------------------------------------------------
+ 0.   1 La               DET   la                 2, det  
+ 1.   2 logique          NC    logique            0, _    
+ 2.   3 du               P+D   de                 2, dep  
+ 3.   4 pouvoir          NC    pouvoir            3, prep 
+ 4.   5 et               CC    et                 2, coord
+ 5.   6 la               DET   la                 7, det  
+ 6.   7 dynamique        NC    dynamique          5, dep_coord
+ 7.   8 du               P+D   de                 2, dep  
+ 8.   9 discours         NC    discours           8, prep 
+ 9.  10 politique        ADJ   politique          9, mod  
+
+264210 Un regard sur les approches basées sur la vision par ordinateur
+---------------------------------------------------------------
+ 0.   1 Un               DET   un                 2, det  
+ 1.   2 regard           NC    regard             0, _    
+ 2.   3 sur              P     sur                2, dep  
+ 3.   4 les              DET   les                5, det  
+ 4.   5 approches        NC    approche           3, prep 
+ 5.   6 basées           VPP   baser              5, mod  
+ 6.   7 sur              P     sur                6, mod  
+ 7.   8 la               DET   la                 9, det  
+ 8.   9 vision           NC    vision             7, prep 
+ 9.  10 par              P     par                9, dep  
+10.  11 ordinateur       NC    ordinateur        10, prep 
+
+960330 Relations de dépendance entre la configuration d'un accident VL-piéton et le déroulement du choc
+------------------------------------------------------------------------------------------------
+ 0.   1 Relations        NC    relation           0, _    
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 dépendance       NC    dépendance         2, prep 
+ 3.   4 entre            P     entre              1, dep  
+ 4.   5 la               DET   la                 6, det  
+ 5.   6 configuration    NC    configuration      4, prep 
+ 6.   7 d'               P     de                 1, dep  
+ 7.   8 un               DET   un                 9, det  
+ 8.   9 accident         NC    accident           7, prep 
+ 9.  10 VL               NPP   ?VL                9, mod  
+10.  11 -                PONCT -                 10, ponct
+11.  12 piéton           NC    piéton             9, mod  
+12.  13 et               CC    et                 1, coord
+13.  14 le               DET   le                15, det  
+14.  15 déroulement      NC    déroulement       13, dep_coord
+15.  16 du               P+D   de                 1, dep  
+16.  17 choc             NC    choc              16, prep 
+
+215984 Le Play et ses continuateurs face aux exemples juridiques étrangers
+-------------------------------------------------------------------
+ 0.   1 Le               DET   le                 2, det  
+ 1.   2 Play             NPP   ?Play              0, _    
+ 2.   3 et               CC    et                 2, coord
+ 3.   4 ses              DET   ses                5, det  
+ 4.   5 continuateurs    NC    continuateur       3, dep_coord
+ 5.   6 face             NC    face               5, mod  
+ 6.   7 aux              P+D   à                  2, dep  
+ 7.   8 exemples         NC    exemple            7, prep 
+ 8.   9 juridiques       ADJ   juridique          8, mod  
+ 9.  10 étrangers        NC    étranger           8, mod  
+
+1759146 L’implantation de l’abbaye de Conques dans les environs de Sainte-Foy-la-Grande au XIe siècle
+---------------------------------------------------------------------------------------------
+ 0.   1 L'               DET   le                 2, det  
+ 1.   2 implantation     NC    implantation       0, _    
+ 2.   3 de               P     de                 2, dep  
+ 3.   4 l'               DET   le                 5, det  
+ 4.   5 abbaye           NC    abbaye             3, prep 
+ 5.   6 de               P     de                 2, dep  
+ 6.   7 Conques          NPP   Conques            6, prep 
+ 7.   8 dans             P     dans               2, dep  
+ 8.   9 les              DET   les               10, det  
+ 9.  10 environs         NC    environs           8, prep 
+10.  11 de               P     de                 2, dep  
+11.  12 Sainte           NPP   ?Sainte           11, prep 
+12.  13 -                PONCT -                 12, ponct
+13.  14 Foy              NPP   ?Foy               2, mod  
+14.  15 -                PONCT -                 14, ponct
+15.  16 la               DET   la                18, det  
+16.  17 -                PONCT -                 16, ponct
+17.  18 Grande           ADJ   grand              2, mod  
+18.  19 au               P+D   à                  2, dep  
+19.  20 XIe              ADJ   ?XIe              21, mod  
+20.  21 siècle           NC    siècle            19, prep 
+
+162358 Capteur à effet Hall vertical en technologie CMOS standard
+----------------------------------------------------------
+ 0.   1 Capteur          NC    capteur            0, _    
+ 1.   2 à                P     à                  1, dep  
+ 2.   3 effet            NC    effet              2, prep 
+ 3.   4 Hall             NPP   Hall               3, mod  
+ 4.   5 vertical         ADJ   vertical           3, mod  
+ 5.   6 en               P     en                 1, dep  
+ 6.   7 technologie      NC    technologie        6, prep 
+ 7.   8 CMOS             NC    ?CMOS              7, mod  
+ 8.   9 standard         ADJ   standard           7, mod  
+
+162357 Banc de test pour des mesures dynamiques 4D de MEMS par microscopie interférométrique
+-------------------------------------------------------------------------------------
+ 0.   1 Banc             NC    banc               0, _    
+ 1.   2 de               P     de                 1, dep  
+ 2.   3 test             NC    test               2, prep 
+ 3.   4 pour             P     pour               1, dep  
+ 4.   5 des              DET   des                6, det  
+ 5.   6 mesures          NC    mesure             4, prep 
+ 6.   7 dynamiques       ADJ   dynamique          6, mod  
+ 7.   8 4D               NC    ?4D                6, mod  
+ 8.   9 de               P     de                 1, dep  
+ 9.  10 MEMS             NPP   ?MEMS              9, prep 
+10.  11 par              P     par                1, dep  
+11.  12 microscopie      NC    ?microscopie      11, prep 
+12.  13 interférométrique ADJ   ?interférométrique  12, mod  
+
+609701 La confrontation de cadres théoriques dans l'analyse didactique de vidéos réalisées dans des classes
+----------------------------------------------------------------------------------------------------
+ 0.   1 La               DET   la                 2, det  
+ 1.   2 confrontation    NC    confrontation      0, _    
+ 2.   3 de               P     de                 2, dep  
+ 3.   4 cadres           NC    cadre              3, prep 
+ 4.   5 théoriques       ADJ   théorique          4, mod  
+ 5.   6 dans             P     dans               2, dep  
+ 6.   7 l'               DET   le                 8, det  
+ 7.   8 analyse          NC    analyse            6, prep 
+ 8.   9 didactique       ADJ   didactique         8, mod  
+ 9.  10 de               P     de                 8, dep  
+10.  11 vidéos           NC    vidéo             10, prep 
+11.  12 réalisées        VPP   réaliser          11, mod  
+12.  13 dans             P     dans              12, mod  
+13.  14 des              DET   des               15, det  
+14.  15 classes          NC    classe            13, prep 
+
+215986 La persistance du droit successoral de l'Ancien Régime dans l'Europe du XIXe siècle
+-----------------------------------------------------------------------------------
+ 0.   1 La               DET   la                 2, det  
+ 1.   2 persistance      NC    persistance        0, _    
+ 2.   3 du               P+D   de                 2, dep  
+ 3.   4 droit            NC    droit              3, prep 
+ 4.   5 successoral      NC    ?successoral       4, mod  
+ 5.   6 de               P     de                 2, dep  
+ 6.   7 l'               DET   le                 8, det  
+ 7.   8 Ancien           NPP   ?Ancien            6, prep 
+ 8.   9 Régime           NPP   ?Régime            8, mod  
+ 9.  10 dans             P     dans               2, dep  
+10.  11 l'               DET   le                12, det  
+11.  12 Europe           NPP   Europe            10, prep 
+12.  13 du               P+D   de                 2, dep  
+13.  14 XIXe             ADJ   ?XIXe             15, mod  
+14.  15 siècle           NC    siècle            13, prep 
+
+162355 Faut-il jeter la Méditerranée avec l'eau du bain ?
+--------------------------------------------------
+ 0.   1 Faut             V     falloir            0, root 
+ 1.   2 -il              CLS   il                 1, suj  
+ 2.   3 jeter            VINF  jeter              1, obj  
+ 3.   4 la               DET   la                 5, det  
+ 4.   5 Méditerranée     NPP   ?Méditerranée      3, obj  
+ 5.   6 avec             P     avec               3, mod  
+ 6.   7 l'               DET   le                 8, det  
+ 7.   8 eau              NC    eau                6, prep 
+ 8.   9 du               P+D   de                 8, dep  
+ 9.  10 bain             NC    bain               9, prep 
+10.  11 ?                PONCT ?                 10, ponct
+
+215983 La défense de la victime en France au XIXe et au XXe siècle
+-----------------------------------------------------------
+ 0.   1 La               DET   la                 2, det  
+ 1.   2 défense          NC    défense            0, _    
+ 2.   3 de               P     de                 2, dep  
+ 3.   4 la               DET   la                 5, det  
+ 4.   5 victime          NC    victime            3, prep 
+ 5.   6 en               P     en                 2, dep  
+ 6.   7 France           NPP   France             6, prep 
+ 7.   8 au               P+D   à                  2, dep  
+ 8.   9 XIXe             NPP   ?XIXe              8, prep 
+ 9.  10 et               CC    et                 2, coord
+10.  11 au               P+D   à                 10, dep_coord
+11.  12 XXe              ADJ   ?XXe              13, mod  
+12.  13 siècle           NC    siècle            11, prep 
+
+1060990 Le gouvernement d'entreprise après la crise financière en France
+----------------------------------------------------------------
+ 0.   1 Le               DET   le                 2, det  
+ 1.   2 gouvernement     NC    gouvernement       0, _    
+ 2.   3 d'               P     de                 2, dep  
+ 3.   4 entreprise       NC    entreprise         3, prep 
+ 4.   5 après            P     après              2, dep  
+ 5.   6 la               DET   la                 7, det  
+ 6.   7 crise            NC    crise              5, prep 
+ 7.   8 financière       ADJ   financier          7, mod  
+ 8.   9 en               P     en                 2, dep  
+ 9.  10 France           NPP   France             9, prep 
+
+1409384 L'exposition répétée à un extrait riche en fumonisine B1 altère les fonctions d’absorption\, de sécrétion et de digestion de l’intestin grêle chez le porc sevré
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 0.   1 L'               DET   le                 2, det  
+ 1.   2 exposition       NC    exposition        11, suj  
+ 2.   3 répétée          VPP   répéter            2, mod  
+ 3.   4 à                P     à                  3, mod  
+ 4.   5 un               DET   un                 6, det  
+ 5.   6 extrait          NC    extrait            4, prep 
+ 6.   7 riche            ADJ   riche              6, mod  
+ 7.   8 en               P     en                 3, mod  
+ 8.   9 fumonisine       NC    ?fumonisine        8, prep 
+ 9.  10 B1               NPP   ?B1                9, mod  
+10.  11 altère           V     altérer            0, root 
+11.  12 les              DET   les               13, det  
+12.  13 fonctions        NC    fonction          11, obj  
+13.  14 d'               P     de                13, dep  
+14.  15 absorption       NC    absorption        14, prep 
+15.  16 ,                PONCT ,                 15, ponct
+16.  17 de               P     de                11, mod  
+17.  18 sécrétion        NC    sécrétion         17, prep 
+18.  19 et               CC    et                17, coord
+19.  20 de               P     de                19, dep_coord
+20.  21 digestion        NC    digestion         20, prep 
+21.  22 de               P     de                11, mod  
+22.  23 l'               DET   le                24, det  
+23.  24 intestin         NC    intestin          22, prep 
+24.  25 grêle            ADJ   grêle             24, mod  
+25.  26 chez             P     chez              11, mod  
+26.  27 le               DET   le                28, det  
+27.  28 porc             NC    porc              26, prep 
+28.  29 sevré            ADJ   sevrer            28, mod  
+
+859894 Transmission d'image assistée par le bruit en imagerie cohérente et incohérente
+-------------------------------------------------------------------------------
+ 0.   1 Transmission     NC    transmission       0, _    
+ 1.   2 d'               P     de                 1, dep  
+ 2.   3 image            NC    image              2, prep 
+ 3.   4 assistée         VPP   assister           1, mod  
+ 4.   5 par              P     par                4, mod  
+ 5.   6 le               DET   le                 7, det  
+ 6.   7 bruit            NC    bruit              5, prep 
+ 7.   8 en               P     en                 4, mod  
+ 8.   9 imagerie         NC    imagerie           8, prep 
+ 9.  10 cohérente        ADJ   cohérent           9, mod  
+10.  11 et               CC    et                 1, coord
+11.  12 incohérente      ADJ   incohérent        11, dep_coord
+
