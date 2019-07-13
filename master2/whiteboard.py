@@ -3,36 +3,6 @@ def on_each(titles, f):
     for kt, t in titles.items():
         f(t)
 
-    
-# find sub roots for a 2 seg title
-def find_sub_roots(t):
-    # Checks
-    seg_mark = t.segments[0]
-    if len(t.roots) == 0:
-        raise Exception('No root')
-    elif len(t.roots) > 2:
-        raise Exception('Too many roots: ' + str(len(t.roots)))
-    if t.roots_by_segments == '0:1':
-        start = 0
-        end = t.segments[0]
-    elif t.roots_by_segments == '1:0':
-        start = t.segments[0]
-        end = len(t.words) - 1
-    elif t.roots_by_segments == '1:1':
-        return
-    else:
-        raise Exception('This function works only for titles with 2 roots at max 1 root by segment')
-    # find if there is a secondary root and how many
-    found = []
-    for i in range(start, end):
-        w = t.words[i]
-        if w.gov == t.words[t.roots[0]].idw:
-            found.append(i)
-    #if len(found) > 1:
-    #    raise Exception('Too many sub racines for t=' + t.idt)
-    #else:
-    t.subroots = found
-
 
 # get the different segmentator of the titles
 # the '.' is NOT ALWAYS a restarter (start a new part)

@@ -390,6 +390,45 @@ def is_top_100_signoun(word : str):
 def p(a):
     return round(a/339687*100, 2)
 
+
+# find sub roots for a 2 seg titles
+def find_subroot(data):
+    find_direct = 0
+    find_indirect = 0
+    for k, t in data.items():
+        if t.roots_by_segments not in ['1:0', '0:1']:
+            continue
+        if t.roots_by_segments == '0:1':
+            start = 0
+            end = t.segments[0]
+        elif t.roots_by_segments == '1:0':
+            start = t.segments[0] + 1
+            end = len(t.words)
+        found = []
+        # find if there is a secondary root and how many
+        for i in range(start, end):
+            w = t.words[i]
+            if w.gov == t.words[t.roots[0]].idw:
+                found.append(i)
+        if len(found) == 0:
+            w = t.words[start]
+            if t.roots_by_segments == '0:1' and w.gov >= end:
+                found.append(start)
+                find_indirect += 1
+            elif t.roots_by_segments == '1:0' and w.gov <= start:
+                found.append(start)
+                find_indirect += 1
+        elif len(found) > 0:
+            find_direct += 1
+        if len(found) > 0:
+            t.roots.append(found[0])
+            t.roots.sort() # in order to have the root of the first seg, root of second seg
+            t.roots_by_segments = '1:1'
+        #    raise Exception('Too many sub racines for t=' + t.idt)
+        #t.subroots = found
+    return find_direct, find_indirect
+
+
 #-------------------------------------------------
 # Model for results
 #-------------------------------------------------
@@ -430,8 +469,10 @@ class Column:
 
 class Data:
 
-    def __init__(self, col_defs : dict):
+    def __init__(self, col_defs : dict, autocount=True):
         self.columns = {}
+        if 'count' not in col_defs and autocount:
+            col_defs.update({'count' : 'num'})
         for n, k in col_defs.items():
             self.columns[n] = Column(self, name=n, kind=k)
         self.content = {}
@@ -674,6 +715,27 @@ def count(tested_keys_values=None):
     return count
 
 
+def avg(key):
+    """
+        Used to get the average of a numeric value of a key
+    """
+    val_sum = 0
+    for kt, t in titles.items():
+        val_sum += getattr(t, key)
+    return val_sum / len(titles)
+
+
+def agg(pos):
+    if pos in ['V', 'VIMP', 'VINF', 'VPP', 'VPR', 'VS']:
+        return 'VERB'
+    elif pos in ['NC', 'NPP']:
+        return 'NOUN'
+    elif pos in ['P', 'P+D']:
+        return 'PREP'
+    else:
+        return pos
+
+
 def stat(keys=None, display=True, until_total_percent=None):
     """
         Used to make stat on one or more keys of the titles.
@@ -694,12 +756,18 @@ def stat(keys=None, display=True, until_total_percent=None):
                 attr = getattr(t, k[1:])
                 vals.append(len(attr))
             elif '.' in k:
-                attr_key, attr_index, obj_key = k.split('.') # roots.0.pos
+                attr_key, attr_index, obj_key = k.split('.') # roots.0.pos or roots.0.pos:agg
                 attr = getattr(t, attr_key)
                 if int(attr_index) >= len(attr):
                     vals.append('NO VAL')
                 else:
-                    vals.append(getattr(t.words[attr[int(attr_index)]], obj_key)) # works only for words
+                    if ':' in obj_key:
+                        obj_key, mod = obj_key.split(':')
+                        val = getattr(t.words[attr[int(attr_index)]], obj_key)
+                        if mod == 'agg':
+                            vals.append(agg(val))
+                    else:
+                        vals.append(getattr(t.words[attr[int(attr_index)]], obj_key)) # works only for words
             else:
                 vals.append(getattr(t, k))
         val = tuple(vals)
@@ -731,7 +799,7 @@ def stat(keys=None, display=True, until_total_percent=None):
 
 # Calculation of % by domain
 # works for every couple of (key, domain)
-# Ex : res = stat(['roots.0.pos', 'domain']) ; by_dom(res)
+# Ex : res = stat(['roots.0.pos:agg', 'domain']) ; by_dom(res)
 def by_dom(data, max_pos=5):
     # Get total of key 2 (domain)
     domain_count = {}
@@ -762,31 +830,13 @@ def by_dom(data, max_pos=5):
         print(f"{domain_count[kdom]:6d}")
 
 
-# Noun vs Verb vs Prep
-# Should be used with pprint in whiteboard or by_dom
-# # Ex : res = stat(['roots.0.pos', 'domain']) ; res = aggregate(res) ; by_dom(res)
-def aggregate(data):
-    neo_data = {}
-    for k, v in data.items():
-        if len(k) == 2:
-            pos = k[0]
-            dom = k[1]
-        elif len(k) == 1:
-            pos = k[0]
-            dom = 'ALL'
-        if pos in ['V', 'VIMP', 'VINF', 'VPP', 'VPR', 'VS']:
-            key = ('VERB', dom)
-        elif pos in ['NC', 'NPP']:
-            key = ('NOUN', dom)
-        elif pos in ['P', 'P+D']:
-            key = ('PREP', dom)
-        else:
-            key = (pos, dom)
-        if key in neo_data:
-            neo_data[key] += v
-        else:
-            neo_data[key] = v
-    return neo_data
+def stats(data=None):
+    if data is None: data = titles
+    key = 'len_without_ponct'
+    dd = Data({ 'len_without_ponct':'num' })
+    for kt, t in data.items():
+        dd.count(getattr(t, key))
+    return dd
 
 
 # Global stat calulation, deprecated in favor of stat
@@ -857,12 +907,15 @@ t122   = None # t with 1 part, 2 segments, 2 roots
 t2     = None # t with 2 parts
 t22    = None # t with 2 parts, 2 segments
 t222   = None # t with 2 parts, 2 segments, 2 roots
+corpus = None # Final working corpus
+c1s    = None # Corpus titles with only 1 segment
+c2s    = None # Corpus titles with 2 segments
 
 fast = False
 just_load = True
 
 def init(debug):
-    global titles, old, t1, t11, t111, t111n, t112, t12, t121, t122, t2, t22, t222
+    global titles, old, t1, t11, t111, t111n, t112, t12, t121, t122, t2, t22, t222, corpus, c1s, c2s
     load_recoding_table(debug)
     if debug: print('[INFO] --- Domain recode dictionary loaded\n')
     titles = read_titles_metadata(r'data\total-articles-HAL.tsv')
@@ -922,8 +975,45 @@ def init(debug):
     #print('t22 is available :', len(t22))
     #print('t111 is available :', len(t111))
     #print('t111n is available :', len(t111n))
+    # Transform 121 titles (1 part, 2 segments, 1 root, 1:0 or 0:1) into 122 / 1:1 titles
+    d, i = find_subroot(t121)
+    print('Promoted directly by gov by root from other seg:', d)
+    print('Promoted by gov from other seg:', i)
+    # Gather our final working corpus.
+    corpus = {}
+    # We take t111.
+    corpus.update(t111)
+    # We don't take 112, too much problem.
+    # We take the updated 121.
+    titles = t121
+    temp = select({'roots_by_segments' : '1:1'})
+    print('Promoted titles (one subroot found) :', len(temp), '/', len(t121), '(', round(len(temp)/len(t121)*100, 0), '% )')
+    corpus.update(temp)
+    titles = old
+    # We take 122.
+    titles = t122
+    temp = select({'roots_by_segments' : '1:1'})
+    corpus.update(temp)
+    titles = old
+    # We take 222.
+    titles = t222
+    temp = select({'roots_by_segments' : '1:1'})
+    corpus.update(temp)
+    # We make two subcorpus
+    titles = corpus
+    c1s = select({'nb_segments' : 1})
+    c2s = select({'nb_segments' : 2})
+    #titles = old
+    print('corpus is available')
+    print('c1s is available (one segment)')
+    print('c2s is available (two segments)')
+    print('Corpus length:', len(corpus), '/', len(titles), '(', p(len(corpus)), '% )')
+    print('c1s length:', len(c1s), '(', round(len(c1s)/len(corpus)*100,2), '% )')
+    print('c2s length:', len(c2s), '(', round(len(c2s)/len(corpus)*100,2), '% )')
+    print()
     print('Set titles to one of these values to change the corpus requested.')
-    print('Set titles to old to reset')
+    print('Set titles to old to reset to ALL titles')
+    print('NB titles is set to corpus')
     if not just_load:
         #Word.write_unknown_lemma()
         filter_titles(debug)
