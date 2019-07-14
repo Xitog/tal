@@ -910,12 +910,15 @@ t222   = None # t with 2 parts, 2 segments, 2 roots
 corpus = None # Final working corpus
 c1s    = None # Corpus titles with only 1 segment
 c2s    = None # Corpus titles with 2 segments
+c1n    = None # Corpus titles with only 1 segment root is NC or NPP
+c2n    = None # Corpus titles with 2 segments one root is NC,NPP the other in NOUN, VERB, PREP
 
 fast = False
 just_load = True
 
 def init(debug):
-    global titles, old, t1, t11, t111, t111n, t112, t12, t121, t122, t2, t22, t222, corpus, c1s, c2s
+    global titles, old, t1, t11, t111, t111n, t112, t12, t121, t122, t2, t22, t222, \
+           corpus, c1s, c2s, c1n, c2n
     load_recoding_table(debug)
     if debug: print('[INFO] --- Domain recode dictionary loaded\n')
     titles = read_titles_metadata(r'data\total-articles-HAL.tsv')
@@ -1003,6 +1006,15 @@ def init(debug):
     titles = corpus
     c1s = select({'nb_segments' : 1})
     c2s = select({'nb_segments' : 2})
+    # We select title with a NC or NPP root
+    titles = c1s
+    c1n = select({'roots.0.pos' : ['NC', 'NPP']})
+    titles = corpus
+    c2n = {}
+    for kt, t in c2s.items():
+        if (t.words[t.roots[0]].pos in ['NC', 'NPP'] and agg(t.words[t.roots[1]].pos) in ['NOUN', 'VERB', 'PREP']) or \
+           (agg(t.words[t.roots[0]].pos) in ['NOUN', 'VERB', 'PREP'] and t.words[t.roots[1]].pos in ['NC', 'NPP']):
+                c2n[kt] = t            
     #titles = old
     print('corpus is available')
     print('c1s is available (one segment)')
