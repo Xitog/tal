@@ -46,6 +46,7 @@ import datetime
 from enum import Enum
 from importlib import reload # Dynamic code
 import itertools # cribble
+import copy
 
 # Project
 import whiteboard as wb # Dynamic code
@@ -117,7 +118,7 @@ class Title:
 
     def __init__(self, idt, year, typ, domains, authors, text):
         self.idt = idt
-        self.year = year
+        self.year = int(year)
         self.typ = typ
         self.domains = domains
         self.domain = recode_domain(self)
@@ -715,6 +716,39 @@ def count(tested_keys_values=None):
     return count
 
 
+def uniq(key):
+    """
+        Used to get all the unique values of a key
+    """
+    vals = []
+    for kt, t in titles.items():
+        if getattr(t, key) not in vals:
+            vals.append(getattr(t, key))
+    return vals
+
+    
+def maxx(key):
+    """
+        Used to get the max of a numeric value of a key
+    """
+    val_max = 0
+    for kt, t in titles.items():
+        if val_max < getattr(t, key):
+            val_max = getattr(t, key)
+    return val_max
+
+
+def minn(key):
+    """
+        Used to get the min of a numeric value of a key
+    """
+    val_min = 0
+    for kt, t in titles.items():
+        if val_min > getattr(t, key):
+            val_min = getattr(t, key)
+    return val_min
+
+
 def avg(key):
     """
         Used to get the average of a numeric value of a key
@@ -723,6 +757,17 @@ def avg(key):
     for kt, t in titles.items():
         val_sum += getattr(t, key)
     return val_sum / len(titles)
+
+
+# for calculating over a period the value (ex : x(res, 2005, 2019))
+# res = stat('year')
+def cumul_over_period(res, deb, end):
+	 i = end
+	 tot = 0
+	 while i >= deb:
+		 tot += res[(i,)]
+		 i -= 1
+	 return tot
 
 
 def agg(pos):
@@ -907,7 +952,8 @@ t122   = None # t with 1 part, 2 segments, 2 roots
 t2     = None # t with 2 parts
 t22    = None # t with 2 parts, 2 segments
 t222   = None # t with 2 parts, 2 segments, 2 roots
-corpus = None # Final working corpus
+corpus = None # Working corpus but not filtered on root nature
+final  = None # Working corpus final
 c1s    = None # Corpus titles with only 1 segment
 c2s    = None # Corpus titles with 2 segments
 c1n    = None # Corpus titles with only 1 segment root is NC or NPP
@@ -918,7 +964,7 @@ just_load = True
 
 def init(debug):
     global titles, old, t1, t11, t111, t111n, t112, t12, t121, t122, t2, t22, t222, \
-           corpus, c1s, c2s, c1n, c2n
+           corpus, c1s, c2s, c1n, c2n, final
     load_recoding_table(debug)
     if debug: print('[INFO] --- Domain recode dictionary loaded\n')
     titles = read_titles_metadata(r'data\total-articles-HAL.tsv')
@@ -1014,18 +1060,23 @@ def init(debug):
     for kt, t in c2s.items():
         if (t.words[t.roots[0]].pos in ['NC', 'NPP'] and agg(t.words[t.roots[1]].pos) in ['NOUN', 'VERB', 'PREP']) or \
            (agg(t.words[t.roots[0]].pos) in ['NOUN', 'VERB', 'PREP'] and t.words[t.roots[1]].pos in ['NC', 'NPP']):
-                c2n[kt] = t            
+                c2n[kt] = t
     #titles = old
-    print('corpus is available')
-    print('c1s is available (one segment)')
-    print('c2s is available (two segments)')
+    # Final
+    final = copy.copy(c1n)
+    final.update(c2n)
+    titles = final
+    print('corpus and final are available')
+    print('c1s and c1n are available (one segment)')
+    print('c2s and c2n are available (two segments)')
+    print('=> n version are with at least one noun root')
     print('Corpus length:', len(corpus), '/', len(titles), '(', p(len(corpus)), '% )')
     print('c1s length:', len(c1s), '(', round(len(c1s)/len(corpus)*100,2), '% )')
     print('c2s length:', len(c2s), '(', round(len(c2s)/len(corpus)*100,2), '% )')
     print()
     print('Set titles to one of these values to change the corpus requested.')
     print('Set titles to old to reset to ALL titles')
-    print('NB titles is set to corpus')
+    print('NB titles is set to final')
     if not just_load:
         #Word.write_unknown_lemma()
         filter_titles(debug)
