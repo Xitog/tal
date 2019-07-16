@@ -781,7 +781,7 @@ def agg(pos):
         return pos
 
 
-def stat(keys=None, display=True, until_total_percent=None):
+def stat(keys=None, display=True, until_total_percent=None, until_min_freq=None):
     """
         Used to make stat on one or more keys of the titles.
         - If no keys is passed, it counts the number of titles.
@@ -796,10 +796,16 @@ def stat(keys=None, display=True, until_total_percent=None):
     values = {}
     for key, t in titles.items():
         vals = []
+        valx = [] # only for $keys
         for k in keys:
             if '#' in k:
                 attr = getattr(t, k[1:])
                 vals.append(len(attr))
+            elif k[0] == '$': # special keys for working with both roots as different objects. ex: $roots.lemma
+                if k.startswith('$roots'):
+                    mod = k.split('.')[1]
+                    for r in t.roots:
+                        valx.append(getattr(t.words[r], mod))
             elif '.' in k:
                 attr_key, attr_index, obj_key = k.split('.') # roots.0.pos or roots.0.pos:agg
                 attr = getattr(t, attr_key)
@@ -815,10 +821,17 @@ def stat(keys=None, display=True, until_total_percent=None):
                         vals.append(getattr(t.words[attr[int(attr_index)]], obj_key)) # works only for words
             else:
                 vals.append(getattr(t, k))
-        val = tuple(vals)
-        if val not in values:
-            values[val] = 0
-        values[val] += 1
+        if len(valx) == 0:
+            val = tuple(vals)
+            if val not in values:
+                values[val] = 0
+            values[val] += 1
+        else: # saving one record for each values of valx
+            for v in valx:
+                val = tuple([v] + vals)
+                if val not in values:
+                    values[val] = 0
+                values[val] += 1
     total = 0
     for val in values:
         total += values[val]
@@ -837,6 +850,9 @@ def stat(keys=None, display=True, until_total_percent=None):
             d = '-'.join(map(str, key))
             print(f"{i:3d}. {d:>{max_len}} {values[key]:10d} {percent:8.4f} % {cumul_percent:6.2f} %")
             if until_total_percent is not None and cumul_percent > until_total_percent:
+                print('...')
+                break
+            if until_min_freq is not None and values[key] <= until_min_freq:
                 print('...')
                 break
     return values
@@ -958,6 +974,7 @@ c1s    = None # Corpus titles with only 1 segment
 c2s    = None # Corpus titles with 2 segments
 c1n    = None # Corpus titles with only 1 segment root is NC or NPP
 c2n    = None # Corpus titles with 2 segments one root is NC,NPP the other in NOUN, VERB, PREP
+#cas    = None # Corpus titles with All Segment separeted
 
 fast = False
 just_load = True
