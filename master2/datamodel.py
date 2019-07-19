@@ -891,6 +891,97 @@ def by_dom(data, max_pos=5):
         print(f"{domain_count[kdom]:6d}")
 
 
+# Data structure for percent & dump2sheet
+# lemma::pos : lemma, pos, nb, percent
+#
+
+def record(key, dic):
+    lemma, pos = key.split('::')
+    if key in dic:
+        dic[key][2] += 1
+    else:
+        dic[key] = [lemma, pos, 1]
+
+
+def percent(dic, ref=None, revert=False):
+    if ref is None:
+        total = 0
+        for k, v in dic.items():
+            total += v[2]
+        for k, v in dic.items():
+            v.append(round(v[2]/total*100, 2))
+    else:
+        for k, v in dic.items():
+            if not revert:
+                if k in ref:
+                    v.append(round(v[2]/ref[k][2]*100, 2))
+                else:
+                    v.append('nok')
+            else:
+                if k in ref:
+                    v.append(round(ref[k][2]/v[2]*100, 2))
+                else:
+                    v.append('nok')
+
+
+def dump2sheet(title, dic, wb):
+    ws = wb.create_sheet(title)
+    for k in sorted(dic, key=dic.get, reverse=True):
+        v = dic[k]
+        ws.append(v)
+
+
+import openpyxl
+
+
+def lexique():
+    lexique_1s = {}
+    lexique_2s = {}
+    lexique_2s1 = {}
+    lexique_2s2 = {}
+    lexique_allheads = {}
+    lexique_allnouns = {}
+    for kt, t in c1n.items():
+        root = t.words[t.roots[0]]
+        key = root.lemma + '::' + root.pos
+        record(key, lexique_1s)
+        record(key, lexique_allheads)
+        for word in t.words:
+            if word.pos in ['NC', 'NPP']:
+                key = word.lemma + '::' + word.pos
+                record(key, lexique_allnouns)
+    for kt, t in c2n.items():
+        root1 = t.words[t.roots[0]]
+        root2 = t.words[t.roots[1]]
+        key1 = root1.lemma + '::' + root1.pos
+        key2 = root2.lemma + '::' + root2.pos
+        record(key1, lexique_2s)
+        record(key2, lexique_2s)
+        record(key1, lexique_2s1)
+        record(key2, lexique_2s2)
+        record(key1, lexique_allheads)
+        record(key2, lexique_allheads)
+    percent(lexique_1s)
+    percent(lexique_2s)
+    # I want to know how a word is balanced between first and second seg
+    percent(lexique_2s, ref=lexique_2s1, revert=True)
+    percent(lexique_2s, ref=lexique_2s2, revert=True)
+    percent(lexique_2s1)
+    percent(lexique_2s2)
+    percent(lexique_allheads)
+    # I want to know if a word is more than often a head
+    percent(lexique_allheads, ref=lexique_allnouns)
+    percent(lexique_allnouns)
+    wb = openpyxl.Workbook(write_only=True)
+    dump2sheet("1 SEG", lexique_1s, wb)
+    dump2sheet("2 SEG", lexique_2s, wb)
+    dump2sheet("2 SEG ONE", lexique_2s1, wb)
+    dump2sheet("2 SEG TWO", lexique_2s2, wb)
+    dump2sheet("ALL HEADS", lexique_allheads, wb)
+    dump2sheet("ALL NOUNS", lexique_allnouns, wb)
+    wb.save("output.xlsx")
+
+
 def stats(data=None):
     if data is None: data = titles
     key = 'len_without_ponct'
@@ -1094,6 +1185,7 @@ def init(debug):
     print('Set titles to one of these values to change the corpus requested.')
     print('Set titles to old to reset to ALL titles')
     print('NB titles is set to final')
+    lexique()
     if not just_load:
         #Word.write_unknown_lemma()
         filter_titles(debug)
