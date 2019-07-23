@@ -47,9 +47,13 @@ from enum import Enum
 from importlib import reload # Dynamic code
 import itertools # cribble
 import copy
+import math # for sqrt
 
 # Project
 import whiteboard as wb # Dynamic code
+
+# Other
+import openpyxl # only pour make_lexique
 
 #-------------------------------------------------
 # Handling of simplification of Domains
@@ -895,52 +899,226 @@ def by_dom(data, max_pos=5):
 # lemma::pos : lemma, pos, nb, percent
 #
 
-def record(key, dic):
-    lemma, pos = key.split('::')
-    if key in dic:
-        dic[key][2] += 1
-    else:
-        dic[key] = [lemma, pos, 1]
+class Domain:
+
+    total_heads = 0
+    total_nouns = 0
+    
+    def __init__(self, name):
+        self.name = name
+        self.heads = {}
+        self.nouns = {}
 
 
-def percent(dic, ref=None, revert=False):
-    if ref is None:
-        total = 0
-        for k, v in dic.items():
-            total += v[2]
-        for k, v in dic.items():
-            v.append(round(v[2]/total*100, 2))
-    else:
-        for k, v in dic.items():
-            if not revert:
-                if k in ref:
-                    v.append(round(v[2]/ref[k][2]*100, 2))
-                else:
-                    v.append('nok')
+    def record(self, key, head):
+        if key not in self.nouns:
+            self.nouns[key] = 1
+            self.heads[key] = 1 if head else 0
+        else:
+            self.nouns[key] += 1
+            if head:
+                self.heads[key] += 1
+
+
+    def count(self):
+        self.total_heads = 0
+        self.total_nouns = 0
+        for h, v in self.heads.items():
+            self.total_heads += v
+        for n, v in self.nouns.items():
+            self.total_nouns += v
+        Domain.total_heads += self.total_heads
+        Domain.total_nouns += self.total_nouns
+        self.best_heads = sorted(self.heads, key=self.heads.get, reverse=True)
+        self.best_nouns = sorted(self.nouns, key=self.nouns.get, reverse=True)
+
+
+class OneSegNoun:
+    
+    NOUNS   = {}
+    DOMAINS = {}
+
+    
+    @classmethod
+    def lex(cls):
+        for kt, t in c1n.items():
+            for cpt, word in enumerate(t.words):
+                if word.pos in ['NC', 'NPP']:
+                    head = (cpt == t.roots[0])
+                    cls.record(word.lemma, word.pos, head, t.domain)
+        for kd, d in cls.DOMAINS.items():
+            d.count()
+        cls.to_sheet()
+    
+    
+    @classmethod
+    def record(cls, lemma, pos, head, domain):
+        # recording noun
+        key = lemma + '::' + pos    
+        if key not in cls.NOUNS:
+            n = OneSegNoun(lemma, pos)
+            cls.NOUNS[key] = n
+        else:
+            n = cls.NOUNS[key]
+        n.nb_occ['all'] += 1
+        if domain in n.nb_occ:
+            n.nb_occ[domain] += 1
+        else:
+            n.nb_occ[domain] = 1
+        if head:
+            n.nb_head['all'] += 1
+            if domain in n.nb_head:
+                n.nb_head[domain] += 1
             else:
-                if k in ref:
-                    v.append(round(ref[k][2]/v[2]*100, 2))
+                n.nb_head[domain] = 1
+        # recording domain
+        if domain not in cls.DOMAINS:
+            d = Domain(domain)
+            cls.DOMAINS[domain] = d
+        else:
+            d = cls.DOMAINS[domain]
+        d.record(key, head)
+
+    
+    def __init__(self, lemma, pos):
+        self.lemma = lemma
+        self.pos = pos
+        self.nb_occ = { 'all' : 0 }
+        self.nb_head = { 'all' : 0 }
+    
+    
+    @classmethod
+    def to_sheet(cls):
+        def per(v, t):
+            if v > t: raise Exception('Too much value for percent')
+            if t == 0: return 0
+            return round(v / t * 100, 2)
+        def get(k, d):
+            if k in d: return d[k]
+            else: return 0
+        wb = openpyxl.Workbook(write_only=True)
+        ws = wb.create_sheet('1seg head')
+        # Title
+        nbdom = ' (' + str(len(cls.DOMAINS)) + ')'
+        # TRANS => '%NBDOM-HD x MID %DOM'
+        # DISC => EcartType * (1-%NBDOM)
+        title_row = ['LEMMA', 'POS', 'NB HEAD', '%', 'NB OCC', '%', 'HEAD/OCC', 'NBDOM-HD' + nbdom, '%NBDOM-HD', 'MID POS', 'MID Fr%DOM', 'Var', 'EcartType', 'NBDOM OCC' + nbdom, 'TRANS', 'DISC']
+        #for d in cls.DOMAINS:
+        #    title_row.extend([d, '', '', '', '', '', ''])
+        for i in range(0, 27):
+            title_row.extend(['Dom', 'HD in dom', 'OC in dom', 'HD/OC', 'HD/NB HEAD', 'HD/all dom heads'])
+        ws.append(title_row)
+        #subtitle_row = ['', '', '', '', '', '', '', '', '']
+        #for d in range(0, len(cls.DOMAINS)):
+        #    # nb head, nb occ, rapport head/occ, rapport head DANS CE DOMAINE par rapport au nb de fois où ce lemme est HEAD, ..., rapport head DANS CE DOMAIN par rapport aux heads de ce domain
+        #    subtitle_row.extend(['head', 'occ', 'head/occ', 'head/NB HEAD', 'occ/NB OCC', 'head/DOM head', 'occ/DOM occ'])
+        #ws.append(subtitle_row)
+        # Data
+        for k, n in cls.NOUNS.items():
+            nb_occ = n.nb_occ['all']
+            nb_head = n.nb_head['all']
+            if nb_head < 10:
+                continue
+            nb_dom_head = len(n.nb_head)-1
+            # Calcul des moyennes position et fréquence dans les dommaines
+            midpos = 0
+            midper = 0
+            key_moy = {}
+            #best_moy = 0
+            for kd in n.nb_head:
+                if kd == 'all': continue
+                dom = cls.DOMAINS[kd]
+                midpos += dom.best_heads.index(n.lemma + '::' + n.pos)
+                moy_head = n.nb_head[kd] / dom.total_heads
+                midper += moy_head
+                key_moy[kd] = moy_head
+                #if moy_head > best_moy:
+                #    best_moy = moy_head
+            midpos = midpos / nb_dom_head
+            midper = midper / nb_dom_head
+            # n.key_moy = key_moy (for later use in IDLE)
+            # calcul de la variance
+            var = 0
+            for kd in n.nb_head:
+                if kd == 'all': continue
+                var += (key_moy[kd] - midper)**2
+            var /= nb_dom_head
+            # calcul de l'écart-type
+            ect = math.sqrt(var)
+            row = [n.lemma,                         # Lemma
+                   n.pos,                           # Pos
+                   nb_head,                         # NB HEAD
+                   per(nb_head, Domain.total_heads),# % de toutes les heads
+                   nb_occ,                          # NB OCC
+                   per(nb_occ, Domain.total_nouns), # % de toutes les occurrences
+                   per(nb_head, nb_occ),            # rapport HEAD / OCC
+                   nb_dom_head,                     # NB Dom où la tête est présente, remove 'all'
+                   per(nb_dom_head, 27),            # % du NB Dom où tête présente / NB Dom
+                   round(midpos, 2),                # Position moyenne
+                   round(midper, 4),                # Fréquence moyenne
+                   var,                             # variance des moyennes de fréquence intradom
+                   ect,                             # écart-type des moyennes de fréquence intradom
+                   len(n.nb_occ)-1,                 # NB Dom où l'occ est présente, remove 'all'
+                   (nb_dom_head / 27) * midper,     # Indicateur construit de transdisciplinarité : (% du NB Dom où tête présente / NB Dom) x (Fréquence moyenne)
+                   #(1 - (nb_dom_head / 27)) * abs(midper - best_moy)]  # Indicateur construit : (1 - (% du NB Dom où tête présente / NB Dom) ) x abs ( Best Fréq moyenne - Fréquence moyenne )
+                   (1 - (nb_dom_head / 27)) * ect]  # Indicateur construit de "disciplinarité"
+            #for kd in sorted(n.nb_head, key=n.nb_head.get, reverse=True):
+            for kd in sorted(key_moy, key=key_moy.get, reverse=True): # order by freq, not nb !
+                if kd == 'all': continue
+                dom = cls.DOMAINS[kd]
+                dom_heads = n.nb_head[kd]
+                dom_occs = n.nb_occ[kd]
+                row.extend([kd, dom_heads, dom_occs, per(dom_heads, dom_occs), per(dom_heads, nb_head), per(dom_heads, dom.total_heads)])
+            #for kd, d in cls.DOMAINS.items():
+            #    hd = get(kd, n.nb_head)
+            #    od = get(kd, n.nb_occ)
+            #    row.extend([hd, od, per(hd, od), per(hd, nb_head), per(od, nb_occ), per(hd, d.total_heads), per(od, d.total_nouns)])
+            ws.append(row)
+        # Second Sheet
+        FIRST_X = 20
+        ws = wb.create_sheet('1seg best ' + str(FIRST_X) + ' by dom')
+        title_row = []
+        lemma = {} # 'Brève' => [0.qfin, 0.info]
+        for kd, d in cls.DOMAINS.items():
+            title_row.extend([kd, 'nb', '%'])
+        ws.append(title_row)
+        for i in range(0, FIRST_X):
+            row = []
+            for kd, d in cls.DOMAINS.items():
+                if i < len(d.best_heads):
+                    best = d.best_heads[i]
+                    row.extend([best, d.heads[best], per(d.heads[best], d.total_heads)])
+                    # for next sheet
+                    if best not in lemma:
+                        lemma[best] = [kd]
+                    else:
+                        lemma[best].append(kd)
                 else:
-                    v.append('nok')
+                    row.extend(['', '', ''])
+            ws.append(row)
+        # Third Sheet
+        ws = wb.create_sheet('1seg best ' + str(FIRST_X) + ' by lemma')
+        ws.append(['LEMMA', 'POS', 'NB DOM', 'DOMAINS / NUM...'])
+        lemma_count = {}
+        for lem in lemma:
+            lemma_count[lem] = len(lemma[lem])
+        for lem in sorted(lemma_count, key=lemma_count.get, reverse=True):
+            row = lem.split('::') # lemma, pos
+            row.append(lemma_count[lem]) # number of domain where it is present in the X first
+            for kd in lemma[lem]:
+                row.extend([kd, cls.DOMAINS[kd].best_heads.index(lem)]) # domains where it is present in the X first + pos
+            ws.append(row)
+        wb.save('one_seg.xlsx')
 
 
-def dump2sheet(title, dic, wb):
-    ws = wb.create_sheet(title)
-    for k in sorted(dic, key=dic.get, reverse=True):
-        v = dic[k]
-        ws.append(v)
-
-
-import openpyxl
-
-
-def lexique():
-    lexique_1s = {}
-    lexique_2s = {}
-    lexique_2s1 = {}
-    lexique_2s2 = {}
-    lexique_allheads = {}
-    lexique_allnouns = {}
+# Lexique des têtes
+def make_lexique():
+    lexique_1s = {} # Lexique of heads for one segment only titles (1 head by segment)
+    lexique_2s = {} # Lexique of heads for two segment titles (2 heads by segment)
+    lexique_2s1 = {} # Lexique of heads for the first segment of two segment titles
+    lexique_2s2 = {} # Lexique of heads for the second segment of two segment titles
+    lexique_allheads = {} # Lexique of all heads
+    lexique_allnouns = {} # Lexique of all nouns
     for kt, t in c1n.items():
         root = t.words[t.roots[0]]
         key = root.lemma + '::' + root.pos
@@ -1067,7 +1245,7 @@ c1n    = None # Corpus titles with only 1 segment root is NC or NPP
 c2n    = None # Corpus titles with 2 segments one root is NC,NPP the other in NOUN, VERB, PREP
 #cas    = None # Corpus titles with All Segment separeted
 
-fast = False
+fast_load = False
 just_load = True
 
 def init(debug):
@@ -1076,7 +1254,7 @@ def init(debug):
     load_recoding_table(debug)
     if debug: print('[INFO] --- Domain recode dictionary loaded\n')
     titles = read_titles_metadata(r'data\total-articles-HAL.tsv')
-    if fast:
+    if fast_load:
         files = [r"data\output_tal_01.txt"]
     else:
         files = [r"data\output_tal_01.txt",
@@ -1185,7 +1363,8 @@ def init(debug):
     print('Set titles to one of these values to change the corpus requested.')
     print('Set titles to old to reset to ALL titles')
     print('NB titles is set to final')
-    lexique()
+    #make_lexique()
+    OneSegNoun.lex()
     if not just_load:
         #Word.write_unknown_lemma()
         filter_titles(debug)
