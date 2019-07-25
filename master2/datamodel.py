@@ -746,9 +746,9 @@ def minn(key):
     """
         Used to get the min of a numeric value of a key
     """
-    val_min = 0
+    val_min = None
     for kt, t in titles.items():
-        if val_min > getattr(t, key):
+        if val_min is None or val_min > getattr(t, key):
             val_min = getattr(t, key)
     return val_min
 
@@ -822,7 +822,10 @@ def stat(keys=None, display=True, until_total_percent=None, until_min_freq=None)
                         if mod == 'agg':
                             vals.append(agg(val))
                     else:
-                        vals.append(getattr(t.words[attr[int(attr_index)]], obj_key)) # works only for words
+                        if attr == t.words:
+                            vals.append(getattr(t.words[int(attr_index)], obj_key)) # works for words.0.lemma
+                        else:
+                            vals.append(getattr(t.words[attr[int(attr_index)]], obj_key)) # works only for roots.0.lemma
             else:
                 vals.append(getattr(t, k))
         if len(valx) == 0:
@@ -940,15 +943,20 @@ class OneSegNoun:
 
     
     @classmethod
-    def lex(cls):
-        for kt, t in c1n.items():
+    def lex(cls, data, segnum=0, title='one_seg.xlsx'):
+        for kt, t in data.items():
             for cpt, word in enumerate(t.words):
+                # if segnum=0, we do only the first segment!
+                if segnum == 0 and len(t.segments) > 0 and cpt == t.segments[0]: break
+                # if segnum=1, we do nothing in the first segment!
+                elif segnum == 1 and len(t.segments) > 0 and cpt < t.segments[0]: continue
+                elif segnum == 1 and len(t.segments) == 0: raise Exception('Title is not bisegmental')
                 if word.pos in ['NC', 'NPP']:
-                    head = (cpt == t.roots[0])
+                    head = (cpt == t.roots[segnum]) # fetch the root corresponding to segnum
                     cls.record(word.lemma, word.pos, head, t.domain)
         for kd, d in cls.DOMAINS.items():
             d.count()
-        cls.to_sheet()
+        cls.to_sheet(title)
     
     
     @classmethod
@@ -988,7 +996,7 @@ class OneSegNoun:
     
     
     @classmethod
-    def to_sheet(cls):
+    def to_sheet(cls, title):
         def per(v, t):
             if v > t: raise Exception('Too much value for percent')
             if t == 0: return 0
@@ -1108,7 +1116,7 @@ class OneSegNoun:
             for kd in lemma[lem]:
                 row.extend([kd, cls.DOMAINS[kd].best_heads.index(lem)]) # domains where it is present in the X first + pos
             ws.append(row)
-        wb.save('one_seg.xlsx')
+        wb.save(title)
 
 
 # Lexique des têtes
@@ -1364,7 +1372,9 @@ def init(debug):
     print('Set titles to old to reset to ALL titles')
     print('NB titles is set to final')
     #make_lexique()
-    OneSegNoun.lex()
+    #OneSegNoun.lex(c1n, 0, 'zone_seg_c1n.xlsx')
+    #OneSegNoun.lex(c2n, 0, 'zone_seg_c2nA.xlsx') # c2n, first seg
+    #OneSegNoun.lex(c2n, 1, 'one_seg_c2nB.xlsx') # c2n, second seg
     if not just_load:
         #Word.write_unknown_lemma()
         filter_titles(debug)
