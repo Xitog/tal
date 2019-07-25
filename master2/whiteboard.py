@@ -4,21 +4,6 @@ def on_each(titles, f):
         f(t)
 
 
-# get the different segmentator of the titles
-# the '.' is NOT ALWAYS a restarter (start a new part)
-# the '.' is ALWAYS a segmentator (start a new segment)
-def get_seg(titles):
-    res = {}
-    for kt, t in titles.items():
-        for s in t.segments:
-            v = t.words[s].form
-            if v not in res:
-                res[v] = 1
-            else:
-                res[v] += 1
-    return res
-
-    
 # show in which segment are the roots
 # already in the attribute roots_by_segment
 def root_in_seg(titles, with_subroots = False):
@@ -198,4 +183,3 @@ def test1(titles):
                 else:
                     governed[nbgov] = 1
     return governed
-
