@@ -943,21 +943,38 @@ class OneSegNoun:
 
     
     @classmethod
-    def lex(cls, data, segnum=0, title='one_seg.xlsx'):
-        for kt, t in data.items():
-            for cpt, word in enumerate(t.words):
-                # if segnum=0, we do only the first segment!
-                if segnum == 0 and len(t.segments) > 0 and cpt == t.segments[0]: break
-                # if segnum=1, we do nothing in the first segment!
-                elif segnum == 1 and len(t.segments) > 0 and cpt < t.segments[0]: continue
-                elif segnum == 1 and len(t.segments) == 0: raise Exception('Title is not bisegmental')
-                if word.pos in ['NC', 'NPP']:
-                    head = (cpt == t.roots[segnum]) # fetch the root corresponding to segnum
-                    cls.record(word.lemma, word.pos, head, t.domain)
-        for kd, d in cls.DOMAINS.items():
-            d.count()
-        cls.to_sheet(title)
-    
+    def lex(cls, data, segnum=0, title='one_seg.xlsx', output=True):
+        if segnum == 2: # do both for 2 seg titles
+            cls.lex(data, segnum=0, output=False)
+            cls.lex(data, segnum=1, output=False)
+            for kd, d in cls.DOMAINS.items():
+                d.count()
+            if output:
+                cls.to_sheet(title)
+            return
+        elif segnum == 'couple': # do by couple head1--head2 for 2 seg titles
+            for kt, t in data.items():
+                if len(t.segments) != 2: raise Exception('Not a two segment title!')
+                head1 = t.words[t.segments[0]]
+                head2 = t.words[t.segments[1]]
+                cls.record(head1.lemma + '--' + head2.lemma, head1.pos + '--' + head2.pos, True, t.domain)
+            return
+        else: # do for segnum in [0,1]
+            for kt, t in data.items():
+                for cpt, word in enumerate(t.words):
+                    # if segnum=0, we do only the first segment!
+                    if segnum == 0 and len(t.segments) > 0 and cpt == t.segments[0]: break
+                    # if segnum=1, we do nothing in the first segment!
+                    elif segnum == 1 and len(t.segments) > 0 and cpt < t.segments[0]: continue
+                    elif segnum == 1 and len(t.segments) == 0: raise Exception('Title is not bisegmental')
+                    if word.pos in ['NC', 'NPP']:
+                        head = (cpt == t.roots[segnum]) # fetch the root corresponding to segnum
+                        cls.record(word.lemma, word.pos, head, t.domain)
+            for kd, d in cls.DOMAINS.items():
+                d.count()
+            if output:
+                cls.to_sheet(title)
+        
     
     @classmethod
     def record(cls, lemma, pos, head, domain):
@@ -1372,9 +1389,10 @@ def init(debug):
     print('Set titles to old to reset to ALL titles')
     print('NB titles is set to final')
     #make_lexique()
-    #OneSegNoun.lex(c1n, 0, 'zone_seg_c1n.xlsx')
-    #OneSegNoun.lex(c2n, 0, 'zone_seg_c2nA.xlsx') # c2n, first seg
-    #OneSegNoun.lex(c2n, 1, 'one_seg_c2nB.xlsx') # c2n, second seg
+    #OneSegNoun.lex(c1n, 0, 'one_seg_c1n.xlsx')
+    #OneSegNoun.lex(c2n, 0, 'two_c2nA.xlsx') # c2n, first seg
+    #OneSegNoun.lex(c2n, 1, 'two_seg_c2nB.xlsx') # c2n, second seg
+    OneSegNoun.lex(c2n, 2, 'two_seg_both.xlsx')
     if not just_load:
         #Word.write_unknown_lemma()
         filter_titles(debug)
