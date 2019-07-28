@@ -947,18 +947,18 @@ class OneSegNoun:
         if segnum == 2: # do both for 2 seg titles
             cls.lex(data, segnum=0, output=False)
             cls.lex(data, segnum=1, output=False)
-            for kd, d in cls.DOMAINS.items():
-                d.count()
-            if output:
-                cls.to_sheet(title)
-            return
         elif segnum == 'couple': # do by couple head1--head2 for 2 seg titles
             for kt, t in data.items():
-                if len(t.segments) != 2: raise Exception('Not a two segment title!')
-                head1 = t.words[t.segments[0]]
-                head2 = t.words[t.segments[1]]
+                if t.nb_segments != 2: # t.segments contient aussi des seg non segmentant ! (. finaux)
+                #if len(t.segments) != 1 or t.nb_segments != 2:
+                    print(t)
+                    print('Len of segments: ', len(t.segments))
+                    print('Val of nb_segments: ', t.nb_segments)
+                    t.info()
+                    raise Exception('Not a two segment title!')
+                head1 = t.words[t.roots[0]]
+                head2 = t.words[t.roots[1]]
                 cls.record(head1.lemma + '--' + head2.lemma, head1.pos + '--' + head2.pos, True, t.domain)
-            return
         else: # do for segnum in [0,1]
             for kt, t in data.items():
                 for cpt, word in enumerate(t.words):
@@ -966,15 +966,19 @@ class OneSegNoun:
                     if segnum == 0 and len(t.segments) > 0 and cpt == t.segments[0]: break
                     # if segnum=1, we do nothing in the first segment!
                     elif segnum == 1 and len(t.segments) > 0 and cpt < t.segments[0]: continue
-                    elif segnum == 1 and len(t.segments) == 0: raise Exception('Title is not bisegmental')
+                    #elif segnum == 1 and len(t.segments) == 0: raise Exception('Title is not bisegmental')
+                    # dans le cas où on fait ça pour tout, on va passer sur des titres monoseg avec segnum = 1
+                    # donc si on veut enquêter sur le second seg (segnum = 1) alors qu'on a nb_segments == 1
+                    # on quitte le titre
+                    elif segnum == 1 and t.nb_segments == 1: break
                     if word.pos in ['NC', 'NPP']:
                         head = (cpt == t.roots[segnum]) # fetch the root corresponding to segnum
                         cls.record(word.lemma, word.pos, head, t.domain)
-            for kd, d in cls.DOMAINS.items():
-                d.count()
-            if output:
+        for kd, d in cls.DOMAINS.items():
+            d.count()
+        if output:
                 cls.to_sheet(title)
-        
+    
     
     @classmethod
     def record(cls, lemma, pos, head, domain):
@@ -1392,7 +1396,9 @@ def init(debug):
     #OneSegNoun.lex(c1n, 0, 'one_seg_c1n.xlsx')
     #OneSegNoun.lex(c2n, 0, 'two_c2nA.xlsx') # c2n, first seg
     #OneSegNoun.lex(c2n, 1, 'two_seg_c2nB.xlsx') # c2n, second seg
-    OneSegNoun.lex(c2n, 2, 'two_seg_both.xlsx')
+    #OneSegNoun.lex(c2n, 2, 'two_seg_both.xlsx')
+    #OneSegNoun.lex(c2n, 'couple', 'two_seg_couple.xlsx')
+    OneSegNoun.lex(final, 2, 'heads_all.xlsx')
     if not just_load:
         #Word.write_unknown_lemma()
         filter_titles(debug)
