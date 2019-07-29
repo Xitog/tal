@@ -1398,7 +1398,7 @@ def init(debug):
     #OneSegNoun.lex(c2n, 1, 'two_seg_c2nB.xlsx') # c2n, second seg
     #OneSegNoun.lex(c2n, 2, 'two_seg_both.xlsx')
     #OneSegNoun.lex(c2n, 'couple', 'two_seg_couple.xlsx')
-    OneSegNoun.lex(final, 2, 'heads_all.xlsx')
+    #OneSegNoun.lex(final, 2, 'heads_all.xlsx')
     if not just_load:
         #Word.write_unknown_lemma()
         filter_titles(debug)
