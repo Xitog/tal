@@ -3,7 +3,8 @@
 # 339687 titres
 #
 # It requires :
-#   recodage-josette.tsv
+#   resources\recodage-josette.tsv
+#   resources\LTES-Tutin-2007.txt
 #   data\total-articles-HAL.tsv => Title metadata
 #   data\output_tal_01.txt      => TAL data
 #   data\output_tal_02.txt      => TAL data
@@ -56,6 +57,19 @@ import whiteboard as wb # Dynamic code
 import openpyxl # only pour make_lexique
 
 #-------------------------------------------------
+# Handling lexiques
+#-------------------------------------------------
+
+TUTIN = []
+ftut = open("resources\\LTES-Tutin-2007.txt", mode='r', encoding='utf8')
+fdat = ftut.readlines()
+for line in fdat:
+    if line.startswith('--'): continue
+    dat = line.split(';')
+    name = dat[0].rstrip()
+    TUTIN.append(name)
+
+#-------------------------------------------------
 # Handling of simplification of Domains
 #-------------------------------------------------
 
@@ -64,7 +78,7 @@ recode=dict()
 
 def load_recoding_table(debug=False):
     global recode
-    entree = open("recodage-josette.tsv", mode="r", encoding="UTF8")
+    entree = open("resources\\recodage-josette.tsv", mode="r", encoding="UTF8")
     header = entree.readline()
     for line in entree:
         line=line.rstrip("\n")
@@ -936,11 +950,33 @@ class Domain:
         self.best_nouns = sorted(self.nouns, key=self.nouns.get, reverse=True)
 
 
+# 1 on lex
+# 2 on calc (auto appelé après lex)
+# 3 on peut faire to_sheet ou select
+
 class OneSegNoun:
     
     NOUNS   = {}
     DOMAINS = {}
 
+    SEUIL_FREQ = 0.008
+    
+    @classmethod
+    def select(cls, **filters):
+        res = []
+        for k, n in cls.NOUNS.items():
+            if n.nb_head['all'] < 10: continue
+            ok = True
+            for fk, fv in filters.items():
+                if getattr(n, fk) < fv:
+                    ok = False
+                if ok:
+                    res.append(n)
+        if 'moy' in filters:
+            return sorted(res, key=lambda e: e.moy, reverse=True)
+        else:
+            return res
+    
     
     @classmethod
     def lex(cls, data, segnum=0, title='one_seg.xlsx', output=True):
@@ -974,11 +1010,82 @@ class OneSegNoun:
                     if word.pos in ['NC', 'NPP']:
                         head = (cpt == t.roots[segnum]) # fetch the root corresponding to segnum
                         cls.record(word.lemma, word.pos, head, t.domain)
-        for kd, d in cls.DOMAINS.items():
-            d.count()
+        cls.calc()
         if output:
                 cls.to_sheet(title)
     
+
+    @classmethod
+    def calc(cls):
+        NBDOM = len(OneSegNoun.DOMAINS)
+        for kd, d in cls.DOMAINS.items():
+            d.count()
+        for k, n in cls.NOUNS.items():
+            if n.nb_head['all'] < 10: continue
+            nb_dom_head = len(n.nb_head)-1
+            n.nb_dom_head = nb_dom_head # ATTENTION APRES len(n.nb_head)-1 == NBDOM et pas NBDOM où la tête est présente !
+            # Calcul de la moyenne des fréquence dans les dommaines
+            moy_per_dom = {}
+            moy = 0
+            n.nb_dom_sup_seuil = 0
+            for kd, dom in cls.DOMAINS.items():
+                if kd == 'all': continue
+                if kd not in n.nb_head: # ON AJOUTE LES DOMAINES OU IL N'Y A PAS LA TETE
+                    n.nb_head[kd] = 0   # ATTENTION APRES len(n.nb_head)-1 == NBDOM et pas NBDOM où la tête est présente !
+                tmp = n.nb_head[kd] / dom.total_heads
+                moy_per_dom[kd] = tmp
+                moy += tmp
+                if tmp >= OneSegNoun.SEUIL_FREQ:
+                    n.nb_dom_sup_seuil += 1
+            n.moy = moy / NBDOM # ET NON SEULEMENT LES DOMAINES OU LE LEMME APPARAIT !
+            n.moy_per_dom = moy_per_dom
+            # Calcul du nombre qui respecte avant "gap"
+            GAP = 0.001
+            nb = 1
+            old = None
+            for k in sorted(n.moy_per_dom, key=n.moy_per_dom.get, reverse=True):
+                val = n.moy_per_dom[k]
+                if old is not None:
+                    gap = old - val
+                    if gap >= GAP:
+                        nb += 1
+                    else:
+                        break
+                old = val
+            n.gap = nb
+            # Calcul des écarts
+            n.ecart_moy = {}
+            n.ecart_pos = 0
+            for k, v in n.moy_per_dom.items():
+                n.ecart_moy[k] = v - n.moy
+                if n.ecart_moy[k] > 0: n.ecart_pos += 1
+            # Calcul de la moyenne sur les best X
+            BEST = 5
+            tt = 0
+            cpt = 0
+            for k in sorted(n.moy_per_dom, key=n.moy_per_dom.get, reverse=True):
+                tt += n.moy_per_dom[k]
+                cpt += 1
+                if cpt == BEST: break
+            tt /= BEST
+            n.best_moy = tt
+            # Calcul de la variance
+            var = 0
+            for kd in cls.DOMAINS:
+                if kd == 'all': continue
+                var += (n.moy_per_dom[kd] - n.moy)**2
+            n.var = var / NBDOM # ET NON SEULEMENT LES DOMAINES OU LE LEMME APPARAIT !
+            # Calcul de l'écart-type
+            n.ect = math.sqrt(n.var)
+            # Calcul de la moyenne
+            mid_elem = NBDOM// 2
+            n.med = n.moy_per_dom[sorted(n.moy_per_dom, key=n.moy_per_dom.get, reverse=True)[mid_elem]]
+            # Others
+            #n.trans = nb_dom_head / NBDOM * n.moy         # Indicateur construit de transdisciplinarité : (% du NB Dom où tête présente / NB Dom) x (Fréquence moyenne)
+            n.disc = (1 - (nb_dom_head / NBDOM)) * n.ect  # Indicateur construit de "disciplinarité"
+            # Appartenance au lexique de Tutin (2007)
+            n.in_tutin = 1 if n.lemma in TUTIN else 0
+
     
     @classmethod
     def record(cls, lemma, pos, head, domain):
@@ -1015,6 +1122,15 @@ class OneSegNoun:
         self.nb_occ = { 'all' : 0 }
         self.nb_head = { 'all' : 0 }
     
+
+    def __str__(self):
+        star = '' if self.lemma in TUTIN else '*'
+        return self.lemma + star
+
+    
+    def __repr__(self):
+        return str(self)
+
     
     @classmethod
     def to_sheet(cls, title):
@@ -1031,51 +1147,20 @@ class OneSegNoun:
         nbdom = ' (' + str(len(cls.DOMAINS)) + ')'
         # TRANS => '%NBDOM-HD x MID %DOM'
         # DISC => EcartType * (1-%NBDOM)
-        title_row = ['LEMMA', 'POS', 'NB HEAD', '%', 'NB OCC', '%', 'HEAD/OCC', 'NBDOM-HD' + nbdom, '%NBDOM-HD', 'MID POS', 'MID Fr%DOM', 'Var', 'EcartType', 'NBDOM OCC' + nbdom, 'TRANS', 'DISC']
-        #for d in cls.DOMAINS:
-        #    title_row.extend([d, '', '', '', '', '', ''])
+        title_row = ['LEMMA', 'POS', 'Tutin', 'NB HEAD', '%', 'NB OCC', '%', 'HEAD/OCC', 'NBDOM-HD' + nbdom, '%NBDOM-HD', 'Moy', 'Med', 'Var', 'EcartType', 'NBDOM>X%', 'BestMoy', 'NBDOM OCC' + nbdom, 'DISC', 'GAP', 'ECARTPOS']
         for i in range(0, 27):
-            title_row.extend(['Dom', 'HD in dom', 'OC in dom', 'HD/OC', 'HD/NB HEAD', 'HD/all dom heads'])
+            #title_row.extend(['Dom', 'HD in dom', 'OC in dom', 'HD/OC', 'HD/NB HEAD', 'HD/all dom heads'])
+            title_row.extend(['Dom', 'nb', 'f'])
         ws.append(title_row)
-        #subtitle_row = ['', '', '', '', '', '', '', '', '']
-        #for d in range(0, len(cls.DOMAINS)):
-        #    # nb head, nb occ, rapport head/occ, rapport head DANS CE DOMAINE par rapport au nb de fois où ce lemme est HEAD, ..., rapport head DANS CE DOMAIN par rapport aux heads de ce domain
-        #    subtitle_row.extend(['head', 'occ', 'head/occ', 'head/NB HEAD', 'occ/NB OCC', 'head/DOM head', 'occ/DOM occ'])
-        #ws.append(subtitle_row)
         # Data
         for k, n in cls.NOUNS.items():
             nb_occ = n.nb_occ['all']
             nb_head = n.nb_head['all']
-            if nb_head < 10:
-                continue
-            nb_dom_head = len(n.nb_head)-1
-            # Calcul des moyennes position et fréquence dans les dommaines
-            midpos = 0
-            midper = 0
-            key_moy = {}
-            #best_moy = 0
-            for kd in n.nb_head:
-                if kd == 'all': continue
-                dom = cls.DOMAINS[kd]
-                midpos += dom.best_heads.index(n.lemma + '::' + n.pos)
-                moy_head = n.nb_head[kd] / dom.total_heads
-                midper += moy_head
-                key_moy[kd] = moy_head
-                #if moy_head > best_moy:
-                #    best_moy = moy_head
-            midpos = midpos / nb_dom_head
-            midper = midper / nb_dom_head
-            # n.key_moy = key_moy (for later use in IDLE)
-            # calcul de la variance
-            var = 0
-            for kd in n.nb_head:
-                if kd == 'all': continue
-                var += (key_moy[kd] - midper)**2
-            var /= nb_dom_head
-            # calcul de l'écart-type
-            ect = math.sqrt(var)
+            if nb_head < 10: continue
+            nb_dom_head = n.nb_dom_head
             row = [n.lemma,                         # Lemma
                    n.pos,                           # Pos
+                   n.in_tutin,                      # In Tutin
                    nb_head,                         # NB HEAD
                    per(nb_head, Domain.total_heads),# % de toutes les heads
                    nb_occ,                          # NB OCC
@@ -1083,25 +1168,26 @@ class OneSegNoun:
                    per(nb_head, nb_occ),            # rapport HEAD / OCC
                    nb_dom_head,                     # NB Dom où la tête est présente, remove 'all'
                    per(nb_dom_head, 27),            # % du NB Dom où tête présente / NB Dom
-                   round(midpos, 2),                # Position moyenne
-                   round(midper, 4),                # Fréquence moyenne
-                   var,                             # variance des moyennes de fréquence intradom
-                   ect,                             # écart-type des moyennes de fréquence intradom
+                   round(n.moy, 6),                 # Fréquence moyenne
+                   n.med,                           # Médiane
+                   n.var,                           # variance des moyennes de fréquence intradom
+                   n.ect,                           # écart-type des moyennes de fréquence intradom
+                   n.nb_dom_sup_seuil,              # nombre de domaine où on dépasse 1% en freq relative
+                   n.best_moy,                      # moyenne des X meilleurs domaines
                    len(n.nb_occ)-1,                 # NB Dom où l'occ est présente, remove 'all'
-                   (nb_dom_head / 27) * midper,     # Indicateur construit de transdisciplinarité : (% du NB Dom où tête présente / NB Dom) x (Fréquence moyenne)
-                   #(1 - (nb_dom_head / 27)) * abs(midper - best_moy)]  # Indicateur construit : (1 - (% du NB Dom où tête présente / NB Dom) ) x abs ( Best Fréq moyenne - Fréquence moyenne )
-                   (1 - (nb_dom_head / 27)) * ect]  # Indicateur construit de "disciplinarité"
-            #for kd in sorted(n.nb_head, key=n.nb_head.get, reverse=True):
+                   #n.trans,                         # Indicateur construit de transdisciplinarité : (% du NB Dom où tête présente / NB Dom) x (Fréquence moyenne)
+                   n.disc,                          # Indicateur construit de "disciplinarité"
+                   n.gap,
+                   n.ecart_pos]
+            key_moy = n.moy_per_dom
             for kd in sorted(key_moy, key=key_moy.get, reverse=True): # order by freq, not nb !
                 if kd == 'all': continue
                 dom = cls.DOMAINS[kd]
                 dom_heads = n.nb_head[kd]
+                if dom_heads == 0: break
                 dom_occs = n.nb_occ[kd]
-                row.extend([kd, dom_heads, dom_occs, per(dom_heads, dom_occs), per(dom_heads, nb_head), per(dom_heads, dom.total_heads)])
-            #for kd, d in cls.DOMAINS.items():
-            #    hd = get(kd, n.nb_head)
-            #    od = get(kd, n.nb_occ)
-            #    row.extend([hd, od, per(hd, od), per(hd, nb_head), per(od, nb_occ), per(hd, d.total_heads), per(od, d.total_nouns)])
+                #row.extend([kd, dom_heads, dom_occs, round(dom_heads / dom_occs, 6), round(dom_heads / nb_head, 6), round(dom_heads / dom.total_heads, 6)])
+                row.extend([kd, dom_heads, round(dom_heads / dom.total_heads, 6)])
             ws.append(row)
         # Second Sheet
         FIRST_X = 20
@@ -1399,6 +1485,15 @@ def init(debug):
     #OneSegNoun.lex(c2n, 2, 'two_seg_both.xlsx')
     #OneSegNoun.lex(c2n, 'couple', 'two_seg_couple.xlsx')
     #OneSegNoun.lex(final, 2, 'heads_all.xlsx')
+    OneSegNoun.lex(c1n, 0, output=False)
+    res = OneSegNoun.select(moy=0.0030)
+    in_tutin = 0
+    for i in res:
+        print(i)
+        if i.lemma in TUTIN: in_tutin += 1
+    print('In TUTIN=', in_tutin, '/', len(res))
+    OneSegNoun.to_sheet("one_seg.xlsx")
+    
     if not just_load:
         #Word.write_unknown_lemma()
         filter_titles(debug)
