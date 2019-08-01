@@ -960,6 +960,29 @@ class OneSegNoun:
     DOMAINS = {}
 
     SEUIL_FREQ = 0.008
+
+    
+    @classmethod
+    def disciplinary(cls):
+        for kd, d in cls.DOMAINS.items():
+            ssum25 = 0
+            filt1  = []
+            for kn in d.best_heads:
+                n = OneSegNoun.NOUNS[kn]
+                if n.nb_head['all'] < 10: continue
+                ssum25 += n.moy_per_dom[kd]
+                if ssum25 >= 0.25: break
+                filt1.append(n)
+            print('for domain', kd, 'we selected', len(filt1), 'heads')
+            filt2  = []
+            for n in filt1:
+                if n.nb_head[kd] / n.nb_head['all'] >= 0.50:
+                    filt2.append(n)
+            print('for domain', kd, 'we kept', len(filt2), 'heads')
+            res = sorted(filt2, key=lambda e: e.moy_per_dom[kd], reverse=True)
+            for n in res:
+                print(n.lemma, n.pos)
+
     
     @classmethod
     def select(cls, **filters):
@@ -1486,13 +1509,14 @@ def init(debug):
     #OneSegNoun.lex(c2n, 'couple', 'two_seg_couple.xlsx')
     #OneSegNoun.lex(final, 2, 'heads_all.xlsx')
     OneSegNoun.lex(c1n, 0, output=False)
+    OneSegNoun.disciplinary()
     res = OneSegNoun.select(moy=0.0030)
     in_tutin = 0
     for i in res:
         print(i)
         if i.lemma in TUTIN: in_tutin += 1
     print('In TUTIN=', in_tutin, '/', len(res))
-    OneSegNoun.to_sheet("one_seg.xlsx")
+    #ssOneSegNoun.to_sheet("one_seg.xlsx")
     
     if not just_load:
         #Word.write_unknown_lemma()
