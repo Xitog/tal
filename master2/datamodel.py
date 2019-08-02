@@ -922,9 +922,14 @@ class Domain:
     total_nouns = 0
     
     def __init__(self, name):
+        # il enregistre TOUS les noms
+        # même dans heads, il y aura juste 0
+        # donc total_heads = somme des têtes (y'en a à 0, y'en à plus de 1)
+        # donc attention len(self.heads) == len(self.nouns)
         self.name = name
         self.heads = {}
         self.nouns = {}
+        self.nb_heads = 0 # nb de têtes différents (sans compter le nombre d'occurrences)
 
 
     def record(self, key, head):
@@ -942,6 +947,7 @@ class Domain:
         self.total_nouns = 0
         for h, v in self.heads.items():
             self.total_heads += v
+            if v > 0: self.nb_heads += 1
         for n, v in self.nouns.items():
             self.total_nouns += v
         Domain.total_heads += self.total_heads
@@ -954,34 +960,210 @@ class Domain:
 # 2 on calc (auto appelé après lex)
 # 3 on peut faire to_sheet ou select
 
+# Stat
+
+def fmax(serie):
+    mx = 0
+    for s in serie:
+        if s > mx: mx = s
+    return mx
+
+
+def fmoy(serie):
+    return sum(serie)/len(serie)
+
+
+def fect(serie):
+    moy = fmoy(serie)
+    ect = 0
+    for v in serie:
+        ect += (v - moy) ** 2 # pour pas que ça fasse 0
+    ect = ect / len(serie) # moyenne des écarts
+    ect = math.sqrt(ect)
+    return ect
+
+
+def frsd(serie): # écart-type relatif en %
+    return fect(serie) / fmoy(serie)
+
+
+SWEET = {
+    '0.chim'       : "Chimie",
+    '0.info'       : "Informatique",
+    '0.math'       : "Mathématiques",
+    '0.phys'       : "Physique",
+    '0.qfin'       : "Économie et finance quantitative",
+    '0.scco'       : "Sciences cognitives",
+    '0.sde'        : "Sciences de l'environnement",
+    '0.sdu'        : "Planète et Univers",
+    '0.sdv'        : "Sciences du Vivant",
+    '1.shs.anthro' : "Anthropologie",
+    '1.shs.archeo' : "Archéologie et Préhistoire",
+    '1.shs.archi'  : "Architecture",
+    '1.shs.art'    : "Art et histoire de l'art",
+    '1.shs.autre'  : "Autres",
+    '1.shs.droit'  : "Droit",
+    '1.shs.edu'    : "Éducation",
+    '1.shs.geo'    : "Géographie",
+    '1.shs.gestion': "Gestion et management",
+    '1.shs.hist'   : "Histoire",
+    '1.shs.infocom': "Sciences de l'information et de la communication",
+    '1.shs.ling'   : "Linguistique",
+    '1.shs.litt'   : "Littératures",
+    '1.shs.phil'   : "Philosophie",
+    '1.shs.psy'    : "Psychologie",
+    '1.shs.scipo'  : "Science politique",
+    '1.shs.socio'  : "Sociologie",
+    'NONE'         : "Pas de discipline",
+}
+
+
+def sweet(dom):
+    return SWEET[dom]
+
+
 class OneSegNoun:
     
     NOUNS   = {}
     DOMAINS = {}
 
-    SEUIL_FREQ = 0.008
-
-    
-    @classmethod
-    def disciplinary(cls):
-        for kd, d in cls.DOMAINS.items():
-            ssum25 = 0
-            filt1  = []
-            for kn in d.best_heads:
-                n = OneSegNoun.NOUNS[kn]
-                if n.nb_head['all'] < 10: continue
-                ssum25 += n.moy_per_dom[kd]
-                if ssum25 >= 0.25: break
-                filt1.append(n)
-            print('for domain', kd, 'we selected', len(filt1), 'heads')
-            filt2  = []
-            for n in filt1:
-                if n.nb_head[kd] / n.nb_head['all'] >= 0.50:
-                    filt2.append(n)
-            print('for domain', kd, 'we kept', len(filt2), 'heads')
-            res = sorted(filt2, key=lambda e: e.moy_per_dom[kd], reverse=True)
-            for n in res:
-                print(n.lemma, n.pos)
+    SEUIL_MINI_FREQ = 0.001
+    CORRECTED = {
+        '?évènement::NC' : 'événement::NC',
+        '?Global::NPP' : None,
+        '?indicateus::NC' : '?indicateus::NC',
+        '?ASSUBILITÉ::NC' : 'assubilité::NC',
+        '?Dupuit::NPP' : 'Dupuit::NPP',
+        '?bitcoin::NC' : 'bitcoin::NPP',
+        '?Effet::NPP' : 'effet::NC',
+        '?Predicting::NPP' : None,
+        '?Cognition::NC' : 'cognition::NC',
+        '?Adolescence::NPP' : 'adolescence::NC',
+        '?Ingres::NPP' : 'Ingres::NPP',
+        '?Poussin::NPP' : 'Poussin::NPP',
+        '?Crétacé::NPP' : '?rétacé::NPP',
+        '?Cardioceratidae::NPP' : 'Cardioceratidae::NPP',
+        '?Sédimentologie::NPP' : 'sédimentologie::NC',
+        '?Hydrogéochimie::NC' : 'hydrogéochimie::NC',
+        '?Vertébrés::NPP' : 'vertébré::NC',
+        '?Nano::NPP' : None,
+        '?Spéciation::NC' : 'spéciation::NC',
+        '?Nanocomposites::NPP' : 'nanocomposite::NC',
+        '?Photomatériaux::NPP' : 'photomatériau::NC',
+        '?Nanomatériaux::NPP' : 'nanomatériau::NC',
+        '?Viscoélasticité::NC' : 'viscoélasticité::NC',
+        '?Hydroformylation::NC' : 'hydroformulation::NC',
+        '?Hydroconversion::NC' : 'hydroconversion::NC',
+        '?HREELS::NC' : '?HREELS::NC',
+        '?microréacteur::NC' : 'microréacteur::NC',
+        '?Chimisorption::NC' : 'chimisorption::NC',
+        '?Nihon::NPP' : '?Nihon::NPP',
+        '?Environmental::NPP' : None,
+        '?IVG::NPP' : 'IVG::NPP',
+        '?Glossarium::NC' : '?Glossarium::NC',
+        '?Via::NPP' : '?Via::NPP',
+        '?sonification::NC' : 'sonification::NC',
+        '?Ethnobotanique::NC' : 'ethnobotanique::NC',
+        '?Venises::NPP' : '?Venises::NPP',
+        '?Cyber::NPP' : None,
+        '?Cooccurrences::NC' : 'cooccurrences::NC',
+        '?Quantiﬁcation::NC' : 'quantification::NC',
+        '?Phénoplasticité::NC' : 'phénoplasticité::NC',
+        '?Pléistoscène::NC' : 'Pléistoscène::NPP',
+        '?démotorisation::NC' : 'démotorisation::NC',
+        '?maritimisation::NC' : 'maritimisation::NC',
+        '?DemoMed::NPP' : '?DemoMed::NPP',
+        '?SIDA::NPP' : 'SIDA::NPP',
+        '?Konso::NC' : '?Konso::NC',
+        '?Africains::NC' : 'africain::NC',
+        '?SIRENA::NPP' : 'SIRENA::NPP',
+        '?Beachrocks::NPP' : 'Beachrocks::NPP',
+        '?NBIC::NPP' : 'NBIC::NPP',
+        '?Proust::NPP' : 'Proust::NPP',
+        '?Montaigne::NPP' : 'Montaigne::NPP',
+        '?Flaubert::NPP' : 'Flaubert::NPP',
+        '?Perceforest::NPP' : 'Perceforest::NPP',
+        '?Hypermédias::NPP' : 'hypermédia::NC',
+        '?Autoformation::NPP' : 'autoformation::NC',
+        '?autoformation::NC' : 'autoformation::NC',
+        '?EAO::NPP' : 'EAO::NPP',
+        '?Approche::NPP' : 'approche::NC',
+        '?Learning::NPP' : 'learning::NC',
+        '?Corbusier::NPP' : 'Corbusier::NPP',
+        '?Fréart::NPP' : 'Fréart::NPP',
+        '?Spinoza::NPP' : 'Spinoza::NPP',
+        '?Bergson::NPP' : 'Bergson::NPP',
+        '?Leibniz::NPP' : 'Leibniz::NPP',
+        '?Diderot::NPP' : 'Diderot::NPP',
+        '?Nietzsche::NPP' : 'Nietzsche::NPP',
+        '?Kant::NPP' : 'Kant::NPP',
+        '?Foucault::NPP' : 'Foucault::NPP',
+        '?Poincaré::NPP' : 'Poincaré::NPP',
+        '?Habermas::NPP' : 'Harbermas::NPP',
+        '?Marx::NPP' : 'Marx::NPP',
+        '?Malebranche::NPP' : 'Malebranche::NPP',
+        '?Carnap::NPP' : 'Carnap::NPP',
+        '?Einstein::NPP' : 'Einstein::NPP',
+        '?memoriam::NC' : 'memoriam::NC',
+        '?PAC::NPP' : 'PAC::NPP',
+        '?Morphogénèse::NPP' : 'morphogénèse::NC',
+        '?RSE::NPP' : 'RSE::NPP',
+        '?Saillance::NPP' : 'saillance::NC',
+        '?Ethnocritique::NPP' : 'ethnocritique::NC',
+        '?Twitter::NPP' : 'Twitter::NPP',
+        '?Cohomologie::NC' : 'cohomologie::NC',
+        '?Compactification::NC' : 'compactification::NC',
+        '?Cohomologie::NPP' : 'cohomologie::NC',
+        '?Ondelettes::NC' : 'ondelette::NC',
+        '?Métamodèles::NPP' : 'métamodèle::NC',
+        '?Fibrés::NC' : None,
+        '?cK¢::NPP' : '?cK¢::NPP',
+        '?Splines::NPP' : 'spline::NC',
+        '?Maths::NPP' : 'maths::NC',
+        '?Mixmod::NPP' : 'Mixmod::NPP',
+        '?Pancyclisme::NC' : 'pancyclisme::NC',
+        '?Monoïdes::NPP' : 'monoïde::NC',
+        '?Finitude::NPP' : 'finitude::NC',
+        '?cocycle::NC' : 'cocycle::NC',
+        '?Cohomologie ?MATHFORMULA::NPP' : 'cohomologie::NC',
+        '?Paramétrisation::NC' : 'paramétrisation::NC',
+        '?Clustering::NPP' : 'clustering::NC',
+        '?Semi::NPP' : None,
+        '?Jean::NPP' : 'Jean::NPP',
+        '?Paris::NPP' : 'Paris::NPP',
+        '?OGM::NPP' : 'OGM::NPP',
+        '?Morphogenèse::NPP' : 'morphogenèse::NC',
+        '?Aristote::NPP' : 'Aristote::NPP', 
+        '?Pierre ?Bayle::NPP' : 'Pierre Bayle::NPP',
+        '?Bernard::NPP' : 'Bernard::NPP',
+        '?Proudhon::NPP' : 'Proudhon::NPP',
+        '?SIG::NPP' : 'SIG::NPP',
+        '?Learning ?region::NPP' : 'région::NC',
+        '?Jacques ?Androuet::NPP' : 'Jacques Androuet::NPP',
+        '?Claude ?Perrault::NPP' : 'Claude Perrault::NPP',
+        '?The::NPP' : None,
+        '?E::NPP' : None,
+        '?Corrélats::NC' : 'corrélat::NC',
+        '?data::NC' : 'data::NC',
+        '?Nihon ?fuzai::NPP' : '?Nihon ?fuzai::NPP',
+        '?care::NC' : 'care::NC', 
+        '?Glossarium::NC' : '?Glossarium::NC',
+        '?ADN::NC' : 'ADN::NC',
+        '?Via Romana::NPP' : 'Via Romana::NPP',
+        '?Venises::NPP' : 'Venise::NPP',
+        '?New ?Urbanism::NPP' : 'urbanisme::NC',
+        '?DemoMed::NPP' : '?DemoMed::NPP',
+        '?Konso::NC' : '?Konso::NC',
+        '?Synthesis ?of::NPP' : 'synthèse::NC',
+        '?HREELS::NC' : '?HREELS::NC',
+        '?rétacé::NPP' : 'crétacé::NC',
+        '?œuvre::NC' : 'oeuvre::NC',
+        '?Jean ?Cocteau::NPP' : 'Jean Cocteau::NPP',
+        '?Freud::NPP' : 'Freud::NPP',
+        '?Etat::NPP' : 'État::NC',
+        '?Global ?Risk::NPP' : 'risque::NC',
+        '?indicateus::NC' : 'indicateur::NC'
+    }
 
     
     @classmethod
@@ -996,7 +1178,7 @@ class OneSegNoun:
                 if ok:
                     res.append(n)
         if 'moy' in filters:
-            return sorted(res, key=lambda e: e.moy, reverse=True)
+            return sorted(res, key=lambda e: e.moy_dom, reverse=True)
         else:
             return res
     
@@ -1032,7 +1214,19 @@ class OneSegNoun:
                     elif segnum == 1 and t.nb_segments == 1: break
                     if word.pos in ['NC', 'NPP']:
                         head = (cpt == t.roots[segnum]) # fetch the root corresponding to segnum
-                        cls.record(word.lemma, word.pos, head, t.domain)
+                        if cpt + 1 < len(t.words) and t.words[cpt + 1].pos == 'NPP' and word.pos == 'NPP':
+                            lemma = word.lemma + ' ' + t.words[cpt + 1].lemma # 'André Breton'
+                        elif cpt + 2 < len(t.words) and t.words[cpt + 1].lemma == 'de' and t.words[cpt + 2].lemma == 'NPP':
+                            lemma = word.lemma + ' de ' + t.words[cpt + 2].lemma # Bernard de Clairvaux
+                        elif cpt > 0 and t.words[cpt - 1].lemma == 'saint':
+                            lemma = t.words[cpt - 1].lemma + ' ' + word.lemma
+                        elif cpt + 2 < len(t.words) and word.lemma in ['?E', '?e'] and t.words[cpt + 1].lemma == '-': #and ('E-' in t.text or 'e-' in t.text):
+                            lemma = 'e-' + t.words[cpt + 2].lemma # e-management
+                        elif cpt + 2 < len(t.words) and word.lemma in ['?Semi', '?semi'] and t.words[cpt + 1].lemma == '-': #and ('Semi-' in t.text or 'semi-' in t.text):
+                            lemma = 'semi-' + t.words[cpt + 2].lemma # semi-figement
+                        else:
+                            lemma = word.lemma
+                        cls.record(lemma, word.pos, head, t.domain)
         cls.calc()
         if output:
                 cls.to_sheet(title)
@@ -1044,30 +1238,34 @@ class OneSegNoun:
         for kd, d in cls.DOMAINS.items():
             d.count()
         for k, n in cls.NOUNS.items():
-            if n.nb_head['all'] < 10: continue
-            nb_dom_head = len(n.nb_head)-1
-            n.nb_dom_head = nb_dom_head # ATTENTION APRES len(n.nb_head)-1 == NBDOM et pas NBDOM où la tête est présente !
-            # Calcul de la moyenne des fréquence dans les dommaines
-            moy_per_dom = {}
-            moy = 0
-            n.nb_dom_sup_seuil = 0
+            n.nb_doms = len(n.nb_head)-1 # ATTENTION APRES len(n.nb_head)-1 == NBDOM et pas NBDOM où la tête est présente !
+            # Calcul de la moyenne des fréquence dans les domaines
+            n.freq_dom = {}
+            n.freq_lem = {}
             for kd, dom in cls.DOMAINS.items():
                 if kd == 'all': continue
                 if kd not in n.nb_head: # ON AJOUTE LES DOMAINES OU IL N'Y A PAS LA TETE
-                    n.nb_head[kd] = 0   # ATTENTION APRES len(n.nb_head)-1 == NBDOM et pas NBDOM où la tête est présente !
-                tmp = n.nb_head[kd] / dom.total_heads
-                moy_per_dom[kd] = tmp
-                moy += tmp
-                if tmp >= OneSegNoun.SEUIL_FREQ:
-                    n.nb_dom_sup_seuil += 1
-            n.moy = moy / NBDOM # ET NON SEULEMENT LES DOMAINES OU LE LEMME APPARAIT !
-            n.moy_per_dom = moy_per_dom
+                    n.nb_head[kd] = 0
+                n.freq_dom[kd] = n.nb_head[kd] / dom.total_heads
+                if n.nb_head['all'] == 0:
+                    n.freq_lem[kd] = 0
+                else:
+                    n.freq_lem[kd] = n.nb_head[kd] / n.nb_head['all']
+            n.moy_dom = fmoy(n.freq_dom.values())
+            n.moy_lem = fmoy(n.freq_lem.values())
+            n.ect_dom = fect(n.freq_dom.values())
+            n.ect_lem = fmoy(n.freq_lem.values())
+            # High lem
+            n.high_lem = 0
+            for kd, dom in cls.DOMAINS.items():
+                if abs(n.freq_lem[kd] - n.moy_lem) > 3 * n.ect_lem:
+                    n.high_lem += 1
             # Calcul du nombre qui respecte avant "gap"
             GAP = 0.001
             nb = 1
             old = None
-            for k in sorted(n.moy_per_dom, key=n.moy_per_dom.get, reverse=True):
-                val = n.moy_per_dom[k]
+            for k in sorted(n.freq_dom, key=n.freq_dom.get, reverse=True):
+                val = n.freq_dom[k]
                 if old is not None:
                     gap = old - val
                     if gap >= GAP:
@@ -1076,44 +1274,31 @@ class OneSegNoun:
                         break
                 old = val
             n.gap = nb
-            # Calcul des écarts
-            n.ecart_moy = {}
-            n.ecart_pos = 0
-            for k, v in n.moy_per_dom.items():
-                n.ecart_moy[k] = v - n.moy
-                if n.ecart_moy[k] > 0: n.ecart_pos += 1
-            # Calcul de la moyenne sur les best X
-            BEST = 5
-            tt = 0
-            cpt = 0
-            for k in sorted(n.moy_per_dom, key=n.moy_per_dom.get, reverse=True):
-                tt += n.moy_per_dom[k]
-                cpt += 1
-                if cpt == BEST: break
-            tt /= BEST
-            n.best_moy = tt
-            # Calcul de la variance
-            var = 0
-            for kd in cls.DOMAINS:
-                if kd == 'all': continue
-                var += (n.moy_per_dom[kd] - n.moy)**2
-            n.var = var / NBDOM # ET NON SEULEMENT LES DOMAINES OU LE LEMME APPARAIT !
-            # Calcul de l'écart-type
-            n.ect = math.sqrt(n.var)
-            # Calcul de la moyenne
+            # Calcul de la médiane
             mid_elem = NBDOM// 2
-            n.med = n.moy_per_dom[sorted(n.moy_per_dom, key=n.moy_per_dom.get, reverse=True)[mid_elem]]
+            n.med = n.freq_dom[sorted(n.freq_dom, key=n.freq_dom.get, reverse=True)[mid_elem]]
             # Others
-            #n.trans = nb_dom_head / NBDOM * n.moy         # Indicateur construit de transdisciplinarité : (% du NB Dom où tête présente / NB Dom) x (Fréquence moyenne)
-            n.disc = (1 - (nb_dom_head / NBDOM)) * n.ect  # Indicateur construit de "disciplinarité"
+            n.disc = (1 - (n.nb_doms / NBDOM)) * n.ect_dom  # Indicateur construit de "disciplinarité"
             # Appartenance au lexique de Tutin (2007)
             n.in_tutin = 1 if n.lemma in TUTIN else 0
+
+
+    @classmethod
+    def correct(cls, key):
+        if key in cls.CORRECTED:
+            key = cls.CORRECTED[key]
+            if key is None:
+                return None, None, None
+        lemma, pos = key.split('::')
+        return key, lemma, pos
 
     
     @classmethod
     def record(cls, lemma, pos, head, domain):
         # recording noun
-        key = lemma + '::' + pos    
+        key = lemma + '::' + pos
+        key, lemma, pos = cls.correct(key)
+        if key is None: return # preventing registering adj
         if key not in cls.NOUNS:
             n = OneSegNoun(lemma, pos)
             cls.NOUNS[key] = n
@@ -1154,64 +1339,123 @@ class OneSegNoun:
     def __repr__(self):
         return str(self)
 
+
+    @classmethod
+    def disciplinary(cls, display_limit=None, verbose=True, to_excel=False):
+        info = {}
+        for kd, d in cls.DOMAINS.items():
+            if d.total_heads * OneSegNoun.SEUIL_MINI_FREQ < 1: continue
+            filt1 = []
+            for kn in d.best_heads:
+                n = OneSegNoun.NOUNS[kn]
+                f = n.freq_dom[kd]
+                if f < OneSegNoun.SEUIL_MINI_FREQ: continue
+                filt1.append(n)
+            info[kd] = { 'sel' : len(filt1), 'freq_sel' : len(filt1) / d.nb_heads }
+            print(f'for domain {kd:10} we select {len(filt1):5d} heads / {d.nb_heads:6d} (', round(len(filt1) / d.nb_heads * 100, 2),')')
+            filt2 = [] # ancien filtre
+            filt2bis = []
+            for n in filt1:
+                if n.freq_lem[kd] >= 0.50:
+                    filt2.append(n)
+                if n.freq_lem[kd] - n.moy_lem > 3 * n.ect_lem:
+                    filt2bis.append(n)
+            info[kd]['kept'] = len(filt2bis)
+            info[kd]['freq_kept'] = len(filt2bis) / d.nb_heads
+            print(f'for domain {kd:10} we kept   {len(filt2bis):5d} heads / {d.nb_heads:6d} (', round(len(filt2bis) / d.nb_heads * 100, 2),')')
+            res = sorted(filt2bis, key=lambda e: e.freq_dom[kd], reverse=True)
+            if verbose:
+                unknown = []
+                print("    lemma             POS    F / dom F / o  occ [ /   dom  /   occ")
+                cpt = 0
+                for n in res:
+                    # lemma, pos
+                    # freq/total head (la fréq rel dans ce dom)
+                    # freq/nb occ total (par rapport au nb d'occ de cette tête)
+                    # nb occ dans ce dom
+                    # total head dans de dom
+                    # nb occ total
+                    if display_limit is not None and ((type(display_limit) == float and n.freq_dom[kd] < display_limit) or (type(display_limit) == int and cpt == display_limit)): break
+                    cpt += 1
+                    ok = 'old' if n in filt2 else ''
+                    print(f"    {n.lemma:18} {n.pos:4} {n.freq_dom[kd]:7.6f} {n.nb_head[kd] / n.nb_head['all']:4.3f} {n.nb_head[kd]:4d} [ / {d.total_heads:5d}  / {n.nb_head['all']:5d} ] {n.high_lem} {ok}")
+                    if n.lemma[0] == '?':
+                        unknown.append(n)
+                #for n in filt2bis:
+                #    if n not in filt2:
+                #        print('repéché :', n)
+                print('------- Unknown -------')
+                for u in unknown:
+                    print(u.lemma, u.pos, u.nb_head[kd])
+        if to_excel:
+            wb = openpyxl.Workbook(write_only=True)
+            ws = wb.create_sheet('disciplinary')
+            ws.append(['Dom', 'Nb heads', 'Sel', '%', 'Kept', '%'])
+            freq_sel = []
+            freq_kept = []
+            for kd, i in info.items():
+                dom = cls.DOMAINS[kd]
+                if dom.total_heads * OneSegNoun.SEUIL_MINI_FREQ < 1: continue
+                #if kd == 'NONE': continue
+                freq_sel.append(i['freq_sel'])
+                freq_kept.append(i['freq_kept'])
+                ws.append([sweet(kd), dom.total_heads, i['sel'], i['freq_sel'], i['kept'], i['freq_kept']])
+            ws.append(['', Domain.total_heads, '', fmoy(freq_sel), '', fmoy(freq_kept)])
+            ws.append(['', '', '', fect(freq_sel), '', fect(freq_kept)])
+            ws.append(['', '', '', frsd(freq_sel), '', frsd(freq_kept)])
+            wb.save("disc.xlsx")
+        return
+
     
     @classmethod
     def to_sheet(cls, title):
-        def per(v, t):
-            if v > t: raise Exception('Too much value for percent')
-            if t == 0: return 0
-            return round(v / t * 100, 2)
-        def get(k, d):
-            if k in d: return d[k]
-            else: return 0
         wb = openpyxl.Workbook(write_only=True)
         ws = wb.create_sheet('1seg head')
         # Title
         nbdom = ' (' + str(len(cls.DOMAINS)) + ')'
-        # TRANS => '%NBDOM-HD x MID %DOM'
-        # DISC => EcartType * (1-%NBDOM)
-        title_row = ['LEMMA', 'POS', 'Tutin', 'NB HEAD', '%', 'NB OCC', '%', 'HEAD/OCC', 'NBDOM-HD' + nbdom, '%NBDOM-HD', 'Moy', 'Med', 'Var', 'EcartType', 'NBDOM>X%', 'BestMoy', 'NBDOM OCC' + nbdom, 'DISC', 'GAP', 'ECARTPOS']
-        for i in range(0, 27):
-            #title_row.extend(['Dom', 'HD in dom', 'OC in dom', 'HD/OC', 'HD/NB HEAD', 'HD/all dom heads'])
-            title_row.extend(['Dom', 'nb', 'f'])
+        title_row = ['LEMMA', 'POS', 'Tutin', 'NB HEAD', '%', 'NB OCC', '%', 'HEAD/OCC', 'NBDOM-HD' + nbdom,
+                     '%NBDOM-HD', 'Moy DOM', 'Moy LEM', 'Med', 'ECT DOM', 'ECT LEM', 'HIGH LEM', 'NBDOM OCC' + nbdom,
+                     'DISC', 'GAP']
+        for i in range(0, len(cls.DOMAINS)):
+            title_row.extend(['Dom', 'nb', 'f/dom', 'f/lem'])
         ws.append(title_row)
         # Data
         for k, n in cls.NOUNS.items():
             nb_occ = n.nb_occ['all']
             nb_head = n.nb_head['all']
-            if nb_head < 10: continue
-            nb_dom_head = n.nb_dom_head
+            if fmax(n.freq_dom.values()) < OneSegNoun.SEUIL_MINI_FREQ: continue
             row = [n.lemma,                         # Lemma
                    n.pos,                           # Pos
                    n.in_tutin,                      # In Tutin
                    nb_head,                         # NB HEAD
-                   per(nb_head, Domain.total_heads),# % de toutes les heads
+                   nb_head / Domain.total_heads,    # % de toutes les heads
                    nb_occ,                          # NB OCC
-                   per(nb_occ, Domain.total_nouns), # % de toutes les occurrences
-                   per(nb_head, nb_occ),            # rapport HEAD / OCC
-                   nb_dom_head,                     # NB Dom où la tête est présente, remove 'all'
-                   per(nb_dom_head, 27),            # % du NB Dom où tête présente / NB Dom
-                   round(n.moy, 6),                 # Fréquence moyenne
+                   nb_occ / Domain.total_nouns,     # % de toutes les occurrences
+                   nb_head / nb_occ,                # rapport HEAD / OCC
+                   n.nb_doms,                       # NB Dom où la tête est présente, remove 'all'
+                   n.nb_doms / 27,                  # % du NB Dom où tête présente / NB Dom
+                   n.moy_dom,                       # Fréquence moyenne pour heads du dom
+                   n.moy_lem,                       # Fréquence moyenne pour lem
                    n.med,                           # Médiane
-                   n.var,                           # variance des moyennes de fréquence intradom
-                   n.ect,                           # écart-type des moyennes de fréquence intradom
-                   n.nb_dom_sup_seuil,              # nombre de domaine où on dépasse 1% en freq relative
-                   n.best_moy,                      # moyenne des X meilleurs domaines
+                   n.ect_dom,                       # écart-type des freqs par rapport aux heads du dom
+                   n.ect_lem,                       # écart-type des freqs par rapport au lem,
+                   n.high_lem,                      # nb of dom where freq_lem >= ect_lem * 3
                    len(n.nb_occ)-1,                 # NB Dom où l'occ est présente, remove 'all'
-                   #n.trans,                         # Indicateur construit de transdisciplinarité : (% du NB Dom où tête présente / NB Dom) x (Fréquence moyenne)
                    n.disc,                          # Indicateur construit de "disciplinarité"
-                   n.gap,
-                   n.ecart_pos]
-            key_moy = n.moy_per_dom
-            for kd in sorted(key_moy, key=key_moy.get, reverse=True): # order by freq, not nb !
+                   n.gap]
+            for kd in sorted(n.freq_dom, key=n.freq_dom.get, reverse=True):
                 if kd == 'all': continue
                 dom = cls.DOMAINS[kd]
-                dom_heads = n.nb_head[kd]
-                if dom_heads == 0: break
-                dom_occs = n.nb_occ[kd]
-                #row.extend([kd, dom_heads, dom_occs, round(dom_heads / dom_occs, 6), round(dom_heads / nb_head, 6), round(dom_heads / dom.total_heads, 6)])
-                row.extend([kd, dom_heads, round(dom_heads / dom.total_heads, 6)])
+                if n.nb_head[kd] == 0: break
+                row.extend([
+                    kd,
+                    n.nb_head[kd],
+                    n.freq_dom[kd],
+                    n.freq_lem[kd]])
             ws.append(row)
+        wb.save(title)
+        return
+        # DEPRECATED
         # Second Sheet
         FIRST_X = 20
         ws = wb.create_sheet('1seg best ' + str(FIRST_X) + ' by dom')
@@ -1508,15 +1752,16 @@ def init(debug):
     #OneSegNoun.lex(c2n, 2, 'two_seg_both.xlsx')
     #OneSegNoun.lex(c2n, 'couple', 'two_seg_couple.xlsx')
     #OneSegNoun.lex(final, 2, 'heads_all.xlsx')
-    OneSegNoun.lex(c1n, 0, output=False)
-    OneSegNoun.disciplinary()
-    res = OneSegNoun.select(moy=0.0030)
+    #OneSegNoun.lex(c1n, 0, output=False)
+    OneSegNoun.lex(final, 2, output=False)
+    OneSegNoun.disciplinary(None, verbose=True, to_excel=True)
+    res = OneSegNoun.select(moy_dom=0.0030)
     in_tutin = 0
     for i in res:
         print(i)
         if i.lemma in TUTIN: in_tutin += 1
     print('In TUTIN=', in_tutin, '/', len(res))
-    #ssOneSegNoun.to_sheet("one_seg.xlsx")
+    OneSegNoun.to_sheet("one_seg.xlsx")
     
     if not just_load:
         #Word.write_unknown_lemma()
