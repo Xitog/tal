@@ -55,6 +55,9 @@ import whiteboard as wb # Dynamic code
 
 # Other
 import openpyxl # only pour make_lexique
+from openpyxl.cell import WriteOnlyCell
+from openpyxl.styles import PatternFill, Font
+from openpyxl.comments import Comment
 
 #-------------------------------------------------
 # Handling lexiques
@@ -1022,6 +1025,16 @@ def sweet(dom):
     return SWEET[dom]
 
 
+def cell(ws, value, bold=False, background=None, color='00000000'):
+    c = WriteOnlyCell(ws, value=value)
+    if background is not None:
+        back = PatternFill(start_color=background, end_color=background, fill_type='solid')
+    c.fill = back
+    c.font = Font(name='Calibri', bold=bold, color=color)
+    c.comment = Comment(text="A comment", author="DG")
+    return c
+    
+    
 class OneSegNoun:
     
     NOUNS   = {}
@@ -1184,10 +1197,10 @@ class OneSegNoun:
     
     
     @classmethod
-    def lex(cls, data, segnum=0, title='one_seg.xlsx', output=True):
+    def lex(cls, data, segnum=0, title='one_seg.xlsx', output=True, calc=True):
         if segnum == 2: # do both for 2 seg titles
-            cls.lex(data, segnum=0, output=False)
-            cls.lex(data, segnum=1, output=False)
+            cls.lex(data, segnum=0, output=False, calc=False)
+            cls.lex(data, segnum=1, output=False, calc=False)
         elif segnum == 'couple': # do by couple head1--head2 for 2 seg titles
             for kt, t in data.items():
                 if t.nb_segments != 2: # t.segments contient aussi des seg non segmentant ! (. finaux)
@@ -1227,18 +1240,24 @@ class OneSegNoun:
                         else:
                             lemma = word.lemma
                         cls.record(lemma, word.pos, head, t.domain)
-        cls.calc()
+        if calc: # MUST BE CALLED ONLY ONCE! OR HEADS of DOM are counted twice!
+            cls.calc()
         if output:
-                cls.to_sheet(title)
+            cls.to_sheet(title)
     
 
+    ALREADY_CALC = False
+    
     @classmethod
     def calc(cls):
+        print('>>> CALC')
+        if cls.ALREADY_CALC: raise Exception("Calc must be called only once!")
+        else: cls.ALREADY_CALC = True
         NBDOM = len(OneSegNoun.DOMAINS)
         for kd, d in cls.DOMAINS.items():
             d.count()
         for k, n in cls.NOUNS.items():
-            n.nb_doms = len(n.nb_head)-1 # ATTENTION APRES len(n.nb_head)-1 == NBDOM et pas NBDOM où la tête est présente !
+            n.nb_doms = 0 # len(n.nb_head)-1 # ATTENTION APRES len(n.nb_head)-1 == NBDOM et pas NBDOM où la tête est présente !
             # Calcul de la moyenne des fréquence dans les domaines
             n.freq_dom = {}
             n.freq_lem = {}
@@ -1246,6 +1265,8 @@ class OneSegNoun:
                 if kd == 'all': continue
                 if kd not in n.nb_head: # ON AJOUTE LES DOMAINES OU IL N'Y A PAS LA TETE
                     n.nb_head[kd] = 0
+                if n.nb_head[kd] > 0:
+                    n.nb_doms += 1
                 n.freq_dom[kd] = n.nb_head[kd] / dom.total_heads
                 if n.nb_head['all'] == 0:
                     n.freq_lem[kd] = 0
@@ -1257,9 +1278,11 @@ class OneSegNoun:
             n.ect_lem = fmoy(n.freq_lem.values())
             # High lem
             n.high_lem = 0
+            n.high_dom = []
             for kd, dom in cls.DOMAINS.items():
-                if abs(n.freq_lem[kd] - n.moy_lem) > 3 * n.ect_lem:
+                if n.freq_dom[kd] >= OneSegNoun.SEUIL_MINI_FREQ and abs(n.freq_lem[kd] - n.moy_lem) > 3 * n.ect_lem:
                     n.high_lem += 1
+                    n.high_dom.append(kd)
             # Calcul du nombre qui respecte avant "gap"
             GAP = 0.001
             nb = 1
@@ -1342,6 +1365,7 @@ class OneSegNoun:
 
     @classmethod
     def disciplinary(cls, display_limit=None, verbose=True, to_excel=False):
+        if not cls.ALREADY_CALC: raise Exception("Calc must be called before!")
         info = {}
         for kd, d in cls.DOMAINS.items():
             if d.total_heads * OneSegNoun.SEUIL_MINI_FREQ < 1: continue
@@ -1403,18 +1427,32 @@ class OneSegNoun:
             ws.append(['', Domain.total_heads, '', fmoy(freq_sel), '', fmoy(freq_kept)])
             ws.append(['', '', '', fect(freq_sel), '', fect(freq_kept)])
             ws.append(['', '', '', frsd(freq_sel), '', frsd(freq_kept)])
-            wb.save("disc.xlsx")
+            # Lemma
+            ws = wb.create_sheet('lemma')
+            ws.append(
+                [cell(ws, value='Lemma', bold=True, background='00D3D3D3'),
+                 cell(ws, value='POS', bold=True, background='00D3D3D3'),
+                 cell(ws, value='Nb Dom', bold=True, background='00D3D3D3'),
+                 cell(ws, value='Spe Dom', bold=True, background='00D3D3D3')])
+            for k, n in cls.NOUNS.items():
+                if n.high_lem > 0:
+                    row = [n.lemma, n.pos, n.nb_doms, n.high_lem]
+                    for kd in n.high_dom:
+                        row.append(sweet(kd))
+                    ws.append(row)
+            wb.save("heads_disc.xlsx")
         return
 
     
     @classmethod
     def to_sheet(cls, title):
+        if not cls.ALREADY_CALC: raise Exception("Calc must be called before!")
         wb = openpyxl.Workbook(write_only=True)
         ws = wb.create_sheet('1seg head')
         # Title
         nbdom = ' (' + str(len(cls.DOMAINS)) + ')'
         title_row = ['LEMMA', 'POS', 'Tutin', 'NB HEAD', '%', 'NB OCC', '%', 'HEAD/OCC', 'NBDOM-HD' + nbdom,
-                     '%NBDOM-HD', 'Moy DOM', 'Moy LEM', 'Med', 'ECT DOM', 'ECT LEM', 'HIGH LEM', 'NBDOM OCC' + nbdom,
+                     '%NBDOM-HD', 'Moy DOM', 'Med DOM', 'ECT DOM', 'Moy LEM', 'ECT LEM', 'HIGH LEM', 'NBDOM OCC' + nbdom,
                      'DISC', 'GAP']
         for i in range(0, len(cls.DOMAINS)):
             title_row.extend(['Dom', 'nb', 'f/dom', 'f/lem'])
@@ -1433,11 +1471,11 @@ class OneSegNoun:
                    nb_occ / Domain.total_nouns,     # % de toutes les occurrences
                    nb_head / nb_occ,                # rapport HEAD / OCC
                    n.nb_doms,                       # NB Dom où la tête est présente, remove 'all'
-                   n.nb_doms / 27,                  # % du NB Dom où tête présente / NB Dom
+                   n.nb_doms / len(cls.DOMAINS),    # % du NB Dom où tête présente / NB Dom
                    n.moy_dom,                       # Fréquence moyenne pour heads du dom
-                   n.moy_lem,                       # Fréquence moyenne pour lem
                    n.med,                           # Médiane
                    n.ect_dom,                       # écart-type des freqs par rapport aux heads du dom
+                   n.moy_lem,                       # Fréquence moyenne pour lem
                    n.ect_lem,                       # écart-type des freqs par rapport au lem,
                    n.high_lem,                      # nb of dom where freq_lem >= ect_lem * 3
                    len(n.nb_occ)-1,                 # NB Dom où l'occ est présente, remove 'all'
@@ -1754,7 +1792,7 @@ def init(debug):
     #OneSegNoun.lex(final, 2, 'heads_all.xlsx')
     #OneSegNoun.lex(c1n, 0, output=False)
     OneSegNoun.lex(final, 2, output=False)
-    OneSegNoun.disciplinary(None, verbose=True, to_excel=True)
+    #OneSegNoun.disciplinary(None, verbose=True, to_excel=True) # ok
     res = OneSegNoun.select(moy_dom=0.0030)
     in_tutin = 0
     for i in res:
