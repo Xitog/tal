@@ -1111,6 +1111,7 @@ class OneSegNoun:
         '?Nietzsche::NPP' : 'Nietzsche::NPP',
         '?Kant::NPP' : 'Kant::NPP',
         '?Foucault::NPP' : 'Foucault::NPP',
+        'Henri ?Poincaré::NPP' : 'Henri Poincaré::NPP',
         '?Poincaré::NPP' : 'Poincaré::NPP',
         '?Habermas::NPP' : 'Harbermas::NPP',
         '?Marx::NPP' : 'Marx::NPP',
@@ -1134,6 +1135,7 @@ class OneSegNoun:
         '?Splines::NPP' : 'spline::NC',
         '?Maths::NPP' : 'maths::NC',
         '?Mixmod::NPP' : 'Mixmod::NPP',
+        '?MIXMOD::NPP' : 'Mixmod::NPP',
         '?Pancyclisme::NC' : 'pancyclisme::NC',
         '?Monoïdes::NPP' : 'monoïde::NC',
         '?Finitude::NPP' : 'finitude::NC',
@@ -1175,7 +1177,10 @@ class OneSegNoun:
         '?Freud::NPP' : 'Freud::NPP',
         '?Etat::NPP' : 'État::NC',
         '?Global ?Risk::NPP' : 'risque::NC',
-        '?indicateus::NC' : 'indicateur::NC'
+        '?indicateus::NC' : 'indicateur::NC',
+        '?Synthčse::NPP' : 'synthèse::NC',
+        '?carbènes::NC' : 'carbène::NC',
+        '?sol::NC' : 'sol::NC',
     }
 
     
@@ -1231,12 +1236,17 @@ class OneSegNoun:
                             lemma = word.lemma + ' ' + t.words[cpt + 1].lemma # 'André Breton'
                         elif cpt + 2 < len(t.words) and t.words[cpt + 1].lemma == 'de' and t.words[cpt + 2].lemma == 'NPP':
                             lemma = word.lemma + ' de ' + t.words[cpt + 2].lemma # Bernard de Clairvaux
-                        elif cpt > 0 and t.words[cpt - 1].lemma == 'saint':
-                            lemma = t.words[cpt - 1].lemma + ' ' + word.lemma
+                        elif cpt > 0 and word.pos == 'NPP' and t.words[cpt - 1].lemma == 'saint':
+                            lemma = t.words[cpt - 1].lemma + ' ' + word.lemma # Saint Bernard
                         elif cpt + 2 < len(t.words) and word.lemma in ['?E', '?e'] and t.words[cpt + 1].lemma == '-': #and ('E-' in t.text or 'e-' in t.text):
                             lemma = 'e-' + t.words[cpt + 2].lemma # e-management
                         elif cpt + 2 < len(t.words) and word.lemma in ['?Semi', '?semi'] and t.words[cpt + 1].lemma == '-': #and ('Semi-' in t.text or 'semi-' in t.text):
                             lemma = 'semi-' + t.words[cpt + 2].lemma # semi-figement
+                        elif word.lemma == '?s':
+                            if cpt > 1 and t.words[cpt-1].lemma in ['(', '.'] and t.words[cpt-2].pos in ['NC', 'NPP']:
+                                lemma = t.words[cpt - 2].lemma # *mobilité*(_s_), *mobilité*._s_
+                            elif cpt + 2 < len(t.words) and t.words[cpt+1].lemma == ')' and t.words[cpt+2].pos in ['NC', 'NPP']:
+                                lemma = t.words[cpt + 2].lemma # Quelle(_s_) *diversité*(s)
                         else:
                             lemma = word.lemma
                         cls.record(lemma, word.pos, head, t.domain)
@@ -1375,6 +1385,8 @@ class OneSegNoun:
                 f = n.freq_dom[kd]
                 if f < OneSegNoun.SEUIL_MINI_FREQ: continue
                 filt1.append(n)
+            # nb_head => les lemmes différents !
+            # total_heads => l'ensemble des têtes
             info[kd] = { 'sel' : len(filt1), 'freq_sel' : len(filt1) / d.nb_heads }
             print(f'for domain {kd:10} we select {len(filt1):5d} heads / {d.nb_heads:6d} (', round(len(filt1) / d.nb_heads * 100, 2),')')
             filt2 = [] # ancien filtre
@@ -1408,13 +1420,14 @@ class OneSegNoun:
                 #for n in filt2bis:
                 #    if n not in filt2:
                 #        print('repéché :', n)
-                print('------- Unknown -------')
-                for u in unknown:
-                    print(u.lemma, u.pos, u.nb_head[kd])
+                if len(unknown) > 0:
+                    print('------- Unknown -------')
+                    for u in unknown:
+                        print(u.lemma, u.pos, u.nb_head[kd])
         if to_excel:
             wb = openpyxl.Workbook(write_only=True)
             ws = wb.create_sheet('disciplinary')
-            ws.append(['Dom', 'Nb heads', 'Sel', '%', 'Kept', '%'])
+            ws.append(['Dom', 'Total heads', 'Nb heads', 'Sel', '%', 'Kept', '%'])
             freq_sel = []
             freq_kept = []
             for kd, i in info.items():
@@ -1423,7 +1436,7 @@ class OneSegNoun:
                 #if kd == 'NONE': continue
                 freq_sel.append(i['freq_sel'])
                 freq_kept.append(i['freq_kept'])
-                ws.append([sweet(kd), dom.total_heads, i['sel'], i['freq_sel'], i['kept'], i['freq_kept']])
+                ws.append([sweet(kd), dom.total_heads, dom.nb_heads, i['sel'], i['freq_sel'], i['kept'], i['freq_kept']])
             ws.append(['', Domain.total_heads, '', fmoy(freq_sel), '', fmoy(freq_kept)])
             ws.append(['', '', '', fect(freq_sel), '', fect(freq_kept)])
             ws.append(['', '', '', frsd(freq_sel), '', frsd(freq_kept)])

@@ -2,53 +2,53 @@
 [INFO] --- Domain recode dictionary loaded
 
 [RUN ] --- read_titles_metadata @data\total-articles-HAL.tsv
-[INFO] --- Started at 2019-08-03 11:52:43.365808
+[INFO] --- Started at 2019-08-06 00:03:06.738228
 [INFO] --- 339687 lines.
 [INFO] --- 339687 titles.
-[INFO] --- Ending at 2019-08-03 11:52:47.089455
-[INFO] --- Script has ended [0:00:03.723647 elapsed].
+[INFO] --- Ending at 2019-08-06 00:03:10.758077
+[INFO] --- Script has ended [0:00:04.019849 elapsed].
 
 [RUN ] --- read_update_from_talismane_data @ data\output_tal_01.txt
-[INFO] --- Started at 2019-08-03 11:52:47.126491
+[INFO] --- Started at 2019-08-06 00:03:10.795139
 [INFO] --- Lines read: 997068
 [INFO] --- Titles updated: 57378
-[INFO] --- Ending at 2019-08-03 11:52:51.563637
-[INFO] --- Script has ended [0:00:04.437146 elapsed].
+[INFO] --- Ending at 2019-08-06 00:03:15.269276
+[INFO] --- Script has ended [0:00:04.474137 elapsed].
 
 [RUN ] --- read_update_from_talismane_data @ data\output_tal_02.txt
-[INFO] --- Started at 2019-08-03 11:52:51.611678
+[INFO] --- Started at 2019-08-06 00:03:15.333325
 [INFO] --- Lines read: 997081
 [INFO] --- Titles updated: 56801
-[INFO] --- Ending at 2019-08-03 11:52:55.986802
-[INFO] --- Script has ended [0:00:04.375124 elapsed].
+[INFO] --- Ending at 2019-08-06 00:03:19.853528
+[INFO] --- Script has ended [0:00:04.520203 elapsed].
 
 [RUN ] --- read_update_from_talismane_data @ data\output_tal_03.txt
-[INFO] --- Started at 2019-08-03 11:52:56.038820
+[INFO] --- Started at 2019-08-06 00:03:19.905566
 [INFO] --- Lines read: 997068
 [INFO] --- Titles updated: 56719
-[INFO] --- Ending at 2019-08-03 11:53:00.676120
-[INFO] --- Script has ended [0:00:04.637300 elapsed].
+[INFO] --- Ending at 2019-08-06 00:03:24.407794
+[INFO] --- Script has ended [0:00:04.502228 elapsed].
 
 [RUN ] --- read_update_from_talismane_data @ data\output_tal_04.txt
-[INFO] --- Started at 2019-08-03 11:53:00.728156
+[INFO] --- Started at 2019-08-06 00:03:24.478809
 [INFO] --- Lines read: 997082
 [INFO] --- Titles updated: 57704
-[INFO] --- Ending at 2019-08-03 11:53:05.450514
-[INFO] --- Script has ended [0:00:04.722358 elapsed].
+[INFO] --- Ending at 2019-08-06 00:03:29.131145
+[INFO] --- Script has ended [0:00:04.652336 elapsed].
 
 [RUN ] --- read_update_from_talismane_data @ data\output_tal_05.txt
-[INFO] --- Started at 2019-08-03 11:53:05.562594
+[INFO] --- Started at 2019-08-06 00:03:29.196155
 [INFO] --- Lines read: 997071
 [INFO] --- Titles updated: 56198
-[INFO] --- Ending at 2019-08-03 11:53:09.307276
-[INFO] --- Script has ended [0:00:03.744682 elapsed].
+[INFO] --- Ending at 2019-08-06 00:03:33.125941
+[INFO] --- Script has ended [0:00:03.929786 elapsed].
 
 [RUN ] --- read_update_from_talismane_data @ data\output_tal_06.txt
-[INFO] --- Started at 2019-08-03 11:53:09.355291
+[INFO] --- Started at 2019-08-06 00:03:33.173977
 [INFO] --- Lines read: 997091
 [INFO] --- Titles updated: 54886
-[INFO] --- Ending at 2019-08-03 11:53:14.611029
-[INFO] --- Script has ended [0:00:05.255738 elapsed].
+[INFO] --- Ending at 2019-08-06 00:03:38.224558
+[INFO] --- Script has ended [0:00:05.050581 elapsed].
 
 [INFO] --- Total Titles : 339687
 t111 is available : 171890
@@ -72,8 +72,8 @@ Set titles to one of these values to change the corpus requested.
 Set titles to old to reset to ALL titles
 NB titles is set to final
 >>> CALC
-for domain 0.math     we select   206 heads /    889 ( 23.17 )
-for domain 0.math     we kept      38 heads /    889 ( 4.27 )
+for domain 0.math     we select   206 heads /    888 ( 23.2 )
+for domain 0.math     we kept      38 heads /    888 ( 4.28 )
     lemma             POS    F / dom F / o  occ [ /   dom  /   occ
     estimation         NC   0.037158 0.176  102 [ /  2745  /   579 ] 4 
     théorème           NC   0.009107 0.568   25 [ /  2745  /    44 ] 1 old
@@ -101,7 +101,8 @@ for domain 0.math     we kept      38 heads /    889 ( 4.27 )
     interpolation      NC   0.001457 0.222    4 [ /  2745  /    18 ] 1 
     dérivation         NC   0.001457 0.154    4 [ /  2745  /    26 ] 1 
     minoration         NC   0.001457 0.800    4 [ /  2745  /     5 ] 1 old
-    Henri ?Poincaré    NPP  0.001457 0.200    4 [ /  2745  /    20 ] 2 
+    Henri Poincaré     NPP  0.001457 0.200    4 [ /  2745  /    20 ] 2 
+    Mixmod             NPP  0.001457 1.000    4 [ /  2745  /     4 ] 1 old
     ondelette          NC   0.001457 0.571    4 [ /  2745  /     7 ] 1 old
     filtration         NC   0.001457 0.250    4 [ /  2745  /    16 ] 2 
     combinatoire       NC   0.001093 0.375    3 [ /  2745  /     8 ] 1 
@@ -111,13 +112,11 @@ for domain 0.math     we kept      38 heads /    889 ( 4.27 )
     imputation         NC   0.001093 0.231    3 [ /  2745  /    13 ] 1 
     consistance        NC   0.001093 0.231    3 [ /  2745  /    13 ] 1 
     récréation         NC   0.001093 0.500    3 [ /  2745  /     6 ] 1 old
-    ?MIXMOD            NPP  0.001093 1.000    3 [ /  2745  /     3 ] 1 old
     ?Cartomagie        NPP  0.001093 1.000    3 [ /  2745  /     3 ] 1 old
 ------- Unknown -------
-?MIXMOD NPP 3
 ?Cartomagie NPP 3
-for domain 1.shs.infocom we select   199 heads /   2025 ( 9.83 )
-for domain 1.shs.infocom we kept      28 heads /   2025 ( 1.38 )
+for domain 1.shs.infocom we select   199 heads /   2028 ( 9.81 )
+for domain 1.shs.infocom we kept      28 heads /   2028 ( 1.38 )
     lemma             POS    F / dom F / o  occ [ /   dom  /   occ
     communication      NC   0.010767 0.260   81 [ /  7523  /   312 ] 2 
     média              NC   0.006912 0.531   52 [ /  7523  /    98 ] 1 old
@@ -147,9 +146,8 @@ for domain 1.shs.infocom we kept      28 heads /   2025 ( 1.38 )
     publicité          NC   0.001063 0.190    8 [ /  7523  /    42 ] 1 
     promesse           NC   0.001063 0.163    8 [ /  7523  /    49 ] 1 
     $URL$              NPP  0.001063 0.444    8 [ /  7523  /    18 ] 1 
-------- Unknown -------
-for domain 1.shs.droit we select   198 heads /   4156 ( 4.76 )
-for domain 1.shs.droit we kept     112 heads /   4156 ( 2.69 )
+for domain 1.shs.droit we select   198 heads /   4166 ( 4.75 )
+for domain 1.shs.droit we kept     112 heads /   4166 ( 2.69 )
     lemma             POS    F / dom F / o  occ [ /   dom  /   occ
     droit              NC   0.041594 0.779 1098 [ / 26398  /  1410 ] 1 old
     chronique          NC   0.014509 0.696  383 [ / 26398  /   550 ] 1 old
@@ -263,9 +261,8 @@ for domain 1.shs.droit we kept     112 heads /   4156 ( 2.69 )
     exception          NC   0.001023 0.482   27 [ / 26398  /    56 ] 1 
     plaidoyer          NC   0.001023 0.290   27 [ / 26398  /    93 ] 1 
     décret             NC   0.001023 0.794   27 [ / 26398  /    34 ] 1 old
-------- Unknown -------
-for domain 1.shs.ling we select   186 heads /   3402 ( 5.47 )
-for domain 1.shs.ling we kept      63 heads /   3402 ( 1.85 )
+for domain 1.shs.ling we select   185 heads /   3415 ( 5.42 )
+for domain 1.shs.ling we kept      62 heads /   3415 ( 1.82 )
     lemma             POS    F / dom F / o  occ [ /   dom  /   occ
     langue             NC   0.011153 0.474  173 [ / 15512  /   365 ] 1 
     discours           NC   0.007220 0.243  112 [ / 15512  /   461 ] 1 
@@ -325,15 +322,12 @@ for domain 1.shs.ling we kept      63 heads /   3402 ( 1.85 )
     repère             NC   0.001096 0.185   17 [ / 15512  /    92 ] 1 
     pronom             NC   0.001031 0.615   16 [ / 15512  /    26 ] 1 old
     séquence           NC   0.001031 0.242   16 [ / 15512  /    66 ] 1 
-    ?s                 NPP  0.001031 0.213   16 [ / 15512  /    75 ] 1 
     liaison            NC   0.001031 0.200   16 [ / 15512  /    80 ] 1 
     parler             NC   0.001031 0.941   16 [ / 15512  /    17 ] 1 old
     style              NC   0.001031 0.188   16 [ / 15512  /    85 ] 1 
     locution           NC   0.001031 0.842   16 [ / 15512  /    19 ] 1 old
-------- Unknown -------
-?s NPP 16
-for domain 1.shs.gestion we select   180 heads /   3527 ( 5.1 )
-for domain 1.shs.gestion we kept      86 heads /   3527 ( 2.44 )
+for domain 1.shs.gestion we select   180 heads /   3529 ( 5.1 )
+for domain 1.shs.gestion we kept      86 heads /   3529 ( 2.44 )
     lemma             POS    F / dom F / o  occ [ /   dom  /   occ
     cas                NC   0.041495 0.238 1077 [ / 25955  /  4518 ] 1 
     analyse            NC   0.024542 0.159  637 [ / 25955  /  4013 ] 2 
@@ -421,9 +415,8 @@ for domain 1.shs.gestion we kept      86 heads /   3527 ( 2.44 )
     opportunité        NC   0.001002 0.286   26 [ / 25955  /    91 ] 1 
     normalisation      NC   0.001002 0.260   26 [ / 25955  /   100 ] 1 
     confiance          NC   0.001002 0.426   26 [ / 25955  /    61 ] 1 
-------- Unknown -------
-for domain 0.phys     we select   140 heads /   3585 ( 3.91 )
-for domain 0.phys     we kept     100 heads /   3585 ( 2.79 )
+for domain 0.phys     we select   140 heads /   3584 ( 3.91 )
+for domain 0.phys     we kept     100 heads /   3584 ( 2.79 )
     lemma             POS    F / dom F / o  occ [ /   dom  /   occ
     étude              NC   0.080575 0.361 2471 [ / 30667  /  6842 ] 1 
     modélisation       NC   0.035478 0.468 1088 [ / 30667  /  2324 ] 1 
@@ -459,7 +452,7 @@ for domain 0.phys     we kept     100 heads /   3585 ( 2.79 )
     contrôle           NC   0.004337 0.200  133 [ / 30667  /   665 ] 3 
     interaction        NC   0.004076 0.244  125 [ / 30667  /   513 ] 1 
     remarque           NC   0.003978 0.200  122 [ / 30667  /   611 ] 1 
-    synthèse           NC   0.003489 0.190  107 [ / 30667  /   562 ] 2 
+    synthèse           NC   0.003489 0.189  107 [ / 30667  /   565 ] 2 
     antenne            NC   0.003391 0.680  104 [ / 30667  /   153 ] 2 old
     dispositif         NC   0.003359 0.186  103 [ / 30667  /   553 ] 1 
     observation        NC   0.003293 0.213  101 [ / 30667  /   475 ] 2 
@@ -525,9 +518,8 @@ for domain 0.phys     we kept     100 heads /   3585 ( 2.79 )
     préparation        NC   0.001076 0.311   33 [ / 30667  /   106 ] 2 
     relaxation         NC   0.001043 0.762   32 [ / 30667  /    42 ] 1 old
     prévision          NC   0.001043 0.311   32 [ / 30667  /   103 ] 1 
-------- Unknown -------
-for domain 1.shs.anthro we select   197 heads /   2574 ( 7.65 )
-for domain 1.shs.anthro we kept      20 heads /   2574 ( 0.78 )
+for domain 1.shs.anthro we select   197 heads /   2573 ( 7.66 )
+for domain 1.shs.anthro we kept      20 heads /   2573 ( 0.78 )
     lemma             POS    F / dom F / o  occ [ /   dom  /   occ
     anthropologie      NC   0.009795 0.420   68 [ /  6942  /   162 ] 1 
     ethnographie       NC   0.004177 0.305   29 [ /  6942  /    95 ] 1 
@@ -549,7 +541,6 @@ for domain 1.shs.anthro we kept      20 heads /   2574 ( 0.78 )
     sacrifice          NC   0.001008 0.259    7 [ /  6942  /    27 ] 1 
     anthropologue      NC   0.001008 0.500    7 [ /  6942  /    14 ] 1 old
     émeute             NC   0.001008 0.219    7 [ /  6942  /    32 ] 1 
-------- Unknown -------
 for domain 1.shs.hist we select   163 heads /   6984 ( 2.33 )
 for domain 1.shs.hist we kept      70 heads /   6984 ( 1.0 )
     lemma             POS    F / dom F / o  occ [ /   dom  /   occ
@@ -568,7 +559,7 @@ for domain 1.shs.hist we kept      70 heads /   6984 ( 1.0 )
     identité           NC   0.002571 0.152   66 [ / 25671  /   435 ] 2 
     archive            NC   0.002493 0.325   64 [ / 25671  /   197 ] 1 
     enquête            NC   0.002493 0.148   64 [ / 25671  /   431 ] 2 
-    voyage             NC   0.002337 0.247   60 [ / 25671  /   243 ] 2 
+    voyage             NC   0.002376 0.250   61 [ / 25671  /   244 ] 2 
     vie                NC   0.002337 0.200   60 [ / 25671  /   300 ] 1 
     origine            NC   0.002298 0.166   59 [ / 25671  /   355 ] 1 
     lieu               NC   0.002220 0.200   57 [ / 25671  /   285 ] 2 
@@ -595,12 +586,12 @@ for domain 1.shs.hist we kept      70 heads /   6984 ( 1.0 )
     lettre             NC   0.001636 0.266   42 [ / 25671  /   158 ] 2 
     siècle             NC   0.001558 0.244   40 [ / 25671  /   164 ] 1 
     bibliothèque       NC   0.001558 0.247   40 [ / 25671  /   162 ] 2 
+    évêque             NC   0.001519 0.867   39 [ / 25671  /    45 ] 1 old
     présence           NC   0.001519 0.214   39 [ / 25671  /   182 ] 2 
     noblesse           NC   0.001519 0.765   39 [ / 25671  /    51 ] 1 old
     élite              NC   0.001519 0.411   39 [ / 25671  /    95 ] 1 
     communauté         NC   0.001519 0.181   39 [ / 25671  /   216 ] 1 
     mort               NC   0.001480 0.266   38 [ / 25671  /   143 ] 2 
-    évêque             NC   0.001441 0.860   37 [ / 25671  /    43 ] 1 old
     portrait           NC   0.001441 0.178   37 [ / 25671  /   208 ] 3 
     face               NC   0.001441 0.224   37 [ / 25671  /   165 ] 1 
     invention          NC   0.001441 0.167   37 [ / 25671  /   221 ] 2 
@@ -623,9 +614,8 @@ for domain 1.shs.hist we kept      70 heads /   6984 ( 1.0 )
     Jean               NPP  0.001013 0.211   26 [ / 25671  /   123 ] 2 
     traité             NC   0.001013 0.325   26 [ / 25671  /    80 ] 1 
     historien          NC   0.001013 0.500   26 [ / 25671  /    52 ] 1 old
-------- Unknown -------
-for domain 0.sde      we select   183 heads /   1972 ( 9.28 )
-for domain 0.sde      we kept      22 heads /   1972 ( 1.12 )
+for domain 0.sde      we select   183 heads /   1971 ( 9.28 )
+for domain 0.sde      we kept      22 heads /   1971 ( 1.12 )
     lemma             POS    F / dom F / o  occ [ /   dom  /   occ
     bibliographie      NC   0.008418 0.453   63 [ /  7484  /   139 ] 1 
     brève              NC   0.008418 0.984   63 [ /  7484  /    64 ] 1 old
@@ -642,16 +632,15 @@ for domain 0.sde      we kept      22 heads /   1972 ( 1.12 )
     recension          NC   0.001737 0.232   13 [ /  7484  /    56 ] 1 
     muraille           NC   0.001603 0.600   12 [ /  7484  /    20 ] 1 old
     clé                NC   0.001603 0.150   12 [ /  7484  /    80 ] 1 
+    sol                NC   0.001470 0.208   11 [ /  7484  /    53 ] 1 
     espèce             NC   0.001470 0.262   11 [ /  7484  /    42 ] 1 
     contamination      NC   0.001470 0.282   11 [ /  7484  /    39 ] 1 
     parc               NC   0.001203 0.153    9 [ /  7484  /    59 ] 1 
     cadastre           NC   0.001203 0.562    9 [ /  7484  /    16 ] 1 old
-    sol                NC   0.001069 0.211    8 [ /  7484  /    38 ] 1 
     invasion           NC   0.001069 0.400    8 [ /  7484  /    20 ] 1 
     focus              NC   0.001069 0.229    8 [ /  7484  /    35 ] 1 
-------- Unknown -------
-for domain 1.shs.phil we select   199 heads /   2794 ( 7.12 )
-for domain 1.shs.phil we kept      31 heads /   2794 ( 1.11 )
+for domain 1.shs.phil we select   199 heads /   2797 ( 7.11 )
+for domain 1.shs.phil we kept      31 heads /   2797 ( 1.11 )
     lemma             POS    F / dom F / o  occ [ /   dom  /   occ
     philosophie        NC   0.010438 0.482   82 [ /  7856  /   170 ] 1 
     science            NC   0.008656 0.159   68 [ /  7856  /   428 ] 2 
@@ -676,7 +665,7 @@ for domain 1.shs.phil we kept      31 heads /   2794 ( 1.11 )
     réalisme           NC   0.001400 0.250   11 [ /  7856  /    44 ] 2 
     explication        NC   0.001400 0.196   11 [ /  7856  /    56 ] 1 
     vérité             NC   0.001400 0.193   11 [ /  7856  /    57 ] 1 
-    Henri ?Poincaré    NPP  0.001400 0.550   11 [ /  7856  /    20 ] 2 old
+    Henri Poincaré     NPP  0.001400 0.550   11 [ /  7856  /    20 ] 2 old
     scepticisme        NC   0.001400 0.550   11 [ /  7856  /    20 ] 1 old
     Poincaré           NPP  0.001273 0.769   10 [ /  7856  /    13 ] 1 old
     imagination        NC   0.001146 0.310    9 [ /  7856  /    29 ] 1 
@@ -684,9 +673,8 @@ for domain 1.shs.phil we kept      31 heads /   2794 ( 1.11 )
     intuition          NC   0.001146 0.600    9 [ /  7856  /    15 ] 1 old
     phénoménologie     NC   0.001018 0.364    8 [ /  7856  /    22 ] 1 
     Harbermas          NPP  0.001018 1.000    8 [ /  7856  /     8 ] 1 old
-------- Unknown -------
-for domain NONE       we select   167 heads /   5892 ( 2.83 )
-for domain NONE       we kept       6 heads /   5892 ( 0.1 )
+for domain NONE       we select   167 heads /   5896 ( 2.83 )
+for domain NONE       we kept       6 heads /   5896 ( 0.1 )
     lemma             POS    F / dom F / o  occ [ /   dom  /   occ
     art                NC   0.005140 0.226  127 [ / 24708  /   563 ] 2 
     réalisation        NC   0.001619 0.167   40 [ / 24708  /   240 ] 2 
@@ -694,7 +682,6 @@ for domain NONE       we kept       6 heads /   5892 ( 0.1 )
     imagerie           NC   0.001417 0.243   35 [ / 24708  /   144 ] 2 
     matériau           NC   0.001295 0.172   32 [ / 24708  /   186 ] 3 
     plan               NC   0.001012 0.155   25 [ / 24708  /   161 ] 2 
-------- Unknown -------
 for domain 0.sdv      we select   157 heads /   3792 ( 4.14 )
 for domain 0.sdv      we kept      71 heads /   3792 ( 1.87 )
     lemma             POS    F / dom F / o  occ [ /   dom  /   occ
@@ -769,9 +756,8 @@ for domain 0.sdv      we kept      71 heads /   3792 ( 1.87 )
     cinétique          NC   0.001129 0.417   25 [ / 22149  /    60 ] 1 
     isolement          NC   0.001084 0.686   24 [ / 22149  /    35 ] 1 old
     biodiversité       NC   0.001084 0.261   24 [ / 22149  /    92 ] 2 
-------- Unknown -------
-for domain 1.shs.archi we select   194 heads /   1615 ( 12.01 )
-for domain 1.shs.archi we kept      16 heads /   1615 ( 0.99 )
+for domain 1.shs.archi we select   194 heads /   1614 ( 12.02 )
+for domain 1.shs.archi we kept      16 heads /   1614 ( 0.99 )
     lemma             POS    F / dom F / o  occ [ /   dom  /   occ
     architecture       NC   0.014690 0.155   68 [ /  4629  /   439 ] 2 
     ambiance           NC   0.010801 0.794   50 [ /  4629  /    63 ] 1 old
@@ -789,9 +775,8 @@ for domain 1.shs.archi we kept      16 heads /   1615 ( 0.99 )
     banlieue           NC   0.001296 0.250    6 [ /  4629  /    24 ] 1 
     urbanité           NC   0.001080 0.227    5 [ /  4629  /    22 ] 1 
     habitant           NC   0.001080 0.161    5 [ /  4629  /    31 ] 1 
-------- Unknown -------
-for domain 0.info     we select   157 heads /   3272 ( 4.8 )
-for domain 0.info     we kept      74 heads /   3272 ( 2.26 )
+for domain 0.info     we select   157 heads /   3273 ( 4.8 )
+for domain 0.info     we kept      74 heads /   3273 ( 2.26 )
     lemma             POS    F / dom F / o  occ [ /   dom  /   occ
     application        NC   0.024937 0.160  405 [ / 16241  /  2525 ] 2 
     modèle             NC   0.022905 0.195  372 [ / 16241  /  1910 ] 2 
@@ -867,9 +852,8 @@ for domain 0.info     we kept      74 heads /   3272 ( 2.26 )
     recalage           NC   0.001047 0.472   17 [ / 16241  /    36 ] 1 
     séparation         NC   0.001047 0.189   17 [ / 16241  /    90 ] 1 
     borne              NC   0.001047 0.425   17 [ / 16241  /    40 ] 2 
-------- Unknown -------
-for domain 1.shs.edu  we select   190 heads /   1768 ( 10.75 )
-for domain 1.shs.edu  we kept      28 heads /   1768 ( 1.58 )
+for domain 1.shs.edu  we select   190 heads /   1769 ( 10.74 )
+for domain 1.shs.edu  we kept      28 heads /   1769 ( 1.58 )
     lemma             POS    F / dom F / o  occ [ /   dom  /   occ
     éducation          NC   0.013340 0.426  126 [ /  9445  /   296 ] 1 
     enseignement       NC   0.012070 0.170  114 [ /  9445  /   671 ] 1 
@@ -899,7 +883,6 @@ for domain 1.shs.edu  we kept      28 heads /   1768 ( 1.58 )
     étudiant           NC   0.001059 0.149   10 [ /  9445  /    67 ] 1 
     stage              NC   0.001059 0.333   10 [ /  9445  /    30 ] 1 
     e-inclusion        NPP  0.001059 1.000   10 [ /  9445  /    10 ] 1 old
-------- Unknown -------
 for domain 1.shs.litt we select   137 heads /   5127 ( 2.67 )
 for domain 1.shs.litt we kept      52 heads /   5127 ( 1.01 )
     lemma             POS    F / dom F / o  occ [ /   dom  /   occ
@@ -911,7 +894,7 @@ for domain 1.shs.litt we kept      52 heads /   5127 ( 1.01 )
     figure             NC   0.006093 0.172   87 [ / 14278  /   506 ] 1 
     poésie             NC   0.005113 0.575   73 [ / 14278  /   127 ] 1 old
     traduction         NC   0.004903 0.255   70 [ / 14278  /   274 ] 2 
-    voyage             NC   0.004412 0.259   63 [ / 14278  /   243 ] 2 
+    voyage             NC   0.004412 0.258   63 [ / 14278  /   244 ] 2 
     récit              NC   0.004412 0.214   63 [ / 14278  /   295 ] 2 
     fiction            NC   0.003852 0.404   55 [ / 14278  /   136 ] 1 
     poétique           NC   0.003782 0.593   54 [ / 14278  /    91 ] 1 old
@@ -935,7 +918,7 @@ for domain 1.shs.litt we kept      52 heads /   5127 ( 1.01 )
     personnage         NC   0.001751 0.490   25 [ / 14278  /    51 ] 1 
     amour              NC   0.001681 0.316   24 [ / 14278  /    76 ] 1 
     mort               NC   0.001681 0.168   24 [ / 14278  /   143 ] 2 
-    utopie             NC   0.001611 0.161   23 [ / 14278  /   143 ] 1 
+    utopie             NC   0.001611 0.160   23 [ / 14278  /   144 ] 1 
     métamorphose       NC   0.001611 0.184   23 [ / 14278  /   125 ] 1 
     Montaigne          NPP  0.001541 0.688   22 [ / 14278  /    32 ] 1 old
     oeuvre             NC   0.001541 0.151   22 [ / 14278  /   146 ] 2 
@@ -955,9 +938,8 @@ for domain 1.shs.litt we kept      52 heads /   5127 ( 1.01 )
     réalisme           NC   0.001121 0.364   16 [ / 14278  /    44 ] 2 
     avatar             NC   0.001051 0.165   15 [ / 14278  /    91 ] 1 
     écho               NC   0.001051 0.273   15 [ / 14278  /    55 ] 1 
-------- Unknown -------
-for domain 0.scco     we select   183 heads /   1160 ( 15.78 )
-for domain 0.scco     we kept       9 heads /   1160 ( 0.78 )
+for domain 0.scco     we select   183 heads /   1161 ( 15.76 )
+for domain 0.scco     we kept       9 heads /   1161 ( 0.78 )
     lemma             POS    F / dom F / o  occ [ /   dom  /   occ
     catégorisation     NC   0.004776 0.203   15 [ /  3141  /    74 ] 1 
     psychologie        NC   0.003184 0.169   10 [ /  3141  /    59 ] 2 
@@ -968,9 +950,8 @@ for domain 0.scco     we kept       9 heads /   1160 ( 0.78 )
     ergonomie          NC   0.001592 0.172    5 [ /  3141  /    29 ] 1 
     précocité          NC   0.001592 1.000    5 [ /  3141  /     5 ] 1 old
     distorsion         NC   0.001273 0.333    4 [ /  3141  /    12 ] 2 
-------- Unknown -------
-for domain 1.shs.socio we select   182 heads /   5223 ( 3.48 )
-for domain 1.shs.socio we kept      97 heads /   5223 ( 1.86 )
+for domain 1.shs.socio we select   182 heads /   5227 ( 3.48 )
+for domain 1.shs.socio we kept      97 heads /   5227 ( 1.86 )
     lemma             POS    F / dom F / o  occ [ /   dom  /   occ
     exemple            NC   0.016976 0.172  550 [ / 32398  /  3204 ] 1 
     enjeu              NC   0.011760 0.181  381 [ / 32398  /  2110 ] 1 
@@ -986,7 +967,7 @@ for domain 1.shs.socio we kept      97 heads /   5223 ( 1.86 )
     usage              NC   0.005124 0.202  166 [ / 32398  /   823 ] 1 
     regard             NC   0.005000 0.170  162 [ / 32398  /   951 ] 1 
     travail            NC   0.004908 0.267  159 [ / 32398  /   595 ] 1 
-    mobilité           NC   0.004506 0.369  146 [ / 32398  /   396 ] 1 
+    mobilité           NC   0.004506 0.368  146 [ / 32398  /   397 ] 1 
     expérience         NC   0.004445 0.159  144 [ / 32398  /   906 ] 1 
     place              NC   0.004074 0.158  132 [ / 32398  /   833 ] 1 
     paysage            NC   0.004043 0.322  131 [ / 32398  /   407 ] 1 
@@ -1069,7 +1050,6 @@ for domain 1.shs.socio we kept      97 heads /   5223 ( 1.86 )
     métier             NC   0.001019 0.262   33 [ / 32398  /   126 ] 1 
     contexte           NC   0.001019 0.151   33 [ / 32398  /   218 ] 1 
     association        NC   0.001019 0.173   33 [ / 32398  /   191 ] 2 
-------- Unknown -------
 for domain 1.shs.geo  we select   188 heads /    604 ( 31.13 )
 for domain 1.shs.geo  we kept       9 heads /    604 ( 1.49 )
     lemma             POS    F / dom F / o  occ [ /   dom  /   occ
@@ -1082,7 +1062,6 @@ for domain 1.shs.geo  we kept       9 heads /    604 ( 1.49 )
     vigie              NC   0.001679 0.500    2 [ /  1191  /     4 ] 1 old
     SIDA               NPP  0.001679 0.667    2 [ /  1191  /     3 ] 1 old
     mutilation         NC   0.001679 0.500    2 [ /  1191  /     4 ] 1 old
-------- Unknown -------
 for domain 1.shs.archeo we select   178 heads /   3430 ( 5.19 )
 for domain 1.shs.archeo we kept      84 heads /   3430 ( 2.45 )
     lemma             POS    F / dom F / o  occ [ /   dom  /   occ
@@ -1170,11 +1149,10 @@ for domain 1.shs.archeo we kept      84 heads /   3430 ( 2.45 )
     bronze             NC   0.001045 0.636   14 [ / 13391  /    22 ] 1 old
     enclos             NC   0.001045 0.667   14 [ / 13391  /    21 ] 1 old
     faciès             NC   0.001045 0.700   14 [ / 13391  /    20 ] 1 old
-------- Unknown -------
-for domain 0.chim     we select   174 heads /    786 ( 22.14 )
-for domain 0.chim     we kept      46 heads /    786 ( 5.85 )
+for domain 0.chim     we select   173 heads /    785 ( 22.04 )
+for domain 0.chim     we kept      44 heads /    785 ( 5.61 )
     lemma             POS    F / dom F / o  occ [ /   dom  /   occ
-    synthèse           NC   0.044280 0.214  120 [ /  2710  /   562 ] 2 
+    synthèse           NC   0.045387 0.218  123 [ /  2710  /   565 ] 2 
     matériau           NC   0.015867 0.231   43 [ /  2710  /   186 ] 3 
     catalyseur         NC   0.014022 0.826   38 [ /  2710  /    46 ] 1 old
     catalyse           NC   0.013284 0.923   36 [ /  2710  /    39 ] 1 old
@@ -1201,8 +1179,7 @@ for domain 0.chim     we kept      46 heads /    786 ( 5.85 )
     chromatographie    NC   0.001476 0.500    4 [ /  2710  /     8 ] 1 old
     ?RMN               NC   0.001476 0.571    4 [ /  2710  /     7 ] 1 old
     adsorption         NC   0.001476 0.190    4 [ /  2710  /    21 ] 1 
-    ?sol               NC   0.001476 0.267    4 [ /  2710  /    15 ] 1 
-    ?carbènes          NC   0.001476 1.000    4 [ /  2710  /     4 ] 1 old
+    carbène            NC   0.001476 1.000    4 [ /  2710  /     4 ] 1 old
     acidité            NC   0.001476 1.000    4 [ /  2710  /     4 ] 1 old
     hydroconversion    NC   0.001476 1.000    4 [ /  2710  /     4 ] 1 old
     ?Chimisorption     NPP  0.001476 1.000    4 [ /  2710  /     4 ] 1 old
@@ -1216,16 +1193,12 @@ for domain 0.chim     we kept      46 heads /    786 ( 5.85 )
     enthalpie          NC   0.001107 0.600    3 [ /  2710  /     5 ] 1 old
     immobilisation     NC   0.001107 0.429    3 [ /  2710  /     7 ] 1 
     dimère             NC   0.001107 0.600    3 [ /  2710  /     5 ] 1 old
-    ?Synthčse          NPP  0.001107 1.000    3 [ /  2710  /     3 ] 1 old
     hydroformulation   NC   0.001107 1.000    3 [ /  2710  /     3 ] 1 old
     hydrodésulfuration NC   0.001107 0.750    3 [ /  2710  /     4 ] 1 old
     Peg                NPP  0.001107 1.000    3 [ /  2710  /     3 ] 1 old
 ------- Unknown -------
 ?RMN NC 4
-?sol NC 4
-?carbènes NC 4
 ?Chimisorption NPP 4
-?Synthčse NPP 3
 for domain 0.sdu      we select   195 heads /   1240 ( 15.73 )
 for domain 0.sdu      we kept      35 heads /   1240 ( 2.82 )
     lemma             POS    F / dom F / o  occ [ /   dom  /   occ
@@ -1264,9 +1237,8 @@ for domain 0.sdu      we kept      35 heads /   1240 ( 2.82 )
     précipitation      NC   0.001088 0.267    4 [ /  3675  /    15 ] 1 
     géomorphologie     NC   0.001088 0.200    4 [ /  3675  /    20 ] 1 
     monitoring         NC   0.001088 0.250    4 [ /  3675  /    16 ] 1 
-------- Unknown -------
-for domain 1.shs.art  we select   164 heads /   3369 ( 4.87 )
-for domain 1.shs.art  we kept      44 heads /   3369 ( 1.31 )
+for domain 1.shs.art  we select   164 heads /   3366 ( 4.87 )
+for domain 1.shs.art  we kept      44 heads /   3366 ( 1.31 )
     lemma             POS    F / dom F / o  occ [ /   dom  /   occ
     art                NC   0.012781 0.197  111 [ /  8685  /   563 ] 2 
     musique            NC   0.011054 0.366   96 [ /  8685  /   262 ] 2 
@@ -1291,8 +1263,8 @@ for domain 1.shs.art  we kept      44 heads /   3369 ( 1.31 )
     manuscrit          NC   0.002073 0.161   18 [ /  8685  /   112 ] 3 
     verrière           NC   0.001957 1.000   17 [ /  8685  /    17 ] 1 old
     peintre            NC   0.001957 0.630   17 [ /  8685  /    27 ] 1 old
+    scène              NC   0.001842 0.211   16 [ /  8685  /    76 ] 1 
     opéra              NC   0.001727 0.500   15 [ /  8685  /    30 ] 1 old
-    scène              NC   0.001727 0.200   15 [ /  8685  /    75 ] 1 
     hôtel              NC   0.001727 0.375   15 [ /  8685  /    40 ] 1 
     chantier           NC   0.001727 0.176   15 [ /  8685  /    85 ] 2 
     restauration       NC   0.001612 0.167   14 [ /  8685  /    84 ] 2 
@@ -1312,9 +1284,8 @@ for domain 1.shs.art  we kept      44 heads /   3369 ( 1.31 )
     compositeur        NC   0.001036 0.818    9 [ /  8685  /    11 ] 1 old
     salon              NC   0.001036 0.643    9 [ /  8685  /    14 ] 1 old
     concert            NC   0.001036 0.600    9 [ /  8685  /    15 ] 1 old
-------- Unknown -------
-for domain 1.shs.psy  we select   242 heads /    938 ( 25.8 )
-for domain 1.shs.psy  we kept      29 heads /    938 ( 3.09 )
+for domain 1.shs.psy  we select   242 heads /    939 ( 25.77 )
+for domain 1.shs.psy  we kept      29 heads /    939 ( 3.09 )
     lemma             POS    F / dom F / o  occ [ /   dom  /   occ
     psychologie        NC   0.007510 0.339   20 [ /  2663  /    59 ] 2 
     psychanalyse       NC   0.004506 0.300   12 [ /  2663  /    40 ] 1 
@@ -1345,7 +1316,6 @@ for domain 1.shs.psy  we kept      29 heads /    938 ( 3.09 )
     distorsion         NC   0.001127 0.250    3 [ /  2663  /    12 ] 2 
     questionnaire      NC   0.001127 0.167    3 [ /  2663  /    18 ] 1 
     trauma             NC   0.001127 0.429    3 [ /  2663  /     7 ] 1 
-------- Unknown -------
 for domain 1.shs.scipo we select   212 heads /   2507 ( 8.46 )
 for domain 1.shs.scipo we kept      32 heads /   2507 ( 1.28 )
     lemma             POS    F / dom F / o  occ [ /   dom  /   occ
@@ -1381,7 +1351,6 @@ for domain 1.shs.scipo we kept      32 heads /   2507 ( 1.28 )
     député             NC   0.001014 0.588   10 [ /  9864  /    17 ] 1 old
     Amérique           NPP  0.001014 0.196   10 [ /  9864  /    51 ] 1 
     nationalisme       NC   0.001014 0.312   10 [ /  9864  /    32 ] 1 
-------- Unknown -------
 développement
 mesure
 construction
