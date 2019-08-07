@@ -976,6 +976,12 @@ def fmoy(serie):
     return sum(serie)/len(serie)
 
 
+def fmed(serie):
+    # Calcul de la médiane
+    mid_elem = len(serie) // 2
+    return sorted(serie, reverse=True)[mid_elem]
+
+
 def fect(serie):
     moy = fmoy(serie)
     ect = 0
@@ -1025,13 +1031,14 @@ def sweet(dom):
     return SWEET[dom]
 
 
-def cell(ws, value, bold=False, background=None, color='00000000'):
+def cell(ws, value, bold=False, background=None, color='00000000', comment=None):
     c = WriteOnlyCell(ws, value=value)
     if background is not None:
         back = PatternFill(start_color=background, end_color=background, fill_type='solid')
     c.fill = back
     c.font = Font(name='Calibri', bold=bold, color=color)
-    c.comment = Comment(text="A comment", author="DG")
+    if comment is not None:
+        c.comment = Comment(text=comment, author="DG")
     return c
     
     
@@ -1040,7 +1047,6 @@ class OneSegNoun:
     NOUNS   = {}
     DOMAINS = {}
 
-    SEUIL_MINI_FREQ = 0.001
     CORRECTED = {
         '?évènement::NC' : 'événement::NC',
         '?Global::NPP' : None,
@@ -1257,6 +1263,8 @@ class OneSegNoun:
     
 
     ALREADY_CALC = False
+    SEUIL_FREQ = 0.004
+    SEUIL_OCC  = 1.0        # 2, 1.5, 1.0
     
     @classmethod
     def calc(cls):
@@ -1268,51 +1276,33 @@ class OneSegNoun:
             d.count()
         for k, n in cls.NOUNS.items():
             n.nb_doms = 0 # len(n.nb_head)-1 # ATTENTION APRES len(n.nb_head)-1 == NBDOM et pas NBDOM où la tête est présente !
+            n.egal_distri = n.nb_head['all'] / NBDOM
+            n.chi2 = 0
             # Calcul de la moyenne des fréquence dans les domaines
             n.freq_dom = {}
             n.freq_lem = {}
-            for kd, dom in cls.DOMAINS.items():
+            n.disc_dom = []
+            for kd, d in cls.DOMAINS.items():
                 if kd == 'all': continue
                 if kd not in n.nb_head: # ON AJOUTE LES DOMAINES OU IL N'Y A PAS LA TETE
                     n.nb_head[kd] = 0
                 if n.nb_head[kd] > 0:
                     n.nb_doms += 1
-                n.freq_dom[kd] = n.nb_head[kd] / dom.total_heads
+                n.freq_dom[kd] = n.nb_head[kd] / d.total_heads
                 if n.nb_head['all'] == 0:
                     n.freq_lem[kd] = 0
                 else:
                     n.freq_lem[kd] = n.nb_head[kd] / n.nb_head['all']
+                    n.chi2 += ((n.nb_head[kd] - n.egal_distri)**2) / n.egal_distri
+                # Disc Calc
+                if d.total_heads * OneSegNoun.SEUIL_FREQ >= 1:
+                    if n.freq_dom[kd] >= OneSegNoun.SEUIL_FREQ:
+                        if n.nb_head[kd] / n.egal_distri >= OneSegNoun.SEUIL_OCC:
+                            n.disc_dom.append(kd)
+                # End Disc Calc
             n.moy_dom = fmoy(n.freq_dom.values())
-            n.moy_lem = fmoy(n.freq_lem.values())
             n.ect_dom = fect(n.freq_dom.values())
-            n.ect_lem = fmoy(n.freq_lem.values())
-            # High lem
-            n.high_lem = 0
-            n.high_dom = []
-            for kd, dom in cls.DOMAINS.items():
-                if n.freq_dom[kd] >= OneSegNoun.SEUIL_MINI_FREQ and abs(n.freq_lem[kd] - n.moy_lem) > 3 * n.ect_lem:
-                    n.high_lem += 1
-                    n.high_dom.append(kd)
-            # Calcul du nombre qui respecte avant "gap"
-            GAP = 0.001
-            nb = 1
-            old = None
-            for k in sorted(n.freq_dom, key=n.freq_dom.get, reverse=True):
-                val = n.freq_dom[k]
-                if old is not None:
-                    gap = old - val
-                    if gap >= GAP:
-                        nb += 1
-                    else:
-                        break
-                old = val
-            n.gap = nb
-            # Calcul de la médiane
-            mid_elem = NBDOM// 2
-            n.med = n.freq_dom[sorted(n.freq_dom, key=n.freq_dom.get, reverse=True)[mid_elem]]
-            # Others
-            n.disc = (1 - (n.nb_doms / NBDOM)) * n.ect_dom  # Indicateur construit de "disciplinarité"
-            # Appartenance au lexique de Tutin (2007)
+            n.med_dom = fmed(n.freq_dom.values())
             n.in_tutin = 1 if n.lemma in TUTIN else 0
 
 
@@ -1377,30 +1367,22 @@ class OneSegNoun:
     def disciplinary(cls, display_limit=None, verbose=True, to_excel=False):
         if not cls.ALREADY_CALC: raise Exception("Calc must be called before!")
         info = {}
+        disc_domains = {}
+        all_filtered = []
         for kd, d in cls.DOMAINS.items():
-            if d.total_heads * OneSegNoun.SEUIL_MINI_FREQ < 1: continue
-            filt1 = []
-            for kn in d.best_heads:
-                n = OneSegNoun.NOUNS[kn]
-                f = n.freq_dom[kd]
-                if f < OneSegNoun.SEUIL_MINI_FREQ: continue
-                filt1.append(n)
-            # nb_head => les lemmes différents !
-            # total_heads => l'ensemble des têtes
-            info[kd] = { 'sel' : len(filt1), 'freq_sel' : len(filt1) / d.nb_heads }
-            print(f'for domain {kd:10} we select {len(filt1):5d} heads / {d.nb_heads:6d} (', round(len(filt1) / d.nb_heads * 100, 2),')')
-            filt2 = [] # ancien filtre
-            filt2bis = []
-            for n in filt1:
-                if n.freq_lem[kd] >= 0.50:
-                    filt2.append(n)
-                if n.freq_lem[kd] - n.moy_lem > 3 * n.ect_lem:
-                    filt2bis.append(n)
-            info[kd]['kept'] = len(filt2bis)
-            info[kd]['freq_kept'] = len(filt2bis) / d.nb_heads
-            print(f'for domain {kd:10} we kept   {len(filt2bis):5d} heads / {d.nb_heads:6d} (', round(len(filt2bis) / d.nb_heads * 100, 2),')')
-            res = sorted(filt2bis, key=lambda e: e.freq_dom[kd], reverse=True)
+            if d.total_heads * 0.004 < 1: continue
+            filtered = []
+            for kn, n in cls.NOUNS.items():
+                if kd in n.disc_dom:
+                    filtered.append(n)
+                    all_filtered.append(n)
+            info[kd] = { 'sel' : len(filtered), 'freq_sel' : len(filtered) / d.nb_heads }
+            info[kd]['kept'] = len(filtered)
+            info[kd]['freq_kept'] = len(filtered) / d.nb_heads
+            print(f'for domain {sweet(kd)} we select {len(filtered):5d} heads / {d.nb_heads:6d} (', round(len(filtered) / d.nb_heads * 100, 2),' %)')
             if verbose:
+                res = sorted(filtered, key=lambda e: e.freq_dom[kd], reverse=True)
+                disc_domains[kd] = []
                 unknown = []
                 print("    lemma             POS    F / dom F / o  occ [ /   dom  /   occ")
                 cpt = 0
@@ -1413,46 +1395,53 @@ class OneSegNoun:
                     # nb occ total
                     if display_limit is not None and ((type(display_limit) == float and n.freq_dom[kd] < display_limit) or (type(display_limit) == int and cpt == display_limit)): break
                     cpt += 1
-                    ok = 'old' if n in filt2 else ''
-                    print(f"    {n.lemma:18} {n.pos:4} {n.freq_dom[kd]:7.6f} {n.nb_head[kd] / n.nb_head['all']:4.3f} {n.nb_head[kd]:4d} [ / {d.total_heads:5d}  / {n.nb_head['all']:5d} ] {n.high_lem} {ok}")
+                    ok = 'old' #if n in filt2 else ''
+                    print(f"    {n.lemma:18} {n.pos:4} {n.freq_dom[kd]:7.6f} {n.nb_head[kd] / n.nb_head['all']:4.3f} {n.nb_head[kd]:4d} [ / {d.total_heads:5d}  / {n.nb_head['all']:5d} ] {len(n.disc_dom)} {ok}")
+                    disc_domains[kd].append(n)
                     if n.lemma[0] == '?':
                         unknown.append(n)
-                #for n in filt2bis:
-                #    if n not in filt2:
-                #        print('repéché :', n)
                 if len(unknown) > 0:
                     print('------- Unknown -------')
                     for u in unknown:
                         print(u.lemma, u.pos, u.nb_head[kd])
+        print('Total Selected :', len(all_filtered))
         if to_excel:
             wb = openpyxl.Workbook(write_only=True)
-            ws = wb.create_sheet('disciplinary')
+            ws = wb.create_sheet('Disciplinary')
             ws.append(['Dom', 'Total heads', 'Nb heads', 'Sel', '%', 'Kept', '%'])
             freq_sel = []
             freq_kept = []
             for kd, i in info.items():
-                dom = cls.DOMAINS[kd]
-                if dom.total_heads * OneSegNoun.SEUIL_MINI_FREQ < 1: continue
-                #if kd == 'NONE': continue
+                d = cls.DOMAINS[kd]
+                if d.total_heads * 0.004 < 1: continue
                 freq_sel.append(i['freq_sel'])
                 freq_kept.append(i['freq_kept'])
-                ws.append([sweet(kd), dom.total_heads, dom.nb_heads, i['sel'], i['freq_sel'], i['kept'], i['freq_kept']])
-            ws.append(['', Domain.total_heads, '', fmoy(freq_sel), '', fmoy(freq_kept)])
-            ws.append(['', '', '', fect(freq_sel), '', fect(freq_kept)])
-            ws.append(['', '', '', frsd(freq_sel), '', frsd(freq_kept)])
+                ws.append([sweet(kd), d.total_heads, d.nb_heads, i['sel'], i['freq_sel'], i['kept'], i['freq_kept']])
+            #ws.append(['', Domain.total_heads, '', fmoy(freq_sel), '', fmoy(freq_kept)])
+            #ws.append(['', '', '', fect(freq_sel), '', fect(freq_kept)])
+            #ws.append(['', '', '', frsd(freq_sel), '', frsd(freq_kept)])
             # Lemma
-            ws = wb.create_sheet('lemma')
+            ws = wb.create_sheet('By Lemma')
             ws.append(
                 [cell(ws, value='Lemma', bold=True, background='00D3D3D3'),
                  cell(ws, value='POS', bold=True, background='00D3D3D3'),
                  cell(ws, value='Nb Dom', bold=True, background='00D3D3D3'),
-                 cell(ws, value='Spe Dom', bold=True, background='00D3D3D3')])
-            for k, n in cls.NOUNS.items():
-                if n.high_lem > 0:
-                    row = [n.lemma, n.pos, n.nb_doms, n.high_lem]
-                    for kd in n.high_dom:
-                        row.append(sweet(kd))
-                    ws.append(row)
+                 cell(ws, value='Disc Dom', bold=True, background='00D3D3D3'),
+                 cell(ws, value='%', bold=True, background='00D3D3D3')
+                 ])
+            for n in all_filtered:
+                row = [n.lemma, n.pos, n.nb_doms, len(n.disc_dom), len(n.disc_dom) /  n.nb_doms]
+                for kd in n.disc_dom:
+                    row.append(sweet(kd))
+                ws.append(row)
+            # Domain
+            ws = wb.create_sheet('By Domain')
+            ws.append([cell(ws, value='Domain', bold=True, background='00D3D3D3')])
+            for kd, nouns in disc_domains.items():
+                row = [sweet(kd)]
+                for n in nouns:
+                    row.append(n.lemma + ' ' + n.pos)
+                ws.append(row)
             wb.save("heads_disc.xlsx")
         return
 
@@ -1465,8 +1454,7 @@ class OneSegNoun:
         # Title
         nbdom = ' (' + str(len(cls.DOMAINS)) + ')'
         title_row = ['LEMMA', 'POS', 'Tutin', 'NB HEAD', '%', 'NB OCC', '%', 'HEAD/OCC', 'NBDOM-HD' + nbdom,
-                     '%NBDOM-HD', 'Moy DOM', 'Med DOM', 'ECT DOM', 'Moy LEM', 'ECT LEM', 'HIGH LEM', 'NBDOM OCC' + nbdom,
-                     'DISC', 'GAP']
+                     '%NBDOM-HD', 'Moy DOM', 'Med DOM', 'ECT DOM', 'NBDOM OCC' + nbdom]
         for i in range(0, len(cls.DOMAINS)):
             title_row.extend(['Dom', 'nb', 'f/dom', 'f/lem'])
         ws.append(title_row)
@@ -1474,7 +1462,7 @@ class OneSegNoun:
         for k, n in cls.NOUNS.items():
             nb_occ = n.nb_occ['all']
             nb_head = n.nb_head['all']
-            if fmax(n.freq_dom.values()) < OneSegNoun.SEUIL_MINI_FREQ: continue
+            if fmax(n.freq_dom.values()) < OneSegNoun.SEUIL_FREQ: continue
             row = [n.lemma,                         # Lemma
                    n.pos,                           # Pos
                    n.in_tutin,                      # In Tutin
@@ -1486,14 +1474,10 @@ class OneSegNoun:
                    n.nb_doms,                       # NB Dom où la tête est présente, remove 'all'
                    n.nb_doms / len(cls.DOMAINS),    # % du NB Dom où tête présente / NB Dom
                    n.moy_dom,                       # Fréquence moyenne pour heads du dom
-                   n.med,                           # Médiane
+                   n.med_dom,                       # Médiane
                    n.ect_dom,                       # écart-type des freqs par rapport aux heads du dom
-                   n.moy_lem,                       # Fréquence moyenne pour lem
-                   n.ect_lem,                       # écart-type des freqs par rapport au lem,
-                   n.high_lem,                      # nb of dom where freq_lem >= ect_lem * 3
                    len(n.nb_occ)-1,                 # NB Dom où l'occ est présente, remove 'all'
-                   n.disc,                          # Indicateur construit de "disciplinarité"
-                   n.gap]
+                   ]
             for kd in sorted(n.freq_dom, key=n.freq_dom.get, reverse=True):
                 if kd == 'all': continue
                 dom = cls.DOMAINS[kd]
@@ -1503,6 +1487,18 @@ class OneSegNoun:
                     n.nb_head[kd],
                     n.freq_dom[kd],
                     n.freq_lem[kd]])
+            ws.append(row)
+        # Second Sheet
+        ws = wb.create_sheet('Lem by dom')
+        title_row = ['Lemma', 'POS', 'Nb', 'Egal/' + str(len(cls.DOMAINS)), 'Chi2']
+        for kd in cls.DOMAINS:
+            title_row.append(kd)
+        ws.append(title_row)
+        for k, n in cls.NOUNS.items():
+            if fmax(n.freq_dom.values()) < OneSegNoun.SEUIL_FREQ: continue
+            row = [n.lemma, n.pos, n.nb_head['all'], n.egal_distri, n.chi2]
+            for kd in cls.DOMAINS:
+                row.append(n.nb_head[kd])
             ws.append(row)
         wb.save(title)
         return
@@ -1805,14 +1801,14 @@ def init(debug):
     #OneSegNoun.lex(final, 2, 'heads_all.xlsx')
     #OneSegNoun.lex(c1n, 0, output=False)
     OneSegNoun.lex(final, 2, output=False)
-    #OneSegNoun.disciplinary(None, verbose=True, to_excel=True) # ok
+    OneSegNoun.disciplinary(None, verbose=True, to_excel=True) # ok
     res = OneSegNoun.select(moy_dom=0.0030)
     in_tutin = 0
     for i in res:
         print(i)
         if i.lemma in TUTIN: in_tutin += 1
     print('In TUTIN=', in_tutin, '/', len(res))
-    OneSegNoun.to_sheet("one_seg.xlsx")
+    #OneSegNoun.to_sheet("one_seg.xlsx")
     
     if not just_load:
         #Word.write_unknown_lemma()
