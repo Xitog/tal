@@ -1826,15 +1826,16 @@ def init(debug):
     #OneSegNoun.lex(c2n, 'couple', 'two_seg_couple.xlsx')
     #OneSegNoun.lex(final, 2, 'heads_all.xlsx')
     #OneSegNoun.lex(c1n, 0, output=False)
+
     OneSegNoun.lex(final, 2, output=False)
-    OneSegNoun.disciplinary() # ok
+    #OneSegNoun.disciplinary() # ok
     res = OneSegNoun.select(moy_dom=0.0030)
     in_tutin = 0
     for i in res:
         print(i)
         if i.lemma in TUTIN: in_tutin += 1
     print('In TUTIN=', in_tutin, '/', len(res))
-    #OneSegNoun.to_sheet("one_seg.xlsx")
+    OneSegNoun.to_sheet("one_seg.xlsx")
     
     if not just_load:
         #Word.write_unknown_lemma()
