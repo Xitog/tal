@@ -56,11 +56,70 @@ def pprint(data, nb_max=None):
             break
 
 
-def deter(titles):
+def deter_for(titles, domains, lem1, lem2, seg):
+    xlem = {
+        'le' : 'def',
+        'la' : 'def',
+        'les' : 'def',
+        'un' : 'indef',
+        'une' : 'indef',
+    }
+    dets = { 'none' : 0}
+    for kt, t in titles.items():
+        if t.domain not in domains: continue
+        root1 = t.words[t.roots[0]]
+        root2 = t.words[t.roots[1]]
+        if root1.lemma != lem1 or root2.lemma != lem2: continue
+        found = False
+        if seg == 1:
+            start = 0
+            end = t.segments[0]
+            r = root1
+            ir = t.roots[0]
+        elif seg == 2:
+            start = t.segments[0] + 1
+            end = len(t.words)
+            r = root2
+            ir = t.roots[1]
+        else:
+            raise Exception('Number of seg not handled')
+        for iw in range(start, end):
+            w = t.words[iw]
+            #print(t.roots[seg], w.pos, w.gov, w.dep)
+            if w.pos == 'DET' and w.gov == r.idw and w.dep == 'det':
+                if iw < ir:
+                    lem = w.lemma
+                    if lem in xlem:
+                        lem = xlem[lem]
+                    if lem not in dets:
+                        dets[lem] = 1
+                    else:
+                        dets[lem] += 1
+                    found = True
+                    break
+        if not found:
+            dets['none'] += 1
+    return dets
+
+
+def go_deter(data, dom): # OneSegNoun.DOMAINS
+    print('rôle', deter_for(data, dom, 'rôle', 'cas', 1))
+    print('cas', deter_for(data, dom, 'rôle', 'cas', 2))
+    print('approche', deter_for(data, dom, 'approche', 'cas', 1))
+    print('cas', deter_for(data, dom, 'approche', 'cas', 2))
+    print('apport', deter_for(data, dom, 'apport', 'exemple', 1))
+    print('exemple', deter_for(data, dom, 'apport', 'exemple', 2))
+    print('effet', deter_for(data, dom, 'effet', 'cas', 1))
+    print('cas', deter_for(data, dom, 'effet', 'cas', 2))
+
+
+# deprecated
+def deter(titles, domains):
     det = {}
     no_det = 0
     nb_found = {}
     for kt, t in titles.items():
+        if t.domain not in domains: continue
         root = t.roots[0] + 1
         found = 0
         for iw, w in enumerate(t.words):

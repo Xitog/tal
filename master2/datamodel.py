@@ -921,7 +921,7 @@ def by_dom(data, max_pos=5):
 
 class Domain:
 
-    total_heads = 0
+    #total_heads = 0
     total_nouns = 0
     
     def __init__(self, name):
@@ -955,10 +955,10 @@ class Domain:
             if v > 0: self.nb_heads += 1
         for n, v in self.nouns.items():
             self.total_nouns += v
-        Domain.total_heads += self.total_heads
+        #Domain.total_heads += self.total_heads # ON COMPTE EN DOUBLE DES TÊTES !
         Domain.total_nouns += self.total_nouns
-        self.best_heads = sorted(self.heads, key=self.heads.get, reverse=True)
-        self.best_nouns = sorted(self.nouns, key=self.nouns.get, reverse=True)
+        #self.best_heads = sorted(self.heads, key=self.heads.get, reverse=True)
+        #self.best_nouns = sorted(self.nouns, key=self.nouns.get, reverse=True)
 
 
 # 1 on lex
@@ -1203,21 +1203,22 @@ class OneSegNoun:
                     ok = False
                 if ok:
                     res.append(n)
-        if 'moy' in filters:
-            return sorted(res, key=lambda e: e.moy_dom, reverse=True)
+        if 'med_dom' in filters:
+            return sorted(res, key=lambda e: e.med_dom, reverse=True)
         else:
             return res
     
     
     @classmethod
-    def lex(cls, data, segnum=0, title='one_seg.xlsx', output=True, calc=True):
+    def lex(cls, data, segnum=0, title=None, calc=True):
         if segnum == 2: # do both for 2 seg titles
             print('>>> LEX both')
-            cls.lex(data, segnum=0, output=False, calc=False)
-            cls.lex(data, segnum=1, output=False, calc=False)
+            cls.lex(data, segnum=0, calc=False)
+            cls.lex(data, segnum=1, calc=False)
         elif segnum == 'couple': # do by couple head1--head2 for 2 seg titles
             print('>>> LEX couple')
             for kt, t in data.items():
+                if t.domain in ['NONE', '1.shs.autre']: continue
                 if t.nb_segments != 2: # t.segments contient aussi des seg non segmentant ! (. finaux)
                 #if len(t.segments) != 1 or t.nb_segments != 2:
                     print(t)
@@ -1271,17 +1272,28 @@ class OneSegNoun:
                             lemma = word.lemma
                         cls.record(lemma, word.pos, head, t.domain)
         if calc: # MUST BE CALLED ONLY ONCE! OR HEADS of DOM are counted twice!
-            cls.calc()
-        if output:
+            num = segnum if segnum == 2 else 1
+            cls.calc(data, num_by_title=num)
+        if title is not None:
             cls.to_sheet(title)
-    
 
+    # unused
+    @classmethod
+    def reset(cls):
+        cls.NOUNS   = {}
+        cls.DOMAINS = {}
+        cls.ALREADY_CALC = False
+    
     ALREADY_CALC = False
-    SEUIL_FREQ = 0.001 #0.003
+    SEUIL_FREQ = 0.003 #0.001 #
     SEUIL_OCC  = 0.025
+
+    TOTAL_DOM      = 0
+    TOTAL_HEAD_OCC = 0
+    TOTAL_HEAD_LEM = 0
     
     @classmethod
-    def calc(cls):
+    def calc(cls, data, num_by_title=1):
         print('>>> CALC')
         if cls.ALREADY_CALC: raise Exception("Calc must be called only once!")
         else: cls.ALREADY_CALC = True
@@ -1322,8 +1334,19 @@ class OneSegNoun:
             n.ect_dom = fect(n.freq_dom.values())
             n.med_dom = fmed(n.freq_dom.values())
             n.in_tutin = 1 if n.lemma in TUTIN else 0
+        # On calcul le nombre total d'occurrences de têtes
+        for kt, t in data.items():
+            if t.domain in cls.DOMAINS: # titre pris en compte
+                if num_by_title == 1:
+                    cls.TOTAL_HEAD_OCC += 1
+                else:
+                    cls.TOTAL_HEAD_OCC += len(t.roots)
+        # On calcul le nombre total de lemmes différents de têtes pris en compte
+        cls.TOTAL_HEAD_LEM = len(cls.NOUNS)
+        # On calcul le nombre de domaine pris en compte
+        cls.TOTAL_DOM = len(cls.DOMAINS)
 
-
+    
     @classmethod
     def correct(cls, key):
         if key in cls.CORRECTED:
@@ -1478,10 +1501,10 @@ class OneSegNoun:
         wb = openpyxl.Workbook(write_only=True)
         ws = wb.create_sheet('1seg head')
         # Title
-        nbdom = ' (' + str(len(cls.DOMAINS)) + ')'
+        nbdom = ' (' + str(cls.TOTAL_DOM) + ')'
         title_row = ['LEMMA', 'POS', 'Tutin', 'NB HEAD', '%', 'NB OCC', '%', 'HEAD/OCC', 'NBDOM-HD' + nbdom,
                      '%NBDOM-HD', 'Moy DOM', 'Med DOM', 'ECT DOM', 'NBDOM OCC' + nbdom]
-        for i in range(0, len(cls.DOMAINS)):
+        for i in range(0, cls.TOTAL_DOM):
             title_row.extend(['Dom', 'nb', 'f/dom', 'f/lem'])
         ws.append(title_row)
         # Data
@@ -1493,12 +1516,12 @@ class OneSegNoun:
                    n.pos,                           # Pos
                    n.in_tutin,                      # In Tutin
                    nb_head,                         # NB HEAD
-                   nb_head / Domain.total_heads,    # % de toutes les heads
+                   nb_head / cls.TOTAL_HEAD_OCC,    # % de toutes les heads
                    nb_occ,                          # NB OCC
                    nb_occ / Domain.total_nouns,     # % de toutes les occurrences
                    nb_head / nb_occ,                # rapport HEAD / OCC
                    n.nb_doms,                       # NB Dom où la tête est présente, remove 'all'
-                   n.nb_doms / len(cls.DOMAINS),    # % du NB Dom où tête présente / NB Dom
+                   n.nb_doms / cls.TOTAL_DOM,       # % du NB Dom où tête présente / NB Dom
                    n.moy_dom,                       # Fréquence moyenne pour heads du dom
                    n.med_dom,                       # Médiane
                    n.ect_dom,                       # écart-type des freqs par rapport aux heads du dom
@@ -1516,7 +1539,7 @@ class OneSegNoun:
             ws.append(row)
         # Second Sheet
         ws = wb.create_sheet('Lem by dom')
-        title_row = ['Lemma', 'POS', 'Nb', 'Egal/' + str(len(cls.DOMAINS)), 'Chi2']
+        title_row = ['Lemma', 'POS', 'Nb', 'Egal/' + str(cls.TOTAL_DOM), 'Chi2']
         for kd in cls.DOMAINS:
             title_row.append(kd)
         ws.append(title_row)
@@ -1700,12 +1723,19 @@ c1n    = None # Corpus titles with only 1 segment root is NC or NPP
 c2n    = None # Corpus titles with 2 segments one root is NC,NPP the other in NOUN, VERB, PREP
 #cas    = None # Corpus titles with All Segment separeted
 
+disc = {}
+disc_flat = []
+trans = {}
+
 fast_load = False
 just_load = True
+produce_trans_excel = True
+produce_disc_excel  = False
+produce_quick       = False
 
 def init(debug):
     global titles, old, t1, t11, t111, t111n, t112, t12, t121, t122, t2, t22, t222, \
-           corpus, c1s, c2s, c1n, c2n, final
+           corpus, c1s, c2s, c1n, c2n, final, disc, disc_flat, trans
     load_recoding_table(debug)
     if debug: print('[INFO] --- Domain recode dictionary loaded\n')
     titles = read_titles_metadata(r'data\total-articles-HAL.tsv')
@@ -1819,23 +1849,78 @@ def init(debug):
     print('Set titles to old to reset to ALL titles')
     print('NB titles is set to final')
     #make_lexique()
-    #OneSegNoun.lex(c1n, 0, 'one_seg_c1n.xlsx')
-    #OneSegNoun.lex(c2n, 0, 'two_c2nA.xlsx') # c2n, first seg
-    #OneSegNoun.lex(c2n, 1, 'two_seg_c2nB.xlsx') # c2n, second seg
-    #OneSegNoun.lex(c2n, 2, 'two_seg_both.xlsx')
-    #OneSegNoun.lex(c2n, 'couple', 'two_seg_couple.xlsx')
-    #OneSegNoun.lex(final, 2, 'heads_all.xlsx')
-    #OneSegNoun.lex(c1n, 0, output=False)
+    
+    #OneSegNoun.lex(c1n, 0)
+    #output_filename = "heads_c1n.xlsx"
+    #OneSegNoun.lex(c2n, 0)
+    #output_filename = "heads_c2nA.xlsx"
+    #OneSegNoun.lex(c2n, 1)
+    #output_filename = "heads_c2nB.xlsx"
+    #OneSegNoun.lex(final, 2)
+    #output_filename = "heads_corpus.xlsx"
+    OneSegNoun.lex(c2n, 'couple')
+    output_filename = "heads_c2n_couple.xlsx"
+    
+    print(f'Nombre total de lemmes de têtes : {OneSegNoun.TOTAL_HEAD_OCC:5d}')
+    print(f'Nombre total de têtes           : {OneSegNoun.TOTAL_HEAD_LEM:5d}')
+    print(f'Nombre total de domaine         : {OneSegNoun.TOTAL_DOM:5d}')
+    
+    if produce_disc_excel:
+        OneSegNoun.disciplinary()
 
-    OneSegNoun.lex(final, 2, output=False)
-    #OneSegNoun.disciplinary() # ok
-    res = OneSegNoun.select(moy_dom=0.0030)
-    in_tutin = 0
-    for i in res:
-        print(i)
-        if i.lemma in TUTIN: in_tutin += 1
-    print('In TUTIN=', in_tutin, '/', len(res))
-    OneSegNoun.to_sheet("one_seg.xlsx")
+    # Disc & Trans
+    if produce_quick:
+        f = open('output_' + str(OneSegNoun.TOTAL_HEAD_LEM) + '.txt', mode='w', encoding='utf8')
+        trans = OneSegNoun.select(med_dom=0.0010)
+        # Disc
+        for kn, n in OneSegNoun.NOUNS.items():
+            for bestd in n.disc_dom:
+                if bestd not in disc:
+                    disc[bestd] = []
+                disc[bestd].append(n)
+                if n not in disc_flat:
+                    disc_flat.append(n)
+        f.write('-----------------------\n Global Info on Disc\n-----------------------\n')
+        f.write(f'Number of domains: {len(disc)}\n')
+        f.write(f'Number of nb_heads disc: {len(disc_flat)}\n')
+        for kd in sorted(SWEET, key=SWEET.get):
+            if kd not in disc: continue
+            #if kd in ['NONE', '1.shs.autre']: continue
+            d = OneSegNoun.DOMAINS[kd]
+            total = 0
+            total_without_trans = 0
+            for n in disc[kd]:
+                # Warning:
+                # nb_head in noun is for a number of occ of heads! ex: 1736 occ of head "study"
+                # nb_head in domain is for the number of lemma of heads! ex: 340 lemma of heads
+                total += n.nb_head[kd]
+                if n not in trans:
+                    total_without_trans += n.nb_head[kd]
+            f.write(f"{sweet(kd):48s} {d.filter2:4d}={len(disc[kd]):4d} / {d.nb_heads:5d} {total:5d} or {total_without_trans:5d} / {d.total_heads:5d} {round(total/d.total_heads*100,0)}% {round(total_without_trans/d.total_heads*100,0)}%\n")
+        # Trans
+        in_tutin = 0
+        shared = 0
+        f.write('-----------------------\n Info on Disc\n-----------------------\n')
+        for kd in sorted(SWEET, key=SWEET.get):
+            if kd not in disc: continue
+            f.write(sweet(kd) + '\n')
+            for n in disc[kd]:
+                f.write(f"{n.lemma}\n")
+        f.write('-----------------------\n Global Info on Trans\n-----------------------\n')
+        f.write("Lemma          Med     Tutin Disc\n")
+        for n in trans:
+            f.write(f"{n.lemma:15} {n.med_dom:7.6f} {n.lemma in TUTIN} {n in disc_flat}\n")
+            if n.lemma in TUTIN: in_tutin += 1
+            if n in disc_flat: shared +=1
+        f.write("---------- Lemma only ----------\n")
+        for n in trans:
+            f.write(f"{n.lemma}\n")
+        f.write(f'In TUTIN= {in_tutin} / {len(trans)}\n')
+        f.write(f'Shared= {shared} / {len(trans)}\n')
+        f.close()
+
+    if produce_trans_excel:
+        OneSegNoun.to_sheet(output_filename)
     
     if not just_load:
         #Word.write_unknown_lemma()
