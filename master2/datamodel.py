@@ -1727,9 +1727,9 @@ disc = {}
 disc_flat = []
 trans = {}
 
-fast_load = False
-just_load = True
-produce_trans_excel = True
+fast_load           = False
+just_load           = True
+produce_trans_excel = False
 produce_disc_excel  = False
 produce_quick       = False
 
@@ -1856,10 +1856,10 @@ def init(debug):
     #output_filename = "heads_c2nA.xlsx"
     #OneSegNoun.lex(c2n, 1)
     #output_filename = "heads_c2nB.xlsx"
-    #OneSegNoun.lex(final, 2)
+    OneSegNoun.lex(final, 2)
     #output_filename = "heads_corpus.xlsx"
-    OneSegNoun.lex(c2n, 'couple')
-    output_filename = "heads_c2n_couple.xlsx"
+    #OneSegNoun.lex(c2n, 'couple')
+    #output_filename = "heads_c2n_couple.xlsx"
     
     print(f'Nombre total de lemmes de têtes : {OneSegNoun.TOTAL_HEAD_OCC:5d}')
     print(f'Nombre total de têtes           : {OneSegNoun.TOTAL_HEAD_LEM:5d}')

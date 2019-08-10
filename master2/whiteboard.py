@@ -1,3 +1,41 @@
+# Whiteboard : for dynamic code
+# Use reload(wb) to reload this script after having executed datamodel.py
+
+# wb.search(titles, 'problème', text='Le problème')
+def search(data, root1, root2=None, nb=10, text=None):
+    for kt, t in data.items():
+        if root2 is not None and len(t.roots) < 2: continue
+        if text is not None and text not in t.text: continue
+        troot1 = t.words[t.roots[0]]
+        if root2 is None:
+            if root1 == troot1.lemma:
+                print(t.idt, t)
+                nb -= 1
+        else:
+            troot2 = t.words[t.roots[1]]
+            if root1 == troot1.lemma and root2 == troot2.lemma:
+                print(t.idt, t)
+                nb -= 1
+        if nb == 0: break
+
+
+def xsearch(data):
+    for kt, t in data.items():
+        if len(t.roots) < 2: continue
+        troot2 = t.words[t.roots[1]]
+        tp = None
+        tq = None
+        for kkt, tt in data.items():
+            troot1 = t.words[t.roots[0]]
+            if troot1.lemma == 'problème':
+                tp = tt
+            if troot1.lemma == 'question':
+                tq = tt
+        if tp is not None and tq is not None:
+            print(tp)
+            print(tq)
+
+
 # wb.on_each(t121, wb.find_sub_roots)
 def on_each(titles, f):
     for kt, t in titles.items():
