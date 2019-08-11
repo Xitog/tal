@@ -1,6 +1,67 @@
 # Whiteboard : for dynamic code
 # Use reload(wb) to reload this script after having executed datamodel.py
 
+
+# 1ère version (trop large) : être 1269 que 496 vinf 14902
+# 2nd version sur corpus    : cpt_n_etre_n 805 cpt_n_etre_que 68 cpt_n_de_vinf 153
+# 3e version sur corpus (+n avant de_vinf) : cpt_n_etre_n 833 cpt_n_etre_que 85 cpt_de_vinf 153
+# 1209231 Possibilités de réduire
+out = None
+def search_cs(data=None, display=None, title=None):
+    global out, last_pattern
+    if display is not None:
+        out = open(display + '.txt', mode='w', encoding='utf8')
+    def xprint(pattern, idt, t, i1=-1, i2=-1, i3=-1):
+        global out
+        out.write(f"{pattern:10} : {idt:6s} : ")
+        for iw, w in enumerate(t.words):
+            if iw in [i1, i2, i3]:
+                out.write(f"[{iw}]")
+            out.write(w.form + ' ')
+        out.write('\n')
+    cpt_n_etre_n = 0
+    cpt_n_etre_que = 0
+    cpt_n_de_vinf = 0
+    if data is None and title is not None:
+        data = {title.idt : title}
+    for kt, t in data.items():
+        etre = None
+        que = None
+        vinf = None
+        de = None
+        n1 = None
+        n2 = None
+        for iw, w in enumerate(t.words):
+            if w.lemma == 'être' and w.pos == 'V':
+                etre = iw
+            elif w.form in ['que', "qu'"]:
+                que = iw
+            elif w.pos == 'VINF':
+                vinf = iw
+            elif w.form == 'de':
+                if de is None: de = iw
+            elif w.pos == 'NC':
+                if etre is None:
+                    n1 = iw
+                else:
+                    n2 = iw
+        if n1 is not None and de is not None and vinf is not None and n1 < de < vinf:
+            if display in ['cpt_n_de_vinf', 'all']: xprint('cpt_n_de_vinf', t.idt, t, n1, de, vinf)
+            if etre is not None and n1 < etre < de and de < vinf:
+                print(t.idt, t)
+            cpt_n_de_vinf += 1
+        elif n1 is not None and etre is not None and n2 is not None and n1 < etre < n2:
+            if display in ['cpt_n_etre_n', 'all']: xprint('cpt_n_etre_n', t.idt, t, n1, etre, n2)
+            cpt_n_etre_n += 1
+        elif n1 is not None and que is not None:
+            if etre is not None and n1 < etre < que or etre is None and n1 < que:
+                if display in ['cpt_n_etre_que', 'all']: xprint('cpt_n_etre_que', t.idt, t, n1, etre, que)
+                cpt_n_etre_que += 1
+    if display is not None:
+        out.close()
+    print('cpt_n_etre_n', cpt_n_etre_n, 'cpt_n_etre_que', cpt_n_etre_que, 'cpt_n_de_vinf', cpt_n_de_vinf)
+
+
 # wb.search(titles, 'problème', text='Le problème')
 def search(data, root1, root2=None, nb=10, text=None):
     for kt, t in data.items():
@@ -18,7 +79,7 @@ def search(data, root1, root2=None, nb=10, text=None):
                 nb -= 1
         if nb == 0: break
 
-
+# no title with same root2 and 'problème' AND 'question' as root1
 def xsearch(data):
     for kt, t in data.items():
         if len(t.roots) < 2: continue
