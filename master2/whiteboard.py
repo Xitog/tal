@@ -1,7 +1,6 @@
 # Whiteboard : for dynamic code
 # Use reload(wb) to reload this script after having executed datamodel.py
 
-
 # 1ère version (trop large) : être 1269 que 496 vinf 14902
 # 2nd version sur corpus    : cpt_n_etre_n 805 cpt_n_etre_que 68 cpt_n_de_vinf 153
 # 3e version sur corpus (+n avant de_vinf) : cpt_n_etre_n 833 cpt_n_etre_que 85 cpt_de_vinf 153
