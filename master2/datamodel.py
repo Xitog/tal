@@ -1045,150 +1045,168 @@ def cell(ws, value, bold=False, background=None, color='00000000', comment=None)
     
     
 class OneSegNoun:
+
+    errors = {}
+    errors['ERROR_NPP_2_NC']    = 0
+    errors['ERROR_ORTHO']        = 0
+    errors['ERROR_UNKNOWN_CHAR'] = 0
+    errors['ERROR_UNKNOWN_NC']   = 0
+    errors['ERROR_UNKNOWN_NPP']  = 0
+    errors['ERROR_ADJ']          = 0
+    errors['ERROR_E_SEMI']       = 0
+    errors['ERROR_S_AS_NOUN']    = 0
+    errors['ERROR_ENGLISH_WORD'] = 0
+    errors['ERROR_ENGLISH_NOUN'] = 0
+    errors['ERROR_PLURAL_NPP']   = 0
+    errors['ERROR_NC_2_NPP']     = 0
+    errors['ERROR_CONCAT']       = 0
     
     NOUNS   = {}
     DOMAINS = {}
 
+    # None indique qu'il n'y aura pas de recovery (le titre sera droppé)
+    # Le second indique le type d'erreur/correction a enregistré dans OneSegNoun.errors
     CORRECTED = {
-        '?évènement::NC' : 'événement::NC',
-        '?Global::NPP' : None,
-        '?indicateus::NC' : '?indicateus::NC',
-        '?ASSUBILITÉ::NC' : 'assubilité::NC',
-        '?Dupuit::NPP' : 'Dupuit::NPP',
-        '?bitcoin::NC' : 'bitcoin::NPP',
-        '?Effet::NPP' : 'effet::NC',
-        '?Predicting::NPP' : None,
-        '?Cognition::NC' : 'cognition::NC',
-        '?Adolescence::NPP' : 'adolescence::NC',
-        '?Ingres::NPP' : 'Ingres::NPP',
-        '?Poussin::NPP' : 'Poussin::NPP',
-        '?Crétacé::NPP' : '?rétacé::NPP',
-        '?Cardioceratidae::NPP' : 'Cardioceratidae::NPP',
-        '?Sédimentologie::NPP' : 'sédimentologie::NC',
-        '?Hydrogéochimie::NC' : 'hydrogéochimie::NC',
-        '?Vertébrés::NPP' : 'vertébré::NC',
-        '?Nano::NPP' : None,
-        '?Spéciation::NC' : 'spéciation::NC',
-        '?Nanocomposites::NPP' : 'nanocomposite::NC',
-        '?Photomatériaux::NPP' : 'photomatériau::NC',
-        '?Nanomatériaux::NPP' : 'nanomatériau::NC',
-        '?Viscoélasticité::NC' : 'viscoélasticité::NC',
-        '?Hydroformylation::NC' : 'hydroformulation::NC',
-        '?Hydroconversion::NC' : 'hydroconversion::NC',
-        '?HREELS::NC' : '?HREELS::NC',
-        '?microréacteur::NC' : 'microréacteur::NC',
-        '?Chimisorption::NC' : 'chimisorption::NC',
-        '?Nihon::NPP' : '?Nihon::NPP',
-        '?Environmental::NPP' : None,
-        '?IVG::NPP' : 'IVG::NPP',
-        '?Glossarium::NC' : '?Glossarium::NC',
-        '?Via::NPP' : '?Via::NPP',
-        '?sonification::NC' : 'sonification::NC',
-        '?Ethnobotanique::NC' : 'ethnobotanique::NC',
-        '?Venises::NPP' : '?Venises::NPP',
-        '?Cyber::NPP' : None,
-        '?Cooccurrences::NC' : 'cooccurrences::NC',
-        '?Quantiﬁcation::NC' : 'quantification::NC',
-        '?Phénoplasticité::NC' : 'phénoplasticité::NC',
-        '?Pléistoscène::NC' : 'Pléistoscène::NPP',
-        '?démotorisation::NC' : 'démotorisation::NC',
-        '?maritimisation::NC' : 'maritimisation::NC',
-        '?DemoMed::NPP' : '?DemoMed::NPP',
-        '?SIDA::NPP' : 'SIDA::NPP',
-        '?Konso::NC' : '?Konso::NC',
-        '?Africains::NC' : 'africain::NC',
-        '?SIRENA::NPP' : 'SIRENA::NPP',
-        '?Beachrocks::NPP' : 'Beachrocks::NPP',
-        '?NBIC::NPP' : 'NBIC::NPP',
-        '?Proust::NPP' : 'Proust::NPP',
-        '?Montaigne::NPP' : 'Montaigne::NPP',
-        '?Flaubert::NPP' : 'Flaubert::NPP',
-        '?Perceforest::NPP' : 'Perceforest::NPP',
-        '?Hypermédias::NPP' : 'hypermédia::NC',
-        '?Autoformation::NPP' : 'autoformation::NC',
-        '?autoformation::NC' : 'autoformation::NC',
-        '?EAO::NPP' : 'EAO::NPP',
-        '?Approche::NPP' : 'approche::NC',
-        '?Learning::NPP' : 'learning::NC',
-        '?Corbusier::NPP' : 'Corbusier::NPP',
-        '?Fréart::NPP' : 'Fréart::NPP',
-        '?Spinoza::NPP' : 'Spinoza::NPP',
-        '?Bergson::NPP' : 'Bergson::NPP',
-        '?Leibniz::NPP' : 'Leibniz::NPP',
-        '?Diderot::NPP' : 'Diderot::NPP',
-        '?Nietzsche::NPP' : 'Nietzsche::NPP',
-        '?Kant::NPP' : 'Kant::NPP',
-        '?Foucault::NPP' : 'Foucault::NPP',
-        'Henri ?Poincaré::NPP' : 'Henri Poincaré::NPP',
-        '?Poincaré::NPP' : 'Poincaré::NPP',
-        '?Habermas::NPP' : 'Harbermas::NPP',
-        '?Marx::NPP' : 'Marx::NPP',
-        '?Malebranche::NPP' : 'Malebranche::NPP',
-        '?Carnap::NPP' : 'Carnap::NPP',
-        '?Einstein::NPP' : 'Einstein::NPP',
-        '?memoriam::NC' : 'memoriam::NC',
-        '?PAC::NPP' : 'PAC::NPP',
-        '?Morphogénèse::NPP' : 'morphogénèse::NC',
-        '?RSE::NPP' : 'RSE::NPP',
-        '?Saillance::NPP' : 'saillance::NC',
-        '?Ethnocritique::NPP' : 'ethnocritique::NC',
-        '?Twitter::NPP' : 'Twitter::NPP',
-        '?Cohomologie::NC' : 'cohomologie::NC',
-        '?Compactification::NC' : 'compactification::NC',
-        '?Cohomologie::NPP' : 'cohomologie::NC',
-        '?Ondelettes::NC' : 'ondelette::NC',
-        '?Métamodèles::NPP' : 'métamodèle::NC',
-        '?Fibrés::NC' : None,
-        '?cK¢::NPP' : '?cK¢::NPP',
-        '?Splines::NPP' : 'spline::NC',
-        '?Maths::NPP' : 'maths::NC',
-        '?Mixmod::NPP' : 'Mixmod::NPP',
-        '?MIXMOD::NPP' : 'Mixmod::NPP',
-        '?Pancyclisme::NC' : 'pancyclisme::NC',
-        '?Monoïdes::NPP' : 'monoïde::NC',
-        '?Finitude::NPP' : 'finitude::NC',
-        '?cocycle::NC' : 'cocycle::NC',
-        '?Cohomologie ?MATHFORMULA::NPP' : 'cohomologie::NC',
-        '?Paramétrisation::NC' : 'paramétrisation::NC',
-        '?Clustering::NPP' : 'clustering::NC',
-        '?Semi::NPP' : None,
-        '?Jean::NPP' : 'Jean::NPP',
-        '?Paris::NPP' : 'Paris::NPP',
-        '?OGM::NPP' : 'OGM::NPP',
-        '?Morphogenèse::NPP' : 'morphogenèse::NC',
-        '?Aristote::NPP' : 'Aristote::NPP', 
-        '?Pierre ?Bayle::NPP' : 'Pierre Bayle::NPP',
-        '?Bernard::NPP' : 'Bernard::NPP',
-        '?Proudhon::NPP' : 'Proudhon::NPP',
-        '?SIG::NPP' : 'SIG::NPP',
-        '?Learning ?region::NPP' : 'région::NC',
-        '?Jacques ?Androuet::NPP' : 'Jacques Androuet::NPP',
-        '?Claude ?Perrault::NPP' : 'Claude Perrault::NPP',
-        '?The::NPP' : None,
-        '?E::NPP' : None,
-        '?Corrélats::NC' : 'corrélat::NC',
-        '?data::NC' : 'data::NC',
-        '?Nihon ?fuzai::NPP' : '?Nihon ?fuzai::NPP',
-        '?care::NC' : 'care::NC', 
-        '?Glossarium::NC' : '?Glossarium::NC',
-        '?ADN::NC' : 'ADN::NC',
-        '?Via Romana::NPP' : 'Via Romana::NPP',
-        '?Venises::NPP' : 'Venise::NPP',
-        '?New ?Urbanism::NPP' : 'urbanisme::NC',
-        '?DemoMed::NPP' : '?DemoMed::NPP',
-        '?Konso::NC' : '?Konso::NC',
-        '?Synthesis ?of::NPP' : 'synthèse::NC',
-        '?HREELS::NC' : '?HREELS::NC',
-        '?rétacé::NPP' : 'crétacé::NC',
-        '?œuvre::NC' : 'oeuvre::NC',
-        '?Jean ?Cocteau::NPP' : 'Jean Cocteau::NPP',
-        '?Freud::NPP' : 'Freud::NPP',
-        '?Etat::NPP' : 'État::NC',
-        '?Global ?Risk::NPP' : 'risque::NC',
-        '?indicateus::NC' : 'indicateur::NC',
-        '?Synthčse::NPP' : 'synthèse::NC',
-        '?carbènes::NC' : 'carbène::NC',
-        '?sol::NC' : 'sol::NC',
+        '?évènement::NC'        : ('événement::NC', 'ERROR_ORTHO'),
+        '?Global::NPP'          : (None, 'ERROR_ADJ'),
+        '?indicateus::NC'       : ('?indicateus::NC', 'ERROR_ORTHO'),
+        '?ASSUBILITÉ::NC'       : ('assubilité::NC', 'ERROR_UNKNOWN_NC'),
+        '?Dupuit::NPP'          : ('Dupuit::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?bitcoin::NC'          : ('bitcoin::NPP', 'ERROR_NC_2_NPP'),
+        '?Effet::NPP'           : ('effet::NC', 'ERROR_NPP_2_NC'),
+        '?Predicting::NPP'      : (None, 'ERROR_ENGLISH_WORD'),
+        '?Cognition::NC'        : ('cognition::NC', 'ERROR_UNKNOWN_NC'),
+        '?Adolescence::NPP'     : ('adolescence::NC', 'ERROR_NPP_2_NC'),
+        '?Ingres::NPP'          : ('Ingres::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Poussin::NPP'         : ('Poussin::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Crétacé::NPP'         : ('Crétacé::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Cardioceratidae::NPP' : ('Cardioceratidae::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Sédimentologie::NPP'  : ('sédimentologie::NC', 'ERROR_NPP_2_NC'),
+        '?Hydrogéochimie::NC'   : ('hydrogéochimie::NC', 'ERROR_UNKNOWN_NC'),
+        '?Vertébrés::NPP'       : ('vertébré::NC', 'ERROR_NPP_2_NC'),
+        '?Nano::NPP'            : (None, 'ERROR_ADJ'),
+        '?Spéciation::NC'       : ('spéciation::NC', 'ERROR_UNKNOWN_NC'),
+        '?Nanocomposites::NPP'  : ('nanocomposite::NC', 'ERROR_NPP_2_NC'),
+        '?Photomatériaux::NPP'  : ('photomatériau::NC', 'ERROR_NPP_2_NC'),
+        '?Nanomatériaux::NPP'   : ('nanomatériau::NC', 'ERROR_NPP_2_NC'),
+        '?Viscoélasticité::NC'  : ('viscoélasticité::NC', 'ERROR_UNKNOWN_NC'),
+        '?Hydroformylation::NC' : ('hydroformulation::NC', 'ERROR_UNKNOWN_NC'),
+        '?Hydroconversion::NC'  : ('hydroconversion::NC', 'ERROR_UNKNOWN_NC'),
+        '?HREELS::NC'           : ('?HREELS::NC',),
+        '?microréacteur::NC'    : ('microréacteur::NC', 'ERROR_UNKNOWN_NC'),
+        '?Chimisorption::NC'    : ('chimisorption::NC', 'ERROR_UNKNOWN_NC'),
+        '?Nihon::NPP'           : ('?Nihon::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Environmental::NPP'   : (None, 'ERROR_ADJ'),
+        '?IVG::NPP'             : ('IVG::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Glossarium::NC'       : ('?Glossarium::NC', 'ERROR_UNKNOWN_NC'),
+        '?Via::NPP'             : ('?Via::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?sonification::NC'     : ('sonification::NC', 'ERROR_UNKNOWN_NC'),
+        '?Ethnobotanique::NC'   : ('ethnobotanique::NC', 'ERROR_UNKNOWN_NC'),
+        '?Venises::NPP'         : ('?Venises::NPP', 'ERROR_PLURAL_NPP'),
+        '?Cyber::NPP'           : (None, 'ERROR_ADJ'),
+        '?Cooccurrences::NC'    : ('cooccurrences::NC', 'ERROR_UNKNOWN_NC'),
+        '?Quantiﬁcation::NC'    : ('quantification::NC', 'ERROR_ORTHO'),
+        '?Phénoplasticité::NC'  : ('phénoplasticité::NC', 'ERROR_UNKNOWN_NC'),
+        '?Pléistoscène::NC'     : ('Pléistoscène::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?démotorisation::NC'   : ('démotorisation::NC', 'ERROR_UNKNOWN_NC'),
+        '?maritimisation::NC'   : ('maritimisation::NC', 'ERROR_UNKNOWN_NC'),
+        '?DemoMed::NPP'         : ('?DemoMed::NPP',),
+        '?SIDA::NPP'            : ('SIDA::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Konso::NC'            : ('?Konso::NC',),
+        '?Africains::NC'        : ('africain::NC', 'ERROR_UNKNOWN_NC'),
+        '?SIRENA::NPP'          : ('SIRENA::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Beachrocks::NPP'      : ('Beachrocks::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?NBIC::NPP'            : ('NBIC::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Proust::NPP'          : ('Proust::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Montaigne::NPP'       : ('Montaigne::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Flaubert::NPP'        : ('Flaubert::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Perceforest::NPP'     : ('Perceforest::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Hypermédias::NPP'     : ('hypermédia::NC', 'ERROR_NPP_2_NC'),
+        '?Autoformation::NPP'   : ('autoformation::NC', 'ERROR_NPP_2_NC'),
+        '?autoformation::NC'    : ('autoformation::NC', 'ERROR_UNKNOWN_NC'),
+        '?EAO::NPP'             : ('EAO::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Approche::NPP'        : ('approche::NC', 'ERROR_NPP_2_NC'),
+        '?Learning::NPP'        : ('learning::NC', 'ERROR_ENGLISH_NOUN'),
+        '?Corbusier::NPP'       : ('Corbusier::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Fréart::NPP'          : ('Fréart::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Spinoza::NPP'         : ('Spinoza::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Bergson::NPP'         : ('Bergson::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Leibniz::NPP'         : ('Leibniz::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Diderot::NPP'         : ('Diderot::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Nietzsche::NPP'       : ('Nietzsche::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Kant::NPP'            : ('Kant::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Foucault::NPP'        : ('Foucault::NPP', 'ERROR_UNKNOWN_NPP'),
+        'Henri ?Poincaré::NPP'  : ('Henri Poincaré::NPP', 'ERROR_CONCAT'),
+        '?Poincaré::NPP'        : ('Poincaré::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Habermas::NPP'        : ('Harbermas::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Marx::NPP'            : ('Marx::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Malebranche::NPP'     : ('Malebranche::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Carnap::NPP'          : ('Carnap::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Einstein::NPP'        : ('Einstein::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?memoriam::NC'         : ('memoriam::NC', 'ERROR_UNKNOWN_NC'),
+        '?PAC::NPP'             : ('PAC::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Morphogénèse::NPP'    : ('morphogénèse::NC', 'ERROR_NPP_2_NC'),
+        '?RSE::NPP'             : ('RSE::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Saillance::NPP'       : ('saillance::NC', 'ERROR_NPP_2_NC'),
+        '?Ethnocritique::NPP'   : ('ethnocritique::NC', 'ERROR_NPP_2_NC'),
+        '?Twitter::NPP'         : ('Twitter::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Cohomologie::NC'      : ('cohomologie::NC',),
+        '?Compactification::NC' : ('compactification::NC', 'ERROR_UNKNOWN_NC'),
+        '?Cohomologie::NPP'     : ('cohomologie::NC', 'ERROR_NPP_2_NC'),
+        '?Ondelettes::NC'       : ('ondelette::NC', 'ERROR_UNKNOWN_NC'),
+        '?Métamodèles::NPP'     : ('métamodèle::NC', 'ERROR_NPP_2_NC'),
+        '?Fibrés::NC'           : (None, 'ERROR_ADJ'),
+        '?cK¢::NPP'             : ('?cK¢::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Splines::NPP'         : ('spline::NC', 'ERROR_NPP_2_NC'),
+        '?Maths::NPP'           : ('maths::NC', 'ERROR_NPP_2_NC'),
+        '?Mixmod::NPP'          : ('Mixmod::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?MIXMOD::NPP'          : ('Mixmod::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Pancyclisme::NC'      : ('pancyclisme::NC', 'ERROR_NPP_2_NC'),
+        '?Monoïdes::NPP'        : ('monoïde::NC', 'ERROR_NPP_2_NC'),
+        '?Finitude::NPP'        : ('finitude::NC', 'ERROR_NPP_2_NC'),
+        '?cocycle::NC'          : ('cocycle::NC', 'ERROR_UNKNOWN_NC'),
+        '?Cohomologie ?MATHFORMULA::NPP' : ('cohomologie::NC', 'ERROR_NPP_2_NC'),
+        '?Paramétrisation::NC'  : ('paramétrisation::NC', 'ERROR_UNKNOWN_NC'),
+        '?Clustering::NPP'      : ('clustering::NC', 'ERROR_NPP_2_NC'),
+        '?Semi::NPP'            : (None, 'ERROR_E_SEMI'),
+        '?Jean::NPP'            : ('Jean::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Paris::NPP'           : ('Paris::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?OGM::NPP'             : ('OGM::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Morphogenèse::NPP'    : ('morphogenèse::NC', 'ERROR_NPP_2_NC'),
+        '?Aristote::NPP'        : ('Aristote::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Pierre ?Bayle::NPP'   : ('Pierre Bayle::NPP', 'ERROR_CONCAT'),
+        '?Bernard::NPP'         : ('Bernard::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Proudhon::NPP'        : ('Proudhon::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?SIG::NPP'             : ('SIG::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Learning ?region::NPP'  : ('région::NC', 'ERROR_ENGLISH_NOUN'),
+        '?Jacques ?Androuet::NPP' : ('Jacques Androuet::NPP', 'ERROR_CONCAT'),
+        '?Claude ?Perrault::NPP'  : ('Claude Perrault::NPP', 'ERROR_CONCAT'),
+        '?The::NPP'             : (None, 'ERROR_ENGLISH_WORD'),
+        '?E::NPP'               : (None, 'ERROR_E_SEMI'),
+        '?Corrélats::NC'        : ('corrélat::NC', 'ERROR_UNKNOWN_NC'),
+        '?data::NC'             : ('data::NC', 'ERROR_UNKNOWN_NC'),
+        '?Nihon ?fuzai::NPP'    : ('?Nihon ?fuzai::NPP', 'ERROR_CONCAT'),
+        '?care::NC'             : ('care::NC', 'ERROR_UNKNOWN_NC'), 
+        '?Glossarium::NC'       : ('?Glossarium::NC', 'ERROR_UNKNOWN_NC'),
+        '?ADN::NC'              : ('ADN::NC', 'ERROR_UNKNOWN_NC'),
+        '?Via Romana::NPP'      : ('Via Romana::NPP', 'ERROR_CONCAT'),
+        '?Venises::NPP'         : ('Venise::NPP', 'ERROR_PLURAL_NPP'),
+        '?New ?Urbanism::NPP'   : ('urbanisme::NC', 'ERROR_ENGLISH_NOUN'),
+        '?DemoMed::NPP'         : ('?DemoMed::NPP',),
+        '?Konso::NC'            : ('?Konso::NC',),
+        '?Synthesis ?of::NPP'   : ('synthèse::NC', 'ERROR_ENGLISH_NOUN'),
+        '?HREELS::NC'           : ('?HREELS::NC',),
+        '?rétacé::NPP'          : ('Crétacé::NPP', 'ERROR_UNKNOWN_CHAR'),
+        'crétacé::NC'           : ('Crétacé::NPP', 'ERROR_NC_2_NPP'),
+        '?œuvre::NC'            : ('oeuvre::NC', 'ERROR_UNKNOWN_CHAR'),
+        '?Jean ?Cocteau::NPP'   : ('Jean Cocteau::NPP', 'ERROR_CONCAT'),
+        '?Freud::NPP'           : ('Freud::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Etat::NPP'            : ('État::NC',),
+        '?Global ?Risk::NPP'    : ('risque::NC', 'ERROR_ENGLISH_NOUN'),
+        '?indicateus::NC'       : ('indicateur::NC', 'ERROR_ORTHO'),
+        '?Synthčse::NPP'        : ('synthèse::NC', 'ERROR_ORTHO'),
+        '?carbènes::NC'         : ('carbène::NC', 'ERROR_UNKNOWN_NC'),
+        '?sol::NC'              : ('sol::NC', 'ERROR_UNKNOWN_NC'),
     }
 
     
@@ -1253,13 +1271,17 @@ class OneSegNoun:
                             lemma = t.words[cpt - 1].lemma + ' ' + word.lemma # Saint Bernard
                         elif cpt + 2 < len(t.words) and word.lemma in ['?E', '?e'] and t.words[cpt + 1].lemma == '-': #and ('E-' in t.text or 'e-' in t.text):
                             lemma = 'e-' + t.words[cpt + 2].lemma # e-management
+                            cls.errors['ERROR_E_SEMI'] += 1
                         elif cpt + 2 < len(t.words) and word.lemma in ['?Semi', '?semi'] and t.words[cpt + 1].lemma == '-': #and ('Semi-' in t.text or 'semi-' in t.text):
                             lemma = 'semi-' + t.words[cpt + 2].lemma # semi-figement
+                            cls.errors['ERROR_E_SEMI'] += 1
                         elif word.lemma == '?s':
                             if cpt > 1 and t.words[cpt-1].lemma in ['(', '.'] and t.words[cpt-2].pos in ['NC', 'NPP']:
                                 lemma = t.words[cpt - 2].lemma # *mobilité*(_s_), *mobilité*._s_
+                                cls.errors['ERROR_S_AS_NOUN'] += 1
                             elif cpt + 2 < len(t.words) and t.words[cpt+1].lemma == ')' and t.words[cpt+2].pos in ['NC', 'NPP']:
                                 lemma = t.words[cpt + 2].lemma # Quelle(_s_) *diversité*(s)
+                                cls.errors['ERROR_S_AS_NOUN'] += 1
                         elif word.lemma == 'mise':
                             if cpt + 2 < len(t.words):
                                 if t.words[cpt + 2].lemma == '?œuvre':
@@ -1283,6 +1305,19 @@ class OneSegNoun:
         cls.NOUNS   = {}
         cls.DOMAINS = {}
         cls.ALREADY_CALC = False
+        cls.errors['ERROR_NPP_2_NC']     = 0
+        cls.errors['ERROR_ORTHO']        = 0
+        cls.errors['ERROR_UNKNOWN_CHAR'] = 0
+        cls.errors['ERROR_UNKNOWN_NC']   = 0
+        cls.errors['ERROR_UNKNOWN_NPP']  = 0
+        cls.errors['ERROR_ADJ']          = 0
+        cls.errors['ERROR_E_SEMI']       = 0
+        cls.errors['ERROR_S_AS_NOUN']    = 0
+        cls.errors['ERROR_ENGLISH_WORD'] = 0
+        cls.errors['ERROR_ENGLISH_NOUN'] = 0
+        cls.errors['ERROR_PLURAL_NPP']   = 0
+        cls.errors['ERROR_NC_2_NPP']     = 0
+        cls.errors['ERROR_CONCAT']       = 0
     
     ALREADY_CALC = False
     SEUIL_FREQ = 0.003 #0.001 #
@@ -1350,9 +1385,15 @@ class OneSegNoun:
     @classmethod
     def correct(cls, key):
         if key in cls.CORRECTED:
-            key = cls.CORRECTED[key]
-            if key is None:
-                return None, None, None
+            res = cls.CORRECTED[key]
+            if type(res) != tuple:
+                print(key, res)
+            key = res[0]
+            if len(res) > 1:
+                msg = res[1]
+                cls.errors[msg] += 1
+                if key is None: # msg + non recovery
+                    return None, None, None
         lemma, pos = key.split('::')
         return key, lemma, pos
 
@@ -1402,6 +1443,97 @@ class OneSegNoun:
     
     def __repr__(self):
         return str(self)
+
+
+    DOMAINS_BAG_OF_WORDS = {}
+    
+    @classmethod
+    def disciplinary_neo(cls):
+        def tfidf(osn, kdom):
+            tf = osn.freq_dom[kdom]
+            idf = math.log10(25 / osn.nb_doms)
+            return tf * idf
+        # Calculate TF*IDF for each heads of each domains
+        # '0.math' : ['discipline::NC', 'quantification::NC']
+        all_res = {}
+        # 'discipline::NC' : ['0.math', '0.info', ...]
+        all_lem = {}
+        for kd in cls.DOMAINS:
+            res = {}
+            for k, v in cls.DOMAINS[kd].heads.items():
+                if v == 0: continue
+                osn = cls.NOUNS[k]
+                res[k] = tfidf(osn, kd)
+                if k not in all_lem:
+                    all_lem[k] = [kd]
+                else:
+                    all_lem[k].append(kd)
+            all_res[kd] = sorted(res, key=res.get, reverse=True)
+        # Output
+        wb = openpyxl.Workbook(write_only=True)
+        ws = wb.create_sheet('Disciplines')
+        i = 1
+        # Title page
+        ws.append(['N°', 'Discipline', 'Code', 'Lemmes diff'])
+        for kd in all_res:
+            ws.append([i, sweet(kd), kd, len(all_res[kd])])
+            i += 1
+        # All lemma page
+        ws = wb.create_sheet('Lemma')
+        for kl in all_lem:
+            row = kl.split('::')
+            row.append(len(all_lem[kl]))
+            osn = OneSegNoun.NOUNS[kl]
+            for kd in all_lem[kl]:
+                row.append(kd)
+                row.append(tfidf(osn, kd))
+            ws.append(row)
+        # All domains as a bag of words
+        ws = wb.create_sheet('Domains')
+        row = ['Lemme', 'POS']
+        for kd in all_res:
+            row.append(kd)
+            cls.DOMAINS_BAG_OF_WORDS[kd] = []
+        ws.append(row)
+        for kl in all_lem:
+            row = kl.split('::')
+            osn = OneSegNoun.NOUNS[kl]
+            for kd in all_res:
+                if kd in all_lem[kl]:
+                    v = tfidf(osn, kd)
+                else:
+                    v = 0
+                row.append(v)
+                cls.DOMAINS_BAG_OF_WORDS[kd].append(v)
+            ws.append(row)
+        # Distance between domains page
+        ws = wb.create_sheet('Distances')
+        row = ['Distances']
+        for kd in cls.DOMAINS_BAG_OF_WORDS:
+            row.append(kd)
+        ws.append(row)
+        for kd1 in cls.DOMAINS_BAG_OF_WORDS:
+            row = [kd1]
+            maxx = len(cls.DOMAINS_BAG_OF_WORDS[kd1]) # always the same, square matrix
+            for kd2 in cls.DOMAINS_BAG_OF_WORDS:
+                tt = 0
+                for i in range(0, maxx):
+                    tt += (cls.DOMAINS_BAG_OF_WORDS[kd1][i] - cls.DOMAINS_BAG_OF_WORDS[kd2][i]) ** 2
+                tt = math.sqrt(tt)
+                row.append(tt)
+            ws.append(row)
+        # Domain pages
+        cpt_d = 1
+        for kd in all_res:
+            ws = wb.create_sheet(str(cpt_d) + '. ' + kd)
+            i = 1
+            for k in all_res[kd]:
+                osn = OneSegNoun.NOUNS[k]
+                v = tfidf(osn, kd)
+                ws.append([i] + k.split('::') + [v])
+                i += 1
+            cpt_d += 1
+        wb.save('blob.xlsx')
 
 
     @classmethod
@@ -1732,6 +1864,7 @@ just_load           = True
 produce_trans_excel = False
 produce_disc_excel  = False
 produce_quick       = False
+produce_neo_disc    = False
 
 def init(debug):
     global titles, old, t1, t11, t111, t111n, t112, t12, t121, t122, t2, t22, t222, \
@@ -1752,6 +1885,14 @@ def init(debug):
         read_update_from_talismane_data(titles, file)
     if debug:
         print("[INFO] --- Total Titles :", len(titles))
+    # Old info on part & segment ON THE BASIS MATERIAL
+    print()
+    print("[INFO] --- 2 parts in base data    :", count({'nb_parts' : 2}))
+    print("[INFO] --- 2 segments in base data :", count({'nb_segments' : 2}))
+    stat('nb_parts')
+    print()
+    stat('nb_segments')
+    print()
     # Selectors
     old = titles
     # 1 part
@@ -1768,7 +1909,7 @@ def init(debug):
     t111n = select({'roots.0.pos' : ['NC', 'NPP']}) # len = 136707
     del t11
     del t12
-    # 2 parts
+    # 2 parts : on ne prend que les 2 parts ayant 2 segments et dont la partition se fait sur un segmentateur
     titles = old
     t2x = select({'nb_parts' : 2})           # len =  38 808
     t2 = {}                                  # len =  38 346 (minus 462)
@@ -1784,6 +1925,7 @@ def init(debug):
     del t22
     # Info
     titles = old
+    print()
     #print('t1 is available :', len(t1))
     print('t111 is available :', len(t111))
     print('t112 is available :', len(t112))
@@ -1796,6 +1938,7 @@ def init(debug):
     #print('t111 is available :', len(t111))
     #print('t111n is available :', len(t111n))
     # Transform 121 titles (1 part, 2 segments, 1 root, 1:0 or 0:1) into 122 / 1:1 titles
+    print('\n* Finding head\n')
     d, i = find_subroot(t121)
     print('Promoted directly by gov by root from other seg:', d)
     print('Promoted by gov from other seg:', i)
@@ -1807,8 +1950,9 @@ def init(debug):
     # We take the updated 121.
     titles = t121
     temp = select({'roots_by_segments' : '1:1'})
-    print('Promoted titles (one subroot found) :', len(temp), '/', len(t121), '(', round(len(temp)/len(t121)*100, 0), '% )')
+    print('Total promoted titles (one subroot found) :', len(temp), '/', len(t121), '(', round(len(temp)/len(t121)*100, 0), '% )')
     corpus.update(temp)
+    print()
     titles = old
     # We take 122.
     titles = t122
@@ -1868,10 +2012,14 @@ def init(debug):
     print(f'Nombre total de lemmes de têtes : {OneSegNoun.TOTAL_HEAD_OCC:5d}')
     print(f'Nombre total de têtes           : {OneSegNoun.TOTAL_HEAD_LEM:5d}')
     print(f'Nombre total de domaine         : {OneSegNoun.TOTAL_DOM:5d}')
+    print(OneSegNoun.errors)
     
     if produce_disc_excel:
         OneSegNoun.disciplinary()
 
+    if produce_neo_disc:
+        OneSegNoun.disciplinary_neo()
+    
     # Disc & Trans
     if produce_quick:
         f = open('output_' + str(OneSegNoun.TOTAL_HEAD_LEM) + '.txt', mode='w', encoding='utf8')
