@@ -1,6 +1,181 @@
 # Whiteboard : for dynamic code
 # Use reload(wb) to reload this script after having executed datamodel.py
+import openpyxl
+from openpyxl.cell import WriteOnlyCell
+from openpyxl.styles import PatternFill, Font
 
+# Only first level children
+def get_children(t, word):
+    children = []
+    for w in t.words:
+        if w.gov == word.idw:
+            children.append(w)
+    return children
+
+
+def idw(t, p_idw):
+    for w in t.words:
+        if w.idw == p_idw:
+            return w
+
+
+def index(t, p_idw):
+    for i, w in enumerate(t.words):
+        if w.idw == p_idw:
+            return i
+
+
+def is_int(w):
+    try:
+        int(w.form)
+        if ',' in w.form: return False # French flotting number
+        return True
+    except ValueError:
+        return False
+
+
+def elem_cs_de_inf(t):
+    res  = None
+    ngss = None
+    etre = None
+    de   = None
+    inf  = None
+    for w in t.words:
+        if w.pos == 'VINF':
+            inf = w
+            parent1 = idw(t, w.gov)
+            if parent1 is not None and parent1.lemma == 'de' and parent1.pos == 'P':
+                de = parent1
+                parent2 = idw(t, parent1.gov)
+                if parent2 is not None and parent2.lemma == 'être' and parent2.pos == 'V':
+                    etre = parent2
+                    children2 = get_children(t, parent2)
+                    for w2 in children2:
+                        if w2.dep == 'suj' and w2.pos == 'NC':
+                            ngss = w2
+                            res = (ngss, de, inf, etre)
+                            break
+                elif parent2 is not None and parent2.pos == 'NC':
+                    ngss = parent2
+                    res = (ngss, de, inf)
+                    break
+    if res is not None:
+        # voyons s'il y a un NC juste avant le de pour corriger les dépendances
+        i_de = index(t, de.idw)
+        if i_de > 0 and t.words[i_de - 1].pos == 'NC':
+            if len(res) == 3:
+                res = (t.words[i_de - 1], de, inf)
+            elif len(res) == 4:
+                print(t.idt)
+                res = (t.words[i_de - 1], de, inf, etre)
+    return res
+
+
+def p_cs_de_inf(t):
+    res = elem_cs_de_inf(t)
+    print(*res, sep = ' -> ')
+
+patterns = [
+    PatternFill(start_color='00FFFF00', end_color='00FFFF00', fill_type='solid'), # yellow
+    PatternFill(start_color='0087CEEB', end_color='0087CEEB', fill_type='solid'), # blue sky
+    PatternFill(start_color='0000FF00', end_color='0000FF00', fill_type='solid'), # green
+    PatternFill(start_color='00FF0000', end_color='00FF0000', fill_type='solid'), # red
+]
+
+# reload(wb) ; res = wb.cs_de_inf(titles); wb.f_cs_de_inf(res)
+def f_cs_de_inf(data):
+    wb = openpyxl.Workbook(write_only=True)
+    ws = wb.create_sheet('Out')
+    all_ngss = {}
+    all_inf = {}
+    all_cs = {}
+    for kt, t in data.items():
+        ngss = None
+        row = [int(kt)]
+        elem = elem_cs_de_inf(t)
+        for w in t.words:
+            if w in elem:
+                cpt = elem.index(w)
+                c = WriteOnlyCell(ws, value=w.form)
+                c.fill = patterns[cpt]
+                if cpt == 0:
+                    ngss = w.lemma
+                    if w.lemma not in all_ngss:
+                        all_ngss[w.lemma] = 1
+                    else:
+                        all_ngss[w.lemma] += 1
+                elif cpt == 2: # on ne retient pas le "être" optionnel
+                    cs = (ngss, 'de', w.lemma)
+                    if w.lemma not in all_inf:
+                        all_inf[w.lemma] = 1
+                    else:
+                        all_inf[w.lemma] += 1
+                    if cs not in all_cs:
+                        all_cs[cs] = 1
+                    else:
+                        all_cs[cs] += 1
+                row.append(c)
+            else:
+                row.append(w.form)
+        ws.append(row)
+    ws = wb.create_sheet('NGSS')
+    ngss_total = sum(all_ngss.values())
+    for k in sorted(all_ngss, key=all_ngss.get, reverse=True):
+        ws.append([k, all_ngss[k], all_ngss[k] / ngss_total])
+    ws = wb.create_sheet('INF')
+    inf_total = sum(all_inf.values())
+    for k in sorted(all_inf, key=all_inf.get, reverse=True):
+        ws.append([k, all_inf[k], all_inf[k] / inf_total])
+    ws = wb.create_sheet('CS')
+    cs_total = sum(all_cs.values())
+    for k in sorted(all_cs, key=all_cs.get, reverse=True):
+        ws.append([*k, all_cs[k], all_cs[k] / cs_total])
+    ws = wb.create_sheet('Info')
+    ws.append(['Total occ NGSS', ngss_total])
+    ws.append(['Total occ CS', cs_total])
+    ws.append(['Total res', len(data)])
+    wb.save('out.xlsx')
+
+
+# ne pas est un children du verbe
+# le sujet est un children du verbe
+def cs_de_inf(data):
+    res = {}
+    for kt, t in data.items():
+        ok = False
+        for w in t.words:
+            # on a un infinitf
+            if w.pos == 'VINF' and w.form not in ['Grégoire', 'Alexandre'] and not is_int(w):
+                # suppression de bien-être
+                if w.lemma == 'être':
+                    i_etre = index(t, w.idw)
+                    if i_etre > 1 and t.words[i_etre - 1].form == '-' and t.words[i_etre - 2].form == 'bien':
+                        continue
+                # a-t-il pour parent de ?
+                parent1 = idw(t, w.gov)
+                if parent1 is not None and parent1.lemma == 'de' and parent1.pos == 'P':
+                    # en vue de est un no go
+                    i_de = index(t, parent1.idw)
+                    if i_de > 0 and t.words[i_de - 1].form == 'vue':
+                        break
+                    # a-t-il pour parent un être ?
+                    parent2 = idw(t, parent1.gov)
+                    if parent2 is not None and parent2.lemma == 'être' and parent2.pos == 'V':
+                        # si oui, son sujet doit être un NC !
+                        children2 = get_children(t, parent2)
+                        for w2 in children2:
+                            if w2.dep == 'suj' and w2.pos == 'NC':
+                                ok = True
+                    elif parent2 is not None and parent2.pos == 'NC':
+                        # si non, son recteur doit être le NGSS
+                        ok = True
+            if ok:
+                res[kt] = t
+                break
+    return res
+
+
+# DEPRECATED
 # 1ère version (trop large) : être 1269 que 496 vinf 14902
 # 2nd version sur corpus    : cpt_n_etre_n 805 cpt_n_etre_que 68 cpt_n_de_vinf 153
 # 3e version sur corpus (+n avant de_vinf) : cpt_n_etre_n 833 cpt_n_etre_que 85 cpt_de_vinf 153
