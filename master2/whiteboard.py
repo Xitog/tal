@@ -8,6 +8,7 @@ from openpyxl.styles import PatternFill, Font
 # Tools
 #-----------------------------------------------------------
 
+
 # Only first level children
 def get_children(t, word):
     children = []
@@ -292,6 +293,68 @@ def cs_de_inf(data):
                 res[kt] = t
                 break
     return res
+
+#-----------------------------------------------------------
+# DISC & TRANS
+#-----------------------------------------------------------
+
+
+# motifs(titles, -1, +1) : on va chercher les motifs A head C
+# on ne garde les lemmes que pour les classes fermées DET P P+D CS CC PROREL et être et avoir sinon POS
+def motifs(data, before, after):
+    for kt, t in data.items():
+        i_root1 = t.roots[0]
+        # if i_root1 = 5 and before = -1 and after = +1 => range(4, 7) => 4, 5, 6
+        # +1 for the head.
+        for i in range(i_root1 + before, i_root1 + after + 1):
+            pass
+
+
+def recouvrement():
+    DISC = disc()
+    TRANS = trans()
+    recouv = 0
+    for t in TRANS:
+        if t in DISC:
+            recouv += 1
+    print(f"Length of DISC = {len(DISC)} Length of TRANS = {len(TRANS)}")
+    print(f"Recouv : {recouv} / {len(TRANS)} {recouv/len(TRANS)*100:5.2f}")
+
+
+def disc():
+    file = open(r'.\output\disc_heads.txt', mode='r', encoding='utf8')
+    lines = file.readlines()
+    file.close()
+    res = []
+    for lin in lines:
+        res.append(lin.rstrip())
+    return res
+
+
+def trans():
+    file = open(r'.\output\trans_heads.txt', mode='r', encoding='utf8')
+    lines = file.readlines()
+    file.close()
+    res = []
+    for lin in lines:
+        res.append(lin.rstrip())
+    return res
+
+
+def select_trans_t(data):
+    res = {}
+    TRANS = trans()
+    for kt, t in data.items():
+        root1 = t.words[t.roots[0]]
+        if root1.lemma in TRANS:
+            res[kt] = t
+            continue
+        elif len(t.roots) > 1:
+            root2 = t.words[t.roots[1]]
+            if root2.lemma in TRANS:
+                res[kt] = t
+    return res
+
 
 #-----------------------------------------------------------
 
