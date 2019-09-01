@@ -4,6 +4,10 @@ import openpyxl
 from openpyxl.cell import WriteOnlyCell
 from openpyxl.styles import PatternFill, Font
 
+#-----------------------------------------------------------
+# Tools
+#-----------------------------------------------------------
+
 # Only first level children
 def get_children(t, word):
     children = []
@@ -33,6 +37,132 @@ def is_int(w):
     except ValueError:
         return False
 
+
+patterns = [
+    PatternFill(start_color='00FFFF00', end_color='00FFFF00', fill_type='solid'), # yellow
+    PatternFill(start_color='0087CEEB', end_color='0087CEEB', fill_type='solid'), # blue sky
+    PatternFill(start_color='0000FF00', end_color='0000FF00', fill_type='solid'), # green
+    PatternFill(start_color='00FF0000', end_color='00FF0000', fill_type='solid'), # red
+]
+
+
+#-----------------------------------------------------------
+# CS : NGSS [être] que
+#-----------------------------------------------------------
+
+
+def elem_que(t):
+    res  = None
+    ngss = None
+    etre = None
+    que  = None
+    for w in t.words:
+        # on a un que CS
+        if w.pos == 'CS' and w.lemma == 'que':
+            que = w
+            i_que = index(t, w.idw)
+            # il y a avant un verbe être conjugué à l'indicatif
+            if i_que > 1 and t.words[i_que - 1].lemma == 'être' and t.words[i_que - 1].pos == 'V':
+                etre = t.words[i_que - 1]
+                # il doit y avoir un nom sujet
+                children_of_etre = get_children(t, t.words[i_que - 1])
+                for w2 in children_of_etre:
+                    if w2.dep == 'suj' and w2.pos == 'NC':
+                        ngss = w2
+                        res = (ngss, que)
+                        break
+                    elif w2.form == "c'": # le problème, c'est que ...
+                        i_c = index(t, w2.idw)
+                        if i_c > 2 and t.words[i_c - 1].form == ',' and t.words[i_c - 2].pos == 'NC':
+                            ngss = t.words[i_c - 2]
+                            res = (ngss, que)
+                            break
+                        elif i_c > 1 and t.words[i_c - 1].pos == 'NC':
+                            ngss = t.words[i_c - 1]
+                            res = (ngss, que)
+                            break
+            # il y a un nom avant
+            elif i_que > 1 and t.words[i_que - 1].pos == 'NC':
+                ngss = t.words[i_que - 1]
+                res = (ngss, que, etre)
+                break
+    return res
+
+
+# reload(wb) ; res = wb.cs_que(titles); wb.f_cs_que(res)
+def f_cs_que(data):
+    wb = openpyxl.Workbook(write_only=True)
+    ws = wb.create_sheet('Out')
+    all_ngss = {}
+    for kt, t in data.items():
+        ngss = None
+        row = [int(kt)]
+        elem = elem_que(t)
+        for w in t.words:
+            if w in elem:
+                cpt = elem.index(w)
+                c = WriteOnlyCell(ws, value=w.form)
+                c.fill = patterns[cpt]
+                if cpt == 0:
+                    ngss = w.lemma
+                    if w.lemma not in all_ngss:
+                        all_ngss[w.lemma] = 1
+                    else:
+                        all_ngss[w.lemma] += 1
+                row.append(c)
+            else:
+                row.append(w.form)
+        ws.append(row)
+    ws = wb.create_sheet('NGSS')
+    ngss_total = sum(all_ngss.values())
+    for k in sorted(all_ngss, key=all_ngss.get, reverse=True):
+        ws.append([k, all_ngss[k], all_ngss[k] / ngss_total])
+    ws = wb.create_sheet('Info')
+    ws.append(['Total occ NGSS', ngss_total])
+    ws.append(['Total res', len(data)])
+    wb.save('CS-que.xlsx')
+
+
+def cs_que(data):
+    res = {}
+    for kt, t in data.items():
+        ok = False
+        for w in t.words:
+            # on a un que CS
+            if w.pos == 'CS' and w.lemma == 'que':
+                i_que = index(t, w.idw)
+                # il y a avant un verbe être conjugué à l'indicatif
+                if i_que > 1 and t.words[i_que - 1].lemma == 'être' and t.words[i_que - 1].pos == 'V':
+                    # il doit y avoir un nom sujet
+                    children_of_etre = get_children(t, t.words[i_que - 1])
+                    for w2 in children_of_etre:
+                        if w2.dep == 'suj' and w2.pos == 'NC':
+                            ok = True
+                        elif w2.form == "c'": # le problème, c'est que ...
+                            i_c = index(t, w2.idw)
+                            if i_c > 2 and t.words[i_c - 1].form == ',' and t.words[i_c - 2].pos == 'NC':
+                                ngss = t.words[i_c - 2]
+                                ok = True
+                                break
+                            elif i_c > 1 and t.words[i_c - 1].pos == 'NC':
+                                ngss = t.words[i_c - 1]
+                                ok = True
+                                break
+                # il y a un nom avant
+                elif i_que > 1 and t.words[i_que - 1].pos == 'NC':
+                    ok = True
+            if ok:
+                res[kt] = t
+                break
+    return res
+
+
+#-----------------------------------------------------------
+# CS : NGSS [être] de inf
+#-----------------------------------------------------------
+# cs_de_inf(data)   fait un filtrage sur les titres qui correspondent à ce pattern
+# elem_cs_de_inf(t) récupère les mots clés de la CS dans un titre
+# f_cs_de_inf(data) met les résultats filtrés dans un fichier Excel à l'aide de elem_
 
 def elem_cs_de_inf(t):
     res  = None
@@ -70,17 +200,6 @@ def elem_cs_de_inf(t):
                 res = (t.words[i_de - 1], de, inf, etre)
     return res
 
-
-def p_cs_de_inf(t):
-    res = elem_cs_de_inf(t)
-    print(*res, sep = ' -> ')
-
-patterns = [
-    PatternFill(start_color='00FFFF00', end_color='00FFFF00', fill_type='solid'), # yellow
-    PatternFill(start_color='0087CEEB', end_color='0087CEEB', fill_type='solid'), # blue sky
-    PatternFill(start_color='0000FF00', end_color='0000FF00', fill_type='solid'), # green
-    PatternFill(start_color='00FF0000', end_color='00FF0000', fill_type='solid'), # red
-]
 
 # reload(wb) ; res = wb.cs_de_inf(titles); wb.f_cs_de_inf(res)
 def f_cs_de_inf(data):
@@ -174,67 +293,7 @@ def cs_de_inf(data):
                 break
     return res
 
-
-# DEPRECATED
-# 1ère version (trop large) : être 1269 que 496 vinf 14902
-# 2nd version sur corpus    : cpt_n_etre_n 805 cpt_n_etre_que 68 cpt_n_de_vinf 153
-# 3e version sur corpus (+n avant de_vinf) : cpt_n_etre_n 833 cpt_n_etre_que 85 cpt_de_vinf 153
-# 1209231 Possibilités de réduire
-out = None
-def search_cs(data=None, display=None, title=None):
-    global out, last_pattern
-    if display is not None:
-        out = open(display + '.txt', mode='w', encoding='utf8')
-    def xprint(pattern, idt, t, i1=-1, i2=-1, i3=-1):
-        global out
-        out.write(f"{pattern:10} : {idt:6s} : ")
-        for iw, w in enumerate(t.words):
-            if iw in [i1, i2, i3]:
-                out.write(f"[{iw}]")
-            out.write(w.form + ' ')
-        out.write('\n')
-    cpt_n_etre_n = 0
-    cpt_n_etre_que = 0
-    cpt_n_de_vinf = 0
-    if data is None and title is not None:
-        data = {title.idt : title}
-    for kt, t in data.items():
-        etre = None
-        que = None
-        vinf = None
-        de = None
-        n1 = None
-        n2 = None
-        for iw, w in enumerate(t.words):
-            if w.lemma == 'être' and w.pos == 'V':
-                etre = iw
-            elif w.form in ['que', "qu'"]:
-                que = iw
-            elif w.pos == 'VINF':
-                vinf = iw
-            elif w.form == 'de':
-                if de is None: de = iw
-            elif w.pos == 'NC':
-                if etre is None:
-                    n1 = iw
-                else:
-                    n2 = iw
-        if n1 is not None and de is not None and vinf is not None and n1 < de < vinf:
-            if display in ['cpt_n_de_vinf', 'all']: xprint('cpt_n_de_vinf', t.idt, t, n1, de, vinf)
-            if etre is not None and n1 < etre < de and de < vinf:
-                print(t.idt, t)
-            cpt_n_de_vinf += 1
-        elif n1 is not None and etre is not None and n2 is not None and n1 < etre < n2:
-            if display in ['cpt_n_etre_n', 'all']: xprint('cpt_n_etre_n', t.idt, t, n1, etre, n2)
-            cpt_n_etre_n += 1
-        elif n1 is not None and que is not None:
-            if etre is not None and n1 < etre < que or etre is None and n1 < que:
-                if display in ['cpt_n_etre_que', 'all']: xprint('cpt_n_etre_que', t.idt, t, n1, etre, que)
-                cpt_n_etre_que += 1
-    if display is not None:
-        out.close()
-    print('cpt_n_etre_n', cpt_n_etre_n, 'cpt_n_etre_que', cpt_n_etre_que, 'cpt_n_de_vinf', cpt_n_de_vinf)
-
+#-----------------------------------------------------------
 
 # wb.search(titles, 'problème', text='Le problème')
 def search(data, root1, root2=None, nb=10, text=None):
