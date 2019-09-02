@@ -3,6 +3,7 @@
 import openpyxl
 from openpyxl.cell import WriteOnlyCell
 from openpyxl.styles import PatternFill, Font
+from openpyxl import load_workbook
 
 #-----------------------------------------------------------
 # Tools
@@ -295,24 +296,230 @@ def cs_de_inf(data):
     return res
 
 #-----------------------------------------------------------
-# DISC & TRANS
+# MOTIFS
 #-----------------------------------------------------------
 
 
 # motifs(titles, -1, +1) : on va chercher les motifs A head C
 # on ne garde les lemmes que pour les classes fermées DET P P+D CS CC PROREL et être et avoir sinon POS
-def motifs(data, before, after):
-    for kt, t in data.items():
-        i_root1 = t.roots[0]
-        # if i_root1 = 5 and before = -1 and after = +1 => range(4, 7) => 4, 5, 6
-        # +1 for the head.
-        for i in range(i_root1 + before, i_root1 + after + 1):
-            pass
-
-
-def recouvrement():
-    DISC = disc()
+# reload(wb) ; test = { '62226' : titles['62226'] } ; ngss, nc = wb.motifs(test, 2, 2)
+# lemma::pos
+# ou pos (y compris INIT et END)
+def motifs(data, min_length, max_length):
+    motifs_ngss = {}
+    motifs_nc   = {}
     TRANS = trans()
+    # count
+    seuil = 1000
+    cpt = 0
+    total = 0
+    # Pour length = 2, si i_root = 5, start = 4 (i = 4-5), 5 (i = 5-6)
+    # Pour length = 3, si i_root = 5, start = 3 (i = 3-4-5)...
+    for kt, t in data.items():
+        # For all roots
+        for i_root in t.roots:
+            for length in range(min_length, max_length + 1):
+                for start in range(i_root - length + 1, i_root + 1):
+                    val = []
+                    is_trans = False
+                    for i in range(start, start + length):
+                        # Limits
+                        if i < -1:
+                            continue
+                        elif i == -1:
+                            val.append('INIT')
+                            continue
+                        elif i == len(t.words):
+                            val.append('END')
+                            break
+                        #elif i > len(t.words):
+                        #   break
+                        # Making the motif
+                        w = t.words[i]
+                        if w.pos in ['P', 'P+D', 'CS', 'CC', 'PROREL']: # 'DET', 
+                            val.append(w.lemma + '::' + w.pos)
+                        elif w.lemma in ['être', 'lemma']:
+                            val.append(w.lemma + '::' + w.pos)
+                        elif w.lemma in TRANS:
+                            val.append('NGSS') # instead of NC
+                            is_trans = True
+                        else:
+                            val.append(w.pos)
+                    val = tuple(val)
+                    if is_trans:
+                        if val not in motifs_ngss:
+                            motifs_ngss[val] = 1
+                        else:
+                            motifs_ngss[val] += 1
+                    else:
+                        if val not in motifs_nc:
+                            motifs_nc[val] = 1
+                        else:
+                            motifs_nc[val] += 1
+        cpt += 1
+        total += 1
+        if cpt == seuil:
+            cpt = 0
+            print(f'Done : {total:10d} / {len(data):10d}')
+    print(f'Done : {total:10d} / {len(data):10d}')
+    return motifs_ngss, motifs_nc
+
+
+def motifs_filter(mtfs, value):
+    res = {}
+    for key in mtfs:
+        if mtfs[key] >= value:
+            res[key] = value
+    return res
+
+
+# reload(wb) ; test = { '62226' : titles['62226'] } ; ngss, nc = wb.motifs(test, 2, 2) ; ngss[('DET', 'NGSS', 'V')] = 1 ; wb.support(ngss)
+def motifs_support(mtfs):
+    # count
+    seuil = 1000
+    cpt = 0
+    total = 0
+    # go
+    res = {}
+    for key1 in mtfs:
+        res[key1] = 0
+        for key2 in mtfs:
+            if is_contained(key1, key2):
+                res[key1] += 1
+        cpt += 1
+        total += 1
+        if cpt == seuil:
+            cpt = 0
+            print(f'Done : {total:10d} / {len(mtfs):10d}')
+    print(f'Done : {total:10d} / {len(mtfs):10d}')
+    return res
+
+
+def item2lem_pos(item):
+    if len(item.split('::')) == 1: # pos
+        lem = 'SPECIAL_ANY'
+        pos = item
+    else: # lemma::pos
+        lem, pos = item.split('::')
+    return lem, pos
+
+
+# pos is stronger for PRIME ONLY! (if no lemma is defined for only one item1, no comparison is made on it)
+def cmp_item(item1, item2):
+    lem1, pos1 = item2lem_pos(item1)
+    lem2, pos2 = item2lem_pos(item2)                      # séquence vs sous-séquence
+    if lem1 == 'SPECIAL_ANY' and lem2 == 'SPECIAL_ANY':   #      (V) vs (V)
+        return pos1 == pos2
+    elif lem1 == 'SPECIAL_ANY' and lem2 != 'SPECIAL_ANY': #      (V) vs (être V)
+        return True
+    elif lem1 != 'SPECIAL_ANY' and lem2 == 'SPECIAL_ANY': # (être V) vs (V)
+        return False
+    else:                                                 # (être V) vs (être V)
+        return lem1 == lem2 and pos1 == pos2
+
+
+# L'égalité peut avoir des trous : (A, C) est contenue dans (A, B, C) <=> (A, B, C) est une sous-séquence de (A, B)
+# Donc on n'utilise plus ça qui était une égalité stricte
+#def cmp_seq(seq1, seq2):
+#    maxx = min(len(seq1), len(seq2))
+#    for i in range(0, maxx):
+#        if not cmp_item(seq1[i], seq2[i]):
+#            return False
+#    return True
+
+
+# S'est contenu dans S ? <=> S' est une FORME PLUS GENERIQUE de S
+# S' = <(DET) (NC) ,(être V)>
+# S = <(le DET) (solution NC) (être V) (de P)>
+# S' est contenue dans S
+# S est une sous-séquence de S'
+# S <_ S'
+def is_contained(prime, s):
+    #print(prime, 'vs', s)
+    if len(prime) > len(s): return False # S' doit avoir une longueur plus petite ou égale à S
+    nb = 0
+    for item in s:
+        #print('   ', nb, prime[nb], 'vs', item, cmp_item(prime[nb], item))
+        if cmp_item(prime[nb], item):
+            nb += 1
+            if nb == len(prime):
+                return True
+    return False
+
+    #first_prime = prime[0]
+    #for i, item in enumerate(s):
+    #    if cmp_item(first_prime, item):
+    #        if cmp_seq(prime, s[i:]):
+    #            return True
+    #return False
+
+
+import sys
+def ptest(expr, val):
+    if expr != val:
+        sys.stderr.write(str(expr) + ' vs expected ' + str(val) + '\n')
+    else:
+        print(expr, ' (expected ', val, ')', sep='')
+
+
+# reload(wb) ; wb.test_motifs()
+def test_motifs():
+    s1 = ('DET', 'ADJ', 'NGSS')
+    prime1 = ('DET', 'NGSS')
+    ptest(is_contained(prime1, s1), True)
+    s2 = ('de::DET', 'ADJ', 'évolution::NGSS')
+    prime2 = ('DET', 'NGSS')
+    ptest(is_contained(prime2, s2), True)
+    s3 = ('DET', 'NC', 'être::V')
+    prime3 = ('DET', 'NC', 'V')
+    ptest(is_contained(prime3, s3), True)
+    s4 = ('DET', 'NC', 'V')
+    prime4 = ('DET', 'NC', 'être::V') # False : prime4 is more precise than s4!
+    ptest(is_contained(prime4, s4), False)
+
+
+#-----------------------------------------------------------
+# DISC & TRANS
+#-----------------------------------------------------------
+
+
+def read_disc_from_output_xlsx(filename, debug=True):
+    TRANS = trans()
+    filename = filename + '.xlsx' if not filename.endswith('.xlsx') else filename
+    wb = load_workbook(filename, read_only=True)
+    disc_heads = {}
+    for i, sn in enumerate(wb.sheetnames):
+        if i >= 4: # disc
+            disc = sn[sn.index('.') + 2:]
+            disc_heads[disc] = []
+            ws = wb[sn]
+            for row in ws.rows:
+                key = str(row[1].value) + '::' + str(row[2].value)
+                disc_heads[disc].append(key)
+    disc_filtered = {}
+    all_lemma_filtered = []
+    for disc in disc_heads:
+        disc_filtered[disc] = []
+        for key in disc_heads[disc]:
+            lemma, pos = key.split('::') # place existe en NC et NPP pour '1.shs.infocom'
+            if lemma in TRANS:
+                print(f"{disc:15} {lemma}")
+                break
+            disc_filtered[disc].append(lemma)
+            if lemma not in all_lemma_filtered: all_lemma_filtered.append(lemma)
+    if debug:
+        print('Discipline      NbHead Filter - Minus Kept %')
+        for disc in disc_heads:
+            ld = len(disc_heads[disc])
+            lf = len(disc_filtered[disc])
+            print(f"{disc:15} {ld:6d} {lf:6d} -{ld-lf:6d} {lf/ld*100:5.2f}%")
+    return disc_heads, all_lemma_filtered
+rdfo = read_disc_from_output_xlsx
+
+
+def recouvrement(DISC=None, TRANS=None):
+    if type(DISC) != list: DISC = disc(DISC)
+    if type(TRANS) != list: TRANS = trans(TRANS)
     recouv = 0
     for t in TRANS:
         if t in DISC:
