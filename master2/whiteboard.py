@@ -300,17 +300,50 @@ def cs_de_inf(data):
 #-----------------------------------------------------------
 
 
+# Un motif M est contenu dans un autre M' si on retrouve sa séquence dans le même ordre, même disjointe : (A, C) (A, B, C) => le 1er est contenu dans le second
+# Le motif M' est alors une sous-séquence du motif M, M' étant plus longue ou plus générique
+# De ce fait, une super-séquence M ne peut pas être plus courte ou moins générique qu'une de ces sous-séquences M'
+# Attention : on part de l'hypothèse qu'on ne se supporte pas soit même
+# reload(wb) ; motifs_ngss, motifs_nc, supports_ngss, supports_nc = wb.fouille(titles, 2, 5)
+def fouille(data, min_length, max_length):
+    print('MOTIFS')
+    motifs_ngss, motifs_nc = fouille_motifs(data, min_length, max_length)
+    print('Length motifs NGSS :', len(motifs_ngss))
+    print('Length motifs NC   :', len(motifs_nc))
+    print('SUPPORT')
+    supports_ngss = fouille_supports(motifs_ngss)
+    supports_nc = fouille_supports(motifs_nc)
+    print('SAVE')
+    fouille_output(motifs_ngss, motifs_nc, supports_ngss, supports_nc)
+    return motifs_ngss, motifs_nc, supports_ngss, supports_nc
+
+
+# reload(wb) ; wb.fouille_test()
+def fouille_test():
+    motifs_ngss = {
+            ('INIT', 'NGSS') : 2,
+            ('INIT', 'DET', 'NGSS') : 1
+        }
+    motifs_nc = {
+            ('INIT', 'NC') : 1,
+            ('INIT', 'NC', 'ADJ') : 1
+        }
+    supports_ngss = fouille_supports(motifs_ngss)
+    supports_nc = fouille_supports(motifs_nc)
+    fouille_output(motifs_ngss, motifs_nc, supports_ngss, supports_nc)
+
+
 # motifs(titles, -1, +1) : on va chercher les motifs A head C
 # on ne garde les lemmes que pour les classes fermées DET P P+D CS CC PROREL et être et avoir sinon POS
 # reload(wb) ; test = { '62226' : titles['62226'] } ; ngss, nc = wb.motifs(test, 2, 2)
 # lemma::pos
 # ou pos (y compris INIT et END)
-def motifs(data, min_length, max_length):
-    motifs_ngss = {}
-    motifs_nc   = {}
+def fouille_motifs(data, min_length, max_length):
+    motifs_ngss = {} # ('INIT', 'NGSS') : 2
+    motifs_nc   = {} # ('INIT', 'NC') : 2
     TRANS = trans()
     # count
-    seuil = 1000
+    seuil = 10000
     cpt = 0
     total = 0
     # Pour length = 2, si i_root = 5, start = 4 (i = 4-5), 5 (i = 5-6)
@@ -321,7 +354,7 @@ def motifs(data, min_length, max_length):
             for length in range(min_length, max_length + 1):
                 for start in range(i_root - length + 1, i_root + 1):
                     val = []
-                    is_trans = False
+                    is_trans = []
                     for i in range(start, start + length):
                         # Limits
                         if i < -1:
@@ -340,13 +373,13 @@ def motifs(data, min_length, max_length):
                             val.append(w.lemma + '::' + w.pos)
                         elif w.lemma in ['être', 'lemma']:
                             val.append(w.lemma + '::' + w.pos)
-                        elif w.lemma in TRANS:
+                        elif w.lemma in TRANS and w.pos == 'NC':
                             val.append('NGSS') # instead of NC
-                            is_trans = True
+                            is_trans.append(i) # save every NC turned to NGSS
                         else:
                             val.append(w.pos)
                     val = tuple(val)
-                    if is_trans:
+                    if len(is_trans) > 0:
                         if val not in motifs_ngss:
                             motifs_ngss[val] = 1
                         else:
@@ -360,12 +393,24 @@ def motifs(data, min_length, max_length):
         total += 1
         if cpt == seuil:
             cpt = 0
-            print(f'Done : {total:10d} / {len(data):10d}')
-    print(f'Done : {total:10d} / {len(data):10d}')
+            print(f'Motifs done : {total:10d} / {len(data):10d}')
+    print(f'Motifs done : {total:10d} / {len(data):10d}')
     return motifs_ngss, motifs_nc
 
 
-def motifs_filter(mtfs, value):
+# ('INIT', 'NGSS') => ('INIT', 'NC')
+def fouille_change(key):
+    neo = []
+    for item in key:
+        if item == 'NGSS':
+            neo.append('NC')
+        else:
+            neo.append(item)
+    return tuple(neo)
+    
+
+# non used
+def fouille_filter(mtfs, value):
     res = {}
     for key in mtfs:
         if mtfs[key] >= value:
@@ -374,7 +419,7 @@ def motifs_filter(mtfs, value):
 
 
 # reload(wb) ; test = { '62226' : titles['62226'] } ; ngss, nc = wb.motifs(test, 2, 2) ; ngss[('DET', 'NGSS', 'V')] = 1 ; wb.support(ngss)
-def motifs_support(mtfs):
+def fouille_supports(mtfs):
     # count
     seuil = 1000
     cpt = 0
@@ -384,15 +429,56 @@ def motifs_support(mtfs):
     for key1 in mtfs:
         res[key1] = 0
         for key2 in mtfs:
-            if is_contained(key1, key2):
+            if key1 != key2 and is_contained(key1, key2):
                 res[key1] += 1
         cpt += 1
         total += 1
         if cpt == seuil:
             cpt = 0
-            print(f'Done : {total:10d} / {len(mtfs):10d}')
-    print(f'Done : {total:10d} / {len(mtfs):10d}')
+            print(f'Supports done : {total:10d} / {len(mtfs):10d}')
+    print(f'Supports done : {total:10d} / {len(mtfs):10d}')
     return res
+
+
+# reload(wb) ; wb.f_motifs_supports(ngss, nc, supports_ngss, supports_nc)
+def fouille_output(motifs_ngss, motifs_nc, supports_ngss, supports_nc):
+    wb = openpyxl.Workbook(write_only=True)
+    ws = wb.create_sheet('Motifs Supports NGSS')
+    ws.append(['Len', '1', '2', '3', '4', '5', 'Count', 'Support', 'Croissance'])
+    for motif in sorted(supports_ngss, key=supports_ngss.get, reverse=True):
+        count = motifs_ngss[motif]
+        support = supports_ngss[motif]
+        row = [len(motif)]
+        for item in range(0, 5):
+            if item < len(motif):
+                row.append(motif[item])
+            else:
+                row.append('_')
+        row.append(count)
+        row.append(support)
+        # fetch growth rate
+        nc = fouille_change(motif)
+        if nc not in motifs_nc or supports_nc[nc] == 0:
+            tc = '∞'
+        else:
+            tc = supports_ngss[motif] / supports_nc[nc]
+        row.append(tc)
+        ws.append(row)
+    # Support NC
+    ws = wb.create_sheet('Motifs Supports NC')
+    for motif in sorted(supports_nc, key=supports_nc.get, reverse=True):
+        count = motifs_nc[motif]
+        support = supports_nc[motif]
+        row = [len(motif)]
+        for item in range(0, 5):
+            if item < len(motif):
+                row.append(motif[item])
+            else:
+                row.append('_')
+        row.append(support)
+        row.append(count)
+        ws.append(row)
+    wb.save('motifs_supports.xlsx')
 
 
 def item2lem_pos(item):

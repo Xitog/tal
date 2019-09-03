@@ -1527,10 +1527,11 @@ class OneSegNoun:
         for kd in all_res:
             ws = wb.create_sheet(str(cpt_d) + '. ' + kd)
             i = 1
+            ws.append(['Lemma', 'POS', 'TF*IDF', 'TF', 'IDF', 'Nb dom'])
             for k in all_res[kd]:
                 osn = OneSegNoun.NOUNS[k]
                 v = tfidf(osn, kd)
-                ws.append([i] + k.split('::') + [v])
+                ws.append([i] + k.split('::') + [v, osn.freq_dom[kd], math.log10(25 / osn.nb_doms), osn.nb_doms])
                 i += 1
             cpt_d += 1
         wb.save('blob.xlsx')
