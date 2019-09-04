@@ -34,7 +34,7 @@
 #       stat    Make stats on one or more keys
 #       Exemple : 
 #            res = stat(['roots.0.pos', 'domain'])
-#            res_agg = aggregate(res)               Aggregate NC+NPP=>NOUN / Vx=>VERB / P+P+D=>PREP
+#            res_agg = aggregate(res)               Aggregate NC+NPP=>NOUN / Vx=>VERB / P+P+D=>PREP DEPRECATED : USE roots.0.pos:agg for a direct result
 #            by_dom(res_agg)
 #   9. Boot
 
@@ -1033,11 +1033,18 @@ def sweet(dom):
     return SWEET[dom]
 
 
+def header(ws, vals):
+    res = []
+    for v in vals:
+        res.append(cell(ws, v, True))
+    ws.append(res)
+    return res
+
+
 def cell(ws, value, bold=False, background=None, color='00000000', comment=None):
     c = WriteOnlyCell(ws, value=value)
     if background is not None:
-        back = PatternFill(start_color=background, end_color=background, fill_type='solid')
-    c.fill = back
+        c.fill = PatternFill(start_color=background, end_color=background, fill_type='solid')
     c.font = Font(name='Calibri', bold=bold, color=color)
     if comment is not None:
         c.comment = Comment(text=comment, author="DG")
@@ -1138,7 +1145,7 @@ class OneSegNoun:
         '?Foucault::NPP'        : ('Foucault::NPP', 'ERROR_UNKNOWN_NPP'),
         'Henri ?Poincaré::NPP'  : ('Henri Poincaré::NPP', 'ERROR_CONCAT'),
         '?Poincaré::NPP'        : ('Poincaré::NPP', 'ERROR_UNKNOWN_NPP'),
-        '?Habermas::NPP'        : ('Harbermas::NPP', 'ERROR_UNKNOWN_NPP'),
+        '?Habermas::NPP'        : ('Habermas::NPP', 'ERROR_UNKNOWN_NPP'),
         '?Marx::NPP'            : ('Marx::NPP', 'ERROR_UNKNOWN_NPP'),
         '?Malebranche::NPP'     : ('Malebranche::NPP', 'ERROR_UNKNOWN_NPP'),
         '?Carnap::NPP'          : ('Carnap::NPP', 'ERROR_UNKNOWN_NPP'),
@@ -1207,6 +1214,9 @@ class OneSegNoun:
         '?Synthčse::NPP'        : ('synthèse::NC', 'ERROR_ORTHO'),
         '?carbènes::NC'         : ('carbène::NC', 'ERROR_UNKNOWN_NC'),
         '?sol::NC'              : ('sol::NC', 'ERROR_UNKNOWN_NC'),
+        '?Treatment::NC'        : ('traitement::NC', 'ERROR_ENGLISH_NOUN'),
+        'Teneur::NPP'           : ('teneur::NC', 'ERROR_NPP_2_NC'),
+        '?Polyhandicap::NPP'    : ('polyhandicap::NC', 'ERROR_NPP_2_NC'),
     }
 
     
@@ -1369,15 +1379,17 @@ class OneSegNoun:
             n.ect_dom = fect(n.freq_dom.values())
             n.med_dom = fmed(n.freq_dom.values())
             n.in_tutin = 1 if n.lemma in TUTIN else 0
-        # On calcul le nombre total d'occurrences de têtes
-        for kt, t in data.items():
-            if t.domain in cls.DOMAINS: # titre pris en compte
-                if num_by_title == 1:
-                    cls.TOTAL_HEAD_OCC += 1
-                else:
-                    cls.TOTAL_HEAD_OCC += len(t.roots)
         # On calcul le nombre total de lemmes différents de têtes pris en compte
-        cls.TOTAL_HEAD_LEM = len(cls.NOUNS)
+        cls.TOTAL_HEAD_LEM = 0
+        for _, n in cls.NOUNS.items():
+            for kd in n.nb_head:
+                if n.nb_head[kd] != 0:
+                    cls.TOTAL_HEAD_LEM += 1
+                    break
+        # On calcul le nombre total d'occurrences de têtes
+        cls.TOTAL_HEAD_OCC = 0
+        for kd, d in cls.DOMAINS.items():
+            cls.TOTAL_HEAD_OCC += d.total_heads
         # On calcul le nombre de domaine pris en compte
         cls.TOTAL_DOM = len(cls.DOMAINS)
 
@@ -1474,12 +1486,14 @@ class OneSegNoun:
         ws = wb.create_sheet('Disciplines')
         i = 1
         # Title page
-        ws.append(['N°', 'Discipline', 'Code', 'Lemmes diff'])
-        for kd in all_res:
-            ws.append([i, sweet(kd), kd, len(all_res[kd])])
+        nb_titles = stat('domain', display=False)
+        header(ws, ['N°', 'Discipline', 'Code', 'Head Lem diff', 'Head Occ diff', 'Nb Titles'])
+        for kd in all_res:  # len(all_res[kd]) == cls.DOMAINS[kd].nb_heads
+            ws.append([i, sweet(kd), kd, len(all_res[kd]), cls.DOMAINS[kd].total_heads, nb_titles[(kd,)]])
             i += 1
         # All lemma page
         ws = wb.create_sheet('Lemma')
+        header(ws, ['Lemma', 'POS', 'Nb Dom'])
         for kl in all_lem:
             row = kl.split('::')
             row.append(len(all_lem[kl]))
@@ -1494,7 +1508,7 @@ class OneSegNoun:
         for kd in all_res:
             row.append(kd)
             cls.DOMAINS_BAG_OF_WORDS[kd] = []
-        ws.append(row)
+        header(ws, row)
         for kl in all_lem:
             row = kl.split('::')
             osn = OneSegNoun.NOUNS[kl]
@@ -1511,7 +1525,7 @@ class OneSegNoun:
         row = ['Distances']
         for kd in cls.DOMAINS_BAG_OF_WORDS:
             row.append(kd)
-        ws.append(row)
+        header(ws, row)
         for kd1 in cls.DOMAINS_BAG_OF_WORDS:
             row = [kd1]
             maxx = len(cls.DOMAINS_BAG_OF_WORDS[kd1]) # always the same, square matrix
@@ -1527,11 +1541,11 @@ class OneSegNoun:
         for kd in all_res:
             ws = wb.create_sheet(str(cpt_d) + '. ' + kd)
             i = 1
-            ws.append(['Lemma', 'POS', 'TF*IDF', 'TF', 'IDF', 'Nb dom'])
+            header(ws, ['N°', 'Lemma', 'POS', 'Count', 'TF*IDF', 'TF', 'IDF', 'Nb dom'])
             for k in all_res[kd]:
                 osn = OneSegNoun.NOUNS[k]
                 v = tfidf(osn, kd)
-                ws.append([i] + k.split('::') + [v, osn.freq_dom[kd], math.log10(25 / osn.nb_doms), osn.nb_doms])
+                ws.append([i] + k.split('::') + [osn.nb_head[kd], v, osn.freq_dom[kd], math.log10(25 / osn.nb_doms), osn.nb_doms])
                 i += 1
             cpt_d += 1
         wb.save('blob.xlsx')
@@ -1968,6 +1982,13 @@ def init(debug):
     titles = corpus
     c1s = select({'nb_segments' : 1})
     c2s = select({'nb_segments' : 2})
+    # Info sur les titres à 2 segments avant triage sur type
+    print('\n* Info on 2 seg titles before filtering on type of head\n')
+    old = titles
+    titles = c2s
+    res = stat(['roots.0.pos:agg', 'roots.1.pos:agg'])
+    titles=  old
+    print()
     # We select title with a NC or NPP root
     titles = c1s
     c1n = select({'roots.0.pos' : ['NC', 'NPP']})
@@ -2010,9 +2031,9 @@ def init(debug):
     #OneSegNoun.lex(c2n, 'couple')
     #output_filename = "heads_c2n_couple.xlsx"
     
-    print(f'Nombre total de lemmes de têtes : {OneSegNoun.TOTAL_HEAD_OCC:5d}')
-    print(f'Nombre total de têtes           : {OneSegNoun.TOTAL_HEAD_LEM:5d}')
-    print(f'Nombre total de domaine         : {OneSegNoun.TOTAL_DOM:5d}')
+    print(f'Nombre total occurrences de têtes : {OneSegNoun.TOTAL_HEAD_OCC:5d}')
+    print(f'Nombre total lemmes de têtes      : {OneSegNoun.TOTAL_HEAD_LEM:5d}')
+    print(f'Nombre total de domaine           : {OneSegNoun.TOTAL_DOM:5d}')
     print(OneSegNoun.errors)
     
     if produce_disc_excel:
