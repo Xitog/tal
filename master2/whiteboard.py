@@ -48,6 +48,157 @@ patterns = [
 ]
 
 
+# elem pour retrouver les éléments dans le titre
+# cs pour trouver les matchs dans tous les titres
+# f_cs pour écrire un fichier de résultat
+
+# count nc de nc
+# reload(wb) ; wb.count_de(titles, 'all')
+def count_de(data, typ='all'):
+    TRANS = trans()
+    tt = 0
+    for kt, t in data.items():
+        ok = False
+        for w in t.words:
+            if w.pos == 'NC':
+                children1 = get_children(t, w)
+                for w1 in children1:
+                    if w1.lemma == 'de':
+                        children2 = get_children(t, w1)
+                        for w2 in children2:
+                            if w2.pos == 'NC':
+                                ok = True
+                            if ok: break
+                    if ok: break
+            if ok: break
+        if ok and typ == 'all': tt += 1
+        elif ok and typ == 'trans' and w.lemma in TRANS: tt += 1
+        elif ok and typ == '!trans' and w.lemma not in TRANS: tt += 1
+    return tt
+
+
+# reload(wb) ; wb.count_trans_occ(titles)
+def count_trans_occ(data):
+    tt_trans = 0
+    tt_no_trans = 0
+    TRANS = trans()
+    for kt, t in data.items():
+        for w in t.words:
+            if w.pos == 'NC':
+                if w.lemma in TRANS:
+                    tt_trans += 1
+                else:
+                    tt_no_trans += 1
+    return tt_trans, tt_no_trans
+
+
+#-----------------------------------------------------------
+# CS : NGSS [être] NC
+#-----------------------------------------------------------
+
+def elem_n_est_n(t):
+    res  = None
+    ngss = None
+    etre = None
+    nco  = None
+    for w in t.words:
+        if w.pos == 'V' and w.lemma == 'être':
+            etre = w
+            # il doit y avoir un nom sujet
+            children_of_etre = get_children(t, w)
+            for w2 in children_of_etre:
+                if w2.dep == 'suj' and w2.pos == 'NC':
+                    ngss = w2
+                elif w2.dep == 'obj' and w2.pos == 'NC':
+                    nco = w2
+                if ngss is not None and nco is not None:
+                    break
+        if ngss is not None and nco is not None:
+            break
+    return (ngss, etre, nco)
+
+
+# reload(wb) ; res = wb.cs_n_est_n(titles); wb.f_cs_n_est_n(res)
+def f_cs_n_est_n(data):
+    wb = openpyxl.Workbook(write_only=True)
+    ws = wb.create_sheet('Out')
+    all_ngss = {}
+    all_nco = {}
+    all_cs = {}
+    for kt, t in data.items():
+        ngss = None
+        row = [int(kt)]
+        elem = elem_n_est_n(t)
+        for w in t.words:
+            if w in elem:
+                cpt = elem.index(w)
+                c = WriteOnlyCell(ws, value=w.form)
+                c.fill = patterns[cpt]
+                if cpt == 0:
+                    ngss = w.lemma
+                    if w.lemma not in all_ngss:
+                        all_ngss[w.lemma] = 1
+                    else:
+                        all_ngss[w.lemma] += 1
+                elif cpt == 1:
+                    pass
+                elif cpt == 2:
+                    nco = w.lemma
+                    if w.lemma not in all_nco:
+                        all_nco[w.lemma] = 1
+                    else:
+                        all_nco[w.lemma] += 1 
+                    cs = (ngss, nco)
+                    if cs not in all_cs:
+                        all_cs[cs] = 1
+                    else:
+                        all_cs[cs] += 1
+                row.append(c)
+            else:
+                row.append(w.form)
+        ws.append(row)
+    ws = wb.create_sheet('NGSS')
+    ngss_total = sum(all_ngss.values())
+    for k in sorted(all_ngss, key=all_ngss.get, reverse=True):
+        ws.append([k, all_ngss[k], all_ngss[k] / ngss_total])
+    ws = wb.create_sheet('NCO')
+    nco_total = sum(all_nco.values())
+    for k in sorted(all_nco, key=all_nco.get, reverse=True):
+        ws.append([k, all_nco[k], all_nco[k] / nco_total])
+    ws = wb.create_sheet('CS')
+    cs_total = sum(all_cs.values())
+    for k in sorted(all_cs, key=all_cs.get, reverse=True):
+        ws.append([*k, all_cs[k], all_cs[k] / cs_total])
+    ws = wb.create_sheet('Info')
+    ws.append(['Total occ NGSS', ngss_total])
+    ws.append(['Total occ NCO', nco_total])
+    ws.append(['Total diff CS', cs_total])
+    ws.append(['Total res', len(data)])
+    wb.save('CS-n_est_n.xlsx')
+
+
+def cs_n_est_n(data):
+    res = {}
+    for kt, t in data.items():
+        ok_suj = False
+        ok_obj = False
+        for w in t.words:
+            if w.pos == 'V' and w.lemma == 'être':
+                # il doit y avoir un nom sujet
+                children_of_etre = get_children(t, w)
+                for w2 in children_of_etre:
+                    if w2.dep == 'suj' and w2.pos == 'NC':
+                        ok_suj = True
+                    elif w2.dep == 'obj' and w2.pos == 'NC':
+                        ok_obj = True
+                    if ok_suj and ok_obj:
+                        break
+            if ok_suj and ok_obj:
+                res[kt] = t
+                break
+    return res
+
+
 #-----------------------------------------------------------
 # CS : NGSS [être] que
 #-----------------------------------------------------------
@@ -255,7 +406,7 @@ def f_cs_de_inf(data):
     ws.append(['Total occ NGSS', ngss_total])
     ws.append(['Total occ CS', cs_total])
     ws.append(['Total res', len(data)])
-    wb.save('out.xlsx')
+    wb.save('CS-inf.xlsx')
 
 
 # ne pas est un children du verbe
