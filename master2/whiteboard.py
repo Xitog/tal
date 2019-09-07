@@ -679,7 +679,7 @@ def is_contained(prime, s):
         #print('   ', nb, prime[nb], 'vs', item, cmp_item(prime[nb], item))
         if cmp_item(prime[nb], item):
             nb += 1
-            if nb == len(prime):
+            if nb == len(prime): # tu restarts pas à 0 !!! c mauvais... voir def count_suite
                 return True
     return False
 
@@ -713,6 +713,255 @@ def test_motifs():
     s4 = ('DET', 'NC', 'V')
     prime4 = ('DET', 'NC', 'être::V') # False : prime4 is more precise than s4!
     ptest(is_contained(prime4, s4), False)
+
+
+#---------------------------------------------------
+
+# Check support
+# reload(wb) ; wb.count_one('PONCT')
+def count_one(val):
+    wb = load_workbook(r".\output\motifs_supports-2-7.xlsx", read_only=True)
+    pct = 0
+    for i, sn in enumerate(wb.sheetnames):
+        ws = wb[sn]
+        if i == 0:
+            for row in ws.rows:
+                for j in range(1, 6):
+                    lem = row[j].value
+                    if lem == val:
+                        pct += 1
+    return pct
+
+
+def read(filename, sheet):
+    wbin = load_workbook(filename, read_only=True)
+    for i, sn in enumerate(wbin.sheetnames):
+        ws = wbin[sn]
+        if i == sheet:
+            lines = []
+            for row in ws.rows:
+                line = []
+                for cell in row:
+                    line.append(cell.value)
+                lines.append(line)
+    return lines
+
+
+# [ '', 'A', 'B', '_', '_', '_'] => ['A', 'B']
+def grep_motif(line):
+    motif = []
+    for k in line[1:6]:
+        if k != '_':
+            motif.append(k)
+        else:
+            return motif
+    return motif
+
+
+# r".\output\motifs_supports-2-7.xlsx"
+# reload(wb) ; r = wb.recalc_support(r".\output\motifs_supports-2-5.xlsx")
+def recalc_support(filename):
+    # read
+    print('READING')
+    ngss = read(filename, 0)
+    nc = read(filename, 1)
+    # recalc support nc
+    correponding = {}
+    print('RECALC NC')
+    first = True
+    # count
+    cpt = 0
+    seuil = 1000
+    total = 0
+    for line in nc:
+        if first:
+            first = False
+        else:
+            #print(line, grep_motif(line))
+            try:
+                nc[7] = count_suite(grep_motif(line), nc) / (len(nc) - 1)
+                key = line[1].replace('NC', 'NGSS') + line[2].replace('NC', 'NGSS') + line[3].replace('NC', 'NGSS') + line[4].replace('NC', 'NGSS') + line[5].replace('NC', 'NGSS')
+                corresponding[key] = cpt
+            except AttributeError:
+                pass
+        cpt += 1
+        total += 1
+        if cpt == seuil:
+            print(f"{total:10d} / {len(nc)-1:10d}")
+            cpt = 0
+    # recalc support ngss
+    print('RECALC NGSS')
+    first = True
+    # count
+    cpt = 0
+    seuil = 1000
+    total = 0
+    for line in ngss:
+        if first:
+            first = False
+        else:
+            #print(line, grep_motif(line))
+            try:
+                ngss[7] = count_suite(grep_motif(line), ngss) / (len(ngss) - 1)
+                key = line[1] + line[2]+ line[3] + line[4] + line[5]
+                if key in corresponding:
+                    ngss[8] = ngss[7] / nc[corresponding[key]][7]
+                else:
+                    ngss[8] = '∞'
+            except AttributeError:
+                pass
+        cpt += 1
+        total += 1
+        if cpt == seuil:
+            print(f"{total:10d} / {len(ngss)-1:10d}")
+            cpt = 0
+    # output
+    wbout = openpyxl.Workbook(write_only=True)
+    ws = wbout.create_sheet('Motifs Supports NGSS')
+    #ws.append(['Len', '1', '2', '3', '4', '5', 'Count', 'Support', 'Croissance'])
+    for line in ngss:
+        ws.append(line)
+    ws = wbout.create_sheet('Motifs Supports NC')
+    ws.append(['Len', '1', '2', '3', '4', '5', 'Count', 'Support', 'Croissance'])
+    for line in nc:
+        ws.append(line)
+    wbout.save('motifs_supports_c.xlsx')
+    return ngss, nc
+
+
+# reload(wb) ; wb.count_suite(['PONCT', 'NGSS', 'VINF'])
+# reload(wb) ; wb.count_suite(['PONCT', 'VINF'])
+# 3  PONCT  NGSS  VINF  _  _  1  8610  ∞  
+# 4  VINF  PONCT  NGSS  VINF  _  1  774  ∞  
+# 5  PONCT  VINF  PONCT  NGSS  VINF  1  42  ∞  
+# 4  PONCT  NGSS  VINF  en::P  _  1  30  ∞  
+# 5  VINF  PONCT  NGSS  VINF  en::P  1  0  ∞  
+# 5  PONCT  NGSS  VINF  en::P  NPP  1  0  ∞  
+# 6
+
+# reload(wb) ; wb.test_count_suite()
+def test_count_suite():
+    data = [
+            ['', 'PONCT', 'PIPO', 'VINF', '', ''], # PYTHON CONCAT LES STRINGS SANS RIEN !
+            ['', 'PONCT', 'VINF', '', '', ''],
+            ['', 'PONCT', 'ZORBA', 'DRACULA', 'VINF', ''],
+            ['', 'VINF', 'PONCT', '', '', ''],
+            ['', 'PONCT', 'PONCT', 'VINF', '', ''],
+            ['', 'de::DET', 'NC', '', '', ''],
+            ['', 'NC', 'V', '', '', '']
+        ]
+    motif = ['PONCT', 'VINF']
+    print('Should be True :', strict_seq_eq(motif, motif))
+    print('Motif:', motif)
+    print('Should be 3 :', count_suite(motif, data))
+    motif = ['DET', 'NC']
+    print('Motif:', motif)
+    print('Should be 1 :', count_suite(motif, data))
+    motif = ['pipo::NC', 'V']
+    print('Motif:', motif)
+    print('Should be 0 :', count_suite(motif, data))
+
+
+# LE MOTIF PEUT ETRE PLUS PETIT ET MOINS PRECIS, PAS L'INVERSE
+# wb.exq('DET', 'de::DET')      True
+# wb.exq('de::DET', 'DET')      False
+# wb.exq('de::DET', 'de::DET')  True
+# wb.exq('DET', 'DET')          True
+# reload(wb) ; wb.exq('DET', 'de::DET')
+def exq(emotif, b):
+    # motif more precise
+    if len(emotif.split('::')) > len(b.split('::')) :
+        return False
+    elif len(emotif.split('::')) == 2 and len(b.split('::')) == 2:
+        lem1, pos1 = emotif.split('::')
+        lem2, pos2 = b.split('::')
+        return lem1 == lem2 and pos1 == pos2
+    elif len(b.split('::')) == 2: # and motif is only 1
+        lem, pos = b.split('::')
+        return emotif == pos
+    else: # 1 and 1
+        return emotif == b
+
+
+def strict_item_eq(a, b):
+    #print('==', a, b)
+    return a == b
+
+
+def strict_seq_eq(motif, sb):
+    ok = True
+    #print(len(motif), len(sb))
+    if len(motif) > len(sb): return False
+    for i in range(0, len(motif)):
+        #print('=', 'i', i, 'mot', motif[i], 'row', sb[i], '.')
+        if not strict_item_eq(motif[i], sb[i]):
+            return False
+    return ok
+
+
+# reload(wb) ; wb.test_count_suite()
+def count_suite(motif, data, exclude_first=True):
+    pct = 0
+    for row in data:
+        if exclude_first:
+            exclude_first = False
+            continue
+        #print('INFO', len(row), row)
+        good = 0
+        for j in range(1, 6):
+            #print(motif[0], j, row[j])
+            if exq(motif[0], row[j]):
+                good = 0
+                for k in range(j, j + len(motif) + 2):
+                    if k < len(row) and k < 6 and exq(motif[good], row[k]):
+                        #print('k', k, 'D', row[k], 'M', motif[good], '+1')
+                        good += 1
+                        if good == len(motif):
+                            break
+                    #else:
+                    #    print('k', k, 'D', row[k], 'M', motif[good])
+                if good == len(motif):
+                    break
+        #print(row)
+        if good == len(motif) and not strict_seq_eq(motif, row[1:6]): #(because of identity)
+            pct += 1
+            #print('good')
+        #elif strict_seq_eq(motif, row):
+        #    print('equal')
+        #print()
+    return pct
+
+
+def count_suite_direct(vals):
+    wb = load_workbook(r".\output\motifs_supports-2-7.xlsx", read_only=True)
+    pct = 0
+    for i, sn in enumerate(wb.sheetnames):
+        ws = wb[sn]
+        if i == 0:
+            for row in ws.rows:
+                for j in range(1, 6):
+                    lem = row[j].value
+                    if lem == vals[0]:
+                        #good = True
+                        good = 0
+                        for k in range(j, j + len(vals) + 1):
+                            # non disjoint
+                            #if k >= len(row) or row[k].value != vals[k - j]:
+                            #    good = False
+                            #    break
+                            # disjoint
+                            #print(i, k, len(row), row[k].value, good, vals[good])
+                            if k < len(row) and row[k].value == vals[good]:
+                                good += 1
+                                if good == len(vals):
+                                    break
+                        #if good:
+                        if good == len(vals):
+                            pct += 1
+                            #for i in range(0, len(row)):
+                            #    print(row[i].value, ' ', end='')
+                            #print('good')
+    return pct
 
 
 #-----------------------------------------------------------
