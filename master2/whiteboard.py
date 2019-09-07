@@ -6,9 +6,143 @@ from openpyxl.styles import PatternFill, Font
 from openpyxl import load_workbook
 
 #-----------------------------------------------------------
-# Tools
+# Final
 #-----------------------------------------------------------
 
+def count(dic, key, val=1):
+    if key in dic:
+        dic[key] += val
+    else:
+        dic[key] = val
+
+
+def ouput(wb, title, dic):
+    ws = wb.create_sheet(title)
+    tt = sum(dic.values())
+    cumul = 0
+    for key in sorted(dic, key=dic.get, reverse=True):
+        if type(key) == tuple:
+            row = [*key]
+        else:
+            row = [key]
+        row.append(dic[key])
+        per = dic[key] / tt
+        row.append(per)
+        cumul += per
+        row.append(cumul)
+        ws.append(row)
+
+
+def is_first(t):
+    tt    = None
+    p     = None
+    nc    = None
+    # first pattern
+    for i, w in enumerate(t.words):
+        if i == 0:
+            if w.pos == 'DET' and i + 1 < len(t.words):
+                if t.words[i + 1].pos == 'NC' and t.words[i + 1].lemma in TRANS:
+                    tt = t.words[i + 1]
+            elif w.pos == 'NC' and w.lemma in TRANS:
+                tt = w
+        elif tt is not None and w.pos in ['P', 'P+D']:
+            p = w
+        elif p is not None and w.pos == 'NC' and w.lemma not in TRANS:
+            nc = w
+        if tt is not None and p is not None and nc is not None:
+            break
+    return (tt, p, nc)
+
+
+def is_second(t):
+    nc1 = None
+    ponct = None
+    tt = None
+    p = None
+    nc2 = None
+    for i, w in enumerate(t.words):
+        if ponct is None and w.pos == 'NC' and w.lemma not in TRANS:
+            nc1 = w
+        elif nc1 is not None and ponct is None and w.pos == 'PONCT':
+            ponct = w
+        elif ponct is not None and trans is None and w.pos == 'NC' and w.lemma in TRANS:
+            tt = w
+        elif tt is not None and w.pos in ['P', 'P+D']:
+            p = w
+        elif p is not None and w.pos == 'NC' and w.lemma not in TRANS:
+            nc2 = w
+            break
+        if nc1 is not None and ponct is not None and tt is not None and p is not None and nc2 is not None:
+            break
+    return(nc1, ponct, tt, p, nc2)
+
+
+
+# reload(wb) ; wb.final(titles)
+def final(data):
+    SCHEMA1 = {}
+    SCHEMA1_TRANS = {}
+    SCHEMA1_NC = {}
+    SCHEMA1_P = {}
+    SCHEMA2 = {}
+    SCHEMA2_P1 = {}
+    SCHEMA2_P2 = {}
+    SCHEMA2_NC1 = {}
+    SCHEMA2_TRANS = {}
+    SCHEMA2_PONCT = {}
+    SCHEMA2_P = {}
+    SCHEMA2_NC2 = {}
+    cpt = 0
+    total = 0
+    seuil = 10000
+    for kt, t in data.items():
+        tt, p, nc = is_first(t)
+        if tt is not None and p is not None and nc is not None:
+            key = (tt.lemma, nc.lemma)
+            count(SCHEMA1, key)
+            count(SCHEMA1_TRANS, tt.lemma)
+            count(SCHEMA1_P, p.lemma)
+            count(SCHEMA1_NC, nc.lemma)
+        # second pattern
+        nc1, ponct, tt, p, nc2 = is_second(t)
+        if nc1 is not None and ponct is not None and tt is not None and p is not None and nc2 is not None:
+            key = (nc1.lemma, tt.lemma, nc2.lemma)
+            keyP1 = (nc1.lemma, tt.lemma)
+            keyP2 = (tt.lemma, nc2.lemma)
+            count(SCHEMA2, key)
+            count(SCHEMA2_P1, keyP1)
+            count(SCHEMA2_P2, keyP2)
+            count(SCHEMA2_NC1, nc1.lemma)
+            count(SCHEMA2_PONCT, ponct.lemma)
+            count(SCHEMA2_TRANS, tt.lemma)
+            count(SCHEMA2_P, p.lemma)
+            count(SCHEMA2_NC2, nc2.lemma)
+        cpt += 1
+        total += 1
+        if cpt == seuil:
+            print(f"{total:6d} / {len(data):6d}")
+            cpt = 0
+    print(f"{total:6d} / {len(data):6d}")
+    # write results
+    wb = openpyxl.Workbook(write_only=True)
+    ouput(wb, "Schema INIT TT NC", SCHEMA1)
+    ouput(wb, "TT", SCHEMA1_TRANS)
+    ouput(wb, "NC", SCHEMA1_NC)
+    ouput(wb, "P", SCHEMA1_P)
+    ouput(wb, "Schema NC PONCT TT NC", SCHEMA2)
+    ouput(wb, "NC1 TT", SCHEMA2_P1)
+    ouput(wb, "TT NC2", SCHEMA2_P2)
+    ouput(wb, "NC1", SCHEMA2_NC1)
+    ouput(wb, "TT", SCHEMA2_TRANS)
+    ouput(wb, "PONCT", SCHEMA2_PONCT)
+    ouput(wb, "P", SCHEMA2_P)
+    ouput(wb, "BC2", SCHEMA2_NC2)
+    wb.save("ultimate.xlsx")
+
+
+#-----------------------------------------------------------
+# Tools
+#-----------------------------------------------------------
 
 # Only first level children
 def get_children(t, word):
@@ -1032,6 +1166,8 @@ def trans():
     for lin in lines:
         res.append(lin.rstrip())
     return res
+get_trans = trans
+TRANS = get_trans()
 
 
 def select_trans_t(data):
