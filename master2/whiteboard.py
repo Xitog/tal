@@ -16,10 +16,23 @@ def count(dic, key, val=1):
         dic[key] = val
 
 
-def ouput(wb, title, dic):
+def output_list(wb, title, lst):
     ws = wb.create_sheet(title)
-    tt = sum(dic.values())
+    for val in lst:
+        row = []
+        for elem in val:
+            if type(elem) == tuple:
+                for e in elem:
+                    row.append(e)
+            else:
+                row.append(elem)
+        ws.append(row)
+
+
+def output(wb, title, dic):
+    ws = wb.create_sheet(title)
     cumul = 0
+    tt = sum(dic.values())
     for key in sorted(dic, key=dic.get, reverse=True):
         if type(key) == tuple:
             row = [*key]
@@ -31,6 +44,33 @@ def ouput(wb, title, dic):
         cumul += per
         row.append(cumul)
         ws.append(row)
+
+
+def is_first_ddaa(t): # contraint de la prép à de + contraint de fin en -tion, -ment, -age, -sion
+    tt    = None
+    p     = None
+    nc    = None
+    # first pattern
+    for i, w in enumerate(t.words):
+        if i == 0:
+            if w.pos == 'DET' and i + 1 < len(t.words):
+                if t.words[i + 1].pos == 'NC' and t.words[i + 1].lemma in TRANS:
+                    tt = t.words[i + 1]
+            elif w.pos == 'NC' and w.lemma in TRANS:
+                tt = w
+        elif tt is not None and w.pos in ['P', 'P+D']:
+            if w.lemma == 'de':
+                p = w
+            else:
+                break # the prep must be de !
+        elif p is not None and w.pos == 'NC': # and w.lemma not in TRANS:
+            if w.lemma.endswith('tion') or w.lemma.endswith('ment') or w.lemma.endswith('age') or w.lemma.endswith('sion'):
+                nc = w
+            else:
+                break # the first noun after the prep must be like this
+        if tt is not None and p is not None and nc is not None:
+            break
+    return (tt, p, nc)
 
 
 def is_first(t):
@@ -47,7 +87,7 @@ def is_first(t):
                 tt = w
         elif tt is not None and w.pos in ['P', 'P+D']:
             p = w
-        elif p is not None and w.pos == 'NC' and w.lemma not in TRANS:
+        elif p is not None and w.pos == 'NC': # and w.lemma not in TRANS:
             nc = w
         if tt is not None and p is not None and nc is not None:
             break
@@ -60,12 +100,13 @@ def is_second(t):
     tt = None
     p = None
     nc2 = None
-    for i, w in enumerate(t.words):
+    for w in t.words:
+        #print(nc1, ponct, tt, p, nc2)
         if ponct is None and w.pos == 'NC' and w.lemma not in TRANS:
             nc1 = w
         elif nc1 is not None and ponct is None and w.pos == 'PONCT':
             ponct = w
-        elif ponct is not None and trans is None and w.pos == 'NC' and w.lemma in TRANS:
+        elif ponct is not None and tt is None and w.pos == 'NC' and w.lemma in TRANS:
             tt = w
         elif tt is not None and w.pos in ['P', 'P+D']:
             p = w
@@ -77,13 +118,45 @@ def is_second(t):
     return(nc1, ponct, tt, p, nc2)
 
 
+class MockWord:
+    def __init__(self, pos, lemma):
+        self.pos = pos
+        self.lemma = lemma
+        
+    def __str__(self):
+        return f"({self.lemma} {self.pos})"
+    
+class MockTitle:
+    def __init__(self, words):
+        self.words = words
+
+# reload(wb) ; wb.xxtest()
+def xxtest():
+    nc1 = MockWord('NC', 'nc1')
+    ponct = MockWord('PONCT', ':')
+    tt = MockWord('NC', 'problème')
+    p = MockWord('P', 'de')
+    nc2 = MockWord('NC', 'nc2')
+    t = MockTitle([nc1, ponct, tt, p, nc2])
+    r = is_second(t)
+    print('Res:')
+    for e in r:
+        print("   " + str(e))
+
+
+IS_HEAD = 0
 
 # reload(wb) ; wb.final(titles)
-def final(data):
+# reload(wb) ; wb.final(titles, 'problème')
+# reload(wb) ; wb.final(titles, 'problème', True) # contraint with ddaa
+# reload(wb) ; wb.final(titles, 'problème', ddaa=True, save=False)
+def final(data, target=None, ddaa=False, save=True):
+    global IS_HEAD
     SCHEMA1 = {}
     SCHEMA1_TRANS = {}
     SCHEMA1_NC = {}
     SCHEMA1_P = {}
+    SCHEMA1_TEXT = []
     SCHEMA2 = {}
     SCHEMA2_P1 = {}
     SCHEMA2_P2 = {}
@@ -92,31 +165,45 @@ def final(data):
     SCHEMA2_PONCT = {}
     SCHEMA2_P = {}
     SCHEMA2_NC2 = {}
+    SCHEMA2_TEXT = []
     cpt = 0
     total = 0
     seuil = 10000
     for kt, t in data.items():
-        tt, p, nc = is_first(t)
+        if not ddaa:
+            tt, p, nc = is_first(t)
+        else:
+            tt, p, nc = is_first_ddaa(t)
         if tt is not None and p is not None and nc is not None:
-            key = (tt.lemma, nc.lemma)
-            count(SCHEMA1, key)
-            count(SCHEMA1_TRANS, tt.lemma)
-            count(SCHEMA1_P, p.lemma)
-            count(SCHEMA1_NC, nc.lemma)
+            if target is None or target == tt.lemma:
+                key = (tt.lemma, nc.lemma)
+                count(SCHEMA1, key)
+                count(SCHEMA1_TRANS, tt.lemma)
+                count(SCHEMA1_P, p.lemma)
+                count(SCHEMA1_NC, nc.lemma)
+                if t.roots[0] == index(t, tt.idw):
+                    IS_HEAD += 1
+                else:
+                    print(kt, t)
+                if target is not None:
+                    SCHEMA1_TEXT.append([p.lemma, nc.lemma, t.idt, t.text])
         # second pattern
         nc1, ponct, tt, p, nc2 = is_second(t)
         if nc1 is not None and ponct is not None and tt is not None and p is not None and nc2 is not None:
-            key = (nc1.lemma, tt.lemma, nc2.lemma)
-            keyP1 = (nc1.lemma, tt.lemma)
-            keyP2 = (tt.lemma, nc2.lemma)
-            count(SCHEMA2, key)
-            count(SCHEMA2_P1, keyP1)
-            count(SCHEMA2_P2, keyP2)
-            count(SCHEMA2_NC1, nc1.lemma)
-            count(SCHEMA2_PONCT, ponct.lemma)
-            count(SCHEMA2_TRANS, tt.lemma)
-            count(SCHEMA2_P, p.lemma)
-            count(SCHEMA2_NC2, nc2.lemma)
+            if target is None or target == tt.lemma:
+                key = (nc1.lemma, tt.lemma, nc2.lemma)
+                keyP1 = (nc1.lemma, tt.lemma)
+                keyP2 = (tt.lemma, nc2.lemma)
+                count(SCHEMA2, key)
+                count(SCHEMA2_P1, keyP1)
+                count(SCHEMA2_P2, keyP2)
+                count(SCHEMA2_NC1, nc1.lemma)
+                count(SCHEMA2_PONCT, ponct.lemma)
+                count(SCHEMA2_TRANS, tt.lemma)
+                count(SCHEMA2_P, p.lemma)
+                count(SCHEMA2_NC2, nc2.lemma)
+                if target is not None:
+                    SCHEMA2_TEXT.append([nc1.lemma, ponct.lemma, nc2.lemma, t.idt, t.text])
         cpt += 1
         total += 1
         if cpt == seuil:
@@ -125,19 +212,28 @@ def final(data):
     print(f"{total:6d} / {len(data):6d}")
     # write results
     wb = openpyxl.Workbook(write_only=True)
-    ouput(wb, "Schema INIT TT NC", SCHEMA1)
-    ouput(wb, "TT", SCHEMA1_TRANS)
-    ouput(wb, "NC", SCHEMA1_NC)
-    ouput(wb, "P", SCHEMA1_P)
-    ouput(wb, "Schema NC PONCT TT NC", SCHEMA2)
-    ouput(wb, "NC1 TT", SCHEMA2_P1)
-    ouput(wb, "TT NC2", SCHEMA2_P2)
-    ouput(wb, "NC1", SCHEMA2_NC1)
-    ouput(wb, "TT", SCHEMA2_TRANS)
-    ouput(wb, "PONCT", SCHEMA2_PONCT)
-    ouput(wb, "P", SCHEMA2_P)
-    ouput(wb, "BC2", SCHEMA2_NC2)
-    wb.save("ultimate.xlsx")
+    output(wb, "Schema INIT TT NC", SCHEMA1)
+    output(wb, "TT", SCHEMA1_TRANS)
+    output(wb, "NC", SCHEMA1_NC)
+    output(wb, "P", SCHEMA1_P)
+    output_list(wb, "TEXT1", SCHEMA1_TEXT)
+    output(wb, "Schema NC PONCT TT NC", SCHEMA2)
+    output(wb, "NC1 TT", SCHEMA2_P1)
+    output(wb, "TT NC2", SCHEMA2_P2)
+    output(wb, "NC1", SCHEMA2_NC1)
+    output(wb, "TT", SCHEMA2_TRANS)
+    output(wb, "PONCT", SCHEMA2_PONCT)
+    output(wb, "P", SCHEMA2_P)
+    output(wb, "BC2", SCHEMA2_NC2)
+    output_list(wb, "TEXT2", SCHEMA2_TEXT)
+    if save:
+        if target is None:
+            wb.save("trans_schema.xlsx")
+        else:
+            if not ddaa:
+                wb.save("trans_" + target + "_schema.xlsx")
+            else:
+                wb.save("trans_" + target + "_schema_ddaa.xlsx")
 
 
 #-----------------------------------------------------------
