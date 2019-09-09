@@ -46,6 +46,33 @@ def output(wb, title, dic):
         ws.append(row)
 
 
+def is_first_ddaa_nottrans(t): # contraint de la prép à de + contraint de fin en -tion, -ment, -age, -sion
+    tt    = None
+    p     = None
+    nc    = None
+    # first pattern
+    for i, w in enumerate(t.words):
+        if i == 0:
+            if w.pos == 'DET' and i + 1 < len(t.words):
+                if t.words[i + 1].pos == 'NC' and t.words[i + 1].lemma not in TRANS:
+                    tt = t.words[i + 1]
+            elif w.pos == 'NC' and w.lemma not in TRANS:
+                tt = w
+        elif tt is not None and w.pos in ['P', 'P+D']:
+            if w.lemma == 'de':
+                p = w
+            else:
+                break # the prep must be de !
+        elif p is not None and w.pos == 'NC':
+            if w.lemma.endswith('tion') or w.lemma.endswith('ment') or w.lemma.endswith('age') or w.lemma.endswith('sion'):
+                nc = w
+            else:
+                break # the first noun after the prep must be like this
+        if tt is not None and p is not None and nc is not None:
+            break
+    return (tt, p, nc)
+
+
 def is_first_ddaa(t): # contraint de la prép à de + contraint de fin en -tion, -ment, -age, -sion
     tt    = None
     p     = None
@@ -94,6 +121,79 @@ def is_first(t):
     return (tt, p, nc)
 
 
+def is_second_ddaa(t):
+    nc1 = MockWord("W", "W") #None # on bazarde
+    ponct = None
+    tt = None
+    p = None
+    nc2 = None
+    for w in t.words:
+        #print(nc1, ponct, tt, p, nc2)
+        #if ponct is None and w.pos == 'NC' and w.lemma not in TRANS:
+        #    nc1 = w
+        #elif nc1 is not None and ponct is None and w.pos == 'PONCT':
+        #    ponct = w
+        if ponct is None and w.pos == 'PONCT':
+            if len(t.segments) > 0 and index(t, w.idw) == t.segments[0]: # NEW: MUST BE THE SEG
+                ponct = w
+        elif ponct is not None and tt is None and w.pos not in ['DET', 'ADJ', 'NC']:
+            break
+        elif ponct is not None and tt is None and w.pos == 'NC':
+            if w.lemma in TRANS:
+                tt = w # must be the first noun after the ponct!
+            else:
+                break
+        elif tt is not None and w.pos in ['P', 'P+D']:
+            if w.lemma == 'de':
+                p = w
+            else:
+                break # the prep must be de !
+        elif p is not None and w.pos == 'NC': # bazarde no TRANS ici
+            if w.lemma.endswith('tion') or w.lemma.endswith('ment') or w.lemma.endswith('age') or w.lemma.endswith('sion'):
+                nc2 = w
+                break
+            else:
+                break # the first noun after the prep must be like this
+        if nc1 is not None and ponct is not None and tt is not None and p is not None and nc2 is not None:
+            break
+    return(nc1, ponct, tt, p, nc2)
+
+
+def is_second_ddaa_nottrans(t):
+    nc1 = MockWord("W", "W") #None # on bazarde
+    ponct = None
+    tt = None
+    p = None
+    nc2 = None
+    for w in t.words:
+        #print(nc1, ponct, tt, p, nc2)
+        #if ponct is None and w.pos == 'NC' and w.lemma not in TRANS:
+        #    nc1 = w
+        #elif nc1 is not None and ponct is None and w.pos == 'PONCT':
+        #    ponct = w
+        if ponct is None and w.pos == 'PONCT':
+            if len(t.segments) > 0 and index(t, w.idw) == t.segments[0]: # NEW: MUST BE THE SEG
+                ponct = w
+        elif ponct is not None and tt is None and w.pos not in ['DET', 'ADJ', 'NC']:
+            break
+        elif ponct is not None and tt is None and w.pos == 'NC' and w.lemma not in TRANS:
+            tt = w
+        elif tt is not None and w.pos in ['P', 'P+D']:
+            if w.lemma == 'de':
+                p = w
+            else:
+                break # the prep must be de !
+        elif p is not None and w.pos == 'NC': # bazarde no TRANS ici
+            if w.lemma.endswith('tion') or w.lemma.endswith('ment') or w.lemma.endswith('age') or w.lemma.endswith('sion'):
+                nc2 = w
+                break
+            else:
+                break # the first noun after the prep must be like this
+        if nc1 is not None and ponct is not None and tt is not None and p is not None and nc2 is not None:
+            break
+    return(nc1, ponct, tt, p, nc2)
+
+
 def is_second(t):
     nc1 = None
     ponct = None
@@ -130,6 +230,19 @@ class MockTitle:
     def __init__(self, words):
         self.words = words
 
+
+# reload(wb) ; wb.xxtest2()
+def xxtest2():
+    ponct = MockWord('PONCT', ':')
+    tt = MockWord('NC', 'problème')
+    p = MockWord('P', 'de')
+    nc2 = MockWord('NC', 'action')
+    t = MockTitle([ponct, tt, p, nc2])
+    r = is_second_ddaa(t)
+    print('Res:')
+    for e in r:
+        print("   " + str(e))
+    
 # reload(wb) ; wb.xxtest()
 def xxtest():
     nc1 = MockWord('NC', 'nc1')
@@ -143,15 +256,135 @@ def xxtest():
     for e in r:
         print("   " + str(e))
 
+# reload(wb) ; wb.minitest(titles, ['problème'])
+def minitest(data, head):
+    global TRANS
+    old = TRANS
+    TRANS = head
+    quick_count(data, first=True, notrans=False, onlyhead=True)
+    quick_count(data, first=False, notrans=False, onlyhead=True)
+    TRANS = old
+
+
+# reload(wb) ; wb.quick_count(titles, first=, notrans=)
+# reload(wb) ; wb.quick_count(titles, first=True, notrans=False, onlyhead=True) # tête trans
+def quick_count(data, first=True, notrans=True, onlyhead=False): # ***
+    is_head = 0
+    is_not_head = 0
+    doms = {}
+    for kt, t in data.items():
+        if notrans:
+            if first:
+                tt, p, nc = is_first_ddaa_nottrans(t)
+            else:
+                if len(t.roots) > 1: # only on biseg
+                    o, ponct, tt, p, nc = is_second_ddaa_nottrans(t)
+                else:
+                    o, ponct, tt, p, nc = None, None, None, None, None
+        else:
+            if first:
+                tt, p, nc = is_first_ddaa(t)
+            else:
+                if len(t.roots) > 1: # only on biseg
+                    o, ponct, tt, p, nc = is_second_ddaa(t)
+                else:
+                    o, ponct, tt, p, nc = None, None, None, None, None
+        ok = False
+        if first and tt is not None and p is not None and nc is not None:
+            ok = True
+        elif not first and ponct is not None and tt is not None and p is not None and nc is not None:
+            ok = True
+        if ok:
+            head = False
+            if first:
+                if t.roots[0] == index(t, tt.idw):
+                    is_head += 1
+                    head = True
+                else:
+                    is_not_head += 1
+            else:
+                if len(t.roots) > 1 and t.roots[1] == index(t, tt.idw):
+                    is_head += 1
+                    head = True
+                else:
+                    is_not_head += 1
+            if t.domain not in ['1.shs.autre', 'NONE']:
+                if not onlyhead or (onlyhead and head):
+                    if t.domain not in doms:
+                        doms[t.domain] = 1
+                    else:
+                        doms[t.domain] += 1
+    print('NSS Is head:', is_head)
+    print('NSS Is not head:', is_not_head)
+    sdoms = {}
+    for k in sorted(doms, key=doms.get, reverse=True):
+        sdoms[k] = doms[k]
+    return sdoms
+
 
 IS_HEAD = 0
+IS_NOT_HEAD = 0
+
+import math
+# reload(wb) ; wb.correl(300_759, 94_734, 15_698) # coef trans & nss
+# reload(wb) ; wb.correl(300_759, 206_025, 20_217) # coef non trans & nss
+# wb.correl(1_118_481, 300_759 , 35_915) # coef head & nss
+def correl(total, nb_trans, nb_trans_nss): # ***
+    serie1 = []
+    serie2 = []
+    for i in range(0, total):
+        if nb_trans_nss > 0 and nb_trans > 0:
+            serie1.append(1)
+            serie2.append(1)
+            nb_trans_nss -= 1
+            nb_trans -= 1
+        elif nb_trans > 0:
+            serie1.append(0)
+            serie2.append(1)
+            nb_trans -= 1
+        else:
+            serie1.append(0)
+            serie2.append(0)
+    moy1 = sum(serie1) / len(serie1)
+    moy2 = sum(serie2) / len(serie2)
+    som1 = 0
+    som2x = 0
+    som2y = 0
+    for i in range(0, total):
+        som1 += (serie1[i] - moy1) * (serie2[i] - moy2)
+        som2x += (serie1[i] - moy1) ** 2
+        som2y += (serie2[i] - moy2) ** 2
+    correl = som1 / math.sqrt(som2x * som2y)
+    return correl
+
+
+# TRANS NSS
+def correl_trans_nss_old():
+    wb = openpyxl.Workbook(write_only=True)
+    ws = wb.create_sheet('Test')
+    total = 300_759
+    nb_trans = 94_734
+    nb_trans_nss = 15_698
+    #nb_nontrans_nss = 20_217
+    for i in range(0, total):
+        if nb_trans_nss > 0 and nb_trans > 0:
+            ws.append([1, 1])
+            nb_trans_nss -= 1
+            nb_trans -= 1
+        elif nb_trans > 0:
+            ws.append([1, 0])
+            nb_trans -= 1
+        else:
+            ws.append([0, 0])
+    wb.save('correl_trans_nss.xlsx')
+
 
 # reload(wb) ; wb.final(titles)
 # reload(wb) ; wb.final(titles, 'problème')
 # reload(wb) ; wb.final(titles, 'problème', True) # contraint with ddaa
 # reload(wb) ; wb.final(titles, 'problème', ddaa=True, save=False)
 def final(data, target=None, ddaa=False, save=True):
-    global IS_HEAD
+    global IS_HEAD, IS_NOT_HEAD
     SCHEMA1 = {}
     SCHEMA1_TRANS = {}
     SCHEMA1_NC = {}
@@ -184,7 +417,8 @@ def final(data, target=None, ddaa=False, save=True):
                 if t.roots[0] == index(t, tt.idw):
                     IS_HEAD += 1
                 else:
-                    print(kt, t)
+                    IS_NOT_HEAD += 1
+                    #print(kt, t)
                 if target is not None:
                     SCHEMA1_TEXT.append([p.lemma, nc.lemma, t.idt, t.text])
         # second pattern
@@ -211,22 +445,22 @@ def final(data, target=None, ddaa=False, save=True):
             cpt = 0
     print(f"{total:6d} / {len(data):6d}")
     # write results
-    wb = openpyxl.Workbook(write_only=True)
-    output(wb, "Schema INIT TT NC", SCHEMA1)
-    output(wb, "TT", SCHEMA1_TRANS)
-    output(wb, "NC", SCHEMA1_NC)
-    output(wb, "P", SCHEMA1_P)
-    output_list(wb, "TEXT1", SCHEMA1_TEXT)
-    output(wb, "Schema NC PONCT TT NC", SCHEMA2)
-    output(wb, "NC1 TT", SCHEMA2_P1)
-    output(wb, "TT NC2", SCHEMA2_P2)
-    output(wb, "NC1", SCHEMA2_NC1)
-    output(wb, "TT", SCHEMA2_TRANS)
-    output(wb, "PONCT", SCHEMA2_PONCT)
-    output(wb, "P", SCHEMA2_P)
-    output(wb, "BC2", SCHEMA2_NC2)
-    output_list(wb, "TEXT2", SCHEMA2_TEXT)
     if save:
+        wb = openpyxl.Workbook(write_only=True)
+        output(wb, "Schema INIT TT NC", SCHEMA1)
+        output(wb, "TT", SCHEMA1_TRANS)
+        output(wb, "NC", SCHEMA1_NC)
+        output(wb, "P", SCHEMA1_P)
+        output_list(wb, "TEXT1", SCHEMA1_TEXT)
+        output(wb, "Schema NC PONCT TT NC", SCHEMA2)
+        output(wb, "NC1 TT", SCHEMA2_P1)
+        output(wb, "TT NC2", SCHEMA2_P2)
+        output(wb, "NC1", SCHEMA2_NC1)
+        output(wb, "TT", SCHEMA2_TRANS)
+        output(wb, "PONCT", SCHEMA2_PONCT)
+        output(wb, "P", SCHEMA2_P)
+        output(wb, "BC2", SCHEMA2_NC2)
+        output_list(wb, "TEXT2", SCHEMA2_TEXT)
         if target is None:
             wb.save("trans_schema.xlsx")
         else:
