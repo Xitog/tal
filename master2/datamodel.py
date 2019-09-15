@@ -66,11 +66,17 @@ from openpyxl.comments import Comment
 TUTIN = []
 ftut = open("resources\\LTES-Tutin-2007.txt", mode='r', encoding='utf8')
 fdat = ftut.readlines()
+ftut.close()
 for line in fdat:
     if line.startswith('--'): continue
     dat = line.split(';')
     name = dat[0].rstrip()
     TUTIN.append(name)
+
+fhat = open("resources\\LST-Hatier-2018.txt", mode='r', encoding='utf8')
+fdat = fhat.read()
+fhat.close()
+HATIER = fdat.split(' ')
 
 #-------------------------------------------------
 # Handling of simplification of Domains
@@ -2035,6 +2041,8 @@ def init(debug):
     print(f'Nombre total lemmes de têtes      : {OneSegNoun.TOTAL_HEAD_LEM:5d}')
     print(f'Nombre total de domaine           : {OneSegNoun.TOTAL_DOM:5d}')
     print(OneSegNoun.errors)
+
+    trans = OneSegNoun.select(med_dom=0.0010)
     
     if produce_disc_excel:
         OneSegNoun.disciplinary()
@@ -2045,7 +2053,6 @@ def init(debug):
     # Disc & Trans
     if produce_quick:
         f = open('output_' + str(OneSegNoun.TOTAL_HEAD_LEM) + '.txt', mode='w', encoding='utf8')
-        trans = OneSegNoun.select(med_dom=0.0010)
         # Disc
         for kn, n in OneSegNoun.NOUNS.items():
             for bestd in n.disc_dom:

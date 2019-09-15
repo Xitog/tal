@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Copyright : CNRS-INALF/ATILF (1997-1999). Copyright : CNRS-ERSS (1999-2005). Certains droits sont réservés. Verbaction est diffusé sous licence Creative Commons (http://creativecommons.org/licenses/by-nc-sa/2.0/fr/legalcode). Vous pouvez utiliser, modifier et/ou redistribuer ce programme sous les conditions de la licence Creative Commons jointe (cf. fichier "Licence.txt"). Le fait que vous puissiez accéder à cet en-tête signifie que vous avez pris connaissance de la licence, et que vous en avez accepté les termes.-->
+
+<!--                    Lexical database, root element             -->
+<!ELEMENT lexicon (couple)*>
+<!ELEMENT couple (verb, noun)>
+<!ELEMENT verb ( lemma , tag)>
+<!ELEMENT noun (lemma , tag)>
+<!ELEMENT lemma (#PCDATA)>
+<!ELEMENT tag (#PCDATA)>
+<!ELEMENT cat (#PCDATA)>
+<!ATTLIST  noun
+                        gender (feminine|masculine) #REQUIRED
+                        number (plural|singular) #REQUIRED>

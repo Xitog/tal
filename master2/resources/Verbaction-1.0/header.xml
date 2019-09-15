@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<teiHeader>
+	<!-- FileDesc : full bibliographic description of an electronic file -->
+	<fileDesc>
+		<!-- titre de la ressource-->
+		<titleStmt>
+			<title level="resource">Verbaction : Lexique de noms d'actions morphologiquement apparentés à des verbes</title>
+			<sponsor>Équipe de Recherche en Syntaxe et Sémantique (ERSS), CNRS &amp; Université de Toulouse le Mirail, France</sponsor>
+			<funder>Partiellement financé par Synomia, Boulogne Billancourt, France</funder>
+			<principal>Nabil Hathout (Nabil.Hathout@univ-tlse2.fr)</principal>
+		</titleStmt>
+		<extent>2.4 Mo, 9393 couples</extent>
+		<publicationStmt>
+			<version>1.0</version>
+			<authority>Équipe de Recherche en Syntaxe et Sémantique (ERSS), CNRS &amp; Université de Toulouse le Mirail, France</authority>
+			<address>Maison de la recherche.  5, allées Antonio Machado.  F-31058 Toulouse cedex 9</address>
+			<date>2005</date>
+			<availability>Copyright : CNRS-INALF/ATILF (1997-1999). Copyright : CNRS-ERSS (1999-2005). Certains droits sont réservés. Verbaction est diffusé sous licence Creative Commons (http://creativecommons.org/licenses/by-nc-sa/2.0/fr/legalcode). Vous pouvez utiliser, modifier et/ou redistribuer ce programme sous les conditions de la licence Creative Commons jointe (cf. fichier "Licence.txt"). Le fait que vous puissiez accéder à cet en-tête signifie que vous avez pris connaissance de la licence, et que vous en avez accepté les termes.</availability>
+		</publicationStmt>
+		<!-- SourceDesc : records details of the sources from which a computer file is derived -->
+		<sourceDesc>
+			<!-- TLFNome, TLFindex -->
+			<bibFull>
+				<!-- fileDesc of contributing ressources -->
+				<fileDesc>
+					<titleStmt><title>TLFnome</title></titleStmt>
+					<extent>65898 lemmes, 556697 formes fléchies</extent>
+					<publicationStmt>
+						<version>1996</version>
+						<authority>Analyse et Traitement Informatisé de la Langue Française (ATILF), CNRS</authority>
+						<address>44 avenue de la Libération, 54000 Nancy</address>
+						<availability>none</availability>
+					<titleStmt><title>TLFindex</title></titleStmt>
+					<extent>38534 lemmes, 202192 formes fléchies</extent>
+					</publicationStmt>
+					<publicationStmt>
+						<version>1999</version>
+						<authority>Analyse et Traitement Informatisé de la Langue Française (ATILF), CNRS</authority>
+						<address>44 avenue de la Libération, 54000 Nancy</address>
+						<availability>none</availability>
+					</publicationStmt>
+				</fileDesc>
+			</bibFull>
+		</sourceDesc>
+	</fileDesc>
+	<revisionDesc>
+		<change>
+			<date/>
+			<respStmt>
+				<name/>
+				<resp/>
+			</respStmt>
+			<item></item>
+		</change>
+	</revisionDesc>
+</teiHeader>
