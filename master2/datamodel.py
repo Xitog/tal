@@ -973,11 +973,12 @@ class Domain:
 
 # Stat
 
-def fmax(serie):
-    mx = 0
-    for s in serie:
-        if s > mx: mx = s
-    return mx
+#Deprecated: use standard function max instead
+#def fmax(serie):
+#    mx = 0
+#    for s in serie:
+#        if s > mx: mx = s
+#    return mx
 
 
 def fmoy(serie):
@@ -1664,7 +1665,7 @@ class OneSegNoun:
         for k, n in cls.NOUNS.items():
             nb_occ = n.nb_occ['all']
             nb_head = n.nb_head['all']
-            if fmax(n.freq_dom.values()) < OneSegNoun.SEUIL_FREQ: continue
+            if max(n.freq_dom.values()) < OneSegNoun.SEUIL_FREQ: continue
             row = [n.lemma,                         # Lemma
                    n.pos,                           # Pos
                    n.in_tutin,                      # In Tutin
@@ -1697,7 +1698,7 @@ class OneSegNoun:
             title_row.append(kd)
         ws.append(title_row)
         for k, n in cls.NOUNS.items():
-            if fmax(n.freq_dom.values()) < OneSegNoun.SEUIL_FREQ: continue
+            if max(n.freq_dom.values()) < OneSegNoun.SEUIL_FREQ: continue
             row = [n.lemma, n.pos, n.nb_head['all'], n.egal_distri, n.chi2]
             for kd in cls.DOMAINS:
                 row.append(n.nb_head[kd])
@@ -1914,6 +1915,33 @@ def init(debug):
     print()
     stat('nb_segments')
     print()
+    values = {}
+    for kt, t in titles.items():
+        for s in t.segments:
+            lem = t.words[s].lemma
+            if lem not in values:
+                values[lem] = 1
+            else:
+                values[lem] += 1
+    cumul_percent = 0
+    i = 0
+    max_len = 0
+    total = sum(values.values())
+    for key in values:
+        if len(key) > max_len:
+            max_len = len(key)
+    print('*** Ponctuation du matérieu de base ***')
+    print('-------------------------------------')
+    for key in sorted(values, key=values.get, reverse=True):
+        i += 1
+        percent = (values[key]/total)*100
+        cumul_percent += percent
+        print(f"{i:3d}. {key:>{max_len}} {values[key]:10d} {percent:8.4f} % {cumul_percent:6.2f} %")
+    print("Total =", total)
+    #old = titles
+    #titles = select({'nb_segments' : 2})
+    #stat('segments.0.lemma')
+    #titles = old
     # Selectors
     old = titles
     # 1 part
