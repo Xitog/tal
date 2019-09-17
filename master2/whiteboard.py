@@ -948,14 +948,16 @@ def fouille_test():
     fouille_output(motifs_ngss, motifs_nc, supports_ngss, supports_nc)
 
 
+# Update the 17/09
 # motifs(titles, -1, +1) : on va chercher les motifs A head C
 # on ne garde les lemmes que pour les classes fermées DET P P+D CS CC PROREL et être et avoir sinon POS
 # reload(wb) ; test = { '62226' : titles['62226'] } ; ngss, nc = wb.motifs(test, 2, 2)
 # lemma::pos
 # ou pos (y compris INIT et END)
+# tt, nc = wb.fouille_motifs(titles, 2, 5)
 def fouille_motifs(data, min_length, max_length):
-    motifs_ngss = {} # ('INIT', 'NGSS') : 2
-    motifs_nc   = {} # ('INIT', 'NC') : 2
+    motifs_tt = {} # ('INIT', 'TransHead') : 2
+    motifs_nc = {} # ('INIT', 'Head') : 2
     TRANS = trans()
     # count
     seuil = 10000
@@ -966,51 +968,70 @@ def fouille_motifs(data, min_length, max_length):
     for kt, t in data.items():
         # For all roots
         for i_root in t.roots:
+            if t.words[i_root].pos != 'NC': continue # only for common noun heads
+            is_trans = True if t.words[i_root].lemma in TRANS else False
             for length in range(min_length, max_length + 1):
                 for start in range(i_root - length + 1, i_root + 1):
-                    val = []
-                    is_trans = []
+                    seq = []
                     for i in range(start, start + length):
                         # Limits
                         if i < -1:
                             continue
                         elif i == -1:
-                            val.append('INIT')
+                            seq.append('INIT')
                             continue
                         elif i == len(t.words):
-                            val.append('END')
+                            seq.append('END')
                             break
-                        #elif i > len(t.words):
-                        #   break
                         # Making the motif
                         w = t.words[i]
-                        if w.pos in ['P', 'P+D', 'CS', 'CC', 'PROREL']: # 'DET', 
-                            val.append(w.lemma + '::' + w.pos)
+                        if i == i_root and is_trans:
+                            seq.append('TransHead')
+                        elif i == i_root and not is_trans:
+                            seq.append('Head')
+                        elif w.pos in ['P', 'P+D', 'CS', 'CC', 'PROREL']: # 'DET', 
+                            seq.append(w.lemma + '::' + w.pos)
                         elif w.lemma in ['être', 'lemma']:
-                            val.append(w.lemma + '::' + w.pos)
-                        elif w.lemma in TRANS and w.pos == 'NC':
-                            val.append('NGSS') # instead of NC
-                            is_trans.append(i) # save every NC turned to NGSS
+                            seq.append(w.lemma + '::' + w.pos)
                         else:
-                            val.append(w.pos)
-                    val = tuple(val)
-                    if len(is_trans) > 0:
-                        if val not in motifs_ngss:
-                            motifs_ngss[val] = 1
+                            seq.append(w.pos)
+                    seq = tuple(seq)
+                    if is_trans:
+                        if seq not in motifs_tt:
+                            motifs_tt[seq] = 1
                         else:
-                            motifs_ngss[val] += 1
+                            motifs_tt[seq] += 1
                     else:
-                        if val not in motifs_nc:
-                            motifs_nc[val] = 1
+                        if seq not in motifs_nc:
+                            motifs_nc[seq] = 1
                         else:
-                            motifs_nc[val] += 1
+                            motifs_nc[seq] += 1
         cpt += 1
         total += 1
         if cpt == seuil:
             cpt = 0
             print(f'Motifs done : {total:10d} / {len(data):10d}')
     print(f'Motifs done : {total:10d} / {len(data):10d}')
-    return motifs_ngss, motifs_nc
+    return motifs_tt, motifs_nc
+
+
+class Seq:
+    def __init__(self, tab):
+        self.length = tab[0]
+        self.items = tab[1:6]
+        self.count = tab[6]
+        
+    def __str__(self):
+        s = '(' + str(self.length) + ') '
+        for i in range(0, self.length):
+            s += self.items[i] + ' '
+        return s
+
+    def __repr__(self):
+        return str(self)
+    
+    def contains(self, s):
+        return is_contained(self, s)
 
 
 # ('INIT', 'NGSS') => ('INIT', 'NC')
@@ -1023,15 +1044,6 @@ def fouille_change(key):
             neo.append(item)
     return tuple(neo)
     
-
-# non used
-def fouille_filter(mtfs, value):
-    res = {}
-    for key in mtfs:
-        if mtfs[key] >= value:
-            res[key] = value
-    return res
-
 
 # reload(wb) ; test = { '62226' : titles['62226'] } ; ngss, nc = wb.motifs(test, 2, 2) ; ngss[('DET', 'NGSS', 'V')] = 1 ; wb.support(ngss)
 def fouille_supports(mtfs):
@@ -1147,13 +1159,6 @@ def is_contained(prime, s):
                 return True
     return False
 
-    #first_prime = prime[0]
-    #for i, item in enumerate(s):
-    #    if cmp_item(first_prime, item):
-    #        if cmp_seq(prime, s[i:]):
-    #            return True
-    #return False
-
 
 import sys
 def ptest(expr, val):
@@ -1222,6 +1227,7 @@ def grep_motif(line):
     return motif
 
 
+
 # r".\output\motifs_supports-2-7.xlsx"
 # reload(wb) ; r = wb.recalc_support(r".\output\motifs_supports-2-5.xlsx")
 def recalc_support(filename):
@@ -1244,6 +1250,7 @@ def recalc_support(filename):
             #print(line, grep_motif(line))
             try:
                 nc[7] = count_suite(grep_motif(line), nc) / (len(nc) - 1)
+                # NONONONONO
                 key = line[1].replace('NC', 'NGSS') + line[2].replace('NC', 'NGSS') + line[3].replace('NC', 'NGSS') + line[4].replace('NC', 'NGSS') + line[5].replace('NC', 'NGSS')
                 corresponding[key] = cpt
             except AttributeError:
