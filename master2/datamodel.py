@@ -36,7 +36,8 @@
 #            res = stat(['roots.0.pos', 'domain'])
 #            res_agg = aggregate(res)               Aggregate NC+NPP=>NOUN / Vx=>VERB / P+P+D=>PREP DEPRECATED : USE roots.0.pos:agg for a direct result
 #            by_dom(res_agg)
-#   9. Boot
+#   9. Fouille
+#  10. Boot
 
 #-------------------------------------------------
 # Imports
@@ -1853,6 +1854,224 @@ def calc_stats(titles):
         stats['seg2_lem_dep_from_root'][k]['is_sgn'] = is_top_100_signoun(elements[0])
 
 #-------------------------------------------------
+# Fouille de séquences pour trouver des motifs
+#-------------------------------------------------
+# needs from wb : trans()
+# fouille_motifs
+# fouille_tt2nc
+# fouille_test
+# exq fait une égalite particulière
+
+# tt, nc = fouille_motifs(titles, 2, 5)
+def fouille_motifs(data, min_length, max_length):
+    motifs_tt = {} # ('INIT', 'TransHead') : 2
+    motifs_nc = {} # ('INIT', 'Head') : 2
+    TRANS = wb.trans()
+    # count
+    seuil = 10000
+    cpt = 0
+    total = 0
+    # Pour length = 2, si i_root = 5, start = 4 (i = 4-5), 5 (i = 5-6)
+    # Pour length = 3, si i_root = 5, start = 3 (i = 3-4-5)...
+    for kt, t in data.items():
+        # For all roots
+        for i_root in t.roots:
+            if t.words[i_root].pos != 'NC': continue # only for common noun heads
+            is_trans = True if t.words[i_root].lemma in TRANS else False
+            for length in range(min_length, max_length + 1):
+                for start in range(i_root - length + 1, i_root + 1):
+                    seq = []
+                    for i in range(start, start + length):
+                        # Limits, adding INIT and END items to the sequence
+                        if i < -1:
+                            continue
+                        elif i == -1:
+                            seq.append('INIT')
+                            continue
+                        elif i == len(t.words):
+                            seq.append('END')
+                            break
+                        # Making the motif
+                        # Keeping only lemma for P, P+D, CS, CS, PROREL, and the POS for others
+                        # We can have a Head in the sequence of a Transhead! 
+                        w = t.words[i]
+                        if i == i_root and is_trans:
+                            seq.append('TransHead')
+                        elif i == i_root and not is_trans:
+                            seq.append('Head')
+                        elif w.pos in ['P', 'P+D', 'CS', 'CC', 'PROREL']: # 'DET', 
+                            seq.append(w.lemma + '::' + w.pos)
+                        elif w.lemma in ['être', 'lemma']:
+                            seq.append(w.lemma + '::' + w.pos)
+                        elif w.pos == 'PONCT' and is_seg(w):
+                            seq.append('SEG')
+                        else:
+                            seq.append(w.pos)
+                    seq = tuple(seq)
+                    if is_trans:
+                        if seq not in motifs_tt:
+                            motifs_tt[seq] = 1
+                        else:
+                            motifs_tt[seq] += 1
+                    else:
+                        if seq not in motifs_nc:
+                            motifs_nc[seq] = 1
+                        else:
+                            motifs_nc[seq] += 1
+        cpt += 1
+        total += 1
+        if cpt == seuil:
+            cpt = 0
+            print(f'Motifs done : {total:10d} / {len(data):10d}')
+    print(f'Motifs done : {total:10d} / {len(data):10d}')
+    return motifs_tt, motifs_nc
+
+
+def fouille_tt2nc(motif):
+    neo = []
+    for e in motif:
+        if e == 'TransHead':
+            neo.append('Head')
+        else:
+            neo.append(e)
+    return tuple(neo)
+
+
+def fouille_supports(motifs):
+    # count
+    seuil = 1000
+    cpt = 0
+    total = 0
+    # go
+    res = {}
+    for key1 in motifs:
+        res[key1] = motifs[key1] - 1 # X séquences A B. Donc 1 séquence A B est au moins contenu dans X - 1 autres séquences.
+        for key2 in motifs:
+            if key1 != key2 and fouille_include(key1, key2):
+                res[key1] += motifs[key2]
+        cpt += 1
+        total += 1
+        if cpt == seuil:
+            cpt = 0
+            print(f'Supports done : {total:10d} / {len(motifs):10d}')
+    print(f'Supports done : {total:10d} / {len(motifs):10d}')
+    return res
+
+
+def fouille_include(motif, target):
+    if type(motif) not in [list, tuple] or type(target) not in [list, tuple]:
+        raise Exception('Workonly on tuple or list')
+    if len(motif) > len(target): return False
+    good = 0
+    for j in range(0, len(target)):
+        if exq(motif[0], target[j]):
+            good = 0
+            for k in range(j, j + len(target)):
+                if k < len(target) and exq(motif[good], target[k]):
+                    good += 1
+                    if good == len(motif):
+                        break
+            if good == len(motif):
+                break
+    return good == len(motif)
+
+
+# L'ITEM DU MOTIF PEUT ETRE PLUS PETIT ET MOINS PRECIS, PAS L'INVERSE
+# exq('DET', 'de::DET')      True
+# exq('de::DET', 'DET')      False
+# exq('de::DET', 'de::DET')  True
+# exq('DET', 'DET')          True
+def exq(emotif, b):
+    # motif more precise
+    if len(emotif.split('::')) > len(b.split('::')) :
+        return False
+    elif len(emotif.split('::')) == 2 and len(b.split('::')) == 2:
+        lem1, pos1 = emotif.split('::')
+        lem2, pos2 = b.split('::')
+        return lem1 == lem2 and pos1 == pos2
+    elif len(b.split('::')) == 2: # and motif is only 1
+        lem, pos = b.split('::')
+        return emotif == pos
+    else: # 1 and 1
+        return emotif == b
+
+
+def fouille_output(motifs_tt, motifs_nc, supports_tt, supports_nc):
+    wb = openpyxl.Workbook(write_only=True)
+    ws = wb.create_sheet('Motifs Supports TT')
+    ws.append(['Len', '1', '2', '3', '4', '5', 'Count', 'Support', 'Croissance'])
+    for motif in sorted(supports_tt, key=supports_tt.get, reverse=True):
+        count   = motifs_tt[motif]
+        support = supports_tt[motif]
+        row     = [len(motif)]
+        for item in range(0, 5):
+            if item < len(motif):
+                row.append(motif[item])
+            else:
+                row.append('_')
+        row.append(count)
+        row.append(support)
+        # fetch growth rate
+        nc = fouille_tt2nc(motif)
+        if nc not in motifs_nc or supports_nc[nc] == 0:
+            tc = '∞'
+        else:
+            tc = supports_tt[motif] / supports_nc[nc]
+        row.append(tc)
+        ws.append(row)
+    # Support NC
+    ws = wb.create_sheet('Motifs Supports NC')
+    ws.append(['Len', '1', '2', '3', '4', '5', 'Count', 'Support'])
+    for motif in sorted(supports_nc, key=supports_nc.get, reverse=True):
+        count = motifs_nc[motif]
+        support = supports_nc[motif]
+        row = [len(motif)]
+        for item in range(0, 5):
+            if item < len(motif):
+                row.append(motif[item])
+            else:
+                row.append('_')
+        row.append(count)
+        row.append(support)
+        ws.append(row)
+    wb.save('motifs_supports_neo.xlsx')
+
+
+# mtt, mnc, stt, snc = fouille_test()
+def fouille_test():
+    motifs_tt = {
+            ('INIT', 'TransHead') : 2,
+            ('INIT', 'DET', 'TransHead') : 1
+        }
+    motifs_nc = {
+            ('INIT', 'Head') : 1,
+            ('INIT', 'Head', 'ADJ') : 1
+        }
+    supports_tt = fouille_supports(motifs_tt)
+    supports_nc = fouille_supports(motifs_nc)
+    fouille_output(motifs_tt, motifs_nc, supports_tt, supports_nc)
+    return motifs_tt, motifs_nc, supports_tt, supports_nc
+
+
+# Un motif M est contenu dans un autre M' si on retrouve sa séquence dans le même ordre, même disjointe : (A, C) (A, B, C) => le 1er est contenu dans le second
+# Le motif M' est alors une sous-séquence du motif M, M' étant plus longue ou plus générique
+# De ce fait, une super-séquence M ne peut pas être plus courte ou moins générique qu'une de ces sous-séquences M'
+# Attention : on part de l'hypothèse qu'on ne se supporte pas soit même
+# mtt, mnc, stt, snc = wb.fouille(titles, 2, 5)
+def fouille(data, min_length, max_length):
+    print('MOTIFS')
+    motifs_tt, motifs_nc = fouille_motifs(data, min_length, max_length)
+    print('Length motifs TransHead :', len(motifs_tt))
+    print('Length motifs Head      :', len(motifs_nc))
+    print('SUPPORT')
+    supports_tt = fouille_supports(motifs_tt)
+    supports_nc = fouille_supports(motifs_nc)
+    print('SAVE')
+    fouille_output(motifs_tt, motifs_nc, supports_tt, supports_nc)
+    return motifs_tt, motifs_nc, supports_tt, supports_nc
+
+
+#-------------------------------------------------
 # Boot
 #-------------------------------------------------
 
@@ -1887,6 +2106,7 @@ produce_trans_excel = False
 produce_disc_excel  = False
 produce_quick       = False
 produce_neo_disc    = False
+display_info_on_raw = False # display info on raw data (not working final corpus)
 
 def init(debug):
     global titles, old, t1, t11, t111, t111n, t112, t12, t121, t122, t2, t22, t222, \
@@ -1908,40 +2128,41 @@ def init(debug):
     if debug:
         print("[INFO] --- Total Titles :", len(titles))
     # Old info on part & segment ON THE BASIS MATERIAL
-    print()
-    print("[INFO] --- 2 parts in base data    :", count({'nb_parts' : 2}))
-    print("[INFO] --- 2 segments in base data :", count({'nb_segments' : 2}))
-    stat('nb_parts')
-    print()
-    stat('nb_segments')
-    print()
-    values = {}
-    for kt, t in titles.items():
-        for s in t.segments:
-            lem = t.words[s].lemma
-            if lem not in values:
-                values[lem] = 1
-            else:
-                values[lem] += 1
-    cumul_percent = 0
-    i = 0
-    max_len = 0
-    total = sum(values.values())
-    for key in values:
-        if len(key) > max_len:
-            max_len = len(key)
-    print('*** Ponctuation du matérieu de base ***')
-    print('-------------------------------------')
-    for key in sorted(values, key=values.get, reverse=True):
-        i += 1
-        percent = (values[key]/total)*100
-        cumul_percent += percent
-        print(f"{i:3d}. {key:>{max_len}} {values[key]:10d} {percent:8.4f} % {cumul_percent:6.2f} %")
-    print("Total =", total)
-    #old = titles
-    #titles = select({'nb_segments' : 2})
-    #stat('segments.0.lemma')
-    #titles = old
+    if display_info_on_raw:
+        print()
+        print("[INFO] --- 2 parts in base data    :", count({'nb_parts' : 2}))
+        print("[INFO] --- 2 segments in base data :", count({'nb_segments' : 2}))
+        stat('nb_parts')
+        print()
+        stat('nb_segments')
+        print()
+        values = {}
+        for kt, t in titles.items():
+            for s in t.segments:
+                lem = t.words[s].lemma
+                if lem not in values:
+                    values[lem] = 1
+                else:
+                    values[lem] += 1
+        cumul_percent = 0
+        i = 0
+        max_len = 0
+        total = sum(values.values())
+        for key in values:
+            if len(key) > max_len:
+                max_len = len(key)
+        print('*** Ponctuation du matérieu de base ***')
+        print('-------------------------------------')
+        for key in sorted(values, key=values.get, reverse=True):
+            i += 1
+            percent = (values[key]/total)*100
+            cumul_percent += percent
+            print(f"{i:3d}. {key:>{max_len}} {values[key]:10d} {percent:8.4f} % {cumul_percent:6.2f} %")
+        print("Total =", total)
+        #old = titles
+        #titles = select({'nb_segments' : 2})
+        #stat('segments.0.lemma')
+        #titles = old
     # Selectors
     old = titles
     # 1 part
