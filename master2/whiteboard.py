@@ -100,27 +100,234 @@ def is_first_ddaa(t): # contraint de la prép à de + contraint de fin en -tion,
     return (tt, p, nc)
 
 
+#-------------------------------------------------------------------------------
+
+
+# reload(wb) ; cpt, heads = wb.recount_transhead(titles)
+def recount_transhead(data):
+    nb_app = 0
+    errors = {
+        '?Approche::NPP'    : 'approche',
+        '?Effet::NPP'       : 'effet',
+        '?Treatment::NC'    : 'traitement',
+        }
+    cpt = { 'mono' : 0, 'bi-one-first-seg' : 0, 'bi-one-second-seg' : 0, 'bi-two' : 0 }
+    heads = {}
+    for kt, t in data.items():
+        if t.domain in ['NONE', '1.shs.autre']: continue
+        if len(t.roots) == 1:
+            r = t.words[t.roots[0]]
+            if r.lemma + '::' + r.pos in errors:
+                lemma = errors[r.lemma + '::' + r.pos]
+                pos == 'NC'
+            else:
+                lemma = r.lemma
+                pos = r.pos
+            if lemma in TRANS and pos == 'NC':
+                cpt['mono'] += 1
+                if lemma not in heads:
+                    heads[lemma] = 1
+                else:
+                    heads[lemma] += 1
+                if lemma == 'approche':
+                    nb_app += 1
+                    if nb_app > 8: continue
+        else:
+            r1 = t.words[t.roots[0]]
+            r2 = t.words[t.roots[1]]
+            if r1.lemma + '::' + r1.pos in errors:
+                lemma1 = errors[r1.lemma + '::' + r1.pos]
+                pos1 = 'NC'
+                if lemma1 == 'approche':
+                    nb_app += 1
+                    if nb_app > 8: continue
+            else:
+                lemma1 = r1.lemma
+                pos1 = r1.pos
+            if r2.lemma + '::' + r2.pos in errors:
+                lemma2 = errors[r2.lemma + '::' + r2.pos]
+                pos2 = 'NC'
+                if lemma2 == 'approche':
+                    nb_app += 1
+                    if nb_app > 8: continue
+            else:
+                lemma2 = r2.lemma
+                pos2 = r2.pos
+            if lemma1 in TRANS and pos1 == 'NC' and lemma2 in TRANS and pos2 == 'NC':
+                cpt['bi-two'] += 1
+                if lemma1 not in heads:
+                    heads[lemma1] = 1
+                else:
+                    heads[lemma1] += 1
+                if lemma2 not in heads:
+                    heads[lemma2] = 1
+                else:
+                    heads[lemma2] += 1
+            elif lemma1 in TRANS and pos1 == 'NC':
+                cpt['bi-one-first-seg'] += 1
+                if lemma1 not in heads:
+                    heads[lemma1] = 1
+                else:
+                    heads[lemma1] += 1
+            elif lemma2 in TRANS and pos2 == 'NC':
+                cpt['bi-one-second-seg'] += 1
+                if lemma2 not in heads:
+                    heads[lemma2] = 1
+                else:
+                    heads[lemma2] += 1
+    return cpt, heads
+
+
+# duplicate of datamodel.py
+def is_seg(word): # : ; . ? ! + variantes du .?!
+     return word.pos == 'PONCT' and word.form in [
+         ':', '.', '?', '!', '...', '…', ';', '..', '....', '?.', '?!',
+         '...?', '?...', '.....', '!...', '!?', '!.', '!!!', '!!',
+         '......', '??', '?..', '.?', '?!...']
+
+
+# reload(wb) ; r = wb.go(titles)
+def go(data):
+    nc = {}
+    for kt, t in data.items():
+        res = is_first(t)
+        if res is not None:
+            if res['nc'] not in nc:
+                nc[res['nc']] = 1
+            else:
+                nc[res['nc']] += 1
+    for k in sorted(nc, key=nc.get, reverse=True):
+        print(f"{k:15} {nc[k]:6d}")
+    return nc
+
+
+# reload(wb) ; cpt, heads = wb.count(titles)
+def count(data):
+    cpt = {'first' : 0, 'second' : 0, 'both' : 0}
+    heads = {}
+    for kt, t in data.items():
+        first = is_first(t)
+        second = is_second(t)
+        if first is not None and second is not None:
+            cpt['both'] += 1
+            if first['tt'] not in heads:
+                heads[first['tt']] = 1
+            else:
+                heads[first['tt']] += 1
+        elif first is not None:
+            cpt['first'] += 1
+            if first['tt'] not in heads:
+                heads[first['tt']] = 1
+            else:
+                heads[first['tt']] += 1
+        elif is_second(t) is not None:
+            cpt['second'] += 1
+            if second['tt'] not in heads:
+                heads[second['tt']] = 1
+            else:
+                heads[second['tt']] += 1
+    return cpt, heads
+
+
+# INIT [DET] TRANSHEAD (P à sur de [DET]) | P+D à, de ) NC
 def is_first(t):
-    tt    = None
-    p     = None
-    nc    = None
-    # first pattern
-    for i, w in enumerate(t.words):
-        if i == 0:
-            if w.pos == 'DET' and i + 1 < len(t.words):
-                if t.words[i + 1].pos == 'NC' and t.words[i + 1].lemma in TRANS:
-                    tt = t.words[i + 1]
-            elif w.pos == 'NC' and w.lemma in TRANS:
-                tt = w
-        elif tt is not None and w.pos in ['P', 'P+D']:
-            p = w
-        elif p is not None and w.pos == 'NC': # and w.lemma not in TRANS:
-            nc = w
-        if tt is not None and p is not None and nc is not None:
-            break
-    return (tt, p, nc)
+    i  = t.roots[0]
+    r  = t.words[i]
+    tt = None
+    p  = None
+    nc = None
+    if i not in [0, 1] or r.lemma not in TRANS: return None
+    tt = r
+    for j in range(i + 1, len(t.words)):
+        nx = t.words[j]
+        if p is None:
+            if nx.pos == 'ADJ':
+                continue
+            elif (nx.pos == 'P' and nx.lemma in ['à', 'sur', 'de']) or (nx.pos == 'P+D' and nx.lemma in ['à', 'de']):
+                p = nx
+                continue
+            else:
+                return None
+        elif nc is None:
+            if p.pos == 'P' and nx.pos == 'DET':
+                continue
+            elif nx.pos == 'NC':
+                nc = nx
+            else:
+                return None
+    if p is None or nc is None:
+        return None
+    else:
+        return {'tt' : tt.lemma, 'p' : p.lemma, 'nc' : nc.lemma}
 
 
+# reload(wb) ; wb.test_is_first()
+def test_is_first():
+    MW = MockWord
+    t = MockTitle([MW('NC', 'problème'), MW('P', 'de'), MW('NC', 'action')], [0])
+    print('>>>', is_first(t))
+    t = MockTitle([MW('DET', 'le'), MW('NC', 'problème'), MW('P', 'de'), MW('NC', 'action')], [1])
+    print('>>>', is_first(t))
+    t = MockTitle([MW('DET', 'le'), MW('NC', 'problème'), MW('P', 'de'), MW('DET', 'le'), MW('NC', 'action')], [1])
+    print('>>>', is_first(t))
+    t = MockTitle([MW('DET', 'le'), MW('NC', 'problème'), MW('ADJ', 'petit'), MW('P', 'de'), MW('NC', 'action')], [1])
+    print('>>>', is_first(t))
+
+
+# SEG [DET] TRANSHEAD (P à sur de [DET]) | P+D à, de ) NC
+def is_second(t):
+    if len(t.roots) == 1: return None
+    i  = t.roots[1]
+    r  = t.words[i]
+    tt = None
+    p  = None
+    nc = None
+    if i >= 2 and t.words[i - 1].pos == 'DET' and is_seg(t.words[i - 2]):
+        pass
+    elif i >= 1 and is_seg(t.words[i - 1]):
+        pass
+    else:
+        return None
+    if r.lemma not in TRANS: return None
+    tt = r
+    for j in range(i + 1, len(t.words)):
+        nx = t.words[j]
+        if p is None:
+            if nx.pos == 'ADJ':
+                continue
+            elif (nx.pos == 'P' and nx.lemma in ['à', 'sur', 'de']) or (nx.pos == 'P+D' and nx.lemma in ['à', 'de']):
+                p = nx
+                continue
+            else:
+                return None
+        elif nc is None:
+            if p.pos == 'P' and nx.pos == 'DET':
+                continue
+            elif nx.pos == 'NC':
+                nc = nx
+            else:
+                return None
+    if p is None or nc is None:
+        return None
+    else:
+        return {'tt' : tt.lemma, 'p' : p.lemma, 'nc' : nc.lemma}
+
+
+# reload(wb) ; wb.test_is_second()
+def test_is_second():
+    MW = MockWord
+    t = MockTitle([MW('PONCT', ':'), MW('NC', 'problème'), MW('P', 'de'), MW('NC', 'action')], [0, 1])
+    print('>>>', is_second(t))
+    t = MockTitle([MW('PONCT', ':'), MW('DET', 'le'), MW('NC', 'problème'), MW('P', 'de'), MW('NC', 'action')], [0, 2])
+    print('>>>', is_second(t))
+    t = MockTitle([MW('PONCT', ':'), MW('DET', 'le'), MW('NC', 'problème'), MW('P', 'de'), MW('DET', 'le'), MW('NC', 'action')], [0, 2])
+    print('>>>', is_second(t))
+    t = MockTitle([MW('PONCT', ':'), MW('DET', 'le'), MW('NC', 'problème'), MW('ADJ', 'petit'), MW('P', 'de'), MW('NC', 'action')], [0, 2])
+    print('>>>', is_second(t))
+
+
+#-------------------------------------------------------------------------------
+    
 def is_second_ddaa(t):
     nc1 = MockWord("W", "W") #None # on bazarde
     ponct = None
@@ -194,67 +401,23 @@ def is_second_ddaa_nottrans(t):
     return(nc1, ponct, tt, p, nc2)
 
 
-def is_second(t):
-    nc1 = None
-    ponct = None
-    tt = None
-    p = None
-    nc2 = None
-    for w in t.words:
-        #print(nc1, ponct, tt, p, nc2)
-        if ponct is None and w.pos == 'NC' and w.lemma not in TRANS:
-            nc1 = w
-        elif nc1 is not None and ponct is None and w.pos == 'PONCT':
-            ponct = w
-        elif ponct is not None and tt is None and w.pos == 'NC' and w.lemma in TRANS:
-            tt = w
-        elif tt is not None and w.pos in ['P', 'P+D']:
-            p = w
-        elif p is not None and w.pos == 'NC' and w.lemma not in TRANS:
-            nc2 = w
-            break
-        if nc1 is not None and ponct is not None and tt is not None and p is not None and nc2 is not None:
-            break
-    return(nc1, ponct, tt, p, nc2)
-
-
 class MockWord:
     def __init__(self, pos, lemma):
         self.pos = pos
         self.lemma = lemma
+        self.form = lemma
+
+    def __repr__(self):
+        return str(self)
         
     def __str__(self):
         return f"({self.lemma} {self.pos})"
     
 class MockTitle:
-    def __init__(self, words):
+    def __init__(self, words, iroot):
         self.words = words
+        self.roots = iroot
 
-
-# reload(wb) ; wb.xxtest2()
-def xxtest2():
-    ponct = MockWord('PONCT', ':')
-    tt = MockWord('NC', 'problème')
-    p = MockWord('P', 'de')
-    nc2 = MockWord('NC', 'action')
-    t = MockTitle([ponct, tt, p, nc2])
-    r = is_second_ddaa(t)
-    print('Res:')
-    for e in r:
-        print("   " + str(e))
-    
-# reload(wb) ; wb.xxtest()
-def xxtest():
-    nc1 = MockWord('NC', 'nc1')
-    ponct = MockWord('PONCT', ':')
-    tt = MockWord('NC', 'problème')
-    p = MockWord('P', 'de')
-    nc2 = MockWord('NC', 'nc2')
-    t = MockTitle([nc1, ponct, tt, p, nc2])
-    r = is_second(t)
-    print('Res:')
-    for e in r:
-        print("   " + str(e))
 
 # reload(wb) ; wb.minitest(titles, ['problème'])
 def minitest(data, head):
@@ -1227,11 +1390,6 @@ def nb_seg_2_nb_restarts(titles):
     return count, count / len(titles), len(exceptions), exceptions
 
 
-def count(d, k):
-    if k in d:
-        d[k] += 1
-    else:
-        d[k] = 1
 
 # reload(wb);t=wb.before_restart(titles)
 def before_restart(titles):

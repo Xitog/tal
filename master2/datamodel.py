@@ -50,6 +50,7 @@ from importlib import reload # Dynamic code
 import itertools # cribble
 import copy
 import math # for sqrt
+import xml.etree.ElementTree as ET
 
 # Project
 import whiteboard as wb # Dynamic code
@@ -78,6 +79,30 @@ fhat = open("resources\\LST-Hatier-2018.txt", mode='r', encoding='utf8')
 fdat = fhat.read()
 fhat.close()
 HATIER = fdat.split(' ')
+
+VERBACTION = {}
+DDAA = []
+tree = ET.parse(r'.\resources\Verbaction-1.0\Verbaction-1.0.xml')
+elem = tree.getroot()
+for e in elem:
+    # couple
+    verb, noun = list(e)
+    if verb.tag != 'verb':
+        raise Exception('Not a verb')
+    if noun.tag != 'noun':
+        raise Exception('Not a noun')
+    verb_lemma = list(verb)[0]
+    if verb_lemma.tag != 'lemma':
+        raise Exception('Not a lemma')
+    noun_lemma = list(noun)[0]
+    if noun_lemma.tag != 'lemma':
+        raise Exception('Not a lemma')
+    if verb_lemma.text not in VERBACTION:
+        VERBACTION[verb_lemma.text] = [noun_lemma.text]
+    else:
+        VERBACTION[verb_lemma.text].append(noun_lemma.text)
+    DDAA.append(noun_lemma.text)
+
 
 #-------------------------------------------------
 # Handling of simplification of Domains
