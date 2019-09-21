@@ -6,17 +6,17 @@ from openpyxl.styles import PatternFill, Font
 from openpyxl import load_workbook
 
 #-----------------------------------------------------------
-# Final
+# Tools
 #-----------------------------------------------------------
 
-def count(dic, key, val=1):
+def reg(dic, key, val=1):
     if key in dic:
         dic[key] += val
     else:
         dic[key] = val
 
 
-def output_list(wb, title, lst):
+def list2sheet(wb, title, lst):
     ws = wb.create_sheet(title)
     for val in lst:
         row = []
@@ -29,7 +29,7 @@ def output_list(wb, title, lst):
         ws.append(row)
 
 
-def output(wb, title, dic):
+def dict2sheet(wb, title, dic):
     ws = wb.create_sheet(title)
     cumul = 0
     tt = sum(dic.values())
@@ -45,6 +45,29 @@ def output(wb, title, dic):
         row.append(cumul)
         ws.append(row)
 
+
+class MockWord:
+    def __init__(self, pos, lemma):
+        self.pos = pos
+        self.lemma = lemma
+        self.form = lemma
+
+    def __repr__(self):
+        return str(self)
+        
+    def __str__(self):
+        return f"({self.lemma} {self.pos})"
+
+
+class MockTitle:
+    def __init__(self, words, iroot):
+        self.words = words
+        self.roots = iroot
+
+
+#-----------------------------------------------------------
+# Schema analysis
+#-----------------------------------------------------------
 
 def is_first_ddaa_nottrans(t): # contraint de la prép à de + contraint de fin en -tion, -ment, -age, -sion
     tt    = None
@@ -125,13 +148,10 @@ def recount_transhead(data):
                 pos = r.pos
             if lemma in TRANS and pos == 'NC':
                 cpt['mono'] += 1
-                if lemma not in heads:
-                    heads[lemma] = 1
-                else:
-                    heads[lemma] += 1
                 if lemma == 'approche':
                     nb_app += 1
                     if nb_app > 8: continue
+                reg(heads, lemma)
         else:
             r1 = t.words[t.roots[0]]
             r2 = t.words[t.roots[1]]
@@ -155,26 +175,14 @@ def recount_transhead(data):
                 pos2 = r2.pos
             if lemma1 in TRANS and pos1 == 'NC' and lemma2 in TRANS and pos2 == 'NC':
                 cpt['bi-two'] += 1
-                if lemma1 not in heads:
-                    heads[lemma1] = 1
-                else:
-                    heads[lemma1] += 1
-                if lemma2 not in heads:
-                    heads[lemma2] = 1
-                else:
-                    heads[lemma2] += 1
+                reg(heads, lemma1)
+                reg(heads, lemma2)
             elif lemma1 in TRANS and pos1 == 'NC':
                 cpt['bi-one-first-seg'] += 1
-                if lemma1 not in heads:
-                    heads[lemma1] = 1
-                else:
-                    heads[lemma1] += 1
+                reg(heads, lemma1)
             elif lemma2 in TRANS and pos2 == 'NC':
                 cpt['bi-one-second-seg'] += 1
-                if lemma2 not in heads:
-                    heads[lemma2] = 1
-                else:
-                    heads[lemma2] += 1
+                reg(heads, lemma2)
     return cpt, heads
 
 
@@ -186,58 +194,94 @@ def is_seg(word): # : ; . ? ! + variantes du .?!
          '......', '??', '?..', '.?', '?!...']
 
 
-# reload(wb) ; r = wb.go(titles)
-def go(data):
-    nc = {}
-    for kt, t in data.items():
-        res = is_first(t)
-        if res is not None:
-            if res['nc'] not in nc:
-                nc[res['nc']] = 1
-            else:
-                nc[res['nc']] += 1
-    for k in sorted(nc, key=nc.get, reverse=True):
-        print(f"{k:15} {nc[k]:6d}")
-    return nc
-
-
+# Count the number of titles corresponding to schema 1 and schema 2
+# Return the counts and the count by heads sorted
+# and the nouns in the schema is a lemma is given for the transhead
 # reload(wb) ; cpt, heads = wb.count(titles)
-def count(data):
+# reload(wb) ; cpt, heads = wb.count(titles, save=True, ddaa=DDAA)
+# reload(wb) ; cpt, heads = wb.count(titles, save=False, ddaa=DDAA, only_trans=False)
+# reload(wb) ; cpt, head, nouns = wb.count(titles, 'problème', True)
+# reload(wb) ; cpt, head, nouns = wb.count(titles, 'problème', True, DDAA)
+def count(data, lemma=None, save=False, ddaa=None, only_trans=True):
     cpt = {'first' : 0, 'second' : 0, 'both' : 0}
     heads = {}
+    domains_first = {}
+    domains_second = {}
+    if lemma is not None:
+        nouns = {}
+        combi_tt_p = {}
+        combi_tt_nc = {}
+    titles = {}
     for kt, t in data.items():
-        first = is_first(t)
-        second = is_second(t)
+        # NO FILTERING ON DOMAIN NONE et 0.shs.autre !!!
+        first = is_first(t, lemma, ddaa, only_trans)
+        second = is_second(t, lemma, ddaa, only_trans)
         if first is not None and second is not None:
             cpt['both'] += 1
-            if first['tt'] not in heads:
-                heads[first['tt']] = 1
-            else:
-                heads[first['tt']] += 1
+            reg(heads, first['tt'])
+            reg(heads, second['tt'])
+            if lemma is not None:
+                reg(nouns, first['nc'])
+                reg(nouns, second['nc'])
+                reg(combi_tt_p, (first['tt'], first['p']))
+                reg(combi_tt_nc, (first['tt'], first['nc']))
+                reg(combi_tt_p, (second['tt'], second['p']))
+                reg(combi_tt_nc, (second['tt'], second['nc']))
+            reg(titles, (f"{kt:8} {first['tt']} {first['nc']} {t.text}",))
+            reg(titles, (f"{kt:8} {second['tt']} {second['nc']} {t.text}",))
+            reg(domains_first, t.domain)
+            reg(domains_second, t.domain)
         elif first is not None:
             cpt['first'] += 1
-            if first['tt'] not in heads:
-                heads[first['tt']] = 1
-            else:
-                heads[first['tt']] += 1
-        elif is_second(t) is not None:
+            reg(heads, first['tt'])
+            if lemma is not None:
+                reg(nouns, first['nc'])
+                reg(combi_tt_p, (first['tt'], first['p']))
+                reg(combi_tt_nc,(first['tt'], first['nc']))
+            reg(titles, (f"{kt:8} {first['tt']} {first['nc']} {t.text}",))
+            reg(domains_first, t.domain)
+        elif second is not None:
             cpt['second'] += 1
-            if second['tt'] not in heads:
-                heads[second['tt']] = 1
-            else:
-                heads[second['tt']] += 1
-    return cpt, heads
+            reg(heads, second['tt'])
+            if lemma is not None:
+                reg(nouns, second['nc'])
+                reg(combi_tt_p, (second['tt'], second['p']))
+                reg(combi_tt_nc, (second['tt'], second['nc']))
+            reg(titles, (f"{kt:8} {second['tt']} {second['nc']} {t.text}",))
+            reg(domains_second, t.domain)
+    sheads = {}
+    for k in sorted(heads, key=heads.get, reverse=True):
+        sheads[k] = heads[k]
+    if save:
+        wb = openpyxl.Workbook(write_only=True)
+        if lemma is not None:
+            dict2sheet(wb, "NOUNS", nouns)
+            dict2sheet(wb, "COMBI TT P", combi_tt_p)
+            dict2sheet(wb, "COMBI TT NC", combi_tt_nc)
+        dict2sheet(wb, "TITLES", titles)
+        dict2sheet(wb, "DOMAIN FIRST", domains_first)
+        dict2sheet(wb, "DOMAIN SECOND", domains_second)
+        filename = 'schema.xlsx' if lemma is None else 'schema.' + lemma + '.xlsx'
+        wb.save(filename)
+    if lemma is None:
+        return cpt, sheads
+    else:
+        return cpt, sheads, nouns
 
 
+# Test if a title match with the given schema:
 # INIT [DET] TRANSHEAD (P à sur de [DET]) | P+D à, de ) NC
-def is_first(t):
+def is_first(t, lemma=None, ddaa=None, only_trans=True):
     i  = t.roots[0]
     r  = t.words[i]
     tt = None
     p  = None
     nc = None
-    if i not in [0, 1] or r.lemma not in TRANS: return None
+    if i not in [0, 1]: return None
+    if only_trans and r.lemma not in TRANS: return None
+    elif not only_trans and r.lemma in TRANS: return None
     tt = r
+    if lemma is not None and tt.lemma != lemma: return None
     for j in range(i + 1, len(t.words)):
         nx = t.words[j]
         if p is None:
@@ -253,6 +297,7 @@ def is_first(t):
                 continue
             elif nx.pos == 'NC':
                 nc = nx
+                if ddaa is not None and nc.lemma not in ddaa: return None
             else:
                 return None
     if p is None or nc is None:
@@ -261,6 +306,7 @@ def is_first(t):
         return {'tt' : tt.lemma, 'p' : p.lemma, 'nc' : nc.lemma}
 
 
+# Test the first schema
 # reload(wb) ; wb.test_is_first()
 def test_is_first():
     MW = MockWord
@@ -274,8 +320,9 @@ def test_is_first():
     print('>>>', is_first(t))
 
 
+# Test if a title match with the given schema:
 # SEG [DET] TRANSHEAD (P à sur de [DET]) | P+D à, de ) NC
-def is_second(t):
+def is_second(t, lemma=None, ddaa=None, only_trans=True):
     if len(t.roots) == 1: return None
     i  = t.roots[1]
     r  = t.words[i]
@@ -288,8 +335,10 @@ def is_second(t):
         pass
     else:
         return None
-    if r.lemma not in TRANS: return None
+    if only_trans and r.lemma not in TRANS: return None
+    elif not only_trans and r.lemma in TRANS: return None
     tt = r
+    if lemma is not None and tt.lemma != lemma: return None
     for j in range(i + 1, len(t.words)):
         nx = t.words[j]
         if p is None:
@@ -305,6 +354,7 @@ def is_second(t):
                 continue
             elif nx.pos == 'NC':
                 nc = nx
+                if ddaa is not None and nc.lemma not in ddaa: return None
             else:
                 return None
     if p is None or nc is None:
@@ -313,6 +363,7 @@ def is_second(t):
         return {'tt' : tt.lemma, 'p' : p.lemma, 'nc' : nc.lemma}
 
 
+# Test the second schema
 # reload(wb) ; wb.test_is_second()
 def test_is_second():
     MW = MockWord
@@ -399,24 +450,6 @@ def is_second_ddaa_nottrans(t):
         if nc1 is not None and ponct is not None and tt is not None and p is not None and nc2 is not None:
             break
     return(nc1, ponct, tt, p, nc2)
-
-
-class MockWord:
-    def __init__(self, pos, lemma):
-        self.pos = pos
-        self.lemma = lemma
-        self.form = lemma
-
-    def __repr__(self):
-        return str(self)
-        
-    def __str__(self):
-        return f"({self.lemma} {self.pos})"
-    
-class MockTitle:
-    def __init__(self, words, iroot):
-        self.words = words
-        self.roots = iroot
 
 
 # reload(wb) ; wb.minitest(titles, ['problème'])
