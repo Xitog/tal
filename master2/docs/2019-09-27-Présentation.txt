@@ -1,0 +1,256 @@
+---------------------
+Problématique
+Démarche
+Résultats
+Bilan et perspectives
+Exemples
+---------------------
+
+Sous la direction de Mme J. Rebeyrolle et M. L. Tanguy
+
+----------------
+01 Problématique
+----------------
+
+Titres :
+- espace restreint
+- informer
+- attirer
+
+Toujours informatif car indiquant le contenu du document (pas de degré 0)
+1ère année : noms après le double point
+    certains privilégient endroit
+    abstraits
+    similitudes avec liste de NSS fréquents
+    étendre à l'ens du titre car souvent ct une tête
+? têtes de segments sont employées de manière sous-spécifiée ?
+variances des têtes entre domaines
+têtes transdisciplinaires
+
+---------
+02 Corpus
+---------
+
+340 000 titres de HAL
+id / auteurs / type / année / domaine
+25 domaines
+Lemmatisation/Catégorisation par Talismane
+Corrections
+Analyse en dépendance pour chopper la tête
+
+1) segmenter, retenir titres 1&2 seg
+   pb du virgule. : first
+   (1|2 seg = 320 561 soit 94 % des titres initiaux)
+2) cibler les têtes, algo de promotion, retenir titres avec au - une tête nominale
+
+From-Corpus-To-Cognition de Schmid (2000, p. 47) qui est que « depsite the indisputable charm of rare or exotic examples, one should mainly be interested in frequent and therefore systemically and cognitively more important items ».
+
+On obtient à partir du tableau (2) directement 86 % de titres nominaux. Pour les titres bisegmentaux, on peut considérer deux options. La première est qu’un titre est nominal si son premier segment l’est. On obtient alors 84 % de titres nominaux. L’autre option est de considérer qu’un titre est “purement” nominal si et seulement si les deux têtes de ses segments sont des noms. On obtient alors 68 % de titres nominaux.
+
+Nous obtenons un corpus de 250 998 titres, soit 74 % du matériau initial
+Les titres monosegmentaux (147 828 soit 59 %) ont une tête nominale, les titres bisegmentaux (103 170, 41 %) ont au moins un segment ayant une tête nominale,
+Nous avons relevé que la répartition des titres par domaine n’est pas homogène, 71 % des titres se rapportent aux sciences humaines et sociales contre 39 % pour les sciences exactes.
+
+Article 44% Comm 35% Chapitre 20% Poster 1%
+1 auteur 61%
+1-4 92%
+
+Sciences exactes 72% Mono 28% bi
+SHS              54% Mono 46% bi
+
+ID les têtes => spéc & trans
+
+---------------------------------------------
+03 Variances des têtes : spécifiques/domaines
+---------------------------------------------
+
+TF * log10(nombre total de domaines / nombre de domaines avec ce terme)
+classement
+
+Anthropologie
+2 579 / 6 942 / 5 166
+ethnologie, ethnologue, anthropologie, ethnographie, Népal, sépulture, pentecôtisme, François Cadic, rite, rituel
+le nombre de lemmes de têtes, le nombre d’occurrences de têtes et le nombre de titres.
+
+Philosophie
+2 800 / 7 856 / 6 152
+philosophie, Leibniz, Spinoza, Descartes, Bergson, Kant,
+Habermas, Nietzsche, Poincaré, Henri Poincaré
+
+Dans l’éducation, on constate la présence dans les dix premières spécifiques de ordinateur alors qu’il apparaît en 72e => trop générique pour info
+
+Calcul des distances à 30 410 dimensions
+
+--------------
+04 Têtes trans
+--------------
+
+TT : seuil de médiane
+0,1%
+sur les fréq dans chaque domaine
+la moitié des domaines avec une fréq > 0,1
+
+Sur les 123 227 lemmes de têtes de notre corpus de travail, cela en sélectionne 94 soit 0,08 %. Elles ont en tout 94 739 occurrences, soit près de 27 % des 354 168 occurrences de têtes que compte notre corpus.
+
+Les 20 premières têtes des 94 classés par la médiane sont : étude, analyse, cas, approche, exemple, enjeu, évolution, apport, rôle, modèle, réflexion, évaluation, outil, question, représentation, application, construction, introduction, histoire et développement.
+
+40 270 des titres monosegmentaux ont une tête transdisciplinaire, soit 27 %,
+8 147 titres bisegmentaux ont une tête transdisciplinaire dans chaque segment,
+9 592 premiers segments de titres bisegmentaux ont une tête transdisciplinaire, soit 17 % des premiers segments,
+28 583 seconds segments de titres bisegmentaux ont une tête transdisciplinaire, soit 36 % des seconds segments,
+
+Dom TT Tête (lemme)
+Physique 13 515 30 667 44%
+Littératures 2159,00 14 278 15 %
+Pas de NPP
+
+Sur les 94 têtes transdisciplinaires, 74 sont présentes dans le LTES, soit 79 %.
+Sur les 94 têtes transdisciplinaires, 82 sont présentes dans le LST, soit 87 %.
+huit têtes transdisciplinaires n’appartenant à aucun des deux : défi, enseignement, formation, histoire, jeu, politique, regard, retour.
+
+Si on ne considère que la seconde partie, d'autres TT apparaissent : cas et problème.
+Ainsi, cas ne compte pour 1 % des têtes du corpus général contre 4 % dans le sous-corpus, et de même pour exemple avec 1 % dans le corpus général et 3 % dans le sous-corpus.
+
+97 % des occurrences de la tête cas apparaissent ainsi dans un deuxième segment, 93 % des occurrences de la tête exemple suivent la même logique. Cette répartition montre bien l’application du schéma général : spécifique de Swales et Feak (1994). Haggan (2004) appelle cette opération un resserrement « narrowing » (Haggan, 2004) sur l’objet de l’article. La juxtaposition de ces deux informations par le double point rend plus facile leur interprétation, soulignée par le choix d’une tête transdisciplinaire qui indique bien un point spécifique, un cas, un exemple, d’un concept plus large. "rebond"
+
+! interprétation ! l'exemple de X
+un exemple de Y
+Swales et Feak : général : spécifique
+1994
+Seuls cinq couples ont une médiane différente de zéro : (de, exemple), (rôle, cas), (approche, cas), (apport, exemple) et (effet, cas).
+
+L'apport des archives privées à l'histoire politique : l'exemple de Louis Costa, le notaire rouge
+
+trans => NSS
+
+----------------------
+05 Noms sous-spécifiés
+----------------------
+
+NSS
+classe d'emploi néanmoins prédisposition lexicale
+3 fonctions :
+    cognitif : encapsuler/création concept
+    sémantique : caractériser
+    discours : liaison
+   
+------------------------------------
+06 Constructions spécificationnelles
+------------------------------------
+
+    NSS [[, c'] + être] + que v/de inf 
+        que (3)
+        de inf (1066 : 629 faux +, 437 ok)
+        Only 1 avec vb : (33) Situation palestinienne : le plus grand effort de la CPI est de vaincre les passions
+    NSS [, ce ] être NC
+        (2 rés) Le plus grand danger social, c'est le bandit imberbe. La justice des mineurs à la Belle Époque
+        
+Contenu spécifiant (! accepte pas tout, nom porteur/capacité de portage)
+    proposition conjonctive/infinitive
+définition vs opérationnalisation
+Peu de résultats
+    
+    Démystification de l'idée que le réseau d'aide informelle se délite
+    La tentation d’instituer des « Cours constitutionnelles régionales »
+    
+attribut
+
+Alors NSS de NC
+Réunir contenu spéc et NSS dans un syntagme nom complexe
+NC = gérondif ou déverbal
+besoin d'un verbe => verbaction
+trop de res
+
+---------------------
+07 Fouille de données
+---------------------
+
+INIT
+END
+PONCT/SEG
+être avoir
+TransHead/Head
+lemme pour P, CC, CS
+Taille : 2-4
+
+Les problèmes d'environnement dans une région d'extraction pétrolière
+2 DET TT
+2 TT de
+3 INIT DET TT
+3 DET TT de
+3 TT de NC
+4 INIT DET TT de
+4 DET TT de NC
+4 TT de NC dans
+5 INIT DET TT de NC
+5 DET TT de NC dans
+5 TT de NC dans DET
+
+support
+motif fréquents
+motif émergeants entre les correspondances
+
+début de segment (INIT ou SEG)
+à sur de
+
+------------------------
+08 Résultats : 2 schémas
+------------------------
+
+problème posé par X
+Problèmes posés par la prédication en persan. Approche contrastive persan
+
+étude de problème
+VerbAction
+9393 paires V/N
+
+Les unités verbales polylexicales : problèmes de repérage en traitement automatique.
+Le problème du sac à dos
+Le problème de l'économie de l'eau en pisciculture
+
+INIT [DET] TRANSHEAD [ADJ] (((à P |sur P |de P) [DET]) | (à P+D | de P+D)) NC
+SEG [DET] TRANSHEAD [ADJ] (((à P |sur P |de P) [DET]) | (à P+D | de P+D)) NC
+
+--------------------------------
+09 Résultats des schémas + Bilan
+--------------------------------
+
+Effets de la substitution du maïs par du sorgho sur la durabilité de la production de foie gras d'oie
+Le cas de la gestion des blessés de l'avant.
+
+p60 : gréer => gérer
+
+! Brève histoire de la proposition
+
+TT candidates / ?
+
+24 776 :  9 % de candidates chez les non TT
+23 497 : 25 % de candidates chez les têtes transdisciplinaires.
+
+--------------------------
+10 Limites et perspectives
+--------------------------
+
+ana dépendance
+filtre pas assez sélectif
+manque d'un corpus de contraste
+
+typologie de Schmid
+CC
+CS spétial
+
+----------------
+11 Bibliographie
+----------------
+
+Flowerdew, J. & Forest, R. W. (2015). Signalling nouns in English. Cambridge University Press.
+Hatier, S. (2016). Identification et analyse linguistique du lexique scientifique transdisciplinaire. Approche fouillée sur corpus d’article de recherche en SHS, Thèse de doctorat, Université Grenoble Alpes.
+Huyghe, R. (2018). Généralité sémantique et portage propositionnel: le cas de fait. Langue française, 2018(2), 35-50.
+Legallois, D. (2008). Sur quelques caractéristiques des noms sous-spécifiés. Scolia, 23, 109-127.
+Merrill, E. et Knipps, A. (2014). What's in a Title?. The Journal of Wildlife Management, 78(5), 761-762.
+Nakamura, T. (2017). Extensions transitives de constructions spécificationnelles. Langue française, 2017(2), 69-84.
+Schmid, H.-J. (2000). English Abstract Nouns as Conceptual Shells. From Corpus to Cognition. Berlin : Mouton de Gruyter (Topics in English Linguistics 34).
+Roze, C., Charnois, T., Legallois, D., Ferrari, S. et Salles, M. (2014). Identification des noms sous-spécifiés, signaux de l’organisation discursive. Dans Proceedings of TALN 2014, 1, 377-388.
+Schmid, H. J. (2018). Shell nouns in English-a personal roundup. Caplletra. Revista Internacional de Filologia, (64), 109-128.
+Tanguy, L. et Hathout, N. (2002). Webaffix : un outil d'acquisition morphologique dérivationnelle à partir du Web. Dans Actes de la 9e Conférence Annuelle sur le Traitement Automatique des Langues Naturelles (TALN-2002). Nancy : ATALA.
+Tanguy, L., Rebeyrolle, J. (à paraître). Les titres des publications scientifiques en français : fouille de texte pour le réperage de schémas lexico-syntaxiques.
